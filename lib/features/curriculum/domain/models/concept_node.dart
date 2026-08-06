@@ -10,7 +10,7 @@ class PracticeExercise {
   final String explanation;
   final bool isHots;
 
-  PracticeExercise({
+  const PracticeExercise({
     required this.question,
     required this.hint,
     required this.options,
@@ -46,7 +46,7 @@ class Flashcard {
   final String front;
   final String back;
 
-  Flashcard({required this.front, required this.back});
+  const Flashcard({required this.front, required this.back});
 
   Map<String, dynamic> toMap() {
     return {'front': front, 'back': back};
@@ -90,7 +90,7 @@ class ConceptNode {
   final List<String> interactiveActivities;
   final List<String> masteryCheckpoints;
 
-  ConceptNode({
+  const ConceptNode({
     required this.id,
     required this.subject,
     required this.classLevel,

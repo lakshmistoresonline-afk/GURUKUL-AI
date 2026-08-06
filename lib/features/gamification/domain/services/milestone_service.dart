@@ -1,4 +1,4 @@
-import '../domain/models/achievement.dart';
+import '../models/achievement.dart';
 import '../../../curriculum/domain/models/mastery.dart';
 
 class MilestoneService {

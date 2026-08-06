@@ -1,9 +1,9 @@
-import '../../curriculum/data/mastery_repository.dart';
-import '../../curriculum/domain/services/mastery_service.dart';
-import '../../gamification/data/gamification_repository.dart';
-import '../../assessment/domain/assessment_engine.dart';
-import '../../../core/telemetry/telemetry_service.dart';
-import '../../curriculum/domain/models/concept_node.dart';
+import '../../../curriculum/data/mastery_repository.dart';
+import '../../../curriculum/domain/services/mastery_service.dart';
+import '../../../gamification/data/gamification_repository.dart';
+import '../../../assessment/domain/assessment_engine.dart';
+import '../../../../core/telemetry/telemetry_service.dart';
+import '../../../curriculum/domain/models/concept_node.dart';
 
 class LearningCoordinator {
   final MasteryRepository _masteryRepository;

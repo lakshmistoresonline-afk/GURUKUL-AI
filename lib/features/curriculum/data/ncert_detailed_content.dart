@@ -4696,8 +4696,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     ],
     revisionNotes: 'The poem beautifully captures the initial hardships of the forest journey.',
     commonMistakes: ['Thinking this is modern Hindi (it is older dialect)']
-  )
-};
+  ),
 
   'ss6_h1': ConceptNode(
     id: 'ss6_h1',

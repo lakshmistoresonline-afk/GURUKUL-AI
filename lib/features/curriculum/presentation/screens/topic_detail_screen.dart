@@ -160,19 +160,21 @@ class _TopicDetailScreenState extends State<TopicDetailScreen> with SingleTicker
             itemCount: _concept!.flashcards.length,
             itemBuilder: (context, index) {
               final f = _concept!.flashcards[index];
-              return Card(
+              return SizedBox(
                 width: 250,
-                color: Colors.blue.withOpacity(0.1),
-                child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text('Front', style: Theme.of(context).textTheme.bodySmall),
-                        const SizedBox(height: 8),
-                        Text(f.front, textAlign: TextAlign.center, style: const TextStyle(fontSize: 18)),
-                      ],
+                child: Card(
+                  color: Colors.blue.withOpacity(0.1),
+                  child: Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('Front', style: Theme.of(context).textTheme.bodySmall),
+                          const SizedBox(height: 8),
+                          Text(f.front, textAlign: TextAlign.center, style: const TextStyle(fontSize: 18)),
+                        ],
+                      ),
                     ),
                   ),
                 ),

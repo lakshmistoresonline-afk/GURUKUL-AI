@@ -1,6 +1,6 @@
 import '../models/mastery.dart';
 import '../models/concept_node.dart';
-import '../../assessment/domain/assessment_engine.dart';
+import '../../../assessment/domain/assessment_engine.dart';
 
 class MasteryService {
   /// Calculates the new mastery score based on a new assessment result.
