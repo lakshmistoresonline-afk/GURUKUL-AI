@@ -1,0 +1,67 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+
+    function hasRole(role) {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == role;
+    }
+
+    function isValidUser(data) {
+      return data.uid is string &&
+             data.email is string &&
+             data.role in ['student', 'parent', 'teacher', 'admin'];
+    }
+
+    function isValidMastery(data) {
+      return data.studentId is string &&
+             data.conceptId is string &&
+             data.masteryScore is number &&
+             data.masteryScore >= 0 && data.masteryScore <= 1;
+    }
+
+    // User profiles
+    match /users/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId) && isValidUser(request.resource.data) || hasRole('admin');
+    }
+
+    // Mastery tracking
+    match /mastery/{masteryId} {
+      allow read: if isSignedIn() && (resource.data.studentId == request.auth.uid || hasRole('teacher') || hasRole('parent'));
+      allow write: if isSignedIn() && request.resource.data.studentId == request.auth.uid && isValidMastery(request.resource.data);
+    }
+
+    // Gamification
+    match /gamification/{userId} {
+      allow read: if isSignedIn();
+      allow write: if isOwner(userId) && request.resource.data.currentXp is int;
+    }
+
+    // Assignments
+    match /assignments/{assignmentId} {
+      allow read: if isSignedIn();
+      allow write: if hasRole('teacher') || hasRole('admin');
+    }
+
+    // Student Reports (For Parents)
+    match /student_reports/{reportId} {
+      allow read: if isSignedIn() && (resource.data.parentIds.hasAny([request.auth.uid]) || hasRole('admin'));
+      allow write: if hasRole('teacher') || hasRole('admin');
+    }
+
+    // Telemetry (Internal audit)
+    match /telemetry_sync/{eventId} {
+      allow read: if hasRole('admin');
+      allow write: if isSignedIn();
+    }
+  }
+}
