@@ -9,22 +9,35 @@ class GurukulApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => sl<AuthBloc>(),
-      child: MaterialApp(
-        title: 'Gurukul AI',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, brightness: Brightness.light),
-          useMaterial3: true,
+    try {
+      return BlocProvider(
+        create: (context) => sl<AuthBloc>(),
+        child: MaterialApp(
+          title: 'Gurukul AI',
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(
+                seedColor: Colors.deepPurple, brightness: Brightness.light),
+            useMaterial3: true,
+          ),
+          darkTheme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(
+                seedColor: Colors.deepPurple, brightness: Brightness.dark),
+            useMaterial3: true,
+          ),
+          themeMode: ThemeMode.system,
+          home: const DashboardScreen(
+              classLevel: 5), // Default to Class 5 for initial view
         ),
-        darkTheme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, brightness: Brightness.dark),
-          useMaterial3: true,
+      );
+    } catch (e) {
+      return MaterialApp(
+        home: Scaffold(
+          body: Center(
+            child: Text('App Crash: $e'),
+          ),
         ),
-        themeMode: ThemeMode.system,
-        home: const DashboardScreen(classLevel: 5), // Default to Class 5 for initial view
-      ),
-    );
+      );
+    }
   }
 }

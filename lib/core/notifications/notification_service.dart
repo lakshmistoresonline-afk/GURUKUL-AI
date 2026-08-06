@@ -12,31 +12,39 @@ class NotificationService {
   NotificationService(this._fcm, this._logger);
 
   Future<void> init() async {
-    // Request permissions
-    NotificationSettings settings = await _fcm.requestPermission(
-      alert: true,
-      badge: true,
-      sound: true,
-    );
+    try {
+      // Request permissions
+      NotificationSettings settings = await _fcm.requestPermission(
+        alert: true,
+        badge: true,
+        sound: true,
+      );
 
-    if (settings.authorizationStatus == AuthorizationStatus.authorized) {
-      _logger.i('User granted permission');
-    } else {
-      _logger.w('User declined or has not accepted permission');
+      if (settings.authorizationStatus == AuthorizationStatus.authorized) {
+        _logger.i('User granted permission');
+      } else {
+        _logger.w('User declined or has not accepted permission');
+      }
+
+      // Get token (Safe check for platforms that might not support it immediately)
+      try {
+        String? token = await _fcm.getToken();
+        _logger.i('FCM Token: $token');
+      } catch (e) {
+        _logger.e('Error getting FCM token: $e');
+      }
+
+      // Handle background messages
+      FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
+      // Handle foreground messages
+      FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+        _logger.i('Got a message whilst in the foreground!');
+        _messageController.add(message);
+      });
+    } catch (e) {
+      _logger.e('NotificationService init error: $e');
     }
-
-    // Get token
-    String? token = await _fcm.getToken();
-    _logger.i('FCM Token: $token');
-
-    // Handle background messages
-    FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-
-    // Handle foreground messages
-    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      _logger.i('Got a message whilst in the foreground!');
-      _messageController.add(message);
-    });
   }
 
   static Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {

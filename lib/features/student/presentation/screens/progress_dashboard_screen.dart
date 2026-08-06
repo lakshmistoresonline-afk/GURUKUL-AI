@@ -3,6 +3,7 @@ import 'package:fl_chart/fl_chart.dart';
 import '../../../../core/di/injection.dart';
 import '../../../curriculum/data/mastery_repository.dart';
 import '../../../curriculum/domain/models/mastery.dart';
+import '../../../curriculum/domain/models/concept_node.dart';
 
 class ProgressDashboardScreen extends StatefulWidget {
   final String studentId;

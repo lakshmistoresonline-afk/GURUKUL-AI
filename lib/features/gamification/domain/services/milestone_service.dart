@@ -1,5 +1,6 @@
 import '../models/achievement.dart';
 import '../../../curriculum/domain/models/mastery.dart';
+import '../../../curriculum/domain/models/concept_node.dart';
 
 class MilestoneService {
   /// Checks for new milestones based on current stats.

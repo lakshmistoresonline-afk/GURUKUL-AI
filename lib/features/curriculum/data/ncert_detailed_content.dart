@@ -5,7 +5,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 5 MATHEMATICS (Math-Magic)
   // ===========================================================================
 
-  'm5_c1': ConceptNode(
+  'm5_c1': const ConceptNode(
     id: 'm5_c1',
     subject: 'Mathematics',
     classLevel: 5,
@@ -15,18 +15,18 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     difficulty: Difficulty.beginner,
     bloomLevel: BloomLevel.understand,
     examWeightage: 8,
-    estStudyTime: const Duration(minutes: 45),
-    prerequisites: [],
-    dependencies: ['m5_c6', 'm6_c1'],
-    relatedConcepts: [],
-    learningObjectives: [
+    estStudyTime: Duration(minutes: 45),
+    prerequisites: const [],
+    dependencies: const ['m5_c6', 'm6_c1'],
+    relatedConcepts: const [],
+    learningObjectives: const [
       'Read and write numbers up to 1 crore',
       'Understand lakhs and crores',
       'Use commas in Indian system'
     ],
-    examples: ['Cost of a boat: 12,00,000', 'Distance to moon: 3,84,400 km'],
-    misconceptions: ['Thinking 1 million = 1 crore (it is 10 lakhs)'],
-    practiceExercises: [
+    examples: const ['Cost of a boat: 12,00,000', 'Distance to moon: 3,84,400 km'],
+    misconceptions: const ['Thinking 1 million = 1 crore (it is 10 lakhs)'],
+    practiceExercises: const [
       PracticeExercise(
         question: 'How many zeros are in 1 crore?',
         hint: 'Write it down: 1,00,00,000',
@@ -35,29 +35,29 @@ final Map<String, ConceptNode> ncertDetailedContent = {
         explanation: '1 crore is 100 lakhs. 100 x 1,00,000 = 1,00,00,000.'
       )
     ],
-    flashcards: [
+    flashcards: const [
       Flashcard(front: '1 Lakh', back: '100,000 (5 zeros)'),
       Flashcard(front: '1 Crore', back: '1,00,00,000 (7 zeros)')
     ],
     revisionNotes: 'Focus on place value chart: Ones, Thousands, Lakhs, Crores.',
-    commonMistakes: ['Misplacing commas in large numbers'],
-    vocabulary: {
+    commonMistakes: const ['Misplacing commas in large numbers'],
+    vocabulary: const {
       'Lakh': 'A unit in the Indian numbering system equal to one hundred thousand (1,00,000).',
       'Crore': 'A unit in the Indian numbering system equal to ten million (1,00,00,000).',
       'Place Value': 'The value of a digit based on its position in a number.'
     },
-    interactiveActivities: [
+    interactiveActivities: const [
       'Draw a place value chart in your notebook and fill it with the cost of 5 different items.',
       'Find the population of your city and write it in the Indian system using commas.'
     ],
-    masteryCheckpoints: [
+    masteryCheckpoints: const [
       'Can correctly place commas in a 7-digit number.',
       'Can compare two numbers in the lakhs range.',
       'Understands the relationship between Lakh and Million.'
     ]
   ),
 
-  'm5_c2': ConceptNode(
+  'm5_c2': const ConceptNode(
     id: 'm5_c2',
     subject: 'Mathematics',
     classLevel: 5,
@@ -109,7 +109,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     ]
   ),
 
-  'm5_c3': ConceptNode(
+  'm5_c3': const ConceptNode(
     id: 'm5_c3',
     subject: 'Mathematics',
     classLevel: 5,
@@ -147,7 +147,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing formulas for area and perimeter']
   ),
 
-  'm5_c4': ConceptNode(
+  'm5_c4': const ConceptNode(
     id: 'm5_c4',
     subject: 'Mathematics',
     classLevel: 5,
@@ -185,7 +185,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Comparing denominators directly without common base']
   ),
 
-  'm5_c5': ConceptNode(
+  'm5_c5': const ConceptNode(
     id: 'm5_c5',
     subject: 'Mathematics',
     classLevel: 5,
@@ -223,7 +223,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Incorrectly identifying lines of symmetry in non-regular shapes']
   ),
 
-  'm5_c6': ConceptNode(
+  'm5_c6': const ConceptNode(
     id: 'm5_c6',
     subject: 'Mathematics',
     classLevel: 5,
@@ -261,7 +261,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking factors are infinite (multiples are infinite)']
   ),
 
-  'm5_c7': ConceptNode(
+  'm5_c7': const ConceptNode(
     id: 'm5_c7',
     subject: 'Mathematics',
     classLevel: 5,
@@ -298,7 +298,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Incomplete rows in magic squares']
   ),
 
-  'm5_c8': ConceptNode(
+  'm5_c8': const ConceptNode(
     id: 'm5_c8',
     subject: 'Mathematics',
     classLevel: 5,
@@ -335,7 +335,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Using wrong multiplication for scale conversion']
   ),
 
-  'm5_c9': ConceptNode(
+  'm5_c9': const ConceptNode(
     id: 'm5_c9',
     subject: 'Mathematics',
     classLevel: 5,
@@ -372,7 +372,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Missing faces in a net']
   ),
 
-  'm5_c10': ConceptNode(
+  'm5_c10': const ConceptNode(
     id: 'm5_c10',
     subject: 'Mathematics',
     classLevel: 5,
@@ -410,7 +410,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Incorrect zero placement after decimal']
   ),
 
-  'm5_c11': ConceptNode(
+  'm5_c11': const ConceptNode(
     id: 'm5_c11',
     subject: 'Mathematics',
     classLevel: 5,
@@ -448,7 +448,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Forgetting to multiply by 2 in perimeter']
   ),
 
-  'm5_c12': ConceptNode(
+  'm5_c12': const ConceptNode(
     id: 'm5_c12',
     subject: 'Mathematics',
     classLevel: 5,
@@ -485,7 +485,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Misreading the scale of a Bar Graph']
   ),
 
-  'm5_c13': ConceptNode(
+  'm5_c13': const ConceptNode(
     id: 'm5_c13',
     subject: 'Mathematics',
     classLevel: 5,
@@ -523,7 +523,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Calculation errors in long multiplication']
   ),
 
-  'm5_c14': ConceptNode(
+  'm5_c14': const ConceptNode(
     id: 'm5_c14',
     subject: 'Mathematics',
     classLevel: 5,
@@ -565,7 +565,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 5 EVS (Looking Around)
   // ===========================================================================
 
-  'e5_c1': ConceptNode(
+  'e5_c1': const ConceptNode(
     id: 'e5_c1',
     subject: 'EVS',
     classLevel: 5,
@@ -603,7 +603,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking all animals see color (most see fewer colors than us)']
   ),
 
-  'e5_c2': ConceptNode(
+  'e5_c2': const ConceptNode(
     id: 'e5_c2',
     subject: 'EVS',
     classLevel: 5,
@@ -640,7 +640,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking snake charmers harm snakes (mostly they care for them)']
   ),
 
-  'e5_c3': ConceptNode(
+  'e5_c3': const ConceptNode(
     id: 'e5_c3',
     subject: 'EVS',
     classLevel: 5,
@@ -678,7 +678,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Swallowing food too fast']
   ),
 
-  'e5_c4': ConceptNode(
+  'e5_c4': const ConceptNode(
     id: 'e5_c4',
     subject: 'EVS',
     classLevel: 5,
@@ -716,7 +716,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Using wet spoons in pickle jars']
   ),
 
-  'e5_c5': ConceptNode(
+  'e5_c5': const ConceptNode(
     id: 'e5_c5',
     subject: 'EVS',
     classLevel: 5,
@@ -754,7 +754,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Soaking seeds for too long without air']
   ),
 
-  'e5_c6': ConceptNode(
+  'e5_c6': const ConceptNode(
     id: 'e5_c6',
     subject: 'EVS',
     classLevel: 5,
@@ -792,7 +792,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Leaving taps running']
   ),
 
-  'e5_c7': ConceptNode(
+  'e5_c7': const ConceptNode(
     id: 'e5_c7',
     subject: 'EVS',
     classLevel: 5,
@@ -830,7 +830,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing floating with dissolving']
   ),
 
-  'e5_c8': ConceptNode(
+  'e5_c8': const ConceptNode(
     id: 'e5_c8',
     subject: 'EVS',
     classLevel: 5,
@@ -868,7 +868,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking flies spread malaria (they spread stomach infections)']
   ),
 
-  'e5_c9': ConceptNode(
+  'e5_c9': const ConceptNode(
     id: 'e5_c9',
     subject: 'EVS',
     classLevel: 5,
@@ -906,7 +906,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Everest is in India (it is in Nepal/Tibet)']
   ),
 
-  'e5_c10': ConceptNode(
+  'e5_c10': const ConceptNode(
     id: 'e5_c10',
     subject: 'EVS',
     classLevel: 5,
@@ -944,7 +944,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Writing on monument walls']
   ),
 
-  'e5_c11': ConceptNode(
+  'e5_c11': const ConceptNode(
     id: 'e5_c11',
     subject: 'EVS',
     classLevel: 5,
@@ -982,7 +982,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking up and down exist in space']
   ),
 
-  'e5_c12': ConceptNode(
+  'e5_c12': const ConceptNode(
     id: 'e5_c12',
     subject: 'EVS',
     classLevel: 5,
@@ -1020,7 +1020,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking all fuels are petroleum products']
   ),
 
-  'e5_c13': ConceptNode(
+  'e5_c13': const ConceptNode(
     id: 'e5_c13',
     subject: 'EVS',
     classLevel: 5,
@@ -1058,7 +1058,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Changpas live in permanent stone houses']
   ),
 
-  'e5_c14': ConceptNode(
+  'e5_c14': const ConceptNode(
     id: 'e5_c14',
     subject: 'EVS',
     classLevel: 5,
@@ -1096,7 +1096,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Using elevators during an earthquake']
   ),
 
-  'e5_c15': ConceptNode(
+  'e5_c15': const ConceptNode(
     id: 'e5_c15',
     subject: 'EVS',
     classLevel: 5,
@@ -1134,7 +1134,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking heartbeat stays the same always']
   ),
 
-  'e5_c16': ConceptNode(
+  'e5_c16': const ConceptNode(
     id: 'e5_c16',
     subject: 'EVS',
     classLevel: 5,
@@ -1172,7 +1172,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking certain jobs are "dirty" and should be avoided']
   ),
 
-  'e5_c17': ConceptNode(
+  'e5_c17': const ConceptNode(
     id: 'e5_c17',
     subject: 'EVS',
     classLevel: 5,
@@ -1210,7 +1210,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Focusing only on winning, not playing']
   ),
 
-  'e5_c18': ConceptNode(
+  'e5_c18': const ConceptNode(
     id: 'e5_c18',
     subject: 'EVS',
     classLevel: 5,
@@ -1248,7 +1248,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking all people move to cities by choice']
   ),
 
-  'e5_c19': ConceptNode(
+  'e5_c19': const ConceptNode(
     id: 'e5_c19',
     subject: 'EVS',
     classLevel: 5,
@@ -1286,7 +1286,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking tractors are always better than bullocks']
   ),
 
-  'e5_c20': ConceptNode(
+  'e5_c20': const ConceptNode(
     id: 'e5_c20',
     subject: 'EVS',
     classLevel: 5,
@@ -1324,7 +1324,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Jhum farming is done in plains']
   ),
 
-  'e5_c21': ConceptNode(
+  'e5_c21': const ConceptNode(
     id: 'e5_c21',
     subject: 'EVS',
     classLevel: 5,
@@ -1362,7 +1362,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing learned habits with inherited traits']
   ),
 
-  'e5_c22': ConceptNode(
+  'e5_c22': const ConceptNode(
     id: 'e5_c22',
     subject: 'EVS',
     classLevel: 5,
@@ -1404,7 +1404,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 5 ENGLISH (Marigold)
   // ===========================================================================
 
-  'en5_c1': ConceptNode(
+  'en5_c1': const ConceptNode(
     id: 'en5_c1',
     subject: 'English',
     classLevel: 5,
@@ -1442,7 +1442,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Spelling of "Wonderful"', 'Confusing adjectives with verbs']
   ),
 
-  'en5_c2': ConceptNode(
+  'en5_c2': const ConceptNode(
     id: 'en5_c2',
     subject: 'English',
     classLevel: 5,
@@ -1480,7 +1480,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Ignoring the "moral of the story"']
   ),
 
-  'en5_c3': ConceptNode(
+  'en5_c3': const ConceptNode(
     id: 'en5_c3',
     subject: 'English',
     classLevel: 5,
@@ -1518,7 +1518,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing "scared" with "scary"']
   ),
 
-  'en5_c4': ConceptNode(
+  'en5_c4': const ConceptNode(
     id: 'en5_c4',
     subject: 'English',
     classLevel: 5,
@@ -1556,7 +1556,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Bhaiya was mean (he was actually caring)']
   ),
 
-  'en5_c5': ConceptNode(
+  'en5_c5': const ConceptNode(
     id: 'en5_c5',
     subject: 'English',
     classLevel: 5,
@@ -1594,7 +1594,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Spelling of "Van Winkle"']
   ),
 
-  'en5_c6': ConceptNode(
+  'en5_c6': const ConceptNode(
     id: 'en5_c6',
     subject: 'English',
     classLevel: 5,
@@ -1632,7 +1632,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Interrupting others during discussion']
   ),
 
-  'en5_c7': ConceptNode(
+  'en5_c7': const ConceptNode(
     id: 'en5_c7',
     subject: 'English',
     classLevel: 5,
@@ -1670,7 +1670,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the sequence of Gulliver\'s voyages']
   ),
 
-  'en5_c8': ConceptNode(
+  'en5_c8': const ConceptNode(
     id: 'en5_c8',
     subject: 'English',
     classLevel: 5,
@@ -1708,7 +1708,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking being a bystander is okay']
   ),
 
-  'en5_c9': ConceptNode(
+  'en5_c9': const ConceptNode(
     id: 'en5_c9',
     subject: 'English',
     classLevel: 5,
@@ -1746,7 +1746,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Spelling of "Phileas"']
   ),
 
-  'en5_c10': ConceptNode(
+  'en5_c10': const ConceptNode(
     id: 'en5_c10',
     subject: 'English',
     classLevel: 5,
@@ -1788,7 +1788,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 5 HINDI (Rimjhim)
   // ===========================================================================
 
-  'h5_c1': ConceptNode(
+  'h5_c1': const ConceptNode(
     id: 'h5_c1',
     subject: 'Hindi',
     classLevel: 5,
@@ -1826,7 +1826,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Spelling of Tibetan names in Hindi']
   ),
 
-  'h5_c2': ConceptNode(
+  'h5_c2': const ConceptNode(
     id: 'h5_c2',
     subject: 'Hindi',
     classLevel: 5,
@@ -1864,7 +1864,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing states with their specific festivals']
   ),
 
-  'h5_c3': ConceptNode(
+  'h5_c3': const ConceptNode(
     id: 'h5_c3',
     subject: 'Hindi',
     classLevel: 5,
@@ -1902,7 +1902,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Identifying the poet correctly']
   ),
 
-  'h5_c4': ConceptNode(
+  'h5_c4': const ConceptNode(
     id: 'h5_c4',
     subject: 'Hindi',
     classLevel: 5,
@@ -1940,7 +1940,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Spelling of "Fatehpur Sikri"']
   ),
 
-  'h5_c5': ConceptNode(
+  'h5_c5': const ConceptNode(
     id: 'h5_c5',
     subject: 'Hindi',
     classLevel: 5,
@@ -1978,7 +1978,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking she used her hands for embroidery']
   ),
 
-  'h5_c6': ConceptNode(
+  'h5_c6': const ConceptNode(
     id: 'h5_c6',
     subject: 'Hindi',
     classLevel: 5,
@@ -2016,7 +2016,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Writing wrong PIN codes']
   ),
 
-  'h5_c7': ConceptNode(
+  'h5_c7': const ConceptNode(
     id: 'h5_c7',
     subject: 'Hindi',
     classLevel: 5,
@@ -2054,7 +2054,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Missing the interview context']
   ),
 
-  'h5_c8': ConceptNode(
+  'h5_c8': const ConceptNode(
     id: 'h5_c8',
     subject: 'Hindi',
     classLevel: 5,
@@ -2092,7 +2092,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the past with the future setting of the story']
   ),
 
-  'h5_c9': ConceptNode(
+  'h5_c9': const ConceptNode(
     id: 'h5_c9',
     subject: 'Hindi',
     classLevel: 5,
@@ -2130,7 +2130,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Ignoring the emotional depth of the poem']
   ),
 
-  'h5_c10': ConceptNode(
+  'h5_c10': const ConceptNode(
     id: 'h5_c10',
     subject: 'Hindi',
     classLevel: 5,
@@ -2168,7 +2168,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Missing the humour in the boys\' actions']
   ),
 
-  'h5_c11': ConceptNode(
+  'h5_c11': const ConceptNode(
     id: 'h5_c11',
     subject: 'Hindi',
     classLevel: 5,
@@ -2206,7 +2206,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking the play is set in India']
   ),
 
-  'h5_c12': ConceptNode(
+  'h5_c12': const ConceptNode(
     id: 'h5_c12',
     subject: 'Hindi',
     classLevel: 5,
@@ -2244,7 +2244,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the Chela\'s greed with wisdom']
   ),
 
-  'h5_c13': ConceptNode(
+  'h5_c13': const ConceptNode(
     id: 'h5_c13',
     subject: 'Hindi',
     classLevel: 5,
@@ -2282,7 +2282,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking the story is set in a modern city']
   ),
 
-  'h5_c14': ConceptNode(
+  'h5_c14': const ConceptNode(
     id: 'h5_c14',
     subject: 'Hindi',
     classLevel: 5,
@@ -2320,7 +2320,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking the tiger actually entered the house']
   ),
 
-  'h5_c15': ConceptNode(
+  'h5_c15': const ConceptNode(
     id: 'h5_c15',
     subject: 'Hindi',
     classLevel: 5,
@@ -2358,7 +2358,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Spelling of "Teetar" in Hindi']
   ),
 
-  'h5_c16': ConceptNode(
+  'h5_c16': const ConceptNode(
     id: 'h5_c16',
     subject: 'Hindi',
     classLevel: 5,
@@ -2396,7 +2396,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking rain is the only solution for water crisis']
   ),
 
-  'h5_c17': ConceptNode(
+  'h5_c17': const ConceptNode(
     id: 'h5_c17',
     subject: 'Hindi',
     classLevel: 5,
@@ -2434,7 +2434,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Misidentifying the poet']
   ),
 
-  'h5_c18': ConceptNode(
+  'h5_c18': const ConceptNode(
     id: 'h5_c18',
     subject: 'Hindi',
     classLevel: 5,
@@ -2476,7 +2476,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 6 MATHEMATICS
   // ===========================================================================
 
-  'm6_c1': ConceptNode(
+  'm6_c1': const ConceptNode(
     id: 'm6_c1',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2516,7 +2516,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Writing IVVV for 15 (cannot repeat V)']
   ),
 
-  'm6_c2': ConceptNode(
+  'm6_c2': const ConceptNode(
     id: 'm6_c2',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2554,7 +2554,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Applying commutative property to subtraction']
   ),
 
-  'm6_c3': ConceptNode(
+  'm6_c3': const ConceptNode(
     id: 'm6_c3',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2592,7 +2592,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing LCM calculation with HCF']
   ),
 
-  'm6_c4': ConceptNode(
+  'm6_c4': const ConceptNode(
     id: 'm6_c4',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2630,7 +2630,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Sector with Segment in a circle']
   ),
 
-  'm6_c5': ConceptNode(
+  'm6_c5': const ConceptNode(
     id: 'm6_c5',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2668,7 +2668,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Misreading the scale of a protractor']
   ),
 
-  'm6_c6': ConceptNode(
+  'm6_c6': const ConceptNode(
     id: 'm6_c6',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2706,7 +2706,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Signs errors during addition/subtraction']
   ),
 
-  'm6_c7': ConceptNode(
+  'm6_c7': const ConceptNode(
     id: 'm6_c7',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2744,7 +2744,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Forgetting to find common denominator']
   ),
 
-  'm6_c8': ConceptNode(
+  'm6_c8': const ConceptNode(
     id: 'm6_c8',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2782,7 +2782,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Misaligning digits during addition']
   ),
 
-  'm6_c9': ConceptNode(
+  'm6_c9': const ConceptNode(
     id: 'm6_c9',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2820,7 +2820,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Uneven width of bars in a bar graph']
   ),
 
-  'm6_c10': ConceptNode(
+  'm6_c10': const ConceptNode(
     id: 'm6_c10',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2858,7 +2858,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Calculation errors in addition/multiplication']
   ),
 
-  'm6_c11': ConceptNode(
+  'm6_c11': const ConceptNode(
     id: 'm6_c11',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2896,7 +2896,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing 2x with x + 2']
   ),
 
-  'm6_c12': ConceptNode(
+  'm6_c12': const ConceptNode(
     id: 'm6_c12',
     subject: 'Mathematics',
     classLevel: 6,
@@ -2938,7 +2938,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 6 SCIENCE
   // ===========================================================================
 
-  's6_c1': ConceptNode(
+  's6_c1': const ConceptNode(
     id: 's6_c1',
     subject: 'Science',
     classLevel: 6,
@@ -2976,7 +2976,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking water is a nutrient (it is essential but not a nutrient)']
   ),
 
-  's6_c2': ConceptNode(
+  's6_c2': const ConceptNode(
     id: 's6_c2',
     subject: 'Science',
     classLevel: 6,
@@ -3014,7 +3014,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing translucent with transparent']
   ),
 
-  's6_c3': ConceptNode(
+  's6_c3': const ConceptNode(
     id: 's6_c3',
     subject: 'Science',
     classLevel: 6,
@@ -3052,7 +3052,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing decantation with sedimentation']
   ),
 
-  's6_c4': ConceptNode(
+  's6_c4': const ConceptNode(
     id: 's6_c4',
     subject: 'Science',
     classLevel: 6,
@@ -3090,7 +3090,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Stamens with Pistils']
   ),
 
-  's6_c5': ConceptNode(
+  's6_c5': const ConceptNode(
     id: 's6_c5',
     subject: 'Science',
     classLevel: 6,
@@ -3128,7 +3128,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking snakes have no bones (they have a long backbone)']
   ),
 
-  's6_c6': ConceptNode(
+  's6_c6': const ConceptNode(
     id: 's6_c6',
     subject: 'Science',
     classLevel: 6,
@@ -3166,7 +3166,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking all aquatic animals have gills (Dolphins/Whales have blowholes)']
   ),
 
-  's6_c7': ConceptNode(
+  's6_c7': const ConceptNode(
     id: 's6_c7',
     subject: 'Science',
     classLevel: 6,
@@ -3204,7 +3204,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Measuring from the end of the ruler instead of 0 mark']
   ),
 
-  's6_c8': ConceptNode(
+  's6_c8': const ConceptNode(
     id: 's6_c8',
     subject: 'Science',
     classLevel: 6,
@@ -3242,7 +3242,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking non-luminous objects cannot be seen']
   ),
 
-  's6_c9': ConceptNode(
+  's6_c9': const ConceptNode(
     id: 's6_c9',
     subject: 'Science',
     classLevel: 6,
@@ -3280,7 +3280,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Touching electric wires with wet hands']
   ),
 
-  's6_c10': ConceptNode(
+  's6_c10': const ConceptNode(
     id: 's6_c10',
     subject: 'Science',
     classLevel: 6,
@@ -3318,7 +3318,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Storing magnets incorrectly (leading to loss of magnetism)']
   ),
 
-  's6_c11': ConceptNode(
+  's6_c11': const ConceptNode(
     id: 's6_c11',
     subject: 'Science',
     classLevel: 6,
@@ -3360,7 +3360,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 6 SOCIAL SCIENCE (Civics - Social and Political Life - I)
   // ===========================================================================
 
-  'ss6_c1': ConceptNode(
+  'ss6_c1': const ConceptNode(
     id: 'ss6_c1',
     subject: 'Civics',
     classLevel: 6,
@@ -3398,7 +3398,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking diversity only means religion']
   ),
 
-  'ss6_c2': ConceptNode(
+  'ss6_c2': const ConceptNode(
     id: 'ss6_c2',
     subject: 'Civics',
     classLevel: 6,
@@ -3436,7 +3436,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Prejudice with Discrimination']
   ),
 
-  'ss6_c3': ConceptNode(
+  'ss6_c3': const ConceptNode(
     id: 'ss6_c3',
     subject: 'Civics',
     classLevel: 6,
@@ -3474,7 +3474,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking state government handles national borders']
   ),
 
-  'ss6_c4': ConceptNode(
+  'ss6_c4': const ConceptNode(
     id: 'ss6_c4',
     subject: 'Civics',
     classLevel: 6,
@@ -3512,7 +3512,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking all conflicts are bad for democracy']
   ),
 
-  'ss6_c5': ConceptNode(
+  'ss6_c5': const ConceptNode(
     id: 'ss6_c5',
     subject: 'Civics',
     classLevel: 6,
@@ -3550,7 +3550,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the Secretary (govt appointed) with Sarpanch (elected)']
   ),
 
-  'ss6_c6': ConceptNode(
+  'ss6_c6': const ConceptNode(
     id: 'ss6_c6',
     subject: 'Civics',
     classLevel: 6,
@@ -3588,7 +3588,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking the Collector does the day-to-day land measuring']
   ),
 
-  'ss6_c7': ConceptNode(
+  'ss6_c7': const ConceptNode(
     id: 'ss6_c7',
     subject: 'Civics',
     classLevel: 6,
@@ -3626,7 +3626,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Municipal Council (small towns) with Corporation (cities)']
   ),
 
-  'ss6_c8': ConceptNode(
+  'ss6_c8': const ConceptNode(
     id: 'ss6_c8',
     subject: 'Civics',
     classLevel: 6,
@@ -3664,7 +3664,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking big farmers do all the manual work themselves']
   ),
 
-  'ss6_c9': ConceptNode(
+  'ss6_c9': const ConceptNode(
     id: 'ss6_c9',
     subject: 'Civics',
     classLevel: 6,
@@ -3706,7 +3706,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 6 ENGLISH (Honeysuckle)
   // ===========================================================================
 
-  'en6_c1': ConceptNode(
+  'en6_c1': const ConceptNode(
     id: 'en6_c1',
     subject: 'English',
     classLevel: 6,
@@ -3744,7 +3744,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing "house" and "home" definitions']
   ),
 
-  'en6_c2': ConceptNode(
+  'en6_c2': const ConceptNode(
     id: 'en6_c2',
     subject: 'English',
     classLevel: 6,
@@ -3782,7 +3782,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the order of masters the dog tried']
   ),
 
-  'en6_c3': ConceptNode(
+  'en6_c3': const ConceptNode(
     id: 'en6_c3',
     subject: 'English',
     classLevel: 6,
@@ -3820,7 +3820,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Taro was greedy']
   ),
 
-  'en6_c4': ConceptNode(
+  'en6_c4': const ConceptNode(
     id: 'en6_c4',
     subject: 'English',
     classLevel: 6,
@@ -3858,7 +3858,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Spelling of "Columbia"']
   ),
 
-  'en6_c5': ConceptNode(
+  'en6_c5': const ConceptNode(
     id: 'en6_c5',
     subject: 'English',
     classLevel: 6,
@@ -3896,7 +3896,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking the school was cruel']
   ),
 
-  'en6_c6': ConceptNode(
+  'en6_c6': const ConceptNode(
     id: 'en6_c6',
     subject: 'English',
     classLevel: 6,
@@ -3934,7 +3934,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Mixing up the children\'s names and their dreams']
   ),
 
-  'en6_c7': ConceptNode(
+  'en6_c7': const ConceptNode(
     id: 'en6_c7',
     subject: 'English',
     classLevel: 6,
@@ -3972,7 +3972,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Algu was mean to Jumman']
   ),
 
-  'en6_c8': ConceptNode(
+  'en6_c8': const ConceptNode(
     id: 'en6_c8',
     subject: 'English',
     classLevel: 6,
@@ -4010,7 +4010,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the vocations in the poem']
   ),
 
-  'en6_c9': ConceptNode(
+  'en6_c9': const ConceptNode(
     id: 'en6_c9',
     subject: 'English',
     classLevel: 6,
@@ -4048,7 +4048,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking snakes can hear (they feel vibrations)']
   ),
 
-  'en6_c10': ConceptNode(
+  'en6_c10': const ConceptNode(
     id: 'en6_c10',
     subject: 'English',
     classLevel: 6,
@@ -4090,7 +4090,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 6 HINDI (Vasant)
   // ===========================================================================
 
-  'h6_c1': ConceptNode(
+  'h6_c1': const ConceptNode(
     id: 'h6_c1',
     subject: 'Hindi',
     classLevel: 6,
@@ -4128,7 +4128,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking the bird is a specific species']
   ),
 
-  'h6_c2': ConceptNode(
+  'h6_c2': const ConceptNode(
     id: 'h6_c2',
     subject: 'Hindi',
     classLevel: 6,
@@ -4166,7 +4166,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking the author is a man']
   ),
 
-  'h6_c3': ConceptNode(
+  'h6_c3': const ConceptNode(
     id: 'h6_c3',
     subject: 'Hindi',
     classLevel: 6,
@@ -4204,7 +4204,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Keshav was mean to the birds']
   ),
 
-  'h6_c4': ConceptNode(
+  'h6_c4': const ConceptNode(
     id: 'h6_c4',
     subject: 'Hindi',
     classLevel: 6,
@@ -4242,7 +4242,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Mixing up the waxing and waning phases']
   ),
 
-  'h6_c5': ConceptNode(
+  'h6_c5': const ConceptNode(
     id: 'h6_c5',
     subject: 'Hindi',
     classLevel: 6,
@@ -4280,7 +4280,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking alphabets were always there']
   ),
 
-  'h6_c6': ConceptNode(
+  'h6_c6': const ConceptNode(
     id: 'h6_c6',
     subject: 'Hindi',
     classLevel: 6,
@@ -4318,7 +4318,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the fictional story with scientific reality']
   ),
 
-  'h6_c7': ConceptNode(
+  'h6_c7': const ConceptNode(
     id: 'h6_c7',
     subject: 'Hindi',
     classLevel: 6,
@@ -4356,7 +4356,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking the poem is only for laborers']
   ),
 
-  'h6_c8': ConceptNode(
+  'h6_c8': const ConceptNode(
     id: 'h6_c8',
     subject: 'Hindi',
     classLevel: 6,
@@ -4394,7 +4394,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Missing the comic timing of the play']
   ),
 
-  'h6_c9': ConceptNode(
+  'h6_c9': const ConceptNode(
     id: 'h6_c9',
     subject: 'Hindi',
     classLevel: 6,
@@ -4432,7 +4432,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Rajappa stole the album to sell it']
   ),
 
-  'h6_c10': ConceptNode(
+  'h6_c10': const ConceptNode(
     id: 'h6_c10',
     subject: 'Hindi',
     classLevel: 6,
@@ -4470,7 +4470,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Spelling of "Subhadra Kumari Chauhan"']
   ),
 
-  'h6_c11': ConceptNode(
+  'h6_c11': const ConceptNode(
     id: 'h6_c11',
     subject: 'Hindi',
     classLevel: 6,
@@ -4508,7 +4508,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Helen Keller was born deaf-blind (she became so after illness)']
   ),
 
-  'h6_c12': ConceptNode(
+  'h6_c12': const ConceptNode(
     id: 'h6_c12',
     subject: 'Hindi',
     classLevel: 6,
@@ -4546,7 +4546,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking these were formal academic articles']
   ),
 
-  'h6_c13': ConceptNode(
+  'h6_c13': const ConceptNode(
     id: 'h6_c13',
     subject: 'Hindi',
     classLevel: 6,
@@ -4584,7 +4584,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Misidentifying the poet']
   ),
 
-  'h6_c14': ConceptNode(
+  'h6_c14': const ConceptNode(
     id: 'h6_c14',
     subject: 'Hindi',
     classLevel: 6,
@@ -4622,7 +4622,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking folk music needs expensive electronic instruments']
   ),
 
-  'h6_c15': ConceptNode(
+  'h6_c15': const ConceptNode(
     id: 'h6_c15',
     subject: 'Hindi',
     classLevel: 6,
@@ -4660,7 +4660,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Gandhiji was forced to do this work']
   ),
 
-  'h6_c16': ConceptNode(
+  'h6_c16': const ConceptNode(
     id: 'h6_c16',
     subject: 'Hindi',
     classLevel: 6,
@@ -4698,7 +4698,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking this is modern Hindi (it is older dialect)']
   ),
 
-  'ss6_h1': ConceptNode(
+  'ss6_h1': const ConceptNode(
     id: 'ss6_h1',
     subject: 'History',
     classLevel: 6,
@@ -4736,7 +4736,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing AD with "After Death" (it is Anno Domini)']
   ),
 
-  'ss6_h2': ConceptNode(
+  'ss6_h2': const ConceptNode(
     id: 'ss6_h2',
     subject: 'History',
     classLevel: 6,
@@ -4774,7 +4774,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking hunter-gatherers lived in one place']
   ),
 
-  'ss6_h3': ConceptNode(
+  'ss6_h3': const ConceptNode(
     id: 'ss6_h3',
     subject: 'History',
     classLevel: 6,
@@ -4812,7 +4812,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the Citadel with the Lower Town']
   ),
 
-  'ss6_h4': ConceptNode(
+  'ss6_h4': const ConceptNode(
     id: 'ss6_h4',
     subject: 'History',
     classLevel: 6,
@@ -4850,7 +4850,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Vedic culture with Harappan culture']
   ),
 
-  'ss6_h5': ConceptNode(
+  'ss6_h5': const ConceptNode(
     id: 'ss6_h5',
     subject: 'History',
     classLevel: 6,
@@ -4888,7 +4888,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Magadha with Vajji systems']
   ),
 
-  'ss6_h6': ConceptNode(
+  'ss6_h6': const ConceptNode(
     id: 'ss6_h6',
     subject: 'History',
     classLevel: 6,
@@ -4926,7 +4926,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing the birth place of Buddha with the enlightenment place']
   ),
 
-  'ss6_h7': ConceptNode(
+  'ss6_h7': const ConceptNode(
     id: 'ss6_h7',
     subject: 'History',
     classLevel: 6,
@@ -4964,7 +4964,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Ashoka was the founder of the empire']
   ),
 
-  'ss6_h8': ConceptNode(
+  'ss6_h8': const ConceptNode(
     id: 'ss6_h8',
     subject: 'History',
     classLevel: 6,
@@ -5002,7 +5002,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking everyone in villages owned land']
   ),
 
-  'ss6_h9': ConceptNode(
+  'ss6_h9': const ConceptNode(
     id: 'ss6_h9',
     subject: 'History',
     classLevel: 6,
@@ -5040,7 +5040,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Buddhism didn\'t change over time']
   ),
 
-  'ss6_h10': ConceptNode(
+  'ss6_h10': const ConceptNode(
     id: 'ss6_h10',
     subject: 'History',
     classLevel: 6,
@@ -5078,7 +5078,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Harishena with Ravikirti (Chalukya poet)']
   ),
 
-  'ss6_h11': ConceptNode(
+  'ss6_h11': const ConceptNode(
     id: 'ss6_h11',
     subject: 'History',
     classLevel: 6,
@@ -5120,7 +5120,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
   // CLASS 6 SOCIAL SCIENCE (Geography - The Earth: Our Habitat)
   // ===========================================================================
 
-  'ss6_g1': ConceptNode(
+  'ss6_g1': const ConceptNode(
     id: 'ss6_g1',
     subject: 'Geography',
     classLevel: 6,
@@ -5158,7 +5158,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking Pluto is still a planet (it is a dwarf planet)']
   ),
 
-  'ss6_g2': ConceptNode(
+  'ss6_g2': const ConceptNode(
     id: 'ss6_g2',
     subject: 'Geography',
     classLevel: 6,
@@ -5196,7 +5196,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Latitudes with Longitudes']
   ),
 
-  'ss6_g3': ConceptNode(
+  'ss6_g3': const ConceptNode(
     id: 'ss6_g3',
     subject: 'Geography',
     classLevel: 6,
@@ -5234,7 +5234,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Forgetting the tilt while explaining seasons']
   ),
 
-  'ss6_g4': ConceptNode(
+  'ss6_g4': const ConceptNode(
     id: 'ss6_g4',
     subject: 'Geography',
     classLevel: 6,
@@ -5272,7 +5272,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Using wrong scale for small area maps']
   ),
 
-  'ss6_g5': ConceptNode(
+  'ss6_g5': const ConceptNode(
     id: 'ss6_g5',
     subject: 'Geography',
     classLevel: 6,
@@ -5310,7 +5310,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Isthmus with Strait']
   ),
 
-  'ss6_g6': ConceptNode(
+  'ss6_g6': const ConceptNode(
     id: 'ss6_g6',
     subject: 'Geography',
     classLevel: 6,
@@ -5348,7 +5348,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Thinking mountains are only found in cold places']
   ),
 
-  'ss6_g7': ConceptNode(
+  'ss6_g7': const ConceptNode(
     id: 'ss6_g7',
     subject: 'Geography',
     classLevel: 6,
@@ -5386,7 +5386,7 @@ final Map<String, ConceptNode> ncertDetailedContent = {
     commonMistakes: ['Confusing Arabian Sea with Bay of Bengal location']
   ),
 
-  'ss6_g8': ConceptNode(
+  'ss6_g8': const ConceptNode(
     id: 'ss6_g8',
     subject: 'Geography',
     classLevel: 6,

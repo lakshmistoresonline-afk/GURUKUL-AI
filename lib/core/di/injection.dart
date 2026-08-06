@@ -31,15 +31,18 @@ import '../../features/parent/domain/services/report_service.dart';
 final sl = GetIt.instance;
 
 Future<void> init() async {
+  debugPrint('DI: Registering Core...');
   // Core
   sl.registerLazySingleton(() => Logger());
   sl.registerLazySingleton(() => SecureStorageService());
   sl.registerLazySingleton(() => LocalStorageService());
   sl.registerLazySingleton(() => ThemeService(sl()));
 
+  debugPrint('DI: Getting encryption key...');
   final secureStorage = sl<SecureStorageService>();
   final encryptionKey = await secureStorage.getOrCreateHiveKey();
 
+  debugPrint('DI: Initializing LocalStorage...');
   final storageService = sl<LocalStorageService>();
   await storageService.init(encryptionKey);
 
@@ -47,10 +50,12 @@ Future<void> init() async {
   sl.registerLazySingleton(() => SyncService(sl(), sl(), firestore: FirebaseFirestore.instance));
   sl.registerLazySingleton(() => NotificationService(FirebaseMessaging.instance, sl()));
 
+  debugPrint('DI: Registering Auth...');
   // Features - Auth
   sl.registerLazySingleton(() => AuthRepository(firebaseAuth: FirebaseAuth.instance));
   sl.registerFactory(() => AuthBloc(sl()));
 
+  debugPrint('DI: Initializing Framework...');
   // Features - Curriculum
   final frameworkRepo = FrameworkRepository();
   await frameworkRepo.init();
@@ -60,23 +65,30 @@ Future<void> init() async {
   sl.registerLazySingleton(() => MasteryService());
   sl.registerLazySingleton(() => SpacedRepetitionService());
 
+  debugPrint('DI: Registering AI...');
   // Features - AI
   sl.registerLazySingleton(() => AiTutorService(AppConfig.geminiApiKey));
   sl.registerLazySingleton(() => AiInsightService(AppConfig.geminiApiKey));
   sl.registerLazySingleton(() => OcrService());
   sl.registerLazySingleton(() => VoiceService());
 
+  debugPrint('DI: Registering Gamification...');
   // Features - Gamification
   sl.registerLazySingleton(() => GamificationRepository(firestore: FirebaseFirestore.instance));
   sl.registerLazySingleton(() => MilestoneService());
 
+  debugPrint('DI: Registering Assessment...');
   // Features - Assessment
   sl.registerLazySingleton(() => QuMLParser());
   sl.registerLazySingleton(() => AssessmentEngine(sl(), sl()));
 
+  debugPrint('DI: Registering Reporting...');
   // Features - Reporting
   sl.registerLazySingleton(() => ReportService(sl()));
 
+  debugPrint('DI: Registering Coordinator...');
   // Coordinator
   sl.registerLazySingleton(() => LearningCoordinator(sl(), sl(), sl(), sl()));
+
+  debugPrint('DI: Initialization Complete.');
 }
