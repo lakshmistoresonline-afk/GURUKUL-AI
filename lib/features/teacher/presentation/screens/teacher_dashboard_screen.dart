@@ -1,107 +1,109 @@
 import 'package:flutter/material.dart';
-import '../../domain/models/assignment.dart';
-import '../../domain/models/class_report.dart';
+import 'package:fl_chart/fl_chart.dart';
+import 'detailed_analytics_screen.dart';
 
 class TeacherDashboardScreen extends StatelessWidget {
-  final String teacherName;
-  final List<Assignment> assignments;
-  final ClassReport? classReport;
-
-  const TeacherDashboardScreen({
-    super.key,
-    required this.teacherName,
-    required this.assignments,
-    this.classReport,
-  });
+  const TeacherDashboardScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Teacher Dashboard'),
-      ),
+      appBar: AppBar(title: const Text('Teacher Dashboard')),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Welcome, $teacherName', style: Theme.of(context).textTheme.headlineSmall),
-            const SizedBox(height: 20),
-            _buildSectionHeader(context, 'Active Assignments', () {}),
-            if (assignments.isEmpty)
-              const Center(child: Padding(padding: EdgeInsets.all(16.0), child: Text('No active assignments'))),
-            ...assignments.map((a) => _buildAssignmentCard(context, a)),
-            const SizedBox(height: 20),
-            _buildSectionHeader(context, 'Class Analytics', () {}),
-            if (classReport != null) _buildAnalyticsOverview(context, classReport!)
-            else const Center(child: Text('Loading analytics...')),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildClassOverview(),
+              const SizedBox(height: 32),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text('Subject Performance', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  TextButton(
+                    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const DetailedAnalyticsScreen())),
+                    child: const Text('View Reports'),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              _buildPerformanceChart(),
+              const SizedBox(height: 32),
+              const Text('Recent Assignments', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              const SizedBox(height: 16),
+              _buildAssignmentsList(),
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
-        label: const Text('New Assignment'),
+        label: const Text('Create Assignment'),
         icon: const Icon(Icons.add),
       ),
     );
   }
 
-  Widget _buildSectionHeader(BuildContext context, String title, VoidCallback onSeeAll) {
+  Widget _buildClassOverview() {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title, style: Theme.of(context).textTheme.titleLarge),
-        TextButton(onPressed: onSeeAll, child: const Text('See All')),
+        _buildSummaryBox('Class 6A', 'Grade', Colors.blue),
+        const SizedBox(width: 12),
+        _buildSummaryBox('42', 'Students', Colors.green),
+        const SizedBox(width: 12),
+        _buildSummaryBox('84%', 'Avg. Mastery', Colors.orange),
       ],
     );
   }
 
-  Widget _buildAssignmentCard(BuildContext context, Assignment assignment) {
-    return Card(
-      margin: const EdgeInsets.symmetric(vertical: 8),
-      child: ListTile(
-        title: Text(assignment.title),
-        subtitle: Text('Due: ${assignment.dueDate.day}/${assignment.dueDate.month}'),
-        trailing: const Icon(Icons.chevron_right),
-        onTap: () {},
-      ),
-    );
-  }
-
-  Widget _buildAnalyticsOverview(BuildContext context, ClassReport report) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
+  Widget _buildSummaryBox(String value, String label, Color color) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(color: color.withOpacity(0.12), borderRadius: BorderRadius.circular(16)),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildAnalyticRow('Total Students', '${report.totalStudents}'),
-            _buildAnalyticRow('Class Average Mastery', '${(report.averageMastery * 100).toStringAsFixed(1)}%'),
-            const SizedBox(height: 12),
-            const Text('AI Classroom Insight:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey)),
-            Text(report.aiInsight, style: Theme.of(context).textTheme.bodyMedium),
-            const SizedBox(height: 12),
-            const Text('Struggling Topics:', style: TextStyle(fontWeight: FontWeight.bold)),
-            Wrap(
-              spacing: 8,
-              children: report.strugglingTopics.map((t) => Chip(label: Text(t, style: const TextStyle(fontSize: 10)))).toList(),
-            ),
+            Text(value, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: color)),
+            Text(label, style: TextStyle(fontSize: 10, color: color.withOpacity(0.8))),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildAnalyticRow(String label, String value) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(label),
-          Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
-        ],
+  Widget _buildPerformanceChart() {
+    return SizedBox(
+      height: 200,
+      child: BarChart(
+        BarChartData(
+          titlesData: const FlTitlesData(show: false),
+          borderData: FlBorderData(show: false),
+          barGroups: [
+            BarChartGroupData(x: 0, barRods: [BarChartRodData(toY: 8, color: Colors.blue)]),
+            BarChartGroupData(x: 1, barRods: [BarChartRodData(toY: 6, color: Colors.green)]),
+            BarChartGroupData(x: 2, barRods: [BarChartRodData(toY: 9, color: Colors.purple)]),
+            BarChartGroupData(x: 3, barRods: [BarChartRodData(toY: 7, color: Colors.orange)]),
+          ],
+        ),
       ),
+    );
+  }
+
+  Widget _buildAssignmentsList() {
+    final list = [
+      {'title': 'Science: Living Organisms', 'submitted': '38/42'},
+      {'title': 'Math: Ratio & Proportion', 'submitted': '25/42'},
+    ];
+    return Column(
+      children: list.map((a) => Card(
+        margin: const EdgeInsets.only(bottom: 12),
+        child: ListTile(
+          title: Text(a['title']!),
+          subtitle: Text('Submitted: ${a['submitted']}'),
+          trailing: const Icon(Icons.analytics_outlined),
+        ),
+      )).toList(),
     );
   }
 }

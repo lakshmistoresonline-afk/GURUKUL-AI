@@ -32,4 +32,23 @@ class MilestoneService {
 
     return newlyUnlocked;
   }
+
+  bool isSubjectCompleted(String subject, List<Map<String, dynamic>> subjectChapters, List<Mastery> studentMastery) {
+    for (var chapter in subjectChapters) {
+      final mastery = studentMastery.firstWhere(
+        (m) => m.conceptId == chapter['id'],
+        orElse: () => Mastery(
+          studentId: '',
+          conceptId: '',
+          masteryScore: 0,
+          status: LearningStatus.notStarted,
+          lastReviewed: DateTime.now(),
+          attempts: 0,
+          timeSpent: Duration.zero
+        )
+      );
+      if (mastery.status != LearningStatus.mastered) return false;
+    }
+    return true;
+  }
 }

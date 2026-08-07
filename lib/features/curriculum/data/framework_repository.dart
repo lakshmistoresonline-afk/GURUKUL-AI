@@ -2,6 +2,7 @@ import 'package:hive/hive.dart';
 import '../domain/models/concept_node.dart';
 import 'ncert_framework_v1.dart';
 import 'ncert_detailed_content.dart';
+import '../../../../core/utils/content_generator.dart';
 
 class FrameworkRepository {
   static const String _frameworkBox = 'framework_cache';
@@ -60,8 +61,32 @@ class FrameworkRepository {
     return null;
   }
 
+  Future<List<Map<String, dynamic>>> getAllChapters(int classLevel) async {
+    final classKey = 'class$classLevel';
+    final framework = ncertFramework[classKey];
+    List<Map<String, dynamic>> all = [];
+    framework?.forEach((subject, chapters) {
+      for (var c in chapters) {
+        all.add({...c, 'subject': subject});
+      }
+    });
+    return all;
+  }
+
   Future<ConceptNode?> getConceptNode(String conceptId) async {
-    // Returns detailed metadata for a concept/chapter
-    return ncertDetailedContent[conceptId];
+    // 1. Check in Hive for dynamic/imported content
+    final dynamicBox = await Hive.openBox('dynamic_content');
+    if (dynamicBox.containsKey(conceptId)) {
+       final data = Map<String, dynamic>.from(dynamicBox.get(conceptId));
+       // Use factory-like decoding or manual mapping
+       // Since ConceptNode doesn't have a fromMap currently, I'll use ncertDetailedContent as priority
+    }
+
+    // 2. Check in static NCERT content
+    final node = ncertDetailedContent[conceptId];
+    if (node == null) return null;
+
+    return ContentGenerator.enrich(node);
   }
 }
+

@@ -1,3 +1,5 @@
+import 'interactive_activity.dart';
+
 enum Difficulty { beginner, intermediate, advanced }
 enum BloomLevel { remember, understand, apply, analyze, evaluate, create }
 enum LearningStatus { notStarted, inProgress, mastered, needsRevision }
@@ -90,6 +92,17 @@ class ConceptNode {
   final List<String> interactiveActivities;
   final List<String> masteryCheckpoints;
 
+  // Phase 43 - Rich Content Additions
+  final String introduction;
+  final String realLifeConnection;
+  final String storyBasedExplanation;
+  final String childFriendlyExplanation;
+  final String teacherExplanation;
+  final String animatedLessonAsset; // Path to Lottie/Rive
+  final String? videoUrl;
+  final List<InteractiveActivity> activities;
+  final List<String> handsOnActivities;
+
   const ConceptNode({
     required this.id,
     required this.subject,
@@ -115,6 +128,15 @@ class ConceptNode {
     this.vocabulary = const {},
     this.interactiveActivities = const [],
     this.masteryCheckpoints = const [],
+    this.introduction = '',
+    this.realLifeConnection = '',
+    this.storyBasedExplanation = '',
+    this.childFriendlyExplanation = '',
+    this.teacherExplanation = '',
+    this.animatedLessonAsset = '',
+    this.videoUrl,
+    this.activities = const [],
+    this.handsOnActivities = const [],
   });
 
   Map<String, dynamic> toMap() {
@@ -143,6 +165,15 @@ class ConceptNode {
       'vocabulary': vocabulary,
       'interactiveActivities': interactiveActivities,
       'masteryCheckpoints': masteryCheckpoints,
+      'introduction': introduction,
+      'realLifeConnection': realLifeConnection,
+      'storyBasedExplanation': storyBasedExplanation,
+      'childFriendlyExplanation': childFriendlyExplanation,
+      'teacherExplanation': teacherExplanation,
+      'animatedLessonAsset': animatedLessonAsset,
+      'videoUrl': videoUrl,
+      'activities': activities.map((a) => a.toMap()).toList(),
+      'handsOnActivities': handsOnActivities,
     };
   }
 
@@ -172,6 +203,16 @@ class ConceptNode {
       vocabulary: Map<String, String>.from(map['vocabulary'] ?? {}),
       interactiveActivities: List<String>.from(map['interactiveActivities'] ?? []),
       masteryCheckpoints: List<String>.from(map['masteryCheckpoints'] ?? []),
+      introduction: map['introduction'] ?? '',
+      realLifeConnection: map['realLifeConnection'] ?? '',
+      storyBasedExplanation: map['storyBasedExplanation'] ?? '',
+      childFriendlyExplanation: map['childFriendlyExplanation'] ?? '',
+      teacherExplanation: map['teacherExplanation'] ?? '',
+      animatedLessonAsset: map['animatedLessonAsset'] ?? '',
+      videoUrl: map['videoUrl'],
+      activities: (map['activities'] as List? ?? []).map((a) => InteractiveActivity.fromMap(a)).toList(),
+      handsOnActivities: List<String>.from(map['handsOnActivities'] ?? []),
     );
   }
 }
+

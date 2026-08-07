@@ -5,6 +5,7 @@ import 'app.dart';
 import 'firebase_options.dart';
 import 'core/di/injection.dart' as di;
 import 'core/notifications/notification_service.dart';
+import 'core/telemetry/telemetry_sync_worker.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,14 +29,18 @@ void main() async {
     await di.init();
     debugPrint('DI initialized.');
 
-    // Initialize Notifications
-    try {
-      debugPrint('Initializing Notifications...');
-      await di.sl<NotificationService>().init();
-      debugPrint('Notifications initialized.');
-    } catch (e) {
+    // Initialize Notifications (Non-blocking)
+    debugPrint('Starting Notification initialization (Async)...');
+    di.sl<NotificationService>().init().then((_) {
+      debugPrint('Notifications initialized successfully.');
+    }).catchError((e) {
       debugPrint('Notification initialization failed: $e');
-    }
+    });
+
+    // Initialize Background Sync
+    debugPrint('Starting Telemetry Sync Worker...');
+    di.sl<TelemetrySyncWorker>().start();
+
   } catch (e, stack) {
     debugPrint('CRITICAL Initialization error: $e');
     debugPrint('Stack trace: $stack');

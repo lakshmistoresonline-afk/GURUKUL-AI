@@ -55,4 +55,28 @@ class TelemetryService {
   void logInteract({required String id, required String type, required String pageId}) {
     logEvent(eid: 'INTERACT', edata: {'id': id, 'type': type, 'pageid': pageId});
   }
+
+  void logStart({required String type, required String id, Map<String, dynamic>? cdata}) {
+    logEvent(eid: 'START', edata: {'type': type, 'id': id, 'cdata': cdata});
+  }
+
+  void logEnd({required String type, required String id, Map<String, dynamic>? summary}) {
+    logEvent(eid: 'END', edata: {'type': type, 'id': id, 'summary': summary});
+  }
+
+  void logAssess({
+    required String item,
+    required String pass,
+    required double score,
+    required int reslength,
+    required List<Map<String, dynamic>> res,
+  }) {
+    logEvent(eid: 'ASSESS', edata: {
+      'item': item,
+      'pass': pass,
+      'score': score,
+      'reslength': reslength,
+      'res': res,
+    });
+  }
 }

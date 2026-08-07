@@ -21,13 +21,20 @@ class ThemeService {
   /// Returns a primary color based on the NCERT subject for better context.
   Color getSubjectColor(String subject) {
     switch (subject.toLowerCase()) {
-      case 'mathematics': return Colors.blue;
-      case 'science': return Colors.green;
-      case 'evs': return Colors.teal;
-      case 'english': return Colors.orange;
-      case 'hindi': return Colors.red;
-      case 'social science': return Colors.brown;
-      default: return Colors.deepPurple;
+      case 'mathematics':
+        return const Color(0xB22563EB); // Modern Blue
+      case 'science':
+        return const Color(0xFF8B5CF6); // Modern Purple
+      case 'evs':
+        return const Color(0xFF10B981); // Modern Green
+      case 'english':
+        return const Color(0xFF6366F1); // Modern Indigo
+      case 'hindi':
+        return const Color(0xFFF59E0B); // Modern Orange
+      case 'social science':
+        return const Color(0xFF78350F); // Modern Brown
+      default:
+        return const Color(0xFF2563EB); // Primary Blue
     }
   }
 }

@@ -129,13 +129,22 @@ Use the Socratic method.
 
   Future<String> getHelp({
     required String userQuery,
-    required ConceptNode concept,
-    required Mastery mastery,
+    ConceptNode? concept,
+    Mastery? mastery,
     List<Mastery>? prerequisiteMastery,
     String language = 'en',
   }) async {
     final sanitizedQuery = InputValidationUtil.sanitizeText(userQuery);
     if (sanitizedQuery.isEmpty) return "Please ask a question so I can help you!";
+
+    if (concept == null) {
+      final prompt = '''
+You are Gurukul AI, a highly intelligent and empathetic Socratic tutor for NCERT Class 5 and 6 students.
+The student is asking a general question: "$sanitizedQuery"
+Respond in English, keeping the language simple. If the student asks about a specific subject like Math or Science, try to guide them using NCERT principles.
+''';
+      return _generate(prompt);
+    }
 
     final prereqsStatus = prerequisiteMastery != null
         ? prerequisiteMastery.map((m) => '${m.conceptId}: ${(m.masteryScore * 100).toStringAsFixed(0)}%').join(', ')
@@ -157,7 +166,7 @@ Guide the student to understand "${concept.topic}" without directly giving away 
 ### STUDENT CONTEXT
 - Subject: ${concept.subject}
 - Target Concept: ${concept.topic} - ${concept.subtopic}
-- Current Mastery of this Concept: ${(mastery.masteryScore * 100).toStringAsFixed(0)}%
+- Current Mastery of this Concept: ${mastery != null ? (mastery.masteryScore * 100).toStringAsFixed(0) : '0'}%
 - Mastery of Prerequisites: $prereqsStatus
 
 ### NCERT BOUNDARIES
@@ -177,9 +186,87 @@ Guide the student to understand "${concept.topic}" without directly giving away 
     return _generate(prompt);
   }
 
+  Future<Map<String, dynamic>> evaluateAnswer({
+    required String question,
+    required String studentAnswer,
+    required String modelAnswer,
+  }) async {
+    final prompt = '''
+You are an expert NCERT evaluator. Evaluate the following student answer:
+Question: "$question"
+Model Answer: "$modelAnswer"
+Student Answer: "$studentAnswer"
+
+Instructions:
+1. Provide a marks score out of 5.
+2. List "Missing Points" that the student should have included.
+3. Suggest "Improvement Tips" for better presentation or grammar.
+4. Provide a very encouraging comment.
+
+Return the result in JSON format:
+{
+  "score": number,
+  "missingPoints": ["point 1", "point 2"],
+  "improvementTips": ["tip 1", "tip 2"],
+  "feedback": "string"
+}
+''';
+    final response = await _generate(prompt);
+    return {'rawResponse': response};
+  }
+
+  Future<Map<String, dynamic>> lookupWord(String word, String context) async {
+    final prompt = '''
+Provide a simple dictionary entry for a Class 5-6 student:
+Word: "$word"
+Context: "$context"
+
+Include:
+1. Meaning (simple words)
+2. Example sentence
+3. Fun memory trick to remember it.
+
+Return as JSON:
+{
+  "meaning": "...",
+  "example": "...",
+  "memoryTrick": "..."
+}
+''';
+    final response = await _generate(prompt);
+    return {'rawResponse': response};
+  }
+
+  Future<String> summarizeNotes(String content) async {
+    final prompt = '''
+Summarize these student notes into a structured "Smart Summary":
+Content: "$content"
+
+Instructions:
+1. Use bullet points.
+2. Highlight the 3 most important takeaways.
+3. Keep it very child-friendly.
+''';
+    return _generate(prompt);
+  }
+
+  Future<String> generateMindMapMarkdown(String topic) async {
+    final prompt = '''
+Generate a PlantUML or simple Markdown-based Mind Map structure for:
+Topic: "$topic"
+
+Instructions:
+1. Root is the topic.
+2. Branches are sub-topics.
+3. Keep it simple for a child.
+''';
+    return _generate(prompt);
+  }
+
   Future<String> _generate(String prompt) async {
     final content = [Content.text(prompt)];
     final response = await _model.generateContent(content);
-    return response.text ?? "I'm sorry, I'm having trouble thinking right now. Please try again later.";
+    return response.text ??
+        "I'm sorry, I'm having trouble thinking right now. Please try again later.";
   }
 }
