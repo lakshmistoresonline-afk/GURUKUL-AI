@@ -1,5 +1,4 @@
 import '../../curriculum/domain/models/concept_node.dart';
-import '../../curriculum/domain/models/mastery.dart';
 import '../../../core/telemetry/telemetry_service.dart';
 import '../../../core/storage/local_storage_service.dart';
 import 'models/question.dart';

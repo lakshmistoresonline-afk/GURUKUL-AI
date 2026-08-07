@@ -43,6 +43,14 @@ import '../../features/gamification/domain/services/daily_challenge_service.dart
 import '../../features/content/data/modular_lesson_generator.dart';
 import '../../features/content/data/learning_outcomes_repository.dart';
 import '../../features/content/data/ai_batch_factory_service.dart';
+import '../../features/content_acquisition/repositories/content_acquisition_repository.dart';
+import '../../features/content_acquisition/services/repository_scanner_service.dart';
+import '../../features/content_acquisition/services/pdf_processor_service.dart';
+import '../../features/content_acquisition/services/chapter_builder_service.dart';
+import '../../features/content_acquisition/services/asset_processor_service.dart';
+import '../../features/content_acquisition/services/ai_pipeline_service.dart';
+import '../../features/content_acquisition/services/validation_engine.dart';
+import '../../features/content_acquisition/controllers/acquisition_bloc.dart';
 
 final sl = GetIt.instance;
 
@@ -62,7 +70,7 @@ Future<void> init() async {
 
   sl.registerLazySingleton(() => TelemetryService(sl(), sl()));
   sl.registerLazySingleton(() => TelemetrySyncWorker(sl(), FirebaseFirestore.instance));
-  sl.registerLazySingleton(() => SyncService(sl(), sl(), firestore: FirebaseFirestore.instance));
+  sl.registerLazySingleton(() => SyncService(sl(), firestore: FirebaseFirestore.instance));
   sl.registerLazySingleton(() => NotificationService(FirebaseMessaging.instance, sl()));
 
   debugPrint('DI: Registering Auth...');
@@ -71,13 +79,21 @@ Future<void> init() async {
 
   debugPrint('DI: Registering Curriculum...');
   sl.registerLazySingleton(() => LessonMediaRepository());
-  final frameworkRepo = FrameworkRepository();
-  await frameworkRepo.init();
-  sl.registerLazySingleton(() => frameworkRepo);
   sl.registerLazySingleton(() => MasteryRepository(firestore: FirebaseFirestore.instance));
   sl.registerLazySingleton(() => RecommendationService());
   sl.registerLazySingleton(() => MasteryService());
   sl.registerLazySingleton(() => SpacedRepetitionService());
+
+  final frameworkRepo = FrameworkRepository();
+  try {
+    debugPrint('DI: Initializing FrameworkRepository...');
+    await frameworkRepo.init();
+  } catch (e) {
+    debugPrint('WARNING: FrameworkRepository initialization failed: $e');
+    // We still register it so the app doesn't crash on DI lookup,
+    // though features depending on it might show empty states.
+  }
+  sl.registerLazySingleton(() => frameworkRepo);
 
   debugPrint('DI: Registering AI...');
   sl.registerLazySingleton(() => AiTutorService(AppConfig.geminiApiKey));
@@ -110,6 +126,18 @@ Future<void> init() async {
 
   sl.registerLazySingleton(() => ReportService(sl()));
   sl.registerLazySingleton(() => LearningCoordinator(sl(), sl(), sl(), sl()));
+
+  debugPrint('DI: Registering Content Acquisition...');
+  sl.registerLazySingleton(() => ContentAcquisitionRepository());
+  sl.registerLazySingleton(() => RepositoryScannerService());
+  sl.registerLazySingleton(() => PDFProcessorService());
+  sl.registerLazySingleton(() => ChapterBuilderService());
+  sl.registerLazySingleton(() => AssetProcessorService());
+  sl.registerLazySingleton(() => AIPipelineService(sl()));
+  sl.registerLazySingleton(() => ValidationEngine());
+  sl.registerLazySingleton(() => ManifestService());
+  sl.registerLazySingleton(() => SearchIndexService());
+  sl.registerFactory(() => AcquisitionBloc());
 
   debugPrint('DI: Initialization Complete.');
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 import '../../../../core/widgets/content/interactive_player.dart';
 import '../../../../core/di/injection.dart';
 import '../../../../core/telemetry/telemetry_service.dart';
-import '../../../../core/telemetry/telemetry_constants.dart';
 
 enum ContentType { pdf, html, video }
 

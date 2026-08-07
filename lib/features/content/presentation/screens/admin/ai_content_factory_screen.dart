@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/di/injection.dart';
-import '../../../../../core/theme/design_system.dart';
+import 'package:project_gurukul_ai/core/theme/design_system.dart';
 import 'package:project_gurukul_ai/features/content/data/ai_batch_factory_service.dart';
 
 class AiContentFactoryScreen extends StatefulWidget {

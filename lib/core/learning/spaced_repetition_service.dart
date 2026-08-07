@@ -50,7 +50,6 @@ class SpacedRepetitionService {
   }
 
   List<String> getConceptsToRevise(List<Mastery> masteryList) {
-    final now = DateTime.now();
     return masteryList
         .where((m) => m.status == LearningStatus.needsRevision ||
                      isRevisionDue(m))

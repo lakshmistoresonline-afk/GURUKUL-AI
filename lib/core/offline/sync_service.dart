@@ -1,14 +1,12 @@
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../storage/local_storage_service.dart';
 import '../telemetry/telemetry_service.dart';
 
 class SyncService {
-  final LocalStorageService _storage;
   final TelemetryService _telemetry;
   final FirebaseFirestore _firestore;
 
-  SyncService(this._storage, this._telemetry, {FirebaseFirestore? firestore})
+  SyncService(this._telemetry, {FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
 
   Future<void> syncOfflineData() async {

@@ -45,7 +45,7 @@ class LearningJourneyTracker extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: isCompleted ? DesignSystem.accent : (isCurrent ? DesignSystem.primary : DesignSystem.background),
-                          border: isCurrent ? Border.all(color: DesignSystem.primary.withOpacity(0.3), width: 4) : null,
+                          border: isCurrent ? Border.all(color: DesignSystem.primary.withValues(alpha: 0.3), width: 4) : null,
                         ),
                         child: Icon(
                           isCompleted ? Icons.check : (isCurrent ? Icons.auto_awesome : Icons.lock_outline),

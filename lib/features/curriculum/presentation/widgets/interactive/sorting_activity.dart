@@ -79,9 +79,9 @@ class _SortingActivityState extends State<SortingActivity> {
       width: 150,
       height: 200,
       decoration: BoxDecoration(
-        color: DesignSystem.primary.withOpacity(0.05),
+        color: DesignSystem.primary.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: DesignSystem.primary.withOpacity(0.2)),
+        border: Border.all(color: DesignSystem.primary.withValues(alpha: 0.2)),
       ),
       child: Column(
         children: [

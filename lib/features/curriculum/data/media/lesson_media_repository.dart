@@ -5,12 +5,12 @@ import '../../domain/models/media/lesson_media.dart';
 import 'package:path/path.dart' as p;
 
 class LessonMediaRepository {
-  final String _root = 'D:/GURUKUL-AI/content_repository';
+  final String _root = 'D:/GURUKUL-AI/datasets/processed/chapters';
 
   Future<LessonMedia?> getMediaForChapter(String chapterId) async {
     // 1. Determine path (similar logic to FrameworkRepository)
     // For simplicity, search in the repository
-    final curriculumDir = Directory(p.join(_root, 'curriculum'));
+    final curriculumDir = Directory(_root);
     if (!await curriculumDir.exists()) return null;
 
     final suffix = chapterId.split('_').last;

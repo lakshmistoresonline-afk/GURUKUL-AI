@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_gurukul_ai/core/theme/design_system.dart';
 import 'package:project_gurukul_ai/features/content/data/pdf_text_extractor_service.dart';
 import 'package:project_gurukul_ai/features/content/data/ai_content_factory.dart';
 import 'package:project_gurukul_ai/core/di/injection.dart';

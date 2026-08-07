@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class LocalizationService {
   static const Map<String, Map<String, String>> _localizedValues = {

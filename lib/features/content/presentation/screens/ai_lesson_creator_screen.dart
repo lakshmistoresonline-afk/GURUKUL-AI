@@ -3,7 +3,6 @@ import 'package:file_picker/file_picker.dart';
 import '../../../../core/di/injection.dart';
 import '../../data/pdf_text_extractor_service.dart';
 import '../../data/ai_content_factory.dart';
-import '../../../curriculum/domain/models/concept_node.dart';
 import '../../../curriculum/presentation/screens/learning_journey_screen.dart';
 
 class AiLessonCreatorScreen extends StatefulWidget {

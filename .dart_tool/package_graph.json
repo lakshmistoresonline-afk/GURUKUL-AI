@@ -11,6 +11,7 @@
         "chewie",
         "cloud_firestore",
         "cloud_functions",
+        "crypto",
         "file_picker",
         "firebase_auth",
         "firebase_core",
@@ -329,6 +330,13 @@
         "path_parsing",
         "vector_math",
         "xml"
+      ]
+    },
+    {
+      "name": "crypto",
+      "version": "3.0.7",
+      "dependencies": [
+        "typed_data"
       ]
     },
     {
@@ -809,13 +817,6 @@
         "path",
         "pub_semver",
         "source_span"
-      ]
-    },
-    {
-      "name": "crypto",
-      "version": "3.0.7",
-      "dependencies": [
-        "typed_data"
       ]
     },
     {
@@ -1319,6 +1320,13 @@
       ]
     },
     {
+      "name": "typed_data",
+      "version": "1.4.0",
+      "dependencies": [
+        "collection"
+      ]
+    },
+    {
       "name": "speech_to_text_windows",
       "version": "1.0.1",
       "dependencies": [
@@ -1728,13 +1736,6 @@
         "json_annotation",
         "source_span",
         "yaml"
-      ]
-    },
-    {
-      "name": "typed_data",
-      "version": "1.4.0",
-      "dependencies": [
-        "collection"
       ]
     },
     {

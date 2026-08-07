@@ -8,6 +8,7 @@ import 'package:project_gurukul_ai/features/curriculum/presentation/screens/lear
 
 import 'package:project_gurukul_ai/features/questions/presentation/screens/question_center_screen.dart';
 import 'package:project_gurukul_ai/features/student/presentation/screens/flashcards_screen.dart';
+import 'package:project_gurukul_ai/features/ai/presentation/screens/ai_tutor_chat_screen.dart';
 
 class ChapterDashboardScreen extends StatefulWidget {
   final String chapterId;
@@ -108,7 +109,9 @@ class _ChapterDashboardScreenState extends State<ChapterDashboardScreen> with Si
       ),
       bottomNavigationBar: _ResourcesBottomPanel(concept: _concept!, color: color, subject: widget.subject),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (_) => AiTutorChatScreen(concept: _concept)));
+        },
         backgroundColor: Colors.indigo,
         child: const Icon(Icons.smart_toy, color: Colors.white),
       ),
@@ -281,7 +284,9 @@ class _TopicsTab extends StatelessWidget {
             title: Text('Concept Topic ${index + 1}', style: const TextStyle(fontWeight: FontWeight.bold)),
             subtitle: const Text('Key subtopics and examples', style: TextStyle(fontSize: 12)),
             trailing: const Icon(Icons.play_circle_outline, color: DesignSystem.textTertiary),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
+            },
           ),
         );
       },
@@ -315,7 +320,9 @@ class _ContentListTab extends StatelessWidget {
             title: Text(items[index]['title']!),
             subtitle: Text('Duration: ${items[index]['duration']}'),
             trailing: const Icon(Icons.arrow_forward_ios, size: 14),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
+            },
           ),
         );
       },
@@ -352,8 +359,12 @@ class _ResourcesBottomPanel extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _ResourceBtn('Practice', Icons.edit_note, Colors.blue, () {}),
-              _ResourceBtn('Quiz', Icons.quiz_outlined, Colors.orange, () {}),
+              _ResourceBtn('Practice', Icons.edit_note, Colors.blue, () {
+                 Navigator.push(context, MaterialPageRoute(builder: (_) => QuestionCenterScreen(classLevel: concept.classLevel, subject: subject)));
+              }),
+              _ResourceBtn('Quiz', Icons.quiz_outlined, Colors.orange, () {
+                 Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
+              }),
               _ResourceBtn('Flashcards', Icons.style_outlined, Colors.pink, () {
                 Navigator.push(context, MaterialPageRoute(builder: (_) => FlashcardsScreen(subject: subject, chapterId: concept.id)));
               }),

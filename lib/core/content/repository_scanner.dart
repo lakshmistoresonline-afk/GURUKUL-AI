@@ -10,7 +10,7 @@ class RepositoryScanner {
 
   Future<Map<String, dynamic>> scanCurriculum() async {
     final Map<String, dynamic> framework = {};
-    final curriculumDir = Directory(p.join(rootPath, 'curriculum'));
+    final curriculumDir = Directory(rootPath);
 
     if (!await curriculumDir.exists()) {
       debugPrint('RepositoryScanner: Curriculum directory not found at ${curriculumDir.path}');
@@ -49,7 +49,7 @@ class RepositoryScanner {
     final classDirName = 'class_${classLevel.padLeft(2, '0')}';
     // Mapping chapterId (e.g. m5_c1) to folder name (e.g. chapter_c1)
     final chapterFolderSuffix = chapterId.split('_').last;
-    final path = p.join(rootPath, 'curriculum', classDirName, subject.toLowerCase(), 'chapters', 'chapter_$chapterFolderSuffix', 'lesson.json');
+    final path = p.join(rootPath, classDirName, subject.toLowerCase(), 'chapters', 'chapter_$chapterFolderSuffix', 'lesson.json');
 
     final file = File(path);
     if (await file.exists()) {
@@ -64,7 +64,7 @@ class RepositoryScanner {
     int missingMedia = 0;
     List<String> brokenReferences = [];
 
-    final curriculumDir = Directory(p.join(rootPath, 'curriculum'));
+    final curriculumDir = Directory(rootPath);
     if (await curriculumDir.exists()) {
       final allFiles = curriculumDir.listSync(recursive: true);
       for (var entity in allFiles) {

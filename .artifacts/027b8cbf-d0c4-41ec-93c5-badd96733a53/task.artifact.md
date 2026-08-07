@@ -1,0 +1,8 @@
+- `[x]` Analyze repository for obsolete data
+- `[x]` Create new `datasets/` structure with READMEs and .gitkeeps
+- `[x]` Migrate data from `content_repository` to `datasets/`
+- `[x]` Delete obsolete/empty folders
+- `[x]` Update hardcoded paths in `lib/` for compatibility
+- `[x]` Generate documentation reports
+- `[x]` Validate implementation (Build, Tests, Runtime)
+- `[x]` Final Health Check and AI Pipeline Readiness

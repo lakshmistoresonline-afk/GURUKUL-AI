@@ -24,8 +24,14 @@ class DailyChallengeCard extends StatelessWidget {
             children: [
               const Icon(Icons.bolt, color: Colors.white, size: 24),
               const SizedBox(width: DesignSystem.spacingSm),
-              Text('DAILY CHALLENGE', style: DesignSystem.labelSmall.copyWith(color: Colors.white70)),
-              const Spacer(),
+              Expanded(
+                child: Text(
+                  'DAILY CHALLENGE',
+                  style: DesignSystem.labelSmall.copyWith(color: Colors.white70),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+              const SizedBox(width: DesignSystem.spacingSm),
               const Text('12h left', style: TextStyle(color: Colors.white60, fontSize: 11)),
             ],
           ),

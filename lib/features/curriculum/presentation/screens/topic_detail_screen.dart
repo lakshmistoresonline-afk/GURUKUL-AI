@@ -252,10 +252,10 @@ class _TopicDetailScreenState extends State<TopicDetailScreen> with SingleTicker
                 width: 280,
                 margin: const EdgeInsets.only(right: 16),
                 child: Card(
-                  color: subjectColor.withOpacity(0.05),
+                  color: subjectColor.withValues(alpha: 0.05),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(24),
-                    side: BorderSide(color: subjectColor.withOpacity(0.2)),
+                    side: BorderSide(color: subjectColor.withValues(alpha: 0.2)),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(24),

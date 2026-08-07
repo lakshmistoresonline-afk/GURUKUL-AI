@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:flutter/foundation.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import '../../curriculum/domain/models/concept_node.dart';
 import '../../curriculum/domain/models/interactive_activity.dart';

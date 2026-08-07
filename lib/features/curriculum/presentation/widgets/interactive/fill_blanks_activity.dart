@@ -51,7 +51,7 @@ class _FillBlanksActivityState extends State<FillBlanksActivity> {
                   margin: const EdgeInsets.symmetric(horizontal: 8),
                   decoration: BoxDecoration(
                     border: Border(bottom: BorderSide(color: DesignSystem.primary, width: 2)),
-                    color: _userAnswers[blankIndex] != null ? DesignSystem.primary.withOpacity(0.1) : Colors.transparent,
+                    color: _userAnswers[blankIndex] != null ? DesignSystem.primary.withValues(alpha: 0.1) : Colors.transparent,
                   ),
                   child: Center(child: Text(_userAnswers[blankIndex] ?? '', style: const TextStyle(fontWeight: FontWeight.bold))),
                 ),

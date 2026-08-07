@@ -61,7 +61,7 @@ class CommandCenterGrid extends StatelessWidget {
                 border: Border.all(color: DesignSystem.border),
                 boxShadow: [
                   BoxShadow(
-                    color: action.color.withOpacity(0.1),
+                    color: action.color.withValues(alpha: 0.1),
                     blurRadius: 10,
                     offset: const Offset(0, 4),
                   ),

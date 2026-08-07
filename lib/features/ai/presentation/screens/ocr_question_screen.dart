@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../../core/di/injection.dart';
 import '../../data/ocr_service.dart';
-import '../../data/ai_tutor_service.dart';
 import '../../../curriculum/domain/models/concept_node.dart';
 import '../../../curriculum/domain/models/mastery.dart';
 import 'ai_tutor_chat_screen.dart';

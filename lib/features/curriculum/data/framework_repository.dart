@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 import '../domain/models/concept_node.dart';
 import '../../../../core/content/repository_scanner.dart';
-import '../../../../core/utils/content_generator.dart';
 
 class FrameworkRepository {
   static const String _frameworkBox = 'framework_cache';
@@ -14,10 +13,19 @@ class FrameworkRepository {
   Future<void> init() async {
     await Hive.openBox(_frameworkBox);
     // In production, this path would be determined dynamically
-    // For now, we use the local project path
-    final root = 'D:/GURUKUL-AI/content_repository';
+    // For now, we use the local project path.
+    // On Web or if the directory doesn't exist, we skip scanning.
+    const root = 'D:/GURUKUL-AI/datasets/processed/chapters';
     _scanner = RepositoryScanner(rootPath: root);
-    await refresh();
+
+    if (!kIsWeb && await Directory(root).exists()) {
+      await refresh();
+    } else {
+      debugPrint('FrameworkRepository: Skipping scan (Web or directory missing)');
+      // Try to load from Hive cache if available
+      final box = Hive.box(_frameworkBox);
+      _framework = Map<String, dynamic>.from(box.get('full_framework', defaultValue: <String, dynamic>{}));
+    }
   }
 
   Future<void> refresh() async {
@@ -112,7 +120,7 @@ class FrameworkRepository {
     // 2. Persist to local Content Repository if possible
     final foundClass = node.classLevel.toString().padLeft(2, '0');
     final chapterFolderSuffix = node.id.split('_').last;
-    final chapterDir = 'D:/GURUKUL-AI/content_repository/curriculum/class_$foundClass/${node.subject.toLowerCase()}/chapters/chapter_$chapterFolderSuffix';
+    final chapterDir = 'D:/GURUKUL-AI/datasets/processed/chapters/class_$foundClass/${node.subject.toLowerCase()}/chapters/chapter_$chapterFolderSuffix';
 
     final dir = Directory(chapterDir);
     if (await dir.exists()) {

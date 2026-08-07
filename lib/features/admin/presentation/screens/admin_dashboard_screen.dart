@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_gurukul_ai/features/content_acquisition/screens/acquisition_dashboard_screen.dart';
 
 class AdminDashboardScreen extends StatelessWidget {
   const AdminDashboardScreen({super.key});
@@ -15,22 +16,27 @@ class AdminDashboardScreen extends StatelessWidget {
         crossAxisSpacing: 16,
         mainAxisSpacing: 16,
         children: [
-          _buildAdminCard(context, 'User Management', Icons.people, Colors.blue),
-          _buildAdminCard(context, 'Content Manager', Icons.library_books, Colors.green),
-          _buildAdminCard(context, 'System Reports', Icons.analytics, Colors.orange),
-          _buildAdminCard(context, 'Notifications', Icons.notifications, Colors.red),
-          _buildAdminCard(context, 'App Config', Icons.settings, Colors.grey),
-          _buildAdminCard(context, 'Audit Logs', Icons.list_alt, Colors.brown),
+          _buildAdminCard(context, 'Content Acquisition', Icons.cloud_download, Colors.purple, () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const AcquisitionDashboardScreen()),
+            );
+          }),
+          _buildAdminCard(context, 'User Management', Icons.people, Colors.blue, () {}),
+          _buildAdminCard(context, 'Content Manager', Icons.library_books, Colors.green, () {}),
+          _buildAdminCard(context, 'System Reports', Icons.analytics, Colors.orange, () {}),
+          _buildAdminCard(context, 'Notifications', Icons.notifications, Colors.red, () {}),
+          _buildAdminCard(context, 'App Config', Icons.settings, Colors.grey, () {}),
         ],
       ),
     );
   }
 
-  Widget _buildAdminCard(BuildContext context, String title, IconData icon, Color color) {
+  Widget _buildAdminCard(BuildContext context, String title, IconData icon, Color color, VoidCallback onTap) {
     return Card(
       elevation: 2,
       child: InkWell(
-        onTap: () {},
+        onTap: onTap,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

@@ -4,7 +4,7 @@ The automated acquisition of external content has failed because these providers
 
 ## 1. Manual Resource Procurement
 
-| Resource | Source | Destination in `/content_repository/` |
+| Resource | Source | Destination in `/datasets/` |
 | :--- | :--- | :--- |
 | **Class 5/6 PDFs** | [NCERT ePathshala](https://ncert.nic.in/textbook.php) | `/curriculum/class_XX/subject/textbook/` |
 | **Explainer Videos** | [DIKSHA](https://diksha.gov.in/) | `/multimedia/videos/mp4/` |

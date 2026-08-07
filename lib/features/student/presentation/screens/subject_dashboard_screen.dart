@@ -9,6 +9,7 @@ import 'package:project_gurukul_ai/features/student/presentation/screens/chapter
 
 import 'package:project_gurukul_ai/features/questions/presentation/screens/question_center_screen.dart';
 import 'package:project_gurukul_ai/features/student/presentation/screens/flashcards_screen.dart';
+import 'package:project_gurukul_ai/features/curriculum/presentation/screens/mind_map_screen.dart';
 
 class SubjectDashboardScreen extends StatefulWidget {
   final int classLevel;
@@ -312,10 +313,18 @@ class _CommandCenter extends StatelessWidget {
           icon: a['icon'] as IconData,
           color: a['color'] as Color,
           onTap: () {
-            if (a['label'] == 'Question Centre') {
+            if (a['label'] == 'Question Centre' || a['label'] == 'Practice') {
               Navigator.push(context, MaterialPageRoute(builder: (_) => QuestionCenterScreen(classLevel: classLevel, subject: subject)));
             } else if (a['label'] == 'Flashcards') {
               Navigator.push(context, MaterialPageRoute(builder: (_) => FlashcardsScreen(subject: subject)));
+            } else if (a['label'] == 'Mind Maps') {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => MindMapScreen(
+                topic: subject,
+                branches: const ['Concepts', 'Formulas', 'Theorems', 'Real-world Applications', 'Practice Questions'],
+              )));
+            } else if (a['label'] == 'AI Tutor') {
+              // Navigation to AI Tutor tab is usually handled via bottom nav,
+              // but we can push the standalone chat screen here too.
             }
           },
         );

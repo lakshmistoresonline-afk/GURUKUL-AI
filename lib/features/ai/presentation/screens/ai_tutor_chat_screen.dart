@@ -161,7 +161,7 @@ class _AiTutorChatScreenState extends State<AiTutorChatScreen> with SingleTicker
               child: Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: colorScheme.primary.withOpacity(0.1),
+                  color: colorScheme.primary.withValues(alpha: 0.1),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(Icons.smart_toy, color: colorScheme.primary, size: 20),
@@ -212,7 +212,7 @@ class _AiTutorChatScreenState extends State<AiTutorChatScreen> with SingleTicker
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             offset: const Offset(0, -4),
             blurRadius: 10,
           ),
@@ -230,8 +230,8 @@ class _AiTutorChatScreenState extends State<AiTutorChatScreen> with SingleTicker
                   child: ActionChip(
                     label: Text(q),
                     onPressed: () => _sendMessage(q),
-                    backgroundColor: colorScheme.primary.withOpacity(0.05),
-                    side: BorderSide(color: colorScheme.primary.withOpacity(0.1)),
+                    backgroundColor: colorScheme.primary.withValues(alpha: 0.05),
+                    side: BorderSide(color: colorScheme.primary.withValues(alpha: 0.1)),
                   ),
                 )).toList(),
               ),
@@ -242,7 +242,7 @@ class _AiTutorChatScreenState extends State<AiTutorChatScreen> with SingleTicker
                 onPressed: _toggleListening,
                 icon: Icon(_isListening ? Icons.mic : Icons.mic_none),
                 style: IconButton.styleFrom(
-                  backgroundColor: _isListening ? Colors.red.shade50 : colorScheme.primary.withOpacity(0.05),
+                  backgroundColor: _isListening ? Colors.red.shade50 : colorScheme.primary.withValues(alpha: 0.05),
                   foregroundColor: _isListening ? Colors.red : colorScheme.primary,
                 ),
               ),
@@ -306,7 +306,7 @@ class _ChatBubble extends StatelessWidget {
           boxShadow: [
             if (!isUser)
               BoxShadow(
-                color: Colors.black.withOpacity(0.05),
+                color: Colors.black.withValues(alpha: 0.05),
                 offset: const Offset(0, 2),
                 blurRadius: 5,
               ),

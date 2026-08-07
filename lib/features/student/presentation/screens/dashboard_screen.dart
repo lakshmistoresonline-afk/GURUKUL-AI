@@ -17,6 +17,8 @@ import 'package:project_gurukul_ai/core/telemetry/telemetry_service.dart';
 import 'package:project_gurukul_ai/features/student/presentation/screens/progress_dashboard_screen.dart';
 import 'package:project_gurukul_ai/core/theme/theme_service.dart';
 
+import 'package:project_gurukul_ai/features/admin/presentation/screens/admin_dashboard_screen.dart';
+
 class DashboardScreen extends StatefulWidget {
   final int classLevel;
   const DashboardScreen({super.key, required this.classLevel});
@@ -242,8 +244,89 @@ class _DashboardBottomNav extends StatelessWidget {
 
 class _ProfileTab extends StatelessWidget {
   const _ProfileTab();
+
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('Profile Screen - Implementation in Progress'));
+    final authState = context.read<AuthBloc>().state;
+    String name = 'Scholar';
+    String email = '';
+    if (authState is AuthAuthenticated) {
+      name = authState.user.name;
+      email = authState.user.email;
+    }
+
+    return Scaffold(
+      backgroundColor: DesignSystem.background,
+      appBar: AppBar(
+        title: const Text('My Profile'),
+        backgroundColor: DesignSystem.background,
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(DesignSystem.spacingLg),
+        child: Column(
+          children: [
+            const CircleAvatar(
+              radius: 50,
+              backgroundColor: DesignSystem.primary,
+              child: Icon(Icons.person, size: 50, color: Colors.white),
+            ),
+            const SizedBox(height: DesignSystem.spacingLg),
+            Text(name, style: DesignSystem.h2),
+            Text(email, style: DesignSystem.bodySmall),
+            const SizedBox(height: DesignSystem.spacingXl),
+            _ProfileItem(
+              icon: Icons.admin_panel_settings_outlined,
+              label: 'Admin Console',
+              color: Colors.purple,
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) => const AdminDashboardScreen()));
+              },
+            ),
+            _ProfileItem(
+              icon: Icons.settings_outlined,
+              label: 'Settings',
+              onTap: () {},
+            ),
+            _ProfileItem(
+              icon: Icons.help_outline,
+              label: 'Help & Support',
+              onTap: () {},
+            ),
+            _ProfileItem(
+              icon: Icons.logout,
+              label: 'Logout',
+              color: Colors.red,
+              onTap: () {
+                context.read<AuthBloc>().add(AuthLogoutRequested());
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ProfileItem extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final VoidCallback onTap;
+  final Color? color;
+
+  const _ProfileItem({
+    required this.icon,
+    required this.label,
+    required this.onTap,
+    this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(icon, color: color ?? DesignSystem.textSecondary),
+      title: Text(label, style: TextStyle(color: color)),
+      trailing: const Icon(Icons.chevron_right, size: 18),
+      onTap: onTap,
+    );
   }
 }

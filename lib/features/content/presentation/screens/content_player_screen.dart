@@ -5,6 +5,8 @@ import 'package:chewie/chewie.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import '../../../../core/widgets/content/interactive_player.dart';
+import '../../../../core/telemetry/telemetry_service.dart';
+import '../../../../core/di/injection.dart';
 
 enum ContentType { pdf, video, html, h5p }
 
@@ -32,15 +34,32 @@ class _ContentPlayerScreenState extends State<ContentPlayerScreen> {
   VideoPlayerController? _videoController;
   ChewieController? _chewieController;
   WebViewController? _webController;
+  final DateTime _startTime = DateTime.now();
 
   @override
   void initState() {
     super.initState();
+    sl<TelemetryService>().logStart(type: 'CONTENT_PLAYER', id: widget.contentId);
+
     if (widget.type == ContentType.video) {
       _initVideo();
     } else if (widget.type == ContentType.html || widget.type == ContentType.h5p) {
       _initWebView();
     }
+  }
+
+  @override
+  void dispose() {
+    final duration = DateTime.now().difference(_startTime);
+    sl<TelemetryService>().logEnd(
+      type: 'CONTENT_PLAYER',
+      id: widget.contentId,
+      summary: {'duration_seconds': duration.inSeconds, 'title': widget.title, 'type': widget.type.name},
+    );
+
+    _videoController?.dispose();
+    _chewieController?.dispose();
+    super.dispose();
   }
 
   void _initVideo() {
@@ -92,12 +111,5 @@ class _ContentPlayerScreenState extends State<ContentPlayerScreen> {
       default:
         return const Center(child: Text('Unsupported Content Type'));
     }
-  }
-
-  @override
-  void dispose() {
-    _videoController?.dispose();
-    _chewieController?.dispose();
-    super.dispose();
   }
 }

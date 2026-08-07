@@ -9,7 +9,6 @@ import 'package:project_gurukul_ai/features/curriculum/presentation/widgets/inte
 import 'package:project_gurukul_ai/features/curriculum/presentation/widgets/interactive/tap_reveal_activity.dart';
 import 'package:project_gurukul_ai/features/curriculum/presentation/widgets/video_player_widget.dart';
 import 'package:project_gurukul_ai/core/telemetry/telemetry_service.dart';
-import 'package:project_gurukul_ai/core/telemetry/telemetry_constants.dart';
 import 'package:project_gurukul_ai/features/content/domain/services/reading_assistant_service.dart';
 
 class LearningJourneyScreen extends StatefulWidget {
@@ -528,7 +527,7 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
   Widget _rewardChip(String text, IconData icon, Color color) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      decoration: BoxDecoration(color: color.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(20), border: Border.all(color: color.withOpacity(0.5))),
+      decoration: BoxDecoration(color: color.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(20), border: Border.all(color: color.withValues(alpha: 0.5))),
       child: Row(
         children: [
           Icon(icon, color: color, size: 20),

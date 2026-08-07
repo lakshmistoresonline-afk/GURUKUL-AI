@@ -1,11 +1,7 @@
 import 'dart:async';
-import 'dart:convert';
-import 'dart:io';
-import 'package:flutter/foundation.dart';
 import '../../curriculum/data/framework_repository.dart';
 import '../../curriculum/domain/models/concept_node.dart';
 import 'modular_lesson_generator.dart';
-import '../../../../core/di/injection.dart';
 
 enum BatchJobStatus { idle, running, paused, completed, failed }
 

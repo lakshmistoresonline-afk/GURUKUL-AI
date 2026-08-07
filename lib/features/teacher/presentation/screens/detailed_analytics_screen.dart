@@ -91,7 +91,7 @@ class DetailedAnalyticsScreen extends StatelessWidget {
               Expanded(
                 child: Container(
                   height: 24,
-                  decoration: BoxDecoration(color: color.withOpacity(0.2), borderRadius: BorderRadius.circular(4)),
+                  decoration: BoxDecoration(color: color.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(4)),
                   child: FractionallySizedBox(
                     alignment: Alignment.centerLeft,
                     widthFactor: score,

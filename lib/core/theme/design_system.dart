@@ -38,19 +38,21 @@ class DesignSystem {
   static const double radiusXl = 32.0;
 
   // Typography
-  static TextStyle headlineLarge = const TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: textPrimary, letterSpacing: -1);
-  static TextStyle headlineMedium = const TextStyle(fontSize: 24, fontWeight: FontWeight.w700, color: textPrimary, letterSpacing: -0.5);
-  static TextStyle titleLarge = const TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: textPrimary);
-  static TextStyle bodyLarge = const TextStyle(fontSize: 16, color: textSecondary, height: 1.5);
-  static TextStyle bodyMedium = const TextStyle(fontSize: 14, color: textSecondary, height: 1.4);
-  static TextStyle bodySmall = const TextStyle(fontSize: 12, color: textSecondary);
-  static TextStyle labelSmall = const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: textTertiary, letterSpacing: 1);
+  static const TextStyle headlineLarge = TextStyle(fontSize: 32, fontWeight: FontWeight.w800, color: textPrimary, letterSpacing: -1);
+  static const TextStyle headlineMedium = TextStyle(fontSize: 24, fontWeight: FontWeight.w700, color: textPrimary, letterSpacing: -0.5);
+  static const TextStyle titleLarge = TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: textPrimary);
+  static const TextStyle titleMedium = TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: textPrimary);
+  static const TextStyle titleSmall = TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: textPrimary);
+  static const TextStyle bodyLarge = TextStyle(fontSize: 16, color: textSecondary, height: 1.5);
+  static const TextStyle bodyMedium = TextStyle(fontSize: 14, color: textSecondary, height: 1.4);
+  static const TextStyle bodySmall = TextStyle(fontSize: 12, color: textSecondary);
+  static const TextStyle labelSmall = TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: textTertiary, letterSpacing: 1);
 
   // Aliases for analyzer compliance
-  static TextStyle h1 = headlineLarge;
-  static TextStyle h2 = headlineMedium;
-  static TextStyle title = titleLarge;
-  static TextStyle label = labelSmall;
+  static const TextStyle h1 = headlineLarge;
+  static const TextStyle h2 = headlineMedium;
+  static const TextStyle title = titleLarge;
+  static const TextStyle label = labelSmall;
 
   // Shadows
   static List<BoxShadow> shadowSm = [

@@ -24,8 +24,6 @@ class _ProgressDashboardScreenState extends State<ProgressDashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
     return Scaffold(
       backgroundColor: const Color(0xFFF8FAFC),
       appBar: AppBar(
@@ -119,7 +117,7 @@ class _ProgressDashboardScreenState extends State<ProgressDashboardScreen> {
                   barWidth: 4,
                   belowBarData: BarAreaData(
                     show: true,
-                    color: Colors.blue.withOpacity(0.1),
+                  color: Colors.blue.withValues(alpha: 0.1),
                   ),
                   dotData: const FlDotData(show: false),
                 ),
@@ -212,7 +210,7 @@ class _ProgressDashboardScreenState extends State<ProgressDashboardScreen> {
       margin: const EdgeInsets.only(bottom: 12),
       child: ListTile(
         leading: CircleAvatar(
-          backgroundColor: (isStrong ? Colors.green : Colors.orange).withOpacity(0.1),
+          backgroundColor: (isStrong ? Colors.green : Colors.orange).withValues(alpha: 0.1),
           child: Icon(isStrong ? Icons.trending_up : Icons.trending_down, color: isStrong ? Colors.green : Colors.orange),
         ),
         title: Text('Concept: ${m.conceptId}'),

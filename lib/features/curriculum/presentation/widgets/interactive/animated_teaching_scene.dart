@@ -30,7 +30,7 @@ class AnimatedTeachingScene extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.movie_filter_outlined,
-                              size: 80, color: colorScheme.primary.withOpacity(0.2)),
+                              size: 80, color: colorScheme.primary.withValues(alpha: 0.2)),
                           const SizedBox(height: 16),
                           const Text(
                             'Visualizing Concept...',
@@ -51,7 +51,7 @@ class AnimatedTeachingScene extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.05),
+                color: Colors.black.withValues(alpha: 0.05),
                 blurRadius: 10,
                 offset: const Offset(0, 4),
               ),

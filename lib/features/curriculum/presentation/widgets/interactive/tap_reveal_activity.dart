@@ -36,9 +36,9 @@ class _TapRevealActivityState extends State<TapRevealActivity> {
             decoration: BoxDecoration(
               color: isRevealed ? Colors.white : Theme.of(context).primaryColor,
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: Theme.of(context).primaryColor.withOpacity(0.2)),
+              border: Border.all(color: Theme.of(context).primaryColor.withValues(alpha: 0.2)),
               boxShadow: [
-                BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 4)),
+                BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 10, offset: const Offset(0, 4)),
               ],
             ),
             child: Center(
