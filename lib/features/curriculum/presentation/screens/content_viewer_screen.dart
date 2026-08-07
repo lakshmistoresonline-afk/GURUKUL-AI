@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import '../../../../core/widgets/content/interactive_player.dart';
 import '../../../../core/di/injection.dart';
 import '../../../../core/telemetry/telemetry_service.dart';
 import '../../../../core/telemetry/telemetry_constants.dart';
@@ -74,7 +74,10 @@ class _ContentViewerScreenState extends State<ContentViewerScreen> {
           onPageError: (page, error) => debugPrint('PDF Page Error on $page: $error'),
         );
       case ContentType.html:
-        return WebViewWidget(controller: _webController);
+        return InteractivePlayer(
+          contentId: widget.contentId,
+          pathOrUrl: widget.url,
+        );
       default:
         return const Center(child: Text('Unsupported content type'));
     }

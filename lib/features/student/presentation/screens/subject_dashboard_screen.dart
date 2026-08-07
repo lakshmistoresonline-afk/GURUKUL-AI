@@ -3,12 +3,12 @@ import 'package:project_gurukul_ai/core/di/injection.dart';
 import 'package:project_gurukul_ai/core/theme/design_system.dart';
 import 'package:project_gurukul_ai/core/theme/theme_service.dart';
 import 'package:project_gurukul_ai/features/curriculum/data/framework_repository.dart';
+import 'package:project_gurukul_ai/features/curriculum/domain/models/concept_node.dart';
 import 'package:project_gurukul_ai/features/curriculum/presentation/screens/learning_journey_screen.dart';
 import 'package:project_gurukul_ai/features/student/presentation/screens/chapter_dashboard_screen.dart';
 
-import 'package:project_gurukul_ai/features/questions/presentation/screens/question_centre_screen.dart';
+import 'package:project_gurukul_ai/features/questions/presentation/screens/question_center_screen.dart';
 import 'package:project_gurukul_ai/features/student/presentation/screens/flashcards_screen.dart';
-import 'package:project_gurukul_ai/features/curriculum/data/ncert_detailed_content.dart';
 
 class SubjectDashboardScreen extends StatefulWidget {
   final int classLevel;
@@ -55,7 +55,7 @@ class _SubjectDashboardScreenState extends State<SubjectDashboardScreen> {
                   const SizedBox(height: DesignSystem.spacingLg),
                   Text('COMMAND CENTRE', style: DesignSystem.label),
                   const SizedBox(height: DesignSystem.spacingMd),
-                  _CommandCenter(color: color, subject: widget.subject),
+                  _CommandCenter(color: color, subject: widget.subject, classLevel: widget.classLevel),
                   const SizedBox(height: DesignSystem.spacingLg),
                   Text('CHAPTERS', style: DesignSystem.label),
                   const SizedBox(height: DesignSystem.spacingMd),
@@ -207,11 +207,32 @@ class _StatItem extends StatelessWidget {
   }
 }
 
-class _LearningJourneyMap extends StatelessWidget {
+class _LearningJourneyMap extends StatefulWidget {
   final Color color;
   final String subject;
   final int classLevel;
   const _LearningJourneyMap({required this.color, required this.subject, required this.classLevel});
+
+  @override
+  State<_LearningJourneyMap> createState() => _LearningJourneyMapState();
+}
+
+class _LearningJourneyMapState extends State<_LearningJourneyMap> {
+  ConceptNode? _firstConcept;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadFirstConcept();
+  }
+
+  Future<void> _loadFirstConcept() async {
+    final chapters = await sl<FrameworkRepository>().getChapters(widget.classLevel, widget.subject);
+    if (chapters.isNotEmpty) {
+      final node = await sl<FrameworkRepository>().getConceptNode(chapters.first['id']);
+      if (mounted) setState(() => _firstConcept = node);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -219,7 +240,7 @@ class _LearningJourneyMap extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(DesignSystem.spacingMd),
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [color.withValues(alpha: 0.8), color]),
+        gradient: LinearGradient(colors: [widget.color.withValues(alpha: 0.8), widget.color]),
         borderRadius: BorderRadius.circular(DesignSystem.radiusLg),
         boxShadow: DesignSystem.shadowMd,
       ),
@@ -238,16 +259,12 @@ class _LearningJourneyMap extends StatelessWidget {
             ),
           ),
           ElevatedButton(
-            onPressed: () {
-              final concept = ncertDetailedContent.values.firstWhere(
-                (c) => c.subject.toLowerCase() == subject.toLowerCase() && c.classLevel == classLevel,
-                orElse: () => ncertDetailedContent.values.first,
-              );
-              Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
+            onPressed: _firstConcept == null ? null : () {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: _firstConcept!)));
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.white,
-              foregroundColor: color,
+              foregroundColor: widget.color,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(DesignSystem.radiusMd)),
               elevation: 0,
             ),
@@ -262,7 +279,8 @@ class _LearningJourneyMap extends StatelessWidget {
 class _CommandCenter extends StatelessWidget {
   final Color color;
   final String subject;
-  const _CommandCenter({required this.color, required this.subject});
+  final int classLevel;
+  const _CommandCenter({required this.color, required this.subject, required this.classLevel});
 
   @override
   Widget build(BuildContext context) {
@@ -295,7 +313,7 @@ class _CommandCenter extends StatelessWidget {
           color: a['color'] as Color,
           onTap: () {
             if (a['label'] == 'Question Centre') {
-              Navigator.push(context, MaterialPageRoute(builder: (_) => QuestionCentreScreen(subject: subject)));
+              Navigator.push(context, MaterialPageRoute(builder: (_) => QuestionCenterScreen(classLevel: classLevel, subject: subject)));
             } else if (a['label'] == 'Flashcards') {
               Navigator.push(context, MaterialPageRoute(builder: (_) => FlashcardsScreen(subject: subject)));
             }

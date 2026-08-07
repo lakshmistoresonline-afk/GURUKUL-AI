@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_gurukul_ai/core/di/injection.dart';
+import 'package:project_gurukul_ai/features/curriculum/data/framework_repository.dart';
 import 'package:project_gurukul_ai/features/curriculum/domain/models/concept_node.dart';
 import 'package:project_gurukul_ai/features/content/data/modular_lesson_generator.dart';
 import 'package:project_gurukul_ai/features/content/data/learning_outcomes_repository.dart';

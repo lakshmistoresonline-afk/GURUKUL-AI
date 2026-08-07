@@ -4,7 +4,7 @@ import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import '../widgets/interactive_player_widget.dart';
+import '../../../../core/widgets/content/interactive_player.dart';
 
 enum ContentType { pdf, video, html, h5p }
 
@@ -83,9 +83,9 @@ class _ContentPlayerScreenState extends State<ContentPlayerScreen> {
       case ContentType.html:
       case ContentType.h5p:
         if (widget.isOffline) {
-          return InteractivePlayerWidget(
+          return InteractivePlayer(
             contentId: widget.contentId,
-            indexPath: widget.url,
+            pathOrUrl: widget.url,
           );
         }
         return WebViewWidget(controller: _webController!);

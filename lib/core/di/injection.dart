@@ -18,7 +18,7 @@ import '../../features/curriculum/data/framework_repository.dart';
 import '../../features/curriculum/data/mastery_repository.dart';
 import '../../features/curriculum/domain/services/recommendation_service.dart';
 import '../../features/curriculum/domain/services/mastery_service.dart';
-import '../../features/curriculum/domain/services/spaced_repetition_service.dart';
+import '../learning/spaced_repetition_service.dart';
 import '../../features/ai/data/ai_tutor_service.dart';
 import '../../features/ai/data/ai_insight_service.dart';
 import '../../features/ai/data/ocr_service.dart';
@@ -42,6 +42,7 @@ import '../../features/content/domain/services/reading_assistant_service.dart';
 import '../../features/gamification/domain/services/daily_challenge_service.dart';
 import '../../features/content/data/modular_lesson_generator.dart';
 import '../../features/content/data/learning_outcomes_repository.dart';
+import '../../features/content/data/ai_batch_factory_service.dart';
 
 final sl = GetIt.instance;
 

@@ -6,7 +6,7 @@ import 'package:project_gurukul_ai/features/curriculum/data/framework_repository
 import 'package:project_gurukul_ai/features/curriculum/domain/models/concept_node.dart';
 import 'package:project_gurukul_ai/features/curriculum/presentation/screens/learning_journey_screen.dart';
 
-import 'package:project_gurukul_ai/features/questions/presentation/screens/question_centre_screen.dart';
+import 'package:project_gurukul_ai/features/questions/presentation/screens/question_center_screen.dart';
 import 'package:project_gurukul_ai/features/student/presentation/screens/flashcards_screen.dart';
 
 class ChapterDashboardScreen extends StatefulWidget {
