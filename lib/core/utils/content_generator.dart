@@ -3,7 +3,7 @@ import '../../features/curriculum/data/media/lesson_media_repository.dart';
 import '../di/injection.dart';
 
 class ContentGenerator {
-  static ConceptNode enrich(ConceptNode node) {
+  static Future<ConceptNode> enrich(ConceptNode node) async {
     // If already has rich content, return as is
     if (node.introduction.isNotEmpty) return node;
 
@@ -12,7 +12,7 @@ class ContentGenerator {
     final chapter = node.chapter;
 
     final mediaRepo = sl<LessonMediaRepository>();
-    final specificMedia = mediaRepo.getMediaForChapter(node.id);
+    final specificMedia = await mediaRepo.getMediaForChapter(node.id);
 
     return ConceptNode(
       id: node.id,

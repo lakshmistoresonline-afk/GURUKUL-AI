@@ -1,0 +1,132 @@
+{
+  "id": "m5_c10",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "Tenths and Hundredths",
+  "topic": "Number Sense",
+  "subtopic": "Decimals",
+  "difficulty": "intermediate",
+  "bloomLevel": "apply",
+  "examWeightage": 7,
+  "estStudyTime": 45,
+  "prerequisites": [],
+  "dependencies": [],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Understand the decimal notation for tenths and hundredths",
+    "Convert fractions with denominators 10 and 100 into decimals",
+    "Represent decimals on a place value chart",
+    "Compare and order decimal numbers",
+    "Apply decimals to money and measurement (metric system)"
+  ],
+  "examples": [
+    "0.1 meter is 10 cm",
+    "Rs 5.50 is 5 rupees 50 paise",
+    "Height 1.62 m",
+    "0.01 is one hundredth",
+    "Temperature 37.5 C"
+  ],
+  "misconceptions": [
+    "Thinking that a number with more decimal places is always larger (e.g., 0.15 vs 0.2)"
+  ],
+  "practiceExercises": [
+    {
+      "question": "How do you write 5/100 as a decimal?",
+      "hint": "It has two decimal places.",
+      "options": ["0.5", "0.05", "0.005", "5.0"],
+      "correctAnswer": "0.05",
+      "explanation": "Five hundredths is written as 0.05.",
+      "isHots": false
+    },
+    {
+      "question": "Which of these is greater: 0.7 or 0.09?",
+      "hint": "0.7 is 70 hundredths.",
+      "options": ["0.7", "0.09", "They are equal", "Cannot say"],
+      "correctAnswer": "0.7",
+      "explanation": "0.7 is 7 tenths (or 70 hundredths), while 0.09 is only 9 hundredths.",
+      "isHots": false
+    },
+    {
+      "question": "15 paise is what fraction of a rupee?",
+      "hint": "1 rupee = 100 paise.",
+      "options": ["15/10", "15/100", "1.5/10", "15/1000"],
+      "correctAnswer": "15/100",
+      "explanation": "Since 1 rupee = 100 paise, 15 paise is 15/100 of a rupee.",
+      "isHots": false
+    },
+    {
+      "question": "Convert 1.6 m into centimeters.",
+      "hint": "1 m = 100 cm.",
+      "options": ["16 cm", "106 cm", "160 cm", "1600 cm"],
+      "correctAnswer": "160 cm",
+      "explanation": "1.6 * 100 = 160 cm.",
+      "isHots": false
+    },
+    {
+      "question": "What is 3 tenths + 4 hundredths?",
+      "hint": "Combine the decimal places.",
+      "options": ["0.7", "0.34", "0.07", "3.4"],
+      "correctAnswer": "0.34",
+      "explanation": "3 tenths (0.3) + 4 hundredths (0.04) = 0.34.",
+      "isHots": true
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Tenth",
+      "back": "One part out of ten equal parts (0.1)"
+    },
+    {
+      "front": "Hundredth",
+      "back": "One part out of a hundred equal parts (0.01)"
+    },
+    {
+      "front": "Decimal Point",
+      "back": "The dot that separates the whole number from the fractional part"
+    },
+    {
+      "front": "Place Value of 2 in 1.25",
+      "back": "Tenths"
+    },
+    {
+      "front": "Place Value of 5 in 1.25",
+      "back": "Hundredths"
+    }
+  ],
+  "revisionNotes": "Decimals are another way of writing fractions. First place after dot is Tenths, second is Hundredths. Always align dots when adding.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Misplacing the decimal point when converting between units"
+  ],
+  "vocabulary": {
+    "Decimal": "A fraction whose denominator is a power of ten and whose numerator is expressed by figures placed to the right of a decimal point.",
+    "Conversion": "The process of changing or causing something to change from one form to another.",
+    "Precision": "The quality, condition, or fact of being exact and accurate."
+  },
+  "interactiveActivities": [
+    "Measure the length of your pencil in cm and mm, then write it in decimal form.",
+    "Look at the price tags in a supermarket and identify the rupees and paise using decimals."
+  ],
+  "masteryCheckpoints": [
+    "Can correctly read decimal numbers like 0.75 as 'zero point seven five'.",
+    "Can convert any hundredth fraction to a decimal.",
+    "Understands that 0.5 is the same as 0.50."
+  ],
+  "introduction": "Between the numbers 0 and 1, there are tiny worlds! In 'Tenths and Hundredths', we'll learn to use decimals to measure things with super precision, from the length of an ant to the price of a chocolate bar.",
+  "realLifeConnection": "We use decimals every day when we count money (paise), measure our height (meters and cm), or when we use a stopwatch to time a 100-meter race.",
+  "storyBasedExplanation": "The frogs are having a jumping competition! Goldie frog jumps 0.9m and Puddles frog jumps 1.05m. At first, Goldie thinks she won because 9 is bigger than 5. But her teacher shows that 0.9 is actually 0.90, and Puddles jumped further!",
+  "childFriendlyExplanation": "Tenths are like cutting a chocolate bar into 10 equal pieces. Hundredths are like cutting each of those small pieces into 10 more tiny bits! Decimals are just a shorter way to write these tiny fractions.",
+  "teacherExplanation": "This chapter bridges the gap between whole numbers and fractions. We emphasize place value to the right of the decimal point and its practical application in the metric system.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Ask your child to find decimals on grocery bills or electricity bills. Discuss what the numbers after the dot mean.",
+    "Use a 10x10 grid of squares. Color 25 squares and write the decimal representation (0.25)."
+  ],
+  "animationScript": "Scene 1: A meter scale zooming in to show 10 segments (tenths), then zooming more to show 100 tiny segments (hundredths). Scene 2: 50 paise coins transforming into 0.50 Rupees. Scene 3: A decimal point jumping into position.",
+  "videoScript": "Host with a ruler and a pen. 'This pen is 14 centimeters and 8 millimeters long. Instead of saying all that, we can just say 14.8 cm. The dot is the decimal point, and it's very important!'",
+  "parentNotes": "Help your child understand that decimals are used for precision. Practice simple addition like Rs 1.50 + Rs 2.50 to build confidence.",
+  "teacherNotes": "Use a 10x10 grid to visualize hundredths. Connect decimals to the metric system (cm, mm, m) to provide a concrete context for learning.",
+  "learningOutcomes": "Students will be able to read and write decimals up to hundredths, convert between units, and compare decimal values correctly."
+}

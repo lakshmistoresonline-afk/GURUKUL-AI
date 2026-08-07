@@ -42,7 +42,9 @@ Strictly follow this structure:
     {
       "id": "string",
       "type": "matching",
-      "data": {"pairs": {"key": "value"}}
+      "data": {"pairs": {"key": "value"}},
+      "instruction": "string",
+      "title": "string"
     }
   ],
   "practiceExercises": [
@@ -115,11 +117,7 @@ Return ONLY the JSON. No other text.
         teacherExplanation: data['teacherExplanation'] ?? '',
         animatedLessonAsset: '',
         videoUrl: 'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
-        activities: (data['activities'] as List? ?? []).map((a) => InteractiveActivity(
-          id: a['id'] ?? '',
-          type: ActivityType.values.firstWhere((t) => t.name == a['type'], orElse: () => ActivityType.matching),
-          data: a['data'] ?? {},
-        )).toList(),
+        activities: (data['activities'] as List? ?? []).map((a) => InteractiveActivity.fromMap(a)).toList(),
         handsOnActivities: const [],
       );
     } catch (e) {

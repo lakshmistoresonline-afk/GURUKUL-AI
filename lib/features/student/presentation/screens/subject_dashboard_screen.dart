@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:project_gurukul_ai/core/di/injection.dart';
+import 'package:project_gurukul_ai/core/theme/design_system.dart';
 import 'package:project_gurukul_ai/core/theme/theme_service.dart';
 import 'package:project_gurukul_ai/features/curriculum/data/framework_repository.dart';
 import 'package:project_gurukul_ai/features/curriculum/presentation/screens/learning_journey_screen.dart';
-import 'package:project_gurukul_ai/features/gamification/domain/services/certificate_service.dart';
+import 'package:project_gurukul_ai/features/student/presentation/screens/chapter_dashboard_screen.dart';
+
+import 'package:project_gurukul_ai/features/questions/presentation/screens/question_centre_screen.dart';
+import 'package:project_gurukul_ai/features/student/presentation/screens/flashcards_screen.dart';
+import 'package:project_gurukul_ai/features/curriculum/data/ncert_detailed_content.dart';
 
 class SubjectDashboardScreen extends StatefulWidget {
   final int classLevel;
@@ -30,101 +35,103 @@ class _SubjectDashboardScreenState extends State<SubjectDashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final themeService = sl<ThemeService>();
-    final subjectColor = themeService.getSubjectColor(widget.subject);
+    final color = sl<ThemeService>().getSubjectColor(widget.subject);
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFC),
+      backgroundColor: DesignSystem.background,
       body: CustomScrollView(
+        physics: const BouncingScrollPhysics(),
         slivers: [
-          _buildHeroHeader(subjectColor),
+          _SubjectAppBar(subject: widget.subject, color: color),
           SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.all(DesignSystem.spacingMd),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(height: 24),
-                  _buildContinueLearning(subjectColor),
-                  const SizedBox(height: 32),
-                  _buildAiRecommendation(subjectColor),
-                  const SizedBox(height: 32),
-                  _buildQuickLearningActions(subjectColor),
-                  const SizedBox(height: 32),
-                  const Text('Chapter Navigator', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                  const SizedBox(height: 16),
+                  _AnalyticsSection(color: color),
+                  const SizedBox(height: DesignSystem.spacingLg),
+                  _LearningJourneyMap(color: color, subject: widget.subject, classLevel: widget.classLevel),
+                  const SizedBox(height: DesignSystem.spacingLg),
+                  Text('COMMAND CENTRE', style: DesignSystem.label),
+                  const SizedBox(height: DesignSystem.spacingMd),
+                  _CommandCenter(color: color, subject: widget.subject),
+                  const SizedBox(height: DesignSystem.spacingLg),
+                  Text('CHAPTERS', style: DesignSystem.label),
+                  const SizedBox(height: DesignSystem.spacingMd),
                 ],
               ),
             ),
           ),
-          _buildChapterList(subjectColor),
-          SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                children: [
-                  _buildFunLearningCard(subjectColor),
-                  const SizedBox(height: 100),
-                ],
-              ),
-            ),
-          ),
+          _ChapterList(chaptersFuture: _chaptersFuture, subject: widget.subject, color: color),
+          const SliverToBoxAdapter(child: SizedBox(height: 100)),
         ],
       ),
     );
   }
+}
 
-  Widget _buildHeroHeader(Color color) {
+class _SubjectAppBar extends StatelessWidget {
+  final String subject;
+  final Color color;
+  const _SubjectAppBar({required this.subject, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
     return SliverAppBar.large(
-      expandedHeight: 220,
+      pinned: true,
       backgroundColor: color,
       foregroundColor: Colors.white,
-      pinned: true,
-      actions: [
-        IconButton(
-          onPressed: () => sl<CertificateService>().generateAndPreview(
-            studentName: 'Gurukul Student',
-            courseName: widget.subject,
-            completionDate: DateTime.now(),
-          ),
-          icon: const Icon(Icons.workspace_premium),
-          tooltip: 'Get Certificate',
-        ),
-      ],
+      expandedHeight: 220,
       flexibleSpace: FlexibleSpaceBar(
-        title: Text(widget.subject, style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
+        titlePadding: const EdgeInsets.only(left: 16, bottom: 16),
+        title: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(subject, style: DesignSystem.h2.copyWith(color: Colors.white)),
+            const SizedBox(height: 4),
+            Row(
+              children: [
+                const Icon(Icons.stars, color: Colors.amber, size: 12),
+                const SizedBox(width: 4),
+                Text('45% Mastered', style: DesignSystem.bodySmall.copyWith(color: Colors.white.withValues(alpha: 0.9), fontSize: 10)),
+              ],
+            ),
+          ],
+        ),
         background: Stack(
           fit: StackFit.expand,
           children: [
             Positioned(
-              right: -20,
-              bottom: -20,
+              right: -40,
+              top: 20,
               child: Opacity(
                 opacity: 0.2,
-                child: Icon(_getIconForSubject(widget.subject), size: 200, color: Colors.white),
+                child: Icon(_getIcon(subject), size: 240, color: Colors.white),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'Explore interactive lessons, practice questions, and AI-powered tutoring.',
-                    style: TextStyle(color: Colors.white70, fontSize: 13),
-                  ),
-                  const SizedBox(height: 16),
-                  Row(
-                    children: [
-                      _headerStat('12', 'Chapters'),
-                      const SizedBox(width: 24),
-                      _headerStat('145', 'Topics'),
-                      const SizedBox(width: 24),
-                      _headerStat('34h', 'Time'),
-                    ],
-                  ),
-                ],
+            Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [color, color.withValues(alpha: 0.6), Colors.transparent],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.topRight,
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 60,
+              left: 16,
+              right: 16,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(2),
+                child: LinearProgressIndicator(
+                  value: 0.45,
+                  backgroundColor: Colors.white.withValues(alpha: 0.2),
+                  valueColor: const AlwaysStoppedAnimation(Colors.white),
+                  minHeight: 4,
+                ),
               ),
             ),
           ],
@@ -133,151 +140,232 @@ class _SubjectDashboardScreenState extends State<SubjectDashboardScreen> {
     );
   }
 
-  Widget _headerStat(String value, String label) {
+  IconData _getIcon(String subject) {
+    switch (subject.toLowerCase()) {
+      case 'mathematics': return Icons.calculate_rounded;
+      case 'science': return Icons.science_rounded;
+      case 'english': return Icons.translate_rounded;
+      case 'social science': return Icons.public_rounded;
+      case 'hindi': return Icons.menu_book_rounded;
+      default: return Icons.auto_stories_rounded;
+    }
+  }
+}
+
+class _AnalyticsSection extends StatelessWidget {
+  final Color color;
+  const _AnalyticsSection({required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(DesignSystem.spacingMd),
+      decoration: DesignSystem.cardDecoration,
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              _StatItem(label: 'Total Study', value: '14.5h', icon: Icons.timer_outlined, color: color),
+              _StatItem(label: 'Mastery', value: '45%', icon: Icons.insights_outlined, color: color),
+              _StatItem(label: 'Flashcards', value: '82/150', icon: Icons.style_outlined, color: color),
+            ],
+          ),
+          const Divider(height: DesignSystem.spacingLg),
+          Row(
+            children: [
+              const Icon(Icons.emoji_events_outlined, size: 16, color: Colors.orange),
+              const SizedBox(width: 8),
+              Text('Next Milestone: Chapter 5 Master', style: DesignSystem.bodySmall),
+              const Spacer(),
+              Text('2/5', style: DesignSystem.label.copyWith(color: color)),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _StatItem extends StatelessWidget {
+  final String label;
+  final String value;
+  final IconData icon;
+  final Color color;
+  const _StatItem({required this.label, required this.value, required this.icon, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(value, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18)),
-        Text(label, style: const TextStyle(color: Colors.white60, fontSize: 10)),
+        Icon(icon, size: 20, color: color),
+        const SizedBox(height: 4),
+        Text(value, style: DesignSystem.h2.copyWith(fontSize: 18)),
+        Text(label, style: DesignSystem.bodySmall.copyWith(fontSize: 10)),
       ],
     );
   }
+}
 
-  Widget _buildContinueLearning(Color color) {
-    return Card(
-      elevation: 0,
-      color: color.withOpacity(0.12),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24), side: BorderSide(color: color.withOpacity(0.1))),
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(Icons.play_circle_fill, color: color, size: 32),
-                const SizedBox(width: 12),
-                const Text('RESUME LAST LESSON', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12, letterSpacing: 1.1)),
-              ],
-            ),
-            const SizedBox(height: 20),
-            const Text('The Fish Tale', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-            const Text('Topic: Large Numbers', style: TextStyle(color: Colors.grey)),
-            const SizedBox(height: 20),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: LinearProgressIndicator(value: 0.65, backgroundColor: Colors.white, valueColor: AlwaysStoppedAnimation(color), minHeight: 8),
-            ),
-            const SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text('15 mins remaining', style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500)),
-                FilledButton(onPressed: () {}, style: FilledButton.styleFrom(backgroundColor: color), child: const Text('Continue')),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+class _LearningJourneyMap extends StatelessWidget {
+  final Color color;
+  final String subject;
+  final int classLevel;
+  const _LearningJourneyMap({required this.color, required this.subject, required this.classLevel});
 
-  Widget _buildAiRecommendation(Color color) {
+  @override
+  Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      width: double.infinity,
+      padding: const EdgeInsets.all(DesignSystem.spacingMd),
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.grey.shade200),
+        gradient: LinearGradient(colors: [color.withValues(alpha: 0.8), color]),
+        borderRadius: BorderRadius.circular(DesignSystem.radiusLg),
+        boxShadow: DesignSystem.shadowMd,
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Row(
-            children: [
-              Icon(Icons.auto_awesome, color: Colors.purple, size: 20),
-              SizedBox(width: 8),
-              Text('AI TEACHER RECOMMENDS', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: Colors.purple)),
-            ],
-          ),
-          const SizedBox(height: 16),
-          const Text('You are doing great in Numbers! Shall we try a "Quick Quiz" to lock in your mastery?', style: TextStyle(fontSize: 15, height: 1.4)),
-          const SizedBox(height: 20),
-          Row(
-            children: [
-              _recBadge(Icons.timer_outlined, '5 Mins'),
-              const SizedBox(width: 12),
-              _recBadge(Icons.stars_outlined, '50 XP'),
-              const Spacer(),
-              TextButton(onPressed: () {}, child: const Text('Start Now →', style: TextStyle(fontWeight: FontWeight.bold))),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _recBadge(IconData icon, String label) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-      decoration: BoxDecoration(color: Colors.grey.shade100, borderRadius: BorderRadius.circular(10)),
       child: Row(
         children: [
-          Icon(icon, size: 14, color: Colors.grey),
-          const SizedBox(width: 4),
-          Text(label, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.grey)),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('LEARNING JOURNEY', style: DesignSystem.label.copyWith(color: Colors.white.withValues(alpha: 0.8))),
+                const SizedBox(height: 4),
+                Text('Visual Roadmap', style: DesignSystem.h2.copyWith(color: Colors.white, fontSize: 18)),
+                const SizedBox(height: 4),
+                Text('Track your progress through all chapters', style: DesignSystem.bodySmall.copyWith(color: Colors.white.withValues(alpha: 0.9))),
+              ],
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              final concept = ncertDetailedContent.values.firstWhere(
+                (c) => c.subject.toLowerCase() == subject.toLowerCase() && c.classLevel == classLevel,
+                orElse: () => ncertDetailedContent.values.first,
+              );
+              Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.white,
+              foregroundColor: color,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(DesignSystem.radiusMd)),
+              elevation: 0,
+            ),
+            child: const Text('View Map'),
+          ),
         ],
       ),
     );
   }
+}
 
-  Widget _buildQuickLearningActions(Color color) {
+class _CommandCenter extends StatelessWidget {
+  final Color color;
+  final String subject;
+  const _CommandCenter({required this.color, required this.subject});
+
+  @override
+  Widget build(BuildContext context) {
     final actions = [
-      {'icon': Icons.menu_book, 'label': 'Learn'},
-      {'icon': Icons.movie_filter, 'label': 'Animated'},
-      {'icon': Icons.videogame_asset, 'label': 'Activity'},
-      {'icon': Icons.edit_note, 'label': 'Practice'},
-      {'icon': Icons.quiz, 'label': 'Quiz'},
-      {'icon': Icons.style, 'label': 'Flashcards'},
-      {'icon': Icons.psychology, 'label': 'Revision'},
-      {'icon': Icons.smart_toy, 'label': 'AI Tutor'},
+      {'label': 'Practice', 'icon': Icons.edit_document, 'color': Colors.blue},
+      {'label': 'Quiz', 'icon': Icons.quiz_rounded, 'color': Colors.orange},
+      {'label': 'Revision', 'icon': Icons.auto_mode_rounded, 'color': Colors.purple},
+      {'label': 'Flashcards', 'icon': Icons.style_rounded, 'color': Colors.pink},
+      {'label': 'Mind Maps', 'icon': Icons.hub_rounded, 'color': Colors.teal},
+      {'label': 'Homework', 'icon': Icons.assignment_rounded, 'color': Colors.amber},
+      {'label': 'AI Tutor', 'icon': Icons.smart_toy_rounded, 'color': Colors.indigo},
+      {'label': 'Question Centre', 'icon': Icons.help_center_rounded, 'color': Colors.red},
     ];
 
     return GridView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4, crossAxisSpacing: 12, mainAxisSpacing: 16, childAspectRatio: 0.8),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 4,
+        mainAxisSpacing: 16,
+        crossAxisSpacing: 16,
+        childAspectRatio: 0.8,
+      ),
       itemCount: actions.length,
       itemBuilder: (context, index) {
         final a = actions[index];
-        return Column(
-          children: [
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(color: color.withOpacity(0.12), borderRadius: BorderRadius.circular(16)),
-              child: Icon(a['icon'] as IconData, color: color),
-            ),
-            const SizedBox(height: 8),
-            Text(a['label'] as String, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold), textAlign: TextAlign.center),
-          ],
+        return _ActionIcon(
+          label: a['label'] as String,
+          icon: a['icon'] as IconData,
+          color: a['color'] as Color,
+          onTap: () {
+            if (a['label'] == 'Question Centre') {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => QuestionCentreScreen(subject: subject)));
+            } else if (a['label'] == 'Flashcards') {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => FlashcardsScreen(subject: subject)));
+            }
+          },
         );
       },
     );
   }
+}
 
-  Widget _buildChapterList(Color color) {
+class _ActionIcon extends StatelessWidget {
+  final String label;
+  final IconData icon;
+  final Color color;
+  final VoidCallback? onTap;
+  const _ActionIcon({required this.label, required this.icon, required this.color, this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
+            ),
+            child: Icon(icon, color: color, size: 24),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            label,
+            textAlign: TextAlign.center,
+            style: DesignSystem.bodySmall.copyWith(fontSize: 10, fontWeight: FontWeight.bold),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ChapterList extends StatelessWidget {
+  final Future<List<Map<String, dynamic>>> chaptersFuture;
+  final String subject;
+  final Color color;
+  const _ChapterList({required this.chaptersFuture, required this.subject, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
     return FutureBuilder<List<Map<String, dynamic>>>(
-      future: _chaptersFuture,
+      future: chaptersFuture,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const SliverFillRemaining(child: Center(child: CircularProgressIndicator()));
+          return const SliverToBoxAdapter(child: Center(child: Padding(
+            padding: EdgeInsets.all(32.0),
+            child: CircularProgressIndicator(),
+          )));
         }
-        final chapters = snapshot.data ?? [];
+        if (!snapshot.hasData || snapshot.data!.isEmpty) {
+          return const SliverToBoxAdapter(child: Center(child: Text('No chapters found.')));
+        }
+        final chapters = snapshot.data!;
         return SliverPadding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: DesignSystem.spacingMd),
           sliver: SliverList(
             delegate: SliverChildBuilderDelegate(
-              (context, index) => _buildChapterCard(chapters[index], index, color),
+              (context, index) => _ChapterCard(chapter: chapters[index], index: index, color: color, subject: subject),
               childCount: chapters.length,
             ),
           ),
@@ -285,53 +373,60 @@ class _SubjectDashboardScreenState extends State<SubjectDashboardScreen> {
       },
     );
   }
+}
 
-  Widget _buildChapterCard(Map<String, dynamic> chapter, int index, Color color) {
-    return Card(
-      margin: const EdgeInsets.only(bottom: 20),
+class _ChapterCard extends StatelessWidget {
+  final Map<String, dynamic> chapter;
+  final int index;
+  final Color color;
+  final String subject;
+  const _ChapterCard({required this.chapter, required this.index, required this.color, required this.subject});
+
+  @override
+  Widget build(BuildContext context) {
+    final mastery = (index % 5 + 1) * 0.2;
+    return Container(
+      margin: const EdgeInsets.only(bottom: DesignSystem.spacingMd),
+      decoration: DesignSystem.cardDecoration,
       child: InkWell(
-        borderRadius: BorderRadius.circular(20),
-        onTap: () async {
-          final concept = await sl<FrameworkRepository>().getConceptNode(chapter['id']);
-          if (concept != null && mounted) {
-            Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
-          }
-        },
+        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ChapterDashboardScreen(chapterId: chapter['id'], subject: subject))),
+        borderRadius: BorderRadius.circular(DesignSystem.radiusLg),
         child: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(DesignSystem.spacingMd),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
-                  Text('CHAPTER ${index + 1}', style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 11, letterSpacing: 1.1)),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    decoration: BoxDecoration(color: color.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(4)),
+                    child: Text('CHAPTER ${index + 1}', style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 10)),
+                  ),
                   const Spacer(),
-                  const Icon(Icons.check_circle, color: Colors.green, size: 20),
+                  if (mastery >= 0.8)
+                    const Icon(Icons.verified, color: Colors.green, size: 16),
                 ],
               ),
-              const SizedBox(height: 12),
-              Text(chapter['title'], style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 20),
+              const SizedBox(height: DesignSystem.spacingSm),
+              Text(chapter['title'], style: DesignSystem.title.copyWith(fontSize: 16)),
+              const SizedBox(height: DesignSystem.spacingMd),
               Row(
                 children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text('Mastery Progress', style: TextStyle(fontSize: 12, color: Colors.grey)),
-                        const SizedBox(height: 8),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: LinearProgressIndicator(value: 0.4, backgroundColor: Colors.grey.shade100, valueColor: AlwaysStoppedAnimation(color), minHeight: 6),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(width: 24),
-                  FilledButton.tonal(
-                    onPressed: () {},
-                    style: FilledButton.styleFrom(backgroundColor: color.withOpacity(0.12), foregroundColor: color),
-                    child: const Text('Start'),
+                  _Detail(Icons.layers_outlined, '${(chapter['topics'] as List).length} Topics'),
+                  const SizedBox(width: DesignSystem.spacingMd),
+                  _Detail(Icons.schedule, '45-60m'),
+                  const Spacer(),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text('${(mastery * 100).toInt()}% Mastered', style: DesignSystem.bodySmall.copyWith(fontSize: 10, color: color, fontWeight: FontWeight.bold)),
+                      const SizedBox(height: 4),
+                      SizedBox(
+                        width: 80,
+                        child: LinearProgressIndicator(value: mastery, color: color, backgroundColor: color.withValues(alpha: 0.1), minHeight: 4),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -341,38 +436,22 @@ class _SubjectDashboardScreenState extends State<SubjectDashboardScreen> {
       ),
     );
   }
+}
 
-  Widget _buildFunLearningCard(Color color) {
-    return Container(
-      padding: const EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [color.withOpacity(0.8), color]),
-        borderRadius: BorderRadius.circular(24),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Icon(Icons.emoji_objects, color: Colors.white, size: 40),
-          const SizedBox(height: 16),
-          const Text('MATH TRICK OF THE DAY', style: TextStyle(color: Colors.white70, fontWeight: FontWeight.bold, fontSize: 12)),
-          const SizedBox(height: 8),
-          const Text('Multiplying by 5 is the same as multiplying by 10 and then dividing by 2!', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
-          const SizedBox(height: 20),
-          OutlinedButton(onPressed: () {}, style: OutlinedButton.styleFrom(foregroundColor: Colors.white, side: const BorderSide(color: Colors.white)), child: const Text('Try it Out')),
-        ],
-      ),
+class _Detail extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  const _Detail(this.icon, this.label);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Icon(icon, size: 14, color: DesignSystem.textTertiary),
+        const SizedBox(width: 4),
+        Text(label, style: DesignSystem.bodySmall.copyWith(fontSize: 11, color: DesignSystem.textTertiary)),
+      ],
     );
   }
-
-  IconData _getIconForSubject(String subject) {
-    switch (subject) {
-      case 'Mathematics': return Icons.calculate;
-      case 'EVS': return Icons.nature_people;
-      case 'English': return Icons.book;
-      case 'Hindi': return Icons.translate;
-      case 'Science': return Icons.science;
-      case 'Social Science': return Icons.public;
-      default: return Icons.school;
-    }
-  }
 }
+

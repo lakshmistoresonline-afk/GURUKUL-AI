@@ -1,80 +1,50 @@
+import 'dart:convert';
+import 'dart:io';
+import 'package:flutter/foundation.dart';
 import '../../domain/models/media/lesson_media.dart';
+import 'package:path/path.dart' as p;
 
 class LessonMediaRepository {
-  // Hardcoded mapping for demonstration. In production, this would load from a JSON file or API.
-  final Map<String, LessonMedia> _mediaMapping = {
-    // Mathematics
-    'm5_c1': const LessonMedia(
-      lessonId: 'm5_c1_media',
-      chapterId: 'm5_c1',
-      subject: 'Mathematics',
-      title: 'The Fish Tale - Large Numbers',
-      animationAsset: 'assets/lottie/math_numbers_m5_c1.json',
-      videoAsset: 'assets/videos/math_m5_c1.mp4',
-      thumbnail: 'assets/images/thumbs/math_m5_c1.png',
-      audioNarration: 'assets/audio/math_m5_c1_intro.mp3',
-      duration: Duration(minutes: 5),
-      license: 'CC BY-NC 4.0',
-      source: 'Gurukul AI Original',
-    ),
-    'm5_c2': const LessonMedia(
-      lessonId: 'm5_c2_media',
-      chapterId: 'm5_c2',
-      subject: 'Mathematics',
-      title: 'Shapes and Angles',
-      animationAsset: 'assets/lottie/geometry_angles_m5_c2.json',
-      videoAsset: 'assets/videos/math_m5_c2.mp4',
-    ),
-    'm6_c7': const LessonMedia(
-      lessonId: 'm6_c7_media',
-      chapterId: 'm6_c7',
-      subject: 'Mathematics',
-      title: 'Fractions',
-      animationAsset: 'assets/lottie/math_fractions_m6_c7.json',
-      videoAsset: 'assets/videos/math_m6_c7.mp4',
-    ),
-    'm6_c7_topic1': const LessonMedia(
-      lessonId: 'm6_c7_t1_media',
-      chapterId: 'm6_c7',
-      subject: 'Mathematics',
-      title: 'Equivalent Fractions',
-      animationAsset: 'assets/lottie/fractions_equivalent.json',
-      videoAsset: 'assets/videos/fractions_pizzas.mp4',
-    ),
+  final String _root = 'D:/GURUKUL-AI/content_repository';
 
-    // Science - Electricity
-    's6_c9': const LessonMedia(
-      lessonId: 's6_c9_media',
-      chapterId: 's6_c9',
-      subject: 'Science',
-      title: 'Electricity and Circuits',
-      animationAsset: 'assets/lottie/science_circuit.json',
-      videoAsset: 'assets/videos/science_battery_bulb.mp4',
-    ),
+  Future<LessonMedia?> getMediaForChapter(String chapterId) async {
+    // 1. Determine path (similar logic to FrameworkRepository)
+    // For simplicity, search in the repository
+    final curriculumDir = Directory(p.join(_root, 'curriculum'));
+    if (!await curriculumDir.exists()) return null;
 
-    // Science
-    's6_c1': const LessonMedia(
-      lessonId: 's6_c1_media',
-      chapterId: 's6_c1',
-      subject: 'Science',
-      title: 'Components of Food',
-      animationAsset: 'assets/lottie/science_food_s6_c1.json',
-      videoAsset: 'assets/videos/science_s6_c1.mp4',
-    ),
+    final suffix = chapterId.split('_').last;
 
-    // History
-    'ss6_h1': const LessonMedia(
-      lessonId: 'ss6_h1_media',
-      chapterId: 'ss6_h1',
-      subject: 'Social Science',
-      title: 'What, Where, How and When?',
-      animationAsset: 'assets/lottie/history_intro_ss6_h1.json',
-      videoAsset: 'assets/videos/history_ss6_h1.mp4',
-    ),
-  };
+    try {
+      final allFiles = curriculumDir.listSync(recursive: true);
+      for (var entity in allFiles) {
+        if (entity is Directory && p.basename(entity.path) == 'chapter_$suffix') {
+          final mediaFile = File(p.join(entity.path, 'media.json'));
+          if (await mediaFile.exists()) {
+            final data = jsonDecode(await mediaFile.readAsString());
+            if (data['lessonId'] != null) {
+              return LessonMedia(
+                lessonId: data['lessonId'],
+                chapterId: chapterId,
+                subject: data['subject'] ?? '',
+                title: data['title'] ?? '',
+                animationAsset: data['animationAsset'],
+                videoAsset: data['videoAsset'],
+                thumbnail: data['thumbnail'],
+                audioNarration: data['audioNarration'],
+                duration: data['duration'] != null ? Duration(minutes: data['duration']) : const Duration(minutes: 5),
+                license: data['license'],
+                source: data['source'],
+              );
+            }
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('LessonMediaRepository: Error loading media for $chapterId: $e');
+    }
 
-  LessonMedia? getMediaForChapter(String chapterId) {
-    return _mediaMapping[chapterId];
+    return null;
   }
 
   /// Generates a fallback lesson media if specific assets are missing.
@@ -84,8 +54,6 @@ class LessonMediaRepository {
       chapterId: chapterId,
       subject: subject,
       title: title,
-      // We do NOT use generic assets here.
-      // Instead, the UI will handle null assets by showing illustrated walkthroughs.
     );
   }
 }

@@ -1,0 +1,132 @@
+{
+  "id": "m5_c8",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "Mapping Your Way",
+  "topic": "Spatial Reasoning",
+  "subtopic": "Map Reading and Scales",
+  "difficulty": "intermediate",
+  "bloomLevel": "apply",
+  "examWeightage": 5,
+  "estStudyTime": 40,
+  "prerequisites": [],
+  "dependencies": [],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Identify directions (North, South, East, West) on a map",
+    "Understand the concept of a 'Scale' and its use",
+    "Calculate actual distances using map scales",
+    "Interpret simple layouts and floor plans",
+    "Describe routes using landmarks and directions"
+  ],
+  "examples": [
+    "Scale on a map (1cm = 200km)",
+    "Map of India",
+    "Layout of a school",
+    "Red Fort route map",
+    "Reading directions (North, South, East, West)"
+  ],
+  "misconceptions": [
+    "Thinking that the top of a map is always North (though it is a convention, it's not a rule of nature)"
+  ],
+  "practiceExercises": [
+    {
+      "question": "If the scale on a map is 1 cm = 10 km, what is the actual distance for 5 cm on the map?",
+      "hint": "Multiply the map distance by the scale value.",
+      "options": ["5 km", "50 km", "15 km", "100 km"],
+      "correctAnswer": "50 km",
+      "explanation": "5 cm * 10 km/cm = 50 km.",
+      "isHots": false
+    },
+    {
+      "question": "Which direction is generally at the top of a standard map?",
+      "hint": "Opposite of South.",
+      "options": ["East", "West", "North", "South"],
+      "correctAnswer": "North",
+      "explanation": "By convention, North is usually shown at the top of maps.",
+      "isHots": false
+    },
+    {
+      "question": "If you are facing the rising sun, which direction is behind you?",
+      "hint": "The sun rises in the East.",
+      "options": ["North", "South", "West", "East"],
+      "correctAnswer": "West",
+      "explanation": "If you face East (sunrise), West is directly behind you.",
+      "isHots": false
+    },
+    {
+      "question": "A floor plan shows a room as 2cm x 3cm. If 1cm = 2m, what are the actual dimensions?",
+      "hint": "Multiply each side by 2.",
+      "options": ["2m x 3m", "4m x 6m", "1m x 1.5m", "8m x 12m"],
+      "correctAnswer": "4m x 6m",
+      "explanation": "2cm * 2m/cm = 4m and 3cm * 2m/cm = 6m.",
+      "isHots": true
+    },
+    {
+      "question": "What is the use of a 'Legend' or 'Key' on a map?",
+      "hint": "It explains symbols.",
+      "options": ["To show the title", "To explain symbols used", "To show the scale", "To show the author"],
+      "correctAnswer": "To explain symbols used",
+      "explanation": "A map legend or key explains what the various symbols and colors represent.",
+      "isHots": false
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Scale",
+      "back": "The ratio between distance on a map and actual distance"
+    },
+    {
+      "front": "Legend/Key",
+      "back": "Explanation of symbols used on a map"
+    },
+    {
+      "front": "Cardinal Directions",
+      "back": "North, South, East, West"
+    },
+    {
+      "front": "Landmark",
+      "back": "A recognizable feature used for navigation"
+    },
+    {
+      "front": "Grid",
+      "back": "Set of intersecting lines used to locate points"
+    }
+  ],
+  "revisionNotes": "Scale helps in shrinking large areas. Directions help in navigation. Landmarks are key to describing routes.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Forgetting to multiply by the scale to get actual distance"
+  ],
+  "vocabulary": {
+    "Scale": "A system of ordered marks at fixed intervals used as a reference standard in measurement.",
+    "Spatial": "Relating to space.",
+    "Layout": "The way in which the parts of something are arranged or laid out."
+  },
+  "interactiveActivities": [
+    "Draw a map from your classroom to the school gate and mark at least 3 landmarks.",
+    "Use a map of India to find which states are to the North of your own state."
+  ],
+  "masteryCheckpoints": [
+    "Can calculate real distance given a map and a scale.",
+    "Identifies the four main directions correctly on any map.",
+    "Can draw a simple layout of their own bedroom."
+  ],
+  "introduction": "Let's explore the world from a bird's eye view! Maps are like shrinking the whole world onto a piece of paper to help us find our way across cities and countries.",
+  "realLifeConnection": "We use maps when we travel to a new city, and GPS on our phones uses digital maps to show us the fastest route to the cinema or a friend's house.",
+  "storyBasedExplanation": "Ashish is going to see the Republic Day Parade. He looks at the map of New Delhi to find the way from Rashtrapati Bhavan to India Gate. He realizes that even though it looks like 5cm on paper, it's a long walk in real life!",
+  "childFriendlyExplanation": "A map is like a drawing of your neighborhood from the sky. The 'Scale' is a magic ruler that tells you how many thousands of times the world was shrunk to fit on your page!",
+  "teacherExplanation": "This chapter focuses on spatial reasoning. We transition from 3D views to 2D representations, introducing the concepts of perspective, scale, and directional orientation.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Draw a map of your house with your child and mark their favorite spots.",
+    "Measure the length of a room and draw it on a paper using the scale '1 meter = 1 centimeter'."
+  ],
+  "animationScript": "Scene 1: A camera zooming out from a classroom to the whole school, then the city, then a map. Scene 2: A ruler measuring a distance on a map and a calculator showing the real distance. Scene 3: A compass spinning to North.",
+  "videoScript": "Host with a large map of India. 'See this small line between Delhi and Jaipur? It's just 2.5cm. But the scale says 1cm = 100km. So the cities are actually 250km apart! Maps are powerful tools for travelers.'",
+  "parentNotes": "Help your child understand their surroundings. When you go out, ask them: 'Which direction is the park from here?' Use simple maps of the neighborhood.",
+  "teacherNotes": "Provide maps of the local area or school. Teach students how to identify the four main directions and how to orient a map correctly.",
+  "learningOutcomes": "Students will be able to read and interpret simple maps, use scales to calculate actual distances, and describe routes using directions."
+}

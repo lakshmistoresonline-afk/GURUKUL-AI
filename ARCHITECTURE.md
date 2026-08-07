@@ -1,48 +1,30 @@
-# Project Gurukul AI - Full Architecture Documentation
+# Project Gurukul AI - Architecture
 
-## 1. System Overview
-Project Gurukul AI is a distributed educational platform designed to provide an AI-tutor companion for NCERT students. It adheres to the **Sunbird ED** design principles and utilizes a modern Flutter/Firebase tech stack.
+## 1. Overview
+Gurukul AI is a comprehensive, AI-powered learning platform designed specifically for NCERT/CBSE students (Class 5-12). It uses a clean, modular architecture to ensure scalability, offline-first reliability, and a premium educational experience.
 
-## 2. Core Layers
+## 2. Core Modules
+- **`core/`**: Infrastructure, Dependency Injection, Theme/Design System, Telemetry, and Utilities.
+- **`features/auth/`**: Firebase Authentication for students, teachers, and parents.
+- **`features/curriculum/`**: NCERT framework mapping, lesson repository, and the "Learning Journey" engine.
+- **`features/ai/`**: Gemini-powered tutors, OCR answer evaluation, and generative content factory.
+- **`features/gamification/`**: Reward systems, streaks, achievements, and certification engine.
+- **`features/content/`**: Content Provider Framework (Local + External), Content Studio for admin management, and multi-format player.
+- **`features/questions/`**: A vast question bank and AI-driven personalized exam generator.
+- **`features/planner/`**: Smart study scheduling and spaced repetition revision engine.
 
-### Presentation Layer (Flutter)
-- **UI:** Material 3 design, responsive layouts.
-- **Navigation:** Multi-tab student dashboard (Home, Progress, Ranks).
-- **State Management:** BLoC (Business Logic Component) for predictable state transitions.
-- **Widgets:** Specialized components for gamification (XP bars), interactive chat, and high-quality loaders (Lottie).
+## 3. Technology Stack
+- **Frontend**: Flutter (Material 3)
+- **Backend**: Firebase (Auth, Firestore, Functions, Storage)
+- **AI**: Google Generative AI (Gemini), ML Kit (Text Recognition, Barcode)
+- **Database**: Hive (Local caching/Offline), Firestore (Cloud Sync)
+- **Animation**: Lottie, Rive, Flutter Custom Painter
+- **Telemetry**: Sunbird-compatible Telemetry V3 standard
 
-### Domain Layer
-- **Models:** Entities representing Concepts, Mastery, Assignments, Assessment Sessions, and Gamification stats.
-- **Services:** Pure business logic including:
-    - **Recommendation Engine:** Personalized study paths.
-    - **Spaced Repetition:** Scientifically scheduled revision.
-    - **Mastery Engine:** Performance-based progress tracking.
-    - **Milestone Service:** Achievement detection.
+## 4. Content Ecosystem
+Gurukul AI follows a "Local Primary" content policy. External providers (DIKSHA, ePathshala) enrich the experience, but the core learning journey is always available offline using AI-generated or pre-packaged local content.
 
-### Data Layer
-- **Repositories:** Single source of truth coordinating between Remote (Firebase) and Local (Hive) sources.
-- **Services:** Specialized wrappers for external APIs:
-    - **AiTutorService:** Gemini 1.5 Flash (Socratic logic).
-    - **OcrService:** Google ML Kit Text Recognition.
-    - **VoiceService:** Speech-to-Text & Text-to-Speech.
-    - **NotificationService:** Firebase Cloud Messaging.
-
-## 3. Modular Breakdown
-- `core/`: Cross-cutting concerns (DI, Telemetry, Storage, Sync, Notifications).
-- `features/auth/`: Identity management and Sunbird Lern contract bridging.
-- `features/curriculum/`: Framework management and Knowledge Graph mastering.
-- `features/ai/`: Multi-modal tutoring (Chat, Voice, OCR).
-- `features/student/`: Primary learning experience and visual progress tracking.
-- `features/parent/`: Empathetic insight generation for oversight.
-- `features/teacher/`: Analytical class management.
-- `features/gamification/`: Engagement drivers (XP, Streaks, Leaderboards).
-
-## 4. Data Standards
-- **Telemetry:** Ver 3.0 compliant with Sunbird standards (IMPRESSION, INTERACT, ASSESS events).
-- **Content:** Metadata-driven discovery following NCERT/CBSE taxonomies.
-- **Assessment:** QuML 3.0 aligned structures with session recovery and AI-powered hints.
-
-## 5. Security & Performance
-- **Firestore Rules:** Role-based access control (RBAC) ensuring data isolation.
-- **Caching:** Multi-tier caching (Firestore persistence + Hive metadata + Framework cache).
-- **Lazy Loading:** Paginated UI and batched telemetry syncing.
+## 5. Design Principles
+- **Zero Whitespace**: Every screen is content-dense and provides immediate educational value.
+- **Child-Friendly**: UI/UX optimized for Class 5-6 students (vibrant colors, large touch targets, story-based flows).
+- **Responsive**: Adapts to Mobile, Tablet, and Web (Edge).

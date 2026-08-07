@@ -1,0 +1,132 @@
+{
+  "id": "m5_c13",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "Ways to Multiply and Divide",
+  "topic": "Operations",
+  "subtopic": "Multiplication and Division Algorithms",
+  "difficulty": "intermediate",
+  "bloomLevel": "apply",
+  "examWeightage": 9,
+  "estStudyTime": 55,
+  "prerequisites": [],
+  "dependencies": [],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Multiply multi-digit numbers using standard and box methods",
+    "Perform long division and understand the role of the remainder",
+    "Solve real-life word problems involving multiple operations",
+    "Estimate products and quotients for quick calculations",
+    "Apply unitary method to find costs and quantities"
+  ],
+  "examples": [
+    "Salary calculation for a month",
+    "Number of plants in a large garden",
+    "Sharing sweets among students",
+    "Multiplication using box method",
+    "Division by repeated subtraction"
+  ],
+  "misconceptions": [
+    "Thinking that multiplication always results in a larger number (only true for numbers > 1)"
+  ],
+  "practiceExercises": [
+    {
+      "question": "If a worker earns Rs 245 per day, how much will he earn in 30 days?",
+      "hint": "Multiply 245 by 30.",
+      "options": ["Rs 735", "Rs 7350", "Rs 2450", "Rs 6000"],
+      "correctAnswer": "Rs 7350",
+      "explanation": "245 * 30 = 7350.",
+      "isHots": false
+    },
+    {
+      "question": "Divide 450 by 9. What is the quotient?",
+      "hint": "Think of 45 divided by 9.",
+      "options": ["40", "50", "60", "90"],
+      "correctAnswer": "50",
+      "explanation": "450 / 9 = 50.",
+      "isHots": false
+    },
+    {
+      "question": "If 12 pencils cost Rs 60, what is the cost of 1 pencil?",
+      "hint": "Divide the total cost by the number of pencils.",
+      "options": ["Rs 5", "Rs 6", "Rs 10", "Rs 12"],
+      "correctAnswer": "Rs 5",
+      "explanation": "60 / 12 = 5.",
+      "isHots": false
+    },
+    {
+      "question": "A gardener plants 15 rows of trees with 12 trees in each row. Total trees are?",
+      "hint": "15 times 12.",
+      "options": ["150", "160", "180", "200"],
+      "correctAnswer": "180",
+      "explanation": "15 * 12 = 180.",
+      "isHots": false
+    },
+    {
+      "question": "What is the remainder when 100 is divided by 7?",
+      "hint": "7 * 14 = 98.",
+      "options": ["0", "1", "2", "3"],
+      "correctAnswer": "2",
+      "explanation": "100 = (7 * 14) + 2. The remainder is 2.",
+      "isHots": true
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Product",
+      "back": "The result of multiplication"
+    },
+    {
+      "front": "Quotient",
+      "back": "The result of division"
+    },
+    {
+      "front": "Remainder",
+      "back": "The amount 'left over' after division"
+    },
+    {
+      "front": "Dividend",
+      "back": "The number that is being divided"
+    },
+    {
+      "front": "Divisor",
+      "back": "The number by which the dividend is divided"
+    }
+  ],
+  "revisionNotes": "Multiplication is repeated addition. Division is repeated subtraction or sharing. Use estimation to check if your answer makes sense.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Forgetting to add the zero when multiplying by the tens digit"
+  ],
+  "vocabulary": {
+    "Algorithm": "A process or set of rules to be followed in calculations.",
+    "Estimate": "Roughly calculate or judge the value, number, or quantity.",
+    "Unitary Method": "A technique for solving a problem by first finding the value of a single unit."
+  },
+  "interactiveActivities": [
+    "Use play money to practice giving change for large purchases.",
+    "Solve a 'Division Puzzle' where you have to share a bag of marbles equally among friends."
+  ],
+  "masteryCheckpoints": [
+    "Can multiply two 2-digit numbers mentally.",
+    "Correctly identifies the quotient and remainder in a division problem.",
+    "Can solve a two-step word problem involving both multiplication and addition."
+  ],
+  "introduction": "Multiplication and Division are like best friends. One helps you grow things fast, and the other helps you share things fairly! In 'Ways to Multiply and Divide', we'll learn new smart ways to work with big numbers.",
+  "realLifeConnection": "We use multiplication to find the total cost of many items at the shop, and division to find out how much each person pays when splitting a bill at a restaurant.",
+  "storyBasedExplanation": "Shyamratan is a hardworking farmer. He earns Rs 245 every day. He wants to save for a new tractor. How much will he earn in a whole month of January? Let's use our 'box method' to help him find the answer quickly!",
+  "childFriendlyExplanation": "Multiplication is just super-fast addition—like a shortcut! Division is just sharing things one by one until everyone has the exactly same amount.",
+  "teacherExplanation": "This chapter focuses on efficiency in calculations. We introduce the 'Area Model' for multiplication to build a conceptual understanding before moving to the standard algorithm.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Ask your child to help you with the grocery bill. If 1 kg of sugar is Rs 42, how much for 5 kg?",
+    "If you have 50 sweets and 8 children, how many sweets does each child get and how many are left for you?"
+  ],
+  "animationScript": "Scene 1: A stack of coins multiplying and growing into a tall tower. Scene 2: A large pile of apples being distributed into 5 equal baskets. Scene 3: The 'Box Method' of multiplication coming together.",
+  "videoScript": "Host with a notebook. 'If one notebook costs Rs 25, how much for 15? We don't need to add 25 fifteen times! We can multiply 25 by 10, then 25 by 5, and add the results. Watch how easy it is!'",
+  "parentNotes": "Practice tables up to 15 with your child. Use everyday situations like 'how many days in 12 weeks' to practice multiplication.",
+  "teacherNotes": "Encourage students to explain their 'way' of multiplying. Use 'division stories' to help them understand that the remainder is not just a number, but something left over in the real world.",
+  "learningOutcomes": "Students will be able to multiply multi-digit numbers, perform long division, and solve complex word problems with confidence."
+}

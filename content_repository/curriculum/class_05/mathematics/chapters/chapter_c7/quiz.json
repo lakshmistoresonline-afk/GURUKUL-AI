@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the next number in the pattern: 2, 4, 8, 16, ___?",
+    "hint": "Each number is double the previous one.",
+    "options": ["20", "24", "32", "64"],
+    "correctAnswer": "32",
+    "explanation": "The rule is to multiply by 2. 16 * 2 = 32.",
+    "isHots": false
+  },
+  {
+    "question": "If a block turns 90 degrees clockwise each time, how many turns bring it back to start?",
+    "hint": "Think of a full circle.",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": "4",
+    "explanation": "90 + 90 + 90 + 90 = 360 degrees, which is a full circle.",
+    "isHots": false
+  },
+  {
+    "question": "In a 3x3 magic square, if the sum of one row is 15, what is the sum of the diagonal?",
+    "hint": "Magic squares have the same sum everywhere.",
+    "options": ["10", "15", "20", "30"],
+    "correctAnswer": "15",
+    "explanation": "In a magic square, the sum of every row, column, and diagonal is the same.",
+    "isHots": true
+  },
+  {
+    "question": "If A=1, B=2, C=3, what does the secret code '2-5' mean?",
+    "hint": "Match the numbers to the letters.",
+    "options": ["AD", "BE", "CF", "DE"],
+    "correctAnswer": "BE",
+    "explanation": "B is the 2nd letter and E is the 5th letter.",
+    "isHots": false
+  },
+  {
+    "question": "What comes next: 1, 4, 9, 16, ___?",
+    "hint": "These are square numbers (1x1, 2x2...).",
+    "options": ["20", "25", "30", "36"],
+    "correctAnswer": "25",
+    "explanation": "These are squares: 1*1, 2*2, 3*3, 4*4. Next is 5*5 = 25.",
+    "isHots": false
+  }
+]

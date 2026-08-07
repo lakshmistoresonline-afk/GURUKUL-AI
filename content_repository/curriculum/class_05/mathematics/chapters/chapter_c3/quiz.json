@@ -1,0 +1,42 @@
+[
+  {
+    "question": "If a square has side 3cm, what is its area?",
+    "hint": "Count the 1x1 squares inside.",
+    "options": ["6 sq cm", "9 sq cm", "12 sq cm", "3 sq cm"],
+    "correctAnswer": "9 sq cm",
+    "explanation": "Area of square = side x side = 3 x 3 = 9.",
+    "isHots": false
+  },
+  {
+    "question": "The perimeter of a rectangle with length 5cm and width 2cm is?",
+    "hint": "Add all four sides.",
+    "options": ["7 cm", "10 cm", "14 cm", "12 cm"],
+    "correctAnswer": "14 cm",
+    "explanation": "Perimeter = 2 * (length + width) = 2 * (5 + 2) = 14 cm.",
+    "isHots": false
+  },
+  {
+    "question": "If two shapes have the same area, do they always have the same perimeter?",
+    "hint": "Try making different rectangles with 12 squares.",
+    "options": ["Yes", "No", "Only for squares", "Only for triangles"],
+    "correctAnswer": "No",
+    "explanation": "Shapes with same area can have different perimeters depending on their boundary length.",
+    "isHots": true
+  },
+  {
+    "question": "How do we measure the area of an irregular leaf on a grid paper?",
+    "hint": "Count full and half squares.",
+    "options": ["Using a ruler", "Counting squares", "Using a string", "It cannot be measured"],
+    "correctAnswer": "Counting squares",
+    "explanation": "We can estimate the area by counting full, more than half, and exactly half squares on a grid.",
+    "isHots": false
+  },
+  {
+    "question": "What is the unit of measurement for area?",
+    "hint": "It involves squares.",
+    "options": ["cm", "m", "sq cm", "kg"],
+    "correctAnswer": "sq cm",
+    "explanation": "Area is measured in square units like square centimetres (sq cm) or square metres.",
+    "isHots": false
+  }
+]

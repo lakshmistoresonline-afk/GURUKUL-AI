@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../curriculum/presentation/screens/content_viewer_screen.dart';
+import '../../../../features/curriculum/presentation/screens/content_viewer_screen.dart';
 
 class ContentStoreScreen extends StatelessWidget {
   const ContentStoreScreen({super.key});

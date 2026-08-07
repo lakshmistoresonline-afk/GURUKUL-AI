@@ -1,0 +1,132 @@
+{
+  "id": "m5_c9",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "Boxes and Sketches",
+  "topic": "Geometry",
+  "subtopic": "3D Shapes and Nets",
+  "difficulty": "intermediate",
+  "bloomLevel": "understand",
+  "examWeightage": 4,
+  "estStudyTime": 35,
+  "prerequisites": [],
+  "dependencies": [],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Identify 3D shapes and their 2D representations",
+    "Recognize nets of cubes, cuboids, and other 3D objects",
+    "Distinguish between a floor plan and a deep drawing",
+    "Visualize how a 2D net folds into a 3D box",
+    "Draw simple deep drawings of 3D objects like cubes and houses"
+  ],
+  "examples": [
+    "A cube net",
+    "Matchbox sketch",
+    "A house layout",
+    "Folding a paper to make a box",
+    "Deep drawing of a cylinder"
+  ],
+  "misconceptions": [
+    "Thinking that any six squares joined together can form a cube net"
+  ],
+  "practiceExercises": [
+    {
+      "question": "How many faces does a cube have?",
+      "hint": "Think of a dice.",
+      "options": ["4", "6", "8", "12"],
+      "correctAnswer": "6",
+      "explanation": "A cube has 6 identical square faces.",
+      "isHots": false
+    },
+    {
+      "question": "Which of these 2D shapes can be folded into a cube?",
+      "hint": "Look for a net with 6 squares.",
+      "options": ["A T-shaped net of 6 squares", "A row of 5 squares", "A cross of 4 squares", "A circle"],
+      "correctAnswer": "A T-shaped net of 6 squares",
+      "explanation": "A T-shaped arrangement of 6 squares can be folded to form a cube.",
+      "isHots": false
+    },
+    {
+      "question": "What is the main difference between a floor plan and a deep drawing?",
+      "hint": "One shows the height, the other doesn't.",
+      "options": ["Color", "Size", "A deep drawing shows 3D view", "A floor plan shows 3D view"],
+      "correctAnswer": "A deep drawing shows 3D view",
+      "explanation": "A floor plan shows the 2D layout from above, while a deep drawing shows the object in 3D.",
+      "isHots": true
+    },
+    {
+      "question": "If you unfold a cylinder, what two shapes do you get?",
+      "hint": "Think of a tin can.",
+      "options": ["Two circles and a rectangle", "Two squares and a circle", "A triangle and a circle", "Three circles"],
+      "correctAnswer": "Two circles and a rectangle",
+      "explanation": "A cylinder is made of two circular bases and a rectangular curved surface.",
+      "isHots": false
+    },
+    {
+      "question": "A matchbox is an example of which 3D shape?",
+      "hint": "It has 6 rectangular faces.",
+      "options": ["Cube", "Cone", "Cuboid", "Sphere"],
+      "correctAnswer": "Cuboid",
+      "explanation": "A matchbox has rectangular faces, making it a cuboid.",
+      "isHots": false
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "3D Shape",
+      "back": "An object that has length, width, and depth"
+    },
+    {
+      "front": "Net",
+      "back": "A 2D pattern that can be folded to make a 3D shape"
+    },
+    {
+      "front": "Floor Plan",
+      "back": "A drawing showing the layout from above"
+    },
+    {
+      "front": "Deep Drawing",
+      "back": "A drawing that shows a 3D view of an object"
+    },
+    {
+      "front": "Face",
+      "back": "A flat surface of a 3D object"
+    }
+  ],
+  "revisionNotes": "Cubes have 6 square faces. Nets are flat patterns for boxes. Deep drawings help us see depth on paper.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Confusing the 2D floor plan with the 3D appearance"
+  ],
+  "vocabulary": {
+    "Perspective": "The art of drawing solid objects on a 2D surface so as to give the right impression of their height, width, and depth.",
+    "Dimension": "A measurable extent of some kind, such as length, breadth, depth, or height.",
+    "Geometric": "Relating to geometry, or according to its methods."
+  },
+  "interactiveActivities": [
+    "Unfold an empty toothpaste box and draw its net in your notebook.",
+    "Try to draw a 'deep drawing' of your school bag."
+  ],
+  "masteryCheckpoints": [
+    "Can identify which nets will correctly fold into a cube.",
+    "Can draw a simple 3D representation of a cuboid.",
+    "Understands the relationship between a house floor plan and its final 3D look."
+  ],
+  "introduction": "How do we draw a 3D box on a flat paper? In 'Boxes and Sketches', we'll learn to see the world in 3D and understand how flat paper shapes can fold into beautiful boxes and houses.",
+  "realLifeConnection": "Engineers and architects use floor plans and deep drawings to show what a building will look like before it's actually built. Package designers use nets to create boxes for everything from cereal to toys.",
+  "storyBasedExplanation": "Sheeba wants to make a special box for her sweets. She tries different flat paper shapes called 'nets'. Some fold perfectly into a box, and some just won't work! Can you help Sheeba find the right nets for her sweet boxes?",
+  "childFriendlyExplanation": "Think of a 'Net' as a flattened out cardboard box. When you fold it along the lines, it pops up into a 3D shape! A deep drawing is just a way to make a drawing look like it's coming out of the paper.",
+  "teacherExplanation": "This chapter develops spatial visualization skills. We move from 2D nets to 3D objects, emphasizing the transition between different representations of the same geometric solid.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Unfold an old cereal box or biscuit pack with your child and look at its 'net'. Try to fold it back together.",
+    "Use playdough or clay to make cubes and then 'slice' them to see different faces."
+  ],
+  "animationScript": "Scene 1: A flat T-shaped net folding up into a cube. Scene 2: A 2D floor plan of a house transforming into a 3D model. Scene 3: Different views of a dice (top, front, side).",
+  "videoScript": "Host with a wooden cube. 'See these six square faces? If I unfold this box, I get this flat shape called a net. Let's see how many other ways we can arrange six squares to make a cube!'",
+  "parentNotes": "Help your child recognize 3D shapes in the kitchen (cans, boxes). Talk about how a flat piece of wrapping paper covers a 3D gift.",
+  "teacherNotes": "Provide various paper templates for nets. Encourage students to explore all 11 possible nets for a cube to build strong visualization skills.",
+  "learningOutcomes": "Students will be able to identify nets for 3D shapes, draw simple deep drawings, and understand the difference between layout and 3D views."
+}

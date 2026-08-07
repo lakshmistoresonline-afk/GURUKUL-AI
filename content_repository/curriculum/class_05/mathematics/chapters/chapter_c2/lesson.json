@@ -1,0 +1,134 @@
+{
+  "id": "m5_c2",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "Shapes and Angles",
+  "topic": "Geometry",
+  "subtopic": "Types of Angles",
+  "difficulty": "beginner",
+  "bloomLevel": "apply",
+  "examWeightage": 7,
+  "estStudyTime": 40,
+  "prerequisites": [],
+  "dependencies": [
+    "m6_c4"
+  ],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Identify Right, Acute, and Obtuse angles",
+    "Recognize angles in daily life objects",
+    "Understand how shapes change with angles",
+    "Classify angles based on degree measure",
+    "Measure and draw angles using simple tools"
+  ],
+  "examples": [
+    "Corner of a book (Right angle)",
+    "Hands of a clock at 3:00 (Right angle)",
+    "A slide in the park (Acute angle)",
+    "An open laptop screen (Obtuse angle)",
+    "A pair of scissors slightly open (Acute angle)"
+  ],
+  "misconceptions": [
+    "Thinking bigger shapes have bigger angles"
+  ],
+  "practiceExercises": [
+    {
+      "question": "An angle smaller than a right angle is called?",
+      "hint": "It is a \"sharp\" angle.",
+      "options": ["Obtuse", "Right", "Acute", "Straight"],
+      "correctAnswer": "Acute",
+      "explanation": "Acute angles are less than 90 degrees.",
+      "isHots": false
+    },
+    {
+      "question": "At what time do the hands of a clock form a right angle?",
+      "hint": "Look for the L-shape.",
+      "options": ["12:00", "3:00", "6:00", "1:30"],
+      "correctAnswer": "3:00",
+      "explanation": "At 3:00, the hour hand is at 3 and the minute hand is at 12, forming a 90-degree angle.",
+      "isHots": false
+    },
+    {
+      "question": "Which of these is an obtuse angle?",
+      "hint": "It is wider than a corner.",
+      "options": ["45 degrees", "90 degrees", "120 degrees", "180 degrees"],
+      "correctAnswer": "120 degrees",
+      "explanation": "Angles between 90 and 180 degrees are called obtuse.",
+      "isHots": false
+    },
+    {
+      "question": "How many degrees are in a half-right angle?",
+      "hint": "90 divided by 2.",
+      "options": ["30", "45", "60", "90"],
+      "correctAnswer": "45",
+      "explanation": "Half of a right angle (90 degrees) is 45 degrees.",
+      "isHots": false
+    },
+    {
+      "question": "What shape is formed by three matchsticks joined at their ends?",
+      "hint": "A polygon with 3 sides.",
+      "options": ["Square", "Circle", "Triangle", "Rectangle"],
+      "correctAnswer": "Triangle",
+      "explanation": "A triangle is a closed shape with three sides and three angles.",
+      "isHots": false
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Right Angle",
+      "back": "90 degrees (L shape)"
+    },
+    {
+      "front": "Obtuse Angle",
+      "back": "More than 90, less than 180"
+    },
+    {
+      "front": "Acute Angle",
+      "back": "Less than 90 degrees"
+    },
+    {
+      "front": "Straight Angle",
+      "back": "180 degrees (a straight line)"
+    },
+    {
+      "front": "Vertex",
+      "back": "The point where two rays meet to form an angle"
+    }
+  ],
+  "revisionNotes": "Use a \"Degree Clock\" or Divider to measure angles. Remember: Acute < Right < Obtuse.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Confusing Acute and Obtuse"
+  ],
+  "vocabulary": {
+    "Acute Angle": "An angle that is less than 90 degrees.",
+    "Obtuse Angle": "An angle that is greater than 90 degrees but less than 180 degrees.",
+    "Right Angle": "An angle of exactly 90 degrees."
+  },
+  "interactiveActivities": [
+    "Look around your room and find 5 objects that have a right angle.",
+    "Use two pencils to show an angle that is \"more than a right angle\"."
+  ],
+  "masteryCheckpoints": [
+    "Identifies right angles in 2D shapes.",
+    "Distinguishes between sharp (acute) and wide (obtuse) corners.",
+    "Can use a degree clock to represent a half-right angle."
+  ],
+  "introduction": "Look around you! Everything has an angle. From the yoga poses you do to the roof of your house.",
+  "realLifeConnection": "When you open a door just a little bit, you make an acute angle. Open it wide, and it becomes obtuse!",
+  "storyBasedExplanation": "Rohini and Mohini are making shapes with matchsticks. They noticed that by changing the angle, the whole shape changes from a square to a rhombus!",
+  "childFriendlyExplanation": "Angles are like the mouths of hungry crocodiles. A small opening is Acute, a perfect \"L\" is Right, and a wide open mouth is Obtuse!",
+  "teacherExplanation": "An angle is formed when two rays meet at a common vertex. We measure them in degrees using a protractor.",
+  "animatedLessonAsset": "assets/lottie/geometry_angles_m5_c2.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Make an \"Angle Tester\" using two strips of cardboard and a split pin.",
+    "Find 3 right angles in your kitchen."
+  ],
+  "animationScript": "Scene 1: Two matchsticks forming an L-shape. Narrator: 'That's a right angle!' Scene 2: Matchsticks closing slightly. Narrator: 'Now it's Acute!' Scene 3: Matchsticks opening wide. Narrator: 'And that's Obtuse!'",
+  "videoScript": "Host standing in a playground. 'Hi everyone! See that slide? The angle it makes with the ground helps you go fast. Let's learn how to classify these angles using our angle tester...'",
+  "parentNotes": "Find angles in yoga poses with your child. Ask them to identify which ones are right angles.",
+  "teacherNotes": "Use matchsticks to create polygons and explore interior angles. Show how the sum of angles changes with sides.",
+  "learningOutcomes": "Students will be able to classify angles, recognize them in their environment, and understand how changing angles affects the rigidity of a shape."
+}

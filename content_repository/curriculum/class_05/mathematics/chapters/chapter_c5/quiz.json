@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Which of these letters looks the same after a half-turn?",
+    "hint": "Try turning your book upside down.",
+    "options": ["A", "B", "H", "C"],
+    "correctAnswer": "H",
+    "explanation": "Letter H looks exactly the same when rotated by 180 degrees.",
+    "isHots": false
+  },
+  {
+    "question": "A square looks the same after what kind of turn?",
+    "hint": "Think about its four equal sides.",
+    "options": ["Only half-turn", "Only full-turn", "Quarter-turn", "None of these"],
+    "correctAnswer": "Quarter-turn",
+    "explanation": "A square looks the same after every 90-degree (quarter) turn.",
+    "isHots": false
+  },
+  {
+    "question": "How many lines of symmetry does a circle have?",
+    "hint": "Think about folding it through the center.",
+    "options": ["1", "2", "4", "Infinite"],
+    "correctAnswer": "Infinite",
+    "explanation": "A circle can be folded along any diameter to get two matching halves.",
+    "isHots": true
+  },
+  {
+    "question": "Which of these objects has rotational symmetry?",
+    "hint": "It looks the same as it spins.",
+    "options": ["A tree", "A fan with 3 blades", "A mountain", "A car"],
+    "correctAnswer": "A fan with 3 blades",
+    "explanation": "A fan looks the same after a 1/3 turn (120 degrees).",
+    "isHots": false
+  },
+  {
+    "question": "Does the letter 'P' have a line of symmetry?",
+    "hint": "Can you fold it to match perfectly?",
+    "options": ["Yes, vertical", "Yes, horizontal", "No", "Yes, both"],
+    "correctAnswer": "No",
+    "explanation": "Letter P cannot be folded into two identical halves.",
+    "isHots": false
+  }
+]

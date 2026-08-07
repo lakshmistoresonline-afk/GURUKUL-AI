@@ -1,0 +1,132 @@
+{
+  "id": "s6_c8",
+  "subject": "Science",
+  "classLevel": 6,
+  "chapter": "Light, Shadows and Reflections",
+  "topic": "Physics",
+  "subtopic": "Optics Basics",
+  "difficulty": "beginner",
+  "bloomLevel": "understand",
+  "examWeightage": 8,
+  "estStudyTime": 45,
+  "prerequisites": [],
+  "dependencies": [],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Classify objects as luminous, non-luminous, transparent, translucent, and opaque",
+    "Understand that light travels in straight lines (rectilinear propagation)",
+    "Explain how shadows are formed and their characteristics",
+    "Describe the principle and construction of a pinhole camera",
+    "Understand the concept of reflection and mirror images"
+  ],
+  "examples": [
+    "Sun is a luminous source",
+    "Shadow of a tree",
+    "Pinhole camera image",
+    "Reflection in a mirror",
+    "Opaque wooden board"
+  ],
+  "misconceptions": [
+    "Thinking that we see objects because our eyes send out light (light actually comes from the object to our eyes)"
+  ],
+  "practiceExercises": [
+    {
+      "question": "Which type of object does not allow any light to pass through it?",
+      "hint": "Like a brick wall.",
+      "options": ["Transparent", "Translucent", "Opaque", "Luminous"],
+      "correctAnswer": "Opaque",
+      "explanation": "Opaque objects do not allow light to pass through them at all.",
+      "isHots": false
+    },
+    {
+      "question": "Light travels in a ______ line.",
+      "hint": "Like an arrow.",
+      "options": ["Curved", "Straight", "Zig-zag", "Wavy"],
+      "correctAnswer": "Straight",
+      "explanation": "Light always travels in straight lines; this is called rectilinear propagation.",
+      "isHots": false
+    },
+    {
+      "question": "A shadow is always formed on the ______ side of the light source.",
+      "hint": "Think about where your shadow is when the sun is in front of you.",
+      "options": ["Same", "Opposite", "Upper", "Lower"],
+      "correctAnswer": "Opposite",
+      "explanation": "A shadow is formed when an opaque object blocks the light, so it appears on the side away from the source.",
+      "isHots": false
+    },
+    {
+      "question": "The image formed by a pinhole camera is?",
+      "hint": "It is flipped.",
+      "options": ["Erect and same size", "Inverted and colored", "Virtual and enlarged", "None of these"],
+      "correctAnswer": "Inverted and colored",
+      "explanation": "A pinhole camera forms an upside-down (inverted) image that shows the colors of the object.",
+      "isHots": true
+    },
+    {
+      "question": "Which of these is a non-luminous object?",
+      "hint": "It does not have its own light.",
+      "options": ["Sun", "Star", "Moon", "Electric bulb"],
+      "correctAnswer": "Moon",
+      "explanation": "The moon does not have its own light; it only reflects the light of the sun.",
+      "isHots": false
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Luminous Object",
+      "back": "Objects that emit their own light like the Sun"
+    },
+    {
+      "front": "Transparent",
+      "back": "Allows light to pass through completely"
+    },
+    {
+      "front": "Shadow",
+      "back": "Dark area formed when light is blocked by an opaque object"
+    },
+    {
+      "front": "Reflection",
+      "back": "Bouncing back of light from a surface"
+    },
+    {
+      "front": "Pinhole Camera",
+      "back": "A simple camera without a lens that uses a tiny hole"
+    }
+  ],
+  "revisionNotes": "Opaque objects block light to form shadows. Light travels straight. Mirrors change the direction of light (reflection).",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Thinking shadows show the color of the object"
+  ],
+  "vocabulary": {
+    "Translucent": "Allowing light, but not detailed shapes, to pass through.",
+    "Rectilinear": "Moving in or forming a straight line.",
+    "Inverted": "Put upside down or in the opposite position."
+  },
+  "interactiveActivities": [
+    "Make a list of 5 transparent, 5 translucent, and 5 opaque objects in your house.",
+    "Observe your shadow at different times of the day and see how its length changes."
+  ],
+  "masteryCheckpoints": [
+    "Can predict if an object will form a clear, faint, or no shadow.",
+    "Explains why we can see a mirror reflection but not a reflection on a wall.",
+    "Describes how to make a simple pinhole camera."
+  ],
+  "introduction": "Light is all around us, but can you see it? In this chapter, we'll explore the magic of light—how it travels faster than anything, how it creates dark shadows, and how it bounces off mirrors like a ball!",
+  "realLifeConnection": "We use mirrors every morning to get ready, and photographers use the way light travels through small holes to take amazing pictures with their cameras.",
+  "storyBasedExplanation": "Have you ever tried to catch your shadow while playing in the park? It follows you everywhere but disappears as soon as you step into the dark! Why do you think a shadow only appears when there's light?",
+  "childFriendlyExplanation": "Light travels in perfectly straight lines like a super-fast arrow. If something solid gets in its way, the light can't go around it, so it creates a dark 'no-light' spot called a shadow.",
+  "teacherExplanation": "This chapter introduces basic optics. We classify materials based on their interaction with light and explore the rectilinear propagation of light through shadow formation and pinhole imaging.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Play 'Shadow Puppets' with your child using a torch and a blank wall. See what animals you can create!",
+    "Place a pencil in a glass of water and observe how it looks bent (refraction—introductory concept)."
+  ],
+  "animationScript": "Scene 1: Light rays traveling in straight lines from a torch. Scene 2: An opaque ball blocking the rays to form a shadow. Scene 3: A ray of light hitting a mirror and bouncing off at the same angle.",
+  "videoScript": "Host in a dark room with a torch. 'Watch how the shadow of this ball changes size as I move it closer to the light. And look at the mirror—it's like a wall for light to bounce off!'",
+  "parentNotes": "Encourage your child to look for reflections in water or shiny spoons. Talk about why we need light to see things around us.",
+  "teacherNotes": "Make a simple pinhole camera using two boxes. Demonstrate that light travels in a straight line using the three-cardboard experiment with a candle.",
+  "learningOutcomes": "Students will be able to classify materials by transparency, explain how shadows are formed, and describe basic reflection and pinhole imaging."
+}

@@ -1,0 +1,135 @@
+{
+  "id": "m5_c3",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "How Many Squares?",
+  "topic": "Measurement",
+  "subtopic": "Area and Perimeter",
+  "difficulty": "intermediate",
+  "bloomLevel": "apply",
+  "examWeightage": 6,
+  "estStudyTime": 50,
+  "prerequisites": [],
+  "dependencies": [
+    "m5_c11",
+    "m6_c10"
+  ],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Calculate area by counting squares",
+    "Understand perimeter as boundary length",
+    "Compare areas of different shapes",
+    "Find areas of irregular shapes on a grid",
+    "Calculate perimeter using addition of sides"
+  ],
+  "examples": [
+    "Area of a stamp on a grid",
+    "Perimeter of a rectangular field",
+    "Area of a postcard",
+    "Perimeter of a square garden",
+    "Area of a rectangular photo"
+  ],
+  "misconceptions": [
+    "Thinking shapes with same area must have same perimeter"
+  ],
+  "practiceExercises": [
+    {
+      "question": "If a square has side 3cm, what is its area?",
+      "hint": "Count the 1x1 squares inside.",
+      "options": ["6 sq cm", "9 sq cm", "12 sq cm", "3 sq cm"],
+      "correctAnswer": "9 sq cm",
+      "explanation": "Area of square = side x side = 3 x 3 = 9.",
+      "isHots": false
+    },
+    {
+      "question": "The perimeter of a rectangle with length 5cm and width 2cm is?",
+      "hint": "Add all four sides.",
+      "options": ["7 cm", "10 cm", "14 cm", "12 cm"],
+      "correctAnswer": "14 cm",
+      "explanation": "Perimeter = 2 * (length + width) = 2 * (5 + 2) = 14 cm.",
+      "isHots": false
+    },
+    {
+      "question": "If two shapes have the same area, do they always have the same perimeter?",
+      "hint": "Try making different rectangles with 12 squares.",
+      "options": ["Yes", "No", "Only for squares", "Only for triangles"],
+      "correctAnswer": "No",
+      "explanation": "Shapes with same area can have different perimeters depending on their boundary length.",
+      "isHots": true
+    },
+    {
+      "question": "How do we measure the area of an irregular leaf on a grid paper?",
+      "hint": "Count full and half squares.",
+      "options": ["Using a ruler", "Counting squares", "Using a string", "It cannot be measured"],
+      "correctAnswer": "Counting squares",
+      "explanation": "We can estimate the area by counting full, more than half, and exactly half squares on a grid.",
+      "isHots": false
+    },
+    {
+      "question": "What is the unit of measurement for area?",
+      "hint": "It involves squares.",
+      "options": ["cm", "m", "sq cm", "kg"],
+      "correctAnswer": "sq cm",
+      "explanation": "Area is measured in square units like square centimetres (sq cm) or square metres.",
+      "isHots": false
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Area",
+      "back": "Space inside a boundary"
+    },
+    {
+      "front": "Perimeter",
+      "back": "Length of the boundary"
+    },
+    {
+      "front": "Area of Square",
+      "back": "Side x Side"
+    },
+    {
+      "front": "Perimeter of Rectangle",
+      "back": "2 x (Length + Breadth)"
+    },
+    {
+      "front": "Unit of Area",
+      "back": "Square units (e.g., sq cm)"
+    }
+  ],
+  "revisionNotes": "Perimeter is sum of all sides. Area is measured in square units. Grouping unit squares is the easiest way to find area.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Confusing formulas for area and perimeter"
+  ],
+  "vocabulary": {
+    "Area": "The amount of surface covered by a closed shape.",
+    "Perimeter": "The total length of the boundary of a closed figure.",
+    "Grid": "A network of horizontal and vertical lines forming squares."
+  },
+  "interactiveActivities": [
+    "Draw your hand on a grid paper and estimate its area by counting squares.",
+    "Use a string to measure the boundary of different shapes in your room."
+  ],
+  "masteryCheckpoints": [
+    "Can calculate perimeter of a polygon given side lengths.",
+    "Can estimate area of irregular shapes on grid paper.",
+    "Recognizes that different shapes can have the same area."
+  ],
+  "introduction": "Ever wondered how much paint you need for a wall or how much fence for a garden? In 'How Many Squares?', we'll learn to count tiles to find the size of any space!",
+  "realLifeConnection": "Farmers use perimeter to fence their fields and area to decide how many seeds to plant. Tailors use these to cut the right amount of cloth.",
+  "storyBasedExplanation": "The King wants to give land to his favorite poets. Chellamma wants a long, thin rectangle, while Suraj wants a big square. By counting squares on the King's map, they find out who actually got more land!",
+  "childFriendlyExplanation": "Perimeter is the fence around your house (the walking path). Area is the carpet inside your room (the sitting space)!",
+  "teacherExplanation": "Perimeter is a linear measure of the boundary. Area is the measure of the region enclosed. We use unit squares to derive formulas for rectangles and squares.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Help your child measure the perimeter of their study table using a string.",
+    "Create different shapes using 12 identical square cut-outs and compare their perimeters."
+  ],
+  "animationScript": "Scene 1: A character walks along the boundary of a park. A dotted line follows them (Perimeter). Scene 2: The character starts placing square tiles inside the park. The tiles light up (Area).",
+  "videoScript": "Host drawing shapes on a grid paper. 'Watch how this 4x4 square has an area of 16, but if I rearrange the same 16 squares into a 8x2 rectangle, the perimeter changes! Let's explore why.'",
+  "parentNotes": "Help your child measure the perimeter of their study table using a string or a ruler. Discuss why floors are tiled with squares.",
+  "teacherNotes": "Use 1cm grid paper for all activities. Encourage students to create different shapes with the same area to dispel the misconception about perimeter.",
+  "learningOutcomes": "Students will be able to calculate area and perimeter of regular/irregular shapes on a grid, understand the relationship between them, and solve real-world problems."
+}

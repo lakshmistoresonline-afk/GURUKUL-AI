@@ -1,0 +1,132 @@
+{
+  "id": "s6_c9",
+  "subject": "Science",
+  "classLevel": 6,
+  "chapter": "Electricity and Circuits",
+  "topic": "Physics",
+  "subtopic": "Electricity Basics",
+  "difficulty": "intermediate",
+  "bloomLevel": "apply",
+  "examWeightage": 7,
+  "estStudyTime": 45,
+  "prerequisites": [],
+  "dependencies": [],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Identify parts of an electric cell and a bulb",
+    "Explain the components of a simple electric circuit",
+    "Understand the function of a switch in a circuit",
+    "Distinguish between conductors and insulators of electricity",
+    "Explain how to safely handle electrical devices"
+  ],
+  "examples": [
+    "Electric cell (battery)",
+    "A glowing bulb",
+    "A closed circuit",
+    "Safety switch",
+    "Copper wire as a conductor"
+  ],
+  "misconceptions": [
+    "Thinking that electricity is used up by the bulb (it actually flows back to the cell)"
+  ],
+  "practiceExercises": [
+    {
+      "question": "Which part of the bulb glows when electricity passes through it?",
+      "hint": "It's a thin wire inside.",
+      "options": ["Glass case", "Filament", "Metal base", "Terminals"],
+      "correctAnswer": "Filament",
+      "explanation": "The thin wire that gives off light is called the filament of the bulb.",
+      "isHots": false
+    },
+    {
+      "question": "A device that is used to break an electric circuit is called?",
+      "hint": "You flip it on and off.",
+      "options": ["Filament", "Electric cell", "Switch", "Battery"],
+      "correctAnswer": "Switch",
+      "explanation": "A switch is a simple device that either breaks the circuit or completes it.",
+      "isHots": false
+    },
+    {
+      "question": "Which of these is a good conductor of electricity?",
+      "hint": "Most metals are conductors.",
+      "options": ["Rubber", "Wood", "Iron nail", "Plastic"],
+      "correctAnswer": "Iron nail",
+      "explanation": "Metals like iron allow electricity to pass through them, so they are conductors.",
+      "isHots": false
+    },
+    {
+      "question": "An electric cell has ______ terminals.",
+      "hint": "Look for + and - signs.",
+      "options": ["One", "Two", "Three", "Four"],
+      "correctAnswer": "Two",
+      "explanation": "All electric cells have two terminals: a positive (+) and a negative (-).",
+      "isHots": false
+    },
+    {
+      "question": "Why are electric wires covered with plastic?",
+      "hint": "Think about safety.",
+      "options": ["To make them colorful", "To keep them cool", "Plastic is an insulator", "To make them stronger"],
+      "correctAnswer": "Plastic is an insulator",
+      "explanation": "Plastic does not allow electricity to pass through, so it protects us from electric shocks.",
+      "isHots": true
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Electric Cell",
+      "back": "A source of electricity"
+    },
+    {
+      "front": "Filament",
+      "back": "Thin wire in a bulb that glows"
+    },
+    {
+      "front": "Conductor",
+      "back": "Material that allows electricity to pass"
+    },
+    {
+      "front": "Insulator",
+      "back": "Material that does not allow electricity to pass"
+    },
+    {
+      "front": "Circuit",
+      "back": "A complete path for electricity to flow"
+    }
+  ],
+  "revisionNotes": "Electricity flows in a closed circuit. Cells have two terminals. Conductors are usually metals, insulators are non-metals like rubber.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Connecting both wires to the same terminal of a cell"
+  ],
+  "vocabulary": {
+    "Terminal": "A point of connection for closing an electric circuit.",
+    "Circuit": "A closed loop through which electric current can flow.",
+    "Electricity": "A form of energy resulting from the existence of charged particles."
+  },
+  "interactiveActivities": [
+    "Create a simple circuit using a cell, a bulb, and two wires.",
+    "Test different objects (pencil lead, eraser, paper clip) to see if they are conductors or insulators."
+  ],
+  "masteryCheckpoints": [
+    "Can draw a diagram of a simple closed circuit.",
+    "Understands that a circuit must be complete for a bulb to glow.",
+    "Identifies common insulators found at home."
+  ],
+  "introduction": "Flip a switch and the room lights up! Is it magic? No, it's electricity flowing through a special path. Let's build our own circuits and learn the secrets of how bulbs glow.",
+  "realLifeConnection": "From the fans that cool us to the smartphones we use, electricity is the 'energy food' that powers almost everything in our modern world.",
+  "storyBasedExplanation": "Boojho wants to light a tiny bulb using a battery and some wires. He tried many ways—sometimes the wires were loose, sometimes both were on the same end of the battery. Only when he made a complete loop did the bulb shine!",
+  "childFriendlyExplanation": "Electricity is like a train that needs a complete circle of tracks to travel. If the track is broken or a bridge is out (open circuit), the 'light train' can't reach the bulb to make it glow!",
+  "teacherExplanation": "This chapter introduces the basics of current electricity. We focus on the functional components of a circuit and the physical properties of materials that allow or inhibit the flow of current.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Help your child make a simple torch using a large cell, a small bulb, and some tape. Observe how the bulb goes off when a wire is removed.",
+    "Warning: Strictly advise children never to play with the main electrical sockets in the house."
+  ],
+  "animationScript": "Scene 1: Small 'sparks' (electrons) flowing in a loop from a battery to a bulb. Scene 2: A switch opening up and the sparks stopping. Scene 3: A hand touching an insulated wire safely vs a bare wire (danger).",
+  "videoScript": "Host with a cell and a bulb. 'See these two terminals? One is positive (+) and one is negative (-). For the bulb to glow, electricity must travel from one terminal, through the bulb, and back to the other terminal!'",
+  "parentNotes": "Talk about electrical safety at home. Show your child the 'conductor' (metal) and 'insulator' (plastic) parts of a common plug.",
+  "teacherNotes": "Use a simple circuit tester in class. Emphasize that air is an insulator, otherwise electricity would jump across open switches!",
+  "learningOutcomes": "Students will be able to identify circuit components, explain how a bulb glows in a closed circuit, and distinguish between conductors and insulators."
+}

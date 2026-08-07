@@ -1,0 +1,42 @@
+[
+  {
+    "question": "If the scale on a map is 1 cm = 10 km, what is the actual distance for 5 cm on the map?",
+    "hint": "Multiply the map distance by the scale value.",
+    "options": ["5 km", "50 km", "15 km", "100 km"],
+    "correctAnswer": "50 km",
+    "explanation": "5 cm * 10 km/cm = 50 km.",
+    "isHots": false
+  },
+  {
+    "question": "Which direction is generally at the top of a standard map?",
+    "hint": "Opposite of South.",
+    "options": ["East", "West", "North", "South"],
+    "correctAnswer": "North",
+    "explanation": "By convention, North is usually shown at the top of maps.",
+    "isHots": false
+  },
+  {
+    "question": "If you are facing the rising sun, which direction is behind you?",
+    "hint": "The sun rises in the East.",
+    "options": ["North", "South", "West", "East"],
+    "correctAnswer": "West",
+    "explanation": "If you face East (sunrise), West is directly behind you.",
+    "isHots": false
+  },
+  {
+    "question": "A floor plan shows a room as 2cm x 3cm. If 1cm = 2m, what are the actual dimensions?",
+    "hint": "Multiply each side by 2.",
+    "options": ["2m x 3m", "4m x 6m", "1m x 1.5m", "8m x 12m"],
+    "correctAnswer": "4m x 6m",
+    "explanation": "2cm * 2m/cm = 4m and 3cm * 2m/cm = 6m.",
+    "isHots": true
+  },
+  {
+    "question": "What is the use of a 'Legend' or 'Key' on a map?",
+    "hint": "It explains symbols.",
+    "options": ["To show the title", "To explain symbols used", "To show the scale", "To show the author"],
+    "correctAnswer": "To explain symbols used",
+    "explanation": "A map legend or key explains what the various symbols and colors represent.",
+    "isHots": false
+  }
+]

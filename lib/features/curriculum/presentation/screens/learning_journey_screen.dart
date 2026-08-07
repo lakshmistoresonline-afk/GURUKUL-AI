@@ -10,6 +10,7 @@ import 'package:project_gurukul_ai/features/curriculum/presentation/widgets/inte
 import 'package:project_gurukul_ai/features/curriculum/presentation/widgets/video_player_widget.dart';
 import 'package:project_gurukul_ai/core/telemetry/telemetry_service.dart';
 import 'package:project_gurukul_ai/core/telemetry/telemetry_constants.dart';
+import 'package:project_gurukul_ai/features/content/domain/services/reading_assistant_service.dart';
 
 class LearningJourneyScreen extends StatefulWidget {
   final ConceptNode concept;
@@ -25,11 +26,31 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
   int _currentPage = 0;
   final int _totalPages = 10;
   final DateTime _startTime = DateTime.now();
+  final ReadingAssistantService _readingAssistant = sl<ReadingAssistantService>();
+  String _highlightedWord = '';
 
   @override
   void initState() {
     super.initState();
     sl<TelemetryService>().logStart(type: 'CONTENT', id: widget.concept.id);
+    _readingAssistant.setHandlers(onProgress: (text, start, end, word) {
+       setState(() => _highlightedWord = word);
+    });
+  }
+
+  void _toggleReading() {
+    if (_readingAssistant.isPlaying) {
+      _readingAssistant.stop();
+    } else {
+      String textToRead = '';
+      if (_currentPage == 0) textToRead = widget.concept.introduction;
+      if (_currentPage == 3) textToRead = widget.concept.teacherExplanation;
+
+      if (textToRead.isNotEmpty) {
+        _readingAssistant.speak(textToRead, 'en');
+      }
+    }
+    setState(() {});
   }
 
   @override
@@ -73,6 +94,10 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
           onPressed: () => Navigator.pop(context),
         ),
         actions: [
+          IconButton(
+            onPressed: _toggleReading,
+            icon: Icon(_readingAssistant.isPlaying ? Icons.stop_circle : Icons.volume_up, color: subjectColor),
+          ),
           Center(
             child: Padding(
               padding: const EdgeInsets.only(right: 16.0),
@@ -122,7 +147,7 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
-        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, -4))],
+        boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 10, offset: const Offset(0, -4))],
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -232,8 +257,8 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withOpacity(0.2)),
-        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10)],
+        border: Border.all(color: color.withValues(alpha: 0.2)),
+        boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 10)],
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -309,9 +334,19 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
 
   Widget _buildTextContent(String text) {
     return SingleChildScrollView(
-      child: Text(
-        text,
-        style: const TextStyle(fontSize: 16, height: 1.6, color: Colors.black87),
+      child: Column(
+        children: [
+          if (_readingAssistant.isPlaying && _highlightedWord.isNotEmpty)
+             Container(
+               padding: const EdgeInsets.all(8),
+               color: Colors.yellow.shade100,
+               child: Text('Reading: $_highlightedWord...', style: const TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+             ),
+          Text(
+            text,
+            style: const TextStyle(fontSize: 16, height: 1.6, color: Colors.black87),
+          ),
+        ],
       ),
     );
   }
@@ -493,7 +528,7 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
   Widget _rewardChip(String text, IconData icon, Color color) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      decoration: BoxDecoration(color: color.withOpacity(0.1), borderRadius: BorderRadius.circular(20), border: Border.all(color: color.withOpacity(0.5))),
+      decoration: BoxDecoration(color: color.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(20), border: Border.all(color: color.withOpacity(0.5))),
       child: Row(
         children: [
           Icon(icon, color: color, size: 20),
@@ -507,7 +542,7 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
   Widget _buildInfoCard({required String title, required String content, required IconData icon, required Color color}) {
     return Container(
       padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(color: color.withOpacity(0.05), borderRadius: BorderRadius.circular(20), border: Border.all(color: color.withOpacity(0.2))),
+      decoration: BoxDecoration(color: color.withValues(alpha: 0.05), borderRadius: BorderRadius.circular(20), border: Border.all(color: color.withValues(alpha: 0.2))),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -540,8 +575,8 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
           runSpacing: 8,
           children: widget.concept.vocabulary.keys.map((w) => Chip(
             label: Text(w),
-            backgroundColor: color.withOpacity(0.1),
-            side: BorderSide(color: color.withOpacity(0.2)),
+            backgroundColor: color.withValues(alpha: 0.1),
+            side: BorderSide(color: color.withValues(alpha: 0.2)),
           )).toList(),
         ),
       ],

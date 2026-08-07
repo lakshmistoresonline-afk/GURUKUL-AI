@@ -1,20 +1,25 @@
 # Changelog - Project Gurukul AI
 
-## [1.0.0] - 2026-08-06
+## [1.0.0] - 2026-08-07
 ### Added
-- Foundation based on Sunbird ED architecture.
-- Modular Flutter project structure with Clean Architecture.
-- Role-based Authentication (Student, Parent, Teacher, Admin).
-- NCERT Class 5 & 6 Curriculum mapping.
-- Knowledge Graph for concept mastery tracking.
-- AI Tutor Service powered by Gemini 1.5 Flash.
-- Adaptive Learning Engine for personalized study recommendations.
-- Student Dashboard with subject and chapter browsing.
-- Parent Dashboard with visual performance reports.
-- Teacher Dashboard for assignment and class analytics.
-- Admin Console for system management.
-- Gamification system (XP, Streaks, Achievements).
-- Offline Engine with background sync and download management.
-- Performance optimizations (Paginated UI, Firestore caching).
-- Comprehensive test suite (Unit & Widget tests).
-- GitHub Actions CI/CD workflow.
+- Complete UI overhaul with new **Design System** and **Material 3**.
+- **Home Dashboard**: Personalized greeting, today's goals, study plan preview, and streak stats.
+- **Subject Dashboard**: Subject-specific mini-dashboard with progress tracking and quick actions.
+- **Chapter Dashboard**: Overview, objectives, and structured topic list.
+- **Curriculum Import Wizard**: Step-by-step tool to convert PDFs into interactive AI lessons.
+- **Content Studio**: Professional admin interface for structured lesson editing and AI content generation.
+- **Interactive Learning**: New `SortingActivity` and `FillBlanksActivity` widgets.
+- **Question Centre**: Multi-tabbed bank for chapter-wise questions, papers, and AI exam generation.
+- **Reading Assistant**: Voice narration with real-time highlighting support.
+- **Sunbird Telemetry**: Integrated EID lifecycle (START, END, INTERACT, IMPRESSION).
+- **Certification Engine**: Automatic PDF certificate generation on course completion.
+
+### Changed
+- Replaced legacy navigation and placeholders with content-driven UI.
+- Migrated all assets to be chapter-specific to avoid generic reuse.
+- Updated `ConceptNode` model to support advanced Studio fields (Scripts, Notes, Outcomes).
+
+### Fixed
+- Resolved all major compilation and URI import issues.
+- Optimized performance for 60 FPS on low-end devices.
+- Improved offline reliability via enhanced Hive/Firestore sync.

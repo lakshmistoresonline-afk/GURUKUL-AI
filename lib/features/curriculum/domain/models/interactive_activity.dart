@@ -1,45 +1,37 @@
-enum ActivityType { dragDrop, matching, sorting, tapReveal, fillBlanks, diagramLabeling }
+enum ActivityType { matching, tapReveal, sorting, sequence, fillBlanks }
 
 class InteractiveActivity {
   final String id;
-  final String title;
-  final String instruction;
   final ActivityType type;
-  final Map<String, dynamic> data; // Schema depends on type
-  final String? feedbackCorrect;
-  final String? feedbackIncorrect;
+  final Map<String, dynamic> data;
+  final String instruction;
+  final String title;
 
   const InteractiveActivity({
     required this.id,
-    required this.title,
-    required this.instruction,
     required this.type,
     required this.data,
-    this.feedbackCorrect,
-    this.feedbackIncorrect,
+    this.instruction = '',
+    this.title = '',
   });
 
   Map<String, dynamic> toMap() {
     return {
       'id': id,
-      'title': title,
-      'instruction': instruction,
       'type': type.name,
       'data': data,
-      'feedbackCorrect': feedbackCorrect,
-      'feedbackIncorrect': feedbackIncorrect,
+      'instruction': instruction,
+      'title': title,
     };
   }
 
   factory InteractiveActivity.fromMap(Map<String, dynamic> map) {
     return InteractiveActivity(
       id: map['id'] ?? '',
-      title: map['title'] ?? '',
-      instruction: map['instruction'] ?? '',
-      type: ActivityType.values.firstWhere((e) => e.name == map['type'], orElse: () => ActivityType.tapReveal),
+      type: ActivityType.values.firstWhere((e) => e.name == map['type'], orElse: () => ActivityType.matching),
       data: Map<String, dynamic>.from(map['data'] ?? {}),
-      feedbackCorrect: map['feedbackCorrect'],
-      feedbackIncorrect: map['feedbackIncorrect'],
+      instruction: map['instruction'] ?? '',
+      title: map['title'] ?? '',
     );
   }
 }

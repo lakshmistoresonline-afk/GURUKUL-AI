@@ -1,0 +1,132 @@
+{
+  "id": "m5_c6",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "Be My Multiple, I'll be Your Factor",
+  "topic": "Number Sense",
+  "subtopic": "Factors and Multiples",
+  "difficulty": "intermediate",
+  "bloomLevel": "apply",
+  "examWeightage": 8,
+  "estStudyTime": 50,
+  "prerequisites": [],
+  "dependencies": [],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Identify multiples of a given number",
+    "Find common multiples and Least Common Multiple (LCM)",
+    "Find all factors of a number",
+    "Identify common factors and Highest Common Factor (HCF)",
+    "Solve real-life problems using factors and multiples"
+  ],
+  "examples": [
+    "Multiples of 5 are 5, 10, 15...",
+    "Factors of 12 are 1, 2, 3, 4, 6, 12",
+    "Common multiple of 2 and 3 is 6",
+    "L.C.M. of 4 and 6 is 12",
+    "Factor tree of 18"
+  ],
+  "misconceptions": [
+    "Thinking that factors are always larger than the number"
+  ],
+  "practiceExercises": [
+    {
+      "question": "What is the smallest common multiple of 4 and 6?",
+      "hint": "List the multiples of both and find the first match.",
+      "options": ["2", "4", "12", "24"],
+      "correctAnswer": "12",
+      "explanation": "Multiples of 4: 4, 8, 12... Multiples of 6: 6, 12... Smallest common is 12.",
+      "isHots": false
+    },
+    {
+      "question": "Which of these is NOT a factor of 15?",
+      "hint": "15 should be divisible by its factors.",
+      "options": ["1", "3", "5", "2"],
+      "correctAnswer": "2",
+      "explanation": "15 is not divisible by 2 without leaving a remainder.",
+      "isHots": false
+    },
+    {
+      "question": "The number 1 is a factor of?",
+      "hint": "Does 1 divide every number?",
+      "options": ["Only odd numbers", "Only even numbers", "Every number", "Only prime numbers"],
+      "correctAnswer": "Every number",
+      "explanation": "1 is a universal factor; it divides every number exactly.",
+      "isHots": false
+    },
+    {
+      "question": "If two numbers are 3 and 5, their first common multiple is?",
+      "hint": "Think of their multiplication table.",
+      "options": ["8", "15", "1", "30"],
+      "correctAnswer": "15",
+      "explanation": "3 * 5 = 15. Since both are prime, their LCM is their product.",
+      "isHots": false
+    },
+    {
+      "question": "How many factors does a prime number have?",
+      "hint": "Think of the number 7.",
+      "options": ["1", "2", "3", "Many"],
+      "correctAnswer": "2",
+      "explanation": "A prime number has only two factors: 1 and itself.",
+      "isHots": true
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Multiple",
+      "back": "The result of multiplying a number by an integer"
+    },
+    {
+      "front": "Factor",
+      "back": "A number that divides another number exactly"
+    },
+    {
+      "front": "LCM",
+      "back": "Least Common Multiple"
+    },
+    {
+      "front": "HCF",
+      "back": "Highest Common Factor"
+    },
+    {
+      "front": "Common Multiples",
+      "back": "Multiples shared by two or more numbers"
+    }
+  ],
+  "revisionNotes": "Multiples are found by multiplying (skip counting). Factors are numbers that fit exactly. 1 is a factor of every number.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Confusing factors with multiples"
+  ],
+  "vocabulary": {
+    "Multiple": "A number that can be divided by another number without a remainder.",
+    "Factor": "A number or quantity that when multiplied with another produces a given number.",
+    "Prime Number": "A number that has exactly two factors, 1 and itself."
+  },
+  "interactiveActivities": [
+    "Play the 'Meow' game: Stand in a circle, count numbers, but say 'Meow' for every multiple of 3.",
+    "Use 24 buttons to make as many different rectangular arrays as possible to find factors."
+  ],
+  "masteryCheckpoints": [
+    "Can list the first five multiples of any 1-digit number.",
+    "Can find all factors of numbers up to 50.",
+    "Can identify the smallest common multiple for a pair of numbers."
+  ],
+  "introduction": "Let's play with numbers! Numbers can be friends that multiply together or family members that fit perfectly inside each other. Welcome to the world of factors and multiples!",
+  "realLifeConnection": "We use multiples to find the best deal at a shop (packets of 5) and factors to arrange chairs in equal rows for a party or to share sweets fairly.",
+  "storyBasedExplanation": "The Mouse and the Cat are playing a game on steps. The Cat jumps 3 steps at a time, and the Mouse jumps 2. They both want to know which steps will have both their footprints! These are the common multiples.",
+  "childFriendlyExplanation": "Multiples are like skip counting (2, 4, 6, 8...). Factors are like pieces of a puzzle that fit exactly into a big number without any leftovers! Every number has at least two factors: 1 and itself.",
+  "teacherExplanation": "This chapter builds number sense through exploratory activities. We use skip counting for multiples and rectangular arrays for factors, leading to LCM and HCF concepts.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Play 'Fizz-Buzz' with your child to practice multiples of 3 and 5.",
+    "Create factor trees for numbers like 24, 36, and 48 on a large sheet of paper."
+  ],
+  "animationScript": "Scene 1: A cat jumping on a number line, landing on 3, 6, 9, 12. Scene 2: A block of 12 breaking into groups of 2, 3, 4, and 6. Scene 3: A Venn diagram showing common factors of 12 and 18.",
+  "videoScript": "Host with a handful of tamarind seeds. 'If I have 12 seeds, I can make rows of 2, 3, 4, or 6. These are the factors! But if I add more sets of 12, I get 24, 36... these are the multiples! Let's find common ones.'",
+  "parentNotes": "Use everyday objects to explain factors. For example, if you have 10 cookies, how many ways can you share them equally? These are the factors of 10.",
+  "teacherNotes": "Use the 'Meow' game to keep the class engaged while practicing multiples. Introduce factor trees as a visual way to find prime factors.",
+  "learningOutcomes": "Students will be able to find multiples and factors, identify common ones, and apply these concepts to solve simple real-world puzzles."
+}

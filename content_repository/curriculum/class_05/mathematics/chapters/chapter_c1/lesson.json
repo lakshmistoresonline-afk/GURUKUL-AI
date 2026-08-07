@@ -1,0 +1,132 @@
+{
+  "id": "m5_c1",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "The Fish Tale",
+  "topic": "Large Numbers",
+  "subtopic": "Place Value and Indian System",
+  "difficulty": "beginner",
+  "bloomLevel": "understand",
+  "examWeightage": 8,
+  "estStudyTime": 45,
+  "prerequisites": [],
+  "dependencies": [
+    "m5_c6",
+    "m6_c1"
+  ],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Read and write numbers up to 1 crore",
+    "Understand lakhs and crores",
+    "Use commas in Indian system",
+    "Compare and order large numbers",
+    "Apply large numbers to real-world scenarios"
+  ],
+  "examples": [
+    "Cost of a boat: 12,00,000",
+    "Distance to moon: 3,84,400 km",
+    "Population of a small city: 7,50,000",
+    "Number of fish in a large lake: 25,00,000",
+    "Price of a luxury car: 85,00,000"
+  ],
+  "misconceptions": [
+    "Thinking 1 million = 1 crore (it is 10 lakhs)"
+  ],
+  "practiceExercises": [
+    {
+      "question": "How many zeros are in 1 crore?",
+      "hint": "Write it down: 1,00,00,000",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": "7",
+      "explanation": "1 crore is 100 lakhs. 100 x 1,00,000 = 1,00,00,000.",
+      "isHots": false
+    },
+    {
+      "question": "What is 10 lakhs written in the International system?",
+      "hint": "Think about Millions.",
+      "options": ["10,000", "100,000", "1,000,000", "10,000,000"],
+      "correctAnswer": "1,000,000",
+      "explanation": "10 lakhs is equal to 1 million in the International system.",
+      "isHots": false
+    },
+    {
+      "question": "Where do you place the first comma in the Indian system starting from the right?",
+      "hint": "Count the digits from the ones place.",
+      "options": ["After 2 digits", "After 3 digits", "After 4 digits", "After 5 digits"],
+      "correctAnswer": "After 3 digits",
+      "explanation": "In the Indian system, the first comma is placed after the hundreds place (3 digits).",
+      "isHots": false
+    },
+    {
+      "question": "Which is greater: 9,99,999 or 10,00,000?",
+      "hint": "Count the number of digits.",
+      "options": ["9,99,999", "10,00,000", "Both are equal", "Cannot compare"],
+      "correctAnswer": "10,00,000",
+      "explanation": "A 7-digit number is always greater than a 6-digit number.",
+      "isHots": false
+    },
+    {
+      "question": "How many thousands make 1 lakh?",
+      "hint": "1,00,000 divided by 1,000.",
+      "options": ["10", "100", "1000", "10000"],
+      "correctAnswer": "100",
+      "explanation": "100 thousands make 1 lakh (100 * 1,000 = 1,00,000).",
+      "isHots": false
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "1 Lakh",
+      "back": "100,000 (5 zeros)"
+    },
+    {
+      "front": "1 Crore",
+      "back": "1,00,00,000 (7 zeros)"
+    },
+    {
+      "front": "10 Lakhs",
+      "back": "1 Million"
+    },
+    {
+      "front": "Indian Comma Pattern",
+      "back": "3, 2, 2 (starting from right)"
+    },
+    {
+      "front": "Place Value after Thousands",
+      "back": "Lakhs"
+    }
+  ],
+  "revisionNotes": "Focus on place value chart: Ones, Thousands, Lakhs, Crores. Remember the 3-2-2 comma rule.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Misplacing commas in large numbers"
+  ],
+  "vocabulary": {
+    "Lakh": "A unit in the Indian numbering system equal to one hundred thousand (1,00,000).",
+    "Crore": "A unit in the Indian numbering system equal to ten million (1,00,00,000).",
+    "Place Value": "The value of a digit based on its position in a number."
+  },
+  "interactiveActivities": [],
+  "masteryCheckpoints": [
+    "Can correctly place commas in a 7-digit number.",
+    "Can compare two numbers in the lakhs range.",
+    "Understands the relationship between Lakh and Million."
+  ],
+  "introduction": "Welcome to the world of big catches! In \"The Fish Tale\", we dive into the ocean to learn about large numbers through the story of a busy fish market.",
+  "realLifeConnection": "Large numbers are used to talk about the population of a country, the cost of a plane, or how many stars are in a galaxy!",
+  "storyBasedExplanation": "Imagine Meena the fisherwoman. She caught so many fish that her small scale couldn't weigh them! She needed to count them in Lakhs. Her teacher told her that 100 thousands make 1 Lakh.",
+  "childFriendlyExplanation": "Think of numbers like a growing family. First, we have the small ones, then thousands, then the big grandparents: Lakhs and Crores!",
+  "teacherExplanation": "Numeration in the Indian system follows a 3-2-2 comma pattern. The periods are Ones, Thousands, Lakhs, and Crores.",
+  "animatedLessonAsset": "assets/lottie/math_numbers_m5_c1.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Find 5 large numbers in a newspaper and write them in words.",
+    "Create a \"Place Value House\" using cardboard for Lakhs and Crores."
+  ],
+  "animationScript": "Scene 1: Meena at the fish market with a huge net. Narrator: 'Meena caught a mountain of fish!' Scene 2: She starts counting: 1000, 2000... she gets tired. Scene 3: A big '1,00,000' appears over the fish. Narrator: 'That's 1 Lakh!'",
+  "videoScript": "Host standing in front of a digital blackboard. 'Hello kids! Today we are diving into the ocean of numbers. Have you ever wondered how much a big fishing boat costs? It's not just thousands, it's Lakhs! Let's see how to write these big numbers using commas...'",
+  "parentNotes": "Ask your child to find large numbers on electricity bills or grocery receipts. Help them group digits into thousands and lakhs.",
+  "teacherNotes": "Use a place value spike abacus to demonstrate shifting from 99,999 to 1,00,00,000. Emphasize the Indian system of periods.",
+  "learningOutcomes": "Students will be able to read and write numbers up to 8 digits, understand the Indian place value system, and apply large number concepts to real-world scenarios like trade and population."
+}

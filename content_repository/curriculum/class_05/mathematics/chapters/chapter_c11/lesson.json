@@ -1,0 +1,136 @@
+{
+  "id": "m5_c11",
+  "subject": "Mathematics",
+  "classLevel": 5,
+  "chapter": "Area and its Boundary",
+  "topic": "Measurement",
+  "subtopic": "Area and Perimeter Formulas",
+  "difficulty": "intermediate",
+  "bloomLevel": "apply",
+  "examWeightage": 8,
+  "estStudyTime": 50,
+  "prerequisites": [
+    "m5_c3"
+  ],
+  "dependencies": [
+    "m6_c10"
+  ],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Formulate and apply area = length x width for rectangles",
+    "Formulate and apply perimeter = 2 x (length + width)",
+    "Solve real-world problems involving fencing and tiling",
+    "Compare shapes with same area but different perimeters",
+    "Estimate area of irregular shapes using 1cm square grids"
+  ],
+  "examples": [
+    "Length of a square garden boundary",
+    "Area of a postcard vs a greeting card",
+    "A thread used to measure a leaf's boundary",
+    "Grid paper showing 1 sq cm squares",
+    "Cost of fencing a park"
+  ],
+  "misconceptions": [
+    "Confusing units: using cm for area or sq cm for perimeter"
+  ],
+  "practiceExercises": [
+    {
+      "question": "If a rectangular park is 20m long and 10m wide, what is its perimeter?",
+      "hint": "Add all four sides: 20 + 10 + 20 + 10.",
+      "options": ["30 m", "60 m", "200 sq m", "40 m"],
+      "correctAnswer": "60 m",
+      "explanation": "Perimeter = 2 * (L + W) = 2 * (20 + 10) = 60 m.",
+      "isHots": false
+    },
+    {
+      "question": "What is the area of a square tiles with side 5cm?",
+      "hint": "Area of square = side x side.",
+      "options": ["10 sq cm", "20 cm", "25 sq cm", "25 cm"],
+      "correctAnswer": "25 sq cm",
+      "explanation": "Area = 5 * 5 = 25 square centimeters.",
+      "isHots": false
+    },
+    {
+      "question": "If a shape covers 12 full squares and 8 half squares on a grid, what is its area?",
+      "hint": "Two half squares make one full square.",
+      "options": ["12 sq cm", "16 sq cm", "20 sq cm", "8 sq cm"],
+      "correctAnswer": "16 sq cm",
+      "explanation": "12 full + (8/2) full = 12 + 4 = 16 sq cm.",
+      "isHots": true
+    },
+    {
+      "question": "Which needs a longer fence: a 4x4 square or a 5x3 rectangle?",
+      "hint": "Calculate perimeter for both.",
+      "options": ["4x4 square", "5x3 rectangle", "Both are same", "Cannot say"],
+      "correctAnswer": "Both are same",
+      "explanation": "Square P = 4*4 = 16m. Rectangle P = 2*(5+3) = 16m. They are equal.",
+      "isHots": true
+    },
+    {
+      "question": "How many 1cm squares can fit in a rectangle of 5cm by 4cm?",
+      "hint": "This is the same as finding the area.",
+      "options": ["9", "18", "20", "25"],
+      "correctAnswer": "20",
+      "explanation": "The number of unit squares is the area = 5 * 4 = 20.",
+      "isHots": false
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Perimeter",
+      "back": "Total length of the boundary"
+    },
+    {
+      "front": "Area",
+      "back": "Amount of surface covered"
+    },
+    {
+      "front": "Area of Rectangle",
+      "back": "Length x Breadth"
+    },
+    {
+      "front": "Perimeter of Square",
+      "back": "4 x Side"
+    },
+    {
+      "front": "Unit of Perimeter",
+      "back": "cm, m, km (linear units)"
+    }
+  ],
+  "revisionNotes": "Perimeter is the 'fence', Area is the 'grass'. Always double check your units (sq units for area). Squares often have smaller perimeters for the same area.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Multiplying all four sides to find perimeter"
+  ],
+  "vocabulary": {
+    "Boundary": "A line which marks the limits of an area; a dividing line.",
+    "Fencing": "The act of enclosing an area with a fence.",
+    "Tiling": "To cover a surface with tiles."
+  },
+  "interactiveActivities": [
+    "Measure the area and perimeter of your classroom blackboard.",
+    "Find out the cost to paint one wall of your room if 1 sq m costs Rs 50."
+  ],
+  "masteryCheckpoints": [
+    "Can derive the perimeter of any polygon by adding all side lengths.",
+    "Correctly applies area formulas to solve real-life problems like carpet sizing.",
+    "Can use a thread to compare the boundaries of irregular shapes."
+  ],
+  "introduction": "Which is bigger—your notebook or your textbook? In 'Area and its Boundary', we'll go beyond just counting squares and learn the math formulas to measure the 'space' and the 'fence' for any shape!",
+  "realLifeConnection": "When you buy a frame for a beautiful photo, you need the perimeter. When you buy a plastic cover for your study table, you need the area. Farmers use these to buy the right amount of seeds and wire.",
+  "storyBasedExplanation": "Arbaz and Jindu are trying to find who has a bigger piece of 'Aam Paapad'. Arbaz's piece is 11cm long and 3cm wide. Jindu's is 6cm long and 5cm wide. Arbaz says his is longer so it's bigger. Let's calculate the area to see who is right!",
+  "childFriendlyExplanation": "Boundary is the walking path around the edge of a park. Area is the flat space inside where you can sit and play. Think of it as the 'fence' vs the 'grass'!",
+  "teacherExplanation": "This chapter formalizes the concepts of area and perimeter. We move from intuitive counting of squares to using multiplication and addition for efficiency in calculations.",
+  "animatedLessonAsset": "assets/lottie/default_lesson.json",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [
+    "Help your child calculate how much lace is needed for a square handkerchief (perimeter).",
+    "Use a string to find the boundary of a leaf and then straighten it against a ruler."
+  ],
+  "animationScript": "Scene 1: A character walking along the perimeter of a garden. A fence appears as they walk. Scene 2: The same garden being covered with square grass tiles one by one. Scene 3: Formulas appearing over the shapes.",
+  "videoScript": "Host with two different rectangles. 'This one is thin and long, that one is fat and short. They both cover the same amount of table space, but which one needs a longer border? Let's use our new formulas to find out!'",
+  "parentNotes": "Discuss why floors are often tiled with squares. Help your child measure a room's area before buying a new rug.",
+  "teacherNotes": "Use a centimeter square grid to compare shapes. Lead a discussion on why a square is the 'most efficient' rectangle for a fixed area.",
+  "learningOutcomes": "Students will be able to apply formal formulas for area and perimeter, solve word problems about fencing, and accurately estimate irregular areas."
+}

@@ -1,0 +1,76 @@
+{
+  "id": "m6_c3",
+  "subject": "Mathematics",
+  "classLevel": 6,
+  "chapter": "Playing with Numbers",
+  "topic": "Number Theory",
+  "subtopic": "LCM, HCF and Divisibility",
+  "difficulty": "advanced",
+  "bloomLevel": "apply",
+  "examWeightage": 9,
+  "estStudyTime": 60,
+  "prerequisites": [
+    "m5_c6"
+  ],
+  "dependencies": [],
+  "relatedConcepts": [],
+  "learningObjectives": [
+    "Apply divisibility tests (2 to 11)",
+    "Find prime and composite numbers (Eratosthenes Sieve)",
+    "Calculate HCF and LCM of multiple numbers"
+  ],
+  "examples": [
+    "Number is divisible by 3 if sum of digits is divisible by 3",
+    "2 is the only even prime"
+  ],
+  "misconceptions": [
+    "1 is a prime number (it is neither prime nor composite)"
+  ],
+  "practiceExercises": [
+    {
+      "question": "What is the HCF of 15 and 20?",
+      "hint": "Find the largest number that divides both.",
+      "options": [
+        "60",
+        "1",
+        "5",
+        "10"
+      ],
+      "correctAnswer": "5",
+      "explanation": "Factors of 15: 1, 3, 5, 15. Factors of 20: 1, 2, 4, 5, 10, 20. Largest common is 5.",
+      "isHots": false
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Perfect Number",
+      "back": "Sum of its factors equals twice the number (e.g., 6)"
+    },
+    {
+      "front": "Co-prime",
+      "back": "Two numbers having only 1 as common factor"
+    }
+  ],
+  "revisionNotes": "If a number is divisible by 9, it is also divisible by 3.",
+  "mindMapUrl": null,
+  "commonMistakes": [
+    "Confusing LCM calculation with HCF"
+  ],
+  "vocabulary": {},
+  "interactiveActivities": [],
+  "masteryCheckpoints": [],
+  "introduction": "",
+  "realLifeConnection": "",
+  "storyBasedExplanation": "",
+  "childFriendlyExplanation": "",
+  "teacherExplanation": "",
+  "animatedLessonAsset": "",
+  "videoUrl": null,
+  "activities": [],
+  "handsOnActivities": [],
+  "animationScript": "",
+  "videoScript": "",
+  "parentNotes": "",
+  "teacherNotes": "",
+  "learningOutcomes": ""
+}

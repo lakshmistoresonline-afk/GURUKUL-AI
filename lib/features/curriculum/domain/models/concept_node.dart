@@ -80,28 +80,40 @@ class ConceptNode {
   final List<String> examples;
   final List<String> misconceptions;
 
-  // Advanced Fields for Phase 37-39
   final List<PracticeExercise> practiceExercises;
   final List<Flashcard> flashcards;
   final String revisionNotes;
   final String? mindMapUrl;
   final List<String> commonMistakes;
 
-  // Pedagogical Refinement (Phase 39 Part 2)
   final Map<String, String> vocabulary;
-  final List<String> interactiveActivities;
+  final List<String> interactiveActivities; // Legacy or string based
   final List<String> masteryCheckpoints;
 
-  // Phase 43 - Rich Content Additions
   final String introduction;
   final String realLifeConnection;
   final String storyBasedExplanation;
   final String childFriendlyExplanation;
   final String teacherExplanation;
-  final String animatedLessonAsset; // Path to Lottie/Rive
+  final String animatedLessonAsset;
   final String? videoUrl;
-  final List<InteractiveActivity> activities;
+  final List<InteractiveActivity> activities; // New structured activities
   final List<String> handsOnActivities;
+
+  final String animationScript;
+  final String videoScript;
+  final String parentNotes;
+  final String teacherNotes;
+  final String learningOutcomes;
+
+  // Phase 56 Additions
+  final List<String> keyTakeaways;
+  final Map<String, String> faqs;
+  final String importantNotes;
+  final List<String> socraticPrompts;
+  final List<String> illustrationPrompts;
+  final String status; // Draft, Review, Approved, Published
+  final Map<String, dynamic> generationMetadata;
 
   const ConceptNode({
     required this.id,
@@ -137,6 +149,18 @@ class ConceptNode {
     this.videoUrl,
     this.activities = const [],
     this.handsOnActivities = const [],
+    this.animationScript = '',
+    this.videoScript = '',
+    this.parentNotes = '',
+    this.teacherNotes = '',
+    this.learningOutcomes = '',
+    this.keyTakeaways = const [],
+    this.faqs = const {},
+    this.importantNotes = '',
+    this.socraticPrompts = const [],
+    this.illustrationPrompts = const [],
+    this.status = 'Draft',
+    this.generationMetadata = const {},
   });
 
   Map<String, dynamic> toMap() {
@@ -174,6 +198,18 @@ class ConceptNode {
       'videoUrl': videoUrl,
       'activities': activities.map((a) => a.toMap()).toList(),
       'handsOnActivities': handsOnActivities,
+      'animationScript': animationScript,
+      'videoScript': videoScript,
+      'parentNotes': parentNotes,
+      'teacherNotes': teacherNotes,
+      'learningOutcomes': learningOutcomes,
+      'keyTakeaways': keyTakeaways,
+      'faqs': faqs,
+      'importantNotes': importantNotes,
+      'socraticPrompts': socraticPrompts,
+      'illustrationPrompts': illustrationPrompts,
+      'status': status,
+      'generationMetadata': generationMetadata,
     };
   }
 
@@ -212,7 +248,18 @@ class ConceptNode {
       videoUrl: map['videoUrl'],
       activities: (map['activities'] as List? ?? []).map((a) => InteractiveActivity.fromMap(a)).toList(),
       handsOnActivities: List<String>.from(map['handsOnActivities'] ?? []),
+      animationScript: map['animationScript'] ?? '',
+      videoScript: map['videoScript'] ?? '',
+      parentNotes: map['parentNotes'] ?? '',
+      teacherNotes: map['teacherNotes'] ?? '',
+      learningOutcomes: map['learningOutcomes'] ?? '',
+      keyTakeaways: List<String>.from(map['keyTakeaways'] ?? []),
+      faqs: Map<String, String>.from(map['faqs'] ?? {}),
+      importantNotes: map['importantNotes'] ?? '',
+      socraticPrompts: List<String>.from(map['socraticPrompts'] ?? []),
+      illustrationPrompts: List<String>.from(map['illustrationPrompts'] ?? []),
+      status: map['status'] ?? 'Draft',
+      generationMetadata: Map<String, dynamic>.from(map['generationMetadata'] ?? {}),
     );
   }
 }
-

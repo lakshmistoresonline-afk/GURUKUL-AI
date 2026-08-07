@@ -1,154 +1,144 @@
 import 'package:flutter/material.dart';
-import '../../../../core/di/injection.dart';
-import '../../domain/models/student_report.dart';
-import '../../domain/services/report_service.dart';
-import '../../../curriculum/data/mastery_repository.dart';
-import '../../../ai/data/ai_insight_service.dart';
+import 'package:project_gurukul_ai/core/theme/design_system.dart';
+import 'package:fl_chart/fl_chart.dart';
 
-class ParentDashboardScreen extends StatefulWidget {
-  final List<String> childrenIds;
-
-  const ParentDashboardScreen({super.key, required this.childrenIds});
-
-  @override
-  State<ParentDashboardScreen> createState() => _ParentDashboardScreenState();
-}
-
-class _ParentDashboardScreenState extends State<ParentDashboardScreen> {
-  late Future<List<StudentReport>> _reportsFuture;
-
-  @override
-  void initState() {
-    super.initState();
-    _reportsFuture = _loadReports();
-  }
-
-  Future<List<StudentReport>> _loadReports() async {
-    final reportService = sl<ReportService>();
-    final masteryRepo = sl<MasteryRepository>();
-    final insightService = sl<AiInsightService>();
-
-    List<StudentReport> reports = [];
-    for (var id in widget.childrenIds) {
-      final masteryData = await masteryRepo.getStudentMastery(id);
-
-      // We generate a temp report to get stats, then get AI summary
-      final baseReport = await reportService.generateStudentReport(
-        studentId: id,
-        studentName: "Student $id", // In real app, fetch from UserProfile
-        masteryData: masteryData,
-        aiSummary: "Generating summary...",
-      );
-
-      final aiSummary = await insightService.generateParentSummary(baseReport);
-
-      reports.add(await reportService.generateStudentReport(
-        studentId: id,
-        studentName: "Student $id",
-        masteryData: masteryData,
-        aiSummary: aiSummary,
-      ));
-    }
-    return reports;
-  }
+class ParentDashboardScreen extends StatelessWidget {
+  const ParentDashboardScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: DesignSystem.background,
       appBar: AppBar(
-        title: const Text('Parent Dashboard'),
-        actions: [
-          IconButton(
-            onPressed: () => setState(() { _reportsFuture = _loadReports(); }),
-            icon: const Icon(Icons.refresh),
-          ),
-        ],
+        title: Text('Parent Insight', style: DesignSystem.h2),
+        backgroundColor: DesignSystem.background,
       ),
-      body: FutureBuilder<List<StudentReport>>(
-        future: _reportsFuture,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          }
-          if (snapshot.hasError) {
-            return Center(child: Text('Error: ${snapshot.error}'));
-          }
-          final reports = snapshot.data ?? [];
-          return ListView.builder(
-            padding: const EdgeInsets.all(16),
-            itemCount: reports.length,
-            itemBuilder: (context, index) {
-              final report = reports[index];
-              return _ReportCard(report: report);
-            },
-          );
-        },
-      ),
-    );
-  }
-}
-
-class _ReportCard extends StatelessWidget {
-  final StudentReport report;
-  const _ReportCard({required this.report});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.only(bottom: 16),
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(DesignSystem.spacingMd),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              report.studentName,
-              style: Theme.of(context).textTheme.headlineSmall,
-            ),
-            const Divider(),
-            _buildStatRow(context, 'Average Mastery', '${(report.averageMastery * 100).toStringAsFixed(0)}%'),
-            _buildStatRow(context, 'Study Time', '${report.totalStudyTimeMinutes} mins'),
-            const SizedBox(height: 12),
-            Text('Gurukul AI Insight:', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.deepPurple)),
-            Text(report.aiSummary, style: Theme.of(context).textTheme.bodyMedium),
-            const SizedBox(height: 16),
-            _buildAreaTags(context, 'Strong Areas', report.strongAreas, Colors.green[100]!),
-            _buildAreaTags(context, 'Areas to Improve', report.weakAreas, Colors.orange[100]!),
+            _buildChildSelector(),
+            const SizedBox(height: DesignSystem.spacingLg),
+            _buildDailyProgressCard(),
+            const SizedBox(height: DesignSystem.spacingLg),
+            Text('LEARNING GAPS', style: DesignSystem.label),
+            const SizedBox(height: DesignSystem.spacingMd),
+            _buildLearningGaps(),
+            const SizedBox(height: DesignSystem.spacingLg),
+            _buildStudySuggestions(),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildStatRow(BuildContext context, String label, String value) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4.0),
+  Widget _buildChildSelector() {
+    return Container(
+      padding: const EdgeInsets.all(DesignSystem.spacingMd),
+      decoration: DesignSystem.cardDecoration,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label),
-          Text(value, style: const TextStyle(fontWeight: FontWeight.bold)),
+          const CircleAvatar(
+            radius: 24,
+            backgroundImage: NetworkImage('https://api.dicebear.com/7.x/avataaars/png?seed=Felix'),
+          ),
+          const SizedBox(width: DesignSystem.spacingMd),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Felix Sharma', style: DesignSystem.title),
+              Text('Class 5 • Section A', style: DesignSystem.bodySmall),
+            ],
+          ),
+          const Spacer(),
+          const Icon(Icons.keyboard_arrow_down, color: DesignSystem.textTertiary),
         ],
       ),
     );
   }
 
-  Widget _buildAreaTags(BuildContext context, String label, List<String> areas, Color color) {
-    if (areas.isEmpty) return const SizedBox.shrink();
+  Widget _buildDailyProgressCard() {
+    return Container(
+      padding: const EdgeInsets.all(DesignSystem.spacingMd),
+      decoration: DesignSystem.cardDecoration,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('STUDY TIME THIS WEEK', style: DesignSystem.label),
+          const SizedBox(height: DesignSystem.spacingLg),
+          SizedBox(
+            height: 150,
+            child: BarChart(
+              BarChartData(
+                gridData: const FlGridData(show: false),
+                titlesData: const FlTitlesData(show: false),
+                borderData: FlBorderData(show: false),
+                barGroups: [
+                  BarChartGroupData(x: 0, barRods: [BarChartRodData(toY: 2, color: DesignSystem.primary)]),
+                  BarChartGroupData(x: 1, barRods: [BarChartRodData(toY: 3, color: DesignSystem.primary)]),
+                  BarChartGroupData(x: 2, barRods: [BarChartRodData(toY: 1.5, color: DesignSystem.primary)]),
+                  BarChartGroupData(x: 3, barRods: [BarChartRodData(toY: 4, color: DesignSystem.primary)]),
+                  BarChartGroupData(x: 4, barRods: [BarChartRodData(toY: 2.5, color: DesignSystem.primary)]),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildLearningGaps() {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label, style: Theme.of(context).textTheme.titleSmall),
-        const SizedBox(height: 4),
-        Wrap(
-          spacing: 8,
-          children: areas.map((area) => Chip(
-            label: Text(area, style: const TextStyle(fontSize: 12)),
-            backgroundColor: color,
-          )).toList(),
-        ),
-        const SizedBox(height: 12),
+        _gapItem('Fractions', 'Struggling with Division', Colors.red),
+        _gapItem('Science', 'Needs Revision: Digestive System', Colors.orange),
       ],
+    );
+  }
+
+  Widget _gapItem(String subject, String issue, Color color) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: DesignSystem.spacingSm),
+      padding: const EdgeInsets.all(DesignSystem.spacingMd),
+      decoration: DesignSystem.cardDecoration,
+      child: Row(
+        children: [
+          Icon(Icons.warning_amber_rounded, color: color),
+          const SizedBox(width: DesignSystem.spacingMd),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(subject, style: DesignSystem.title.copyWith(fontSize: 14)),
+              Text(issue, style: DesignSystem.bodySmall),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStudySuggestions() {
+    return Container(
+      padding: const EdgeInsets.all(DesignSystem.spacingLg),
+      decoration: BoxDecoration(
+        color: DesignSystem.primary.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(DesignSystem.radiusLg),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Icon(Icons.auto_awesome, color: DesignSystem.primary),
+          const SizedBox(height: DesignSystem.spacingMd),
+          Text('AI SUGGESTION', style: DesignSystem.label.copyWith(color: DesignSystem.primary)),
+          const SizedBox(height: DesignSystem.spacingSm),
+          Text(
+            'Felix is finding "Fractions" difficult. Spend 15 minutes tonight doing a hands-on pizza cutting activity to help him visualize the concept.',
+            style: DesignSystem.bodySmall.copyWith(color: DesignSystem.textPrimary, fontWeight: FontWeight.w500),
+          ),
+        ],
+      ),
     );
   }
 }
