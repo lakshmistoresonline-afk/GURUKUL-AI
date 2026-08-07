@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:path/path.dart' as p;
 import '../../curriculum/domain/models/concept_node.dart';
-import '../../curriculum/domain/models/interactive_activity.dart';
 import '../../content/data/modular_lesson_generator.dart';
 
 /// Service responsible for orchestrating the AI enrichment pipeline.

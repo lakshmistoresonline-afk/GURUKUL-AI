@@ -50,6 +50,8 @@ import '../../features/content_acquisition/services/chapter_builder_service.dart
 import '../../features/content_acquisition/services/asset_processor_service.dart';
 import '../../features/content_acquisition/services/ai_pipeline_service.dart';
 import '../../features/content_acquisition/services/validation_engine.dart';
+import '../../features/content_acquisition/services/manifest_service.dart';
+import '../../features/content_acquisition/services/search_index_service.dart';
 import '../../features/content_acquisition/controllers/acquisition_bloc.dart';
 
 final sl = GetIt.instance;

@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:path/path.dart' as p;
 import 'package:syncfusion_flutter_pdf/pdf.dart';
-import '../models/acquisition_file.dart';
 import '../models/extraction_result.dart';
 import '../models/import_queue_item.dart';
 
