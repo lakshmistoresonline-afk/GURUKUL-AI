@@ -10,8 +10,9 @@ class HomeworkScreen extends StatefulWidget {
 
 class _HomeworkScreenState extends State<HomeworkScreen> {
   final List<Homework> _homeworkList = [
-    Homework(id: '1', title: 'Chapter 2: Math', description: 'Complete all exercises on page 24.', subject: 'Mathematics', dueDate: DateTime.now().add(const Duration(days: 2))),
-    Homework(id: '2', title: 'Science Diagram', description: 'Draw and label the parts of a plant.', subject: 'Science', dueDate: DateTime.now().add(const Duration(days: 1))),
+    Homework(id: '1', title: 'Chapter 1: The Fish Tale', description: 'Solve the word problems on page 5.', subject: 'Mathematics', dueDate: DateTime.now().add(const Duration(days: 1))),
+    Homework(id: '2', title: 'Super Senses Observation', description: 'Observe and list 3 super senses of a pet or local animal.', subject: 'EVS', dueDate: DateTime.now().add(const Duration(days: 2))),
+    Homework(id: '3', title: 'Hindi: Raakh ki Rassi', description: 'Write a summary of the story in your own words.', subject: 'Hindi', dueDate: DateTime.now().add(const Duration(days: 3))),
   ];
 
   @override

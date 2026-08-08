@@ -33,7 +33,12 @@
     {
       "question": "Which method is used to separate husk from heavier seeds of grain?",
       "hint": "It uses wind.",
-      "options": ["Handpicking", "Winnowing", "Sieving", "Threshing"],
+      "options": [
+        "Handpicking",
+        "Winnowing",
+        "Sieving",
+        "Threshing"
+      ],
       "correctAnswer": "Winnowing",
       "explanation": "Winnowing is used to separate heavier and lighter components of a mixture by wind or by blowing air.",
       "isHots": false
@@ -41,7 +46,12 @@
     {
       "question": "The process of converting water vapor into its liquid form is called?",
       "hint": "It happens on the lid of a hot pot.",
-      "options": ["Evaporation", "Condensation", "Decantation", "Filtration"],
+      "options": [
+        "Evaporation",
+        "Condensation",
+        "Decantation",
+        "Filtration"
+      ],
       "correctAnswer": "Condensation",
       "explanation": "The process of conversion of water vapor into its liquid form is called condensation.",
       "isHots": false
@@ -49,7 +59,12 @@
     {
       "question": "How can you separate a mixture of sand and salt?",
       "hint": "Salt dissolves in water.",
-      "options": ["Sieving", "Winnowing", "Filtration followed by Evaporation", "Handpicking"],
+      "options": [
+        "Sieving",
+        "Winnowing",
+        "Filtration followed by Evaporation",
+        "Handpicking"
+      ],
       "correctAnswer": "Filtration followed by Evaporation",
       "explanation": "Dissolve the mixture in water, filter the sand, and then evaporate the water to get salt back.",
       "isHots": true
@@ -57,7 +72,12 @@
     {
       "question": "A solution in which no more substance can be dissolved at a given temperature is?",
       "hint": "It is full.",
-      "options": ["Dilute Solution", "Concentrated Solution", "Saturated Solution", "Unsaturated Solution"],
+      "options": [
+        "Dilute Solution",
+        "Concentrated Solution",
+        "Saturated Solution",
+        "Unsaturated Solution"
+      ],
       "correctAnswer": "Saturated Solution",
       "explanation": "A saturated solution is one in which no more solute can be dissolved at that temperature.",
       "isHots": false
@@ -65,7 +85,12 @@
     {
       "question": "Which method would you use to separate tea leaves from prepared tea?",
       "hint": "You use a strainer.",
-      "options": ["Decantation", "Filtration", "Winnowing", "Sieving"],
+      "options": [
+        "Decantation",
+        "Filtration",
+        "Winnowing",
+        "Sieving"
+      ],
       "correctAnswer": "Filtration",
       "explanation": "Filtration using a strainer is the best way to separate tea leaves from tea.",
       "isHots": false
@@ -112,11 +137,11 @@
     "Understands why evaporation is used for obtaining salt from sea water.",
     "Can explain the difference between sedimentation and decantation."
   ],
-  "introduction": "Sometimes we need to remove stones from rice or tea leaves from tea. Separation techniques help us get what we need and remove what we don't, making substances safe and useful for us!",
-  "realLifeConnection": "We use filters in our water purifiers to separate impurities from drinking water. In villages, farmers use wind to clean their grains.",
-  "storyBasedExplanation": "Gopa needs to get salt from sea water to cook dinner. He knows that if he leaves the water in the sun, the water will disappear into the air (evaporation) and leave the white salt behind!",
-  "childFriendlyExplanation": "Think of separation as a 'Cleanup Mission'. We use different tools like fans (winnowing), nets (sieving), or even our own hands to catch the things we want and throw away the rest.",
-  "teacherExplanation": "Substances are separated based on differences in their physical properties. We explore various methods from manual handpicking to laboratory techniques like filtration and evaporation.",
+  "introduction": "Welcome to the study of Separation of Substances. In this chapter, we explore essential concepts and their applications in the world around us.",
+  "realLifeConnection": "You can see the principles of Separation of Substances in your daily activities, from the way you organize your day to the nature you see outside.",
+  "storyBasedExplanation": "The Quest for Knowledge: A group of students discovers the hidden secrets of Separation of Substances through a series of exciting adventures.",
+  "childFriendlyExplanation": "Learning Separation of Substances is like discovering a new superpower. It helps you understand how things work and solve puzzles!",
+  "teacherExplanation": "Focus on the core pillars of Separation of Substances. Connect theoretical knowledge with practical observations and NCERT guidelines.",
   "animatedLessonAsset": "assets/lottie/default_lesson.json",
   "videoUrl": null,
   "activities": [],
@@ -128,5 +153,20 @@
   "videoScript": "Host mixing salt and sand. 'How do we separate these? They look so similar! First, add water to dissolve salt. Then filter out the sand. Finally, boil the water away to get your salt back!'",
   "parentNotes": "Discuss the importance of separating impurities from food and water for health. Show them how winnowing is done if possible.",
   "teacherNotes": "Demonstrate saturated solutions and the effect of temperature on solubility. Use simple kitchen experiments to explain complex concepts.",
-  "learningOutcomes": "Students will be able to describe various methods of separation, choose the right method for a given mixture, and explain the roles of evaporation and condensation."
+  "learningOutcomes": "Students will be able to describe various methods of separation, choose the right method for a given mixture, and explain the roles of evaporation and condensation.",
+  "keyTakeaways": [
+    "Core concepts of Separation of Substances",
+    "Practical applications",
+    "Problem-solving techniques",
+    "Key definitions"
+  ],
+  "faqs": {
+    "Why is Separation of Substances important?": "It builds the foundation for more advanced topics and helps in critical thinking.",
+    "Where is this used?": "In various fields like science, engineering, and everyday life."
+  },
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:59.200564",
+    "method": "Ollama Enrichment"
+  }
 }

@@ -17,9 +17,9 @@ class StudyPlanPreview extends StatelessWidget {
           ],
         ),
         const SizedBox(height: DesignSystem.spacingSm),
-        _buildPlanItem('9:00 AM', 'Mathematics', 'Fractions Practice', true),
-        _buildPlanItem('11:30 AM', 'Science', 'Food Components', false),
-        _buildPlanItem('4:00 PM', 'English', 'Grammar: Nouns', false),
+        _buildPlanItem('9:00 AM', 'Mathematics', 'The Fish Tale: Large Numbers', true),
+        _buildPlanItem('11:30 AM', 'EVS', 'Super Senses: Animal Ears', false),
+        _buildPlanItem('4:00 PM', 'English', 'Ice-cream Man: Rhyming Words', false),
       ],
     );
   }

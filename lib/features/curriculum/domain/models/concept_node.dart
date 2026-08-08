@@ -1,66 +1,9 @@
+import '../../../../core/theme/theme_service.dart';
 import 'interactive_activity.dart';
 
 enum Difficulty { beginner, intermediate, advanced }
+
 enum BloomLevel { remember, understand, apply, analyze, evaluate, create }
-enum LearningStatus { notStarted, inProgress, mastered, needsRevision }
-
-class PracticeExercise {
-  final String question;
-  final String hint;
-  final List<String> options;
-  final String correctAnswer;
-  final String explanation;
-  final bool isHots;
-
-  const PracticeExercise({
-    required this.question,
-    required this.hint,
-    required this.options,
-    required this.correctAnswer,
-    required this.explanation,
-    this.isHots = false,
-  });
-
-  Map<String, dynamic> toMap() {
-    return {
-      'question': question,
-      'hint': hint,
-      'options': options,
-      'correctAnswer': correctAnswer,
-      'explanation': explanation,
-      'isHots': isHots,
-    };
-  }
-
-  factory PracticeExercise.fromMap(Map<String, dynamic> map) {
-    return PracticeExercise(
-      question: map['question'] ?? '',
-      hint: map['hint'] ?? '',
-      options: List<String>.from(map['options'] ?? []),
-      correctAnswer: map['correctAnswer'] ?? '',
-      explanation: map['explanation'] ?? '',
-      isHots: map['isHots'] ?? false,
-    );
-  }
-}
-
-class Flashcard {
-  final String front;
-  final String back;
-
-  const Flashcard({required this.front, required this.back});
-
-  Map<String, dynamic> toMap() {
-    return {'front': front, 'back': back};
-  }
-
-  factory Flashcard.fromMap(Map<String, dynamic> map) {
-    return Flashcard(
-      front: map['front'] ?? '',
-      back: map['back'] ?? '',
-    );
-  }
-}
 
 class ConceptNode {
   final String id;
@@ -79,17 +22,14 @@ class ConceptNode {
   final List<String> learningObjectives;
   final List<String> examples;
   final List<String> misconceptions;
-
   final List<PracticeExercise> practiceExercises;
   final List<Flashcard> flashcards;
   final String revisionNotes;
   final String? mindMapUrl;
   final List<String> commonMistakes;
-
   final Map<String, String> vocabulary;
-  final List<String> interactiveActivities; // Legacy or string based
+  final List<String> interactiveActivities;
   final List<String> masteryCheckpoints;
-
   final String introduction;
   final String realLifeConnection;
   final String storyBasedExplanation;
@@ -97,25 +37,22 @@ class ConceptNode {
   final String teacherExplanation;
   final String animatedLessonAsset;
   final String? videoUrl;
-  final List<InteractiveActivity> activities; // New structured activities
+  final List<InteractiveActivity> activities;
   final List<String> handsOnActivities;
-
   final String animationScript;
   final String videoScript;
   final String parentNotes;
   final String teacherNotes;
   final String learningOutcomes;
-
-  // Phase 56 Additions
   final List<String> keyTakeaways;
   final Map<String, String> faqs;
   final String importantNotes;
   final List<String> socraticPrompts;
   final List<String> illustrationPrompts;
-  final String status; // Draft, Review, Approved, Published
+  final String status;
   final Map<String, dynamic> generationMetadata;
 
-  const ConceptNode({
+  ConceptNode({
     required this.id,
     required this.subject,
     required this.classLevel,
@@ -126,12 +63,12 @@ class ConceptNode {
     required this.bloomLevel,
     required this.examWeightage,
     required this.estStudyTime,
-    required this.prerequisites,
-    required this.dependencies,
-    required this.relatedConcepts,
-    required this.learningObjectives,
-    required this.examples,
-    required this.misconceptions,
+    this.prerequisites = const [],
+    this.dependencies = const [],
+    this.relatedConcepts = const [],
+    this.learningObjectives = const [],
+    this.examples = const [],
+    this.misconceptions = const [],
     this.practiceExercises = const [],
     this.flashcards = const [],
     this.revisionNotes = '',
@@ -182,7 +119,7 @@ class ConceptNode {
       'examples': examples,
       'misconceptions': misconceptions,
       'practiceExercises': practiceExercises.map((e) => e.toMap()).toList(),
-      'flashcards': flashcards.map((f) => f.toMap()).toList(),
+      'flashcards': flashcards.map((e) => e.toMap()).toList(),
       'revisionNotes': revisionNotes,
       'mindMapUrl': mindMapUrl,
       'commonMistakes': commonMistakes,
@@ -196,7 +133,7 @@ class ConceptNode {
       'teacherExplanation': teacherExplanation,
       'animatedLessonAsset': animatedLessonAsset,
       'videoUrl': videoUrl,
-      'activities': activities.map((a) => a.toMap()).toList(),
+      'activities': activities.map((e) => e.toMap()).toList(),
       'handsOnActivities': handsOnActivities,
       'animationScript': animationScript,
       'videoScript': videoScript,
@@ -215,51 +152,124 @@ class ConceptNode {
 
   factory ConceptNode.fromMap(Map<String, dynamic> map) {
     return ConceptNode(
-      id: map['id'] ?? '',
-      subject: map['subject'] ?? '',
+      id: map['id']?.toString() ?? '',
+      subject: map['subject']?.toString() ?? '',
       classLevel: map['classLevel'] ?? 5,
-      chapter: map['chapter'] ?? '',
-      topic: map['topic'] ?? '',
-      subtopic: map['subtopic'] ?? '',
+      chapter: map['chapter']?.toString() ?? '',
+      topic: map['topic']?.toString() ?? '',
+      subtopic: map['subtopic']?.toString() ?? '',
       difficulty: Difficulty.values.firstWhere((e) => e.name == map['difficulty'], orElse: () => Difficulty.beginner),
       bloomLevel: BloomLevel.values.firstWhere((e) => e.name == map['bloomLevel'], orElse: () => BloomLevel.remember),
       examWeightage: map['examWeightage'] ?? 1,
       estStudyTime: Duration(minutes: map['estStudyTime'] ?? 30),
-      prerequisites: List<String>.from(map['prerequisites'] ?? []),
-      dependencies: List<String>.from(map['dependencies'] ?? []),
-      relatedConcepts: List<String>.from(map['relatedConcepts'] ?? []),
-      learningObjectives: List<String>.from(map['learningObjectives'] ?? []),
-      examples: List<String>.from(map['examples'] ?? []),
-      misconceptions: List<String>.from(map['misconceptions'] ?? []),
-      practiceExercises: (map['practiceExercises'] as List? ?? []).map((e) => PracticeExercise.fromMap(e)).toList(),
-      flashcards: (map['flashcards'] as List? ?? []).map((f) => Flashcard.fromMap(f)).toList(),
-      revisionNotes: map['revisionNotes'] ?? '',
-      mindMapUrl: map['mindMapUrl'],
-      commonMistakes: List<String>.from(map['commonMistakes'] ?? []),
-      vocabulary: Map<String, String>.from(map['vocabulary'] ?? {}),
-      interactiveActivities: List<String>.from(map['interactiveActivities'] ?? []),
-      masteryCheckpoints: List<String>.from(map['masteryCheckpoints'] ?? []),
-      introduction: map['introduction'] ?? '',
-      realLifeConnection: map['realLifeConnection'] ?? '',
-      storyBasedExplanation: map['storyBasedExplanation'] ?? '',
-      childFriendlyExplanation: map['childFriendlyExplanation'] ?? '',
-      teacherExplanation: map['teacherExplanation'] ?? '',
-      animatedLessonAsset: map['animatedLessonAsset'] ?? '',
-      videoUrl: map['videoUrl'],
-      activities: (map['activities'] as List? ?? []).map((a) => InteractiveActivity.fromMap(a)).toList(),
-      handsOnActivities: List<String>.from(map['handsOnActivities'] ?? []),
-      animationScript: map['animationScript'] ?? '',
-      videoScript: map['videoScript'] ?? '',
-      parentNotes: map['parentNotes'] ?? '',
-      teacherNotes: map['teacherNotes'] ?? '',
-      learningOutcomes: map['learningOutcomes'] ?? '',
-      keyTakeaways: List<String>.from(map['keyTakeaways'] ?? []),
-      faqs: Map<String, String>.from(map['faqs'] ?? {}),
-      importantNotes: map['importantNotes'] ?? '',
-      socraticPrompts: List<String>.from(map['socraticPrompts'] ?? []),
-      illustrationPrompts: List<String>.from(map['illustrationPrompts'] ?? []),
-      status: map['status'] ?? 'Draft',
+      prerequisites: safeStringList(map['prerequisites']),
+      dependencies: safeStringList(map['dependencies']),
+      relatedConcepts: safeStringList(map['relatedConcepts']),
+      learningObjectives: safeStringList(map['learningObjectives']),
+      examples: safeStringList(map['examples']),
+      misconceptions: safeStringList(map['misconceptions']),
+      practiceExercises: (map['practiceExercises'] as List? ?? []).map((e) => PracticeExercise.fromMap(Map<String, dynamic>.from(e))).toList(),
+      flashcards: (map['flashcards'] as List? ?? []).map((f) => Flashcard.fromMap(Map<String, dynamic>.from(f))).toList(),
+      revisionNotes: map['revisionNotes']?.toString() ?? '',
+      mindMapUrl: map['mindMapUrl']?.toString(),
+      commonMistakes: safeStringList(map['commonMistakes']),
+      vocabulary: safeStringMap(map['vocabulary']),
+      interactiveActivities: safeStringList(map['interactiveActivities']),
+      masteryCheckpoints: safeStringList(map['masteryCheckpoints']),
+      introduction: map['introduction']?.toString() ?? '',
+      realLifeConnection: map['realLifeConnection']?.toString() ?? '',
+      storyBasedExplanation: map['storyBasedExplanation']?.toString() ?? '',
+      childFriendlyExplanation: map['childFriendlyExplanation']?.toString() ?? '',
+      teacherExplanation: map['teacherExplanation']?.toString() ?? '',
+      animatedLessonAsset: map['animatedLessonAsset']?.toString() ?? '',
+      videoUrl: map['videoUrl']?.toString(),
+      activities: (map['activities'] as List? ?? []).map((a) => InteractiveActivity.fromMap(Map<String, dynamic>.from(a))).toList(),
+      handsOnActivities: safeStringList(map['handsOnActivities']),
+      animationScript: map['animationScript']?.toString() ?? '',
+      videoScript: map['videoScript']?.toString() ?? '',
+      parentNotes: map['parentNotes']?.toString() ?? '',
+      teacherNotes: map['teacherNotes']?.toString() ?? '',
+      learningOutcomes: map['learningOutcomes']?.toString() ?? '',
+      keyTakeaways: safeStringList(map['keyTakeaways']),
+      faqs: safeStringMap(map['faqs']),
+      importantNotes: map['importantNotes']?.toString() ?? '',
+      socraticPrompts: safeStringList(map['socraticPrompts']),
+      illustrationPrompts: safeStringList(map['illustrationPrompts']),
+      status: map['status']?.toString() ?? 'Draft',
       generationMetadata: Map<String, dynamic>.from(map['generationMetadata'] ?? {}),
     );
   }
+}
+
+class PracticeExercise {
+  final String question;
+  final List<String> options;
+  final String correctAnswer;
+  final String? hint;
+  final String? explanation;
+  final bool isHots;
+
+  const PracticeExercise({
+    required this.question,
+    required this.options,
+    required this.correctAnswer,
+    this.hint,
+    this.explanation,
+    this.isHots = false,
+  });
+
+  Map<String, dynamic> toMap() {
+    return {
+      'question': question,
+      'options': options,
+      'correctAnswer': correctAnswer,
+      'hint': hint,
+      'explanation': explanation,
+      'isHots': isHots,
+    };
+  }
+
+  factory PracticeExercise.fromMap(Map<String, dynamic> map) {
+    return PracticeExercise(
+      question: map['question']?.toString() ?? '',
+      options: safeStringList(map['options']),
+      correctAnswer: map['correctAnswer']?.toString() ?? '',
+      hint: map['hint']?.toString(),
+      explanation: map['explanation']?.toString(),
+      isHots: map['isHots'] ?? false,
+    );
+  }
+}
+
+class Flashcard {
+  final String front;
+  final String back;
+
+  const Flashcard({required this.front, required this.back});
+
+  Map<String, dynamic> toMap() {
+    return {'front': front, 'back': back};
+  }
+
+  factory Flashcard.fromMap(Map<String, dynamic> map) {
+    return Flashcard(
+      front: map['front']?.toString() ?? '',
+      back: map['back']?.toString() ?? '',
+    );
+  }
+}
+
+// Global safety helpers for Web Type Compatibility
+List<String> safeStringList(dynamic value) {
+  if (value is List) {
+    return value.map((e) => e?.toString() ?? '').toList();
+  }
+  return [];
+}
+
+Map<String, String> safeStringMap(dynamic value) {
+  if (value is Map) {
+    return value.map((k, v) => MapEntry(k.toString(), v?.toString() ?? ''));
+  }
+  return {};
 }

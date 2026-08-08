@@ -29,7 +29,7 @@ class InteractiveActivity {
     return InteractiveActivity(
       id: map['id'] ?? '',
       type: ActivityType.values.firstWhere((e) => e.name == map['type'], orElse: () => ActivityType.matching),
-      data: Map<String, dynamic>.from(map['data'] ?? {}),
+      data: (map['data'] as Map?)?.cast<String, dynamic>() ?? {},
       instruction: map['instruction'] ?? '',
       title: map['title'] ?? '',
     );

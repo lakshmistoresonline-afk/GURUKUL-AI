@@ -85,31 +85,38 @@ class _DailyGoalRing extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Stack(
-          alignment: Alignment.center,
-          children: [
-            SizedBox(
-              width: 55,
-              height: 55,
-              child: CircularProgressIndicator(
-                value: progress,
-                strokeWidth: 6,
-                backgroundColor: DesignSystem.primary.withValues(alpha: 0.1),
-                valueColor: const AlwaysStoppedAnimation<Color>(DesignSystem.accent),
-                strokeCap: StrokeCap.round,
+    return InkWell(
+      onTap: () {
+         ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('You are on track! Keep learning to hit your goal.')),
+        );
+      },
+      child: Column(
+        children: [
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              SizedBox(
+                width: 55,
+                height: 55,
+                child: CircularProgressIndicator(
+                  value: progress,
+                  strokeWidth: 6,
+                  backgroundColor: DesignSystem.primary.withValues(alpha: 0.1),
+                  valueColor: const AlwaysStoppedAnimation<Color>(DesignSystem.accent),
+                  strokeCap: StrokeCap.round,
+                ),
               ),
-            ),
-            Text(
-              '${(progress * 100).toInt()}%',
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
-            ),
-          ],
-        ),
-        const SizedBox(height: 4),
-        const Text('Daily Goal', style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600)),
-      ],
+              Text(
+                '${(progress * 100).toInt()}%',
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          const Text('Daily Goal', style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600)),
+        ],
+      ),
     );
   }
 }

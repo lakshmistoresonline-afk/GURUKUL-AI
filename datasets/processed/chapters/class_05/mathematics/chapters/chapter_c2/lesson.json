@@ -35,7 +35,12 @@
     {
       "question": "An angle smaller than a right angle is called?",
       "hint": "It is a \"sharp\" angle.",
-      "options": ["Obtuse", "Right", "Acute", "Straight"],
+      "options": [
+        "Obtuse",
+        "Right",
+        "Acute",
+        "Straight"
+      ],
       "correctAnswer": "Acute",
       "explanation": "Acute angles are less than 90 degrees.",
       "isHots": false
@@ -43,7 +48,12 @@
     {
       "question": "At what time do the hands of a clock form a right angle?",
       "hint": "Look for the L-shape.",
-      "options": ["12:00", "3:00", "6:00", "1:30"],
+      "options": [
+        "12:00",
+        "3:00",
+        "6:00",
+        "1:30"
+      ],
       "correctAnswer": "3:00",
       "explanation": "At 3:00, the hour hand is at 3 and the minute hand is at 12, forming a 90-degree angle.",
       "isHots": false
@@ -51,7 +61,12 @@
     {
       "question": "Which of these is an obtuse angle?",
       "hint": "It is wider than a corner.",
-      "options": ["45 degrees", "90 degrees", "120 degrees", "180 degrees"],
+      "options": [
+        "45 degrees",
+        "90 degrees",
+        "120 degrees",
+        "180 degrees"
+      ],
       "correctAnswer": "120 degrees",
       "explanation": "Angles between 90 and 180 degrees are called obtuse.",
       "isHots": false
@@ -59,7 +74,12 @@
     {
       "question": "How many degrees are in a half-right angle?",
       "hint": "90 divided by 2.",
-      "options": ["30", "45", "60", "90"],
+      "options": [
+        "30",
+        "45",
+        "60",
+        "90"
+      ],
       "correctAnswer": "45",
       "explanation": "Half of a right angle (90 degrees) is 45 degrees.",
       "isHots": false
@@ -67,7 +87,12 @@
     {
       "question": "What shape is formed by three matchsticks joined at their ends?",
       "hint": "A polygon with 3 sides.",
-      "options": ["Square", "Circle", "Triangle", "Rectangle"],
+      "options": [
+        "Square",
+        "Circle",
+        "Triangle",
+        "Rectangle"
+      ],
       "correctAnswer": "Triangle",
       "explanation": "A triangle is a closed shape with three sides and three angles.",
       "isHots": false
@@ -130,5 +155,10 @@
   "videoScript": "Host standing in a playground. 'Hi everyone! See that slide? The angle it makes with the ground helps you go fast. Let's learn how to classify these angles using our angle tester...'",
   "parentNotes": "Find angles in yoga poses with your child. Ask them to identify which ones are right angles.",
   "teacherNotes": "Use matchsticks to create polygons and explore interior angles. Show how the sum of angles changes with sides.",
-  "learningOutcomes": "Students will be able to classify angles, recognize them in their environment, and understand how changing angles affects the rigidity of a shape."
+  "learningOutcomes": "Students will be able to classify angles, recognize them in their environment, and understand how changing angles affects the rigidity of a shape.",
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:57.578592",
+    "method": "Ollama Enrichment"
+  }
 }

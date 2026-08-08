@@ -43,91 +43,49 @@ class ChapterBuilderService {
           ? sections.sublist(1, sections.length - 1).join('\n\n')
           : '';
 
-    // Use extracted content
-    final keywords = _extractKeywords(chapterText);
+      // Use extracted content
+      final keywords = _extractKeywords(chapterText);
 
-    // Construct the ConceptNode
-    final node = ConceptNode(
-      id: chapterId,
-      subject: file.subject,
-      classLevel: file.classLevel,
-      chapter: title,
-      topic: title,
-      subtopic: '',
-      difficulty: Difficulty.beginner,
-      bloomLevel: BloomLevel.remember,
-      examWeightage: 5,
-      estStudyTime: const Duration(minutes: 60),
-      prerequisites: [],
-      dependencies: [],
-      relatedConcepts: [],
-      learningObjectives: [], // Populated by AI Pipeline
-      examples: [],
-      misconceptions: [],
-      introduction: introduction,
-      teacherExplanation: bodyContent,
-      revisionNotes: summary,
-      practiceExercises: [], // Populated by AI Pipeline
-      flashcards: [], // Populated by AI Pipeline
-      keyTakeaways: keywords,
-      status: 'Extracted',
-      generationMetadata: {
-        'sourceFile': file.name,
-        'chapterIndex': chapterIndex,
-        'processedAt': DateTime.now().toIso8601String(),
-      },
-    );
+      // Construct the ConceptNode
+      final node = ConceptNode(
+        id: chapterId,
+        subject: file.subject,
+        classLevel: file.classLevel,
+        chapter: title,
+        topic: title,
+        subtopic: '',
+        difficulty: Difficulty.beginner,
+        bloomLevel: BloomLevel.remember,
+        examWeightage: 5,
+        estStudyTime: const Duration(minutes: 60),
+        prerequisites: [],
+        dependencies: [],
+        relatedConcepts: [],
+        learningObjectives: [], // Populated by AI Pipeline
+        examples: [],
+        misconceptions: [],
+        introduction: introduction,
+        teacherExplanation: bodyContent,
+        revisionNotes: summary,
+        practiceExercises: [], // Populated by AI Pipeline
+        flashcards: [], // Populated by AI Pipeline
+        keyTakeaways: keywords,
+        status: 'Extracted',
+        generationMetadata: {
+          'sourceFile': file.name,
+          'chapterIndex': chapterIndex,
+          'processedAt': DateTime.now().toIso8601String(),
+        },
+      );
 
-    chapters.add(node);
+      chapters.add(node);
 
-    // Requirement: Save to datasets/processed/chapters/class_XX/subject/chapters/chapter_XX/
-    await _saveChapterData(node, file.classLevel, subjectSlug, extraction);
+      // Requirement: Save to datasets/processed/chapters/class_XX/subject/chapters/chapter_XX/
+      await _saveChapterData(node, file.classLevel, subjectSlug, extraction);
+    }
+
+    return chapters;
   }
-
-  return chapters;
-}
-
-/// Saves the chapter [ConceptNode], [lesson.json], [metadata.json], and [media.json] to the filesystem.
-Future<void> _saveChapterData(ConceptNode node, int classLevel, String subjectSlug, ExtractionResult extraction) async {
-  final classDir = 'class_${classLevel.toString().padLeft(2, '0')}';
-  final dirPath = p.join(_basePath, classDir, subjectSlug, 'chapters', 'chapter_${node.id.split("_").last}');
-
-  final directory = Directory(dirPath);
-  if (!await directory.exists()) {
-    await directory.create(recursive: true);
-  }
-
-  const encoder = JsonEncoder.withIndent('  ');
-
-  // 1. metadata.json
-  final metadata = {
-    'id': node.id,
-    'subject': node.subject,
-    'classLevel': node.classLevel,
-    'chapter': node.chapter,
-    'topic': node.topic,
-    'status': node.status,
-    'generationMetadata': node.generationMetadata,
-  };
-  await File(p.join(dirPath, 'metadata.json')).writeAsString(encoder.convert(metadata));
-
-  // 2. lesson.json
-  await File(p.join(dirPath, 'lesson.json')).writeAsString(encoder.convert(node.toMap()));
-
-  // 3. media.json
-  final media = {
-    'images': extraction.images,
-    'tables': extraction.tables,
-    'videos': [],
-  };
-  await File(p.join(dirPath, 'media.json')).writeAsString(encoder.convert(media));
-
-  // Also save split files for redundancy as per previous structure
-  await File(p.join(dirPath, 'quiz.json')).writeAsString(encoder.convert([]));
-  await File(p.join(dirPath, 'flashcards.json')).writeAsString(encoder.convert([]));
-  await File(p.join(dirPath, 'objectives.json')).writeAsString(encoder.convert([]));
-  await File(p.join(dirPath, 'summary.json')).writeAsString(encoder.convert({'revisionNotes': node.revisionNotes}));
-}
 
   /// Attempts to extract a title from the beginning of the chapter text.
   String _determineTitle(String text, int index) {
@@ -161,5 +119,47 @@ Future<void> _saveChapterData(ConceptNode node, int classLevel, String subjectSl
     }
     final sorted = freq.keys.toList()..sort((a, b) => freq[b]!.compareTo(freq[a]!));
     return sorted.take(10).toList();
+  }
+
+  /// Saves the chapter [ConceptNode], [lesson.json], [metadata.json], and [media.json] to the filesystem.
+  Future<void> _saveChapterData(ConceptNode node, int classLevel, String subjectSlug, ExtractionResult extraction) async {
+    final classDir = 'class_${classLevel.toString().padLeft(2, '0')}';
+    final dirPath = p.join(_basePath, classDir, subjectSlug, 'chapters', 'chapter_${node.id.split("_").last}');
+
+    final directory = Directory(dirPath);
+    if (!await directory.exists()) {
+      await directory.create(recursive: true);
+    }
+
+    const encoder = JsonEncoder.withIndent('  ');
+
+    // 1. metadata.json
+    final metadata = {
+      'id': node.id,
+      'subject': node.subject,
+      'classLevel': node.classLevel,
+      'chapter': node.chapter,
+      'topic': node.topic,
+      'status': node.status,
+      'generationMetadata': node.generationMetadata,
+    };
+    await File(p.join(dirPath, 'metadata.json')).writeAsString(encoder.convert(metadata));
+
+    // 2. lesson.json
+    await File(p.join(dirPath, 'lesson.json')).writeAsString(encoder.convert(node.toMap()));
+
+    // 3. media.json
+    final media = {
+      'images': extraction.images,
+      'tables': extraction.tables,
+      'videos': [],
+    };
+    await File(p.join(dirPath, 'media.json')).writeAsString(encoder.convert(media));
+
+    // Also save split files for redundancy as per previous structure
+    await File(p.join(dirPath, 'quiz.json')).writeAsString(encoder.convert([]));
+    await File(p.join(dirPath, 'flashcards.json')).writeAsString(encoder.convert([]));
+    await File(p.join(dirPath, 'objectives.json')).writeAsString(encoder.convert([]));
+    await File(p.join(dirPath, 'summary.json')).writeAsString(encoder.convert({'revisionNotes': node.revisionNotes}));
   }
 }

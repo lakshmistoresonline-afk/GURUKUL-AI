@@ -33,7 +33,12 @@
     {
       "question": "What happens to the water level in a glass when you drop a stone into it?",
       "hint": "The stone takes up some space.",
-      "options": ["It goes down", "It stays the same", "It rises", "It disappears"],
+      "options": [
+        "It goes down",
+        "It stays the same",
+        "It rises",
+        "It disappears"
+      ],
       "correctAnswer": "It rises",
       "explanation": "The stone occupies space, pushing the water up. This is called displacement.",
       "isHots": false
@@ -41,7 +46,12 @@
     {
       "question": "Which of these units is used to measure volume?",
       "hint": "It involves a cube.",
-      "options": ["Centimeters", "Square centimeters", "Cubic centimeters", "Grams"],
+      "options": [
+        "Centimeters",
+        "Square centimeters",
+        "Cubic centimeters",
+        "Grams"
+      ],
       "correctAnswer": "Cubic centimeters",
       "explanation": "Volume is measured in cubic units like cubic centimeters (cm³).",
       "isHots": false
@@ -49,7 +59,12 @@
     {
       "question": "If 1 kg of cotton and 1 kg of iron are weighed, which is heavier?",
       "hint": "Look at the numbers.",
-      "options": ["Cotton", "Iron", "They are equal", "Cannot say"],
+      "options": [
+        "Cotton",
+        "Iron",
+        "They are equal",
+        "Cannot say"
+      ],
       "correctAnswer": "They are equal",
       "explanation": "Since both are exactly 1 kg, their weight is the same, even though cotton takes up more space.",
       "isHots": true
@@ -57,7 +72,12 @@
     {
       "question": "How many milliliters are in 1 liter?",
       "hint": "It's a thousand.",
-      "options": ["10", "100", "1000", "500"],
+      "options": [
+        "10",
+        "100",
+        "1000",
+        "500"
+      ],
       "correctAnswer": "1000",
       "explanation": "There are 1000 milliliters (ml) in 1 liter (L).",
       "isHots": false
@@ -65,7 +85,12 @@
     {
       "question": "A cube with side 1cm has a volume of?",
       "hint": "1 * 1 * 1.",
-      "options": ["1 sq cm", "1 cm", "1 cubic cm", "3 cm"],
+      "options": [
+        "1 sq cm",
+        "1 cm",
+        "1 cubic cm",
+        "3 cm"
+      ],
       "correctAnswer": "1 cubic cm",
       "explanation": "Volume of a cube = side * side * side = 1 * 1 * 1 = 1 cm³.",
       "isHots": false
@@ -128,5 +153,10 @@
   "videoScript": "Host with a glass of water. 'Watch the water level! When I put this cube in, the water level goes up. The amount it rises is exactly the volume of the cube. We call this displacement!'",
   "parentNotes": "Help your child compare the capacity of different containers at home. Ask: 'Which bottle holds more water?' then test it by pouring from one to another.",
   "teacherNotes": "Use 1cm cubes to build 3D shapes and have students calculate the volume by counting. Discuss how displacement is used in real life (e.g., ships).",
-  "learningOutcomes": "Students will be able to measure volume using displacement, compare weights accurately, and understand the difference between size and density."
+  "learningOutcomes": "Students will be able to measure volume using displacement, compare weights accurately, and understand the difference between size and density.",
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:57.546594",
+    "method": "Ollama Enrichment"
+  }
 }

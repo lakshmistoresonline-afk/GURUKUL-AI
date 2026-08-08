@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:project_gurukul_ai/core/theme/design_system.dart';
+import 'package:project_gurukul_ai/core/di/injection.dart';
+import 'package:project_gurukul_ai/features/curriculum/data/framework_repository.dart';
+import 'package:project_gurukul_ai/features/curriculum/presentation/screens/learning_journey_screen.dart';
+import 'package:project_gurukul_ai/features/gamification/domain/services/daily_challenge_service.dart';
 
 class DailyChallengeCard extends StatelessWidget {
   const DailyChallengeCard({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final challenge = sl<DailyChallengeService>().getTodaysChallenge();
+
     return Container(
       padding: const EdgeInsets.all(DesignSystem.spacingLg),
       decoration: BoxDecoration(
@@ -37,19 +43,37 @@ class DailyChallengeCard extends StatelessWidget {
           ),
           const SizedBox(height: DesignSystem.spacingMd),
           Text(
-            'Mental Math Marathon',
+            challenge.title,
             style: DesignSystem.headlineLarge.copyWith(color: Colors.white, fontSize: 22),
           ),
           const SizedBox(height: DesignSystem.spacingSm),
-          const Text(
-            'Solve 10 problems in 2 minutes to earn 100 XP and 50 Coins!',
-            style: TextStyle(color: Colors.white70, fontSize: 14),
+          Text(
+            challenge.description,
+            style: const TextStyle(color: Colors.white70, fontSize: 14),
           ),
           const SizedBox(height: DesignSystem.spacingLg),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () async {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Loading ${challenge.title}...')),
+                );
+
+                // Map challenge type to subject
+                String subject = 'Mathematics';
+                if (challenge.type == 'english') subject = 'English';
+                if (challenge.type == 'evs') subject = 'EVS';
+                if (challenge.type == 'hindi') subject = 'Hindi';
+
+                final chapters = await sl<FrameworkRepository>().getChapters(5, subject);
+                if (chapters.isNotEmpty && chapters.first['id'] != null && context.mounted) {
+                   final node = await sl<FrameworkRepository>().getConceptNode(chapters.first['id'].toString());
+                   if (node != null && context.mounted) {
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: node)));
+                   }
+                }
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
                 foregroundColor: const Color(0xFFF97316),

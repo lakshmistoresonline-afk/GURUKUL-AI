@@ -13,18 +13,26 @@
     "m5_c1"
   ],
   "dependencies": [],
-  "relatedConcepts": [],
+  "relatedConcepts": [
+    "Place Value",
+    "Estimation",
+    "Roman Numerals",
+    "Brackets"
+  ],
   "learningObjectives": [
     "Compare large numbers effectively",
     "Use Indian and International place value systems",
-    "Understand Estimation and Roman Numerals"
+    "Understand Estimation and Roman Numerals",
+    "Learn the use of commas in large numbers"
   ],
   "examples": [
     "1 million = 10 lakhs",
-    "Estimation of 4875 to nearest thousand is 5000"
+    "Estimation of 4875 to nearest thousand is 5000",
+    "Writing 73,45,671 in words using Indian system"
   ],
   "misconceptions": [
-    "Thinking Roman numerals have a symbol for zero (they do not)"
+    "Thinking Roman numerals have a symbol for zero (they do not)",
+    "Confusing commas between Indian and International systems"
   ],
   "practiceExercises": [
     {
@@ -39,6 +47,19 @@
       "correctAnswer": "987,654,321",
       "explanation": "International system uses 3-digit groupings: Millions, Thousands, Ones.",
       "isHots": false
+    },
+    {
+      "question": "Estimate 7,345 + 15,893 to the nearest thousand.",
+      "hint": "Round each number first.",
+      "options": [
+        "22,000",
+        "23,000",
+        "24,000",
+        "25,000"
+      ],
+      "correctAnswer": "23,000",
+      "explanation": "7,345 rounds to 7,000. 15,893 rounds to 16,000. 7,000 + 16,000 = 23,000.",
+      "isHots": true
     }
   ],
   "flashcards": [
@@ -57,28 +78,63 @@
     {
       "front": "Roman Numeral M",
       "back": "1000"
+    },
+    {
+      "front": "1 Billion",
+      "back": "1,000 Million"
     }
   ],
-  "revisionNotes": "Estimation makes big calculations easier and faster. Roman numerals follow addition/subtraction rules.",
+  "revisionNotes": "Estimation makes big calculations easier and faster. Remember the rules for Roman Numerals: V, L, D are never repeated; I can be subtracted from V and X only.",
   "mindMapUrl": null,
   "commonMistakes": [
-    "Writing IVVV for 15 (cannot repeat V)"
+    "Writing IVVV for 15 (cannot repeat V)",
+    "Incorrectly placing commas in 10-lakh numbers"
   ],
-  "vocabulary": {},
+  "vocabulary": {
+    "Estimation": "A rough calculation of the value, number, quantity, or extent of something.",
+    "Numeral": "A symbol or name that stands for a number."
+  },
   "interactiveActivities": [],
   "masteryCheckpoints": [],
-  "introduction": "",
-  "realLifeConnection": "",
-  "storyBasedExplanation": "",
-  "childFriendlyExplanation": "",
-  "teacherExplanation": "",
+  "introduction": "Numbers are the foundation of Mathematics. In this chapter, we learn how to handle large numbers, compare them, and use them in daily life situations.",
+  "realLifeConnection": "Estimation helps you quickly understand costs when you go shopping. Large numbers are used in population counts and distances between planets.",
+  "storyBasedExplanation": "The King's Star Count: A king tries to count stars and discovers that commas help him group thousands and millions to avoid confusion.",
+  "childFriendlyExplanation": "Think of numbers like building blocks. Small numbers are single blocks, large numbers are huge towers with spacers (commas) to keep them steady.",
+  "teacherExplanation": "Focus on the transition from 5-digit to larger numbers. Contrast Indian and International systems. Use estimation as a tool for mental verification.",
   "animatedLessonAsset": "",
   "videoUrl": null,
   "activities": [],
-  "handsOnActivities": [],
-  "animationScript": "",
-  "videoScript": "",
-  "parentNotes": "",
-  "teacherNotes": "",
-  "learningOutcomes": ""
+  "handsOnActivities": [
+    "Collect five different newspaper headlines containing large numbers and rewrite them using both number systems.",
+    "Create a Roman numeral clock using cardboard."
+  ],
+  "animationScript": "A character 'Digit' grows from a small size to a giant as he counts. Commas drop from the sky to help him stay organized. Visual comparison of 1 Lakh vs 1 Million using cubes.",
+  "videoScript": "Teacher: 'Welcome! Today we master the art of knowing our numbers. Ever wondered why we use commas? They are like breaths in a long sentence. Let's see how they change between India and the rest of the world.'",
+  "parentNotes": "Help your child read the prices of expensive items in catalogs to practice large numbers. Ask them to estimate the total bill when grocery shopping.",
+  "teacherNotes": "Use a place value chart on the board. Practice converting between Lakhs and Millions frequently as it is a common point of confusion.",
+  "learningOutcomes": "Students will be able to read and write large numbers, compare them, estimate sums and products, and use Roman numerals up to 1000.",
+  "keyTakeaways": [
+    "Comparison of large numbers",
+    "Indian vs International System",
+    "Estimation rules",
+    "Roman Numerals"
+  ],
+  "faqs": {
+    "Why use commas?": "Commas make large numbers easier to read by grouping digits.",
+    "Does Roman system have zero?": "No, Roman numerals do not have a symbol for zero."
+  },
+  "importantNotes": "The number 100,000 is 1 Lakh. The number 1,000,000 is 10 Lakhs or 1 Million.",
+  "socraticPrompts": [
+    "If I have a 5-digit number and you have a 6-digit number, who has the larger number? Why?",
+    "Why can't we just write 'IIII' for 4 in Roman numerals?"
+  ],
+  "illustrationPrompts": [
+    "A colorful place value chart comparing Indian and International systems side-by-side.",
+    "A cartoon of a Roman soldier counting his coins using Roman numerals."
+  ],
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:58.690587",
+    "method": "Ollama Enrichment"
+  }
 }

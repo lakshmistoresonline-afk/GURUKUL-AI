@@ -18,6 +18,7 @@ import 'package:project_gurukul_ai/features/student/presentation/screens/progres
 import 'package:project_gurukul_ai/core/theme/theme_service.dart';
 
 import 'package:project_gurukul_ai/features/admin/presentation/screens/admin_dashboard_screen.dart';
+import 'package:project_gurukul_ai/features/auth/domain/models/user_model.dart';
 
 class DashboardScreen extends StatefulWidget {
   final int classLevel;
@@ -49,7 +50,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
       body: IndexedStack(
         index: _currentIndex,
         children: [
-          _HomeTab(studentName: _studentName),
+          _HomeTab(
+            studentName: _studentName,
+            onTabChange: (index) => setState(() => _currentIndex = index),
+          ),
           _MyLearningTab(classLevel: widget.classLevel),
           const AiTutorChatScreen(),
           ProgressDashboardScreen(studentId: _currentUserId ?? 'guest'),
@@ -69,7 +73,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
 class _HomeTab extends StatelessWidget {
   final String studentName;
-  const _HomeTab({required this.studentName});
+  final Function(int)? onTabChange;
+  const _HomeTab({required this.studentName, this.onTabChange});
 
   @override
   Widget build(BuildContext context) {
@@ -95,25 +100,31 @@ class _HomeTab extends StatelessWidget {
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Expanded(flex: 3, child: ContinueLearningCard()),
+                            Expanded(flex: 3, child: ContinueLearningCard(classLevel: context.findAncestorStateOfType<_DashboardScreenState>()?.widget.classLevel ?? 5)),
                             const SizedBox(width: DesignSystem.spacingLg),
                             const Expanded(flex: 2, child: DailyChallengeCard()),
                           ],
                         )
                       else ...[
-                        const ContinueLearningCard(),
+                        ContinueLearningCard(classLevel: context.findAncestorStateOfType<_DashboardScreenState>()?.widget.classLevel ?? 5),
                         const SizedBox(height: DesignSystem.spacingLg),
                         const DailyChallengeCard(),
                       ],
 
                       const SizedBox(height: DesignSystem.spacingXl),
-                      const AiRecommendationSection(),
+                      AiRecommendationSection(onTabChange: onTabChange),
 
                       const SizedBox(height: DesignSystem.spacingXl),
-                      const LearningJourneyTracker(),
+                      LearningJourneyTracker(
+                        classLevel: context.findAncestorStateOfType<_DashboardScreenState>()?.widget.classLevel ?? 5,
+                        onTabChange: onTabChange,
+                      ),
 
                       const SizedBox(height: DesignSystem.spacingXl),
-                      const CommandCenterGrid(),
+                      CommandCenterGrid(
+                        classLevel: context.findAncestorStateOfType<_DashboardScreenState>()?.widget.classLevel ?? 5,
+                        onTabChange: onTabChange,
+                      ),
 
                       const SizedBox(height: 120), // Bottom padding for nav
                     ],
@@ -137,8 +148,34 @@ class _MyLearningTab extends StatelessWidget {
     return FutureBuilder<List<String>>(
       future: sl<FrameworkRepository>().getSubjects(classLevel),
       builder: (context, snapshot) {
-        if (!snapshot.hasData) return const Center(child: CircularProgressIndicator());
-        final subjects = snapshot.data!;
+        if (snapshot.connectionState == ConnectionState.waiting) {
+           return const Center(child: CircularProgressIndicator());
+        }
+        if (snapshot.hasError) {
+          return Center(child: Text('Load Error: ${snapshot.error}', style: const TextStyle(color: Colors.red)));
+        }
+
+        final subjects = snapshot.data ?? [];
+        if (subjects.isEmpty) {
+          return Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.search_off, size: 64, color: DesignSystem.textTertiary),
+                const SizedBox(height: 16),
+                Text('No subjects found for Class $classLevel.', style: DesignSystem.bodyLarge),
+                TextButton(
+                  onPressed: () async {
+                    await sl<FrameworkRepository>().refresh();
+                    // Force rebuild by popping and pushing or just use a stateful widget
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Refreshing Data...')));
+                  },
+                  child: const Text('Retry Refresh')
+                ),
+              ],
+            ),
+          );
+        }
         return CustomScrollView(
           slivers: [
             SliverAppBar.large(
@@ -188,7 +225,13 @@ class _SubjectCard extends StatelessWidget {
               const Spacer(),
               Text(subject, style: DesignSystem.title.copyWith(fontSize: 16)),
               const SizedBox(height: DesignSystem.spacingXs),
-              const Text('12 Chapters', style: TextStyle(fontSize: 12, color: DesignSystem.textTertiary)),
+              FutureBuilder<List<Map<String, dynamic>>>(
+                future: sl<FrameworkRepository>().getChapters(classLevel, subject),
+                builder: (context, snapshot) {
+                  final count = snapshot.data?.length ?? 0;
+                  return Text('$count Chapters', style: const TextStyle(fontSize: 12, color: DesignSystem.textTertiary));
+                },
+              ),
               const SizedBox(height: DesignSystem.spacingSm),
               ClipRRect(
                 borderRadius: BorderRadius.circular(2),
@@ -208,6 +251,7 @@ class _SubjectCard extends StatelessWidget {
       case 'evs': return Icons.nature_people_outlined;
       case 'english': return Icons.translate_outlined;
       case 'hindi': return Icons.history_edu_outlined;
+      case 'social science': return Icons.public_outlined;
       default: return Icons.book_outlined;
     }
   }
@@ -274,23 +318,28 @@ class _ProfileTab extends StatelessWidget {
             Text(name, style: DesignSystem.h2),
             Text(email, style: DesignSystem.bodySmall),
             const SizedBox(height: DesignSystem.spacingXl),
-            _ProfileItem(
-              icon: Icons.admin_panel_settings_outlined,
-              label: 'Admin Console',
-              color: Colors.purple,
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (_) => const AdminDashboardScreen()));
-              },
-            ),
+            if (authState is AuthAuthenticated && authState.user.role == UserRole.admin)
+              _ProfileItem(
+                icon: Icons.admin_panel_settings_outlined,
+                label: 'Admin Console',
+                color: Colors.purple,
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => const AdminDashboardScreen()));
+                },
+              ),
             _ProfileItem(
               icon: Icons.settings_outlined,
               label: 'Settings',
-              onTap: () {},
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Settings coming soon.')));
+              },
             ),
             _ProfileItem(
               icon: Icons.help_outline,
               label: 'Help & Support',
-              onTap: () {},
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Support center is currently offline.')));
+              },
             ),
             _ProfileItem(
               icon: Icons.logout,

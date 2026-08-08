@@ -63,6 +63,7 @@ dependencies:
   syncfusion_flutter_pdf: ^26.2.11
   file_picker: ^8.1.2
   http: ^1.2.2
+  sqflite: ^2.3.0
 
 dev_dependencies:
   flutter_test:
@@ -77,3 +78,147 @@ flutter:
     - assets/images/
     - assets/lottie/
     - assets/rive/
+    - lib/features/ai_enrichment/prompts/
+    - datasets/manifests/manifest.json
+    - datasets/processed/search_index/search_index.json
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c1/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c10/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c2/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c3/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c4/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c5/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c6/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c7/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c8/
+    - datasets/processed/chapters/class_05/english/chapters/chapter_c9/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c1/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c10/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c11/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c12/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c13/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c14/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c15/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c16/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c17/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c18/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c19/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c2/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c20/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c21/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c22/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c3/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c4/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c5/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c6/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c7/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c8/
+    - datasets/processed/chapters/class_05/evs/chapters/chapter_c9/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c1/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c10/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c11/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c12/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c13/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c14/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c15/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c16/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c17/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c18/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c2/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c3/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c4/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c5/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c6/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c7/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c8/
+    - datasets/processed/chapters/class_05/hindi/chapters/chapter_c9/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c1/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c10/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c11/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c12/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c13/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c14/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c2/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c3/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c4/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c5/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c6/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c7/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c8/
+    - datasets/processed/chapters/class_05/mathematics/chapters/chapter_c9/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c1/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c10/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c2/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c3/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c4/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c5/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c6/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c7/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c8/
+    - datasets/processed/chapters/class_06/english/chapters/chapter_c9/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c1/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c10/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c11/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c12/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c13/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c14/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c15/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c16/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c2/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c3/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c4/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c5/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c6/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c7/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c8/
+    - datasets/processed/chapters/class_06/hindi/chapters/chapter_c9/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c1/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c10/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c11/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c12/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c2/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c3/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c4/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c5/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c6/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c7/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c8/
+    - datasets/processed/chapters/class_06/mathematics/chapters/chapter_c9/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c1/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c10/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c11/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c2/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c3/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c4/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c5/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c6/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c7/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c8/
+    - datasets/processed/chapters/class_06/science/chapters/chapter_c9/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c1/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c2/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c3/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c4/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c5/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c6/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c7/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c8/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_c9/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_g1/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_g2/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_g3/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_g4/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_g5/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_g6/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_g7/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_g8/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h1/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h10/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h11/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h2/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h3/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h4/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h5/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h6/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h7/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h8/
+    - datasets/processed/chapters/class_06/social science/chapters/chapter_h9/

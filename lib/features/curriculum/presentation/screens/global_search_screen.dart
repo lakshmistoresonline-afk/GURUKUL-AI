@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/di/injection.dart';
 import '../../data/framework_repository.dart';
 import 'learning_journey_screen.dart';
+import '../../../../features/content_acquisition/services/search_engine_service.dart';
 
 class GlobalSearchScreen extends StatefulWidget {
   final int classLevel;
@@ -24,17 +25,24 @@ class _GlobalSearchScreenState extends State<GlobalSearchScreen> {
 
     setState(() => _isSearching = true);
 
-    // In real app, this would be a more efficient search in Hive or Firestore
-    final allChapters = await sl<FrameworkRepository>().getAllChapters(widget.classLevel);
-    final results = allChapters.where((c) =>
-      c['title'].toString().toLowerCase().contains(query.toLowerCase()) ||
-      (c['topics'] as List).any((t) => t.toString().toLowerCase().contains(query.toLowerCase()))
-    ).toList();
+    try {
+      final results = await sl<SearchEngineService>().search(
+        query,
+        classLevel: widget.classLevel,
+      );
 
-    setState(() {
-      _results = results;
-      _isSearching = false;
-    });
+      if (mounted) {
+        setState(() {
+          _results = results;
+          _isSearching = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() => _isSearching = false);
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Search failed: $e')));
+      }
+    }
   }
 
   @override
@@ -59,12 +67,16 @@ class _GlobalSearchScreenState extends State<GlobalSearchScreen> {
             itemBuilder: (context, index) {
               final res = _results[index];
               return ListTile(
-                leading: const Icon(Icons.menu_book),
-                title: Text(res['title']),
-                subtitle: Text(res['subject'] ?? 'Subject'),
-                trailing: const Icon(Icons.arrow_forward_ios, size: 14),
+                leading: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(color: Colors.blue.shade50, borderRadius: BorderRadius.circular(8)),
+                  child: const Icon(Icons.search, color: Colors.blue),
+                ),
+                title: Text(res['title'] ?? 'Untitled'),
+                subtitle: Text('${res['subject']} • Class ${res['class_level']}'),
+                trailing: Text((res['score'] as num?)?.toStringAsFixed(2) ?? '', style: const TextStyle(fontSize: 10, color: Colors.grey)),
                 onTap: () async {
-                   final concept = await sl<FrameworkRepository>().getConceptNode(res['id']);
+                   final concept = await sl<FrameworkRepository>().getConceptNode(res['node_id'] ?? res['id']);
                    if (concept != null && mounted) {
                      Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
                    }

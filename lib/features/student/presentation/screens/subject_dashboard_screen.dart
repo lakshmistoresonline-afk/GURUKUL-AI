@@ -6,10 +6,11 @@ import 'package:project_gurukul_ai/features/curriculum/data/framework_repository
 import 'package:project_gurukul_ai/features/curriculum/domain/models/concept_node.dart';
 import 'package:project_gurukul_ai/features/curriculum/presentation/screens/learning_journey_screen.dart';
 import 'package:project_gurukul_ai/features/student/presentation/screens/chapter_dashboard_screen.dart';
-
 import 'package:project_gurukul_ai/features/questions/presentation/screens/question_center_screen.dart';
 import 'package:project_gurukul_ai/features/student/presentation/screens/flashcards_screen.dart';
 import 'package:project_gurukul_ai/features/curriculum/presentation/screens/mind_map_screen.dart';
+import 'package:project_gurukul_ai/features/ai/presentation/screens/ai_tutor_chat_screen.dart';
+import 'package:project_gurukul_ai/features/student/presentation/screens/homework_screen.dart';
 
 class SubjectDashboardScreen extends StatefulWidget {
   final int classLevel;
@@ -50,7 +51,7 @@ class _SubjectDashboardScreenState extends State<SubjectDashboardScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _AnalyticsSection(color: color),
+                  _AnalyticsSection(color: color, classLevel: widget.classLevel, subject: widget.subject),
                   const SizedBox(height: DesignSystem.spacingLg),
                   _LearningJourneyMap(color: color, subject: widget.subject, classLevel: widget.classLevel),
                   const SizedBox(height: DesignSystem.spacingLg),
@@ -96,7 +97,7 @@ class _SubjectAppBar extends StatelessWidget {
               children: [
                 const Icon(Icons.stars, color: Colors.amber, size: 12),
                 const SizedBox(width: 4),
-                Text('45% Mastered', style: DesignSystem.bodySmall.copyWith(color: Colors.white.withValues(alpha: 0.9), fontSize: 10)),
+                Text('0% Mastered', style: DesignSystem.bodySmall.copyWith(color: Colors.white.withValues(alpha: 0.9), fontSize: 10)),
               ],
             ),
           ],
@@ -128,7 +129,7 @@ class _SubjectAppBar extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(2),
                 child: LinearProgressIndicator(
-                  value: 0.45,
+                  value: 0.0,
                   backgroundColor: Colors.white.withValues(alpha: 0.2),
                   valueColor: const AlwaysStoppedAnimation(Colors.white),
                   minHeight: 4,
@@ -155,7 +156,9 @@ class _SubjectAppBar extends StatelessWidget {
 
 class _AnalyticsSection extends StatelessWidget {
   final Color color;
-  const _AnalyticsSection({required this.color});
+  final int classLevel;
+  final String subject;
+  const _AnalyticsSection({required this.color, required this.classLevel, required this.subject});
 
   @override
   Widget build(BuildContext context) {
@@ -164,22 +167,28 @@ class _AnalyticsSection extends StatelessWidget {
       decoration: DesignSystem.cardDecoration,
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _StatItem(label: 'Total Study', value: '14.5h', icon: Icons.timer_outlined, color: color),
-              _StatItem(label: 'Mastery', value: '45%', icon: Icons.insights_outlined, color: color),
-              _StatItem(label: 'Flashcards', value: '82/150', icon: Icons.style_outlined, color: color),
-            ],
+          FutureBuilder<List<Map<String, dynamic>>>(
+            future: sl<FrameworkRepository>().getChapters(classLevel, subject),
+            builder: (context, snapshot) {
+              final count = snapshot.data?.length ?? 0;
+              return Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  _StatItem(label: 'Total Chapters', value: '$count', icon: Icons.book_outlined, color: color),
+                  _StatItem(label: 'Mastery', value: '0%', icon: Icons.insights_outlined, color: color),
+                  _StatItem(label: 'Exercises', value: '0', icon: Icons.edit_note, color: color),
+                ],
+              );
+            }
           ),
           const Divider(height: DesignSystem.spacingLg),
           Row(
             children: [
               const Icon(Icons.emoji_events_outlined, size: 16, color: Colors.orange),
               const SizedBox(width: 8),
-              Text('Next Milestone: Chapter 5 Master', style: DesignSystem.bodySmall),
+              Text('Start your learning journey!', style: DesignSystem.bodySmall),
               const Spacer(),
-              Text('2/5', style: DesignSystem.label.copyWith(color: color)),
+              Text('0/1', style: DesignSystem.label.copyWith(color: color)),
             ],
           ),
         ],
@@ -309,9 +318,9 @@ class _CommandCenter extends StatelessWidget {
       itemBuilder: (context, index) {
         final a = actions[index];
         return _ActionIcon(
-          label: a['label'] as String,
-          icon: a['icon'] as IconData,
-          color: a['color'] as Color,
+          label: (a['label'] as String?) ?? '',
+          icon: (a['icon'] as IconData?) ?? Icons.error,
+          color: (a['color'] as Color?) ?? Colors.grey,
           onTap: () {
             if (a['label'] == 'Question Centre' || a['label'] == 'Practice') {
               Navigator.push(context, MaterialPageRoute(builder: (_) => QuestionCenterScreen(classLevel: classLevel, subject: subject)));
@@ -323,8 +332,11 @@ class _CommandCenter extends StatelessWidget {
                 branches: const ['Concepts', 'Formulas', 'Theorems', 'Real-world Applications', 'Practice Questions'],
               )));
             } else if (a['label'] == 'AI Tutor') {
-              // Navigation to AI Tutor tab is usually handled via bottom nav,
-              // but we can push the standalone chat screen here too.
+              Navigator.push(context, MaterialPageRoute(builder: (_) => const AiTutorChatScreen()));
+            } else if (a['label'] == 'Homework') {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => const HomeworkScreen()));
+            } else if (a['label'] == 'Revision') {
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Opening Revision Summary...')));
             }
           },
         );
@@ -342,26 +354,29 @@ class _ActionIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
-      child: Column(
-        children: [
-          Container(
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: color.withValues(alpha: 0.1),
-              borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
+        child: Column(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: color.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
+              ),
+              child: Icon(icon, color: color, size: 24),
             ),
-            child: Icon(icon, color: color, size: 24),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            label,
-            textAlign: TextAlign.center,
-            style: DesignSystem.bodySmall.copyWith(fontSize: 10, fontWeight: FontWeight.bold),
-          ),
-        ],
+            const SizedBox(height: 6),
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              style: DesignSystem.bodySmall.copyWith(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -384,15 +399,19 @@ class _ChapterList extends StatelessWidget {
             child: CircularProgressIndicator(),
           )));
         }
-        if (!snapshot.hasData || snapshot.data!.isEmpty) {
+        final chapters = snapshot.data ?? [];
+        debugPrint('SubjectDashboardScreen: Loaded ${chapters.length} chapters for $subject');
+        if (chapters.isEmpty) {
           return const SliverToBoxAdapter(child: Center(child: Text('No chapters found.')));
         }
-        final chapters = snapshot.data!;
         return SliverPadding(
           padding: const EdgeInsets.symmetric(horizontal: DesignSystem.spacingMd),
           sliver: SliverList(
             delegate: SliverChildBuilderDelegate(
-              (context, index) => _ChapterCard(chapter: chapters[index], index: index, color: color, subject: subject),
+              (context, index) {
+                final Map<String, dynamic> chapter = chapters[index];
+                return _ChapterCard(chapter: chapter, index: index, color: color, subject: subject);
+              },
               childCount: chapters.length,
             ),
           ),
@@ -411,53 +430,65 @@ class _ChapterCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mastery = (index % 5 + 1) * 0.2;
+    const mastery = 0.0;
+    final String title = (chapter['title'] as String?) ?? 'Untitled Chapter';
+    final String id = (chapter['id'] as String?) ?? '';
+
     return Container(
       margin: const EdgeInsets.only(bottom: DesignSystem.spacingMd),
-      decoration: DesignSystem.cardDecoration,
-      child: InkWell(
-        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ChapterDashboardScreen(chapterId: chapter['id'], subject: subject))),
+      child: Material(
+        color: DesignSystem.surface,
         borderRadius: BorderRadius.circular(DesignSystem.radiusLg),
-        child: Padding(
-          padding: const EdgeInsets.all(DesignSystem.spacingMd),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                    decoration: BoxDecoration(color: color.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(4)),
-                    child: Text('CHAPTER ${index + 1}', style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 10)),
-                  ),
-                  const Spacer(),
-                  if (mastery >= 0.8)
-                    const Icon(Icons.verified, color: Colors.green, size: 16),
-                ],
-              ),
-              const SizedBox(height: DesignSystem.spacingSm),
-              Text(chapter['title'], style: DesignSystem.title.copyWith(fontSize: 16)),
-              const SizedBox(height: DesignSystem.spacingMd),
-              Row(
-                children: [
-                  _Detail(Icons.layers_outlined, '${(chapter['topics'] as List).length} Topics'),
-                  const SizedBox(width: DesignSystem.spacingMd),
-                  _Detail(Icons.schedule, '45-60m'),
-                  const Spacer(),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text('${(mastery * 100).toInt()}% Mastered', style: DesignSystem.bodySmall.copyWith(fontSize: 10, color: color, fontWeight: FontWeight.bold)),
-                      const SizedBox(height: 4),
-                      SizedBox(
-                        width: 80,
-                        child: LinearProgressIndicator(value: mastery, color: color, backgroundColor: color.withValues(alpha: 0.1), minHeight: 4),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ],
+        elevation: 1,
+        shadowColor: Colors.black.withValues(alpha: 0.1),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: () {
+            if (id.isNotEmpty) {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => ChapterDashboardScreen(chapterId: id, subject: subject)));
+            }
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(DesignSystem.spacingMd),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      decoration: BoxDecoration(color: color.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(4)),
+                      child: Text('CHAPTER ${index + 1}', style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 10)),
+                    ),
+                    const Spacer(),
+                    if (mastery >= 0.8)
+                      const Icon(Icons.verified, color: Colors.green, size: 16),
+                  ],
+                ),
+                const SizedBox(height: DesignSystem.spacingSm),
+                Text(title, style: DesignSystem.title.copyWith(fontSize: 16)),
+                const SizedBox(height: DesignSystem.spacingMd),
+                Row(
+                  children: [
+                    const _Detail(Icons.layers_outlined, 'Multiple Topics'),
+                    const SizedBox(width: DesignSystem.spacingMd),
+                    const _Detail(Icons.schedule, '45-60m'),
+                    const Spacer(),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text('${(mastery * 100).toInt()}% Mastered', style: DesignSystem.bodySmall.copyWith(fontSize: 10, color: color, fontWeight: FontWeight.bold)),
+                        const SizedBox(height: 4),
+                        SizedBox(
+                          width: 80,
+                          child: LinearProgressIndicator(value: mastery, color: color, backgroundColor: color.withValues(alpha: 0.1), minHeight: 4),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -481,4 +512,3 @@ class _Detail extends StatelessWidget {
     );
   }
 }
-

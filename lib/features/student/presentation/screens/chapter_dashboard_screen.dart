@@ -133,7 +133,7 @@ class _ChapterAppBar extends StatelessWidget {
       expandedHeight: 180,
       flexibleSpace: FlexibleSpaceBar(
         titlePadding: const EdgeInsets.only(left: 16, bottom: 16),
-        title: Text(concept.chapter, style: DesignSystem.h2.copyWith(color: Colors.white, fontSize: 18)),
+        title: Text(concept.chapter ?? 'Chapter Detail', style: DesignSystem.h2.copyWith(color: Colors.white, fontSize: 18)),
         background: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -185,7 +185,7 @@ class _ChapterMetaInfo extends StatelessWidget {
           const SizedBox(height: DesignSystem.spacingMd),
           Text('Overview', style: DesignSystem.title.copyWith(fontSize: 16)),
           const SizedBox(height: 4),
-          Text(concept.introduction, style: DesignSystem.bodySmall),
+          Text(concept.introduction ?? '', style: DesignSystem.bodySmall),
           const SizedBox(height: DesignSystem.spacingMd),
           Text('Objectives', style: DesignSystem.title.copyWith(fontSize: 14)),
           const SizedBox(height: 4),
@@ -269,24 +269,37 @@ class _TopicsTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final topics = concept.learningObjectives.isNotEmpty
+      ? concept.learningObjectives
+      : ['Introduction to ${concept.topic}', 'Key Concepts', 'Real-world Applications', 'Practice and Summary'];
+
     return ListView.builder(
       padding: const EdgeInsets.all(DesignSystem.spacingMd),
-      itemCount: 5, // Simulated topics
+      itemCount: topics.length,
       itemBuilder: (context, index) {
         return Container(
           margin: const EdgeInsets.only(bottom: DesignSystem.spacingSm),
-          decoration: DesignSystem.cardDecoration,
-          child: ListTile(
-            leading: CircleAvatar(
-              backgroundColor: color.withValues(alpha: 0.1),
-              child: Text('${index + 1}', style: TextStyle(color: color, fontWeight: FontWeight.bold)),
+          child: Material(
+            color: DesignSystem.surface,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
+              side: const BorderSide(color: DesignSystem.border),
             ),
-            title: Text('Concept Topic ${index + 1}', style: const TextStyle(fontWeight: FontWeight.bold)),
-            subtitle: const Text('Key subtopics and examples', style: TextStyle(fontSize: 12)),
-            trailing: const Icon(Icons.play_circle_outline, color: DesignSystem.textTertiary),
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
-            },
+            shadowColor: Colors.black.withValues(alpha: 0.05),
+            elevation: 1,
+            clipBehavior: Clip.antiAlias,
+            child: ListTile(
+              leading: CircleAvatar(
+                backgroundColor: color.withValues(alpha: 0.1),
+                child: Text('${index + 1}', style: TextStyle(color: color, fontWeight: FontWeight.bold)),
+              ),
+              title: Text(topics[index], style: const TextStyle(fontWeight: FontWeight.bold)),
+              subtitle: const Text('Interactive module', style: TextStyle(fontSize: 12)),
+              trailing: const Icon(Icons.play_circle_outline, color: DesignSystem.textTertiary),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
+              },
+            ),
           ),
         );
       },
@@ -302,11 +315,23 @@ class _ContentListTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final items = [
-      {'title': 'Understanding $type 1', 'duration': '5:30'},
-      {'title': 'Deep Dive: $type 2', 'duration': '8:15'},
-      {'title': 'Summary $type', 'duration': '3:45'},
-    ];
+    List<Map<String, String>> items = [];
+    if (type == 'Animations') {
+      if (concept.animatedLessonAsset.isNotEmpty) {
+        items.add({'title': 'Concept Animation: ${concept.chapter}', 'duration': '2:45'});
+      }
+      items.add({'title': 'Understanding $type Summary', 'duration': '1:30'});
+    } else if (type == 'Videos') {
+      if (concept.videoUrl != null && concept.videoUrl!.isNotEmpty) {
+        items.add({'title': 'Teacher Lesson: ${concept.chapter}', 'duration': '10:20'});
+      }
+      items.add({'title': 'Topic $type Overview', 'duration': '5:00'});
+    } else {
+      items = [
+        {'title': 'Interactive $type 1', 'duration': '5:30'},
+        {'title': 'Discovery $type', 'duration': '8:15'},
+      ];
+    }
 
     return ListView.builder(
       padding: const EdgeInsets.all(DesignSystem.spacingMd),
@@ -314,15 +339,24 @@ class _ContentListTab extends StatelessWidget {
       itemBuilder: (context, index) {
         return Container(
           margin: const EdgeInsets.only(bottom: DesignSystem.spacingSm),
-          decoration: DesignSystem.cardDecoration,
-          child: ListTile(
-            leading: Icon(_getIcon(type), color: color),
-            title: Text(items[index]['title']!),
-            subtitle: Text('Duration: ${items[index]['duration']}'),
-            trailing: const Icon(Icons.arrow_forward_ios, size: 14),
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
-            },
+          child: Material(
+            color: DesignSystem.surface,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
+              side: const BorderSide(color: DesignSystem.border),
+            ),
+            shadowColor: Colors.black.withValues(alpha: 0.05),
+            elevation: 1,
+            clipBehavior: Clip.antiAlias,
+            child: ListTile(
+              leading: Icon(_getIcon(type), color: color),
+              title: Text(items[index]['title']!),
+              subtitle: Text('Duration: ${items[index]['duration']}'),
+              trailing: const Icon(Icons.arrow_forward_ios, size: 14),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (_) => LearningJourneyScreen(concept: concept)));
+              },
+            ),
           ),
         );
       },
@@ -424,4 +458,3 @@ class _SliverTabDelegate extends SliverPersistentHeaderDelegate {
   @override
   bool shouldRebuild(_SliverTabDelegate oldDelegate) => false;
 }
-

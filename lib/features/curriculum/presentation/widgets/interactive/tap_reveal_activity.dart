@@ -46,9 +46,9 @@ class _TapRevealActivityState extends State<TapRevealActivity> {
                   ? Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(item['title']!, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+                        Text(item['title'] ?? 'Concept', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                         const SizedBox(height: 8),
-                        Text(item['content']!, textAlign: TextAlign.center, style: const TextStyle(fontSize: 14)),
+                        Text(item['content'] ?? 'Tap to see more', textAlign: TextAlign.center, style: const TextStyle(fontSize: 14)),
                       ],
                     )
                   : const Column(

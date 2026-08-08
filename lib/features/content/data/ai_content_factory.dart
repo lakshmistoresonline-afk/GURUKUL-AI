@@ -98,7 +98,6 @@ Return ONLY the JSON. No other text.
           options: List<String>.from(e['options'] ?? []),
           correctAnswer: e['correctAnswer'] ?? '',
           explanation: e['explanation'] ?? '',
-          isHots: false,
         )).toList(),
         flashcards: (data['flashcards'] as List? ?? []).map((f) => Flashcard(
           front: f['front'] ?? '',

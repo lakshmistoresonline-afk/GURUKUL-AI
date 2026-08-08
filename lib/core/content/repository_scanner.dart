@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:path/path.dart' as p;
 
 class RepositoryScanner {
@@ -9,6 +10,10 @@ class RepositoryScanner {
   RepositoryScanner({required this.rootPath});
 
   Future<Map<String, dynamic>> scanCurriculum() async {
+    if (kIsWeb) {
+      return _scanCurriculumFromAssets();
+    }
+
     final Map<String, dynamic> framework = {};
     final curriculumDir = Directory(rootPath);
 
@@ -20,12 +25,12 @@ class RepositoryScanner {
     final classDirs = curriculumDir.listSync().whereType<Directory>();
     for (var classDir in classDirs) {
       final className = p.basename(classDir.path).replaceAll('_', ''); // class_05 -> class05
-      framework[className] = {};
+      framework[className] = <String, dynamic>{};
 
       final subjectDirs = classDir.listSync().whereType<Directory>();
       for (var subjectDir in subjectDirs) {
         final subjectName = _capitalize(p.basename(subjectDir.path));
-        framework[className][subjectName] = [];
+        framework[className][subjectName] = <dynamic>[];
 
         final chaptersDir = Directory(p.join(subjectDir.path, 'chapters'));
         if (await chaptersDir.exists()) {
@@ -47,10 +52,20 @@ class RepositoryScanner {
 
   Future<Map<String, dynamic>?> getChapterDetails(String classLevel, String subject, String chapterId) async {
     final classDirName = 'class_${classLevel.padLeft(2, '0')}';
-    // Mapping chapterId (e.g. m5_c1) to folder name (e.g. chapter_c1)
     final chapterFolderSuffix = chapterId.split('_').last;
-    final path = p.join(rootPath, classDirName, subject.toLowerCase(), 'chapters', 'chapter_$chapterFolderSuffix', 'lesson.json');
+    final relativePath = 'datasets/processed/chapters/$classDirName/${subject.toLowerCase()}/chapters/chapter_$chapterFolderSuffix/lesson.json';
 
+    if (kIsWeb) {
+      try {
+        final String content = await rootBundle.loadString(relativePath);
+        return jsonDecode(content);
+      } catch (e) {
+        debugPrint('RepositoryScanner: Error loading chapter details from assets ($relativePath): $e');
+        return null;
+      }
+    }
+
+    final path = p.join(rootPath, classDirName, subject.toLowerCase(), 'chapters', 'chapter_$chapterFolderSuffix', 'lesson.json');
     final file = File(path);
     if (await file.exists()) {
       return jsonDecode(await file.readAsString());
@@ -94,4 +109,39 @@ class RepositoryScanner {
   }
 
   String _capitalize(String s) => s.isEmpty ? s : s[0].toUpperCase() + s.substring(1);
+
+  Future<Map<String, dynamic>> _scanCurriculumFromAssets() async {
+    final Map<String, dynamic> framework = {};
+    try {
+      final String manifestStr = await rootBundle.loadString('datasets/manifests/manifest.json');
+      final decoded = jsonDecode(manifestStr);
+      final List manifest = decoded is List ? decoded : [];
+
+      for (var entry in manifest) {
+        final String classId = entry['class'];
+        final String subject = entry['subject'];
+        final String classKey = 'class${classId.padLeft(2, '0')}';
+
+        if (!framework.containsKey(classKey)) framework[classKey] = <String, dynamic>{};
+        if (!framework[classKey].containsKey(subject)) framework[classKey][subject] = <dynamic>[];
+
+        framework[classKey][subject].add(<String, dynamic>{
+          'id': entry['id'],
+          'title': entry['title'],
+          'subject': subject,
+          'classLevel': int.parse(classId),
+        });
+      }
+    } catch (e) {
+      debugPrint('RepositoryScanner: Error loading manifest from assets: $e');
+      // Fallback for demo if manifest is missing or empty
+      if (framework.isEmpty) {
+        framework['class05'] = {
+          'Mathematics': [{'id': 'm5_c1', 'title': 'The Fish Tale', 'subject': 'Mathematics', 'classLevel': 5}],
+          'EVS': [{'id': 'e5_c1', 'title': 'Super Senses', 'subject': 'EVS', 'classLevel': 5}],
+        };
+      }
+    }
+    return framework;
+  }
 }

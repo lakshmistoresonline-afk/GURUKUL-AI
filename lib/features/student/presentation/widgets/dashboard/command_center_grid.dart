@@ -1,20 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:project_gurukul_ai/core/theme/design_system.dart';
 
+import 'package:project_gurukul_ai/features/questions/presentation/screens/question_center_screen.dart';
+import 'package:project_gurukul_ai/features/notebook/presentation/screens/notebook_screen.dart';
+import 'package:project_gurukul_ai/features/ai/presentation/screens/ai_tutor_chat_screen.dart';
+import 'package:project_gurukul_ai/features/student/presentation/screens/flashcards_screen.dart';
+import 'package:project_gurukul_ai/features/student/presentation/screens/homework_screen.dart';
+
 class CommandCenterGrid extends StatelessWidget {
-  const CommandCenterGrid({super.key});
+  final int classLevel;
+  final Function(int)? onTabChange;
+  const CommandCenterGrid({super.key, required this.classLevel, this.onTabChange});
 
   @override
   Widget build(BuildContext context) {
     final actions = [
-      _ActionData(Icons.smart_toy_rounded, 'AI Tutor', Colors.indigo),
-      _ActionData(Icons.menu_book_rounded, 'Reading', Colors.blue),
-      _ActionData(Icons.help_center_rounded, 'Q Centre', Colors.amber),
-      _ActionData(Icons.style_rounded, 'Flashcards', Colors.orange),
-      _ActionData(Icons.hub_rounded, 'Mind Maps', Colors.purple),
-      _ActionData(Icons.assignment_rounded, 'Homework', Colors.pink),
-      _ActionData(Icons.bookmarks_rounded, 'Bookmarks', Colors.teal),
-      _ActionData(Icons.more_horiz_rounded, 'More', Colors.grey),
+      _ActionData(Icons.smart_toy_rounded, 'AI Tutor', Colors.indigo, () => onTabChange?.call(2)),
+      _ActionData(Icons.menu_book_rounded, 'Reading', Colors.blue, () => onTabChange?.call(1)),
+      _ActionData(Icons.help_center_rounded, 'Q Centre', Colors.amber, () => Navigator.push(context, MaterialPageRoute(builder: (_) => QuestionCenterScreen(classLevel: classLevel, subject: 'Mathematics')))),
+      _ActionData(Icons.style_rounded, 'Flashcards', Colors.orange, () => Navigator.push(context, MaterialPageRoute(builder: (_) => const FlashcardsScreen(subject: 'Mathematics')))),
+      _ActionData(Icons.hub_rounded, 'Mind Maps', Colors.purple, () {}),
+      _ActionData(Icons.assignment_rounded, 'Homework', Colors.pink, () => Navigator.push(context, MaterialPageRoute(builder: (_) => const HomeworkScreen()))),
+      _ActionData(Icons.edit_note, 'Notebook', Colors.teal, () => Navigator.push(context, MaterialPageRoute(builder: (_) => const NotebookScreen()))),
+      _ActionData(Icons.more_horiz_rounded, 'More', Colors.grey, () => onTabChange?.call(4)),
     ];
 
     return Column(
@@ -48,7 +56,7 @@ class CommandCenterGrid extends StatelessWidget {
 
   Widget _buildActionItem(BuildContext context, _ActionData action) {
     return InkWell(
-      onTap: () {},
+      onTap: action.onTap,
       borderRadius: BorderRadius.circular(DesignSystem.radiusMd),
       child: Column(
         children: [
@@ -88,6 +96,7 @@ class _ActionData {
   final IconData icon;
   final String label;
   final Color color;
+  final VoidCallback onTap;
 
-  _ActionData(this.icon, this.label, this.color);
+  _ActionData(this.icon, this.label, this.color, this.onTap);
 }

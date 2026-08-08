@@ -59,18 +59,33 @@
   "vocabulary": {},
   "interactiveActivities": [],
   "masteryCheckpoints": [],
-  "introduction": "",
-  "realLifeConnection": "",
-  "storyBasedExplanation": "",
-  "childFriendlyExplanation": "",
-  "teacherExplanation": "",
+  "introduction": "This chapter covers factors, multiples, prime and composite numbers, and divisibility rules. It's about finding patterns in numbers.",
+  "realLifeConnection": "Factors and multiples help in dividing items equally among friends or finding the best time for two repeating events to happen together (LCM).",
+  "storyBasedExplanation": "The Factor Fair: Numbers gather to find their 'perfect matches' (factors) and join 'teams' (multiples) to win the grand puzzle race.",
+  "childFriendlyExplanation": "Factors are like pieces of a puzzle that fit perfectly into a number. Multiples are like counting by steps - 2, 4, 6, 8!",
+  "teacherExplanation": "Use the Sieve of Eratosthenes to find primes. Emphasize divisibility rules as 'shortcuts' for long division. Connect LCM/HCF to real problems.",
   "animatedLessonAsset": "",
   "videoUrl": null,
   "activities": [],
   "handsOnActivities": [],
-  "animationScript": "",
-  "videoScript": "",
+  "animationScript": "Scene 1: Introduction to Playing with Numbers. Visuals showing core concepts. Narrator: 'Let's dive into Playing with Numbers!'",
+  "videoScript": "Teacher: 'Hi everyone! Today we are going to learn about Playing with Numbers. It's a very interesting topic because...'",
   "parentNotes": "",
   "teacherNotes": "",
-  "learningOutcomes": ""
+  "learningOutcomes": "",
+  "keyTakeaways": [
+    "Factors and Multiples",
+    "Prime vs Composite",
+    "Divisibility Rules",
+    "HCF and LCM"
+  ],
+  "faqs": {
+    "Is 1 a prime number?": "No, 1 is neither prime nor composite.",
+    "How to check divisibility by 3?": "Sum the digits; if the sum is divisible by 3, the number is too."
+  },
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:58.854452",
+    "method": "Ollama Enrichment"
+  }
 }

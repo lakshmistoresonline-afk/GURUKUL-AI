@@ -33,7 +33,12 @@
     {
       "question": "How do you write 5/100 as a decimal?",
       "hint": "It has two decimal places.",
-      "options": ["0.5", "0.05", "0.005", "5.0"],
+      "options": [
+        "0.5",
+        "0.05",
+        "0.005",
+        "5.0"
+      ],
       "correctAnswer": "0.05",
       "explanation": "Five hundredths is written as 0.05.",
       "isHots": false
@@ -41,7 +46,12 @@
     {
       "question": "Which of these is greater: 0.7 or 0.09?",
       "hint": "0.7 is 70 hundredths.",
-      "options": ["0.7", "0.09", "They are equal", "Cannot say"],
+      "options": [
+        "0.7",
+        "0.09",
+        "They are equal",
+        "Cannot say"
+      ],
       "correctAnswer": "0.7",
       "explanation": "0.7 is 7 tenths (or 70 hundredths), while 0.09 is only 9 hundredths.",
       "isHots": false
@@ -49,7 +59,12 @@
     {
       "question": "15 paise is what fraction of a rupee?",
       "hint": "1 rupee = 100 paise.",
-      "options": ["15/10", "15/100", "1.5/10", "15/1000"],
+      "options": [
+        "15/10",
+        "15/100",
+        "1.5/10",
+        "15/1000"
+      ],
       "correctAnswer": "15/100",
       "explanation": "Since 1 rupee = 100 paise, 15 paise is 15/100 of a rupee.",
       "isHots": false
@@ -57,7 +72,12 @@
     {
       "question": "Convert 1.6 m into centimeters.",
       "hint": "1 m = 100 cm.",
-      "options": ["16 cm", "106 cm", "160 cm", "1600 cm"],
+      "options": [
+        "16 cm",
+        "106 cm",
+        "160 cm",
+        "1600 cm"
+      ],
       "correctAnswer": "160 cm",
       "explanation": "1.6 * 100 = 160 cm.",
       "isHots": false
@@ -65,7 +85,12 @@
     {
       "question": "What is 3 tenths + 4 hundredths?",
       "hint": "Combine the decimal places.",
-      "options": ["0.7", "0.34", "0.07", "3.4"],
+      "options": [
+        "0.7",
+        "0.34",
+        "0.07",
+        "3.4"
+      ],
       "correctAnswer": "0.34",
       "explanation": "3 tenths (0.3) + 4 hundredths (0.04) = 0.34.",
       "isHots": true
@@ -128,5 +153,10 @@
   "videoScript": "Host with a ruler and a pen. 'This pen is 14 centimeters and 8 millimeters long. Instead of saying all that, we can just say 14.8 cm. The dot is the decimal point, and it's very important!'",
   "parentNotes": "Help your child understand that decimals are used for precision. Practice simple addition like Rs 1.50 + Rs 2.50 to build confidence.",
   "teacherNotes": "Use a 10x10 grid to visualize hundredths. Connect decimals to the metric system (cm, mm, m) to provide a concrete context for learning.",
-  "learningOutcomes": "Students will be able to read and write decimals up to hundredths, convert between units, and compare decimal values correctly."
+  "learningOutcomes": "Students will be able to read and write decimals up to hundredths, convert between units, and compare decimal values correctly.",
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:57.422175",
+    "method": "Ollama Enrichment"
+  }
 }

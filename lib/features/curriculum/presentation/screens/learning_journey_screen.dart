@@ -42,8 +42,8 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
       _readingAssistant.stop();
     } else {
       String textToRead = '';
-      if (_currentPage == 0) textToRead = widget.concept.introduction;
-      if (_currentPage == 3) textToRead = widget.concept.teacherExplanation;
+      if (_currentPage == 0) textToRead = widget.concept.introduction ?? '';
+      if (_currentPage == 3) textToRead = widget.concept.teacherExplanation ?? '';
 
       if (textToRead.isNotEmpty) {
         _readingAssistant.speak(textToRead, 'en');
@@ -78,67 +78,113 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final themeService = sl<ThemeService>();
-    final subjectColor = themeService.getSubjectColor(widget.concept.subject);
+    try {
+      final themeService = sl<ThemeService>();
+      final subjectColor = themeService.getSubjectColor(widget.concept.subject);
 
-    return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFC),
-      appBar: AppBar(
-        title: Text(widget.concept.topic, style: const TextStyle(fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black87,
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.close),
-          onPressed: () => Navigator.pop(context),
-        ),
-        actions: [
-          IconButton(
-            onPressed: _toggleReading,
-            icon: Icon(_readingAssistant.isPlaying ? Icons.stop_circle : Icons.volume_up, color: subjectColor),
+      return Scaffold(
+        backgroundColor: const Color(0xFFF8FAFC),
+        appBar: AppBar(
+          title: Text((widget.concept.topic ?? '').isNotEmpty ? widget.concept.topic : 'Learning Lesson', style: const TextStyle(fontWeight: FontWeight.bold)),
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black87,
+          elevation: 0,
+          leading: IconButton(
+            icon: const Icon(Icons.close),
+            onPressed: () => Navigator.pop(context),
           ),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.only(right: 16.0),
-              child: Text(
-                'Step ${_currentPage + 1} of $_totalPages',
-                style: TextStyle(color: subjectColor, fontWeight: FontWeight.bold),
+          actions: [
+            IconButton(
+              onPressed: _toggleReading,
+              icon: Icon(_readingAssistant.isPlaying ? Icons.stop_circle : Icons.volume_up, color: subjectColor),
+            ),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.only(right: 16.0),
+                child: Text(
+                  'Step ${_currentPage + 1} of $_totalPages',
+                  style: TextStyle(color: subjectColor, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
-          ),
-        ],
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(6),
-          child: LinearProgressIndicator(
-            value: (_currentPage + 1) / _totalPages,
-            backgroundColor: Colors.grey.shade100,
-            valueColor: AlwaysStoppedAnimation(subjectColor),
-            minHeight: 6,
+          ],
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(6),
+            child: LinearProgressIndicator(
+              value: (_currentPage + 1) / _totalPages,
+              backgroundColor: Colors.grey.shade100,
+              valueColor: AlwaysStoppedAnimation(subjectColor),
+              minHeight: 6,
+            ),
           ),
         ),
-      ),
-      body: PageView(
-        controller: _pageController,
-        onPageChanged: (page) {
-           setState(() => _currentPage = page);
-           sl<TelemetryService>().logImpression(pageId: 'learning_step_$page', type: 'CONTENT_PAGE');
-        },
-        physics: const NeverScrollableScrollPhysics(),
-        children: [
-          _buildOverviewStep(subjectColor),
-          _buildAnimationStep(subjectColor),
-          _buildVideoStep(subjectColor),
-          _buildLearnStep(subjectColor),
-          _buildActivityStep(subjectColor),
-          _buildPracticeStep(subjectColor),
-          _buildQuizStep(subjectColor),
-          _buildRevisionStep(subjectColor),
-          _buildAiTutorStep(subjectColor),
-          _buildFinishStep(subjectColor),
-        ],
-      ),
-      bottomNavigationBar: _buildBottomBar(subjectColor),
-    );
+        body: PageView(
+          controller: _pageController,
+          onPageChanged: (page) {
+             setState(() => _currentPage = page);
+             sl<TelemetryService>().logImpression(pageId: 'learning_step_$page', type: 'CONTENT_PAGE');
+          },
+          physics: const NeverScrollableScrollPhysics(),
+          children: [
+            _safeBuild(() => _buildOverviewStep(subjectColor), 'Overview'),
+            _safeBuild(() => _buildAnimationStep(subjectColor), 'Animation'),
+            _safeBuild(() => _buildVideoStep(subjectColor), 'Video'),
+            _safeBuild(() => _buildLearnStep(subjectColor), 'Learn'),
+            _safeBuild(() => _buildActivityStep(subjectColor), 'Activity'),
+            _safeBuild(() => _buildPracticeStep(subjectColor), 'Practice'),
+            _safeBuild(() => _buildQuizStep(subjectColor), 'Quiz'),
+            _safeBuild(() => _buildRevisionStep(subjectColor), 'Revision'),
+            _safeBuild(() => _buildAiTutorStep(subjectColor), 'AI Tutor'),
+            _safeBuild(() => _buildFinishStep(subjectColor), 'Finish'),
+          ],
+        ),
+        bottomNavigationBar: _buildBottomBar(subjectColor),
+      );
+    } catch (e, stack) {
+      debugPrint('LearningJourneyScreen Error: $e');
+      debugPrint('Stack: $stack');
+      return Scaffold(
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(32.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.error_outline, size: 64, color: Colors.red),
+                const SizedBox(height: 16),
+                Text('Failed to load lesson: $e', textAlign: TextAlign.center),
+                const SizedBox(height: 16),
+                ElevatedButton(onPressed: () => Navigator.pop(context), child: const Text('Go Back')),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+  }
+
+  Widget _safeBuild(Widget Function() builder, String stepName) {
+    try {
+      return builder();
+    } catch (e, stack) {
+      debugPrint('Step $stepName build error: $e');
+      debugPrint('Stack: $stack');
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.all(32.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.warning_amber_rounded, size: 48, color: Colors.orange),
+              const SizedBox(height: 16),
+              Text('Step $stepName encountered an error.', style: const TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              Text(e.toString(), textAlign: TextAlign.center, style: const TextStyle(fontSize: 12, color: Colors.grey)),
+            ],
+          ),
+        ),
+      );
+    }
   }
 
   Widget _buildBottomBar(Color color) {
@@ -181,7 +227,7 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Welcome to ${widget.concept.topic}!', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+          Text('Welcome to ${widget.concept.topic ?? 'the Lesson'}!', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
           const SizedBox(height: 16),
           _buildInfoCard(
             title: 'Real Life Connection',
@@ -194,10 +240,13 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
           const SizedBox(height: 24),
           const Text('Learning Objectives:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           const SizedBox(height: 12),
-          ...widget.concept.learningObjectives.map((o) => ListTile(
-                leading: Icon(Icons.check_circle, color: color),
-                title: Text(o),
-                contentPadding: EdgeInsets.zero,
+          ...widget.concept.learningObjectives.map((o) => Material(
+                color: Colors.transparent,
+                child: ListTile(
+                  leading: Icon(Icons.check_circle, color: color),
+                  title: Text(o),
+                  contentPadding: EdgeInsets.zero,
+                ),
               )),
           const SizedBox(height: 24),
           _buildInfoCard(
@@ -216,12 +265,12 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
       assetPath: widget.concept.animatedLessonAsset.isNotEmpty
           ? widget.concept.animatedLessonAsset
           : 'assets/lottie/default_lesson.json',
-      caption: 'Watch how ${widget.concept.topic} works in this animation!',
+      caption: 'Watch how ${widget.concept.topic ?? 'this'} works in this animation!',
     );
   }
 
   Widget _buildVideoStep(Color color) {
-    final isFallback = widget.concept.videoUrl == 'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4';
+    final isFallback = widget.concept.videoUrl == null || widget.concept.videoUrl == 'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4';
 
     return SingleChildScrollView(
       child: Column(
@@ -230,8 +279,8 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
             _buildConceptDiagramFallback(color)
           else
             VideoPlayerWidget(
-              videoUrl: widget.concept.videoUrl!,
-              title: 'Expert Explanation: ${widget.concept.topic}',
+              videoUrl: widget.concept.videoUrl ?? 'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
+              title: 'Expert Explanation: ${widget.concept.topic ?? 'The Lesson'}',
             ),
           Padding(
             padding: const EdgeInsets.all(24.0),
@@ -320,9 +369,9 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
             height: 300,
             child: TabBarView(
               children: [
-                _buildTextContent(widget.concept.childFriendlyExplanation.isNotEmpty ? widget.concept.childFriendlyExplanation : widget.concept.revisionNotes),
-                _buildTextContent(widget.concept.storyBasedExplanation.isNotEmpty ? widget.concept.storyBasedExplanation : 'Once upon a time, we learned about ${widget.concept.topic}...'),
-                _buildTextContent(widget.concept.teacherExplanation.isNotEmpty ? widget.concept.teacherExplanation : widget.concept.revisionNotes),
+                _buildTextContent((widget.concept.childFriendlyExplanation ?? '').isNotEmpty ? widget.concept.childFriendlyExplanation : widget.concept.revisionNotes),
+                _buildTextContent((widget.concept.storyBasedExplanation ?? '').isNotEmpty ? widget.concept.storyBasedExplanation : 'Once upon a time, we learned about ${widget.concept.topic ?? 'this'}...'),
+                _buildTextContent((widget.concept.teacherExplanation ?? '').isNotEmpty ? widget.concept.teacherExplanation : widget.concept.revisionNotes),
               ],
             ),
           ),
@@ -373,10 +422,10 @@ class _LearningJourneyScreenState extends State<LearningJourneyScreen> {
   Widget _renderActivity(InteractiveActivity activity) {
     switch (activity.type) {
       case ActivityType.matching:
-        final pairs = Map<String, String>.from(activity.data['pairs'] ?? {});
+        final pairs = safeStringMap(activity.data['pairs']);
         return MatchingActivity(pairs: pairs, onComplete: (_) {});
       case ActivityType.tapReveal:
-        final items = List<Map<String, String>>.from(activity.data['items'] ?? []);
+        final items = (activity.data['items'] as List? ?? []).map((e) => safeStringMap(e)).toList();
         return TapRevealActivity(items: items);
       default:
         return const Center(child: Text('Interactive activity coming soon!'));

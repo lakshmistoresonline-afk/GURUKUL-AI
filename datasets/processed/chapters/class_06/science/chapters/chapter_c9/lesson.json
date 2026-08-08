@@ -33,7 +33,12 @@
     {
       "question": "Which part of the bulb glows when electricity passes through it?",
       "hint": "It's a thin wire inside.",
-      "options": ["Glass case", "Filament", "Metal base", "Terminals"],
+      "options": [
+        "Glass case",
+        "Filament",
+        "Metal base",
+        "Terminals"
+      ],
       "correctAnswer": "Filament",
       "explanation": "The thin wire that gives off light is called the filament of the bulb.",
       "isHots": false
@@ -41,7 +46,12 @@
     {
       "question": "A device that is used to break an electric circuit is called?",
       "hint": "You flip it on and off.",
-      "options": ["Filament", "Electric cell", "Switch", "Battery"],
+      "options": [
+        "Filament",
+        "Electric cell",
+        "Switch",
+        "Battery"
+      ],
       "correctAnswer": "Switch",
       "explanation": "A switch is a simple device that either breaks the circuit or completes it.",
       "isHots": false
@@ -49,7 +59,12 @@
     {
       "question": "Which of these is a good conductor of electricity?",
       "hint": "Most metals are conductors.",
-      "options": ["Rubber", "Wood", "Iron nail", "Plastic"],
+      "options": [
+        "Rubber",
+        "Wood",
+        "Iron nail",
+        "Plastic"
+      ],
       "correctAnswer": "Iron nail",
       "explanation": "Metals like iron allow electricity to pass through them, so they are conductors.",
       "isHots": false
@@ -57,7 +72,12 @@
     {
       "question": "An electric cell has ______ terminals.",
       "hint": "Look for + and - signs.",
-      "options": ["One", "Two", "Three", "Four"],
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
       "correctAnswer": "Two",
       "explanation": "All electric cells have two terminals: a positive (+) and a negative (-).",
       "isHots": false
@@ -65,7 +85,12 @@
     {
       "question": "Why are electric wires covered with plastic?",
       "hint": "Think about safety.",
-      "options": ["To make them colorful", "To keep them cool", "Plastic is an insulator", "To make them stronger"],
+      "options": [
+        "To make them colorful",
+        "To keep them cool",
+        "Plastic is an insulator",
+        "To make them stronger"
+      ],
       "correctAnswer": "Plastic is an insulator",
       "explanation": "Plastic does not allow electricity to pass through, so it protects us from electric shocks.",
       "isHots": true
@@ -112,11 +137,11 @@
     "Understands that a circuit must be complete for a bulb to glow.",
     "Identifies common insulators found at home."
   ],
-  "introduction": "Flip a switch and the room lights up! Is it magic? No, it's electricity flowing through a special path. Let's build our own circuits and learn the secrets of how bulbs glow.",
-  "realLifeConnection": "From the fans that cool us to the smartphones we use, electricity is the 'energy food' that powers almost everything in our modern world.",
-  "storyBasedExplanation": "Boojho wants to light a tiny bulb using a battery and some wires. He tried many ways—sometimes the wires were loose, sometimes both were on the same end of the battery. Only when he made a complete loop did the bulb shine!",
-  "childFriendlyExplanation": "Electricity is like a train that needs a complete circle of tracks to travel. If the track is broken or a bridge is out (open circuit), the 'light train' can't reach the bulb to make it glow!",
-  "teacherExplanation": "This chapter introduces the basics of current electricity. We focus on the functional components of a circuit and the physical properties of materials that allow or inhibit the flow of current.",
+  "introduction": "Welcome to the study of Electricity and Circuits. In this chapter, we explore essential concepts and their applications in the world around us.",
+  "realLifeConnection": "You can see the principles of Electricity and Circuits in your daily activities, from the way you organize your day to the nature you see outside.",
+  "storyBasedExplanation": "The Quest for Knowledge: A group of students discovers the hidden secrets of Electricity and Circuits through a series of exciting adventures.",
+  "childFriendlyExplanation": "Learning Electricity and Circuits is like discovering a new superpower. It helps you understand how things work and solve puzzles!",
+  "teacherExplanation": "Focus on the core pillars of Electricity and Circuits. Connect theoretical knowledge with practical observations and NCERT guidelines.",
   "animatedLessonAsset": "assets/lottie/default_lesson.json",
   "videoUrl": null,
   "activities": [],
@@ -128,5 +153,20 @@
   "videoScript": "Host with a cell and a bulb. 'See these two terminals? One is positive (+) and one is negative (-). For the bulb to glow, electricity must travel from one terminal, through the bulb, and back to the other terminal!'",
   "parentNotes": "Talk about electrical safety at home. Show your child the 'conductor' (metal) and 'insulator' (plastic) parts of a common plug.",
   "teacherNotes": "Use a simple circuit tester in class. Emphasize that air is an insulator, otherwise electricity would jump across open switches!",
-  "learningOutcomes": "Students will be able to identify circuit components, explain how a bulb glows in a closed circuit, and distinguish between conductors and insulators."
+  "learningOutcomes": "Students will be able to identify circuit components, explain how a bulb glows in a closed circuit, and distinguish between conductors and insulators.",
+  "keyTakeaways": [
+    "Core concepts of Electricity and Circuits",
+    "Practical applications",
+    "Problem-solving techniques",
+    "Key definitions"
+  ],
+  "faqs": {
+    "Why is Electricity and Circuits important?": "It builds the foundation for more advanced topics and helps in critical thinking.",
+    "Where is this used?": "In various fields like science, engineering, and everyday life."
+  },
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:59.393682",
+    "method": "Ollama Enrichment"
+  }
 }

@@ -26,12 +26,18 @@ class NotificationService {
         _logger.w('User declined or has not accepted permission');
       }
 
-      // Get token (Safe check for platforms that might not support it immediately)
-      try {
-        String? token = await _fcm.getToken();
-        _logger.i('FCM Token: $token');
-      } catch (e) {
-        _logger.e('Error getting FCM token: $e');
+      // Get token only if permission is granted
+      if (settings.authorizationStatus == AuthorizationStatus.authorized) {
+        try {
+          String? token = await _fcm.getToken(
+            vapidKey: 'BGHQ...', // Add your VAPID key here for Web
+          );
+          _logger.i('FCM Token: $token');
+        } catch (e) {
+          _logger.w('Could not retrieve FCM token: $e');
+        }
+      } else {
+        _logger.i('Token retrieval skipped: Notifications not authorized.');
       }
 
       // Handle background messages

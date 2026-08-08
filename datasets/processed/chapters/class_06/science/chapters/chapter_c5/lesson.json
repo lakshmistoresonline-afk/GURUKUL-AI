@@ -33,7 +33,12 @@
     {
       "question": "Which joint allows movement in all directions?",
       "hint": "Like a ball in a bowl.",
-      "options": ["Hinge joint", "Pivot joint", "Ball and socket joint", "Fixed joint"],
+      "options": [
+        "Hinge joint",
+        "Pivot joint",
+        "Ball and socket joint",
+        "Fixed joint"
+      ],
       "correctAnswer": "Ball and socket joint",
       "explanation": "The ball and socket joint, like the one in our shoulder, allows movement in all directions.",
       "isHots": false
@@ -41,7 +46,12 @@
     {
       "question": "How many bones are there in the human skeleton of an adult?",
       "hint": "It's more than 200.",
-      "options": ["106", "206", "306", "406"],
+      "options": [
+        "106",
+        "206",
+        "306",
+        "406"
+      ],
       "correctAnswer": "206",
       "explanation": "An adult human skeleton is made up of 206 bones.",
       "isHots": false
@@ -49,7 +59,12 @@
     {
       "question": "Muscles work in ______ to move a bone.",
       "hint": "One pulls, the other relaxes.",
-      "options": ["Singles", "Threes", "Pairs", "Groups of four"],
+      "options": [
+        "Singles",
+        "Threes",
+        "Pairs",
+        "Groups of four"
+      ],
       "correctAnswer": "Pairs",
       "explanation": "Two muscles work together to move a bone; when one contracts, the other relaxes.",
       "isHots": false
@@ -57,7 +72,12 @@
     {
       "question": "Which of these animals moves with the help of a muscular foot?",
       "hint": "It carries its home on its back.",
-      "options": ["Earthworm", "Snail", "Cockroach", "Snake"],
+      "options": [
+        "Earthworm",
+        "Snail",
+        "Cockroach",
+        "Snake"
+      ],
       "correctAnswer": "Snail",
       "explanation": "A snail moves with the help of a thick muscular foot.",
       "isHots": false
@@ -65,7 +85,12 @@
     {
       "question": "The joint between the upper jaw and the rest of the head is a?",
       "hint": "You cannot move your upper jaw.",
-      "options": ["Hinge joint", "Fixed joint", "Pivot joint", "Gliding joint"],
+      "options": [
+        "Hinge joint",
+        "Fixed joint",
+        "Pivot joint",
+        "Gliding joint"
+      ],
       "correctAnswer": "Fixed joint",
       "explanation": "Fixed joints do not allow any movement between the bones.",
       "isHots": true
@@ -112,11 +137,11 @@
     "Explains why birds can fly (hollow bones and strong muscles).",
     "Knows how an earthworm and a snail differ in their movement."
   ],
-  "introduction": "How do you bend your arm to eat or turn your head to see a friend? Our body is a marvelous machine with 206 bones and hundreds of muscles working together to help us move!",
-  "realLifeConnection": "The way a door opens on a hinge is just like how your elbow moves. Engineers get ideas for robots and underwater vehicles by studying how animals like fish and cockroaches move.",
-  "storyBasedExplanation": "Imagine if your arm was just one long bone without an elbow. Could you eat an apple or scratch your nose? We need joints to bend and muscles to pull our bones like strings on a puppet.",
-  "childFriendlyExplanation": "Bones are like the sticks in a kite that give it shape and strength. Muscles are like rubber bands that pull the sticks to make them move and dance!",
-  "teacherExplanation": "This chapter covers the human skeletal system and animal locomotion. We focus on the functional aspects of joints and the coordinated action of muscles in pairs.",
+  "introduction": "Welcome to the study of Body Movements. In this chapter, we explore essential concepts and their applications in the world around us.",
+  "realLifeConnection": "You can see the principles of Body Movements in your daily activities, from the way you organize your day to the nature you see outside.",
+  "storyBasedExplanation": "The Quest for Knowledge: A group of students discovers the hidden secrets of Body Movements through a series of exciting adventures.",
+  "childFriendlyExplanation": "Learning Body Movements is like discovering a new superpower. It helps you understand how things work and solve puzzles!",
+  "teacherExplanation": "Focus on the core pillars of Body Movements. Connect theoretical knowledge with practical observations and NCERT guidelines.",
   "animatedLessonAsset": "assets/lottie/default_lesson.json",
   "videoUrl": null,
   "activities": [],
@@ -128,5 +153,20 @@
   "videoScript": "Host doing different exercises. 'When I bend my arm, this muscle here—the bicep—becomes short and thick. It's pulling my bone! Let's see how our knees work like the hinges on a door.'",
   "parentNotes": "Encourage physical activities and discuss how posture affects our backbone. Talk about the importance of calcium for strong bones.",
   "teacherNotes": "Use a skeleton model if available to show the rib cage and backbone. Demonstrate the movement of an earthworm to explain hydrostatic movement.",
-  "learningOutcomes": "Students will be able to identify types of joints, explain how muscles work in pairs, and describe the diverse ways animals move."
+  "learningOutcomes": "Students will be able to identify types of joints, explain how muscles work in pairs, and describe the diverse ways animals move.",
+  "keyTakeaways": [
+    "Core concepts of Body Movements",
+    "Practical applications",
+    "Problem-solving techniques",
+    "Key definitions"
+  ],
+  "faqs": {
+    "Why is Body Movements important?": "It builds the foundation for more advanced topics and helps in critical thinking.",
+    "Where is this used?": "In various fields like science, engineering, and everyday life."
+  },
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:59.263754",
+    "method": "Ollama Enrichment"
+  }
 }

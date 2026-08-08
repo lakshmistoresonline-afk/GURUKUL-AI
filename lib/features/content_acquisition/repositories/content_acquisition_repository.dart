@@ -26,7 +26,7 @@ class ContentAcquisitionRepository {
   }
 
   /// Updates the status of a specific item in the queue.
-  Future<void> updateStatus(String id, ImportStatus status) async {
+  Future<void> updateStatus(String id, ImportStatus status, {String? error}) async {
     final data = _box.get(id);
     if (data != null) {
       final item = ImportQueueItem.fromJson(Map<String, dynamic>.from(data));
@@ -35,7 +35,7 @@ class ContentAcquisitionRepository {
         file: item.file,
         status: status,
         progress: item.progress,
-        errorMessage: item.errorMessage,
+        errorMessage: error ?? item.errorMessage,
         timestamp: item.timestamp,
         processingStage: item.processingStage,
       );

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:project_gurukul_ai/core/theme/design_system.dart';
 import 'package:project_gurukul_ai/features/questions/presentation/screens/exam_generator_screen.dart';
+import 'package:project_gurukul_ai/core/di/injection.dart';
+import 'package:project_gurukul_ai/features/curriculum/data/framework_repository.dart';
 
 class QuestionCenterScreen extends StatefulWidget {
   final int classLevel;
@@ -139,35 +141,49 @@ class _QuestionCenterScreenState extends State<QuestionCenterScreen> with Single
   }
 
   Widget _buildChapterWiseList() {
-    return ListView.builder(
-      padding: const EdgeInsets.all(DesignSystem.spacingMd),
-      itemCount: 10,
-      itemBuilder: (context, index) {
-        return Card(
-          margin: const EdgeInsets.only(bottom: DesignSystem.spacingMd),
-          child: ExpansionTile(
-            title: Text('Chapter ${index + 1}: Living Organisms', style: const TextStyle(fontWeight: FontWeight.bold)),
-            children: [
-              ListTile(
-                leading: const Icon(Icons.quiz, color: Colors.blue),
-                title: const Text('Concept Check Questions'),
-                trailing: const Icon(Icons.chevron_right),
-                onTap: () {},
+    return FutureBuilder<List<Map<String, dynamic>>>(
+      future: sl<FrameworkRepository>().getChapters(widget.classLevel, widget.subject),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(child: CircularProgressIndicator());
+        }
+        final chapters = snapshot.data ?? [];
+        if (chapters.isEmpty) {
+          return const Center(child: Text('No chapters found for this subject.'));
+        }
+
+        return ListView.builder(
+          padding: const EdgeInsets.all(DesignSystem.spacingMd),
+          itemCount: chapters.length,
+          itemBuilder: (context, index) {
+            final chapter = chapters[index];
+            return Card(
+              margin: const EdgeInsets.only(bottom: DesignSystem.spacingMd),
+              child: ExpansionTile(
+                title: Text('Chapter ${index + 1}: ${chapter['title']}', style: const TextStyle(fontWeight: FontWeight.bold)),
+                children: [
+                  ListTile(
+                    leading: const Icon(Icons.quiz, color: Colors.blue),
+                    title: const Text('Concept Check Questions'),
+                    trailing: const Icon(Icons.chevron_right),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.flash_on, color: Colors.orange),
+                    title: const Text('HOTS Questions'),
+                    trailing: const Icon(Icons.chevron_right),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.history, color: Colors.purple),
+                    title: const Text('Previous Year Questions'),
+                    trailing: const Icon(Icons.chevron_right),
+                    onTap: () {},
+                  ),
+                ],
               ),
-              ListTile(
-                leading: const Icon(Icons.flash_on, color: Colors.orange),
-                title: const Text('HOTS Questions'),
-                trailing: const Icon(Icons.chevron_right),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: const Icon(Icons.history, color: Colors.purple),
-                title: const Text('Previous Year Questions'),
-                trailing: const Icon(Icons.chevron_right),
-                onTap: () {},
-              ),
-            ],
-          ),
+            );
+          },
         );
       },
     );

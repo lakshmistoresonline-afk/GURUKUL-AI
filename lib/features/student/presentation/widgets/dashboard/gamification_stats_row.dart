@@ -8,9 +8,9 @@ class GamificationStatsRow extends StatelessWidget {
 
   const GamificationStatsRow({
     super.key,
-    this.xp = 2450,
-    this.coins = 120,
-    this.certificates = 3,
+    this.xp = 0,
+    this.coins = 0,
+    this.certificates = 0,
   });
 
   @override

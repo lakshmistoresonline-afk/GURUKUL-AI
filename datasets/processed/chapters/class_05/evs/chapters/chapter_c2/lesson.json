@@ -3,68 +3,120 @@
   "subject": "EVS",
   "classLevel": 5,
   "chapter": "A Snake Charmer’s Story",
-  "topic": "Social Studies",
-  "subtopic": "Livelihood and Wildlife",
+  "topic": "Anthropology",
+  "subtopic": "Kalbeliyas",
   "difficulty": "beginner",
   "bloomLevel": "understand",
-  "examWeightage": 4,
-  "estStudyTime": 30,
-  "prerequisites": [],
+  "examWeightage": 5,
+  "estStudyTime": 45,
+  "prerequisites": [
+    "Basic knowledge of animals"
+  ],
   "dependencies": [],
-  "relatedConcepts": [],
+  "relatedConcepts": [
+    "Wildlife Protection",
+    "Ecosystem"
+  ],
   "learningObjectives": [
-    "Learn about Kalbeliya community",
-    "Understand relationship between humans and animals",
-    "Laws regarding wildlife protection"
+    "Understand the life of Kalbeliyas",
+    "Importance of snakes in the ecosystem",
+    "Awareness of government laws on hunting",
+    "Identifying poisonous snakes in India"
   ],
   "examples": [
-    "Been dance",
-    "Nagmumphan patterns"
+    "Been music",
+    "Kalbeliya dance",
+    "Cobra and Krait"
   ],
   "misconceptions": [
-    "All snakes are poisonous (only a few are)"
+    "All snakes are poisonous",
+    "Snakes drink milk",
+    "Snake charmers always hurt snakes"
   ],
   "practiceExercises": [
     {
-      "question": "Which community is famous for snake charming?",
-      "hint": "They have a special dance too.",
-      "options": [
-        "Gonds",
-        "Kalbeliyas",
-        "Bheels",
-        "Santhals"
-      ],
-      "correctAnswer": "Kalbeliyas",
-      "explanation": "Kalbeliyas are a community that used to catch snakes and entertain people.",
+      "question": "What is the name of the community of snake charmers?",
+      "options": ["Banjara", "Kalbeliya", "Gonds", "Bhils"],
+      "correctAnswer": "Kalbeliya",
+      "hint": "They have a famous dance by the same name.",
+      "explanation": "Kalbeliyas are traditional snake charmers from Rajasthan.",
+      "isHots": false
+    },
+    {
+      "question": "How many types of poisonous snakes are found in India?",
+      "options": ["10", "4", "2", "All of them"],
+      "correctAnswer": "4",
+      "hint": "It's a small number.",
+      "explanation": "Only four types of snakes in India are poisonous: Cobra, Common Krait, Russel's Viper, and Saw-scaled Viper.",
+      "isHots": false
+    },
+    {
+      "question": "Why are snakes called 'friends of farmers'?",
+      "options": ["They help in sowing", "They eat rats in the fields", "They provide manure", "They make the soil fertile"],
+      "correctAnswer": "They eat rats in the fields",
+      "hint": "Think about what eats the crops.",
+      "explanation": "Snakes eat rats that would otherwise destroy the farmers' crops.",
+      "isHots": false
+    },
+    {
+      "question": "What musical instrument do snake charmers use?",
+      "options": ["Tabla", "Flute", "Been", "Sitar"],
+      "correctAnswer": "Been",
+      "hint": "It is made from dried gourd (lauki).",
+      "explanation": "Snake charmers use the 'Been', along with other instruments like Tumba and Khanjiri.",
+      "isHots": false
+    },
+    {
+      "question": "Why did the government make a law against catching wild animals?",
+      "options": ["Because they are scary", "To prevent people from killing and selling their skins", "To make them work in circuses", "To keep them in zoos only"],
+      "correctAnswer": "To prevent people from killing and selling their skins",
+      "hint": "It's about protection.",
+      "explanation": "The law was made to stop the illegal trade and exploitation of wild animals.",
       "isHots": false
     }
   ],
   "flashcards": [
     {
-      "front": "Poisonous snakes in India",
-      "back": "Cobra, Common Krait, Russel’s Viper, Saw-scaled Viper"
+      "front": "Nag Gumphan",
+      "back": "Designs of snakes used in rangoli and embroidery in Gujarat."
+    },
+    {
+      "front": "Fangs",
+      "back": "The hollow teeth of a snake through which poison enters the body."
+    },
+    {
+      "front": "Snake Medicine",
+      "back": "Made from the snake's poison; available in government hospitals."
+    },
+    {
+      "front": "Tumba & Khanjiri",
+      "back": "Musical instruments made from dried gourd used by Kalbeliyas."
+    },
+    {
+      "front": "Gift for Daughter",
+      "back": "Snakes are gifted during weddings in Kalbeliya community."
     }
   ],
-  "revisionNotes": "Snake charmers help villagers during snake bites and treat snakes as treasures.",
-  "mindMapUrl": null,
+  "revisionNotes": "Focus on the 4 types of poisonous snakes, the role of Been, and the Kalbeliya heritage. Understand the impact of the Wildlife Protection Act.",
+  "mindMapUrl": "datasets/processed/chapters/class_05/evs/chapters/chapter_c2/mindmap.md",
   "commonMistakes": [
-    "Thinking snake charmers harm snakes (mostly they care for them)"
+    "Believing that snakes dance to the sound of the Been (they respond to the movement)",
+    "Fear of all snakes as being deadly"
   ],
-  "vocabulary": {},
-  "interactiveActivities": [],
-  "masteryCheckpoints": [],
-  "introduction": "",
-  "realLifeConnection": "",
-  "storyBasedExplanation": "",
-  "childFriendlyExplanation": "",
-  "teacherExplanation": "",
-  "animatedLessonAsset": "",
-  "videoUrl": null,
-  "activities": [],
-  "handsOnActivities": [],
-  "animationScript": "",
-  "videoScript": "",
-  "parentNotes": "",
-  "teacherNotes": "",
-  "learningOutcomes": ""
+  "vocabulary": {
+    "Sapera": "Traditional snake charmer",
+    "Fangs": "Hollow teeth for injecting venom",
+    "Been": "Musical instrument made from gourd"
+  },
+  "introduction": "This chapter tells the story of the Kalbeliya people, traditional snake charmers in India. It explores their deep connection with snakes, their traditional knowledge of medicines, and how their lives have changed due to new laws protecting wildlife.",
+  "realLifeConnection": "Seeing street performers or folk dancers, hearing about snake rescues in urban areas, and learning about government wildlife laws.",
+  "storyBasedExplanation": "\"Aryanath's Legacy\" - Aryanath, a young man from the Kalbeliya community, shares stories of his grandfather, Roshan Nath ji. He recalls traveling with snakes in bamboo baskets and healing people with forest plants. He explains that snakes are like 'treasures' for them.",
+  "childFriendlyExplanation": "Imagine having a slithering friend that dances to the music of your flute! Snake charmers, called Kalbeliyas, have known snakes for a very long time. They don't hurt snakes; instead, they treat them with respect.",
+  "teacherExplanation": "This lesson bridges the gap between traditional livelihoods and modern conservation laws. It highlights the cultural heritage of the Kalbeliyas and addresses common myths about snakes.",
+  "learningOutcomes": "Students will describe the culture of Kalbeliyas, identify poisonous snakes, and explain the ecological importance of snakes.",
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T00:56:04",
+    "source": "AI Enrichment Pipeline"
+  }
 }

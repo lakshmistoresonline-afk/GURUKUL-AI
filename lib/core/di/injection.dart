@@ -9,7 +9,13 @@ import '../telemetry/telemetry_service.dart';
 import '../telemetry/telemetry_sync_worker.dart';
 import '../storage/local_storage_service.dart';
 import '../storage/secure_storage_service.dart';
+import '../database/sqlite_service.dart';
+import '../content/repository_scanner.dart';
 import '../theme/theme_service.dart';
+import '../ai/ai_provider.dart';
+import '../ai/prompt_manager.dart';
+import '../ai/providers/gemini_provider.dart';
+import '../ai/providers/ollama_provider.dart';
 import '../offline/sync_service.dart';
 import '../notifications/notification_service.dart';
 import '../../features/auth/data/auth_repository.dart';
@@ -49,9 +55,10 @@ import '../../features/content_acquisition/services/pdf_processor_service.dart';
 import '../../features/content_acquisition/services/chapter_builder_service.dart';
 import '../../features/content_acquisition/services/asset_processor_service.dart';
 import '../../features/content_acquisition/services/ai_pipeline_service.dart';
+import '../../features/content_acquisition/services/ai_validator_service.dart';
 import '../../features/content_acquisition/services/validation_engine.dart';
 import '../../features/content_acquisition/services/manifest_service.dart';
-import '../../features/content_acquisition/services/search_index_service.dart';
+import '../../features/content_acquisition/services/search_engine_service.dart';
 import '../../features/content_acquisition/controllers/acquisition_bloc.dart';
 
 final sl = GetIt.instance;
@@ -61,6 +68,7 @@ Future<void> init() async {
   sl.registerLazySingleton(() => Logger());
   sl.registerLazySingleton(() => SecureStorageService());
   sl.registerLazySingleton(() => LocalStorageService());
+  sl.registerLazySingleton(() => SqliteService());
   sl.registerLazySingleton(() => ThemeService(sl()));
   sl.registerLazySingleton(() => QrScannerService());
 
@@ -85,8 +93,9 @@ Future<void> init() async {
   sl.registerLazySingleton(() => RecommendationService());
   sl.registerLazySingleton(() => MasteryService());
   sl.registerLazySingleton(() => SpacedRepetitionService());
+  sl.registerLazySingleton(() => RepositoryScanner(rootPath: 'D:/GURUKUL-AI/datasets/processed/chapters'));
 
-  final frameworkRepo = FrameworkRepository();
+  final frameworkRepo = FrameworkRepository(sl());
   try {
     debugPrint('DI: Initializing FrameworkRepository...');
     await frameworkRepo.init();
@@ -98,12 +107,18 @@ Future<void> init() async {
   sl.registerLazySingleton(() => frameworkRepo);
 
   debugPrint('DI: Registering AI...');
+  if (AppConfig.useLocalAi) {
+    sl.registerLazySingleton<AIProvider>(() => OllamaProvider(baseUrl: AppConfig.ollamaBaseUrl));
+  } else {
+    sl.registerLazySingleton<AIProvider>(() => GeminiProvider(AppConfig.geminiApiKey));
+  }
+  sl.registerLazySingleton(() => PromptManager());
   sl.registerLazySingleton(() => AiTutorService(AppConfig.geminiApiKey));
   sl.registerLazySingleton(() => AiInsightService(AppConfig.geminiApiKey));
   sl.registerLazySingleton(() => OcrService());
   sl.registerLazySingleton(() => VoiceService());
   sl.registerLazySingleton(() => AiContentFactory(AppConfig.geminiApiKey));
-  sl.registerLazySingleton(() => ModularLessonGenerator(AppConfig.geminiApiKey));
+  sl.registerLazySingleton(() => ModularLessonGenerator(sl(), sl()));
   sl.registerLazySingleton(() => AiBatchFactoryService(sl(), sl()));
 
   debugPrint('DI: Registering Gamification...');
@@ -132,13 +147,14 @@ Future<void> init() async {
   debugPrint('DI: Registering Content Acquisition...');
   sl.registerLazySingleton(() => ContentAcquisitionRepository());
   sl.registerLazySingleton(() => RepositoryScannerService());
-  sl.registerLazySingleton(() => PDFProcessorService());
+  sl.registerLazySingleton(() => PDFProcessorService(sl()));
   sl.registerLazySingleton(() => ChapterBuilderService());
   sl.registerLazySingleton(() => AssetProcessorService());
-  sl.registerLazySingleton(() => AIPipelineService(sl()));
+  sl.registerLazySingleton(() => AIValidatorService());
+  sl.registerLazySingleton(() => AIPipelineService(sl(), sl(), sl()));
   sl.registerLazySingleton(() => ValidationEngine());
   sl.registerLazySingleton(() => ManifestService());
-  sl.registerLazySingleton(() => SearchIndexService());
+  sl.registerLazySingleton(() => SearchEngineService(sl(), sl()));
   sl.registerFactory(() => AcquisitionBloc());
 
   debugPrint('DI: Initialization Complete.');

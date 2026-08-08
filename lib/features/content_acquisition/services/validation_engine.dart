@@ -5,9 +5,6 @@ import '../models/acquisition_file.dart';
 import 'repository_scanner_service.dart';
 
 /// Service responsible for validating the integrity and completeness of the content repository.
-///
-/// It scans both the raw NCERT source files and the processed chapters to identify
-/// gaps, errors, and inconsistencies in the content pipeline.
 class ValidationEngine {
   final String ncertSourcePath;
   final String processedChaptersPath;
@@ -19,8 +16,6 @@ class ValidationEngine {
   });
 
   /// Performs a full validation of the repository.
-  ///
-  /// Returns a [ValidationReport] containing detected issues and summary statistics.
   Future<ValidationReport> validateRepository() async {
     final List<ValidationIssue> issues = [];
     final Map<String, int> stats = {
@@ -30,13 +25,13 @@ class ValidationEngine {
       'warnings': 0,
     };
 
-    // 1. Scan Source Directory for issues (Empty files, Unsupported formats, Duplicates, Corruption)
+    // 1. Scan Source Directory for issues
     final sourceFiles = await _scanSourceDirectory(issues, stats);
 
-    // 2. Scan Processed Directory for issues (Duplicate metadata, Empty JSONs)
+    // 2. Scan Processed Directory for issues
     final processedKeys = await _scanProcessedDirectory(issues, stats);
 
-    // 3. Detect Missing Chapters (Cross-reference source files against processed results)
+    // 3. Detect Missing Chapters
     _detectMissingChapters(sourceFiles, processedKeys, issues, stats);
 
     // Finalize statistics
@@ -50,7 +45,6 @@ class ValidationEngine {
     );
   }
 
-  /// Scans the raw source directory and identifies low-level file issues.
   Future<List<AcquisitionFile>> _scanSourceDirectory(
     List<ValidationIssue> issues,
     Map<String, int> stats,
@@ -78,7 +72,6 @@ class ValidationEngine {
       final extension = p.extension(filePath).toLowerCase();
       final size = entity.lengthSync();
 
-      // Detection: Empty Files
       if (size == 0) {
         issues.add(ValidationIssue(
           message: 'Empty file detected (0 bytes)',
@@ -88,7 +81,6 @@ class ValidationEngine {
         ));
       }
 
-      // Detection: Unsupported Formats
       const supportedExts = {'.pdf', '.epub', '.docx', '.zip', '.jpg', '.jpeg', '.png', '.webp', '.bmp'};
       if (!supportedExts.contains(extension)) {
         issues.add(ValidationIssue(
@@ -99,7 +91,6 @@ class ValidationEngine {
         ));
       }
 
-      // Detection: Duplicate Files (Simple Name + Size fingerprint)
       final fingerprint = "$fileName-$size";
       if (fileFingerprints.contains(fingerprint)) {
         issues.add(ValidationIssue(
@@ -112,7 +103,6 @@ class ValidationEngine {
         fileFingerprints.add(fingerprint);
       }
 
-      // Detection: Corrupted PDFs (Magic Number check)
       if (extension == '.pdf' && size > 4) {
         if (!await _isPdfValid(entity)) {
           issues.add(ValidationIssue(
@@ -125,11 +115,9 @@ class ValidationEngine {
       }
     }
 
-    // Leveraging existing scanner to get logically parsed files
     return await _scanner.scan();
   }
 
-  /// Basic PDF validation by checking the header.
   Future<bool> _isPdfValid(File file) async {
     try {
       final bytes = await file.openRead(0, 4).first;
@@ -140,7 +128,6 @@ class ValidationEngine {
     }
   }
 
-  /// Scans the processed output directory for structure and metadata integrity.
   Future<Set<String>> _scanProcessedDirectory(
     List<ValidationIssue> issues,
     Map<String, int> stats,
@@ -156,14 +143,12 @@ class ValidationEngine {
       final path = entity.path;
       final fileName = p.basename(path);
 
-      // Check for core metadata files
       if (fileName == 'lesson.json') {
         stats['total_processed_chapters'] = (stats['total_processed_chapters'] ?? 0) + 1;
 
         final relativePath = p.relative(path, from: processedChaptersPath);
         final parts = p.split(relativePath);
 
-        // Expected: class_XX/subject/chapters/chapter_XX/lesson.json
         if (parts.length >= 4) {
           final classLevel = parts[0];
           final subject = parts[1];
@@ -182,7 +167,6 @@ class ValidationEngine {
           }
         }
 
-        // Detection: Empty/Truncated JSON
         if (entity.lengthSync() < 10) {
            issues.add(ValidationIssue(
             message: 'Empty or invalid metadata JSON file',
@@ -196,7 +180,6 @@ class ValidationEngine {
     return processedKeys;
   }
 
-  /// Cross-references found source files against the processed chapter set to find gaps.
   void _detectMissingChapters(
     List<AcquisitionFile> sourceFiles,
     Set<String> processedKeys,
@@ -204,7 +187,6 @@ class ValidationEngine {
     Map<String, int> stats,
   ) {
     for (final file in sourceFiles) {
-      // Construct the expected key based on standardized naming
       final classKey = "class_${file.classLevel.toString().padLeft(2, '0')}";
       final chapterKey = "chapter_${file.chapterIndex.toString().padLeft(2, '0')}";
       final key = "$classKey-${file.subject.toLowerCase()}-$chapterKey";

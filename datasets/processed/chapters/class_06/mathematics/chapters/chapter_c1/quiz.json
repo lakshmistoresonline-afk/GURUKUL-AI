@@ -1,1 +1,41 @@
-[{"question":"Insert commas in International system: 987654321","hint":"Use groups of 3.","options":["98,76,54,321","987,654,321","9,8,7,6,5,4,3,2,1","9876,54321"],"correctAnswer":"987,654,321","explanation":"International system uses 3-digit groupings: Millions, Thousands, Ones.","isHots":false}]
+[
+  {
+    "question": "Insert commas in International system: 987654321",
+    "hint": "Use groups of 3.",
+    "options": [
+      "98,76,54,321",
+      "987,654,321",
+      "9,8,7,6,5,4,3,2,1",
+      "9876,54321"
+    ],
+    "correctAnswer": "987,654,321",
+    "explanation": "International system uses 3-digit groupings: Millions, Thousands, Ones.",
+    "isHots": false
+  },
+  {
+    "question": "Estimate 7,345 + 15,893 to the nearest thousand.",
+    "hint": "Round each number first.",
+    "options": [
+      "22,000",
+      "23,000",
+      "24,000",
+      "25,000"
+    ],
+    "correctAnswer": "23,000",
+    "explanation": "7,345 rounds to 7,000. 15,893 rounds to 16,000. 7,000 + 16,000 = 23,000.",
+    "isHots": true
+  },
+  {
+    "question": "Which Roman numeral represents 90?",
+    "hint": "It is 10 less than 100.",
+    "options": [
+      "LXXXX",
+      "XC",
+      "CX",
+      "LXL"
+    ],
+    "correctAnswer": "XC",
+    "explanation": "C is 100. X is 10. Placing X before C means 100 - 10 = 90.",
+    "isHots": false
+  }
+]

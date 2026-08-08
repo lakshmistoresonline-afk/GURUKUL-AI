@@ -1,5 +1,12 @@
 import 'concept_node.dart';
 
+enum LearningStatus {
+  notStarted,
+  inProgress,
+  mastered,
+  needsRevision,
+}
+
 class Mastery {
   final String studentId;
   final String conceptId;

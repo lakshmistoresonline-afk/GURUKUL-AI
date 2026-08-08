@@ -59,18 +59,33 @@
   "vocabulary": {},
   "interactiveActivities": [],
   "masteryCheckpoints": [],
-  "introduction": "",
-  "realLifeConnection": "",
-  "storyBasedExplanation": "",
-  "childFriendlyExplanation": "",
-  "teacherExplanation": "",
+  "introduction": "Geometry starts with simple ideas like points, lines, and planes. These are the building blocks of every shape we see around us.",
+  "realLifeConnection": "Points are like stars in the sky. Lines are like the edges of your desk. Geometry is everywhere, from the design of a bridge to the shape of a pizza.",
+  "storyBasedExplanation": "Dot's Big Journey: A tiny point named Dot stretches out to become a Line, then turns a corner to form a Ray, exploring the flat world of Geometry.",
+  "childFriendlyExplanation": "Imagine drawing with a pencil. A tap is a Point. A long stroke is a Line. If it has a start but no end, it's a Ray!",
+  "teacherExplanation": "Move from abstract definitions to concrete examples. Distinguish between line segments, lines, and rays using physical models like strings.",
   "animatedLessonAsset": "",
   "videoUrl": null,
   "activities": [],
   "handsOnActivities": [],
-  "animationScript": "",
-  "videoScript": "",
+  "animationScript": "Scene 1: Introduction to Basic Geometrical Ideas. Visuals showing core concepts. Narrator: 'Let's dive into Basic Geometrical Ideas!'",
+  "videoScript": "Teacher: 'Hi everyone! Today we are going to learn about Basic Geometrical Ideas. It's a very interesting topic because...'",
   "parentNotes": "",
   "teacherNotes": "",
-  "learningOutcomes": ""
+  "learningOutcomes": "",
+  "keyTakeaways": [
+    "Points, Lines, and Rays",
+    "Line Segments",
+    "Parallel and Intersecting Lines",
+    "Polygons and Circles"
+  ],
+  "faqs": {
+    "Can a line be measured?": "No, a line goes on forever. Only a line segment has a fixed length.",
+    "What is a vertex?": "A vertex is a corner where two lines meet."
+  },
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:58.887387",
+    "method": "Ollama Enrichment"
+  }
 }

@@ -11,9 +11,9 @@ class StudyPlannerScreen extends StatefulWidget {
 
 class _StudyPlannerScreenState extends State<StudyPlannerScreen> {
   final List<StudyTask> _tasks = [
-    StudyTask(id: '1', title: 'Math: Fractions Practice', type: TaskType.practice, estimatedTime: const Duration(minutes: 30), scheduledDate: DateTime.now()),
-    StudyTask(id: '2', title: 'Science: Water Cycle', type: TaskType.learn, estimatedTime: const Duration(minutes: 45), scheduledDate: DateTime.now()),
-    StudyTask(id: '3', title: 'Hindi: Story Reading', type: TaskType.learn, estimatedTime: const Duration(minutes: 20), scheduledDate: DateTime.now()),
+    StudyTask(id: '1', title: 'Mathematics: The Fish Tale', type: TaskType.learn, estimatedTime: const Duration(minutes: 45), scheduledDate: DateTime.now()),
+    StudyTask(id: '2', title: 'EVS: Super Senses Flashcards', type: TaskType.practice, estimatedTime: const Duration(minutes: 20), scheduledDate: DateTime.now()),
+    StudyTask(id: '3', title: 'Hindi: Raakh ki Rassi Quiz', type: TaskType.quiz, estimatedTime: const Duration(minutes: 15), scheduledDate: DateTime.now()),
   ];
 
   @override

@@ -33,7 +33,12 @@
     {
       "question": "A substance which is attracted by a magnet is called?",
       "hint": "Like iron.",
-      "options": ["Non-magnetic", "Magnetic", "Transparent", "Luminous"],
+      "options": [
+        "Non-magnetic",
+        "Magnetic",
+        "Transparent",
+        "Luminous"
+      ],
       "correctAnswer": "Magnetic",
       "explanation": "Materials like iron, nickel, and cobalt that are attracted towards a magnet are magnetic materials.",
       "isHots": false
@@ -41,7 +46,12 @@
     {
       "question": "A magnet always has ______ poles.",
       "hint": "North and South.",
-      "options": ["One", "Two", "Three", "Four"],
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
       "correctAnswer": "Two",
       "explanation": "Every magnet, regardless of its shape, has two poles: North and South.",
       "isHots": false
@@ -49,7 +59,12 @@
     {
       "question": "What happens when the North pole of a magnet is brought near the North pole of another magnet?",
       "hint": "Like poles push away.",
-      "options": ["They attract", "They repel", "Nothing happens", "They stick together"],
+      "options": [
+        "They attract",
+        "They repel",
+        "Nothing happens",
+        "They stick together"
+      ],
       "correctAnswer": "They repel",
       "explanation": "Similar (like) poles repel each other, while opposite (unlike) poles attract.",
       "isHots": false
@@ -57,7 +72,12 @@
     {
       "question": "Which device is used by sailors to find directions at sea?",
       "hint": "It has a tiny needle magnet.",
-      "options": ["Microscope", "Telescope", "Compass", "Barometer"],
+      "options": [
+        "Microscope",
+        "Telescope",
+        "Compass",
+        "Barometer"
+      ],
       "correctAnswer": "Compass",
       "explanation": "A magnetic compass is used to find directions based on the Earth's magnetic field.",
       "isHots": false
@@ -65,7 +85,12 @@
     {
       "question": "Where is the magnetic strength of a bar magnet the maximum?",
       "hint": "Think of the two ends.",
-      "options": ["At the center", "At the North pole only", "At both poles", "Equally everywhere"],
+      "options": [
+        "At the center",
+        "At the North pole only",
+        "At both poles",
+        "Equally everywhere"
+      ],
       "correctAnswer": "At both poles",
       "explanation": "The magnetic attraction is strongest near the two ends or poles of the magnet.",
       "isHots": true
@@ -112,11 +137,11 @@
     "Identifies magnetic materials from a mixed set of objects.",
     "Explains how to store magnets properly using wooden pieces and iron keepers."
   ],
-  "introduction": "Meet the stones that can pull iron! Magnets are mysterious and fun. In 'Fun with Magnets', we'll learn how they were discovered by a shepherd and how they help explorers find their way across the oceans.",
-  "realLifeConnection": "Magnets are hidden everywhere! They are inside your speakers, your computer's hard drive, the refrigerator door, and even on the back of credit cards to store information.",
-  "storyBasedExplanation": "Magnes the shepherd was surprised when the iron tip of his stick got stuck to a black rock on the mountains. People called this magical rock 'Magnetite'. Later, they discovered it could always show the way to the North!",
-  "childFriendlyExplanation": "Magnets are like invisible hands that can pull some metals. They have two ends called North and South. The rule is simple: Opposites attract (they love to stick) and Likes repel (they push away)!",
-  "teacherExplanation": "This chapter introduces the fundamental properties of magnetism. We focus on the distinction between magnetic and non-magnetic materials, the law of magnetic poles, and the practical use of the magnetic compass.",
+  "introduction": "Welcome to the study of Fun with Magnets. In this chapter, we explore essential concepts and their applications in the world around us.",
+  "realLifeConnection": "You can see the principles of Fun with Magnets in your daily activities, from the way you organize your day to the nature you see outside.",
+  "storyBasedExplanation": "The Quest for Knowledge: A group of students discovers the hidden secrets of Fun with Magnets through a series of exciting adventures.",
+  "childFriendlyExplanation": "Learning Fun with Magnets is like discovering a new superpower. It helps you understand how things work and solve puzzles!",
+  "teacherExplanation": "Focus on the core pillars of Fun with Magnets. Connect theoretical knowledge with practical observations and NCERT guidelines.",
   "animatedLessonAsset": "assets/lottie/default_lesson.json",
   "videoUrl": null,
   "activities": [],
@@ -128,5 +153,20 @@
   "videoScript": "Host with two magnets. 'Watch! When I bring North to North, they push away no matter how hard I try. But North to South... SNAP! They love each other. This is the first law of magnets!'",
   "parentNotes": "Help your child understand that magnets can work through thin paper or plastic. Show them how a compass app on a phone works (using a digital magnetometer).",
   "teacherNotes": "Show students how to make a simple compass using a magnetized needle and a bowl of water. Discuss the importance of not keeping magnets near electronic devices like TVs.",
-  "learningOutcomes": "Students will be able to distinguish magnetic materials, explain the law of poles, and describe how magnets help in navigation."
+  "learningOutcomes": "Students will be able to distinguish magnetic materials, explain the law of poles, and describe how magnets help in navigation.",
+  "keyTakeaways": [
+    "Core concepts of Fun with Magnets",
+    "Practical applications",
+    "Problem-solving techniques",
+    "Key definitions"
+  ],
+  "faqs": {
+    "Why is Fun with Magnets important?": "It builds the foundation for more advanced topics and helps in critical thinking.",
+    "Where is this used?": "In various fields like science, engineering, and everyday life."
+  },
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:59.106626",
+    "method": "Ollama Enrichment"
+  }
 }

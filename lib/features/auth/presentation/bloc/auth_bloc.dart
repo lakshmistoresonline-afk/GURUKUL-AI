@@ -27,11 +27,11 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final AuthRepository _authRepository;
 
   AuthBloc(this._authRepository) : super(AuthAuthenticated(UserModel(
-          uid: 'test_admin_uid',
-          email: 'admin@gurukul.ai',
-          name: 'Test Administrator',
-          role: UserRole.admin,
-          classId: '6',
+          uid: 'test_student_uid',
+          email: 'student@gurukul.ai',
+          name: 'Scholar',
+          role: UserRole.student,
+          classId: '5',
         ))) {
     // Repository listener disabled for testing bypass
     /*

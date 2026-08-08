@@ -25,11 +25,13 @@ class LocalStorageService {
     final data = box.get(key);
     if (data == null) return null;
 
-    if (data is Map && data.containsKey('expiry') && data['expiry'] != null) {
-      final expiry = DateTime.fromMillisecondsSinceEpoch(data['expiry']);
-      if (DateTime.now().isAfter(expiry)) {
-        box.delete(key);
-        return null;
+    if (data is Map && data.containsKey('value') && data.containsKey('expiry')) {
+      if (data['expiry'] != null) {
+        final expiry = DateTime.fromMillisecondsSinceEpoch(data['expiry'] as int);
+        if (DateTime.now().isAfter(expiry)) {
+          box.delete(key);
+          return null;
+        }
       }
       return data['value'];
     }

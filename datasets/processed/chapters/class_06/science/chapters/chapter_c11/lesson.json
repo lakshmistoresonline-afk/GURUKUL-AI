@@ -33,7 +33,12 @@
     {
       "question": "Which gas is present in the largest amount in the air?",
       "hint": "It makes up 78%.",
-      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
       "correctAnswer": "Nitrogen",
       "explanation": "Nitrogen occupies nearly four-fifths of the space that air fills (about 78%).",
       "isHots": false
@@ -41,7 +46,12 @@
     {
       "question": "The component of air that supports burning is?",
       "hint": "We also need it to breathe.",
-      "options": ["Nitrogen", "Oxygen", "Smoke", "Dust"],
+      "options": [
+        "Nitrogen",
+        "Oxygen",
+        "Smoke",
+        "Dust"
+      ],
       "correctAnswer": "Oxygen",
       "explanation": "Oxygen is the component of air that is necessary for combustion (burning).",
       "isHots": false
@@ -49,7 +59,12 @@
     {
       "question": "The envelope of air that surrounds the Earth is known as?",
       "hint": "It starts with 'A'.",
-      "options": ["Biosphere", "Atmosphere", "Hydrosphere", "Lithosphere"],
+      "options": [
+        "Biosphere",
+        "Atmosphere",
+        "Hydrosphere",
+        "Lithosphere"
+      ],
       "correctAnswer": "Atmosphere",
       "explanation": "The thin layer of air that surrounds the Earth is called the atmosphere.",
       "isHots": false
@@ -57,7 +72,12 @@
     {
       "question": "Which of these is NOT a component of air?",
       "hint": "Think of solid things.",
-      "options": ["Water vapor", "Dust", "Soil", "Oxygen"],
+      "options": [
+        "Water vapor",
+        "Dust",
+        "Soil",
+        "Oxygen"
+      ],
       "correctAnswer": "Soil",
       "explanation": "Air contains gases, water vapor, and dust particles, but soil is not a component of air.",
       "isHots": false
@@ -65,7 +85,12 @@
     {
       "question": "Why do mountaineers carry oxygen cylinders with them?",
       "hint": "Air gets thinner as we go up.",
-      "options": ["To keep them warm", "Because oxygen is light", "Because air is thin at high altitudes", "To cook food"],
+      "options": [
+        "To keep them warm",
+        "Because oxygen is light",
+        "Because air is thin at high altitudes",
+        "To cook food"
+      ],
       "correctAnswer": "Because air is thin at high altitudes",
       "explanation": "As we go higher, the amount of air (and oxygen) available for breathing decreases.",
       "isHots": true
@@ -112,11 +137,11 @@
     "Describes how aquatic animals breathe air dissolved in water.",
     "Identifies the role of plants in maintaining the oxygen-CO2 balance."
   ],
-  "introduction": "It's all around you, but you can't see it. You can feel it when it moves and hear it when it whistles. Air is the invisible blanket that keeps us alive and our planet healthy!",
-  "realLifeConnection": "The air in your bicycle tires helps you ride smoothly, and the wind helps sailors move their boats across the ocean and farmers generate electricity with windmills.",
-  "storyBasedExplanation": "Paheli noticed that a candle flame slowly dies out if we cover it with a glass jar. Her brother Boojho explained that the candle 'ate up' all the oxygen inside. Without oxygen, no fire can burn!",
-  "childFriendlyExplanation": "Air is like a giant soup made of different invisible gases. Nitrogen is the most, Oxygen is what we need to breathe, and there's a tiny bit of Carbon Dioxide that plants love!",
-  "teacherExplanation": "This chapter explores the physical presence and chemical composition of air. We demonstrate that air is matter (occupies space) and discuss its vital role in biological and chemical processes like respiration and combustion.",
+  "introduction": "Welcome to the study of Air Around Us. In this chapter, we explore essential concepts and their applications in the world around us.",
+  "realLifeConnection": "You can see the principles of Air Around Us in your daily activities, from the way you organize your day to the nature you see outside.",
+  "storyBasedExplanation": "The Quest for Knowledge: A group of students discovers the hidden secrets of Air Around Us through a series of exciting adventures.",
+  "childFriendlyExplanation": "Learning Air Around Us is like discovering a new superpower. It helps you understand how things work and solve puzzles!",
+  "teacherExplanation": "Focus on the core pillars of Air Around Us. Connect theoretical knowledge with practical observations and NCERT guidelines.",
   "animatedLessonAsset": "assets/lottie/default_lesson.json",
   "videoUrl": null,
   "activities": [],
@@ -128,5 +153,20 @@
   "videoScript": "Host with a balloon. 'Air might look like nothing, but it takes up space! When I blow into this balloon, I'm filling it with millions of air molecules. And look how a pinwheel spins? That's moving air—the wind!'",
   "parentNotes": "Talk about air pollution and how planting trees helps keep the air fresh. Notice how the wind changes direction on different days.",
   "teacherNotes": "Demonstrate that 'empty' bottles are actually full of air using the water bucket experiment. Discuss how earthworms come out during heavy rain because air in the soil is replaced by water.",
-  "learningOutcomes": "Students will be able to list air components, explain the necessity of oxygen for life/burning, and describe the protective role of the atmosphere."
+  "learningOutcomes": "Students will be able to list air components, explain the necessity of oxygen for life/burning, and describe the protective role of the atmosphere.",
+  "keyTakeaways": [
+    "Core concepts of Air Around Us",
+    "Practical applications",
+    "Problem-solving techniques",
+    "Key definitions"
+  ],
+  "faqs": {
+    "Why is Air Around Us important?": "It builds the foundation for more advanced topics and helps in critical thinking.",
+    "Where is this used?": "In various fields like science, engineering, and everyday life."
+  },
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:59.138630",
+    "method": "Ollama Enrichment"
+  }
 }

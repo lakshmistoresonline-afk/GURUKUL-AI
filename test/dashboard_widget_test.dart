@@ -19,8 +19,11 @@ import 'package:project_gurukul_ai/features/ai/data/ai_tutor_service.dart';
 import 'package:project_gurukul_ai/features/gamification/data/gamification_repository.dart';
 import 'package:project_gurukul_ai/features/gamification/domain/services/daily_challenge_service.dart';
 
+import 'package:project_gurukul_ai/core/content/repository_scanner.dart';
+
 // Simple Mocks to satisfy Dependency Injection and Provider requirements
 class MockFrameworkRepository extends FrameworkRepository {
+  MockFrameworkRepository() : super(RepositoryScanner(rootPath: ''));
   @override
   Future<List<String>> getSubjects(int classLevel) async => ['Mathematics'];
   @override

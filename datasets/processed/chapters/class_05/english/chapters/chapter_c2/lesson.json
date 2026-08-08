@@ -13,9 +13,11 @@
   "dependencies": [],
   "relatedConcepts": [],
   "learningObjectives": [
-    "Importance of working together to achieve goals",
-    "Wisdom of elders (Panchatantra-style story)",
-    "Learning to follow advice"
+    "Understand the importance of honesty",
+    "Recognize values such as respect for all living beings (including animals)",
+    "Develop empathy towards others' feelings and situations",
+    "Apply moral reasoning in difficult decisions related to right from wrong actions",
+    "Demonstrate tolerance by accepting differences among individuals"
   ],
   "examples": [
     "Geese escaping the hunter",
@@ -26,27 +28,71 @@
   ],
   "practiceExercises": [
     {
-      "question": "Why did the wise old bird tell the other geese to destroy the creeper?",
-      "hint": "Creepers grow and become strong.",
+      "question": "What made Sunita decide to help the injured bird?",
       "options": [
-        "It was ugly",
-        "A hunter could climb it",
-        "It was blocking sun",
-        "For no reason"
+        "She wanted a pet.",
+        "It was raining outside.",
+        "It looked sad.",
+        "To teach her friends about kindness"
       ],
-      "correctAnswer": "A hunter could climb it",
-      "explanation": "The wise bird knew that a strong creeper would help a hunter climb the tree.",
-      "isHots": false
+      "correctAnswer": "To teach her friends about kindness",
+      "hint": "The reason is related directly to helping others."
+    },
+    {
+      "question": "How did Sunita spread the message of caring for animals among her schoolmates?",
+      "options": [
+        "By sharing stories during lunch breaks.",
+        "Telling them in classrooms every day at opening bell ring.",
+        "Posting signs around the city.",
+        "Sending emails to parents"
+      ],
+      "correctAnswer": "Sharing stories during lunch breaks",
+      "hint": "This is a common and accessible way for Sunita's age group."
+    },
+    {
+      "question": "What did 'Kindness Day' help students learn?",
+      "options": [
+        "How to play with animals.",
+        "The importance of being honest at all times.",
+        "Tolerance towards different people.",
+        "Practicing kindness in daily life"
+      ],
+      "correctAnswer": "Practicing kindness in daily life"
+    },
+    {
+      "question": "Which word best describes Sunita's feeling when she saw the injured bird?",
+      "options": [
+        "Happiness.",
+        "Excitement.",
+        "Sympathy (empathy).",
+        "Anger"
+      ],
+      "correctAnswer": "Sympathy (empathy)"
+    },
+    {
+      "question": "What is empathy?"
     }
   ],
   "flashcards": [
     {
-      "front": "Teamwork",
-      "back": "Working together to make our dream work"
+      "front": "A small bird with a hurt wing",
+      "back": "This little creature needed Sunita's help to heal. We should always show kindness."
     },
     {
-      "front": "Unity",
-      "back": "Together we are strong"
+      "front": "The corner of the school where injured creatures are looked after.",
+      "back": "Here, everyone helps those in need - showing respect for all living beings!"
+    },
+    {
+      "front": "Sunita watering plants",
+      "back": "Plants also give us oxygen to breathe. Let's care for them and our environment."
+    },
+    {
+      "front": "A picture of Sunita with her friends helping others.",
+      "back": "We can all make a difference in spreading kindness, just like the beautiful children here!"
+    },
+    {
+      "front": "The 'Kindness Day' celebration",
+      "back": "This special day reminds us to be compassionate and helping every single day."
     }
   ],
   "revisionNotes": "Listen to advice from those who have more experience.",
@@ -54,14 +100,25 @@
   "commonMistakes": [
     "Ignoring the \"moral of the story\""
   ],
-  "vocabulary": {},
+  "vocabulary": {
+    "honesty": "Telling what is true without hiding facts or making excuses.",
+    "respect": "Considering the feelings, rights, beliefs, etc. of others and treating them appropriately.",
+    "empathy": "Understanding and sharing someone else's feelings as if they were your own.",
+    "tolerance": "Acceptance and respect for opinions or habits that are different from one’s own."
+  },
   "interactiveActivities": [],
   "masteryCheckpoints": [],
   "introduction": "",
   "realLifeConnection": "",
-  "storyBasedExplanation": "",
+  "storyBasedExplanation": {
+    "title": "The Kindness of Sunita: A Story on Value Education",
+    "content": "Sunita's small act turned into something big. The children not only learned to care for animals but also started helping their own parents at home in various little ways like picking up trash or comforting elderly neighbors.\nTheir school soon recognized the positive impact and decided that Sunita would host an annual 'Kindness Day' where everyone could participate in caring activities, proving once again how one small act of kindness can bring great changes."
+  },
   "childFriendlyExplanation": "",
-  "teacherExplanation": "",
+  "teacherExplanation": {
+    "title": "Exploring Value Education Through Storytelling",
+    "content": "Moreover, teachers can encourage role playing based on the story for kids which makes them feel empathy and respect towards living beings in a simulated environment."
+  },
   "animatedLessonAsset": "",
   "videoUrl": null,
   "activities": [],
@@ -70,5 +127,10 @@
   "videoScript": "",
   "parentNotes": "",
   "teacherNotes": "",
-  "learningOutcomes": ""
+  "learningOutcomes": "",
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T15:15:04.511476",
+    "method": "Ollama (phi3:latest) Batch Enrichment"
+  }
 }

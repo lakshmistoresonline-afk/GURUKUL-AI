@@ -13,9 +13,9 @@
   "dependencies": [],
   "relatedConcepts": [],
   "learningObjectives": [
-    "Poetic devices in \"My Shadow\"",
-    "Adventure and survival skills",
-    "Using imagination in writing"
+    "Students will be able to identify and explain the main elements of a story.",
+    "Students will understand how characters, setting, plot, conflict, resolution, theme, mood, tone, style, point of view, figurative language, symbolism, irony, foreshadowing are used in literature.",
+    "Students will be able to analyze and interpret the themes presented within a story."
   ],
   "examples": [
     "Footprint on the sand",
@@ -26,42 +26,92 @@
   ],
   "practiceExercises": [
     {
-      "question": "What did Robinson Crusoe see on the sand that frightened him?",
-      "hint": "It belongs to a foot.",
+      "question": "What is the main theme of 'Charlotte's Web' by E.B. White?",
       "options": [
-        "A snake",
-        "A footprint",
-        "A shell",
-        "A boat"
+        "a) Friendship and loyalty b) Science fiction c) Political intrigue d) Adventure in space"
       ],
-      "correctAnswer": "A footprint",
-      "explanation": "He was lonely for years, so a human footprint made him think of savages.",
-      "isHots": false
+      "correctAnswer": "a) Friendship and loyalty",
+      "hint": "The story revolves around a friendship between two unlikely friends.",
+      "explanation": "Charlotte's Web is about the bond of friendship that develops between a pig named Wilbur and a spider named Charlotte. The theme highlights how true friendships can form across different species."
+    },
+    {
+      "question": "Who wrote 'The Secret Garden'?",
+      "options": [
+        "a) J.K. Rowling b) Frances Hodgson Burnett c) George Orwell d) Agatha Christie"
+      ],
+      "correctAnswer": "b) Frances Hodgson Burnett",
+      "hint": "This author wrote a book about the healing power of nature.",
+      "explanation": "'The Secret Garden' is written by Frances Hodgson Burnett. It tells the story of Mary Lennox, who discovers an abandoned garden and learns to care for it."
+    },
+    {
+      "question": "In 'Where the Red Fern Grows', what does the main character want?",
+      "options": [
+        "a) To find a treasure b) To win a race c) To become rich d) To own two collie dogs"
+      ],
+      "correctAnswer": "d) To own two collie dogs",
+      "hint": "The story is about the adventures of young Billy Colman.",
+      "explanation": "'Where the Red Fern Grows' follows a boy named Billy who dreams of owning his very first pair of hunting hounds."
+    },
+    {
+      "question": "What does 'Charlie and the Chocolate Factory' teach us?",
+      "options": [
+        "a) The importance of honesty b) How to make chocolates c) History lessons d) Science experiments"
+      ],
+      "correctAnswer": "a) The importance of honesty",
+      "hint": "The story is about a young boy who wins a golden ticket.",
+      "explanation": "'Charlie and the Chocolate Factory' teaches us that being honest can lead to wonderful opportunities, as seen through Charlie Bucket’s journey."
+    },
+    {
+      "question": "What genre does 'The Giver' by Lois Lowry belong to?",
+      "options": [
+        "a) Romance b) Fantasy c) Dystopian fiction d) Historical biography"
+      ],
+      "correctAnswer": "c) Dystopian fiction",
+      "hint": "This book is set in a seemingly perfect community with strict rules.",
+      "explanation": "'The Giver' by Lois Lowry belongs to the genre of dystopian fiction. It presents a society that appears utopian but has underlying dark and oppressive elements."
     }
   ],
   "flashcards": [
     {
-      "front": "Buttercup",
-      "back": "A yellow flower mentioned in the poem"
+      "front": "What is 'Charlotte’s Web' about?",
+      "back": "'A story of friendship between a pig named Wilbur and a spider named Charlotte.'"
     },
     {
-      "front": "Crusoe's companion",
-      "back": "He later found a man and named him Friday"
-    }
+      "front": "Who wrote the book 'The Secret Garden'?",
+      "back": "'Frances Hodgson Burnett, who explores themes like healing through nature in her story.'"
+    },
+    {
+      "front": "What does Billy Colman want to do at the beginning of 'Where the Red Fern Grows'?",
+      "back": "'Billy wants two collie dogs for hunting, which leads him on an adventure with them.'"
+    },
+    {
+      "front": "In Roald Dahl’s ‘Charlie and the Chocolate Factory', what is one important lesson learned?",
+      "back": "'The story teaches us about honesty leading to wonderful opportunities, as experienced by Charlie Bucket.'"
+    },
+    {}
   ],
   "revisionNotes": "Shadows change size based on light position. Crusoe lived on a desert island.",
   "mindMapUrl": null,
   "commonMistakes": [
     "Confusing \"scared\" with \"scary\""
   ],
-  "vocabulary": {},
+  "vocabulary": {
+    "word": "Define",
+    "word2": "Definition"
+  },
   "interactiveActivities": [],
   "masteryCheckpoints": [],
   "introduction": "",
   "realLifeConnection": "",
-  "storyBasedExplanation": "",
+  "storyBasedExplanation": {
+    "paragraph1": "Once upon a time, there was an old oak tree that stood tall at the edge of Emily's backyard. It had been in her family for generations and held many secrets.",
+    "paragraph2": "One sunny afternoon while playing hide-and-seek with friends, Emily discovered a small hollow behind the big branches where she found an old rusty key."
+  },
   "childFriendlyExplanation": "",
-  "teacherExplanation": "",
+  "teacherExplanation": {
+    "paragraph1": "This story introduces students to setting and character by placing them in familiar surroundings. The oak tree is not just any object but holds significance for Emily's family, suggesting a connection between the characters (Emily) and their environment.",
+    "paragraph2": "The discovery of an old rusty key serves as a plot point that can lead to further discussion about mystery elements in literature. It also introduces students to objects with potential symbolic meaning."
+  },
   "animatedLessonAsset": "",
   "videoUrl": null,
   "activities": [],
@@ -70,5 +120,10 @@
   "videoScript": "",
   "parentNotes": "",
   "teacherNotes": "",
-  "learningOutcomes": ""
+  "learningOutcomes": "",
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T16:03:58.711597",
+    "method": "Ollama (phi3:latest) Multi-Pass Enrichment"
+  }
 }

@@ -5,14 +5,15 @@ import 'package:project_gurukul_ai/features/curriculum/data/framework_repository
 import 'package:project_gurukul_ai/features/curriculum/presentation/screens/learning_journey_screen.dart';
 
 class ContinueLearningCard extends StatelessWidget {
-  const ContinueLearningCard({super.key});
+  final int classLevel;
+  const ContinueLearningCard({super.key, required this.classLevel});
 
   Future<void> _handleContinue(BuildContext context) async {
     // In a real app, fetch last accessed from local storage
-    // For now, fetch first chapter of Class 5 Mathematics as fallback
-    final chapters = await sl<FrameworkRepository>().getChapters(5, 'Mathematics');
-    if (chapters.isNotEmpty) {
-      final node = await sl<FrameworkRepository>().getConceptNode(chapters.first['id']);
+    // For now, fetch first chapter of the current class Mathematics as fallback
+    final chapters = await sl<FrameworkRepository>().getChapters(classLevel, 'Mathematics');
+    if (chapters.isNotEmpty && chapters.first['id'] != null) {
+      final node = await sl<FrameworkRepository>().getConceptNode(chapters.first['id'].toString());
       if (node != null && context.mounted) {
         Navigator.push(
           context,
@@ -75,13 +76,25 @@ class ContinueLearningCard extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: DesignSystem.spacingLg),
-                    Text(
-                      'The Fish Tale',
-                      style: DesignSystem.h2.copyWith(color: Colors.white, fontSize: 24),
-                    ),
-                    const Text(
-                      'Chapter 1 • Mathematics',
-                      style: TextStyle(color: Colors.white70, fontSize: 14),
+                    FutureBuilder<List<Map<String, dynamic>>>(
+                      future: sl<FrameworkRepository>().getChapters(classLevel, 'Mathematics'),
+                      builder: (context, snapshot) {
+                        final title = snapshot.data?.isNotEmpty == true ? snapshot.data!.first['title'] : 'Resume Learning';
+                        final sub = snapshot.data?.isNotEmpty == true ? 'Chapter 1 • Mathematics' : 'Pick up where you left off';
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              title,
+                              style: DesignSystem.h2.copyWith(color: Colors.white, fontSize: 24),
+                            ),
+                            Text(
+                              sub,
+                              style: const TextStyle(color: Colors.white70, fontSize: 14),
+                            ),
+                          ],
+                        );
+                      }
                     ),
                     const SizedBox(height: DesignSystem.spacingLg),
                     Row(

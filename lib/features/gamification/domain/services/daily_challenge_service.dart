@@ -11,10 +11,10 @@ class DailyChallenge {
 
 class DailyChallengeService {
   final List<DailyChallenge> _pool = [
-    DailyChallenge(title: 'Mental Math', description: 'Solve 5 multiplication problems in 60 seconds.', type: 'math', rewardXp: 50),
-    DailyChallenge(title: 'Vocabulary Master', description: 'Learn 3 new words and their meanings.', type: 'english', rewardXp: 30),
-    DailyChallenge(title: 'Science Observer', description: 'Identify 3 different leaves in your garden.', type: 'science', rewardXp: 40),
-    DailyChallenge(title: 'Speed Reader', description: 'Read a short story in less than 2 minutes.', type: 'hindi', rewardXp: 30),
+    DailyChallenge(title: 'Number Cruncher', description: 'Solve 5 word problems from "The Fish Tale".', type: 'math', rewardXp: 50),
+    DailyChallenge(title: 'Vocabulary Master', description: 'Learn 3 new words from the "Ice-cream Man" poem.', type: 'english', rewardXp: 30),
+    DailyChallenge(title: 'Nature Scout', description: 'Find 3 objects with different textures like in "Super Senses".', type: 'evs', rewardXp: 40),
+    DailyChallenge(title: 'Hindi Scholar', description: 'Read "Raakh ki Rassi" and find 2 new adjectives.', type: 'hindi', rewardXp: 30),
   ];
 
   DailyChallenge getTodaysChallenge() {

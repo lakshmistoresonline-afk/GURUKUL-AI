@@ -37,7 +37,12 @@
     {
       "question": "If a rectangular park is 20m long and 10m wide, what is its perimeter?",
       "hint": "Add all four sides: 20 + 10 + 20 + 10.",
-      "options": ["30 m", "60 m", "200 sq m", "40 m"],
+      "options": [
+        "30 m",
+        "60 m",
+        "200 sq m",
+        "40 m"
+      ],
       "correctAnswer": "60 m",
       "explanation": "Perimeter = 2 * (L + W) = 2 * (20 + 10) = 60 m.",
       "isHots": false
@@ -45,7 +50,12 @@
     {
       "question": "What is the area of a square tiles with side 5cm?",
       "hint": "Area of square = side x side.",
-      "options": ["10 sq cm", "20 cm", "25 sq cm", "25 cm"],
+      "options": [
+        "10 sq cm",
+        "20 cm",
+        "25 sq cm",
+        "25 cm"
+      ],
       "correctAnswer": "25 sq cm",
       "explanation": "Area = 5 * 5 = 25 square centimeters.",
       "isHots": false
@@ -53,7 +63,12 @@
     {
       "question": "If a shape covers 12 full squares and 8 half squares on a grid, what is its area?",
       "hint": "Two half squares make one full square.",
-      "options": ["12 sq cm", "16 sq cm", "20 sq cm", "8 sq cm"],
+      "options": [
+        "12 sq cm",
+        "16 sq cm",
+        "20 sq cm",
+        "8 sq cm"
+      ],
       "correctAnswer": "16 sq cm",
       "explanation": "12 full + (8/2) full = 12 + 4 = 16 sq cm.",
       "isHots": true
@@ -61,7 +76,12 @@
     {
       "question": "Which needs a longer fence: a 4x4 square or a 5x3 rectangle?",
       "hint": "Calculate perimeter for both.",
-      "options": ["4x4 square", "5x3 rectangle", "Both are same", "Cannot say"],
+      "options": [
+        "4x4 square",
+        "5x3 rectangle",
+        "Both are same",
+        "Cannot say"
+      ],
       "correctAnswer": "Both are same",
       "explanation": "Square P = 4*4 = 16m. Rectangle P = 2*(5+3) = 16m. They are equal.",
       "isHots": true
@@ -69,7 +89,12 @@
     {
       "question": "How many 1cm squares can fit in a rectangle of 5cm by 4cm?",
       "hint": "This is the same as finding the area.",
-      "options": ["9", "18", "20", "25"],
+      "options": [
+        "9",
+        "18",
+        "20",
+        "25"
+      ],
       "correctAnswer": "20",
       "explanation": "The number of unit squares is the area = 5 * 4 = 20.",
       "isHots": false
@@ -132,5 +157,10 @@
   "videoScript": "Host with two different rectangles. 'This one is thin and long, that one is fat and short. They both cover the same amount of table space, but which one needs a longer border? Let's use our new formulas to find out!'",
   "parentNotes": "Discuss why floors are often tiled with squares. Help your child measure a room's area before buying a new rug.",
   "teacherNotes": "Use a centimeter square grid to compare shapes. Lead a discussion on why a square is the 'most efficient' rectangle for a fixed area.",
-  "learningOutcomes": "Students will be able to apply formal formulas for area and perimeter, solve word problems about fencing, and accurately estimate irregular areas."
+  "learningOutcomes": "Students will be able to apply formal formulas for area and perimeter, solve word problems about fencing, and accurately estimate irregular areas.",
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:57.452977",
+    "method": "Ollama Enrichment"
+  }
 }

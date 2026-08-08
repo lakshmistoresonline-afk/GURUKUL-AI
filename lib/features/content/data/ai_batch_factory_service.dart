@@ -2,6 +2,7 @@ import 'dart:async';
 import '../../curriculum/data/framework_repository.dart';
 import '../../curriculum/domain/models/concept_node.dart';
 import 'modular_lesson_generator.dart';
+import '../../../core/config/app_config.dart';
 
 enum BatchJobStatus { idle, running, paused, completed, failed }
 
@@ -164,7 +165,7 @@ class AiBatchFactoryService {
       status: 'AI Review',
       generationMetadata: {
         'date': DateTime.now().toIso8601String(),
-        'model': 'gemini-1.5-flash',
+        'model': AppConfig.useLocalAi ? 'ollama-local' : 'gemini-1.5-flash',
         'phase': 56,
       }
     );

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../core/di/injection.dart';
 import '../../curriculum/domain/models/concept_node.dart';
@@ -13,7 +14,7 @@ import '../services/asset_processor_service.dart';
 import '../services/ai_pipeline_service.dart';
 import '../services/validation_engine.dart';
 import '../services/manifest_service.dart';
-import '../services/search_index_service.dart';
+import '../services/search_engine_service.dart';
 import '../models/validation_report.dart';
 
 /// Events for the AcquisitionBloc
@@ -30,7 +31,18 @@ class AddToQueue extends AcquisitionEvent {
 
 class ProcessQueue extends AcquisitionEvent {}
 
+class ProcessSingleItem extends AcquisitionEvent {
+  final String id;
+  ProcessSingleItem(this.id);
+}
+
 class RunValidation extends AcquisitionEvent {}
+
+class UploadFile extends AcquisitionEvent {
+  final int classLevel;
+  final String subject;
+  UploadFile({required this.classLevel, required this.subject});
+}
 
 /// State for the AcquisitionBloc
 class AcquisitionState {
@@ -41,6 +53,7 @@ class AcquisitionState {
   final bool isProcessing;
   final bool isValidating;
   final String? error;
+  final DateTime? processingStartTime;
 
   AcquisitionState({
     this.queue = const [],
@@ -50,6 +63,7 @@ class AcquisitionState {
     this.isProcessing = false,
     this.isValidating = false,
     this.error,
+    this.processingStartTime,
   });
 
   AcquisitionState copyWith({
@@ -60,6 +74,7 @@ class AcquisitionState {
     bool? isProcessing,
     bool? isValidating,
     String? error,
+    DateTime? processingStartTime,
   }) {
     return AcquisitionState(
       queue: queue ?? this.queue,
@@ -69,6 +84,7 @@ class AcquisitionState {
       isProcessing: isProcessing ?? this.isProcessing,
       isValidating: isValidating ?? this.isValidating,
       error: error,
+      processingStartTime: processingStartTime ?? this.processingStartTime,
     );
   }
 }
@@ -82,7 +98,7 @@ class AcquisitionBloc extends Bloc<AcquisitionEvent, AcquisitionState> {
   final AIPipelineService _aiPipeline = sl<AIPipelineService>();
   final ValidationEngine _validationEngine = sl<ValidationEngine>();
   final ManifestService _manifestService = sl<ManifestService>();
-  final SearchIndexService _searchIndexService = sl<SearchIndexService>();
+  final SearchEngineService _searchEngineService = sl<SearchEngineService>();
 
   StreamSubscription? _queueSubscription;
 
@@ -91,7 +107,9 @@ class AcquisitionBloc extends Bloc<AcquisitionEvent, AcquisitionState> {
     on<StartScan>(_onStartScan);
     on<AddToQueue>(_onAddToQueue);
     on<ProcessQueue>(_onProcessQueue);
+    on<ProcessSingleItem>(_onProcessSingleItem);
     on<RunValidation>(_onRunValidation);
+    on<UploadFile>(_onUploadFile);
 
     _queueSubscription = _repository.watchQueue().listen((items) {
       add(LoadQueue());
@@ -133,7 +151,7 @@ class AcquisitionBloc extends Bloc<AcquisitionEvent, AcquisitionState> {
 
   Future<void> _onProcessQueue(ProcessQueue event, Emitter<AcquisitionState> emit) async {
     if (state.isProcessing) return;
-    emit(state.copyWith(isProcessing: true, error: null));
+    emit(state.copyWith(isProcessing: true, error: null, processingStartTime: DateTime.now()));
 
     try {
       final pendingItems = _repository.getPendingItems();
@@ -157,10 +175,13 @@ class AcquisitionBloc extends Bloc<AcquisitionEvent, AcquisitionState> {
           await _repository.updateProgress(item.id, 0.6, stage: 'Building chapters...');
           final chapters = await _chapterBuilder.buildChapters(item.file, extraction);
 
-          // 4. AI Pipeline
+          // 4. AI Pipeline (with Incremental Logic)
           await _repository.updateProgress(item.id, 0.8, stage: 'Running AI enrichment...');
           for (var chapter in chapters) {
-            final enriched = await _aiPipeline.process(chapter);
+            final enriched = await _aiPipeline.process(
+              chapter,
+              checksum: item.file.checksum
+            );
             allProcessedNodes.add(enriched);
           }
 
@@ -168,19 +189,80 @@ class AcquisitionBloc extends Bloc<AcquisitionEvent, AcquisitionState> {
           await _repository.updateStatus(item.id, ImportStatus.completed);
         } catch (e) {
           await _repository.updateStatus(item.id, ImportStatus.failed);
+          debugPrint('AcquisitionBloc: Failed item ${item.id} - $e');
         }
       }
 
       // Finalize Manifest and Search Index
       if (allProcessedNodes.isNotEmpty) {
         await _manifestService.generateManifest(state.scannedFiles);
-        await _searchIndexService.buildIndex(allProcessedNodes);
+        await _searchEngineService.buildIndex(allProcessedNodes);
       }
     } catch (e) {
       emit(state.copyWith(error: 'Batch processing failed: $e'));
     } finally {
       emit(state.copyWith(isProcessing: false));
     }
+  }
+
+  Future<void> _onProcessSingleItem(ProcessSingleItem event, Emitter<AcquisitionState> emit) async {
+    final item = _repository.getAllItems().where((i) => i.id == event.id).firstOrNull;
+    if (item == null || item.status == ImportStatus.completed) return;
+
+    try {
+      await _repository.updateStatus(item.id, ImportStatus.processing);
+
+      // 1. Extraction
+      await _repository.updateProgress(item.id, 0.2, stage: 'Extracting content...');
+      final extraction = await _pdfProcessor.process(item);
+
+      // 2. Asset Processing
+      await _repository.updateProgress(item.id, 0.4, stage: 'Processing assets...');
+      await _assetProcessor.processAssets(item.id, extraction);
+
+      // 3. Chapter Building
+      await _repository.updateProgress(item.id, 0.6, stage: 'Building chapters...');
+      final chapters = await _chapterBuilder.buildChapters(item.file, extraction);
+
+      // 4. AI Pipeline (with Incremental Logic)
+      await _repository.updateProgress(item.id, 0.8, stage: 'Running AI enrichment...');
+      final List<ConceptNode> processedNodes = [];
+      for (var chapter in chapters) {
+        final enriched = await _aiPipeline.process(
+          chapter,
+          checksum: item.file.checksum
+        );
+        processedNodes.add(enriched);
+      }
+
+      // 5. Indexing
+      if (processedNodes.isNotEmpty) {
+        await _searchEngineService.buildIndex(processedNodes);
+      }
+
+      await _repository.updateProgress(item.id, 1.0, stage: 'Complete');
+      await _repository.updateStatus(item.id, ImportStatus.completed);
+
+      // Update manifest
+      await _manifestService.generateManifest(state.scannedFiles);
+
+    } catch (e) {
+      await _repository.updateStatus(item.id, ImportStatus.failed, error: e.toString());
+      debugPrint('AcquisitionBloc: Failed item ${item.id} - $e');
+    }
+  }
+
+  Future<void> _onUploadFile(UploadFile event, Emitter<AcquisitionState> emit) async {
+    // This requires file_picker dependency which is already in pubspec
+    // Logic:
+    // 1. Pick file
+    // 2. Copy to datasets/ncert_source/class_XX/subject/
+    // 3. Create AcquisitionFile object
+    // 4. Add to queue
+    // 5. Trigger scan to refresh UI
+
+    // Note: Since this is Bloc, we typically wouldn't put UI logic here,
+    // but we can handle the file system operations.
   }
 
   Future<void> _onRunValidation(RunValidation event, Emitter<AcquisitionState> emit) async {

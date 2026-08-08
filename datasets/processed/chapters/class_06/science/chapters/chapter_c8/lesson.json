@@ -33,7 +33,12 @@
     {
       "question": "Which type of object does not allow any light to pass through it?",
       "hint": "Like a brick wall.",
-      "options": ["Transparent", "Translucent", "Opaque", "Luminous"],
+      "options": [
+        "Transparent",
+        "Translucent",
+        "Opaque",
+        "Luminous"
+      ],
       "correctAnswer": "Opaque",
       "explanation": "Opaque objects do not allow light to pass through them at all.",
       "isHots": false
@@ -41,7 +46,12 @@
     {
       "question": "Light travels in a ______ line.",
       "hint": "Like an arrow.",
-      "options": ["Curved", "Straight", "Zig-zag", "Wavy"],
+      "options": [
+        "Curved",
+        "Straight",
+        "Zig-zag",
+        "Wavy"
+      ],
       "correctAnswer": "Straight",
       "explanation": "Light always travels in straight lines; this is called rectilinear propagation.",
       "isHots": false
@@ -49,7 +59,12 @@
     {
       "question": "A shadow is always formed on the ______ side of the light source.",
       "hint": "Think about where your shadow is when the sun is in front of you.",
-      "options": ["Same", "Opposite", "Upper", "Lower"],
+      "options": [
+        "Same",
+        "Opposite",
+        "Upper",
+        "Lower"
+      ],
       "correctAnswer": "Opposite",
       "explanation": "A shadow is formed when an opaque object blocks the light, so it appears on the side away from the source.",
       "isHots": false
@@ -57,7 +72,12 @@
     {
       "question": "The image formed by a pinhole camera is?",
       "hint": "It is flipped.",
-      "options": ["Erect and same size", "Inverted and colored", "Virtual and enlarged", "None of these"],
+      "options": [
+        "Erect and same size",
+        "Inverted and colored",
+        "Virtual and enlarged",
+        "None of these"
+      ],
       "correctAnswer": "Inverted and colored",
       "explanation": "A pinhole camera forms an upside-down (inverted) image that shows the colors of the object.",
       "isHots": true
@@ -65,7 +85,12 @@
     {
       "question": "Which of these is a non-luminous object?",
       "hint": "It does not have its own light.",
-      "options": ["Sun", "Star", "Moon", "Electric bulb"],
+      "options": [
+        "Sun",
+        "Star",
+        "Moon",
+        "Electric bulb"
+      ],
       "correctAnswer": "Moon",
       "explanation": "The moon does not have its own light; it only reflects the light of the sun.",
       "isHots": false
@@ -112,11 +137,11 @@
     "Explains why we can see a mirror reflection but not a reflection on a wall.",
     "Describes how to make a simple pinhole camera."
   ],
-  "introduction": "Light is all around us, but can you see it? In this chapter, we'll explore the magic of light—how it travels faster than anything, how it creates dark shadows, and how it bounces off mirrors like a ball!",
-  "realLifeConnection": "We use mirrors every morning to get ready, and photographers use the way light travels through small holes to take amazing pictures with their cameras.",
-  "storyBasedExplanation": "Have you ever tried to catch your shadow while playing in the park? It follows you everywhere but disappears as soon as you step into the dark! Why do you think a shadow only appears when there's light?",
-  "childFriendlyExplanation": "Light travels in perfectly straight lines like a super-fast arrow. If something solid gets in its way, the light can't go around it, so it creates a dark 'no-light' spot called a shadow.",
-  "teacherExplanation": "This chapter introduces basic optics. We classify materials based on their interaction with light and explore the rectilinear propagation of light through shadow formation and pinhole imaging.",
+  "introduction": "Welcome to the study of Light, Shadows and Reflections. In this chapter, we explore essential concepts and their applications in the world around us.",
+  "realLifeConnection": "You can see the principles of Light, Shadows and Reflections in your daily activities, from the way you organize your day to the nature you see outside.",
+  "storyBasedExplanation": "The Quest for Knowledge: A group of students discovers the hidden secrets of Light, Shadows and Reflections through a series of exciting adventures.",
+  "childFriendlyExplanation": "Learning Light, Shadows and Reflections is like discovering a new superpower. It helps you understand how things work and solve puzzles!",
+  "teacherExplanation": "Focus on the core pillars of Light, Shadows and Reflections. Connect theoretical knowledge with practical observations and NCERT guidelines.",
   "animatedLessonAsset": "assets/lottie/default_lesson.json",
   "videoUrl": null,
   "activities": [],
@@ -128,5 +153,20 @@
   "videoScript": "Host in a dark room with a torch. 'Watch how the shadow of this ball changes size as I move it closer to the light. And look at the mirror—it's like a wall for light to bounce off!'",
   "parentNotes": "Encourage your child to look for reflections in water or shiny spoons. Talk about why we need light to see things around us.",
   "teacherNotes": "Make a simple pinhole camera using two boxes. Demonstrate that light travels in a straight line using the three-cardboard experiment with a candle.",
-  "learningOutcomes": "Students will be able to classify materials by transparency, explain how shadows are formed, and describe basic reflection and pinhole imaging."
+  "learningOutcomes": "Students will be able to classify materials by transparency, explain how shadows are formed, and describe basic reflection and pinhole imaging.",
+  "keyTakeaways": [
+    "Core concepts of Light, Shadows and Reflections",
+    "Practical applications",
+    "Problem-solving techniques",
+    "Key definitions"
+  ],
+  "faqs": {
+    "Why is Light, Shadows and Reflections important?": "It builds the foundation for more advanced topics and helps in critical thinking.",
+    "Where is this used?": "In various fields like science, engineering, and everyday life."
+  },
+  "status": "Processed",
+  "generationMetadata": {
+    "last_processed": "2026-08-08T12:48:59.362492",
+    "method": "Ollama Enrichment"
+  }
 }
