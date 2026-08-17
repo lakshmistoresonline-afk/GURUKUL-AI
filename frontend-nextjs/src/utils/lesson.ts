@@ -85,13 +85,29 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
   }
 
   // 3. Story Mode
-  let story = content.story_explanation || content.storyExplanation || '';
+  let story = content.story_explanation || content.storyExplanation || content.studentExplanation || '';
+
+  // Fallback for Class 6 & 7: join lesson sequence sections if no direct story exists
+  if (!story && (Array.isArray(content.studentLesson) || Array.isArray(content.studentLearningSequence))) {
+    const sequence = content.studentLesson || content.studentLearningSequence;
+    story = sequence
+      .map((s: any) => s.explanation || s.content || s.instruction)
+      .filter(Boolean)
+      .join('\n\n');
+  }
+
+  // Final fallback to introduction/overview if still empty
+  if (!story || story.length < 50) {
+     const fallback = content.detailedLesson?.overview || content.introduction || content.summary || '';
+     if (fallback.length > story.length) story = fallback;
+  }
+
   // Sanitize bad fallbacks
   if (story.includes('Retell the chapter concepts as a short age-appropriate story')) {
-    story = ''; // It's just an instruction placeholder
+    story = content.introduction || ''; // It's just an instruction placeholder
   }
   if (story.toLowerCase().includes('read the story in your original textbook')) {
-    story = '';
+    story = content.introduction || '';
   }
 
   // 4. Activities
