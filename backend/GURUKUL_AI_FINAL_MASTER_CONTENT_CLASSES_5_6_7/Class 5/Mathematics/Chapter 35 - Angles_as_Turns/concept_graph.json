@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_mathematics_35_01",
+      "label": "turns and rotation"
+    },
+    {
+      "id": "c5_mathematics_35_02",
+      "label": "quarter turn"
+    },
+    {
+      "id": "c5_mathematics_35_03",
+      "label": "half turn"
+    },
+    {
+      "id": "c5_mathematics_35_04",
+      "label": "full turn"
+    },
+    {
+      "id": "c5_mathematics_35_05",
+      "label": "direction"
+    },
+    {
+      "id": "c5_mathematics_35_06",
+      "label": "angle comparison"
+    },
+    {
+      "id": "c5_mathematics_35_07",
+      "label": "representation and notation"
+    },
+    {
+      "id": "c5_mathematics_35_08",
+      "label": "worked strategy"
+    },
+    {
+      "id": "c5_mathematics_35_09",
+      "label": "estimation and checking"
+    },
+    {
+      "id": "c5_mathematics_35_10",
+      "label": "error analysis"
+    },
+    {
+      "id": "c5_mathematics_35_11",
+      "label": "multiple methods"
+    },
+    {
+      "id": "c5_mathematics_35_12",
+      "label": "real-life transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_mathematics_35_01",
+      "to": "c5_mathematics_35_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_02",
+      "to": "c5_mathematics_35_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_03",
+      "to": "c5_mathematics_35_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_04",
+      "to": "c5_mathematics_35_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_05",
+      "to": "c5_mathematics_35_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_06",
+      "to": "c5_mathematics_35_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_07",
+      "to": "c5_mathematics_35_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_08",
+      "to": "c5_mathematics_35_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_09",
+      "to": "c5_mathematics_35_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_10",
+      "to": "c5_mathematics_35_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_35_11",
+      "to": "c5_mathematics_35_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "Mathematics",
+    "chapterId": "eemm103",
+    "chapterTitle": "Angles as Turns",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

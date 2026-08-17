@@ -1,0 +1,70 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+
+    function hasRole(role) {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == role;
+    }
+
+    function isValidUser(data) {
+      return data.uid is string &&
+             data.email is string &&
+             data.role in ['student', 'parent', 'teacher', 'admin'];
+    }
+
+    // User profiles
+    match /users/{userId} {
+      // Only owner, admin or teacher can read full profile.
+      // Parents can read if they are linked (handled via student_reports or explicit mapping if needed)
+      // For now, allow owner, teacher, admin.
+      allow read: if isSignedIn() && (isOwner(userId) || hasRole('admin') || hasRole('teacher'));
+
+      // Strict write: Only owner can update limited fields, or admin.
+      allow write: if (isOwner(userId)
+                      && request.resource.data.uid == resource.data.uid
+                      && request.resource.data.role == resource.data.role
+                      && request.resource.data.email == resource.data.email
+                      && isValidUser(request.resource.data))
+                   || hasRole('admin');
+    }
+
+    // Mastery tracking (student identity verified)
+    match /mastery/{masteryId} {
+      allow read: if isSignedIn() && (isOwner(resource.data.uid) || hasRole('admin') || hasRole('teacher'));
+      allow write: if isSignedIn() && (isOwner(request.resource.data.uid) || hasRole('admin'));
+    }
+
+    // Gamification
+    match /gamification/{userId} {
+      allow read: if isSignedIn() && (isOwner(userId) || hasRole('admin'));
+      allow write: if isOwner(userId) && request.resource.data.currentXp is int;
+    }
+
+    // Assignments
+    match /assignments/{assignmentId} {
+      allow read: if isSignedIn();
+      allow write: if hasRole('teacher') || hasRole('admin');
+    }
+
+    // Student Reports (For Parents)
+    match /student_reports/{reportId} {
+      allow read: if isSignedIn() && (resource.data.parentIds.hasAny([request.auth.uid]) || hasRole('admin') || hasRole('teacher'));
+      allow write: if hasRole('teacher') || hasRole('admin');
+    }
+
+    // Telemetry (Internal audit)
+    match /telemetry_sync/{eventId} {
+      allow read: if hasRole('admin');
+      allow write: if isSignedIn();
+    }
+  }
+}

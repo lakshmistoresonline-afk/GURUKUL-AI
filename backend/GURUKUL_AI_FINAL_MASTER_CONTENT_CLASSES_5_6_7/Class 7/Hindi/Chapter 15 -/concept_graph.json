@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "id": "c7_hindi_015_concept_01",
+      "label": "भाव और विचार की समझ"
+    },
+    {
+      "id": "c7_hindi_015_concept_02",
+      "label": "शब्दार्थ और संदर्भ"
+    },
+    {
+      "id": "c7_hindi_015_concept_03",
+      "label": "पाठ से प्रमाण"
+    },
+    {
+      "id": "c7_hindi_015_concept_04",
+      "label": "भाषिक अभिव्यक्ति"
+    },
+    {
+      "id": "c7_hindi_015_concept_05",
+      "label": "सृजनात्मक लेखन"
+    },
+    {
+      "id": "c7_hindi_015_concept_06",
+      "label": "पठन-समझ"
+    },
+    {
+      "id": "c7_hindi_015_concept_07",
+      "label": "जीवन से संबंध"
+    },
+    {
+      "id": "c7_hindi_015_concept_08",
+      "label": "हैं।"
+    },
+    {
+      "id": "c7_hindi_015_concept_09",
+      "label": "मीरा"
+    },
+    {
+      "id": "c7_hindi_015_concept_10",
+      "label": "है।"
+    },
+    {
+      "id": "c7_hindi_015_concept_11",
+      "label": "स्त्री"
+    },
+    {
+      "id": "c7_hindi_015_concept_12",
+      "label": "reprint"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c7_hindi_015_concept_01",
+      "to": "c7_hindi_015_concept_02",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_02",
+      "to": "c7_hindi_015_concept_03",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_03",
+      "to": "c7_hindi_015_concept_04",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_04",
+      "to": "c7_hindi_015_concept_05",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_05",
+      "to": "c7_hindi_015_concept_06",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_06",
+      "to": "c7_hindi_015_concept_07",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_07",
+      "to": "c7_hindi_015_concept_08",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_08",
+      "to": "c7_hindi_015_concept_09",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_09",
+      "to": "c7_hindi_015_concept_10",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_10",
+      "to": "c7_hindi_015_concept_11",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_hindi_015_concept_11",
+      "to": "c7_hindi_015_concept_12",
+      "relation": "supports_or_extends"
+    }
+  ]
+}

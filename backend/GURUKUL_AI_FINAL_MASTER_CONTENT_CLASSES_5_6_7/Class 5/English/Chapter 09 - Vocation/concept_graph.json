@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_english_09_01",
+      "label": "different kinds of work"
+    },
+    {
+      "id": "c5_english_09_02",
+      "label": "respect for workers"
+    },
+    {
+      "id": "c5_english_09_03",
+      "label": "childhood imagination"
+    },
+    {
+      "id": "c5_english_09_04",
+      "label": "daily occupations"
+    },
+    {
+      "id": "c5_english_09_05",
+      "label": "dignity of labour"
+    },
+    {
+      "id": "c5_english_09_06",
+      "label": "observation of people around us"
+    },
+    {
+      "id": "c5_english_09_07",
+      "label": "expressing a personal view"
+    },
+    {
+      "id": "c5_english_09_08",
+      "label": "sequence and inference"
+    },
+    {
+      "id": "c5_english_09_09",
+      "label": "character/voice or poetic image"
+    },
+    {
+      "id": "c5_english_09_10",
+      "label": "word meaning in context"
+    },
+    {
+      "id": "c5_english_09_11",
+      "label": "grammar or language use"
+    },
+    {
+      "id": "c5_english_09_12",
+      "label": "evidence from the text"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_english_09_01",
+      "to": "c5_english_09_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_02",
+      "to": "c5_english_09_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_03",
+      "to": "c5_english_09_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_04",
+      "to": "c5_english_09_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_05",
+      "to": "c5_english_09_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_06",
+      "to": "c5_english_09_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_07",
+      "to": "c5_english_09_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_08",
+      "to": "c5_english_09_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_09",
+      "to": "c5_english_09_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_10",
+      "to": "c5_english_09_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_09_11",
+      "to": "c5_english_09_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "English",
+    "chapterId": "eesa109",
+    "chapterTitle": "Vocation",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

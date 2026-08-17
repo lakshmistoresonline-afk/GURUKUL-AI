@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_evs_12_01",
+      "label": "river source and flow"
+    },
+    {
+      "id": "c5_evs_12_02",
+      "label": "tributaries"
+    },
+    {
+      "id": "c5_evs_12_03",
+      "label": "landscapes along a river"
+    },
+    {
+      "id": "c5_evs_12_04",
+      "label": "people depending on rivers"
+    },
+    {
+      "id": "c5_evs_12_05",
+      "label": "floods and pollution"
+    },
+    {
+      "id": "c5_evs_12_06",
+      "label": "river stewardship"
+    },
+    {
+      "id": "c5_evs_12_07",
+      "label": "change from source to mouth"
+    },
+    {
+      "id": "c5_evs_12_08",
+      "label": "observation and evidence"
+    },
+    {
+      "id": "c5_evs_12_09",
+      "label": "cause and consequence"
+    },
+    {
+      "id": "c5_evs_12_10",
+      "label": "local context"
+    },
+    {
+      "id": "c5_evs_12_11",
+      "label": "comparison of situations"
+    },
+    {
+      "id": "c5_evs_12_12",
+      "label": "responsible action"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_evs_12_01",
+      "to": "c5_evs_12_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_02",
+      "to": "c5_evs_12_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_03",
+      "to": "c5_evs_12_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_04",
+      "to": "c5_evs_12_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_05",
+      "to": "c5_evs_12_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_06",
+      "to": "c5_evs_12_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_07",
+      "to": "c5_evs_12_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_08",
+      "to": "c5_evs_12_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_09",
+      "to": "c5_evs_12_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_10",
+      "to": "c5_evs_12_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_12_11",
+      "to": "c5_evs_12_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "EVS",
+    "chapterId": "eeev102",
+    "chapterTitle": "Journey of a River",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

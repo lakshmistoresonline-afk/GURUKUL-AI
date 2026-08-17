@@ -1,0 +1,577 @@
+{
+  "schemaVersion": "gurukul.class7.deep.v1",
+  "class": 7,
+  "chapters": 62,
+  "subjects": {
+    "English": 5,
+    "Hindi": 10,
+    "Mathematics": 15,
+    "Science": 12,
+    "Social Science": 20
+  },
+  "chaptersIndex": [
+    {
+      "chapterId": "c7_english_001",
+      "chapterNumber": 1,
+      "subject": "English",
+      "part": "Single Book",
+      "title": "The Day the River Spoke",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/English/Chapter 01 - the_day_the_river_spoke",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_english_002",
+      "chapterNumber": 2,
+      "subject": "English",
+      "part": "Single Book",
+      "title": "Animals, Birds, and Dr. Dolittle",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/English/Chapter 02 - animals_birds_and_dr_dolittle",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_english_003",
+      "chapterNumber": 3,
+      "subject": "English",
+      "part": "Single Book",
+      "title": "My Brother’s Great Invention",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/English/Chapter 03 - my_brother_s_great_invention",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_english_004",
+      "chapterNumber": 4,
+      "subject": "English",
+      "part": "Single Book",
+      "title": "The Tunnel",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/English/Chapter 04 - the_tunnel",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_english_005",
+      "chapterNumber": 5,
+      "subject": "English",
+      "part": "Single Book",
+      "title": "A Homage to Our Brave Soldiers",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/English/Chapter 05 - a_homage_to_our_brave_soldiers",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_006",
+      "chapterNumber": 6,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "माँ, कह एक कहानी",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 06 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_007",
+      "chapterNumber": 7,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "तीन बुद्धिमान",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 07 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_008",
+      "chapterNumber": 8,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "फूल और काँटा",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 08 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_009",
+      "chapterNumber": 9,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "पानी रे पानी",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 09 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_010",
+      "chapterNumber": 10,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "नहीं होना बीमार",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 10 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_011",
+      "chapterNumber": 11,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "गिरधर कविराय की कुंडलिया",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 11 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_012",
+      "chapterNumber": 12,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "वर्षा-बहार",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 12 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_013",
+      "chapterNumber": 13,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "बिरजू महाराज से साक्षात्कार",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 13 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_014",
+      "chapterNumber": 14,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "चिड़िया",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 14 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_hindi_015",
+      "chapterNumber": 15,
+      "subject": "Hindi",
+      "part": "Single Book",
+      "title": "मीरा के पद",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Hindi/Chapter 15 - ",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_016",
+      "chapterNumber": 16,
+      "subject": "Mathematics",
+      "part": "Part I",
+      "title": "Large Numbers Around Us",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 16 - large_numbers_around_us",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_017",
+      "chapterNumber": 17,
+      "subject": "Mathematics",
+      "part": "Part I",
+      "title": "Arithmetic Expressions",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 17 - arithmetic_expressions",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_018",
+      "chapterNumber": 18,
+      "subject": "Mathematics",
+      "part": "Part I",
+      "title": "A Peek Beyond the Point",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 18 - a_peek_beyond_the_point",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_019",
+      "chapterNumber": 19,
+      "subject": "Mathematics",
+      "part": "Part I",
+      "title": "Using Letter-Numbers",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 19 - using_letter_numbers",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_020",
+      "chapterNumber": 20,
+      "subject": "Mathematics",
+      "part": "Part I",
+      "title": "Parallel and Intersecting Lines",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 20 - parallel_and_intersecting_lines",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_021",
+      "chapterNumber": 21,
+      "subject": "Mathematics",
+      "part": "Part I",
+      "title": "Number Play",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 21 - number_play",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_022",
+      "chapterNumber": 22,
+      "subject": "Mathematics",
+      "part": "Part I",
+      "title": "A Tale of Three Intersecting Lines",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 22 - a_tale_of_three_intersecting_lines",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_023",
+      "chapterNumber": 23,
+      "subject": "Mathematics",
+      "part": "Part I",
+      "title": "Working with Fractions",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 23 - working_with_fractions",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_024",
+      "chapterNumber": 24,
+      "subject": "Mathematics",
+      "part": "Part II",
+      "title": "Geometric Twins",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 24 - geometric_twins",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_025",
+      "chapterNumber": 25,
+      "subject": "Mathematics",
+      "part": "Part II",
+      "title": "Operations with Integers",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 25 - operations_with_integers",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_026",
+      "chapterNumber": 26,
+      "subject": "Mathematics",
+      "part": "Part II",
+      "title": "Finding Common Ground",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 26 - finding_common_ground",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_027",
+      "chapterNumber": 27,
+      "subject": "Mathematics",
+      "part": "Part II",
+      "title": "Another Peek Beyond the Point",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 27 - another_peek_beyond_the_point",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_028",
+      "chapterNumber": 28,
+      "subject": "Mathematics",
+      "part": "Part II",
+      "title": "Connecting the Dots…",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 28 - connecting_the_dots",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_029",
+      "chapterNumber": 29,
+      "subject": "Mathematics",
+      "part": "Part II",
+      "title": "Constructions and Tilings",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 29 - constructions_and_tilings",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_mathematics_030",
+      "chapterNumber": 30,
+      "subject": "Mathematics",
+      "part": "Part II",
+      "title": "Finding the Unknown",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Mathematics/Chapter 30 - finding_the_unknown",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_031",
+      "chapterNumber": 31,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "The Ever-Evolving World of Science",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 31 - the_ever_evolving_world_of_science",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_032",
+      "chapterNumber": 32,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Exploring Substances: Acidic, Basic, and Neutral",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 32 - exploring_substances_acidic_basic_and_neutral",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_033",
+      "chapterNumber": 33,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Electricity: Circuits and their Components",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 33 - electricity_circuits_and_their_components",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_034",
+      "chapterNumber": 34,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "The World of Metals and Non-metals",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 34 - the_world_of_metals_and_non_metals",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_035",
+      "chapterNumber": 35,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Changes Around Us: Physical and Chemical",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 35 - changes_around_us_physical_and_chemical",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_036",
+      "chapterNumber": 36,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Adolescence: A Stage of Growth and Change",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 36 - adolescence_a_stage_of_growth_and_change",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_037",
+      "chapterNumber": 37,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Heat Transfer in Nature",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 37 - heat_transfer_in_nature",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_038",
+      "chapterNumber": 38,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Measurement of Time and Motion",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 38 - measurement_of_time_and_motion",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_039",
+      "chapterNumber": 39,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Life Processes in Animals",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 39 - life_processes_in_animals",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_040",
+      "chapterNumber": 40,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Life Processes in Plants",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 40 - life_processes_in_plants",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_041",
+      "chapterNumber": 41,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Light: Shadows and Reflections",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 41 - light_shadows_and_reflections",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_science_042",
+      "chapterNumber": 42,
+      "subject": "Science",
+      "part": "Single Book",
+      "title": "Earth, Moon, and the Sun",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Science/Chapter 42 - earth_moon_and_the_sun",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_043",
+      "chapterNumber": 43,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "Geographical Diversity of India",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 43 - geographical_diversity_of_india",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_044",
+      "chapterNumber": 44,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "Understanding the Weather",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 44 - understanding_the_weather",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_045",
+      "chapterNumber": 45,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "Climates of India",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 45 - climates_of_india",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_046",
+      "chapterNumber": 46,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "New Beginnings: Cities and States",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 46 - new_beginnings_cities_and_states",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_047",
+      "chapterNumber": 47,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "The Rise of Empires",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 47 - the_rise_of_empires",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_048",
+      "chapterNumber": 48,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "The Age of Reorganisation",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 48 - the_age_of_reorganisation",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_049",
+      "chapterNumber": 49,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "The Gupta Era: An Age of Tireless Creativity",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 49 - the_gupta_era_an_age_of_tireless_creativity",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_050",
+      "chapterNumber": 50,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "How the Land Becomes Sacred",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 50 - how_the_land_becomes_sacred",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_051",
+      "chapterNumber": 51,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "From the Rulers to the Ruled: Types of Governments",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 51 - from_the_rulers_to_the_ruled_types_of_governments",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_052",
+      "chapterNumber": 52,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "The Constitution of India — An Introduction",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 52 - the_constitution_of_india_an_introduction",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_053",
+      "chapterNumber": 53,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "From Barter to Money",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 53 - from_barter_to_money",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_054",
+      "chapterNumber": 54,
+      "subject": "Social Science",
+      "part": "Part I",
+      "title": "Understanding Markets",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 54 - understanding_markets",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_055",
+      "chapterNumber": 55,
+      "subject": "Social Science",
+      "part": "Part II",
+      "title": "The Story of Indian Farming",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 55 - the_story_of_indian_farming",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_056",
+      "chapterNumber": 56,
+      "subject": "Social Science",
+      "part": "Part II",
+      "title": "India and Her Neighbours",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 56 - india_and_her_neighbours",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_057",
+      "chapterNumber": 57,
+      "subject": "Social Science",
+      "part": "Part II",
+      "title": "Empires and Kingdoms: 6th to 10th Centuries",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 57 - empires_and_kingdoms_6th_to_10th_centuries",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_058",
+      "chapterNumber": 58,
+      "subject": "Social Science",
+      "part": "Part II",
+      "title": "Turning Tides: 11th and 12th Centuries",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 58 - turning_tides_11th_and_12th_centuries",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_059",
+      "chapterNumber": 59,
+      "subject": "Social Science",
+      "part": "Part II",
+      "title": "India, a Home to Many",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 59 - india_a_home_to_many",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_060",
+      "chapterNumber": 60,
+      "subject": "Social Science",
+      "part": "Part II",
+      "title": "The State, the Government, and You",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 60 - the_state_the_government_and_you",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_061",
+      "chapterNumber": 61,
+      "subject": "Social Science",
+      "part": "Part II",
+      "title": "Infrastructure: Engine of India’s Development",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 61 - infrastructure_engine_of_india_s_development",
+      "featureFiles": 40
+    },
+    {
+      "chapterId": "c7_social_science_062",
+      "chapterNumber": 62,
+      "subject": "Social Science",
+      "part": "Part II",
+      "title": "Banks and the Magic of Finance",
+      "path": "backend/GURUKUL_AI_FINAL_MASTER_CONTENT_CLASS_7/Class 7/Social Science/Chapter 62 - banks_and_the_magic_of_finance",
+      "featureFiles": 40
+    }
+  ],
+  "contentPolicy": {
+    "verbatimNCERT": false,
+    "textbookProseCopied": false,
+    "externalResearchUsed": false
+  }
+}

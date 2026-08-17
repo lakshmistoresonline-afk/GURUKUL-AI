@@ -1,0 +1,13 @@
+{
+  "$schema": "../gen/schemas/capability.json",
+  "identifier": "default",
+  "description": "Default capabilities for Gurukul AI",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "shell:allow-open",
+    "core:window:default"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "sourceFile": "gecu108.pdf",
+  "sourceSha256": "204892238bd67b9e2185827ee13c030079c50bc219e1a8167086b5f0b5b1042b",
+  "groundingSignals": [
+    "time",
+    "speed",
+    "distance",
+    "motion",
+    "pendulum",
+    "train",
+    "water",
+    "taken",
+    "object",
+    "uniform",
+    "period",
+    "measurement"
+  ],
+  "auditRules": [
+    "No verbatim textbook prose copied",
+    "Chapter title and source signals used for grounding",
+    "External media separated",
+    "Generated learning layers independently authored"
+  ]
+}

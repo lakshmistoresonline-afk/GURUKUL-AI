@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "id": "c7_science_036_concept_01",
+      "label": "observation and evidence"
+    },
+    {
+      "id": "c7_science_036_concept_02",
+      "label": "scientific explanation"
+    },
+    {
+      "id": "c7_science_036_concept_03",
+      "label": "cause and effect"
+    },
+    {
+      "id": "c7_science_036_concept_04",
+      "label": "classification or comparison"
+    },
+    {
+      "id": "c7_science_036_concept_05",
+      "label": "measurement and data"
+    },
+    {
+      "id": "c7_science_036_concept_06",
+      "label": "everyday applications"
+    },
+    {
+      "id": "c7_science_036_concept_07",
+      "label": "safety and responsible practice"
+    },
+    {
+      "id": "c7_science_036_concept_08",
+      "label": "changes"
+    },
+    {
+      "id": "c7_science_036_concept_09",
+      "label": "adolescence"
+    },
+    {
+      "id": "c7_science_036_concept_10",
+      "label": "growth"
+    },
+    {
+      "id": "c7_science_036_concept_11",
+      "label": "body"
+    },
+    {
+      "id": "c7_science_036_concept_12",
+      "label": "girls"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c7_science_036_concept_01",
+      "to": "c7_science_036_concept_02",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_02",
+      "to": "c7_science_036_concept_03",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_03",
+      "to": "c7_science_036_concept_04",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_04",
+      "to": "c7_science_036_concept_05",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_05",
+      "to": "c7_science_036_concept_06",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_06",
+      "to": "c7_science_036_concept_07",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_07",
+      "to": "c7_science_036_concept_08",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_08",
+      "to": "c7_science_036_concept_09",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_09",
+      "to": "c7_science_036_concept_10",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_10",
+      "to": "c7_science_036_concept_11",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_science_036_concept_11",
+      "to": "c7_science_036_concept_12",
+      "relation": "supports_or_extends"
+    }
+  ]
+}

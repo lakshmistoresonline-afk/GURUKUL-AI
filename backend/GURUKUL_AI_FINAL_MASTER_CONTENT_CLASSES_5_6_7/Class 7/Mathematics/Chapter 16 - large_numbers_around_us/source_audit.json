@@ -1,0 +1,24 @@
+{
+  "sourceFile": "gegp101.pdf",
+  "sourceSha256": "5e2cc8878ff163c7a40bfce14fe322d590d6f6f326423f654a1ece84ef6db5d5",
+  "groundingSignals": [
+    "number",
+    "digit",
+    "lakh",
+    "numbers",
+    "thousand",
+    "times",
+    "hundred",
+    "many",
+    "write",
+    "clicks",
+    "population",
+    "make"
+  ],
+  "auditRules": [
+    "No verbatim textbook prose copied",
+    "Chapter title and source signals used for grounding",
+    "External media separated",
+    "Generated learning layers independently authored"
+  ]
+}

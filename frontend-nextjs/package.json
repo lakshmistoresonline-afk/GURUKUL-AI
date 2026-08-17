@@ -1,0 +1,45 @@
+{
+  "name": "gurukul-ai-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run clear-sw && next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "desktop:dev": "npm --prefix ../desktop run dev",
+    "desktop:build": "npm --prefix ../desktop run build",
+    "clear-sw": "cmd /c \"del /f /q public\\sw.js public\\workbox-*.js 2>nul\"",
+    "clean": "npm run clear-sw && cmd /c \"if exist .next rd /s /q .next & if exist out rd /s /q out\""
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.20",
+    "axios": "^1.7.2",
+    "clsx": "^2.1.1",
+    "firebase": "^10.12.5",
+    "framer-motion": "^11.3.21",
+    "lucide-react": "^0.424.0",
+    "next": "14.2.5",
+    "next-pwa": "^5.6.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "allowScripts": {
+    "protobufjs@7.6.5": true,
+    "unrs-resolver@1.12.2": true
+  }
+}

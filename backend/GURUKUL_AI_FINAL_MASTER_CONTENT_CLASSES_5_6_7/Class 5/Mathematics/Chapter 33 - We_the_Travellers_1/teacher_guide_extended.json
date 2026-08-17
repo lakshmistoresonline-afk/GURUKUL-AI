@@ -1,0 +1,67 @@
+{
+  "misconceptionResponses": [
+    {
+      "misconception": "A learner may oversimplify large numbers or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify large numbers."
+    },
+    {
+      "misconception": "A learner may oversimplify place value or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify place value."
+    },
+    {
+      "misconception": "A learner may oversimplify number comparison or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify number comparison."
+    },
+    {
+      "misconception": "A learner may oversimplify travel-related quantities or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify travel-related quantities."
+    },
+    {
+      "misconception": "A learner may oversimplify estimation or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify estimation."
+    },
+    {
+      "misconception": "A learner may oversimplify reading numbers or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify reading numbers."
+    },
+    {
+      "misconception": "A learner may oversimplify representation and notation or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify representation and notation."
+    },
+    {
+      "misconception": "A learner may oversimplify worked strategy or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify worked strategy."
+    }
+  ],
+  "differentiatedPrompts": {
+    "support": [
+      "What do you notice about large numbers?",
+      "What do you notice about place value?",
+      "What do you notice about number comparison?",
+      "What do you notice about travel-related quantities?",
+      "What do you notice about estimation?"
+    ],
+    "core": [
+      "Explain and apply large numbers.",
+      "Explain and apply place value.",
+      "Explain and apply number comparison.",
+      "Explain and apply travel-related quantities.",
+      "Explain and apply estimation."
+    ],
+    "extension": [
+      "Create a new example or counterexample for large numbers.",
+      "Create a new example or counterexample for place value.",
+      "Create a new example or counterexample for number comparison.",
+      "Create a new example or counterexample for travel-related quantities.",
+      "Create a new example or counterexample for estimation."
+    ]
+  },
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "Mathematics",
+    "chapterId": "eemm101",
+    "chapterTitle": "We the Travellers – 1",
+    "feature": "teacher_guide_extended",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "id": "c7_mathematics_026_concept_01",
+      "label": "mathematical representation"
+    },
+    {
+      "id": "c7_mathematics_026_concept_02",
+      "label": "reasoning and patterns"
+    },
+    {
+      "id": "c7_mathematics_026_concept_03",
+      "label": "estimation and checking"
+    },
+    {
+      "id": "c7_mathematics_026_concept_04",
+      "label": "multiple representations"
+    },
+    {
+      "id": "c7_mathematics_026_concept_05",
+      "label": "problem solving"
+    },
+    {
+      "id": "c7_mathematics_026_concept_06",
+      "label": "communication of mathematical thinking"
+    },
+    {
+      "id": "c7_mathematics_026_concept_07",
+      "label": "numbers"
+    },
+    {
+      "id": "c7_mathematics_026_concept_08",
+      "label": "prime"
+    },
+    {
+      "id": "c7_mathematics_026_concept_09",
+      "label": "common"
+    },
+    {
+      "id": "c7_mathematics_026_concept_10",
+      "label": "number"
+    },
+    {
+      "id": "c7_mathematics_026_concept_11",
+      "label": "factors"
+    },
+    {
+      "id": "c7_mathematics_026_concept_12",
+      "label": "find"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c7_mathematics_026_concept_01",
+      "to": "c7_mathematics_026_concept_02",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_02",
+      "to": "c7_mathematics_026_concept_03",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_03",
+      "to": "c7_mathematics_026_concept_04",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_04",
+      "to": "c7_mathematics_026_concept_05",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_05",
+      "to": "c7_mathematics_026_concept_06",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_06",
+      "to": "c7_mathematics_026_concept_07",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_07",
+      "to": "c7_mathematics_026_concept_08",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_08",
+      "to": "c7_mathematics_026_concept_09",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_09",
+      "to": "c7_mathematics_026_concept_10",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_10",
+      "to": "c7_mathematics_026_concept_11",
+      "relation": "supports_or_extends"
+    },
+    {
+      "from": "c7_mathematics_026_concept_11",
+      "to": "c7_mathematics_026_concept_12",
+      "relation": "supports_or_extends"
+    }
+  ]
+}

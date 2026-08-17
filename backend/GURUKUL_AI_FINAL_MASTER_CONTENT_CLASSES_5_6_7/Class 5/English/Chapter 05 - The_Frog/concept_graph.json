@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_english_05_01",
+      "label": "frog life and habitat"
+    },
+    {
+      "id": "c5_english_05_02",
+      "label": "movement and adaptation"
+    },
+    {
+      "id": "c5_english_05_03",
+      "label": "water and land environments"
+    },
+    {
+      "id": "c5_english_05_04",
+      "label": "observation of animal features"
+    },
+    {
+      "id": "c5_english_05_05",
+      "label": "descriptive language"
+    },
+    {
+      "id": "c5_english_05_06",
+      "label": "care for living beings"
+    },
+    {
+      "id": "c5_english_05_07",
+      "label": "comparison"
+    },
+    {
+      "id": "c5_english_05_08",
+      "label": "sequence and inference"
+    },
+    {
+      "id": "c5_english_05_09",
+      "label": "character/voice or poetic image"
+    },
+    {
+      "id": "c5_english_05_10",
+      "label": "word meaning in context"
+    },
+    {
+      "id": "c5_english_05_11",
+      "label": "grammar or language use"
+    },
+    {
+      "id": "c5_english_05_12",
+      "label": "evidence from the text"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_english_05_01",
+      "to": "c5_english_05_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_02",
+      "to": "c5_english_05_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_03",
+      "to": "c5_english_05_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_04",
+      "to": "c5_english_05_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_05",
+      "to": "c5_english_05_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_06",
+      "to": "c5_english_05_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_07",
+      "to": "c5_english_05_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_08",
+      "to": "c5_english_05_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_09",
+      "to": "c5_english_05_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_10",
+      "to": "c5_english_05_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_05_11",
+      "to": "c5_english_05_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "English",
+    "chapterId": "eesa105",
+    "chapterTitle": "The Frog",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

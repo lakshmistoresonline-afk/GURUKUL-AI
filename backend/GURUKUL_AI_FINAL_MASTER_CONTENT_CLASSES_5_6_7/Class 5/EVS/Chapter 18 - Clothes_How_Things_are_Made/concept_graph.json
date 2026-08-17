@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_evs_18_01",
+      "label": "fibres and yarn"
+    },
+    {
+      "id": "c5_evs_18_02",
+      "label": "weaving and fabric"
+    },
+    {
+      "id": "c5_evs_18_03",
+      "label": "warp and weft"
+    },
+    {
+      "id": "c5_evs_18_04",
+      "label": "handloom traditions"
+    },
+    {
+      "id": "c5_evs_18_05",
+      "label": "baya weaverbird as a natural weaver"
+    },
+    {
+      "id": "c5_evs_18_06",
+      "label": "workers and production"
+    },
+    {
+      "id": "c5_evs_18_07",
+      "label": "care for textiles"
+    },
+    {
+      "id": "c5_evs_18_08",
+      "label": "observation and evidence"
+    },
+    {
+      "id": "c5_evs_18_09",
+      "label": "cause and consequence"
+    },
+    {
+      "id": "c5_evs_18_10",
+      "label": "local context"
+    },
+    {
+      "id": "c5_evs_18_11",
+      "label": "comparison of situations"
+    },
+    {
+      "id": "c5_evs_18_12",
+      "label": "responsible action"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_evs_18_01",
+      "to": "c5_evs_18_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_02",
+      "to": "c5_evs_18_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_03",
+      "to": "c5_evs_18_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_04",
+      "to": "c5_evs_18_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_05",
+      "to": "c5_evs_18_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_06",
+      "to": "c5_evs_18_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_07",
+      "to": "c5_evs_18_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_08",
+      "to": "c5_evs_18_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_09",
+      "to": "c5_evs_18_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_10",
+      "to": "c5_evs_18_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_18_11",
+      "to": "c5_evs_18_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "EVS",
+    "chapterId": "eeev108",
+    "chapterTitle": "Clothes — How Things are Made",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

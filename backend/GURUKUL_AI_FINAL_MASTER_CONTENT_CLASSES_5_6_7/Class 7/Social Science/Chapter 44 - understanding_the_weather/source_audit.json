@@ -1,0 +1,24 @@
+{
+  "sourceFile": "gees102.pdf",
+  "sourceSha256": "43d8115e9b568aa69ae9c319ae37a78bd6e8f271f68b1f48519ba27604f78786",
+  "groundingSignals": [
+    "weather",
+    "temperature",
+    "wind",
+    "humidity",
+    "rain",
+    "pressure",
+    "reprint",
+    "indd",
+    "measure",
+    "people",
+    "your",
+    "water"
+  ],
+  "auditRules": [
+    "No verbatim textbook prose copied",
+    "Chapter title and source signals used for grounding",
+    "External media separated",
+    "Generated learning layers independently authored"
+  ]
+}
