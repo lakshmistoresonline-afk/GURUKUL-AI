@@ -3,32 +3,38 @@
     {
       "provider": "ncert_textbook_portal",
       "url": "https://ncert.nic.in/textbook.php",
-      "type": "portal"
+      "type": "portal",
+      "verification_status": "PENDING"
     },
     {
       "provider": "diksha_ncert",
       "url": "https://diksha.gov.in/ncert/",
-      "type": "diksha_module"
+      "type": "DIKSHA_MODULE",
+      "verification_status": "VERIFIED"
     },
     {
       "provider": "diksha_search",
       "url": "https://diksha.gov.in/search?query=NCERT+Class+6+Social+Science+The+Value+of+Work",
-      "type": "diksha_module"
+      "type": "DIKSHA_MODULE",
+      "verification_status": "VERIFIED"
     },
     {
       "provider": "youtube_search",
       "url": "https://www.youtube.com/results?search_query=Class+6+Social+Science+The+Value+of+Work+explanation",
-      "type": "discovery"
+      "type": "DISCOVERY_LINK",
+      "verification_status": "VERIFIED"
     },
     {
       "provider": "ncert_youtube_search",
       "url": "https://www.youtube.com/@ncertofficial/search?query=The+Value+of+Work",
-      "type": "discovery"
+      "type": "DISCOVERY_LINK",
+      "verification_status": "VERIFIED"
     },
     {
       "provider": "epathshala",
       "url": "https://epathshala.nic.in/",
-      "type": "portal"
+      "type": "portal",
+      "verification_status": "PENDING"
     }
   ]
 }

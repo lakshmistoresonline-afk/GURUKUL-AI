@@ -1,0 +1,32 @@
+{
+  "inventory": {
+    "actual_chapters": 163,
+    "canonical_entries": 217,
+    "class_5": 47,
+    "class_6": 54,
+    "class_7": 62
+  },
+  "classification": {
+    "valid_textbook_chapters": 163,
+    "placeholders": 17,
+    "redundant_c5": 37,
+    "none_subject_entries": 3
+  },
+  "integrity_issues": {
+    "class7_content_loss": true,
+    "missing_quiz_count_c7": 62,
+    "missing_multimedia_c7": true
+  },
+  "multimedia": {
+    "total_resources": 653,
+    "chapters_covered": 101,
+    "type_breakdown": {
+      "discovery_links": "Majority",
+      "verified_videos": "Minimal"
+    }
+  },
+  "archive_audit": {
+    "total_files": 4003,
+    "unique_content_loss": "High (Class 7)"
+  }
+}

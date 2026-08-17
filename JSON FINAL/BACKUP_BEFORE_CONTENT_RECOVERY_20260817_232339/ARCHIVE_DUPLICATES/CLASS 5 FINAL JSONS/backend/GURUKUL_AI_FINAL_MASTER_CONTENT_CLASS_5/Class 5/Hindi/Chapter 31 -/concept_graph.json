@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_hindi_31_01",
+      "label": "close reading"
+    },
+    {
+      "id": "c5_hindi_31_02",
+      "label": "main idea"
+    },
+    {
+      "id": "c5_hindi_31_03",
+      "label": "evidence"
+    },
+    {
+      "id": "c5_hindi_31_04",
+      "label": "application"
+    },
+    {
+      "id": "c5_hindi_31_05",
+      "label": "reflection"
+    },
+    {
+      "id": "c5_hindi_31_06",
+      "label": "vocabulary"
+    },
+    {
+      "id": "c5_hindi_31_07",
+      "label": "reasoning"
+    },
+    {
+      "id": "c5_hindi_31_08",
+      "label": "communication"
+    },
+    {
+      "id": "c5_hindi_31_09",
+      "label": "पाठ-बोध और क्रम"
+    },
+    {
+      "id": "c5_hindi_31_10",
+      "label": "भाव तथा दृष्टिकोण"
+    },
+    {
+      "id": "c5_hindi_31_11",
+      "label": "शब्दार्थ और प्रयोग"
+    },
+    {
+      "id": "c5_hindi_31_12",
+      "label": "भाषा-अभिव्यक्ति"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_hindi_31_01",
+      "to": "c5_hindi_31_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_02",
+      "to": "c5_hindi_31_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_03",
+      "to": "c5_hindi_31_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_04",
+      "to": "c5_hindi_31_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_05",
+      "to": "c5_hindi_31_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_06",
+      "to": "c5_hindi_31_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_07",
+      "to": "c5_hindi_31_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_08",
+      "to": "c5_hindi_31_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_09",
+      "to": "c5_hindi_31_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_10",
+      "to": "c5_hindi_31_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_hindi_31_11",
+      "to": "c5_hindi_31_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "Hindi",
+    "chapterId": "ehve111",
+    "chapterTitle": "हमारे ये कलामंदिर",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

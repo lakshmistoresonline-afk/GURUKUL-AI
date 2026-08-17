@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_evs_15_01",
+      "label": "India’s geographic and cultural diversity"
+    },
+    {
+      "id": "c5_evs_15_02",
+      "label": "languages and traditions"
+    },
+    {
+      "id": "c5_evs_15_03",
+      "label": "food and clothing diversity"
+    },
+    {
+      "id": "c5_evs_15_04",
+      "label": "shared citizenship"
+    },
+    {
+      "id": "c5_evs_15_05",
+      "label": "respect for difference"
+    },
+    {
+      "id": "c5_evs_15_06",
+      "label": "symbols and heritage"
+    },
+    {
+      "id": "c5_evs_15_07",
+      "label": "unity with diversity"
+    },
+    {
+      "id": "c5_evs_15_08",
+      "label": "observation and evidence"
+    },
+    {
+      "id": "c5_evs_15_09",
+      "label": "cause and consequence"
+    },
+    {
+      "id": "c5_evs_15_10",
+      "label": "local context"
+    },
+    {
+      "id": "c5_evs_15_11",
+      "label": "comparison of situations"
+    },
+    {
+      "id": "c5_evs_15_12",
+      "label": "responsible action"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_evs_15_01",
+      "to": "c5_evs_15_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_02",
+      "to": "c5_evs_15_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_03",
+      "to": "c5_evs_15_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_04",
+      "to": "c5_evs_15_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_05",
+      "to": "c5_evs_15_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_06",
+      "to": "c5_evs_15_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_07",
+      "to": "c5_evs_15_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_08",
+      "to": "c5_evs_15_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_09",
+      "to": "c5_evs_15_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_10",
+      "to": "c5_evs_15_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_15_11",
+      "to": "c5_evs_15_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "EVS",
+    "chapterId": "eeev105",
+    "chapterTitle": "Our Vibrant Country",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

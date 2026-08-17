@@ -1,0 +1,24 @@
+{
+  "sourceFile": "gegp202.pdf",
+  "sourceSha256": "f1fcfba8edb1fe7ae4007430b15777890ee77bc920f6fa3b9302c809a7d52011",
+  "groundingSignals": [
+    "integers",
+    "negative",
+    "positive",
+    "product",
+    "number",
+    "tokens",
+    "numbers",
+    "coin",
+    "indd",
+    "multiplier",
+    "first",
+    "multiplication"
+  ],
+  "auditRules": [
+    "No verbatim textbook prose copied",
+    "Chapter title and source signals used for grounding",
+    "External media separated",
+    "Generated learning layers independently authored"
+  ]
+}

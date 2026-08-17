@@ -1,0 +1,39 @@
+{
+  "resources": [
+    {
+      "provider": "ncert_textbook_portal",
+      "url": "https://ncert.nic.in/textbook.php",
+      "type": "portal"
+    },
+    {
+      "provider": "diksha_ncert",
+      "url": "https://diksha.gov.in/ncert/",
+      "type": "diksha_module"
+    },
+    {
+      "provider": "diksha_search",
+      "url": "https://diksha.gov.in/search?query=NCERT+Class+6+Mathematics+The+Other+Side+of+Zero",
+      "type": "diksha_module"
+    },
+    {
+      "provider": "youtube_search",
+      "url": "https://www.youtube.com/results?search_query=Class+6+Mathematics+The+Other+Side+of+Zero+explanation",
+      "type": "discovery"
+    },
+    {
+      "provider": "ncert_youtube_search",
+      "url": "https://www.youtube.com/@ncertofficial/search?query=The+Other+Side+of+Zero",
+      "type": "discovery"
+    },
+    {
+      "provider": "epathshala",
+      "url": "https://epathshala.nic.in/",
+      "type": "portal"
+    },
+    {
+      "provider": "geogebra_search",
+      "url": "https://www.geogebra.org/search/The+Other+Side+of+Zero",
+      "type": "portal"
+    }
+  ]
+}

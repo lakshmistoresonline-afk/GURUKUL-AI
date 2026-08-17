@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_evs_13_01",
+      "label": "what food contains"
+    },
+    {
+      "id": "c5_evs_13_02",
+      "label": "balanced meals"
+    },
+    {
+      "id": "c5_evs_13_03",
+      "label": "food preservation"
+    },
+    {
+      "id": "c5_evs_13_04",
+      "label": "microorganisms and spoilage"
+    },
+    {
+      "id": "c5_evs_13_05",
+      "label": "safe food practices"
+    },
+    {
+      "id": "c5_evs_13_06",
+      "label": "local food habits"
+    },
+    {
+      "id": "c5_evs_13_07",
+      "label": "observation and investigation"
+    },
+    {
+      "id": "c5_evs_13_08",
+      "label": "observation and evidence"
+    },
+    {
+      "id": "c5_evs_13_09",
+      "label": "cause and consequence"
+    },
+    {
+      "id": "c5_evs_13_10",
+      "label": "local context"
+    },
+    {
+      "id": "c5_evs_13_11",
+      "label": "comparison of situations"
+    },
+    {
+      "id": "c5_evs_13_12",
+      "label": "responsible action"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_evs_13_01",
+      "to": "c5_evs_13_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_02",
+      "to": "c5_evs_13_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_03",
+      "to": "c5_evs_13_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_04",
+      "to": "c5_evs_13_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_05",
+      "to": "c5_evs_13_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_06",
+      "to": "c5_evs_13_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_07",
+      "to": "c5_evs_13_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_08",
+      "to": "c5_evs_13_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_09",
+      "to": "c5_evs_13_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_10",
+      "to": "c5_evs_13_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_13_11",
+      "to": "c5_evs_13_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "EVS",
+    "chapterId": "eeev103",
+    "chapterTitle": "The Mystery of Food",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sourceFile": "gecu111.pdf",
+  "sourceSha256": "c5f4520442e45cc96d9c1d849b34f40387cb888f95330ac13ad0ccbdcc696219",
+  "groundingSignals": [
+    "light",
+    "mirror",
+    "object",
+    "image",
+    "screen",
+    "your",
+    "objects",
+    "shadows",
+    "shadow",
+    "plane",
+    "activity",
+    "torch"
+  ],
+  "auditRules": [
+    "No verbatim textbook prose copied",
+    "Chapter title and source signals used for grounding",
+    "External media separated",
+    "Generated learning layers independently authored"
+  ]
+}

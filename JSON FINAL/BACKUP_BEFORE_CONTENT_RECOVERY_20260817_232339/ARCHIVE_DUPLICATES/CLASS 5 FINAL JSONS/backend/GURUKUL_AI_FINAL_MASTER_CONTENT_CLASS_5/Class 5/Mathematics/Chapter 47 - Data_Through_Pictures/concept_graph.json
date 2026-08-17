@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_mathematics_47_01",
+      "label": "data collection"
+    },
+    {
+      "id": "c5_mathematics_47_02",
+      "label": "pictographs"
+    },
+    {
+      "id": "c5_mathematics_47_03",
+      "label": "keys and scales"
+    },
+    {
+      "id": "c5_mathematics_47_04",
+      "label": "comparison"
+    },
+    {
+      "id": "c5_mathematics_47_05",
+      "label": "interpretation"
+    },
+    {
+      "id": "c5_mathematics_47_06",
+      "label": "questions from data"
+    },
+    {
+      "id": "c5_mathematics_47_07",
+      "label": "representation and notation"
+    },
+    {
+      "id": "c5_mathematics_47_08",
+      "label": "worked strategy"
+    },
+    {
+      "id": "c5_mathematics_47_09",
+      "label": "estimation and checking"
+    },
+    {
+      "id": "c5_mathematics_47_10",
+      "label": "error analysis"
+    },
+    {
+      "id": "c5_mathematics_47_11",
+      "label": "multiple methods"
+    },
+    {
+      "id": "c5_mathematics_47_12",
+      "label": "real-life transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_mathematics_47_01",
+      "to": "c5_mathematics_47_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_02",
+      "to": "c5_mathematics_47_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_03",
+      "to": "c5_mathematics_47_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_04",
+      "to": "c5_mathematics_47_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_05",
+      "to": "c5_mathematics_47_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_06",
+      "to": "c5_mathematics_47_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_07",
+      "to": "c5_mathematics_47_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_08",
+      "to": "c5_mathematics_47_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_09",
+      "to": "c5_mathematics_47_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_10",
+      "to": "c5_mathematics_47_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_47_11",
+      "to": "c5_mathematics_47_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "Mathematics",
+    "chapterId": "eemm115",
+    "chapterTitle": "Data Through Pictures",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

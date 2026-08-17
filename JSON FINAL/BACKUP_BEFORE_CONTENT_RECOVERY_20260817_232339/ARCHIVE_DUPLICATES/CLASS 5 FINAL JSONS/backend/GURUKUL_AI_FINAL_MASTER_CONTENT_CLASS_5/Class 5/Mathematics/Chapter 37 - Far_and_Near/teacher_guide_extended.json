@@ -1,0 +1,67 @@
+{
+  "misconceptionResponses": [
+    {
+      "misconception": "A learner may oversimplify length or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify length."
+    },
+    {
+      "misconception": "A learner may oversimplify distance or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify distance."
+    },
+    {
+      "misconception": "A learner may oversimplify measurement units or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify measurement units."
+    },
+    {
+      "misconception": "A learner may oversimplify comparison or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify comparison."
+    },
+    {
+      "misconception": "A learner may oversimplify estimation or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify estimation."
+    },
+    {
+      "misconception": "A learner may oversimplify appropriate units or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify appropriate units."
+    },
+    {
+      "misconception": "A learner may oversimplify representation and notation or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify representation and notation."
+    },
+    {
+      "misconception": "A learner may oversimplify worked strategy or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify worked strategy."
+    }
+  ],
+  "differentiatedPrompts": {
+    "support": [
+      "What do you notice about length?",
+      "What do you notice about distance?",
+      "What do you notice about measurement units?",
+      "What do you notice about comparison?",
+      "What do you notice about estimation?"
+    ],
+    "core": [
+      "Explain and apply length.",
+      "Explain and apply distance.",
+      "Explain and apply measurement units.",
+      "Explain and apply comparison.",
+      "Explain and apply estimation."
+    ],
+    "extension": [
+      "Create a new example or counterexample for length.",
+      "Create a new example or counterexample for distance.",
+      "Create a new example or counterexample for measurement units.",
+      "Create a new example or counterexample for comparison.",
+      "Create a new example or counterexample for estimation."
+    ]
+  },
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "Mathematics",
+    "chapterId": "eemm105",
+    "chapterTitle": "Far and Near",
+    "feature": "teacher_guide_extended",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}
