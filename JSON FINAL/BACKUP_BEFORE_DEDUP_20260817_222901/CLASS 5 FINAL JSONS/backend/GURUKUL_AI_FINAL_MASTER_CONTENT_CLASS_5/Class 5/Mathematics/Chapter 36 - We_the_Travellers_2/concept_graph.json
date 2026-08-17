@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_mathematics_36_01",
+      "label": "distance and travel"
+    },
+    {
+      "id": "c5_mathematics_36_02",
+      "label": "maps and routes"
+    },
+    {
+      "id": "c5_mathematics_36_03",
+      "label": "measurement"
+    },
+    {
+      "id": "c5_mathematics_36_04",
+      "label": "estimation"
+    },
+    {
+      "id": "c5_mathematics_36_05",
+      "label": "scale"
+    },
+    {
+      "id": "c5_mathematics_36_06",
+      "label": "multi-step reasoning"
+    },
+    {
+      "id": "c5_mathematics_36_07",
+      "label": "representation and notation"
+    },
+    {
+      "id": "c5_mathematics_36_08",
+      "label": "worked strategy"
+    },
+    {
+      "id": "c5_mathematics_36_09",
+      "label": "estimation and checking"
+    },
+    {
+      "id": "c5_mathematics_36_10",
+      "label": "error analysis"
+    },
+    {
+      "id": "c5_mathematics_36_11",
+      "label": "multiple methods"
+    },
+    {
+      "id": "c5_mathematics_36_12",
+      "label": "real-life transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_mathematics_36_01",
+      "to": "c5_mathematics_36_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_02",
+      "to": "c5_mathematics_36_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_03",
+      "to": "c5_mathematics_36_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_04",
+      "to": "c5_mathematics_36_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_05",
+      "to": "c5_mathematics_36_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_06",
+      "to": "c5_mathematics_36_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_07",
+      "to": "c5_mathematics_36_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_08",
+      "to": "c5_mathematics_36_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_09",
+      "to": "c5_mathematics_36_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_10",
+      "to": "c5_mathematics_36_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_mathematics_36_11",
+      "to": "c5_mathematics_36_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "Mathematics",
+    "chapterId": "eemm104",
+    "chapterTitle": "We the Travellers – 2",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

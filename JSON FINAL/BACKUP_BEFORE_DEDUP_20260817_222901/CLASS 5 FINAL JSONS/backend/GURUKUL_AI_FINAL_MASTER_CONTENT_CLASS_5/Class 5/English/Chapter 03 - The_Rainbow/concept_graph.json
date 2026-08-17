@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_english_03_01",
+      "label": "colours in nature"
+    },
+    {
+      "id": "c5_english_03_02",
+      "label": "observation after rain"
+    },
+    {
+      "id": "c5_english_03_03",
+      "label": "descriptive imagery"
+    },
+    {
+      "id": "c5_english_03_04",
+      "label": "patterns and sequence"
+    },
+    {
+      "id": "c5_english_03_05",
+      "label": "wonder and curiosity"
+    },
+    {
+      "id": "c5_english_03_06",
+      "label": "poetic expression"
+    },
+    {
+      "id": "c5_english_03_07",
+      "label": "connecting science with language"
+    },
+    {
+      "id": "c5_english_03_08",
+      "label": "sequence and inference"
+    },
+    {
+      "id": "c5_english_03_09",
+      "label": "character/voice or poetic image"
+    },
+    {
+      "id": "c5_english_03_10",
+      "label": "word meaning in context"
+    },
+    {
+      "id": "c5_english_03_11",
+      "label": "grammar or language use"
+    },
+    {
+      "id": "c5_english_03_12",
+      "label": "evidence from the text"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_english_03_01",
+      "to": "c5_english_03_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_02",
+      "to": "c5_english_03_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_03",
+      "to": "c5_english_03_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_04",
+      "to": "c5_english_03_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_05",
+      "to": "c5_english_03_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_06",
+      "to": "c5_english_03_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_07",
+      "to": "c5_english_03_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_08",
+      "to": "c5_english_03_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_09",
+      "to": "c5_english_03_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_10",
+      "to": "c5_english_03_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_03_11",
+      "to": "c5_english_03_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "English",
+    "chapterId": "eesa103",
+    "chapterTitle": "The Rainbow",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_evs_14_01",
+      "label": "safe and inclusive school spaces"
+    },
+    {
+      "id": "c5_evs_14_02",
+      "label": "plants and animals around school"
+    },
+    {
+      "id": "c5_evs_14_03",
+      "label": "roles in a school community"
+    },
+    {
+      "id": "c5_evs_14_04",
+      "label": "care and responsibility"
+    },
+    {
+      "id": "c5_evs_14_05",
+      "label": "mapping familiar spaces"
+    },
+    {
+      "id": "c5_evs_14_06",
+      "label": "cleanliness and safety"
+    },
+    {
+      "id": "c5_evs_14_07",
+      "label": "belonging"
+    },
+    {
+      "id": "c5_evs_14_08",
+      "label": "observation and evidence"
+    },
+    {
+      "id": "c5_evs_14_09",
+      "label": "cause and consequence"
+    },
+    {
+      "id": "c5_evs_14_10",
+      "label": "local context"
+    },
+    {
+      "id": "c5_evs_14_11",
+      "label": "comparison of situations"
+    },
+    {
+      "id": "c5_evs_14_12",
+      "label": "responsible action"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_evs_14_01",
+      "to": "c5_evs_14_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_02",
+      "to": "c5_evs_14_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_03",
+      "to": "c5_evs_14_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_04",
+      "to": "c5_evs_14_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_05",
+      "to": "c5_evs_14_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_06",
+      "to": "c5_evs_14_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_07",
+      "to": "c5_evs_14_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_08",
+      "to": "c5_evs_14_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_09",
+      "to": "c5_evs_14_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_10",
+      "to": "c5_evs_14_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_14_11",
+      "to": "c5_evs_14_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "EVS",
+    "chapterId": "eeev104",
+    "chapterTitle": "Our School — A Happy Place",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

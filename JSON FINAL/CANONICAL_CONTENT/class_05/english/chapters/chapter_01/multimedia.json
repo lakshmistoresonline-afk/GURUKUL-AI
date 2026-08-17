@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "provider": "ncert_textbook_portal",
+      "url": "https://ncert.nic.in/textbook.php",
+      "type": "portal"
+    },
+    {
+      "provider": "diksha_ncert",
+      "url": "https://diksha.gov.in/ncert/",
+      "type": "diksha_module"
+    },
+    {
+      "provider": "diksha_search",
+      "url": "https://diksha.gov.in/search?query=NCERT+Class+5+English+Papa%E2%80%99s+Spectacles",
+      "type": "diksha_module"
+    },
+    {
+      "provider": "youtube_search",
+      "url": "https://www.youtube.com/results?search_query=Class+5+English+Papa%E2%80%99s+Spectacles+explanation",
+      "type": "discovery"
+    },
+    {
+      "provider": "ncert_youtube_search",
+      "url": "https://www.youtube.com/@ncertofficial/search?query=Papa%E2%80%99s+Spectacles",
+      "type": "discovery"
+    },
+    {
+      "provider": "epathshala",
+      "url": "https://epathshala.nic.in/",
+      "type": "portal"
+    }
+  ]
+}

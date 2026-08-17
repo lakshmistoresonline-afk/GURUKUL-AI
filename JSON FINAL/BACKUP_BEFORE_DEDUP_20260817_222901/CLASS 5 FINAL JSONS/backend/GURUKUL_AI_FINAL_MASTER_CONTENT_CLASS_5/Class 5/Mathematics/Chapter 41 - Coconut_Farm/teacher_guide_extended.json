@@ -1,0 +1,67 @@
+{
+  "misconceptionResponses": [
+    {
+      "misconception": "A learner may oversimplify equal groups or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify equal groups."
+    },
+    {
+      "misconception": "A learner may oversimplify multiplication or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify multiplication."
+    },
+    {
+      "misconception": "A learner may oversimplify division or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify division."
+    },
+    {
+      "misconception": "A learner may oversimplify arrays or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify arrays."
+    },
+    {
+      "misconception": "A learner may oversimplify repeated addition or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify repeated addition."
+    },
+    {
+      "misconception": "A learner may oversimplify word problems or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify word problems."
+    },
+    {
+      "misconception": "A learner may oversimplify representation and notation or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify representation and notation."
+    },
+    {
+      "misconception": "A learner may oversimplify worked strategy or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify worked strategy."
+    }
+  ],
+  "differentiatedPrompts": {
+    "support": [
+      "What do you notice about equal groups?",
+      "What do you notice about multiplication?",
+      "What do you notice about division?",
+      "What do you notice about arrays?",
+      "What do you notice about repeated addition?"
+    ],
+    "core": [
+      "Explain and apply equal groups.",
+      "Explain and apply multiplication.",
+      "Explain and apply division.",
+      "Explain and apply arrays.",
+      "Explain and apply repeated addition."
+    ],
+    "extension": [
+      "Create a new example or counterexample for equal groups.",
+      "Create a new example or counterexample for multiplication.",
+      "Create a new example or counterexample for division.",
+      "Create a new example or counterexample for arrays.",
+      "Create a new example or counterexample for repeated addition."
+    ]
+  },
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "Mathematics",
+    "chapterId": "eemm109",
+    "chapterTitle": "Coconut Farm",
+    "feature": "teacher_guide_extended",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "misconceptionResponses": [
+    {
+      "misconception": "A learner may oversimplify turns and rotation or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify turns and rotation."
+    },
+    {
+      "misconception": "A learner may oversimplify quarter turn or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify quarter turn."
+    },
+    {
+      "misconception": "A learner may oversimplify half turn or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify half turn."
+    },
+    {
+      "misconception": "A learner may oversimplify full turn or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify full turn."
+    },
+    {
+      "misconception": "A learner may oversimplify direction or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify direction."
+    },
+    {
+      "misconception": "A learner may oversimplify angle comparison or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify angle comparison."
+    },
+    {
+      "misconception": "A learner may oversimplify representation and notation or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify representation and notation."
+    },
+    {
+      "misconception": "A learner may oversimplify worked strategy or treat it as an isolated fact.",
+      "response": "Use a chapter-grounded example, a counterexample and a learner explanation to clarify worked strategy."
+    }
+  ],
+  "differentiatedPrompts": {
+    "support": [
+      "What do you notice about turns and rotation?",
+      "What do you notice about quarter turn?",
+      "What do you notice about half turn?",
+      "What do you notice about full turn?",
+      "What do you notice about direction?"
+    ],
+    "core": [
+      "Explain and apply turns and rotation.",
+      "Explain and apply quarter turn.",
+      "Explain and apply half turn.",
+      "Explain and apply full turn.",
+      "Explain and apply direction."
+    ],
+    "extension": [
+      "Create a new example or counterexample for turns and rotation.",
+      "Create a new example or counterexample for quarter turn.",
+      "Create a new example or counterexample for half turn.",
+      "Create a new example or counterexample for full turn.",
+      "Create a new example or counterexample for direction."
+    ]
+  },
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "Mathematics",
+    "chapterId": "eemm103",
+    "chapterTitle": "Angles as Turns",
+    "feature": "teacher_guide_extended",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

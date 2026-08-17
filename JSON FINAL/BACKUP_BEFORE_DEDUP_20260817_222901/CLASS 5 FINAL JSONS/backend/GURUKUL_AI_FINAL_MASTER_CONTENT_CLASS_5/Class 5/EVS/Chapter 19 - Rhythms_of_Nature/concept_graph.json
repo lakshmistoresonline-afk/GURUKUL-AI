@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_evs_19_01",
+      "label": "seasons and cycles"
+    },
+    {
+      "id": "c5_evs_19_02",
+      "label": "daily and seasonal patterns"
+    },
+    {
+      "id": "c5_evs_19_03",
+      "label": "plants and animals responding to change"
+    },
+    {
+      "id": "c5_evs_19_04",
+      "label": "weather observations"
+    },
+    {
+      "id": "c5_evs_19_05",
+      "label": "rhythm and repetition"
+    },
+    {
+      "id": "c5_evs_19_06",
+      "label": "adaptation"
+    },
+    {
+      "id": "c5_evs_19_07",
+      "label": "recording patterns"
+    },
+    {
+      "id": "c5_evs_19_08",
+      "label": "observation and evidence"
+    },
+    {
+      "id": "c5_evs_19_09",
+      "label": "cause and consequence"
+    },
+    {
+      "id": "c5_evs_19_10",
+      "label": "local context"
+    },
+    {
+      "id": "c5_evs_19_11",
+      "label": "comparison of situations"
+    },
+    {
+      "id": "c5_evs_19_12",
+      "label": "responsible action"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_evs_19_01",
+      "to": "c5_evs_19_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_02",
+      "to": "c5_evs_19_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_03",
+      "to": "c5_evs_19_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_04",
+      "to": "c5_evs_19_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_05",
+      "to": "c5_evs_19_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_06",
+      "to": "c5_evs_19_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_07",
+      "to": "c5_evs_19_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_08",
+      "to": "c5_evs_19_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_09",
+      "to": "c5_evs_19_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_10",
+      "to": "c5_evs_19_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_19_11",
+      "to": "c5_evs_19_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "EVS",
+    "chapterId": "eeev109",
+    "chapterTitle": "Rhythms of Nature",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

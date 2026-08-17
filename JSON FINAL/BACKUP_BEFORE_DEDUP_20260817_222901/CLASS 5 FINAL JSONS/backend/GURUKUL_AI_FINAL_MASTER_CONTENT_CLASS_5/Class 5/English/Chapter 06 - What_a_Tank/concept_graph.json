@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_english_06_01",
+      "label": "water storage"
+    },
+    {
+      "id": "c5_english_06_02",
+      "label": "traditional tanks and local knowledge"
+    },
+    {
+      "id": "c5_english_06_03",
+      "label": "rainwater harvesting"
+    },
+    {
+      "id": "c5_english_06_04",
+      "label": "community responsibility"
+    },
+    {
+      "id": "c5_english_06_05",
+      "label": "water conservation"
+    },
+    {
+      "id": "c5_english_06_06",
+      "label": "design for a purpose"
+    },
+    {
+      "id": "c5_english_06_07",
+      "label": "sustainable living"
+    },
+    {
+      "id": "c5_english_06_08",
+      "label": "sequence and inference"
+    },
+    {
+      "id": "c5_english_06_09",
+      "label": "character/voice or poetic image"
+    },
+    {
+      "id": "c5_english_06_10",
+      "label": "word meaning in context"
+    },
+    {
+      "id": "c5_english_06_11",
+      "label": "grammar or language use"
+    },
+    {
+      "id": "c5_english_06_12",
+      "label": "evidence from the text"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_english_06_01",
+      "to": "c5_english_06_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_02",
+      "to": "c5_english_06_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_03",
+      "to": "c5_english_06_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_04",
+      "to": "c5_english_06_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_05",
+      "to": "c5_english_06_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_06",
+      "to": "c5_english_06_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_07",
+      "to": "c5_english_06_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_08",
+      "to": "c5_english_06_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_09",
+      "to": "c5_english_06_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_10",
+      "to": "c5_english_06_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_06_11",
+      "to": "c5_english_06_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "English",
+    "chapterId": "eesa106",
+    "chapterTitle": "What a Tank!",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

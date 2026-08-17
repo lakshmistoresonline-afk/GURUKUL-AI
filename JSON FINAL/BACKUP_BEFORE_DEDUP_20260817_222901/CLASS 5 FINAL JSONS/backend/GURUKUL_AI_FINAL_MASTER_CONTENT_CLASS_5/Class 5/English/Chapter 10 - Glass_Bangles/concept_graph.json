@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_english_10_01",
+      "label": "glass bangle craft"
+    },
+    {
+      "id": "c5_english_10_02",
+      "label": "Firozabad and craft communities"
+    },
+    {
+      "id": "c5_english_10_03",
+      "label": "heat and shaping"
+    },
+    {
+      "id": "c5_english_10_04",
+      "label": "workers and skill"
+    },
+    {
+      "id": "c5_english_10_05",
+      "label": "traditional craft and design"
+    },
+    {
+      "id": "c5_english_10_06",
+      "label": "family knowledge"
+    },
+    {
+      "id": "c5_english_10_07",
+      "label": "innovation with respect for heritage"
+    },
+    {
+      "id": "c5_english_10_08",
+      "label": "sequence and inference"
+    },
+    {
+      "id": "c5_english_10_09",
+      "label": "character/voice or poetic image"
+    },
+    {
+      "id": "c5_english_10_10",
+      "label": "word meaning in context"
+    },
+    {
+      "id": "c5_english_10_11",
+      "label": "grammar or language use"
+    },
+    {
+      "id": "c5_english_10_12",
+      "label": "evidence from the text"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_english_10_01",
+      "to": "c5_english_10_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_02",
+      "to": "c5_english_10_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_03",
+      "to": "c5_english_10_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_04",
+      "to": "c5_english_10_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_05",
+      "to": "c5_english_10_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_06",
+      "to": "c5_english_10_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_07",
+      "to": "c5_english_10_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_08",
+      "to": "c5_english_10_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_09",
+      "to": "c5_english_10_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_10",
+      "to": "c5_english_10_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_english_10_11",
+      "to": "c5_english_10_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "English",
+    "chapterId": "eesa110",
+    "chapterTitle": "Glass Bangles",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}

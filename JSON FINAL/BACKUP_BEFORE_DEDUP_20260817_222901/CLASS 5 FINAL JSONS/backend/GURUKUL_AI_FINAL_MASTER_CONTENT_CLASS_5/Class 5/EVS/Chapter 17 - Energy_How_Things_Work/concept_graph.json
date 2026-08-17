@@ -1,0 +1,117 @@
+{
+  "nodes": [
+    {
+      "id": "c5_evs_17_01",
+      "label": "forms and sources of energy"
+    },
+    {
+      "id": "c5_evs_17_02",
+      "label": "everyday devices"
+    },
+    {
+      "id": "c5_evs_17_03",
+      "label": "energy transformations"
+    },
+    {
+      "id": "c5_evs_17_04",
+      "label": "fuel and electricity use"
+    },
+    {
+      "id": "c5_evs_17_05",
+      "label": "safety"
+    },
+    {
+      "id": "c5_evs_17_06",
+      "label": "efficiency"
+    },
+    {
+      "id": "c5_evs_17_07",
+      "label": "conservation"
+    },
+    {
+      "id": "c5_evs_17_08",
+      "label": "observation and evidence"
+    },
+    {
+      "id": "c5_evs_17_09",
+      "label": "cause and consequence"
+    },
+    {
+      "id": "c5_evs_17_10",
+      "label": "local context"
+    },
+    {
+      "id": "c5_evs_17_11",
+      "label": "comparison of situations"
+    },
+    {
+      "id": "c5_evs_17_12",
+      "label": "responsible action"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c5_evs_17_01",
+      "to": "c5_evs_17_02",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_02",
+      "to": "c5_evs_17_03",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_03",
+      "to": "c5_evs_17_04",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_04",
+      "to": "c5_evs_17_05",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_05",
+      "to": "c5_evs_17_06",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_06",
+      "to": "c5_evs_17_07",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_07",
+      "to": "c5_evs_17_08",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_08",
+      "to": "c5_evs_17_09",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_09",
+      "to": "c5_evs_17_10",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_10",
+      "to": "c5_evs_17_11",
+      "relation": "builds-on"
+    },
+    {
+      "from": "c5_evs_17_11",
+      "to": "c5_evs_17_12",
+      "relation": "builds-on"
+    }
+  ],
+  "_gurukulChapterContext": {
+    "class": 5,
+    "subject": "EVS",
+    "chapterId": "eeev107",
+    "chapterTitle": "Energy — How Things Work",
+    "feature": "concept_graph",
+    "contentPolicy": "Gurukul-original enrichment grounded in the supplied NCERT chapter; no verbatim textbook prose."
+  }
+}
