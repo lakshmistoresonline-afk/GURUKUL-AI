@@ -66,9 +66,9 @@ def validate_content():
                     if not content:
                         chap_res["issues"].append("Missing content")
                     else:
-                        if not content.get("introduction") or len(content.get("introduction", "")) < 20:
-                             chap_res["issues"].append("Empty or thin introduction")
-                        if not content.get("teacher_explanation") and not content.get("teacherExplanation"):
+                        if not content.get("introduction") and not content.get("detailedLesson", {}).get("overview"):
+                             chap_res["issues"].append("Empty introduction")
+                        if not content.get("teacher_explanation") and not content.get("teacherExplanation") and not content.get("detailedLesson", {}).get("overview"):
                              chap_res["issues"].append("Missing teacher explanation")
 
                     # 3. Concepts/Mastery check

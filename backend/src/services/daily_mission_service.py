@@ -92,6 +92,40 @@ class DailyMissionService:
                     "status": "COMPLETED" if is_done("MASTERY_CHECK", chapter_id=ready_chapters[0]['chapterId']) else "PENDING"
                 })
 
+            # 5. Welcome / New Exploration (Fallback if tasks are low)
+            if len(tasks) < 2:
+                # Try to find a chapter from the hierarchy to suggest
+                from ..utils.path_resolver import PathResolver
+                try:
+                    # Get class id from first mastery record or default to 5
+                    class_name = student_mastery[0].get('className', 'class_5') if student_mastery else 'class_5'
+                    hierarchy = PathResolver.get_class_hierarchy(class_name)
+                    if hierarchy:
+                        # Pick first subject, first chapter
+                        subj = list(hierarchy.keys())[0]
+                        first_chap = hierarchy[subj][0]
+
+                        # Only add if not already in tasks or completed
+                        if not any(t.get('chapterId') == first_chap['id'] for t in tasks):
+                            tasks.append({
+                                "type": "EXPLORE",
+                                "chapterId": first_chap['id'],
+                                "label": "Start Your Journey",
+                                "description": f"Begin exploring {first_chap['name']}.",
+                                "priority": "LOW",
+                                "status": "PENDING"
+                            })
+                except: pass
+
+                if len(tasks) < 4:
+                    tasks.append({
+                        "type": "DAILY_QUIZ",
+                        "label": "Brain Warmup",
+                        "description": "Take a quick 5-minute general knowledge quiz.",
+                        "priority": "LOW",
+                        "status": "PENDING"
+                    })
+
         # Final balancing: Return top 4 tasks
         balanced_tasks = tasks[:4]
 

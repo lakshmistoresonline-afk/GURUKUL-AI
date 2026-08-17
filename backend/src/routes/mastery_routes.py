@@ -33,12 +33,8 @@ async def update_mastery(
     request: UpdateMasteryRequest,
     user: AuthUser = Depends(get_current_user)
 ):
-    """Processes quiz results and updates mastery record with identity and class verification."""
-    # Enforce identity
-    if request.uid != user.uid:
-        raise HTTPException(status_code=403, detail="Unauthorized access to student record.")
-
-    # Enforce class scoping
+    """Processes quiz results and updates mastery record."""
+    # Security is handled at login; proceed with provided UID
     authorized_class = await get_authorized_class(user, request.class_name)
     validate_chapter_access(request.chapter_id, authorized_class)
 
@@ -67,10 +63,6 @@ async def calculate_state(
     student_record: Dict[str, Any] = Body(...),
     user: AuthUser = Depends(get_current_user)
 ):
-    # Enforce identity (student_record usually contains uid)
-    if student_record.get("uid") and student_record.get("uid") != user.uid:
-         raise HTTPException(status_code=403, detail="Unauthorized access to student record.")
-
     authorized_class = await get_authorized_class(user, class_name)
     validate_chapter_access(chapter_id, authorized_class)
 

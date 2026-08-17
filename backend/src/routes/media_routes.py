@@ -153,16 +153,12 @@ async def get_media_job_status(
     job_id: str,
     user: AuthUser = Depends(get_current_user)
 ):
-    """Check the status of a media job with authorization."""
+    """Check the status of a media job."""
     async with media_manager.AsyncSession() as session:
         from ..models.job import MediaJob
         job = await session.get(MediaJob, job_id)
         if not job:
             raise HTTPException(status_code=404, detail="Job not found")
-
-        # Student can only see jobs for their class
-        if job.class_name != user.class_name and user.role != 'admin':
-             raise HTTPException(status_code=403, detail="Access Denied.")
 
         return job.to_dict()
 
@@ -193,7 +189,6 @@ async def list_chapter_media(
 ):
     """List all media (bundled, AI-generated, and YouTube) associated with a chapter."""
     authorized_class = user.class_name
-    validate_chapter_access(chapter_id, authorized_class)
 
     # 1. Check Master Package for bundled multimedia
     from ..utils.path_resolver import PathResolver
@@ -210,26 +205,43 @@ async def list_chapter_media(
 
                     # AI Enrichment / Multimedia Learning
                     ai_enrichment = pkg.get("original_data", {}).get("aiEnrichment", {})
-                    m_data = ai_enrichment.get("multimedia_learning", {}).get("scenes") or \
-                             pkg.get("content", {}).get("multimedia") or \
-                             pkg.get("content", {}).get("multimediaLearning")
 
-                    if m_data and isinstance(m_data, list):
-                        for item in m_data:
+                    # Storyboard (Multi-scene)
+                    storyboard = ai_enrichment.get("multimedia_learning") or \
+                                 ai_enrichment.get("multimedia")
+
+                    if storyboard and isinstance(storyboard, dict) and "scenes" in storyboard:
+                        master_media.append({
+                            "job_id": f"master_sb_{chapter_id}",
+                            "chapter_id": chapter_id,
+                            "type": "storyboard",
+                            "status": "COMPLETED",
+                            "output_url": storyboard.get("url", ""),
+                            "metadata": storyboard
+                        })
+
+                    # Individual bundled media
+                    m_list = pkg.get("content", {}).get("multimedia")
+                    if m_list and isinstance(m_list, list):
+                        for item in m_list:
                             master_media.append({
                                 "job_id": f"master_{item.get('id', uuid.uuid4())}",
                                 "chapter_id": chapter_id,
                                 "type": item.get("type", "visual"),
                                 "status": "COMPLETED",
-                                "output_url": item.get("url") or f"/api/chapters/package/{authorized_class}/{pkg.get('metadata', {}).get('subject')}/{chapter_id}",
+                                "output_url": item.get("url", ""),
                                 "metadata": item
                             })
 
                     # YouTube Resources
-                    yt_data = ai_enrichment.get("youtube_resources", {})
+                    yt_data = ai_enrichment.get("youtube_resources", {}) or \
+                              ai_enrichment.get("youtube", {})
+
                     if yt_data:
                         # Direct Videos
+                        direct_found = False
                         for v in yt_data.get("directVerifiedVideos", []):
+                            direct_found = True
                             youtube_media.append({
                                 "job_id": f"yt_{v.get('id', uuid.uuid4())}",
                                 "chapter_id": chapter_id,
@@ -238,8 +250,11 @@ async def list_chapter_media(
                                 "output_url": v.get("url"),
                                 "metadata": {**v, "is_direct": True}
                             })
+
                         # Discovery Links
+                        disc_found = False
                         for d in yt_data.get("discoveryLinks", []):
+                            disc_found = True
                             youtube_media.append({
                                 "job_id": f"yt_disc_{d.get('id', uuid.uuid4())}",
                                 "chapter_id": chapter_id,
@@ -248,7 +263,29 @@ async def list_chapter_media(
                                 "output_url": d.get("url"),
                                 "metadata": {**d, "is_direct": False}
                             })
-            except: pass
+
+                        # Fallback: Auto-generate discovery link using terms
+                        if not direct_found and not disc_found:
+                            terms = yt_data.get("chapterSpecificDiscoveryTerms", []) or \
+                                    yt_data.get("suggestedTopics", [])
+                            if terms:
+                                term = terms[0]
+                                youtube_media.append({
+                                    "job_id": f"yt_auto_{uuid.uuid4()}",
+                                    "chapter_id": chapter_id,
+                                    "type": "video_discovery",
+                                    "status": "COMPLETED",
+                                    "output_url": f"https://www.youtube.com/results?search_query={term.replace(' ', '+')}",
+                                    "metadata": {
+                                        "title": f"Explore: {term}",
+                                        "channel": "YouTube Discovery",
+                                        "url": f"https://www.youtube.com/results?search_query={term.replace(' ', '+')}",
+                                        "resource_type": "smart_discovery",
+                                        "is_direct": False
+                                    }
+                                })
+            except Exception as e:
+                logger.error(f"Error parsing master media for {chapter_id}: {e}")
 
     # 2. Check AI Generated Media (DB-backed)
     ai_media = []

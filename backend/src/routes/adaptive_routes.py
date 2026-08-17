@@ -87,10 +87,7 @@ async def get_daily_plan(
     student_id: str,
     user: AuthUser = Depends(get_current_user)
 ):
-    """Returns a sequence of activities for the authorized class with identity verification."""
-    if student_id != user.uid:
-         raise HTTPException(status_code=403, detail="Unauthorized access.")
-
+    """Returns a sequence of activities for the authorized class."""
     return await learning_plan_service.generate_daily_plan(user.uid, user.class_name)
 
 class SocraticHintRequest(BaseModel):

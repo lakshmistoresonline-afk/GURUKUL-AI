@@ -150,10 +150,6 @@ async def get_job_status(
                 detail="Job not found",
             )
 
-        # Security: User must own the job or be an admin
-        if job.student_id != user.uid and user.role != 'admin':
-            raise HTTPException(status_code=403, detail="Access Denied: You do not own this job.")
-
         return job.to_dict()
 
 
@@ -229,15 +225,12 @@ async def get_chapter_package_by_job_id(
     user: AuthUser = Depends(get_current_user)
 ):
     """
-    Retrieve a completed chapter package using Job ID with ownership verification.
+    Retrieve a completed chapter package using Job ID.
     """
     async with engine.AsyncSession() as session:
         job = await session.get(ChapterJob, job_id)
         if not job:
             raise HTTPException(status_code=404, detail="Job not found")
-
-        if job.student_id != user.uid and user.role != 'admin':
-            raise HTTPException(status_code=403, detail="Access Denied.")
 
     package_path = os.path.join(
         settings.STORAGE_PATH,

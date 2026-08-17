@@ -522,12 +522,16 @@ export default function ChapterDashboardClient() {
                                      <MonitorPlay size={32} />
                                   </div>
                                   <div>
-                                     <h4 className="text-xl font-black text-slate-900 leading-tight">AI Visual Lesson</h4>
-                                     <p className="text-xs font-bold text-blue-600 uppercase mt-1 tracking-wider">Gurukul Intelligence</p>
+                                     <h4 className="text-xl font-black text-slate-900 leading-tight">
+                                        {v.job_id.startsWith('master_') ? 'Interactive Storyboard' : 'AI Visual Lesson'}
+                                     </h4>
+                                     <p className="text-xs font-bold text-blue-600 uppercase mt-1 tracking-wider">
+                                        {v.job_id.startsWith('master_') ? 'Curriculum Enrichment' : 'Gurukul Intelligence'}
+                                     </p>
                                   </div>
                                </div>
                                <button
-                                 onClick={() => setModalContent({ title: 'AI Visual Lesson', body: v.output_path, subtitles: v.subtitles_path, isVideo: true })}
+                                 onClick={() => setModalContent({ title: v.type === 'storyboard' ? 'Interactive Storyboard' : 'AI Visual Lesson', body: v.type === 'storyboard' ? v.metadata : v.output_url, subtitles: v.subtitles_path, isVideo: v.type !== 'storyboard' })}
                                  className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-all shadow-md"
                                >
                                   <Play size={20} fill="currentColor" />
@@ -661,6 +665,33 @@ export default function ChapterDashboardClient() {
                          <VideoPlayer url={modalContent.body} subtitlesUrl={modalContent.subtitles} />
                       ) : modalContent.isMindMap ? (
                          <MindMap data={modalContent.body} />
+                      ) : modalContent.body?.scenes ? (
+                         <div className="space-y-12">
+                            {modalContent.body.scenes.map((s: any, idx: number) => (
+                               <div key={idx} className="p-8 bg-slate-50 border border-slate-200 rounded-[32px] space-y-6">
+                                  <div className="flex items-center gap-4">
+                                     <span className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-xs">Scene {s.scene}</span>
+                                     <h4 className="text-xl font-black text-slate-800 uppercase tracking-tight">{s.focus}</h4>
+                                  </div>
+                                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                     <div className="space-y-2">
+                                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Visual Description</p>
+                                        <p className="text-slate-600 font-medium italic leading-relaxed">{s.visual}</p>
+                                     </div>
+                                     <div className="space-y-2">
+                                        <p className="text-[10px] font-black text-blue-400 uppercase tracking-widest">Narration</p>
+                                        <p className="text-slate-900 font-bold leading-relaxed">{s.narration}</p>
+                                     </div>
+                                  </div>
+                                  {s.interaction && (
+                                     <div className="pt-6 border-t border-slate-200 flex items-start gap-4">
+                                        <div className="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 mt-1"><Lightbulb size={14} /></div>
+                                        <p className="text-sm text-slate-500 font-bold italic">Challenge: {s.interaction}</p>
+                                     </div>
+                                  )}
+                               </div>
+                            ))}
+                         </div>
                       ) : (
                          <FormattedText content={modalContent.body} className="prose-slate max-w-none text-xl leading-relaxed" />
                       )}

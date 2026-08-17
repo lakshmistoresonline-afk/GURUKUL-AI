@@ -180,13 +180,9 @@ async def get_quiz_session(
     count: int = Query(10),
     user: AuthUser = Depends(get_current_user)
 ):
-    """Generates a smart quiz session with verified student class enforcement."""
-    authorized_class = user.class_name
-
-    if classId:
-        requested_class = f"class_{classId}"
-        if requested_class != authorized_class:
-             raise HTTPException(status_code=403, detail="Access Denied: Requested class mismatch.")
+    """Generates a smart quiz session."""
+    # Use requested class if provided, otherwise user default
+    authorized_class = f"class_{classId}" if classId else user.class_name
 
     if chapterId:
         validate_chapter_access(chapterId, authorized_class)

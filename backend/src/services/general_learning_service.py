@@ -64,8 +64,19 @@ class GeneralLearningService:
 
     async def get_summary(self, student_id: str, class_name: str) -> Dict[str, Any]:
         """Returns a summary of progress for the student's class."""
-        # 1. Get all items for this class
-        class_item_ids = self.by_class.get(class_name, [])
+        # Extract class number
+        try:
+            c_num = int(class_name.split('_')[1])
+        except:
+            c_num = 6
+
+        # 1. Get all items available for this class
+        class_items = [
+            item for item in self.content
+            if item.get('class_key') == class_name or c_num in item.get('availableGrades', [])
+        ]
+        class_item_ids = [item['id'] for item in class_items]
+
         if not class_item_ids:
             return {"error": "No content for this class"}
 
@@ -171,5 +182,13 @@ class GeneralLearningService:
         return self.index.get(content_id)
 
     def get_all_by_type(self, i_type: str, class_name: str) -> List[Dict[str, Any]]:
-        ids = self.by_class.get(class_name, [])
-        return [self.index[i] for i in ids if self.index[i]['type'] == i_type]
+        # Extract class number if class_name is class_N
+        try:
+            c_num = int(class_name.split('_')[1])
+        except:
+            c_num = 6
+
+        return [
+            item for item in self.content
+            if item['type'] == i_type and (item.get('class_key') == class_name or c_num in item.get('availableGrades', []))
+        ]

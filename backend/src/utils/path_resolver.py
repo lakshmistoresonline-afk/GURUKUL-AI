@@ -36,7 +36,6 @@ class PathResolver:
                 try:
                     with open(index_file, "r", encoding="utf-8") as f:
                         data = json.load(f)
-                        logger.info(f"PathResolver: Loaded master index from {index_file}")
                         return data
                 except Exception as e:
                     logger.error(f"PathResolver: Error loading index {index_file}: {e}")
@@ -118,8 +117,6 @@ class PathResolver:
         canonical_chapter = PathResolver.normalize_chapter_id(class_name, chapter_id, subject=subject)
         normalized_chapter = canonical_chapter.strip().lower()
 
-        logger.info(f"PathResolver: Resolving chapter path. Class: {class_name} ({class_id}), Original ID: {chapter_id}, Canonical ID: {normalized_chapter}, Subject: {subject}")
-
         for chapter in index.get("chapters", []):
             indexed_id = str(chapter.get("chapterId", "")).strip().lower()
             indexed_subject = str(chapter.get("subject", "")).strip().lower()
@@ -129,7 +126,6 @@ class PathResolver:
                     rel_path = chapter.get("path")
                     if rel_path:
                         resolved_path = os.path.join(settings.MASTER_CONTENT_ROOT, os.path.dirname(rel_path))
-                        logger.info(f"PathResolver: Resolved {chapter_id} to {resolved_path}")
                         return resolved_path
 
         logger.warning(f"PathResolver: Could not resolve chapter path for {chapter_id} (normalized as {normalized_chapter}) in Class {class_id} {subject or ''}")

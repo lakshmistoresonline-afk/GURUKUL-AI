@@ -47,7 +47,6 @@ async def verify_firebase_token(token: str):
     """
     try:
         decoded_token = auth.verify_id_token(token)
-        logger.info(f"Firebase: Token verified for UID: {decoded_token.get('uid')}")
         return decoded_token
     except Exception as e:
         logger.error(f"Firebase: Token verification failed: {str(e)}")

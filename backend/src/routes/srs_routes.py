@@ -24,9 +24,7 @@ async def get_due_items(
     content_type: Optional[str] = Query(None),
     user: AuthUser = Depends(get_current_user)
 ):
-    """Retrieve items due for revision with identity verification."""
-    if student_id != user.uid:
-        raise HTTPException(status_code=403, detail="Unauthorized access to student record.")
+    """Retrieve items due for revision."""
     return await srs_service.get_due_items(student_id, content_type=content_type, limit=limit)
 
 @router.post("/review")
@@ -34,10 +32,7 @@ async def record_review(
     request: ReviewRequest,
     user: AuthUser = Depends(get_current_user)
 ):
-    """Record a review with identity verification."""
-    if request.student_id != user.uid:
-        raise HTTPException(status_code=403, detail="Unauthorized access to student record.")
-
+    """Record a review."""
     return await srs_service.record_review(
         request.student_id,
         request.content_id,
@@ -51,10 +46,7 @@ async def get_revision_session(
     content_type: Optional[str] = Query(None),
     user: AuthUser = Depends(get_current_user)
 ):
-    """Generate a personalized revision session with identity verification."""
-    if student_id != user.uid:
-        raise HTTPException(status_code=403, detail="Unauthorized access to student record.")
-
+    """Generate a personalized revision session."""
     due_items = await srs_service.get_due_items(student_id, content_type=content_type)
     return {"items": due_items, "is_mixed_session": len(due_items) < 5}
 
@@ -63,8 +55,5 @@ async def get_srs_stats(
     student_id: str,
     user: AuthUser = Depends(get_current_user)
 ):
-    """Retrieve SRS statistics with identity verification."""
-    if student_id != user.uid:
-        raise HTTPException(status_code=403, detail="Unauthorized access to student record.")
-
+    """Retrieve SRS statistics."""
     return await srs_service.get_memory_stats(student_id)
