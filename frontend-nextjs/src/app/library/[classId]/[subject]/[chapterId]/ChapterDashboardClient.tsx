@@ -122,7 +122,7 @@ export default function ChapterDashboardClient() {
           // Fetch Secondary Data
           fetchSecondary();
        } catch (err: any) {
-          if (err.name === 'AbortError') return;
+          if (err.isCanceled) return;
           console.error("Critical chapter package fetch failed", err);
           setLoading(false);
        }
@@ -143,7 +143,7 @@ export default function ChapterDashboardClient() {
         setExternalResources(extMediaData || []);
 
       } catch (error: any) {
-        if (error.name === 'AbortError') return;
+        if (error.isCanceled) return;
         console.error("Failed to load secondary chapter data", error);
       }
     };

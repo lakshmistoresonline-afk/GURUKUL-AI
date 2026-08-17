@@ -101,4 +101,11 @@ async def root():
     return {"message": "Welcome to Gurukul AI Backend", "status": "online"}
 
 if __name__ == "__main__":
-    uvicorn.run("src.main:app", host="0.0.0.0", port=settings.PORT, reload=settings.DEBUG)
+    # In development, watch only the src directory to avoid infinite reloads from storage/logs
+    uvicorn.run(
+        "src.main:app",
+        host="0.0.0.0",
+        port=settings.PORT,
+        reload=settings.DEBUG,
+        reload_dirs=["src"] if settings.DEBUG else None
+    )

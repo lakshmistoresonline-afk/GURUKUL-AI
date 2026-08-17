@@ -29,15 +29,15 @@ api.interceptors.request.use(config => {
 api.interceptors.response.use(
   response => response,
   error => {
-    if (error.response?.status === 401) {
+    if (axios.isCancel(error) || error.code === 'ERR_CANCELED' || error.name === 'CanceledError') {
+       error.isCanceled = true;
+       console.log("API: Request canceled");
+    } else if (error.response?.status === 401) {
       console.error("API: 401 Unauthorized - Token may be expired or invalid");
     } else if (error.response?.status === 403) {
       console.error("API: 403 Forbidden - Access denied to this resource");
     } else if (error.response?.status === 404) {
-       // Only log warning for 404 as it might be an expected "not found" state for optional data
        console.warn(`API: 404 Not Found - ${error.config.url}`);
-    } else if (error.code === 'ERR_CANCELED') {
-       console.log("API: Request canceled");
     } else {
       console.error(`API Error (${error.response?.status || 'Network'}):`, error.message);
     }
