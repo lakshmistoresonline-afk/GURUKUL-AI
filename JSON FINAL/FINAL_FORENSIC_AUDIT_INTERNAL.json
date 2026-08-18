@@ -1,0 +1,879 @@
+{
+  "security": [
+    {
+      "file": "D:\\GURUKUL-AI\\backend\\.env",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\backend\\src\\services\\resource_providers\\diksha_provider.py",
+      "type": "GENERIC_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\backend\\src\\utils\\auth.py",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\backend\\src\\utils\\auth.py",
+      "type": "GENERIC_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\backend\\src\\utils\\firebase_utils.py",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\backend\\src\\utils\\token_cache.py",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\backend\\tests\\test_security_hardening.py",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\1712-028f164225290a8b.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\69806262-6ba1df53fb14a5b5.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\69806262-6ba1df53fb14a5b5.js",
+      "type": "GENERIC_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\9406-ab8da0e639899669.js",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\bc9e92e6-29098a62357d6a85.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\layout-808e0898ed2f45e0.js",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\layout-808e0898ed2f45e0.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\page-272dc50841831c34.js",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\page-272dc50841831c34.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\diagnostic\\[chapterId]\\page-81ca6917ec63995d.js",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\diagnostic\\[chapterId]\\page-81ca6917ec63995d.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\flashcards\\[chapterId]\\page-66aac296c4d7078b.js",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\flashcards\\[chapterId]\\page-66aac296c4d7078b.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\learn\\[chapterId]\\page-58f255f8d76efbd8.js",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\learn\\[chapterId]\\page-58f255f8d76efbd8.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\login\\page-358c85ec3ee0df6c.js",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\login\\page-358c85ec3ee0df6c.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\quiz\\[chapterId]\\page-6643ccc49e936065.js",
+      "type": "API_KEY"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\quiz\\[chapterId]\\page-6643ccc49e936065.js",
+      "type": "FIREBASE_SECRET"
+    },
+    {
+      "file": "D:\\GURUKUL-AI\\frontend-nextjs\\out\\_next\\static\\chunks\\app\\setup-users\\page-eeaf9ca36fc1b838.js",
+      "type": "API_KEY"
+    }
+  ],
+  "multimedia": [
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_01\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+papa%e2%80%99s+spectacles+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_02\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+gone+with+the+scooter+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_03\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+the+rainbow+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_04\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+the+wise+parrot+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_05\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+the+frog+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_06\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+what+a+tank%21+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_07\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+gilli+danda+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_08\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+the+decision+of+the+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_09\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+vocation+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\english\\chapters\\chapter_10\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+english+glass+bangles+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_12\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+journey+of+a+river+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_13\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+%e2%80%98+the+mystery+of+food%e2%80%99+and+chapter+4+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_14\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+our+school+%e2%80%94+a+happy+place+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_15\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+our+vibrant+country+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_16\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+some+unique+places+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_17\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+energy+%e2%80%94+how+things+work+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_18\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+clothes+%e2%80%94+how+things+are+made+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_19\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+rhythms+of+nature+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\evs\\chapters\\chapter_20\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+evs+earth+%e2%80%94+our+shared+home+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_21\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%95%e0%a4%bf%e0%a4%b0%e0%a4%a8+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_23\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%9a%e0%a4%be%e0%a4%81%e0%a4%a6+%e0%a4%95%e0%a4%be+%e0%a4%95%e0%a5%81%e0%a4%b0%e0%a4%a4%e0%a4%be+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_24\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%b8%e0%a4%be%e0%a4%99%e0%a4%95%e0%a5%87%e0%a4%a8+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_25\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%b8%e0%a5%81%e0%a4%82%e0%a4%a6%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a4%be+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_26\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%9a%e0%a4%a4%e0%a5%81%e0%a4%b0+%e0%a4%9a%e0%a4%bf%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_27\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%ae%e0%a5%87%e0%a4%b0%e0%a4%be+%e0%a4%ac%e0%a4%9a%e0%a4%aa%e0%a4%a8+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_28\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%89%e0%a4%a6%e0%a5%8d%e0%a4%af%e0%a4%be%e0%a4%a8+%e0%a4%95%e0%a5%80+%e0%a4%af%e0%a4%be%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a4%be+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_29\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%a8%e0%a5%8d%e0%a4%af%e0%a4%be%e0%a4%af+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_30\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%a4%e0%a5%80%e0%a4%a8+%e0%a4%ae%e0%a4%9b%e0%a4%b2%e0%a4%bf%e0%a4%af%e0%a4%be%e0%a4%81+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_31\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%b9%e0%a4%ae%e0%a4%be%e0%a4%b0%e0%a5%87+%e0%a4%af%e0%a5%87+%e0%a4%95%e0%a4%b2%e0%a4%be%e0%a4%ae%e0%a4%82%e0%a4%a6%e0%a4%bf%e0%a4%b0+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\hindi\\chapters\\chapter_32\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+hindi+%e0%a4%97%e0%a4%82%e0%a4%97%e0%a4%be+%e0%a4%95%e0%a5%80+%e0%a4%95%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a5%80+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_34\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+fractions+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_35\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+angles+as+turns+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_37\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+far+and+near+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_38\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+the+dairy+farm+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_39\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+patterns+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_40\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+capacity+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_41\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+coconut+farm+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_43\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+quilt+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_44\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+racing+seconds+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_45\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+animal+jumps+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_05\\mathematics\\chapters\\chapter_47\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+5+mathematics+pictures+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\english\\chapters\\chapter_01\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+english+a+bottle+of+dew+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\english\\chapters\\chapter_02\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+english+the+unlikely+best+friends+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\english\\chapters\\chapter_03\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+english+neem+baba+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\english\\chapters\\chapter_04\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+english+change+of+heart+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_01\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%ae%e0%a4%be%e0%a4%a4%e0%a5%83%e0%a4%ad%e0%a5%82%e0%a4%ae%e0%a4%bf+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_02\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%97%e0%a5%8b%e0%a4%b2+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_03\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%aa%e0%a4%b9%e0%a4%b2%e0%a5%80+%e0%a4%ac%e0%a5%82%e0%a4%81%e0%a4%a6+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_04\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%b9%e0%a4%be%e0%a4%b0+%e0%a4%95%e0%a5%80+%e0%a4%9c%e0%a5%80%e0%a4%a4+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_05\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%b0%e0%a4%b9%e0%a5%80%e0%a4%ae+%e0%a4%95%e0%a5%87+%e0%a4%a6%e0%a5%8b%e0%a4%b9%e0%a5%87+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_06\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%ae%e0%a5%87%e0%a4%b0%e0%a5%80+%e0%a4%ae%e0%a4%be%e0%a4%81+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_07\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%9c%e0%a4%b2%e0%a4%be%e0%a4%a4%e0%a5%87+%e0%a4%9a%e0%a4%b2%e0%a5%8b+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_08\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%b8%e0%a4%a4%e0%a5%8d%e0%a4%b0%e0%a4%bf%e0%a4%af%e0%a4%be+%e0%a4%94%e0%a4%b0+%e0%a4%ac%e0%a4%bf%e0%a4%b9%e0%a5%82+%e0%a4%a8%e0%a5%83%e0%a4%a4%e0%a5%8d%e0%a4%af+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_09\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%ae%e0%a5%88%e0%a4%af%e0%a4%be+%e0%a4%ae%e0%a5%88%e0%a4%82+%e0%a4%a8%e0%a4%b9%e0%a4%bf%e0%a4%82+%e0%a4%ae%e0%a4%be%e0%a4%96%e0%a4%a8+%e0%a4%96%e0%a4%be%e0%a4%af%e0%a5%8b+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_10\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%aa%e0%a4%b0%e0%a5%80%e0%a4%95%e0%a5%8d%e0%a4%b7%e0%a4%be+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_11\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%9a%e0%a5%87%e0%a4%a4%e0%a4%95+%e0%a4%95%e0%a5%80+%e0%a4%b5%e0%a5%80%e0%a4%b0%e0%a4%a4%e0%a4%be+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_12\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%b9%e0%a4%bf%e0%a4%82%e0%a4%a6+%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%b8%e0%a4%be%e0%a4%97%e0%a4%b0+%e0%a4%ae%e0%a5%87%e0%a4%82+%e0%a4%9b%e0%a5%8b%e0%a4%9f%e0%a4%be-%e0%a4%b8%e0%a4%be+%e0%a4%b9%e0%a4%bf%e0%a4%82%e0%a4%a6%e0%a5%81%e0%a4%b8%e0%a5%8d%e0%a4%a4%e0%a4%be%e0%a4%a8+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\hindi\\chapters\\chapter_13\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+hindi+%e0%a4%aa%e0%a5%87%e0%a4%a1%e0%a4%bc+%e0%a4%95%e0%a5%80+%e0%a4%ac%e0%a4%be%e0%a4%a4+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_01\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+patterns+in+mathematics+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_02\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+lines+and+angles+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_03\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+number+play+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_04\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+data+handling+and+presentation+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_05\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+prime+time+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_06\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+perimeter+and+area+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_07\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+fractions+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_08\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+playing+with+constructions+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_09\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+symmetry+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\mathematics\\chapters\\chapter_10\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+mathematics+the+other+side+of+zero+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_01\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+the+wonderful+world+of+science+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_02\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+diversity+in+the+living+world+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_03\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+mindful+eating%3a+a+path+to+a+healthy+body+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_04\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+exploring+magnets+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_05\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+measurement+of+length+and+motion+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_06\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+materials+around+us+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_07\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+temperature+and+its+measurement+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_08\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+a+journey+through+states+of+water+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_09\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+methods+of+separation+in+everyday+life+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_10\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+living+creatures%3a+exploring+their+characteristics+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_11\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+nature%e2%80%99s+treasures+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\science\\chapters\\chapter_12\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+science+beyond+earth+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_01\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+introduction+%e2%80%93+why+social+science%3f+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_02\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+oceans+and+continents+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_03\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+landforms+and+life+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_04\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+timeline+and+sources+of+history+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_05\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+india%2c+that+is+bharat+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_06\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+the+beginnings+of+indian+civilisation+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_07\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+india%e2%80%99s+cultural+roots+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_08\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+unity+in+diversity%2c+or+%e2%80%98many+in+the+one%e2%80%99+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_09\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+family+and+community+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_10\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+grassroots+democracy+%e2%80%93+part+1+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_11\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+grassroots+democracy+%e2%80%93+part+2+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_12\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+grassroots+democracy+%e2%80%93+part+3+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_13\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+the+value+of+work+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_06\\social_science\\chapters\\chapter_14\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+6+social+science+economic+activities+around+us+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\english\\chapters\\chapter_02\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=animals+birds+and+dr.+dolittle+class+7+english+story",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\english\\chapters\\chapter_03\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=my+brother%27s+great+invention+class+7+english+lesson",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_06\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%ae%e0%a4%be%e0%a4%81%2c+%e0%a4%95%e0%a4%b9+%e0%a4%8f%e0%a4%95+%e0%a4%95%e0%a4%b9%e0%a4%be%e0%a4%a8%e0%a5%80+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_07\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%a4%e0%a5%80%e0%a4%a8+%e0%a4%ac%e0%a5%81%e0%a4%a6%e0%a5%8d%e0%a4%a7%e0%a4%bf%e0%a4%ae%e0%a4%be%e0%a4%a8+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_08\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%ab%e0%a5%82%e0%a4%b2+%e0%a4%94%e0%a4%b0+%e0%a4%95%e0%a4%be%e0%a4%81%e0%a4%9f%e0%a4%be+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_09\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%aa%e0%a4%be%e0%a4%a8%e0%a5%80+%e0%a4%b0%e0%a5%87+%e0%a4%aa%e0%a4%be%e0%a4%a8%e0%a5%80+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_10\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%a8%e0%a4%b9%e0%a5%80%e0%a4%82+%e0%a4%b9%e0%a5%8b%e0%a4%a8%e0%a4%be+%e0%a4%ac%e0%a5%80%e0%a4%ae%e0%a4%be%e0%a4%b0+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_11\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%97%e0%a4%bf%e0%a4%b0%e0%a4%a7%e0%a4%b0+%e0%a4%95%e0%a4%b5%e0%a4%bf%e0%a4%b0%e0%a4%be%e0%a4%af+%e0%a4%95%e0%a5%80+%e0%a4%95%e0%a5%81%e0%a4%82%e0%a4%a1%e0%a4%b2%e0%a4%bf%e0%a4%af%e0%a4%be%e0%a4%81+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_12\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%b5%e0%a4%b0%e0%a5%8d%e0%a4%b7%e0%a4%be-%e0%a4%ac%e0%a4%b9%e0%a4%be%e0%a4%b0+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_13\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%ac%e0%a4%bf%e0%a4%b0%e0%a4%9c%e0%a5%82+%e0%a4%ae%e0%a4%b9%e0%a4%be%e0%a4%b0%e0%a4%be%e0%a4%9c+%e0%a4%b8%e0%a5%87+%e0%a4%b8%e0%a4%be%e0%a4%95%e0%a5%8d%e0%a4%b7%e0%a4%be%e0%a4%a4%e0%a5%8d%e0%a4%95%e0%a4%be%e0%a4%b0+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_14\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%9a%e0%a4%bf%e0%a4%a1%e0%a4%bc%e0%a4%bf%e0%a4%af%e0%a4%be+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\hindi\\chapters\\chapter_15\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+hindi+%e0%a4%ae%e0%a5%80%e0%a4%b0%e0%a4%be+%e0%a4%95%e0%a5%87+%e0%a4%aa%e0%a4%a6+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_16\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+large+numbers+around+us+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_17\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+arithmetic+expressions+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_18\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+a+peek+beyond+the+point+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_19\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+expressions+using+letter-numbers+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_20\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+parallel+and+intersecting+lines+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_21\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+number+play+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_22\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+a+tale+of+three+intersecting+lines+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_23\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+working+with+fractions+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_24\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+geometric+twins+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_25\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+operations+with+integers+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_26\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+finding+common+ground+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_27\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+another+peek+beyond+the+point+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_28\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+connecting+the+dots%e2%80%a6+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_29\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+constructions+and+tilings+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\mathematics\\chapters\\chapter_30\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+mathematics+finding+the+unknown+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_31\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+the+ever-evolving+world+of+science+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_32\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+exploring+substances%3a+acidic%2c+basic%2c+and+neutral+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_33\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+electricity%3a+circuits+and+their+components+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_34\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+the+world+of+metals+and+non-metals+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_35\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+changes+around+us%3a+physical+and+chemical+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_36\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+adolescence%3a+a+stage+of+growth+and+change+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_37\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+heat+transfer+in+nature+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_38\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+measurement+of+time+and+motion+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_39\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+life+processes+in+animals+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_40\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+life+processes+in+plants+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_41\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+light%3a+shadows+and+reflections+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\science\\chapters\\chapter_42\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+science+earth%2c+moon%2c+and+the+sun+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_43\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+geographical+diversity+of+india+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_44\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+understanding+the+weather+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_45\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+climates+of+india+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_46\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+new+beginnings%3a+cities+and+states+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_47\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+the+rise+of+empires+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_48\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+the+age+of+reorganisation+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_49\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+the+gupta+era%3a+an+age+of+tireless+creativity+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_50\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+how+the+land+becomes+sacred+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_51\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+from+the+rulers+to+the+ruled%3a+types+of+governments+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_52\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+the+constitution+of+india+%e2%80%94+an+introduction+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_53\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+from+barter+to+money+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_54\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+understanding+markets+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_55\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+the+story+of+indian+farming+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_56\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+india+and+her+neighbours+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_57\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+empires+and+kingdoms%3a+6th+to+10th+centuries+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_58\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+turning+tides%3a+11th+and+12th+centuries+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_59\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+india%2c+a+home+to+many+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_60\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+the+state%2c+the+government%2c+and+you+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_61\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+infrastructure%3a+engine+of+india%e2%80%99s+development+explanation",
+      "issue": "Search URL incorrectly classified"
+    },
+    {
+      "path": "D:\\GURUKUL-AI\\JSON FINAL\\CANONICAL_CONTENT\\class_07\\social_science\\chapters\\chapter_62\\multimedia.json",
+      "url": "https://www.youtube.com/results?search_query=class+7+social+science+banks+and+the+magic+of+finance+explanation",
+      "issue": "Search URL incorrectly classified"
+    }
+  ]
+}
