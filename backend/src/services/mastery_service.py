@@ -288,26 +288,48 @@ class MasteryService:
             if os.path.exists(pkg_path):
                 try:
                     with open(pkg_path, "r", encoding="utf-8") as f:
-                        config = PackageAdapter.adapt(json.load(f))
+                        raw_data = json.load(f)
+                        # Check if it's an adapted package already or needs adaptation
+                        if "components" in raw_data:
+                            config = PackageAdapter.adapt(raw_data)
+                        else:
+                            config = raw_data
 
                         # Ensure every concept has both 'conceptId' and 'conceptName' for UI compatibility
                         # Use concepts_list from adapted package if available
-                        concepts = config.get("concepts_list") or config.get("mappings") or []
-                        for c in concepts:
-                            if isinstance(c, dict):
-                                if "concept_id" in c and "conceptId" not in c:
-                                    c["conceptId"] = c["concept_id"]
-                                if "concept_name" in c and "conceptName" not in c:
-                                    c["conceptName"] = c["concept_name"]
+                        concepts = config.get("concepts_list") or config.get("mappings") or config.get("concepts") or []
+                        if isinstance(concepts, list):
+                            for c in concepts:
+                                if isinstance(c, dict):
+                                    cid = c.get("concept_id") or c.get("conceptId") or c.get("id")
+                                    cname = c.get("concept_name") or c.get("conceptName") or c.get("name") or c.get("label") or "Concept"
+
+                                    c["conceptId"] = cid
+                                    c["conceptName"] = cname
 
                         # For adapted packages, ensure 'concepts' in the root is the list for backend services
                         # while keeping the string version in 'content' for UI
                         if "concepts_list" in config:
                             config["concepts"] = config["concepts_list"]
 
+                        # Ensure 'source' exists for diagnostic/mastery logic
+                        if "source" not in config:
+                             metadata_path = os.path.join(master_path, "chapter_metadata.json")
+                             if os.path.exists(metadata_path):
+                                 with open(metadata_path, "r", encoding="utf-8") as fm:
+                                     meta = json.load(fm)
+                                     config["source"] = {
+                                         "slug": meta.get("id") or norm_chapter_id,
+                                         "chapterTitle": meta.get("title") or meta.get("chapter_title"),
+                                         "subject": meta.get("subject"),
+                                         "chapterNumber": meta.get("chapter_number")
+                                     }
+                             else:
+                                 config["source"] = {"slug": norm_chapter_id, "chapterTitle": "Chapter"}
+
                         return config
                 except Exception as e:
-                    logger.error(f"Error loading master package for mastery config: {e}")
+                    logger.error(f"Error loading master package for mastery config: {e}", exc_info=True)
 
             # Fallback to mastery_map.json if package.json missing
             mastery_map_path = os.path.join(master_path, "mastery_map.json")
