@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_mastery_assessment",
+  "chapter_id": "gecu111",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Light: Shadows and Reflections",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "components": [
+      "core concept",
+      "evidence/working",
+      "application",
+      "higher-order transfer"
+    ],
+    "mastery_threshold": 0.85,
+    "remediation_below": 0.7
+  }
+}

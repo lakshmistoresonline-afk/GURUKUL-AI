@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fecu102_c01",
+      "label": "Diversity in the Living World"
+    },
+    {
+      "id": "fecu102_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fecu102_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fecu102_c01",
+      "to": "fecu102_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fecu102_c02",
+      "to": "fecu102_c03",
+      "relation": "enables"
+    }
+  ]
+}

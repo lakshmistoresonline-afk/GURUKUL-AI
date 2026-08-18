@@ -133,7 +133,7 @@ class MasteryService:
         weak = []
         perf = student_record.get("conceptPerformance", {})
         for c in concepts:
-            c_id = c.get("conceptId") or c.get("id")
+            c_id = c.get("conceptId") or c.get("id") or c.get("concept_id")
             if not c_id: continue
             c_perf = perf.get(c_id, {})
             # If foundation or application is low
@@ -187,6 +187,7 @@ class MasteryService:
                         # Try to match topic or question text with concept names
                         concepts = config.get("concepts") or config.get("mappings") or []
                         for concept in concepts:
+                            c_id = concept.get("conceptId") or concept.get("id") or concept.get("concept_id")
                             c_name = (concept.get("conceptName") or concept.get("concept") or concept.get("name") or "").lower()
                             if not c_name: continue
 
@@ -199,7 +200,7 @@ class MasteryService:
                                 elif q_meta.get("type") == "reasoning":
                                     level = "mastery"
 
-                                return (concept.get("conceptId") or concept.get("id"), level)
+                                return (c_id, level)
 
         return None
 
@@ -212,7 +213,7 @@ class MasteryService:
 
         # Support both 'concepts' and 'mappings'
         concepts = config.get("concepts") or config.get("mappings") or []
-        target_concept = next((c for c in concepts if (c.get("conceptId") == concept_id or c.get("id") == concept_id)), None)
+        target_concept = next((c for c in concepts if (c.get("conceptId") == concept_id or c.get("id") == concept_id or c.get("concept_id") == concept_id)), None)
         if not target_concept: return []
 
         q_ids = []
@@ -274,9 +275,38 @@ class MasteryService:
 
         norm_chapter_id = PathResolver.normalize_chapter_id(class_name, chapter_id, subject=subject)
 
-        config = None
+        # Priority: Load from the new chapter-specific content root
+        master_path = PathResolver.get_chapter_path(class_name, norm_chapter_id, subject=subject)
+        if master_path:
+            mastery_map_path = os.path.join(master_path, "mastery_map.json")
+            metadata_path = os.path.join(master_path, "chapter_metadata.json")
+            if os.path.exists(mastery_map_path):
+                try:
+                    with open(mastery_map_path, "r", encoding="utf-8") as f:
+                        config = json.load(f)
+                        # Basic mapping for backward compatibility with expected keys
+                        if "concepts" not in config:
+                            config["concepts"] = []
 
-        # 1. Subject-scoped lookup
+                        # Add 'source' key for compatibility with DiagnosticService
+                        if "source" not in config and os.path.exists(metadata_path):
+                            with open(metadata_path, "r", encoding="utf-8") as fm:
+                                meta = json.load(fm)
+                                config["source"] = {
+                                    "slug": meta.get("id") or norm_chapter_id,
+                                    "chapterTitle": meta.get("title") or meta.get("chapter_title"),
+                                    "subject": meta.get("subject"),
+                                    "chapterNumber": meta.get("chapter_number")
+                                }
+                        elif "source" not in config:
+                            config["source"] = {"slug": norm_chapter_id, "chapterTitle": "Chapter"}
+
+                        return config
+                except Exception as e:
+                    logger.error(f"Error loading mastery_map from {master_path}: {e}")
+
+        # Fallback to legacy index search (if any remains)
+        config = None
         if subject:
             subj_key = subject.lower()
             if subj_key in self.index.get(class_key, {}):
@@ -394,16 +424,18 @@ class MasteryService:
         total_concepts = len(all_concepts)
 
         for concept in all_concepts:
-            c_id = concept.get("conceptId") or concept.get("id")
+            c_id = concept.get("conceptId") or concept.get("concept_id") or concept.get("id")
             if not c_id: continue
             perf = concept_perf.get(c_id, {})
 
             # Check foundation level (Understand)
-            if perf.get("foundation", 0) >= 0.7:
+            foundation_score = perf.get("foundation", 0)
+            if foundation_score >= 0.7:
                 completed_concepts += 1
 
-        # Progress threshold
+        # Calculate progress
         progress = completed_concepts / total_concepts if total_concepts > 0 else 0
+
 
         # 1. Determine Evidence-Based Status (Independent of current status)
         has_any_progress = any(

@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "adaptive_practice",
+  "chapter_id": "fees111",
+  "class": 6,
+  "subject": "Social Science",
+  "chapter_title": "Grassroots Democracy – Part 2",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "selection_rules": [
+      {
+        "condition": "accuracy < 60%",
+        "action": "revisit explanation and simpler practice"
+      },
+      {
+        "condition": "60–84%",
+        "action": "serve application practice"
+      },
+      {
+        "condition": ">=85%",
+        "action": "serve transfer/HOTS practice"
+      }
+    ],
+    "items": [
+      {
+        "id": "fees111_a1",
+        "difficulty": "easy"
+      },
+      {
+        "id": "fees111_a2",
+        "difficulty": "medium"
+      },
+      {
+        "id": "fees111_a3",
+        "difficulty": "hard"
+      }
+    ]
+  }
+}

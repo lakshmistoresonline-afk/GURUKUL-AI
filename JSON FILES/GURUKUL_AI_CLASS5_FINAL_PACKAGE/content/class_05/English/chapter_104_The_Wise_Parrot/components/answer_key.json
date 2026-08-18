@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "eesa104",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "The Wise Parrot",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "eesa104_q01",
+        "answer": "Option 1",
+        "evidence": "Let us Read 4 The Wise Parrot In a quiet village, a rich merchant kept a bright and talkative parrot in a cage of gold."
+      }
+    ]
+  }
+}

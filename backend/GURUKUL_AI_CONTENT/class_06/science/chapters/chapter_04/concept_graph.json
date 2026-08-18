@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fecu104_c01",
+      "label": "Exploring Magnets"
+    },
+    {
+      "id": "fecu104_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fecu104_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fecu104_c01",
+      "to": "fecu104_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fecu104_c02",
+      "to": "fecu104_c03",
+      "relation": "enables"
+    }
+  ]
+}

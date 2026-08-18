@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fees106_c01",
+      "label": "The Beginnings of Indian Civilisation"
+    },
+    {
+      "id": "fees106_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fees106_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fees106_c01",
+      "to": "fees106_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fees106_c02",
+      "to": "fees106_c03",
+      "relation": "enables"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fhml109_c01",
+      "label": "मैया मैं नहि माखन खायो"
+    },
+    {
+      "id": "fhml109_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fhml109_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fhml109_c01",
+      "to": "fhml109_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fhml109_c02",
+      "to": "fhml109_c03",
+      "relation": "enables"
+    }
+  ]
+}

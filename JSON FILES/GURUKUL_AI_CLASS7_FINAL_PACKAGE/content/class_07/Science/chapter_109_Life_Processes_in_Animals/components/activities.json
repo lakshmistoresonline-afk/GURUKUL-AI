@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "activities",
+  "chapter_id": "gecu109",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Life Processes in Animals",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "gecu109_act01",
+        "type": "think_pair_share",
+        "title": "Explain and justify",
+        "steps": [
+          "Think",
+          "Discuss",
+          "Find evidence",
+          "Share"
+        ]
+      },
+      {
+        "id": "gecu109_act02",
+        "type": "sort_sequence",
+        "title": "Organise the learning",
+        "steps": [
+          "Select key ideas",
+          "Sort or sequence",
+          "Explain relationships"
+        ]
+      },
+      {
+        "id": "gecu109_act03",
+        "type": "reflection",
+        "title": "One-minute reflection",
+        "prompt": "What is the most important learning from Life Processes in Animals?"
+      }
+    ]
+  }
+}

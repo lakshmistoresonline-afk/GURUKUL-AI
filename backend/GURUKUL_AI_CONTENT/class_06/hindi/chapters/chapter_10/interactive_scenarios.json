@@ -1,0 +1,46 @@
+{
+  "scenarios": [
+    {
+      "id": "fhml110_sc01",
+      "situation": "A learner faces a situation related to परीक्षा.",
+      "choices": [
+        {
+          "id": "A",
+          "choice": "Use chapter evidence or working.",
+          "feedback": "Best choice."
+        },
+        {
+          "id": "B",
+          "choice": "Guess without checking.",
+          "feedback": "Revisit evidence."
+        },
+        {
+          "id": "C",
+          "choice": "Use an unrelated idea.",
+          "feedback": "Stay connected to the chapter."
+        }
+      ]
+    },
+    {
+      "id": "fhml110_sc02",
+      "situation": "A classmate gives an answer without reasoning.",
+      "choices": [
+        {
+          "id": "A",
+          "choice": "Ask for evidence.",
+          "feedback": "Good reasoning."
+        },
+        {
+          "id": "B",
+          "choice": "Accept immediately.",
+          "feedback": "Check support first."
+        },
+        {
+          "id": "C",
+          "choice": "Ignore the reasoning.",
+          "feedback": "Reasoning matters."
+        }
+      ]
+    }
+  ]
+}

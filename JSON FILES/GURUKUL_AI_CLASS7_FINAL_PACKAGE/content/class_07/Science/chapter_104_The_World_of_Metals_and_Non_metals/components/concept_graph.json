@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "gecu104",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "The World of Metals and Non-metals",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "gecu104_c01",
+        "label": "The World of Metals and Non-metals"
+      },
+      {
+        "id": "gecu104_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "gecu104_c03",
+        "label": "Application and transfer"
+      }
+    ],
+    "edges": [
+      {
+        "from": "gecu104_c01",
+        "to": "gecu104_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "gecu104_c02",
+        "to": "gecu104_c03",
+        "relation": "enables"
+      }
+    ]
+  }
+}

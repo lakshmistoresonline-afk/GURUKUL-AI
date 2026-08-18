@@ -30,11 +30,11 @@ class DiagnosticService:
         """
         # Resolve current chapter config from mastery service
         config = self.mastery_service.get_chapter_mastery_config(class_name, subject, chapter_id)
-        if not config: return []
+        if not config or "source" not in config: return []
 
         # Use canonical chapter identifier for question lookups
-        canonical_chapter_id = config['source'].get('slug') or config['source'].get('chapterTitle')
         chapter_title = config.get("source", {}).get("chapterTitle", "")
+        if not chapter_title: return []
 
         # Load the full question bank for the current chapter
         curr_pkg = self._load_package_by_title(chapter_title)

@@ -48,14 +48,27 @@ class ExternalMediaService:
                 data = json.load(f)
 
             resources_to_add = []
-            for chapter in data.get("chapter_resources", []):
+            # Support 'chapters' and 'chapter_resources' keys
+            chapters = data.get("chapters") or data.get("chapter_resources") or []
+
+            for chapter in chapters:
                 chapter_id = chapter.get("chapter_id")
-                class_name = chapter.get("class")
+                class_num = chapter.get("class")
+                class_name = f"class_{class_num}" if isinstance(class_num, int) else chapter.get("class")
                 subject = chapter.get("subject")
 
-                for res in chapter.get("external_resources", []):
+                # Support 'resources' and 'external_resources' keys
+                resources = chapter.get("resources") or chapter.get("external_resources") or []
+
+
+                for res in resources:
                     # Validate and Normalize
-                    url = res.get("url", "").strip().rstrip("/")
+                    url = res.get("url")
+                    if url is None:
+                        # Handle resources without URL (like local sources)
+                        url = f"local://{chapter_id}/{res.get('id')}"
+
+                    url = url.strip().rstrip("/")
                     if not url: continue
 
                     # Exclude YouTube
@@ -96,10 +109,17 @@ class ExternalMediaService:
                 data = json.load(f)
 
             resources_to_add = []
-            for res in data:
-                url = res.get("url", "").strip().rstrip("/")
-                if not url: continue
-                if "youtube.com" in url.lower() or "youtu.be" in url.lower():
+            # API Import catalog is often a list of resource objects
+            # but sometimes wrapped in a "resources" key.
+            res_list = data if isinstance(data, list) else data.get("resources", [])
+
+            for res in res_list:
+                url = res.get("url")
+                if url is None: url = f"api://{res.get('chapter_id')}/{res.get('id') or uuid.uuid4()}"
+
+                url_norm = url.strip().rstrip("/")
+                if not url_norm: continue
+                if "youtube.com" in url_norm.lower() or "youtu.be" in url_norm.lower():
                     continue
 
                 resource_data = {
@@ -108,7 +128,7 @@ class ExternalMediaService:
                     "subject": res.get("subject"),
                     "provider": res.get("provider"),
                     "title": res.get("title"),
-                    "url": url,
+                    "url": url_norm,
                     "resource_types": res.get("resource_types", []),
                     "search_url": res.get("search_url"),
                     "search_terms": res.get("search_terms", []),

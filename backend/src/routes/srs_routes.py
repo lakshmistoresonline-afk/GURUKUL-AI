@@ -25,6 +25,8 @@ async def get_due_items(
     user: AuthUser = Depends(get_current_user)
 ):
     """Retrieve items due for revision."""
+    if user.role != "admin" and user.uid != student_id:
+        raise HTTPException(status_code=403, detail="Unauthorized access: students can only access their own data")
     return await srs_service.get_due_items(student_id, content_type=content_type, limit=limit)
 
 @router.post("/review")

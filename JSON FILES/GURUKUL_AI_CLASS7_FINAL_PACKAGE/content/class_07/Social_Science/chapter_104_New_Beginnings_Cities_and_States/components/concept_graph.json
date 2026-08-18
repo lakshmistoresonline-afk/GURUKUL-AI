@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "gees104",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "New Beginnings: Cities and States",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "gees104_c01",
+        "label": "New Beginnings: Cities and States"
+      },
+      {
+        "id": "gees104_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "gees104_c03",
+        "label": "Application and transfer"
+      }
+    ],
+    "edges": [
+      {
+        "from": "gees104_c01",
+        "to": "gees104_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "gees104_c02",
+        "to": "gees104_c03",
+        "relation": "enables"
+      }
+    ]
+  }
+}

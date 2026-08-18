@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "summative_assessment",
+  "chapter_id": "eemm101",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "We the Travellers – I",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "sections": [
+      {
+        "name": "Understanding",
+        "items": 4
+      },
+      {
+        "name": "Application",
+        "items": 4
+      },
+      {
+        "name": "Higher Order",
+        "items": 2
+      }
+    ],
+    "passing_rule": "At least 70% overall and remediation for missed core concepts."
+  }
+}

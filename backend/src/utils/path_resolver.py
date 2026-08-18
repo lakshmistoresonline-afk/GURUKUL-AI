@@ -23,15 +23,20 @@ class PathResolver:
     @staticmethod
     @lru_cache(maxsize=4)
     def _get_master_index(class_id: str) -> Optional[Dict[str, Any]]:
-        # Try both 'Class 5' and 'class_5' folder styles
-        possible_folders = [f"Class {class_id}", f"class_{class_id}", f"Class_{class_id}", str(class_id)]
+        # Pad class_id to 2 digits for folder name (e.g. class_05)
+        padded_id = class_id.zfill(2)
+        possible_folders = [f"class_{padded_id}", f"Class {class_id}", f"class_{class_id}", str(class_id)]
 
         for folder in possible_folders:
             folder_path = os.path.join(settings.MASTER_CONTENT_ROOT, folder)
             if not os.path.exists(folder_path):
                 continue
 
-            index_file = os.path.join(folder_path, f"Class_{class_id}_Master_Index.json")
+            # Look for index in subject subfolders or root
+            index_file = os.path.join(folder_path, "master_index.json")
+            if not os.path.exists(index_file):
+                 index_file = os.path.join(folder_path, f"Class_{class_id}_Master_Index.json")
+
             if os.path.exists(index_file):
                 try:
                     with open(index_file, "r", encoding="utf-8") as f:
@@ -125,7 +130,10 @@ class PathResolver:
                 if not normalized_subject or indexed_subject == normalized_subject:
                     rel_path = chapter.get("path")
                     if rel_path:
-                        resolved_path = os.path.join(settings.MASTER_CONTENT_ROOT, os.path.dirname(rel_path))
+                        # Join with the class-specific directory
+                        padded_id = class_id.zfill(2)
+                        class_folder = f"class_{padded_id}"
+                        resolved_path = os.path.join(settings.MASTER_CONTENT_ROOT, class_folder, os.path.dirname(rel_path))
                         return resolved_path
 
         logger.warning(f"PathResolver: Could not resolve chapter path for {chapter_id} (normalized as {normalized_chapter}) in Class {class_id} {subject or ''}")

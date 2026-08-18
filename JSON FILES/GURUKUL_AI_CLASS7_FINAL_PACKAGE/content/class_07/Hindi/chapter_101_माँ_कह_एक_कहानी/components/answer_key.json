@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ghml101",
+  "class": 7,
+  "subject": "Hindi",
+  "chapter_title": "माँ, कह एक कहानी",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "ghml101_q01",
+      "answer": "Option 1",
+      "evidence": "1 माँ, कह एक कहानी “माँ, कह एक कहानी।” “बेटा, समझ िलया क्या तनू े मझु को अपनी नानी?” “कहती है मझु से यह चेटी, तू मेरी नानी क� बेटी!"
+    }
+  }
+}

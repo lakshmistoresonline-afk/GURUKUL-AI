@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "eeev106",
+  "class": 5,
+  "subject": "EVS",
+  "chapter_title": "Some Unique Places",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "eeev106_q01",
+        "answer": "Option 1",
+        "evidence": "Shanti’s parents seemed busier planning their summer vacation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eesa109_concept_01",
+      "label": "Vocation"
+    },
+    {
+      "id": "eesa109_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eesa109_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eesa109_concept_01",
+      "to": "eesa109_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eesa109_concept_02",
+      "to": "eesa109_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

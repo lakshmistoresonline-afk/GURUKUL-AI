@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "fegp107",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Fractions",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fegp107_d1",
+        "question": "What do you already know about Fractions?",
+        "type": "short_answer"
+      },
+      {
+        "id": "fegp107_d2",
+        "question": "Which related idea needs more explanation?",
+        "type": "self_assessment"
+      }
+    ]
+  }
+}

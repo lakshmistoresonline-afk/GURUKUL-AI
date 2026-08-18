@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "ehve107_concept_01",
+      "label": "मेरा बचपन"
+    },
+    {
+      "id": "ehve107_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "ehve107_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ehve107_concept_01",
+      "to": "ehve107_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "ehve107_concept_02",
+      "to": "ehve107_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

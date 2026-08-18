@@ -66,7 +66,7 @@ class Settings(BaseSettings):
 
     # Paths
     PROJECT_ROOT: str = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-    MASTER_CONTENT_ROOT: str = os.path.join(PROJECT_ROOT, "backend", "GURUKUL_AI_FINAL_MASTER_CONTENT_CLASSES_5_6_7")
+    MASTER_CONTENT_ROOT: str = os.path.join(PROJECT_ROOT, "backend", "GURUKUL_AI_CONTENT")
     USE_MASTER_CONTENT: bool = True
 
     # DIKSHA Credentials
@@ -95,7 +95,7 @@ class Settings(BaseSettings):
     ADAPTIVE_MASTERY_REVIEW_COORDINATION: str = "ACTIVE"
 
     # Multimedia External Catalog
-    MULTIMEDIA_EXTERNAL_CATALOG_PATH: str = os.path.join(PROJECT_ROOT, "Multimedia", "GURUKUL_EXTERNAL_MULTIMEDIA_101_CHAPTERS_V3.json")
+    MULTIMEDIA_EXTERNAL_CATALOG_PATH: str = os.path.join(PROJECT_ROOT, "Multimedia", "GURUKUL_EXTERNAL_MULTIMEDIA_FINAL_163.json")
     MULTIMEDIA_EXTERNAL_API_IMPORT_PATH: str = os.path.join(PROJECT_ROOT, "Multimedia", "GURUKUL_EXTERNAL_MULTIMEDIA_API_IMPORT.json")
 
     # General Learning

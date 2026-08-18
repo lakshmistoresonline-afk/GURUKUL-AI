@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "accessibility",
+  "chapter_id": "eesa105",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "The Frog",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "features": [
+      "plain-language explanations",
+      "short chunks",
+      "read-aloud compatible text",
+      "alt-text fields for visuals",
+      "keyboard-accessible interactions",
+      "high-contrast compatible UI"
+    ],
+    "content_rule": "Accessibility text must describe the same source-grounded content without adding facts."
+  }
+}

@@ -40,8 +40,8 @@ async def test_reload_catalogs(external_media_service):
 
     stats = await external_media_service.get_stats()
     assert stats["total_resources"] > 0
-    # Both catalogs combined should have around 500 records based on 101 chapters * (2-5 resources)
-    assert stats["total_resources"] > 100
+    # 163 chapters * 2 resources = 326. Some might fail to load.
+    assert stats["total_resources"] > 150
 
 @pytest.mark.asyncio
 async def test_verification_workflow(external_media_service):

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "ehve101",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "किरन",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "ehve101_case01",
+        "title": "Applying किरन",
+        "case": "A learner faces a real-life situation related to the chapter 'किरन'.",
+        "questions": [
+          "What concept applies?",
+          "What evidence supports your choice?",
+          "What would you do next?"
+        ],
+        "answer_guidance": "Ground all answers in the chapter concepts."
+      }
+    ]
+  }
+}

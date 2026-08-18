@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "gepr105",
+  "class": 7,
+  "subject": "English",
+  "chapter_title": "Bravehearts — A Homage to Our Brave Soldiers",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "gepr105_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources — Bravehearts — A Homage to Our Brave Soldiers",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resource portal."
+      },
+      {
+        "id": "gepr105_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery — Bravehearts — A Homage to Our Brave Soldiers",
+        "url": "https://www.youtube.com/results?search_query=Class+7+English+Bravehearts+—+A+Homage+to+Our+Brave+Soldiers+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not represented as a verified direct video."
+      }
+    ]
+  }
+}

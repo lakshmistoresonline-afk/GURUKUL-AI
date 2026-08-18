@@ -1,0 +1,20 @@
+{
+  "path": [
+    {
+      "trigger": "incorrect core concept",
+      "action": "revisit source-grounded explanation"
+    },
+    {
+      "trigger": "second error",
+      "action": "complete simpler evidence/step activity"
+    },
+    {
+      "trigger": "third error",
+      "action": "complete guided worked example"
+    },
+    {
+      "trigger": "successful remediation",
+      "action": "retry original difficulty"
+    }
+  ]
+}

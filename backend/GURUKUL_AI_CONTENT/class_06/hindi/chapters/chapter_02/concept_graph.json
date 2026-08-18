@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fhml102_c01",
+      "label": "गोल"
+    },
+    {
+      "id": "fhml102_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fhml102_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fhml102_c01",
+      "to": "fhml102_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fhml102_c02",
+      "to": "fhml102_c03",
+      "relation": "enables"
+    }
+  ]
+}

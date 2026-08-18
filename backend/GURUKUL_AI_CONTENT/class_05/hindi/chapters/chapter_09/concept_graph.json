@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "ehve109_concept_01",
+      "label": "न्याय"
+    },
+    {
+      "id": "ehve109_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "ehve109_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ehve109_concept_01",
+      "to": "ehve109_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "ehve109_concept_02",
+      "to": "ehve109_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

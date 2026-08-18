@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fecu107_c01",
+      "label": "Temperature and its Measurement"
+    },
+    {
+      "id": "fecu107_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fecu107_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fecu107_c01",
+      "to": "fecu107_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fecu107_c02",
+      "to": "fecu107_c03",
+      "relation": "enables"
+    }
+  ]
+}

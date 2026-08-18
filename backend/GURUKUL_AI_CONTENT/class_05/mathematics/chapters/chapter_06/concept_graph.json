@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eemm106_concept_01",
+      "label": "The Dairy Farm"
+    },
+    {
+      "id": "eemm106_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eemm106_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eemm106_concept_01",
+      "to": "eemm106_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eemm106_concept_02",
+      "to": "eemm106_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}
