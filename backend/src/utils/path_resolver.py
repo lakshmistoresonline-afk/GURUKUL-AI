@@ -76,24 +76,38 @@ class PathResolver:
     @staticmethod
     def normalize_chapter_id(class_name: str, chapter_id: str, subject: Optional[str] = None) -> str:
         """
-        Maps legacy IDs (e.g. fepr101) to canonical IDs (e.g. unit_01) used in the Master Index.
-        Currently primarily affects Class 6.
+        Maps legacy IDs (e.g. fepr101, eesa101) to canonical IDs (e.g. unit_01, e05_c1).
         """
         cid = str(chapter_id).strip().lower()
         class_id = PathResolver.extract_class_id(class_name)
+
+        if class_id == "5":
+            # eesa101 -> e05_c1
+            if cid.startswith('eesa') and len(cid) >= 7: return f"e05_c{int(cid[-3:])%100}"
+            if cid.startswith('eeev') and len(cid) >= 7: return f"evs05_c{int(cid[-3:])%100}"
+            if cid.startswith('ehve') and len(cid) >= 7: return f"h05_c{int(cid[-3:])%100}"
+            if cid.startswith('eemm') and len(cid) >= 7: return f"m05_c{int(cid[-3:])%100}"
 
         if class_id == "6":
             # Class 6 English: fepr101 -> unit_01
             if (cid.startswith('fepr') or (subject and subject.lower() == 'english' and cid.startswith('fe'))) and len(cid) >= 7:
                 num_part = cid[-2:]
-                if num_part.isdigit():
-                    return f"unit_{num_part}"
+                if num_part.isdigit(): return f"unit_{num_part}"
 
             # Class 6 Others: fegp101, fesc101 -> chapter_01
             if cid.startswith('fe') and len(cid) >= 7:
                 num_part = cid[-2:]
-                if num_part.isdigit():
-                    return f"chapter_{num_part}"
+                if num_part.isdigit(): return f"chapter_{num_part}"
+
+        if class_id == "7":
+            # c7_english_001 -> e07_c1
+            if cid.startswith('c7_') and len(cid) >= 12:
+                parts = cid.split('_')
+                if len(parts) == 3 and parts[2].isdigit():
+                    num = int(parts[2])
+                    subj = parts[1].lower()
+                    prefix = {"english": "e", "hindi": "h", "mathematics": "m", "science": "s", "social_science": "ss"}.get(subj, "x")
+                    return f"{prefix}07_c{num}"
 
         return cid
 

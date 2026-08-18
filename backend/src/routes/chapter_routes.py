@@ -14,6 +14,7 @@ from ..utils.pdf_utils import calculate_file_hash
 from ..utils.security import get_authorized_class, validate_chapter_access, get_admin_user
 from ..utils.auth import get_current_user, AuthUser, get_current_admin
 from ..utils.path_resolver import PathResolver
+from ..utils.package_adapter import PackageAdapter
 
 
 logger = logging.getLogger(__name__)
@@ -175,7 +176,7 @@ async def get_chapter_package(
             if os.path.exists(package_path):
                 try:
                     with open(package_path, "r", encoding="utf-8") as f:
-                        return json.load(f)
+                        return PackageAdapter.adapt(json.load(f))
                 except Exception as e:
                     logger.error(f"Error reading master package: {e}")
 
@@ -211,7 +212,7 @@ async def get_chapter_package(
 
     try:
         with open(package_path, "r", encoding="utf-8") as f:
-            return json.load(f)
+            return PackageAdapter.adapt(json.load(f))
     except Exception as exc:
         raise HTTPException(
             status_code=500,
@@ -315,7 +316,7 @@ async def list_hierarchical_content(user: AuthUser = Depends(get_current_user)):
             if os.path.exists(pkg_file):
                 try:
                     with open(pkg_file, "r", encoding="utf-8") as f:
-                        pkg = json.load(f)
+                        pkg = PackageAdapter.adapt(json.load(f))
 
                         # Extract metadata
                         metadata = pkg.get("metadata", {})

@@ -192,6 +192,7 @@ async def list_chapter_media(
 
     # 1. Check Master Package for bundled multimedia
     from ..utils.path_resolver import PathResolver
+    from ..utils.package_adapter import PackageAdapter
     master_path = PathResolver.get_chapter_path(authorized_class, chapter_id)
     master_media = []
     youtube_media = []
@@ -201,7 +202,7 @@ async def list_chapter_media(
         if os.path.exists(pkg_path):
             try:
                 with open(pkg_path, 'r', encoding='utf-8') as f:
-                    pkg = json.load(f)
+                    pkg = PackageAdapter.adapt(json.load(f))
 
                     # AI Enrichment / Multimedia Learning
                     ai_enrichment = pkg.get("original_data", {}).get("aiEnrichment", {})

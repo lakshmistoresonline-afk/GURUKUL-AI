@@ -6,6 +6,7 @@ from typing import Dict, Any, List, Optional
 from .mastery_service import MasteryService
 
 from ..config.app_config import settings
+from ..utils.package_adapter import PackageAdapter
 
 logger = logging.getLogger(__name__)
 
@@ -35,6 +36,8 @@ class DiagnosticService:
         # Use canonical chapter identifier for question lookups
         chapter_title = config.get("source", {}).get("chapterTitle", "")
         if not chapter_title: return []
+
+        canonical_chapter_id = config.get("source", {}).get("slug") or chapter_id
 
         # Load the full question bank for the current chapter
         curr_pkg = self._load_package_by_title(chapter_title)
@@ -87,10 +90,21 @@ class DiagnosticService:
     def _load_package_by_title(self, title: str) -> Optional[Dict[str, Any]]:
         info = self.title_map.get(title.lower())
         if not info: return None
+
+        # Priority 1: Master Content (New Root)
+        from ..utils.path_resolver import PathResolver
+        master_path = PathResolver.get_chapter_path(info['class'], info['id'], subject=info['subject'])
+        if master_path:
+            pkg_path = os.path.join(master_path, "package.json")
+            if os.path.exists(pkg_path):
+                with open(pkg_path, 'r', encoding='utf-8') as f:
+                    return PackageAdapter.adapt(json.load(f))
+
+        # Priority 2: storage/output (Old/Fallback)
         path = os.path.join(settings.STORAGE_PATH, "output", info['class'], info['subject'], info['id'], "package.json")
         if not os.path.exists(path): return None
         with open(path, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            return PackageAdapter.adapt(json.load(f))
 
     def _pick_from_bank(self, pkg: Dict[str, Any], levels: Any, count: int) -> List[Dict[str, Any]]:
         if isinstance(levels, str): levels = [levels]

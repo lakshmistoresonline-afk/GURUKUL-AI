@@ -12,6 +12,7 @@ from ..services.diagnostic_service import DiagnosticService
 from ..services.question_bank_service import QuestionBankService
 from ..config.app_config import settings
 from ..utils.security import get_authorized_class, validate_chapter_access
+from ..utils.package_adapter import PackageAdapter
 from ..utils.auth import get_current_user, AuthUser
 
 from ..services.srs_service import SRSService
@@ -75,8 +76,8 @@ async def generate_dynamic_questions(
          raise HTTPException(status_code=404, detail="Chapter package not found.")
 
     with open(package_path, "r", encoding="utf-8") as f:
-        package = json.load(f)
-        is_final = package.get("metadata", {}).get("is_final_content", False)
+        package = PackageAdapter.adapt(json.load(f))
+        is_final = package.get("metadata", {}).get("is_final_content", True) # Default True for adapted
         original_data = package.get("original_data")
 
     if is_final and original_data:
@@ -187,23 +188,41 @@ async def get_quiz_session(
     if chapterId:
         validate_chapter_access(chapterId, authorized_class)
 
-    if not question_bank_service:
-        raise HTTPException(status_code=503, detail="Question Bank Service unavailable")
-
-    if chapterId and type != "quick":
+    # Priority: If chapterId is provided, attempt to get questions from that chapter's package
+    if chapterId:
         config = mastery_service.get_chapter_mastery_config(authorized_class, subject or "", chapterId)
         if config:
             # Support both 'concepts' and 'mappings'
             concepts = config.get("concepts") or config.get("mappings") or []
 
             if conceptId:
-                return [_format_q_for_quiz(q) for q in mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, conceptId, limit=count)]
-            else:
-                all_qs = []
-                for concept in concepts:
-                    all_qs.extend(mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, concept["conceptId"], limit=2))
-                random.shuffle(all_qs)
-                return [_format_q_for_quiz(q) for q in all_qs[:count]]
+                qs = mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, conceptId, limit=count)
+                if qs: return [_format_q_for_quiz(q) for q in qs]
+
+            # Fallback to all questions in chapter
+            all_qs = []
+            # Option 1: Via concepts
+            for concept in concepts:
+                c_id = concept.get("conceptId") or concept.get("concept_id") or concept.get("id")
+                if c_id:
+                    all_qs.extend(mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, c_id, limit=3))
+
+            # Option 2: Direct from package if concepts method failed
+            if not all_qs:
+                package = mastery_service.get_chapter_mastery_config(authorized_class, subject or "", chapterId)
+                if package and "content" in package and "quiz" in package["content"]:
+                     all_qs = package["content"]["quiz"]
+                elif package and "original_data" in package:
+                     all_qs = package.get("original_data", {}).get("assessment", {}).get("expandedQuestionBank", [])
+
+            if all_qs:
+                # Remove duplicates by ID
+                unique_qs = {str(q.get('id')): q for q in all_qs if q.get('id')}.values()
+                selection = random.sample(list(unique_qs), min(len(unique_qs), count))
+                return [_format_q_for_quiz(q) for q in selection]
+
+    if not question_bank_service:
+        raise HTTPException(status_code=503, detail="Question Bank Service unavailable and chapter package questions not found")
 
     return question_bank_service.get_questions(
         class_id=int(authorized_class.split('_')[1]),

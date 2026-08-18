@@ -84,22 +84,32 @@ async def get_remediation(
     authorized_class = await get_authorized_class(user, class_name)
     validate_chapter_access(chapter_id, authorized_class)
 
-    package_path = os.path.join("./storage/output", class_name, subject, chapter_id, "package.json")
-    if not os.path.exists(package_path):
+    from ..utils.path_resolver import PathResolver
+    from ..utils.package_adapter import PackageAdapter
+
+    master_path = PathResolver.get_chapter_path(class_name, chapter_id, subject=subject)
+    package = None
+
+    if master_path:
+        pkg_path = os.path.join(master_path, "package.json")
+        if os.path.exists(pkg_path):
+            with open(pkg_path, "r", encoding="utf-8") as f:
+                package = PackageAdapter.adapt(json.load(f))
+
+    if not package:
+        package_path = os.path.join("./storage/output", class_name, subject, chapter_id, "package.json")
+        if os.path.exists(package_path):
+            with open(package_path, "r", encoding="utf-8") as f:
+                package = PackageAdapter.adapt(json.load(f))
+
+    if not package:
          raise HTTPException(status_code=404, detail="Chapter not found")
 
-    with open(package_path, "r", encoding="utf-8") as f:
-        package = json.load(f)
-
-    concepts = []
-    if "6" in class_name:
-        concepts = package.get("original_data", {}).get("aiEnrichment", {}).get("concepts", [])
-    else:
-        concepts = package.get("original_data", {}).get("aiEnrichment", {}).get("topicGuides", [])
+    concepts = package.get("original_data", {}).get("aiEnrichment", {}).get("concepts", [])
 
     target = None
     for c in concepts:
-        if c.get("term") == concept_id or c.get("topic") == concept_id or c.get("conceptId") == concept_id:
+        if c.get("term") == concept_id or c.get("topic") == concept_id or c.get("conceptId") == concept_id or c.get("id") == concept_id:
             target = c
             break
 
@@ -108,7 +118,7 @@ async def get_remediation(
 
     return {
         "concept": concept_id,
-        "explanation": target.get("definition") or target.get("sourceGroundedExplanation"),
+        "explanation": target.get("explanation") or target.get("definition") or target.get("sourceGroundedExplanation"),
         "evidence": target.get("sourceEvidence", []),
         "hint": target.get("socratic_hint") or target.get("studentFriendlySummary")
     }

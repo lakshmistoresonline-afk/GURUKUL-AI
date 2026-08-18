@@ -8,6 +8,7 @@ from datetime import datetime
 
 from ..config.app_config import settings
 from ..utils.path_resolver import PathResolver
+from ..utils.package_adapter import PackageAdapter
 
 logger = logging.getLogger(__name__)
 
@@ -376,10 +377,9 @@ class MasteryService:
                     if os.path.exists(pkg_path):
                         try:
                             with open(pkg_path, "r", encoding="utf-8") as f:
-                                pkg = json.load(f)
-                                topic_guides = pkg.get("content", {}).get("topicGuides") or \
-                                               pkg.get("original_data", {}).get("aiEnrichment", {}).get("topicGuides") or \
-                                               pkg.get("original_data", {}).get("aiEnrichment", {}).get("concepts") or []
+                                pkg = PackageAdapter.adapt(json.load(f))
+                                # In adapted pkg, concepts are in original_data.aiEnrichment.concepts
+                                topic_guides = pkg.get("original_data", {}).get("aiEnrichment", {}).get("concepts") or []
 
                                 for i, concept in enumerate(config["concepts"]):
                                     if not concept.get("conceptName") and not concept.get("concept"):
