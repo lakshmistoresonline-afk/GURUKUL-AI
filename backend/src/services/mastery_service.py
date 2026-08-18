@@ -291,12 +291,19 @@ class MasteryService:
                         config = PackageAdapter.adapt(json.load(f))
 
                         # Ensure every concept has both 'conceptId' and 'conceptName' for UI compatibility
-                        concepts = config.get("concepts") or config.get("mappings") or []
+                        # Use concepts_list from adapted package if available
+                        concepts = config.get("concepts_list") or config.get("mappings") or []
                         for c in concepts:
-                            if "concept_id" in c and "conceptId" not in c:
-                                c["conceptId"] = c["concept_id"]
-                            if "concept_name" in c and "conceptName" not in c:
-                                c["conceptName"] = c["concept_name"]
+                            if isinstance(c, dict):
+                                if "concept_id" in c and "conceptId" not in c:
+                                    c["conceptId"] = c["concept_id"]
+                                if "concept_name" in c and "conceptName" not in c:
+                                    c["conceptName"] = c["concept_name"]
+
+                        # For adapted packages, ensure 'concepts' in the root is the list for backend services
+                        # while keeping the string version in 'content' for UI
+                        if "concepts_list" in config:
+                            config["concepts"] = config["concepts_list"]
 
                         return config
                 except Exception as e:

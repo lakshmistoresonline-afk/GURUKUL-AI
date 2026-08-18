@@ -230,47 +230,54 @@ async def list_chapter_media(
                                     "metadata": storyboard
                                 })
 
-                            # Individual bundled media from storyboard/resources
-                            m_list = storyboard.get("resources") or pkg.get("content", {}).get("multimedia")
-                            if m_list and isinstance(m_list, list):
-                                for item in m_list:
-                                    # Filter out items that are just the PDF itself if desired,
-                                    # but let frontend handle display
-                                    master_media.append({
-                                        "job_id": f"master_{item.get('id', uuid.uuid4())}",
-                                        "chapter_id": chapter_id,
-                                        "type": item.get("type", "visual"),
-                                        "status": "COMPLETED",
-                                        "output_url": item.get("url", ""),
-                                        "metadata": item
-                                    })
+                        # Individual bundled media from storyboard/resources
+                        m_list = storyboard.get("resources") or pkg.get("content", {}).get("multimedia")
+                        if m_list and isinstance(m_list, list):
+                            for item in m_list:
+                                if not isinstance(item, dict): continue
+
+                                m_id = item.get('id') or str(uuid.uuid4())
+                                master_media.append({
+                                    "job_id": f"master_{m_id}",
+                                    "chapter_id": chapter_id,
+                                    "type": item.get("type", "visual"),
+                                    "status": "COMPLETED",
+                                    "output_url": item.get("url", ""),
+                                    "metadata": item
+                                })
 
                         # YouTube Resources
-                        yt_data = ai_enrichment.get("youtube_resources", {}) or \
-                                  ai_enrichment.get("youtube", {})
+                        try:
+                            yt_data = ai_enrichment.get("youtube_resources", {}) or \
+                                      ai_enrichment.get("youtube", {}) or \
+                                      pkg.get("original_data", {}).get("youtube", {})
 
-                        if yt_data:
-                            # Direct Videos
-                            for v in yt_data.get("directVerifiedVideos", []):
-                                youtube_media.append({
-                                    "job_id": f"yt_{v.get('id', uuid.uuid4())}",
-                                    "chapter_id": chapter_id,
-                                    "type": "video",
-                                    "status": "COMPLETED",
-                                    "output_url": v.get("url"),
-                                    "metadata": {**v, "is_direct": True}
-                                })
+                            if isinstance(yt_data, dict):
+                                # Direct Videos
+                                for v in yt_data.get("directVerifiedVideos", []):
+                                    if not isinstance(v, dict): continue
+                                    youtube_media.append({
+                                        "job_id": f"yt_{v.get('id') or uuid.uuid4()}",
+                                        "chapter_id": chapter_id,
+                                        "type": "video",
+                                        "status": "COMPLETED",
+                                        "output_url": v.get("url"),
+                                        "metadata": {**v, "is_direct": True}
+                                    })
 
-                            # Discovery Links
-                            for d in yt_data.get("discoveryLinks", []):
-                                youtube_media.append({
-                                    "job_id": f"yt_disc_{d.get('id', uuid.uuid4())}",
-                                    "chapter_id": chapter_id,
-                                    "type": "video_discovery",
-                                    "status": "COMPLETED",
-                                    "output_url": d.get("url"),
-                                    "metadata": {**d, "is_direct": False}
-                                })
+                                # Discovery Links
+                                for d in yt_data.get("discoveryLinks", []):
+                                    if not isinstance(d, dict): continue
+                                    youtube_media.append({
+                                        "job_id": f"yt_disc_{d.get('id') or uuid.uuid4()}",
+                                        "chapter_id": chapter_id,
+                                        "type": "video_discovery",
+                                        "status": "COMPLETED",
+                                        "output_url": d.get("url"),
+                                        "metadata": {**d, "is_direct": False}
+                                    })
+                        except Exception as e:
+                            logger.error(f"Error parsing YouTube data for {chapter_id}: {e}")
                 except Exception as e:
                     logger.error(f"Error parsing master media for {chapter_id}: {e}", exc_info=True)
         else:

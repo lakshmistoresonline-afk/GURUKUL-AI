@@ -11,8 +11,8 @@ class PackageAdapter:
 
     @staticmethod
     def adapt(pkg: Dict[str, Any]) -> Dict[str, Any]:
-        if not pkg:
-            return {}
+        if not pkg or not isinstance(pkg, dict):
+            return pkg if isinstance(pkg, dict) else {}
 
         # If it's already the legacy flat structure, return it
         if "content" in pkg and "metadata" in pkg and "components" not in pkg:
@@ -76,34 +76,46 @@ class PackageAdapter:
 
             # Teacher Explanation
             teacher_comp = comps.get("teacher_explanation", {}).get("content", {})
-            if teacher_comp:
+            if teacher_comp and isinstance(teacher_comp, dict):
                 sections = teacher_comp.get("explanation_sections", [])
-                if sections:
+                if sections and isinstance(sections, list):
                     # Join sections into a structured markdown string
                     text_parts = []
                     for s in sections:
+                        if not isinstance(s, dict): continue
                         title = s.get('title', '')
                         expl = s.get('explanation', '')
                         if title: text_parts.append(f"### {title}")
                         if expl: text_parts.append(expl)
                         # Add evidence if present
                         ev = s.get('source_evidence', [])
-                        if ev:
+                        if ev and isinstance(ev, list):
                             text_parts.append("\n**Evidence from chapter:**")
                             for item in ev: text_parts.append(f"* {item}")
                     teacher_text = "\n\n".join(text_parts)
                 else:
-                    teacher_text = teacher_comp.get("explanation") or teacher_comp.get("guide")
+                    teacher_text = teacher_comp.get("explanation") or teacher_comp.get("guide") or ""
+
+                # Fallback to chapter_content if teacher_explanation is still empty
+                if not teacher_text:
+                    content_comp = comps.get("chapter_content", {}).get("content", {})
+                    teacher_text = content_comp.get("introduction") or content_comp.get("overview") or ""
 
                 adapted["content"]["teacher_explanation"] = teacher_text
                 adapted["content"]["teacherExplanation"] = teacher_text
+            elif isinstance(teacher_comp, str):
+                adapted["content"]["teacher_explanation"] = teacher_comp
+                adapted["content"]["teacherExplanation"] = teacher_comp
 
             # Student Explanation
             student_comp = comps.get("student_explanation", {}).get("content", {})
-            if student_comp:
-                student_text = student_comp.get("explanation") or student_comp.get("summary")
+            if student_comp and isinstance(student_comp, dict):
+                student_text = student_comp.get("explanation") or student_comp.get("summary") or ""
                 adapted["content"]["student_explanation"] = student_text
                 adapted["content"]["studentExplanation"] = student_text
+            elif isinstance(student_comp, str):
+                adapted["content"]["student_explanation"] = student_comp
+                adapted["content"]["studentExplanation"] = student_comp
 
             # Concepts
             concepts_comp = comps.get("concepts", {}).get("content", {})
@@ -124,7 +136,7 @@ class PackageAdapter:
 
             # Mind Map / Concept Graph -> Adapt to Frontend MindMap structure
             graph_comp = comps.get("concept_graph", {}).get("content", {})
-            if graph_comp:
+            if graph_comp and isinstance(graph_comp, dict):
                 # Store original for any component that can handle it
                 adapted["content"]["concept_graph"] = graph_comp
 
@@ -132,19 +144,20 @@ class PackageAdapter:
                 nodes = graph_comp.get("nodes", [])
                 edges = graph_comp.get("edges", [])
 
-                if nodes:
+                if nodes and isinstance(nodes, list):
                     central_node = nodes[0]
                     mind_map = {
                         "topic": central_node.get("label", chapter_info.get("chapter_title")),
                         "branches": []
                     }
 
-                    # Group branches
+                    # Group branches (all nodes except the first one)
                     for node in nodes[1:]:
-                        mind_map["branches"].append({
-                            "label": node.get("label", "Concept"),
-                            "details": [node.get("description", "")] if node.get("description") else []
-                        })
+                        if isinstance(node, dict):
+                            mind_map["branches"].append({
+                                "label": node.get("label", "Concept"),
+                                "details": [node.get("description", "")] if node.get("description") else []
+                            })
 
                     adapted["content"]["mind_map"] = mind_map
                     adapted["content"]["mindMap"] = mind_map

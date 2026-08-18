@@ -219,26 +219,35 @@ async def get_quiz_session(
                                 if qs: all_qs.extend(qs)
                             except: pass
 
-                    # Option 2: Direct from package if concepts method failed
-                    if not all_qs:
+                    # Option 2: Direct from package if concepts method failed or didn't return enough questions
+                    if len(all_qs) < count:
                         package = mastery_service.get_chapter_mastery_config(authorized_class, subject or "", chapterId)
-                        print(f"Quiz Debug: Package keys for {chapterId}: {package.keys() if package else 'None'}")
                         if package and "content" in package:
-                             all_qs = package["content"].get("quiz") or []
-                             print(f"Quiz Debug: Extracted {len(all_qs)} questions from package content")
+                             pkg_qs = package["content"].get("quiz") or []
+                             all_qs.extend(pkg_qs)
                         elif package and "original_data" in package:
-                             all_qs = package.get("original_data", {}).get("assessment", {}).get("expandedQuestionBank", [])
-                             print(f"Quiz Debug: Extracted {len(all_qs)} questions from original_data")
+                             pkg_qs = package.get("original_data", {}).get("assessment", {}).get("expandedQuestionBank", [])
+                             all_qs.extend(pkg_qs)
 
                     if all_qs:
                         # Remove duplicates by ID
-                        unique_qs = {str(q.get('id')): q for q in all_qs if q.get('id')}
+                        unique_qs = {}
+                        for q in all_qs:
+                            qid = str(q.get('id', ''))
+                            if qid and qid not in unique_qs:
+                                unique_qs[qid] = q
+
                         all_unique = list(unique_qs.values())
-                        print(f"Quiz: {len(all_unique)} unique questions found")
-                        selection = random.sample(all_unique, min(len(all_unique), count))
+                        logger.info(f"Quiz: {len(all_unique)} unique questions found for {chapterId}")
+
+                        # Selection logic
+                        selection = []
+                        if len(all_unique) > 0:
+                            selection = random.sample(all_unique, min(len(all_unique), count))
+
                         return [_format_q_for_quiz(q) for q in selection]
                     else:
-                        print("Quiz: No questions found at all")
+                        logger.warning(f"Quiz: No questions found for {chapterId}")
             except Exception as e:
                 logger.error(f"Error fetching questions from package for {chapterId}: {e}")
 

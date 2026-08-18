@@ -154,7 +154,7 @@ export default function ChapterDashboardClient() {
        isMounted = false;
        controller.abort();
     };
-  }, [classId, subject, chapterId, authLoading, profile?.uid, profile, router]);
+  }, [classId, subject, chapterId, authLoading, profile?.uid, router]);
 
   const toggleLanguage = async () => {
     const newLang = language === 'en' ? 'hi' : 'en';
