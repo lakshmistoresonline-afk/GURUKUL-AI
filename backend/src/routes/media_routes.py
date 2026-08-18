@@ -188,61 +188,119 @@ async def list_chapter_media(
     user: AuthUser = Depends(get_current_user)
 ):
     """List all media (bundled, AI-generated, and YouTube) associated with a chapter."""
-    authorized_class = user.class_name
+    try:
+        authorized_class = user.class_name
+        logger.info(f"Media: Request for {chapter_id} in {authorized_class}")
 
-    # 1. Check Master Package for bundled multimedia
-    from ..utils.path_resolver import PathResolver
-    from ..utils.package_adapter import PackageAdapter
-    master_path = PathResolver.get_chapter_path(authorized_class, chapter_id)
-    master_media = []
-    youtube_media = []
+        # 1. Check Master Package for bundled multimedia
+        from ..utils.path_resolver import PathResolver
+        from ..utils.package_adapter import PackageAdapter
 
-    if master_path:
-        pkg_path = os.path.join(master_path, "package.json")
-        if os.path.exists(pkg_path):
-            try:
-                with open(pkg_path, 'r', encoding='utf-8') as f:
-                    pkg = PackageAdapter.adapt(json.load(f))
+        # Normalize chapter ID for lookup
+        norm_chapter_id = PathResolver.normalize_chapter_id(authorized_class, chapter_id)
 
-                    # AI Enrichment / Multimedia Learning
-                    ai_enrichment = pkg.get("original_data", {}).get("aiEnrichment", {})
+        master_path = PathResolver.get_chapter_path(authorized_class, norm_chapter_id)
+        master_media = []
+        youtube_media = []
 
-                    # Storyboard (Multi-scene)
-                    storyboard = ai_enrichment.get("multimedia_learning") or \
-                                 ai_enrichment.get("multimedia")
+        if master_path:
+            pkg_path = os.path.join(master_path, "package.json")
+            if os.path.exists(pkg_path):
+                try:
+                    with open(pkg_path, 'r', encoding='utf-8') as f:
+                        raw_pkg = json.load(f)
+                        pkg = PackageAdapter.adapt(raw_pkg)
 
-                    if storyboard and isinstance(storyboard, dict) and "scenes" in storyboard:
-                        master_media.append({
-                            "job_id": f"master_sb_{chapter_id}",
-                            "chapter_id": chapter_id,
-                            "type": "storyboard",
-                            "status": "COMPLETED",
-                            "output_url": storyboard.get("url", ""),
-                            "metadata": storyboard
-                        })
+                        # AI Enrichment / Multimedia Learning
+                        ai_enrichment = pkg.get("original_data", {}).get("aiEnrichment", {})
 
-                    # Individual bundled media
-                    m_list = pkg.get("content", {}).get("multimedia")
-                    if m_list and isinstance(m_list, list):
-                        for item in m_list:
-                            master_media.append({
-                                "job_id": f"master_{item.get('id', uuid.uuid4())}",
-                                "chapter_id": chapter_id,
-                                "type": item.get("type", "visual"),
-                                "status": "COMPLETED",
-                                "output_url": item.get("url", ""),
-                                "metadata": item
-                            })
+                        # Storyboard (Multi-scene)
+                        storyboard = ai_enrichment.get("multimedia_learning") or \
+                                     ai_enrichment.get("multimedia") or \
+                                     pkg.get("components", {}).get("multimedia", {}).get("content", {})
 
-                    # YouTube Resources
-                    yt_data = ai_enrichment.get("youtube_resources", {}) or \
-                              ai_enrichment.get("youtube", {})
+                        if storyboard and isinstance(storyboard, dict) and ("scenes" in storyboard or "resources" in storyboard):
+                            if "scenes" in storyboard:
+                                master_media.append({
+                                    "job_id": f"master_sb_{chapter_id}",
+                                    "chapter_id": chapter_id,
+                                    "type": "storyboard",
+                                    "status": "COMPLETED",
+                                    "output_url": storyboard.get("url", ""),
+                                    "metadata": storyboard
+                                })
 
-                    if yt_data:
-                        # Direct Videos
-                        direct_found = False
-                        for v in yt_data.get("directVerifiedVideos", []):
-                            direct_found = True
+                            # Individual bundled media from storyboard/resources
+                            m_list = storyboard.get("resources") or pkg.get("content", {}).get("multimedia")
+                            if m_list and isinstance(m_list, list):
+                                for item in m_list:
+                                    # Filter out items that are just the PDF itself if desired,
+                                    # but let frontend handle display
+                                    master_media.append({
+                                        "job_id": f"master_{item.get('id', uuid.uuid4())}",
+                                        "chapter_id": chapter_id,
+                                        "type": item.get("type", "visual"),
+                                        "status": "COMPLETED",
+                                        "output_url": item.get("url", ""),
+                                        "metadata": item
+                                    })
+
+                        # YouTube Resources
+                        yt_data = ai_enrichment.get("youtube_resources", {}) or \
+                                  ai_enrichment.get("youtube", {})
+
+                        if yt_data:
+                            # Direct Videos
+                            for v in yt_data.get("directVerifiedVideos", []):
+                                youtube_media.append({
+                                    "job_id": f"yt_{v.get('id', uuid.uuid4())}",
+                                    "chapter_id": chapter_id,
+                                    "type": "video",
+                                    "status": "COMPLETED",
+                                    "output_url": v.get("url"),
+                                    "metadata": {**v, "is_direct": True}
+                                })
+
+                            # Discovery Links
+                            for d in yt_data.get("discoveryLinks", []):
+                                youtube_media.append({
+                                    "job_id": f"yt_disc_{d.get('id', uuid.uuid4())}",
+                                    "chapter_id": chapter_id,
+                                    "type": "video_discovery",
+                                    "status": "COMPLETED",
+                                    "output_url": d.get("url"),
+                                    "metadata": {**d, "is_direct": False}
+                                })
+                except Exception as e:
+                    logger.error(f"Error parsing master media for {chapter_id}: {e}", exc_info=True)
+        else:
+            logger.warning(f"Media: Master path not found for {chapter_id}")
+
+        # 2. Check AI Generated Media (DB-backed)
+        ai_media = []
+        try:
+            # We wrap this in a timeout or separate task if it's too slow
+            async with media_manager.AsyncSession() as session:
+                from ..models.job import MediaJob
+                from sqlalchemy import select
+                stmt = select(MediaJob).where(MediaJob.chapter_id == chapter_id)
+                result = await session.execute(stmt)
+                jobs = result.scalars().all()
+                ai_media = [j.to_dict() for j in jobs]
+        except Exception as e:
+            logger.error(f"Error fetching AI media from DB for {chapter_id}: {e}")
+
+        # 3. Check Global YouTube Mapping (Legacy fallback)
+        if not youtube_media:
+            mapping_path = os.path.join(settings.STORAGE_PATH, "video_resources_mapped.json")
+            if os.path.exists(mapping_path):
+                try:
+                    with open(mapping_path, 'r', encoding='utf-8') as f:
+                        all_v = json.load(f)
+
+                    chapter_v = all_v.get(chapter_id)
+                    if chapter_v:
+                        for v in chapter_v.get("verified_direct_resources", []):
                             youtube_media.append({
                                 "job_id": f"yt_{v.get('id', uuid.uuid4())}",
                                 "chapter_id": chapter_id,
@@ -251,11 +309,7 @@ async def list_chapter_media(
                                 "output_url": v.get("url"),
                                 "metadata": {**v, "is_direct": True}
                             })
-
-                        # Discovery Links
-                        disc_found = False
-                        for d in yt_data.get("discoveryLinks", []):
-                            disc_found = True
+                        for d in chapter_v.get("live_discovery_links", []):
                             youtube_media.append({
                                 "job_id": f"yt_disc_{d.get('id', uuid.uuid4())}",
                                 "chapter_id": chapter_id,
@@ -264,68 +318,12 @@ async def list_chapter_media(
                                 "output_url": d.get("url"),
                                 "metadata": {**d, "is_direct": False}
                             })
+                except: pass
 
-                        # Fallback: Auto-generate discovery link using terms
-                        if not direct_found and not disc_found:
-                            terms = yt_data.get("chapterSpecificDiscoveryTerms", []) or \
-                                    yt_data.get("suggestedTopics", [])
-                            if terms:
-                                term = terms[0]
-                                youtube_media.append({
-                                    "job_id": f"yt_auto_{uuid.uuid4()}",
-                                    "chapter_id": chapter_id,
-                                    "type": "video_discovery",
-                                    "status": "COMPLETED",
-                                    "output_url": f"https://www.youtube.com/results?search_query={term.replace(' ', '+')}",
-                                    "metadata": {
-                                        "title": f"Explore: {term}",
-                                        "channel": "YouTube Discovery",
-                                        "url": f"https://www.youtube.com/results?search_query={term.replace(' ', '+')}",
-                                        "resource_type": "smart_discovery",
-                                        "is_direct": False
-                                    }
-                                })
-            except Exception as e:
-                logger.error(f"Error parsing master media for {chapter_id}: {e}")
+        combined = master_media + ai_media + youtube_media
+        logger.info(f"Media: Found {len(combined)} items for {chapter_id}")
+        return combined
+    except Exception as e:
+        logger.error(f"CRITICAL ERROR in list_chapter_media for {chapter_id}: {e}", exc_info=True)
+        return []
 
-    # 2. Check AI Generated Media (DB-backed)
-    ai_media = []
-    async with media_manager.AsyncSession() as session:
-        from ..models.job import MediaJob
-        from sqlalchemy import select
-        stmt = select(MediaJob).where(MediaJob.chapter_id == chapter_id)
-        result = await session.execute(stmt)
-        jobs = result.scalars().all()
-        ai_media = [j.to_dict() for j in jobs]
-
-    # 3. Check Global YouTube Mapping (Legacy fallback)
-    if not youtube_media:
-        mapping_path = os.path.join(settings.STORAGE_PATH, "video_resources_mapped.json")
-        if os.path.exists(mapping_path):
-            try:
-                with open(mapping_path, 'r', encoding='utf-8') as f:
-                    all_v = json.load(f)
-
-                chapter_v = all_v.get(chapter_id)
-                if chapter_v:
-                    for v in chapter_v.get("verified_direct_resources", []):
-                        youtube_media.append({
-                            "job_id": f"yt_{v.get('id', uuid.uuid4())}",
-                            "chapter_id": chapter_id,
-                            "type": "video",
-                            "status": "COMPLETED",
-                            "output_url": v.get("url"),
-                            "metadata": {**v, "is_direct": True}
-                        })
-                    for d in chapter_v.get("live_discovery_links", []):
-                        youtube_media.append({
-                            "job_id": f"yt_disc_{d.get('id', uuid.uuid4())}",
-                            "chapter_id": chapter_id,
-                            "type": "video_discovery",
-                            "status": "COMPLETED",
-                            "output_url": d.get("url"),
-                            "metadata": {**d, "is_direct": False}
-                        })
-            except: pass
-
-    return master_media + ai_media + youtube_media

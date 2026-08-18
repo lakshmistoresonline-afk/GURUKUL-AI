@@ -210,6 +210,11 @@ class MasteryService:
         config = self.get_chapter_mastery_config(class_name, subject, chapter_id)
         if not config: return []
 
+        # Fresh Content Integration: If it's an adapted package, search direct by concept_id
+        if "content" in config and "quiz" in config["content"]:
+            all_qs = config["content"]["quiz"]
+            return [q for q in all_qs if str(q.get("concept_id") or q.get("conceptId")) == str(concept_id)][:limit]
+
         norm_chapter_id = PathResolver.normalize_chapter_id(class_name, chapter_id, subject=subject)
 
         # Support both 'concepts' and 'mappings'
@@ -279,6 +284,25 @@ class MasteryService:
         # Priority: Load from the new chapter-specific content root
         master_path = PathResolver.get_chapter_path(class_name, norm_chapter_id, subject=subject)
         if master_path:
+            pkg_path = os.path.join(master_path, "package.json")
+            if os.path.exists(pkg_path):
+                try:
+                    with open(pkg_path, "r", encoding="utf-8") as f:
+                        config = PackageAdapter.adapt(json.load(f))
+
+                        # Ensure every concept has both 'conceptId' and 'conceptName' for UI compatibility
+                        concepts = config.get("concepts") or config.get("mappings") or []
+                        for c in concepts:
+                            if "concept_id" in c and "conceptId" not in c:
+                                c["conceptId"] = c["concept_id"]
+                            if "concept_name" in c and "conceptName" not in c:
+                                c["conceptName"] = c["concept_name"]
+
+                        return config
+                except Exception as e:
+                    logger.error(f"Error loading master package for mastery config: {e}")
+
+            # Fallback to mastery_map.json if package.json missing
             mastery_map_path = os.path.join(master_path, "mastery_map.json")
             metadata_path = os.path.join(master_path, "chapter_metadata.json")
             if os.path.exists(mastery_map_path):
@@ -367,6 +391,13 @@ class MasteryService:
             # 1. Ensure 'concepts' key exists (mapped from 'mappings')
             if "concepts" not in config:
                 config["concepts"] = config.get("mappings") or []
+
+            # Ensure every concept has both 'conceptId' and 'conceptName' for UI compatibility
+            for c in config["concepts"]:
+                if "concept_id" in c and "conceptId" not in c:
+                    c["conceptId"] = c["concept_id"]
+                if "concept_name" in c and "conceptName" not in c:
+                    c["conceptName"] = c["concept_name"]
 
             # 2. Try to populate conceptNames from chapter package if missing
             has_missing_names = any(not c.get("conceptName") and not c.get("concept") for c in config["concepts"])

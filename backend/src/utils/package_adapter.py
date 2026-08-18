@@ -56,25 +56,52 @@ class PackageAdapter:
             if content_comp:
                 adapted["content"]["introduction"] = content_comp.get("introduction") or content_comp.get("overview")
                 adapted["content"]["summary"] = content_comp.get("summary")
+                # Add key points to introduction if it's too short
+                if content_comp.get("source_grounded_key_points") and len(adapted["content"].get("introduction", "")) < 100:
+                    adapted["content"]["introduction"] = "\n".join(content_comp["source_grounded_key_points"])
 
             # Story
             story_comp = comps.get("story_mode", {}).get("content", {})
             if story_comp:
                 story_text = story_comp.get("story") or story_comp.get("narrative")
+                if not story_text and "scenes" in story_comp:
+                    # Construct story from scenes
+                    scenes = story_comp["scenes"]
+                    story_text = (story_comp.get("opening", "") + "\n\n" +
+                                 "\n\n".join([s.get("narration", "") for s in scenes]) + "\n\n" +
+                                 story_comp.get("ending_reflection", ""))
+
                 adapted["content"]["story_explanation"] = story_text
                 adapted["content"]["storyExplanation"] = story_text
 
             # Teacher Explanation
             teacher_comp = comps.get("teacher_explanation", {}).get("content", {})
             if teacher_comp:
-                teacher_text = teacher_comp.get("explanation") or teacher_comp.get("guide")
+                sections = teacher_comp.get("explanation_sections", [])
+                if sections:
+                    # Join sections into a structured markdown string
+                    text_parts = []
+                    for s in sections:
+                        title = s.get('title', '')
+                        expl = s.get('explanation', '')
+                        if title: text_parts.append(f"### {title}")
+                        if expl: text_parts.append(expl)
+                        # Add evidence if present
+                        ev = s.get('source_evidence', [])
+                        if ev:
+                            text_parts.append("\n**Evidence from chapter:**")
+                            for item in ev: text_parts.append(f"* {item}")
+                    teacher_text = "\n\n".join(text_parts)
+                else:
+                    teacher_text = teacher_comp.get("explanation") or teacher_comp.get("guide")
+
                 adapted["content"]["teacher_explanation"] = teacher_text
                 adapted["content"]["teacherExplanation"] = teacher_text
 
             # Student Explanation
             student_comp = comps.get("student_explanation", {}).get("content", {})
             if student_comp:
-                student_text = student_comp.get("explanation")
+                student_text = student_comp.get("explanation") or student_comp.get("summary")
                 adapted["content"]["student_explanation"] = student_text
                 adapted["content"]["studentExplanation"] = student_text
 
@@ -88,15 +115,46 @@ class PackageAdapter:
                         c["explanation"] = c["definition"]
 
                 adapted["original_data"]["aiEnrichment"]["concepts"] = concepts_list
-                # Format for legacy split string if needed
+                # Format for legacy split string if needed by UI
                 adapted["content"]["concepts"] = "\n".join([c.get("name", "") for c in concepts_list])
+                # Provide list version for backend services
+                adapted["concepts"] = concepts_list
+                adapted["mappings"] = concepts_list
+                adapted["concepts_list"] = concepts_list
+
+            # Mind Map / Concept Graph -> Adapt to Frontend MindMap structure
+            graph_comp = comps.get("concept_graph", {}).get("content", {})
+            if graph_comp:
+                # Store original for any component that can handle it
+                adapted["content"]["concept_graph"] = graph_comp
+
+                # Create MindMap format: { topic: string, branches: [{ label: string, details: string[] }] }
+                nodes = graph_comp.get("nodes", [])
+                edges = graph_comp.get("edges", [])
+
+                if nodes:
+                    central_node = nodes[0]
+                    mind_map = {
+                        "topic": central_node.get("label", chapter_info.get("chapter_title")),
+                        "branches": []
+                    }
+
+                    # Group branches
+                    for node in nodes[1:]:
+                        mind_map["branches"].append({
+                            "label": node.get("label", "Concept"),
+                            "details": [node.get("description", "")] if node.get("description") else []
+                        })
+
+                    adapted["content"]["mind_map"] = mind_map
+                    adapted["content"]["mindMap"] = mind_map
+                    adapted["original_data"]["aiEnrichment"]["mindMap"] = mind_map
 
             # Objectives
             obj_comp = comps.get("learning_objectives", {}).get("content", {})
             if obj_comp:
                 objectives = obj_comp.get("objectives", [])
                 adapted["original_data"]["aiEnrichment"]["learningObjectives"] = objectives
-                # Also put in content.learning_goals
                 adapted["content"]["learning_goals"] = objectives
 
             # Activities / Lab
@@ -119,7 +177,8 @@ class PackageAdapter:
             # Multimedia
             media_comp = comps.get("multimedia", {}).get("content", {})
             if media_comp:
-                adapted["content"]["multimedia"] = media_comp.get("resources", [])
+                resources = media_comp.get("resources", [])
+                adapted["content"]["multimedia"] = resources
                 adapted["original_data"]["aiEnrichment"]["multimedia_learning"] = media_comp # Storyboard style
 
             # Quiz / Assessment
@@ -133,6 +192,7 @@ class PackageAdapter:
 
             if questions:
                 adapted["content"]["quiz"] = questions
+                adapted["quiz"] = questions
                 adapted["original_data"]["assessment"] = {
                     "expandedQuestionBank": questions
                 }

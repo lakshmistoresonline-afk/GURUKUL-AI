@@ -43,12 +43,19 @@ def _format_q_for_quiz(q: Dict[str, Any]) -> Dict[str, Any]:
     q_type = q.get("type", "mcq").lower().replace("-", "_")
     if q_type == "fill_blank": q_type = "fill_blanks"
 
+    correct_ans = q.get("answer") or q.get("correctAnswer") or q.get("correct_answer")
+    if correct_ans is None and "correct_option" in q:
+        options = q.get("options", [])
+        idx = q.get("correct_option")
+        if isinstance(idx, int) and 0 <= idx < len(options):
+            correct_ans = options[idx]
+
     return {
         "id": q.get("id"),
         "type": q_type,
         "question": q.get("question"),
         "options": q.get("options", []),
-        "correctAnswer": str(q.get("answer", q.get("correctAnswer", ""))),
+        "correctAnswer": str(correct_ans or ""),
         "explanation": q.get("explanation", ""),
         "difficulty": q.get("level", q.get("difficulty", "medium")).capitalize()
     }
@@ -182,55 +189,73 @@ async def get_quiz_session(
     user: AuthUser = Depends(get_current_user)
 ):
     """Generates a smart quiz session."""
-    # Use requested class if provided, otherwise user default
-    authorized_class = f"class_{classId}" if classId else user.class_name
+    try:
+        # Use requested class if provided, otherwise user default
+        authorized_class = f"class_{classId}" if classId else user.class_name
 
-    if chapterId:
-        validate_chapter_access(chapterId, authorized_class)
+        if chapterId:
+            validate_chapter_access(chapterId, authorized_class)
 
-    # Priority: If chapterId is provided, attempt to get questions from that chapter's package
-    if chapterId:
-        config = mastery_service.get_chapter_mastery_config(authorized_class, subject or "", chapterId)
-        if config:
-            # Support both 'concepts' and 'mappings'
-            concepts = config.get("concepts") or config.get("mappings") or []
+        # Priority: If chapterId is provided, attempt to get questions from that chapter's package
+        if chapterId:
+            try:
+                config = mastery_service.get_chapter_mastery_config(authorized_class, subject or "", chapterId)
+                if config:
+                    # Support both 'concepts' and 'mappings'
+                    concepts = config.get("concepts") or config.get("mappings") or []
 
-            if conceptId:
-                qs = mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, conceptId, limit=count)
-                if qs: return [_format_q_for_quiz(q) for q in qs]
+                    if conceptId:
+                        qs = mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, conceptId, limit=count)
+                        if qs: return [_format_q_for_quiz(q) for q in qs]
 
-            # Fallback to all questions in chapter
-            all_qs = []
-            # Option 1: Via concepts
-            for concept in concepts:
-                c_id = concept.get("conceptId") or concept.get("concept_id") or concept.get("id")
-                if c_id:
-                    all_qs.extend(mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, c_id, limit=3))
+                    # Fallback to all questions in chapter
+                    all_qs = []
+                    # Option 1: Via concepts
+                    for concept in concepts:
+                        c_id = concept.get("conceptId") or concept.get("concept_id") or concept.get("id")
+                        if c_id:
+                            try:
+                                qs = mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, c_id, limit=3)
+                                if qs: all_qs.extend(qs)
+                            except: pass
 
-            # Option 2: Direct from package if concepts method failed
-            if not all_qs:
-                package = mastery_service.get_chapter_mastery_config(authorized_class, subject or "", chapterId)
-                if package and "content" in package and "quiz" in package["content"]:
-                     all_qs = package["content"]["quiz"]
-                elif package and "original_data" in package:
-                     all_qs = package.get("original_data", {}).get("assessment", {}).get("expandedQuestionBank", [])
+                    # Option 2: Direct from package if concepts method failed
+                    if not all_qs:
+                        package = mastery_service.get_chapter_mastery_config(authorized_class, subject or "", chapterId)
+                        print(f"Quiz Debug: Package keys for {chapterId}: {package.keys() if package else 'None'}")
+                        if package and "content" in package:
+                             all_qs = package["content"].get("quiz") or []
+                             print(f"Quiz Debug: Extracted {len(all_qs)} questions from package content")
+                        elif package and "original_data" in package:
+                             all_qs = package.get("original_data", {}).get("assessment", {}).get("expandedQuestionBank", [])
+                             print(f"Quiz Debug: Extracted {len(all_qs)} questions from original_data")
 
-            if all_qs:
-                # Remove duplicates by ID
-                unique_qs = {str(q.get('id')): q for q in all_qs if q.get('id')}.values()
-                selection = random.sample(list(unique_qs), min(len(unique_qs), count))
-                return [_format_q_for_quiz(q) for q in selection]
+                    if all_qs:
+                        # Remove duplicates by ID
+                        unique_qs = {str(q.get('id')): q for q in all_qs if q.get('id')}
+                        all_unique = list(unique_qs.values())
+                        print(f"Quiz: {len(all_unique)} unique questions found")
+                        selection = random.sample(all_unique, min(len(all_unique), count))
+                        return [_format_q_for_quiz(q) for q in selection]
+                    else:
+                        print("Quiz: No questions found at all")
+            except Exception as e:
+                logger.error(f"Error fetching questions from package for {chapterId}: {e}")
 
-    if not question_bank_service:
-        raise HTTPException(status_code=503, detail="Question Bank Service unavailable and chapter package questions not found")
+        if not question_bank_service:
+            raise HTTPException(status_code=503, detail="Question Bank Service unavailable and chapter package questions not found")
 
-    return question_bank_service.get_questions(
-        class_id=int(authorized_class.split('_')[1]),
-        subject=subject,
-        chapter_id=chapterId,
-        concept_id=conceptId,
-        limit=min(count, 50)
-    )
+        return question_bank_service.get_questions(
+            class_id=int(authorized_class.split('_')[1]),
+            subject=subject,
+            chapter_id=chapterId,
+            concept_id=conceptId,
+            limit=min(count, 50)
+        )
+    except HTTPException: raise
+    except Exception as e:
+        logger.error(f"CRITICAL ERROR in get_quiz_session: {e}")
+        return []
 
 @router.post("/interleaved")
 async def get_interleaved_practice(

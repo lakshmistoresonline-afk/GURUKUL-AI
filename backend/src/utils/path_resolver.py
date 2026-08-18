@@ -76,7 +76,7 @@ class PathResolver:
     @staticmethod
     def normalize_chapter_id(class_name: str, chapter_id: str, subject: Optional[str] = None) -> str:
         """
-        Maps legacy IDs (e.g. fepr101, eesa101) to canonical IDs (e.g. unit_01, e05_c1).
+        Maps legacy IDs (e.g. fepr101, eesa101) to canonical IDs (e.g. e06_c1, e05_c1).
         """
         cid = str(chapter_id).strip().lower()
         class_id = PathResolver.extract_class_id(class_name)
@@ -89,15 +89,30 @@ class PathResolver:
             if cid.startswith('eemm') and len(cid) >= 7: return f"m05_c{int(cid[-3:])%100}"
 
         if class_id == "6":
-            # Class 6 English: fepr101 -> unit_01
+            # Class 6 English: fepr101 -> e06_c1
             if (cid.startswith('fepr') or (subject and subject.lower() == 'english' and cid.startswith('fe'))) and len(cid) >= 7:
                 num_part = cid[-2:]
-                if num_part.isdigit(): return f"unit_{num_part}"
+                if num_part.isdigit(): return f"e06_c{int(num_part)}"
 
-            # Class 6 Others: fegp101, fesc101 -> chapter_01
+            # Class 6 Others: fegp101 -> m06_c1, fesc101 -> s06_c1
+            if cid.startswith('fegp') and len(cid) >= 7:
+                num_part = cid[-2:]
+                if num_part.isdigit(): return f"m06_c{int(num_part)}"
+            if cid.startswith('fesc') and len(cid) >= 7:
+                num_part = cid[-2:]
+                if num_part.isdigit(): return f"s06_c{int(num_part)}"
+            if cid.startswith('fess') and len(cid) >= 7:
+                num_part = cid[-2:]
+                if num_part.isdigit(): return f"ss06_c{int(num_part)}"
+
+            # Catch-all fe*
             if cid.startswith('fe') and len(cid) >= 7:
                 num_part = cid[-2:]
-                if num_part.isdigit(): return f"chapter_{num_part}"
+                if num_part.isdigit():
+                    prefix = "x"
+                    if subject:
+                        prefix = {"english": "e", "mathematics": "m", "science": "s", "social_science": "ss"}.get(subject.lower(), "x")
+                    return f"{prefix}06_c{int(num_part)}"
 
         if class_id == "7":
             # c7_english_001 -> e07_c1
@@ -148,6 +163,7 @@ class PathResolver:
                         padded_id = class_id.zfill(2)
                         class_folder = f"class_{padded_id}"
                         resolved_path = os.path.join(settings.MASTER_CONTENT_ROOT, class_folder, os.path.dirname(rel_path))
+                        logger.info(f"PathResolver: Resolved {chapter_id} to {resolved_path}")
                         return resolved_path
 
         logger.warning(f"PathResolver: Could not resolve chapter path for {chapter_id} (normalized as {normalized_chapter}) in Class {class_id} {subject or ''}")

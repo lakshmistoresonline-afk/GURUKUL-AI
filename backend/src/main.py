@@ -2,7 +2,8 @@ import uvicorn
 import os
 import time
 import logging
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, HTTPException
+from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from .config.app_config import settings
@@ -33,13 +34,26 @@ app = FastAPI(
     debug=settings.DEBUG
 )
 
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    logger.error(f"GLOBAL ERROR: {request.method} {request.url.path} - {exc}", exc_info=True)
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "Internal Server Error", "error": str(exc)},
+    )
+
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start_time = time.time()
-    response = await call_next(request)
-    process_time = time.time() - start_time
-    logger.info(f"RID: {request.method} {request.url.path} - STATUS: {response.status_code} - TIME: {process_time:.4f}s")
-    return response
+    try:
+        response = await call_next(request)
+        process_time = time.time() - start_time
+        logger.info(f"RID: {request.method} {request.url.path} - STATUS: {response.status_code} - TIME: {process_time:.4f}s")
+        return response
+    except Exception as e:
+        process_time = time.time() - start_time
+        logger.error(f"RID: {request.method} {request.url.path} - CRASHED - TIME: {process_time:.4f}s - {e}")
+        raise
 
 # Configure CORS
 app.add_middleware(
