@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Mathematics",
+    "chapter_id": "m06_c5",
+    "chapter_title": "Prime Time",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_mathematics_01",
+      "skill": "whole-number operations",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_02",
+      "skill": "basic measurement",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_03",
+      "skill": "shape and number vocabulary",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_04",
+      "skill": "reading tables or diagrams",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "whole-number operations",
+      "question": "Show what you already know about whole-number operations.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "basic measurement",
+      "question": "Show what you already know about basic measurement.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "shape and number vocabulary",
+      "question": "Show what you already know about shape and number vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading tables or diagrams",
+      "question": "Show what you already know about reading tables or diagrams.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain factors using simple language and an example.",
+    "Explain prime and composite numbers using simple language and an example.",
+    "Explain multiples using simple language and an example.",
+    "Explain factorisation using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "m06_c5_k1",
+      "concept": "factors",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies factors."
+    },
+    {
+      "concept_id": "m06_c5_k2",
+      "concept": "prime and composite numbers",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies prime and composite numbers."
+    },
+    {
+      "concept_id": "m06_c5_k3",
+      "concept": "multiples",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies multiples."
+    },
+    {
+      "concept_id": "m06_c5_k4",
+      "concept": "factorisation",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies factorisation."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "factors",
+      "objective": "Learner can understand, explain and apply factors.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain factors without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "prime and composite numbers",
+      "objective": "Learner can understand, explain and apply prime and composite numbers.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain prime and composite numbers without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "multiples",
+      "objective": "Learner can understand, explain and apply multiples.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain multiples without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "factorisation",
+      "objective": "Learner can understand, explain and apply factorisation.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain factorisation without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "factors",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "prime and composite numbers",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "multiples",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "factorisation",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "factors",
+      "prompt": "Complete a supported task involving factors. Explain the step you are taking and why."
+    },
+    {
+      "concept": "prime and composite numbers",
+      "prompt": "Complete a supported task involving prime and composite numbers. Explain the step you are taking and why."
+    },
+    {
+      "concept": "multiples",
+      "prompt": "Complete a supported task involving multiples. Explain the step you are taking and why."
+    },
+    {
+      "concept": "factorisation",
+      "prompt": "Complete a supported task involving factorisation. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "factors",
+      "prompt": "Complete a new task involving factors without hints, then self-check."
+    },
+    {
+      "concept": "prime and composite numbers",
+      "prompt": "Complete a new task involving prime and composite numbers without hints, then self-check."
+    },
+    {
+      "concept": "multiples",
+      "prompt": "Complete a new task involving multiples without hints, then self-check."
+    },
+    {
+      "concept": "factorisation",
+      "prompt": "Complete a new task involving factorisation without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "factors",
+        "question": "Which approach best helps you understand factors?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "factors",
+        "question": "Explain factors as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines factors, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "factors",
+        "question": "Create and solve a new everyday problem involving factors.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "prime and composite numbers",
+        "question": "Which approach best helps you understand prime and composite numbers?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "prime and composite numbers",
+        "question": "Explain prime and composite numbers as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines prime and composite numbers, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "prime and composite numbers",
+        "question": "Create and solve a new everyday problem involving prime and composite numbers.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "multiples",
+        "question": "Which approach best helps you understand multiples?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "multiples",
+        "question": "Explain multiples as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines multiples, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "multiples",
+        "question": "Create and solve a new everyday problem involving multiples.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "factorisation",
+        "question": "Which approach best helps you understand factorisation?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "factorisation",
+        "question": "Explain factorisation as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines factorisation, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "factorisation",
+        "question": "Create and solve a new everyday problem involving factorisation.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Prime Time'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Prime Time', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is factors?",
+      "back": "Define factors, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is prime and composite numbers?",
+      "back": "Define prime and composite numbers, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is multiples?",
+      "back": "Define multiples, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is factorisation?",
+      "back": "Define factorisation, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore factors",
+      "instructions": "Use a safe, age-appropriate task specifically focused on factors. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where prime and composite numbers is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach factorisation to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of factors with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of prime and composite numbers with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of multiples with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of factorisation with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply factors to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply prime and composite numbers to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply multiples to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

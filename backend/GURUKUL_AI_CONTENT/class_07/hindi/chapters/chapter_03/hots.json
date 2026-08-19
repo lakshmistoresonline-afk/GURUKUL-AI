@@ -1,19 +1,37 @@
 {
-  "items": [
-    {
-      "id": "ghml103_h1",
-      "question": "How would you apply an important idea from फूल और काँटा in a new situation?",
-      "reasoning": "Identify, justify and transfer."
-    },
-    {
-      "id": "ghml103_h2",
-      "question": "What evidence would strengthen or weaken a conclusion related to this chapter?",
-      "reasoning": "Evaluate evidence."
-    },
-    {
-      "id": "ghml103_h3",
-      "question": "Compare two possible approaches. Which is better and why?",
-      "reasoning": "Use criteria and evidence."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "hots",
+  "chapter_id": "ghml103",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "ghml103_h1",
+        "question": "How would you apply an important idea from \u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e in a new situation?",
+        "reasoning": "Identify, justify and transfer."
+      },
+      {
+        "id": "ghml103_h2",
+        "question": "What evidence would strengthen or weaken a conclusion related to this chapter?",
+        "reasoning": "Evaluate evidence."
+      },
+      {
+        "id": "ghml103_h3",
+        "question": "Compare two possible approaches. Which is better and why?",
+        "reasoning": "Use criteria and evidence."
+      }
+    ]
+  }
 }

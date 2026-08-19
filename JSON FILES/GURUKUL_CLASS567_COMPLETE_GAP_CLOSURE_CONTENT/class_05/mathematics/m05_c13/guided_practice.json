@@ -1,0 +1,33 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c13",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Pattern Identification",
+        "tasks": [
+          "If a frog jumps 2 steps at a time, where will it land on its 5th jump?",
+          "A rabbit jumps 5 steps. Complete the sequence: 5, 10, 15, ___, ___."
+        ],
+        "hints": ["2 x 5 = ___", "Add 5 each time."]
+      },
+      {
+        "level": 2,
+        "type": "Finding Common Landings",
+        "tasks": [
+          "A cat jumps 3 steps and a mouse jumps 2 steps. On which first number will they both land?"
+        ],
+        "dual_language_hint": "Find the L.C.M of 2 and 3. / 2 और 3 का लघुत्तम समापवर्त्य (L.C.M) ज्ञात करें।"
+      },
+      {
+        "level": 3,
+        "type": "Problem Solving",
+        "tasks": [
+          "A grasshopper starts at 0 and reaches 24 in 4 jumps. How many steps was each jump?"
+        ]
+      }
+    ]
+  }
+}

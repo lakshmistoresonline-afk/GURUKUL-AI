@@ -1,100 +1,118 @@
 {
-  "items": [
-    {
-      "id": "fees103_q01",
-      "type": "source_based",
-      "question": "Which statement is supported by Landforms and Life?",
-      "options": [
-        "3 CHAPTER Landforms and Life Free from the burden of human beings, may the Earth with many heights, slopes and great plains, bearing plants endowed with varied powers, spread out for us and show us her riches!",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "3 CHAPTER Landforms and Life Free from the burden of human beings, may the Earth with many heights, slopes and great plains, bearing plants endowed with varied powers, spread out for us and show us her riches!",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "easy",
-      "concept_id": "fees103_c01"
-    },
-    {
-      "id": "fees103_q02",
-      "type": "source_based",
-      "question": "Which statement is supported by Landforms and Life?",
-      "options": [
-        "— Atharva Veda, Bhūmi Sūkta (‘Hymn to the Earth’) 3 – Landforms and Life The Big 1.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "— Atharva Veda, Bhūmi Sūkta (‘Hymn to the Earth’) 3 – Landforms and Life The Big 1.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "easy",
-      "concept_id": "fees103_c01"
-    },
-    {
-      "id": "fees103_q03",
-      "type": "source_based",
-      "question": "Which statement is supported by Landforms and Life?",
-      "options": [
-        "What are the major types of landforms and their significance Questions to life and culture?",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "What are the major types of landforms and their significance Questions to life and culture?",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "medium",
-      "concept_id": "fees103_c01"
-    },
-    {
-      "id": "fees103_q04",
-      "type": "source_based",
-      "question": "Which statement is supported by Landforms and Life?",
-      "options": [
-        "What are the challenges and opportunities of life associated with each landform?",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "What are the challenges and opportunities of life associated with each landform?",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "medium",
-      "concept_id": "fees103_c01"
-    },
-    {
-      "id": "fees103_q05",
-      "type": "source_based",
-      "question": "Which statement is supported by Landforms and Life?",
-      "options": [
-        "41 chapter3_161224.indd 41 03-02-2025 04:57:22 Introduction Humans, like most mammals, live on land.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "41 chapter3_161224.indd 41 03-02-2025 04:57:22 Introduction Humans, like most mammals, live on land.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "hard",
-      "concept_id": "fees103_c01"
-    },
-    {
-      "id": "fees103_q06",
-      "type": "source_based",
-      "question": "Which statement is supported by Landforms and Life?",
-      "options": [
-        "Land, as you may have noticed, has many forms and features; its appearance changes a lot from one region to another.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "Land, as you may have noticed, has many forms and features; its appearance changes a lot from one region to another.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "hard",
-      "concept_id": "fees103_c01"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "practice_bank",
+  "chapter_id": "fees103",
+  "class": "class_06",
+  "subject": "Social Science",
+  "chapter_title": "Landforms and Life",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fees103_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Landforms and Life?",
+        "options": [
+          "3 CHAPTER Landforms and Life Free from the burden of human beings, may the Earth with many heights, slopes and great plains, bearing plants endowed with varied powers, spread out for us and show us her riches!",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "3 CHAPTER Landforms and Life Free from the burden of human beings, may the Earth with many heights, slopes and great plains, bearing plants endowed with varied powers, spread out for us and show us her riches!",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fees103_c01"
+      },
+      {
+        "id": "fees103_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Landforms and Life?",
+        "options": [
+          "\u2014 Atharva Veda, Bh\u016bmi S\u016bkta (\u2018Hymn to the Earth\u2019) 3 \u2013 Landforms and Life The Big 1.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "\u2014 Atharva Veda, Bh\u016bmi S\u016bkta (\u2018Hymn to the Earth\u2019) 3 \u2013 Landforms and Life The Big 1.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fees103_c01"
+      },
+      {
+        "id": "fees103_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Landforms and Life?",
+        "options": [
+          "What are the major types of landforms and their significance Questions to life and culture?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "What are the major types of landforms and their significance Questions to life and culture?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fees103_c01"
+      },
+      {
+        "id": "fees103_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Landforms and Life?",
+        "options": [
+          "What are the challenges and opportunities of life associated with each landform?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "What are the challenges and opportunities of life associated with each landform?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fees103_c01"
+      },
+      {
+        "id": "fees103_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Landforms and Life?",
+        "options": [
+          "41 chapter3_161224.indd 41 03-02-2025 04:57:22 Introduction Humans, like most mammals, live on land.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "41 chapter3_161224.indd 41 03-02-2025 04:57:22 Introduction Humans, like most mammals, live on land.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fees103_c01"
+      },
+      {
+        "id": "fees103_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Landforms and Life?",
+        "options": [
+          "Land, as you may have noticed, has many forms and features; its appearance changes a lot from one region to another.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Land, as you may have noticed, has many forms and features; its appearance changes a lot from one region to another.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fees103_c01"
+      }
+    ]
+  }
 }

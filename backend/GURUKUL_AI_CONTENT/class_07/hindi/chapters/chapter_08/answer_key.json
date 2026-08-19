@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be validated against the supplied chapter source.",
-  "sample": {
-    "question_id": "ghml108_q01",
-    "answer": "Option 1",
-    "evidence": "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ghml108",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "ghml108_q01",
+      "answer": "Option 1",
+      "evidence": "8 \u093f\u092c\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\ufffd\u093e\u0930 \u0915\u0925\u0915 \u0915\ufffd \u091c\u092c \u092d\u0940 \u092c\u093e\u0924 \u0939\u094b\u0924\u0940 \u0939\u0948 \u0924\u094b \u0939\u092e\u093e\u0930\u0947 \u092e\u093f\u0938\u094d\u0924\u0937\u094d\u0915 \u092e\u0947\u0902 \u090f\u0915 \u0928\u093e\u092e \u0905\u0935\u0936\u094d\u092f \u0906\u0924\u093e \u0939\u0948\u2014 \u093f\u092c\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c\u0964"
+    }
   }
 }

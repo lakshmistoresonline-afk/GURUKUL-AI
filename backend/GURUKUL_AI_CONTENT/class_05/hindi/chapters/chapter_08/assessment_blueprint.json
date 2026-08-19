@@ -1,28 +1,46 @@
 {
-  "total_questions": 10,
-  "difficulty": {
-    "easy": 4,
-    "medium": 4,
-    "hard": 2
+  "schema_version": "1.0.0",
+  "component_id": "assessment_blueprint",
+  "chapter_id": "ehve108",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0915\u093e\u091c\u0940\u0930\u0902\u0917\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0909\u0926\u094d\u092f\u093e\u0928 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
   },
-  "skills": {
-    "recall": 2,
-    "understanding": 3,
-    "application": 3,
-    "higher_order": 2
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
   },
-  "coverage": [
-    {
-      "concept_id": "ehve108_concept_01",
-      "minimum_items": 6
+  "content": {
+    "total_questions": 10,
+    "difficulty": {
+      "easy": 4,
+      "medium": 4,
+      "hard": 2
     },
-    {
-      "concept_id": "ehve108_concept_02",
-      "minimum_items": 2
+    "skills": {
+      "recall": 2,
+      "understanding": 3,
+      "application": 3,
+      "higher_order": 2
     },
-    {
-      "concept_id": "ehve108_concept_03",
-      "minimum_items": 2
-    }
-  ]
+    "coverage": [
+      {
+        "concept_id": "ehve108_concept_01",
+        "minimum_items": 6
+      },
+      {
+        "concept_id": "ehve108_concept_02",
+        "minimum_items": 2
+      },
+      {
+        "concept_id": "ehve108_concept_03",
+        "minimum_items": 2
+      }
+    ]
+  }
 }

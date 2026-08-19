@@ -1,0 +1,239 @@
+{
+  "status": "EMPTY_READY_FOR_FRESH_CONTENT",
+  "metadata": {
+    "chapterId": "ss07_c20",
+    "class": 7,
+    "subject": "social_science"
+  },
+  "components": {
+    "foundation_units": [
+      {
+        "id": "f07_mathematics_01",
+        "skill": "number sense",
+        "mastery_check": "Learner can explain and use this prerequisite independently."
+      },
+      {
+        "id": "f07_mathematics_02",
+        "skill": "fractions and decimals",
+        "mastery_check": "Learner can explain and use this prerequisite independently."
+      },
+      {
+        "id": "f07_mathematics_03",
+        "skill": "measurement and geometry basics",
+        "mastery_check": "Learner can explain and use this prerequisite independently."
+      },
+      {
+        "id": "f07_mathematics_04",
+        "skill": "reading tables and diagrams",
+        "mastery_check": "Learner can explain and use this prerequisite independently."
+      }
+    ],
+    "prerequisite_diagnostic": [
+      {
+        "skill": "number sense",
+        "question": "Show what you already know about number sense.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "fractions and decimals",
+        "question": "Show what you already know about fractions and decimals.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "measurement and geometry basics",
+        "question": "Show what you already know about measurement and geometry basics.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "reading tables and diagrams",
+        "question": "Show what you already know about reading tables and diagrams.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "concept": "core mathematical idea",
+        "objective": "Learner can understand, explain and apply core mathematical idea.",
+        "teaching_sequence": [
+          "Start from a concrete or familiar representation.",
+          "Connect to prerequisite knowledge.",
+          "Model the reasoning step by step.",
+          "Move from guided practice to independent work.",
+          "Transfer to a new problem and require explanation."
+        ],
+        "checkpoint": "Explain core mathematical idea independently and complete a new example.",
+        "mastery_evidence": "Accurate independent explanation plus transfer."
+      },
+      {
+        "lesson_id": "L02",
+        "concept": "representation",
+        "objective": "Learner can understand, explain and apply representation.",
+        "teaching_sequence": [
+          "Start from a concrete or familiar representation.",
+          "Connect to prerequisite knowledge.",
+          "Model the reasoning step by step.",
+          "Move from guided practice to independent work.",
+          "Transfer to a new problem and require explanation."
+        ],
+        "checkpoint": "Explain representation independently and complete a new example.",
+        "mastery_evidence": "Accurate independent explanation plus transfer."
+      },
+      {
+        "lesson_id": "L03",
+        "concept": "worked reasoning",
+        "objective": "Learner can understand, explain and apply worked reasoning.",
+        "teaching_sequence": [
+          "Start from a concrete or familiar representation.",
+          "Connect to prerequisite knowledge.",
+          "Model the reasoning step by step.",
+          "Move from guided practice to independent work.",
+          "Transfer to a new problem and require explanation."
+        ],
+        "checkpoint": "Explain worked reasoning independently and complete a new example.",
+        "mastery_evidence": "Accurate independent explanation plus transfer."
+      },
+      {
+        "lesson_id": "L04",
+        "concept": "application",
+        "objective": "Learner can understand, explain and apply application.",
+        "teaching_sequence": [
+          "Start from a concrete or familiar representation.",
+          "Connect to prerequisite knowledge.",
+          "Model the reasoning step by step.",
+          "Move from guided practice to independent work.",
+          "Transfer to a new problem and require explanation."
+        ],
+        "checkpoint": "Explain application independently and complete a new example.",
+        "mastery_evidence": "Accurate independent explanation plus transfer."
+      }
+    ],
+    "worked_examples": [
+      {
+        "concept": "core mathematical idea",
+        "levels": [
+          "foundation",
+          "guided",
+          "independent",
+          "transfer"
+        ],
+        "method": "Model reasoning explicitly, then progressively remove prompts."
+      },
+      {
+        "concept": "representation",
+        "levels": [
+          "foundation",
+          "guided",
+          "independent",
+          "transfer"
+        ],
+        "method": "Model reasoning explicitly, then progressively remove prompts."
+      },
+      {
+        "concept": "worked reasoning",
+        "levels": [
+          "foundation",
+          "guided",
+          "independent",
+          "transfer"
+        ],
+        "method": "Model reasoning explicitly, then progressively remove prompts."
+      },
+      {
+        "concept": "application",
+        "levels": [
+          "foundation",
+          "guided",
+          "independent",
+          "transfer"
+        ],
+        "method": "Model reasoning explicitly, then progressively remove prompts."
+      }
+    ],
+    "guided_practice": [
+      {
+        "concept": "core mathematical idea",
+        "prompt": "Complete a supported task involving core mathematical idea; explain each important decision."
+      },
+      {
+        "concept": "representation",
+        "prompt": "Complete a supported task involving representation; explain each important decision."
+      },
+      {
+        "concept": "worked reasoning",
+        "prompt": "Complete a supported task involving worked reasoning; explain each important decision."
+      },
+      {
+        "concept": "application",
+        "prompt": "Complete a supported task involving application; explain each important decision."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "Confuses core mathematical idea with a related concept.",
+        "diagnostic": "Ask for a definition, example and near-example.",
+        "repair": [
+          "Identify the missing distinction.",
+          "Return to a concrete example.",
+          "Contrast correct and incorrect cases.",
+          "Learner explains the correction.",
+          "Complete two near-transfer tasks.",
+          "Reassess independently."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confuses representation with a related concept.",
+        "diagnostic": "Ask for a definition, example and near-example.",
+        "repair": [
+          "Identify the missing distinction.",
+          "Return to a concrete example.",
+          "Contrast correct and incorrect cases.",
+          "Learner explains the correction.",
+          "Complete two near-transfer tasks.",
+          "Reassess independently."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confuses worked reasoning with a related concept.",
+        "diagnostic": "Ask for a definition, example and near-example.",
+        "repair": [
+          "Identify the missing distinction.",
+          "Return to a concrete example.",
+          "Contrast correct and incorrect cases.",
+          "Learner explains the correction.",
+          "Complete two near-transfer tasks.",
+          "Reassess independently."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confuses application with a related concept.",
+        "diagnostic": "Ask for a definition, example and near-example.",
+        "repair": [
+          "Identify the missing distinction.",
+          "Return to a concrete example.",
+          "Contrast correct and incorrect cases.",
+          "Learner explains the correction.",
+          "Complete two near-transfer tasks.",
+          "Reassess independently."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "mathematics",
+    "chapter_id": "m07_c20",
+    "chapter_number": 20,
+    "chapter_title": "Parallel and Intersecting Lines",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  }
+}

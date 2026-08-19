@@ -1,35 +1,53 @@
 {
-  "activities": [
-    {
-      "id": "gegp206_lab01",
-      "title": "Explore Constructions and Tilings",
-      "objective": "Investigate a central idea from Constructions and Tilings.",
-      "materials": [
-        "chapter text",
-        "notebook",
-        "pencil"
-      ],
-      "instructions": [
-        "Review the relevant source section.",
-        "Identify the evidence or method needed.",
-        "measure, construct, calculate, represent or investigate the mathematical relationship",
-        "Record the result and reasoning."
-      ],
-      "student_action": "Investigate and explain.",
-      "success_condition": "The outcome is consistent with the source and includes reasoning."
-    },
-    {
-      "id": "gegp206_lab02",
-      "title": "Evidence Check",
-      "objective": "Distinguish supported from unsupported claims.",
-      "instructions": [
-        "Choose two chapter-related claims.",
-        "Locate supporting evidence.",
-        "Accept or reject each claim.",
-        "Explain why."
-      ],
-      "student_action": "Match claims to evidence.",
-      "success_condition": "Accepted claims have relevant source support."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "interactive_lab",
+  "chapter_id": "gegp206",
+  "class": "class_07",
+  "subject": "Mathematics",
+  "chapter_title": "Constructions and Tilings",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "gegp206_lab01",
+        "title": "Explore Constructions and Tilings",
+        "objective": "Investigate a central idea from Constructions and Tilings.",
+        "materials": [
+          "chapter text",
+          "notebook",
+          "pencil"
+        ],
+        "instructions": [
+          "Review the relevant source section.",
+          "Identify the evidence or method needed.",
+          "measure, construct, calculate, represent or investigate the mathematical relationship",
+          "Record the result and reasoning."
+        ],
+        "student_action": "Investigate and explain.",
+        "success_condition": "The outcome is consistent with the source and includes reasoning."
+      },
+      {
+        "id": "gegp206_lab02",
+        "title": "Evidence Check",
+        "objective": "Distinguish supported from unsupported claims.",
+        "instructions": [
+          "Choose two chapter-related claims.",
+          "Locate supporting evidence.",
+          "Accept or reject each claim.",
+          "Explain why."
+        ],
+        "student_action": "Match claims to evidence.",
+        "success_condition": "Accepted claims have relevant source support."
+      }
+    ]
+  }
 }

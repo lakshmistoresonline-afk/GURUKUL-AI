@@ -1,16 +1,34 @@
 {
-  "strategy": [
-    "Read the question carefully",
-    "Identify the tested concept",
-    "Use evidence/working",
-    "Explain reasoning",
-    "Check the final response"
-  ],
-  "must_practice": [
-    "core understanding",
-    "application",
-    "higher-order reasoning",
-    "source-based questions",
-    "mixed retrieval"
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "exam_preparation",
+  "chapter_id": "ghml102",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u0924\u0940\u0928 \u092c\u0941\u0926\u094d\u0927\u093f\u092e\u093e\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "strategy": [
+      "Read the question carefully",
+      "Identify the tested concept",
+      "Use evidence/working",
+      "Explain reasoning",
+      "Check the final response"
+    ],
+    "must_practice": [
+      "core understanding",
+      "application",
+      "higher-order reasoning",
+      "source-based questions",
+      "mixed retrieval"
+    ]
+  }
 }

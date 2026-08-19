@@ -1,28 +1,46 @@
 {
-  "total_questions": 10,
-  "difficulty": {
-    "easy": 4,
-    "medium": 4,
-    "hard": 2
+  "schema_version": "1.0.0",
+  "component_id": "assessment_blueprint",
+  "chapter_id": "fhml109",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u0948\u092f\u093e \u092e\u0948\u0902 \u0928\u0939\u093f \u092e\u093e\u0916\u0928 \u0916\u093e\u092f\u094b",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
   },
-  "skills": {
-    "recall": 2,
-    "understanding": 3,
-    "application": 3,
-    "higher_order": 2
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
   },
-  "coverage": [
-    {
-      "concept_id": "fhml109_c01",
-      "minimum_items": 6
+  "content": {
+    "total_questions": 10,
+    "difficulty": {
+      "easy": 4,
+      "medium": 4,
+      "hard": 2
     },
-    {
-      "concept_id": "fhml109_c02",
-      "minimum_items": 2
+    "skills": {
+      "recall": 2,
+      "understanding": 3,
+      "application": 3,
+      "higher_order": 2
     },
-    {
-      "concept_id": "fhml109_c03",
-      "minimum_items": 2
-    }
-  ]
+    "coverage": [
+      {
+        "concept_id": "fhml109_c01",
+        "minimum_items": 6
+      },
+      {
+        "concept_id": "fhml109_c02",
+        "minimum_items": 2
+      },
+      {
+        "concept_id": "fhml109_c03",
+        "minimum_items": 2
+      }
+    ]
+  }
 }

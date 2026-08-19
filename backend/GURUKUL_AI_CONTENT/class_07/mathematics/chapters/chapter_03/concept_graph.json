@@ -1,28 +1,46 @@
 {
-  "nodes": [
-    {
-      "id": "gegp203_c01",
-      "label": "Finding Common Ground"
-    },
-    {
-      "id": "gegp203_c02",
-      "label": "Evidence and reasoning"
-    },
-    {
-      "id": "gegp203_c03",
-      "label": "Application and transfer"
-    }
-  ],
-  "edges": [
-    {
-      "from": "gegp203_c01",
-      "to": "gegp203_c02",
-      "relation": "supported_by"
-    },
-    {
-      "from": "gegp203_c02",
-      "to": "gegp203_c03",
-      "relation": "enables"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "gegp203",
+  "class": "class_07",
+  "subject": "Mathematics",
+  "chapter_title": "Finding Common Ground",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "gegp203_c01",
+        "label": "Finding Common Ground"
+      },
+      {
+        "id": "gegp203_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "gegp203_c03",
+        "label": "Application and transfer"
+      }
+    ],
+    "edges": [
+      {
+        "from": "gegp203_c01",
+        "to": "gegp203_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "gegp203_c02",
+        "to": "gegp203_c03",
+        "relation": "enables"
+      }
+    ]
+  }
 }

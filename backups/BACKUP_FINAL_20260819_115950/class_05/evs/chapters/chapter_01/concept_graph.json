@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eeev101_concept_01",
+      "label": "Water — The Essence of Life"
+    },
+    {
+      "id": "eeev101_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eeev101_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eeev101_concept_01",
+      "to": "eeev101_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eeev101_concept_02",
+      "to": "eeev101_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

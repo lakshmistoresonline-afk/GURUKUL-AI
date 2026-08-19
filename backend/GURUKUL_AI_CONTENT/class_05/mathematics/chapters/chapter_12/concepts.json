@@ -1,22 +1,40 @@
 {
-  "concepts": [
-    {
-      "id": "eemm112_concept_01",
-      "name": "Racing Seconds",
-      "definition": "Central learning focus developed by the chapter 'Racing Seconds'.",
-      "evidence": "Racing Seconds ChapterChapter 1212 Let us find out 1."
-    },
-    {
-      "id": "eemm112_concept_02",
-      "name": "Evidence and reasoning",
-      "definition": "Using chapter information to support an explanation or answer.",
-      "evidence": "At what time did Raghav start practising Yoga?"
-    },
-    {
-      "id": "eemm112_concept_03",
-      "name": "Application",
-      "definition": "Using the chapter idea in a new but related situation.",
-      "evidence": "Find the time elapsed between the given time periods."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "eemm112",
+  "class": "class_05",
+  "subject": "Mathematics",
+  "chapter_title": "Racing Seconds",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "eemm112_concept_01",
+        "name": "Racing Seconds",
+        "definition": "Central learning focus developed by the chapter 'Racing Seconds'.",
+        "evidence": "Racing Seconds ChapterChapter 1212 Let us find out 1."
+      },
+      {
+        "id": "eemm112_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "At what time did Raghav start practising Yoga?"
+      },
+      {
+        "id": "eemm112_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "Find the time elapsed between the given time periods."
+      }
+    ]
+  }
 }

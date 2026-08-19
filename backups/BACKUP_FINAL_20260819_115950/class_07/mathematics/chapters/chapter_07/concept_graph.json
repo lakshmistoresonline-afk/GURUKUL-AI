@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gegp207_c01",
+      "label": "Finding the Unknown"
+    },
+    {
+      "id": "gegp207_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gegp207_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gegp207_c01",
+      "to": "gegp207_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gegp207_c02",
+      "to": "gegp207_c03",
+      "relation": "enables"
+    }
+  ]
+}

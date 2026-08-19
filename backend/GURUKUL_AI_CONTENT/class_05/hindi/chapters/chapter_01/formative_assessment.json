@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "ehve101_form01",
-      "question": "State one key idea and the evidence supporting it.",
-      "checkpoint": "after explanation"
-    },
-    {
-      "id": "ehve101_form02",
-      "question": "Apply the idea to a new related example.",
-      "checkpoint": "after practice"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "formative_assessment",
+  "chapter_id": "ehve101",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0915\u093f\u0930\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "ehve101_form01",
+        "question": "State one key idea and the evidence supporting it.",
+        "checkpoint": "after explanation"
+      },
+      {
+        "id": "ehve101_form02",
+        "question": "Apply the idea to a new related example.",
+        "checkpoint": "after practice"
+      }
+    ]
+  }
 }

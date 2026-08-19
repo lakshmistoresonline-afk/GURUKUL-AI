@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Hindi",
+    "chapter_id": "h06_c1",
+    "chapter_title": "मातृभूमि",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_hindi_01",
+      "skill": "सरल पठन",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_02",
+      "skill": "शब्दार्थ",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_03",
+      "skill": "वाक्य समझ",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_04",
+      "skill": "मौखिक अभिव्यक्ति",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "सरल पठन",
+      "question": "Show what you already know about सरल पठन.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "शब्दार्थ",
+      "question": "Show what you already know about शब्दार्थ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "वाक्य समझ",
+      "question": "Show what you already know about वाक्य समझ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "मौखिक अभिव्यक्ति",
+      "question": "Show what you already know about मौखिक अभिव्यक्ति.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain देश और मातृभूमि शब्दावली using simple language and an example.",
+    "Explain कविता का भाव using simple language and an example.",
+    "Explain चित्रात्मक भाषा using simple language and an example.",
+    "Explain अभिव्यक्ति using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "h06_c1_k1",
+      "concept": "देश और मातृभूमि शब्दावली",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies देश और मातृभूमि शब्दावली."
+    },
+    {
+      "concept_id": "h06_c1_k2",
+      "concept": "कविता का भाव",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies कविता का भाव."
+    },
+    {
+      "concept_id": "h06_c1_k3",
+      "concept": "चित्रात्मक भाषा",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies चित्रात्मक भाषा."
+    },
+    {
+      "concept_id": "h06_c1_k4",
+      "concept": "अभिव्यक्ति",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies अभिव्यक्ति."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "देश और मातृभूमि शब्दावली",
+      "objective": "Learner can understand, explain and apply देश और मातृभूमि शब्दावली.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain देश और मातृभूमि शब्दावली without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "कविता का भाव",
+      "objective": "Learner can understand, explain and apply कविता का भाव.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain कविता का भाव without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "चित्रात्मक भाषा",
+      "objective": "Learner can understand, explain and apply चित्रात्मक भाषा.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain चित्रात्मक भाषा without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "अभिव्यक्ति",
+      "objective": "Learner can understand, explain and apply अभिव्यक्ति.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain अभिव्यक्ति without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "देश और मातृभूमि शब्दावली",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "कविता का भाव",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "चित्रात्मक भाषा",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "अभिव्यक्ति",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "देश और मातृभूमि शब्दावली",
+      "prompt": "Complete a supported task involving देश और मातृभूमि शब्दावली. Explain the step you are taking and why."
+    },
+    {
+      "concept": "कविता का भाव",
+      "prompt": "Complete a supported task involving कविता का भाव. Explain the step you are taking and why."
+    },
+    {
+      "concept": "चित्रात्मक भाषा",
+      "prompt": "Complete a supported task involving चित्रात्मक भाषा. Explain the step you are taking and why."
+    },
+    {
+      "concept": "अभिव्यक्ति",
+      "prompt": "Complete a supported task involving अभिव्यक्ति. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "देश और मातृभूमि शब्दावली",
+      "prompt": "Complete a new task involving देश और मातृभूमि शब्दावली without hints, then self-check."
+    },
+    {
+      "concept": "कविता का भाव",
+      "prompt": "Complete a new task involving कविता का भाव without hints, then self-check."
+    },
+    {
+      "concept": "चित्रात्मक भाषा",
+      "prompt": "Complete a new task involving चित्रात्मक भाषा without hints, then self-check."
+    },
+    {
+      "concept": "अभिव्यक्ति",
+      "prompt": "Complete a new task involving अभिव्यक्ति without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "देश और मातृभूमि शब्दावली",
+        "question": "Which response best demonstrates understanding of 'देश और मातृभूमि शब्दावली'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "देश और मातृभूमि शब्दावली",
+        "question": "Explain 'देश और मातृभूमि शब्दावली' in your own words and give an original example.",
+        "answer": "A strong response explains देश और मातृभूमि शब्दावली accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "देश और मातृभूमि शब्दावली",
+        "question": "Use 'देश और मातृभूमि शब्दावली' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "कविता का भाव",
+        "question": "Which response best demonstrates understanding of 'कविता का भाव'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "कविता का भाव",
+        "question": "Explain 'कविता का भाव' in your own words and give an original example.",
+        "answer": "A strong response explains कविता का भाव accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "कविता का भाव",
+        "question": "Use 'कविता का भाव' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "चित्रात्मक भाषा",
+        "question": "Which response best demonstrates understanding of 'चित्रात्मक भाषा'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "चित्रात्मक भाषा",
+        "question": "Explain 'चित्रात्मक भाषा' in your own words and give an original example.",
+        "answer": "A strong response explains चित्रात्मक भाषा accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "चित्रात्मक भाषा",
+        "question": "Use 'चित्रात्मक भाषा' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "अभिव्यक्ति",
+        "question": "Which response best demonstrates understanding of 'अभिव्यक्ति'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "अभिव्यक्ति",
+        "question": "Explain 'अभिव्यक्ति' in your own words and give an original example.",
+        "answer": "A strong response explains अभिव्यक्ति accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "अभिव्यक्ति",
+        "question": "Use 'अभिव्यक्ति' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'मातृभूमि'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'मातृभूमि', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is देश और मातृभूमि शब्दावली?",
+      "back": "Define देश और मातृभूमि शब्दावली, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is कविता का भाव?",
+      "back": "Define कविता का भाव, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is चित्रात्मक भाषा?",
+      "back": "Define चित्रात्मक भाषा, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is अभिव्यक्ति?",
+      "back": "Define अभिव्यक्ति, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore देश और मातृभूमि शब्दावली",
+      "instructions": "Use a safe, age-appropriate task specifically focused on देश और मातृभूमि शब्दावली. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where कविता का भाव is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach अभिव्यक्ति to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of देश और मातृभूमि शब्दावली with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of कविता का भाव with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of चित्रात्मक भाषा with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of अभिव्यक्ति with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply देश और मातृभूमि शब्दावली to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply कविता का भाव to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply चित्रात्मक भाषा to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

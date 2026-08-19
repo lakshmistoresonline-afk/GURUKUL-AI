@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be validated against the supplied chapter source.",
-  "sample": {
-    "question_id": "ghml110_q01",
-    "answer": "Option 1",
-    "evidence": "मोहिन मरू ित साँव�र सरू ित, नैना बने िवशाल ॥ अधर सधु ा रस मरु ली राजित, उर वैजतं ी माल ॥ क्षद्रु घिं टका किटतट सोिभत, नपू रु शब्द रसाल ॥ मीरा के प्रभु सतं न सख ु दाई, भक्त वछल गोपाल ॥ (2) बरसे बद�रया सावन क�, सावन क� मन भावन क� ।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ghml110",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u0940\u0930\u093e \u0915\u0947 \u092a\u0926",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "ghml110_q01",
+      "answer": "Option 1",
+      "evidence": "\u092e\u094b\u0939\u093f\u0928 \u092e\u0930\u0942 \u093f\u0924 \u0938\u093e\u0901\u0935\ufffd\u0930 \u0938\u0930\u0942 \u093f\u0924, \u0928\u0948\u0928\u093e \u092c\u0928\u0947 \u093f\u0935\u0936\u093e\u0932 \u0965 \u0905\u0927\u0930 \u0938\u0927\u0941 \u093e \u0930\u0938 \u092e\u0930\u0941 \u0932\u0940 \u0930\u093e\u091c\u093f\u0924, \u0909\u0930 \u0935\u0948\u091c\u0924\u0902 \u0940 \u092e\u093e\u0932 \u0965 \u0915\u094d\u0937\u0926\u094d\u0930\u0941 \u0918\u093f\u0902 \u091f\u0915\u093e \u0915\u093f\u091f\u0924\u091f \u0938\u094b\u093f\u092d\u0924, \u0928\u092a\u0942 \u0930\u0941 \u0936\u092c\u094d\u0926 \u0930\u0938\u093e\u0932 \u0965 \u092e\u0940\u0930\u093e \u0915\u0947 \u092a\u094d\u0930\u092d\u0941 \u0938\u0924\u0902 \u0928 \u0938\u0916 \u0941 \u0926\u093e\u0908, \u092d\u0915\u094d\u0924 \u0935\u091b\u0932 \u0917\u094b\u092a\u093e\u0932 \u0965 (2) \u092c\u0930\u0938\u0947 \u092c\u0926\ufffd\u0930\u092f\u093e \u0938\u093e\u0935\u0928 \u0915\ufffd, \u0938\u093e\u0935\u0928 \u0915\ufffd \u092e\u0928 \u092d\u093e\u0935\u0928 \u0915\ufffd \u0964"
+    }
   }
 }

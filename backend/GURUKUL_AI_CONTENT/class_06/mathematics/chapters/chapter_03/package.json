@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "chapter": {
     "chapter_id": "fegp103",
-    "class": 6,
+    "class": "class_06",
     "subject": "Mathematics",
     "chapter_number": 103,
     "chapter_title": "Number Play",
@@ -15,7 +15,7 @@
       "See what Talk your classmates have listed, share, and discuss.",
       "3.1 Numbers can Tell us Things What are these numbers telling us?",
       "The children now rearrange themselves, and again each one says a number based on the arrangement.",
-      "A child says ‘1’ if there is only one taller child standing next to them."
+      "A child says \u20181\u2019 if there is only one taller child standing next to them."
     ]
   },
   "components": {
@@ -126,7 +126,7 @@
           "See what Talk your classmates have listed, share, and discuss.",
           "3.1 Numbers can Tell us Things What are these numbers telling us?",
           "The children now rearrange themselves, and again each one says a number based on the arrangement.",
-          "A child says ‘1’ if there is only one taller child standing next to them."
+          "A child says \u20181\u2019 if there is only one taller child standing next to them."
         ],
         "learning_sequence": [
           "Connect",
@@ -693,7 +693,7 @@
             "action": "revisit explanation and simpler practice"
           },
           {
-            "condition": "60–84%",
+            "condition": "60\u201384%",
             "action": "serve application practice"
           },
           {
@@ -1603,7 +1603,7 @@
           {
             "id": "fegp103_official",
             "type": "official_resource",
-            "title": "NCERT ePathshala eResources — Number Play",
+            "title": "NCERT ePathshala eResources \u2014 Number Play",
             "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
             "verification_status": "VERIFIED_OFFICIAL_PORTAL",
             "purpose": "Official chapter-linked digital resources."
@@ -1611,7 +1611,7 @@
           {
             "id": "fegp103_yt_search",
             "type": "youtube_discovery",
-            "title": "Video discovery — Number Play",
+            "title": "Video discovery \u2014 Number Play",
             "url": "https://www.youtube.com/results?search_query=Class+6+Mathematics+Number+Play+NCERT",
             "verification_status": "DISCOVERY_ONLY",
             "purpose": "Discovery link only; not a verified direct video."
@@ -1793,6 +1793,192 @@
         ],
         "complete_only_when_all_applicable_rules_pass": true
       }
-    }
+    },
+    "foundation_units": [
+      {
+        "id": "f06_mathematics_01",
+        "skill": "whole-number operations",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_mathematics_02",
+        "skill": "basic measurement",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_mathematics_03",
+        "skill": "shape and number vocabulary",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_mathematics_04",
+        "skill": "reading tables or diagrams",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      }
+    ],
+    "prerequisite_diagnostic": [
+      {
+        "skill": "whole-number operations",
+        "question": "Show what you already know about whole-number operations.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "basic measurement",
+        "question": "Show what you already know about basic measurement.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "shape and number vocabulary",
+        "question": "Show what you already know about shape and number vocabulary.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "reading tables or diagrams",
+        "question": "Show what you already know about reading tables or diagrams.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "concept": "number properties",
+        "objective": "Learner can understand, explain and apply number properties.",
+        "teaching_sequence": [
+          "Begin with a concrete or familiar situation.",
+          "Name the mathematical idea and connect it to prior knowledge.",
+          "Model a complete worked example with every step explained.",
+          "Move from representation to symbols and then to a new problem.",
+          "Ask the learner to explain the method without copying."
+        ],
+        "checkpoint": "Explain number properties without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L02",
+        "concept": "factors and multiples",
+        "objective": "Learner can understand, explain and apply factors and multiples.",
+        "teaching_sequence": [
+          "Begin with a concrete or familiar situation.",
+          "Name the mathematical idea and connect it to prior knowledge.",
+          "Model a complete worked example with every step explained.",
+          "Move from representation to symbols and then to a new problem.",
+          "Ask the learner to explain the method without copying."
+        ],
+        "checkpoint": "Explain factors and multiples without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L03",
+        "concept": "divisibility",
+        "objective": "Learner can understand, explain and apply divisibility.",
+        "teaching_sequence": [
+          "Begin with a concrete or familiar situation.",
+          "Name the mathematical idea and connect it to prior knowledge.",
+          "Model a complete worked example with every step explained.",
+          "Move from representation to symbols and then to a new problem.",
+          "Ask the learner to explain the method without copying."
+        ],
+        "checkpoint": "Explain divisibility without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L04",
+        "concept": "number puzzles",
+        "objective": "Learner can understand, explain and apply number puzzles.",
+        "teaching_sequence": [
+          "Begin with a concrete or familiar situation.",
+          "Name the mathematical idea and connect it to prior knowledge.",
+          "Model a complete worked example with every step explained.",
+          "Move from representation to symbols and then to a new problem.",
+          "Ask the learner to explain the method without copying."
+        ],
+        "checkpoint": "Explain number puzzles without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      }
+    ],
+    "guided_practice": [
+      {
+        "concept": "number properties",
+        "prompt": "Complete a supported task involving number properties. Explain the step you are taking and why."
+      },
+      {
+        "concept": "factors and multiples",
+        "prompt": "Complete a supported task involving factors and multiples. Explain the step you are taking and why."
+      },
+      {
+        "concept": "divisibility",
+        "prompt": "Complete a supported task involving divisibility. Explain the step you are taking and why."
+      },
+      {
+        "concept": "number puzzles",
+        "prompt": "Complete a supported task involving number puzzles. Explain the step you are taking and why."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "Confusing the main idea of number properties with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of factors and multiples with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of divisibility with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of number puzzles with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Mathematics",
+    "chapter_id": "m06_c3",
+    "chapter_title": "Number Play",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
   }
 }

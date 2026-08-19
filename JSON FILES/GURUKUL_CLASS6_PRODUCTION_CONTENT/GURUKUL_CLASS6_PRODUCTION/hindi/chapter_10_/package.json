@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Hindi",
+    "chapter_id": "h06_c10",
+    "chapter_title": "परीक्षा",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_hindi_01",
+      "skill": "सरल पठन",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_02",
+      "skill": "शब्दार्थ",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_03",
+      "skill": "वाक्य समझ",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_04",
+      "skill": "मौखिक अभिव्यक्ति",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "सरल पठन",
+      "question": "Show what you already know about सरल पठन.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "शब्दार्थ",
+      "question": "Show what you already know about शब्दार्थ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "वाक्य समझ",
+      "question": "Show what you already know about वाक्य समझ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "मौखिक अभिव्यक्ति",
+      "question": "Show what you already know about मौखिक अभिव्यक्ति.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain घटना क्रम using simple language and an example.",
+    "Explain तनाव और निर्णय using simple language and an example.",
+    "Explain पात्रों के व्यवहार using simple language and an example.",
+    "Explain सीख using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "h06_c10_k1",
+      "concept": "घटना क्रम",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies घटना क्रम."
+    },
+    {
+      "concept_id": "h06_c10_k2",
+      "concept": "तनाव और निर्णय",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies तनाव और निर्णय."
+    },
+    {
+      "concept_id": "h06_c10_k3",
+      "concept": "पात्रों के व्यवहार",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies पात्रों के व्यवहार."
+    },
+    {
+      "concept_id": "h06_c10_k4",
+      "concept": "सीख",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies सीख."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "घटना क्रम",
+      "objective": "Learner can understand, explain and apply घटना क्रम.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain घटना क्रम without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "तनाव और निर्णय",
+      "objective": "Learner can understand, explain and apply तनाव और निर्णय.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain तनाव और निर्णय without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "पात्रों के व्यवहार",
+      "objective": "Learner can understand, explain and apply पात्रों के व्यवहार.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain पात्रों के व्यवहार without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "सीख",
+      "objective": "Learner can understand, explain and apply सीख.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain सीख without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "घटना क्रम",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "तनाव और निर्णय",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "पात्रों के व्यवहार",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "सीख",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "घटना क्रम",
+      "prompt": "Complete a supported task involving घटना क्रम. Explain the step you are taking and why."
+    },
+    {
+      "concept": "तनाव और निर्णय",
+      "prompt": "Complete a supported task involving तनाव और निर्णय. Explain the step you are taking and why."
+    },
+    {
+      "concept": "पात्रों के व्यवहार",
+      "prompt": "Complete a supported task involving पात्रों के व्यवहार. Explain the step you are taking and why."
+    },
+    {
+      "concept": "सीख",
+      "prompt": "Complete a supported task involving सीख. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "घटना क्रम",
+      "prompt": "Complete a new task involving घटना क्रम without hints, then self-check."
+    },
+    {
+      "concept": "तनाव और निर्णय",
+      "prompt": "Complete a new task involving तनाव और निर्णय without hints, then self-check."
+    },
+    {
+      "concept": "पात्रों के व्यवहार",
+      "prompt": "Complete a new task involving पात्रों के व्यवहार without hints, then self-check."
+    },
+    {
+      "concept": "सीख",
+      "prompt": "Complete a new task involving सीख without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "घटना क्रम",
+        "question": "Which response best demonstrates understanding of 'घटना क्रम'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "घटना क्रम",
+        "question": "Explain 'घटना क्रम' in your own words and give an original example.",
+        "answer": "A strong response explains घटना क्रम accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "घटना क्रम",
+        "question": "Use 'घटना क्रम' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "तनाव और निर्णय",
+        "question": "Which response best demonstrates understanding of 'तनाव और निर्णय'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "तनाव और निर्णय",
+        "question": "Explain 'तनाव और निर्णय' in your own words and give an original example.",
+        "answer": "A strong response explains तनाव और निर्णय accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "तनाव और निर्णय",
+        "question": "Use 'तनाव और निर्णय' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "पात्रों के व्यवहार",
+        "question": "Which response best demonstrates understanding of 'पात्रों के व्यवहार'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "पात्रों के व्यवहार",
+        "question": "Explain 'पात्रों के व्यवहार' in your own words and give an original example.",
+        "answer": "A strong response explains पात्रों के व्यवहार accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "पात्रों के व्यवहार",
+        "question": "Use 'पात्रों के व्यवहार' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "सीख",
+        "question": "Which response best demonstrates understanding of 'सीख'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "सीख",
+        "question": "Explain 'सीख' in your own words and give an original example.",
+        "answer": "A strong response explains सीख accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "सीख",
+        "question": "Use 'सीख' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'परीक्षा'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'परीक्षा', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is घटना क्रम?",
+      "back": "Define घटना क्रम, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is तनाव और निर्णय?",
+      "back": "Define तनाव और निर्णय, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is पात्रों के व्यवहार?",
+      "back": "Define पात्रों के व्यवहार, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is सीख?",
+      "back": "Define सीख, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore घटना क्रम",
+      "instructions": "Use a safe, age-appropriate task specifically focused on घटना क्रम. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where तनाव और निर्णय is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach सीख to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of घटना क्रम with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of तनाव और निर्णय with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of पात्रों के व्यवहार with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of सीख with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply घटना क्रम to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply तनाव और निर्णय to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply पात्रों के व्यवहार to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

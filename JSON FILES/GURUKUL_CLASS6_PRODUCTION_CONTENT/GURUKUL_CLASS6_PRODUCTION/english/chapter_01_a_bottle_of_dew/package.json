@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "English",
+    "chapter_id": "e06_c1",
+    "chapter_title": "A Bottle of Dew",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_english_01",
+      "skill": "basic reading fluency",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_english_02",
+      "skill": "sentence meaning",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_english_03",
+      "skill": "common vocabulary",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_english_04",
+      "skill": "speaking in complete thoughts",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "basic reading fluency",
+      "question": "Show what you already know about basic reading fluency.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "sentence meaning",
+      "question": "Show what you already know about sentence meaning.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "common vocabulary",
+      "question": "Show what you already know about common vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "speaking in complete thoughts",
+      "question": "Show what you already know about speaking in complete thoughts.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain reading for meaning using simple language and an example.",
+    "Explain sequence and inference using simple language and an example.",
+    "Explain vocabulary in context using simple language and an example.",
+    "Explain moral/idea and evidence using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "e06_c1_k1",
+      "concept": "reading for meaning",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies reading for meaning."
+    },
+    {
+      "concept_id": "e06_c1_k2",
+      "concept": "sequence and inference",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies sequence and inference."
+    },
+    {
+      "concept_id": "e06_c1_k3",
+      "concept": "vocabulary in context",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies vocabulary in context."
+    },
+    {
+      "concept_id": "e06_c1_k4",
+      "concept": "moral/idea and evidence",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies moral/idea and evidence."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "reading for meaning",
+      "objective": "Learner can understand, explain and apply reading for meaning.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain reading for meaning without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "sequence and inference",
+      "objective": "Learner can understand, explain and apply sequence and inference.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain sequence and inference without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "vocabulary in context",
+      "objective": "Learner can understand, explain and apply vocabulary in context.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain vocabulary in context without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "moral/idea and evidence",
+      "objective": "Learner can understand, explain and apply moral/idea and evidence.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain moral/idea and evidence without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "reading for meaning",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "sequence and inference",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "vocabulary in context",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "moral/idea and evidence",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "reading for meaning",
+      "prompt": "Complete a supported task involving reading for meaning. Explain the step you are taking and why."
+    },
+    {
+      "concept": "sequence and inference",
+      "prompt": "Complete a supported task involving sequence and inference. Explain the step you are taking and why."
+    },
+    {
+      "concept": "vocabulary in context",
+      "prompt": "Complete a supported task involving vocabulary in context. Explain the step you are taking and why."
+    },
+    {
+      "concept": "moral/idea and evidence",
+      "prompt": "Complete a supported task involving moral/idea and evidence. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "reading for meaning",
+      "prompt": "Complete a new task involving reading for meaning without hints, then self-check."
+    },
+    {
+      "concept": "sequence and inference",
+      "prompt": "Complete a new task involving sequence and inference without hints, then self-check."
+    },
+    {
+      "concept": "vocabulary in context",
+      "prompt": "Complete a new task involving vocabulary in context without hints, then self-check."
+    },
+    {
+      "concept": "moral/idea and evidence",
+      "prompt": "Complete a new task involving moral/idea and evidence without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "reading for meaning",
+        "question": "Which response best demonstrates understanding of 'reading for meaning'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "reading for meaning",
+        "question": "Explain 'reading for meaning' in your own words and give an original example.",
+        "answer": "A strong response explains reading for meaning accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "reading for meaning",
+        "question": "Use 'reading for meaning' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "sequence and inference",
+        "question": "Which response best demonstrates understanding of 'sequence and inference'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "sequence and inference",
+        "question": "Explain 'sequence and inference' in your own words and give an original example.",
+        "answer": "A strong response explains sequence and inference accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "sequence and inference",
+        "question": "Use 'sequence and inference' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "vocabulary in context",
+        "question": "Which response best demonstrates understanding of 'vocabulary in context'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "vocabulary in context",
+        "question": "Explain 'vocabulary in context' in your own words and give an original example.",
+        "answer": "A strong response explains vocabulary in context accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "vocabulary in context",
+        "question": "Use 'vocabulary in context' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "moral/idea and evidence",
+        "question": "Which response best demonstrates understanding of 'moral/idea and evidence'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "moral/idea and evidence",
+        "question": "Explain 'moral/idea and evidence' in your own words and give an original example.",
+        "answer": "A strong response explains moral/idea and evidence accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "moral/idea and evidence",
+        "question": "Use 'moral/idea and evidence' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'A Bottle of Dew'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'A Bottle of Dew', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is reading for meaning?",
+      "back": "Define reading for meaning, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is sequence and inference?",
+      "back": "Define sequence and inference, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is vocabulary in context?",
+      "back": "Define vocabulary in context, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is moral/idea and evidence?",
+      "back": "Define moral/idea and evidence, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore reading for meaning",
+      "instructions": "Use a safe, age-appropriate task specifically focused on reading for meaning. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where sequence and inference is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach moral/idea and evidence to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of reading for meaning with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of sequence and inference with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of vocabulary in context with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of moral/idea and evidence with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply reading for meaning to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply sequence and inference to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply vocabulary in context to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

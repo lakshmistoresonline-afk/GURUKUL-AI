@@ -1,22 +1,40 @@
 {
-  "concepts": [
-    {
-      "id": "ghml109_c01",
-      "name": "चिड़िया",
-      "definition": "Central learning focus of चिड़िया.",
-      "source_evidence": "वन में िजतने पंछी हैं, खजं न, कपोत, चातक, कोिकल; काक, हसं , शक ु आिद वास करते सब आपस में िहलिमल!"
-    },
-    {
-      "id": "ghml109_c02",
-      "name": "Evidence and reasoning",
-      "definition": "Use source information, observation or valid working to support a conclusion.",
-      "source_evidence": "सब िमल-जल ु कर रहते हैं वे, सब िमल-जलु कर खाते हैं; आसमान ही उनका घर है; जहाँ चाहते, जाते हैं!"
-    },
-    {
-      "id": "ghml109_c03",
-      "name": "Application and transfer",
-      "definition": "Use the learned idea in a relevant new context.",
-      "source_evidence": "रहते जहाँ, वहाँ वे अपनी दिु नया एक बसाते हैं; िदन भर करते काम, रात में पेड़ों पर सो जाते हैं!"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "ghml109",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u093f\u0921\u093c\u093f\u092f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "ghml109_c01",
+        "name": "\u091a\u093f\u0921\u093c\u093f\u092f\u093e",
+        "definition": "Central learning focus of \u091a\u093f\u0921\u093c\u093f\u092f\u093e.",
+        "source_evidence": "\u0935\u0928 \u092e\u0947\u0902 \u093f\u091c\u0924\u0928\u0947 \u092a\u0902\u091b\u0940 \u0939\u0948\u0902, \u0916\u091c\u0902 \u0928, \u0915\u092a\u094b\u0924, \u091a\u093e\u0924\u0915, \u0915\u094b\u093f\u0915\u0932; \u0915\u093e\u0915, \u0939\u0938\u0902 , \u0936\u0915 \u0941 \u0906\u093f\u0926 \u0935\u093e\u0938 \u0915\u0930\u0924\u0947 \u0938\u092c \u0906\u092a\u0938 \u092e\u0947\u0902 \u093f\u0939\u0932\u093f\u092e\u0932!"
+      },
+      {
+        "id": "ghml109_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Use source information, observation or valid working to support a conclusion.",
+        "source_evidence": "\u0938\u092c \u093f\u092e\u0932-\u091c\u0932 \u0941 \u0915\u0930 \u0930\u0939\u0924\u0947 \u0939\u0948\u0902 \u0935\u0947, \u0938\u092c \u093f\u092e\u0932-\u091c\u0932\u0941 \u0915\u0930 \u0916\u093e\u0924\u0947 \u0939\u0948\u0902; \u0906\u0938\u092e\u093e\u0928 \u0939\u0940 \u0909\u0928\u0915\u093e \u0918\u0930 \u0939\u0948; \u091c\u0939\u093e\u0901 \u091a\u093e\u0939\u0924\u0947, \u091c\u093e\u0924\u0947 \u0939\u0948\u0902!"
+      },
+      {
+        "id": "ghml109_c03",
+        "name": "Application and transfer",
+        "definition": "Use the learned idea in a relevant new context.",
+        "source_evidence": "\u0930\u0939\u0924\u0947 \u091c\u0939\u093e\u0901, \u0935\u0939\u093e\u0901 \u0935\u0947 \u0905\u092a\u0928\u0940 \u0926\u093f\u0941 \u0928\u092f\u093e \u090f\u0915 \u092c\u0938\u093e\u0924\u0947 \u0939\u0948\u0902; \u093f\u0926\u0928 \u092d\u0930 \u0915\u0930\u0924\u0947 \u0915\u093e\u092e, \u0930\u093e\u0924 \u092e\u0947\u0902 \u092a\u0947\u095c\u094b\u0902 \u092a\u0930 \u0938\u094b \u091c\u093e\u0924\u0947 \u0939\u0948\u0902!"
+      }
+    ]
+  }
 }

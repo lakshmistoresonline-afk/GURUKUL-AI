@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Hindi",
+    "chapter_id": "h06_c5",
+    "chapter_title": "रहीम के दोहे",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_hindi_01",
+      "skill": "सरल पठन",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_02",
+      "skill": "शब्दार्थ",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_03",
+      "skill": "वाक्य समझ",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_04",
+      "skill": "मौखिक अभिव्यक्ति",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "सरल पठन",
+      "question": "Show what you already know about सरल पठन.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "शब्दार्थ",
+      "question": "Show what you already know about शब्दार्थ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "वाक्य समझ",
+      "question": "Show what you already know about वाक्य समझ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "मौखिक अभिव्यक्ति",
+      "question": "Show what you already know about मौखिक अभिव्यक्ति.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain दोहा और भावार्थ using simple language and an example.",
+    "Explain नीति-विचार using simple language and an example.",
+    "Explain शब्दार्थ using simple language and an example.",
+    "Explain जीवन में प्रयोग using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "h06_c5_k1",
+      "concept": "दोहा और भावार्थ",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies दोहा और भावार्थ."
+    },
+    {
+      "concept_id": "h06_c5_k2",
+      "concept": "नीति-विचार",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies नीति-विचार."
+    },
+    {
+      "concept_id": "h06_c5_k3",
+      "concept": "शब्दार्थ",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies शब्दार्थ."
+    },
+    {
+      "concept_id": "h06_c5_k4",
+      "concept": "जीवन में प्रयोग",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies जीवन में प्रयोग."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "दोहा और भावार्थ",
+      "objective": "Learner can understand, explain and apply दोहा और भावार्थ.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain दोहा और भावार्थ without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "नीति-विचार",
+      "objective": "Learner can understand, explain and apply नीति-विचार.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain नीति-विचार without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "शब्दार्थ",
+      "objective": "Learner can understand, explain and apply शब्दार्थ.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain शब्दार्थ without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "जीवन में प्रयोग",
+      "objective": "Learner can understand, explain and apply जीवन में प्रयोग.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain जीवन में प्रयोग without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "दोहा और भावार्थ",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "नीति-विचार",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "शब्दार्थ",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "जीवन में प्रयोग",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "दोहा और भावार्थ",
+      "prompt": "Complete a supported task involving दोहा और भावार्थ. Explain the step you are taking and why."
+    },
+    {
+      "concept": "नीति-विचार",
+      "prompt": "Complete a supported task involving नीति-विचार. Explain the step you are taking and why."
+    },
+    {
+      "concept": "शब्दार्थ",
+      "prompt": "Complete a supported task involving शब्दार्थ. Explain the step you are taking and why."
+    },
+    {
+      "concept": "जीवन में प्रयोग",
+      "prompt": "Complete a supported task involving जीवन में प्रयोग. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "दोहा और भावार्थ",
+      "prompt": "Complete a new task involving दोहा और भावार्थ without hints, then self-check."
+    },
+    {
+      "concept": "नीति-विचार",
+      "prompt": "Complete a new task involving नीति-विचार without hints, then self-check."
+    },
+    {
+      "concept": "शब्दार्थ",
+      "prompt": "Complete a new task involving शब्दार्थ without hints, then self-check."
+    },
+    {
+      "concept": "जीवन में प्रयोग",
+      "prompt": "Complete a new task involving जीवन में प्रयोग without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "दोहा और भावार्थ",
+        "question": "Which response best demonstrates understanding of 'दोहा और भावार्थ'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "दोहा और भावार्थ",
+        "question": "Explain 'दोहा और भावार्थ' in your own words and give an original example.",
+        "answer": "A strong response explains दोहा और भावार्थ accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "दोहा और भावार्थ",
+        "question": "Use 'दोहा और भावार्थ' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "नीति-विचार",
+        "question": "Which response best demonstrates understanding of 'नीति-विचार'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "नीति-विचार",
+        "question": "Explain 'नीति-विचार' in your own words and give an original example.",
+        "answer": "A strong response explains नीति-विचार accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "नीति-विचार",
+        "question": "Use 'नीति-विचार' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "शब्दार्थ",
+        "question": "Which response best demonstrates understanding of 'शब्दार्थ'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "शब्दार्थ",
+        "question": "Explain 'शब्दार्थ' in your own words and give an original example.",
+        "answer": "A strong response explains शब्दार्थ accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "शब्दार्थ",
+        "question": "Use 'शब्दार्थ' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "जीवन में प्रयोग",
+        "question": "Which response best demonstrates understanding of 'जीवन में प्रयोग'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "जीवन में प्रयोग",
+        "question": "Explain 'जीवन में प्रयोग' in your own words and give an original example.",
+        "answer": "A strong response explains जीवन में प्रयोग accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "जीवन में प्रयोग",
+        "question": "Use 'जीवन में प्रयोग' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'रहीम के दोहे'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'रहीम के दोहे', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is दोहा और भावार्थ?",
+      "back": "Define दोहा और भावार्थ, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is नीति-विचार?",
+      "back": "Define नीति-विचार, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is शब्दार्थ?",
+      "back": "Define शब्दार्थ, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is जीवन में प्रयोग?",
+      "back": "Define जीवन में प्रयोग, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore दोहा और भावार्थ",
+      "instructions": "Use a safe, age-appropriate task specifically focused on दोहा और भावार्थ. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where नीति-विचार is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach जीवन में प्रयोग to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of दोहा और भावार्थ with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of नीति-विचार with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of शब्दार्थ with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of जीवन में प्रयोग with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply दोहा और भावार्थ to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply नीति-विचार to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply शब्दार्थ to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

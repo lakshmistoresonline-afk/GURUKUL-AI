@@ -1,100 +1,118 @@
 {
-  "items": [
-    {
-      "id": "eemm110_q01",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
-      "options": [
-        "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
-      "difficulty": "easy",
-      "concept_id": "eemm110_concept_01"
-    },
-    {
-      "id": "eemm110_q02",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
-      "options": [
-        "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
-      "difficulty": "easy",
-      "concept_id": "eemm110_concept_01"
-    },
-    {
-      "id": "eemm110_q03",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
-      "options": [
-        "They used their knowledge of lines of symmetry to make the cutouts.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "They used their knowledge of lines of symmetry to make the cutouts.",
-      "difficulty": "medium",
-      "concept_id": "eemm110_concept_01"
-    },
-    {
-      "id": "eemm110_q04",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
-      "options": [
-        "The letter A has a vertical line of symmetry.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "The letter A has a vertical line of symmetry.",
-      "difficulty": "medium",
-      "concept_id": "eemm110_concept_01"
-    },
-    {
-      "id": "eemm110_q05",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
-      "options": [
-        "Alphabet Cutout Step 1 Step 1 Step 2 Step 3 Step 4 Step 3 Step 2 Step 4 The letter H has two lines of symmetry.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "Alphabet Cutout Step 1 Step 1 Step 2 Step 3 Step 4 Step 3 Step 2 Step 4 The letter H has two lines of symmetry.",
-      "difficulty": "hard",
-      "concept_id": "eemm110_concept_01"
-    },
-    {
-      "id": "eemm110_q06",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
-      "options": [
-        "Fold the paper into one-fourth (once vertically, once horizontally).",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "Fold the paper into one-fourth (once vertically, once horizontally).",
-      "difficulty": "hard",
-      "concept_id": "eemm110_concept_01"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "eemm110",
+  "class": "class_05",
+  "subject": "Mathematics",
+  "chapter_title": "Symmetrical Designs",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eemm110_q01",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+        "options": [
+          "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
+        "difficulty": "easy",
+        "concept_id": "eemm110_concept_01"
+      },
+      {
+        "id": "eemm110_q02",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+        "options": [
+          "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
+        "difficulty": "easy",
+        "concept_id": "eemm110_concept_01"
+      },
+      {
+        "id": "eemm110_q03",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+        "options": [
+          "They used their knowledge of lines of symmetry to make the cutouts.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "They used their knowledge of lines of symmetry to make the cutouts.",
+        "difficulty": "medium",
+        "concept_id": "eemm110_concept_01"
+      },
+      {
+        "id": "eemm110_q04",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+        "options": [
+          "The letter A has a vertical line of symmetry.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "The letter A has a vertical line of symmetry.",
+        "difficulty": "medium",
+        "concept_id": "eemm110_concept_01"
+      },
+      {
+        "id": "eemm110_q05",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+        "options": [
+          "Alphabet Cutout Step 1 Step 1 Step 2 Step 3 Step 4 Step 3 Step 2 Step 4 The letter H has two lines of symmetry.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Alphabet Cutout Step 1 Step 1 Step 2 Step 3 Step 4 Step 3 Step 2 Step 4 The letter H has two lines of symmetry.",
+        "difficulty": "hard",
+        "concept_id": "eemm110_concept_01"
+      },
+      {
+        "id": "eemm110_q06",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+        "options": [
+          "Fold the paper into one-fourth (once vertically, once horizontally).",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Fold the paper into one-fourth (once vertically, once horizontally).",
+        "difficulty": "hard",
+        "concept_id": "eemm110_concept_01"
+      }
+    ]
+  }
 }

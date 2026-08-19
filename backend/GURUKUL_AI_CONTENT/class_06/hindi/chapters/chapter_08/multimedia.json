@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "fhml108_official",
-      "type": "official_resource",
-      "title": "NCERT ePathshala eResources — सत्रिया और बिहू नृत्य",
-      "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
-      "verification_status": "VERIFIED_OFFICIAL_PORTAL",
-      "purpose": "Official chapter-linked digital resources."
-    },
-    {
-      "id": "fhml108_yt_search",
-      "type": "youtube_discovery",
-      "title": "Video discovery — सत्रिया और बिहू नृत्य",
-      "url": "https://www.youtube.com/results?search_query=Class+6+Hindi+सत्रिया+और+बिहू+नृत्य+NCERT",
-      "verification_status": "DISCOVERY_ONLY",
-      "purpose": "Discovery link only; not a verified direct video."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "fhml108",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "fhml108_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources \u2014 \u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resources."
+      },
+      {
+        "id": "fhml108_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery \u2014 \u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f",
+        "url": "https://www.youtube.com/results?search_query=Class+6+Hindi+\u0938\u0924\u094d\u0930\u093f\u092f\u093e+\u0914\u0930+\u092c\u093f\u0939\u0942+\u0928\u0943\u0924\u094d\u092f+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not a verified direct video."
+      }
+    ]
+  }
 }

@@ -1,28 +1,46 @@
 {
-  "nodes": [
-    {
-      "id": "eesa110_concept_01",
-      "label": "Glass Bangles"
-    },
-    {
-      "id": "eesa110_concept_02",
-      "label": "Evidence and reasoning"
-    },
-    {
-      "id": "eesa110_concept_03",
-      "label": "Application"
-    }
-  ],
-  "edges": [
-    {
-      "from": "eesa110_concept_01",
-      "to": "eesa110_concept_02",
-      "relation": "explained_by"
-    },
-    {
-      "from": "eesa110_concept_02",
-      "to": "eesa110_concept_03",
-      "relation": "applied_through"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "eesa110",
+  "class": "class_05",
+  "subject": "English",
+  "chapter_title": "Glass Bangles",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "eesa110_concept_01",
+        "label": "Glass Bangles"
+      },
+      {
+        "id": "eesa110_concept_02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "eesa110_concept_03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "eesa110_concept_01",
+        "to": "eesa110_concept_02",
+        "relation": "explained_by"
+      },
+      {
+        "from": "eesa110_concept_02",
+        "to": "eesa110_concept_03",
+        "relation": "applied_through"
+      }
+    ]
+  }
 }

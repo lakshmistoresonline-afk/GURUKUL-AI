@@ -1,0 +1,42 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c1",
+  "component": "WORKED_EXAMPLE",
+  "content": {
+    "examples": [
+      {
+        "id": "WE01",
+        "title": "Converting Numbers to Words",
+        "problem": "Write 23,456 in words.",
+        "steps": [
+          "Group digits using commas: 23,456.",
+          "Identify the period for the first group: 23 is in the 'thousands' period.",
+          "Identify the next group: 456 is in the 'ones' period.",
+          "Combine them: Twenty-three thousand four hundred fifty-six."
+        ]
+      },
+      {
+        "id": "WE02",
+        "title": "Place Value Identification",
+        "problem": "Find the place value of 7 in 87,210.",
+        "steps": [
+          "Write the number in a place value chart.",
+          "Digit 0 is in Ones, 1 is in Tens, 2 is in Hundreds, 7 is in Thousands.",
+          "The place value is 7 * 1,000 = 7,000."
+        ]
+      },
+      {
+        "id": "WE03",
+        "title": "Comparing Large Numbers",
+        "problem": "Which is greater: 54,321 or 54,400?",
+        "steps": [
+          "Compare from left to right.",
+          "Ten-thousands place: both have 5.",
+          "Thousands place: both have 4.",
+          "Hundreds place: 3 vs 4.",
+          "Since 4 > 3, 54,400 is greater."
+        ]
+      }
+    ]
+  }
+}

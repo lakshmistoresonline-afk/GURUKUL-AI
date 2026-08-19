@@ -1,10 +1,28 @@
 {
-  "rule": "Every answer must be validated against the uploaded chapter source.",
-  "sample_answers": [
-    {
-      "question_id": "ehve106_q01",
-      "answer": "Option 1",
-      "evidence": "चतुर चचत्रकार चित्रकार सुनसान जगह में, बना रहा था चित्र, इतने ही में वहाँ आ गया, यम राजा का चमत्र।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ehve106",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u0924\u0941\u0930 \u091a\u093f\u0924\u094d\u0930\u0915\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "ehve106_q01",
+        "answer": "Option 1",
+        "evidence": "\u091a\u0924\u0941\u0930 \u091a\u091a\u0924\u094d\u0930\u0915\u093e\u0930 \u091a\u093f\u0924\u094d\u0930\u0915\u093e\u0930 \u0938\u0941\u0928\u0938\u093e\u0928 \u091c\u0917\u0939 \u092e\u0947\u0902, \u092c\u0928\u093e \u0930\u0939\u093e \u0925\u093e \u091a\u093f\u0924\u094d\u0930, \u0907\u0924\u0928\u0947 \u0939\u0940 \u092e\u0947\u0902 \u0935\u0939\u093e\u0901 \u0906 \u0917\u092f\u093e, \u092f\u092e \u0930\u093e\u091c\u093e \u0915\u093e \u091a\u092e\u0924\u094d\u0930\u0964"
+      }
+    ]
+  }
 }

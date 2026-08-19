@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fhml101_q01",
-    "answer": "Option 1",
-    "evidence": "1 मातृभूमि ऊँचा खड़ा हिमालय आकाश चमू ता है, नीचे चरण तले झक ु , नित सिंधु झमू ता है।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fhml101",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u093e\u0924\u0943\u092d\u0942\u092e\u093f",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fhml101_q01",
+      "answer": "Option 1",
+      "evidence": "1 \u092e\u093e\u0924\u0943\u092d\u0942\u092e\u093f \u090a\u0901\u091a\u093e \u0916\u0921\u093c\u093e \u0939\u093f\u092e\u093e\u0932\u092f \u0906\u0915\u093e\u0936 \u091a\u092e\u0942 \u0924\u093e \u0939\u0948, \u0928\u0940\u091a\u0947 \u091a\u0930\u0923 \u0924\u0932\u0947 \u091d\u0915 \u0941 , \u0928\u093f\u0924 \u0938\u093f\u0902\u0927\u0941 \u091d\u092e\u0942 \u0924\u093e \u0939\u0948\u0964"
+    }
   }
 }

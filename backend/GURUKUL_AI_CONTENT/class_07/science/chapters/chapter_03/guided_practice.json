@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "s07_c3",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Recognition",
+        "tasks": [
+          "Draw symbols for: ON switch, OFF switch, Wire, Bulb.",
+          "Identify the positive and negative terminals of a cell."
+        ],
+        "hints": ["Use standard lines and dots.", "Look for + and - signs."]
+      },
+      {
+        "level": 2,
+        "type": "Circuit Analysis",
+        "tasks": [
+          "Why does a bulb not glow if the circuit is open?",
+          "Explain the heating effect of electric current."
+        ],
+        "dual_language_hint": "Open circuit means a gap in the path. / खुले परिपथ (open circuit) का अर्थ है मार्ग में अंतर।"
+      },
+      {
+        "level": 3,
+        "type": "Electromagnets",
+        "tasks": [
+          "List two uses of an electromagnet.",
+          "Design a simple electric bell circuit and label its parts."
+        ]
+      }
+    ]
+  }
+}

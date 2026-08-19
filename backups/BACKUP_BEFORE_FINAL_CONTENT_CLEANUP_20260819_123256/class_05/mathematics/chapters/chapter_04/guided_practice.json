@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c4",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Matching/ID",
+        "tasks": [
+          "Is 5 a factor of 25? (Yes / No)",
+          "Is 12 a multiple of 4? (Yes / No)"
+        ],
+        "hints": ["Can 25 be divided by 5?", "Does 12 come in the table of 4?"]
+      },
+      {
+        "level": 2,
+        "type": "Finding Pairs",
+        "tasks": [
+          "Find all factors of 18.",
+          "List the first five multiples of 7."
+        ],
+        "dual_language_hint": "Factor pairs for 18: 1x18, 2x9, 3x6. / 18 के गुणनखंड युग्म: 1x18, 2x9, 3x6."
+      },
+      {
+        "level": 3,
+        "type": "L.C.M. and H.C.F. Basics",
+        "tasks": [
+          "Find the common factors of 12 and 18. What is the highest one?",
+          "Find the first common multiple of 4 and 6."
+        ]
+      }
+    ]
+  }
+}

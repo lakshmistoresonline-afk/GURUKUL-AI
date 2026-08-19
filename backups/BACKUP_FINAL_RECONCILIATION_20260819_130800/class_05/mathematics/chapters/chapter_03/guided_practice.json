@@ -1,0 +1,32 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c3",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Classification",
+        "tasks": [
+          "Classify the angle (Right, Acute, Obtuse): 45 degrees, 90 degrees, 120 degrees."
+        ],
+        "hints": ["Less than 90 is Acute.", "Exactly 90 is Right."]
+      },
+      {
+        "level": 2,
+        "type": "Real-world ID",
+        "tasks": [
+          "Identify the type of angle formed by the hands of a clock at: 3:00, 2:00, 5:00."
+        ],
+        "dual_language_hint": "Visualize the clock hands. / घड़ी की सुइयों की कल्पना करें।"
+      },
+      {
+        "level": 3,
+        "type": "Drawing/Measure",
+        "tasks": [
+          "Using a protractor, draw an angle of 75 degrees and label its arms and vertex."
+        ]
+      }
+    ]
+  }
+}

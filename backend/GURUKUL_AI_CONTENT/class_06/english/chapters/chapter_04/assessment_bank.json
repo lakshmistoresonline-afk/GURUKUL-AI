@@ -1,100 +1,118 @@
 {
-  "items": [
-    {
-      "id": "fepr104_q01",
-      "type": "source_based",
-      "question": "Which statement is supported by Change of Heart?",
-      "options": [
-        "friendly matches (i) matches played to win a trophy (ii) matches played without competition 2.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "friendly matches (i) matches played to win a trophy (ii) matches played without competition 2.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "easy",
-      "concept_id": "fepr104_c01"
-    },
-    {
-      "id": "fepr104_q02",
-      "type": "source_based",
-      "question": "Which statement is supported by Change of Heart?",
-      "options": [
-        "opponent (i) someone who you compete with (ii) someone you want to be a partner with 3.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "opponent (i) someone who you compete with (ii) someone you want to be a partner with 3.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "easy",
-      "concept_id": "fepr104_c01"
-    },
-    {
-      "id": "fepr104_q03",
-      "type": "source_based",
-      "question": "Which statement is supported by Change of Heart?",
-      "options": [
-        "tally of marks (i) final marks on a report card (ii) record of points in a game/match 4.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "tally of marks (i) final marks on a report card (ii) record of points in a game/match 4.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "medium",
-      "concept_id": "fepr104_c01"
-    },
-    {
-      "id": "fepr104_q04",
-      "type": "source_based",
-      "question": "Which statement is supported by Change of Heart?",
-      "options": [
-        "sporting spirit (i) following all the rules in a game (ii) being fair and respecting each player in a game Reprint 2026-27 Unit 4.indd 103 05-Dec-24 3:59:50 PM Poorvi—Grade 6 Let us read I Prabhat always wanted to win.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "sporting spirit (i) following all the rules in a game (ii) being fair and respecting each player in a game Reprint 2026-27 Unit 4.indd 103 05-Dec-24 3:59:50 PM Poorvi—Grade 6 Let us read I Prabhat always wanted to win.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "medium",
-      "concept_id": "fepr104_c01"
-    },
-    {
-      "id": "fepr104_q05",
-      "type": "source_based",
-      "question": "Which statement is supported by Change of Heart?",
-      "options": [
-        "His parents, teachers, and friends said that he did not know how to accept defeat.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "His parents, teachers, and friends said that he did not know how to accept defeat.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "hard",
-      "concept_id": "fepr104_c01"
-    },
-    {
-      "id": "fepr104_q06",
-      "type": "source_based",
-      "question": "Which statement is supported by Change of Heart?",
-      "options": [
-        "The fact was that defeat: loss he could not bear losing, not even at marbles.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "The fact was that defeat: loss he could not bear losing, not even at marbles.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "hard",
-      "concept_id": "fepr104_c01"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "fepr104",
+  "class": "class_06",
+  "subject": "English",
+  "chapter_title": "Change of Heart",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fepr104_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Change of Heart?",
+        "options": [
+          "friendly matches (i) matches played to win a trophy (ii) matches played without competition 2.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "friendly matches (i) matches played to win a trophy (ii) matches played without competition 2.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fepr104_c01"
+      },
+      {
+        "id": "fepr104_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Change of Heart?",
+        "options": [
+          "opponent (i) someone who you compete with (ii) someone you want to be a partner with 3.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "opponent (i) someone who you compete with (ii) someone you want to be a partner with 3.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fepr104_c01"
+      },
+      {
+        "id": "fepr104_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Change of Heart?",
+        "options": [
+          "tally of marks (i) final marks on a report card (ii) record of points in a game/match 4.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "tally of marks (i) final marks on a report card (ii) record of points in a game/match 4.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fepr104_c01"
+      },
+      {
+        "id": "fepr104_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Change of Heart?",
+        "options": [
+          "sporting spirit (i) following all the rules in a game (ii) being fair and respecting each player in a game Reprint 2026-27 Unit 4.indd 103 05-Dec-24 3:59:50 PM Poorvi\u2014Grade 6 Let us read I Prabhat always wanted to win.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "sporting spirit (i) following all the rules in a game (ii) being fair and respecting each player in a game Reprint 2026-27 Unit 4.indd 103 05-Dec-24 3:59:50 PM Poorvi\u2014Grade 6 Let us read I Prabhat always wanted to win.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fepr104_c01"
+      },
+      {
+        "id": "fepr104_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Change of Heart?",
+        "options": [
+          "His parents, teachers, and friends said that he did not know how to accept defeat.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "His parents, teachers, and friends said that he did not know how to accept defeat.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fepr104_c01"
+      },
+      {
+        "id": "fepr104_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Change of Heart?",
+        "options": [
+          "The fact was that defeat: loss he could not bear losing, not even at marbles.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "The fact was that defeat: loss he could not bear losing, not even at marbles.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fepr104_c01"
+      }
+    ]
+  }
 }

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "eemm105",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Far and Near",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "eemm105_concept_01",
+        "label": "Far and Near"
+      },
+      {
+        "id": "eemm105_concept_02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "eemm105_concept_03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "eemm105_concept_01",
+        "to": "eemm105_concept_02",
+        "relation": "explained_by"
+      },
+      {
+        "from": "eemm105_concept_02",
+        "to": "eemm105_concept_03",
+        "relation": "applied_through"
+      }
+    ]
+  }
+}

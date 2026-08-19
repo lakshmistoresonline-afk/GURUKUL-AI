@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "fees104_official",
-      "type": "official_resource",
-      "title": "NCERT ePathshala eResources — Timeline and Sources of History",
-      "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
-      "verification_status": "VERIFIED_OFFICIAL_PORTAL",
-      "purpose": "Official chapter-linked digital resources."
-    },
-    {
-      "id": "fees104_yt_search",
-      "type": "youtube_discovery",
-      "title": "Video discovery — Timeline and Sources of History",
-      "url": "https://www.youtube.com/results?search_query=Class+6+Social+Science+Timeline+and+Sources+of+History+NCERT",
-      "verification_status": "DISCOVERY_ONLY",
-      "purpose": "Discovery link only; not a verified direct video."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "fees104",
+  "class": "class_06",
+  "subject": "Social Science",
+  "chapter_title": "Timeline and Sources of History",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "fees104_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources \u2014 Timeline and Sources of History",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resources."
+      },
+      {
+        "id": "fees104_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery \u2014 Timeline and Sources of History",
+        "url": "https://www.youtube.com/results?search_query=Class+6+Social+Science+Timeline+and+Sources+of+History+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not a verified direct video."
+      }
+    ]
+  }
 }

@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eesa106_concept_01",
+      "label": "What a Tank!"
+    },
+    {
+      "id": "eesa106_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eesa106_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eesa106_concept_01",
+      "to": "eesa106_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eesa106_concept_02",
+      "to": "eesa106_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

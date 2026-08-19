@@ -1,15 +1,33 @@
 {
-  "cases": [
-    {
-      "id": "ehve102_case01",
-      "title": "Applying न्याय की कुर्सी",
-      "case": "A learner faces a real-life situation related to the chapter 'न्याय की कुर्सी'.",
-      "questions": [
-        "What concept applies?",
-        "What evidence supports your choice?",
-        "What would you do next?"
-      ],
-      "answer_guidance": "Ground all answers in the chapter concepts."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "ehve102",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u094d\u092f\u093e\u092f \u0915\u0940 \u0915\u0941\u0930\u094d\u0938\u0940",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "ehve102_case01",
+        "title": "Applying \u0928\u094d\u092f\u093e\u092f \u0915\u0940 \u0915\u0941\u0930\u094d\u0938\u0940",
+        "case": "A learner faces a real-life situation related to the chapter '\u0928\u094d\u092f\u093e\u092f \u0915\u0940 \u0915\u0941\u0930\u094d\u0938\u0940'.",
+        "questions": [
+          "What concept applies?",
+          "What evidence supports your choice?",
+          "What would you do next?"
+        ],
+        "answer_guidance": "Ground all answers in the chapter concepts."
+      }
+    ]
+  }
 }

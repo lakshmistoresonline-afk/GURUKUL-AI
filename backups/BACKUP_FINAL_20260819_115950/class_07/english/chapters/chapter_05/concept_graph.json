@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gepr105_c01",
+      "label": "Bravehearts — A Homage to Our Brave Soldiers"
+    },
+    {
+      "id": "gepr105_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gepr105_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gepr105_c01",
+      "to": "gepr105_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gepr105_c02",
+      "to": "gepr105_c03",
+      "relation": "enables"
+    }
+  ]
+}

@@ -1,8 +1,26 @@
 {
-  "prompts": [
-    "Help me understand मैया मैं नहि माखन खायो without giving the answer immediately.",
-    "Ask what evidence supports my answer.",
-    "Give one small hint and wait.",
-    "If I am wrong, identify the concept to revisit."
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "tutor_prompts",
+  "chapter_id": "fhml109",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u0948\u092f\u093e \u092e\u0948\u0902 \u0928\u0939\u093f \u092e\u093e\u0916\u0928 \u0916\u093e\u092f\u094b",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "prompts": [
+      "Help me understand \u092e\u0948\u092f\u093e \u092e\u0948\u0902 \u0928\u0939\u093f \u092e\u093e\u0916\u0928 \u0916\u093e\u092f\u094b without giving the answer immediately.",
+      "Ask what evidence supports my answer.",
+      "Give one small hint and wait.",
+      "If I am wrong, identify the concept to revisit."
+    ]
+  }
 }

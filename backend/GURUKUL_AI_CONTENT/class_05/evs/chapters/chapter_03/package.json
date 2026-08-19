@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "chapter": {
     "chapter_id": "eeev103",
-    "class": 5,
+    "class": "class_05",
     "subject": "EVS",
     "chapter_number": 103,
     "chapter_title": "The Mystery of Food",
@@ -15,8 +15,8 @@
       "They learn about the role of good microbes and cultural practices that help keep the food safe.",
       "This unit also encourages students to take care of their home and surroundings for better health.",
       "They learn how to make their school a greener, cleaner and more caring place through actions like waste management, water conservation, and practising kindness.",
-      "Help students record their findings in a ‘Food Detective’ or ‘School Explorer’ notebook.",
-      "• Guide students in sharing personal stories or small-group discussions based on their family’s food habits, or preservation techniques."
+      "Help students record their findings in a \u2018Food Detective\u2019 or \u2018School Explorer\u2019 notebook.",
+      "\u2022 Guide students in sharing personal stories or small-group discussions based on their family\u2019s food habits, or preservation techniques."
     ],
     "source_text_character_count": 15644
   },
@@ -129,8 +129,8 @@
           "They learn about the role of good microbes and cultural practices that help keep the food safe.",
           "This unit also encourages students to take care of their home and surroundings for better health.",
           "They learn how to make their school a greener, cleaner and more caring place through actions like waste management, water conservation, and practising kindness.",
-          "Help students record their findings in a ‘Food Detective’ or ‘School Explorer’ notebook.",
-          "• Guide students in sharing personal stories or small-group discussions based on their family’s food habits, or preservation techniques."
+          "Help students record their findings in a \u2018Food Detective\u2019 or \u2018School Explorer\u2019 notebook.",
+          "\u2022 Guide students in sharing personal stories or small-group discussions based on their family\u2019s food habits, or preservation techniques."
         ],
         "canonical_note": "These points were extracted from the uploaded chapter PDF; the full PDF remains the source of truth.",
         "teaching_sequence": [
@@ -680,7 +680,7 @@
             "action": "serve a simpler evidence-identification item and revisit the concept explanation"
           },
           {
-            "condition": "accuracy 60–84%",
+            "condition": "accuracy 60\u201384%",
             "action": "serve an application item"
           },
           {
@@ -1788,6 +1788,139 @@
         ],
         "completion_state": "COMPLETE only when all applicable rules are satisfied."
       }
-    }
+    },
+    "prerequisite_diagnostic": {
+      "purpose": "Determine actual starting level before teaching.",
+      "items": [
+        {
+          "skill": "food groups",
+          "question": "Show what you already know about food groups.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        },
+        {
+          "skill": "plants/animals as sources",
+          "question": "Show what you already know about plants/animals as sources.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        },
+        {
+          "skill": "basic hygiene",
+          "question": "Show what you already know about basic hygiene.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        }
+      ]
+    },
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "title": "food sources: observe \u2192 connect \u2192 explain \u2192 apply",
+        "objective": "Learner can explain food sources using evidence and apply it to a familiar situation.",
+        "teach": [
+          "Begin with an observation or familiar situation related to food sources.",
+          "Ask the learner to predict or describe what they notice.",
+          "Introduce the concept and connect it to the observation.",
+          "Use a simple diagram, table, sequence or classification when useful.",
+          "Ask the learner to apply the idea to a different real-life example."
+        ],
+        "worked_example": {
+          "prompt": "Investigate a simple everyday example of food sources.",
+          "method": "Observe, record evidence, explain the relationship, and state a conclusion."
+        },
+        "checkpoint": "Give one piece of evidence for food sources and explain what it shows.",
+        "mastery_signal": "Accurate explanation + evidence + transfer to a new context."
+      },
+      {
+        "lesson_id": "L02",
+        "title": "farm-to-plate journey: observe \u2192 connect \u2192 explain \u2192 apply",
+        "objective": "Learner can explain farm-to-plate journey using evidence and apply it to a familiar situation.",
+        "teach": [
+          "Begin with an observation or familiar situation related to farm-to-plate journey.",
+          "Ask the learner to predict or describe what they notice.",
+          "Introduce the concept and connect it to the observation.",
+          "Use a simple diagram, table, sequence or classification when useful.",
+          "Ask the learner to apply the idea to a different real-life example."
+        ],
+        "worked_example": {
+          "prompt": "Investigate a simple everyday example of farm-to-plate journey.",
+          "method": "Observe, record evidence, explain the relationship, and state a conclusion."
+        },
+        "checkpoint": "Give one piece of evidence for farm-to-plate journey and explain what it shows.",
+        "mastery_signal": "Accurate explanation + evidence + transfer to a new context."
+      },
+      {
+        "lesson_id": "L03",
+        "title": "nutrition: observe \u2192 connect \u2192 explain \u2192 apply",
+        "objective": "Learner can explain nutrition using evidence and apply it to a familiar situation.",
+        "teach": [
+          "Begin with an observation or familiar situation related to nutrition.",
+          "Ask the learner to predict or describe what they notice.",
+          "Introduce the concept and connect it to the observation.",
+          "Use a simple diagram, table, sequence or classification when useful.",
+          "Ask the learner to apply the idea to a different real-life example."
+        ],
+        "worked_example": {
+          "prompt": "Investigate a simple everyday example of nutrition.",
+          "method": "Observe, record evidence, explain the relationship, and state a conclusion."
+        },
+        "checkpoint": "Give one piece of evidence for nutrition and explain what it shows.",
+        "mastery_signal": "Accurate explanation + evidence + transfer to a new context."
+      },
+      {
+        "lesson_id": "L04",
+        "title": "food diversity: observe \u2192 connect \u2192 explain \u2192 apply",
+        "objective": "Learner can explain food diversity using evidence and apply it to a familiar situation.",
+        "teach": [
+          "Begin with an observation or familiar situation related to food diversity.",
+          "Ask the learner to predict or describe what they notice.",
+          "Introduce the concept and connect it to the observation.",
+          "Use a simple diagram, table, sequence or classification when useful.",
+          "Ask the learner to apply the idea to a different real-life example."
+        ],
+        "worked_example": {
+          "prompt": "Investigate a simple everyday example of food diversity.",
+          "method": "Observe, record evidence, explain the relationship, and state a conclusion."
+        },
+        "checkpoint": "Give one piece of evidence for food diversity and explain what it shows.",
+        "mastery_signal": "Accurate explanation + evidence + transfer to a new context."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "thinking all food comes directly from shops",
+        "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+        "repair": [
+          "Identify the exact concept or prerequisite that is missing.",
+          "Return to one concrete, familiar example.",
+          "Think aloud and contrast the incorrect idea with the correct idea.",
+          "Ask the learner to explain the correction in their own words.",
+          "Give two near-transfer questions.",
+          "Reassess before moving to the next concept."
+        ],
+        "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+      },
+      {
+        "trigger": "equating one food with all nutrients",
+        "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+        "repair": [
+          "Identify the exact concept or prerequisite that is missing.",
+          "Return to one concrete, familiar example.",
+          "Think aloud and contrast the incorrect idea with the correct idea.",
+          "Ask the learner to explain the correction in their own words.",
+          "Give two near-transfer questions.",
+          "Reassess before moving to the next concept."
+        ],
+        "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_05",
+    "subject": "EVS",
+    "chapter_id": "v05_c3",
+    "chapter_title": "The Mystery of Food",
+    "basis": "NCERT Class 5 chapter structure plus project-provided audit metadata",
+    "verification_note": "Do not publish until chapter wording, sequence and learning claims are checked against the current official textbook edition."
   }
 }

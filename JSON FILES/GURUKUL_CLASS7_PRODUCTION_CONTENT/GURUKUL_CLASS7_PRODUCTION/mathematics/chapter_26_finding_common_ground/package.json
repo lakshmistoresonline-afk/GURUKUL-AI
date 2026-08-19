@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "mathematics",
+    "chapter_id": "m07_c26",
+    "chapter_number": 26,
+    "chapter_title": "Finding Common Ground",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_mathematics_01",
+      "skill": "number sense",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_02",
+      "skill": "fractions and decimals",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_03",
+      "skill": "measurement and geometry basics",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_04",
+      "skill": "reading tables and diagrams",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "number sense",
+      "question": "Show what you already know about number sense.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "fractions and decimals",
+      "question": "Show what you already know about fractions and decimals.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "measurement and geometry basics",
+      "question": "Show what you already know about measurement and geometry basics.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading tables and diagrams",
+      "question": "Show what you already know about reading tables and diagrams.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain core mathematical idea accurately using own words and an example.",
+    "Explain representation accurately using own words and an example.",
+    "Explain worked reasoning accurately using own words and an example.",
+    "Explain application accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "m07_c26_k1",
+      "concept": "core mathematical idea",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies core mathematical idea."
+    },
+    {
+      "concept_id": "m07_c26_k2",
+      "concept": "representation",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies representation."
+    },
+    {
+      "concept_id": "m07_c26_k3",
+      "concept": "worked reasoning",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies worked reasoning."
+    },
+    {
+      "concept_id": "m07_c26_k4",
+      "concept": "application",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies application."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "core mathematical idea",
+      "objective": "Learner can understand, explain and apply core mathematical idea.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain core mathematical idea independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "representation",
+      "objective": "Learner can understand, explain and apply representation.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain representation independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "worked reasoning",
+      "objective": "Learner can understand, explain and apply worked reasoning.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain worked reasoning independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "application",
+      "objective": "Learner can understand, explain and apply application.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain application independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "core mathematical idea",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "representation",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "worked reasoning",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "application",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "core mathematical idea",
+      "prompt": "Complete a supported task involving core mathematical idea; explain each important decision."
+    },
+    {
+      "concept": "representation",
+      "prompt": "Complete a supported task involving representation; explain each important decision."
+    },
+    {
+      "concept": "worked reasoning",
+      "prompt": "Complete a supported task involving worked reasoning; explain each important decision."
+    },
+    {
+      "concept": "application",
+      "prompt": "Complete a supported task involving application; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "core mathematical idea",
+      "prompt": "Complete a new task involving core mathematical idea without hints, then self-check."
+    },
+    {
+      "concept": "representation",
+      "prompt": "Complete a new task involving representation without hints, then self-check."
+    },
+    {
+      "concept": "worked reasoning",
+      "prompt": "Complete a new task involving worked reasoning without hints, then self-check."
+    },
+    {
+      "concept": "application",
+      "prompt": "Complete a new task involving application without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "core mathematical idea",
+        "question": "Which strategy best demonstrates understanding of core mathematical idea?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "core mathematical idea",
+        "question": "Explain core mathematical idea in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "core mathematical idea",
+        "question": "Create and solve an unfamiliar problem involving core mathematical idea.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "representation",
+        "question": "Which strategy best demonstrates understanding of representation?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "representation",
+        "question": "Explain representation in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "representation",
+        "question": "Create and solve an unfamiliar problem involving representation.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "worked reasoning",
+        "question": "Which strategy best demonstrates understanding of worked reasoning?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "worked reasoning",
+        "question": "Explain worked reasoning in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "worked reasoning",
+        "question": "Create and solve an unfamiliar problem involving worked reasoning.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "application",
+        "question": "Which strategy best demonstrates understanding of application?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "application",
+        "question": "Explain application in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "application",
+        "question": "Create and solve an unfamiliar problem involving application.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Finding Common Ground'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Finding Common Ground', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is core mathematical idea?",
+      "back": "Define core mathematical idea, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is representation?",
+      "back": "Define representation, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is worked reasoning?",
+      "back": "Define worked reasoning, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is application?",
+      "back": "Define application, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore core mathematical idea",
+      "instructions": "Complete an age-appropriate task focused specifically on core mathematical idea. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where representation is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach application to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses core mathematical idea with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses representation with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses worked reasoning with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses application with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply core mathematical idea to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply representation to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply worked reasoning to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply application to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

@@ -1,15 +1,33 @@
 {
-  "cases": [
-    {
-      "id": "fegp105_case1",
-      "title": "Applying Prime Time",
-      "case": "A realistic situation requires use of an idea from Prime Time.",
-      "questions": [
-        "Which concept applies?",
-        "What evidence supports it?",
-        "What should happen next?"
-      ],
-      "answer_guidance": "Use the chapter as the factual source."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "fegp105",
+  "class": "class_06",
+  "subject": "Mathematics",
+  "chapter_title": "Prime Time",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "fegp105_case1",
+        "title": "Applying Prime Time",
+        "case": "A realistic situation requires use of an idea from Prime Time.",
+        "questions": [
+          "Which concept applies?",
+          "What evidence supports it?",
+          "What should happen next?"
+        ],
+        "answer_guidance": "Use the chapter as the factual source."
+      }
+    ]
+  }
 }

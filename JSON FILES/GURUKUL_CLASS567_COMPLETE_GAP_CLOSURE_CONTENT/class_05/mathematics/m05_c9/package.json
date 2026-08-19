@@ -1,0 +1,155 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "copyright_safe_original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_05",
+    "subject": "Mathematics",
+    "chapter_id": "m05_c9",
+    "chapter_title": "Division",
+    "basis": "NCERT Class 5 Mathematics chapter on basic division operations",
+    "verification_note": "Check alignment with long division methods taught in school."
+  },
+  "prerequisite_diagnostic": {
+    "purpose": "Ensure subtraction and multiplication readiness.",
+    "items": [
+      {
+        "skill": "Subtraction with Regrouping",
+        "question": "What is 100 - 45?",
+        "advance_if": "55",
+        "remediate_if": "Incorrect or unable to explain regrouping."
+      },
+      {
+        "skill": "Multiplication Concepts",
+        "question": "What number times 5 gives 35?",
+        "advance_if": "7",
+        "remediate_if": "Incorrect."
+      }
+    ]
+  },
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if required",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent retrieval",
+    "misconception check",
+    "targeted remediation",
+    "transfer/application",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "title": "Equal Sharing and Grouping",
+      "objective": "Learner understands division as the inverse of multiplication.",
+      "teach": [
+        "Introduce division as sharing equally among a number of people.",
+        "Demonstrate division as finding how many groups of a certain size exist.",
+        "Use the symbol ÷ and explain parts of a division problem."
+      ],
+      "worked_example": {
+        "prompt": "Share 15 candies equally among 3 children.",
+        "method": "Give 1 to each until none left. Each gets 5. 15 ÷ 3 = 5."
+      },
+      "checkpoint": "If 20 apples are put in bags of 4, how many bags are needed?",
+      "mastery_signal": "5 bags with the explanation that 5x4=20."
+    },
+    {
+      "lesson_id": "L02",
+      "title": "Division with Remainder",
+      "objective": "Learner can solve division problems where things are left over.",
+      "teach": [
+        "Explain that sometimes things cannot be shared exactly.",
+        "Introduce the term 'Remainder'.",
+        "Define Dividend, Divisor, Quotient, and Remainder."
+      ],
+      "worked_example": {
+        "prompt": "Divide 17 by 4.",
+        "method": "4x4=16, 17-16=1. Quotient is 4, Remainder is 1."
+      },
+      "checkpoint": "Divide 23 by 5. What is the remainder?",
+      "mastery_signal": "Remainder 3 identified."
+    },
+    {
+      "lesson_id": "L03",
+      "title": "Long Division Method",
+      "objective": "Learner can use the long division format for 2-digit and 3-digit numbers.",
+      "teach": [
+        "Step-by-step process: Divide, Multiply, Subtract, Bring down.",
+        "Show how to check the answer: (Divisor x Quotient) + Remainder = Dividend."
+      ],
+      "worked_example": {
+        "prompt": "Divide 456 by 6.",
+        "method": "45÷6=7 (rem 3). Bring down 6. 36÷6=6. Answer 76."
+      },
+      "checkpoint": "Solve 125 ÷ 5 using long division.",
+      "mastery_signal": "Correct steps and final answer 25."
+    },
+    {
+      "lesson_id": "L04",
+      "title": "Division in Daily Life",
+      "objective": "Learner can solve word problems involving division.",
+      "teach": [
+        "Identify keywords for division: each, share, per, average, divide.",
+        "Translate a story into a mathematical expression."
+      ],
+      "worked_example": {
+        "prompt": "A car travels 240 km in 4 hours. What is its speed per hour?",
+        "method": "240 ÷ 4 = 60. Speed is 60 km/h."
+      },
+      "checkpoint": "Create a division word problem about 50 students and 5 buses.",
+      "mastery_signal": "Logical problem and correct solution."
+    }
+  ],
+  "question_bank": {
+    "total": 10,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "sharing",
+        "question": "What is 42 ÷ 7?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "B",
+        "explanation": "6 times 7 is 42."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "application",
+        "concept": "word problem",
+        "question": "If 100 pencils are packed into boxes of 10, how many boxes are full?",
+        "answer": "10 boxes",
+        "rubric": ["calculation", "units"]
+      }
+    ]
+  },
+  "misconception_remediation": [
+    {
+      "trigger": "Remainder larger than divisor",
+      "diagnostic": "Check if remainder is >= divisor.",
+      "repair": [
+        "The remainder must always be smaller than the number you are dividing by.",
+        "If it is larger, you can make one more group."
+      ],
+      "exit_criterion": "Correctly solving 3 division problems with remainders."
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "on_failure": "Reteach L03 with simpler numbers.",
+    "on_mastery": "Unlock Chapter 10."
+  }
+}

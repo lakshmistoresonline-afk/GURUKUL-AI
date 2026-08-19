@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fhml102_q01",
-    "answer": "Option 1",
-    "evidence": "2 गोल इस पाठ का नाम पढ़कर आपके मन में कुछ गोल वस्तुओ ं के नाम या चित्र उभरे होंगे, गोल गेंद, गोल रोटी, गोल चद्रं मा आदि।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fhml102",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u0917\u094b\u0932",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fhml102_q01",
+      "answer": "Option 1",
+      "evidence": "2 \u0917\u094b\u0932 \u0907\u0938 \u092a\u093e\u0920 \u0915\u093e \u0928\u093e\u092e \u092a\u0922\u093c\u0915\u0930 \u0906\u092a\u0915\u0947 \u092e\u0928 \u092e\u0947\u0902 \u0915\u0941\u091b \u0917\u094b\u0932 \u0935\u0938\u094d\u0924\u0941\u0913 \u0902 \u0915\u0947 \u0928\u093e\u092e \u092f\u093e \u091a\u093f\u0924\u094d\u0930 \u0909\u092d\u0930\u0947 \u0939\u094b\u0902\u0917\u0947, \u0917\u094b\u0932 \u0917\u0947\u0902\u0926, \u0917\u094b\u0932 \u0930\u094b\u091f\u0940, \u0917\u094b\u0932 \u091a\u0926\u094d\u0930\u0902 \u092e\u093e \u0906\u0926\u093f\u0964"
+    }
   }
 }

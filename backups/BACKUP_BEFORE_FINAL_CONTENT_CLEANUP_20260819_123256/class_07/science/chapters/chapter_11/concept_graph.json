@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gecu111_c01",
+      "label": "Light: Shadows and Reflections"
+    },
+    {
+      "id": "gecu111_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gecu111_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gecu111_c01",
+      "to": "gecu111_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gecu111_c02",
+      "to": "gecu111_c03",
+      "relation": "enables"
+    }
+  ]
+}

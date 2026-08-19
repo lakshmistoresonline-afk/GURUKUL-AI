@@ -1,0 +1,140 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "accessibility_verified": true
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "Social Science",
+    "chapter_id": "ss07_c16",
+    "chapter_title": "Markets Around Us",
+    "basis": "NCERT Class 7 Civics Chapter 7"
+  },
+  "foundation_units": [
+    {
+      "id": "F01",
+      "title": "What is a Market?",
+      "content": "A market is a place where people buy and sell things. You don't always have to go to a shop; today, you can buy things online too. The basic idea is the exchange of goods for money."
+    },
+    {
+      "id": "F02",
+      "title": "Different Types of Markets",
+      "content": "We see weekly markets (held on a specific day), neighborhood shops (open daily), and shopping complexes/malls (large buildings with many shops)."
+    }
+  ],
+  "worked_examples": [
+    {
+      "scenario": "Buying Vegetables",
+      "weekly_market": "Sameer goes to the weekly market on Wednesday. He finds vegetables at lower rates because shopkeepers don't have to pay rent for permanent shops.",
+      "neighborhood_shop": "Sameer's mother buys milk from a nearby dairy daily. She knows the shopkeeper and sometimes buys on credit.",
+      "logic": "Price vs. Convenience. Weekly markets are cheaper but held once a week. Neighborhood shops are convenient and offer credit."
+    }
+  ],
+  "guided_practice": [
+    {
+      "task": "Identify the Market",
+      "description": "Where would you buy a loaf of bread every morning?",
+      "hint": "Think about proximity and daily needs.",
+      "solution": "Neighborhood shop."
+    },
+    {
+      "task": "Analyze Price Differences",
+      "description": "Why is a branded shirt in a mall more expensive than a shirt in a weekly market?",
+      "hint": "Consider rent, electricity, and advertising costs.",
+      "solution": "Malls have high overhead costs like rent and staff salaries, which are added to the price."
+    }
+  ],
+  "question_bank": [
+    {
+      "id": "Q01",
+      "question": "A market that is held on a specific day of the week is called a:",
+      "options": ["Daily Market", "Weekly Market", "Shopping Mall", "Online Market"],
+      "answer": "Weekly Market",
+      "explanation": "Weekly markets are not permanent and are held on a fixed day each week."
+    },
+    {
+      "id": "Q02",
+      "question": "Why are things often cheaper in weekly markets?",
+      "options": ["They are of bad quality", "Shopkeepers don't pay rent for permanent shops", "Government pays for the goods", "There is no competition"],
+      "answer": "Shopkeepers don't pay rent for permanent shops",
+      "explanation": "Lower overhead costs (rent, electricity, taxes) allow shopkeepers to sell at lower prices."
+    },
+    {
+      "id": "Q03",
+      "question": "Which of these is a feature of neighborhood shops?",
+      "options": ["Open only on Sundays", "Located far from homes", "Usually know the buyers", "Sell only branded clothes"],
+      "answer": "Usually know the buyers",
+      "explanation": "Being close to residential areas, shopkeepers and buyers often have a personal relationship."
+    },
+    {
+      "id": "Q04",
+      "question": "Large multi-storeyed air-conditioned buildings with shops on different floors are called:",
+      "options": ["Weekly markets", "Shopping complexes/malls", "Wholesale markets", "Street stalls"],
+      "answer": "Shopping complexes/malls",
+      "explanation": "Malls are modern, large-scale retail spaces offering various brands and facilities."
+    },
+    {
+      "id": "Q05",
+      "question": "Buying goods on 'credit' means:",
+      "options": ["Paying more money", "Paying at a later date", "Getting a discount", "Paying with a card"],
+      "answer": "Paying at a later date",
+      "explanation": "Credit allows a buyer to take goods now and pay the shopkeeper later, often based on trust."
+    },
+    {
+      "id": "Q06",
+      "question": "Where does a retailer buy goods from in large quantities?",
+      "options": ["Weekly market", "Shopping mall", "Wholesale trader", "Consumer"],
+      "answer": "Wholesale trader",
+      "explanation": "Retailers buy from wholesalers who deal in bulk, and then sell smaller quantities to consumers."
+    },
+    {
+      "id": "Q07",
+      "question": "Which market offers the most variety of branded goods?",
+      "options": ["Weekly market", "Neighborhood shop", "Shopping mall", "Roadside stall"],
+      "answer": "Shopping mall",
+      "explanation": "Malls specifically house multiple national and international brands."
+    },
+    {
+      "id": "Q08",
+      "question": "In the chain of markets, who is the final link?",
+      "options": ["Producer", "Wholesaler", "Retailer", "Consumer"],
+      "answer": "Consumer",
+      "explanation": "The consumer is the one who finally uses the product."
+    },
+    {
+      "id": "Q09",
+      "question": "Internet banking and apps have allowed us to:",
+      "options": ["Only buy from malls", "Avoid markets altogether", "Buy goods without going to a physical shop", "Stop using money"],
+      "answer": "Buy goods without going to a physical shop",
+      "explanation": "Digital platforms have enabled remote shopping from anywhere."
+    },
+    {
+      "id": "Q10",
+      "question": "Does everyone have equal access to all markets?",
+      "options": ["Yes, everyone is rich", "No, because of differences in income", "Yes, all goods are free", "No, because malls are only for kids"],
+      "answer": "No, because of differences in income",
+      "explanation": "High prices in malls often exclude people with low income, showing inequality in market access."
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "misconception": "Things in malls are always better than those in weekly markets.",
+      "remediation": "Explain that while malls offer brands and comfort, weekly markets often provide fresh produce and essential items at much lower costs due to lower overheads, not necessarily lower quality."
+    },
+    {
+      "misconception": "Markets only exist in physical buildings.",
+      "remediation": "Clarify the concept of 'Markets Everywhere' – shopping through phone calls, websites, and apps where goods are delivered home."
+    }
+  ],
+  "accessibility": {
+    "visual": "Use high-contrast text and simple tables for market comparisons. Provide alt-text for any icons representing different shop types.",
+    "language": "Avoid complex economic jargon. Use everyday terms like 'buying', 'selling', 'rent', and 'profit'.",
+    "cognitive": "Step-by-step explanation of the 'Chain of Markets' to show how goods move from producers to consumers."
+  }
+}

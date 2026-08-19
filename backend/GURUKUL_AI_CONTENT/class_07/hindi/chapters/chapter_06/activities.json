@@ -1,31 +1,49 @@
 {
-  "activities": [
-    {
-      "id": "ghml106_act01",
-      "type": "think_pair_share",
-      "title": "Explain and justify",
-      "steps": [
-        "Think",
-        "Discuss",
-        "Find evidence",
-        "Share"
-      ]
-    },
-    {
-      "id": "ghml106_act02",
-      "type": "sort_sequence",
-      "title": "Organise the learning",
-      "steps": [
-        "Select key ideas",
-        "Sort or sequence",
-        "Explain relationships"
-      ]
-    },
-    {
-      "id": "ghml106_act03",
-      "type": "reflection",
-      "title": "One-minute reflection",
-      "prompt": "What is the most important learning from गिरधर कविराय की कुंडलियाँ?"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "activities",
+  "chapter_id": "ghml106",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u0917\u093f\u0930\u0927\u0930 \u0915\u0935\u093f\u0930\u093e\u092f \u0915\u0940 \u0915\u0941\u0902\u0921\u0932\u093f\u092f\u093e\u0901",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "ghml106_act01",
+        "type": "think_pair_share",
+        "title": "Explain and justify",
+        "steps": [
+          "Think",
+          "Discuss",
+          "Find evidence",
+          "Share"
+        ]
+      },
+      {
+        "id": "ghml106_act02",
+        "type": "sort_sequence",
+        "title": "Organise the learning",
+        "steps": [
+          "Select key ideas",
+          "Sort or sequence",
+          "Explain relationships"
+        ]
+      },
+      {
+        "id": "ghml106_act03",
+        "type": "reflection",
+        "title": "One-minute reflection",
+        "prompt": "What is the most important learning from \u0917\u093f\u0930\u0927\u0930 \u0915\u0935\u093f\u0930\u093e\u092f \u0915\u0940 \u0915\u0941\u0902\u0921\u0932\u093f\u092f\u093e\u0901?"
+      }
+    ]
+  }
 }

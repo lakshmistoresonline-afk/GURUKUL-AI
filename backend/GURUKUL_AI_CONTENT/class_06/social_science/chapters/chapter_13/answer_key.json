@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fees113_q01",
-    "answer": "Option 1",
-    "evidence": "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond."
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fees113",
+  "class": "class_06",
+  "subject": "Social Science",
+  "chapter_title": "The Value of Work",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fees113_q01",
+      "answer": "Option 1",
+      "evidence": "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond."
+    }
   }
 }

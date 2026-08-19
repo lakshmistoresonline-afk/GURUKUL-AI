@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "eesa103_form01",
-      "question": "State one key idea and the evidence supporting it.",
-      "checkpoint": "after explanation"
-    },
-    {
-      "id": "eesa103_form02",
-      "question": "Apply the idea to a new related example.",
-      "checkpoint": "after practice"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "formative_assessment",
+  "chapter_id": "eesa103",
+  "class": "class_05",
+  "subject": "English",
+  "chapter_title": "The Rainbow",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eesa103_form01",
+        "question": "State one key idea and the evidence supporting it.",
+        "checkpoint": "after explanation"
+      },
+      {
+        "id": "eesa103_form02",
+        "question": "Apply the idea to a new related example.",
+        "checkpoint": "after practice"
+      }
+    ]
+  }
 }

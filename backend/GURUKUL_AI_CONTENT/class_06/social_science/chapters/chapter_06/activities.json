@@ -1,31 +1,49 @@
 {
-  "activities": [
-    {
-      "id": "fees106_act01",
-      "type": "think_pair_share",
-      "title": "Explain and justify",
-      "steps": [
-        "Think",
-        "Discuss",
-        "Find evidence",
-        "Share"
-      ]
-    },
-    {
-      "id": "fees106_act02",
-      "type": "sort_sequence",
-      "title": "Organise the learning",
-      "steps": [
-        "Select ideas",
-        "Sort or sequence",
-        "Explain relationships"
-      ]
-    },
-    {
-      "id": "fees106_act03",
-      "type": "reflection",
-      "title": "One-minute reflection",
-      "prompt": "What is most important to remember from The Beginnings of Indian Civilisation?"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "activities",
+  "chapter_id": "fees106",
+  "class": "class_06",
+  "subject": "Social Science",
+  "chapter_title": "The Beginnings of Indian Civilisation",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "fees106_act01",
+        "type": "think_pair_share",
+        "title": "Explain and justify",
+        "steps": [
+          "Think",
+          "Discuss",
+          "Find evidence",
+          "Share"
+        ]
+      },
+      {
+        "id": "fees106_act02",
+        "type": "sort_sequence",
+        "title": "Organise the learning",
+        "steps": [
+          "Select ideas",
+          "Sort or sequence",
+          "Explain relationships"
+        ]
+      },
+      {
+        "id": "fees106_act03",
+        "type": "reflection",
+        "title": "One-minute reflection",
+        "prompt": "What is most important to remember from The Beginnings of Indian Civilisation?"
+      }
+    ]
+  }
 }

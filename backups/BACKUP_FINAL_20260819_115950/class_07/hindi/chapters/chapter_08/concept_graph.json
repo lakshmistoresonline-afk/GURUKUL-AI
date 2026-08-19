@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "ghml108_c01",
+      "label": "बिरजू महाराज से साक्षात्कार"
+    },
+    {
+      "id": "ghml108_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "ghml108_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ghml108_c01",
+      "to": "ghml108_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "ghml108_c02",
+      "to": "ghml108_c03",
+      "relation": "enables"
+    }
+  ]
+}

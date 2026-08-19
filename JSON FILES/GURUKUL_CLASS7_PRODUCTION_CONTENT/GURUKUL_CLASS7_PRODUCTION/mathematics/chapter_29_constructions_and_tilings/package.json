@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "mathematics",
+    "chapter_id": "m07_c29",
+    "chapter_number": 29,
+    "chapter_title": "Constructions and Tilings",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_mathematics_01",
+      "skill": "number sense",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_02",
+      "skill": "fractions and decimals",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_03",
+      "skill": "measurement and geometry basics",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_04",
+      "skill": "reading tables and diagrams",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "number sense",
+      "question": "Show what you already know about number sense.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "fractions and decimals",
+      "question": "Show what you already know about fractions and decimals.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "measurement and geometry basics",
+      "question": "Show what you already know about measurement and geometry basics.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading tables and diagrams",
+      "question": "Show what you already know about reading tables and diagrams.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain geometric tools accurately using own words and an example.",
+    "Explain construction steps accurately using own words and an example.",
+    "Explain accuracy accurately using own words and an example.",
+    "Explain reasoning accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "m07_c29_k1",
+      "concept": "geometric tools",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies geometric tools."
+    },
+    {
+      "concept_id": "m07_c29_k2",
+      "concept": "construction steps",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies construction steps."
+    },
+    {
+      "concept_id": "m07_c29_k3",
+      "concept": "accuracy",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies accuracy."
+    },
+    {
+      "concept_id": "m07_c29_k4",
+      "concept": "reasoning",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies reasoning."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "geometric tools",
+      "objective": "Learner can understand, explain and apply geometric tools.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain geometric tools independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "construction steps",
+      "objective": "Learner can understand, explain and apply construction steps.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain construction steps independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "accuracy",
+      "objective": "Learner can understand, explain and apply accuracy.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain accuracy independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "reasoning",
+      "objective": "Learner can understand, explain and apply reasoning.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain reasoning independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "geometric tools",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "construction steps",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "accuracy",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "reasoning",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "geometric tools",
+      "prompt": "Complete a supported task involving geometric tools; explain each important decision."
+    },
+    {
+      "concept": "construction steps",
+      "prompt": "Complete a supported task involving construction steps; explain each important decision."
+    },
+    {
+      "concept": "accuracy",
+      "prompt": "Complete a supported task involving accuracy; explain each important decision."
+    },
+    {
+      "concept": "reasoning",
+      "prompt": "Complete a supported task involving reasoning; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "geometric tools",
+      "prompt": "Complete a new task involving geometric tools without hints, then self-check."
+    },
+    {
+      "concept": "construction steps",
+      "prompt": "Complete a new task involving construction steps without hints, then self-check."
+    },
+    {
+      "concept": "accuracy",
+      "prompt": "Complete a new task involving accuracy without hints, then self-check."
+    },
+    {
+      "concept": "reasoning",
+      "prompt": "Complete a new task involving reasoning without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "geometric tools",
+        "question": "Which strategy best demonstrates understanding of geometric tools?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "geometric tools",
+        "question": "Explain geometric tools in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "geometric tools",
+        "question": "Create and solve an unfamiliar problem involving geometric tools.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "construction steps",
+        "question": "Which strategy best demonstrates understanding of construction steps?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "construction steps",
+        "question": "Explain construction steps in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "construction steps",
+        "question": "Create and solve an unfamiliar problem involving construction steps.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "accuracy",
+        "question": "Which strategy best demonstrates understanding of accuracy?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "accuracy",
+        "question": "Explain accuracy in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "accuracy",
+        "question": "Create and solve an unfamiliar problem involving accuracy.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "reasoning",
+        "question": "Which strategy best demonstrates understanding of reasoning?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "reasoning",
+        "question": "Explain reasoning in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "reasoning",
+        "question": "Create and solve an unfamiliar problem involving reasoning.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Constructions and Tilings'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Constructions and Tilings', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is geometric tools?",
+      "back": "Define geometric tools, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is construction steps?",
+      "back": "Define construction steps, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is accuracy?",
+      "back": "Define accuracy, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is reasoning?",
+      "back": "Define reasoning, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore geometric tools",
+      "instructions": "Complete an age-appropriate task focused specifically on geometric tools. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where construction steps is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach reasoning to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses geometric tools with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses construction steps with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses accuracy with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses reasoning with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply geometric tools to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply construction steps to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply accuracy to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply reasoning to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

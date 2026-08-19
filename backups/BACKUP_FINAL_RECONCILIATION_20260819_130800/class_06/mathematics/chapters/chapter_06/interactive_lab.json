@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "interactive_lab",
+  "chapter_id": "fegp106",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Perimeter and Area",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "fegp106_lab01",
+        "title": "Explore Perimeter and Area",
+        "objective": "Investigate a central idea from Perimeter and Area.",
+        "materials": [
+          "chapter text",
+          "paper/notebook",
+          "pencil"
+        ],
+        "instructions": [
+          "Review the relevant section.",
+          "Identify evidence or the method needed.",
+          "measure, construct, calculate or represent the concept",
+          "Record and explain the result."
+        ],
+        "student_action": "Investigate and explain.",
+        "success_condition": "The result and reasoning are consistent with the chapter."
+      },
+      {
+        "id": "fegp106_lab02",
+        "title": "Evidence Check",
+        "objective": "Separate supported from unsupported claims.",
+        "instructions": [
+          "Choose two chapter-related claims.",
+          "Locate evidence.",
+          "Accept or reject.",
+          "Explain why."
+        ],
+        "student_action": "Match claims with evidence.",
+        "success_condition": "Accepted claims have relevant source support."
+      }
+    ]
+  }
+}

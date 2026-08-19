@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "ehve112_mm01",
-      "type": "chapter_pdf",
-      "title": "Source chapter: गंगा की कहानी",
-      "url": null,
-      "verification_status": "LOCAL_SOURCE",
-      "purpose": "Primary learning source"
-    },
-    {
-      "id": "ehve112_mm02",
-      "type": "interactive_visual",
-      "title": "Teacher-created visual for गंगा की कहानी",
-      "url": null,
-      "verification_status": "TO_BE_RENDERED_BY_RUNTIME",
-      "purpose": "Visualise a chapter concept"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "ehve112",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0917\u0902\u0917\u093e \u0915\u0940 \u0915\u0939\u093e\u0928\u0940",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "ehve112_mm01",
+        "type": "chapter_pdf",
+        "title": "Source chapter: \u0917\u0902\u0917\u093e \u0915\u0940 \u0915\u0939\u093e\u0928\u0940",
+        "url": null,
+        "verification_status": "LOCAL_SOURCE",
+        "purpose": "Primary learning source"
+      },
+      {
+        "id": "ehve112_mm02",
+        "type": "interactive_visual",
+        "title": "Teacher-created visual for \u0917\u0902\u0917\u093e \u0915\u0940 \u0915\u0939\u093e\u0928\u0940",
+        "url": null,
+        "verification_status": "TO_BE_RENDERED_BY_RUNTIME",
+        "purpose": "Visualise a chapter concept"
+      }
+    ]
+  }
 }

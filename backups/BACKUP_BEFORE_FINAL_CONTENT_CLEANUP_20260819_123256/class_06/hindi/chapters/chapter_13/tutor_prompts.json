@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "tutor_prompts",
+  "chapter_id": "fhml113",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "पेड़ की बात",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "prompts": [
+      "Help me understand पेड़ की बात without giving the answer immediately.",
+      "Ask what evidence supports my answer.",
+      "Give one small hint and wait.",
+      "If I am wrong, identify the concept to revisit."
+    ]
+  }
+}

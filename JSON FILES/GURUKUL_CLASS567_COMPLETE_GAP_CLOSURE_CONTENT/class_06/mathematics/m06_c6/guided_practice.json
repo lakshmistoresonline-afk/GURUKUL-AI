@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m06_c6",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Calculation",
+        "tasks": [
+          "Find the perimeter of a triangle with sides 3cm, 4cm, and 5cm.",
+          "How many sides does a rectangle have?"
+        ],
+        "hints": ["Add all the side lengths together.", "A rectangle is a 4-sided shape."]
+      },
+      {
+        "level": 2,
+        "type": "Formulas",
+        "tasks": [
+          "Find the area of a square with side 5cm. (Area = side x side).",
+          "If the perimeter of a square is 20cm, what is one side?"
+        ],
+        "dual_language_hint": "Divide perimeter by 4. / परिमाप को 4 से भाग दें।"
+      },
+      {
+        "level": 3,
+        "type": "Problem Solving",
+        "tasks": [
+          "A farmer wants to fence a rectangular field of 10m by 8m. How much wire is needed?",
+          "Which has more area: a 4x4 square or a 5x3 rectangle?"
+        ]
+      }
+    ]
+  }
+}

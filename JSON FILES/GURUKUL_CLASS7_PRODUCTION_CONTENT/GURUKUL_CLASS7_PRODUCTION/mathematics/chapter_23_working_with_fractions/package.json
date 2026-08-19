@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "mathematics",
+    "chapter_id": "m07_c23",
+    "chapter_number": 23,
+    "chapter_title": "Working with Fractions",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_mathematics_01",
+      "skill": "number sense",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_02",
+      "skill": "fractions and decimals",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_03",
+      "skill": "measurement and geometry basics",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_mathematics_04",
+      "skill": "reading tables and diagrams",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "number sense",
+      "question": "Show what you already know about number sense.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "fractions and decimals",
+      "question": "Show what you already know about fractions and decimals.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "measurement and geometry basics",
+      "question": "Show what you already know about measurement and geometry basics.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading tables and diagrams",
+      "question": "Show what you already know about reading tables and diagrams.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain fraction equivalence accurately using own words and an example.",
+    "Explain comparison and operations accurately using own words and an example.",
+    "Explain fraction representations accurately using own words and an example.",
+    "Explain application accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "m07_c23_k1",
+      "concept": "fraction equivalence",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies fraction equivalence."
+    },
+    {
+      "concept_id": "m07_c23_k2",
+      "concept": "comparison and operations",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies comparison and operations."
+    },
+    {
+      "concept_id": "m07_c23_k3",
+      "concept": "fraction representations",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies fraction representations."
+    },
+    {
+      "concept_id": "m07_c23_k4",
+      "concept": "application",
+      "prerequisites": [
+        "f07_mathematics_01",
+        "f07_mathematics_02"
+      ],
+      "mastery_evidence": "Learner explains and applies application."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "fraction equivalence",
+      "objective": "Learner can understand, explain and apply fraction equivalence.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain fraction equivalence independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "comparison and operations",
+      "objective": "Learner can understand, explain and apply comparison and operations.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain comparison and operations independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "fraction representations",
+      "objective": "Learner can understand, explain and apply fraction representations.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain fraction representations independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "application",
+      "objective": "Learner can understand, explain and apply application.",
+      "teaching_sequence": [
+        "Start from a concrete or familiar representation.",
+        "Connect to prerequisite knowledge.",
+        "Model the reasoning step by step.",
+        "Move from guided practice to independent work.",
+        "Transfer to a new problem and require explanation."
+      ],
+      "checkpoint": "Explain application independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "fraction equivalence",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "comparison and operations",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "fraction representations",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "application",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "fraction equivalence",
+      "prompt": "Complete a supported task involving fraction equivalence; explain each important decision."
+    },
+    {
+      "concept": "comparison and operations",
+      "prompt": "Complete a supported task involving comparison and operations; explain each important decision."
+    },
+    {
+      "concept": "fraction representations",
+      "prompt": "Complete a supported task involving fraction representations; explain each important decision."
+    },
+    {
+      "concept": "application",
+      "prompt": "Complete a supported task involving application; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "fraction equivalence",
+      "prompt": "Complete a new task involving fraction equivalence without hints, then self-check."
+    },
+    {
+      "concept": "comparison and operations",
+      "prompt": "Complete a new task involving comparison and operations without hints, then self-check."
+    },
+    {
+      "concept": "fraction representations",
+      "prompt": "Complete a new task involving fraction representations without hints, then self-check."
+    },
+    {
+      "concept": "application",
+      "prompt": "Complete a new task involving application without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "fraction equivalence",
+        "question": "Which strategy best demonstrates understanding of fraction equivalence?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "fraction equivalence",
+        "question": "Explain fraction equivalence in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "fraction equivalence",
+        "question": "Create and solve an unfamiliar problem involving fraction equivalence.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "comparison and operations",
+        "question": "Which strategy best demonstrates understanding of comparison and operations?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "comparison and operations",
+        "question": "Explain comparison and operations in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "comparison and operations",
+        "question": "Create and solve an unfamiliar problem involving comparison and operations.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "fraction representations",
+        "question": "Which strategy best demonstrates understanding of fraction representations?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "fraction representations",
+        "question": "Explain fraction representations in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "fraction representations",
+        "question": "Create and solve an unfamiliar problem involving fraction representations.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "application",
+        "question": "Which strategy best demonstrates understanding of application?",
+        "options": [
+          "Represent the problem, choose a justified method, solve, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a similar answer without checking.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Sound mathematical reasoning connects representation, method, calculation and checking."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "application",
+        "question": "Explain application in your own words and give a worked example.",
+        "rubric": [
+          "accurate definition",
+          "valid example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "application",
+        "question": "Create and solve an unfamiliar problem involving application.",
+        "rubric": [
+          "valid problem",
+          "correct solution",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Working with Fractions'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Working with Fractions', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is fraction equivalence?",
+      "back": "Define fraction equivalence, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is comparison and operations?",
+      "back": "Define comparison and operations, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is fraction representations?",
+      "back": "Define fraction representations, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is application?",
+      "back": "Define application, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore fraction equivalence",
+      "instructions": "Complete an age-appropriate task focused specifically on fraction equivalence. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where comparison and operations is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach application to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses fraction equivalence with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses comparison and operations with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses fraction representations with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses application with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply fraction equivalence to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply comparison and operations to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply fraction representations to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply application to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

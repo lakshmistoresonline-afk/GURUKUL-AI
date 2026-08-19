@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "fhml110",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "परीक्षा",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "fhml110_case1",
+        "title": "Applying परीक्षा",
+        "case": "A realistic situation requires use of an idea from परीक्षा.",
+        "questions": [
+          "Which concept applies?",
+          "What evidence supports it?",
+          "What should happen next?"
+        ],
+        "answer_guidance": "Use the chapter as the factual source."
+      }
+    ]
+  }
+}

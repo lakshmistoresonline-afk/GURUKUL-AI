@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "ghml103_official",
-      "type": "official_resource",
-      "title": "NCERT ePathshala eResources — फूल और काँटा",
-      "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
-      "verification_status": "VERIFIED_OFFICIAL_PORTAL",
-      "purpose": "Official chapter-linked digital resource portal."
-    },
-    {
-      "id": "ghml103_yt_search",
-      "type": "youtube_discovery",
-      "title": "Video discovery — फूल और काँटा",
-      "url": "https://www.youtube.com/results?search_query=Class+7+Hindi+फूल+और+काँटा+NCERT",
-      "verification_status": "DISCOVERY_ONLY",
-      "purpose": "Discovery link only; not represented as a verified direct video."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "ghml103",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "ghml103_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources \u2014 \u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resource portal."
+      },
+      {
+        "id": "ghml103_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery \u2014 \u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e",
+        "url": "https://www.youtube.com/results?search_query=Class+7+Hindi+\u092b\u0942\u0932+\u0914\u0930+\u0915\u093e\u0901\u091f\u093e+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not represented as a verified direct video."
+      }
+    ]
+  }
 }

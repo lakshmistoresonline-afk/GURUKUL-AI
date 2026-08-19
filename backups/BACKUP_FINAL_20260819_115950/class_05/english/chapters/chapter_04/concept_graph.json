@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eesa104_concept_01",
+      "label": "The Wise Parrot"
+    },
+    {
+      "id": "eesa104_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eesa104_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eesa104_concept_01",
+      "to": "eesa104_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eesa104_concept_02",
+      "to": "eesa104_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

@@ -1,10 +1,28 @@
 {
-  "rule": "Every answer must be validated against the uploaded chapter source.",
-  "sample_answers": [
-    {
-      "question_id": "ehve104_q01",
-      "answer": "Option 1",
-      "evidence": "33 साङकेन साङक े न4 अरुणाचल प्रदेश में चौखाम क े मंडल कारायालर में वललरी क े पिताजी एक अपिकारी हैं।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ehve104",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0938\u093e\u0901\u0915\u0947\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "ehve104_q01",
+        "answer": "Option 1",
+        "evidence": "33 \u0938\u093e\u0919\u0915\u0947\u0928 \u0938\u093e\u0919\u0915 \u0947 \u09284 \u0905\u0930\u0941\u0923\u093e\u091a\u0932 \u092a\u094d\u0930\u0926\u0947\u0936 \u092e\u0947\u0902 \u091a\u094c\u0916\u093e\u092e \u0915 \u0947 \u092e\u0902\u0921\u0932 \u0915\u093e\u0930\u093e\u092f\u093e\u0932\u0930 \u092e\u0947\u0902 \u0935\u0932\u0932\u0930\u0940 \u0915 \u0947 \u092a\u093f\u0924\u093e\u091c\u0940 \u090f\u0915 \u0905\u092a\u093f\u0915\u093e\u0930\u0940 \u0939\u0948\u0902\u0964"
+      }
+    ]
+  }
 }

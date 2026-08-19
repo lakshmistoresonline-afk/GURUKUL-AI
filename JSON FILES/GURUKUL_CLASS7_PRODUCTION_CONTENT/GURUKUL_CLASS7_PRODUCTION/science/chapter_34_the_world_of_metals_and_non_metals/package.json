@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "science",
+    "chapter_id": "s07_c34",
+    "chapter_number": 34,
+    "chapter_title": "The World of Metals and Non-metals",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_science_01",
+      "skill": "observation",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_02",
+      "skill": "classification",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_03",
+      "skill": "measurement",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_04",
+      "skill": "cause-and-effect reasoning",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "observation",
+      "question": "Show what you already know about observation.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "classification",
+      "question": "Show what you already know about classification.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "measurement",
+      "question": "Show what you already know about measurement.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "cause-and-effect reasoning",
+      "question": "Show what you already know about cause-and-effect reasoning.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain properties of metals and non-metals accurately using own words and an example.",
+    "Explain classification accurately using own words and an example.",
+    "Explain uses and reactions accurately using own words and an example.",
+    "Explain safety and application accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "s07_c34_k1",
+      "concept": "properties of metals and non-metals",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies properties of metals and non-metals."
+    },
+    {
+      "concept_id": "s07_c34_k2",
+      "concept": "classification",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies classification."
+    },
+    {
+      "concept_id": "s07_c34_k3",
+      "concept": "uses and reactions",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies uses and reactions."
+    },
+    {
+      "concept_id": "s07_c34_k4",
+      "concept": "safety and application",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies safety and application."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "properties of metals and non-metals",
+      "objective": "Learner can understand, explain and apply properties of metals and non-metals.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain properties of metals and non-metals independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "classification",
+      "objective": "Learner can understand, explain and apply classification.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain classification independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "uses and reactions",
+      "objective": "Learner can understand, explain and apply uses and reactions.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain uses and reactions independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "safety and application",
+      "objective": "Learner can understand, explain and apply safety and application.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain safety and application independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "properties of metals and non-metals",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "classification",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "uses and reactions",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "safety and application",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "properties of metals and non-metals",
+      "prompt": "Complete a supported task involving properties of metals and non-metals; explain each important decision."
+    },
+    {
+      "concept": "classification",
+      "prompt": "Complete a supported task involving classification; explain each important decision."
+    },
+    {
+      "concept": "uses and reactions",
+      "prompt": "Complete a supported task involving uses and reactions; explain each important decision."
+    },
+    {
+      "concept": "safety and application",
+      "prompt": "Complete a supported task involving safety and application; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "properties of metals and non-metals",
+      "prompt": "Complete a new task involving properties of metals and non-metals without hints, then self-check."
+    },
+    {
+      "concept": "classification",
+      "prompt": "Complete a new task involving classification without hints, then self-check."
+    },
+    {
+      "concept": "uses and reactions",
+      "prompt": "Complete a new task involving uses and reactions without hints, then self-check."
+    },
+    {
+      "concept": "safety and application",
+      "prompt": "Complete a new task involving safety and application without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "properties of metals and non-metals",
+        "question": "Which method best supports a reliable explanation of properties of metals and non-metals?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "properties of metals and non-metals",
+        "question": "Explain properties of metals and non-metals and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "properties of metals and non-metals",
+        "question": "Apply properties of metals and non-metals to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "classification",
+        "question": "Which method best supports a reliable explanation of classification?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "classification",
+        "question": "Explain classification and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "classification",
+        "question": "Apply classification to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "uses and reactions",
+        "question": "Which method best supports a reliable explanation of uses and reactions?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "uses and reactions",
+        "question": "Explain uses and reactions and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "uses and reactions",
+        "question": "Apply uses and reactions to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "safety and application",
+        "question": "Which method best supports a reliable explanation of safety and application?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "safety and application",
+        "question": "Explain safety and application and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "safety and application",
+        "question": "Apply safety and application to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'The World of Metals and Non-metals'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'The World of Metals and Non-metals', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is properties of metals and non-metals?",
+      "back": "Define properties of metals and non-metals, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is classification?",
+      "back": "Define classification, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is uses and reactions?",
+      "back": "Define uses and reactions, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is safety and application?",
+      "back": "Define safety and application, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore properties of metals and non-metals",
+      "instructions": "Complete an age-appropriate task focused specifically on properties of metals and non-metals. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where classification is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach safety and application to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses properties of metals and non-metals with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses classification with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses uses and reactions with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses safety and application with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply properties of metals and non-metals to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply classification to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply uses and reactions to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply safety and application to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

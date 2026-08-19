@@ -1,22 +1,40 @@
 {
-  "concepts": [
-    {
-      "id": "ehve101_concept_01",
-      "name": "किरन",
-      "definition": "Central learning focus developed by the chapter 'किरन'.",
-      "evidence": "मैं तो किसतर में से अपने अि ति कनिल नहीं पाई।"
-    },
-    {
-      "id": "ehve101_concept_02",
-      "name": "Evidence and reasoning",
-      "definition": "Using chapter information to support an explanation or answer.",
-      "evidence": "िहने लगी किरन यह सुनिर मैं ही िि सो पाती हूँ।"
-    },
-    {
-      "id": "ehve101_concept_03",
-      "name": "Application",
-      "definition": "Using the chapter idea in a new but related situation.",
-      "evidence": "तुमहें सुलािर एि ्ूसरी ्ुकनया में मैं जाती हूँ।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "ehve101",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0915\u093f\u0930\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "ehve101_concept_01",
+        "name": "\u0915\u093f\u0930\u0928",
+        "definition": "Central learning focus developed by the chapter '\u0915\u093f\u0930\u0928'.",
+        "evidence": "\u092e\u0948\u0902 \u0924\u094b \u0915\u093f\u0938\u0924\u0930 \u092e\u0947\u0902 \u0938\u0947 \u0905\u092a\u0928\u0947 \u0905\u093f \u0924\u093f \u0915\u0928\u093f\u0932 \u0928\u0939\u0940\u0902 \u092a\u093e\u0908\u0964"
+      },
+      {
+        "id": "ehve101_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "\u093f\u0939\u0928\u0947 \u0932\u0917\u0940 \u0915\u093f\u0930\u0928 \u092f\u0939 \u0938\u0941\u0928\u093f\u0930 \u092e\u0948\u0902 \u0939\u0940 \u093f\u093f \u0938\u094b \u092a\u093e\u0924\u0940 \u0939\u0942\u0901\u0964"
+      },
+      {
+        "id": "ehve101_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "\u0924\u0941\u092e\u0939\u0947\u0902 \u0938\u0941\u0932\u093e\u093f\u0930 \u090f\u093f \u094d\u0942\u0938\u0930\u0940 \u094d\u0941\u0915\u0928\u092f\u093e \u092e\u0947\u0902 \u092e\u0948\u0902 \u091c\u093e\u0924\u0940 \u0939\u0942\u0901\u0964"
+      }
+    ]
+  }
 }

@@ -1,0 +1,27 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c13",
+  "component": "WORKED_EXAMPLES",
+  "content": {
+    "examples": [
+      {
+        "title": "Calculating Landing Spot",
+        "problem": "A grasshopper takes jumps of 7 steps. Where will it be after 6 jumps?",
+        "solution": "7 x 6 = 42.",
+        "explanation": "Each jump adds 7 to the total distance."
+      },
+      {
+        "title": "Meeting on the Number Line",
+        "problem": "Frog (2-step jumps) and Rabbit (5-step jumps) start at 0. At what point will they first meet?",
+        "solution": "Multiples of 2: 2, 4, 6, 8, 10... Multiples of 5: 5, 10... First common is 10.",
+        "explanation": "We find the L.C.M of the jump sizes."
+      },
+      {
+        "title": "Number of Jumps",
+        "problem": "A deer reaches 45 by jumping 9 steps at a time. How many jumps did it take?",
+        "solution": "45 ÷ 9 = 5 jumps.",
+        "explanation": "Divide the final position by the jump size to find the count of jumps."
+      }
+    ]
+  }
+}

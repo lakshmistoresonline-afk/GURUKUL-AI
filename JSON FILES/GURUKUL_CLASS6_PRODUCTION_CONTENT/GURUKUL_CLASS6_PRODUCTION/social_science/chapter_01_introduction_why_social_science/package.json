@@ -1,0 +1,613 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Social Science",
+    "chapter_id": "ss06_c1",
+    "chapter_title": "Introduction: Why Social Science?",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_social science_01",
+      "skill": "basic map awareness",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_social science_02",
+      "skill": "time/order",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_social science_03",
+      "skill": "community vocabulary",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_social science_04",
+      "skill": "reading simple information",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "basic map awareness",
+      "question": "Show what you already know about basic map awareness.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "time/order",
+      "question": "Show what you already know about time/order.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "community vocabulary",
+      "question": "Show what you already know about community vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading simple information",
+      "question": "Show what you already know about reading simple information.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain society and community using simple language and an example.",
+    "Explain observation of human life using simple language and an example.",
+    "Explain evidence and sources using simple language and an example.",
+    "Explain asking social questions using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "ss06_c1_k1",
+      "concept": "society and community",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies society and community."
+    },
+    {
+      "concept_id": "ss06_c1_k2",
+      "concept": "observation of human life",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies observation of human life."
+    },
+    {
+      "concept_id": "ss06_c1_k3",
+      "concept": "evidence and sources",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies evidence and sources."
+    },
+    {
+      "concept_id": "ss06_c1_k4",
+      "concept": "asking social questions",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies asking social questions."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "society and community",
+      "objective": "Learner can understand, explain and apply society and community.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain society and community without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "observation of human life",
+      "objective": "Learner can understand, explain and apply observation of human life.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain observation of human life without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "evidence and sources",
+      "objective": "Learner can understand, explain and apply evidence and sources.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain evidence and sources without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "asking social questions",
+      "objective": "Learner can understand, explain and apply asking social questions.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain asking social questions without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "society and community",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "observation of human life",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "evidence and sources",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "asking social questions",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "society and community",
+      "prompt": "Complete a supported task involving society and community. Explain the step you are taking and why."
+    },
+    {
+      "concept": "observation of human life",
+      "prompt": "Complete a supported task involving observation of human life. Explain the step you are taking and why."
+    },
+    {
+      "concept": "evidence and sources",
+      "prompt": "Complete a supported task involving evidence and sources. Explain the step you are taking and why."
+    },
+    {
+      "concept": "asking social questions",
+      "prompt": "Complete a supported task involving asking social questions. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "society and community",
+      "prompt": "Complete a new task involving society and community without hints, then self-check."
+    },
+    {
+      "concept": "observation of human life",
+      "prompt": "Complete a new task involving observation of human life without hints, then self-check."
+    },
+    {
+      "concept": "evidence and sources",
+      "prompt": "Complete a new task involving evidence and sources without hints, then self-check."
+    },
+    {
+      "concept": "asking social questions",
+      "prompt": "Complete a new task involving asking social questions without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "society and community",
+        "question": "Which method best helps you learn about society and community?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "society and community",
+        "question": "Explain society and community and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "society and community",
+        "question": "Apply society and community to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "observation of human life",
+        "question": "Which method best helps you learn about observation of human life?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "observation of human life",
+        "question": "Explain observation of human life and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "observation of human life",
+        "question": "Apply observation of human life to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "evidence and sources",
+        "question": "Which method best helps you learn about evidence and sources?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "evidence and sources",
+        "question": "Explain evidence and sources and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "evidence and sources",
+        "question": "Apply evidence and sources to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "asking social questions",
+        "question": "Which method best helps you learn about asking social questions?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "asking social questions",
+        "question": "Explain asking social questions and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "asking social questions",
+        "question": "Apply asking social questions to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Introduction: Why Social Science?'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Introduction: Why Social Science?', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is society and community?",
+      "back": "Define society and community, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is observation of human life?",
+      "back": "Define observation of human life, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is evidence and sources?",
+      "back": "Define evidence and sources, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is asking social questions?",
+      "back": "Define asking social questions, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore society and community",
+      "instructions": "Use a safe, age-appropriate task specifically focused on society and community. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where observation of human life is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach asking social questions to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of society and community with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of observation of human life with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of evidence and sources with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of asking social questions with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply society and community to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply observation of human life to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply evidence and sources to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

@@ -1,28 +1,46 @@
 {
-  "nodes": [
-    {
-      "id": "eemm103_concept_01",
-      "label": "Angles"
-    },
-    {
-      "id": "eemm103_concept_02",
-      "label": "Evidence and reasoning"
-    },
-    {
-      "id": "eemm103_concept_03",
-      "label": "Application"
-    }
-  ],
-  "edges": [
-    {
-      "from": "eemm103_concept_01",
-      "to": "eemm103_concept_02",
-      "relation": "explained_by"
-    },
-    {
-      "from": "eemm103_concept_02",
-      "to": "eemm103_concept_03",
-      "relation": "applied_through"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "eemm103",
+  "class": "class_05",
+  "subject": "Mathematics",
+  "chapter_title": "Angles",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "eemm103_concept_01",
+        "label": "Angles"
+      },
+      {
+        "id": "eemm103_concept_02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "eemm103_concept_03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "eemm103_concept_01",
+        "to": "eemm103_concept_02",
+        "relation": "explained_by"
+      },
+      {
+        "from": "eemm103_concept_02",
+        "to": "eemm103_concept_03",
+        "relation": "applied_through"
+      }
+    ]
+  }
 }

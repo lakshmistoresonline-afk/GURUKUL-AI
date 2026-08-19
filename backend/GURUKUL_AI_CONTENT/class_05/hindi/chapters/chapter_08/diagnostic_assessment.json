@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "ehve108_diag01",
-      "question": "What do you already know about 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-      "response_type": "short_answer"
-    },
-    {
-      "id": "ehve108_diag02",
-      "question": "Which related idea feels easiest and which needs more explanation?",
-      "response_type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "ehve108",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0915\u093e\u091c\u0940\u0930\u0902\u0917\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0909\u0926\u094d\u092f\u093e\u0928 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "ehve108_diag01",
+        "question": "What do you already know about '\u0915\u093e\u091c\u0940\u0930\u0902\u0917\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0909\u0926\u094d\u092f\u093e\u0928 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e'?",
+        "response_type": "short_answer"
+      },
+      {
+        "id": "ehve108_diag02",
+        "question": "Which related idea feels easiest and which needs more explanation?",
+        "response_type": "self_assessment"
+      }
+    ]
+  }
 }

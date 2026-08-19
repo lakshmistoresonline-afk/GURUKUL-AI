@@ -1,28 +1,46 @@
 {
-  "nodes": [
-    {
-      "id": "fhml109_c01",
-      "label": "मैया मैं नहि माखन खायो"
-    },
-    {
-      "id": "fhml109_c02",
-      "label": "Evidence and reasoning"
-    },
-    {
-      "id": "fhml109_c03",
-      "label": "Application"
-    }
-  ],
-  "edges": [
-    {
-      "from": "fhml109_c01",
-      "to": "fhml109_c02",
-      "relation": "supported_by"
-    },
-    {
-      "from": "fhml109_c02",
-      "to": "fhml109_c03",
-      "relation": "enables"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "fhml109",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u0948\u092f\u093e \u092e\u0948\u0902 \u0928\u0939\u093f \u092e\u093e\u0916\u0928 \u0916\u093e\u092f\u094b",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "fhml109_c01",
+        "label": "\u092e\u0948\u092f\u093e \u092e\u0948\u0902 \u0928\u0939\u093f \u092e\u093e\u0916\u0928 \u0916\u093e\u092f\u094b"
+      },
+      {
+        "id": "fhml109_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "fhml109_c03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "fhml109_c01",
+        "to": "fhml109_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "fhml109_c02",
+        "to": "fhml109_c03",
+        "relation": "enables"
+      }
+    ]
+  }
 }

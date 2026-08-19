@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "fees103",
+  "class": 6,
+  "subject": "Social Science",
+  "chapter_title": "Landforms and Life",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "fees103_c01",
+        "label": "Landforms and Life"
+      },
+      {
+        "id": "fees103_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "fees103_c03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "fees103_c01",
+        "to": "fees103_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "fees103_c02",
+        "to": "fees103_c03",
+        "relation": "enables"
+      }
+    ]
+  }
+}

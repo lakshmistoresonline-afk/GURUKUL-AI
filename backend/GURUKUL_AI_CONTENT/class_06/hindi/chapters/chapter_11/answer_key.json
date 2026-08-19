@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fhml111_q01",
-    "answer": "Option 1",
-    "evidence": "11 चेतक की वीरता रण-बीच चौकड़ी भर-भरकर चेतक बन गया निराला था।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fhml111",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u0947\u0924\u0915 \u0915\u0940 \u0935\u0940\u0930\u0924\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fhml111_q01",
+      "answer": "Option 1",
+      "evidence": "11 \u091a\u0947\u0924\u0915 \u0915\u0940 \u0935\u0940\u0930\u0924\u093e \u0930\u0923-\u092c\u0940\u091a \u091a\u094c\u0915\u0921\u093c\u0940 \u092d\u0930-\u092d\u0930\u0915\u0930 \u091a\u0947\u0924\u0915 \u092c\u0928 \u0917\u092f\u093e \u0928\u093f\u0930\u093e\u0932\u093e \u0925\u093e\u0964"
+    }
   }
 }

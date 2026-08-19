@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m07_c8",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Multiplication",
+        "tasks": [
+          "Find: 3 * (2/5)",
+          "Find: (1/2) of 24"
+        ],
+        "hints": ["Multiply the whole number by the numerator.", "'of' means multiplication."]
+      },
+      {
+        "level": 2,
+        "type": "Division",
+        "tasks": [
+          "Divide: 4 / (2/3)",
+          "Find: (3/5) / (1/2)"
+        ],
+        "dual_language_hint": "Multiply by the reciprocal. / व्युत्क्रम (reciprocal) से गुणा करें।"
+      },
+      {
+        "level": 3,
+        "type": "Applications",
+        "tasks": [
+          "A rectangular sheet of paper is 12.5 cm long and 10.25 cm wide. Find its perimeter.",
+          "Lipika reads a book for 1.75 hours every day. She reads the entire book in 6 days. How many hours in all did she take?"
+        ]
+      }
+    ]
+  }
+}

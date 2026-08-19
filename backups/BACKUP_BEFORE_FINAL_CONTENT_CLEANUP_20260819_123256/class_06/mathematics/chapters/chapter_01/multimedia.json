@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "fegp101",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Patterns in Mathematics",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "fegp101_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources — Patterns in Mathematics",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resources."
+      },
+      {
+        "id": "fegp101_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery — Patterns in Mathematics",
+        "url": "https://www.youtube.com/results?search_query=Class+6+Mathematics+Patterns+in+Mathematics+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not a verified direct video."
+      }
+    ]
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "science",
+    "chapter_id": "s07_c36",
+    "chapter_number": 36,
+    "chapter_title": "Adolescence: A Stage of Growth and Change",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_science_01",
+      "skill": "observation",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_02",
+      "skill": "classification",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_03",
+      "skill": "measurement",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_04",
+      "skill": "cause-and-effect reasoning",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "observation",
+      "question": "Show what you already know about observation.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "classification",
+      "question": "Show what you already know about classification.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "measurement",
+      "question": "Show what you already know about measurement.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "cause-and-effect reasoning",
+      "question": "Show what you already know about cause-and-effect reasoning.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain growth and development accurately using own words and an example.",
+    "Explain physical changes accurately using own words and an example.",
+    "Explain emotional and social changes accurately using own words and an example.",
+    "Explain healthy habits accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "s07_c36_k1",
+      "concept": "growth and development",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies growth and development."
+    },
+    {
+      "concept_id": "s07_c36_k2",
+      "concept": "physical changes",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies physical changes."
+    },
+    {
+      "concept_id": "s07_c36_k3",
+      "concept": "emotional and social changes",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies emotional and social changes."
+    },
+    {
+      "concept_id": "s07_c36_k4",
+      "concept": "healthy habits",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies healthy habits."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "growth and development",
+      "objective": "Learner can understand, explain and apply growth and development.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain growth and development independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "physical changes",
+      "objective": "Learner can understand, explain and apply physical changes.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain physical changes independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "emotional and social changes",
+      "objective": "Learner can understand, explain and apply emotional and social changes.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain emotional and social changes independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "healthy habits",
+      "objective": "Learner can understand, explain and apply healthy habits.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain healthy habits independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "growth and development",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "physical changes",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "emotional and social changes",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "healthy habits",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "growth and development",
+      "prompt": "Complete a supported task involving growth and development; explain each important decision."
+    },
+    {
+      "concept": "physical changes",
+      "prompt": "Complete a supported task involving physical changes; explain each important decision."
+    },
+    {
+      "concept": "emotional and social changes",
+      "prompt": "Complete a supported task involving emotional and social changes; explain each important decision."
+    },
+    {
+      "concept": "healthy habits",
+      "prompt": "Complete a supported task involving healthy habits; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "growth and development",
+      "prompt": "Complete a new task involving growth and development without hints, then self-check."
+    },
+    {
+      "concept": "physical changes",
+      "prompt": "Complete a new task involving physical changes without hints, then self-check."
+    },
+    {
+      "concept": "emotional and social changes",
+      "prompt": "Complete a new task involving emotional and social changes without hints, then self-check."
+    },
+    {
+      "concept": "healthy habits",
+      "prompt": "Complete a new task involving healthy habits without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "growth and development",
+        "question": "Which method best supports a reliable explanation of growth and development?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "growth and development",
+        "question": "Explain growth and development and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "growth and development",
+        "question": "Apply growth and development to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "physical changes",
+        "question": "Which method best supports a reliable explanation of physical changes?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "physical changes",
+        "question": "Explain physical changes and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "physical changes",
+        "question": "Apply physical changes to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "emotional and social changes",
+        "question": "Which method best supports a reliable explanation of emotional and social changes?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "emotional and social changes",
+        "question": "Explain emotional and social changes and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "emotional and social changes",
+        "question": "Apply emotional and social changes to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "healthy habits",
+        "question": "Which method best supports a reliable explanation of healthy habits?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "healthy habits",
+        "question": "Explain healthy habits and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "healthy habits",
+        "question": "Apply healthy habits to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Adolescence: A Stage of Growth and Change'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Adolescence: A Stage of Growth and Change', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is growth and development?",
+      "back": "Define growth and development, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is physical changes?",
+      "back": "Define physical changes, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is emotional and social changes?",
+      "back": "Define emotional and social changes, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is healthy habits?",
+      "back": "Define healthy habits, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore growth and development",
+      "instructions": "Complete an age-appropriate task focused specifically on growth and development. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where physical changes is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach healthy habits to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses growth and development with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses physical changes with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses emotional and social changes with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses healthy habits with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply growth and development to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply physical changes to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply emotional and social changes to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply healthy habits to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

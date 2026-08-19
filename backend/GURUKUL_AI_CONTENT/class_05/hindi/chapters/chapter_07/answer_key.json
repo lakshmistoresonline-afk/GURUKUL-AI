@@ -1,10 +1,28 @@
 {
-  "rule": "Every answer must be validated against the uploaded chapter source.",
-  "sample_answers": [
-    {
-      "question_id": "ehve107_q01",
-      "answer": "Option 1",
-      "evidence": "वह कचचा टूटा घर, वह पयाल का बबछौना, वह नंगे बदन, नंगे पाँव खेतों में घूमना, आम क े पेड़ों पर चढ़ना, सारी बातें आँखों क े सामने बिर रही हैं।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ehve107",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u0947\u0930\u093e \u092c\u091a\u092a\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "ehve107_q01",
+        "answer": "Option 1",
+        "evidence": "\u0935\u0939 \u0915\u091a\u091a\u093e \u091f\u0942\u091f\u093e \u0918\u0930, \u0935\u0939 \u092a\u092f\u093e\u0932 \u0915\u093e \u092c\u092c\u091b\u094c\u0928\u093e, \u0935\u0939 \u0928\u0902\u0917\u0947 \u092c\u0926\u0928, \u0928\u0902\u0917\u0947 \u092a\u093e\u0901\u0935 \u0916\u0947\u0924\u094b\u0902 \u092e\u0947\u0902 \u0918\u0942\u092e\u0928\u093e, \u0906\u092e \u0915 \u0947 \u092a\u0947\u0921\u093c\u094b\u0902 \u092a\u0930 \u091a\u0922\u093c\u0928\u093e, \u0938\u093e\u0930\u0940 \u092c\u093e\u0924\u0947\u0902 \u0906\u0901\u0916\u094b\u0902 \u0915 \u0947 \u0938\u093e\u092e\u0928\u0947 \u092c\u093f\u0930 \u0930\u0939\u0940 \u0939\u0948\u0902\u0964"
+      }
+    ]
+  }
 }

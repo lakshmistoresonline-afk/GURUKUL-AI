@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "ehve102_concept_01",
+      "label": "न्याय की कुर्सी"
+    },
+    {
+      "id": "ehve102_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "ehve102_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ehve102_concept_01",
+      "to": "ehve102_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "ehve102_concept_02",
+      "to": "ehve102_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

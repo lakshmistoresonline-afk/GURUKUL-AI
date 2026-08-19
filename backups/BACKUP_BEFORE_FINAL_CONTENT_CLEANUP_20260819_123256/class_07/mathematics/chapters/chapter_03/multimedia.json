@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "gegp203",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_title": "Finding Common Ground",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "gegp203_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources — Finding Common Ground",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resource portal."
+      },
+      {
+        "id": "gegp203_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery — Finding Common Ground",
+        "url": "https://www.youtube.com/results?search_query=Class+7+Mathematics+Finding+Common+Ground+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not represented as a verified direct video."
+      }
+    ]
+  }
+}

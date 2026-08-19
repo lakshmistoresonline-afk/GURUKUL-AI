@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fees105_c01",
+      "label": "India, That Is Bharat"
+    },
+    {
+      "id": "fees105_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fees105_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fees105_c01",
+      "to": "fees105_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fees105_c02",
+      "to": "fees105_c03",
+      "relation": "enables"
+    }
+  ]
+}

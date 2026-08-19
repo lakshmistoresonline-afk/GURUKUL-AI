@@ -1,10 +1,28 @@
 {
-  "rule": "Every answer must be validated against the uploaded chapter source.",
-  "sample_answers": [
-    {
-      "question_id": "ehve109_q01",
-      "answer": "Option 1",
-      "evidence": "न्या्9 पहला द ृश्य (रंगमंच पर राज-उद्ान का एक दृश्य।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ehve109",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u094d\u092f\u093e\u092f",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "ehve109_q01",
+        "answer": "Option 1",
+        "evidence": "\u0928\u094d\u092f\u093e\u094d9 \u092a\u0939\u0932\u093e \u0926 \u0943\u0936\u094d\u092f (\u0930\u0902\u0917\u092e\u0902\u091a \u092a\u0930 \u0930\u093e\u091c-\u0909\u0926\u094d\u093e\u0928 \u0915\u093e \u090f\u0915 \u0926\u0943\u0936\u094d\u092f\u0964"
+      }
+    ]
+  }
 }

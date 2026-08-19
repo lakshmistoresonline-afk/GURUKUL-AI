@@ -1,15 +1,33 @@
 {
-  "cases": [
-    {
-      "id": "fhml107_case1",
-      "title": "Applying जलाते चलो",
-      "case": "A realistic situation requires use of an idea from जलाते चलो.",
-      "questions": [
-        "Which concept applies?",
-        "What evidence supports it?",
-        "What should happen next?"
-      ],
-      "answer_guidance": "Use the chapter as the factual source."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "fhml107",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "fhml107_case1",
+        "title": "Applying \u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b",
+        "case": "A realistic situation requires use of an idea from \u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b.",
+        "questions": [
+          "Which concept applies?",
+          "What evidence supports it?",
+          "What should happen next?"
+        ],
+        "answer_guidance": "Use the chapter as the factual source."
+      }
+    ]
+  }
 }

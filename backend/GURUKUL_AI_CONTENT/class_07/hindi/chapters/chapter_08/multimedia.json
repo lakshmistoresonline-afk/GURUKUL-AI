@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "ghml108_official",
-      "type": "official_resource",
-      "title": "NCERT ePathshala eResources — बिरजू महाराज से साक्षात्कार",
-      "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
-      "verification_status": "VERIFIED_OFFICIAL_PORTAL",
-      "purpose": "Official chapter-linked digital resource portal."
-    },
-    {
-      "id": "ghml108_yt_search",
-      "type": "youtube_discovery",
-      "title": "Video discovery — बिरजू महाराज से साक्षात्कार",
-      "url": "https://www.youtube.com/results?search_query=Class+7+Hindi+बिरजू+महाराज+से+साक्षात्कार+NCERT",
-      "verification_status": "DISCOVERY_ONLY",
-      "purpose": "Discovery link only; not represented as a verified direct video."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "ghml108",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "ghml108_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources \u2014 \u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resource portal."
+      },
+      {
+        "id": "ghml108_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery \u2014 \u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930",
+        "url": "https://www.youtube.com/results?search_query=Class+7+Hindi+\u092c\u093f\u0930\u091c\u0942+\u092e\u0939\u093e\u0930\u093e\u091c+\u0938\u0947+\u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not represented as a verified direct video."
+      }
+    ]
+  }
 }

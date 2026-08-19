@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "ghml109_f1",
-      "question": "State a key idea and its supporting evidence or working.",
-      "checkpoint": "understanding"
-    },
-    {
-      "id": "ghml109_f2",
-      "question": "Apply the idea to a new related situation.",
-      "checkpoint": "application"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "formative_assessment",
+  "chapter_id": "ghml109",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u093f\u0921\u093c\u093f\u092f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "ghml109_f1",
+        "question": "State a key idea and its supporting evidence or working.",
+        "checkpoint": "understanding"
+      },
+      {
+        "id": "ghml109_f2",
+        "question": "Apply the idea to a new related situation.",
+        "checkpoint": "application"
+      }
+    ]
+  }
 }

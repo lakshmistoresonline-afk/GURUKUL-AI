@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "ghml104_c01",
+      "label": "पानी रे पानी"
+    },
+    {
+      "id": "ghml104_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "ghml104_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ghml104_c01",
+      "to": "ghml104_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "ghml104_c02",
+      "to": "ghml104_c03",
+      "relation": "enables"
+    }
+  ]
+}

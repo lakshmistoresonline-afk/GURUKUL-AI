@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "fhml108_d1",
-      "question": "What do you already know about सत्रिया और बिहू नृत्य?",
-      "type": "short_answer"
-    },
-    {
-      "id": "fhml108_d2",
-      "question": "Which related idea needs more explanation?",
-      "type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "fhml108",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fhml108_d1",
+        "question": "What do you already know about \u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f?",
+        "type": "short_answer"
+      },
+      {
+        "id": "fhml108_d2",
+        "question": "Which related idea needs more explanation?",
+        "type": "self_assessment"
+      }
+    ]
+  }
 }

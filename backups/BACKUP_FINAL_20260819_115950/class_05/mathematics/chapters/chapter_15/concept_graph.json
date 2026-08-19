@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eemm115_concept_01",
+      "label": "Data Through Pictures"
+    },
+    {
+      "id": "eemm115_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eemm115_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eemm115_concept_01",
+      "to": "eemm115_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eemm115_concept_02",
+      "to": "eemm115_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

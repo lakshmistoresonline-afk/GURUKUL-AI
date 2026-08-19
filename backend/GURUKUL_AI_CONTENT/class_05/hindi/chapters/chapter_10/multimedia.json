@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "ehve110_mm01",
-      "type": "chapter_pdf",
-      "title": "Source chapter: तीन मछलियाँ",
-      "url": null,
-      "verification_status": "LOCAL_SOURCE",
-      "purpose": "Primary learning source"
-    },
-    {
-      "id": "ehve110_mm02",
-      "type": "interactive_visual",
-      "title": "Teacher-created visual for तीन मछलियाँ",
-      "url": null,
-      "verification_status": "TO_BE_RENDERED_BY_RUNTIME",
-      "purpose": "Visualise a chapter concept"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "ehve110",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0924\u0940\u0928 \u092e\u091b\u0932\u093f\u092f\u093e\u0901",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "ehve110_mm01",
+        "type": "chapter_pdf",
+        "title": "Source chapter: \u0924\u0940\u0928 \u092e\u091b\u0932\u093f\u092f\u093e\u0901",
+        "url": null,
+        "verification_status": "LOCAL_SOURCE",
+        "purpose": "Primary learning source"
+      },
+      {
+        "id": "ehve110_mm02",
+        "type": "interactive_visual",
+        "title": "Teacher-created visual for \u0924\u0940\u0928 \u092e\u091b\u0932\u093f\u092f\u093e\u0901",
+        "url": null,
+        "verification_status": "TO_BE_RENDERED_BY_RUNTIME",
+        "purpose": "Visualise a chapter concept"
+      }
+    ]
+  }
 }

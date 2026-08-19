@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fees109_c01",
+      "label": "Family and Community"
+    },
+    {
+      "id": "fees109_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fees109_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fees109_c01",
+      "to": "fees109_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fees109_c02",
+      "to": "fees109_c03",
+      "relation": "enables"
+    }
+  ]
+}

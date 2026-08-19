@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fegp105_c01",
+      "label": "Prime Time"
+    },
+    {
+      "id": "fegp105_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fegp105_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fegp105_c01",
+      "to": "fegp105_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fegp105_c02",
+      "to": "fegp105_c03",
+      "relation": "enables"
+    }
+  ]
+}

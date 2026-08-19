@@ -1,0 +1,33 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c15",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Counting",
+        "tasks": [
+          "If one star symbol represents 5 children, how many children do 3 stars represent?",
+          "Identify the most popular item in a simple picture chart."
+        ],
+        "hints": ["Multiply the number of symbols by the value in the key.", "Look for the longest row of pictures."]
+      },
+      {
+        "level": 2,
+        "type": "Graph Completion",
+        "tasks": [
+          "Given the data: Apples (15), Bananas (10). Draw a pictograph where 1 fruit icon = 5 fruits."
+        ],
+        "dual_language_hint": "How many 5s make 15? / 15 बनाने के लिए कितने 5 चाहिए?"
+      },
+      {
+        "level": 3,
+        "type": "Analysis",
+        "tasks": [
+          "Based on the weather chart for a month, calculate the number of sunny days vs. rainy days. Which was more frequent?"
+        ]
+      }
+    ]
+  }
+}

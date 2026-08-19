@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "fhml103_h1",
-      "question": "How would you apply an important idea from पहली बूँद in a new situation?",
-      "reasoning": "Identify, justify and transfer."
-    },
-    {
-      "id": "fhml103_h2",
-      "question": "Compare two possible approaches to a chapter-related problem. Which is better and why?",
-      "reasoning": "Use evidence and reasoning."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "hots",
+  "chapter_id": "fhml103",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092a\u0939\u0932\u0940 \u092c\u0942\u0901\u0926",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fhml103_h1",
+        "question": "How would you apply an important idea from \u092a\u0939\u0932\u0940 \u092c\u0942\u0901\u0926 in a new situation?",
+        "reasoning": "Identify, justify and transfer."
+      },
+      {
+        "id": "fhml103_h2",
+        "question": "Compare two possible approaches to a chapter-related problem. Which is better and why?",
+        "reasoning": "Use evidence and reasoning."
+      }
+    ]
+  }
 }

@@ -1,10 +1,28 @@
 {
-  "rule": "Every answer must be validated against the uploaded chapter source.",
-  "sample_answers": [
-    {
-      "question_id": "ehve102_q01",
-      "answer": "Option 1",
-      "evidence": "2 उज्जैन की प्राचीन और ऐतिह रातिक नगरी क े बराहर एक ल ंबरा-चौडरा म जैदरान थ रा।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ehve102",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u094d\u092f\u093e\u092f \u0915\u0940 \u0915\u0941\u0930\u094d\u0938\u0940",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "ehve102_q01",
+        "answer": "Option 1",
+        "evidence": "2 \u0909\u091c\u094d\u091c\u0948\u0928 \u0915\u0940 \u092a\u094d\u0930\u093e\u091a\u0940\u0928 \u0914\u0930 \u0910\u0924\u093f\u0939 \u0930\u093e\u0924\u093f\u0915 \u0928\u0917\u0930\u0940 \u0915 \u0947 \u092c\u0930\u093e\u0939\u0930 \u090f\u0915 \u0932 \u0902\u092c\u0930\u093e-\u091a\u094c\u0921\u0930\u093e \u092e \u091c\u0948\u0926\u0930\u093e\u0928 \u0925 \u0930\u093e\u0964"
+      }
+    ]
+  }
 }

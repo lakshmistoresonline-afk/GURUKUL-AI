@@ -1,0 +1,204 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "accessibility_compliant": true
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "Mathematics",
+    "chapter_id": "m07_c11",
+    "chapter_title": "Exponents and Powers",
+    "basis": "NCERT Class 7 curriculum for Exponents and Powers with gap-closure extensions"
+  },
+  "prerequisite_diagnostic": {
+    "purpose": "Ensure foundation in basic multiplication before moving to exponents.",
+    "items": [
+      {
+        "skill": "Repeated Addition",
+        "question": "If you add 5 three times (5+5+5), what is it called in multiplication?",
+        "advance_if": "Learner says 5 x 3 = 15.",
+        "remediate_if": "Confused between addition and multiplication."
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "title": "What is an Exponent? (Repeated Multiplication)",
+      "objective": "Learner can explain that exponents represent multiplying a number by itself.",
+      "teach": [
+        "If 2 + 2 + 2 is 2 × 3, what is 2 × 2 × 2?",
+        "We use a tiny number at the top called an 'exponent' to show this: 2³.",
+        "The big number (2) is the Base. The tiny number (3) is the Exponent.",
+        "2³ means multiply 2 by itself 3 times."
+      ],
+      "worked_example": {
+        "prompt": "Write 5 × 5 × 5 × 5 in exponent form and find the value.",
+        "method": "1. Identify the base: 5. 2. Count how many times it repeats: 4. 3. Write as 5⁴. 4. Calculate: 5×5=25, 25×5=125, 125×5=625."
+      },
+      "checkpoint": "Write 3 × 3 as an exponent."
+    },
+    {
+      "lesson_id": "L02",
+      "title": "Multiplying with same Bases",
+      "objective": "Learner can add exponents when multiplying the same base.",
+      "teach": [
+        "Look at 2² × 2³. That is (2×2) × (2×2×2).",
+        "How many 2s are there total? 5! So it is 2⁵.",
+        "Shortcut: Just add the exponents (2+3=5)."
+      ],
+      "worked_example": {
+        "prompt": "Simplify 7³ × 7⁵.",
+        "method": "1. Identify if the bases are the same (Yes, 7). 2. Add the exponents: 3 + 5 = 8. 3. Write as 7⁸."
+      },
+      "checkpoint": "What is 4² × 4⁴?"
+    },
+    {
+      "lesson_id": "L03",
+      "title": "The Power of Zero",
+      "objective": "Learner understands why any non-zero number to the power of 0 is 1.",
+      "teach": [
+        "Exponents show a pattern. 2³=8, 2²=4, 2¹=2. Each time we divide by 2.",
+        "If we follow the pattern, 2⁰ = 2 ÷ 2 = 1.",
+        "Rule: Any number (except 0) raised to power 0 equals 1."
+      ],
+      "worked_example": {
+        "prompt": "Solve (100)⁰ + 5¹.",
+        "method": "1. Any number to power 0 is 1, so 100⁰ = 1. 2. Any number to power 1 is itself, so 5¹ = 5. 3. 1 + 5 = 6."
+      },
+      "checkpoint": "Calculate 99⁰."
+    }
+  ],
+  "question_bank": {
+    "total": 10,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "definition",
+        "question": "In the expression 4³, which number is the base?",
+        "options": ["3", "4", "12", "7"],
+        "answer": "B",
+        "explanation": "The base is the large number that is being multiplied. Here, it is 4."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "calculation",
+        "question": "What is the value of 2⁴?",
+        "options": ["8", "16", "6", "32"],
+        "answer": "B",
+        "explanation": "2⁴ = 2 × 2 × 2 × 2 = 16."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "multiplication_rule",
+        "question": "Simplify 10² × 10³.",
+        "options": ["10⁵", "10⁶", "20⁵", "100⁵"],
+        "answer": "A",
+        "explanation": "When multiplying the same base, add the exponents: 2 + 3 = 5."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "zero_power",
+        "question": "What is 5⁰?",
+        "options": ["0", "5", "1", "10"],
+        "answer": "C",
+        "explanation": "Any non-zero number to the power of 0 is always 1."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "division_rule",
+        "question": "What is 8⁵ ÷ 8²?",
+        "options": ["8⁷", "8³", "8¹⁰", "8²·⁵"],
+        "answer": "B",
+        "explanation": "When dividing the same base, subtract the exponents: 5 - 2 = 3."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "negative_base",
+        "question": "What is (-1)³?",
+        "options": ["1", "-1", "3", "-3"],
+        "answer": "B",
+        "explanation": "(-1) × (-1) × (-1). Two negatives make a positive (1), then multiplied by another negative makes it -1."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "exponent_of_exponent",
+        "question": "Simplify (3²)³.",
+        "options": ["3⁵", "3⁶", "9³", "3⁹"],
+        "answer": "B",
+        "explanation": "When raising a power to another power, multiply the exponents: 2 × 3 = 6."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "comparison",
+        "question": "Which is greater: 2³ or 3²?",
+        "options": ["2³ is greater", "3² is greater", "They are equal", "Cannot compare"],
+        "answer": "B",
+        "explanation": "2³ = 8 and 3² = 9. So 3² is greater."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "standard_form",
+        "question": "Express 5000 in standard form (scientific notation).",
+        "options": ["5 × 10²", "5 × 10³", "0.5 × 10⁴", "50 × 10²"],
+        "answer": "B",
+        "explanation": "5000 = 5 × 1000 = 5 × 10³."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "misconception",
+        "concept": "addition_misconception",
+        "question": "True or False: 2³ + 2² = 2⁵?",
+        "options": ["True", "False"],
+        "answer": "B",
+        "explanation": "The rule to add exponents only applies to multiplication, not addition. 8 + 4 = 12, whereas 2⁵ = 32."
+      }
+    ]
+  },
+  "misconception_remediation": [
+    {
+      "trigger": "Adding exponents during base addition",
+      "diagnostic": "Check if learner thinks 3² + 3³ = 3⁵.",
+      "repair": [
+        "Explain that exponents are 'locked' during addition.",
+        "Show the actual values: 9 + 27 = 36, but 3⁵ = 243.",
+        "Remind that the shortcut only works for multiplication."
+      ],
+      "exit_criterion": "Learner correctly identifies that 2² + 2² is not 2⁴."
+    },
+    {
+      "trigger": "Multiplying base by exponent",
+      "diagnostic": "Check if learner thinks 5² = 10.",
+      "repair": [
+        "Contrast 5 × 2 (multiplication) with 5 × 5 (exponent).",
+        "Use the word 'repeated multiplication' as a reminder."
+      ],
+      "exit_criterion": "Learner calculates 4³ as 64, not 12."
+    },
+    {
+      "trigger": "Confusion with 0 as power",
+      "diagnostic": "Check if learner thinks 7⁰ = 0.",
+      "repair": [
+        "Show the decreasing pattern: 7²=49, 7¹=7, 7⁰=1.",
+        "Explain that dividing a number by itself results in 1."
+      ],
+      "exit_criterion": "Learner correctly solves any a⁰ = 1."
+    }
+  ]
+}

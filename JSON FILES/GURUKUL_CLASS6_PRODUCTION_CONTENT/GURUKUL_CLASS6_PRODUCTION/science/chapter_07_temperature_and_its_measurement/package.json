@@ -1,0 +1,613 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Science",
+    "chapter_id": "s06_c7",
+    "chapter_title": "Temperature and its Measurement",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_science_01",
+      "skill": "observation",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_02",
+      "skill": "classification",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_03",
+      "skill": "simple cause-effect",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_04",
+      "skill": "recording evidence",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "observation",
+      "question": "Show what you already know about observation.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "classification",
+      "question": "Show what you already know about classification.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "simple cause-effect",
+      "question": "Show what you already know about simple cause-effect.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "recording evidence",
+      "question": "Show what you already know about recording evidence.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain hot and cold using simple language and an example.",
+    "Explain temperature using simple language and an example.",
+    "Explain thermometer using simple language and an example.",
+    "Explain measurement and safety using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "s06_c7_k1",
+      "concept": "hot and cold",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies hot and cold."
+    },
+    {
+      "concept_id": "s06_c7_k2",
+      "concept": "temperature",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies temperature."
+    },
+    {
+      "concept_id": "s06_c7_k3",
+      "concept": "thermometer",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies thermometer."
+    },
+    {
+      "concept_id": "s06_c7_k4",
+      "concept": "measurement and safety",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies measurement and safety."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "hot and cold",
+      "objective": "Learner can understand, explain and apply hot and cold.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain hot and cold without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "temperature",
+      "objective": "Learner can understand, explain and apply temperature.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain temperature without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "thermometer",
+      "objective": "Learner can understand, explain and apply thermometer.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain thermometer without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "measurement and safety",
+      "objective": "Learner can understand, explain and apply measurement and safety.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain measurement and safety without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "hot and cold",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "temperature",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "thermometer",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "measurement and safety",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "hot and cold",
+      "prompt": "Complete a supported task involving hot and cold. Explain the step you are taking and why."
+    },
+    {
+      "concept": "temperature",
+      "prompt": "Complete a supported task involving temperature. Explain the step you are taking and why."
+    },
+    {
+      "concept": "thermometer",
+      "prompt": "Complete a supported task involving thermometer. Explain the step you are taking and why."
+    },
+    {
+      "concept": "measurement and safety",
+      "prompt": "Complete a supported task involving measurement and safety. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "hot and cold",
+      "prompt": "Complete a new task involving hot and cold without hints, then self-check."
+    },
+    {
+      "concept": "temperature",
+      "prompt": "Complete a new task involving temperature without hints, then self-check."
+    },
+    {
+      "concept": "thermometer",
+      "prompt": "Complete a new task involving thermometer without hints, then self-check."
+    },
+    {
+      "concept": "measurement and safety",
+      "prompt": "Complete a new task involving measurement and safety without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "hot and cold",
+        "question": "Which method best helps you learn about hot and cold?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "hot and cold",
+        "question": "Explain hot and cold and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "hot and cold",
+        "question": "Apply hot and cold to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "temperature",
+        "question": "Which method best helps you learn about temperature?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "temperature",
+        "question": "Explain temperature and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "temperature",
+        "question": "Apply temperature to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "thermometer",
+        "question": "Which method best helps you learn about thermometer?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "thermometer",
+        "question": "Explain thermometer and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "thermometer",
+        "question": "Apply thermometer to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "measurement and safety",
+        "question": "Which method best helps you learn about measurement and safety?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "measurement and safety",
+        "question": "Explain measurement and safety and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "measurement and safety",
+        "question": "Apply measurement and safety to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Temperature and its Measurement'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Temperature and its Measurement', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is hot and cold?",
+      "back": "Define hot and cold, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is temperature?",
+      "back": "Define temperature, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is thermometer?",
+      "back": "Define thermometer, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is measurement and safety?",
+      "back": "Define measurement and safety, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore hot and cold",
+      "instructions": "Use a safe, age-appropriate task specifically focused on hot and cold. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where temperature is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach measurement and safety to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of hot and cold with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of temperature with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of thermometer with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of measurement and safety with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply hot and cold to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply temperature to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply thermometer to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

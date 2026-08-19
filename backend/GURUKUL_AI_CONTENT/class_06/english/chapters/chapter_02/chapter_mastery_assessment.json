@@ -1,10 +1,28 @@
 {
-  "components": [
-    "core concept",
-    "evidence",
-    "application",
-    "higher-order transfer"
-  ],
-  "mastery_threshold": 0.85,
-  "remediation_below": 0.7
+  "schema_version": "1.0.0",
+  "component_id": "chapter_mastery_assessment",
+  "chapter_id": "fepr102",
+  "class": "class_06",
+  "subject": "English",
+  "chapter_title": "The Unlikely Best Friends",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "components": [
+      "core concept",
+      "evidence",
+      "application",
+      "higher-order transfer"
+    ],
+    "mastery_threshold": 0.85,
+    "remediation_below": 0.7
+  }
 }

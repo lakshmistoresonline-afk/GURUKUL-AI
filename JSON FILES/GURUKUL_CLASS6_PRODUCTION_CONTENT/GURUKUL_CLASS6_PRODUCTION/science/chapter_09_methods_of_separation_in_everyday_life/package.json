@@ -1,0 +1,613 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Science",
+    "chapter_id": "s06_c9",
+    "chapter_title": "Methods of Separation in Everyday Life",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_science_01",
+      "skill": "observation",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_02",
+      "skill": "classification",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_03",
+      "skill": "simple cause-effect",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_04",
+      "skill": "recording evidence",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "observation",
+      "question": "Show what you already know about observation.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "classification",
+      "question": "Show what you already know about classification.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "simple cause-effect",
+      "question": "Show what you already know about simple cause-effect.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "recording evidence",
+      "question": "Show what you already know about recording evidence.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain mixtures using simple language and an example.",
+    "Explain handpicking and sieving using simple language and an example.",
+    "Explain filtration and sedimentation using simple language and an example.",
+    "Explain separation choices using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "s06_c9_k1",
+      "concept": "mixtures",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies mixtures."
+    },
+    {
+      "concept_id": "s06_c9_k2",
+      "concept": "handpicking and sieving",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies handpicking and sieving."
+    },
+    {
+      "concept_id": "s06_c9_k3",
+      "concept": "filtration and sedimentation",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies filtration and sedimentation."
+    },
+    {
+      "concept_id": "s06_c9_k4",
+      "concept": "separation choices",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies separation choices."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "mixtures",
+      "objective": "Learner can understand, explain and apply mixtures.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain mixtures without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "handpicking and sieving",
+      "objective": "Learner can understand, explain and apply handpicking and sieving.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain handpicking and sieving without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "filtration and sedimentation",
+      "objective": "Learner can understand, explain and apply filtration and sedimentation.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain filtration and sedimentation without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "separation choices",
+      "objective": "Learner can understand, explain and apply separation choices.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain separation choices without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "mixtures",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "handpicking and sieving",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "filtration and sedimentation",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "separation choices",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "mixtures",
+      "prompt": "Complete a supported task involving mixtures. Explain the step you are taking and why."
+    },
+    {
+      "concept": "handpicking and sieving",
+      "prompt": "Complete a supported task involving handpicking and sieving. Explain the step you are taking and why."
+    },
+    {
+      "concept": "filtration and sedimentation",
+      "prompt": "Complete a supported task involving filtration and sedimentation. Explain the step you are taking and why."
+    },
+    {
+      "concept": "separation choices",
+      "prompt": "Complete a supported task involving separation choices. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "mixtures",
+      "prompt": "Complete a new task involving mixtures without hints, then self-check."
+    },
+    {
+      "concept": "handpicking and sieving",
+      "prompt": "Complete a new task involving handpicking and sieving without hints, then self-check."
+    },
+    {
+      "concept": "filtration and sedimentation",
+      "prompt": "Complete a new task involving filtration and sedimentation without hints, then self-check."
+    },
+    {
+      "concept": "separation choices",
+      "prompt": "Complete a new task involving separation choices without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "mixtures",
+        "question": "Which method best helps you learn about mixtures?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "mixtures",
+        "question": "Explain mixtures and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "mixtures",
+        "question": "Apply mixtures to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "handpicking and sieving",
+        "question": "Which method best helps you learn about handpicking and sieving?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "handpicking and sieving",
+        "question": "Explain handpicking and sieving and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "handpicking and sieving",
+        "question": "Apply handpicking and sieving to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "filtration and sedimentation",
+        "question": "Which method best helps you learn about filtration and sedimentation?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "filtration and sedimentation",
+        "question": "Explain filtration and sedimentation and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "filtration and sedimentation",
+        "question": "Apply filtration and sedimentation to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "separation choices",
+        "question": "Which method best helps you learn about separation choices?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "separation choices",
+        "question": "Explain separation choices and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "separation choices",
+        "question": "Apply separation choices to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Methods of Separation in Everyday Life'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Methods of Separation in Everyday Life', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is mixtures?",
+      "back": "Define mixtures, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is handpicking and sieving?",
+      "back": "Define handpicking and sieving, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is filtration and sedimentation?",
+      "back": "Define filtration and sedimentation, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is separation choices?",
+      "back": "Define separation choices, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore mixtures",
+      "instructions": "Use a safe, age-appropriate task specifically focused on mixtures. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where handpicking and sieving is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach separation choices to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of mixtures with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of handpicking and sieving with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of filtration and sedimentation with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of separation choices with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply mixtures to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply handpicking and sieving to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply filtration and sedimentation to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

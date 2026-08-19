@@ -1,31 +1,49 @@
 {
-  "activities": [
-    {
-      "id": "ehve102_act01",
-      "type": "think_pair_share",
-      "title": "Explain the chapter idea",
-      "steps": [
-        "Think individually",
-        "Compare with a partner",
-        "Agree on evidence",
-        "Share reasoning"
-      ]
-    },
-    {
-      "id": "ehve102_act02",
-      "type": "sort_or_sequence",
-      "title": "Organise the learning",
-      "steps": [
-        "Select important ideas",
-        "Sort or sequence them",
-        "Explain the relationship"
-      ]
-    },
-    {
-      "id": "ehve102_act03",
-      "type": "reflection",
-      "title": "One-minute reflection",
-      "prompt": "What is the most important thing you learned and what evidence supports it?"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "activities",
+  "chapter_id": "ehve102",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u094d\u092f\u093e\u092f \u0915\u0940 \u0915\u0941\u0930\u094d\u0938\u0940",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "ehve102_act01",
+        "type": "think_pair_share",
+        "title": "Explain the chapter idea",
+        "steps": [
+          "Think individually",
+          "Compare with a partner",
+          "Agree on evidence",
+          "Share reasoning"
+        ]
+      },
+      {
+        "id": "ehve102_act02",
+        "type": "sort_or_sequence",
+        "title": "Organise the learning",
+        "steps": [
+          "Select important ideas",
+          "Sort or sequence them",
+          "Explain the relationship"
+        ]
+      },
+      {
+        "id": "ehve102_act03",
+        "type": "reflection",
+        "title": "One-minute reflection",
+        "prompt": "What is the most important thing you learned and what evidence supports it?"
+      }
+    ]
+  }
 }

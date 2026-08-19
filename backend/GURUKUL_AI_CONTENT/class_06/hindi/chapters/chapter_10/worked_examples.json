@@ -1,24 +1,42 @@
 {
-  "examples": [
-    {
-      "id": "fhml110_ex01",
-      "task": "Explain a central idea from परीक्षा using evidence.",
-      "method": [
-        "Identify",
-        "Locate evidence",
-        "Connect",
-        "Check"
-      ]
-    },
-    {
-      "id": "fhml110_ex02",
-      "task": "Apply the same idea to a new related example.",
-      "method": [
-        "Identify transfer",
-        "Adapt",
-        "Justify",
-        "Check"
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "worked_examples",
+  "chapter_id": "fhml110",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092a\u0930\u0940\u0915\u094d\u0937\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "examples": [
+      {
+        "id": "fhml110_ex01",
+        "task": "Explain a central idea from \u092a\u0930\u0940\u0915\u094d\u0937\u093e using evidence.",
+        "method": [
+          "Identify",
+          "Locate evidence",
+          "Connect",
+          "Check"
+        ]
+      },
+      {
+        "id": "fhml110_ex02",
+        "task": "Apply the same idea to a new related example.",
+        "method": [
+          "Identify transfer",
+          "Adapt",
+          "Justify",
+          "Check"
+        ]
+      }
+    ]
+  }
 }

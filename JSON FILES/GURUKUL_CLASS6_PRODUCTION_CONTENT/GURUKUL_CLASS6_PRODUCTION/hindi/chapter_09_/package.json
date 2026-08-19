@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Hindi",
+    "chapter_id": "h06_c9",
+    "chapter_title": "मैया मैं नहिं माखन खायो",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_hindi_01",
+      "skill": "सरल पठन",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_02",
+      "skill": "शब्दार्थ",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_03",
+      "skill": "वाक्य समझ",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_hindi_04",
+      "skill": "मौखिक अभिव्यक्ति",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "सरल पठन",
+      "question": "Show what you already know about सरल पठन.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "शब्दार्थ",
+      "question": "Show what you already know about शब्दार्थ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "वाक्य समझ",
+      "question": "Show what you already know about वाक्य समझ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "मौखिक अभिव्यक्ति",
+      "question": "Show what you already know about मौखिक अभिव्यक्ति.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain पद/काव्य भाषा using simple language and an example.",
+    "Explain पात्र और संवाद using simple language and an example.",
+    "Explain भाव using simple language and an example.",
+    "Explain कल्पना और संदर्भ using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "h06_c9_k1",
+      "concept": "पद/काव्य भाषा",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies पद/काव्य भाषा."
+    },
+    {
+      "concept_id": "h06_c9_k2",
+      "concept": "पात्र और संवाद",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies पात्र और संवाद."
+    },
+    {
+      "concept_id": "h06_c9_k3",
+      "concept": "भाव",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies भाव."
+    },
+    {
+      "concept_id": "h06_c9_k4",
+      "concept": "कल्पना और संदर्भ",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies कल्पना और संदर्भ."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "पद/काव्य भाषा",
+      "objective": "Learner can understand, explain and apply पद/काव्य भाषा.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain पद/काव्य भाषा without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "पात्र और संवाद",
+      "objective": "Learner can understand, explain and apply पात्र और संवाद.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain पात्र और संवाद without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "भाव",
+      "objective": "Learner can understand, explain and apply भाव.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain भाव without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "कल्पना और संदर्भ",
+      "objective": "Learner can understand, explain and apply कल्पना और संदर्भ.",
+      "teaching_sequence": [
+        "Begin with an original short example connected to the learner's life.",
+        "Ask what the learner notices before giving formal explanation.",
+        "Model how to use textual clues or context.",
+        "Guide one response, then remove support.",
+        "Ask for an original example or retelling."
+      ],
+      "checkpoint": "Explain कल्पना और संदर्भ without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "पद/काव्य भाषा",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "पात्र और संवाद",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "भाव",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "कल्पना और संदर्भ",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "पद/काव्य भाषा",
+      "prompt": "Complete a supported task involving पद/काव्य भाषा. Explain the step you are taking and why."
+    },
+    {
+      "concept": "पात्र और संवाद",
+      "prompt": "Complete a supported task involving पात्र और संवाद. Explain the step you are taking and why."
+    },
+    {
+      "concept": "भाव",
+      "prompt": "Complete a supported task involving भाव. Explain the step you are taking and why."
+    },
+    {
+      "concept": "कल्पना और संदर्भ",
+      "prompt": "Complete a supported task involving कल्पना और संदर्भ. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "पद/काव्य भाषा",
+      "prompt": "Complete a new task involving पद/काव्य भाषा without hints, then self-check."
+    },
+    {
+      "concept": "पात्र और संवाद",
+      "prompt": "Complete a new task involving पात्र और संवाद without hints, then self-check."
+    },
+    {
+      "concept": "भाव",
+      "prompt": "Complete a new task involving भाव without hints, then self-check."
+    },
+    {
+      "concept": "कल्पना और संदर्भ",
+      "prompt": "Complete a new task involving कल्पना और संदर्भ without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "पद/काव्य भाषा",
+        "question": "Which response best demonstrates understanding of 'पद/काव्य भाषा'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "पद/काव्य भाषा",
+        "question": "Explain 'पद/काव्य भाषा' in your own words and give an original example.",
+        "answer": "A strong response explains पद/काव्य भाषा accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "पद/काव्य भाषा",
+        "question": "Use 'पद/काव्य भाषा' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "पात्र और संवाद",
+        "question": "Which response best demonstrates understanding of 'पात्र और संवाद'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "पात्र और संवाद",
+        "question": "Explain 'पात्र और संवाद' in your own words and give an original example.",
+        "answer": "A strong response explains पात्र और संवाद accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "पात्र और संवाद",
+        "question": "Use 'पात्र और संवाद' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "भाव",
+        "question": "Which response best demonstrates understanding of 'भाव'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "भाव",
+        "question": "Explain 'भाव' in your own words and give an original example.",
+        "answer": "A strong response explains भाव accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "भाव",
+        "question": "Use 'भाव' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "कल्पना और संदर्भ",
+        "question": "Which response best demonstrates understanding of 'कल्पना और संदर्भ'?",
+        "options": [
+          "Answer clearly and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong comprehension connects the response to evidence or a relevant example."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "कल्पना और संदर्भ",
+        "question": "Explain 'कल्पना और संदर्भ' in your own words and give an original example.",
+        "answer": "A strong response explains कल्पना और संदर्भ accurately and gives a relevant original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "कल्पना और संदर्भ",
+        "question": "Use 'कल्पना और संदर्भ' in a new speaking or writing situation.",
+        "expected_response": "The learner uses the idea accurately in a new context.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'मैया मैं नहिं माखन खायो'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'मैया मैं नहिं माखन खायो', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is पद/काव्य भाषा?",
+      "back": "Define पद/काव्य भाषा, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is पात्र और संवाद?",
+      "back": "Define पात्र और संवाद, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is भाव?",
+      "back": "Define भाव, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is कल्पना और संदर्भ?",
+      "back": "Define कल्पना और संदर्भ, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore पद/काव्य भाषा",
+      "instructions": "Use a safe, age-appropriate task specifically focused on पद/काव्य भाषा. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where पात्र और संवाद is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach कल्पना और संदर्भ to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of पद/काव्य भाषा with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of पात्र और संवाद with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of भाव with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of कल्पना और संदर्भ with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply पद/काव्य भाषा to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply पात्र और संवाद to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply भाव to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

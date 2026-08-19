@@ -1,10 +1,28 @@
 {
-  "rule": "Every answer must be validated against the uploaded chapter source.",
-  "sample_answers": [
-    {
-      "question_id": "ehve103_q01",
-      "answer": "Option 1",
-      "evidence": "चाँद का क ु रता3 हठ कर बैठा चाँद एक ददन, माता से यह बोला, “दसलवा दो माँ, मुझे ऊन का मोटा एक दझंगोला।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ehve103",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u093e\u0901\u0926 \u0915\u093e \u0915\u0941\u0930\u0924\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "ehve103_q01",
+        "answer": "Option 1",
+        "evidence": "\u091a\u093e\u0901\u0926 \u0915\u093e \u0915 \u0941 \u0930\u0924\u093e3 \u0939\u0920 \u0915\u0930 \u092c\u0948\u0920\u093e \u091a\u093e\u0901\u0926 \u090f\u0915 \u0926\u0926\u0928, \u092e\u093e\u0924\u093e \u0938\u0947 \u092f\u0939 \u092c\u094b\u0932\u093e, \u201c\u0926\u0938\u0932\u0935\u093e \u0926\u094b \u092e\u093e\u0901, \u092e\u0941\u091d\u0947 \u090a\u0928 \u0915\u093e \u092e\u094b\u091f\u093e \u090f\u0915 \u0926\u091d\u0902\u0917\u094b\u0932\u093e\u0964"
+      }
+    ]
+  }
 }

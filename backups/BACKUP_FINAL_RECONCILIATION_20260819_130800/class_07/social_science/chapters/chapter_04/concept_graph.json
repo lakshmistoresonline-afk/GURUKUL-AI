@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gees204_c01",
+      "label": "Turning Tides: 11th and 12th Centuries"
+    },
+    {
+      "id": "gees204_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gees204_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gees204_c01",
+      "to": "gees204_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gees204_c02",
+      "to": "gees204_c03",
+      "relation": "enables"
+    }
+  ]
+}

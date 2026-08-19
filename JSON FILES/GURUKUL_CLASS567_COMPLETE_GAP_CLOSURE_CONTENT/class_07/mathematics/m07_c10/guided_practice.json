@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m07_c10",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Building Expressions",
+        "tasks": [
+          "Write the expression: Number 5 added to three times x.",
+          "Identify the coefficient of x in 13 - 4x."
+        ],
+        "hints": ["Three times x is 3x.", "The number part of the term."]
+      },
+      {
+        "level": 2,
+        "type": "Addition/Subtraction",
+        "tasks": [
+          "Add: 3x + 11 and 7x - 5",
+          "Subtract: a - b from a + b"
+        ],
+        "dual_language_hint": "Combine like terms only. / केवल सजातीय पदों को जोड़ें।"
+      },
+      {
+        "level": 3,
+        "type": "Evaluation",
+        "tasks": [
+          "Find the value of x² + 2x + 1 when x = 3.",
+          "If z = 10, find the value of z³ - 3(z - 10)."
+        ]
+      }
+    ]
+  }
+}

@@ -1,46 +1,64 @@
 {
-  "scenarios": [
-    {
-      "id": "ghml103_sc01",
-      "situation": "A learner faces a problem related to फूल और काँटा.",
-      "choices": [
-        {
-          "id": "A",
-          "choice": "Use relevant evidence or working.",
-          "feedback": "Good reasoning."
-        },
-        {
-          "id": "B",
-          "choice": "Guess without checking.",
-          "feedback": "Return to the evidence."
-        },
-        {
-          "id": "C",
-          "choice": "Use an unrelated idea.",
-          "feedback": "Keep the response connected to the chapter."
-        }
-      ]
-    },
-    {
-      "id": "ghml103_sc02",
-      "situation": "A classmate gives an answer without justification.",
-      "choices": [
-        {
-          "id": "A",
-          "choice": "Ask for evidence or working.",
-          "feedback": "Strong reasoning practice."
-        },
-        {
-          "id": "B",
-          "choice": "Accept it without checking.",
-          "feedback": "Check support first."
-        },
-        {
-          "id": "C",
-          "choice": "Ignore the reasoning.",
-          "feedback": "Reasoning is part of mastery."
-        }
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "interactive_scenarios",
+  "chapter_id": "ghml103",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "scenarios": [
+      {
+        "id": "ghml103_sc01",
+        "situation": "A learner faces a problem related to \u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e.",
+        "choices": [
+          {
+            "id": "A",
+            "choice": "Use relevant evidence or working.",
+            "feedback": "Good reasoning."
+          },
+          {
+            "id": "B",
+            "choice": "Guess without checking.",
+            "feedback": "Return to the evidence."
+          },
+          {
+            "id": "C",
+            "choice": "Use an unrelated idea.",
+            "feedback": "Keep the response connected to the chapter."
+          }
+        ]
+      },
+      {
+        "id": "ghml103_sc02",
+        "situation": "A classmate gives an answer without justification.",
+        "choices": [
+          {
+            "id": "A",
+            "choice": "Ask for evidence or working.",
+            "feedback": "Strong reasoning practice."
+          },
+          {
+            "id": "B",
+            "choice": "Accept it without checking.",
+            "feedback": "Check support first."
+          },
+          {
+            "id": "C",
+            "choice": "Ignore the reasoning.",
+            "feedback": "Reasoning is part of mastery."
+          }
+        ]
+      }
+    ]
+  }
 }

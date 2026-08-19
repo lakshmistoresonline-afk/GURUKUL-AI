@@ -1,10 +1,28 @@
 {
-  "rule": "Every answer must be validated against the uploaded chapter source.",
-  "sample_answers": [
-    {
-      "question_id": "eemm108_q01",
-      "answer": "Option 1",
-      "evidence": "Anu has recorded the weights of the items in her house."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "eemm108",
+  "class": "class_05",
+  "subject": "Mathematics",
+  "chapter_title": "Weight and Capacity",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "eemm108_q01",
+        "answer": "Option 1",
+        "evidence": "Anu has recorded the weights of the items in her house."
+      }
+    ]
+  }
 }

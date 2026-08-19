@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "chapter": {
     "chapter_id": "eemm113",
-    "class": 5,
+    "class": "class_05",
     "subject": "Mathematics",
     "chapter_number": 113,
     "chapter_title": "Animal Jumps",
@@ -680,7 +680,7 @@
             "action": "serve a simpler evidence-identification item and revisit the concept explanation"
           },
           {
-            "condition": "accuracy 60–84%",
+            "condition": "accuracy 60\u201384%",
             "action": "serve an application item"
           },
           {
@@ -1788,6 +1788,139 @@
         ],
         "completion_state": "COMPLETE only when all applicable rules are satisfied."
       }
-    }
+    },
+    "prerequisite_diagnostic": {
+      "purpose": "Determine actual starting level before teaching.",
+      "items": [
+        {
+          "skill": "length",
+          "question": "Show what you already know about length.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        },
+        {
+          "skill": "number line",
+          "question": "Show what you already know about number line.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        },
+        {
+          "skill": "addition/subtraction",
+          "question": "Show what you already know about addition/subtraction.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        }
+      ]
+    },
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "title": "distance jumps: understand \u2192 model \u2192 practise \u2192 explain",
+        "objective": "Learner can explain and use distance jumps in a new problem.",
+        "teach": [
+          "Start with a familiar situation involving distance jumps.",
+          "Name the mathematical idea and connect it to what the learner already knows.",
+          "Model one worked example aloud, showing every step and the reason for each step.",
+          "Ask the learner to predict the next step before revealing it.",
+          "Move from concrete representation to symbols and then to an unfamiliar example."
+        ],
+        "worked_example": {
+          "prompt": "Create a simple example involving distance jumps.",
+          "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+        },
+        "checkpoint": "Explain distance jumps in your own words and solve one new example without help.",
+        "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+      },
+      {
+        "lesson_id": "L02",
+        "title": "number line movement: understand \u2192 model \u2192 practise \u2192 explain",
+        "objective": "Learner can explain and use number line movement in a new problem.",
+        "teach": [
+          "Start with a familiar situation involving number line movement.",
+          "Name the mathematical idea and connect it to what the learner already knows.",
+          "Model one worked example aloud, showing every step and the reason for each step.",
+          "Ask the learner to predict the next step before revealing it.",
+          "Move from concrete representation to symbols and then to an unfamiliar example."
+        ],
+        "worked_example": {
+          "prompt": "Create a simple example involving number line movement.",
+          "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+        },
+        "checkpoint": "Explain number line movement in your own words and solve one new example without help.",
+        "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+      },
+      {
+        "lesson_id": "L03",
+        "title": "comparison: understand \u2192 model \u2192 practise \u2192 explain",
+        "objective": "Learner can explain and use comparison in a new problem.",
+        "teach": [
+          "Start with a familiar situation involving comparison.",
+          "Name the mathematical idea and connect it to what the learner already knows.",
+          "Model one worked example aloud, showing every step and the reason for each step.",
+          "Ask the learner to predict the next step before revealing it.",
+          "Move from concrete representation to symbols and then to an unfamiliar example."
+        ],
+        "worked_example": {
+          "prompt": "Create a simple example involving comparison.",
+          "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+        },
+        "checkpoint": "Explain comparison in your own words and solve one new example without help.",
+        "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+      },
+      {
+        "lesson_id": "L04",
+        "title": "repeated jumps: understand \u2192 model \u2192 practise \u2192 explain",
+        "objective": "Learner can explain and use repeated jumps in a new problem.",
+        "teach": [
+          "Start with a familiar situation involving repeated jumps.",
+          "Name the mathematical idea and connect it to what the learner already knows.",
+          "Model one worked example aloud, showing every step and the reason for each step.",
+          "Ask the learner to predict the next step before revealing it.",
+          "Move from concrete representation to symbols and then to an unfamiliar example."
+        ],
+        "worked_example": {
+          "prompt": "Create a simple example involving repeated jumps.",
+          "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+        },
+        "checkpoint": "Explain repeated jumps in your own words and solve one new example without help.",
+        "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "counting positions instead of jumps",
+        "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+        "repair": [
+          "Identify the exact concept or prerequisite that is missing.",
+          "Return to one concrete, familiar example.",
+          "Think aloud and contrast the incorrect idea with the correct idea.",
+          "Ask the learner to explain the correction in their own words.",
+          "Give two near-transfer questions.",
+          "Reassess before moving to the next concept."
+        ],
+        "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+      },
+      {
+        "trigger": "forgetting starting position",
+        "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+        "repair": [
+          "Identify the exact concept or prerequisite that is missing.",
+          "Return to one concrete, familiar example.",
+          "Think aloud and contrast the incorrect idea with the correct idea.",
+          "Ask the learner to explain the correction in their own words.",
+          "Give two near-transfer questions.",
+          "Reassess before moving to the next concept."
+        ],
+        "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_05",
+    "subject": "Mathematics",
+    "chapter_id": "m05_c13",
+    "chapter_title": "Animal Jumps",
+    "basis": "NCERT Class 5 chapter structure plus project-provided audit metadata",
+    "verification_note": "Do not publish until chapter wording, sequence and learning claims are checked against the current official textbook edition."
   }
 }

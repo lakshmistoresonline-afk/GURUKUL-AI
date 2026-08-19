@@ -1,0 +1,202 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "accessibility_compliant": true
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "Mathematics",
+    "chapter_id": "m07_c14",
+    "chapter_title": "Data Handling - Advanced",
+    "basis": "NCERT Class 7 curriculum for Data Handling"
+  },
+  "prerequisite_diagnostic": {
+    "purpose": "Check basic counting and sorting skills.",
+    "items": [
+      {
+        "skill": "Organizing",
+        "question": "If you have 5 red balls and 3 blue balls, how many total do you have?",
+        "advance_if": "Learner answers 8.",
+        "remediate_if": "Difficulty with basic counting/aggregation."
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "title": "Mean: The Fair Share",
+      "objective": "Learner can calculate the average of a data set.",
+      "teach": [
+        "Imagine 3 friends have sweets: A has 2, B has 4, C has 6.",
+        "To be 'fair', they put all 12 sweets together and share them equally.",
+        "Each gets 4. This 'fair share' is called the Mean.",
+        "Formula: Sum of all values ÷ Number of values."
+      ],
+      "worked_example": {
+        "prompt": "Find the Mean of 10, 20, 30.",
+        "method": "1. Add them: 10 + 20 + 30 = 60. 2. Count them: 3 numbers. 3. Divide: 60 ÷ 3 = 20."
+      },
+      "checkpoint": "What is the Mean of 5 and 15?"
+    },
+    {
+      "lesson_id": "L02",
+      "title": "Mode and Median: Most and Middle",
+      "objective": "Learner can find the most frequent and the middle value.",
+      "teach": [
+        "Mode: The value that appears 'Most' often. In [1, 2, 2, 3], 2 is the Mode.",
+        "Median: The 'Middle' value when numbers are in order.",
+        "Think of a road. The 'Median' is the strip in the middle."
+      ],
+      "worked_example": {
+        "prompt": "Find the Median of 5, 2, 8, 1, 9.",
+        "method": "1. Put in order: 1, 2, 5, 8, 9. 2. Find the middle number: 5."
+      },
+      "checkpoint": "What is the Mode of 4, 4, 6, 7, 4?"
+    },
+    {
+      "lesson_id": "L03",
+      "title": "Range: The Spread",
+      "objective": "Learner can calculate the difference between the highest and lowest values.",
+      "teach": [
+        "Range tells us how spread out the data is.",
+        "Calculation: Highest Value - Lowest Value."
+      ],
+      "worked_example": {
+        "prompt": "Find the Range of temperatures: 30°C, 25°C, 35°C, 28°C.",
+        "method": "1. Find Highest: 35. 2. Find Lowest: 25. 3. Subtract: 35 - 25 = 10."
+      },
+      "checkpoint": "Data: 100, 50, 150. What is the Range?"
+    }
+  ],
+  "question_bank": {
+    "total": 10,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "mean",
+        "question": "The sum of observations divided by the number of observations is:",
+        "options": ["Mode", "Mean", "Median", "Range"],
+        "answer": "B",
+        "explanation": "This is the definition of Arithmetic Mean."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "range",
+        "question": "What is the range of the data: 2, 4, 6, 8, 10?",
+        "options": ["8", "10", "6", "5"],
+        "answer": "A",
+        "explanation": "Range = 10 - 2 = 8."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "mode",
+        "question": "Which value in a data set occurs most frequently?",
+        "options": ["Mean", "Median", "Mode", "Range"],
+        "answer": "C",
+        "explanation": "Mode is the observation with the highest frequency."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "median",
+        "question": "To find the median, what must you do first?",
+        "options": ["Add all numbers", "Find the largest number", "Arrange numbers in order", "Divide by 2"],
+        "answer": "C",
+        "explanation": "Median is the middle value only when data is ordered (ascending or descending)."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "mean_calculation",
+        "question": "The mean of first five natural numbers is:",
+        "options": ["2", "3", "4", "5"],
+        "answer": "B",
+        "explanation": "(1+2+3+4+5)/5 = 15/5 = 3."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "median_calculation",
+        "question": "What is the median of 13, 16, 12, 14, 11, 12, 14, 13, 14?",
+        "options": ["12", "13", "14", "16"],
+        "answer": "B",
+        "explanation": "Ordered: 11, 12, 12, 13, 13, 14, 14, 14, 16. The middle (5th) value is 13."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "bar_graphs",
+        "question": "In a bar graph, what does the height of a bar represent?",
+        "options": ["The name of the item", "The frequency/value", "The range", "The mean"],
+        "answer": "B",
+        "explanation": "The height (or length) of the bar shows the quantity or frequency."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "mode_multiple",
+        "question": "If a data set has two numbers that both appear 5 times (more than others), it has:",
+        "options": ["No mode", "One mode", "Two modes", "Infinite modes"],
+        "answer": "C",
+        "explanation": "A data set can be bimodal (have two modes)."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "outliers",
+        "question": "Which of these is most affected by one very large number?",
+        "options": ["Mean", "Median", "Mode", "None"],
+        "answer": "A",
+        "explanation": "Mean includes every value in the sum, so a single large number changes the sum significantly."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "data_collection",
+        "question": "Collecting information for a specific purpose is called:",
+        "options": ["Calculating", "Data Handling", "Sorting", "Adding"],
+        "answer": "B",
+        "explanation": "Data handling involves collecting, organizing, and analyzing information."
+      }
+    ]
+  },
+  "misconception_remediation": [
+    {
+      "trigger": "Forgetting to order for Median",
+      "diagnostic": "Check if learner says Median of [5, 1, 9] is 1.",
+      "repair": [
+        "Explain that Median is the 'middle' only when lined up like a race.",
+        "Show how the middle changes when you sort them: [1, 5, 9]."
+      ],
+      "exit_criterion": "Learner sorts data before finding Median in 3 consecutive trials."
+    },
+    {
+      "trigger": "Confusing Mean and Mode",
+      "diagnostic": "Check if learner calculates sum/count when asked for Mode.",
+      "repair": [
+        "Use rhymes: 'Mode is Most', 'Mean is Average/Fair Share'.",
+        "Show a data set where the Mode and Mean are very different."
+      ],
+      "exit_criterion": "Learner correctly identifies which calculation to use for 3 different word problems."
+    },
+    {
+      "trigger": "Dividing by the wrong number for Mean",
+      "diagnostic": "Check if learner always divides by 2.",
+      "repair": [
+        "Explain that you must count 'How many items were in the pile'.",
+        "Use concrete objects: 12 sweets for 4 kids -> divide by 4."
+      ],
+      "exit_criterion": "Learner correctly identifies the divisor for data sets of varying sizes."
+    }
+  ]
+}

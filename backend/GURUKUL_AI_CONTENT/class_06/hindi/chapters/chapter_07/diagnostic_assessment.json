@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "fhml107_d1",
-      "question": "What do you already know about जलाते चलो?",
-      "type": "short_answer"
-    },
-    {
-      "id": "fhml107_d2",
-      "question": "Which related idea needs more explanation?",
-      "type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "fhml107",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fhml107_d1",
+        "question": "What do you already know about \u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b?",
+        "type": "short_answer"
+      },
+      {
+        "id": "fhml107_d2",
+        "question": "Which related idea needs more explanation?",
+        "type": "self_assessment"
+      }
+    ]
+  }
 }

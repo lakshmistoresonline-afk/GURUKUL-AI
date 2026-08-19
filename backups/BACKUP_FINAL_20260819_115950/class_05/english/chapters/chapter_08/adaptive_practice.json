@@ -1,0 +1,33 @@
+{
+  "selection_rules": [
+    {
+      "condition": "accuracy < 60%",
+      "action": "serve a simpler evidence-identification item and revisit the concept explanation"
+    },
+    {
+      "condition": "accuracy 60–84%",
+      "action": "serve an application item"
+    },
+    {
+      "condition": "accuracy >= 85%",
+      "action": "serve a HOTS/transfer item"
+    }
+  ],
+  "items": [
+    {
+      "id": "eesa108_adaptive_01",
+      "concept_id": "eesa108_concept_01",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eesa108_adaptive_02",
+      "concept_id": "eesa108_concept_01",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eesa108_adaptive_03",
+      "concept_id": "eesa108_concept_01",
+      "difficulty": "hard"
+    }
+  ]
+}

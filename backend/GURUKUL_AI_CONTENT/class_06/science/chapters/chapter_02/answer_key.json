@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fecu102_q01",
-    "answer": "Option 1",
-    "evidence": "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others."
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fecu102",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Diversity in the Living World",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fecu102_q01",
+      "answer": "Option 1",
+      "evidence": "\u092b\u0932\u093e\u0928\u094d\u092f\u092a\u093f \u092a\u0930\u093e\u0930\u094d\u0925\u093e\u092f \u0935\u0915 \u0943 \u094d\u0937\u093e\u0903 \u0938\u0924\u094d\u092a\u0941\u0930\u0941\u0937\u093e \u0907\u0935 \u0965 (\u0938\u092d \u0941 \u093e\u0937\u093f\u0924) Trees stand in the Sun and give shade to others."
+    }
   }
 }

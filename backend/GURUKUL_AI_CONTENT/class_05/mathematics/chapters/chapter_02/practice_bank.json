@@ -1,100 +1,118 @@
 {
-  "items": [
-    {
-      "id": "eemm102_q01",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Fractions'?",
-      "options": [
-        "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
-      "difficulty": "easy",
-      "concept_id": "eemm102_concept_01"
-    },
-    {
-      "id": "eemm102_q02",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Fractions'?",
-      "options": [
-        "When can we say that 1 2 of something is greater than 1 3 of something?",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "When can we say that 1 2 of something is greater than 1 3 of something?",
-      "difficulty": "easy",
-      "concept_id": "eemm102_concept_01"
-    },
-    {
-      "id": "eemm102_q03",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Fractions'?",
-      "options": [
-        "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same.",
-      "difficulty": "medium",
-      "concept_id": "eemm102_concept_01"
-    },
-    {
-      "id": "eemm102_q04",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Fractions'?",
-      "options": [
-        "A B C Playing with a Grid  Shade 1 8 of Grid A in red.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "A B C Playing with a Grid  Shade 1 8 of Grid A in red.",
-      "difficulty": "medium",
-      "concept_id": "eemm102_concept_01"
-    },
-    {
-      "id": "eemm102_q05",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Fractions'?",
-      "options": [
-        "22 ChapterChapter Identify 1 2 of the chocolate Identify 1 3 of the chocolate Chapter-2 Fraction.indd 17Chapter-2 Fraction.indd 17 7/2/2025 3:30:30 PM7/2/2025 3:30:30 PM 18 Fun with Fraction Kit Gurpreet is playing with his fraction kit (a kit is given at the end of the textbook).",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "22 ChapterChapter Identify 1 2 of the chocolate Identify 1 3 of the chocolate Chapter-2 Fraction.indd 17Chapter-2 Fraction.indd 17 7/2/2025 3:30:30 PM7/2/2025 3:30:30 PM 18 Fun with Fraction Kit Gurpreet is playing with his fraction kit (a kit is given at the end of the textbook).",
-      "difficulty": "hard",
-      "concept_id": "eemm102_concept_01"
-    },
-    {
-      "id": "eemm102_q06",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Fractions'?",
-      "options": [
-        "Do you remember how to make a whole with pieces of the same size?",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "Do you remember how to make a whole with pieces of the same size?",
-      "difficulty": "hard",
-      "concept_id": "eemm102_concept_01"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "practice_bank",
+  "chapter_id": "eemm102",
+  "class": "class_05",
+  "subject": "Mathematics",
+  "chapter_title": "Fractions",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eemm102_q01",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Fractions'?",
+        "options": [
+          "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
+        "difficulty": "easy",
+        "concept_id": "eemm102_concept_01"
+      },
+      {
+        "id": "eemm102_q02",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Fractions'?",
+        "options": [
+          "When can we say that 1 2 of something is greater than 1 3 of something?",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "When can we say that 1 2 of something is greater than 1 3 of something?",
+        "difficulty": "easy",
+        "concept_id": "eemm102_concept_01"
+      },
+      {
+        "id": "eemm102_q03",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Fractions'?",
+        "options": [
+          "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same.",
+        "difficulty": "medium",
+        "concept_id": "eemm102_concept_01"
+      },
+      {
+        "id": "eemm102_q04",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Fractions'?",
+        "options": [
+          "A B C Playing with a Grid \u0083 Shade 1 8 of Grid A in red.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "A B C Playing with a Grid \u0083 Shade 1 8 of Grid A in red.",
+        "difficulty": "medium",
+        "concept_id": "eemm102_concept_01"
+      },
+      {
+        "id": "eemm102_q05",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Fractions'?",
+        "options": [
+          "22 ChapterChapter Identify 1 2 of the chocolate Identify 1 3 of the chocolate Chapter-2 Fraction.indd 17Chapter-2 Fraction.indd 17 7/2/2025 3:30:30 PM7/2/2025 3:30:30 PM 18 Fun with Fraction Kit Gurpreet is playing with his fraction kit (a kit is given at the end of the textbook).",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "22 ChapterChapter Identify 1 2 of the chocolate Identify 1 3 of the chocolate Chapter-2 Fraction.indd 17Chapter-2 Fraction.indd 17 7/2/2025 3:30:30 PM7/2/2025 3:30:30 PM 18 Fun with Fraction Kit Gurpreet is playing with his fraction kit (a kit is given at the end of the textbook).",
+        "difficulty": "hard",
+        "concept_id": "eemm102_concept_01"
+      },
+      {
+        "id": "eemm102_q06",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Fractions'?",
+        "options": [
+          "Do you remember how to make a whole with pieces of the same size?",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Do you remember how to make a whole with pieces of the same size?",
+        "difficulty": "hard",
+        "concept_id": "eemm102_concept_01"
+      }
+    ]
+  }
 }

@@ -1,0 +1,613 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Social Science",
+    "chapter_id": "ss06_c13",
+    "chapter_title": "The Value of Work",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_social science_01",
+      "skill": "basic map awareness",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_social science_02",
+      "skill": "time/order",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_social science_03",
+      "skill": "community vocabulary",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_social science_04",
+      "skill": "reading simple information",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "basic map awareness",
+      "question": "Show what you already know about basic map awareness.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "time/order",
+      "question": "Show what you already know about time/order.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "community vocabulary",
+      "question": "Show what you already know about community vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading simple information",
+      "question": "Show what you already know about reading simple information.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain types of work using simple language and an example.",
+    "Explain dignity of labour using simple language and an example.",
+    "Explain skills using simple language and an example.",
+    "Explain interdependence using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "ss06_c13_k1",
+      "concept": "types of work",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies types of work."
+    },
+    {
+      "concept_id": "ss06_c13_k2",
+      "concept": "dignity of labour",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies dignity of labour."
+    },
+    {
+      "concept_id": "ss06_c13_k3",
+      "concept": "skills",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies skills."
+    },
+    {
+      "concept_id": "ss06_c13_k4",
+      "concept": "interdependence",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies interdependence."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "types of work",
+      "objective": "Learner can understand, explain and apply types of work.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain types of work without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "dignity of labour",
+      "objective": "Learner can understand, explain and apply dignity of labour.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain dignity of labour without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "skills",
+      "objective": "Learner can understand, explain and apply skills.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain skills without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "interdependence",
+      "objective": "Learner can understand, explain and apply interdependence.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain interdependence without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "types of work",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "dignity of labour",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "skills",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "interdependence",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "types of work",
+      "prompt": "Complete a supported task involving types of work. Explain the step you are taking and why."
+    },
+    {
+      "concept": "dignity of labour",
+      "prompt": "Complete a supported task involving dignity of labour. Explain the step you are taking and why."
+    },
+    {
+      "concept": "skills",
+      "prompt": "Complete a supported task involving skills. Explain the step you are taking and why."
+    },
+    {
+      "concept": "interdependence",
+      "prompt": "Complete a supported task involving interdependence. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "types of work",
+      "prompt": "Complete a new task involving types of work without hints, then self-check."
+    },
+    {
+      "concept": "dignity of labour",
+      "prompt": "Complete a new task involving dignity of labour without hints, then self-check."
+    },
+    {
+      "concept": "skills",
+      "prompt": "Complete a new task involving skills without hints, then self-check."
+    },
+    {
+      "concept": "interdependence",
+      "prompt": "Complete a new task involving interdependence without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "types of work",
+        "question": "Which method best helps you learn about types of work?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "types of work",
+        "question": "Explain types of work and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "types of work",
+        "question": "Apply types of work to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "dignity of labour",
+        "question": "Which method best helps you learn about dignity of labour?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "dignity of labour",
+        "question": "Explain dignity of labour and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "dignity of labour",
+        "question": "Apply dignity of labour to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "skills",
+        "question": "Which method best helps you learn about skills?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "skills",
+        "question": "Explain skills and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "skills",
+        "question": "Apply skills to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "interdependence",
+        "question": "Which method best helps you learn about interdependence?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "interdependence",
+        "question": "Explain interdependence and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "interdependence",
+        "question": "Apply interdependence to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'The Value of Work'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'The Value of Work', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is types of work?",
+      "back": "Define types of work, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is dignity of labour?",
+      "back": "Define dignity of labour, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is skills?",
+      "back": "Define skills, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is interdependence?",
+      "back": "Define interdependence, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore types of work",
+      "instructions": "Use a safe, age-appropriate task specifically focused on types of work. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where dignity of labour is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach interdependence to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of types of work with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of dignity of labour with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of skills with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of interdependence with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply types of work to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply dignity of labour to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply skills to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

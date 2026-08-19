@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gees202_c01",
+      "label": "India and Her Neighbours"
+    },
+    {
+      "id": "gees202_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gees202_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gees202_c01",
+      "to": "gees202_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gees202_c02",
+      "to": "gees202_c03",
+      "relation": "enables"
+    }
+  ]
+}

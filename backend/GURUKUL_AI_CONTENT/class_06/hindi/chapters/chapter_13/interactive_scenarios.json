@@ -1,46 +1,64 @@
 {
-  "scenarios": [
-    {
-      "id": "fhml113_sc01",
-      "situation": "A learner faces a situation related to पेड़ की बात.",
-      "choices": [
-        {
-          "id": "A",
-          "choice": "Use chapter evidence or working.",
-          "feedback": "Best choice."
-        },
-        {
-          "id": "B",
-          "choice": "Guess without checking.",
-          "feedback": "Revisit evidence."
-        },
-        {
-          "id": "C",
-          "choice": "Use an unrelated idea.",
-          "feedback": "Stay connected to the chapter."
-        }
-      ]
-    },
-    {
-      "id": "fhml113_sc02",
-      "situation": "A classmate gives an answer without reasoning.",
-      "choices": [
-        {
-          "id": "A",
-          "choice": "Ask for evidence.",
-          "feedback": "Good reasoning."
-        },
-        {
-          "id": "B",
-          "choice": "Accept immediately.",
-          "feedback": "Check support first."
-        },
-        {
-          "id": "C",
-          "choice": "Ignore the reasoning.",
-          "feedback": "Reasoning matters."
-        }
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "interactive_scenarios",
+  "chapter_id": "fhml113",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092a\u0947\u0921\u093c \u0915\u0940 \u092c\u093e\u0924",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "scenarios": [
+      {
+        "id": "fhml113_sc01",
+        "situation": "A learner faces a situation related to \u092a\u0947\u0921\u093c \u0915\u0940 \u092c\u093e\u0924.",
+        "choices": [
+          {
+            "id": "A",
+            "choice": "Use chapter evidence or working.",
+            "feedback": "Best choice."
+          },
+          {
+            "id": "B",
+            "choice": "Guess without checking.",
+            "feedback": "Revisit evidence."
+          },
+          {
+            "id": "C",
+            "choice": "Use an unrelated idea.",
+            "feedback": "Stay connected to the chapter."
+          }
+        ]
+      },
+      {
+        "id": "fhml113_sc02",
+        "situation": "A classmate gives an answer without reasoning.",
+        "choices": [
+          {
+            "id": "A",
+            "choice": "Ask for evidence.",
+            "feedback": "Good reasoning."
+          },
+          {
+            "id": "B",
+            "choice": "Accept immediately.",
+            "feedback": "Check support first."
+          },
+          {
+            "id": "C",
+            "choice": "Ignore the reasoning.",
+            "feedback": "Reasoning matters."
+          }
+        ]
+      }
+    ]
+  }
 }

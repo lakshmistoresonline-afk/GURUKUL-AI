@@ -1,46 +1,64 @@
 {
-  "scenarios": [
-    {
-      "id": "ghml108_sc01",
-      "situation": "A learner faces a problem related to बिरजू महाराज से साक्षात्कार.",
-      "choices": [
-        {
-          "id": "A",
-          "choice": "Use relevant evidence or working.",
-          "feedback": "Good reasoning."
-        },
-        {
-          "id": "B",
-          "choice": "Guess without checking.",
-          "feedback": "Return to the evidence."
-        },
-        {
-          "id": "C",
-          "choice": "Use an unrelated idea.",
-          "feedback": "Keep the response connected to the chapter."
-        }
-      ]
-    },
-    {
-      "id": "ghml108_sc02",
-      "situation": "A classmate gives an answer without justification.",
-      "choices": [
-        {
-          "id": "A",
-          "choice": "Ask for evidence or working.",
-          "feedback": "Strong reasoning practice."
-        },
-        {
-          "id": "B",
-          "choice": "Accept it without checking.",
-          "feedback": "Check support first."
-        },
-        {
-          "id": "C",
-          "choice": "Ignore the reasoning.",
-          "feedback": "Reasoning is part of mastery."
-        }
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "interactive_scenarios",
+  "chapter_id": "ghml108",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "scenarios": [
+      {
+        "id": "ghml108_sc01",
+        "situation": "A learner faces a problem related to \u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930.",
+        "choices": [
+          {
+            "id": "A",
+            "choice": "Use relevant evidence or working.",
+            "feedback": "Good reasoning."
+          },
+          {
+            "id": "B",
+            "choice": "Guess without checking.",
+            "feedback": "Return to the evidence."
+          },
+          {
+            "id": "C",
+            "choice": "Use an unrelated idea.",
+            "feedback": "Keep the response connected to the chapter."
+          }
+        ]
+      },
+      {
+        "id": "ghml108_sc02",
+        "situation": "A classmate gives an answer without justification.",
+        "choices": [
+          {
+            "id": "A",
+            "choice": "Ask for evidence or working.",
+            "feedback": "Strong reasoning practice."
+          },
+          {
+            "id": "B",
+            "choice": "Accept it without checking.",
+            "feedback": "Check support first."
+          },
+          {
+            "id": "C",
+            "choice": "Ignore the reasoning.",
+            "feedback": "Reasoning is part of mastery."
+          }
+        ]
+      }
+    ]
+  }
 }

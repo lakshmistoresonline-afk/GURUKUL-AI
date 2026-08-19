@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Mathematics",
+    "chapter_id": "m06_c4",
+    "chapter_title": "Data Handling and Presentation",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_mathematics_01",
+      "skill": "whole-number operations",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_02",
+      "skill": "basic measurement",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_03",
+      "skill": "shape and number vocabulary",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_04",
+      "skill": "reading tables or diagrams",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "whole-number operations",
+      "question": "Show what you already know about whole-number operations.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "basic measurement",
+      "question": "Show what you already know about basic measurement.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "shape and number vocabulary",
+      "question": "Show what you already know about shape and number vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading tables or diagrams",
+      "question": "Show what you already know about reading tables or diagrams.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain data collection using simple language and an example.",
+    "Explain tables using simple language and an example.",
+    "Explain pictographs/bar graphs using simple language and an example.",
+    "Explain interpretation using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "m06_c4_k1",
+      "concept": "data collection",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies data collection."
+    },
+    {
+      "concept_id": "m06_c4_k2",
+      "concept": "tables",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies tables."
+    },
+    {
+      "concept_id": "m06_c4_k3",
+      "concept": "pictographs/bar graphs",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies pictographs/bar graphs."
+    },
+    {
+      "concept_id": "m06_c4_k4",
+      "concept": "interpretation",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies interpretation."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "data collection",
+      "objective": "Learner can understand, explain and apply data collection.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain data collection without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "tables",
+      "objective": "Learner can understand, explain and apply tables.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain tables without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "pictographs/bar graphs",
+      "objective": "Learner can understand, explain and apply pictographs/bar graphs.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain pictographs/bar graphs without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "interpretation",
+      "objective": "Learner can understand, explain and apply interpretation.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain interpretation without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "data collection",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "tables",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "pictographs/bar graphs",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "interpretation",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "data collection",
+      "prompt": "Complete a supported task involving data collection. Explain the step you are taking and why."
+    },
+    {
+      "concept": "tables",
+      "prompt": "Complete a supported task involving tables. Explain the step you are taking and why."
+    },
+    {
+      "concept": "pictographs/bar graphs",
+      "prompt": "Complete a supported task involving pictographs/bar graphs. Explain the step you are taking and why."
+    },
+    {
+      "concept": "interpretation",
+      "prompt": "Complete a supported task involving interpretation. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "data collection",
+      "prompt": "Complete a new task involving data collection without hints, then self-check."
+    },
+    {
+      "concept": "tables",
+      "prompt": "Complete a new task involving tables without hints, then self-check."
+    },
+    {
+      "concept": "pictographs/bar graphs",
+      "prompt": "Complete a new task involving pictographs/bar graphs without hints, then self-check."
+    },
+    {
+      "concept": "interpretation",
+      "prompt": "Complete a new task involving interpretation without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "data collection",
+        "question": "Which approach best helps you understand data collection?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "data collection",
+        "question": "Explain data collection as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines data collection, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "data collection",
+        "question": "Create and solve a new everyday problem involving data collection.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "tables",
+        "question": "Which approach best helps you understand tables?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "tables",
+        "question": "Explain tables as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines tables, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "tables",
+        "question": "Create and solve a new everyday problem involving tables.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "pictographs/bar graphs",
+        "question": "Which approach best helps you understand pictographs/bar graphs?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "pictographs/bar graphs",
+        "question": "Explain pictographs/bar graphs as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines pictographs/bar graphs, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "pictographs/bar graphs",
+        "question": "Create and solve a new everyday problem involving pictographs/bar graphs.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "interpretation",
+        "question": "Which approach best helps you understand interpretation?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "interpretation",
+        "question": "Explain interpretation as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines interpretation, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "interpretation",
+        "question": "Create and solve a new everyday problem involving interpretation.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Data Handling and Presentation'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Data Handling and Presentation', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is data collection?",
+      "back": "Define data collection, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is tables?",
+      "back": "Define tables, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is pictographs/bar graphs?",
+      "back": "Define pictographs/bar graphs, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is interpretation?",
+      "back": "Define interpretation, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore data collection",
+      "instructions": "Use a safe, age-appropriate task specifically focused on data collection. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where tables is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach interpretation to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of data collection with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of tables with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of pictographs/bar graphs with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of interpretation with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply data collection to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply tables to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply pictographs/bar graphs to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

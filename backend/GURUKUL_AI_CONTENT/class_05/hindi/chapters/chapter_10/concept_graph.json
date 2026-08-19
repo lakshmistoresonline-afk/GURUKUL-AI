@@ -1,28 +1,46 @@
 {
-  "nodes": [
-    {
-      "id": "ehve110_concept_01",
-      "label": "तीन मछलियाँ"
-    },
-    {
-      "id": "ehve110_concept_02",
-      "label": "Evidence and reasoning"
-    },
-    {
-      "id": "ehve110_concept_03",
-      "label": "Application"
-    }
-  ],
-  "edges": [
-    {
-      "from": "ehve110_concept_01",
-      "to": "ehve110_concept_02",
-      "relation": "explained_by"
-    },
-    {
-      "from": "ehve110_concept_02",
-      "to": "ehve110_concept_03",
-      "relation": "applied_through"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "ehve110",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0924\u0940\u0928 \u092e\u091b\u0932\u093f\u092f\u093e\u0901",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "ehve110_concept_01",
+        "label": "\u0924\u0940\u0928 \u092e\u091b\u0932\u093f\u092f\u093e\u0901"
+      },
+      {
+        "id": "ehve110_concept_02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "ehve110_concept_03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "ehve110_concept_01",
+        "to": "ehve110_concept_02",
+        "relation": "explained_by"
+      },
+      {
+        "from": "ehve110_concept_02",
+        "to": "ehve110_concept_03",
+        "relation": "applied_through"
+      }
+    ]
+  }
 }

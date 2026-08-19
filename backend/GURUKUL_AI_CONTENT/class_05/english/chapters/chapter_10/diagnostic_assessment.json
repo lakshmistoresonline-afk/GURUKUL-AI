@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "eesa110_diag01",
-      "question": "What do you already know about 'Glass Bangles'?",
-      "response_type": "short_answer"
-    },
-    {
-      "id": "eesa110_diag02",
-      "question": "Which related idea feels easiest and which needs more explanation?",
-      "response_type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "eesa110",
+  "class": "class_05",
+  "subject": "English",
+  "chapter_title": "Glass Bangles",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eesa110_diag01",
+        "question": "What do you already know about 'Glass Bangles'?",
+        "response_type": "short_answer"
+      },
+      {
+        "id": "eesa110_diag02",
+        "question": "Which related idea feels easiest and which needs more explanation?",
+        "response_type": "self_assessment"
+      }
+    ]
+  }
 }

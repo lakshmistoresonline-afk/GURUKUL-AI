@@ -1,45 +1,63 @@
 {
-  "concepts": [
-    {
-      "concept_id": "fhml113_c01",
-      "levels": [
-        "Beginning",
-        "Developing",
-        "Proficient",
-        "Mastered"
-      ],
-      "evidence": [
-        "diagnostic",
-        "practice",
-        "assessment",
-        "transfer"
-      ]
-    },
-    {
-      "concept_id": "fhml113_c02",
-      "levels": [
-        "Beginning",
-        "Developing",
-        "Proficient",
-        "Mastered"
-      ],
-      "evidence": [
-        "evidence explanation",
-        "application"
-      ]
-    },
-    {
-      "concept_id": "fhml113_c03",
-      "levels": [
-        "Beginning",
-        "Developing",
-        "Proficient",
-        "Mastered"
-      ],
-      "evidence": [
-        "application",
-        "HOTS"
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "mastery_map",
+  "chapter_id": "fhml113",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092a\u0947\u0921\u093c \u0915\u0940 \u092c\u093e\u0924",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "concept_id": "fhml113_c01",
+        "levels": [
+          "Beginning",
+          "Developing",
+          "Proficient",
+          "Mastered"
+        ],
+        "evidence": [
+          "diagnostic",
+          "practice",
+          "assessment",
+          "transfer"
+        ]
+      },
+      {
+        "concept_id": "fhml113_c02",
+        "levels": [
+          "Beginning",
+          "Developing",
+          "Proficient",
+          "Mastered"
+        ],
+        "evidence": [
+          "evidence explanation",
+          "application"
+        ]
+      },
+      {
+        "concept_id": "fhml113_c03",
+        "levels": [
+          "Beginning",
+          "Developing",
+          "Proficient",
+          "Mastered"
+        ],
+        "evidence": [
+          "application",
+          "HOTS"
+        ]
+      }
+    ]
+  }
 }

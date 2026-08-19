@@ -1,24 +1,42 @@
 {
-  "examples": [
-    {
-      "id": "fhml107_ex01",
-      "task": "Explain a central idea from जलाते चलो using evidence.",
-      "method": [
-        "Identify",
-        "Locate evidence",
-        "Connect",
-        "Check"
-      ]
-    },
-    {
-      "id": "fhml107_ex02",
-      "task": "Apply the same idea to a new related example.",
-      "method": [
-        "Identify transfer",
-        "Adapt",
-        "Justify",
-        "Check"
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "worked_examples",
+  "chapter_id": "fhml107",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "examples": [
+      {
+        "id": "fhml107_ex01",
+        "task": "Explain a central idea from \u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b using evidence.",
+        "method": [
+          "Identify",
+          "Locate evidence",
+          "Connect",
+          "Check"
+        ]
+      },
+      {
+        "id": "fhml107_ex02",
+        "task": "Apply the same idea to a new related example.",
+        "method": [
+          "Identify transfer",
+          "Adapt",
+          "Justify",
+          "Check"
+        ]
+      }
+    ]
+  }
 }

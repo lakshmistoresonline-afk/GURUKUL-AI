@@ -1,0 +1,463 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "copyright_safe_original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_05",
+    "subject": "Mathematics",
+    "chapter_id": "m05_c12",
+    "chapter_title": "Racing Seconds",
+    "basis": "NCERT Class 5 chapter structure plus project-provided audit metadata",
+    "verification_note": "Do not publish until chapter wording, sequence and learning claims are checked against the current official textbook edition."
+  },
+  "prerequisite_diagnostic": {
+    "purpose": "Determine actual starting level before teaching.",
+    "items": [
+      {
+        "skill": "clock reading",
+        "question": "Show what you already know about clock reading.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      },
+      {
+        "skill": "seconds/minutes",
+        "question": "Show what you already know about seconds/minutes.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      },
+      {
+        "skill": "subtraction",
+        "question": "Show what you already know about subtraction.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      }
+    ]
+  },
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if required",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent retrieval",
+    "misconception check",
+    "targeted remediation",
+    "transfer/application",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "title": "elapsed time: understand → model → practise → explain",
+      "objective": "Learner can explain and use elapsed time in a new problem.",
+      "teach": [
+        "Start with a familiar situation involving elapsed time.",
+        "Name the mathematical idea and connect it to what the learner already knows.",
+        "Model one worked example aloud, showing every step and the reason for each step.",
+        "Ask the learner to predict the next step before revealing it.",
+        "Move from concrete representation to symbols and then to an unfamiliar example."
+      ],
+      "worked_example": {
+        "prompt": "Create a simple example involving elapsed time.",
+        "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+      },
+      "checkpoint": "Explain elapsed time in your own words and solve one new example without help.",
+      "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+    },
+    {
+      "lesson_id": "L02",
+      "title": "seconds: understand → model → practise → explain",
+      "objective": "Learner can explain and use seconds in a new problem.",
+      "teach": [
+        "Start with a familiar situation involving seconds.",
+        "Name the mathematical idea and connect it to what the learner already knows.",
+        "Model one worked example aloud, showing every step and the reason for each step.",
+        "Ask the learner to predict the next step before revealing it.",
+        "Move from concrete representation to symbols and then to an unfamiliar example."
+      ],
+      "worked_example": {
+        "prompt": "Create a simple example involving seconds.",
+        "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+      },
+      "checkpoint": "Explain seconds in your own words and solve one new example without help.",
+      "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+    },
+    {
+      "lesson_id": "L03",
+      "title": "timelines: understand → model → practise → explain",
+      "objective": "Learner can explain and use timelines in a new problem.",
+      "teach": [
+        "Start with a familiar situation involving timelines.",
+        "Name the mathematical idea and connect it to what the learner already knows.",
+        "Model one worked example aloud, showing every step and the reason for each step.",
+        "Ask the learner to predict the next step before revealing it.",
+        "Move from concrete representation to symbols and then to an unfamiliar example."
+      ],
+      "worked_example": {
+        "prompt": "Create a simple example involving timelines.",
+        "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+      },
+      "checkpoint": "Explain timelines in your own words and solve one new example without help.",
+      "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+    },
+    {
+      "lesson_id": "L04",
+      "title": "comparison: understand → model → practise → explain",
+      "objective": "Learner can explain and use comparison in a new problem.",
+      "teach": [
+        "Start with a familiar situation involving comparison.",
+        "Name the mathematical idea and connect it to what the learner already knows.",
+        "Model one worked example aloud, showing every step and the reason for each step.",
+        "Ask the learner to predict the next step before revealing it.",
+        "Move from concrete representation to symbols and then to an unfamiliar example."
+      ],
+      "worked_example": {
+        "prompt": "Create a simple example involving comparison.",
+        "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+      },
+      "checkpoint": "Explain comparison in your own words and solve one new example without help.",
+      "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "elapsed time",
+        "question": "Which approach is most useful when solving a problem about elapsed time?",
+        "options": [
+          "Identify what is known and what is asked, then choose a suitable representation or operation.",
+          "Choose an operation before reading the question.",
+          "Use the largest number as the answer.",
+          "Skip checking because the first answer is usually correct."
+        ],
+        "answer": "A",
+        "explanation": "Good problem solving starts by identifying the information and the question, then choosing a method and checking the result."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "elapsed time",
+        "question": "Explain elapsed time to a Class 5 learner who has never seen it before.",
+        "answer": "A correct response should define elapsed time, give a simple example, and explain the reasoning.",
+        "rubric": [
+          "correct idea",
+          "clear example",
+          "reasoning/explanation"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "elapsed time",
+        "question": "Create a new everyday problem that requires elapsed time. Solve it and explain why your method works.",
+        "expected_response": "The learner should create a relevant problem, solve it accurately, and justify the method.",
+        "rubric": [
+          "relevant context",
+          "correct mathematics",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "seconds",
+        "question": "Which approach is most useful when solving a problem about seconds?",
+        "options": [
+          "Identify what is known and what is asked, then choose a suitable representation or operation.",
+          "Choose an operation before reading the question.",
+          "Use the largest number as the answer.",
+          "Skip checking because the first answer is usually correct."
+        ],
+        "answer": "A",
+        "explanation": "Good problem solving starts by identifying the information and the question, then choosing a method and checking the result."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "seconds",
+        "question": "Explain seconds to a Class 5 learner who has never seen it before.",
+        "answer": "A correct response should define seconds, give a simple example, and explain the reasoning.",
+        "rubric": [
+          "correct idea",
+          "clear example",
+          "reasoning/explanation"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "application",
+        "concept": "seconds",
+        "question": "Create a new everyday problem that requires seconds. Solve it and explain why your method works.",
+        "expected_response": "The learner should create a relevant problem, solve it accurately, and justify the method.",
+        "rubric": [
+          "relevant context",
+          "correct mathematics",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "timelines",
+        "question": "Which approach is most useful when solving a problem about timelines?",
+        "options": [
+          "Identify what is known and what is asked, then choose a suitable representation or operation.",
+          "Choose an operation before reading the question.",
+          "Use the largest number as the answer.",
+          "Skip checking because the first answer is usually correct."
+        ],
+        "answer": "A",
+        "explanation": "Good problem solving starts by identifying the information and the question, then choosing a method and checking the result."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "foundation",
+        "concept": "timelines",
+        "question": "Explain timelines to a Class 5 learner who has never seen it before.",
+        "answer": "A correct response should define timelines, give a simple example, and explain the reasoning.",
+        "rubric": [
+          "correct idea",
+          "clear example",
+          "reasoning/explanation"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "timelines",
+        "question": "Create a new everyday problem that requires timelines. Solve it and explain why your method works.",
+        "expected_response": "The learner should create a relevant problem, solve it accurately, and justify the method.",
+        "rubric": [
+          "relevant context",
+          "correct mathematics",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "comparison",
+        "question": "Which approach is most useful when solving a problem about comparison?",
+        "options": [
+          "Identify what is known and what is asked, then choose a suitable representation or operation.",
+          "Choose an operation before reading the question.",
+          "Use the largest number as the answer.",
+          "Skip checking because the first answer is usually correct."
+        ],
+        "answer": "A",
+        "explanation": "Good problem solving starts by identifying the information and the question, then choosing a method and checking the result."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "application",
+        "concept": "comparison",
+        "question": "Explain comparison to a Class 5 learner who has never seen it before.",
+        "answer": "A correct response should define comparison, give a simple example, and explain the reasoning.",
+        "rubric": [
+          "correct idea",
+          "clear example",
+          "reasoning/explanation"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "comparison",
+        "question": "Create a new everyday problem that requires comparison. Solve it and explain why your method works.",
+        "expected_response": "The learner should create a relevant problem, solve it accurately, and justify the method.",
+        "rubric": [
+          "relevant context",
+          "correct mathematics",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the best way to show mastery of 'Racing Seconds'?",
+        "options": [
+          "Use the important ideas independently in a new situation and explain the reasoning.",
+          "Finish every activity without checking understanding.",
+          "Memorise the chapter title only.",
+          "Repeat one worked example exactly."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent understanding and transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_prioritisation",
+        "question": "Which idea from 'Racing Seconds' would you teach to a younger learner first, and why?",
+        "answer": "Any defensible answer is acceptable if it identifies a foundational idea and gives a logical reason.",
+        "rubric": [
+          "foundational choice",
+          "reason",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is the key idea behind elapsed time?",
+      "back": "Explain elapsed time using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC01B",
+      "front": "Give a new example of elapsed time.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC02",
+      "front": "What is the key idea behind seconds?",
+      "back": "Explain seconds using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02B",
+      "front": "Give a new example of seconds.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC03",
+      "front": "What is the key idea behind timelines?",
+      "back": "Explain timelines using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03B",
+      "front": "Give a new example of timelines.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC04",
+      "front": "What is the key idea behind comparison?",
+      "back": "Explain comparison using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04B",
+      "front": "Give a new example of comparison.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "math_lab",
+      "title": "Build it before you calculate",
+      "instructions": "Represent elapsed time using counters, paper, a number line, grid, clock, measuring tool or another concrete model appropriate to the idea. Explain what the model shows.",
+      "evidence": "Photo/teacher observation + learner explanation"
+    },
+    {
+      "id": "ACT02",
+      "type": "challenge",
+      "title": "Find a different way",
+      "instructions": "Solve a problem involving seconds in two different valid ways. Compare the methods.",
+      "evidence": "Two methods + comparison"
+    },
+    {
+      "id": "ACT03",
+      "type": "real_life",
+      "title": "Maths in my world",
+      "instructions": "Find one real situation outside the lesson where comparison is useful. Record the situation, the mathematics used, and the result.",
+      "evidence": "Learner-created example"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "subtracting seconds without regrouping",
+      "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+      "repair": [
+        "Identify the exact concept or prerequisite that is missing.",
+        "Return to one concrete, familiar example.",
+        "Think aloud and contrast the incorrect idea with the correct idea.",
+        "Ask the learner to explain the correction in their own words.",
+        "Give two near-transfer questions.",
+        "Reassess before moving to the next concept."
+      ],
+      "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+    },
+    {
+      "trigger": "treating 60 seconds as 100",
+      "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+      "repair": [
+        "Identify the exact concept or prerequisite that is missing.",
+        "Return to one concrete, familiar example.",
+        "Think aloud and contrast the incorrect idea with the correct idea.",
+        "Ask the learner to explain the correction in their own words.",
+        "Give two near-transfer questions.",
+        "Reassess before moving to the next concept."
+      ],
+      "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain the key idea without copying.",
+      "Learner can solve or respond to an unfamiliar example.",
+      "Application task meets the rubric."
+    ],
+    "on_failure": "Do not simply unlock the next chapter. Route the learner to the weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock spaced retrieval and cumulative review."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "rule": "Use mixed retrieval; increase difficulty after correct independent recall; re-enter remediation after repeated failure.",
+    "items_per_review": 5
+  },
+  "analytics_events": [
+    "diagnostic_started",
+    "diagnostic_completed",
+    "lesson_started",
+    "lesson_completed",
+    "hint_requested",
+    "misconception_detected",
+    "remediation_started",
+    "remediation_completed",
+    "question_answered",
+    "mastery_passed",
+    "mastery_failed",
+    "application_completed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery_by_skill",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "first_attempt_accuracy",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

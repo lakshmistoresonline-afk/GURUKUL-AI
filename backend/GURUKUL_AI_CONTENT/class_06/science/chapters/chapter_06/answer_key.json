@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fecu106_q01",
-    "answer": "Option 1",
-    "evidence": "\b (रसरत्नसमुच्चय–१०.३) The materials used to make the crucible (a vessel used to melt substances) are clay and iron."
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fecu106",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Materials Around Us",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fecu106_q01",
+      "answer": "Option 1",
+      "evidence": "\b (\u0930\u0938\u0930\u0924\u094d\u0928\u0938\u092e\u0941\u091a\u094d\u091a\u092f\u2013\u0967\u0966.\u0969) The materials used to make the crucible (a vessel used to melt substances) are clay and iron."
+    }
   }
 }

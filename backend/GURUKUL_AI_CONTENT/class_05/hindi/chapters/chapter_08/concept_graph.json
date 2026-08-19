@@ -1,28 +1,46 @@
 {
-  "nodes": [
-    {
-      "id": "ehve108_concept_01",
-      "label": "काजीरंगा राष्ट्रीय उद्यान की यात्रा"
-    },
-    {
-      "id": "ehve108_concept_02",
-      "label": "Evidence and reasoning"
-    },
-    {
-      "id": "ehve108_concept_03",
-      "label": "Application"
-    }
-  ],
-  "edges": [
-    {
-      "from": "ehve108_concept_01",
-      "to": "ehve108_concept_02",
-      "relation": "explained_by"
-    },
-    {
-      "from": "ehve108_concept_02",
-      "to": "ehve108_concept_03",
-      "relation": "applied_through"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "ehve108",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0915\u093e\u091c\u0940\u0930\u0902\u0917\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0909\u0926\u094d\u092f\u093e\u0928 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "ehve108_concept_01",
+        "label": "\u0915\u093e\u091c\u0940\u0930\u0902\u0917\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0909\u0926\u094d\u092f\u093e\u0928 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e"
+      },
+      {
+        "id": "ehve108_concept_02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "ehve108_concept_03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "ehve108_concept_01",
+        "to": "ehve108_concept_02",
+        "relation": "explained_by"
+      },
+      {
+        "from": "ehve108_concept_02",
+        "to": "ehve108_concept_03",
+        "relation": "applied_through"
+      }
+    ]
+  }
 }

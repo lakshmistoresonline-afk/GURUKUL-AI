@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "activities",
+  "chapter_id": "ghml110",
+  "class": 7,
+  "subject": "Hindi",
+  "chapter_title": "मीरा के पद",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "ghml110_act01",
+        "type": "think_pair_share",
+        "title": "Explain and justify",
+        "steps": [
+          "Think",
+          "Discuss",
+          "Find evidence",
+          "Share"
+        ]
+      },
+      {
+        "id": "ghml110_act02",
+        "type": "sort_sequence",
+        "title": "Organise the learning",
+        "steps": [
+          "Select key ideas",
+          "Sort or sequence",
+          "Explain relationships"
+        ]
+      },
+      {
+        "id": "ghml110_act03",
+        "type": "reflection",
+        "title": "One-minute reflection",
+        "prompt": "What is the most important learning from मीरा के पद?"
+      }
+    ]
+  }
+}

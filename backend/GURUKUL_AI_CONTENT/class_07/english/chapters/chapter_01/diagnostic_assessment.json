@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "gepr101_d1",
-      "question": "What do you already know about Learning Together?",
-      "type": "short_answer"
-    },
-    {
-      "id": "gepr101_d2",
-      "question": "Which related concept or skill needs more support?",
-      "type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "gepr101",
+  "class": "class_07",
+  "subject": "English",
+  "chapter_title": "Learning Together",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "gepr101_d1",
+        "question": "What do you already know about Learning Together?",
+        "type": "short_answer"
+      },
+      {
+        "id": "gepr101_d2",
+        "question": "Which related concept or skill needs more support?",
+        "type": "self_assessment"
+      }
+    ]
+  }
 }

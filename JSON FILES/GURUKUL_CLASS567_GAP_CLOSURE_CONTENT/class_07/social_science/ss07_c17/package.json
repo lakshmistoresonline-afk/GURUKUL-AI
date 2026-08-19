@@ -1,0 +1,145 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "accessibility_verified": true
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "Social Science",
+    "chapter_id": "ss07_c17",
+    "chapter_title": "A Shirt in the Market",
+    "basis": "NCERT Class 7 Civics Chapter 8"
+  },
+  "foundation_units": [
+    {
+      "id": "F01",
+      "title": "The Life of a Product",
+      "content": "Every item we use, like a shirt, starts its journey as raw material (like cotton) and goes through many hands before it reaches us. This is called the 'Chain of Markets'."
+    },
+    {
+      "id": "F02",
+      "title": "Who Gains What?",
+      "content": "In the process of making and selling a shirt, different people earn different amounts. Usually, large business owners earn the most, while small farmers and workers earn very little."
+    }
+  ],
+  "worked_examples": [
+    {
+      "scenario": "The Journey of Cotton",
+      "step_1": "Farmer: Swapna grows cotton on her small land. She borrows money from a trader for seeds and fertilizers.",
+      "step_2": "Trader: Swapna is forced to sell cotton to the trader at a low price to repay the loan.",
+      "step_3": "Ginning Mill: The trader sells cotton to a mill where seeds are removed and cotton is pressed into bales.",
+      "step_4": "Spinning Mill: Bales are bought by spinning mills to make yarn.",
+      "step_5": "Weaver: Weavers in Erode buy yarn and make cloth (putting-out system).",
+      "step_6": "Garment Exporter: A factory buys cloth, stitches shirts, and sells them to foreign buyers.",
+      "step_7": "Consumer: A person in the US or a mall in India buys the shirt at a high price.",
+      "logic": "The value increases at each step, but the profit is not shared equally."
+    }
+  ],
+  "guided_practice": [
+    {
+      "task": "Sequence the Chain",
+      "description": "Arrange these in order: Weaving, Cotton cultivation, Ginning, Stitching, Retail sale.",
+      "hint": "Start from the field and end at the shop.",
+      "solution": "Cotton cultivation → Ginning → Weaving → Stitching → Retail sale."
+    },
+    {
+      "task": "Analyze Profits",
+      "description": "Between a small farmer and a garment exporter, who has more power to set the price?",
+      "hint": "Think about who has more money and alternatives.",
+      "solution": "The garment exporter, as they deal with large volumes and have access to international markets, whereas the farmer is often dependent on local traders for loans."
+    }
+  ],
+  "question_bank": [
+    {
+      "id": "Q01",
+      "question": "What is the starting point for making a cotton shirt?",
+      "options": ["A factory", "A weaving shed", "A cotton field", "A shopping mall"],
+      "answer": "A cotton field",
+      "explanation": "Cotton cultivation by farmers is the first step in the production chain."
+    },
+    {
+      "id": "Q02",
+      "question": "Why did Swapna sell her cotton to the local trader instead of the Kurnool market?",
+      "options": ["The trader gave a better price", "She had borrowed money from the trader", "The market was too far", "The trader was her brother"],
+      "answer": "She had borrowed money from the trader",
+      "explanation": "Small farmers often depend on traders for loans and are forced to sell their produce to them at lower rates."
+    },
+    {
+      "id": "Q03",
+      "question": "A 'Ginning Mill' is a place where:",
+      "options": ["Clothes are stitched", "Seeds are removed from cotton pods", "Yarn is woven into cloth", "Shirts are sold to consumers"],
+      "answer": "Seeds are removed from cotton pods",
+      "explanation": "Ginning is the process of separating seeds from cotton fibers."
+    },
+    {
+      "id": "Q04",
+      "question": "In the 'putting-out system', who provides the raw material to the weavers?",
+      "options": ["The government", "The merchant", "The consumer", "The farmer"],
+      "answer": "The merchant",
+      "explanation": "Merchants give yarn to weavers and receive the finished cloth back."
+    },
+    {
+      "id": "Q05",
+      "question": "Where is one of the largest cloth markets in the world located in Tamil Nadu?",
+      "options": ["Chennai", "Madurai", "Erode", "Coimbatore"],
+      "answer": "Erode",
+      "explanation": "Erode has a bi-weekly cloth market that is one of the largest in the world."
+    },
+    {
+      "id": "Q06",
+      "question": "Who among the following earns the most profit in the chain of a shirt?",
+      "options": ["The weaver", "The small farmer", "The garment exporter", "The foreign business person"],
+      "answer": "The foreign business person",
+      "explanation": "Retailers in developed countries sell shirts at high prices and keep a large share of the profit."
+    },
+    {
+      "id": "Q07",
+      "question": "What does a garment exporting factory do?",
+      "options": ["Grows cotton", "Makes yarn", "Stitches shirts from cloth", "Sells seeds to farmers"],
+      "answer": "Stitches shirts from cloth",
+      "explanation": "These factories take cloth and turn it into finished garments for sale."
+    },
+    {
+      "id": "Q08",
+      "question": "Why do garment exporters try to keep labor costs low?",
+      "options": ["To help the workers", "To get more orders from foreign buyers by offering low prices", "Because the government asks them to", "They don't have enough money"],
+      "answer": "To get more orders from foreign buyers by offering low prices",
+      "explanation": "Foreign buyers demand low prices, so exporters cut costs by paying workers less."
+    },
+    {
+      "id": "Q09",
+      "question": "Does the market offer equal opportunities to everyone?",
+      "options": ["Yes, everyone gets rich", "No, it favors those with money and land", "Yes, everyone works hard", "No, because there are no shops"],
+      "answer": "No, it favors those with money and land",
+      "explanation": "Wealth and resources give some people more bargaining power than others."
+    },
+    {
+      "id": "Q10",
+      "question": "How can weavers or farmers get a better share of the profit?",
+      "options": ["By working more hours", "By forming cooperatives", "By stopping work", "By buying more shirts"],
+      "answer": "By forming cooperatives",
+      "explanation": "Cooperatives allow people to pool resources and bypass powerful middlemen/merchants."
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "misconception": "The high price of a shirt in a mall means the farmer got a good price for the cotton.",
+      "remediation": "Clarify that the high price mostly covers the mall's rent, advertising, and the profits of big businessmen; very little reaches the actual producer (farmer)."
+    },
+    {
+      "misconception": "Weavers are independent workers because they work at home.",
+      "remediation": "Explain the 'putting-out' system where weavers are actually dependent on merchants for yarn and for selling the cloth, often at very low wages."
+    }
+  ],
+  "accessibility": {
+    "visual": "Provide a flow-chart diagram of the 'Chain of Markets' with clear labels. Use icons for 'Farm', 'Mill', 'Factory', and 'Shop'.",
+    "language": "Explain terms like 'Exporter', 'Wholesale', and 'Retail' using simple analogies.",
+    "cognitive": "Break down the production process into clear, numbered stages to avoid confusion."
+  }
+}

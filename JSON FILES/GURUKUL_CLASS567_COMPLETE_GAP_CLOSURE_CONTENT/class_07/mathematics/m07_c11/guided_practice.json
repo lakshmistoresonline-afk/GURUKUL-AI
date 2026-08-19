@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m07_c11",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Basic Calculation",
+        "tasks": [
+          "Express 512 as a power of 2.",
+          "Which is greater: 2³ or 3²?"
+        ],
+        "hints": ["2 * 2 * 2 ... how many times gives 512?", "Calculate both values."]
+      },
+      {
+        "level": 2,
+        "type": "Laws of Exponents",
+        "tasks": [
+          "Simplify: (3⁷ / 3²) * 3⁵",
+          "Find x if 2^x = 32"
+        ],
+        "dual_language_hint": "Subtract powers for division. / भाग के लिए घातों (powers) को घटाएं।"
+      },
+      {
+        "level": 3,
+        "type": "Standard Form",
+        "tasks": [
+          "Write 3908.78 in scientific notation.",
+          "The distance between Sun and Earth is 149,600,000,000 m. Express in standard form."
+        ]
+      }
+    ]
+  }
+}

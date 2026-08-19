@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gepr101_c01",
+      "label": "Learning Together"
+    },
+    {
+      "id": "gepr101_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gepr101_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gepr101_c01",
+      "to": "gepr101_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gepr101_c02",
+      "to": "gepr101_c03",
+      "relation": "enables"
+    }
+  ]
+}

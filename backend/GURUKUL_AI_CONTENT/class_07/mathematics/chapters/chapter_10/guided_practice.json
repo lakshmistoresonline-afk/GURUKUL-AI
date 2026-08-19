@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m07_c10",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "practice_units": [
+      {
+        "unit_id": "GP01",
+        "title": "Constructing a Line Parallel to a Given Line",
+        "problem": "Draw a line segment AB of length 6 cm. Take a point C outside AB and construct a line parallel to AB passing through C using a ruler and compass.",
+        "guidance": [
+          "First, draw AB and mark point C.",
+          "Pick a point D on AB and join CD.",
+          "Draw an arc from D intersecting AB and CD.",
+          "With the same radius, draw an arc from C on CD.",
+          "Measure the distance between the intersections on the first arc and copy it to the second arc.",
+          "Join C and the new intersection point."
+        ],
+        "solution": "A line parallel to AB is constructed through C."
+      },
+      {
+        "unit_id": "GP02",
+        "title": "Constructing an Isosceles Triangle",
+        "problem": "Construct an isosceles triangle XYZ where the equal sides XY and XZ are 5 cm each and the angle between them is 60 degrees.",
+        "guidance": [
+          "Draw XY = 5 cm.",
+          "At X, construct an angle of 60 degrees using a protractor or compass.",
+          "On the angle arm, cut an arc of 5 cm from X to find Z.",
+          "Join YZ."
+        ],
+        "solution": "Triangle XYZ is constructed with XY = XZ = 5 cm and ∠YXZ = 60°."
+      }
+    ]
+  }
+}

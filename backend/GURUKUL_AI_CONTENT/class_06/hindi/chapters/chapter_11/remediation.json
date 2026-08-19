@@ -1,20 +1,38 @@
 {
-  "path": [
-    {
-      "trigger": "incorrect core concept",
-      "action": "revisit explanation"
-    },
-    {
-      "trigger": "second error",
-      "action": "simpler evidence activity"
-    },
-    {
-      "trigger": "third error",
-      "action": "guided worked example"
-    },
-    {
-      "trigger": "success",
-      "action": "retry original difficulty"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "remediation",
+  "chapter_id": "fhml111",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u0947\u0924\u0915 \u0915\u0940 \u0935\u0940\u0930\u0924\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "path": [
+      {
+        "trigger": "incorrect core concept",
+        "action": "revisit explanation"
+      },
+      {
+        "trigger": "second error",
+        "action": "simpler evidence activity"
+      },
+      {
+        "trigger": "third error",
+        "action": "guided worked example"
+      },
+      {
+        "trigger": "success",
+        "action": "retry original difficulty"
+      }
+    ]
+  }
 }

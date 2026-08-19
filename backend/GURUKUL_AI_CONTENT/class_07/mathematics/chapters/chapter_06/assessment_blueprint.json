@@ -1,28 +1,46 @@
 {
-  "total_questions": 12,
-  "difficulty": {
-    "easy": 4,
-    "medium": 5,
-    "hard": 3
+  "schema_version": "1.0.0",
+  "component_id": "assessment_blueprint",
+  "chapter_id": "gegp206",
+  "class": "class_07",
+  "subject": "Mathematics",
+  "chapter_title": "Constructions and Tilings",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
   },
-  "skills": {
-    "recall": 2,
-    "understanding": 3,
-    "application": 4,
-    "higher_order": 3
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
   },
-  "coverage": [
-    {
-      "concept_id": "gegp206_c01",
-      "minimum_items": 7
+  "content": {
+    "total_questions": 12,
+    "difficulty": {
+      "easy": 4,
+      "medium": 5,
+      "hard": 3
     },
-    {
-      "concept_id": "gegp206_c02",
-      "minimum_items": 3
+    "skills": {
+      "recall": 2,
+      "understanding": 3,
+      "application": 4,
+      "higher_order": 3
     },
-    {
-      "concept_id": "gegp206_c03",
-      "minimum_items": 2
-    }
-  ]
+    "coverage": [
+      {
+        "concept_id": "gegp206_c01",
+        "minimum_items": 7
+      },
+      {
+        "concept_id": "gegp206_c02",
+        "minimum_items": 3
+      },
+      {
+        "concept_id": "gegp206_c03",
+        "minimum_items": 2
+      }
+    ]
+  }
 }

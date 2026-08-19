@@ -1,0 +1,613 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Science",
+    "chapter_id": "s06_c12",
+    "chapter_title": "Beyond Earth",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_science_01",
+      "skill": "observation",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_02",
+      "skill": "classification",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_03",
+      "skill": "simple cause-effect",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_science_04",
+      "skill": "recording evidence",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "observation",
+      "question": "Show what you already know about observation.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "classification",
+      "question": "Show what you already know about classification.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "simple cause-effect",
+      "question": "Show what you already know about simple cause-effect.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "recording evidence",
+      "question": "Show what you already know about recording evidence.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain Earth and sky using simple language and an example.",
+    "Explain Sun Moon and stars using simple language and an example.",
+    "Explain day and night using simple language and an example.",
+    "Explain observation of space using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "s06_c12_k1",
+      "concept": "Earth and sky",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies Earth and sky."
+    },
+    {
+      "concept_id": "s06_c12_k2",
+      "concept": "Sun Moon and stars",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies Sun Moon and stars."
+    },
+    {
+      "concept_id": "s06_c12_k3",
+      "concept": "day and night",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies day and night."
+    },
+    {
+      "concept_id": "s06_c12_k4",
+      "concept": "observation of space",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies observation of space."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "Earth and sky",
+      "objective": "Learner can understand, explain and apply Earth and sky.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain Earth and sky without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "Sun Moon and stars",
+      "objective": "Learner can understand, explain and apply Sun Moon and stars.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain Sun Moon and stars without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "day and night",
+      "objective": "Learner can understand, explain and apply day and night.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain day and night without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "observation of space",
+      "objective": "Learner can understand, explain and apply observation of space.",
+      "teaching_sequence": [
+        "Begin with an observable or familiar situation.",
+        "Ask the learner to predict or classify before teaching the term.",
+        "Connect evidence to the concept.",
+        "Use a diagram/table/sequence when useful.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain observation of space without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "Earth and sky",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "Sun Moon and stars",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "day and night",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "observation of space",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "Earth and sky",
+      "prompt": "Complete a supported task involving Earth and sky. Explain the step you are taking and why."
+    },
+    {
+      "concept": "Sun Moon and stars",
+      "prompt": "Complete a supported task involving Sun Moon and stars. Explain the step you are taking and why."
+    },
+    {
+      "concept": "day and night",
+      "prompt": "Complete a supported task involving day and night. Explain the step you are taking and why."
+    },
+    {
+      "concept": "observation of space",
+      "prompt": "Complete a supported task involving observation of space. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "Earth and sky",
+      "prompt": "Complete a new task involving Earth and sky without hints, then self-check."
+    },
+    {
+      "concept": "Sun Moon and stars",
+      "prompt": "Complete a new task involving Sun Moon and stars without hints, then self-check."
+    },
+    {
+      "concept": "day and night",
+      "prompt": "Complete a new task involving day and night without hints, then self-check."
+    },
+    {
+      "concept": "observation of space",
+      "prompt": "Complete a new task involving observation of space without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "Earth and sky",
+        "question": "Which method best helps you learn about Earth and sky?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "Earth and sky",
+        "question": "Explain Earth and sky and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "Earth and sky",
+        "question": "Apply Earth and sky to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "Sun Moon and stars",
+        "question": "Which method best helps you learn about Sun Moon and stars?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "Sun Moon and stars",
+        "question": "Explain Sun Moon and stars and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "Sun Moon and stars",
+        "question": "Apply Sun Moon and stars to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "day and night",
+        "question": "Which method best helps you learn about day and night?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "day and night",
+        "question": "Explain day and night and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "day and night",
+        "question": "Apply day and night to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "observation of space",
+        "question": "Which method best helps you learn about observation of space?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise without understanding.",
+          "Guess before observing.",
+          "Ignore evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based observation supports reliable understanding."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "observation of space",
+        "question": "Explain observation of space and give one everyday example.",
+        "answer": "A strong answer gives an accurate explanation and a relevant example.",
+        "rubric": [
+          "accuracy",
+          "example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "observation of space",
+        "question": "Apply observation of space to a new everyday situation. What would you observe or use as evidence?",
+        "expected_response": "Relevant evidence followed by a reasoned conclusion.",
+        "rubric": [
+          "observation/evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Beyond Earth'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Beyond Earth', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is Earth and sky?",
+      "back": "Define Earth and sky, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is Sun Moon and stars?",
+      "back": "Define Sun Moon and stars, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is day and night?",
+      "back": "Define day and night, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is observation of space?",
+      "back": "Define observation of space, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore Earth and sky",
+      "instructions": "Use a safe, age-appropriate task specifically focused on Earth and sky. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where Sun Moon and stars is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach observation of space to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of Earth and sky with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of Sun Moon and stars with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of day and night with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of observation of space with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply Earth and sky to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply Sun Moon and stars to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply day and night to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

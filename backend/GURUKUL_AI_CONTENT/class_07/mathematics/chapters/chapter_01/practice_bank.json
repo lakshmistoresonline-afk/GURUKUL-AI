@@ -1,132 +1,150 @@
 {
-  "items": [
-    {
-      "id": "gegp201_q01",
-      "type": "source_based",
-      "question": "Which statement is supported by the chapter 'Geometric Twins'?",
-      "options": [
-        "1 GEOMETRIC TWINS 1.1 Geometric Twins The symbol on this signboard needs to be recreated on another board.",
-        "An unrelated statement.",
-        "A statement that contradicts the chapter.",
-        "A statement not supported by the source."
-      ],
-      "correct_option": 0,
-      "source_evidence": "1 GEOMETRIC TWINS 1.1 Geometric Twins The symbol on this signboard needs to be recreated on another board.",
-      "explanation": "The correct response must be supported by the supplied chapter.",
-      "difficulty": "easy",
-      "concept_id": "gegp201_c01"
-    },
-    {
-      "id": "gegp201_q02",
-      "type": "source_based",
-      "question": "Which statement is supported by the chapter 'Geometric Twins'?",
-      "options": [
-        "One way is to trace the outline of this symbol on tracing paper to reconstruct the figure.",
-        "An unrelated statement.",
-        "A statement that contradicts the chapter.",
-        "A statement not supported by the source."
-      ],
-      "correct_option": 0,
-      "source_evidence": "One way is to trace the outline of this symbol on tracing paper to reconstruct the figure.",
-      "explanation": "The correct response must be supported by the supplied chapter.",
-      "difficulty": "easy",
-      "concept_id": "gegp201_c01"
-    },
-    {
-      "id": "gegp201_q03",
-      "type": "source_based",
-      "question": "Which statement is supported by the chapter 'Geometric Twins'?",
-      "options": [
-        "Can we take some measurements that would allow us to exactly recreate this figure?",
-        "An unrelated statement.",
-        "A statement that contradicts the chapter.",
-        "A statement not supported by the source."
-      ],
-      "correct_option": 0,
-      "source_evidence": "Can we take some measurements that would allow us to exactly recreate this figure?",
-      "explanation": "The correct response must be supported by the supplied chapter.",
-      "difficulty": "easy",
-      "concept_id": "gegp201_c01"
-    },
-    {
-      "id": "gegp201_q04",
-      "type": "source_based",
-      "question": "Which statement is supported by the chapter 'Geometric Twins'?",
-      "options": [
-        "A C B Are the arm lengths AB and BC sufficient to exactly recreate this figure?",
-        "An unrelated statement.",
-        "A statement that contradicts the chapter.",
-        "A statement not supported by the source."
-      ],
-      "correct_option": 0,
-      "source_evidence": "A C B Are the arm lengths AB and BC sufficient to exactly recreate this figure?",
-      "explanation": "The correct response must be supported by the supplied chapter.",
-      "difficulty": "medium",
-      "concept_id": "gegp201_c01"
-    },
-    {
-      "id": "gegp201_q05",
-      "type": "source_based",
-      "question": "Which statement is supported by the chapter 'Geometric Twins'?",
-      "options": [
-        "We observe that several such symbols can be constructed with the same lengths.",
-        "An unrelated statement.",
-        "A statement that contradicts the chapter.",
-        "A statement not supported by the source."
-      ],
-      "correct_option": 0,
-      "source_evidence": "We observe that several such symbols can be constructed with the same lengths.",
-      "explanation": "The correct response must be supported by the supplied chapter.",
-      "difficulty": "medium",
-      "concept_id": "gegp201_c01"
-    },
-    {
-      "id": "gegp201_q06",
-      "type": "source_based",
-      "question": "Which statement is supported by the chapter 'Geometric Twins'?",
-      "options": [
-        "C C C A A A A C B B B B To get the exact replica, would it help to take any other measurement?",
-        "An unrelated statement.",
-        "A statement that contradicts the chapter.",
-        "A statement not supported by the source."
-      ],
-      "correct_option": 0,
-      "source_evidence": "C C C A A A A C B B B B To get the exact replica, would it help to take any other measurement?",
-      "explanation": "The correct response must be supported by the supplied chapter.",
-      "difficulty": "medium",
-      "concept_id": "gegp201_c01"
-    },
-    {
-      "id": "gegp201_q07",
-      "type": "source_based",
-      "question": "Which statement is supported by the chapter 'Geometric Twins'?",
-      "options": [
-        "The measure of ∠ABC, along with the two arm lengths AB and BC, fix the shape and size of this figure.",
-        "An unrelated statement.",
-        "A statement that contradicts the chapter.",
-        "A statement not supported by the source."
-      ],
-      "correct_option": 0,
-      "source_evidence": "The measure of ∠ABC, along with the two arm lengths AB and BC, fix the shape and size of this figure.",
-      "explanation": "The correct response must be supported by the supplied chapter.",
-      "difficulty": "hard",
-      "concept_id": "gegp201_c01"
-    },
-    {
-      "id": "gegp201_q08",
-      "type": "source_based",
-      "question": "Which statement is supported by the chapter 'Geometric Twins'?",
-      "options": [
-        "Can you draw the symbol if it is known that AB = 4 cm, BC = 8 cm, and ∠ABC = 80°?",
-        "An unrelated statement.",
-        "A statement that contradicts the chapter.",
-        "A statement not supported by the source."
-      ],
-      "correct_option": 0,
-      "source_evidence": "Can you draw the symbol if it is known that AB = 4 cm, BC = 8 cm, and ∠ABC = 80°?",
-      "explanation": "The correct response must be supported by the supplied chapter.",
-      "difficulty": "hard",
-      "concept_id": "gegp201_c01"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "practice_bank",
+  "chapter_id": "gegp201",
+  "class": "class_07",
+  "subject": "Mathematics",
+  "chapter_title": "Geometric Twins",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "gegp201_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Geometric Twins'?",
+        "options": [
+          "1 GEOMETRIC TWINS 1.1 Geometric Twins The symbol on this signboard needs to be recreated on another board.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "1 GEOMETRIC TWINS 1.1 Geometric Twins The symbol on this signboard needs to be recreated on another board.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "easy",
+        "concept_id": "gegp201_c01"
+      },
+      {
+        "id": "gegp201_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Geometric Twins'?",
+        "options": [
+          "One way is to trace the outline of this symbol on tracing paper to reconstruct the figure.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "One way is to trace the outline of this symbol on tracing paper to reconstruct the figure.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "easy",
+        "concept_id": "gegp201_c01"
+      },
+      {
+        "id": "gegp201_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Geometric Twins'?",
+        "options": [
+          "Can we take some measurements that would allow us to exactly recreate this figure?",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Can we take some measurements that would allow us to exactly recreate this figure?",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "easy",
+        "concept_id": "gegp201_c01"
+      },
+      {
+        "id": "gegp201_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Geometric Twins'?",
+        "options": [
+          "A C B Are the arm lengths AB and BC sufficient to exactly recreate this figure?",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "A C B Are the arm lengths AB and BC sufficient to exactly recreate this figure?",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "medium",
+        "concept_id": "gegp201_c01"
+      },
+      {
+        "id": "gegp201_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Geometric Twins'?",
+        "options": [
+          "We observe that several such symbols can be constructed with the same lengths.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "We observe that several such symbols can be constructed with the same lengths.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "medium",
+        "concept_id": "gegp201_c01"
+      },
+      {
+        "id": "gegp201_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Geometric Twins'?",
+        "options": [
+          "C C C A A A A C B B B B To get the exact replica, would it help to take any other measurement?",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "C C C A A A A C B B B B To get the exact replica, would it help to take any other measurement?",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "medium",
+        "concept_id": "gegp201_c01"
+      },
+      {
+        "id": "gegp201_q07",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Geometric Twins'?",
+        "options": [
+          "The measure of \u2220ABC, along with the two arm lengths AB and BC, fix the shape and size of this figure.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "The measure of \u2220ABC, along with the two arm lengths AB and BC, fix the shape and size of this figure.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "hard",
+        "concept_id": "gegp201_c01"
+      },
+      {
+        "id": "gegp201_q08",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Geometric Twins'?",
+        "options": [
+          "Can you draw the symbol if it is known that AB = 4 cm, BC = 8 cm, and \u2220ABC = 80\u00b0?",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Can you draw the symbol if it is known that AB = 4 cm, BC = 8 cm, and \u2220ABC = 80\u00b0?",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "hard",
+        "concept_id": "gegp201_c01"
+      }
+    ]
+  }
 }

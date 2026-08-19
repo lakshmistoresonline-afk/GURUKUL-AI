@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fhml103_q01",
-    "answer": "Option 1",
-    "evidence": "3 पहली बूँद वह पावस का प्रथम दिवस जब, पहली बँदू धरा पर आई।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fhml103",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092a\u0939\u0932\u0940 \u092c\u0942\u0901\u0926",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fhml103_q01",
+      "answer": "Option 1",
+      "evidence": "3 \u092a\u0939\u0932\u0940 \u092c\u0942\u0901\u0926 \u0935\u0939 \u092a\u093e\u0935\u0938 \u0915\u093e \u092a\u094d\u0930\u0925\u092e \u0926\u093f\u0935\u0938 \u091c\u092c, \u092a\u0939\u0932\u0940 \u092c\u0901\u0926\u0942 \u0927\u0930\u093e \u092a\u0930 \u0906\u0908\u0964"
+    }
   }
 }

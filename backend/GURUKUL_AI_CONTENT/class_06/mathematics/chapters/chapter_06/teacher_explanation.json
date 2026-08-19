@@ -1,58 +1,76 @@
 {
-  "learning_goal": "Teach the central ideas of Perimeter and Area accurately and accessibly.",
-  "explanation_sections": [
-    {
-      "title": "Connect",
-      "explanation": "Activate prior knowledge and invite a prediction."
-    },
-    {
-      "title": "Explain",
-      "explanation": "Build understanding from the source-grounded evidence.",
-      "source_evidence": [
-        "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?",
-        "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once.",
-        "For a polygon, i.e., a closed plane figure made up of line segments, the perimeter is simply the sum of the lengths of its all sides, i.e., the total distance along its outer boundary.",
-        "The perimeter of a polygon = the sum of the lengths of its all sides."
-      ]
-    },
-    {
-      "title": "Apply",
-      "explanation": "Move from a chapter example to a new related situation."
-    },
-    {
-      "title": "Close",
-      "explanation": "Retrieve the central idea and supporting reasoning."
-    }
-  ],
-  "teaching_sequence": [
-    {
-      "step": 1,
-      "teacher_action": "Activate prior knowledge.",
-      "student_action": "Predict or recall."
-    },
-    {
-      "step": 2,
-      "teacher_action": "Model the concept or text.",
-      "student_action": "Identify evidence or working."
-    },
-    {
-      "step": 3,
-      "teacher_action": "Question reasoning.",
-      "student_action": "Explain and justify."
-    },
-    {
-      "step": 4,
-      "teacher_action": "Guide transfer.",
-      "student_action": "Apply independently."
-    }
-  ],
-  "misconceptions": [
-    "Answering without support.",
-    "Confusing an example with the general idea."
-  ],
-  "checks_for_understanding": [
-    "What evidence supports your answer?",
-    "Can you explain it in your own words?"
-  ],
-  "closure": "State the central idea and one application."
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "fegp106",
+  "class": "class_06",
+  "subject": "Mathematics",
+  "chapter_title": "Perimeter and Area",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "learning_goal": "Teach the central ideas of Perimeter and Area accurately and accessibly.",
+    "explanation_sections": [
+      {
+        "title": "Connect",
+        "explanation": "Activate prior knowledge and invite a prediction."
+      },
+      {
+        "title": "Explain",
+        "explanation": "Build understanding from the source-grounded evidence.",
+        "source_evidence": [
+          "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?",
+          "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once.",
+          "For a polygon, i.e., a closed plane figure made up of line segments, the perimeter is simply the sum of the lengths of its all sides, i.e., the total distance along its outer boundary.",
+          "The perimeter of a polygon = the sum of the lengths of its all sides."
+        ]
+      },
+      {
+        "title": "Apply",
+        "explanation": "Move from a chapter example to a new related situation."
+      },
+      {
+        "title": "Close",
+        "explanation": "Retrieve the central idea and supporting reasoning."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Predict or recall."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model the concept or text.",
+        "student_action": "Identify evidence or working."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Question reasoning.",
+        "student_action": "Explain and justify."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide transfer.",
+        "student_action": "Apply independently."
+      }
+    ],
+    "misconceptions": [
+      "Answering without support.",
+      "Confusing an example with the general idea."
+    ],
+    "checks_for_understanding": [
+      "What evidence supports your answer?",
+      "Can you explain it in your own words?"
+    ],
+    "closure": "State the central idea and one application."
+  }
 }

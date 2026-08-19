@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "social_science",
+    "chapter_id": "ss07_c58",
+    "chapter_number": 58,
+    "chapter_title": "Turning Tides: 11th and 12th Centuries",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_social_science_01",
+      "skill": "map and spatial awareness",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_social_science_02",
+      "skill": "chronology",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_social_science_03",
+      "skill": "community and civic vocabulary",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_social_science_04",
+      "skill": "reading evidence",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "map and spatial awareness",
+      "question": "Show what you already know about map and spatial awareness.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "chronology",
+      "question": "Show what you already know about chronology.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "community and civic vocabulary",
+      "question": "Show what you already know about community and civic vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading evidence",
+      "question": "Show what you already know about reading evidence.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain core social-science idea accurately using own words and an example.",
+    "Explain evidence/source use accurately using own words and an example.",
+    "Explain cause and consequence accurately using own words and an example.",
+    "Explain real-world application accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "ss07_c58_k1",
+      "concept": "core social-science idea",
+      "prerequisites": [
+        "f07_social_science_01",
+        "f07_social_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies core social-science idea."
+    },
+    {
+      "concept_id": "ss07_c58_k2",
+      "concept": "evidence/source use",
+      "prerequisites": [
+        "f07_social_science_01",
+        "f07_social_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies evidence/source use."
+    },
+    {
+      "concept_id": "ss07_c58_k3",
+      "concept": "cause and consequence",
+      "prerequisites": [
+        "f07_social_science_01",
+        "f07_social_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies cause and consequence."
+    },
+    {
+      "concept_id": "ss07_c58_k4",
+      "concept": "real-world application",
+      "prerequisites": [
+        "f07_social_science_01",
+        "f07_social_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies real-world application."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "core social-science idea",
+      "objective": "Learner can understand, explain and apply core social-science idea.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain core social-science idea independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "evidence/source use",
+      "objective": "Learner can understand, explain and apply evidence/source use.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain evidence/source use independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "cause and consequence",
+      "objective": "Learner can understand, explain and apply cause and consequence.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain cause and consequence independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "real-world application",
+      "objective": "Learner can understand, explain and apply real-world application.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain real-world application independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "core social-science idea",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "evidence/source use",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "cause and consequence",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "real-world application",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "core social-science idea",
+      "prompt": "Complete a supported task involving core social-science idea; explain each important decision."
+    },
+    {
+      "concept": "evidence/source use",
+      "prompt": "Complete a supported task involving evidence/source use; explain each important decision."
+    },
+    {
+      "concept": "cause and consequence",
+      "prompt": "Complete a supported task involving cause and consequence; explain each important decision."
+    },
+    {
+      "concept": "real-world application",
+      "prompt": "Complete a supported task involving real-world application; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "core social-science idea",
+      "prompt": "Complete a new task involving core social-science idea without hints, then self-check."
+    },
+    {
+      "concept": "evidence/source use",
+      "prompt": "Complete a new task involving evidence/source use without hints, then self-check."
+    },
+    {
+      "concept": "cause and consequence",
+      "prompt": "Complete a new task involving cause and consequence without hints, then self-check."
+    },
+    {
+      "concept": "real-world application",
+      "prompt": "Complete a new task involving real-world application without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "core social-science idea",
+        "question": "Which method best supports a reliable explanation of core social-science idea?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "core social-science idea",
+        "question": "Explain core social-science idea and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "core social-science idea",
+        "question": "Apply core social-science idea to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "evidence/source use",
+        "question": "Which method best supports a reliable explanation of evidence/source use?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "evidence/source use",
+        "question": "Explain evidence/source use and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "evidence/source use",
+        "question": "Apply evidence/source use to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "cause and consequence",
+        "question": "Which method best supports a reliable explanation of cause and consequence?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "cause and consequence",
+        "question": "Explain cause and consequence and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "cause and consequence",
+        "question": "Apply cause and consequence to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "real-world application",
+        "question": "Which method best supports a reliable explanation of real-world application?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "real-world application",
+        "question": "Explain real-world application and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "real-world application",
+        "question": "Apply real-world application to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Turning Tides: 11th and 12th Centuries'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Turning Tides: 11th and 12th Centuries', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is core social-science idea?",
+      "back": "Define core social-science idea, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is evidence/source use?",
+      "back": "Define evidence/source use, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is cause and consequence?",
+      "back": "Define cause and consequence, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is real-world application?",
+      "back": "Define real-world application, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore core social-science idea",
+      "instructions": "Complete an age-appropriate task focused specifically on core social-science idea. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where evidence/source use is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach real-world application to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses core social-science idea with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses evidence/source use with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses cause and consequence with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses real-world application with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply core social-science idea to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply evidence/source use to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply cause and consequence to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply real-world application to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

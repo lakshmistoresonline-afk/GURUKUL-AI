@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "fhml109_f1",
-      "question": "State one key idea and its supporting evidence.",
-      "checkpoint": "understanding"
-    },
-    {
-      "id": "fhml109_f2",
-      "question": "Apply the idea to a new related situation.",
-      "checkpoint": "application"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "formative_assessment",
+  "chapter_id": "fhml109",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u0948\u092f\u093e \u092e\u0948\u0902 \u0928\u0939\u093f \u092e\u093e\u0916\u0928 \u0916\u093e\u092f\u094b",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fhml109_f1",
+        "question": "State one key idea and its supporting evidence.",
+        "checkpoint": "understanding"
+      },
+      {
+        "id": "fhml109_f2",
+        "question": "Apply the idea to a new related situation.",
+        "checkpoint": "application"
+      }
+    ]
+  }
 }

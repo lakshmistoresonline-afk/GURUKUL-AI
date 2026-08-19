@@ -1,15 +1,33 @@
 {
-  "cases": [
-    {
-      "id": "eemm107_case01",
-      "title": "Applying Shapes and Patterns",
-      "case": "A learner faces a real-life situation related to the chapter 'Shapes and Patterns'.",
-      "questions": [
-        "What concept applies?",
-        "What evidence supports your choice?",
-        "What would you do next?"
-      ],
-      "answer_guidance": "Ground all answers in the chapter concepts."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "eemm107",
+  "class": "class_05",
+  "subject": "Mathematics",
+  "chapter_title": "Shapes and Patterns",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "eemm107_case01",
+        "title": "Applying Shapes and Patterns",
+        "case": "A learner faces a real-life situation related to the chapter 'Shapes and Patterns'.",
+        "questions": [
+          "What concept applies?",
+          "What evidence supports your choice?",
+          "What would you do next?"
+        ],
+        "answer_guidance": "Ground all answers in the chapter concepts."
+      }
+    ]
+  }
 }

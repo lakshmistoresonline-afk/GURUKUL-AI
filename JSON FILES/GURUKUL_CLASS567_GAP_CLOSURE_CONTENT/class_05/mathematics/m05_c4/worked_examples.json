@@ -1,0 +1,43 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c4",
+  "component": "WORKED_EXAMPLE",
+  "content": {
+    "examples": [
+      {
+        "id": "WE01",
+        "title": "Finding Multiples",
+        "problem": "List the first five multiples of 4.",
+        "steps": [
+          "Start with 4 * 1 = 4.",
+          "4 * 2 = 8.",
+          "4 * 3 = 12.",
+          "4 * 4 = 16.",
+          "4 * 5 = 20.",
+          "Multiples are 4, 8, 12, 16, 20."
+        ]
+      },
+      {
+        "id": "WE02",
+        "title": "Finding Factors",
+        "problem": "Find all the factors of 10.",
+        "steps": [
+          "Ask: what numbers can multiply to give 10?",
+          "1 * 10 = 10.",
+          "2 * 5 = 10.",
+          "Factors are 1, 2, 5, 10."
+        ]
+      },
+      {
+        "id": "WE03",
+        "title": "Common Multiples",
+        "problem": "Find a number that is a multiple of both 2 and 3.",
+        "steps": [
+          "Multiples of 2: 2, 4, 6, 8, 10...",
+          "Multiples of 3: 3, 6, 9, 12...",
+          "The number 6 appears in both lists. So 6 is a common multiple."
+        ]
+      }
+    ]
+  }
+}

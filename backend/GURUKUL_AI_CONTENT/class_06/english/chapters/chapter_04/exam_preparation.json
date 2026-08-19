@@ -1,15 +1,33 @@
 {
-  "strategy": [
-    "Read carefully",
-    "Identify the tested concept",
-    "Use evidence/working",
-    "Check the answer",
-    "Explain reasoning"
-  ],
-  "must_practice": [
-    "core understanding",
-    "application",
-    "higher-order reasoning",
-    "source-based questions"
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "exam_preparation",
+  "chapter_id": "fepr104",
+  "class": "class_06",
+  "subject": "English",
+  "chapter_title": "Change of Heart",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "strategy": [
+      "Read carefully",
+      "Identify the tested concept",
+      "Use evidence/working",
+      "Check the answer",
+      "Explain reasoning"
+    ],
+    "must_practice": [
+      "core understanding",
+      "application",
+      "higher-order reasoning",
+      "source-based questions"
+    ]
+  }
 }

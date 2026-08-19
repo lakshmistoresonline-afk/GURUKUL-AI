@@ -1,22 +1,40 @@
 {
-  "concepts": [
-    {
-      "id": "fees109_c01",
-      "name": "Family and Community",
-      "definition": "Central learning focus of Family and Community.",
-      "source_evidence": "9 CHAPTER Family and Community Love and dharma are the flower and fruit of family life."
-    },
-    {
-      "id": "fees109_c02",
-      "name": "Evidence and reasoning",
-      "definition": "Support a conclusion with source information or valid working.",
-      "source_evidence": "The family is the fundamental and most ancient unit of any society."
-    },
-    {
-      "id": "fees109_c03",
-      "name": "Application",
-      "definition": "Transfer the learned idea to a relevant new context.",
-      "source_evidence": "In Indian society today, there are several types of families — from joint families to nuclear families."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "fees109",
+  "class": "class_06",
+  "subject": "Social Science",
+  "chapter_title": "Family and Community",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "fees109_c01",
+        "name": "Family and Community",
+        "definition": "Central learning focus of Family and Community.",
+        "source_evidence": "9 CHAPTER Family and Community Love and dharma are the flower and fruit of family life."
+      },
+      {
+        "id": "fees109_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Support a conclusion with source information or valid working.",
+        "source_evidence": "The family is the fundamental and most ancient unit of any society."
+      },
+      {
+        "id": "fees109_c03",
+        "name": "Application",
+        "definition": "Transfer the learned idea to a relevant new context.",
+        "source_evidence": "In Indian society today, there are several types of families \u2014 from joint families to nuclear families."
+      }
+    ]
+  }
 }

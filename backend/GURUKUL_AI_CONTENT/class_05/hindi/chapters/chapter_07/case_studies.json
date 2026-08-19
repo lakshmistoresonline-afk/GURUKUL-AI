@@ -1,15 +1,33 @@
 {
-  "cases": [
-    {
-      "id": "ehve107_case01",
-      "title": "Applying मेरा बचपन",
-      "case": "A learner faces a real-life situation related to the chapter 'मेरा बचपन'.",
-      "questions": [
-        "What concept applies?",
-        "What evidence supports your choice?",
-        "What would you do next?"
-      ],
-      "answer_guidance": "Ground all answers in the chapter concepts."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "ehve107",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u0947\u0930\u093e \u092c\u091a\u092a\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "ehve107_case01",
+        "title": "Applying \u092e\u0947\u0930\u093e \u092c\u091a\u092a\u0928",
+        "case": "A learner faces a real-life situation related to the chapter '\u092e\u0947\u0930\u093e \u092c\u091a\u092a\u0928'.",
+        "questions": [
+          "What concept applies?",
+          "What evidence supports your choice?",
+          "What would you do next?"
+        ],
+        "answer_guidance": "Ground all answers in the chapter concepts."
+      }
+    ]
+  }
 }

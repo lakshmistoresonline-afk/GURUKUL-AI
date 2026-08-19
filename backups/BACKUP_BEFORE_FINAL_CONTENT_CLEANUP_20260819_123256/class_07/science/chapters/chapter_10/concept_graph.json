@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gecu110_c01",
+      "label": "Life Processes in Plants"
+    },
+    {
+      "id": "gecu110_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gecu110_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gecu110_c01",
+      "to": "gecu110_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gecu110_c02",
+      "to": "gecu110_c03",
+      "relation": "enables"
+    }
+  ]
+}

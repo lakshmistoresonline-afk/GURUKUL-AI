@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eeev106_concept_01",
+      "label": "Some Unique Places"
+    },
+    {
+      "id": "eeev106_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eeev106_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eeev106_concept_01",
+      "to": "eeev106_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eeev106_concept_02",
+      "to": "eeev106_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

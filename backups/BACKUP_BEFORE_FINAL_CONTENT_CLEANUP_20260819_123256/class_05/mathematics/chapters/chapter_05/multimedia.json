@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "eemm105",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Far and Near",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "eemm105_mm01",
+        "type": "chapter_pdf",
+        "title": "Source chapter: Far and Near",
+        "url": null,
+        "verification_status": "LOCAL_SOURCE",
+        "purpose": "Primary learning source"
+      },
+      {
+        "id": "eemm105_mm02",
+        "type": "interactive_visual",
+        "title": "Teacher-created visual for Far and Near",
+        "url": null,
+        "verification_status": "TO_BE_RENDERED_BY_RUNTIME",
+        "purpose": "Visualise a chapter concept"
+      }
+    ]
+  }
+}

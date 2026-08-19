@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fepr104_c01",
+      "label": "Change of Heart"
+    },
+    {
+      "id": "fepr104_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fepr104_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fepr104_c01",
+      "to": "fepr104_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fepr104_c02",
+      "to": "fepr104_c03",
+      "relation": "enables"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "evs05_c1",
+  "component": "WORKED_EXAMPLE",
+  "content": {
+    "examples": [
+      {
+        "id": "WE01",
+        "title": "Identifying Potable Water",
+        "problem": "Which source provides water that is safe for drinking after boiling: A dirty pond or a deep well?",
+        "steps": [
+          "Evaluate the pond: It has open surface water, prone to dust and animals.",
+          "Evaluate the well: It draws water from underground, usually filtered by soil.",
+          "Choose the well: Even then, boiling is necessary to kill germs.",
+          "Conclusion: The deep well is a safer source."
+        ]
+      },
+      {
+        "id": "WE02",
+        "title": "Saving Water at Home",
+        "problem": "Calculate how much water is saved if you turn off the tap while brushing teeth for 2 minutes, given a tap releases 5 liters per minute.",
+        "steps": [
+          "Identify the flow rate: 5 liters per minute.",
+          "Identify the time: 2 minutes.",
+          "Multiply: 5 liters/min * 2 mins = 10 liters.",
+          "Conclusion: You save 10 liters of water."
+        ]
+      }
+    ]
+  }
+}

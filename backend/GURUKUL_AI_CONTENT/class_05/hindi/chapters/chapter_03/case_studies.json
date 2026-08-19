@@ -1,15 +1,33 @@
 {
-  "cases": [
-    {
-      "id": "ehve103_case01",
-      "title": "Applying चाँद का कुरता",
-      "case": "A learner faces a real-life situation related to the chapter 'चाँद का कुरता'.",
-      "questions": [
-        "What concept applies?",
-        "What evidence supports your choice?",
-        "What would you do next?"
-      ],
-      "answer_guidance": "Ground all answers in the chapter concepts."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "ehve103",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u093e\u0901\u0926 \u0915\u093e \u0915\u0941\u0930\u0924\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "ehve103_case01",
+        "title": "Applying \u091a\u093e\u0901\u0926 \u0915\u093e \u0915\u0941\u0930\u0924\u093e",
+        "case": "A learner faces a real-life situation related to the chapter '\u091a\u093e\u0901\u0926 \u0915\u093e \u0915\u0941\u0930\u0924\u093e'.",
+        "questions": [
+          "What concept applies?",
+          "What evidence supports your choice?",
+          "What would you do next?"
+        ],
+        "answer_guidance": "Ground all answers in the chapter concepts."
+      }
+    ]
+  }
 }

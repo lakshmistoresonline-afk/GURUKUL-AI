@@ -1,24 +1,42 @@
 {
-  "examples": [
-    {
-      "id": "ghml105_ex01",
-      "task": "Explain a central idea from नहीं होना बीमार using source evidence or working.",
-      "method": [
-        "Identify the concept",
-        "Locate evidence/working",
-        "Explain the connection",
-        "Check"
-      ]
-    },
-    {
-      "id": "ghml105_ex02",
-      "task": "Transfer the idea to a new related example.",
-      "method": [
-        "Identify what transfers",
-        "Adapt",
-        "Justify",
-        "Check"
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "worked_examples",
+  "chapter_id": "ghml105",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u0939\u0940\u0902 \u0939\u094b\u0928\u093e \u092c\u0940\u092e\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "examples": [
+      {
+        "id": "ghml105_ex01",
+        "task": "Explain a central idea from \u0928\u0939\u0940\u0902 \u0939\u094b\u0928\u093e \u092c\u0940\u092e\u093e\u0930 using source evidence or working.",
+        "method": [
+          "Identify the concept",
+          "Locate evidence/working",
+          "Explain the connection",
+          "Check"
+        ]
+      },
+      {
+        "id": "ghml105_ex02",
+        "task": "Transfer the idea to a new related example.",
+        "method": [
+          "Identify what transfers",
+          "Adapt",
+          "Justify",
+          "Check"
+        ]
+      }
+    ]
+  }
 }

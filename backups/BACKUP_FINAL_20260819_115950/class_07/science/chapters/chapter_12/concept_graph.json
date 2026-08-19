@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gecu112_c01",
+      "label": "Earth, Moon, and the Sun"
+    },
+    {
+      "id": "gecu112_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gecu112_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gecu112_c01",
+      "to": "gecu112_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gecu112_c02",
+      "to": "gecu112_c03",
+      "relation": "enables"
+    }
+  ]
+}

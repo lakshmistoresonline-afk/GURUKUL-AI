@@ -1,22 +1,40 @@
 {
-  "concepts": [
-    {
-      "id": "ehve109_concept_01",
-      "name": "न्याय",
-      "definition": "Central learning focus developed by the chapter 'न्याय'.",
-      "evidence": "न्या्9 पहला द ृश्य (रंगमंच पर राज-उद्ान का एक दृश्य।"
-    },
-    {
-      "id": "ehve109_concept_02",
-      "name": "Evidence and reasoning",
-      "definition": "Using chapter information to support an explanation or answer.",
-      "evidence": "दूर नेपथ्य म ें वन से लौटती गा्यों का सवर उठता हुआ।"
-    },
-    {
-      "id": "ehve109_concept_03",
-      "name": "Application",
-      "definition": "Using the chapter idea in a new but related situation.",
-      "evidence": "उद्ान में इस सम्य कलपलवसतु क े राजकु मार लसद्ार्थ प्रसनन मन एक वेदी पर बैठे हैं।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "ehve109",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u094d\u092f\u093e\u092f",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "ehve109_concept_01",
+        "name": "\u0928\u094d\u092f\u093e\u092f",
+        "definition": "Central learning focus developed by the chapter '\u0928\u094d\u092f\u093e\u092f'.",
+        "evidence": "\u0928\u094d\u092f\u093e\u094d9 \u092a\u0939\u0932\u093e \u0926 \u0943\u0936\u094d\u092f (\u0930\u0902\u0917\u092e\u0902\u091a \u092a\u0930 \u0930\u093e\u091c-\u0909\u0926\u094d\u093e\u0928 \u0915\u093e \u090f\u0915 \u0926\u0943\u0936\u094d\u092f\u0964"
+      },
+      {
+        "id": "ehve109_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "\u0926\u0942\u0930 \u0928\u0947\u092a\u0925\u094d\u092f \u092e \u0947\u0902 \u0935\u0928 \u0938\u0947 \u0932\u094c\u091f\u0924\u0940 \u0917\u093e\u094d\u092f\u094b\u0902 \u0915\u093e \u0938\u0935\u0930 \u0909\u0920\u0924\u093e \u0939\u0941\u0906\u0964"
+      },
+      {
+        "id": "ehve109_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "\u0909\u0926\u094d\u093e\u0928 \u092e\u0947\u0902 \u0907\u0938 \u0938\u092e\u094d\u092f \u0915\u0932\u092a\u0932\u0935\u0938\u0924\u0941 \u0915 \u0947 \u0930\u093e\u091c\u0915\u0941 \u092e\u093e\u0930 \u0932\u0938\u0926\u094d\u093e\u0930\u094d\u0925 \u092a\u094d\u0930\u0938\u0928\u0928 \u092e\u0928 \u090f\u0915 \u0935\u0947\u0926\u0940 \u092a\u0930 \u092c\u0948\u0920\u0947 \u0939\u0948\u0902\u0964"
+      }
+    ]
+  }
 }

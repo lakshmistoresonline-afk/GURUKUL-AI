@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eeev104_concept_01",
+      "label": "Our School — A Happy Place"
+    },
+    {
+      "id": "eeev104_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eeev104_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eeev104_concept_01",
+      "to": "eeev104_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eeev104_concept_02",
+      "to": "eeev104_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

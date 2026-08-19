@@ -1,100 +1,118 @@
 {
-  "items": [
-    {
-      "id": "fecu108_q01",
-      "type": "source_based",
-      "question": "Which statement is supported by A Journey through States of Water?",
-      "options": [
-        "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "easy",
-      "concept_id": "fecu108_c01"
-    },
-    {
-      "id": "fecu108_q02",
-      "type": "source_based",
-      "question": "Which statement is supported by A Journey through States of Water?",
-      "options": [
-        "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "easy",
-      "concept_id": "fecu108_c01"
-    },
-    {
-      "id": "fecu108_q03",
-      "type": "source_based",
-      "question": "Which statement is supported by A Journey through States of Water?",
-      "options": [
-        "No, Ice feels hard to these are the touch and we can same substances.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "No, Ice feels hard to these are the touch and we can same substances.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "medium",
-      "concept_id": "fecu108_c01"
-    },
-    {
-      "id": "fecu108_q04",
-      "type": "source_based",
-      "question": "Which statement is supported by A Journey through States of Water?",
-      "options": [
-        "hold it in our hands, whereas, water cannot be held in the same way.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "hold it in our hands, whereas, water cannot be held in the same way.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "medium",
-      "concept_id": "fecu108_c01"
-    },
-    {
-      "id": "fecu108_q05",
-      "type": "source_based",
-      "question": "Which statement is supported by A Journey through States of Water?",
-      "options": [
-        "We can put Yes, I know when water in the freezer water is left in of a refrigerator the freezer, it gets and check if it gets converted into ice but converted probably something into ice.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "We can put Yes, I know when water in the freezer water is left in of a refrigerator the freezer, it gets and check if it gets converted into ice but converted probably something into ice.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "hard",
-      "concept_id": "fecu108_c01"
-    },
-    {
-      "id": "fecu108_q06",
-      "type": "source_based",
-      "question": "Which statement is supported by A Journey through States of Water?",
-      "options": [
-        "Does this mean that ice and water are the same substance?",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "Does this mean that ice and water are the same substance?",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "hard",
-      "concept_id": "fecu108_c01"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "fecu108",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "A Journey through States of Water",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fecu108_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by A Journey through States of Water?",
+        "options": [
+          "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fecu108_c01"
+      },
+      {
+        "id": "fecu108_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by A Journey through States of Water?",
+        "options": [
+          "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fecu108_c01"
+      },
+      {
+        "id": "fecu108_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by A Journey through States of Water?",
+        "options": [
+          "No, Ice feels hard to these are the touch and we can same substances.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "No, Ice feels hard to these are the touch and we can same substances.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fecu108_c01"
+      },
+      {
+        "id": "fecu108_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by A Journey through States of Water?",
+        "options": [
+          "hold it in our hands, whereas, water cannot be held in the same way.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "hold it in our hands, whereas, water cannot be held in the same way.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fecu108_c01"
+      },
+      {
+        "id": "fecu108_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by A Journey through States of Water?",
+        "options": [
+          "We can put Yes, I know when water in the freezer water is left in of a refrigerator the freezer, it gets and check if it gets converted into ice but converted probably something into ice.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "We can put Yes, I know when water in the freezer water is left in of a refrigerator the freezer, it gets and check if it gets converted into ice but converted probably something into ice.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fecu108_c01"
+      },
+      {
+        "id": "fecu108_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by A Journey through States of Water?",
+        "options": [
+          "Does this mean that ice and water are the same substance?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Does this mean that ice and water are the same substance?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fecu108_c01"
+      }
+    ]
+  }
 }

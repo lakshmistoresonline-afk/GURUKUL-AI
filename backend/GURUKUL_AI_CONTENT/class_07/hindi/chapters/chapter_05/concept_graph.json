@@ -1,28 +1,46 @@
 {
-  "nodes": [
-    {
-      "id": "ghml105_c01",
-      "label": "नहीं होना बीमार"
-    },
-    {
-      "id": "ghml105_c02",
-      "label": "Evidence and reasoning"
-    },
-    {
-      "id": "ghml105_c03",
-      "label": "Application and transfer"
-    }
-  ],
-  "edges": [
-    {
-      "from": "ghml105_c01",
-      "to": "ghml105_c02",
-      "relation": "supported_by"
-    },
-    {
-      "from": "ghml105_c02",
-      "to": "ghml105_c03",
-      "relation": "enables"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "ghml105",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u0939\u0940\u0902 \u0939\u094b\u0928\u093e \u092c\u0940\u092e\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "ghml105_c01",
+        "label": "\u0928\u0939\u0940\u0902 \u0939\u094b\u0928\u093e \u092c\u0940\u092e\u093e\u0930"
+      },
+      {
+        "id": "ghml105_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "ghml105_c03",
+        "label": "Application and transfer"
+      }
+    ],
+    "edges": [
+      {
+        "from": "ghml105_c01",
+        "to": "ghml105_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "ghml105_c02",
+        "to": "ghml105_c03",
+        "relation": "enables"
+      }
+    ]
+  }
 }

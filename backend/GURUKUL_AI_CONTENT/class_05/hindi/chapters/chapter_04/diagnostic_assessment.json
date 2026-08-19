@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "ehve104_diag01",
-      "question": "What do you already know about 'साँकेन'?",
-      "response_type": "short_answer"
-    },
-    {
-      "id": "ehve104_diag02",
-      "question": "Which related idea feels easiest and which needs more explanation?",
-      "response_type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "ehve104",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0938\u093e\u0901\u0915\u0947\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "ehve104_diag01",
+        "question": "What do you already know about '\u0938\u093e\u0901\u0915\u0947\u0928'?",
+        "response_type": "short_answer"
+      },
+      {
+        "id": "ehve104_diag02",
+        "question": "Which related idea feels easiest and which needs more explanation?",
+        "response_type": "self_assessment"
+      }
+    ]
+  }
 }

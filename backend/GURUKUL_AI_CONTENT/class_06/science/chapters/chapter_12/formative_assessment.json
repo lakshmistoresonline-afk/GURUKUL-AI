@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "fecu112_f1",
-      "question": "State one key idea and its supporting evidence.",
-      "checkpoint": "understanding"
-    },
-    {
-      "id": "fecu112_f2",
-      "question": "Apply the idea to a new related situation.",
-      "checkpoint": "application"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "formative_assessment",
+  "chapter_id": "fecu112",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Beyond Earth",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fecu112_f1",
+        "question": "State one key idea and its supporting evidence.",
+        "checkpoint": "understanding"
+      },
+      {
+        "id": "fecu112_f2",
+        "question": "Apply the idea to a new related situation.",
+        "checkpoint": "application"
+      }
+    ]
+  }
 }

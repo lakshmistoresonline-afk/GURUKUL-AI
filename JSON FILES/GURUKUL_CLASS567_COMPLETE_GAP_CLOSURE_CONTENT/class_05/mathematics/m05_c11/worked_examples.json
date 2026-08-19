@@ -1,0 +1,27 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c11",
+  "component": "WORKED_EXAMPLES",
+  "content": {
+    "examples": [
+      {
+        "title": "Quilt Area Calculation",
+        "problem": "A quilt has 8 patches in each row and there are 6 rows. How many patches in total?",
+        "solution": "8 x 6 = 48 patches.",
+        "explanation": "Multiplying patches per row by number of rows gives the total count (Area)."
+      },
+      {
+        "title": "Tiling Logic",
+        "problem": "Why do squares tile perfectly?",
+        "solution": "Because their corners (angles) are 90 degrees, and four such corners meet to form 360 degrees, leaving no space.",
+        "explanation": "For shapes to tile, the angles meeting at a point must sum up to 360 degrees."
+      },
+      {
+        "title": "Estimating Area",
+        "problem": "A floor is covered by 10 full tiles and 4 half tiles. What is the total area in 'tile units'?",
+        "solution": "10 + (4 ÷ 2) = 10 + 2 = 12 tile units.",
+        "explanation": "Two half-tiles combined equal one full tile."
+      }
+    ]
+  }
+}

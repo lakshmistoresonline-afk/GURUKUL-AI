@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "ehve109_diag01",
-      "question": "What do you already know about 'न्याय'?",
-      "response_type": "short_answer"
-    },
-    {
-      "id": "ehve109_diag02",
-      "question": "Which related idea feels easiest and which needs more explanation?",
-      "response_type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "ehve109",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u094d\u092f\u093e\u092f",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "ehve109_diag01",
+        "question": "What do you already know about '\u0928\u094d\u092f\u093e\u092f'?",
+        "response_type": "short_answer"
+      },
+      {
+        "id": "ehve109_diag02",
+        "question": "Which related idea feels easiest and which needs more explanation?",
+        "response_type": "self_assessment"
+      }
+    ]
+  }
 }

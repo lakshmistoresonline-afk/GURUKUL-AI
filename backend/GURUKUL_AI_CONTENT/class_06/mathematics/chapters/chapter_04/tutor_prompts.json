@@ -1,8 +1,26 @@
 {
-  "prompts": [
-    "Help me understand Data Handling and Presentation without giving the answer immediately.",
-    "Ask what evidence supports my answer.",
-    "Give one small hint and wait.",
-    "If I am wrong, identify the concept to revisit."
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "tutor_prompts",
+  "chapter_id": "fegp104",
+  "class": "class_06",
+  "subject": "Mathematics",
+  "chapter_title": "Data Handling and Presentation",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "prompts": [
+      "Help me understand Data Handling and Presentation without giving the answer immediately.",
+      "Ask what evidence supports my answer.",
+      "Give one small hint and wait.",
+      "If I am wrong, identify the concept to revisit."
+    ]
+  }
 }

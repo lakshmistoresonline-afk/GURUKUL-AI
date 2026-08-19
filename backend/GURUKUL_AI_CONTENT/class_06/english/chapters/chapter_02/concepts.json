@@ -1,22 +1,40 @@
 {
-  "concepts": [
-    {
-      "id": "fepr102_c01",
-      "name": "The Unlikely Best Friends",
-      "definition": "Central learning focus of The Unlikely Best Friends.",
-      "source_evidence": "What do you do when you are with your friends and how do you feel?"
-    },
-    {
-      "id": "fepr102_c02",
-      "name": "Evidence and reasoning",
-      "definition": "Support a conclusion with source information or valid working.",
-      "source_evidence": "Now, complete the following sentences by writing in the shapes given below."
-    },
-    {
-      "id": "fepr102_c03",
-      "name": "Application",
-      "definition": "Transfer the learned idea to a relevant new context.",
-      "source_evidence": "Share your completed sentences with your classmates and teacher."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "fepr102",
+  "class": "class_06",
+  "subject": "English",
+  "chapter_title": "The Unlikely Best Friends",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "fepr102_c01",
+        "name": "The Unlikely Best Friends",
+        "definition": "Central learning focus of The Unlikely Best Friends.",
+        "source_evidence": "What do you do when you are with your friends and how do you feel?"
+      },
+      {
+        "id": "fepr102_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Support a conclusion with source information or valid working.",
+        "source_evidence": "Now, complete the following sentences by writing in the shapes given below."
+      },
+      {
+        "id": "fepr102_c03",
+        "name": "Application",
+        "definition": "Transfer the learned idea to a relevant new context.",
+        "source_evidence": "Share your completed sentences with your classmates and teacher."
+      }
+    ]
+  }
 }

@@ -1,15 +1,33 @@
 {
-  "cases": [
-    {
-      "id": "ghml103_case01",
-      "title": "Applying फूल और काँटा",
-      "case": "A realistic situation requires a learner to use an idea from फूल और काँटा.",
-      "questions": [
-        "Which concept applies?",
-        "What evidence supports the choice?",
-        "What should happen next?"
-      ],
-      "answer_guidance": "Ground the response in the chapter."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "ghml103",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "ghml103_case01",
+        "title": "Applying \u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e",
+        "case": "A realistic situation requires a learner to use an idea from \u092b\u0942\u0932 \u0914\u0930 \u0915\u093e\u0901\u091f\u093e.",
+        "questions": [
+          "Which concept applies?",
+          "What evidence supports the choice?",
+          "What should happen next?"
+        ],
+        "answer_guidance": "Ground the response in the chapter."
+      }
+    ]
+  }
 }

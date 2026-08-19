@@ -1,0 +1,205 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "accessibility_compliant": true
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "Mathematics",
+    "chapter_id": "m07_c13",
+    "chapter_title": "Visualising Solid Shapes",
+    "basis": "NCERT Class 7 curriculum for 3D shapes"
+  },
+  "prerequisite_diagnostic": {
+    "purpose": "Distinguish between flat and solid shapes.",
+    "items": [
+      {
+        "skill": "Dimension awareness",
+        "question": "Which of these can you hold in your hand like a ball: a square drawn on paper or a wooden cube?",
+        "advance_if": "Learner chooses the cube.",
+        "remediate_if": "Treats 2D drawings and 3D objects as the same."
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "title": "Faces, Edges, and Vertices",
+      "objective": "Learner can count parts of a 3D shape.",
+      "teach": [
+        "A 3D shape has 3 parts you can touch:",
+        "1. Face: The flat surface (like the side of a box).",
+        "2. Edge: The line where two faces meet.",
+        "3. Vertex: The corner point where edges meet (plural: vertices)."
+      ],
+      "worked_example": {
+        "prompt": "Count Faces, Edges, and Vertices for a Cube.",
+        "method": "1. Faces: Top, bottom, front, back, left, right = 6. 2. Edges: 4 on top, 4 on bottom, 4 vertical = 12. 3. Vertices: 4 on top, 4 on bottom = 8."
+      },
+      "checkpoint": "How many vertices does a pyramid with a square base have?"
+    },
+    {
+      "lesson_id": "L02",
+      "title": "Nets: Flattening a Solid",
+      "objective": "Learner can identify which 2D pattern makes a 3D shape.",
+      "teach": [
+        "A 'Net' is a flat skeleton of a 3D shape.",
+        "If you cut open a cardboard box and lay it flat, that is its net.",
+        "Different shapes have different nets."
+      ],
+      "worked_example": {
+        "prompt": "What does a net with 6 identical squares make?",
+        "method": "1. Squares are identical faces. 2. 6 faces are needed for a cube. 3. Result = Cube."
+      },
+      "checkpoint": "Can 4 triangles and 1 square make a square pyramid?"
+    },
+    {
+      "lesson_id": "L03",
+      "title": "Views of a Solid",
+      "objective": "Learner can identify a shape from top, side, and front views.",
+      "teach": [
+        "An object looks different depending on where you stand.",
+        "Front View: Looking straight at it.",
+        "Side View: Looking from the left or right.",
+        "Top View: Looking down from above (also called Plan view)."
+      ],
+      "worked_example": {
+        "prompt": "A cylinder (like a soda can) is standing up. What are its views?",
+        "method": "1. Front/Side: You see a rectangle. 2. Top: You see a circle."
+      },
+      "checkpoint": "If you look at a ball from the top, what shape do you see?"
+    }
+  ],
+  "question_bank": {
+    "total": 10,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "vertices",
+        "question": "What is another name for the 'corners' of a 3D shape?",
+        "options": ["Faces", "Edges", "Vertices", "Sides"],
+        "answer": "C",
+        "explanation": "Vertices are the points where edges meet."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "edges",
+        "question": "How many edges does a cube have?",
+        "options": ["6", "8", "10", "12"],
+        "answer": "D",
+        "explanation": "A cube has 12 edges (4 top, 4 bottom, 4 vertical)."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "nets",
+        "question": "Which 3D shape can be made from a net of two circles and one rectangle?",
+        "options": ["Cone", "Sphere", "Cylinder", "Prism"],
+        "answer": "C",
+        "explanation": "A cylinder has two circular bases and a curved surface that flattens into a rectangle."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "views",
+        "question": "If you look at a cube from the top, what shape do you see?",
+        "options": ["Triangle", "Square", "Rectangle", "Hexagon"],
+        "answer": "B",
+        "explanation": "All faces of a cube are squares, so any view (top, front, side) is a square."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "euler_formula",
+        "question": "A solid has 4 faces and 4 vertices. How many edges does it have? (Hint: F+V-E=2)",
+        "options": ["4", "5", "6", "8"],
+        "answer": "C",
+        "explanation": "4 + 4 - E = 2 => 8 - E = 2 => E = 6."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "pyramids",
+        "question": "A triangular pyramid is also known as a:",
+        "options": ["Cube", "Tetrahedron", "Cylinder", "Cone"],
+        "answer": "B",
+        "explanation": "A tetrahedron is a pyramid with a triangular base."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "nets_validity",
+        "question": "How many squares are needed to form the net of a cube?",
+        "options": ["4", "5", "6", "8"],
+        "answer": "C",
+        "explanation": "A cube has 6 faces, so its net must have 6 squares."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "oblique_sketches",
+        "question": "An oblique sketch of a cube does not show:",
+        "options": ["Proportional lengths", "Faces", "Vertices", "Depth"],
+        "answer": "A",
+        "explanation": "Oblique sketches show the general shape but the lengths are not always proportional."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "cross_section",
+        "question": "What is the cross-section of a carrot when cut horizontally?",
+        "options": ["Square", "Circle", "Triangle", "Oval"],
+        "answer": "B",
+        "explanation": "Cutting a cone-like shape (carrot) horizontally gives a circular cross-section."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "2D_vs_3D",
+        "question": "Which of these is a 2D shape?",
+        "options": ["Sphere", "Cube", "Circle", "Cone"],
+        "answer": "C",
+        "explanation": "A circle is flat (2D), while others are solids (3D)."
+      }
+    ]
+  },
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing edges and vertices",
+      "diagnostic": "Ask the learner to point to an edge on a box.",
+      "repair": [
+        "Use a box. Run a finger along the 'line' (edge).",
+        "Poke the 'sharp point' (vertex).",
+        "Explain that edges are lines and vertices are dots."
+      ],
+      "exit_criterion": "Learner correctly counts edges vs vertices on a new shape."
+    },
+    {
+      "trigger": "Thinking all nets are valid",
+      "diagnostic": "Show a net of 6 squares in a straight line.",
+      "repair": [
+        "Explain that when folded, some squares will overlap and one side will be empty.",
+        "Demonstrate folding to show it doesn't close the cube."
+      ],
+      "exit_criterion": "Learner correctly identifies which of 3 patterns can form a cube."
+    },
+    {
+      "trigger": "Hidden parts in drawings",
+      "diagnostic": "Check if learner thinks a cube has only 3 faces because only 3 are visible in a drawing.",
+      "repair": [
+        "Use a real box to show the back and bottom faces.",
+        "Explain that 3D drawings 'hide' some parts from view."
+      ],
+      "exit_criterion": "Learner correctly identifies the total count of faces for a drawn solid."
+    }
+  ]
+}

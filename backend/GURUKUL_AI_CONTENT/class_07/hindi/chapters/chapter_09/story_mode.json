@@ -1,29 +1,47 @@
 {
-  "mode_type": "literature_narrative",
-  "opening": "Enter a learning scenario connected to चिड़िया.",
-  "scenes": [
-    {
-      "scene_id": "s1",
-      "narration": "Observe the starting situation and identify what you already know.",
-      "learning_purpose": "Activate prior knowledge."
-    },
-    {
-      "scene_id": "s2",
-      "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-      "learning_purpose": "Apply the chapter."
-    },
-    {
-      "scene_id": "s3",
-      "narration": "Transfer the idea to a new related situation.",
-      "learning_purpose": "Build independent reasoning."
-    }
-  ],
-  "learning_checkpoints": [
-    {
-      "question": "Which idea from चिड़िया supports your decision?",
-      "answer_rule": "Answer must use source-grounded reasoning."
-    }
-  ],
-  "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-  "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
+  "schema_version": "1.0.0",
+  "component_id": "story_mode",
+  "chapter_id": "ghml109",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u093f\u0921\u093c\u093f\u092f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "mode_type": "literature_narrative",
+    "opening": "Enter a learning scenario connected to \u091a\u093f\u0921\u093c\u093f\u092f\u093e.",
+    "scenes": [
+      {
+        "scene_id": "s1",
+        "narration": "Observe the starting situation and identify what you already know.",
+        "learning_purpose": "Activate prior knowledge."
+      },
+      {
+        "scene_id": "s2",
+        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
+        "learning_purpose": "Apply the chapter."
+      },
+      {
+        "scene_id": "s3",
+        "narration": "Transfer the idea to a new related situation.",
+        "learning_purpose": "Build independent reasoning."
+      }
+    ],
+    "learning_checkpoints": [
+      {
+        "question": "Which idea from \u091a\u093f\u0921\u093c\u093f\u092f\u093e supports your decision?",
+        "answer_rule": "Answer must use source-grounded reasoning."
+      }
+    ],
+    "ending_reflection": "Explain the key learning and why the reasoning is justified.",
+    "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
+  }
 }

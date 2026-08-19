@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fhml107_q01",
-    "answer": "Option 1",
-    "evidence": "7 जलाते चलो जलाते चलो ये दि‍ये स्नेह भर-भर कभी तो धरा का अँधरे ा मिटेगा।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fhml107",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fhml107_q01",
+      "answer": "Option 1",
+      "evidence": "7 \u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b \u091c\u0932\u093e\u0924\u0947 \u091a\u0932\u094b \u092f\u0947 \u0926\u093f\u200d\u092f\u0947 \u0938\u094d\u0928\u0947\u0939 \u092d\u0930-\u092d\u0930 \u0915\u092d\u0940 \u0924\u094b \u0927\u0930\u093e \u0915\u093e \u0905\u0901\u0927\u0930\u0947 \u093e \u092e\u093f\u091f\u0947\u0917\u093e\u0964"
+    }
   }
 }

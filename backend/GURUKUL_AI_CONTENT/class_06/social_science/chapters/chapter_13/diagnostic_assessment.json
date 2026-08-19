@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "fees113_d1",
-      "question": "What do you already know about The Value of Work?",
-      "type": "short_answer"
-    },
-    {
-      "id": "fees113_d2",
-      "question": "Which related idea needs more explanation?",
-      "type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "fees113",
+  "class": "class_06",
+  "subject": "Social Science",
+  "chapter_title": "The Value of Work",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fees113_d1",
+        "question": "What do you already know about The Value of Work?",
+        "type": "short_answer"
+      },
+      {
+        "id": "fees113_d2",
+        "question": "Which related idea needs more explanation?",
+        "type": "self_assessment"
+      }
+    ]
+  }
 }

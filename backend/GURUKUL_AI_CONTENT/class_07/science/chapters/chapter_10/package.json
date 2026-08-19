@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "chapter": {
     "chapter_id": "gecu110",
-    "class": 7,
+    "class": "class_07",
     "subject": "Science",
     "chapter_number": 110,
     "chapter_title": "Life Processes in Plants",
@@ -746,7 +746,7 @@
             "action": "revisit explanation and serve simpler evidence practice"
           },
           {
-            "condition": "60–84%",
+            "condition": "60\u201384%",
             "action": "serve application practice"
           },
           {
@@ -1708,7 +1708,7 @@
           {
             "id": "gecu110_official",
             "type": "official_resource",
-            "title": "NCERT ePathshala eResources — Life Processes in Plants",
+            "title": "NCERT ePathshala eResources \u2014 Life Processes in Plants",
             "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
             "verification_status": "VERIFIED_OFFICIAL_PORTAL",
             "purpose": "Official chapter-linked digital resource portal."
@@ -1716,7 +1716,7 @@
           {
             "id": "gecu110_yt_search",
             "type": "youtube_discovery",
-            "title": "Video discovery — Life Processes in Plants",
+            "title": "Video discovery \u2014 Life Processes in Plants",
             "url": "https://www.youtube.com/results?search_query=Class+7+Science+Life+Processes+in+Plants+NCERT",
             "verification_status": "DISCOVERY_ONLY",
             "purpose": "Discovery link only; not represented as a verified direct video."
@@ -1898,6 +1898,193 @@
         ],
         "complete_only_when_all_applicable_rules_pass": true
       }
-    }
+    },
+    "foundation_units": [
+      {
+        "id": "f07_science_01",
+        "skill": "observation",
+        "mastery_check": "Learner can explain and use this prerequisite independently."
+      },
+      {
+        "id": "f07_science_02",
+        "skill": "classification",
+        "mastery_check": "Learner can explain and use this prerequisite independently."
+      },
+      {
+        "id": "f07_science_03",
+        "skill": "measurement",
+        "mastery_check": "Learner can explain and use this prerequisite independently."
+      },
+      {
+        "id": "f07_science_04",
+        "skill": "cause-and-effect reasoning",
+        "mastery_check": "Learner can explain and use this prerequisite independently."
+      }
+    ],
+    "prerequisite_diagnostic": [
+      {
+        "skill": "observation",
+        "question": "Show what you already know about observation.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "classification",
+        "question": "Show what you already know about classification.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "measurement",
+        "question": "Show what you already know about measurement.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "cause-and-effect reasoning",
+        "question": "Show what you already know about cause-and-effect reasoning.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "concept": "plant structures",
+        "objective": "Learner can understand, explain and apply plant structures.",
+        "teaching_sequence": [
+          "Start from an observable or familiar situation.",
+          "Elicit prediction/classification before terminology.",
+          "Connect evidence to the concept.",
+          "Compare examples and non-examples.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain plant structures independently and complete a new example.",
+        "mastery_evidence": "Accurate independent explanation plus transfer."
+      },
+      {
+        "lesson_id": "L02",
+        "concept": "functions",
+        "objective": "Learner can understand, explain and apply functions.",
+        "teaching_sequence": [
+          "Start from an observable or familiar situation.",
+          "Elicit prediction/classification before terminology.",
+          "Connect evidence to the concept.",
+          "Compare examples and non-examples.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain functions independently and complete a new example.",
+        "mastery_evidence": "Accurate independent explanation plus transfer."
+      },
+      {
+        "lesson_id": "L03",
+        "concept": "reproduction/growth",
+        "objective": "Learner can understand, explain and apply reproduction/growth.",
+        "teaching_sequence": [
+          "Start from an observable or familiar situation.",
+          "Elicit prediction/classification before terminology.",
+          "Connect evidence to the concept.",
+          "Compare examples and non-examples.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain reproduction/growth independently and complete a new example.",
+        "mastery_evidence": "Accurate independent explanation plus transfer."
+      },
+      {
+        "lesson_id": "L04",
+        "concept": "adaptation",
+        "objective": "Learner can understand, explain and apply adaptation.",
+        "teaching_sequence": [
+          "Start from an observable or familiar situation.",
+          "Elicit prediction/classification before terminology.",
+          "Connect evidence to the concept.",
+          "Compare examples and non-examples.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain adaptation independently and complete a new example.",
+        "mastery_evidence": "Accurate independent explanation plus transfer."
+      }
+    ],
+    "guided_practice": [
+      {
+        "concept": "plant structures",
+        "prompt": "Complete a supported task involving plant structures; explain each important decision."
+      },
+      {
+        "concept": "functions",
+        "prompt": "Complete a supported task involving functions; explain each important decision."
+      },
+      {
+        "concept": "reproduction/growth",
+        "prompt": "Complete a supported task involving reproduction/growth; explain each important decision."
+      },
+      {
+        "concept": "adaptation",
+        "prompt": "Complete a supported task involving adaptation; explain each important decision."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "Confuses plant structures with a related concept.",
+        "diagnostic": "Ask for a definition, example and near-example.",
+        "repair": [
+          "Identify the missing distinction.",
+          "Return to a concrete example.",
+          "Contrast correct and incorrect cases.",
+          "Learner explains the correction.",
+          "Complete two near-transfer tasks.",
+          "Reassess independently."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confuses functions with a related concept.",
+        "diagnostic": "Ask for a definition, example and near-example.",
+        "repair": [
+          "Identify the missing distinction.",
+          "Return to a concrete example.",
+          "Contrast correct and incorrect cases.",
+          "Learner explains the correction.",
+          "Complete two near-transfer tasks.",
+          "Reassess independently."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confuses reproduction/growth with a related concept.",
+        "diagnostic": "Ask for a definition, example and near-example.",
+        "repair": [
+          "Identify the missing distinction.",
+          "Return to a concrete example.",
+          "Contrast correct and incorrect cases.",
+          "Learner explains the correction.",
+          "Complete two near-transfer tasks.",
+          "Reassess independently."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confuses adaptation with a related concept.",
+        "diagnostic": "Ask for a definition, example and near-example.",
+        "repair": [
+          "Identify the missing distinction.",
+          "Return to a concrete example.",
+          "Contrast correct and incorrect cases.",
+          "Learner explains the correction.",
+          "Complete two near-transfer tasks.",
+          "Reassess independently."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "science",
+    "chapter_id": "s07_c40",
+    "chapter_number": 40,
+    "chapter_title": "Life Processes in Plants",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
   }
 }

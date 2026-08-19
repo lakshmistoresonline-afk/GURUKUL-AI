@@ -1,0 +1,31 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "e05_c1",
+  "component": "REMEDIATION",
+  "content": {
+    "misconceptions": [
+      {
+        "id": "M01",
+        "misconception": "Thinking spectacles are for everyone.",
+        "correction": "Spectacles are usually for people who find it hard to see clearly. Papa needs them to read or watch TV.",
+        "retry_task": "Why did Papa need his spectacles to read the newspaper?"
+      },
+      {
+        "id": "M02",
+        "misconception": "Thinking 'glanced' means looking for a long time.",
+        "correction": "'Glanced' means looking very quickly at something.",
+        "retry_task": "If Papa 'glanced' at the chair, did he look at it for an hour or for a second?"
+      }
+    ],
+    "retry_loops": [
+      {
+        "trigger_concept": "Vocabulary",
+        "steps": [
+          "Explain the meaning with a picture description.",
+          "Give a sentence with a blank.",
+          "Ask the student to say the word aloud."
+        ]
+      }
+    ]
+  }
+}

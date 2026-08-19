@@ -1,11 +1,29 @@
 {
-  "features": [
-    "plain-language explanations",
-    "short chunks",
-    "read-aloud compatible text",
-    "alt-text fields for visuals",
-    "keyboard-accessible interactions",
-    "high-contrast compatible UI"
-  ],
-  "content_rule": "Accessibility text must describe the same source-grounded content without adding facts."
+  "schema_version": "1.0.0",
+  "component_id": "accessibility",
+  "chapter_id": "ehve111",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0939\u092e\u093e\u0930\u0947 \u092f\u0947 \u0915\u0932\u093e\u092e\u0902\u0926\u093f\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "features": [
+      "plain-language explanations",
+      "short chunks",
+      "read-aloud compatible text",
+      "alt-text fields for visuals",
+      "keyboard-accessible interactions",
+      "high-contrast compatible UI"
+    ],
+    "content_rule": "Accessibility text must describe the same source-grounded content without adding facts."
+  }
 }

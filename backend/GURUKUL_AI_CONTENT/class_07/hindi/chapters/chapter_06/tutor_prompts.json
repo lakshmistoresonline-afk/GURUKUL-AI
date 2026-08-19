@@ -1,8 +1,26 @@
 {
-  "prompts": [
-    "Help me understand गिरधर कविराय की कुंडलियाँ without giving me the answer immediately.",
-    "Ask what evidence or working supports my answer.",
-    "Give one small hint and wait.",
-    "If I am wrong, identify the concept I should revisit."
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "tutor_prompts",
+  "chapter_id": "ghml106",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u0917\u093f\u0930\u0927\u0930 \u0915\u0935\u093f\u0930\u093e\u092f \u0915\u0940 \u0915\u0941\u0902\u0921\u0932\u093f\u092f\u093e\u0901",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "prompts": [
+      "Help me understand \u0917\u093f\u0930\u0927\u0930 \u0915\u0935\u093f\u0930\u093e\u092f \u0915\u0940 \u0915\u0941\u0902\u0921\u0932\u093f\u092f\u093e\u0901 without giving me the answer immediately.",
+      "Ask what evidence or working supports my answer.",
+      "Give one small hint and wait.",
+      "If I am wrong, identify the concept I should revisit."
+    ]
+  }
 }

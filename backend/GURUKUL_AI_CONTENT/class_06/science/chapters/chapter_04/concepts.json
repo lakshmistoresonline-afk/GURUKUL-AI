@@ -1,22 +1,40 @@
 {
-  "concepts": [
-    {
-      "id": "fecu104_c01",
-      "name": "Exploring Magnets",
-      "definition": "Central learning focus of Exploring Magnets.",
-      "source_evidence": "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday."
-    },
-    {
-      "id": "fecu104_c02",
-      "name": "Evidence and reasoning",
-      "definition": "Support a conclusion with source information or valid working.",
-      "source_evidence": "The story was based on a ship carrying spices from Kerala for trade in the olden days."
-    },
-    {
-      "id": "fecu104_c03",
-      "name": "Application",
-      "definition": "Transfer the learned idea to a relevant new context.",
-      "source_evidence": "Reshma was aware that in those days, the sailors used stars to find directions at night."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "fecu104",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Exploring Magnets",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "fecu104_c01",
+        "name": "Exploring Magnets",
+        "definition": "Central learning focus of Exploring Magnets.",
+        "source_evidence": "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday."
+      },
+      {
+        "id": "fecu104_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Support a conclusion with source information or valid working.",
+        "source_evidence": "The story was based on a ship carrying spices from Kerala for trade in the olden days."
+      },
+      {
+        "id": "fecu104_c03",
+        "name": "Application",
+        "definition": "Transfer the learned idea to a relevant new context.",
+        "source_evidence": "Reshma was aware that in those days, the sailors used stars to find directions at night."
+      }
+    ]
+  }
 }

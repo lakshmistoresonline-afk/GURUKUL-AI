@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "chapter": {
     "chapter_id": "fees113",
-    "class": 6,
+    "class": "class_06",
     "subject": "Social Science",
     "chapter_number": 113,
     "chapter_title": "The Value of Work",
@@ -14,8 +14,8 @@
       "Anu and Kabir were playing in the park when they saw their neighbour, Geeta Aunty, getting out of a taxi.",
       "She was returning home from work and was in her uniform.",
       "A pilot in the Indian Air Force, she is the pride of the whole town.",
-      "Kabir, Aunty’s uniform looks a lot like the one I saw at your house yesterday, but the colour is different.",
-      "13 ― The Value of Work That uniform on the hanger belongs to my grandfather."
+      "Kabir, Aunty\u2019s uniform looks a lot like the one I saw at your house yesterday, but the colour is different.",
+      "13 \u2015 The Value of Work That uniform on the hanger belongs to my grandfather."
     ]
   },
   "components": {
@@ -125,8 +125,8 @@
           "Anu and Kabir were playing in the park when they saw their neighbour, Geeta Aunty, getting out of a taxi.",
           "She was returning home from work and was in her uniform.",
           "A pilot in the Indian Air Force, she is the pride of the whole town.",
-          "Kabir, Aunty’s uniform looks a lot like the one I saw at your house yesterday, but the colour is different.",
-          "13 ― The Value of Work That uniform on the hanger belongs to my grandfather."
+          "Kabir, Aunty\u2019s uniform looks a lot like the one I saw at your house yesterday, but the colour is different.",
+          "13 \u2015 The Value of Work That uniform on the hanger belongs to my grandfather."
         ],
         "learning_sequence": [
           "Connect",
@@ -693,7 +693,7 @@
             "action": "revisit explanation and simpler practice"
           },
           {
-            "condition": "60–84%",
+            "condition": "60\u201384%",
             "action": "serve application practice"
           },
           {
@@ -1603,7 +1603,7 @@
           {
             "id": "fees113_official",
             "type": "official_resource",
-            "title": "NCERT ePathshala eResources — The Value of Work",
+            "title": "NCERT ePathshala eResources \u2014 The Value of Work",
             "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
             "verification_status": "VERIFIED_OFFICIAL_PORTAL",
             "purpose": "Official chapter-linked digital resources."
@@ -1611,7 +1611,7 @@
           {
             "id": "fees113_yt_search",
             "type": "youtube_discovery",
-            "title": "Video discovery — The Value of Work",
+            "title": "Video discovery \u2014 The Value of Work",
             "url": "https://www.youtube.com/results?search_query=Class+6+Social+Science+The+Value+of+Work+NCERT",
             "verification_status": "DISCOVERY_ONLY",
             "purpose": "Discovery link only; not a verified direct video."
@@ -1793,6 +1793,192 @@
         ],
         "complete_only_when_all_applicable_rules_pass": true
       }
-    }
+    },
+    "foundation_units": [
+      {
+        "id": "f06_social science_01",
+        "skill": "basic map awareness",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_social science_02",
+        "skill": "time/order",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_social science_03",
+        "skill": "community vocabulary",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_social science_04",
+        "skill": "reading simple information",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      }
+    ],
+    "prerequisite_diagnostic": [
+      {
+        "skill": "basic map awareness",
+        "question": "Show what you already know about basic map awareness.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "time/order",
+        "question": "Show what you already know about time/order.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "community vocabulary",
+        "question": "Show what you already know about community vocabulary.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "reading simple information",
+        "question": "Show what you already know about reading simple information.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "concept": "types of work",
+        "objective": "Learner can understand, explain and apply types of work.",
+        "teaching_sequence": [
+          "Begin with an observable or familiar situation.",
+          "Ask the learner to predict or classify before teaching the term.",
+          "Connect evidence to the concept.",
+          "Use a diagram/table/sequence when useful.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain types of work without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L02",
+        "concept": "dignity of labour",
+        "objective": "Learner can understand, explain and apply dignity of labour.",
+        "teaching_sequence": [
+          "Begin with an observable or familiar situation.",
+          "Ask the learner to predict or classify before teaching the term.",
+          "Connect evidence to the concept.",
+          "Use a diagram/table/sequence when useful.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain dignity of labour without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L03",
+        "concept": "skills",
+        "objective": "Learner can understand, explain and apply skills.",
+        "teaching_sequence": [
+          "Begin with an observable or familiar situation.",
+          "Ask the learner to predict or classify before teaching the term.",
+          "Connect evidence to the concept.",
+          "Use a diagram/table/sequence when useful.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain skills without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L04",
+        "concept": "interdependence",
+        "objective": "Learner can understand, explain and apply interdependence.",
+        "teaching_sequence": [
+          "Begin with an observable or familiar situation.",
+          "Ask the learner to predict or classify before teaching the term.",
+          "Connect evidence to the concept.",
+          "Use a diagram/table/sequence when useful.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain interdependence without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      }
+    ],
+    "guided_practice": [
+      {
+        "concept": "types of work",
+        "prompt": "Complete a supported task involving types of work. Explain the step you are taking and why."
+      },
+      {
+        "concept": "dignity of labour",
+        "prompt": "Complete a supported task involving dignity of labour. Explain the step you are taking and why."
+      },
+      {
+        "concept": "skills",
+        "prompt": "Complete a supported task involving skills. Explain the step you are taking and why."
+      },
+      {
+        "concept": "interdependence",
+        "prompt": "Complete a supported task involving interdependence. Explain the step you are taking and why."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "Confusing the main idea of types of work with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of dignity of labour with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of skills with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of interdependence with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Social Science",
+    "chapter_id": "ss06_c13",
+    "chapter_title": "The Value of Work",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
   }
 }

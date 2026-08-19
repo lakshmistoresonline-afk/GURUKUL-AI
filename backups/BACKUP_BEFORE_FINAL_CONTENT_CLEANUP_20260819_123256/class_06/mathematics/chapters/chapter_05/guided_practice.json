@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m06_c5",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Recall",
+        "tasks": [
+          "Is 2 the only even prime number? (Yes / No).",
+          "What are the factors of 9? (1, 3, 9)."
+        ],
+        "hints": ["Check if any other even number can be divided by 2.", "Think of numbers that multiply to give 9."]
+      },
+      {
+        "level": 2,
+        "type": "Application",
+        "tasks": [
+          "Use a factor tree to find the prime factors of 30.",
+          "Check if 97 is prime or composite."
+        ],
+        "dual_language_hint": "Try dividing by small primes like 2, 3, 5, 7. / छोटी अभाज्य संख्याओं जैसे 2, 3, 5, 7 से भाग देने का प्रयास करें।"
+      },
+      {
+        "level": 3,
+        "type": "Synthesis",
+        "tasks": [
+          "Why do we call primes the 'atoms' of mathematics?",
+          "Can you find two prime numbers whose difference is 1?"
+        ]
+      }
+    ]
+  }
+}

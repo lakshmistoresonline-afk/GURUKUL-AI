@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gees111_c01",
+      "label": "From Barter to Money"
+    },
+    {
+      "id": "gees111_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gees111_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gees111_c01",
+      "to": "gees111_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gees111_c02",
+      "to": "gees111_c03",
+      "relation": "enables"
+    }
+  ]
+}

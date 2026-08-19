@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "fegp105",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Prime Time",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "fegp105_c01",
+        "label": "Prime Time"
+      },
+      {
+        "id": "fegp105_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "fegp105_c03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "fegp105_c01",
+        "to": "fegp105_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "fegp105_c02",
+        "to": "fegp105_c03",
+        "relation": "enables"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gees205_c01",
+      "label": "India, a Home to Many"
+    },
+    {
+      "id": "gees205_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gees205_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gees205_c01",
+      "to": "gees205_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gees205_c02",
+      "to": "gees205_c03",
+      "relation": "enables"
+    }
+  ]
+}

@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "ghml102_official",
-      "type": "official_resource",
-      "title": "NCERT ePathshala eResources — तीन बुद्धिमान",
-      "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
-      "verification_status": "VERIFIED_OFFICIAL_PORTAL",
-      "purpose": "Official chapter-linked digital resource portal."
-    },
-    {
-      "id": "ghml102_yt_search",
-      "type": "youtube_discovery",
-      "title": "Video discovery — तीन बुद्धिमान",
-      "url": "https://www.youtube.com/results?search_query=Class+7+Hindi+तीन+बुद्धिमान+NCERT",
-      "verification_status": "DISCOVERY_ONLY",
-      "purpose": "Discovery link only; not represented as a verified direct video."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "ghml102",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u0924\u0940\u0928 \u092c\u0941\u0926\u094d\u0927\u093f\u092e\u093e\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "ghml102_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources \u2014 \u0924\u0940\u0928 \u092c\u0941\u0926\u094d\u0927\u093f\u092e\u093e\u0928",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resource portal."
+      },
+      {
+        "id": "ghml102_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery \u2014 \u0924\u0940\u0928 \u092c\u0941\u0926\u094d\u0927\u093f\u092e\u093e\u0928",
+        "url": "https://www.youtube.com/results?search_query=Class+7+Hindi+\u0924\u0940\u0928+\u092c\u0941\u0926\u094d\u0927\u093f\u092e\u093e\u0928+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not represented as a verified direct video."
+      }
+    ]
+  }
 }

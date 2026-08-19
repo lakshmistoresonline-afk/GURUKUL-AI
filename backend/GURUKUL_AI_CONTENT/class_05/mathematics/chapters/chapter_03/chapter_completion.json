@@ -1,11 +1,29 @@
 {
-  "completion_rules": [
-    "required explanation viewed",
-    "core activities completed",
-    "diagnostic reviewed",
-    "practice threshold met",
-    "mastery assessment passed",
-    "unresolved misconceptions remediated"
-  ],
-  "completion_state": "COMPLETE only when all applicable rules are satisfied."
+  "schema_version": "1.0.0",
+  "component_id": "chapter_completion",
+  "chapter_id": "eemm103",
+  "class": "class_05",
+  "subject": "Mathematics",
+  "chapter_title": "Angles",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "completion_rules": [
+      "required explanation viewed",
+      "core activities completed",
+      "diagnostic reviewed",
+      "practice threshold met",
+      "mastery assessment passed",
+      "unresolved misconceptions remediated"
+    ],
+    "completion_state": "COMPLETE only when all applicable rules are satisfied."
+  }
 }

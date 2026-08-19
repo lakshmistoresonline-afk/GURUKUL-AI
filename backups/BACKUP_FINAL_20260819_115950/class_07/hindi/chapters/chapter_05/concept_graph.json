@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "ghml105_c01",
+      "label": "नहीं होना बीमार"
+    },
+    {
+      "id": "ghml105_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "ghml105_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ghml105_c01",
+      "to": "ghml105_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "ghml105_c02",
+      "to": "ghml105_c03",
+      "relation": "enables"
+    }
+  ]
+}

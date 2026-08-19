@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "fhml111_d1",
-      "question": "What do you already know about चेतक की वीरता?",
-      "type": "short_answer"
-    },
-    {
-      "id": "fhml111_d2",
-      "question": "Which related idea needs more explanation?",
-      "type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "fhml111",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u0947\u0924\u0915 \u0915\u0940 \u0935\u0940\u0930\u0924\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fhml111_d1",
+        "question": "What do you already know about \u091a\u0947\u0924\u0915 \u0915\u0940 \u0935\u0940\u0930\u0924\u093e?",
+        "type": "short_answer"
+      },
+      {
+        "id": "fhml111_d2",
+        "question": "Which related idea needs more explanation?",
+        "type": "self_assessment"
+      }
+    ]
+  }
 }

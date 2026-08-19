@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "science",
+    "chapter_id": "s07_c31",
+    "chapter_number": 31,
+    "chapter_title": "The Ever-Evolving World of Science",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_science_01",
+      "skill": "observation",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_02",
+      "skill": "classification",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_03",
+      "skill": "measurement",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_science_04",
+      "skill": "cause-and-effect reasoning",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "observation",
+      "question": "Show what you already know about observation.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "classification",
+      "question": "Show what you already know about classification.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "measurement",
+      "question": "Show what you already know about measurement.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "cause-and-effect reasoning",
+      "question": "Show what you already know about cause-and-effect reasoning.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain core scientific concept accurately using own words and an example.",
+    "Explain observation and evidence accurately using own words and an example.",
+    "Explain cause and effect accurately using own words and an example.",
+    "Explain application accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "s07_c31_k1",
+      "concept": "core scientific concept",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies core scientific concept."
+    },
+    {
+      "concept_id": "s07_c31_k2",
+      "concept": "observation and evidence",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies observation and evidence."
+    },
+    {
+      "concept_id": "s07_c31_k3",
+      "concept": "cause and effect",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies cause and effect."
+    },
+    {
+      "concept_id": "s07_c31_k4",
+      "concept": "application",
+      "prerequisites": [
+        "f07_science_01",
+        "f07_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies application."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "core scientific concept",
+      "objective": "Learner can understand, explain and apply core scientific concept.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain core scientific concept independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "observation and evidence",
+      "objective": "Learner can understand, explain and apply observation and evidence.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain observation and evidence independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "cause and effect",
+      "objective": "Learner can understand, explain and apply cause and effect.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain cause and effect independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "application",
+      "objective": "Learner can understand, explain and apply application.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain application independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "core scientific concept",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "observation and evidence",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "cause and effect",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "application",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "core scientific concept",
+      "prompt": "Complete a supported task involving core scientific concept; explain each important decision."
+    },
+    {
+      "concept": "observation and evidence",
+      "prompt": "Complete a supported task involving observation and evidence; explain each important decision."
+    },
+    {
+      "concept": "cause and effect",
+      "prompt": "Complete a supported task involving cause and effect; explain each important decision."
+    },
+    {
+      "concept": "application",
+      "prompt": "Complete a supported task involving application; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "core scientific concept",
+      "prompt": "Complete a new task involving core scientific concept without hints, then self-check."
+    },
+    {
+      "concept": "observation and evidence",
+      "prompt": "Complete a new task involving observation and evidence without hints, then self-check."
+    },
+    {
+      "concept": "cause and effect",
+      "prompt": "Complete a new task involving cause and effect without hints, then self-check."
+    },
+    {
+      "concept": "application",
+      "prompt": "Complete a new task involving application without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "core scientific concept",
+        "question": "Which method best supports a reliable explanation of core scientific concept?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "core scientific concept",
+        "question": "Explain core scientific concept and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "core scientific concept",
+        "question": "Apply core scientific concept to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "observation and evidence",
+        "question": "Which method best supports a reliable explanation of observation and evidence?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "observation and evidence",
+        "question": "Explain observation and evidence and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "observation and evidence",
+        "question": "Apply observation and evidence to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "cause and effect",
+        "question": "Which method best supports a reliable explanation of cause and effect?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "cause and effect",
+        "question": "Explain cause and effect and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "cause and effect",
+        "question": "Apply cause and effect to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "application",
+        "question": "Which method best supports a reliable explanation of application?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "application",
+        "question": "Explain application and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "application",
+        "question": "Apply application to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'The Ever-Evolving World of Science'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'The Ever-Evolving World of Science', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is core scientific concept?",
+      "back": "Define core scientific concept, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is observation and evidence?",
+      "back": "Define observation and evidence, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is cause and effect?",
+      "back": "Define cause and effect, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is application?",
+      "back": "Define application, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore core scientific concept",
+      "instructions": "Complete an age-appropriate task focused specifically on core scientific concept. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where observation and evidence is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach application to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses core scientific concept with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses observation and evidence with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses cause and effect with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses application with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply core scientific concept to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply observation and evidence to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply cause and effect to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply application to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

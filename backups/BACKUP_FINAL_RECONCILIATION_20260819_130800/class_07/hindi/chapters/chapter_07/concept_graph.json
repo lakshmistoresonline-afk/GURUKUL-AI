@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "ghml107_c01",
+      "label": "वर्षा-बहार"
+    },
+    {
+      "id": "ghml107_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "ghml107_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ghml107_c01",
+      "to": "ghml107_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "ghml107_c02",
+      "to": "ghml107_c03",
+      "relation": "enables"
+    }
+  ]
+}

@@ -1,22 +1,40 @@
 {
-  "concepts": [
-    {
-      "id": "eemm103_concept_01",
-      "name": "Angles",
-      "definition": "Central learning focus developed by the chapter 'Angles'.",
-      "evidence": "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”."
-    },
-    {
-      "id": "eemm103_concept_02",
-      "name": "Evidence and reasoning",
-      "definition": "Using chapter information to support an explanation or answer.",
-      "evidence": "The learners can notice how much they have turned with respect to their original position."
-    },
-    {
-      "id": "eemm103_concept_03",
-      "name": "Application",
-      "definition": "Using the chapter idea in a new but related situation.",
-      "evidence": "Can you recognise the child in the picture who has made a full turn?"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "eemm103",
+  "class": "class_05",
+  "subject": "Mathematics",
+  "chapter_title": "Angles",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "eemm103_concept_01",
+        "name": "Angles",
+        "definition": "Central learning focus developed by the chapter 'Angles'.",
+        "evidence": "Learners can be asked to rotate themselves around and stop as the teacher announces \u201cstatue\u201d."
+      },
+      {
+        "id": "eemm103_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "The learners can notice how much they have turned with respect to their original position."
+      },
+      {
+        "id": "eemm103_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "Can you recognise the child in the picture who has made a full turn?"
+      }
+    ]
+  }
 }

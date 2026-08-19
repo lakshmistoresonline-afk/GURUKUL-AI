@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "social_science",
+    "chapter_id": "ss07_c57",
+    "chapter_number": 57,
+    "chapter_title": "Empires and Kingdoms: 6th to 10th Centuries",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_social_science_01",
+      "skill": "map and spatial awareness",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_social_science_02",
+      "skill": "chronology",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_social_science_03",
+      "skill": "community and civic vocabulary",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_social_science_04",
+      "skill": "reading evidence",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "map and spatial awareness",
+      "question": "Show what you already know about map and spatial awareness.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "chronology",
+      "question": "Show what you already know about chronology.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "community and civic vocabulary",
+      "question": "Show what you already know about community and civic vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading evidence",
+      "question": "Show what you already know about reading evidence.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain political power accurately using own words and an example.",
+    "Explain administration accurately using own words and an example.",
+    "Explain sources accurately using own words and an example.",
+    "Explain change over time accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "ss07_c57_k1",
+      "concept": "political power",
+      "prerequisites": [
+        "f07_social_science_01",
+        "f07_social_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies political power."
+    },
+    {
+      "concept_id": "ss07_c57_k2",
+      "concept": "administration",
+      "prerequisites": [
+        "f07_social_science_01",
+        "f07_social_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies administration."
+    },
+    {
+      "concept_id": "ss07_c57_k3",
+      "concept": "sources",
+      "prerequisites": [
+        "f07_social_science_01",
+        "f07_social_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies sources."
+    },
+    {
+      "concept_id": "ss07_c57_k4",
+      "concept": "change over time",
+      "prerequisites": [
+        "f07_social_science_01",
+        "f07_social_science_02"
+      ],
+      "mastery_evidence": "Learner explains and applies change over time."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "political power",
+      "objective": "Learner can understand, explain and apply political power.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain political power independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "administration",
+      "objective": "Learner can understand, explain and apply administration.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain administration independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "sources",
+      "objective": "Learner can understand, explain and apply sources.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain sources independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "change over time",
+      "objective": "Learner can understand, explain and apply change over time.",
+      "teaching_sequence": [
+        "Start from an observable or familiar situation.",
+        "Elicit prediction/classification before terminology.",
+        "Connect evidence to the concept.",
+        "Compare examples and non-examples.",
+        "Transfer the idea to a new situation."
+      ],
+      "checkpoint": "Explain change over time independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "political power",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "administration",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "sources",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "change over time",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "political power",
+      "prompt": "Complete a supported task involving political power; explain each important decision."
+    },
+    {
+      "concept": "administration",
+      "prompt": "Complete a supported task involving administration; explain each important decision."
+    },
+    {
+      "concept": "sources",
+      "prompt": "Complete a supported task involving sources; explain each important decision."
+    },
+    {
+      "concept": "change over time",
+      "prompt": "Complete a supported task involving change over time; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "political power",
+      "prompt": "Complete a new task involving political power without hints, then self-check."
+    },
+    {
+      "concept": "administration",
+      "prompt": "Complete a new task involving administration without hints, then self-check."
+    },
+    {
+      "concept": "sources",
+      "prompt": "Complete a new task involving sources without hints, then self-check."
+    },
+    {
+      "concept": "change over time",
+      "prompt": "Complete a new task involving change over time without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "political power",
+        "question": "Which method best supports a reliable explanation of political power?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "political power",
+        "question": "Explain political power and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "political power",
+        "question": "Apply political power to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "administration",
+        "question": "Which method best supports a reliable explanation of administration?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "administration",
+        "question": "Explain administration and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "administration",
+        "question": "Apply administration to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "sources",
+        "question": "Which method best supports a reliable explanation of sources?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "sources",
+        "question": "Explain sources and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "sources",
+        "question": "Apply sources to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "change over time",
+        "question": "Which method best supports a reliable explanation of change over time?",
+        "options": [
+          "Use relevant evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a statement without understanding.",
+          "Guess before considering evidence.",
+          "Ignore conflicting evidence."
+        ],
+        "answer": "A",
+        "explanation": "Evidence-based reasoning produces stronger explanations."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "change over time",
+        "question": "Explain change over time and give one appropriate real-world example.",
+        "rubric": [
+          "accuracy",
+          "example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "change over time",
+        "question": "Apply change over time to a new real-world situation and state what evidence would support your answer.",
+        "rubric": [
+          "relevant evidence",
+          "reasoning",
+          "application"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Empires and Kingdoms: 6th to 10th Centuries'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Empires and Kingdoms: 6th to 10th Centuries', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is political power?",
+      "back": "Define political power, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is administration?",
+      "back": "Define administration, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is sources?",
+      "back": "Define sources, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is change over time?",
+      "back": "Define change over time, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore political power",
+      "instructions": "Complete an age-appropriate task focused specifically on political power. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where administration is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach change over time to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses political power with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses administration with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses sources with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses change over time with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply political power to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply administration to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply sources to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply change over time to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

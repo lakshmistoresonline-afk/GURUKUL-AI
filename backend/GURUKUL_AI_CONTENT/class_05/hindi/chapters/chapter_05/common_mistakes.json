@@ -1,14 +1,32 @@
 {
-  "mistakes": [
-    {
-      "mistake": "Giving an answer without evidence.",
-      "why": "Learners may remember a conclusion but not the supporting reasoning.",
-      "correction": "Return to the chapter and identify evidence."
-    },
-    {
-      "mistake": "Applying a concept to an unrelated situation.",
-      "why": "The learner may not check the conditions of the concept.",
-      "correction": "Identify which chapter feature makes the concept applicable."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "common_mistakes",
+  "chapter_id": "ehve105",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0938\u0941\u0902\u0926\u0930\u093f\u092f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "mistakes": [
+      {
+        "mistake": "Giving an answer without evidence.",
+        "why": "Learners may remember a conclusion but not the supporting reasoning.",
+        "correction": "Return to the chapter and identify evidence."
+      },
+      {
+        "mistake": "Applying a concept to an unrelated situation.",
+        "why": "The learner may not check the conditions of the concept.",
+        "correction": "Identify which chapter feature makes the concept applicable."
+      }
+    ]
+  }
 }

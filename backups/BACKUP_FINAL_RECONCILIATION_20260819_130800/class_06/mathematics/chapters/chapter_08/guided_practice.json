@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m06_c8",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Tool Usage",
+        "tasks": [
+          "Draw a line segment of 5 cm.",
+          "Which tool do you use to draw an angle? (Ruler / Protractor)."
+        ],
+        "hints": ["Start from the '0' mark on the ruler.", "A protractor is semi-circular."]
+      },
+      {
+        "level": 2,
+        "type": "Step-by-step Construction",
+        "tasks": [
+          "Bisect a line segment of 8 cm. What is the length of each half?",
+          "Draw a circle with radius 3 cm."
+        ],
+        "dual_language_hint": "Bisection means dividing into two equal parts. / समद्विभाजन का अर्थ है दो बराबर भागों में बाँटना।"
+      },
+      {
+        "level": 3,
+        "type": "Precision Check",
+        "tasks": [
+          "Why is it important to have a sharp pencil while doing constructions?",
+          "Construct a 60-degree angle using only a compass and ruler."
+        ]
+      }
+    ]
+  }
+}

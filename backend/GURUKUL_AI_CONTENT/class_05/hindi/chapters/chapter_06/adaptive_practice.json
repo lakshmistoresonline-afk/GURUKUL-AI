@@ -1,33 +1,51 @@
 {
-  "selection_rules": [
-    {
-      "condition": "accuracy < 60%",
-      "action": "serve a simpler evidence-identification item and revisit the concept explanation"
-    },
-    {
-      "condition": "accuracy 60–84%",
-      "action": "serve an application item"
-    },
-    {
-      "condition": "accuracy >= 85%",
-      "action": "serve a HOTS/transfer item"
-    }
-  ],
-  "items": [
-    {
-      "id": "ehve106_adaptive_01",
-      "concept_id": "ehve106_concept_01",
-      "difficulty": "easy"
-    },
-    {
-      "id": "ehve106_adaptive_02",
-      "concept_id": "ehve106_concept_01",
-      "difficulty": "medium"
-    },
-    {
-      "id": "ehve106_adaptive_03",
-      "concept_id": "ehve106_concept_01",
-      "difficulty": "hard"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "adaptive_practice",
+  "chapter_id": "ehve106",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u0924\u0941\u0930 \u091a\u093f\u0924\u094d\u0930\u0915\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "selection_rules": [
+      {
+        "condition": "accuracy < 60%",
+        "action": "serve a simpler evidence-identification item and revisit the concept explanation"
+      },
+      {
+        "condition": "accuracy 60\u201384%",
+        "action": "serve an application item"
+      },
+      {
+        "condition": "accuracy >= 85%",
+        "action": "serve a HOTS/transfer item"
+      }
+    ],
+    "items": [
+      {
+        "id": "ehve106_adaptive_01",
+        "concept_id": "ehve106_concept_01",
+        "difficulty": "easy"
+      },
+      {
+        "id": "ehve106_adaptive_02",
+        "concept_id": "ehve106_concept_01",
+        "difficulty": "medium"
+      },
+      {
+        "id": "ehve106_adaptive_03",
+        "concept_id": "ehve106_concept_01",
+        "difficulty": "hard"
+      }
+    ]
+  }
 }

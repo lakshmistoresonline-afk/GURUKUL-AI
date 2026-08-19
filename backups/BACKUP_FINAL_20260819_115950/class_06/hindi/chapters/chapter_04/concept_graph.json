@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fhml104_c01",
+      "label": "हार की जीत"
+    },
+    {
+      "id": "fhml104_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fhml104_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fhml104_c01",
+      "to": "fhml104_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fhml104_c02",
+      "to": "fhml104_c03",
+      "relation": "enables"
+    }
+  ]
+}

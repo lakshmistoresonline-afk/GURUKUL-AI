@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "chapter": {
     "chapter_id": "fecu104",
-    "class": 6,
+    "class": "class_06",
     "subject": "Science",
     "chapter_number": 104,
     "chapter_title": "Exploring Magnets",
@@ -693,7 +693,7 @@
             "action": "revisit explanation and simpler practice"
           },
           {
-            "condition": "60–84%",
+            "condition": "60\u201384%",
             "action": "serve application practice"
           },
           {
@@ -1603,7 +1603,7 @@
           {
             "id": "fecu104_official",
             "type": "official_resource",
-            "title": "NCERT ePathshala eResources — Exploring Magnets",
+            "title": "NCERT ePathshala eResources \u2014 Exploring Magnets",
             "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
             "verification_status": "VERIFIED_OFFICIAL_PORTAL",
             "purpose": "Official chapter-linked digital resources."
@@ -1611,7 +1611,7 @@
           {
             "id": "fecu104_yt_search",
             "type": "youtube_discovery",
-            "title": "Video discovery — Exploring Magnets",
+            "title": "Video discovery \u2014 Exploring Magnets",
             "url": "https://www.youtube.com/results?search_query=Class+6+Science+Exploring+Magnets+NCERT",
             "verification_status": "DISCOVERY_ONLY",
             "purpose": "Discovery link only; not a verified direct video."
@@ -1793,6 +1793,192 @@
         ],
         "complete_only_when_all_applicable_rules_pass": true
       }
-    }
+    },
+    "foundation_units": [
+      {
+        "id": "f06_science_01",
+        "skill": "observation",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_science_02",
+        "skill": "classification",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_science_03",
+        "skill": "simple cause-effect",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      },
+      {
+        "id": "f06_science_04",
+        "skill": "recording evidence",
+        "mastery_check": "Can the learner explain and use this skill independently?"
+      }
+    ],
+    "prerequisite_diagnostic": [
+      {
+        "skill": "observation",
+        "question": "Show what you already know about observation.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "classification",
+        "question": "Show what you already know about classification.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "simple cause-effect",
+        "question": "Show what you already know about simple cause-effect.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      },
+      {
+        "skill": "recording evidence",
+        "question": "Show what you already know about recording evidence.",
+        "advance_if": "Accurate independent response.",
+        "remediate_if": "Incorrect, incomplete or dependent on hints."
+      }
+    ],
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "concept": "magnetic and non-magnetic materials",
+        "objective": "Learner can understand, explain and apply magnetic and non-magnetic materials.",
+        "teaching_sequence": [
+          "Begin with an observable or familiar situation.",
+          "Ask the learner to predict or classify before teaching the term.",
+          "Connect evidence to the concept.",
+          "Use a diagram/table/sequence when useful.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain magnetic and non-magnetic materials without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L02",
+        "concept": "poles",
+        "objective": "Learner can understand, explain and apply poles.",
+        "teaching_sequence": [
+          "Begin with an observable or familiar situation.",
+          "Ask the learner to predict or classify before teaching the term.",
+          "Connect evidence to the concept.",
+          "Use a diagram/table/sequence when useful.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain poles without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L03",
+        "concept": "attraction and repulsion",
+        "objective": "Learner can understand, explain and apply attraction and repulsion.",
+        "teaching_sequence": [
+          "Begin with an observable or familiar situation.",
+          "Ask the learner to predict or classify before teaching the term.",
+          "Connect evidence to the concept.",
+          "Use a diagram/table/sequence when useful.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain attraction and repulsion without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      },
+      {
+        "lesson_id": "L04",
+        "concept": "magnetic fields",
+        "objective": "Learner can understand, explain and apply magnetic fields.",
+        "teaching_sequence": [
+          "Begin with an observable or familiar situation.",
+          "Ask the learner to predict or classify before teaching the term.",
+          "Connect evidence to the concept.",
+          "Use a diagram/table/sequence when useful.",
+          "Transfer the idea to a new situation."
+        ],
+        "checkpoint": "Explain magnetic fields without notes and solve a new example.",
+        "mastery_evidence": "Accurate independent response plus transfer."
+      }
+    ],
+    "guided_practice": [
+      {
+        "concept": "magnetic and non-magnetic materials",
+        "prompt": "Complete a supported task involving magnetic and non-magnetic materials. Explain the step you are taking and why."
+      },
+      {
+        "concept": "poles",
+        "prompt": "Complete a supported task involving poles. Explain the step you are taking and why."
+      },
+      {
+        "concept": "attraction and repulsion",
+        "prompt": "Complete a supported task involving attraction and repulsion. Explain the step you are taking and why."
+      },
+      {
+        "concept": "magnetic fields",
+        "prompt": "Complete a supported task involving magnetic fields. Explain the step you are taking and why."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "Confusing the main idea of magnetic and non-magnetic materials with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of poles with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of attraction and repulsion with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      },
+      {
+        "trigger": "Confusing the main idea of magnetic fields with a related but different idea.",
+        "diagnostic": "Ask for an explanation plus a near-example.",
+        "repair": [
+          "Identify the missing concept.",
+          "Return to a concrete/simple example.",
+          "Contrast the incorrect and correct ideas.",
+          "Learner explains the correction.",
+          "Give two near-transfer tasks.",
+          "Reassess."
+        ],
+        "exit_criterion": "Two consecutive independent correct responses."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Science",
+    "chapter_id": "s06_c4",
+    "chapter_title": "Exploring Magnets",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
   }
 }

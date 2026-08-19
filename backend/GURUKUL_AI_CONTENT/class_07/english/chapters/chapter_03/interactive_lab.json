@@ -1,35 +1,53 @@
 {
-  "activities": [
-    {
-      "id": "gepr103_lab01",
-      "title": "Explore Dreams and Discoveries",
-      "objective": "Investigate a central idea from Dreams and Discoveries.",
-      "materials": [
-        "chapter text",
-        "notebook",
-        "pencil"
-      ],
-      "instructions": [
-        "Review the relevant source section.",
-        "Identify the evidence or method needed.",
-        "interpret, sequence, discuss, compare or create a language response",
-        "Record the result and reasoning."
-      ],
-      "student_action": "Investigate and explain.",
-      "success_condition": "The outcome is consistent with the source and includes reasoning."
-    },
-    {
-      "id": "gepr103_lab02",
-      "title": "Evidence Check",
-      "objective": "Distinguish supported from unsupported claims.",
-      "instructions": [
-        "Choose two chapter-related claims.",
-        "Locate supporting evidence.",
-        "Accept or reject each claim.",
-        "Explain why."
-      ],
-      "student_action": "Match claims to evidence.",
-      "success_condition": "Accepted claims have relevant source support."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "interactive_lab",
+  "chapter_id": "gepr103",
+  "class": "class_07",
+  "subject": "English",
+  "chapter_title": "Dreams and Discoveries",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "gepr103_lab01",
+        "title": "Explore Dreams and Discoveries",
+        "objective": "Investigate a central idea from Dreams and Discoveries.",
+        "materials": [
+          "chapter text",
+          "notebook",
+          "pencil"
+        ],
+        "instructions": [
+          "Review the relevant source section.",
+          "Identify the evidence or method needed.",
+          "interpret, sequence, discuss, compare or create a language response",
+          "Record the result and reasoning."
+        ],
+        "student_action": "Investigate and explain.",
+        "success_condition": "The outcome is consistent with the source and includes reasoning."
+      },
+      {
+        "id": "gepr103_lab02",
+        "title": "Evidence Check",
+        "objective": "Distinguish supported from unsupported claims.",
+        "instructions": [
+          "Choose two chapter-related claims.",
+          "Locate supporting evidence.",
+          "Accept or reject each claim.",
+          "Explain why."
+        ],
+        "student_action": "Match claims to evidence.",
+        "success_condition": "Accepted claims have relevant source support."
+      }
+    ]
+  }
 }

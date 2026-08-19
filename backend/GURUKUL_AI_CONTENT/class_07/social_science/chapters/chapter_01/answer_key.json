@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be validated against the supplied chapter source.",
-  "sample": {
-    "question_id": "gees201_q01",
-    "answer": "Option 1",
-    "evidence": "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes."
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "gees201",
+  "class": "class_07",
+  "subject": "Social Science",
+  "chapter_title": "The Story of Indian Farming",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "gees201_q01",
+      "answer": "Option 1",
+      "evidence": "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes."
+    }
   }
 }

@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "hindi",
+    "chapter_id": "h07_c14",
+    "chapter_number": 14,
+    "chapter_title": "चिड़िया",
+    "source": "MASTER_CHAPTER_REGISTER(1).json",
+    "verification_note": "Chapter identity is taken directly from the project register. Exact textbook scope, wording and sequencing must be editorially verified before student publication."
+  },
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "no_legacy_generic_templates": true
+  },
+  "foundation_units": [
+    {
+      "id": "f07_hindi_01",
+      "skill": "सरल और प्रवाहपूर्ण पठन",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_hindi_02",
+      "skill": "शब्दार्थ और संदर्भ",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_hindi_03",
+      "skill": "वाक्य समझ",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    },
+    {
+      "id": "f07_hindi_04",
+      "skill": "मौखिक एवं लिखित अभिव्यक्ति",
+      "mastery_check": "Learner can explain and use this prerequisite independently."
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "सरल और प्रवाहपूर्ण पठन",
+      "question": "Show what you already know about सरल और प्रवाहपूर्ण पठन.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "शब्दार्थ और संदर्भ",
+      "question": "Show what you already know about शब्दार्थ और संदर्भ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "वाक्य समझ",
+      "question": "Show what you already know about वाक्य समझ.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "मौखिक एवं लिखित अभिव्यक्ति",
+      "question": "Show what you already know about मौखिक एवं लिखित अभिव्यक्ति.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "diagnostic",
+    "foundation repair",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery",
+    "spaced retrieval"
+  ],
+  "learning_objectives": [
+    "Explain पठन और भाव-बोध accurately using own words and an example.",
+    "Explain शब्दार्थ एवं भाषा-प्रयोग accurately using own words and an example.",
+    "Explain पात्र/भाव/विचार विश्लेषण accurately using own words and an example.",
+    "Explain मौखिक एवं लिखित अभिव्यक्ति accurately using own words and an example.",
+    "Apply the chapter's ideas independently to an unfamiliar situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "h07_c14_k1",
+      "concept": "पठन और भाव-बोध",
+      "prerequisites": [
+        "f07_hindi_01",
+        "f07_hindi_02"
+      ],
+      "mastery_evidence": "Learner explains and applies पठन और भाव-बोध."
+    },
+    {
+      "concept_id": "h07_c14_k2",
+      "concept": "शब्दार्थ एवं भाषा-प्रयोग",
+      "prerequisites": [
+        "f07_hindi_01",
+        "f07_hindi_02"
+      ],
+      "mastery_evidence": "Learner explains and applies शब्दार्थ एवं भाषा-प्रयोग."
+    },
+    {
+      "concept_id": "h07_c14_k3",
+      "concept": "पात्र/भाव/विचार विश्लेषण",
+      "prerequisites": [
+        "f07_hindi_01",
+        "f07_hindi_02"
+      ],
+      "mastery_evidence": "Learner explains and applies पात्र/भाव/विचार विश्लेषण."
+    },
+    {
+      "concept_id": "h07_c14_k4",
+      "concept": "मौखिक एवं लिखित अभिव्यक्ति",
+      "prerequisites": [
+        "f07_hindi_01",
+        "f07_hindi_02"
+      ],
+      "mastery_evidence": "Learner explains and applies मौखिक एवं लिखित अभिव्यक्ति."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "पठन और भाव-बोध",
+      "objective": "Learner can understand, explain and apply पठन और भाव-बोध.",
+      "teaching_sequence": [
+        "Start with a short original example.",
+        "Ask the learner to notice meaning or language clues.",
+        "Model evidence-based interpretation.",
+        "Guide one response and gradually remove support.",
+        "Require an original response in a new context."
+      ],
+      "checkpoint": "Explain पठन और भाव-बोध independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "शब्दार्थ एवं भाषा-प्रयोग",
+      "objective": "Learner can understand, explain and apply शब्दार्थ एवं भाषा-प्रयोग.",
+      "teaching_sequence": [
+        "Start with a short original example.",
+        "Ask the learner to notice meaning or language clues.",
+        "Model evidence-based interpretation.",
+        "Guide one response and gradually remove support.",
+        "Require an original response in a new context."
+      ],
+      "checkpoint": "Explain शब्दार्थ एवं भाषा-प्रयोग independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "पात्र/भाव/विचार विश्लेषण",
+      "objective": "Learner can understand, explain and apply पात्र/भाव/विचार विश्लेषण.",
+      "teaching_sequence": [
+        "Start with a short original example.",
+        "Ask the learner to notice meaning or language clues.",
+        "Model evidence-based interpretation.",
+        "Guide one response and gradually remove support.",
+        "Require an original response in a new context."
+      ],
+      "checkpoint": "Explain पात्र/भाव/विचार विश्लेषण independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "मौखिक एवं लिखित अभिव्यक्ति",
+      "objective": "Learner can understand, explain and apply मौखिक एवं लिखित अभिव्यक्ति.",
+      "teaching_sequence": [
+        "Start with a short original example.",
+        "Ask the learner to notice meaning or language clues.",
+        "Model evidence-based interpretation.",
+        "Guide one response and gradually remove support.",
+        "Require an original response in a new context."
+      ],
+      "checkpoint": "Explain मौखिक एवं लिखित अभिव्यक्ति independently and complete a new example.",
+      "mastery_evidence": "Accurate independent explanation plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "पठन और भाव-बोध",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "शब्दार्थ एवं भाषा-प्रयोग",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "पात्र/भाव/विचार विश्लेषण",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    },
+    {
+      "concept": "मौखिक एवं लिखित अभिव्यक्ति",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model reasoning explicitly, then progressively remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "पठन और भाव-बोध",
+      "prompt": "Complete a supported task involving पठन और भाव-बोध; explain each important decision."
+    },
+    {
+      "concept": "शब्दार्थ एवं भाषा-प्रयोग",
+      "prompt": "Complete a supported task involving शब्दार्थ एवं भाषा-प्रयोग; explain each important decision."
+    },
+    {
+      "concept": "पात्र/भाव/विचार विश्लेषण",
+      "prompt": "Complete a supported task involving पात्र/भाव/विचार विश्लेषण; explain each important decision."
+    },
+    {
+      "concept": "मौखिक एवं लिखित अभिव्यक्ति",
+      "prompt": "Complete a supported task involving मौखिक एवं लिखित अभिव्यक्ति; explain each important decision."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "पठन और भाव-बोध",
+      "prompt": "Complete a new task involving पठन और भाव-बोध without hints, then self-check."
+    },
+    {
+      "concept": "शब्दार्थ एवं भाषा-प्रयोग",
+      "prompt": "Complete a new task involving शब्दार्थ एवं भाषा-प्रयोग without hints, then self-check."
+    },
+    {
+      "concept": "पात्र/भाव/विचार विश्लेषण",
+      "prompt": "Complete a new task involving पात्र/भाव/विचार विश्लेषण without hints, then self-check."
+    },
+    {
+      "concept": "मौखिक एवं लिखित अभिव्यक्ति",
+      "prompt": "Complete a new task involving मौखिक एवं लिखित अभिव्यक्ति without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "पठन और भाव-बोध",
+        "question": "Which response best demonstrates understanding of पठन और भाव-बोध?",
+        "options": [
+          "Make a clear claim and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong language comprehension is supported by context and evidence."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "पठन और भाव-बोध",
+        "question": "Explain पठन और भाव-बोध in your own words and use it in an original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "पठन और भाव-बोध",
+        "question": "Use पठन और भाव-बोध in a new speaking or writing situation.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "शब्दार्थ एवं भाषा-प्रयोग",
+        "question": "Which response best demonstrates understanding of शब्दार्थ एवं भाषा-प्रयोग?",
+        "options": [
+          "Make a clear claim and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong language comprehension is supported by context and evidence."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "शब्दार्थ एवं भाषा-प्रयोग",
+        "question": "Explain शब्दार्थ एवं भाषा-प्रयोग in your own words and use it in an original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "शब्दार्थ एवं भाषा-प्रयोग",
+        "question": "Use शब्दार्थ एवं भाषा-प्रयोग in a new speaking or writing situation.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "पात्र/भाव/विचार विश्लेषण",
+        "question": "Which response best demonstrates understanding of पात्र/भाव/विचार विश्लेषण?",
+        "options": [
+          "Make a clear claim and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong language comprehension is supported by context and evidence."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "पात्र/भाव/विचार विश्लेषण",
+        "question": "Explain पात्र/भाव/विचार विश्लेषण in your own words and use it in an original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "पात्र/भाव/विचार विश्लेषण",
+        "question": "Use पात्र/भाव/विचार विश्लेषण in a new speaking or writing situation.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "मौखिक एवं लिखित अभिव्यक्ति",
+        "question": "Which response best demonstrates understanding of मौखिक एवं लिखित अभिव्यक्ति?",
+        "options": [
+          "Make a clear claim and support it with a relevant clue, example or reason.",
+          "Repeat the question.",
+          "Guess without evidence.",
+          "Copy an unrelated sentence."
+        ],
+        "answer": "A",
+        "explanation": "Strong language comprehension is supported by context and evidence."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "मौखिक एवं लिखित अभिव्यक्ति",
+        "question": "Explain मौखिक एवं लिखित अभिव्यक्ति in your own words and use it in an original example.",
+        "rubric": [
+          "meaning",
+          "relevance",
+          "clarity"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "मौखिक एवं लिखित अभिव्यक्ति",
+        "question": "Use मौखिक एवं लिखित अभिव्यक्ति in a new speaking or writing situation.",
+        "rubric": [
+          "correct use",
+          "new context",
+          "clear expression"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'चिड़िया'?",
+        "options": [
+          "Apply the major ideas independently to an unfamiliar situation and explain the reasoning.",
+          "Complete the chapter without checking understanding.",
+          "Memorise the chapter title.",
+          "Copy one example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer and explanation."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'चिड़िया', and how would you teach it to a beginner?",
+        "rubric": [
+          "identifies key idea",
+          "accurate explanation",
+          "clear teaching sequence"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is पठन और भाव-बोध?",
+      "back": "Define पठन और भाव-बोध, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is शब्दार्थ एवं भाषा-प्रयोग?",
+      "back": "Define शब्दार्थ एवं भाषा-प्रयोग, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is पात्र/भाव/विचार विश्लेषण?",
+      "back": "Define पात्र/भाव/विचार विश्लेषण, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is मौखिक एवं लिखित अभिव्यक्ति?",
+      "back": "Define मौखिक एवं लिखित अभिव्यक्ति, give an example, and explain its significance.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore पठन और भाव-बोध",
+      "instructions": "Complete an age-appropriate task focused specifically on पठन और भाव-बोध. Record the evidence/work and explain what it shows.",
+      "evidence": "Learner-created work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Apply the idea",
+      "instructions": "Create a new situation where शब्दार्थ एवं भाषा-प्रयोग is useful. Explain your reasoning and compare it with a second example.",
+      "evidence": "Original application"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach मौखिक एवं लिखित अभिव्यक्ति to a beginner in 3–5 clear steps, using an example or demonstration.",
+      "evidence": "Learner explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confuses पठन और भाव-बोध with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses शब्दार्थ एवं भाषा-प्रयोग with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses पात्र/भाव/विचार विश्लेषण with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confuses मौखिक एवं लिखित अभिव्यक्ति with a related concept.",
+      "diagnostic": "Ask for a definition, example and near-example.",
+      "repair": [
+        "Identify the missing distinction.",
+        "Return to a concrete example.",
+        "Contrast correct and incorrect cases.",
+        "Learner explains the correction.",
+        "Complete two near-transfer tasks.",
+        "Reassess independently."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply पठन और भाव-बोध to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply शब्दार्थ एवं भाषा-प्रयोग to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply पात्र/भाव/विचार विश्लेषण to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply मौखिक एवं लिखित अभिव्यक्ति to a new situation relevant to Class 7 learning or everyday life.",
+      "success_criteria": [
+        "correct concept",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Key ideas can be explained without copying.",
+      "Unfamiliar example can be solved/explained.",
+      "Application rubric met."
+    ],
+    "on_failure": "Route to weakest prerequisite/concept, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Mix concepts; increase retrieval difficulty after successful reviews; remediate repeated failures."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

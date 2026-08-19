@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fegp109_q01",
-    "answer": "Option 1",
-    "evidence": "9 SYMMETRY Look around you — you may find many objects that catch your attention."
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fegp109",
+  "class": "class_06",
+  "subject": "Mathematics",
+  "chapter_title": "Symmetry",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fegp109_q01",
+      "answer": "Option 1",
+      "evidence": "9 SYMMETRY Look around you \u2014 you may find many objects that catch your attention."
+    }
   }
 }

@@ -1,10 +1,28 @@
 {
-  "rule": "Every answer must be validated against the uploaded chapter source.",
-  "sample_answers": [
-    {
-      "question_id": "ehve112_q01",
-      "answer": "Option 1",
-      "evidence": "गंगा की कहानी मेरा जनम हिमालय की गोद में िुआ था।"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ehve112",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0917\u0902\u0917\u093e \u0915\u0940 \u0915\u0939\u093e\u0928\u0940",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "ehve112_q01",
+        "answer": "Option 1",
+        "evidence": "\u0917\u0902\u0917\u093e \u0915\u0940 \u0915\u0939\u093e\u0928\u0940 \u092e\u0947\u0930\u093e \u091c\u0928\u092e \u0939\u093f\u092e\u093e\u0932\u092f \u0915\u0940 \u0917\u094b\u0926 \u092e\u0947\u0902 \u093f\u0941\u0906 \u0925\u093e\u0964"
+      }
+    ]
+  }
 }

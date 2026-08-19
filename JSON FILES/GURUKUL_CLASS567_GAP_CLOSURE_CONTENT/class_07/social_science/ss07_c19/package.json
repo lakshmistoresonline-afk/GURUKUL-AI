@@ -1,0 +1,140 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "accessibility_verified": true
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "Social Science",
+    "chapter_id": "ss07_c19",
+    "chapter_title": "Life in the Deserts",
+    "basis": "NCERT Class 7 Geography Chapter 7"
+  },
+  "foundation_units": [
+    {
+      "id": "F01",
+      "title": "What is a Desert?",
+      "content": "A desert is a region with very low rainfall, sparse vegetation, and extreme temperatures. It can be either hot or cold."
+    },
+    {
+      "id": "F02",
+      "title": "Hot vs. Cold Deserts",
+      "content": "Hot deserts (like the Sahara) have very high temperatures and sandy landscapes. Cold deserts (like Ladakh) have very low temperatures and are often covered in ice or snow."
+    }
+  ],
+  "worked_examples": [
+    {
+      "comparison": "Sahara vs. Ladakh",
+      "sahara_hot_desert": "Location: North Africa. Climate: Scorching hot and dry. Plants: Cactus, date palms. People: Bedouins and Tuaregs who move with livestock.",
+      "ladakh_cold_desert": "Location: Indian Himalayas. Climate: Freezing cold and dry. Plants: Scanty patches of grasses and shrubs. People: Mostly Buddhists or Muslims, involved in agriculture (barley, peas) and tourism.",
+      "logic": "Adaptation: In both places, people, plants, and animals have adapted to survive extreme conditions and lack of water."
+    }
+  ],
+  "guided_practice": [
+    {
+      "task": "Identify the Desert Type",
+      "description": "If you see a landscape with high mountains, glaciers, and thin air, which desert are you likely in?",
+      "hint": "Think about altitude and temperature.",
+      "solution": "A Cold Desert (like Ladakh)."
+    },
+    {
+      "task": "Analyze Livelihoods",
+      "description": "Why do people in the Sahara wear heavy robes?",
+      "hint": "Think about protection from sun and wind.",
+      "solution": "To protect themselves from dust storms and hot winds."
+    }
+  ],
+  "question_bank": [
+    {
+      "id": "Q01",
+      "question": "Which is the world's largest hot desert?",
+      "options": ["Thar Desert", "Sahara Desert", "Gobi Desert", "Atacama Desert"],
+      "answer": "Sahara Desert",
+      "explanation": "The Sahara covers a large part of North Africa and is the largest hot desert."
+    },
+    {
+      "id": "Q02",
+      "question": "The climate of a desert is characterized by:",
+      "options": ["Heavy rainfall", "Low rainfall and extreme temperatures", "Moderate temperature and humidity", "Green forests"],
+      "answer": "Low rainfall and extreme temperatures",
+      "explanation": "Aridity (dryness) is the main feature of all deserts."
+    },
+    {
+      "id": "Q03",
+      "question": "What is an 'Oasis'?",
+      "options": ["A mountain peak", "A depression in a desert where underground water reaches the surface", "A type of sandstorm", "A cold wind"],
+      "answer": "A depression in a desert where underground water reaches the surface",
+      "explanation": "Oases are fertile areas in deserts where water and plants are found."
+    },
+    {
+      "id": "Q04",
+      "question": "Ladakh is also known as 'Khapa-chan', which means:",
+      "options": ["Hot land", "Snow land", "Dry land", "High land"],
+      "answer": "Snow land",
+      "explanation": "Being a high-altitude cold desert, Ladakh is covered with snow for much of the year."
+    },
+    {
+      "id": "Q05",
+      "question": "Which tree is commonly found in the Sahara desert near oases?",
+      "options": ["Pine", "Date Palm", "Oak", "Teak"],
+      "answer": "Date Palm",
+      "explanation": "Date palms are well-adapted to hot desert conditions and are a source of food."
+    },
+    {
+      "id": "Q06",
+      "question": "The Hemis monastery is a famous attraction in:",
+      "options": ["Sahara", "Ladakh", "Thar", "Amazon Basin"],
+      "answer": "Ladakh",
+      "explanation": "Ladakh is home to several famous Buddhist monasteries (gompas)."
+    },
+    {
+      "id": "Q07",
+      "question": "What kind of clothes do people in the Sahara wear?",
+      "options": ["Thin cotton shirts", "Heavy robes", "Woolen coats", "Raincoats"],
+      "answer": "Heavy robes",
+      "explanation": "Heavy robes protect them from dust storms and the intense sun."
+    },
+    {
+      "id": "Q08",
+      "question": "Which animal is known as the 'Ship of the Desert'?",
+      "options": ["Horse", "Camel", "Yak", "Elephant"],
+      "answer": "Camel",
+      "explanation": "Camels can survive for long periods without water and walk easily on sand."
+    },
+    {
+      "id": "Q09",
+      "question": "The main occupation of people in Ladakh during the summer is:",
+      "options": ["Fishing", "Cultivating barley, turnips, and peas", "Mining coal", "Working in IT"],
+      "answer": "Cultivating barley, turnips, and peas",
+      "explanation": "The short summer season is used for agriculture in the valley."
+    },
+    {
+      "id": "Q10",
+      "question": "Deserts have 'sparse vegetation' because:",
+      "options": ["There is too much water", "There is very little water", "People cut all the trees", "The soil is too rich"],
+      "answer": "There is very little water",
+      "explanation": "Lack of water prevents the growth of dense forests or many plants."
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "misconception": "All deserts are hot and full of sand dunes.",
+      "remediation": "Clarify that Ladakh is a cold desert with ice and snow. Explain that 'desert' is defined by low rainfall, not just temperature."
+    },
+    {
+      "misconception": "Deserts are empty and no one lives there.",
+      "remediation": "Describe the vibrant cultures of the Bedouins in the Sahara and the people of Ladakh, showing how they have built successful lives in these regions."
+    }
+  ],
+  "accessibility": {
+    "visual": "Provide high-contrast maps showing the location of Sahara and Ladakh. Use clear font for temperature ranges.",
+    "language": "Explain terms like 'Arid', 'Precipitation', and 'Sparse' using simpler words like 'Dry', 'Rain/Snow', and 'Thinly spread'.",
+    "cognitive": "Use a side-by-side comparison table for Hot Desert vs. Cold Desert to make differences clear."
+  }
+}

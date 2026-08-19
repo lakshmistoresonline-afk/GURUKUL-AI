@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "fecu105_official",
-      "type": "official_resource",
-      "title": "NCERT ePathshala eResources — Measurement of Length and Motion",
-      "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
-      "verification_status": "VERIFIED_OFFICIAL_PORTAL",
-      "purpose": "Official chapter-linked digital resources."
-    },
-    {
-      "id": "fecu105_yt_search",
-      "type": "youtube_discovery",
-      "title": "Video discovery — Measurement of Length and Motion",
-      "url": "https://www.youtube.com/results?search_query=Class+6+Science+Measurement+of+Length+and+Motion+NCERT",
-      "verification_status": "DISCOVERY_ONLY",
-      "purpose": "Discovery link only; not a verified direct video."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "fecu105",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Measurement of Length and Motion",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "fecu105_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources \u2014 Measurement of Length and Motion",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resources."
+      },
+      {
+        "id": "fecu105_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery \u2014 Measurement of Length and Motion",
+        "url": "https://www.youtube.com/results?search_query=Class+6+Science+Measurement+of+Length+and+Motion+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not a verified direct video."
+      }
+    ]
+  }
 }

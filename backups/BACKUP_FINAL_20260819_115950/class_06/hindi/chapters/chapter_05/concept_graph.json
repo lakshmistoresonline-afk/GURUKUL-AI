@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fhml105_c01",
+      "label": "रहीम के दोहे"
+    },
+    {
+      "id": "fhml105_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fhml105_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fhml105_c01",
+      "to": "fhml105_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fhml105_c02",
+      "to": "fhml105_c03",
+      "relation": "enables"
+    }
+  ]
+}

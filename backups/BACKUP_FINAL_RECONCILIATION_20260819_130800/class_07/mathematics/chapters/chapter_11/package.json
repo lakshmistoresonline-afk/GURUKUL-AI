@@ -1,0 +1,143 @@
+{
+  "status": "EMPTY_READY_FOR_FRESH_CONTENT",
+  "metadata": {
+    "chapterId": "m07_c11",
+    "class": 7,
+    "subject": "mathematics"
+  },
+  "components": {
+    "prerequisite_diagnostic": {
+      "purpose": "Determine actual starting level before teaching.",
+      "items": [
+        {
+          "skill": "\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f/\u0915\u0932\u093e \u0936\u092c\u094d\u0926\u093e\u0935\u0932\u0940",
+          "question": "Show what you already know about \u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f/\u0915\u0932\u093e \u0936\u092c\u094d\u0926\u093e\u0935\u0932\u0940.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        },
+        {
+          "skill": "\u091a\u093f\u0924\u094d\u0930/\u0938\u0902\u0917\u0940\u0924/\u0928\u0943\u0924\u094d\u092f \u0915\u0947 \u0936\u092c\u094d\u0926",
+          "question": "Show what you already know about \u091a\u093f\u0924\u094d\u0930/\u0938\u0902\u0917\u0940\u0924/\u0928\u0943\u0924\u094d\u092f \u0915\u0947 \u0936\u092c\u094d\u0926.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        },
+        {
+          "skill": "\u0935\u0930\u094d\u0923\u0928",
+          "question": "Show what you already know about \u0935\u0930\u094d\u0923\u0928.",
+          "advance_if": "Accurate and independently explained.",
+          "remediate_if": "Incorrect, incomplete, or dependent on hints."
+        }
+      ]
+    },
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "title": "\u0915\u0932\u093e \u0914\u0930 \u0936\u093f\u0915\u094d\u0937\u093e: read \u2192 notice \u2192 explain \u2192 use",
+        "objective": "Learner can understand, explain and use \u0915\u0932\u093e \u0914\u0930 \u0936\u093f\u0915\u094d\u0937\u093e in speech or writing.",
+        "teach": [
+          "Introduce \u0915\u0932\u093e \u0914\u0930 \u0936\u093f\u0915\u094d\u0937\u093e through a short original example connected to everyday life.",
+          "Ask the learner what they notice before explaining the formal idea.",
+          "Model how to find evidence in the text or situation.",
+          "Guide the learner to answer using complete, meaningful language.",
+          "Remove prompts and ask for an independent response."
+        ],
+        "worked_example": {
+          "prompt": "Use an original mini-example to demonstrate \u0915\u0932\u093e \u0914\u0930 \u0936\u093f\u0915\u094d\u0937\u093e.",
+          "method": "Notice the clue, explain what it means, connect it to the idea, and express the conclusion clearly."
+        },
+        "checkpoint": "Explain \u0915\u0932\u093e \u0914\u0930 \u0936\u093f\u0915\u094d\u0937\u093e and create one original example.",
+        "mastery_signal": "Accurate understanding + evidence/reasoning + clear independent expression."
+      },
+      {
+        "lesson_id": "L02",
+        "title": "\u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u0905\u092d\u093f\u0935\u094d\u092f\u0915\u094d\u0924\u093f: read \u2192 notice \u2192 explain \u2192 use",
+        "objective": "Learner can understand, explain and use \u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u0905\u092d\u093f\u0935\u094d\u092f\u0915\u094d\u0924\u093f in speech or writing.",
+        "teach": [
+          "Introduce \u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u0905\u092d\u093f\u0935\u094d\u092f\u0915\u094d\u0924\u093f through a short original example connected to everyday life.",
+          "Ask the learner what they notice before explaining the formal idea.",
+          "Model how to find evidence in the text or situation.",
+          "Guide the learner to answer using complete, meaningful language.",
+          "Remove prompts and ask for an independent response."
+        ],
+        "worked_example": {
+          "prompt": "Use an original mini-example to demonstrate \u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u0905\u092d\u093f\u0935\u094d\u092f\u0915\u094d\u0924\u093f.",
+          "method": "Notice the clue, explain what it means, connect it to the idea, and express the conclusion clearly."
+        },
+        "checkpoint": "Explain \u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u0905\u092d\u093f\u0935\u094d\u092f\u0915\u094d\u0924\u093f and create one original example.",
+        "mastery_signal": "Accurate understanding + evidence/reasoning + clear independent expression."
+      },
+      {
+        "lesson_id": "L03",
+        "title": "\u0905\u0935\u0932\u094b\u0915\u0928: read \u2192 notice \u2192 explain \u2192 use",
+        "objective": "Learner can understand, explain and use \u0905\u0935\u0932\u094b\u0915\u0928 in speech or writing.",
+        "teach": [
+          "Introduce \u0905\u0935\u0932\u094b\u0915\u0928 through a short original example connected to everyday life.",
+          "Ask the learner what they notice before explaining the formal idea.",
+          "Model how to find evidence in the text or situation.",
+          "Guide the learner to answer using complete, meaningful language.",
+          "Remove prompts and ask for an independent response."
+        ],
+        "worked_example": {
+          "prompt": "Use an original mini-example to demonstrate \u0905\u0935\u0932\u094b\u0915\u0928.",
+          "method": "Notice the clue, explain what it means, connect it to the idea, and express the conclusion clearly."
+        },
+        "checkpoint": "Explain \u0905\u0935\u0932\u094b\u0915\u0928 and create one original example.",
+        "mastery_signal": "Accurate understanding + evidence/reasoning + clear independent expression."
+      },
+      {
+        "lesson_id": "L04",
+        "title": "\u0938\u092e\u094d\u092e\u093e\u0928: read \u2192 notice \u2192 explain \u2192 use",
+        "objective": "Learner can understand, explain and use \u0938\u092e\u094d\u092e\u093e\u0928 in speech or writing.",
+        "teach": [
+          "Introduce \u0938\u092e\u094d\u092e\u093e\u0928 through a short original example connected to everyday life.",
+          "Ask the learner what they notice before explaining the formal idea.",
+          "Model how to find evidence in the text or situation.",
+          "Guide the learner to answer using complete, meaningful language.",
+          "Remove prompts and ask for an independent response."
+        ],
+        "worked_example": {
+          "prompt": "Use an original mini-example to demonstrate \u0938\u092e\u094d\u092e\u093e\u0928.",
+          "method": "Notice the clue, explain what it means, connect it to the idea, and express the conclusion clearly."
+        },
+        "checkpoint": "Explain \u0938\u092e\u094d\u092e\u093e\u0928 and create one original example.",
+        "mastery_signal": "Accurate understanding + evidence/reasoning + clear independent expression."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "\u0915\u0932\u093e \u0915\u094b \u0915\u0947\u0935\u0932 \u092e\u0928\u094b\u0930\u0902\u091c\u0928 \u092e\u093e\u0928\u0928\u093e",
+        "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+        "repair": [
+          "Identify the exact concept or prerequisite that is missing.",
+          "Return to one concrete, familiar example.",
+          "Think aloud and contrast the incorrect idea with the correct idea.",
+          "Ask the learner to explain the correction in their own words.",
+          "Give two near-transfer questions.",
+          "Reassess before moving to the next concept."
+        ],
+        "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+      },
+      {
+        "trigger": "\u0938\u094d\u0925\u093e\u0928\u0940\u092f \u0914\u0930 \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0938\u0902\u0938\u094d\u0915\u0943\u0924\u093f \u0915\u094b \u0905\u0932\u0917-\u0905\u0932\u0917 \u0938\u092e\u091d\u0928\u093e",
+        "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+        "repair": [
+          "Identify the exact concept or prerequisite that is missing.",
+          "Return to one concrete, familiar example.",
+          "Think aloud and contrast the incorrect idea with the correct idea.",
+          "Ask the learner to explain the correction in their own words.",
+          "Give two near-transfer questions.",
+          "Reassess before moving to the next concept."
+        ],
+        "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "mathematics",
+    "chapter_id": "h05_c11",
+    "chapter_title": "\u0939\u092e\u093e\u0930\u0947 \u092f\u0947 \u0915\u0932\u093e\u092e\u0902\u0926\u093f\u0930",
+    "basis": "NCERT Class 5 chapter structure plus project-provided audit metadata",
+    "verification_note": "Do not publish until chapter wording, sequence and learning claims are checked against the current official textbook edition."
+  }
+}

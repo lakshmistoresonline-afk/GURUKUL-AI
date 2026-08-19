@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "fees108_c01",
+      "label": "Unity in Diversity, or ‘Many in the One’"
+    },
+    {
+      "id": "fees108_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "fees108_c03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "fees108_c01",
+      "to": "fees108_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "fees108_c02",
+      "to": "fees108_c03",
+      "relation": "enables"
+    }
+  ]
+}

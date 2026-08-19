@@ -1,0 +1,29 @@
+{
+  "mode_type": "educational_scenario",
+  "opening": "You are entering a learning scenario built around the ideas of 'Journey of a River'.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "narration": "Start with a situation connected to the chapter focus: Journey of a River.",
+      "learning_purpose": "Activate prior knowledge."
+    },
+    {
+      "scene_id": "scene_02",
+      "narration": "Choose what evidence or reasoning should be used next.",
+      "learning_purpose": "Use chapter evidence."
+    },
+    {
+      "scene_id": "scene_03",
+      "narration": "Apply the idea to a new related situation.",
+      "learning_purpose": "Transfer learning."
+    }
+  ],
+  "learning_checkpoints": [
+    {
+      "question": "What key idea from 'Journey of a River' helps you decide?",
+      "answer_rule": "Answer must be supported by the chapter."
+    }
+  ],
+  "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
+  "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
+}

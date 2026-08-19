@@ -1,17 +1,35 @@
 {
-  "sections": [
-    {
-      "name": "Core understanding",
-      "items": 4
-    },
-    {
-      "name": "Application",
-      "items": 5
-    },
-    {
-      "name": "Higher order",
-      "items": 3
-    }
-  ],
-  "mastery_threshold": 0.7
+  "schema_version": "1.0.0",
+  "component_id": "summative_assessment",
+  "chapter_id": "gees201",
+  "class": "class_07",
+  "subject": "Social Science",
+  "chapter_title": "The Story of Indian Farming",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "sections": [
+      {
+        "name": "Core understanding",
+        "items": 4
+      },
+      {
+        "name": "Application",
+        "items": 5
+      },
+      {
+        "name": "Higher order",
+        "items": 3
+      }
+    ],
+    "mastery_threshold": 0.7
+  }
 }

@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be validated against the supplied chapter source.",
-  "sample": {
-    "question_id": "ghml105_q01",
-    "answer": "Option 1",
-    "evidence": "5 नही ं होना बीमार एक िदन मझु े साथ लेकर नानीजी हमारे पड़ोसी सधु ाकर काका को देखने गइ�, जो बीमार थे।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ghml105",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u0928\u0939\u0940\u0902 \u0939\u094b\u0928\u093e \u092c\u0940\u092e\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "ghml105_q01",
+      "answer": "Option 1",
+      "evidence": "5 \u0928\u0939\u0940 \u0902 \u0939\u094b\u0928\u093e \u092c\u0940\u092e\u093e\u0930 \u090f\u0915 \u093f\u0926\u0928 \u092e\u091d\u0941 \u0947 \u0938\u093e\u0925 \u0932\u0947\u0915\u0930 \u0928\u093e\u0928\u0940\u091c\u0940 \u0939\u092e\u093e\u0930\u0947 \u092a\u095c\u094b\u0938\u0940 \u0938\u0927\u0941 \u093e\u0915\u0930 \u0915\u093e\u0915\u093e \u0915\u094b \u0926\u0947\u0916\u0928\u0947 \u0917\u0907\ufffd, \u091c\u094b \u092c\u0940\u092e\u093e\u0930 \u0925\u0947\u0964"
+    }
   }
 }

@@ -1,0 +1,459 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "copyright_safe_original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_05",
+    "subject": "EVS",
+    "chapter_id": "v05_c1",
+    "chapter_title": "Water — The Essence of Life",
+    "basis": "NCERT Class 5 chapter structure plus project-provided audit metadata",
+    "verification_note": "Do not publish until chapter wording, sequence and learning claims are checked against the current official textbook edition."
+  },
+  "prerequisite_diagnostic": {
+    "purpose": "Determine actual starting level before teaching.",
+    "items": [
+      {
+        "skill": "water in daily life",
+        "question": "Show what you already know about water in daily life.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      },
+      {
+        "skill": "living/non-living",
+        "question": "Show what you already know about living/non-living.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      },
+      {
+        "skill": "basic observation",
+        "question": "Show what you already know about basic observation.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      }
+    ]
+  },
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if required",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent retrieval",
+    "misconception check",
+    "targeted remediation",
+    "transfer/application",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "title": "sources of water: observe → connect → explain → apply",
+      "objective": "Learner can explain sources of water using evidence and apply it to a familiar situation.",
+      "teach": [
+        "Begin with an observation or familiar situation related to sources of water.",
+        "Ask the learner to predict or describe what they notice.",
+        "Introduce the concept and connect it to the observation.",
+        "Use a simple diagram, table, sequence or classification when useful.",
+        "Ask the learner to apply the idea to a different real-life example."
+      ],
+      "worked_example": {
+        "prompt": "Investigate a simple everyday example of sources of water.",
+        "method": "Observe, record evidence, explain the relationship, and state a conclusion."
+      },
+      "checkpoint": "Give one piece of evidence for sources of water and explain what it shows.",
+      "mastery_signal": "Accurate explanation + evidence + transfer to a new context."
+    },
+    {
+      "lesson_id": "L02",
+      "title": "water use: observe → connect → explain → apply",
+      "objective": "Learner can explain water use using evidence and apply it to a familiar situation.",
+      "teach": [
+        "Begin with an observation or familiar situation related to water use.",
+        "Ask the learner to predict or describe what they notice.",
+        "Introduce the concept and connect it to the observation.",
+        "Use a simple diagram, table, sequence or classification when useful.",
+        "Ask the learner to apply the idea to a different real-life example."
+      ],
+      "worked_example": {
+        "prompt": "Investigate a simple everyday example of water use.",
+        "method": "Observe, record evidence, explain the relationship, and state a conclusion."
+      },
+      "checkpoint": "Give one piece of evidence for water use and explain what it shows.",
+      "mastery_signal": "Accurate explanation + evidence + transfer to a new context."
+    },
+    {
+      "lesson_id": "L03",
+      "title": "water cycle basics: observe → connect → explain → apply",
+      "objective": "Learner can explain water cycle basics using evidence and apply it to a familiar situation.",
+      "teach": [
+        "Begin with an observation or familiar situation related to water cycle basics.",
+        "Ask the learner to predict or describe what they notice.",
+        "Introduce the concept and connect it to the observation.",
+        "Use a simple diagram, table, sequence or classification when useful.",
+        "Ask the learner to apply the idea to a different real-life example."
+      ],
+      "worked_example": {
+        "prompt": "Investigate a simple everyday example of water cycle basics.",
+        "method": "Observe, record evidence, explain the relationship, and state a conclusion."
+      },
+      "checkpoint": "Give one piece of evidence for water cycle basics and explain what it shows.",
+      "mastery_signal": "Accurate explanation + evidence + transfer to a new context."
+    },
+    {
+      "lesson_id": "L04",
+      "title": "conservation: observe → connect → explain → apply",
+      "objective": "Learner can explain conservation using evidence and apply it to a familiar situation.",
+      "teach": [
+        "Begin with an observation or familiar situation related to conservation.",
+        "Ask the learner to predict or describe what they notice.",
+        "Introduce the concept and connect it to the observation.",
+        "Use a simple diagram, table, sequence or classification when useful.",
+        "Ask the learner to apply the idea to a different real-life example."
+      ],
+      "worked_example": {
+        "prompt": "Investigate a simple everyday example of conservation.",
+        "method": "Observe, record evidence, explain the relationship, and state a conclusion."
+      },
+      "checkpoint": "Give one piece of evidence for conservation and explain what it shows.",
+      "mastery_signal": "Accurate explanation + evidence + transfer to a new context."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "sources of water",
+        "question": "Which is the best way to learn about sources of water?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a sentence without understanding it.",
+          "Choose an answer before observing.",
+          "Use a guess even when evidence is available."
+        ],
+        "answer": "A",
+        "explanation": "EVS learning should connect observation and evidence to explanation and application."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "sources of water",
+        "question": "Describe sources of water and give one example from everyday life.",
+        "answer": "A strong response correctly describes sources of water and gives a relevant example.",
+        "rubric": [
+          "accurate description",
+          "relevant example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "sources of water",
+        "question": "You encounter a new situation involving sources of water. What would you observe, what would you record, and what would you conclude?",
+        "expected_response": "The learner should identify observable evidence, record it clearly, and make a conclusion that follows from the evidence.",
+        "rubric": [
+          "observation",
+          "evidence",
+          "reasoned conclusion"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "water use",
+        "question": "Which is the best way to learn about water use?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a sentence without understanding it.",
+          "Choose an answer before observing.",
+          "Use a guess even when evidence is available."
+        ],
+        "answer": "A",
+        "explanation": "EVS learning should connect observation and evidence to explanation and application."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "water use",
+        "question": "Describe water use and give one example from everyday life.",
+        "answer": "A strong response correctly describes water use and gives a relevant example.",
+        "rubric": [
+          "accurate description",
+          "relevant example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "application",
+        "concept": "water use",
+        "question": "You encounter a new situation involving water use. What would you observe, what would you record, and what would you conclude?",
+        "expected_response": "The learner should identify observable evidence, record it clearly, and make a conclusion that follows from the evidence.",
+        "rubric": [
+          "observation",
+          "evidence",
+          "reasoned conclusion"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "water cycle basics",
+        "question": "Which is the best way to learn about water cycle basics?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a sentence without understanding it.",
+          "Choose an answer before observing.",
+          "Use a guess even when evidence is available."
+        ],
+        "answer": "A",
+        "explanation": "EVS learning should connect observation and evidence to explanation and application."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "foundation",
+        "concept": "water cycle basics",
+        "question": "Describe water cycle basics and give one example from everyday life.",
+        "answer": "A strong response correctly describes water cycle basics and gives a relevant example.",
+        "rubric": [
+          "accurate description",
+          "relevant example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "water cycle basics",
+        "question": "You encounter a new situation involving water cycle basics. What would you observe, what would you record, and what would you conclude?",
+        "expected_response": "The learner should identify observable evidence, record it clearly, and make a conclusion that follows from the evidence.",
+        "rubric": [
+          "observation",
+          "evidence",
+          "reasoned conclusion"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "conservation",
+        "question": "Which is the best way to learn about conservation?",
+        "options": [
+          "Observe or use evidence, connect it to the concept, and explain the conclusion.",
+          "Memorise a sentence without understanding it.",
+          "Choose an answer before observing.",
+          "Use a guess even when evidence is available."
+        ],
+        "answer": "A",
+        "explanation": "EVS learning should connect observation and evidence to explanation and application."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "application",
+        "concept": "conservation",
+        "question": "Describe conservation and give one example from everyday life.",
+        "answer": "A strong response correctly describes conservation and gives a relevant example.",
+        "rubric": [
+          "accurate description",
+          "relevant example"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "conservation",
+        "question": "You encounter a new situation involving conservation. What would you observe, what would you record, and what would you conclude?",
+        "expected_response": "The learner should identify observable evidence, record it clearly, and make a conclusion that follows from the evidence.",
+        "rubric": [
+          "observation",
+          "evidence",
+          "reasoned conclusion"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the best way to show mastery of 'Water — The Essence of Life'?",
+        "options": [
+          "Use the important ideas independently in a new situation and explain the reasoning.",
+          "Finish every activity without checking understanding.",
+          "Memorise the chapter title only.",
+          "Repeat one worked example exactly."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent understanding and transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_prioritisation",
+        "question": "Which idea from 'Water — The Essence of Life' would you teach to a younger learner first, and why?",
+        "answer": "Any defensible answer is acceptable if it identifies a foundational idea and gives a logical reason.",
+        "rubric": [
+          "foundational choice",
+          "reason",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is the key idea behind sources of water?",
+      "back": "Explain sources of water using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC01B",
+      "front": "Give a new example of sources of water.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC02",
+      "front": "What is the key idea behind water use?",
+      "back": "Explain water use using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02B",
+      "front": "Give a new example of water use.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC03",
+      "front": "What is the key idea behind water cycle basics?",
+      "back": "Explain water cycle basics using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03B",
+      "front": "Give a new example of water cycle basics.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC04",
+      "front": "What is the key idea behind conservation?",
+      "back": "Explain conservation using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04B",
+      "front": "Give a new example of conservation.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "observation_lab",
+      "title": "Observe and record",
+      "instructions": "Investigate a safe everyday example of sources of water. Record observations in a simple table and state one evidence-based conclusion.",
+      "evidence": "Observation table + conclusion"
+    },
+    {
+      "id": "ACT02",
+      "type": "classification",
+      "title": "Sort and explain",
+      "instructions": "Collect or identify examples related to water use. Group them using a clear rule and explain why each example belongs.",
+      "evidence": "Classification + explanation"
+    },
+    {
+      "id": "ACT03",
+      "type": "action_project",
+      "title": "Apply the learning",
+      "instructions": "Design one practical action connected to 'Water — The Essence of Life' and conservation. State the problem, action, expected result and how you would know whether it worked.",
+      "evidence": "Mini-project plan"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "thinking water comes only from taps",
+      "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+      "repair": [
+        "Identify the exact concept or prerequisite that is missing.",
+        "Return to one concrete, familiar example.",
+        "Think aloud and contrast the incorrect idea with the correct idea.",
+        "Ask the learner to explain the correction in their own words.",
+        "Give two near-transfer questions.",
+        "Reassess before moving to the next concept."
+      ],
+      "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+    },
+    {
+      "trigger": "thinking all water sources are equally safe",
+      "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+      "repair": [
+        "Identify the exact concept or prerequisite that is missing.",
+        "Return to one concrete, familiar example.",
+        "Think aloud and contrast the incorrect idea with the correct idea.",
+        "Ask the learner to explain the correction in their own words.",
+        "Give two near-transfer questions.",
+        "Reassess before moving to the next concept."
+      ],
+      "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain the key idea without copying.",
+      "Learner can solve or respond to an unfamiliar example.",
+      "Application task meets the rubric."
+    ],
+    "on_failure": "Do not simply unlock the next chapter. Route the learner to the weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock spaced retrieval and cumulative review."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "rule": "Use mixed retrieval; increase difficulty after correct independent recall; re-enter remediation after repeated failure.",
+    "items_per_review": 5
+  },
+  "analytics_events": [
+    "diagnostic_started",
+    "diagnostic_completed",
+    "lesson_started",
+    "lesson_completed",
+    "hint_requested",
+    "misconception_detected",
+    "remediation_started",
+    "remediation_completed",
+    "question_answered",
+    "mastery_passed",
+    "mastery_failed",
+    "application_completed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery_by_skill",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "first_attempt_accuracy",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

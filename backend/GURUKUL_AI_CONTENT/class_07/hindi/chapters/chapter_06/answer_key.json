@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be validated against the supplied chapter source.",
-  "sample": {
-    "question_id": "ghml106_q01",
-    "answer": "Option 1",
-    "evidence": "6 िग�रधर किवराय की कंु डिलया (1) िबना िबचारे जो करै सो पाछे पिछताय ।"
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ghml106",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u0917\u093f\u0930\u0927\u0930 \u0915\u0935\u093f\u0930\u093e\u092f \u0915\u0940 \u0915\u0941\u0902\u0921\u0932\u093f\u092f\u093e\u0901",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "ghml106_q01",
+      "answer": "Option 1",
+      "evidence": "6 \u093f\u0917\ufffd\u0930\u0927\u0930 \u0915\u093f\u0935\u0930\u093e\u092f \u0915\u0940 \u0915\u0902\u0941 \u0921\u093f\u0932\u092f\u093e (1) \u093f\u092c\u0928\u093e \u093f\u092c\u091a\u093e\u0930\u0947 \u091c\u094b \u0915\u0930\u0948 \u0938\u094b \u092a\u093e\u091b\u0947 \u092a\u093f\u091b\u0924\u093e\u092f \u0964"
+    }
   }
 }

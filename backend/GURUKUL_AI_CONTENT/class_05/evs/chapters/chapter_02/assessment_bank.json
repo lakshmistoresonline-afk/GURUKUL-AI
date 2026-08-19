@@ -1,100 +1,118 @@
 {
-  "items": [
-    {
-      "id": "eeev102_q01",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Journey of a River'?",
-      "options": [
-        "Journey of a River2 Where I Begin, Where I Flow I have no feet, but I travel far, Through fields and forests, under moon and star.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "Journey of a River2 Where I Begin, Where I Flow I have no feet, but I travel far, Through fields and forests, under moon and star.",
-      "difficulty": "easy",
-      "concept_id": "eeev102_concept_01"
-    },
-    {
-      "id": "eeev102_q02",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Journey of a River'?",
-      "options": [
-        "I quench your thirst and help plants grow, From mountain to sea, I quietly flow.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "I quench your thirst and help plants grow, From mountain to sea, I quietly flow.",
-      "difficulty": "easy",
-      "concept_id": "eeev102_concept_01"
-    },
-    {
-      "id": "eeev102_q03",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Journey of a River'?",
-      "options": [
-        "My journey begins high up in the Western Ghats at Trimbakeshwar in Maharashtra.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "My journey begins high up in the Western Ghats at Trimbakeshwar in Maharashtra.",
-      "difficulty": "medium",
-      "concept_id": "eeev102_concept_01"
-    },
-    {
-      "id": "eeev102_q04",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Journey of a River'?",
-      "options": [
-        "Although I start out as a stream, as I move across the land, rainwater and other streams join me, making me wider and stronger.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "Although I start out as a stream, as I move across the land, rainwater and other streams join me, making me wider and stronger.",
-      "difficulty": "medium",
-      "concept_id": "eeev102_concept_01"
-    },
-    {
-      "id": "eeev102_q05",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Journey of a River'?",
-      "options": [
-        "The small streams joining are my tributaries.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "The small streams joining are my tributaries.",
-      "difficulty": "hard",
-      "concept_id": "eeev102_concept_01"
-    },
-    {
-      "id": "eeev102_q06",
-      "type": "evidence_based_mcq",
-      "question": "Which statement is supported by the chapter 'Journey of a River'?",
-      "options": [
-        "I travel 1,465 kilometres before joining the Bay of Bengal.",
-        "A statement unrelated to the chapter.",
-        "A statement that contradicts the chapter.",
-        "A statement that cannot be checked from the chapter."
-      ],
-      "correct_option": 0,
-      "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-      "source_evidence": "I travel 1,465 kilometres before joining the Bay of Bengal.",
-      "difficulty": "hard",
-      "concept_id": "eeev102_concept_01"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "eeev102",
+  "class": "class_05",
+  "subject": "EVS",
+  "chapter_title": "Journey of a River",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eeev102_q01",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Journey of a River'?",
+        "options": [
+          "Journey of a River2 Where I Begin, Where I Flow I have no feet, but I travel far, Through fields and forests, under moon and star.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Journey of a River2 Where I Begin, Where I Flow I have no feet, but I travel far, Through fields and forests, under moon and star.",
+        "difficulty": "easy",
+        "concept_id": "eeev102_concept_01"
+      },
+      {
+        "id": "eeev102_q02",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Journey of a River'?",
+        "options": [
+          "I quench your thirst and help plants grow, From mountain to sea, I quietly flow.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "I quench your thirst and help plants grow, From mountain to sea, I quietly flow.",
+        "difficulty": "easy",
+        "concept_id": "eeev102_concept_01"
+      },
+      {
+        "id": "eeev102_q03",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Journey of a River'?",
+        "options": [
+          "My journey begins high up in the Western Ghats at Trimbakeshwar in Maharashtra.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "My journey begins high up in the Western Ghats at Trimbakeshwar in Maharashtra.",
+        "difficulty": "medium",
+        "concept_id": "eeev102_concept_01"
+      },
+      {
+        "id": "eeev102_q04",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Journey of a River'?",
+        "options": [
+          "Although I start out as a stream, as I move across the land, rainwater and other streams join me, making me wider and stronger.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Although I start out as a stream, as I move across the land, rainwater and other streams join me, making me wider and stronger.",
+        "difficulty": "medium",
+        "concept_id": "eeev102_concept_01"
+      },
+      {
+        "id": "eeev102_q05",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Journey of a River'?",
+        "options": [
+          "The small streams joining are my tributaries.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "The small streams joining are my tributaries.",
+        "difficulty": "hard",
+        "concept_id": "eeev102_concept_01"
+      },
+      {
+        "id": "eeev102_q06",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Journey of a River'?",
+        "options": [
+          "I travel 1,465 kilometres before joining the Bay of Bengal.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "I travel 1,465 kilometres before joining the Bay of Bengal.",
+        "difficulty": "hard",
+        "concept_id": "eeev102_concept_01"
+      }
+    ]
+  }
 }

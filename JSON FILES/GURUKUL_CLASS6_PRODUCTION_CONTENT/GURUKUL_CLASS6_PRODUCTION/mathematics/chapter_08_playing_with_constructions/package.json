@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Mathematics",
+    "chapter_id": "m06_c8",
+    "chapter_title": "Playing with Constructions",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_mathematics_01",
+      "skill": "whole-number operations",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_02",
+      "skill": "basic measurement",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_03",
+      "skill": "shape and number vocabulary",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_04",
+      "skill": "reading tables or diagrams",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "whole-number operations",
+      "question": "Show what you already know about whole-number operations.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "basic measurement",
+      "question": "Show what you already know about basic measurement.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "shape and number vocabulary",
+      "question": "Show what you already know about shape and number vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading tables or diagrams",
+      "question": "Show what you already know about reading tables or diagrams.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain geometric tools using simple language and an example.",
+    "Explain constructing shapes using simple language and an example.",
+    "Explain circles and arcs using simple language and an example.",
+    "Explain accuracy and reasoning using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "m06_c8_k1",
+      "concept": "geometric tools",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies geometric tools."
+    },
+    {
+      "concept_id": "m06_c8_k2",
+      "concept": "constructing shapes",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies constructing shapes."
+    },
+    {
+      "concept_id": "m06_c8_k3",
+      "concept": "circles and arcs",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies circles and arcs."
+    },
+    {
+      "concept_id": "m06_c8_k4",
+      "concept": "accuracy and reasoning",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies accuracy and reasoning."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "geometric tools",
+      "objective": "Learner can understand, explain and apply geometric tools.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain geometric tools without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "constructing shapes",
+      "objective": "Learner can understand, explain and apply constructing shapes.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain constructing shapes without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "circles and arcs",
+      "objective": "Learner can understand, explain and apply circles and arcs.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain circles and arcs without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "accuracy and reasoning",
+      "objective": "Learner can understand, explain and apply accuracy and reasoning.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain accuracy and reasoning without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "geometric tools",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "constructing shapes",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "circles and arcs",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "accuracy and reasoning",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "geometric tools",
+      "prompt": "Complete a supported task involving geometric tools. Explain the step you are taking and why."
+    },
+    {
+      "concept": "constructing shapes",
+      "prompt": "Complete a supported task involving constructing shapes. Explain the step you are taking and why."
+    },
+    {
+      "concept": "circles and arcs",
+      "prompt": "Complete a supported task involving circles and arcs. Explain the step you are taking and why."
+    },
+    {
+      "concept": "accuracy and reasoning",
+      "prompt": "Complete a supported task involving accuracy and reasoning. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "geometric tools",
+      "prompt": "Complete a new task involving geometric tools without hints, then self-check."
+    },
+    {
+      "concept": "constructing shapes",
+      "prompt": "Complete a new task involving constructing shapes without hints, then self-check."
+    },
+    {
+      "concept": "circles and arcs",
+      "prompt": "Complete a new task involving circles and arcs without hints, then self-check."
+    },
+    {
+      "concept": "accuracy and reasoning",
+      "prompt": "Complete a new task involving accuracy and reasoning without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "geometric tools",
+        "question": "Which approach best helps you understand geometric tools?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "geometric tools",
+        "question": "Explain geometric tools as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines geometric tools, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "geometric tools",
+        "question": "Create and solve a new everyday problem involving geometric tools.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "constructing shapes",
+        "question": "Which approach best helps you understand constructing shapes?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "constructing shapes",
+        "question": "Explain constructing shapes as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines constructing shapes, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "constructing shapes",
+        "question": "Create and solve a new everyday problem involving constructing shapes.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "circles and arcs",
+        "question": "Which approach best helps you understand circles and arcs?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "circles and arcs",
+        "question": "Explain circles and arcs as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines circles and arcs, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "circles and arcs",
+        "question": "Create and solve a new everyday problem involving circles and arcs.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "accuracy and reasoning",
+        "question": "Which approach best helps you understand accuracy and reasoning?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "accuracy and reasoning",
+        "question": "Explain accuracy and reasoning as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines accuracy and reasoning, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "accuracy and reasoning",
+        "question": "Create and solve a new everyday problem involving accuracy and reasoning.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Playing with Constructions'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Playing with Constructions', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is geometric tools?",
+      "back": "Define geometric tools, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is constructing shapes?",
+      "back": "Define constructing shapes, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is circles and arcs?",
+      "back": "Define circles and arcs, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is accuracy and reasoning?",
+      "back": "Define accuracy and reasoning, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore geometric tools",
+      "instructions": "Use a safe, age-appropriate task specifically focused on geometric tools. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where constructing shapes is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach accuracy and reasoning to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of geometric tools with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of constructing shapes with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of circles and arcs with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of accuracy and reasoning with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply geometric tools to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply constructing shapes to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply circles and arcs to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

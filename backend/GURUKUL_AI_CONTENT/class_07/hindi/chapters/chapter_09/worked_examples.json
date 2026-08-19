@@ -1,24 +1,42 @@
 {
-  "examples": [
-    {
-      "id": "ghml109_ex01",
-      "task": "Explain a central idea from चिड़िया using source evidence or working.",
-      "method": [
-        "Identify the concept",
-        "Locate evidence/working",
-        "Explain the connection",
-        "Check"
-      ]
-    },
-    {
-      "id": "ghml109_ex02",
-      "task": "Transfer the idea to a new related example.",
-      "method": [
-        "Identify what transfers",
-        "Adapt",
-        "Justify",
-        "Check"
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "worked_examples",
+  "chapter_id": "ghml109",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u093f\u0921\u093c\u093f\u092f\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "examples": [
+      {
+        "id": "ghml109_ex01",
+        "task": "Explain a central idea from \u091a\u093f\u0921\u093c\u093f\u092f\u093e using source evidence or working.",
+        "method": [
+          "Identify the concept",
+          "Locate evidence/working",
+          "Explain the connection",
+          "Check"
+        ]
+      },
+      {
+        "id": "ghml109_ex02",
+        "task": "Transfer the idea to a new related example.",
+        "method": [
+          "Identify what transfers",
+          "Adapt",
+          "Justify",
+          "Check"
+        ]
+      }
+    ]
+  }
 }

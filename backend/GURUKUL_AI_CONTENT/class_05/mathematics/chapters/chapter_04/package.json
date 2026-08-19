@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "chapter": {
     "chapter_id": "eemm104",
-    "class": 5,
+    "class": "class_05",
     "subject": "Mathematics",
     "chapter_number": 104,
     "chapter_title": "Playing with Numbers",
@@ -680,7 +680,7 @@
             "action": "serve a simpler evidence-identification item and revisit the concept explanation"
           },
           {
-            "condition": "accuracy 60–84%",
+            "condition": "accuracy 60\u201384%",
             "action": "serve an application item"
           },
           {
@@ -1788,6 +1788,108 @@
         ],
         "completion_state": "COMPLETE only when all applicable rules are satisfied."
       }
-    }
+    },
+    "prerequisite_diagnostic": {
+      "purpose": "Verify multiplication table fluency and division basics.",
+      "items": [
+        {
+          "skill": "Multiplication Tables (1-10)",
+          "question": "What is 8 times 7?",
+          "advance_if": "56 (Instant recall)",
+          "remediate_if": "Incorrect or slow counting."
+        },
+        {
+          "skill": "Division as Grouping",
+          "question": "How many groups of 3 can you make from 12 items?",
+          "advance_if": "4",
+          "remediate_if": "Incorrect or unable to visualize."
+        }
+      ]
+    },
+    "lessons": [
+      {
+        "lesson_id": "L01",
+        "title": "Factors: The Building Blocks",
+        "objective": "Learner can find all factors of a given number up to 50.",
+        "teach": [
+          "Define factor as a number that divides another number exactly without a remainder.",
+          "Demonstrate finding factors using arrays (e.g., 12 can be 1x12, 2x6, 3x4).",
+          "Explain that 1 is a factor of every number."
+        ],
+        "worked_example": {
+          "prompt": "Find all factors of 20.",
+          "method": "Check pairs: 1x20, 2x10, 4x5. Factors are 1, 2, 4, 5, 10, 20."
+        },
+        "checkpoint": "List all factors of 18.",
+        "mastery_signal": "1, 2, 3, 6, 9, 18 provided independently."
+      },
+      {
+        "lesson_id": "L02",
+        "title": "Multiples: Skip Counting Forward",
+        "objective": "Learner can identify and generate multiples of a number.",
+        "teach": [
+          "Define multiple as the product of a number and any whole number.",
+          "Connect multiples to multiplication tables.",
+          "Explain that a number has an infinite number of multiples."
+        ],
+        "worked_example": {
+          "prompt": "List the first five multiples of 7.",
+          "method": "7x1=7, 7x2=14, 7x3=21, 7x4=28, 7x5=35."
+        },
+        "checkpoint": "What is the 4th multiple of 9?",
+        "mastery_signal": "36 provided with explanation."
+      },
+      {
+        "lesson_id": "L03",
+        "title": "Common Factors and HCF",
+        "objective": "Learner can find common factors and identify the Highest Common Factor (HCF).",
+        "teach": [
+          "List factors of two different numbers.",
+          "Identify factors present in both lists.",
+          "Select the largest among them as HCF."
+        ],
+        "worked_example": {
+          "prompt": "Find the HCF of 12 and 16.",
+          "method": "Factors of 12: 1, 2, 3, 4, 6, 12. Factors of 16: 1, 2, 4, 8, 16. Common: 1, 2, 4. HCF is 4."
+        },
+        "checkpoint": "Find the HCF of 10 and 25.",
+        "mastery_signal": "5 identified as HCF with step-by-step logic."
+      },
+      {
+        "lesson_id": "L04",
+        "title": "Common Multiples and LCM",
+        "objective": "Learner can find common multiples and identify the Lowest Common Multiple (LCM).",
+        "teach": [
+          "List multiples of two numbers.",
+          "Identify the first multiple that appears in both lists.",
+          "Define it as the Lowest Common Multiple."
+        ],
+        "worked_example": {
+          "prompt": "Find the LCM of 4 and 6.",
+          "method": "Multiples of 4: 4, 8, 12, 16... Multiples of 6: 6, 12, 18... Smallest common is 12."
+        },
+        "checkpoint": "Find the LCM of 3 and 5.",
+        "mastery_signal": "15 identified as LCM."
+      }
+    ],
+    "misconception_remediation": [
+      {
+        "trigger": "Confusing factors with multiples",
+        "diagnostic": "Ask: Is 10 a factor or multiple of 5?",
+        "repair": [
+          "Factors are 'smaller' (divisors), Multiples are 'larger' (products).",
+          "Use the word 'Few' for Factors and 'Many' for Multiples."
+        ],
+        "exit_criterion": "Correctly identifying factors and multiples for 3 different numbers."
+      }
+    ]
+  },
+  "curriculum_alignment": {
+    "class": "class_05",
+    "subject": "Mathematics",
+    "chapter_id": "m05_c4",
+    "chapter_title": "Playing with Numbers",
+    "basis": "NCERT Class 5 Mathematics concept map for Factors and Multiples",
+    "verification_note": "Ensure terminology matches local curriculum standards."
   }
 }

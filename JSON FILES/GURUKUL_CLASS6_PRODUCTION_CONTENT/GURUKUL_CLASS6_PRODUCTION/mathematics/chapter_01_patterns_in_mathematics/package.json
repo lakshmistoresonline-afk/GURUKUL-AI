@@ -1,0 +1,617 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_06",
+    "subject": "Mathematics",
+    "chapter_id": "m06_c1",
+    "chapter_title": "Patterns in Mathematics",
+    "basis": "Project-provided Class 6 chapter inventory and current NCERT-aligned structure",
+    "verification_note": "Verify exact chapter scope and sequencing against the current authoritative textbook before publication."
+  },
+  "foundation_units": [
+    {
+      "id": "f06_mathematics_01",
+      "skill": "whole-number operations",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_02",
+      "skill": "basic measurement",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_03",
+      "skill": "shape and number vocabulary",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    },
+    {
+      "id": "f06_mathematics_04",
+      "skill": "reading tables or diagrams",
+      "mastery_check": "Can the learner explain and use this skill independently?"
+    }
+  ],
+  "prerequisite_diagnostic": [
+    {
+      "skill": "whole-number operations",
+      "question": "Show what you already know about whole-number operations.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "basic measurement",
+      "question": "Show what you already know about basic measurement.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "shape and number vocabulary",
+      "question": "Show what you already know about shape and number vocabulary.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    },
+    {
+      "skill": "reading tables or diagrams",
+      "question": "Show what you already know about reading tables or diagrams.",
+      "advance_if": "Accurate independent response.",
+      "remediate_if": "Incorrect, incomplete or dependent on hints."
+    }
+  ],
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if needed",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent practice",
+    "misconception check",
+    "targeted remediation",
+    "transfer",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "learning_objectives": [
+    "Explain patterns and rules using simple language and an example.",
+    "Explain number/shape patterns using simple language and an example.",
+    "Explain generalisation using simple language and an example.",
+    "Explain prediction using simple language and an example.",
+    "Apply the chapter ideas independently in an unfamiliar but age-appropriate situation."
+  ],
+  "concept_map": [
+    {
+      "concept_id": "m06_c1_k1",
+      "concept": "patterns and rules",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies patterns and rules."
+    },
+    {
+      "concept_id": "m06_c1_k2",
+      "concept": "number/shape patterns",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies number/shape patterns."
+    },
+    {
+      "concept_id": "m06_c1_k3",
+      "concept": "generalisation",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies generalisation."
+    },
+    {
+      "concept_id": "m06_c1_k4",
+      "concept": "prediction",
+      "prerequisites": [
+        "foundation_1",
+        "foundation_2"
+      ],
+      "mastery_evidence": "Learner explains and applies prediction."
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "concept": "patterns and rules",
+      "objective": "Learner can understand, explain and apply patterns and rules.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain patterns and rules without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L02",
+      "concept": "number/shape patterns",
+      "objective": "Learner can understand, explain and apply number/shape patterns.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain number/shape patterns without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L03",
+      "concept": "generalisation",
+      "objective": "Learner can understand, explain and apply generalisation.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain generalisation without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    },
+    {
+      "lesson_id": "L04",
+      "concept": "prediction",
+      "objective": "Learner can understand, explain and apply prediction.",
+      "teaching_sequence": [
+        "Begin with a concrete or familiar situation.",
+        "Name the mathematical idea and connect it to prior knowledge.",
+        "Model a complete worked example with every step explained.",
+        "Move from representation to symbols and then to a new problem.",
+        "Ask the learner to explain the method without copying."
+      ],
+      "checkpoint": "Explain prediction without notes and solve a new example.",
+      "mastery_evidence": "Accurate independent response plus transfer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "concept": "patterns and rules",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "number/shape patterns",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "generalisation",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    },
+    {
+      "concept": "prediction",
+      "levels": [
+        "foundation",
+        "guided",
+        "independent",
+        "transfer"
+      ],
+      "method": "Model the reasoning step by step, then remove prompts."
+    }
+  ],
+  "guided_practice": [
+    {
+      "concept": "patterns and rules",
+      "prompt": "Complete a supported task involving patterns and rules. Explain the step you are taking and why."
+    },
+    {
+      "concept": "number/shape patterns",
+      "prompt": "Complete a supported task involving number/shape patterns. Explain the step you are taking and why."
+    },
+    {
+      "concept": "generalisation",
+      "prompt": "Complete a supported task involving generalisation. Explain the step you are taking and why."
+    },
+    {
+      "concept": "prediction",
+      "prompt": "Complete a supported task involving prediction. Explain the step you are taking and why."
+    }
+  ],
+  "independent_practice": [
+    {
+      "concept": "patterns and rules",
+      "prompt": "Complete a new task involving patterns and rules without hints, then self-check."
+    },
+    {
+      "concept": "number/shape patterns",
+      "prompt": "Complete a new task involving number/shape patterns without hints, then self-check."
+    },
+    {
+      "concept": "generalisation",
+      "prompt": "Complete a new task involving generalisation without hints, then self-check."
+    },
+    {
+      "concept": "prediction",
+      "prompt": "Complete a new task involving prediction without hints, then self-check."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "patterns and rules",
+        "question": "Which approach best helps you understand patterns and rules?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "patterns and rules",
+        "question": "Explain patterns and rules as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines patterns and rules, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "patterns and rules",
+        "question": "Create and solve a new everyday problem involving patterns and rules.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "number/shape patterns",
+        "question": "Which approach best helps you understand number/shape patterns?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "number/shape patterns",
+        "question": "Explain number/shape patterns as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines number/shape patterns, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "number/shape patterns",
+        "question": "Create and solve a new everyday problem involving number/shape patterns.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "generalisation",
+        "question": "Which approach best helps you understand generalisation?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "generalisation",
+        "question": "Explain generalisation as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines generalisation, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "generalisation",
+        "question": "Create and solve a new everyday problem involving generalisation.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "prediction",
+        "question": "Which approach best helps you understand prediction?",
+        "options": [
+          "Identify what is known, represent it clearly, choose a valid method, and check the result.",
+          "Choose an operation before reading the problem.",
+          "Copy a worked answer.",
+          "Guess and stop."
+        ],
+        "answer": "A",
+        "explanation": "Understanding the situation, choosing a method and checking the result makes mathematical reasoning reliable."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "prediction",
+        "question": "Explain prediction as if you were teaching it to someone learning from the basics.",
+        "answer": "A correct response defines prediction, gives a simple example, and explains the reasoning.",
+        "rubric": [
+          "accurate concept",
+          "simple example",
+          "reasoning"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "prediction",
+        "question": "Create and solve a new everyday problem involving prediction.",
+        "expected_response": "A valid problem, correct solution and explanation of the method.",
+        "rubric": [
+          "valid context",
+          "correct mathematics",
+          "independent reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What best demonstrates mastery of 'Patterns in Mathematics'?",
+        "options": [
+          "Use major ideas independently in a new situation and explain the reasoning.",
+          "Finish the lesson without checking understanding.",
+          "Memorise the title.",
+          "Copy one worked example."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the most important idea in 'Patterns in Mathematics', and how would you teach it to a beginner?",
+        "answer": "A defensible answer that identifies a foundational idea and teaches it accurately.",
+        "rubric": [
+          "foundational idea",
+          "accurate teaching",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is patterns and rules?",
+      "back": "Define patterns and rules, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02",
+      "front": "What is number/shape patterns?",
+      "back": "Define number/shape patterns, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03",
+      "front": "What is generalisation?",
+      "back": "Define generalisation, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04",
+      "front": "What is prediction?",
+      "back": "Define prediction, give an example, and explain why it matters.",
+      "retrieval_type": "free_recall"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "chapter_specific",
+      "title": "Explore patterns and rules",
+      "instructions": "Use a safe, age-appropriate task specifically focused on patterns and rules. Record what you notice, explain it, and state what you learned.",
+      "evidence": "Learner-created observation/work"
+    },
+    {
+      "id": "ACT02",
+      "type": "transfer",
+      "title": "Use it in a new situation",
+      "instructions": "Create a new situation where number/shape patterns is useful and explain your reasoning.",
+      "evidence": "Original learner response"
+    },
+    {
+      "id": "ACT03",
+      "type": "teach_back",
+      "title": "Teach it back",
+      "instructions": "Teach prediction to a beginner in 3–5 clear steps.",
+      "evidence": "Oral/written explanation"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing the main idea of patterns and rules with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of number/shape patterns with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of generalisation with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    },
+    {
+      "trigger": "Confusing the main idea of prediction with a related but different idea.",
+      "diagnostic": "Ask for an explanation plus a near-example.",
+      "repair": [
+        "Identify the missing concept.",
+        "Return to a concrete/simple example.",
+        "Contrast the incorrect and correct ideas.",
+        "Learner explains the correction.",
+        "Give two near-transfer tasks.",
+        "Reassess."
+      ],
+      "exit_criterion": "Two consecutive independent correct responses."
+    }
+  ],
+  "application_tasks": [
+    {
+      "task": "Apply patterns and rules to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply number/shape patterns to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    },
+    {
+      "task": "Apply generalisation to a new everyday or subject-specific situation.",
+      "success_criteria": [
+        "correct use",
+        "reasoning",
+        "independent explanation"
+      ]
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain key ideas without copying.",
+      "Learner can handle an unfamiliar example.",
+      "Application meets rubric."
+    ],
+    "on_failure": "Route to weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock cumulative and spaced retrieval."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "items_per_review": 6,
+    "rule": "Use mixed retrieval and re-enter remediation after repeated failure."
+  },
+  "analytics_events": [
+    "diagnostic_completed",
+    "lesson_completed",
+    "question_answered",
+    "misconception_detected",
+    "remediation_completed",
+    "mastery_passed",
+    "mastery_failed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

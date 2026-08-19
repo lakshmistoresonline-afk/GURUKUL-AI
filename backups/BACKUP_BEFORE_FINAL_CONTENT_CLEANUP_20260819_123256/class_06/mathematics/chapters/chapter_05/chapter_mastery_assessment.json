@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_mastery_assessment",
+  "chapter_id": "fegp105",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Prime Time",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "components": [
+      "core concept",
+      "evidence",
+      "application",
+      "higher-order transfer"
+    ],
+    "mastery_threshold": 0.85,
+    "remediation_below": 0.7
+  }
+}

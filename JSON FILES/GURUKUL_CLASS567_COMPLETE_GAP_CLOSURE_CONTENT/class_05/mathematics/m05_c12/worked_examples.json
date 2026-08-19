@@ -1,0 +1,27 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m05_c12",
+  "component": "WORKED_EXAMPLES",
+  "content": {
+    "examples": [
+      {
+        "title": "Converting to Seconds",
+        "problem": "How many seconds are in 3 minutes 20 seconds?",
+        "solution": "3 min = 3 x 60 = 180 seconds. Total: 180 + 20 = 200 seconds.",
+        "explanation": "Always convert the larger unit to the smaller unit by multiplying by 60."
+      },
+      {
+        "title": "Journey Time",
+        "problem": "A bus leaves at 8:45 AM and arrives at 11:15 AM. How long is the journey?",
+        "solution": "8:45 to 10:45 is 2 hours. 10:45 to 11:15 is 30 minutes. Total: 2 hours 30 minutes.",
+        "explanation": "Count full hours first, then add remaining minutes."
+      },
+      {
+        "title": "Adding Durations",
+        "problem": "Add 45 minutes and 25 minutes.",
+        "solution": "45 + 25 = 70 minutes = 1 hour 10 minutes.",
+        "explanation": "Since 60 minutes make an hour, we subtract 60 from 70 and carry over 1 to the hours place."
+      }
+    ]
+  }
+}

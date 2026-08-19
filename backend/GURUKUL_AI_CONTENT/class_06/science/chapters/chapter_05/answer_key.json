@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be checked against the supplied chapter source.",
-  "sample": {
-    "question_id": "fecu105_q01",
-    "answer": "Option 1",
-    "evidence": "The shopkeeper measures the cloth using a metal measuring rod."
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fecu105",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Measurement of Length and Motion",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fecu105_q01",
+      "answer": "Option 1",
+      "evidence": "The shopkeeper measures the cloth using a metal measuring rod."
+    }
   }
 }

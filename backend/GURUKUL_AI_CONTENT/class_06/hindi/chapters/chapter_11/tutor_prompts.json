@@ -1,8 +1,26 @@
 {
-  "prompts": [
-    "Help me understand चेतक की वीरता without giving the answer immediately.",
-    "Ask what evidence supports my answer.",
-    "Give one small hint and wait.",
-    "If I am wrong, identify the concept to revisit."
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "tutor_prompts",
+  "chapter_id": "fhml111",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u0947\u0924\u0915 \u0915\u0940 \u0935\u0940\u0930\u0924\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "prompts": [
+      "Help me understand \u091a\u0947\u0924\u0915 \u0915\u0940 \u0935\u0940\u0930\u0924\u093e without giving the answer immediately.",
+      "Ask what evidence supports my answer.",
+      "Give one small hint and wait.",
+      "If I am wrong, identify the concept to revisit."
+    ]
+  }
 }

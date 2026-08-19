@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "ehve108_mm01",
-      "type": "chapter_pdf",
-      "title": "Source chapter: काजीरंगा राष्ट्रीय उद्यान की यात्रा",
-      "url": null,
-      "verification_status": "LOCAL_SOURCE",
-      "purpose": "Primary learning source"
-    },
-    {
-      "id": "ehve108_mm02",
-      "type": "interactive_visual",
-      "title": "Teacher-created visual for काजीरंगा राष्ट्रीय उद्यान की यात्रा",
-      "url": null,
-      "verification_status": "TO_BE_RENDERED_BY_RUNTIME",
-      "purpose": "Visualise a chapter concept"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "ehve108",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u0915\u093e\u091c\u0940\u0930\u0902\u0917\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0909\u0926\u094d\u092f\u093e\u0928 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "ehve108_mm01",
+        "type": "chapter_pdf",
+        "title": "Source chapter: \u0915\u093e\u091c\u0940\u0930\u0902\u0917\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0909\u0926\u094d\u092f\u093e\u0928 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e",
+        "url": null,
+        "verification_status": "LOCAL_SOURCE",
+        "purpose": "Primary learning source"
+      },
+      {
+        "id": "ehve108_mm02",
+        "type": "interactive_visual",
+        "title": "Teacher-created visual for \u0915\u093e\u091c\u0940\u0930\u0902\u0917\u093e \u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u0909\u0926\u094d\u092f\u093e\u0928 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e",
+        "url": null,
+        "verification_status": "TO_BE_RENDERED_BY_RUNTIME",
+        "purpose": "Visualise a chapter concept"
+      }
+    ]
+  }
 }

@@ -1,35 +1,53 @@
 {
-  "activities": [
-    {
-      "id": "ghml108_lab01",
-      "title": "Explore बिरजू महाराज से साक्षात्कार",
-      "objective": "Investigate a central idea from बिरजू महाराज से साक्षात्कार.",
-      "materials": [
-        "chapter text",
-        "notebook",
-        "pencil"
-      ],
-      "instructions": [
-        "Review the relevant source section.",
-        "Identify the evidence or method needed.",
-        "पाठ के आधार पर अर्थ-बोध, क्रम, चर्चा, तुलना या अभिव्यक्ति गतिविधि",
-        "Record the result and reasoning."
-      ],
-      "student_action": "Investigate and explain.",
-      "success_condition": "The outcome is consistent with the source and includes reasoning."
-    },
-    {
-      "id": "ghml108_lab02",
-      "title": "Evidence Check",
-      "objective": "Distinguish supported from unsupported claims.",
-      "instructions": [
-        "Choose two chapter-related claims.",
-        "Locate supporting evidence.",
-        "Accept or reject each claim.",
-        "Explain why."
-      ],
-      "student_action": "Match claims to evidence.",
-      "success_condition": "Accepted claims have relevant source support."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "interactive_lab",
+  "chapter_id": "ghml108",
+  "class": "class_07",
+  "subject": "Hindi",
+  "chapter_title": "\u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "ghml108_lab01",
+        "title": "Explore \u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930",
+        "objective": "Investigate a central idea from \u092c\u093f\u0930\u091c\u0942 \u092e\u0939\u093e\u0930\u093e\u091c \u0938\u0947 \u0938\u093e\u0915\u094d\u0937\u093e\u0924\u094d\u0915\u093e\u0930.",
+        "materials": [
+          "chapter text",
+          "notebook",
+          "pencil"
+        ],
+        "instructions": [
+          "Review the relevant source section.",
+          "Identify the evidence or method needed.",
+          "\u092a\u093e\u0920 \u0915\u0947 \u0906\u0927\u093e\u0930 \u092a\u0930 \u0905\u0930\u094d\u0925-\u092c\u094b\u0927, \u0915\u094d\u0930\u092e, \u091a\u0930\u094d\u091a\u093e, \u0924\u0941\u0932\u0928\u093e \u092f\u093e \u0905\u092d\u093f\u0935\u094d\u092f\u0915\u094d\u0924\u093f \u0917\u0924\u093f\u0935\u093f\u0927\u093f",
+          "Record the result and reasoning."
+        ],
+        "student_action": "Investigate and explain.",
+        "success_condition": "The outcome is consistent with the source and includes reasoning."
+      },
+      {
+        "id": "ghml108_lab02",
+        "title": "Evidence Check",
+        "objective": "Distinguish supported from unsupported claims.",
+        "instructions": [
+          "Choose two chapter-related claims.",
+          "Locate supporting evidence.",
+          "Accept or reject each claim.",
+          "Explain why."
+        ],
+        "student_action": "Match claims to evidence.",
+        "success_condition": "Accepted claims have relevant source support."
+      }
+    ]
+  }
 }

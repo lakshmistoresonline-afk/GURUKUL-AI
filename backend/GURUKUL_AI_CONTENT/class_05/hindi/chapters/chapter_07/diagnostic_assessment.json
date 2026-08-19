@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "ehve107_diag01",
-      "question": "What do you already know about 'मेरा बचपन'?",
-      "response_type": "short_answer"
-    },
-    {
-      "id": "ehve107_diag02",
-      "question": "Which related idea feels easiest and which needs more explanation?",
-      "response_type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "ehve107",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u092e\u0947\u0930\u093e \u092c\u091a\u092a\u0928",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "ehve107_diag01",
+        "question": "What do you already know about '\u092e\u0947\u0930\u093e \u092c\u091a\u092a\u0928'?",
+        "response_type": "short_answer"
+      },
+      {
+        "id": "ehve107_diag02",
+        "question": "Which related idea feels easiest and which needs more explanation?",
+        "response_type": "self_assessment"
+      }
+    ]
+  }
 }

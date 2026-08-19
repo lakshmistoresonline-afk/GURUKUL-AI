@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "interactive_lab",
+  "chapter_id": "ghml110",
+  "class": 7,
+  "subject": "Hindi",
+  "chapter_title": "मीरा के पद",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "ghml110_lab01",
+        "title": "Explore मीरा के पद",
+        "objective": "Investigate a central idea from मीरा के पद.",
+        "materials": [
+          "chapter text",
+          "notebook",
+          "pencil"
+        ],
+        "instructions": [
+          "Review the relevant source section.",
+          "Identify the evidence or method needed.",
+          "पाठ के आधार पर अर्थ-बोध, क्रम, चर्चा, तुलना या अभिव्यक्ति गतिविधि",
+          "Record the result and reasoning."
+        ],
+        "student_action": "Investigate and explain.",
+        "success_condition": "The outcome is consistent with the source and includes reasoning."
+      },
+      {
+        "id": "ghml110_lab02",
+        "title": "Evidence Check",
+        "objective": "Distinguish supported from unsupported claims.",
+        "instructions": [
+          "Choose two chapter-related claims.",
+          "Locate supporting evidence.",
+          "Accept or reject each claim.",
+          "Explain why."
+        ],
+        "student_action": "Match claims to evidence.",
+        "success_condition": "Accepted claims have relevant source support."
+      }
+    ]
+  }
+}

@@ -1,16 +1,34 @@
 {
-  "applications": [
-    {
-      "context": "home",
-      "task": "Find one everyday situation connected to 'चाँद का कुरता' and explain the connection."
-    },
-    {
-      "context": "school",
-      "task": "Show a classmate how the chapter idea can be used or observed at school."
-    },
-    {
-      "context": "community",
-      "task": "Identify one responsible action informed by the chapter."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "real_world_applications",
+  "chapter_id": "ehve103",
+  "class": "class_05",
+  "subject": "Hindi",
+  "chapter_title": "\u091a\u093e\u0901\u0926 \u0915\u093e \u0915\u0941\u0930\u0924\u093e",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "applications": [
+      {
+        "context": "home",
+        "task": "Find one everyday situation connected to '\u091a\u093e\u0901\u0926 \u0915\u093e \u0915\u0941\u0930\u0924\u093e' and explain the connection."
+      },
+      {
+        "context": "school",
+        "task": "Show a classmate how the chapter idea can be used or observed at school."
+      },
+      {
+        "context": "community",
+        "task": "Identify one responsible action informed by the chapter."
+      }
+    ]
+  }
 }

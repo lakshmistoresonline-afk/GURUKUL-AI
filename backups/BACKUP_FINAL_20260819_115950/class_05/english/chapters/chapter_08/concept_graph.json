@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "eesa108_concept_01",
+      "label": "The Decision of the Panchayat"
+    },
+    {
+      "id": "eesa108_concept_02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "eesa108_concept_03",
+      "label": "Application"
+    }
+  ],
+  "edges": [
+    {
+      "from": "eesa108_concept_01",
+      "to": "eesa108_concept_02",
+      "relation": "explained_by"
+    },
+    {
+      "from": "eesa108_concept_02",
+      "to": "eesa108_concept_03",
+      "relation": "applied_through"
+    }
+  ]
+}

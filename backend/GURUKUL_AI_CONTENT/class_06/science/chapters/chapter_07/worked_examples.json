@@ -1,24 +1,42 @@
 {
-  "examples": [
-    {
-      "id": "fecu107_ex01",
-      "task": "Explain a central idea from Temperature and its Measurement using evidence.",
-      "method": [
-        "Identify",
-        "Locate evidence",
-        "Connect",
-        "Check"
-      ]
-    },
-    {
-      "id": "fecu107_ex02",
-      "task": "Apply the same idea to a new related example.",
-      "method": [
-        "Identify transfer",
-        "Adapt",
-        "Justify",
-        "Check"
-      ]
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "worked_examples",
+  "chapter_id": "fecu107",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Temperature and its Measurement",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "examples": [
+      {
+        "id": "fecu107_ex01",
+        "task": "Explain a central idea from Temperature and its Measurement using evidence.",
+        "method": [
+          "Identify",
+          "Locate evidence",
+          "Connect",
+          "Check"
+        ]
+      },
+      {
+        "id": "fecu107_ex02",
+        "task": "Apply the same idea to a new related example.",
+        "method": [
+          "Identify transfer",
+          "Adapt",
+          "Justify",
+          "Check"
+        ]
+      }
+    ]
+  }
 }

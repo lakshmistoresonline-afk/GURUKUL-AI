@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_completion",
+  "chapter_id": "fegp109",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Symmetry",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "completion_rules": [
+      "required learning viewed",
+      "core activities completed",
+      "practice threshold met",
+      "mastery assessment passed",
+      "misconceptions remediated"
+    ],
+    "complete_only_when_all_applicable_rules_pass": true
+  }
+}

@@ -1,28 +1,46 @@
 {
-  "nodes": [
-    {
-      "id": "fecu112_c01",
-      "label": "Beyond Earth"
-    },
-    {
-      "id": "fecu112_c02",
-      "label": "Evidence and reasoning"
-    },
-    {
-      "id": "fecu112_c03",
-      "label": "Application"
-    }
-  ],
-  "edges": [
-    {
-      "from": "fecu112_c01",
-      "to": "fecu112_c02",
-      "relation": "supported_by"
-    },
-    {
-      "from": "fecu112_c02",
-      "to": "fecu112_c03",
-      "relation": "enables"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "fecu112",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Beyond Earth",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "fecu112_c01",
+        "label": "Beyond Earth"
+      },
+      {
+        "id": "fecu112_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "fecu112_c03",
+        "label": "Application"
+      }
+    ],
+    "edges": [
+      {
+        "from": "fecu112_c01",
+        "to": "fecu112_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "fecu112_c02",
+        "to": "fecu112_c03",
+        "relation": "enables"
+      }
+    ]
+  }
 }

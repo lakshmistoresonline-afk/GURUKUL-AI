@@ -1,8 +1,26 @@
 {
-  "validation_rule": "All answers must be validated against the supplied chapter source.",
-  "sample": {
-    "question_id": "gegp203_q01",
-    "answer": "Option 1",
-    "evidence": "3 FINDING COMMON GROUND 3.1 The Greatest of All Sameeksha is building her new house."
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "gegp203",
+  "class": "class_07",
+  "subject": "Mathematics",
+  "chapter_title": "Finding Common Ground",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "gegp203_q01",
+      "answer": "Option 1",
+      "evidence": "3 FINDING COMMON GROUND 3.1 The Greatest of All Sameeksha is building her new house."
+    }
   }
 }

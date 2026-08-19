@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m06_c3",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Recognition",
+        "tasks": [
+          "Is 15 a multiple of 3? (Yes / No).",
+          "Which of these is a factor of 10? (3 / 5 / 7)."
+        ],
+        "hints": ["Check if 15 comes in the table of 3.", "Can 10 be divided by 5 without a remainder?"]
+      },
+      {
+        "level": 2,
+        "type": "Grouping/Logic",
+        "tasks": [
+          "Find the HCF of 12 and 16.",
+          "Express 20 as the sum of two prime numbers."
+        ],
+        "dual_language_hint": "Common factors of 12 and 16 are 1, 2, 4. / 12 और 16 के सामान्य गुणनखंड 1, 2, 4 हैं।"
+      },
+      {
+        "level": 3,
+        "type": "Strategic Thinking",
+        "tasks": [
+          "How can knowing divisibility rules for 2 and 5 help you simplify large fractions?",
+          "If a number is divisible by both 2 and 3, it must be divisible by ___."
+        ]
+      }
+    ]
+  }
+}

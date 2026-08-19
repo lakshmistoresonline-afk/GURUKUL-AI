@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "chapter_id": "m07_c15",
+  "component": "GUIDED_PRACTICE",
+  "content": {
+    "scaffolding_levels": [
+      {
+        "level": 1,
+        "type": "Conversions",
+        "tasks": [
+          "Convert 0.65 to percentage.",
+          "Find 15% of 250."
+        ],
+        "hints": ["Multiply by 100.", "Multiply 15/100 by 250."]
+      },
+      {
+        "level": 2,
+        "type": "Profit and Loss",
+        "tasks": [
+          "A toy is bought for Rs 72 and sold for Rs 80. Find profit percentage.",
+          "If CP = Rs 120 and Loss = 10%, find SP."
+        ],
+        "dual_language_hint": "Profit % = (Profit/CP) * 100. / लाभ % = (लाभ/क्रय मूल्य) * 100।"
+      },
+      {
+        "level": 3,
+        "type": "Simple Interest",
+        "tasks": [
+          "Find interest on Rs 5000 at 10% per year for 2 years.",
+          "What rate gives Rs 280 as interest on a sum of Rs 56,000 in 2 years?"
+        ]
+      }
+    ]
+  }
+}

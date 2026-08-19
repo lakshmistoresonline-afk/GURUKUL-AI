@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "eeev109_diag01",
-      "question": "What do you already know about 'Rhythms of Nature'?",
-      "response_type": "short_answer"
-    },
-    {
-      "id": "eeev109_diag02",
-      "question": "Which related idea feels easiest and which needs more explanation?",
-      "response_type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "eeev109",
+  "class": "class_05",
+  "subject": "EVS",
+  "chapter_title": "Rhythms of Nature",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eeev109_diag01",
+        "question": "What do you already know about 'Rhythms of Nature'?",
+        "response_type": "short_answer"
+      },
+      {
+        "id": "eeev109_diag02",
+        "question": "Which related idea feels easiest and which needs more explanation?",
+        "response_type": "self_assessment"
+      }
+    ]
+  }
 }

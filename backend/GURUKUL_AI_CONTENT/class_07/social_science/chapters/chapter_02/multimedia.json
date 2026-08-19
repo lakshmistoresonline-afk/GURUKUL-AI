@@ -1,20 +1,38 @@
 {
-  "resources": [
-    {
-      "id": "gees202_official",
-      "type": "official_resource",
-      "title": "NCERT ePathshala eResources — India and Her Neighbours",
-      "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
-      "verification_status": "VERIFIED_OFFICIAL_PORTAL",
-      "purpose": "Official chapter-linked digital resource portal."
-    },
-    {
-      "id": "gees202_yt_search",
-      "type": "youtube_discovery",
-      "title": "Video discovery — India and Her Neighbours",
-      "url": "https://www.youtube.com/results?search_query=Class+7+Social+Science+India+and+Her+Neighbours+NCERT",
-      "verification_status": "DISCOVERY_ONLY",
-      "purpose": "Discovery link only; not represented as a verified direct video."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "multimedia",
+  "chapter_id": "gees202",
+  "class": "class_07",
+  "subject": "Social Science",
+  "chapter_title": "India and Her Neighbours",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "resources": [
+      {
+        "id": "gees202_official",
+        "type": "official_resource",
+        "title": "NCERT ePathshala eResources \u2014 India and Her Neighbours",
+        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+        "purpose": "Official chapter-linked digital resource portal."
+      },
+      {
+        "id": "gees202_yt_search",
+        "type": "youtube_discovery",
+        "title": "Video discovery \u2014 India and Her Neighbours",
+        "url": "https://www.youtube.com/results?search_query=Class+7+Social+Science+India+and+Her+Neighbours+NCERT",
+        "verification_status": "DISCOVERY_ONLY",
+        "purpose": "Discovery link only; not represented as a verified direct video."
+      }
+    ]
+  }
 }

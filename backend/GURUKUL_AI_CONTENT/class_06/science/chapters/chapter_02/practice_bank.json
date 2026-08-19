@@ -1,100 +1,118 @@
 {
-  "items": [
-    {
-      "id": "fecu102_q01",
-      "type": "source_based",
-      "question": "Which statement is supported by Diversity in the Living World?",
-      "options": [
-        "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "easy",
-      "concept_id": "fecu102_c01"
-    },
-    {
-      "id": "fecu102_q02",
-      "type": "source_based",
-      "question": "Which statement is supported by Diversity in the Living World?",
-      "options": [
-        "Likewise, good people bear all hardships and bring welfare to others.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "Likewise, good people bear all hardships and bring welfare to others.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "easy",
-      "concept_id": "fecu102_c01"
-    },
-    {
-      "id": "fecu102_q03",
-      "type": "source_based",
-      "question": "Which statement is supported by Diversity in the Living World?",
-      "options": [
-        "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "medium",
-      "concept_id": "fecu102_c01"
-    },
-    {
-      "id": "fecu102_q04",
-      "type": "source_based",
-      "question": "Which statement is supported by Diversity in the Living World?",
-      "options": [
-        "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "medium",
-      "concept_id": "fecu102_c01"
-    },
-    {
-      "id": "fecu102_q05",
-      "type": "source_based",
-      "question": "Which statement is supported by Diversity in the Living World?",
-      "options": [
-        "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "hard",
-      "concept_id": "fecu102_c01"
-    },
-    {
-      "id": "fecu102_q06",
-      "type": "source_based",
-      "question": "Which statement is supported by Diversity in the Living World?",
-      "options": [
-        "He is also brilliant at identifying a variety of plants and animals.",
-        "An unrelated statement.",
-        "A contradictory statement.",
-        "An unsupported statement."
-      ],
-      "correct_option": 0,
-      "source_evidence": "He is also brilliant at identifying a variety of plants and animals.",
-      "explanation": "The answer must be supported by the supplied chapter source.",
-      "difficulty": "hard",
-      "concept_id": "fecu102_c01"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "practice_bank",
+  "chapter_id": "fecu102",
+  "class": "class_06",
+  "subject": "Science",
+  "chapter_title": "Diversity in the Living World",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fecu102_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Diversity in the Living World?",
+        "options": [
+          "\u092b\u0932\u093e\u0928\u094d\u092f\u092a\u093f \u092a\u0930\u093e\u0930\u094d\u0925\u093e\u092f \u0935\u0915 \u0943 \u094d\u0937\u093e\u0903 \u0938\u0924\u094d\u092a\u0941\u0930\u0941\u0937\u093e \u0907\u0935 \u0965 (\u0938\u092d \u0941 \u093e\u0937\u093f\u0924) Trees stand in the Sun and give shade to others.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "\u092b\u0932\u093e\u0928\u094d\u092f\u092a\u093f \u092a\u0930\u093e\u0930\u094d\u0925\u093e\u092f \u0935\u0915 \u0943 \u094d\u0937\u093e\u0903 \u0938\u0924\u094d\u092a\u0941\u0930\u0941\u0937\u093e \u0907\u0935 \u0965 (\u0938\u092d \u0941 \u093e\u0937\u093f\u0924) Trees stand in the Sun and give shade to others.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fecu102_c01"
+      },
+      {
+        "id": "fecu102_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Diversity in the Living World?",
+        "options": [
+          "Likewise, good people bear all hardships and bring welfare to others.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Likewise, good people bear all hardships and bring welfare to others.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fecu102_c01"
+      },
+      {
+        "id": "fecu102_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Diversity in the Living World?",
+        "options": [
+          "(Wise saying) It is a pleasant morning after yesterday\u2019s refreshing rain.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "(Wise saying) It is a pleasant morning after yesterday\u2019s refreshing rain.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fecu102_c01"
+      },
+      {
+        "id": "fecu102_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Diversity in the Living World?",
+        "options": [
+          "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fecu102_c01"
+      },
+      {
+        "id": "fecu102_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Diversity in the Living World?",
+        "options": [
+          "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fecu102_c01"
+      },
+      {
+        "id": "fecu102_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Diversity in the Living World?",
+        "options": [
+          "He is also brilliant at identifying a variety of plants and animals.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "He is also brilliant at identifying a variety of plants and animals.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fecu102_c01"
+      }
+    ]
+  }
 }

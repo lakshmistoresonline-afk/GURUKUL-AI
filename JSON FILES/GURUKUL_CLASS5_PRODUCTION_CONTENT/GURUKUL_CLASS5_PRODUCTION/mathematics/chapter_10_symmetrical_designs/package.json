@@ -1,0 +1,463 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "copyright_safe_original_scaffolding": true,
+    "authoritative_source_verification_required": true
+  },
+  "curriculum_alignment": {
+    "class": "class_05",
+    "subject": "Mathematics",
+    "chapter_id": "m05_c10",
+    "chapter_title": "Symmetrical Designs",
+    "basis": "NCERT Class 5 chapter structure plus project-provided audit metadata",
+    "verification_note": "Do not publish until chapter wording, sequence and learning claims are checked against the current official textbook edition."
+  },
+  "prerequisite_diagnostic": {
+    "purpose": "Determine actual starting level before teaching.",
+    "items": [
+      {
+        "skill": "mirror ideas",
+        "question": "Show what you already know about mirror ideas.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      },
+      {
+        "skill": "shape recognition",
+        "question": "Show what you already know about shape recognition.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      },
+      {
+        "skill": "line concepts",
+        "question": "Show what you already know about line concepts.",
+        "advance_if": "Accurate and independently explained.",
+        "remediate_if": "Incorrect, incomplete, or dependent on hints."
+      }
+    ]
+  },
+  "learning_path": [
+    "prerequisite diagnostic",
+    "foundation repair if required",
+    "chapter orientation",
+    "concept lessons",
+    "worked examples",
+    "guided practice",
+    "independent retrieval",
+    "misconception check",
+    "targeted remediation",
+    "transfer/application",
+    "mastery assessment",
+    "spaced retention"
+  ],
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "title": "symmetry: understand → model → practise → explain",
+      "objective": "Learner can explain and use symmetry in a new problem.",
+      "teach": [
+        "Start with a familiar situation involving symmetry.",
+        "Name the mathematical idea and connect it to what the learner already knows.",
+        "Model one worked example aloud, showing every step and the reason for each step.",
+        "Ask the learner to predict the next step before revealing it.",
+        "Move from concrete representation to symbols and then to an unfamiliar example."
+      ],
+      "worked_example": {
+        "prompt": "Create a simple example involving symmetry.",
+        "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+      },
+      "checkpoint": "Explain symmetry in your own words and solve one new example without help.",
+      "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+    },
+    {
+      "lesson_id": "L02",
+      "title": "line of symmetry: understand → model → practise → explain",
+      "objective": "Learner can explain and use line of symmetry in a new problem.",
+      "teach": [
+        "Start with a familiar situation involving line of symmetry.",
+        "Name the mathematical idea and connect it to what the learner already knows.",
+        "Model one worked example aloud, showing every step and the reason for each step.",
+        "Ask the learner to predict the next step before revealing it.",
+        "Move from concrete representation to symbols and then to an unfamiliar example."
+      ],
+      "worked_example": {
+        "prompt": "Create a simple example involving line of symmetry.",
+        "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+      },
+      "checkpoint": "Explain line of symmetry in your own words and solve one new example without help.",
+      "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+    },
+    {
+      "lesson_id": "L03",
+      "title": "design patterns: understand → model → practise → explain",
+      "objective": "Learner can explain and use design patterns in a new problem.",
+      "teach": [
+        "Start with a familiar situation involving design patterns.",
+        "Name the mathematical idea and connect it to what the learner already knows.",
+        "Model one worked example aloud, showing every step and the reason for each step.",
+        "Ask the learner to predict the next step before revealing it.",
+        "Move from concrete representation to symbols and then to an unfamiliar example."
+      ],
+      "worked_example": {
+        "prompt": "Create a simple example involving design patterns.",
+        "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+      },
+      "checkpoint": "Explain design patterns in your own words and solve one new example without help.",
+      "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+    },
+    {
+      "lesson_id": "L04",
+      "title": "reflection: understand → model → practise → explain",
+      "objective": "Learner can explain and use reflection in a new problem.",
+      "teach": [
+        "Start with a familiar situation involving reflection.",
+        "Name the mathematical idea and connect it to what the learner already knows.",
+        "Model one worked example aloud, showing every step and the reason for each step.",
+        "Ask the learner to predict the next step before revealing it.",
+        "Move from concrete representation to symbols and then to an unfamiliar example."
+      ],
+      "worked_example": {
+        "prompt": "Create a simple example involving reflection.",
+        "method": "Represent the situation, identify the known information, choose the operation or representation, solve step by step, and check whether the answer is reasonable."
+      },
+      "checkpoint": "Explain reflection in your own words and solve one new example without help.",
+      "mastery_signal": "Correct solution + correct reasoning + successful transfer to a new example."
+    }
+  ],
+  "question_bank": {
+    "total": 14,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "symmetry",
+        "question": "Which approach is most useful when solving a problem about symmetry?",
+        "options": [
+          "Identify what is known and what is asked, then choose a suitable representation or operation.",
+          "Choose an operation before reading the question.",
+          "Use the largest number as the answer.",
+          "Skip checking because the first answer is usually correct."
+        ],
+        "answer": "A",
+        "explanation": "Good problem solving starts by identifying the information and the question, then choosing a method and checking the result."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "symmetry",
+        "question": "Explain symmetry to a Class 5 learner who has never seen it before.",
+        "answer": "A correct response should define symmetry, give a simple example, and explain the reasoning.",
+        "rubric": [
+          "correct idea",
+          "clear example",
+          "reasoning/explanation"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "symmetry",
+        "question": "Create a new everyday problem that requires symmetry. Solve it and explain why your method works.",
+        "expected_response": "The learner should create a relevant problem, solve it accurately, and justify the method.",
+        "rubric": [
+          "relevant context",
+          "correct mathematics",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "line of symmetry",
+        "question": "Which approach is most useful when solving a problem about line of symmetry?",
+        "options": [
+          "Identify what is known and what is asked, then choose a suitable representation or operation.",
+          "Choose an operation before reading the question.",
+          "Use the largest number as the answer.",
+          "Skip checking because the first answer is usually correct."
+        ],
+        "answer": "A",
+        "explanation": "Good problem solving starts by identifying the information and the question, then choosing a method and checking the result."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "core",
+        "concept": "line of symmetry",
+        "question": "Explain line of symmetry to a Class 5 learner who has never seen it before.",
+        "answer": "A correct response should define line of symmetry, give a simple example, and explain the reasoning.",
+        "rubric": [
+          "correct idea",
+          "clear example",
+          "reasoning/explanation"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "application",
+        "concept": "line of symmetry",
+        "question": "Create a new everyday problem that requires line of symmetry. Solve it and explain why your method works.",
+        "expected_response": "The learner should create a relevant problem, solve it accurately, and justify the method.",
+        "rubric": [
+          "relevant context",
+          "correct mathematics",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "design patterns",
+        "question": "Which approach is most useful when solving a problem about design patterns?",
+        "options": [
+          "Identify what is known and what is asked, then choose a suitable representation or operation.",
+          "Choose an operation before reading the question.",
+          "Use the largest number as the answer.",
+          "Skip checking because the first answer is usually correct."
+        ],
+        "answer": "A",
+        "explanation": "Good problem solving starts by identifying the information and the question, then choosing a method and checking the result."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "foundation",
+        "concept": "design patterns",
+        "question": "Explain design patterns to a Class 5 learner who has never seen it before.",
+        "answer": "A correct response should define design patterns, give a simple example, and explain the reasoning.",
+        "rubric": [
+          "correct idea",
+          "clear example",
+          "reasoning/explanation"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "design patterns",
+        "question": "Create a new everyday problem that requires design patterns. Solve it and explain why your method works.",
+        "expected_response": "The learner should create a relevant problem, solve it accurately, and justify the method.",
+        "rubric": [
+          "relevant context",
+          "correct mathematics",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "reflection",
+        "question": "Which approach is most useful when solving a problem about reflection?",
+        "options": [
+          "Identify what is known and what is asked, then choose a suitable representation or operation.",
+          "Choose an operation before reading the question.",
+          "Use the largest number as the answer.",
+          "Skip checking because the first answer is usually correct."
+        ],
+        "answer": "A",
+        "explanation": "Good problem solving starts by identifying the information and the question, then choosing a method and checking the result."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "application",
+        "concept": "reflection",
+        "question": "Explain reflection to a Class 5 learner who has never seen it before.",
+        "answer": "A correct response should define reflection, give a simple example, and explain the reasoning.",
+        "rubric": [
+          "correct idea",
+          "clear example",
+          "reasoning/explanation"
+        ]
+      },
+      {
+        "type": "application",
+        "difficulty": "transfer",
+        "concept": "reflection",
+        "question": "Create a new everyday problem that requires reflection. Solve it and explain why your method works.",
+        "expected_response": "The learner should create a relevant problem, solve it accurately, and justify the method.",
+        "rubric": [
+          "relevant context",
+          "correct mathematics",
+          "clear reasoning"
+        ]
+      },
+      {
+        "type": "mcq",
+        "difficulty": "mastery",
+        "concept": "chapter_mastery",
+        "question": "What is the best way to show mastery of 'Symmetrical Designs'?",
+        "options": [
+          "Use the important ideas independently in a new situation and explain the reasoning.",
+          "Finish every activity without checking understanding.",
+          "Memorise the chapter title only.",
+          "Repeat one worked example exactly."
+        ],
+        "answer": "A",
+        "explanation": "Mastery requires independent understanding and transfer, not completion or copying."
+      },
+      {
+        "type": "short_answer",
+        "difficulty": "mastery",
+        "concept": "chapter_prioritisation",
+        "question": "Which idea from 'Symmetrical Designs' would you teach to a younger learner first, and why?",
+        "answer": "Any defensible answer is acceptable if it identifies a foundational idea and gives a logical reason.",
+        "rubric": [
+          "foundational choice",
+          "reason",
+          "clear explanation"
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "id": "FC01",
+      "front": "What is the key idea behind symmetry?",
+      "back": "Explain symmetry using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC01B",
+      "front": "Give a new example of symmetry.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC02",
+      "front": "What is the key idea behind line of symmetry?",
+      "back": "Explain line of symmetry using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC02B",
+      "front": "Give a new example of line of symmetry.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC03",
+      "front": "What is the key idea behind design patterns?",
+      "back": "Explain design patterns using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC03B",
+      "front": "Give a new example of design patterns.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    },
+    {
+      "id": "FC04",
+      "front": "What is the key idea behind reflection?",
+      "back": "Explain reflection using a simple definition, one example, and one reason it matters.",
+      "retrieval_type": "free_recall"
+    },
+    {
+      "id": "FC04B",
+      "front": "Give a new example of reflection.",
+      "back": "Any accurate example that is different from the teaching example should be accepted.",
+      "retrieval_type": "transfer"
+    }
+  ],
+  "interactive_activities": [
+    {
+      "id": "ACT01",
+      "type": "math_lab",
+      "title": "Build it before you calculate",
+      "instructions": "Represent symmetry using counters, paper, a number line, grid, clock, measuring tool or another concrete model appropriate to the idea. Explain what the model shows.",
+      "evidence": "Photo/teacher observation + learner explanation"
+    },
+    {
+      "id": "ACT02",
+      "type": "challenge",
+      "title": "Find a different way",
+      "instructions": "Solve a problem involving line of symmetry in two different valid ways. Compare the methods.",
+      "evidence": "Two methods + comparison"
+    },
+    {
+      "id": "ACT03",
+      "type": "real_life",
+      "title": "Maths in my world",
+      "instructions": "Find one real situation outside the lesson where reflection is useful. Record the situation, the mathematics used, and the result.",
+      "evidence": "Learner-created example"
+    }
+  ],
+  "misconception_remediation": [
+    {
+      "trigger": "assuming every balanced-looking figure is symmetric",
+      "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+      "repair": [
+        "Identify the exact concept or prerequisite that is missing.",
+        "Return to one concrete, familiar example.",
+        "Think aloud and contrast the incorrect idea with the correct idea.",
+        "Ask the learner to explain the correction in their own words.",
+        "Give two near-transfer questions.",
+        "Reassess before moving to the next concept."
+      ],
+      "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+    },
+    {
+      "trigger": "confusing rotational and line symmetry",
+      "diagnostic": "Ask the learner to explain the idea and solve a near-example without hints.",
+      "repair": [
+        "Identify the exact concept or prerequisite that is missing.",
+        "Return to one concrete, familiar example.",
+        "Think aloud and contrast the incorrect idea with the correct idea.",
+        "Ask the learner to explain the correction in their own words.",
+        "Give two near-transfer questions.",
+        "Reassess before moving to the next concept."
+      ],
+      "exit_criterion": "Two consecutive accurate responses with an independent explanation."
+    }
+  ],
+  "mastery_policy": {
+    "minimum_mastery_score": 0.8,
+    "critical_conditions": [
+      "No unresolved critical misconception.",
+      "Learner can explain the key idea without copying.",
+      "Learner can solve or respond to an unfamiliar example.",
+      "Application task meets the rubric."
+    ],
+    "on_failure": "Do not simply unlock the next chapter. Route the learner to the weakest concept/prerequisite, reteach, practise and reassess.",
+    "on_mastery": "Unlock spaced retrieval and cumulative review."
+  },
+  "spaced_retrieval": {
+    "schedule_days": [
+      1,
+      3,
+      7,
+      14,
+      30
+    ],
+    "rule": "Use mixed retrieval; increase difficulty after correct independent recall; re-enter remediation after repeated failure.",
+    "items_per_review": 5
+  },
+  "analytics_events": [
+    "diagnostic_started",
+    "diagnostic_completed",
+    "lesson_started",
+    "lesson_completed",
+    "hint_requested",
+    "misconception_detected",
+    "remediation_started",
+    "remediation_completed",
+    "question_answered",
+    "mastery_passed",
+    "mastery_failed",
+    "application_completed",
+    "review_completed"
+  ],
+  "teacher_dashboard_metrics": [
+    "foundation_gap_rate",
+    "concept_mastery_by_skill",
+    "misconception_frequency",
+    "remediation_success_rate",
+    "first_attempt_accuracy",
+    "mastery_rate",
+    "retention_rate"
+  ]
+}

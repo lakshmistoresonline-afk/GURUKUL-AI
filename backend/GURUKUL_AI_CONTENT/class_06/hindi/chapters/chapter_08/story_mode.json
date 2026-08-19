@@ -1,29 +1,47 @@
 {
-  "mode_type": "literature_narrative",
-  "opening": "Enter a learning scenario connected to सत्रिया और बिहू नृत्य.",
-  "scenes": [
-    {
-      "scene_id": "s1",
-      "narration": "Observe the starting situation.",
-      "learning_purpose": "Activate prior knowledge."
-    },
-    {
-      "scene_id": "s2",
-      "narration": "Use chapter evidence or reasoning to decide.",
-      "learning_purpose": "Apply learning."
-    },
-    {
-      "scene_id": "s3",
-      "narration": "Transfer the idea to a new related situation.",
-      "learning_purpose": "Build independence."
-    }
-  ],
-  "learning_checkpoints": [
-    {
-      "question": "Which idea from सत्रिया और बिहू नृत्य supports your decision?",
-      "answer_rule": "Use source-grounded reasoning."
-    }
-  ],
-  "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-  "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
+  "schema_version": "1.0.0",
+  "component_id": "story_mode",
+  "chapter_id": "fhml108",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "mode_type": "literature_narrative",
+    "opening": "Enter a learning scenario connected to \u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f.",
+    "scenes": [
+      {
+        "scene_id": "s1",
+        "narration": "Observe the starting situation.",
+        "learning_purpose": "Activate prior knowledge."
+      },
+      {
+        "scene_id": "s2",
+        "narration": "Use chapter evidence or reasoning to decide.",
+        "learning_purpose": "Apply learning."
+      },
+      {
+        "scene_id": "s3",
+        "narration": "Transfer the idea to a new related situation.",
+        "learning_purpose": "Build independence."
+      }
+    ],
+    "learning_checkpoints": [
+      {
+        "question": "Which idea from \u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f supports your decision?",
+        "answer_rule": "Use source-grounded reasoning."
+      }
+    ],
+    "ending_reflection": "Explain what you learned and why your reasoning is supported.",
+    "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
+  }
 }

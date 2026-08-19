@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "formative_assessment",
+  "chapter_id": "fhml105",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "रहीम के दोहे",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fhml105_f1",
+        "question": "State one key idea and its supporting evidence.",
+        "checkpoint": "understanding"
+      },
+      {
+        "id": "fhml105_f2",
+        "question": "Apply the idea to a new related situation.",
+        "checkpoint": "application"
+      }
+    ]
+  }
+}

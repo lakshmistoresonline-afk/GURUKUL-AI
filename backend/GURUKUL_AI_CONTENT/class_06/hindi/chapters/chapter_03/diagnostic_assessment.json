@@ -1,14 +1,32 @@
 {
-  "items": [
-    {
-      "id": "fhml103_d1",
-      "question": "What do you already know about पहली बूँद?",
-      "type": "short_answer"
-    },
-    {
-      "id": "fhml103_d2",
-      "question": "Which related idea needs more explanation?",
-      "type": "self_assessment"
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "diagnostic_assessment",
+  "chapter_id": "fhml103",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u092a\u0939\u0932\u0940 \u092c\u0942\u0901\u0926",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fhml103_d1",
+        "question": "What do you already know about \u092a\u0939\u0932\u0940 \u092c\u0942\u0901\u0926?",
+        "type": "short_answer"
+      },
+      {
+        "id": "fhml103_d2",
+        "question": "Which related idea needs more explanation?",
+        "type": "self_assessment"
+      }
+    ]
+  }
 }

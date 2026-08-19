@@ -1,15 +1,33 @@
 {
-  "cases": [
-    {
-      "id": "fhml108_case1",
-      "title": "Applying सत्रिया और बिहू नृत्य",
-      "case": "A realistic situation requires use of an idea from सत्रिया और बिहू नृत्य.",
-      "questions": [
-        "Which concept applies?",
-        "What evidence supports it?",
-        "What should happen next?"
-      ],
-      "answer_guidance": "Use the chapter as the factual source."
-    }
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "fhml108",
+  "class": "class_06",
+  "subject": "Hindi",
+  "chapter_title": "\u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "fhml108_case1",
+        "title": "Applying \u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f",
+        "case": "A realistic situation requires use of an idea from \u0938\u0924\u094d\u0930\u093f\u092f\u093e \u0914\u0930 \u092c\u093f\u0939\u0942 \u0928\u0943\u0924\u094d\u092f.",
+        "questions": [
+          "Which concept applies?",
+          "What evidence supports it?",
+          "What should happen next?"
+        ],
+        "answer_guidance": "Use the chapter as the factual source."
+      }
+    ]
+  }
 }

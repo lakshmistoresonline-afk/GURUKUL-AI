@@ -1,8 +1,26 @@
 {
-  "questions": [
-    "What makes your answer correct according to Neem BaBa?",
-    "What evidence would change your mind?",
-    "Can you give another example?",
-    "What changes if a key condition changes?"
-  ]
+  "schema_version": "1.0.0",
+  "component_id": "socratic_questions",
+  "chapter_id": "fepr103",
+  "class": "class_06",
+  "subject": "English",
+  "chapter_title": "Neem BaBa",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": false
+  },
+  "content": {
+    "questions": [
+      "What makes your answer correct according to Neem BaBa?",
+      "What evidence would change your mind?",
+      "Can you give another example?",
+      "What changes if a key condition changes?"
+    ]
+  }
 }

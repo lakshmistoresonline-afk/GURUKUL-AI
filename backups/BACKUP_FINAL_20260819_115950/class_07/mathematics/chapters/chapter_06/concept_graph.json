@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    {
+      "id": "gegp206_c01",
+      "label": "Constructions and Tilings"
+    },
+    {
+      "id": "gegp206_c02",
+      "label": "Evidence and reasoning"
+    },
+    {
+      "id": "gegp206_c03",
+      "label": "Application and transfer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "gegp206_c01",
+      "to": "gegp206_c02",
+      "relation": "supported_by"
+    },
+    {
+      "from": "gegp206_c02",
+      "to": "gegp206_c03",
+      "relation": "enables"
+    }
+  ]
+}

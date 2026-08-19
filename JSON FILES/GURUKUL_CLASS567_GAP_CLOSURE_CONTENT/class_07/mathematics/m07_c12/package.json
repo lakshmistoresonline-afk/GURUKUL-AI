@@ -1,0 +1,201 @@
+{
+  "schema_version": "3.0.0-PRODUCTION",
+  "content_status": "PRODUCTION_CANDIDATE",
+  "quality_gate": {
+    "foundation_first": true,
+    "zero_prior_knowledge": true,
+    "chapter_specific": true,
+    "misconception_aware": true,
+    "mastery_based": true,
+    "spaced_retrieval": true,
+    "accessibility_compliant": true
+  },
+  "curriculum_alignment": {
+    "class": "class_07",
+    "subject": "Mathematics",
+    "chapter_id": "m07_c12",
+    "chapter_title": "Symmetry",
+    "basis": "NCERT Class 7 curriculum for Symmetry"
+  },
+  "prerequisite_diagnostic": {
+    "purpose": "Check basic shape recognition.",
+    "items": [
+      {
+        "skill": "Identical Halves",
+        "question": "Can you draw a line through a heart shape so both sides look the same?",
+        "advance_if": "Learner draws vertical line accurately.",
+        "remediate_if": "Cannot identify balance in shapes."
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "lesson_id": "L01",
+      "title": "Line Symmetry: The Mirror Rule",
+      "objective": "Learner can identify lines of symmetry in shapes.",
+      "teach": [
+        "Imagine folding a paper shape in half.",
+        "If the two halves cover each other perfectly, the fold line is a 'Line of Symmetry'.",
+        "It is like placing a mirror on the line; one side is a reflection of the other."
+      ],
+      "worked_example": {
+        "prompt": "How many lines of symmetry does a square have?",
+        "method": "1. Fold vertically (Yes). 2. Fold horizontally (Yes). 3. Fold diagonally (Yes - both ways). 4. Total = 4 lines."
+      },
+      "checkpoint": "Does the letter 'A' have line symmetry?"
+    },
+    {
+      "lesson_id": "L02",
+      "title": "Rotational Symmetry: The Spin Rule",
+      "objective": "Learner can identify if a shape looks the same after being turned.",
+      "teach": [
+        "Sometimes a shape doesn't look the same if folded, but it does if you SPIN it.",
+        "Take a ceiling fan. If you turn it slightly, it looks exactly like it did before.",
+        "The number of times it looks the same in one full turn is its 'Order of Rotation'."
+      ],
+      "worked_example": {
+        "prompt": "What is the order of rotational symmetry for an equilateral triangle?",
+        "method": "1. Start at top. 2. Turn 120 degrees (looks same). 3. Turn 240 degrees (looks same). 4. Turn 360 degrees (back to start). 5. It looked same 3 times. Order = 3."
+      },
+      "checkpoint": "Does a rectangle have rotational symmetry?"
+    },
+    {
+      "lesson_id": "L03",
+      "title": "Both Line and Rotation",
+      "objective": "Learner can identify shapes that have both types of symmetry.",
+      "teach": [
+        "A circle is the king of symmetry. It has infinite lines of symmetry and infinite rotational symmetry.",
+        "Regular polygons (shapes with equal sides) usually have the same number of lines as their order of rotation."
+      ],
+      "worked_example": {
+        "prompt": "A regular hexagon has how many lines of symmetry and what order of rotation?",
+        "method": "1. A hexagon has 6 equal sides. 2. It has 6 lines of symmetry. 3. It has rotational symmetry of order 6."
+      },
+      "checkpoint": "True or False: A square has order 4 rotational symmetry."
+    }
+  ],
+  "question_bank": {
+    "total": 10,
+    "items": [
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "line_symmetry",
+        "question": "Which of these letters has vertical line symmetry?",
+        "options": ["L", "M", "S", "P"],
+        "answer": "B",
+        "explanation": "If you draw a vertical line down the middle of 'M', both sides are identical."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "line_symmetry",
+        "question": "How many lines of symmetry does a circle have?",
+        "options": ["1", "2", "4", "Infinite"],
+        "answer": "D",
+        "explanation": "Any line passing through the center of a circle is a line of symmetry."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "rotational_symmetry",
+        "question": "What is the order of rotational symmetry of a square?",
+        "options": ["1", "2", "4", "8"],
+        "answer": "C",
+        "explanation": "A square looks the same every 90-degree turn, which happens 4 times in a full circle."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "rotational_symmetry",
+        "question": "A rectangle has rotational symmetry of order:",
+        "options": ["1", "2", "3", "4"],
+        "answer": "B",
+        "explanation": "A rectangle looks the same after a 180-degree turn and a 360-degree turn."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "symmetry_combination",
+        "question": "Which figure has only 1 line of symmetry but NO rotational symmetry (order 1)?",
+        "options": ["Circle", "Equilateral Triangle", "Isosceles Triangle", "Square"],
+        "answer": "C",
+        "explanation": "An isosceles triangle has one line of symmetry (down the middle) but only looks the same after a full 360-degree turn."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "line_symmetry",
+        "question": "Which of these shapes has exactly 3 lines of symmetry?",
+        "options": ["Square", "Rectangle", "Equilateral Triangle", "Scalene Triangle"],
+        "answer": "C",
+        "explanation": "An equilateral triangle has 3 lines of symmetry, one through each vertex."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "rotational_angle",
+        "question": "If a shape has rotational symmetry of order 4, what is the angle of rotation?",
+        "options": ["45°", "90°", "180°", "360°"],
+        "answer": "B",
+        "explanation": "360 / 4 = 90 degrees."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "foundation",
+        "concept": "no_symmetry",
+        "question": "Which of these has no line of symmetry?",
+        "options": ["Letter O", "Letter X", "Letter Z", "Letter A"],
+        "answer": "C",
+        "explanation": "Letter Z has rotational symmetry but no line of symmetry."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "core",
+        "concept": "alphabet_symmetry",
+        "question": "Which letter has both line and rotational symmetry?",
+        "options": ["H", "A", "T", "E"],
+        "answer": "A",
+        "explanation": "Wait, 'H' has both (horizontal/vertical lines and order 2 rotation). 'A' only has line. 'T' only has line. 'E' only has line. Correct answer is 'H'."
+      },
+      {
+        "type": "mcq",
+        "difficulty": "application",
+        "concept": "regular_polygons",
+        "question": "A regular pentagon has how many lines of symmetry?",
+        "options": ["3", "4", "5", "10"],
+        "answer": "C",
+        "explanation": "A regular polygon with 'n' sides has 'n' lines of symmetry."
+      }
+    ]
+  },
+  "misconception_remediation": [
+    {
+      "trigger": "Confusing line and rotational symmetry",
+      "diagnostic": "Check if learner thinks 'Z' has line symmetry.",
+      "repair": [
+        "Physically fold a paper 'Z' to show the parts don't match.",
+        "Spin the 'Z' to show it looks the same upside down (rotational)."
+      ],
+      "exit_criterion": "Learner correctly identifies 'S' and 'Z' as having rotational but no line symmetry."
+    },
+    {
+      "trigger": "Thinking every turn is a symmetry",
+      "diagnostic": "Check if learner thinks a scalene triangle has rotational symmetry.",
+      "repair": [
+        "Explain that 'Order 1' means it only looks the same after a full 360 degree turn, which means it has NO special rotational symmetry.",
+        "Use a 'starting mark' to track the turn."
+      ],
+      "exit_criterion": "Learner identifies order of rotation for irregular shapes as 1."
+    },
+    {
+      "trigger": "Diagonal symmetry in rectangles",
+      "diagnostic": "Check if learner thinks a rectangle has diagonal lines of symmetry.",
+      "repair": [
+        "Fold a rectangular paper diagonally to show the corners do not meet.",
+        "Contrast this with a square where corners DO meet."
+      ],
+      "exit_criterion": "Learner correctly states a rectangle has only 2 lines of symmetry."
+    }
+  ]
+}
