@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "fepr103",
+  "class": 6,
+  "subject": "English",
+  "chapter_title": "Neem BaBa",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "fepr103_fc01",
+        "front": "What key point should you remember from Neem BaBa?",
+        "back": "Discuss in groups of four and fill Columns 1 and 2 with what you know about the neem tree and what you want to know.",
+        "concept_id": "fepr103_c01"
+      },
+      {
+        "id": "fepr103_fc02",
+        "front": "What key point should you remember from Neem BaBa?",
+        "back": "• • • • • • • • Reprint 2026-27 Unit 3.indd 75 18-Mar-25 2:35:56 PM Poorvi—Grade 6 Let us read Amber returned from school and sat down in the shade of the neem tree in her courtyard.",
+        "concept_id": "fepr103_c01"
+      },
+      {
+        "id": "fepr103_fc03",
+        "front": "What key point should you remember from Neem BaBa?",
+        "back": "I was born millions of years ago somewhere in North India or Myanmar.",
+        "concept_id": "fepr103_c01"
+      },
+      {
+        "id": "fepr103_fc04",
+        "front": "What key point should you remember from Neem BaBa?",
+        "back": "Neem Baba : My family can be found in many Asian and African countries and even in some parts of America.",
+        "concept_id": "fepr103_c01"
+      },
+      {
+        "id": "fepr103_fc05",
+        "front": "What key point should you remember from Neem BaBa?",
+        "back": "76 Reprint 2026-27 Unit 3.indd 76 09-Dec-24 3:52:08 PM Nurturing Nature Neem Baba : The story of my name is very thought-provoking.",
+        "concept_id": "fepr103_c01"
+      },
+      {
+        "id": "fepr103_fc06",
+        "front": "What key point should you remember from Neem BaBa?",
+        "back": "I was born thought- in India and given Sanskrit provoking: interesting names such as Arishta (the one who cures diseases), Nimba and Nimbaca.",
+        "concept_id": "fepr103_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

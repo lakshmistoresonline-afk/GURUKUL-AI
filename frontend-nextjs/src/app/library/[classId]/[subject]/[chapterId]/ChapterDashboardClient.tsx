@@ -73,6 +73,8 @@ export default function ChapterDashboardClient() {
   const subject = params.subject as string;
   const chapterId = params.chapterId as string;
 
+  const displayData = getChapterDisplayData(chapterId, pkg);
+
   useEffect(() => {
     if (authLoading || !profile) return;
 
@@ -184,7 +186,11 @@ export default function ChapterDashboardClient() {
   );
 
   const lesson = normalizeLesson(pkg);
-  const displayData = getChapterDisplayData(chapterId, pkg);
+
+  // V3 Component Data Extraction for Multimedia
+  const v3Multimedia = pkg?.components?.multimedia?.content;
+  const v3Resources = v3Multimedia?.resources || [];
+  const v3Discovery = v3Multimedia?.discovery_links || [];
 
   const getPillarStatus = (label: string): 'locked' | 'available' | 'in_progress' | 'completed' => {
     if (!mastery) return label === 'Learn' ? 'available' : 'locked';
@@ -277,7 +283,7 @@ export default function ChapterDashboardClient() {
                 <div className="hidden md:block">
                    <Breadcrumbs items={[
                       { label: 'Library', href: '/library' },
-                      { label: subject.toUpperCase(), href: `/library/${classId}/${subject}` },
+                      { label: subject.replace('_', ' ').toUpperCase(), href: `/library/${classId}/${subject}` },
                       { label: displayData.name, href: '#' },
                    ]} />
                 </div>
@@ -289,7 +295,7 @@ export default function ChapterDashboardClient() {
              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-8">
                    <div className="flex items-center gap-3 text-sm font-bold text-blue-600 bg-blue-50 px-4 py-2 rounded-full border border-blue-100 inline-flex">
-                      <GraduationCap size={18} /> Class {classId} • {subject.toUpperCase()}
+                      <GraduationCap size={18} /> Class {classId.replace('class_', '').replace('0', '')} • {subject.replace('_', ' ').toUpperCase()}
                    </div>
                    <div className="space-y-4">
                       <p className="text-slate-500 font-bold uppercase tracking-wider text-sm">Chapter {displayData.number || '...'}</p>
@@ -388,6 +394,21 @@ export default function ChapterDashboardClient() {
                 </button>
              </div>
           </section>
+
+          {/* Subject-Specific Knowledge Blocks */}
+          {lesson.subjectKnowledge && lesson.subjectKnowledge.length > 0 && (
+             <section className="space-y-8">
+                <div className="flex items-center gap-4 px-2">
+                   <div className="w-1.5 h-8 bg-blue-600 rounded-full" />
+                   <h3 className="text-2xl font-black text-slate-900 tracking-tight uppercase italic">Subject Deep Dive</h3>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                   {lesson.subjectKnowledge.map((item, idx) => (
+                      <SubjectKnowledgeBlock key={idx} item={item} />
+                   ))}
+                </div>
+             </section>
+          )}
 
           {/* Remediation Alert */}
           {mastery?.status === 'NEEDS_REMEDIATION' && (
@@ -572,11 +593,58 @@ export default function ChapterDashboardClient() {
                    {/* YouTube Discovery */}
                    <div className="pt-6">
                       <ChapterVideoResources
-                        verifiedVideos={gurukulMedia.filter(m => m.type === 'video').map(m => m.metadata)}
-                        discoveryLinks={gurukulMedia.filter(m => m.type === 'video_discovery').map(m => m.metadata)}
+                        verifiedVideos={[
+                            ...v3Resources.map((r: any) => ({ ...r, resource_type: r.type, url: r.url || '#' })),
+                            ...gurukulMedia.filter(m => m.type === 'video').map(m => m.metadata)
+                        ]}
+                        discoveryLinks={[
+                            ...v3Discovery,
+                            ...gurukulMedia.filter(m => m.type === 'video_discovery').map(m => m.metadata)
+                        ]}
                       />
                    </div>
                 </div>
+
+                {/* Structured Data: Question Bank */}
+                <section className="bg-white border border-slate-200/60 rounded-[48px] p-10 shadow-sm space-y-8">
+                   <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600 border border-indigo-100">
+                         <Target size={24} />
+                      </div>
+                      <div>
+                         <h3 className="text-2xl font-black text-slate-900 tracking-tight italic">Validated Question Bank</h3>
+                         <p className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-1">Official Mastery Nodes</p>
+                      </div>
+                   </div>
+
+                   <div className="grid grid-cols-1 gap-6">
+                      {lesson.quiz.slice(0, 5).map((q: any, i: number) => (
+                         <div key={i} className="p-8 bg-slate-50/50 border border-slate-100 rounded-[40px] space-y-6 group hover:bg-white hover:border-indigo-200 transition-all">
+                            <div className="flex items-center justify-between">
+                               <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.3em]">Node {i+1} &bull; {q.difficulty || 'CORE'} Level</span>
+                               <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-[8px] font-black uppercase text-indigo-500 tracking-[0.2em] shadow-sm">Verified V3</span>
+                            </div>
+                            <h4 className="text-2xl font-bold text-slate-800 leading-[1.3] tracking-tight">{q.question}</h4>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                               {q.options?.map((opt: string, idx: number) => (
+                                  <div key={idx} className="p-6 bg-white border border-slate-200 rounded-3xl text-base font-bold text-slate-600 group-hover:border-slate-300 transition-colors">
+                                     <span className="inline-block w-6 h-6 rounded-lg bg-slate-50 border border-slate-100 text-center leading-6 text-[10px] font-black mr-3">{String.fromCharCode(65 + idx)}</span>
+                                     {opt}
+                                  </div>
+                                ))}
+                            </div>
+                         </div>
+                      ))}
+                   </div>
+                   <div className="pt-8 flex justify-center">
+                      <button
+                        onClick={() => router.push(`/quiz/${chapterId}?class=${classId}&subject=${subject}`)}
+                        className="px-12 py-5 bg-slate-900 text-white rounded-[32px] font-black uppercase tracking-[0.3em] text-[10px] hover:bg-indigo-600 transition-all shadow-[0_20px_40px_-10px_rgba(0,0,0,0.2)] active:scale-95"
+                      >
+                         Launch Full Practice Session
+                      </button>
+                   </div>
+                </section>
 
                 <div className="space-y-6">
                    <div className="flex items-center justify-between px-4">
@@ -602,7 +670,48 @@ export default function ChapterDashboardClient() {
                 {lesson.learningGoals.length > 0 && (
                   <div className="bg-white border border-slate-200/60 rounded-[48px] p-10 shadow-sm">
                      <h3 className="text-lg font-extrabold text-slate-900 mb-8">Learning Objectives</h3>
-                     <div className="space-y-6">
+                     {/* Structured Data: Question Bank */}
+                <section className="bg-white border border-slate-200/60 rounded-[48px] p-10 shadow-sm space-y-8">
+                   <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-600 border border-indigo-100">
+                         <Target size={24} />
+                      </div>
+                      <div>
+                         <h3 className="text-2xl font-black text-slate-900 tracking-tight italic">Validated Question Bank</h3>
+                         <p className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-1">Official Mastery Nodes</p>
+                      </div>
+                   </div>
+
+                   <div className="grid grid-cols-1 gap-6">
+                      {lesson.quiz.slice(0, 5).map((q: any, i: number) => (
+                         <div key={i} className="p-8 bg-slate-50/50 border border-slate-100 rounded-[40px] space-y-6 group hover:bg-white hover:border-indigo-200 transition-all">
+                            <div className="flex items-center justify-between">
+                               <span className="text-[9px] font-black text-slate-400 uppercase tracking-[0.3em]">Node {i+1} &bull; {q.difficulty || 'CORE'} Level</span>
+                               <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-[8px] font-black uppercase text-indigo-500 tracking-[0.2em] shadow-sm">Verified V3</span>
+                            </div>
+                            <h4 className="text-2xl font-bold text-slate-800 leading-[1.3] tracking-tight">{q.question}</h4>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                               {q.options?.map((opt: string, idx: number) => (
+                                  <div key={idx} className="p-6 bg-white border border-slate-200 rounded-3xl text-base font-bold text-slate-600 group-hover:border-slate-300 transition-colors">
+                                     <span className="inline-block w-6 h-6 rounded-lg bg-slate-50 border border-slate-100 text-center leading-6 text-[10px] font-black mr-3">{String.fromCharCode(65 + idx)}</span>
+                                     {opt}
+                                  </div>
+                                ))}
+                            </div>
+                         </div>
+                      ))}
+                   </div>
+                   <div className="pt-8 flex justify-center">
+                      <button
+                        onClick={() => router.push(`/quiz/${chapterId}?class=${classId}&subject=${subject}`)}
+                        className="px-12 py-5 bg-slate-900 text-white rounded-[32px] font-black uppercase tracking-[0.3em] text-[10px] hover:bg-indigo-600 transition-all shadow-[0_20px_40px_-10px_rgba(0,0,0,0.2)] active:scale-95"
+                      >
+                         Launch Full Practice Session
+                      </button>
+                   </div>
+                </section>
+
+                <div className="space-y-6">
                         {lesson.learningGoals.slice(0, 8).map((obj, i) => (
                            <div key={i} className="flex gap-5 group">
                               <div className="w-8 h-8 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 font-black text-xs shrink-0 mt-1 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">{i+1}</div>
@@ -722,6 +831,39 @@ export default function ChapterDashboardClient() {
          .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.05); border-radius: 20px; }
          .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.1); }
       `}</style>
+    </div>
+  );
+}
+
+function SubjectKnowledgeBlock({ item }: { item: { category: string, content: string } }) {
+  const IconMap: any = {
+    'FORMULAS': BrainCircuit,
+    'EXPERIMENTS': Zap,
+    'TIMELINE': Activity,
+    'VOCABULARY': BookMarked,
+    'TERMINOLOGY': BookMarked,
+    'IDIOMS': MessageSquare,
+    'CONCEPTS': Lightbulb,
+    'DEFINITIONS': BookOpen,
+  };
+  const Icon = IconMap[item.category] || Sparkles;
+
+  return (
+    <div className="bg-white border border-slate-200/60 rounded-[40px] p-10 shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+       <div className="relative z-10 space-y-6">
+          <div className="flex items-center gap-4">
+             <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 border border-blue-100 shadow-sm">
+                <Icon size={24} />
+             </div>
+             <span className="px-4 py-1.5 bg-blue-50 text-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest border border-blue-100">
+                {item.category.replace('_', ' ')}
+             </span>
+          </div>
+          <div className="text-xl font-bold text-slate-800 leading-relaxed">
+             <FormattedText content={item.content} />
+          </div>
+       </div>
+       <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-blue-500/10 transition-colors" />
     </div>
   );
 }

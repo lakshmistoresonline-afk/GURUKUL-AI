@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "gecu111",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Light: Shadows and Reflections",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "gecu111_c01",
+        "name": "Light: Shadows and Reflections",
+        "definition": "Central learning focus of Light: Shadows and Reflections.",
+        "source_evidence": "Light: Shadows and 11 Reflections In the Western Ghat region of Maharashtra, Keshav spends part of his summer vacation at his friend Jatin’s grandparents’ village."
+      },
+      {
+        "id": "gecu111_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Use source information, observation or valid working to support a conclusion.",
+        "source_evidence": "Having lived in a big city, he ﬁnds the forests, fresh air, sounds of gushing streams, and chirping birds a novel experience."
+      },
+      {
+        "id": "gecu111_c03",
+        "name": "Application and transfer",
+        "definition": "Use the learned idea in a relevant new context.",
+        "source_evidence": "However, for Keshav, the most fascinating sight is the dance of hundreds of ﬁreﬂies at night, ﬂashing their lights in a wonderful performance."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "fegp104",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Data Handling and Presentation",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fegp104_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Data Handling and Presentation?",
+        "options": [
+          "4 Data Handling and Presentation If you ask your classmates about their favourite colours, you will get a list of colours.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "4 Data Handling and Presentation If you ask your classmates about their favourite colours, you will get a list of colours.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fegp104_c01"
+      },
+      {
+        "id": "fegp104_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Data Handling and Presentation?",
+        "options": [
+          "Similarly, if you measure the weight of each student in your class, you would get a collection of measures of weight—again data.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Similarly, if you measure the weight of each student in your class, you would get a collection of measures of weight—again data.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fegp104_c01"
+      },
+      {
+        "id": "fegp104_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Data Handling and Presentation?",
+        "options": [
+          "Any collection of facts, numbers, measures, observations or other descriptions of things that convey information about those things is called data.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Any collection of facts, numbers, measures, observations or other descriptions of things that convey information about those things is called data.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fegp104_c01"
+      },
+      {
+        "id": "fegp104_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Data Handling and Presentation?",
+        "options": [
+          "We constantly see large amounts of data presented to us in new and interesting ways.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "We constantly see large amounts of data presented to us in new and interesting ways.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fegp104_c01"
+      },
+      {
+        "id": "fegp104_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Data Handling and Presentation?",
+        "options": [
+          "In this chapter, we will explore some of the ways that data is presented, and how we can use some of those ways to correctly display, interpret and make inferences from such data!",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "In this chapter, we will explore some of the ways that data is presented, and how we can use some of those ways to correctly display, interpret and make inferences from such data!",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fegp104_c01"
+      },
+      {
+        "id": "fegp104_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Data Handling and Presentation?",
+        "options": [
+          "4.1 Collecting and Organising Data Navya and Naresh are discussing their favourite games.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "4.1 Collecting and Organising Data Navya and Naresh are discussing their favourite games.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fegp104_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.bank",
+    "domain": "assessment",
+    "description": "Assessment question bank",
+    "chapter_scoped": true
+  }
+}

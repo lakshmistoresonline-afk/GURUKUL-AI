@@ -1,0 +1,357 @@
+{
+  "audit_version": "2.0.0",
+  "class": 6,
+  "naming_convention": {
+    "package": "GURUKUL_AI_CLASS{class}_COMPLETE_FINAL_PACKAGE.zip",
+    "class_root": "class_06",
+    "subject_canonical": "Social_Science (underscore), English/Hindi/Mathematics/Science/EVS unchanged",
+    "component_json": "lowercase_snake_case.json",
+    "supplemental_root": "content/class_06/<canonical_subject>/supplemental/<source_chapter_id>/"
+  },
+  "naming_violations": [],
+  "content_taxonomy": {
+    "English": {
+      "Vocabulary": {
+        "chapters_present": 5,
+        "chapters_total": 5,
+        "evidence_components": [
+          "flashcards",
+          "key_terms"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Grammar": {
+        "chapters_present": 0,
+        "chapters_total": 5,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Dedicated grammar component is required for full grammar coverage."
+      },
+      "Idioms/Phrases": {
+        "chapters_present": 0,
+        "chapters_total": 5,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Dedicated idioms/phrases component is required for full idiom/phrase coverage."
+      },
+      "Comprehension": {
+        "chapters_present": 0,
+        "chapters_total": 5,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Dedicated comprehension component is required for full comprehension coverage."
+      },
+      "Writing": {
+        "chapters_present": 0,
+        "chapters_total": 5,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Dedicated writing component is required for full writing coverage."
+      }
+    },
+    "Hindi": {
+      "Vocabulary": {
+        "chapters_present": 13,
+        "chapters_total": 13,
+        "evidence_components": [
+          "flashcards",
+          "key_terms"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Grammar": {
+        "chapters_present": 0,
+        "chapters_total": 13,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Dedicated grammar component is required for full grammar coverage."
+      },
+      "Idioms/Phrases": {
+        "chapters_present": 0,
+        "chapters_total": 13,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Dedicated idioms/phrases component is required for full idiom/phrase coverage."
+      },
+      "Comprehension": {
+        "chapters_present": 0,
+        "chapters_total": 13,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Dedicated comprehension component is required for full comprehension coverage."
+      },
+      "Writing": {
+        "chapters_present": 0,
+        "chapters_total": 13,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Dedicated writing component is required for full writing coverage."
+      }
+    },
+    "Mathematics": {
+      "Concepts": {
+        "chapters_present": 10,
+        "chapters_total": 10,
+        "evidence_components": [
+          "concepts"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Definitions": {
+        "chapters_present": 10,
+        "chapters_total": 10,
+        "evidence_components": [
+          "concepts"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Formulas": {
+        "chapters_present": 0,
+        "chapters_total": 10,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Theorems": {
+        "chapters_present": 0,
+        "chapters_total": 10,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Properties": {
+        "chapters_present": 0,
+        "chapters_total": 10,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Methods": {
+        "chapters_present": 10,
+        "chapters_total": 10,
+        "evidence_components": [
+          "worked_examples"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Worked Examples": {
+        "chapters_present": 10,
+        "chapters_total": 10,
+        "evidence_components": [
+          "worked_examples"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Problem Types": {
+        "chapters_present": 0,
+        "chapters_total": 10,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      }
+    },
+    "Science": {
+      "Concepts": {
+        "chapters_present": 12,
+        "chapters_total": 12,
+        "evidence_components": [
+          "concepts"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Definitions": {
+        "chapters_present": 12,
+        "chapters_total": 12,
+        "evidence_components": [
+          "concepts"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Processes": {
+        "chapters_present": 0,
+        "chapters_total": 12,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Laws": {
+        "chapters_present": 0,
+        "chapters_total": 12,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Principles": {
+        "chapters_present": 0,
+        "chapters_total": 12,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Experiments": {
+        "chapters_present": 12,
+        "chapters_total": 12,
+        "evidence_components": [
+          "interactive_lab"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Diagrams": {
+        "chapters_present": 0,
+        "chapters_total": 12,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Applications": {
+        "chapters_present": 12,
+        "chapters_total": 12,
+        "evidence_components": [
+          "real_world_applications"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Terminology": {
+        "chapters_present": 12,
+        "chapters_total": 12,
+        "evidence_components": [
+          "key_terms"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      }
+    },
+    "Social_Science": {
+      "Facts": {
+        "chapters_present": 0,
+        "chapters_total": 14,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Concepts": {
+        "chapters_present": 14,
+        "chapters_total": 14,
+        "evidence_components": [
+          "concepts"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      },
+      "Events": {
+        "chapters_present": 0,
+        "chapters_total": 14,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Dates": {
+        "chapters_present": 0,
+        "chapters_total": 14,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "People": {
+        "chapters_present": 0,
+        "chapters_total": 14,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Places": {
+        "chapters_present": 0,
+        "chapters_total": 14,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Causes": {
+        "chapters_present": 0,
+        "chapters_total": 14,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Effects": {
+        "chapters_present": 0,
+        "chapters_total": 14,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Comparisons": {
+        "chapters_present": 0,
+        "chapters_total": 14,
+        "evidence_components": [],
+        "coverage_percent": 0.0,
+        "status": "MISSING",
+        "requirement_note": "Semantic evidence may exist inside existing components, but no dedicated taxonomy file was found."
+      },
+      "Maps": {
+        "chapters_present": 14,
+        "chapters_total": 14,
+        "evidence_components": [
+          "mastery_map",
+          "multimedia"
+        ],
+        "coverage_percent": 100.0,
+        "status": "FULL",
+        "requirement_note": "Present across all core chapters with structured evidence."
+      }
+    }
+  },
+  "critical_findings": [
+    "Vocabulary is represented primarily through key_terms/flashcards.",
+    "Mathematics worked examples and methods are present; formula/theorem/property coverage is not universal as dedicated structured content.",
+    "Science experiments are represented through interactive_lab/activities; diagram coverage is not universal as explicit diagram data.",
+    "Social Science facts/events/dates/people/places/causes/effects/comparisons/maps are not uniformly represented as dedicated structured fields across every chapter.",
+    "Language grammar, idioms/phrases, comprehension and writing do not have universal dedicated components in the current core packages.",
+    "The supplied enriched/teacher/question supplemental content is preserved; Social Science supplemental paths have been normalized to the canonical Social_Science directory."
+  ]
+}

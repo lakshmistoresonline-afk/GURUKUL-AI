@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "eemm105",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Far and Near",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "eemm105_fc01",
+        "front": "What is a key idea from 'Far and Near'?",
+        "back": "55 ChapterChapter Far and Near Identify the appropriate units for measuring each of the following.",
+        "concept_id": "eemm105_concept_01"
+      },
+      {
+        "id": "eemm105_fc02",
+        "front": "What is a key idea from 'Far and Near'?",
+        "back": "We have learnt about measuring length and some standard units we use to measure length.",
+        "concept_id": "eemm105_concept_01"
+      },
+      {
+        "id": "eemm105_fc03",
+        "front": "What is a key idea from 'Far and Near'?",
+        "back": "In this chapter we will learn some more units of measuring distances and the relationships between different units.",
+        "concept_id": "eemm105_concept_01"
+      },
+      {
+        "id": "eemm105_fc04",
+        "front": "What is a key idea from 'Far and Near'?",
+        "back": "Let Us Find Quantity Unit of measurement Metre (m) or centimetre (cm) Height of India Gate 42 Length of a handkerchief 40 Depth of a well 50 Length of a mobile phone 13 Length of an elephant’s trunk 2 Distance between two buttons on a shirt 5 Shikha and Sonu are measuring the lengths of saris and stoles in the village weaving centre.",
+        "concept_id": "eemm105_concept_01"
+      },
+      {
+        "id": "eemm105_fc05",
+        "front": "What is a key idea from 'Far and Near'?",
+        "back": "Find which measures represent the same sari or stole.",
+        "concept_id": "eemm105_concept_01"
+      },
+      {
+        "id": "eemm105_fc06",
+        "front": "What is a key idea from 'Far and Near'?",
+        "back": "You can take help of the double number line below.",
+        "concept_id": "eemm105_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

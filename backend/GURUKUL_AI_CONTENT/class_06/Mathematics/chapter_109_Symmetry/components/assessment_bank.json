@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "fegp109",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Symmetry",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fegp109_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Symmetry?",
+        "options": [
+          "9 SYMMETRY Look around you — you may find many objects that catch your attention.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "9 SYMMETRY Look around you — you may find many objects that catch your attention.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fegp109_c01"
+      },
+      {
+        "id": "fegp109_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Symmetry?",
+        "options": [
+          "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fegp109_c01"
+      },
+      {
+        "id": "fegp109_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Symmetry?",
+        "options": [
+          "In these pictures, it appears that some parts of the figure are repeated and these repetitions seem to occur in a definite pattern.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "In these pictures, it appears that some parts of the figure are repeated and these repetitions seem to occur in a definite pattern.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fegp109_c01"
+      },
+      {
+        "id": "fegp109_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Symmetry?",
+        "options": [
+          "Can you see what repeats in the beautiful rangoli figure?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Can you see what repeats in the beautiful rangoli figure?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fegp109_c01"
+      },
+      {
+        "id": "fegp109_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Symmetry?",
+        "options": [
+          "In the Reprint 2026-27 Chapter 9_Symmetry.indd 217 13-08-2024 17:05:22 Ganita Prakash | Grade 6 rangoli, the red petals come back onto themselves when the flower is rotated by 90˚ around the centre and so do the other parts of the rangoli.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "In the Reprint 2026-27 Chapter 9_Symmetry.indd 217 13-08-2024 17:05:22 Ganita Prakash | Grade 6 rangoli, the red petals come back onto themselves when the flower is rotated by 90˚ around the centre and so do the other parts of the rangoli.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fegp109_c01"
+      },
+      {
+        "id": "fegp109_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Symmetry?",
+        "options": [
+          "Now, can you say what figure repeats along each side of the hexagon?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Now, can you say what figure repeats along each side of the hexagon?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fegp109_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.bank",
+    "domain": "assessment",
+    "description": "Assessment question bank",
+    "chapter_scoped": true
+  }
+}

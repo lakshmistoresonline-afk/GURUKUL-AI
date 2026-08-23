@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "formative_assessment",
+  "chapter_id": "ehve112",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "गंगा की कहानी",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "ehve112_form01",
+        "question": "State one key idea and the evidence supporting it.",
+        "checkpoint": "after explanation"
+      },
+      {
+        "id": "ehve112_form02",
+        "question": "Apply the idea to a new related example.",
+        "checkpoint": "after practice"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.formative",
+    "domain": "assessment",
+    "description": "Formative assessment",
+    "chapter_scoped": true
+  }
+}

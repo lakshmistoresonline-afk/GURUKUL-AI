@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "fepr104",
+  "class": 6,
+  "subject": "English",
+  "chapter_title": "Change of Heart",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "fepr104_c01",
+        "name": "Change of Heart",
+        "definition": "Central learning focus of Change of Heart.",
+        "source_evidence": "friendly matches (i) matches played to win a trophy (ii) matches played without competition 2."
+      },
+      {
+        "id": "fepr104_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Support a conclusion with source information or valid working.",
+        "source_evidence": "opponent (i) someone who you compete with (ii) someone you want to be a partner with 3."
+      },
+      {
+        "id": "fepr104_c03",
+        "name": "Application",
+        "definition": "Transfer the learned idea to a relevant new context.",
+        "source_evidence": "tally of marks (i) final marks on a report card (ii) record of points in a game/match 4."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

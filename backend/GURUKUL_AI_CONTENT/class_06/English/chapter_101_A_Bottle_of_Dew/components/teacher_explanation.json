@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "fepr101",
+  "class": 6,
+  "subject": "English",
+  "chapter_title": "A Bottle of Dew",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "learning_goal": "Teach the central ideas of A Bottle of Dew accurately and accessibly.",
+    "explanation_sections": [
+      {
+        "title": "Connect",
+        "explanation": "Activate prior knowledge and invite a prediction."
+      },
+      {
+        "title": "Explain",
+        "explanation": "Build understanding from the source-grounded evidence.",
+        "source_evidence": [
+          "Check your answers by sharing them with your classmates and teacher.",
+          "surprise II Answer these questions and discuss them with your classmates and teacher.",
+          "His father left him large tracts of land when he large tracts died.",
+          "But Rama Natha did not spend even one of land: large day looking after his land."
+        ]
+      },
+      {
+        "title": "Apply",
+        "explanation": "Move from a chapter example to a new related situation."
+      },
+      {
+        "title": "Close",
+        "explanation": "Retrieve the central idea and supporting reasoning."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Predict or recall."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model the concept or text.",
+        "student_action": "Identify evidence or working."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Question reasoning.",
+        "student_action": "Explain and justify."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide transfer.",
+        "student_action": "Apply independently."
+      }
+    ],
+    "misconceptions": [
+      "Answering without support.",
+      "Confusing an example with the general idea."
+    ],
+    "checks_for_understanding": [
+      "What evidence supports your answer?",
+      "Can you explain it in your own words?"
+    ],
+    "closure": "State the central idea and one application."
+  },
+  "runtime_mapping": {
+    "route": "teacher.explanation",
+    "domain": "teacher",
+    "description": "Teacher-facing explanation",
+    "chapter_scoped": true
+  }
+}

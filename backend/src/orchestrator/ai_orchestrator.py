@@ -25,9 +25,9 @@ class AIOrchestrator:
 
     def __init__(self):
         self.providers: List[AIProvider] = [
-            OllamaCloudProvider(),
-            GeminiProvider(),
             OllamaLocalProvider(),
+            GeminiProvider(),
+            OllamaCloudProvider(),
             GroqProvider(),
             CerebrasProvider(),
             OpenRouterProvider(),
@@ -51,7 +51,7 @@ class AIOrchestrator:
         last_error = None
         attempt_history = []
 
-        active_providers = self.active_providers
+        active_providers = self._get_ordered_providers(task_type)
         if not active_providers:
             raise AllProvidersUnavailableError("No AI providers are currently enabled or available.")
 
@@ -143,7 +143,7 @@ class AIOrchestrator:
         last_error = None
         attempt_history = []
 
-        active_providers = self.active_providers
+        active_providers = self._get_ordered_providers(task_type)
         if not active_providers:
             raise AllProvidersUnavailableError("No AI providers are currently enabled or available for structured output.")
 
@@ -214,6 +214,26 @@ class AIOrchestrator:
             "is_all_failed": True
         }
 
+    def _get_ordered_providers(
+        self,
+        task_type: str,
+    ) -> List[AIProvider]:
+        """Returns active providers ordered by priority for the given task type."""
+        active = self.active_providers
+
+        if task_type == "complex":
+            # Gemini has priority for complex tasks
+            return sorted(
+                active,
+                key=lambda p: p.get_name() != "Gemini",
+            )
+        else:
+            # Local first for simple and normal tasks
+            return sorted(
+                active,
+                key=lambda p: p.get_name() != "Ollama Local",
+            )
+
     def _get_model_for_task(
         self,
         provider_name: str,
@@ -226,6 +246,12 @@ class AIOrchestrator:
                 if task_type == "simple"
                 else settings.GEMINI_MODEL
             )
+
+        if provider_name == "Ollama Local":
+            if task_type == "simple":
+                return settings.OLLAMA_QWEN_MODEL
+            # Default to Gemma for normal/complex (failover logic in orchestrator will move to Gemini if needed)
+            return settings.OLLAMA_GEMMA_MODEL
 
         return None
 

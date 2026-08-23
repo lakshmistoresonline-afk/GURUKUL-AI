@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "eemm105",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Far and Near",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "learning_goal": "Teach learners to understand and apply the main ideas of 'Far and Near'.",
+    "explanation_sections": [
+      {
+        "title": "Connect",
+        "explanation": "Begin with learners' prior experience related to Far and Near and invite predictions."
+      },
+      {
+        "title": "Explore",
+        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
+        "source_evidence": [
+          "55 ChapterChapter Far and Near Identify the appropriate units for measuring each of the following.",
+          "We have learnt about measuring length and some standard units we use to measure length.",
+          "In this chapter we will learn some more units of measuring distances and the relationships between different units.",
+          "Let Us Find Quantity Unit of measurement Metre (m) or centimetre (cm) Height of India Gate 42 Length of a handkerchief 40 Depth of a well 50 Length of a mobile phone 13 Length of an elephant’s trunk 2 Distance between two buttons on a shirt 5 Shikha and Sonu are measuring the lengths of saris and stoles in the village weaving centre."
+        ]
+      },
+      {
+        "title": "Make meaning",
+        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
+      },
+      {
+        "title": "Apply",
+        "explanation": "Move from a chapter example to a new, closely related example."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Share an observation or prediction."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model close reading/working with the chapter.",
+        "student_action": "Identify relevant evidence."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Question reasoning.",
+        "student_action": "Explain why an answer is supported."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide application.",
+        "student_action": "Solve/perform a new related task."
+      }
+    ],
+    "misconceptions": [
+      "Confusing a guess with evidence.",
+      "Giving an answer without explaining the reasoning."
+    ],
+    "checks_for_understanding": [
+      "What evidence in 'Far and Near' supports your answer?",
+      "Can you explain the idea in your own words?"
+    ],
+    "closure": "Ask the learner to state the most important idea and one way it can be used."
+  },
+  "runtime_mapping": {
+    "route": "teacher.explanation",
+    "domain": "teacher",
+    "description": "Teacher-facing explanation",
+    "chapter_scoped": true
+  }
+}

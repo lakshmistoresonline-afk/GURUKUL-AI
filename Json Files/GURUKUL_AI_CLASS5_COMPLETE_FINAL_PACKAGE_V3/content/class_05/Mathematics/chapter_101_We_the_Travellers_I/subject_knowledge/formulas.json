@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_id": "chapter_101_We_the_Travellers_I",
+  "chapter_title": "chapter_101_We_the_Travellers_I",
+  "category": "formulas",
+  "content_status": "SOURCE_DERIVED",
+  "items": [
+    {
+      "value": "Answer must be supported by the chapter.",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.story_mode.content.learning_checkpoints[0].answer_rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "Every answer must be validated against the uploaded chapter source.",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.answer_key.content.rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "At least 70% overall and remediation for missed core concepts.",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.summative_assessment.content.passing_rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "Accessibility text must describe the same source-grounded content without adding facts.",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.accessibility.content.content_rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "required explanation viewed",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[0]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "core activities completed",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[1]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "diagnostic reviewed",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[2]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "practice threshold met",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[3]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "mastery assessment passed",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[4]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "unresolved misconceptions remediated",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[5]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "Accessibility text must describe the same source-grounded content without adding facts.",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/accessibility.json",
+      "source_path": "content.content_rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "Every answer must be validated against the uploaded chapter source.",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/answer_key.json",
+      "source_path": "content.rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "required explanation viewed",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/chapter_completion.json",
+      "source_path": "content.completion_rules[0]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "core activities completed",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/chapter_completion.json",
+      "source_path": "content.completion_rules[1]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "diagnostic reviewed",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/chapter_completion.json",
+      "source_path": "content.completion_rules[2]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "practice threshold met",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/chapter_completion.json",
+      "source_path": "content.completion_rules[3]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "mastery assessment passed",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/chapter_completion.json",
+      "source_path": "content.completion_rules[4]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "unresolved misconceptions remediated",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/chapter_completion.json",
+      "source_path": "content.completion_rules[5]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "Answer must be supported by the chapter.",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/story_mode.json",
+      "source_path": "content.learning_checkpoints[0].answer_rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "At least 70% overall and remediation for missed core concepts.",
+      "source_file": "content/class_05/Mathematics/chapter_101_We_the_Travellers_I/components/summative_assessment.json",
+      "source_path": "content.passing_rule",
+      "provenance": "source_derived"
+    }
+  ],
+  "source_policy": "All factual items are extracted from supplied chapter/package content; no unsupported facts are invented."
+}

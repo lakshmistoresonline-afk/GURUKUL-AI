@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "learning_objectives",
+  "chapter_id": "fees101",
+  "class": 6,
+  "subject": "Social Science",
+  "chapter_title": "Introduction – Why Social Science?",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "objectives": [
+      "Explain the central ideas in Introduction – Why Social Science?.",
+      "Identify relevant evidence, patterns, examples or steps.",
+      "Apply a chapter idea to a new related situation.",
+      "Communicate reasoning clearly.",
+      "Reflect on learning."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.objectives",
+    "domain": "learning",
+    "description": "Learning objectives",
+    "chapter_scoped": true
+  }
+}

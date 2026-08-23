@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "gees106",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "The Age of Reorganisation",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "gees106_c01",
+        "name": "The Age of Reorganisation",
+        "definition": "Central learning focus of The Age of Reorganisation.",
+        "source_evidence": "6 CHAPTER The Age of Reorganisation By continuous living tradition and a vital power of rejuvenescence, this land has readjusted itself through unnumbered transformations."
+      },
+      {
+        "id": "gees106_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Use source information, observation or valid working to support a conclusion.",
+        "source_evidence": "Why is the period that The Big followed the Maurya empire Questions sometimes called the ‘Age of Reorganisation’?"
+      },
+      {
+        "id": "gees106_c03",
+        "name": "Application and transfer",
+        "definition": "Use the learned idea in a relevant new context.",
+        "source_evidence": "What were the values or principles that guided Tapestry of the Past emperors of that period?"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

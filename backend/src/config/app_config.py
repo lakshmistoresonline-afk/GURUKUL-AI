@@ -13,7 +13,7 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    PORT: int = 8000
+    PORT: int = 8001
     DEBUG: bool = True
 
     # AI Provider API Keys
@@ -26,7 +26,7 @@ class Settings(BaseSettings):
 
     # Provider Enable/Disable
     OLLAMA_CLOUD_ENABLED: bool = True
-    OLLAMA_LOCAL_ENABLED: bool = False
+    OLLAMA_LOCAL_ENABLED: bool = True
     GEMINI_ENABLED: bool = True
     GROQ_ENABLED: bool = True
     CEREBRAS_ENABLED: bool = False
@@ -35,11 +35,13 @@ class Settings(BaseSettings):
 
     # URLs
     OLLAMA_CLOUD_URL: str = "https://api.ollama.com"
-    OLLAMA_LOCAL_URL: str = "http://localhost:11434"
+    OLLAMA_LOCAL_URL: str = "http://127.0.0.1:11434"
 
     # Models
     OLLAMA_CLOUD_MODEL: str = "gpt-oss:120b"
-    OLLAMA_LOCAL_MODEL: str = "llama3.2"
+    OLLAMA_LOCAL_MODEL: str = "gemma4:e2b-it-qat"
+    OLLAMA_QWEN_MODEL: str = "qwen3.5:2b-q4_K_M"
+    OLLAMA_GEMMA_MODEL: str = "gemma4:e2b-it-qat"
     GEMINI_MODEL: str = "gemini-3.6-flash"
     GEMINI_FAST_MODEL: str = "gemini-3.5-flash-lite"
     GROQ_MODEL: str = "llama-3.3-70b-versatile"
@@ -57,10 +59,14 @@ class Settings(BaseSettings):
 
     # Security
     ALLOWED_ORIGINS: List[str] = [
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
+        "http://localhost:3000", "http://127.0.0.1:3000", "http://[::1]:3000",
+        "http://localhost:3001", "http://127.0.0.1:3001", "http://[::1]:3001",
+        "http://localhost:3002", "http://127.0.0.1:3002", "http://[::1]:3002",
+        "http://localhost:3003", "http://127.0.0.1:3003", "http://[::1]:3003",
+        "http://localhost:3004", "http://127.0.0.1:3004", "http://[::1]:3004",
+        "http://localhost:3005", "http://127.0.0.1:3005", "http://[::1]:3005",
+        "http://localhost:5173", "http://127.0.0.1:5173", "http://[::1]:5173",
+        "http://localhost:8001", "http://127.0.0.1:8001",
         "tauri://localhost"
     ]
 

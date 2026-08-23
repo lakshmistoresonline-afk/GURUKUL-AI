@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "learning_objectives",
+  "chapter_id": "gees108",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "How the Land Becomes Sacred",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "objectives": [
+      "Explain the central ideas presented in How the Land Becomes Sacred.",
+      "Identify evidence, examples, patterns, relationships, processes or arguments from the chapter.",
+      "Apply a chapter concept or method to a new related situation.",
+      "Communicate reasoning accurately and independently.",
+      "Reflect on learning and identify areas needing further practice."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.objectives",
+    "domain": "learning",
+    "description": "Learning objectives",
+    "chapter_scoped": true
+  }
+}

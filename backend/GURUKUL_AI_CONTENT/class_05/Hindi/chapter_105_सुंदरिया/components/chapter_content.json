@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "ehve105",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "सुंदरिया",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "The uploaded textbook chapter 'सुंदरिया' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'सुंदरिया'.",
+    "source_grounded_key_points": [
+      "सुंदरिया5 हरियाणा क े ककसी गाँव में ही िाकसंह नामक एक क कसान था।",
+      "उसकी समझ में यह नहीं आता था क क वह अपने बीवी-बच्चों औ ि अपनी प यािी गाय स ुं दरिया की प िवरिश क ै से किे?",
+      "गिीबी क े कािण हीिाकसं ह गाय का ्चािा भी नहीं जुटा पाता था।",
+      "खाने-पीने की कमी होने लगी तो ही िाकसं ह ने सो ्चा — ‘मैं स ुं दरिया को बे्च दूँ?’ पि उसका बड़ा लड़का जवाहिकसं ह सुं दरिया को मौसी कहा क िता था।",
+      "वहाँ उसे एक सेठ क े यहाँ ्चौकीदाि की नौकिी कमल गई।",
+      "एक िोज सेठ न े हीिाकसं ह से कहा — “तुम तो हरियाणा क े िहने वाल े हो।",
+      "एक गाय का बंदोबसत कि दो।” हीिाकसं ह स ुं दरिया की बात सो्चने लगा।",
+      "उसने कहा — “एक है मेिी कनगाह में।” सेठ ने कहा — “क ै सी गाय है?” हीिाकसं ह बोला — “गाय तो ऐसी है क क दूध देने में कामधेन ु।"
+    ],
+    "canonical_note": "These points were extracted from the uploaded chapter PDF; the full PDF remains the source of truth.",
+    "teaching_sequence": [
+      "Connect to prior knowledge.",
+      "Explore the chapter content and examples.",
+      "Check understanding after each major idea.",
+      "Apply the ideas in practice and discussion.",
+      "Review and assess mastery."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

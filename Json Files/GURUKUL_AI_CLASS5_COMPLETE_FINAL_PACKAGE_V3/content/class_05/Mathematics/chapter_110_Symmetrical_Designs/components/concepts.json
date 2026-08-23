@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "eemm110",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Symmetrical Designs",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "eemm110_concept_01",
+        "name": "Symmetrical Designs",
+        "definition": "Central learning focus developed by the chapter 'Symmetrical Designs'.",
+        "evidence": "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way."
+      },
+      {
+        "id": "eemm110_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4."
+      },
+      {
+        "id": "eemm110_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "They used their knowledge of lines of symmetry to make the cutouts."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

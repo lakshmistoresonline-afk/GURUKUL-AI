@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "hots",
+  "chapter_id": "gees204",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "Turning Tides: 11th and 12th Centuries",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "gees204_h1",
+        "question": "How would you apply an important idea from Turning Tides: 11th and 12th Centuries in a new situation?",
+        "reasoning": "Identify, justify and transfer."
+      },
+      {
+        "id": "gees204_h2",
+        "question": "What evidence would strengthen or weaken a conclusion related to this chapter?",
+        "reasoning": "Evaluate evidence."
+      },
+      {
+        "id": "gees204_h3",
+        "question": "Compare two possible approaches. Which is better and why?",
+        "reasoning": "Use criteria and evidence."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.hots",
+    "domain": "assessment",
+    "description": "Higher-order thinking questions",
+    "chapter_scoped": true
+  }
+}

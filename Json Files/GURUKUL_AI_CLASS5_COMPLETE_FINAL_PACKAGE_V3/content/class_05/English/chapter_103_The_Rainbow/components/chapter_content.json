@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "eesa103",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "The Rainbow",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "The uploaded textbook chapter 'The Rainbow' develops reading, language, interpretation, vocabulary and communication through 'The Rainbow'.",
+    "source_grounded_key_points": [
+      "3 The Rainbow Let us Recite Boats sail on the rivers, And ships sail on the seas; But clouds that sail across the sky Are prettier far than these.",
+      "There are bridges on the rivers, As pretty as you please; But the bow that bridges heaven, And overtops the trees, And builds a road from earth to sky, Is prettier far than these.",
+      "– Christina Rossetti Unit 2: My Colourful World Chapter 3.indd 27 09-06-2025 15:27:42 28 Santoor Grade 5 A.",
+      "Explain the meaning of the word ‘bow’ used in the poem.",
+      "Which bridge does the poet like mor e and why?",
+      "The word ‘these’ is used for different things in stanzas one and two.",
+      "What are the things for which ‘these’ has been used in each stanza?",
+      "State whether the following are True or False."
+    ],
+    "canonical_note": "These points were extracted from the uploaded chapter PDF; the full PDF remains the source of truth.",
+    "teaching_sequence": [
+      "Connect to prior knowledge.",
+      "Explore the chapter content and examples.",
+      "Check understanding after each major idea.",
+      "Apply the ideas in practice and discussion.",
+      "Review and assess mastery."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

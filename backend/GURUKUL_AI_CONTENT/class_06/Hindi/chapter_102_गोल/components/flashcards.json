@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "fhml102",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "गोल",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "fhml102_fc01",
+        "front": "What key point should you remember from गोल?",
+        "back": "2 गोल इस पाठ का नाम पढ़कर आपके मन में कुछ गोल वस्तुओ ं के नाम या चित्र उभरे होंगे, गोल गेंद, गोल रोटी, गोल चद्रं मा आदि।",
+        "concept_id": "fhml102_c01"
+      },
+      {
+        "id": "fhml102_fc02",
+        "front": "What key point should you remember from गोल?",
+        "back": "लेकिन यह पाठ एक विशेष प्रकार के गोल और उसे करने वाले के बारे में है।",
+        "concept_id": "fhml102_c01"
+      },
+      {
+        "id": "fhml102_fc03",
+        "front": "What key point should you remember from गोल?",
+        "back": "आइए, इसे पढ़ते हैं और जानते हैं कि कौन थे वे प्रसि‍द्ध ख‍िलाड़ी!",
+        "concept_id": "fhml102_c01"
+      },
+      {
+        "id": "fhml102_fc04",
+        "front": "What key point should you remember from गोल?",
+        "back": "खेल के मैदान में धक्का-मकु ्की और नोंक-झोंक की घटनाएँ होती रहती हैं।",
+        "concept_id": "fhml102_c01"
+      },
+      {
+        "id": "fhml102_fc05",
+        "front": "What key point should you remember from गोल?",
+        "back": "उन दिनों में, मैं पंजाब रे जिमेंट की ओर से खेला करता था।",
+        "concept_id": "fhml102_c01"
+      },
+      {
+        "id": "fhml102_fc06",
+        "front": "What key point should you remember from गोल?",
+        "back": "एक दिन ‘पंजाब रे जिमेंट’ और ‘सैंपर्स एडं माइनर्स टीम’ के बीच मक ु ाबला हो रहा था।",
+        "concept_id": "fhml102_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

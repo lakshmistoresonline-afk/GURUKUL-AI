@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "ehve107",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "मेरा बचपन",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "learning_goal": "Teach learners to understand and apply the main ideas of 'मेरा बचपन'.",
+    "explanation_sections": [
+      {
+        "title": "Connect",
+        "explanation": "Begin with learners' prior experience related to मेरा बचपन and invite predictions."
+      },
+      {
+        "title": "Explore",
+        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
+        "source_evidence": [
+          "वह कचचा टूटा घर, वह पयाल का बबछौना, वह नंगे बदन, नंगे पाँव खेतों में घूमना, आम क े पेड़ों पर चढ़ना, सारी बातें आँखों क े सामने बिर रही हैं।",
+          "मैं अपने चचेरे भाई हलधर क े साथ दूसरे गा ँव में एक मौलवी साहब क े यहाँ पढ़ने जाया करता था।",
+          "मेरी उम्र आठ साल थी, हलधर म ुझसे दो साल जेठे थे।",
+          "हम दोनों प्ातःकाल मटर और जौ का चबेना लेते थे।"
+        ]
+      },
+      {
+        "title": "Make meaning",
+        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
+      },
+      {
+        "title": "Apply",
+        "explanation": "Move from a chapter example to a new, closely related example."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Share an observation or prediction."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model close reading/working with the chapter.",
+        "student_action": "Identify relevant evidence."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Question reasoning.",
+        "student_action": "Explain why an answer is supported."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide application.",
+        "student_action": "Solve/perform a new related task."
+      }
+    ],
+    "misconceptions": [
+      "Confusing a guess with evidence.",
+      "Giving an answer without explaining the reasoning."
+    ],
+    "checks_for_understanding": [
+      "What evidence in 'मेरा बचपन' supports your answer?",
+      "Can you explain the idea in your own words?"
+    ],
+    "closure": "Ask the learner to state the most important idea and one way it can be used."
+  },
+  "runtime_mapping": {
+    "route": "teacher.explanation",
+    "domain": "teacher",
+    "description": "Teacher-facing explanation",
+    "chapter_scoped": true
+  }
+}

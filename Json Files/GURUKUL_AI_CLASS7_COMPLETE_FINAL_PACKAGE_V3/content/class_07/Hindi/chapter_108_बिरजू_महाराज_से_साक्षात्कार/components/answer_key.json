@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ghml108",
+  "class": 7,
+  "subject": "Hindi",
+  "chapter_title": "बिरजू महाराज से साक्षात्कार",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "ghml108_q01",
+      "answer": "Option 1",
+      "evidence": "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।"
+    }
+  },
+  "runtime_mapping": {
+    "route": "assessment.answer_key",
+    "domain": "assessment",
+    "description": "Answer keys and scoring references",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "eesa109",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "Vocation",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eesa109_q01",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Vocation'?",
+        "options": [
+          "Let us Recite (1) When the gong sounds ten in the morning and I walk to school by our lane, Every day I meet the hawker crying, “Bangles, crystal bangles!” There is nothing to hurry him on, there is no road he must take, no place he must go to, no time when he must come home.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Let us Recite (1) When the gong sounds ten in the morning and I walk to school by our lane, Every day I meet the hawker crying, “Bangles, crystal bangles!” There is nothing to hurry him on, there is no road he must take, no place he must go to, no time when he must come home.",
+        "difficulty": "easy",
+        "concept_id": "eesa109_concept_01"
+      },
+      {
+        "id": "eesa109_q02",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Vocation'?",
+        "options": [
+          "I wish I were a hawker, spending my day in the road, crying, “Bangles, crystal bangles!” 9 Vocation Unit 5: Work is Worship Chapter 9.indd 105 6/10/2025 4:37:17 PM (2) When at four in the afternoon I come back from the school.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "I wish I were a hawker, spending my day in the road, crying, “Bangles, crystal bangles!” 9 Vocation Unit 5: Work is Worship Chapter 9.indd 105 6/10/2025 4:37:17 PM (2) When at four in the afternoon I come back from the school.",
+        "difficulty": "easy",
+        "concept_id": "eesa109_concept_01"
+      },
+      {
+        "id": "eesa109_q03",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Vocation'?",
+        "options": [
+          "I can see through the gate of that house the gardener digging the ground.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "I can see through the gate of that house the gardener digging the ground.",
+        "difficulty": "medium",
+        "concept_id": "eesa109_concept_01"
+      },
+      {
+        "id": "eesa109_q04",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Vocation'?",
+        "options": [
+          "He does what he likes with his spade, he soils his clothes with dust, nobody takes him to task if he gets baked in the sun or gets wet.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "He does what he likes with his spade, he soils his clothes with dust, nobody takes him to task if he gets baked in the sun or gets wet.",
+        "difficulty": "medium",
+        "concept_id": "eesa109_concept_01"
+      },
+      {
+        "id": "eesa109_q05",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Vocation'?",
+        "options": [
+          "I wish I were a gardener digging away at the garden with nobody to stop me from digging.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "I wish I were a gardener digging away at the garden with nobody to stop me from digging.",
+        "difficulty": "hard",
+        "concept_id": "eesa109_concept_01"
+      },
+      {
+        "id": "eesa109_q06",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Vocation'?",
+        "options": [
+          "The lane is dark and lonely, and the street-lamp stands like a giant with one red eye in its head.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "The lane is dark and lonely, and the street-lamp stands like a giant with one red eye in its head.",
+        "difficulty": "hard",
+        "concept_id": "eesa109_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.bank",
+    "domain": "assessment",
+    "description": "Assessment question bank",
+    "chapter_scoped": true
+  }
+}

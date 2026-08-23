@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "gepr103",
+  "class": 7,
+  "subject": "English",
+  "chapter_title": "Dreams and Discoveries",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-grounded learning unit for Dreams and Discoveries.",
+    "source_grounded_key_points": [
+      "Dreams and Discoveries Unit 3 DREAMS AND DISCOVERIES My Brother’s Great Invention Let us do these activities before we read.",
+      "Without me, calculations in the modern digital world would be impossible.",
+      "II Discuss in groups of four what you think the world today would have been like without inventions and discoveries.",
+      "III Fill the grid given below with missing letters to complete the words.",
+      "C R A T V T C U I T Y R I - T K N G D E T E I N A T I I G I A I O N Reprint 2026-27 Unit 3.indd 91 06-Mar-25 2:48:47 PM Poorvi Let us read I racket: a loud “Who put that water bag here?” roared my father from the and disturbing noise front doorstep.",
+      "“Your burglar alarm,” I hissed to my brother Anand, who was getting ready to disappear from the house.",
+      "sopping: soaking Ma rushed in to see what the racket was all about and found scowling: having Papa standing there, sopping wet and scowling.",
+      "an angry or frowning “I want to know who is behind this nonsense,” Papa said expression grimly.",
+      "rigged up: “I think it’s supposed to be a burglar alarm,” Ma said, in a assembled something soothing voice.",
+      "temporarily “I don’t care what it’s supposed to be,” Papa said."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Transfer",
+      "Reflect",
+      "Assess"
+    ],
+    "source_rule": "The uploaded textbook PDF is the factual source of truth."
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

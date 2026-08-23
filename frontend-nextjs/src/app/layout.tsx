@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata, Viewport } from "next";
 import "../styles/globals.css";
 import { AuthProvider } from "../context/AuthContext";
+import { LearningProvider } from "../context/LearningContext";
 
 export const metadata: Metadata = {
   title: "Gurukul AI",
@@ -23,7 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased min-h-screen bg-background">
         <AuthProvider>
-          {children}
+          <LearningProvider>
+            {children}
+          </LearningProvider>
         </AuthProvider>
       </body>
     </html>

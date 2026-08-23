@@ -9,6 +9,7 @@ from typing import Any, Dict, List
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from ..config.app_config import settings
+from ..config.subject_frameworks import get_framework_for_subject
 from ..models.job import ChapterJob, JobStatus
 from ..orchestrator.ai_orchestrator import AIOrchestrator
 from ..utils.ai_utils import normalize_structured_response
@@ -112,6 +113,32 @@ class ChapterService:
 
     def __init__(self, orchestrator: AIOrchestrator):
         self.orchestrator = orchestrator
+
+    def get_stages_for_subject(self, subject: str) -> List[Dict[str, Any]]:
+        framework = get_framework_for_subject(subject)
+        stages = self.REQUIRED_STAGES.copy()
+
+        # Insert subject specific knowledge stage after concepts
+        if framework:
+            subject_stage = {
+                "name": "subject_knowledge",
+                "type": "structured",
+                "prompt": (
+                    f"Identify and generate the following subject-specific content categories as applicable to this chapter: "
+                    f"{', '.join(framework['content_types'])}. \n\n"
+                    f"SPECIFIC INSTRUCTIONS:\n{framework['prompt_instructions']}\n\n"
+                    "For each category, provide a detailed structured response based ONLY on the source. "
+                    "Do NOT generate irrelevant categories if they do not exist in the source."
+                )
+            }
+            # Find concepts index to insert after
+            try:
+                idx = next(i for i, s in enumerate(stages) if s["name"] == "concepts")
+                stages.insert(idx + 1, subject_stage)
+            except StopIteration:
+                stages.append(subject_stage)
+
+        return stages
 
     def _validate_single_chapter_source(
         self,
@@ -247,14 +274,13 @@ class ChapterService:
             context
         )
 
-        total_stages = len(
-            self.REQUIRED_STAGES
-        )
+        stages = self.get_stages_for_subject(job.subject)
+        total_stages = len(stages)
 
-        for index, stage in enumerate(
-            self.REQUIRED_STAGES
-        ):
+        for index, stage in enumerate(stages):
             stage_name = stage["name"]
+
+            # ... rest of logic
 
             if stage_name in completed:
                 continue
@@ -269,12 +295,17 @@ class ChapterService:
 
             await session.commit()
 
+            framework = get_framework_for_subject(job.subject)
+            framework_context = f"\nSUBJECT FRAMEWORK ({job.subject}):\n{framework.get('prompt_instructions', '')}\n" if framework else ""
+
             prompt = (
                 "You are generating content for ONE "
                 "textbook chapter only.\n\n"
+                f"SUBJECT: {job.subject}\n"
                 "Use ONLY the supplied chapter-derived "
                 "source context. Do not invent facts that "
                 "are not supported by it.\n\n"
+                f"{framework_context}"
                 f"CHAPTER CONTEXT:\n{context}\n\n"
                 f"TASK:\n{stage['prompt']}"
             )
@@ -334,7 +365,8 @@ class ChapterService:
         # ----------------------------------------------------
 
         self._validate_complete_package(
-            completed
+            completed,
+            job.subject
         )
 
         job.status = JobStatus.VALIDATING
@@ -472,6 +504,19 @@ class ChapterService:
                 }
             }
 
+        if stage_name == "subject_knowledge":
+            return {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "category": {"type": "string"},
+                        "content": {"type": "string", "description": "The detailed structured content for this category as defined in the framework."}
+                    },
+                    "required": ["category", "content"]
+                }
+            }
+
         return {
             "type": "object"
         }
@@ -492,7 +537,8 @@ class ChapterService:
             "flashcards",
             "concepts",
             "prerequisites",
-            "related_chapters"
+            "related_chapters",
+            "subject_knowledge"
         }:
             if not isinstance(response, list):
                 raise ValueError(
@@ -570,11 +616,13 @@ class ChapterService:
     def _validate_complete_package(
         self,
         completed: Dict[str, Any],
+        subject: str
     ) -> None:
 
+        stages = self.get_stages_for_subject(subject)
         required = [
             stage["name"]
-            for stage in self.REQUIRED_STAGES
+            for stage in stages
         ]
 
         missing = [

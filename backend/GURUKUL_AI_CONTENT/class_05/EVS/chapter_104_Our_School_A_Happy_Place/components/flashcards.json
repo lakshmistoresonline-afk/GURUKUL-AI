@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "eeev104",
+  "class": 5,
+  "subject": "EVS",
+  "chapter_title": "Our School — A Happy Place",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "eeev104_fc01",
+        "front": "What is a key idea from 'Our School — A Happy Place'?",
+        "back": "Green School Aasha and Mohit were walking to school together.",
+        "concept_id": "eeev104_concept_01"
+      },
+      {
+        "id": "eeev104_fc02",
+        "front": "What is a key idea from 'Our School — A Happy Place'?",
+        "back": "Mohit smiled happily and said, “I love school!",
+        "concept_id": "eeev104_concept_01"
+      },
+      {
+        "id": "eeev104_fc03",
+        "front": "What is a key idea from 'Our School — A Happy Place'?",
+        "back": "It is where I see my friends, play games and learn new things every day.",
+        "concept_id": "eeev104_concept_01"
+      },
+      {
+        "id": "eeev104_fc04",
+        "front": "What is a key idea from 'Our School — A Happy Place'?",
+        "back": "Our school is a place where we feel safe, and cared for.",
+        "concept_id": "eeev104_concept_01"
+      },
+      {
+        "id": "eeev104_fc05",
+        "front": "What is a key idea from 'Our School — A Happy Place'?",
+        "back": "Asha said, “My school teaches us how to care for plants, trees and animals.",
+        "concept_id": "eeev104_concept_01"
+      },
+      {
+        "id": "eeev104_fc06",
+        "front": "What is a key idea from 'Our School — A Happy Place'?",
+        "back": "I want to make my school better like a green school”.",
+        "concept_id": "eeev104_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

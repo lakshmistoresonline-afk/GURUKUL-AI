@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_summary",
+  "chapter_id": "eesa105",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "The Frog",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "summary": "'The Frog' develops reading, language, interpretation, vocabulary and communication through 'The Frog'. The main learning is organised around the source-supported points below.",
+    "key_points": [
+      "5 The Frog Let us Recite I sit in ponds and in the rain, Or hop about in a muddy drain.",
+      "As a tadpole, I swim with cheer, A tiny fish-like thing, so clear!",
+      "I flick my tongue to catch my food, It works so fast—now that’s quite good!",
+      "I live on land and water too, In places damp with drops of dew.",
+      "My colours match the plants and trees, I hide so well in grass and leaves!",
+      "But snakes are near, I must beware, Or else they’ll catch me unaware!"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.summary",
+    "domain": "reader",
+    "description": "Chapter summary",
+    "chapter_scoped": true
+  }
+}

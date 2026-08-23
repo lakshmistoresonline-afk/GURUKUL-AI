@@ -25,7 +25,7 @@ class OllamaLocalProvider(AIProvider):
             "keep_alive": 0
         }
 
-        async with httpx.AsyncClient(timeout=60.0) as client:
+        async with httpx.AsyncClient(timeout=180.0) as client:
             response = await client.post(url, json=payload)
             if response.status_code == 200:
                 data = response.json()
@@ -45,7 +45,7 @@ class OllamaLocalProvider(AIProvider):
             "keep_alive": 0
         }
 
-        async with httpx.AsyncClient(timeout=60.0) as client:
+        async with httpx.AsyncClient(timeout=180.0) as client:
             response = await client.post(url, json=payload)
             if response.status_code == 200:
                 data = response.json()
@@ -59,7 +59,7 @@ class OllamaLocalProvider(AIProvider):
             "model": "mxbai-embed-large",
             "prompt": text
         }
-        async with httpx.AsyncClient(timeout=60.0) as client:
+        async with httpx.AsyncClient(timeout=180.0) as client:
             response = await client.post(url, json=payload)
             if response.status_code == 200:
                 data = response.json()

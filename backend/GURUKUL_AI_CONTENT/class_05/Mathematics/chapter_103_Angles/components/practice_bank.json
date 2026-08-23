@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "practice_bank",
+  "chapter_id": "eemm103",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Angles",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eemm103_q01",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Angles'?",
+        "options": [
+          "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”.",
+        "difficulty": "easy",
+        "concept_id": "eemm103_concept_01"
+      },
+      {
+        "id": "eemm103_q02",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Angles'?",
+        "options": [
+          "The learners can notice how much they have turned with respect to their original position.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "The learners can notice how much they have turned with respect to their original position.",
+        "difficulty": "easy",
+        "concept_id": "eemm103_concept_01"
+      },
+      {
+        "id": "eemm103_q03",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Angles'?",
+        "options": [
+          "Can you recognise the child in the picture who has made a full turn?",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Can you recognise the child in the picture who has made a full turn?",
+        "difficulty": "medium",
+        "concept_id": "eemm103_concept_01"
+      },
+      {
+        "id": "eemm103_q04",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Angles'?",
+        "options": [
+          "Give examples of real-life situations where you observe turns.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Give examples of real-life situations where you observe turns.",
+        "difficulty": "medium",
+        "concept_id": "eemm103_concept_01"
+      },
+      {
+        "id": "eemm103_q05",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Angles'?",
+        "options": [
+          "Ashutosh and Sahana are making circles, each having one foot fixed and rotating at one spot on the ground.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Ashutosh and Sahana are making circles, each having one foot fixed and rotating at one spot on the ground.",
+        "difficulty": "hard",
+        "concept_id": "eemm103_concept_01"
+      },
+      {
+        "id": "eemm103_q06",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Angles'?",
+        "options": [
+          "Ashutosh made a complete circle by making a full turn.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Ashutosh made a complete circle by making a full turn.",
+        "difficulty": "hard",
+        "concept_id": "eemm103_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.bank",
+    "domain": "practice",
+    "description": "Practice question bank",
+    "chapter_scoped": true
+  }
+}

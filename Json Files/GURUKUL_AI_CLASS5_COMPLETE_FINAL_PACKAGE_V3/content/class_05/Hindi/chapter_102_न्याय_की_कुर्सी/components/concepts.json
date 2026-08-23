@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "ehve102",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "न्याय की कुर्सी",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "ehve102_concept_01",
+        "name": "न्याय की कुर्सी",
+        "definition": "Central learning focus developed by the chapter 'न्याय की कुर्सी'.",
+        "evidence": "2 उज्जैन की प्राचीन और ऐतिह रातिक नगरी क े बराहर एक ल ंबरा-चौडरा म जैदरान थ रा।"
+      },
+      {
+        "id": "ehve102_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "एक तदन ल डकों क रा एक झ ुंड वहराँ खेल रह रा थ रा।"
+      },
+      {
+        "id": "ehve102_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "एक ल डकरा कू दिरा-भरागिरा एक टीले पर चढ़ गय रा।"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

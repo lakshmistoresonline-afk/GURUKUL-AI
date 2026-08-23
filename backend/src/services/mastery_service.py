@@ -260,13 +260,51 @@ class MasteryService:
 
         with open(package_path, "r", encoding="utf-8") as f:
             pkg = json.load(f)
-            bank = pkg.get("original_data", {}).get("assessment", {}).get("expandedQuestionBank", [])
-            if not bank: bank = pkg.get("content", {}).get("quiz", [])
-            if not bank: bank = pkg.get("original_data", {}).get("aiEnrichment", {}).get("question_bank", [])
 
-            selected_ids = random.sample(q_ids, min(len(q_ids), limit))
-            results = [q for q in bank if str(q.get("id")) in [str(sid) for sid in selected_ids]]
-            return results
+            # Priority 1: V3 components
+            bank = []
+            components = pkg.get("components", {})
+            for c_id in ["assessment_bank", "practice_bank", "diagnostic_assessment", "formative_assessment", "summative_assessment", "chapter_mastery_assessment"]:
+                comp_items = components.get(c_id, {}).get("content", {}).get("items", [])
+                if comp_items:
+                    bank.extend(comp_items)
+
+            # Priority 2: Legacy locations
+            if not bank:
+                bank = pkg.get("original_data", {}).get("assessment", {}).get("expandedQuestionBank", [])
+            if not bank:
+                bank = pkg.get("content", {}).get("quiz", [])
+            if not bank:
+                bank = pkg.get("original_data", {}).get("aiEnrichment", {}).get("question_bank", [])
+
+            # Filter by concept if provided
+            if concept_id:
+                # Try to match topic or conceptId in question metadata
+                filtered_bank = [q for q in bank if str(q.get("concept_id")) == str(concept_id) or \
+                                                 str(q.get("topic_id")) == str(concept_id)]
+                if not filtered_bank:
+                    # Fallback to text matching if ID matching fails
+                    target_concept = next((c for c in concepts if (c.get("conceptId") == concept_id or c.get("id") == concept_id)), None)
+                    if target_concept:
+                        c_name = (target_concept.get("conceptName") or target_concept.get("concept") or "").lower()
+                        if c_name:
+                            filtered_bank = [q for q in bank if c_name in str(q.get("question", "")).lower() or \
+                                                             c_name in str(q.get("topic", "")).lower()]
+
+                if filtered_bank:
+                    bank = filtered_bank
+
+            selected_ids = random.sample(q_ids, min(len(q_ids), limit)) if q_ids else []
+
+            if bank:
+                if selected_ids:
+                    results = [q for q in bank if str(q.get("id")) in [str(sid) for sid in selected_ids]]
+                    if results: return results
+
+                # If no ID matching or IDs were empty, return random from bank
+                return random.sample(bank, min(len(bank), limit))
+
+            return []
 
     def get_chapter_mastery_config(self, class_name: str, subject: str, chapter_id: str) -> Optional[Dict[str, Any]]:
         """Finds and enriches the mastery configuration for a specific chapter."""
@@ -275,35 +313,49 @@ class MasteryService:
 
         norm_chapter_id = PathResolver.normalize_chapter_id(class_name, chapter_id, subject=subject)
 
-        # Priority: Load from the new chapter-specific content root
-        master_path = PathResolver.get_chapter_path(class_name, norm_chapter_id, subject=subject)
-        if master_path:
-            mastery_map_path = os.path.join(master_path, "mastery_map.json")
-            metadata_path = os.path.join(master_path, "chapter_metadata.json")
-            if os.path.exists(mastery_map_path):
-                try:
-                    with open(mastery_map_path, "r", encoding="utf-8") as f:
-                        config = json.load(f)
-                        # Basic mapping for backward compatibility with expected keys
-                        if "concepts" not in config:
-                            config["concepts"] = []
+        # 1. Load from the Master Content Package (Priority)
+        package_path = PathResolver.get_chapter_package_path(class_name, norm_chapter_id, subject=subject)
+        if package_path and os.path.exists(package_path):
+            try:
+                with open(package_path, "r", encoding="utf-8") as f:
+                    pkg = json.load(f)
+                    components = pkg.get("components", {})
 
-                        # Add 'source' key for compatibility with DiagnosticService
-                        if "source" not in config and os.path.exists(metadata_path):
-                            with open(metadata_path, "r", encoding="utf-8") as fm:
-                                meta = json.load(fm)
-                                config["source"] = {
-                                    "slug": meta.get("id") or norm_chapter_id,
-                                    "chapterTitle": meta.get("title") or meta.get("chapter_title"),
-                                    "subject": meta.get("subject"),
-                                    "chapterNumber": meta.get("chapter_number")
-                                }
-                        elif "source" not in config:
-                            config["source"] = {"slug": norm_chapter_id, "chapterTitle": "Chapter"}
+                    # Try to get mastery_map component
+                    config = components.get("mastery_map", {}).get("content")
 
-                        return config
-                except Exception as e:
-                    logger.error(f"Error loading mastery_map from {master_path}: {e}")
+                    if not config:
+                        # Fallback: synthesize from 'concepts' and 'metadata'
+                        concepts_comp = components.get("concepts", {}).get("content", {}).get("concepts", [])
+                        if not concepts_comp:
+                            concepts_comp = components.get("concepts", {}).get("content", {}).get("mappings", [])
+
+                        metadata = components.get("chapter_metadata", {}).get("content", {})
+
+                        config = {
+                            "chapterId": norm_chapter_id,
+                            "concepts": concepts_comp,
+                            "source": {
+                                "slug": norm_chapter_id,
+                                "chapterTitle": metadata.get("title") or pkg.get("chapter", {}).get("chapter_title") or "Chapter",
+                                "subject": metadata.get("subject") or subject,
+                                "chapterNumber": metadata.get("chapter_number")
+                            }
+                        }
+
+                    # Ensure 'source' key exists for other services
+                    if config and "source" not in config:
+                        metadata = components.get("chapter_metadata", {}).get("content", {})
+                        config["source"] = {
+                            "slug": norm_chapter_id,
+                            "chapterTitle": metadata.get("title") or pkg.get("chapter", {}).get("chapter_title") or "Chapter",
+                            "subject": metadata.get("subject") or subject,
+                            "chapterNumber": metadata.get("chapter_number")
+                        }
+
+                    return config
+            except Exception as e:
+                logger.error(f"MasteryService: Error extracting mastery config from package {package_path}: {e}")
 
         # Fallback to legacy index search (if any remains)
         config = None
@@ -522,6 +574,41 @@ class MasteryService:
             "progress": round(progress, 2),
             "evidence": evidence,
             "remediation_needed": self.identify_weak_concepts(student_record, all_concepts)
+        }
+
+    def get_remediation_content(self, class_name: str, subject: str, chapter_id: str, concept_id: str) -> Optional[Dict[str, Any]]:
+        """Retrieves targeted remediation content for a weak concept."""
+        master_path = PathResolver.get_chapter_path(class_name, chapter_id, subject=subject)
+        if not master_path:
+             return None
+
+        pkg_path = os.path.join(master_path, "package.json")
+        if not os.path.exists(pkg_path):
+            return None
+
+        with open(pkg_path, "r", encoding="utf-8") as f:
+            package = json.load(f)
+
+        # Search for concept in different possible locations
+        concepts = package.get("original_data", {}).get("aiEnrichment", {}).get("concepts", [])
+        if not concepts:
+            concepts = package.get("original_data", {}).get("aiEnrichment", {}).get("topicGuides", [])
+
+        target = None
+        for c in concepts:
+            if c.get("id") == concept_id or c.get("conceptId") == concept_id or c.get("term") == concept_id or c.get("name") == concept_id:
+                target = c
+                break
+
+        if not target:
+            return None
+
+        return {
+            "concept": target.get("name") or target.get("term") or concept_id,
+            "explanation": target.get("explanation") or target.get("definition") or target.get("sourceGroundedExplanation"),
+            "example": target.get("example") or (target.get("sourceEvidence", [{}])[0].get("evidence") if target.get("sourceEvidence") else None),
+            "hint": target.get("socratic_hint") or target.get("studentFriendlySummary"),
+            "application": target.get("real_world_application")
         }
 
     def process_quiz_results(self, student_record: Dict[str, Any], quiz_results: List[Dict[str, Any]], config: Dict[str, Any]) -> Dict[str, Any]:

@@ -34,147 +34,159 @@ export interface NormalizedLesson {
   hasMindMap: boolean;
   animationFallback: string;
   mindMap?: any;
+  subjectKnowledge?: { category: string, content: string }[];
 }
 
 /**
  * Normalizes raw package data from Class 5 or Class 6 into a canonical Student Lesson Model.
+ * Supports V3 component-based structure and legacy content structure.
  */
 export function normalizeLesson(pkg: any): NormalizedLesson {
+  if (!pkg) return {
+    title: 'Loading...',
+    subject: 'general',
+    classNumber: '5',
+    chapterId: 'unknown',
+    introduction: '',
+    learningGoals: [],
+    concepts: [],
+    teacherExplanation: '',
+    story: '',
+    activities: [],
+    flashcards: [],
+    retrievalPractice: [],
+    quiz: [],
+    hasAnimation: false,
+    hasMindMap: false,
+    animationFallback: '',
+    subjectKnowledge: []
+  };
+
   const content = pkg?.content || {};
   const metadata = pkg?.metadata || {};
   const original = pkg?.original_data || {};
   const aiEnrichment = original?.aiEnrichment || {};
+  const components = pkg?.components || {};
+  const rootChapter = pkg?.chapter || {};
+
+  // Helper to extract content from V3 components
+  const getComp = (id: string) => components[id]?.content;
 
   // 1. Learning Goals
   let learningGoals: string[] = [];
-  if (Array.isArray(aiEnrichment.learningObjectives) && aiEnrichment.learningObjectives.length > 0) {
+  const goalsData = getComp('learning_objectives');
+  if (Array.isArray(goalsData?.objectives)) {
+    learningGoals = goalsData.objectives;
+  } else if (Array.isArray(aiEnrichment.learningObjectives)) {
     learningGoals = aiEnrichment.learningObjectives;
-  } else if (Array.isArray(content.learning_goals) && content.learning_goals.length > 0) {
+  } else if (Array.isArray(content.learning_goals)) {
     learningGoals = content.learning_goals;
-  } else if (content.summary) {
-    // If it's a string, we keep it as a single goal if it's meaningful
-    const summary = content.summary.trim();
-    if (summary && !summary.toLowerCase().startsWith('recall the chapter title')) {
-      learningGoals = [summary];
-    }
+  } else if (Array.isArray(content.objectives)) {
+    learningGoals = content.objectives;
   }
 
   // 2. Concepts
   let concepts: NormalizedConcept[] = [];
-  if (Array.isArray(aiEnrichment.concepts) && aiEnrichment.concepts.length > 0) {
-    concepts = aiEnrichment.concepts.map((c: any) => ({
-      id: c.conceptId || c.id || c.name,
-      name: c.name || c.id || 'Concept',
-      explanation: c.studentExplanation || c.explanation,
-      example: c.example,
-      masteryCriteria: c.masteryCriteria
+  const conceptsData = getComp('concepts');
+  const conceptsPool = conceptsData?.concepts || aiEnrichment.concepts || content.concepts || [];
+
+  if (Array.isArray(conceptsPool)) {
+    concepts = conceptsPool.map((c: any) => ({
+      id: c.id || c.conceptId || c.name,
+      name: c.name || c.topic || 'Concept',
+      explanation: c.definition || c.explanation || c.studentExplanation || c.explanation,
+      example: c.example || c.source_evidence || c.evidence,
+      masteryCriteria: c.mastery_criteria || c.masteryCriteria
     }));
-  } else if (Array.isArray(aiEnrichment.topicGuides) && aiEnrichment.topicGuides.length > 0) {
-    concepts = aiEnrichment.topicGuides.map((t: any) => ({
-      id: t.topicId || t.topic,
-      name: t.topic || 'Topic',
-      explanation: t.studentFriendlySummary || t.sourceGroundedExplanation,
-      example: t.sourceEvidence?.[0]?.evidence
-    }));
-  } else if (content.concepts) {
-    concepts = content.concepts.split('\n')
-      .filter((l: string) => l.trim())
-      .map((c: string) => ({
-        name: c.replace(/^[0-9\.\-\*\s]+/, '').trim()
-      }));
   }
 
   // 3. Story Mode
-  let story = content.story_explanation || content.storyExplanation || content.studentExplanation || '';
-
-  // Fallback for Class 6 & 7: join lesson sequence sections if no direct story exists
-  if (!story && (Array.isArray(content.studentLesson) || Array.isArray(content.studentLearningSequence))) {
-    const sequence = content.studentLesson || content.studentLearningSequence;
-    story = sequence
-      .map((s: any) => s.explanation || s.content || s.instruction)
-      .filter(Boolean)
-      .join('\n\n');
+  const storyData = getComp('story_mode');
+  let story = storyData?.opening || storyData?.narration || content.story_explanation || content.storyExplanation || content.introduction || '';
+  if (Array.isArray(storyData?.scenes)) {
+     story = storyData.scenes.map((s: any) => s.narration).filter(Boolean).join('\n\n');
   }
-
-  // Final fallback to introduction/overview if still empty
+  if ((!story || story.length < 50) && storyData?.ending_reflection) {
+      story = storyData.ending_reflection;
+  }
   if (!story || story.length < 50) {
-     const fallback = content.detailedLesson?.overview || content.introduction || content.summary || '';
-     if (fallback.length > story.length) story = fallback;
+      story = content.introduction || rootChapter.source_key_points?.[0] || '';
   }
 
-  // Sanitize bad fallbacks
-  if (story.includes('Retell the chapter concepts as a short age-appropriate story')) {
-    story = content.introduction || ''; // It's just an instruction placeholder
-  }
-  if (story.toLowerCase().includes('read the story in your original textbook')) {
-    story = content.introduction || '';
+  // 4. Teacher Explanation
+  const teacherData = getComp('teacher_explanation');
+  let teacherExplanation = '';
+  if (Array.isArray(teacherData?.explanation_sections)) {
+    teacherExplanation = teacherData.explanation_sections.map((s: any) => {
+        let text = `### ${s.title}\n${s.explanation}`;
+        if (s.source_evidence && s.source_evidence.length > 0) {
+            text += `\n\n**Evidence from chapter:**\n${Array.isArray(s.source_evidence) ? s.source_evidence.join('\n') : s.source_evidence}`;
+        }
+        return text;
+    }).join('\n\n');
+  } else {
+    teacherExplanation = teacherData?.explanation || teacherData?.learning_goal || content.teacher_explanation || content.detailedLesson?.overview || '';
   }
 
-  // 4. Activities
+  // 5. Activities
   let activities: NormalizedActivity[] = [];
-  const rawActivities = aiEnrichment.masteryLab?.activities || aiEnrichment.activity_bank || content.activities || [];
-  if (Array.isArray(rawActivities)) {
+  const labsData = getComp('interactive_lab');
+  const activityBankData = getComp('activities');
+  const scenariosData = getComp('interactive_scenarios');
+
+  const rawActivities = [
+      ...(labsData?.activities || []),
+      ...(activityBankData?.items || activityBankData?.activities || []),
+      ...(scenariosData?.scenarios || []),
+      ...(Array.isArray(content.activities) ? content.activities : [])
+  ];
+
+  if (rawActivities.length > 0) {
     activities = rawActivities.map((a: any) => ({
-      title: a.label || a.title || 'Mastery Activity',
-      description: a.teachBackPrompt || a.transferPrompt || a.errorPrompt || a.misconceptionCheck || a.instructions || a.description || '',
-      concept: a.concept
+      title: a.title || a.label || a.situation || 'Mastery Activity',
+      description: a.objective || a.description || (Array.isArray(a.instructions) ? a.instructions.join('\n') : a.instructions) || a.prompt || (a.choices ? 'Scenario choices available.' : ''),
+      concept: a.concept || a.concept_id
     }));
   }
-  // Fallback to objectives if no activities in masteryLab
-  if (activities.length === 0 && content.objectives) {
-    const objectivesList = typeof content.objectives === 'string'
-      ? content.objectives.split('\n').filter((l: string) => l.trim() && !l.includes('Perform the following operation'))
-      : Array.isArray(content.objectives) ? content.objectives : [];
 
-    if (objectivesList.length > 0) {
-      activities = objectivesList.map((obj: any) => ({
-        title: 'Interactive Task',
-        description: typeof obj === 'string' ? obj.replace(/^[0-9\.\-\*\s]+/, '').trim() : (obj.description || obj.goal || '')
-      }));
-    }
-  }
-
-  // 5. Visual assets
-  const mindMap = content.mind_map || content.mindMap || aiEnrichment.mindMap || aiEnrichment.mind_map;
+  // 6. Visual assets
+  const mindMap = getComp('concept_graph') || content.mind_map || aiEnrichment.mindMap;
   const hasMindMap = !!mindMap;
-  const hasAnimation = !!(content.animation_url || content.lottie_url);
+  const multimedia = getComp('multimedia');
+  const hasAnimation = !!(multimedia?.animation_url || content.animation_url);
   const animationFallback = story || content.summary || content.introduction || '';
 
-  // 6. Retrieval Practice
-  let retrievalPractice: string[] = [];
-  const rawRP = original?.mastery?.retrievalPracticeSet || aiEnrichment?.revision?.expandedRevisionPlan?.retrievalPractice || aiEnrichment?.retrieval_prompts || content.retrieval_prompts || [];
-  if (Array.isArray(rawRP)) {
-    retrievalPractice = rawRP.map((r: any) => typeof r === 'string' ? r : (r.prompt || r.question || ''));
-  }
+  // 7. Flashcards
+  const flashData = getComp('flashcards');
+  const flashcards = flashData?.cards || content.flashcards || aiEnrichment.flashcards || [];
 
-  // 7. Quiz (Merge Foundation and Expanded)
-  const baseQuiz = Array.isArray(content.quiz) ? content.quiz : (content.quiz?.questions || []);
-  const expandedQuiz = Array.isArray(original?.assessment?.expandedQuestionBank)
-    ? original.assessment.expandedQuestionBank.map((q: any) => ({
-        ...q,
-        difficulty: q.level || q.difficulty // Map 'level' to 'difficulty' for UI
-      }))
-    : [];
+  // 8. Retrieval Practice
+  const rpData = getComp('spaced_retrieval');
+  const retrievalPractice = rpData?.prompts || aiEnrichment?.retrieval_prompts || content.retrieval_prompts || [];
 
-  const fullQuiz = [...baseQuiz, ...expandedQuiz];
+  // 9. Quiz
+  const practiceBank = getComp('practice_bank');
+  const assessBank = getComp('assessment_bank');
+  const fullQuiz = [...(practiceBank?.items || []), ...(assessBank?.items || []), ...(Array.isArray(content.quiz) ? content.quiz : [])];
 
   return {
-    title: original?.curriculum?.displayName || metadata.chapterTitle || metadata.chapter_name || content.topic || content.title || 'Untitled Lesson',
-    subject: metadata.subject || 'general',
-    classNumber: (metadata.class_name || metadata.className || '5').toString().split('_').pop() || '5',
-    chapterId: metadata.chapterId || metadata.chapter_id || metadata.code || 'unknown',
-    introduction: content.introduction || content.detailedLesson?.overview || '',
+    title: rootChapter.chapter_title || original?.curriculum?.displayName || metadata.chapterTitle || content.topic || 'Untitled Lesson',
+    subject: rootChapter.subject || metadata.subject || 'general',
+    classNumber: (rootChapter.class || metadata.class_name || '5').toString().split('_').pop() || '5',
+    chapterId: rootChapter.chapter_id || metadata.chapterId || pkg.id || 'unknown',
+    introduction: getComp('chapter_content')?.overview || content.introduction || rootChapter.source_key_points?.[0] || '',
     learningGoals,
     concepts,
-    teacherExplanation: content.teacher_explanation || content.teacherExplanation || content.detailedLesson?.overview || '',
+    teacherExplanation,
     story,
     activities,
-    flashcards: content.flashcards || aiEnrichment.flashcards || [],
+    flashcards,
     retrievalPractice,
     quiz: fullQuiz,
     hasAnimation,
     hasMindMap,
     animationFallback,
-    mindMap
+    mindMap,
+    subjectKnowledge: content.subject_knowledge || []
   };
 }

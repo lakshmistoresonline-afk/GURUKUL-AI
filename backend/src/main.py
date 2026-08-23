@@ -35,6 +35,8 @@ app = FastAPI(
 
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
+    origin = request.headers.get("origin")
+    print(f"DEBUG: Incoming {request.method} {request.url.path} from {request.client.host} | Origin: {origin}")
     start_time = time.time()
     response = await call_next(request)
     process_time = time.time() - start_time
@@ -42,6 +44,7 @@ async def log_requests(request: Request, call_next):
     return response
 
 # Configure CORS
+print(f"DEBUG: Initializing CORS with Origins: {settings.ALLOWED_ORIGINS}")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.ALLOWED_ORIGINS,

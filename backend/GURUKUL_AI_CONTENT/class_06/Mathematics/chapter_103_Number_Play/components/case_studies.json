@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "fegp103",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Number Play",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "fegp103_case1",
+        "title": "Applying Number Play",
+        "case": "A realistic situation requires use of an idea from Number Play.",
+        "questions": [
+          "Which concept applies?",
+          "What evidence supports it?",
+          "What should happen next?"
+        ],
+        "answer_guidance": "Use the chapter as the factual source."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.case_studies",
+    "domain": "learning",
+    "description": "Case-study learning content",
+    "chapter_scoped": true
+  }
+}

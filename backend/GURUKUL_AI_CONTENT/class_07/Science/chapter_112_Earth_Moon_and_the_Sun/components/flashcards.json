@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "gecu112",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Earth, Moon, and the Sun",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "gecu112_fc01",
+        "front": "What should you remember from Earth, Moon, and the Sun?",
+        "back": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+        "concept_id": "gecu112_c01"
+      },
+      {
+        "id": "gecu112_fc02",
+        "front": "What should you remember from Earth, Moon, and the Sun?",
+        "back": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+        "concept_id": "gecu112_c01"
+      },
+      {
+        "id": "gecu112_fc03",
+        "front": "What should you remember from Earth, Moon, and the Sun?",
+        "back": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+        "concept_id": "gecu112_c01"
+      },
+      {
+        "id": "gecu112_fc04",
+        "front": "What should you remember from Earth, Moon, and the Sun?",
+        "back": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+        "concept_id": "gecu112_c01"
+      },
+      {
+        "id": "gecu112_fc05",
+        "front": "What should you remember from Earth, Moon, and the Sun?",
+        "back": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+        "concept_id": "gecu112_c01"
+      },
+      {
+        "id": "gecu112_fc06",
+        "front": "What should you remember from Earth, Moon, and the Sun?",
+        "back": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+        "concept_id": "gecu112_c01"
+      },
+      {
+        "id": "gecu112_fc07",
+        "front": "What should you remember from Earth, Moon, and the Sun?",
+        "back": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
+        "concept_id": "gecu112_c01"
+      },
+      {
+        "id": "gecu112_fc08",
+        "front": "What should you remember from Earth, Moon, and the Sun?",
+        "back": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
+        "concept_id": "gecu112_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

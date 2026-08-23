@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "prerequisites",
+  "chapter_id": "fepr103",
+  "class": 6,
+  "subject": "English",
+  "chapter_title": "Neem BaBa",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "assumed_knowledge": [
+      "Foundational Class 5 knowledge appropriate to the subject.",
+      "Basic reading and reasoning skills.",
+      "Ability to compare, classify and explain."
+    ],
+    "diagnostic_prompts": [
+      "What do you already know about Neem BaBa?",
+      "Which related idea is familiar to you?"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.prerequisites",
+    "domain": "learning",
+    "description": "Prerequisite knowledge",
+    "chapter_scoped": true
+  }
+}

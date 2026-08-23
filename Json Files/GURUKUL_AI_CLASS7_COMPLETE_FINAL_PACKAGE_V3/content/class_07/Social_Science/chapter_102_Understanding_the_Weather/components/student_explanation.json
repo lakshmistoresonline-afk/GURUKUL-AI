@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "student_explanation",
+  "chapter_id": "gees102",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "Understanding the Weather",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "simple_explanation": "To learn Understanding the Weather, first understand the main idea, then identify supporting evidence/examples or steps, and finally apply the idea.",
+    "study_steps": [
+      "Read/observe carefully",
+      "Identify the central idea",
+      "Mark evidence or working",
+      "Practise",
+      "Transfer to a new situation",
+      "Self-check"
+    ],
+    "key_points": [
+      "2 CHAPTER Understanding the Weather A change in the weather is sufficient to create the world and oneself anew.",
+      "2.1 India and the World: Land and the People 2 – Understanding the Weather 1.",
+      "How can we measure and The Big monitor the weather around us?",
+      "How do weather predictions help us prepare for events like heavy rain, storms, drought and heat waves?",
+      "27 Reprint 2026-27 Chapter 2.indd 27 08-04-2025 12:42:20 Weather and its Elements You wake up one winter morning and shiver.",
+      "In the summer, you choose clothes that keep you cool and comfortable."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.student_explanation",
+    "domain": "learning",
+    "description": "Student-facing explanation",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "fhml107",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "जलाते चलो",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "fhml107_c01",
+        "name": "जलाते चलो",
+        "definition": "Central learning focus of जलाते चलो.",
+        "source_evidence": "7 जलाते चलो जलाते चलो ये दि‍ये स्नेह भर-भर कभी तो धरा का अँधरे ा मिटेगा।"
+      },
+      {
+        "id": "fhml107_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Support a conclusion with source information or valid working.",
+        "source_evidence": "भले शक्‍त‍ि विज्ञान में है निहित वह कि जिससे अमावस बने परू ्णिमा-सी, मगर विश्‍व पर आज क्यों दिवस ही में घिरी आ रही है अमावस निशा-सी।"
+      },
+      {
+        "id": "fhml107_c03",
+        "name": "Application",
+        "definition": "Transfer the learned idea to a relevant new context.",
+        "source_evidence": "बिना स्नेह विद्तयु -दि‍ये जल रहे जो बझु ाओ इन्हें, यों न पथ मिल सके गा।।"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

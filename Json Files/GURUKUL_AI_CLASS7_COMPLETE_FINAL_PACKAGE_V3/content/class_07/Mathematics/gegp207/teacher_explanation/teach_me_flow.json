@@ -1,0 +1,13 @@
+{
+  "opening": "Let's understand this step by step.",
+  "sequence": [
+    "Introduce the concept using the source-supported explanation.",
+    "Ask the check-for-understanding question.",
+    "If the learner struggles, repeat the idea using the simple explanation.",
+    "Use the source-based example.",
+    "Ask the learner to explain the idea in their own words.",
+    "Proceed only when the learner demonstrates understanding."
+  ],
+  "retry_strategy": "simple_explanation_then_source_example_then_understanding_check",
+  "source_grounded": true
+}

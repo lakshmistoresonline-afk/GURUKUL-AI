@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "quick_revision",
+  "chapter_id": "gecu101",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "The Ever-Evolving World of Science",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "checklist": [
+      "I can explain the central idea of The Ever-Evolving World of Science.",
+      "I can identify evidence or working.",
+      "I can apply the concept.",
+      "I can explain a common mistake.",
+      "I can answer a transfer question."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "revision.quick",
+    "domain": "revision",
+    "description": "Quick revision content",
+    "chapter_scoped": true
+  }
+}

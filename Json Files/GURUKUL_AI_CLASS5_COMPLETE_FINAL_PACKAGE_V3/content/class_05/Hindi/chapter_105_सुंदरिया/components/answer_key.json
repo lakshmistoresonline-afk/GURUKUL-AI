@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "ehve105",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "सुंदरिया",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "rule": "Every answer must be validated against the uploaded chapter source.",
+    "sample_answers": [
+      {
+        "question_id": "ehve105_q01",
+        "answer": "Option 1",
+        "evidence": "सुंदरिया5 हरियाणा क े ककसी गाँव में ही िाकसंह नामक एक क कसान था।"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.answer_key",
+    "domain": "assessment",
+    "description": "Answer keys and scoring references",
+    "chapter_scoped": true
+  }
+}

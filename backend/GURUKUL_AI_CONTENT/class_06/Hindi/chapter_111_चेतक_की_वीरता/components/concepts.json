@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "fhml111",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "चेतक की वीरता",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "fhml111_c01",
+        "name": "चेतक की वीरता",
+        "definition": "Central learning focus of चेतक की वीरता.",
+        "source_evidence": "11 चेतक की वीरता रण-बीच चौकड़ी भर-भरकर चेतक बन गया निराला था।"
+      },
+      {
+        "id": "fhml111_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Support a conclusion with source information or valid working.",
+        "source_evidence": "— श्यामनारायण पाण्डेय कवि से परिचय वीर रस की कविताओ ं के लिए चर्चित कवि श्यामनारायण पाण्डेय की सर्वाधिक लोकप्रिय काव्यकृ ति ‘हल्दीघाटी’ का प्रकाशन सन 1939 में हुआ था।"
+      },
+      {
+        "id": "fhml111_c03",
+        "name": "Application",
+        "definition": "Transfer the learned idea to a relevant new context.",
+        "source_evidence": "अभी आपने जो ‘चेतक की वीरता’ कविता पढ़ी है, वह ‘हल्दीघाटी’ का ही एक अश ं (1907–1991) है।"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

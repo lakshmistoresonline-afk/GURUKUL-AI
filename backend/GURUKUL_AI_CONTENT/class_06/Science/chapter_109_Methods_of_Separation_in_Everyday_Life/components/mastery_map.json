@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "mastery_map",
+  "chapter_id": "fecu109",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Methods of Separation in Everyday Life",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "concept_id": "fecu109_c01",
+        "levels": [
+          "Beginning",
+          "Developing",
+          "Proficient",
+          "Mastered"
+        ],
+        "evidence": [
+          "diagnostic",
+          "practice",
+          "assessment",
+          "transfer"
+        ]
+      },
+      {
+        "concept_id": "fecu109_c02",
+        "levels": [
+          "Beginning",
+          "Developing",
+          "Proficient",
+          "Mastered"
+        ],
+        "evidence": [
+          "evidence explanation",
+          "application"
+        ]
+      },
+      {
+        "concept_id": "fecu109_c03",
+        "levels": [
+          "Beginning",
+          "Developing",
+          "Proficient",
+          "Mastered"
+        ],
+        "evidence": [
+          "application",
+          "HOTS"
+        ]
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "mastery.map",
+    "domain": "mastery",
+    "description": "Mastery map",
+    "chapter_scoped": true
+  }
+}

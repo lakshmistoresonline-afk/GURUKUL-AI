@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "fhml101",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "मातृभूमि",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-derived learning unit: मातृभूमि.",
+    "source_grounded_key_points": [
+      "1 मातृभूमि ऊँचा खड़ा हिमालय आकाश चमू ता है, नीचे चरण तले झक ु , नित सिंधु झमू ता है।",
+      "गगं ा यमनु त्रिवेणी नदियाँ लहर रही हैं, जगमग छटा निराली, पग पग छहर रही हैं।",
+      "झरने अनेक झरते जिसकी पहाड़ियों में, चिड़ियाँ चहक रही हैं, हो मस्त झाड़ियों में।",
+      "जन्मे जहाँ थे रघपु ति, जन्मी जहाँ थी सीता, श्रीकृ ष्ण ने सनु ाई, वशं ी पनु ीत गीता।",
+      "गौतम ने जन्म लेकर, जिसका सयु श बढ़ाया, जग को दया सिखाई, जग को दिया दिखाया।",
+      "मल्हार 2 — सोहनलाल द्विवेदी Reprint 2026-27 Chapter 1.indd 2 10/06/2024 11:09:07 कवि से परिचय इस कविता को हिदं ी के प्रसिद्ध कवियों में से एक सोहनलाल द्विवेदी जी ने लिखा है।",
+      "उनकी लेखनी का सबसे प्रिय विषय (1906–1988) था ‘देशभक्‍ति’।",
+      "उनकी कुछ और चर्चित रचनाएँ हैं— ‘बढ़े चलो, बढ़े चलो’, ‘कोशिश करने वालों की हार नहीं होती’ आदि।"
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Reflect",
+      "Assess"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

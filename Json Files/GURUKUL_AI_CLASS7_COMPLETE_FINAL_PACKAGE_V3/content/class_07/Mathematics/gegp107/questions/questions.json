@@ -1,0 +1,455 @@
+{
+  "schema_version": "1.0.0",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_id": "gegp107",
+  "chapter_title": "gegp107",
+  "source_type": "NCERT textbook/chapter PDF supplied by user",
+  "source_file": "gegp1dd/gegp107.pdf",
+  "source_sha256": "e6c4aee5b9f7d24be24b999d0a52c04c9e977a9d48c9e577a8f93dade000e359",
+  "question_scope": "Questions/exercises extracted from this exact chapter PDF",
+  "questions": [
+    {
+      "page": 1,
+      "text": "What happens when the three vertices lie on a straight line?"
+    },
+    {
+      "page": 2,
+      "text": "A Tale of Three Intersecting Lines How did you construct this triangle and what tools did you use?"
+    },
+    {
+      "page": 2,
+      "text": "Can this construction be done only using a marked ruler (and a pencil)?"
+    },
+    {
+      "page": 2,
+      "text": "4 cm 4 cm How do we make this construction more efficient?"
+    },
+    {
+      "page": 4,
+      "text": "A Tale of Three Intersecting Lines How do we construct this triangle more efficiently?"
+    },
+    {
+      "page": 5,
+      "text": "1. Use the points on the circle and/or the centre to form isosceles triangles. A B C 150 Reprint 2026-27"
+    },
+    {
+      "page": 6,
+      "text": "2. Use the points on the circles and/or their centres to form isosceles and equilateral triangles. The circles are of the same size. A B A and B are the centres of circles of the same size A B C A, B, and C are the centres of circles of the same size Are Triangles Possible for any Lengths? Can one construct triangles having any given sidelengths? Are there lengths for which it is impossible to construct a triangle? Let us explore this. Construct a triangle with sidelengths 3 cm, 4 cm, and 8 cm. What is happening? Are you able to construct the triangle? Here is another set of lengths: 2 cm, 3 cm, and 6 cm. Check if a triangle is possible for these sidelengths. Try to find more sets of lengths for which a triangle construction is impossible. See if you can find any pattern in them. We see that a triangle is possible for some sets of lengths and not possible for others. How do we check if a triangle exists for a given set of lengths? One way is to actually try to construct the triangle and check if it is possible. Is there a more efficient way to check this? Triangle Inequality Consider the lengths 10 cm, 15 cm and 30 cm. Does there exist a triangle having these as sidelengths? To tackle this question, let us study a property of triangles. Imagine a small plot of plain land having a tent, a tree, and a pole. Imagine you are at the entrance of the tent and want to go to the tree. Which is the shorter path: (i) the straight-line path to the tree (the red path) or (ii) the straight-line path from the tent to the pole, followed by the straight-line path from the pole to the tree (the yellow path)? Math Talk 151 Reprint 2026-27"
+    },
+    {
+      "page": 6,
+      "text": "A B A and B are the centres of circles of the same size A B C A, B, and C are the centres of circles of the same size Are Triangles Possible for any Lengths?"
+    },
+    {
+      "page": 6,
+      "text": "Can one construct triangles having any given sidelengths?"
+    },
+    {
+      "page": 6,
+      "text": "Are there lengths for which it is impossible to construct a triangle?"
+    },
+    {
+      "page": 6,
+      "text": "Are you able to construct the triangle?"
+    },
+    {
+      "page": 6,
+      "text": "How do we check if a triangle exists for a given set of lengths?"
+    },
+    {
+      "page": 6,
+      "text": "Is there a more efficient way to check this?"
+    },
+    {
+      "page": 6,
+      "text": "Does there exist a triangle having these as sidelengths?"
+    },
+    {
+      "page": 6,
+      "text": "Which is the shorter path: (i) the straight-line path to the tree (the red path) or (ii) the straight-line path from the tent to the pole, followed by the straight-line path from the pole to the tree (the yellow path)?"
+    },
+    {
+      "page": 7,
+      "text": "Will the direct path between any two points be shorter than the roundabout path via a third point?"
+    },
+    {
+      "page": 7,
+      "text": "Can this understanding be used to tell something about the existence of a triangle having sidelengths 10 cm, 15 cm and 30 cm?"
+    },
+    {
+      "page": 8,
+      "text": "A Tale of Three Intersecting Lines Does everything look right with this triangle?"
+    },
+    {
+      "page": 8,
+      "text": "Is this true for our rough diagram?"
+    },
+    {
+      "page": 8,
+      "text": "Direct path length = BC = 10 cm What is the length of the roundabout path via the vertex A?"
+    },
+    {
+      "page": 8,
+      "text": "Roundabout path length = BA + AC = 15 cm + 30 cm = 45 cm \u0007Is the direct path length shorter than the roundabout path length?"
+    },
+    {
+      "page": 8,
+      "text": "Direct path length = AB = 15 cm Finding the length of the roundabout path via the vertex C, we get Roundabout path length = AC + CB = 30 cm + 10 cm = 40 cm \u0007Is the direct path length shorter than the roundabout path length?"
+    },
+    {
+      "page": 8,
+      "text": "Direct path length = CA = 30 cm Roundabout path length = CB + BA = 10 cm + 15 cm = 25 cm Is the direct path length shorter than the roundabout path length?"
+    },
+    {
+      "page": 8,
+      "text": "Can such a triangle exist?"
+    },
+    {
+      "page": 8,
+      "text": "Can we say anything about the existence of a triangle having sidelengths 3 cm, 3 cm and 7 cm?"
+    },
+    {
+      "page": 8,
+      "text": "7.4, is it possible to assign lengths in a different order such that the direct paths are always coming out to be shorter than the roundabout paths?"
+    },
+    {
+      "page": 8,
+      "text": "If this is possible, then a triangle might exist.” Is such rearrangement of lengths possible in the triangle?"
+    },
+    {
+      "page": 9,
+      "text": "1. We checked by construction that there are no triangles having sidelengths 3 cm, 4 cm and 8 cm; and 2 cm, 3 cm and 6 cm. Check if you could have found this without trying to construct the triangle."
+    },
+    {
+      "page": 9,
+      "text": "2. Can we say anything about the existence of a triangle for each of the following sets of lengths? (a) 10 km, 10 km and 25 km (b) 5 mm, 10 mm and 20 mm (c) 12 cm, 20 cm and 40 cm You would have realised that using a rough figure and comparing the direct path lengths with their corresponding roundabout path lengths is the same as comparing each length with the sum of the other two lengths. There are three such comparisons to be made."
+    },
+    {
+      "page": 9,
+      "text": "3. For each set of lengths seen so far, you might have noticed that in at least two of the comparisons, the direct length was less than the sum of the other two (if not, check again!). For example, for the set of lengths 10 cm, 15 cm and 30 cm, there are two comparisons where this happens: 10 < 15 + 30 15 < 10 + 30 But this doesn’t happen for the third length: 30 > 10 +"
+    },
+    {
+      "page": 9,
+      "text": "15. Will this always happen? That is, for any set of lengths, will there be at least two comparisons where the direct length is less than the sum of the other two? Explore for different sets of lengths. Further, for a given set of lengths, is it possible to identify which lengths will immediately be less than the sum of the other two, without calculations? [Hint: Consider the direct lengths in the increasing order.] Given three sidelengths, what do we need to compare to check for the existence of a triangle? When each length is smaller than the sum of the other two, we say that the lengths satisfy the triangle inequality. For example, the set 3, 4, 5 satisfies the triangle inequality whereas, the set 10, 15, 30 does not satisfy the triangle inequality. We have seen that lengths such as 10, 15, 30 that do not satisfy the triangle inequality cannot be the sidelengths of a triangle. Try This 154 Reprint 2026-27"
+    },
+    {
+      "page": 9,
+      "text": "Can we say anything about the existence of a triangle for each of the following sets of lengths?"
+    },
+    {
+      "page": 9,
+      "text": "That is, for any set of lengths, will there be at least two comparisons where the direct length is less than the sum of the other two?"
+    },
+    {
+      "page": 9,
+      "text": "Further, for a given set of lengths, is it possible to identify which lengths will immediately be less than the sum of the other two, without calculations?"
+    },
+    {
+      "page": 9,
+      "text": "[Hint: Consider the direct lengths in the increasing order.] Given three sidelengths, what do we need to compare to check for the existence of a triangle?"
+    },
+    {
+      "page": 10,
+      "text": "A Tale of Three Intersecting Lines Does a triangle exist with sidelengths 4 cm, 5 cm and 8 cm?"
+    },
+    {
+      "page": 10,
+      "text": "This satisfies the triangle inequality: 8 < 4 + 5 = 9 Why do we not need to check the other two sides?"
+    },
+    {
+      "page": 10,
+      "text": "Does this confirm the existence of a triangle?"
+    },
+    {
+      "page": 10,
+      "text": "Is it possible to determine that this will happen without actually carrying out the construction?"
+    },
+    {
+      "page": 10,
+      "text": "Can you draw a rough diagram of the resulting figure?"
+    },
+    {
+      "page": 10,
+      "text": "Does this length help in visualising the resulting figure?"
+    },
+    {
+      "page": 11,
+      "text": "1. Which of the following lengths can be the sidelengths of a triangle? Explain your answers. Note that for each set, the three lengths have the same unit of measure. (a) 2, 2, 5 (b) 3, 4, 6 (c) 2, 4, 8 (d) 5, 5, 8 (e) 10, 20, 25 (f) 10, 20, 35 (g) 24, 26, 28 We observe from the previous problems that whenever there is a set of lengths satisfying the triangle inequality (each length < sum of the other two lengths), there is a triangle with those three lengths as sidelengths. Will triangles always exist when a set of lengths satisfies the triangle inequality? How can we be sure? 156 Reprint 2026-27"
+    },
+    {
+      "page": 12,
+      "text": "But are there other possibilities when the two circles are constructed?"
+    },
+    {
+      "page": 12,
+      "text": "Which of the above-mentioned cases will lead to the formation of a triangle?"
+    },
+    {
+      "page": 14,
+      "text": "1. Check if a triangle exists for each of the following set of lengths: (a) 1, 100, 100 (b) 3, 6, 9 (c) 1, 1, 5 (d) 5, 10, 12"
+    },
+    {
+      "page": 14,
+      "text": "2. Does there exist an equilateral triangle with sides 50, 50, 50? In general, does there exist an equilateral triangle of any sidelength? Justify your answer."
+    },
+    {
+      "page": 14,
+      "text": "3. For each of the following, give at least 5 possible values for the third length so there exists a triangle having these as sidelengths (decimal values could also be chosen): (a) 1, 100 (b) 5, 5 (c) 3, 7 159 Reprint 2026-27"
+    },
+    {
+      "page": 15,
+      "text": "Two Sides and the Included Angle How do we construct a triangle if two sides and the angle included between them are given?"
+    },
+    {
+      "page": 16,
+      "text": "1. Construct triangles for the following measurements where the angle is included between the sides: (a) 3 cm, 75°, 7 cm (b) 6 cm, 25°, 3 cm (c) 3 cm, 120°, 8 cm We have seen that triangles do not exist for all sets of sidelengths. Is there a combination of measurements in the case of two sides and the included angle where a triangle is not possible? Justify your answer using what you observe during construction. Two Angles and the Included Side In this case, we are given two angles and the side that is a part of both angles, which we call the included side. Here are some examples of such measurements: 40° 50° 5 cm 4 cm 30° 45° 20° 50° 6 cm Construct a triangle ABC where AB = 5 cm, ∠A = 45° and ∠B = 80°. Let us take the given side as the base. 45° 80° A B C 5 cm Step 1: Draw the base AB of length 5 cm. Step 2: \u0007Draw ∠A and ∠B of measures 45°, and 80° respectively. Step 3: \u0007The point of intersection of the two new line segments is the third vertex C. Math Talk 45° A B C 5 cm 80° 161 Reprint 2026-27"
+    },
+    {
+      "page": 16,
+      "text": "Is there a combination of measurements in the case of two sides and the included angle where a triangle is not possible?"
+    },
+    {
+      "page": 17,
+      "text": "1. Construct triangles for the following measurements: (a) 75°, 5 cm, 75° (b) 25°, 3 cm, 60° (c) 120°, 6 cm, 30° Do triangles always exist? Do triangles exist for every combination of two angles and their included side? Explore. As in the case when we are given all three sides, it turns out that there is not always a triangle for every combination of two angles and the included side. Find examples of measurements of two angles with the included side where a triangle is not possible. Let us try to visualise such a situation. Once the base is drawn, try to imagine how the other sides should be so that they do not meet. Here are some obvious examples. If the two angles are greater than or equal to a right angle (90°), then it is clear that a triangle is not possible. Now we make one of the base angles an acute angle, say 40°. What are the possible values that the other angle should take so that the lines don’t meet? 40° C A B l It is clear that if the line from B is “inclined” sufficiently to the right, then it will not meet the line l. (a) Try to find a possible ∠B (marked in the figure) for this to happen. (b) What could be smallest value of ∠B for the lines to not meet? Math Talk 162 Reprint 2026-27"
+    },
+    {
+      "page": 17,
+      "text": "Construct triangles for the following measurements: (a) 75°, 5 cm, 75° (b) 25°, 3 cm, 60° (c) 120°, 6 cm, 30° Do triangles always exist?"
+    },
+    {
+      "page": 17,
+      "text": "Do triangles exist for every combination of two angles and their included side?"
+    },
+    {
+      "page": 17,
+      "text": "Find examples of measurements of two angles with the included side where a triangle is not possible."
+    },
+    {
+      "page": 17,
+      "text": "What are the possible values that the other angle should take so that the lines don’t meet?"
+    },
+    {
+      "page": 17,
+      "text": "(b) What could be smallest value of ∠B for the lines to not meet?"
+    },
+    {
+      "page": 18,
+      "text": "1. For each of the following angles, find another angle for which a triangle is (a) possible, (b) not possible. Find at least two different angles for each category: (a) 30° (b) 70° (c) 54° (d) 144°"
+    },
+    {
+      "page": 18,
+      "text": "2. Determine which of the following pairs can be the angles of a triangle and which cannot: (a) 35°, 150° (b) 70°, 30° (c) 90°, 85° (d) 50°, 150° Like the triangle inequality, can you form a rule that describes the two angles for which a triangle is possible? Can the sum of the two angles be used for framing this rule? 163 Reprint 2026-27"
+    },
+    {
+      "page": 18,
+      "text": "Can you tell the actual value of ∠B be in this case?"
+    },
+    {
+      "page": 18,
+      "text": "So, for what values of ∠B, does a triangle not exist?"
+    },
+    {
+      "page": 18,
+      "text": "Does the length AB play any part here?"
+    },
+    {
+      "page": 18,
+      "text": "Find at least two different angles for each category: (a) 30° (b) 70° (c) 54° (d) 144° 2."
+    },
+    {
+      "page": 18,
+      "text": "Determine which of the following pairs can be the angles of a triangle and which cannot: (a) 35°, 150° (b) 70°, 30° (c) 90°, 85° (d) 50°, 150° Like the triangle inequality, can you form a rule that describes the two angles for which a triangle is possible?"
+    },
+    {
+      "page": 18,
+      "text": "Can the sum of the two angles be used for framing this rule?"
+    },
+    {
+      "page": 19,
+      "text": "What could the measure of the third angle be?"
+    },
+    {
+      "page": 19,
+      "text": "Does this measure change if the base length is changed to some other value, say 7 cm?"
+    },
+    {
+      "page": 19,
+      "text": "In general, once the two angles are fixed, does the third angle depend on the included sidelength?"
+    },
+    {
+      "page": 19,
+      "text": "To find this relation, what data will you keep track of and how will you organise the data you collect?"
+    },
+    {
+      "page": 20,
+      "text": "1. \u0007Find the third angle of a triangle (using a parallel line) when two of the angles are: (a) 36°, 72° (b) 150°, 15° (c) 90°, 30° (d) 75°, 45°"
+    },
+    {
+      "page": 20,
+      "text": "2. \u0007Can you construct a triangle all of whose angles are equal to 70°? If two of the angles are 70° what would the third angle be? If all the angles in a triangle have to be equal, then what must its measure be? Explore and find out."
+    },
+    {
+      "page": 20,
+      "text": "3. Here is a triangle in which we know ∠B = ∠C and ∠A = 50°. Can you find ∠B and ∠C? 50° A B C Angle Sum Property What can we say about the sum of the angles of any triangle? Consider a triangle ABC. To find the sum of its angles, we can use the same method of drawing a line parallel to the base: construct a line through A that is parallel to BC. Try This 165 Reprint 2026-27"
+    },
+    {
+      "page": 20,
+      "text": "Can we find ∠BAC from this?"
+    },
+    {
+      "page": 20,
+      "text": "\u0007Can you construct a triangle all of whose angles are equal to 70°?"
+    },
+    {
+      "page": 20,
+      "text": "If two of the angles are 70° what would the third angle be?"
+    },
+    {
+      "page": 20,
+      "text": "If all the angles in a triangle have to be equal, then what must its measure be?"
+    },
+    {
+      "page": 20,
+      "text": "50° A B C Angle Sum Property What can we say about the sum of the angles of any triangle?"
+    },
+    {
+      "page": 25,
+      "text": "1. Construct a triangle ABC with BC = 5 cm, AB = 6 cm, CA = 5 cm. Construct an altitude from A to BC."
+    },
+    {
+      "page": 25,
+      "text": "2. Construct a triangle TRY with RY = 4 cm, TR = 7 cm, ∠R = 140°. Construct an altitude from T to RY. Equilateral Triangle Isosceles Triangle Scalene Triangle Math Talk 170 Reprint 2026-27"
+    },
+    {
+      "page": 25,
+      "text": "Did you spot any other type of triangle?"
+    },
+    {
+      "page": 25,
+      "text": "Can a similar classification be done based on equality of angles?"
+    },
+    {
+      "page": 25,
+      "text": "Is there any relation between these two classifications?"
+    },
+    {
+      "page": 25,
+      "text": "What are the other types of triangles based on angle measures?"
+    },
+    {
+      "page": 25,
+      "text": "What could an acute-angled triangle be?"
+    },
+    {
+      "page": 25,
+      "text": "Can we define it as a triangle with one acute angle?"
+    },
+    {
+      "page": 26,
+      "text": "3. Construct a right-angled triangle ∆ABC with ∠B = 90°, AC = 5 cm. How many different triangles exist with these measurements? [Hint: Note that the other measurements can take any values. Take AC as the base. What values can ∠A and ∠C take so that the other angle is 90°?]"
+    },
+    {
+      "page": 26,
+      "text": "4. Through construction, explore if it is possible to construct an equilateral triangle that is (i) right-angled (ii) obtuse-angled. Also construct an isosceles triangle that is (i) right-angled (ii) obtuse-angled. • Use of a compass simplifies the construction of triangles when the sidelengths are given. • A set of three lengths where the length of each is smaller than the sum of the other two is said to satisfy the triangle inequality. • Sidelengths of a triangle satisfy triangle inequality, and, if a given set of lengths satisfy the triangle inequality, a triangle can be constructed with those sidelengths. • Triangles can be constructed when the following measurements are given: (a) two of the sides and their included angle (b) two angles and the included side • The sum of the angles of a triangle is always 180°. • An altitude of a triangle is a perpendicular line segment from a vertex to its opposite side. • Equilateral triangles have sides of equal length. Isosceles triangles have two sides of equal length. Scalene triangles have sides of three different lengths. • Triangles are classified based on their angle measures as acute-angled, right-angled and obtuse-angled triangles. SUMMARY Try This 171 Reprint 2026-27"
+    },
+    {
+      "page": 26,
+      "text": "How many different triangles exist with these measurements?"
+    },
+    {
+      "page": 26,
+      "text": "What values can ∠A and ∠C take so that the other angle is 90°?] 4."
+    },
+    {
+      "page": 28,
+      "text": "1. Use the points on the circle and/or the centre to form isosceles triangles. Ans: One Such diagram is Try more Page No. 151"
+    },
+    {
+      "page": 28,
+      "text": "2. Use the points on the circles and/or their centres to form isosceles and equilateral triangles. The circles are of the same size. Ans: Take points C, C1, C2, C3 … on the circle with centre B. The triangles ABC, AC1B, AC2B, … are isosceles triangle. Similarly for points D1, D2, D3 … ∆ADB, ∆AD1B, ∆AD2B, … are isosceles triangles. ∆ABC and ∆ADB are equilateral triangle. Similarly it can be done for the other figure. Chapter – 7 A Tale of Three Intersecting Lines"
+    },
+    {
+      "page": 29,
+      "text": "1. We checked by construction that there are no triangles having sidelengths 3 cm, 4 cm and 8 cm; and 2 cm, 3 cm and 6 cm. Check if you could have found this without trying to construct the triangle. Ans: Here sum of the two sides (i.e 3 cm and 4 cm) is less than the third side (i.e 8 cm). Similarly for sides of lengths 2cm, 3cm and 6cm, 2 + 3 <"
+    },
+    {
+      "page": 29,
+      "text": "6. So, in both cases triangles are not possible."
+    },
+    {
+      "page": 29,
+      "text": "2. Can we say anything about the existence of a triangle for each of the following sets of lengths? Ans: (a) 10 km, 10 km and 25 km Ans: A triangle does not exist (b) 5 mm, 10 mm and 20 mm Ans: A triangle does not exist (c) 12 cm, 20 cm and 40 cm Ans: A triangle does not exist"
+    },
+    {
+      "page": 29,
+      "text": "3. Will this always happen? That is, for any set of lengths, will there be at least two comparisons where the direct length is less than the sum of the other two? Explore for different sets of lengths. Ans: Some sets are 7, 10, 15; 12, 14, 18 Page No. 156 Figure it out"
+    },
+    {
+      "page": 29,
+      "text": "1. Which of the following lengths can be the sidelengths of a triangle? Explain your answers. Note that for each set, the three lengths have the same unit of measure. Ans: (a) 2, 2, 5 Ans: Since 2 + 2 <"
+    },
+    {
+      "page": 29,
+      "text": "5. So, these are not the side lengths of a triangle."
+    },
+    {
+      "page": 30,
+      "text": "4. These are the side lengths of a triangle. (c) 2, 4, 8 Ans: 8 > 2 +"
+    },
+    {
+      "page": 30,
+      "text": "4. So, these are not the side lengths of a triangle. (d) 5, 5, 8 Ans: Since 5 < 5 + 8, 8 < 5 +"
+    },
+    {
+      "page": 30,
+      "text": "5. These are the side lengths of a triangle. (e) 10, 20, 25 Ans: Since 10 < 20 + 25, 20 < 25 + 10 and 25 < 10 +"
+    },
+    {
+      "page": 30,
+      "text": "20. These are the side lengths of a triangle. (f) 10, 20, 35 Ans: 35 > 10 +"
+    },
+    {
+      "page": 30,
+      "text": "20. So, these are not the side lengths of a triangle. (g) 24, 26, 28 Ans: Since 24 < 26 + 28, 26 < 28 + 24 and 28 < 24 +"
+    },
+    {
+      "page": 30,
+      "text": "26. These are the side lengths of a triangle. Page No. 159 Figure it out"
+    },
+    {
+      "page": 30,
+      "text": "1. Check if a triangle exists for each of the following set of lengths: (a) 1, 100, 100 Ans: A triangle exists. (b) 3, 6, 9 Ans: A triangle cannot exists. (c) 1, 1, 5 Ans: A triangle cannot be constructed. (d) 5, 10, 12 Ans: A triangle exists."
+    },
+    {
+      "page": 31,
+      "text": "2. Does there exist an equilateral triangle with sides 50, 50, 50? In general, does there exist an equilateral triangle of any sidelength? Justify your answer. Ans: There exists an equilateral triangle with sides 50, 50, 50 because each length < sum of the other two lengths. There exists an equilateral triangle of any side length."
+    },
+    {
+      "page": 31,
+      "text": "3. For each of the following, give at least 5 possible values for the third length so there exists a triangle having these as sidelengths (decimal values could also be chosen): (a) 1, 100 Ans: 99.5, 100, 100.7, 100.5, 99.4. (b) 5, 5 Ans: 5, 4, 3, 4.9, 1 (c) 3, 7 Ans: 5, 8, 7, 6.4, 6 Try some more lengths. Page No. 161 We have seen that triangles do not exist for all sets of sidelengths. Is there a combination of measurements in the case of two sides and the included angle where a triangle is not possible? Justify your answer using what you observe during construction. Ans: If the included angle is greater than or equal to 180°, then a triangle is not possible. For example– (a) 4cm, 210°, 6cm (b) 3cm, 180°, 7cm"
+    },
+    {
+      "page": 32,
+      "text": "1. For each of the following angles, find another angle for which a triangle is (a) possible, (b) not possible. Find at least two different angles for each category: Triangle is possible Triangle is not possible (a) 30° Another angle should be less than 150°. It could be 50° or 90°. Find the third angle in each case. Another angle should be greater than or equal to 150°. It could be 150° or 170°. (b) 70° Another angle should be less than 110°. It could be 60° or 80°. Find the third angle in each case. Another angle should be greater than or equal to 110°. It could be 140° or 120°. (c) 54° Another angle should be less than 126°. It could be 90° or 64°. Find the third angle in each case. Another angle should be greater than or equal to 126°. It could be 134° or 154°. (d) 144° Another angle should be less than 36°. It could be 20° or 35°. Find the third angle in each case. Another angle should be greater than or equal to 36°. It could be 36° or 90°."
+    },
+    {
+      "page": 32,
+      "text": "2. Determine which of the following pairs can be the angles of a triangle and which cannot: (a) 35°, 150° Ans: This pair cannot form angles of a triangle. (b) 70°, 30° Ans: This pair of angles can be the angles of a triangle. (c) 90°, 85° Ans: This pair of angles can be the angles of a triangle. (d) 50°, 150° Ans: This pair cannot form angles of a triangle."
+    },
+    {
+      "page": 33,
+      "text": "1. Find the third angle of a triangle (using a parallel line) when two of the angles are: Process for (a) is given. Try for rest. (a) 36°, 72° Ans: Consider ∆ABC, Draw line XY parallel to line BC so AB and AC become transversals. Therefore XAB = B = 36° and YAC = C = 72° (Alternate Angles) On line XY — XAB + BAC + YAC = 180° So, BAC = 72° (b) 150°, 15° Ans: 15° (c) 90°, 30° Ans: 60° (d) 75°, 45° Ans: 60°"
+    },
+    {
+      "page": 34,
+      "text": "2. Can you construct a triangle all of whose angles are equal to 70°? If two of the angles are 70° what would the third angle be? If all the angles in a triangle have to be equal, then what must its measure be? Explore and find out. Ans: • No, such triangle is not possible. • 40° • 60°"
+    },
+    {
+      "page": 34,
+      "text": "3. Here is a triangle in which we know, B = C and A = 50°. Can you find B and C? Ans: B = C = 65°"
+    }
+  ],
+  "chapter_match_status": "EXACT_SOURCE_CHAPTER",
+  "external_source_matching_required": false
+}

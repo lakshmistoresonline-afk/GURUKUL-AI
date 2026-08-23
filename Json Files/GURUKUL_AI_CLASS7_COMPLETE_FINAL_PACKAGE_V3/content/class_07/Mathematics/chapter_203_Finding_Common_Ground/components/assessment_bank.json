@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "gegp203",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_title": "Finding Common Ground",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "gegp203_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Finding Common Ground'?",
+        "options": [
+          "3 FINDING COMMON GROUND 3.1 The Greatest of All Sameeksha is building her new house.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "3 FINDING COMMON GROUND 3.1 The Greatest of All Sameeksha is building her new house.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "easy",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Finding Common Ground'?",
+        "options": [
+          "She feels that the room would look nice if the floor is covered with square tiles of the same size.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "She feels that the room would look nice if the floor is covered with square tiles of the same size.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "easy",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Finding Common Ground'?",
+        "options": [
+          "She also wants to use as few tiles as possible, and for the length of the tile to be a whole number of feet.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "She also wants to use as few tiles as possible, and for the length of the tile to be a whole number of feet.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "easy",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Finding Common Ground'?",
+        "options": [
+          "Let us explore how to find the largest square tile that can be used.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Let us explore how to find the largest square tile that can be used.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "medium",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Finding Common Ground'?",
+        "options": [
+          "For the tiles to fit the breadth of the room exactly, the side of the tile should be a factor of 12.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "For the tiles to fit the breadth of the room exactly, the side of the tile should be a factor of 12.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "medium",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Finding Common Ground'?",
+        "options": [
+          "Similarly, for the tiles to fit the length of the room exactly, the side should be a factor of 16.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Similarly, for the tiles to fit the length of the room exactly, the side should be a factor of 16.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "medium",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_q07",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Finding Common Ground'?",
+        "options": [
+          "So the side of the tile should be a factor of both 12 and 16.",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "So the side of the tile should be a factor of both 12 and 16.",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "hard",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_q08",
+        "type": "source_based",
+        "question": "Which statement is supported by the chapter 'Finding Common Ground'?",
+        "options": [
+          "What if Sameeksha did not insist on the length of the tile to be a Try whole number of feet and the length could be a fractional number This of feet?",
+          "An unrelated statement.",
+          "A statement that contradicts the chapter.",
+          "A statement not supported by the source."
+        ],
+        "correct_option": 0,
+        "source_evidence": "What if Sameeksha did not insist on the length of the tile to be a Try whole number of feet and the length could be a fractional number This of feet?",
+        "explanation": "The correct response must be supported by the supplied chapter.",
+        "difficulty": "hard",
+        "concept_id": "gegp203_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.bank",
+    "domain": "assessment",
+    "description": "Assessment question bank",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "gecu109",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Life Processes in Animals",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-grounded learning unit for Life Processes in Animals.",
+    "source_grounded_key_points": [
+      "Life Processes 9 in Animals If your food is fully digested before you eat again, you won’t need medicine for pain.",
+      "(Thirukkural 942) In the Grade 6 Science textbook Curiosity, chapter ‘Living Creatures: Exploring their Characteristics’, we learnt about processes essential for survival of living beings like nutrition, respiration, excretion, and reproduction.",
+      "In this chapter, we will learn about life processes such as nutrition and respiration in detail.",
+      "Bees and sunbirds suck the nectar of ﬂowers, while infants of humans and many other animals feed on their mother’s milk.",
+      "Some aquatic animals ﬁlter tiny food particles ﬂoating nearby and feed upon them.",
+      "Animals, including humans, obtain energy from food, which enables them to carry out various life processes.",
+      "Animals Mouth consume food that contains complex components, such as carbohydrate, protein, and fat.",
+      "These complex food components have to be broken down into simpler forms Oesophagus before the body can use them.",
+      "Breaking down of complex food Liver components into simpler forms occurs in a Stomach long tube called the alimentary canal.",
+      "This Pancreas process starts in the mouth and ends at the anus (Fig."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Transfer",
+      "Reflect",
+      "Assess"
+    ],
+    "source_rule": "The uploaded textbook PDF is the factual source of truth."
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

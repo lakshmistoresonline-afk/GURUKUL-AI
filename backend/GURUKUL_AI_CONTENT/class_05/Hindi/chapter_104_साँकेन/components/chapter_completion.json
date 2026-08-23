@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_completion",
+  "chapter_id": "ehve104",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "साँकेन",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "completion_rules": [
+      "required explanation viewed",
+      "core activities completed",
+      "diagnostic reviewed",
+      "practice threshold met",
+      "mastery assessment passed",
+      "unresolved misconceptions remediated"
+    ],
+    "completion_state": "COMPLETE only when all applicable rules are satisfied."
+  },
+  "runtime_mapping": {
+    "route": "progress.chapter_completion",
+    "domain": "progress",
+    "description": "Chapter completion state and criteria",
+    "chapter_scoped": true
+  }
+}

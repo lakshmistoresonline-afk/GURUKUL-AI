@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "fhml103",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "पहली बूँद",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "fhml103_c01",
+        "name": "पहली बूँद",
+        "definition": "Central learning focus of पहली बूँद.",
+        "source_evidence": "3 पहली बूँद वह पावस का प्रथम दिवस जब, पहली बँदू धरा पर आई।"
+      },
+      {
+        "id": "fhml103_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Support a conclusion with source information or valid working.",
+        "source_evidence": "— गोपालकृ ष्ण कौल कवि से परिचय धरती के सख ू े अधरों पर ‘पहली बँदू ’ के गिरने का अदभ् तु दृश्य रचने वाले बाल साहित्यकार गोपालकृ ष्ण कौल (1923–2007) ने बच्चों के लिए देश-प्रेम, प्रकृ ति मल्हार और जीव-जंतओ ु ं से जडु ़ी बहुत-सी मनोरम कविताएँ लिखी हैं।"
+      },
+      {
+        "id": "fhml103_c03",
+        "name": "Application",
+        "definition": "Transfer the learned idea to a relevant new context.",
+        "source_evidence": "अपनी एक अन्य 26 कविता ‘हम कुछ सीखें’ में वे कहते हैं— “देश हमें देता है सब कुछ, हम भी तो कुछ देना सीखें।” Reprint 2026-27 Chapter 3.indd 26 10/06/2024 11:11:07 पाठ से मेरी समझ से (क) नीचे दिए गए प्रश्‍नों का सटीक उत्तर कौन-सा है?"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

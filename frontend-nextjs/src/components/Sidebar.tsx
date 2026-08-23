@@ -7,6 +7,8 @@ import { GraduationCap } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { navItems } from '@/config/navigation';
+import { useLearning } from '@/context/LearningContext';
+import { RefreshCw, BookOpen } from 'lucide-react';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -14,6 +16,7 @@ function cn(...inputs: ClassValue[]) {
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const { isContextComplete, setChapter, clearContext } = useLearning();
 
   return (
     <aside className="hidden lg:flex flex-col w-72 bg-[#0F172A] h-screen sticky top-0 border-r border-white/5 z-20 flex-shrink-0">
@@ -53,7 +56,26 @@ export default function Sidebar() {
           })}
         </nav>
 
-        <div className="mt-auto pt-10 border-t border-white/5">
+        <div className="mt-auto space-y-4 pt-10 border-t border-white/5">
+          {isContextComplete && (
+            <div className="px-2 space-y-2">
+              <button
+                onClick={() => setChapter(null)}
+                className="w-full flex items-center gap-3 px-6 py-3.5 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-indigo-500/20 transition-all"
+              >
+                <BookOpen size={14} />
+                Change Chapter
+              </button>
+              <button
+                onClick={() => clearContext()}
+                className="w-full flex items-center gap-3 px-6 py-3.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-emerald-500/20 transition-all"
+              >
+                <RefreshCw size={14} />
+                Change Subject
+              </button>
+            </div>
+          )}
+
           <div className="p-6 bg-white/5 rounded-3xl space-y-4">
             <div className="flex items-center justify-between">
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Version</span>

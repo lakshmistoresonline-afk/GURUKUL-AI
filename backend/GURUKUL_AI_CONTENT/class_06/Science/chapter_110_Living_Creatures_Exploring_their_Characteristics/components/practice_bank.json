@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "practice_bank",
+  "chapter_id": "fecu110",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Living Creatures: Exploring their Characteristics",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fecu110_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
+        "options": [
+          "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fecu110_c01"
+      },
+      {
+        "id": "fecu110_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
+        "options": [
+          "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fecu110_c01"
+      },
+      {
+        "id": "fecu110_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
+        "options": [
+          "Avadhi and Aayush wonder how the shell that is not even moving could have a living being inside!",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Avadhi and Aayush wonder how the shell that is not even moving could have a living being inside!",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fecu110_c01"
+      },
+      {
+        "id": "fecu110_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
+        "options": [
+          "Later that day in school, Avadhi and Aayush share this incident with their friends.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Later that day in school, Avadhi and Aayush share this incident with their friends.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fecu110_c01"
+      },
+      {
+        "id": "fecu110_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
+        "options": [
+          "They approach the teacher to understand how a shell which is not even moving could be a body part of a living snail.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "They approach the teacher to understand how a shell which is not even moving could be a body part of a living snail.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fecu110_c01"
+      },
+      {
+        "id": "fecu110_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
+        "options": [
+          "The teacher initiates a discussion in the class on living and non-living.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "The teacher initiates a discussion in the class on living and non-living.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fecu110_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.bank",
+    "domain": "practice",
+    "description": "Practice question bank",
+    "chapter_scoped": true
+  }
+}

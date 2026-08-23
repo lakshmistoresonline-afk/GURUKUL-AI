@@ -38,7 +38,7 @@ async def update_mastery(
     authorized_class = await get_authorized_class(user, request.class_name)
     validate_chapter_access(request.chapter_id, authorized_class)
 
-    config = mastery_service.get_chapter_mastery_config(request.class_name, request.subject, request.chapter_id)
+    config = mastery_service.get_chapter_mastery_config(class_name, subject, chapter_id)
     if not config:
         raise HTTPException(status_code=404, detail="Chapter configuration not found.")
 
@@ -84,34 +84,11 @@ async def get_remediation(
     authorized_class = await get_authorized_class(user, class_name)
     validate_chapter_access(chapter_id, authorized_class)
 
-    package_path = os.path.join("./storage/output", class_name, subject, chapter_id, "package.json")
-    if not os.path.exists(package_path):
-         raise HTTPException(status_code=404, detail="Chapter not found")
+    content = mastery_service.get_remediation_content(class_name, subject, chapter_id, concept_id)
+    if not content:
+        raise HTTPException(status_code=404, detail="Remediation content not found")
 
-    with open(package_path, "r", encoding="utf-8") as f:
-        package = json.load(f)
-
-    concepts = []
-    if "6" in class_name:
-        concepts = package.get("original_data", {}).get("aiEnrichment", {}).get("concepts", [])
-    else:
-        concepts = package.get("original_data", {}).get("aiEnrichment", {}).get("topicGuides", [])
-
-    target = None
-    for c in concepts:
-        if c.get("term") == concept_id or c.get("topic") == concept_id or c.get("conceptId") == concept_id:
-            target = c
-            break
-
-    if not target:
-        raise HTTPException(status_code=404, detail="Concept not found")
-
-    return {
-        "concept": concept_id,
-        "explanation": target.get("definition") or target.get("sourceGroundedExplanation"),
-        "evidence": target.get("sourceEvidence", []),
-        "hint": target.get("socratic_hint") or target.get("studentFriendlySummary")
-    }
+    return content
 
 @router.get("/{class_name}/{subject}/{chapter_id}")
 async def get_chapter_mastery(

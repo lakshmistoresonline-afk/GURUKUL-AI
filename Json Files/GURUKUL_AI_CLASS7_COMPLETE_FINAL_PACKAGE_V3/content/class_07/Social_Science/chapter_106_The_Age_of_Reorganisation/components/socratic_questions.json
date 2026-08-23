@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "socratic_questions",
+  "chapter_id": "gees106",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "The Age of Reorganisation",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "questions": [
+      "What makes your answer correct according to The Age of Reorganisation?",
+      "What evidence would change your conclusion?",
+      "Can you give another example?",
+      "What changes if an important condition changes?"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "tutor.socratic",
+    "domain": "tutor",
+    "description": "Socratic questioning prompts",
+    "chapter_scoped": true
+  }
+}

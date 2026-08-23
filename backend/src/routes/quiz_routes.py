@@ -190,28 +190,29 @@ async def get_quiz_session(
     if not question_bank_service:
         raise HTTPException(status_code=503, detail="Question Bank Service unavailable")
 
-    if chapterId and type != "quick":
-        config = mastery_service.get_chapter_mastery_config(authorized_class, subject or "", chapterId)
-        if config:
-            # Support both 'concepts' and 'mappings'
-            concepts = config.get("concepts") or config.get("mappings") or []
-
-            if conceptId:
-                return [_format_q_for_quiz(q) for q in mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, conceptId, limit=count)]
-            else:
-                all_qs = []
-                for concept in concepts:
-                    all_qs.extend(mastery_service.get_questions_for_concept(authorized_class, subject or "", chapterId, concept["conceptId"], limit=2))
-                random.shuffle(all_qs)
-                return [_format_q_for_quiz(q) for q in all_qs[:count]]
-
-    return question_bank_service.get_questions(
+    # 1. Try to get questions from the Master Question Bank first
+    questions = question_bank_service.get_questions(
         class_id=int(authorized_class.split('_')[1]),
         subject=subject,
         chapter_id=chapterId,
         concept_id=conceptId,
         limit=min(count, 50)
     )
+
+    # 2. Fallback: Extract from the Chapter's own V3 Package if Bank is empty
+    if not questions and chapterId:
+        logger.info(f"Quiz Session: Falling back to chapter package for {chapterId}")
+        try:
+            # We don't have subject here reliably in quick mode, but mastery_service can find it
+            q_fallback = mastery_service.get_questions_for_concept(
+                authorized_class, subject or "", chapterId, conceptId or "", limit=count
+            )
+            if q_fallback:
+                questions = [_format_q_for_quiz(q) for q in q_fallback]
+        except Exception as e:
+            logger.error(f"Quiz Session Fallback failed: {e}")
+
+    return questions
 
 @router.post("/interleaved")
 async def get_interleaved_practice(

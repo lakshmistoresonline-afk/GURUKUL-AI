@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "ehve110",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "तीन मछलियाँ",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "ehve110_fc01",
+        "front": "What is a key idea from 'तीन मछलियाँ'?",
+        "back": "उत्तर भारत क े एक सुंदर सरोवर में तीन मछललयाँ रहती थीं लिनमें गाढ़ी लमत्रता थी।",
+        "concept_id": "ehve110_concept_01"
+      },
+      {
+        "id": "ehve110_fc02",
+        "front": "What is a key idea from 'तीन मछलियाँ'?",
+        "back": "तीनों मछललयाँ सरोवर की अनय मछललयों क े साथ लमल-िुलकर लवनोद और सैर करती रहती थीं।",
+        "concept_id": "ehve110_concept_01"
+      },
+      {
+        "id": "ehve110_fc03",
+        "front": "What is a key idea from 'तीन मछलियाँ'?",
+        "back": "वह बहुत बुलधिमती थी औ र अपने नाम क े अनुसार भलवषय की स ंभालवत समसयाओं का हल पहले से ही लनकालकर रखती थी।",
+        "concept_id": "ehve110_concept_01"
+      },
+      {
+        "id": "ehve110_fc04",
+        "front": "What is a key idea from 'तीन मछलियाँ'?",
+        "back": "िैसा उसका नाम था वैसी ही तीक्ष्ण और तीव्र उसकी ब ुलधि थी।",
+        "concept_id": "ehve110_concept_01"
+      },
+      {
+        "id": "ehve110_fc05",
+        "front": "What is a key idea from 'तीन मछलियाँ'?",
+        "back": "वह भलवषय की लकसी भी आशंलकत समसया का पहले से समाधान करने की आवश यकता नहीं समझती थी क योंलक उसकी सूझ-बूझ इतनी पैनी थी लक वह समय पड़ने पर लकसी भी उलझन का हल क्षष्ण भर में लनकाल ले ती थी।",
+        "concept_id": "ehve110_concept_01"
+      },
+      {
+        "id": "ehve110_fc06",
+        "front": "What is a key idea from 'तीन मछलियाँ'?",
+        "back": "वह लकसी भी संकट की संभावना पर धयान नहीं देती थी तथा श्रम और लिंतन से बिती थी।",
+        "concept_id": "ehve110_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

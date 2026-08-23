@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "fegp101",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Patterns in Mathematics",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fegp101_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Patterns in Mathematics?",
+        "options": [
+          "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fegp101_c01"
+      },
+      {
+        "id": "fegp101_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Patterns in Mathematics?",
+        "options": [
+          "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fegp101_c01"
+      },
+      {
+        "id": "fegp101_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Patterns in Mathematics?",
+        "options": [
+          "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fegp101_c01"
+      },
+      {
+        "id": "fegp101_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Patterns in Mathematics?",
+        "options": [
+          "The search for patterns and their explanations can be a fun and creative endeavour.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "The search for patterns and their explanations can be a fun and creative endeavour.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fegp101_c01"
+      },
+      {
+        "id": "fegp101_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Patterns in Mathematics?",
+        "options": [
+          "It is for this reason that mathematicians think of mathematics both as an art and as a science.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "It is for this reason that mathematicians think of mathematics both as an art and as a science.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fegp101_c01"
+      },
+      {
+        "id": "fegp101_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Patterns in Mathematics?",
+        "options": [
+          "This year, we hope that you will get a chance to see the creativity and artistry involved in discovering and understanding mathematical patterns.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "This year, we hope that you will get a chance to see the creativity and artistry involved in discovering and understanding mathematical patterns.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fegp101_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.bank",
+    "domain": "assessment",
+    "description": "Assessment question bank",
+    "chapter_scoped": true
+  }
+}

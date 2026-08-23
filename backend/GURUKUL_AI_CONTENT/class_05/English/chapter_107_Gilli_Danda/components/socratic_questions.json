@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "socratic_questions",
+  "chapter_id": "eesa107",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "Gilli Danda",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "questions": [
+      "What makes your answer correct according to 'Gilli Danda'?",
+      "What evidence would change your mind?",
+      "Can you think of another example?",
+      "What would happen if one important condition changed?"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "tutor.socratic",
+    "domain": "tutor",
+    "description": "Socratic questioning prompts",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "gecu107",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Heat Transfer in Nature",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Heat Transfer in Nature.",
+    "explanation_sections": [
+      {
+        "title": "Activate",
+        "explanation": "Connect the chapter to prior knowledge, observation or experience."
+      },
+      {
+        "title": "Build",
+        "explanation": "Teach from the source-grounded points and examples.",
+        "source_evidence": [
+          "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok.",
+          "On a cold winter evening, they are sitting around a ﬁreplace.",
+          "Palden shares his experiences of visiting Kerala during the winter vacation.",
+          "He says that compared to Gangtok, winter in Kerala is comparatively warm and humid.",
+          "Both Pema and Palden are curious about why some places are so cold and others quite hot."
+        ]
+      },
+      {
+        "title": "Reason",
+        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
+      },
+      {
+        "title": "Transfer",
+        "explanation": "Move from the textbook context to a closely related new situation."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Predict, recall or observe."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model the chapter content.",
+        "student_action": "Identify evidence or method."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Probe reasoning.",
+        "student_action": "Explain and justify."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide transfer.",
+        "student_action": "Apply independently."
+      }
+    ],
+    "misconceptions": [
+      "Answering without evidence or working.",
+      "Confusing an example with the underlying concept."
+    ],
+    "checks_for_understanding": [
+      "What evidence supports this?",
+      "What changes if an important condition changes?"
+    ],
+    "closure": "Learner states the central idea, supporting evidence and one application."
+  },
+  "runtime_mapping": {
+    "route": "teacher.explanation",
+    "domain": "teacher",
+    "description": "Teacher-facing explanation",
+    "chapter_scoped": true
+  }
+}

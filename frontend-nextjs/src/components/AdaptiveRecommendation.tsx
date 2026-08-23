@@ -22,7 +22,7 @@ export default function AdaptiveRecommendation({ profile, currentChapter }: { pr
   useEffect(() => {
     if (!profile) return;
 
-    const class_name = profile.className;
+    const class_name = profile.className || `class_${profile.classId}`;
     if (!class_name) return;
 
     const fetchRecommendation = async () => {
@@ -30,13 +30,34 @@ export default function AdaptiveRecommendation({ profile, currentChapter }: { pr
       try {
         let student_record: any = { conceptPerformance: {} };
         let chapterId = currentChapter?.id;
-        let subject = currentChapter?.subject || 'general';
+        let subject = (currentChapter?.subject || 'general').toLowerCase().replace(/ /g, '_');
 
         if (chapterId) {
           const record = await progressService.getMastery(chapterId);
           if (record) student_record = record;
         } else {
-          // If no current chapter, we might want to suggest starting the library
+          // If no current chapter, fetch the first one from hierarchy to suggest starting
+          try {
+              const h = await api.get('/api/chapters/explorer/hierarchy');
+              const classKey = Object.keys(h.data).find(k => k.includes(profile.classId)) || Object.keys(h.data)[0];
+              if (classKey && h.data[classKey]) {
+                  const firstSub = Object.keys(h.data[classKey])[0];
+                  const firstChap = h.data[classKey][firstSub][0];
+                  if (firstChap) {
+                      setRecommendation({
+                        action: 'LEARN_CONCEPT',
+                        target_id: firstChap.id,
+                        reason: `Start your journey with ${firstChap.name}`,
+                        context: 'INITIAL'
+                      });
+                      setLoading(false);
+                      return;
+                  }
+              }
+          } catch (e) {
+              console.warn("Recommendation: Fallback fetch failed", e);
+          }
+
           setRecommendation({
             action: 'EXPLORE_LIBRARY',
             target_id: '',

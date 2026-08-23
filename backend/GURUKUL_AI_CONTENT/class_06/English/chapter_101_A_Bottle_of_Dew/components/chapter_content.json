@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "fepr101",
+  "class": 6,
+  "subject": "English",
+  "chapter_title": "A Bottle of Dew",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-derived learning unit: A Bottle of Dew.",
+    "source_grounded_key_points": [
+      "Check your answers by sharing them with your classmates and teacher.",
+      "surprise II Answer these questions and discuss them with your classmates and teacher.",
+      "His father left him large tracts of land when he large tracts died.",
+      "But Rama Natha did not spend even one of land: large day looking after his land.",
+      "This was because areas of land he had a funny idea—he believed there was a magic potion that could turn any object potion: a liquid into gold.",
+      "He spent all his time to learn more with magical properties about this potion.",
+      "People cheated him often, promising to tell him about it, but he did not give up.",
+      "His wife, Madhumati, was tired of this give up: stop and also worried because she saw how much trying money Rama Natha was spending."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Reflect",
+      "Assess"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

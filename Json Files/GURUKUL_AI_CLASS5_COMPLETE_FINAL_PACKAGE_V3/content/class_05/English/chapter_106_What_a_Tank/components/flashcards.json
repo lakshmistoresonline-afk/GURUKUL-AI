@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "eesa106",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "What a Tank!",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "eesa106_fc01",
+        "front": "What is a key idea from 'What a Tank!'?",
+        "back": "Let us Read Water conservation is a practice that has existed for centuries.",
+        "concept_id": "eesa106_concept_01"
+      },
+      {
+        "id": "eesa106_fc02",
+        "front": "What is a key idea from 'What a Tank!'?",
+        "back": "Even hundreds of years ago, there were huge water storage structures.",
+        "concept_id": "eesa106_concept_01"
+      },
+      {
+        "id": "eesa106_fc03",
+        "front": "What is a key idea from 'What a Tank!'?",
+        "back": "These did not just store water but also protected cities from floods, provided drinking water, and brought people together.",
+        "concept_id": "eesa106_concept_01"
+      },
+      {
+        "id": "eesa106_fc04",
+        "front": "What is a key idea from 'What a Tank!'?",
+        "back": "Today in many parts of India, many communities still practice the traditional water management methods.",
+        "concept_id": "eesa106_concept_01"
+      },
+      {
+        "id": "eesa106_fc05",
+        "front": "What is a key idea from 'What a Tank!'?",
+        "back": "In Tamil Nadu, Ooranis store rainwater for drinking and farming.",
+        "concept_id": "eesa106_concept_01"
+      },
+      {
+        "id": "eesa106_fc06",
+        "front": "What is a key idea from 'What a Tank!'?",
+        "back": "In Kerala, Panam Keni wells are known for not drying up even in the hottest months.",
+        "concept_id": "eesa106_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "student_explanation",
+  "chapter_id": "ehve112",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "गंगा की कहानी",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "simple_explanation": "'गंगा की कहानी' is studied by first understanding the main idea, then noticing the evidence, examples and relationships in the chapter.",
+    "study_steps": [
+      "Read/observe the chapter carefully.",
+      "Mark important ideas or steps.",
+      "Explain them in your own words.",
+      "Try a new example.",
+      "Check your answer with evidence."
+    ],
+    "key_points": [
+      "गंगा की कहानी मेरा जनम हिमालय की गोद में िुआ था।",
+      "ननिही-सही धारा क े रूप में मैं उ�राखंड क े उ�रकाशही जनपद में ह्‍थत गंगोत्ही हिमनद क े उस ्‍थान से हनकलही हजसे गोमुख किते िैं।",
+      "गोमुख से थोडा नहीचे गं गोत् ही में मेरा भव्य म ंहदर िै ज िाँ देशभर से त हीथ्थयात्ही 12 आते िैं।",
+      "राजा भगहीरथ ने इसही ्‍थान पर तप ्‍या की थ ही।",
+      "यिाँ से मैं नहीचे ढुलकतही चल ही और मेरा रूप और हनखरने लगा।"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.student_explanation",
+    "domain": "learning",
+    "description": "Student-facing explanation",
+    "chapter_scoped": true
+  }
+}

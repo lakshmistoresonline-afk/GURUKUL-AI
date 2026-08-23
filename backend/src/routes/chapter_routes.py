@@ -169,15 +169,13 @@ async def get_chapter_package(
 
     # Priority 1: Master Content Package
     if settings.USE_MASTER_CONTENT:
-        master_path = PathResolver.get_chapter_path(authorized_class, chapter_id, subject=subject)
-        if master_path:
-            package_path = os.path.join(master_path, "package.json")
-            if os.path.exists(package_path):
-                try:
-                    with open(package_path, "r", encoding="utf-8") as f:
-                        return json.load(f)
-                except Exception as e:
-                    logger.error(f"Error reading master package: {e}")
+        package_path = PathResolver.get_chapter_package_path(authorized_class, chapter_id, subject=subject)
+        if package_path and os.path.exists(package_path):
+            try:
+                with open(package_path, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception as e:
+                logger.error(f"Error reading master package {package_path}: {e}")
 
     # Priority 2: storage/output (Generated content)
     def sanitize(s: str) -> str:
@@ -206,7 +204,7 @@ async def get_chapter_package(
     if not package_path:
         raise HTTPException(
             status_code=404,
-            detail=f"Package not found for chapter {chapter_id} in your curriculum.",
+            detail=f"Package not found for chapter {chapter_id} in Class {authorized_class} ({subject}).",
         )
 
     try:

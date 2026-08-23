@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "ehve106",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "चतुर चित्रकार",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "learning_goal": "Teach learners to understand and apply the main ideas of 'चतुर चित्रकार'.",
+    "explanation_sections": [
+      {
+        "title": "Connect",
+        "explanation": "Begin with learners' prior experience related to चतुर चित्रकार and invite predictions."
+      },
+      {
+        "title": "Explore",
+        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
+        "source_evidence": [
+          "चतुर चचत्रकार चित्रकार सुनसान जगह में, बना रहा था चित्र, इतने ही में वहाँ आ गया, यम राजा का चमत्र।",
+          "उसे देखकर चित्रकार क े , तुरंत उड़ गए होश, नदी, पहाड़, पेड़, पत्तों का, रह न गया कु छ जोश।",
+          "चिर उसको कु छ चहममत आई, देख उसे िुपिाप, बोला — सुंदर चित्र बना दूँ, बैठ जाइए आप।",
+          "उकड़ू -मुकड़ू बैठ गया वह, सारे अंग बटोर, बड़े धयान से लगा देखने, चित्रकार की ओर।"
+        ]
+      },
+      {
+        "title": "Make meaning",
+        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
+      },
+      {
+        "title": "Apply",
+        "explanation": "Move from a chapter example to a new, closely related example."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Share an observation or prediction."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model close reading/working with the chapter.",
+        "student_action": "Identify relevant evidence."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Question reasoning.",
+        "student_action": "Explain why an answer is supported."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide application.",
+        "student_action": "Solve/perform a new related task."
+      }
+    ],
+    "misconceptions": [
+      "Confusing a guess with evidence.",
+      "Giving an answer without explaining the reasoning."
+    ],
+    "checks_for_understanding": [
+      "What evidence in 'चतुर चित्रकार' supports your answer?",
+      "Can you explain the idea in your own words?"
+    ],
+    "closure": "Ask the learner to state the most important idea and one way it can be used."
+  },
+  "runtime_mapping": {
+    "route": "teacher.explanation",
+    "domain": "teacher",
+    "description": "Teacher-facing explanation",
+    "chapter_scoped": true
+  }
+}

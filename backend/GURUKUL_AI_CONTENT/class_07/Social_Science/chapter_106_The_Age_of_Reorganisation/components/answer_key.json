@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "gees106",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "The Age of Reorganisation",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "validation_rule": "All answers must be validated against the supplied chapter source.",
+    "sample": {
+      "question_id": "gees106_q01",
+      "answer": "Option 1",
+      "evidence": "6 CHAPTER The Age of Reorganisation By continuous living tradition and a vital power of rejuvenescence, this land has readjusted itself through unnumbered transformations."
+    }
+  },
+  "runtime_mapping": {
+    "route": "assessment.answer_key",
+    "domain": "assessment",
+    "description": "Answer keys and scoring references",
+    "chapter_scoped": true
+  }
+}

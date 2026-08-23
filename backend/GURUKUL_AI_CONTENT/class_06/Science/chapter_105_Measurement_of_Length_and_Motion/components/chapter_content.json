@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "fecu105",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Measurement of Length and Motion",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-derived learning unit: Measurement of Length and Motion.",
+    "source_grounded_key_points": [
+      "The shopkeeper measures the cloth using a metal measuring rod.",
+      "Then, the tailor takes her measurements using a flexible measuring tape.",
+      "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width).",
+      "Are the tape and rod similar to the scale that the elder sister has in her geometry box?",
+      "Deepa shares her experience with her school friends Anish, Hardeep, Padma, Tasneem and this leads to a discussion amongst them.",
+      "Hardeep says, “I have seen my grandmother measuring cloth by the length of her arm.” “Have you ever seen how a farmer measures length to divide his field into beds?",
+      "He walks and counts the number of his strides,” says Padma.",
+      "“Oh, not just the length of the strides—sometimes they also use the length of their feet to measure,” adds Anish."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Reflect",
+      "Assess"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

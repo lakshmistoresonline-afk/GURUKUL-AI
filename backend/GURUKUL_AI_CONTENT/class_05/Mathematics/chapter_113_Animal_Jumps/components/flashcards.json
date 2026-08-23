@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "eemm113",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Animal Jumps",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "eemm113_fc01",
+        "front": "What is a key idea from 'Animal Jumps'?",
+        "back": "Numbers put in this box get multiplied by a number and come out.",
+        "concept_id": "eemm113_concept_01"
+      },
+      {
+        "id": "eemm113_fc02",
+        "front": "What is a key idea from 'Animal Jumps'?",
+        "back": "(a) Can you guess the multiplier if you see the 4 numbers coming out of the box?",
+        "concept_id": "eemm113_concept_01"
+      },
+      {
+        "id": "eemm113_fc03",
+        "front": "What is a key idea from 'Animal Jumps'?",
+        "back": "(b) Is there more than one possible multiplier?",
+        "concept_id": "eemm113_concept_01"
+      },
+      {
+        "id": "eemm113_fc04",
+        "front": "What is a key idea from 'Animal Jumps'?",
+        "back": "(c) What numbers might have been put inside the box?",
+        "concept_id": "eemm113_concept_01"
+      },
+      {
+        "id": "eemm113_fc05",
+        "front": "What is a key idea from 'Animal Jumps'?",
+        "back": "You can also play this game with your friends.",
+        "concept_id": "eemm113_concept_01"
+      },
+      {
+        "id": "eemm113_fc06",
+        "front": "What is a key idea from 'Animal Jumps'?",
+        "back": "The multipliers 1, 2, and 4 that you found above are the factors of the numbers that have come out of the box, that is, 28, 36, 48, and 72.",
+        "concept_id": "eemm113_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}
