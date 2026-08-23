@@ -34,6 +34,28 @@ import FormattedText from '@/components/FormattedText';
 import MindMap from '@/components/mindmap/MindMap';
 import { useAuth } from '@/context/AuthContext';
 
+const BOILERPLATE_PHRASES = [
+  "chapter-relevant word",
+  "statement unrelated to the chapter",
+  "statement that contradicts",
+  "cannot be checked from the chapter",
+  "develops reading, language, interpretation",
+  "main learning is organised around",
+  "source-supported points below",
+  "Explain the central ideas and evidence",
+  "Use the chapter's concepts or language",
+  "Identify relationships, patterns",
+  "Communicate reasoning clearly",
+  "Apply at least one chapter idea",
+  "extracted from the uploaded chapter PDF",
+  "full PDF remains the source of truth"
+];
+
+function isBoilerplate(text: string): boolean {
+  if (!text) return true;
+  return BOILERPLATE_PHRASES.some(phrase => text.toLowerCase().includes(phrase.toLowerCase()));
+}
+
 export default function LearnClient() {
   const { profile, loading: authLoading } = useAuth();
   const params = useParams();
@@ -91,18 +113,26 @@ export default function LearnClient() {
 
   const lesson = pkg ? normalizeLesson(pkg) : null;
 
+  // Refined steps with boilerplate filtering
   const steps = isRemediating ? ['Remediation'] : [
-    'Overview',
+    (lesson?.introduction && !isBoilerplate(lesson.introduction)) ? 'Overview' : null,
     (lesson?.hasAnimation || lesson?.hasMindMap) ? 'Visual Lesson' : null,
-    lesson?.concepts?.length ? 'Concepts' : null,
-    'Study Material',
-    lesson?.story ? 'Story Mode' : null,
-    lesson?.activities?.length ? 'Activity' : null,
+    (lesson?.concepts?.filter(c => c.explanation && !isBoilerplate(c.explanation)).length) ? 'Concepts' : null,
+    (lesson?.teacherExplanation && !isBoilerplate(lesson.teacherExplanation)) ? 'Study Material' : null,
+    (lesson?.story && !isBoilerplate(lesson.story)) ? 'Story Mode' : null,
+    (lesson?.activities?.length) ? 'Activity' : null,
     'Quick Quiz',
-    lesson?.flashcards?.length ? 'Revision' : null,
+    (lesson?.flashcards?.length || lesson?.retrievalPractice?.length) ? 'Revision' : null,
     'AI Tutor',
     'Finish'
   ].filter(Boolean) as string[];
+
+  // Add Overview if everything else is missing but intro exists
+  if (steps.length === 2 && steps.includes('Quick Quiz')) { // Only Quiz and Tutor/Finish
+      if (lesson?.introduction && !steps.includes('Overview')) {
+          steps.unshift('Overview');
+      }
+  }
 
   const nextStep = () => {
     if (currentStep < steps.length - 1) {

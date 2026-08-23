@@ -62,7 +62,7 @@ class MasteryService:
         self.question_to_concept = {} # (class_name, chapter_id, question_id) -> (concept_id, level)
 
         # Load title map for canonical ID lookups
-        title_map_path = os.path.join(settings.STORAGE_PATH, "chapter_title_map.json")
+        title_map_path = settings.CHAPTER_TITLE_MAP_PATH
         title_map = {}
         if os.path.exists(title_map_path):
             with open(title_map_path, "r", encoding="utf-8") as f:

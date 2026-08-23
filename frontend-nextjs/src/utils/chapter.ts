@@ -39,7 +39,13 @@ export function getChapterDisplayData(id: string, pkg?: any): ChapterDisplayData
   else if (code.startsWith('fees') || code.startsWith('gees')) inferredSubject = 'Social Science';
 
   const subject = parts[parts.length - 2] || inferredSubject;
-  const className = parts[parts.length - 3] || 'Class';
+  let className = parts[parts.length - 3] || 'Class';
+
+  if (pkg?.chapter?.class) {
+      className = `class_${pkg.chapter.class}`;
+  } else if (pkg?.metadata?.class) {
+      className = `class_${pkg.metadata.class}`;
+  }
 
   // 1. Extract Number: assumes last 2 digits of the code are the chapter number (e.g. eemm110 -> 10)
   const numMatch = code.match(/\d+$/);

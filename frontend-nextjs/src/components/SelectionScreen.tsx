@@ -46,34 +46,30 @@ export default function SelectionScreen() {
   const subjects = Object.keys(classHierarchy);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <AnimatePresence mode="wait">
         {!activeSubject ? (
           <motion.div
             key="subjects"
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            exit={{ opacity: 0, scale: 0.98 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
           >
             {subjects.map((sub) => (
               <button
                 key={sub}
                 onClick={() => setSubject(sub)}
-                className="group p-8 bg-white border border-slate-200 rounded-[48px] hover:border-primary/40 hover:shadow-xl transition-all text-left flex flex-col gap-6"
+                className="group p-6 bg-white border border-slate-200 rounded-3xl hover:border-primary/40 hover:shadow-lg transition-all text-left flex flex-col gap-4"
               >
-                <div className="w-14 h-14 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all shadow-inner border border-slate-50">
-                  <Layout size={28} />
+                <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all shadow-inner border border-slate-50">
+                  <Layout size={24} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 group-hover:text-primary transition-colors capitalize leading-none">{sub.replace(/_/g, ' ')}</h3>
-                  <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mt-2">
-                    {hierarchy[classKey][sub].length} Chapters
+                  <h3 className="text-xl font-black text-slate-900 group-hover:text-primary transition-colors capitalize leading-none">{sub.replace(/_/g, ' ')}</h3>
+                  <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest mt-1.5">
+                    {hierarchy[classKey][sub].length} Units
                   </p>
-                </div>
-                <div className="flex items-center justify-between pt-6 border-t border-slate-50 mt-auto">
-                   <span className="text-[10px] font-black text-primary uppercase tracking-widest">Explore</span>
-                   <ChevronRight size={18} className="text-slate-300 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                 </div>
               </button>
             ))}
@@ -81,41 +77,39 @@ export default function SelectionScreen() {
         ) : (
           <motion.div
             key="chapters"
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: 10 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            className="space-y-6"
+            exit={{ opacity: 0, x: -10 }}
+            className="space-y-4"
           >
             <div className="flex items-center justify-between px-2">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2">
                     <button
                         onClick={() => setSubject(null)}
-                        className="text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-primary transition-colors flex items-center gap-2"
+                        className="text-[9px] font-black text-slate-400 uppercase tracking-widest hover:text-primary transition-colors flex items-center gap-1.5"
                     >
                         Subjects
                     </button>
-                    <ChevronRight size={12} className="text-slate-300" />
-                    <span className="text-[10px] font-black text-slate-900 uppercase tracking-widest capitalize">{activeSubject.replace('_', ' ')}</span>
+                    <ChevronRight size={10} className="text-slate-300" />
+                    <span className="text-[9px] font-black text-slate-900 uppercase tracking-widest capitalize">{activeSubject.replace('_', ' ')}</span>
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {hierarchy[classKey][activeSubject].map((chap: any) => (
                 <button
                   key={chap.id}
                   onClick={() => setChapter({ id: chap.id, name: chap.name })}
-                  className="group p-5 bg-white border border-slate-200 rounded-[32px] hover:border-primary/40 hover:shadow-lg transition-all text-left flex items-center gap-6"
+                  className="group p-4 bg-white border border-slate-200 rounded-2xl hover:border-primary/40 hover:shadow-md transition-all text-left flex items-center gap-4"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all shadow-inner shrink-0 border border-slate-50">
-                    <BookOpen size={18} />
+                  <div className="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all shrink-0">
+                    <BookOpen size={16} />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h4 className="font-black text-slate-900 line-clamp-1 group-hover:text-primary transition-colors text-lg">{chap.name}</h4>
-                    <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Chapter {chap.number || chap.id}</p>
+                    <h4 className="font-bold text-slate-900 line-clamp-1 group-hover:text-primary transition-colors text-sm">{chap.name}</h4>
+                    <p className="text-[8px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Unit {chap.number || chap.id}</p>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-300 group-hover:bg-primary group-hover:text-white transition-all shadow-sm">
-                    <ChevronRight size={18} />
-                  </div>
+                  <ChevronRight size={14} className="text-slate-300 group-hover:text-primary transition-all" />
                 </button>
               ))}
             </div>

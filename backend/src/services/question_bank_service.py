@@ -9,17 +9,17 @@ from ..config.app_config import settings
 logger = logging.getLogger(__name__)
 
 class QuestionBankService:
-    def __init__(self, master_path: Optional[str] = None):
-        self.master_path = master_path or os.path.join(settings.PROJECT_ROOT, "Question Bank", "QUESTION_BANK_MASTER.json")
+    def __init__(self):
         self.questions: List[Dict[str, Any]] = []
         self.chapter_index: Dict[str, List[int]] = {}
         self.concept_index: Dict[str, List[int]] = {}
-        self.title_map = self._load_json(os.path.join(settings.STORAGE_PATH, "chapter_title_map.json"))
+        self.title_map = self._load_json(settings.CHAPTER_TITLE_MAP_PATH)
         self._load_bank()
 
     def _load_json(self, path: str) -> Dict[str, Any]:
         if not os.path.exists(path):
-            logger.error(f"File not found: {path}")
+            # Reduced log level for common missing files in dev
+            logger.debug(f"File not found: {path}")
             return {}
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -29,36 +29,47 @@ class QuestionBankService:
             return {}
 
     def _load_bank(self):
-        data = self._load_json(self.master_path)
-        self.questions = data.get("questions", [])
+        # Load questions class-wise from GURUKUL_AI_CONTENT
+        for cid in ["05", "06", "07"]:
+            class_folder = f"class_{cid}"
+            path = os.path.join(settings.MASTER_CONTENT_ROOT, class_folder, settings.QUESTION_BANK_FILENAME)
+
+            if os.path.exists(path):
+                data = self._load_json(path)
+                class_qs = data.get("questions", [])
+
+                # Add to main pool
+                start_idx = len(self.questions)
+                self.questions.extend(class_qs)
+
+                # Index this class's questions
+                for i in range(start_idx, len(self.questions)):
+                    q = self.questions[i]
+                    # Resolve canonical Chapter ID (eesa101 etc)
+                    canonical_id = q.get("chapterId")
+
+                    # Try to resolve via title map if chapterId is missing
+                    if not canonical_id:
+                        chap_title = str(q.get("chapterTitle", "")).lower()
+                        if chap_title in self.title_map:
+                            canonical_id = self.title_map[chap_title]["id"]
+
+                    if canonical_id:
+                        if canonical_id not in self.chapter_index:
+                            self.chapter_index[canonical_id] = []
+                        self.chapter_index[canonical_id].append(i)
+
+                    # Concept Index
+                    concept_id = str(q.get("conceptId", ""))
+                    if concept_id:
+                        if concept_id not in self.concept_index:
+                            self.concept_index[concept_id] = []
+                        self.concept_index[concept_id].append(i)
 
         if not self.questions:
-            logger.warning(f"QuestionBankService: Global bank at {self.master_path} is empty or missing.")
+            logger.warning(f"QuestionBankService: No questions found in class-wise banks in {settings.MASTER_CONTENT_ROOT}")
 
-        # Build indexes for fast filtering
-        for idx, q in enumerate(self.questions):
-            # Resolve canonical Chapter ID (eesa101 etc)
-            canonical_id = q.get("chapterId")
-
-            # Try to resolve via title map if chapterId is missing
-            if not canonical_id:
-                chap_title = str(q.get("chapterTitle", "")).lower()
-                if chap_title in self.title_map:
-                    canonical_id = self.title_map[chap_title]["id"]
-
-            if canonical_id:
-                if canonical_id not in self.chapter_index:
-                    self.chapter_index[canonical_id] = []
-                self.chapter_index[canonical_id].append(idx)
-
-            # Concept Index
-            concept_id = str(q.get("conceptId", ""))
-            if concept_id:
-                if concept_id not in self.concept_index:
-                    self.concept_index[concept_id] = []
-                self.concept_index[concept_id].append(idx)
-
-        logger.info(f"QuestionBankService: Initialized with {len(self.questions)} questions. {len(self.chapter_index)} chapters indexed.")
+        logger.info(f"QuestionBankService: Initialized with {len(self.questions)} questions from class-wise banks.")
 
     def get_questions(self,
                       class_id: Optional[int] = None,

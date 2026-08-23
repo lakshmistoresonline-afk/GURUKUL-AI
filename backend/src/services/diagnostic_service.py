@@ -13,7 +13,7 @@ class DiagnosticService:
     def __init__(self, mastery_service: MasteryService):
         self.mastery_service = mastery_service
         self.graph = self._load_json(os.path.join(settings.STORAGE_PATH, "concept_graph.json"))
-        self.title_map = self._load_json(os.path.join(settings.STORAGE_PATH, "chapter_title_map.json"))
+        self.title_map = self._load_json(settings.CHAPTER_TITLE_MAP_PATH)
 
     def _load_json(self, path: str) -> Dict[str, Any]:
         if not os.path.exists(path): return {}

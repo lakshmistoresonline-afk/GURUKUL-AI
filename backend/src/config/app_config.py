@@ -100,12 +100,18 @@ class Settings(BaseSettings):
     ADAPTIVE_MASTERY_INTERLEAVING: str = "ACTIVE"
     ADAPTIVE_MASTERY_REVIEW_COORDINATION: str = "ACTIVE"
 
-    # Multimedia External Catalog
-    MULTIMEDIA_EXTERNAL_CATALOG_PATH: str = os.path.join(PROJECT_ROOT, "Multimedia", "GURUKUL_EXTERNAL_MULTIMEDIA_FINAL_163.json")
-    MULTIMEDIA_EXTERNAL_API_IMPORT_PATH: str = os.path.join(PROJECT_ROOT, "Multimedia", "GURUKUL_EXTERNAL_MULTIMEDIA_API_IMPORT.json")
+    # Multimedia External Catalog (Class-wise)
+    MULTIMEDIA_CATALOG_FILENAME: str = "multimedia_catalog.json"
+    MULTIMEDIA_EXTERNAL_API_IMPORT_PATH: str = os.path.join(MASTER_CONTENT_ROOT, "metadata", "GURUKUL_EXTERNAL_MULTIMEDIA_API_IMPORT.json")
 
-    # General Learning
-    GENERAL_LEARNING_DATA_PATH: str = os.path.join(PROJECT_ROOT, "General Learning", "Gurukul_General_Learning_Classes_5_6_7_Max_V1.json")
+    # General Learning (Class-wise)
+    GENERAL_LEARNING_FILENAME: str = "general_learning.json"
+
+    # Question Bank (Class-wise)
+    QUESTION_BANK_FILENAME: str = "question_bank.json"
+
+    # Metadata
+    CHAPTER_TITLE_MAP_PATH: str = os.path.join(MASTER_CONTENT_ROOT, "metadata", "chapter_title_map.json")
 
 
 settings = Settings()
