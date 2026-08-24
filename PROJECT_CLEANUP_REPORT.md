@@ -1,104 +1,52 @@
-# PROJECT_CLEANUP_REPORT.md
+# PROJECT CLEANUP AND CONSOLIDATION REPORT
 
-## A. Files inspected
-- All root directories and files recursively.
-- `backend/`, `frontend-nextjs/`, `desktop/`, `JSON FILES/`, `Multimedia/`, `archive/`, `storage/`, `scripts/`, `config/`.
+## 1. Summary
+A safe project cleanup was performed to remove experimental artifacts, temporary diagnostics, and empty generation runs. The core architecture remains stable and production data is verified as unchanged.
 
-## B. Files deleted
-- `D:/GURUKUL-AI/OLLAMA_REGENERATION.log`
-- `D:/GURUKUL-AI/OLLAMA_QUALITY_IMPROVEMENT.log`
-- `D:/GURUKUL-AI/MASTER_NCERT_LEARNING_INDEX.json`
-- `D:/GURUKUL-AI/OLLAMA_182_UNIT_FINAL_AUDIT.json`
-- `D:/GURUKUL-AI/OLLAMA_REGENERATION_PROGRESS.json`
-- `D:/GURUKUL-AI/OLLAMA_182_UNIT_REGENERATION_REPORT.md`
-- `D:/GURUKUL-AI/OLLAMA_QUALITY_IMPROVEMENT_PROGRESS.json`
-- `D:/GURUKUL-AI/backend/gurukul_backend.db`
-- `D:/GURUKUL-AI/backend/openapi-current.json` (removed as it's a generated artifact)
-- Various logs in `backend/logs`.
+## 2. Execution Results
 
-## C. Folders deleted
-- `D:/GURUKUL-AI/JSON FILES/`
-- `D:/GURUKUL-AI/Multimedia/`
-- `D:/GURUKUL-AI/archive/`
-- `D:/GURUKUL-AI/storage/`
-- `D:/GURUKUL-AI/backend/GURUKUL_AI_CONTENT/` (Recreated empty)
-- `D:/GURUKUL-AI/frontend-nextjs/out/`
-- `D:/GURUKUL-AI/frontend-nextjs/.next/`
+### A. Artifacts Removed
+- **Obsolete Providers**: `backend/src/providers/ollama_cloud.py.before_structured_fix` (Deleted)
+- **Scratch Scripts**: `test_nvidia_e2e.py`, `test_specialist.py` (Deleted)
+- **Test Output**: `backend/storage/output/Class_99/`, `backend/storage/output/test_5348f22b/` (Recursively Deleted)
 
-## D. Educational-content files deleted
-- All Class 5, 6, 7 JSON packages and ZIP files.
-- External multimedia JSON catalogs.
-- Mastery metadata and SRS progress in SQLite.
+### B. Storage Staging Cleanup
+The following empty or failed generation runs were removed from `backend/storage/generation_staging/`:
+- `RUN_20260824_140242`
+- `RUN_20260824_140651`
+- `RUN_20260824_140752`
+- `RUN_20260824_141437`
+- `RUN_20260824_141604`
+- `RUN_20260824_170226`
+- `RUN_20260824_170417`
+- `RUN_20260824_171703`
+- `RUN_20260824_172801`
+- `RUN_20260824_173828`
+- `RUN_20260824_221032`
+- `RUN_20260824_221802`
 
-## E. Duplicate files deleted
-- ZIP versions of extracted packages in `JSON FILES/`.
+### C. Staging Runs Preserved (REQUIRED)
+- `RUN_20260824_140847` (Phase 6 Success)
+- `RUN_20260824_142717` (Phase 7/7.1 Stabilization)
+- `RUN_20260824_180723` (Phase 9/9.1 Batch 1)
+- `RUN_20260824_220925` (Phase 9.2 Active Ramp)
 
-## F. Temporary/cache files deleted
-- `backend/__pycache__/`
-- `frontend-nextjs/.next/`
-- `storage/imports/`
-- `storage/media/` (Generated videos, audio, and thumbnails).
+### D. Git Management
+The following merged branches were deleted locally:
+- `cloud-ai-router`
+- `free-model-expansion`
+- `fix/runtime-content-integration`
 
-## G. Files intentionally preserved
-- `backend/src/` (All source code).
-- `frontend-nextjs/src/` (All source code).
-- `desktop/src-tauri/` (All source code).
-- `scripts/` (Utility and validation scripts).
-- `config/ncert_classes.json` (Structural mapping).
-- `config/class_content_validation.json` (Schema validation).
-- `README.md`, `DESKTOP_APP.md`, `DESKTOP_WALKTHROUGH.md` (Documentation).
+## 3. System Validation
+- **Python Compilation**: `python -m compileall` passed for all source files.
+- **Production Data Integrity**: Verified **8,456 canonical JSON files** in `GURUKUL_AI_CONTENT` (Unchanged).
+- **Python Cache**: All `__pycache__` and `*.pyc` files were purged.
 
-## H. Firebase configuration preserved
-- `D:/GURUKUL-AI/firestore.rules`
-- `D:/GURUKUL-AI/.firebaserc`
-- `D:/GURUKUL-AI/backend/config/firebase-admin.json`
+## 4. Final Status
 
-## I. .env/environment configuration preserved
-- `D:/GURUKUL-AI/backend/.env`
-- `D:/GURUKUL-AI/frontend-nextjs/.env.local`
-- `D:/GURUKUL-AI/.env.example`
+**CLEANUP_COMPLETE**
 
-## J. Android/Gradle configuration preserved
-- N/A (Project appears to be a Node/Python/Tauri stack; `package.json` and `requirements.txt` preserved).
+The project is now consolidated and ready for the next phase of adaptive capacity validation.
 
-## K. Application source preserved
-- All `src/` directories across sub-projects.
-
-## L. Files requiring manual review
-- `scripts/` - These are preserved as they contain valuable infrastructure logic, though some specific content-generation scripts might need updates for the new schema if it changes significantly.
-
-## M. Remote Firebase educational data discovered
-- Firestore Collections: `mastery`, `assignments`, `student_reports`, `gamification`, `telemetry_sync`.
-- These collections likely contain data linked to old chapter IDs.
-- **ACTION**: Authorization is required to purge these collections remotely.
-
-## N. Any remaining references to old content
-- `backend/src/config/app_config.py` still points to `GURUKUL_AI_CONTENT` as the master root, which is correct as the directory was recreated empty.
-- `scripts/` still contain logic that expects the NCERT structure.
-
-## O. Build validation result
-- `backend/src/main.py` analyzed: SUCCESS.
-- `backend/src/config/app_config.py` analyzed: SUCCESS.
-
-## P. Final project structure
-```
-D:/GURUKUL-AI/
-  backend/
-    GURUKUL_AI_CONTENT/ (EMPTY)
-    src/
-    config/
-    scripts/
-    tests/
-    .env
-  frontend-nextjs/
-    src/
-    public/
-    .env.local
-  desktop/
-    src-tauri/
-  config/
-  scripts/
-  firestore.rules
-  .firebaserc
-  .env.example
-```
+---
+**CLEANUP_COMPLETE**
