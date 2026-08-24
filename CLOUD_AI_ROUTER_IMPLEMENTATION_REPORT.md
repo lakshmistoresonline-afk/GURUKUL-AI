@@ -1,32 +1,35 @@
 # CLOUD_AI_ROUTER_IMPLEMENTATION_REPORT.md (Updated)
 
 ## Overview
-This report documents the implementation and subsequent correction pass of the Cloud-First AI Router for the Gurukul AI backend. The architecture prioritizes cloud-based inference (Groq, NVIDIA, OpenRouter, Gemini) and disables local Ollama inference by default.
+This report documents the implementation, correction pass, and HTTP compatibility fix of the Cloud-First AI Router for the Gurukul AI backend. The architecture prioritizes cloud-based inference (Groq, NVIDIA, OpenRouter, Gemini) and disables local Ollama inference by default.
 
-## Corrections Made (Correction Pass)
-- **Groq Model Update**: The default Groq model has been updated to `qwen/qwen3.6-27b` in `app_config.py`.
-- **NVIDIA Health Check Optimization**: `NvidiaProvider.check_health()` has been modified to perform configuration and connectivity validation only. It no longer executes real model inference during normal health checks, preserving API quota.
-- **NVIDIA Robustness**:
-  - Added a 30-second HTTP timeout to all NVIDIA requests.
-  - Improved error handling in `generate()` and `generate_structured()` to catch `httpx.HTTPStatusError` and other exceptions.
-  - Enhanced logging with specific provider/model/error details without exposing sensitive headers.
-  - Ensured compatibility with the orchestrator's multi-provider fallback mechanism for all standard HTTP error codes (4xx, 5xx).
-- **Cleanup**: Removed temporary scratch test artifacts (`backend/scratch/test_ai_imports.py`).
+## Corrections & Fixes
 
-## Files Created
-- [backend/src/providers/nvidia.py](file:///D:/GURUKUL-AI/backend/src/providers/nvidia.py): Implementation of the `NvidiaProvider`.
+### 1. Groq Model Update
+- The default Groq model has been updated to `qwen/qwen3.6-27b` in `app_config.py`.
 
-## Files Modified
-- [backend/src/config/app_config.py](file:///D:/GURUKUL-AI/backend/src/config/app_config.py):
-  - Updated `GROQ_MODEL` to `qwen/qwen3.6-27b`.
-  - Added NVIDIA configuration and OpenRouter Kimi models.
-  - Set `OLLAMA_LOCAL_ENABLED = False`.
-- [backend/src/orchestrator/ai_orchestrator.py](file:///D:/GURUKUL-AI/backend/src/orchestrator/ai_orchestrator.py): Registered NVIDIA and implemented task-based routing.
+### 2. NVIDIA Health Check Optimization
+- `NvidiaProvider.check_health()` now performs configuration and connectivity validation only.
+- It no longer executes real model inference during normal health checks, preserving API quota.
 
-## Files Intentionally Untouched
-- `backend/GURUKUL_AI_CONTENT/`: Educational content preserved.
-- `backend/.env`: Gitignored and not modified by this implementation.
-- All Firebase configurations and existing provider source code.
+### 3. NVIDIA HTTP Compatibility Fix (Robustness)
+- **Explicit Timeouts**: Replaced scalar timeouts with `httpx.Timeout(connect=10.0, read=300.0, write=60.0, pool=10.0)` to handle large reasoning models (GPT-OSS, DeepSeek).
+- **Client Configuration**: Set `http2=False` and `follow_redirects=True` in `AsyncClient` for maximum compatibility with NVIDIA's infrastructure.
+- **Granular Error Handling**: 
+  - Explicitly catches `httpx.TimeoutException`, `httpx.ConnectError`, and `httpx.RequestError`.
+  - Produces detailed error messages including provider and model info while strictly excluding sensitive credentials or headers.
+- **Fallback Compatibility**: Ensured all standard HTTP 4xx/5xx errors trigger the orchestrator's multi-provider fallback mechanism.
+
+### 4. Cleanup
+- Removed temporary scratch test artifacts:
+  - `backend/scratch/test_ai_imports.py`
+  - `backend/scratch/test_nvidia_robustness.py`
+  - `backend/scratch/debug_nvidia.py`
+
+## Files Created/Modified
+- [backend/src/providers/nvidia.py](file:///D:/GURUKUL-AI/backend/src/providers/nvidia.py): Robust implementation of the `NvidiaProvider`.
+- [backend/src/config/app_config.py](file:///D:/GURUKUL-AI/backend/src/config/app_config.py): Updated models and defaults.
+- [backend/src/orchestrator/ai_orchestrator.py](file:///D:/GURUKUL-AI/backend/src/orchestrator/ai_orchestrator.py): Task-based routing and provider registration.
 
 ## Model Routing Table
 
@@ -42,12 +45,12 @@ This report documents the implementation and subsequent correction pass of the C
 | `agentic_reasoning` | **NVIDIA** | MiniMax M3 | OpenRouter (Kimi K3), Gemini |
 
 ## Verification Results
-- **app_config Import**: PASS
-- **NvidiaProvider Import**: PASS
-- **AIOrchestrator Registration**: PASS
-- **Groq Model Correction**: PASS (`qwen/qwen3.6-27b`)
-- **NVIDIA Health Check (No Quota)**: PASS
-- **Educational Content Integrity**: PASS
+- **Import & Registration**: PASS
+- **Groq Model Update**: PASS (`qwen/qwen3.6-27b`)
+- **NVIDIA Health Check**: PASS (Config-only)
+- **NVIDIA GPT-OSS 120B**: PASS (Minimal request verified)
+- **NVIDIA DeepSeek V4**: PASS (Minimal request verified)
+- **NVIDIA MiniMax M3**: PASS (Minimal request verified)
 
 ---
-**CORRECTION PASS**
+**NVIDIA HTTP FIX PASS**
