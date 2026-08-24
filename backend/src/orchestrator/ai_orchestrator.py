@@ -9,6 +9,7 @@ from ..providers.groq import GroqProvider
 from ..providers.cerebras import CerebrasProvider
 from ..providers.openrouter import OpenRouterProvider
 from ..providers.ollama_local import OllamaLocalProvider
+from ..providers.nvidia import NvidiaProvider
 from ..config.app_config import settings
 from .quota_manager import quota_manager
 
@@ -25,12 +26,13 @@ class AIOrchestrator:
 
     def __init__(self):
         self.providers: List[AIProvider] = [
-            OllamaLocalProvider(),
+            GroqProvider(),
+            NvidiaProvider(),
+            OpenRouterProvider(),
             GeminiProvider(),
             OllamaCloudProvider(),
-            GroqProvider(),
+            OllamaLocalProvider(),
             CerebrasProvider(),
-            OpenRouterProvider(),
         ]
 
     @property
@@ -219,20 +221,38 @@ class AIOrchestrator:
         task_type: str,
     ) -> List[AIProvider]:
         """Returns active providers ordered by priority for the given task type."""
-        active = self.active_providers
+        active = {p.get_name(): p for p in self.active_providers}
 
-        if task_type == "complex":
-            # Gemini has priority for complex tasks
-            return sorted(
-                active,
-                key=lambda p: p.get_name() != "Gemini",
-            )
-        else:
-            # Local first for simple and normal tasks
-            return sorted(
-                active,
-                key=lambda p: p.get_name() != "Ollama Local",
-            )
+        # Priority mapping
+        priorities = {
+            "simple": ["Groq", "OpenRouter", "NVIDIA", "Gemini"],
+            "general": ["Groq", "OpenRouter", "NVIDIA", "Gemini"],
+            "normal_coding": ["Groq", "NVIDIA", "OpenRouter", "Gemini"],
+            "complex": ["NVIDIA", "OpenRouter", "Gemini"],
+            "reasoning": ["NVIDIA", "OpenRouter", "Gemini"],
+            "large_context": ["NVIDIA", "OpenRouter", "Gemini"],
+            "agentic_coding": ["OpenRouter", "NVIDIA", "Gemini"],
+            "vision": ["OpenRouter", "Gemini"],
+            "advanced_reasoning": ["OpenRouter", "NVIDIA", "Gemini"],
+            "agentic_reasoning": ["NVIDIA", "OpenRouter", "Gemini"],
+            "android": ["Gemini", "Groq", "NVIDIA", "OpenRouter"]
+        }
+
+        order = priorities.get(task_type, ["Groq", "NVIDIA", "OpenRouter", "Gemini"])
+
+        # Build final list based on order, appending any remaining active providers
+        result = []
+        seen = set()
+        for name in order:
+            if name in active:
+                result.append(active[name])
+                seen.add(name)
+
+        for name, provider in active.items():
+            if name not in seen:
+                result.append(provider)
+
+        return result
 
     def _get_model_for_task(
         self,
@@ -240,17 +260,36 @@ class AIOrchestrator:
         task_type: str,
     ) -> Optional[str]:
 
+        if provider_name == "Groq":
+            # Groq is prioritized for speed/efficiency
+            return settings.GROQ_MODEL
+
+        if provider_name == "NVIDIA":
+            if task_type in ["complex", "reasoning", "agentic_coding"]:
+                return settings.NVIDIA_GPT_OSS_MODEL
+            if task_type in ["large_context", "advanced_reasoning"]:
+                return settings.NVIDIA_DEEPSEEK_MODEL
+            if task_type == "agentic_reasoning":
+                return settings.NVIDIA_MINIMAX_MODEL
+            return settings.NVIDIA_GPT_OSS_MODEL
+
+        if provider_name == "OpenRouter":
+            if task_type == "vision":
+                return settings.OPENROUTER_KIMI_K26_MODEL
+            if task_type in ["advanced_reasoning", "complex", "reasoning", "agentic_reasoning", "large_context"]:
+                return settings.OPENROUTER_KIMI_K3_MODEL
+            if task_type == "agentic_coding":
+                return settings.OPENROUTER_KIMI_CODE_MODEL
+            return settings.OPENROUTER_MODEL
+
         if provider_name == "Gemini":
-            return (
-                settings.GEMINI_FAST_MODEL
-                if task_type == "simple"
-                else settings.GEMINI_MODEL
-            )
+            if task_type == "simple":
+                return settings.GEMINI_FAST_MODEL
+            return settings.GEMINI_MODEL
 
         if provider_name == "Ollama Local":
             if task_type == "simple":
                 return settings.OLLAMA_QWEN_MODEL
-            # Default to Gemma for normal/complex (failover logic in orchestrator will move to Gemini if needed)
             return settings.OLLAMA_GEMMA_MODEL
 
         return None

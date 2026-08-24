@@ -23,19 +23,22 @@ class Settings(BaseSettings):
     CEREBRAS_API_KEY: Optional[str] = None
     OPENROUTER_API_KEY: Optional[str] = None
     SAMBANOVA_API_KEY: Optional[str] = None
+    NVIDIA_API_KEY: Optional[str] = None
 
     # Provider Enable/Disable
     OLLAMA_CLOUD_ENABLED: bool = True
-    OLLAMA_LOCAL_ENABLED: bool = True
+    OLLAMA_LOCAL_ENABLED: bool = False
     GEMINI_ENABLED: bool = True
     GROQ_ENABLED: bool = True
     CEREBRAS_ENABLED: bool = False
     OPENROUTER_ENABLED: bool = True
     SAMBANOVA_ENABLED: bool = False
+    NVIDIA_ENABLED: bool = True
 
     # URLs
     OLLAMA_CLOUD_URL: str = "https://api.ollama.com"
     OLLAMA_LOCAL_URL: str = "http://127.0.0.1:11434"
+    NVIDIA_BASE_URL: str = "https://integrate.api.nvidia.com/v1"
 
     # Models
     OLLAMA_CLOUD_MODEL: str = "gpt-oss:120b"
@@ -44,10 +47,18 @@ class Settings(BaseSettings):
     OLLAMA_GEMMA_MODEL: str = "gemma4:2b-it-qat"
     GEMINI_MODEL: str = "gemini-3.6-flash"
     GEMINI_FAST_MODEL: str = "gemini-3.5-flash-lite"
-    GROQ_MODEL: str = "llama-3.3-70b-versatile"
+    GROQ_MODEL: str = "qwen/qwen3.6-27b"
     CEREBRAS_MODEL: str = "gpt-oss-120b"
     OPENROUTER_MODEL: str = "openrouter/free"
+    OPENROUTER_KIMI_K26_MODEL: str = "moonshotai/kimi-k2.6"
+    OPENROUTER_KIMI_K3_MODEL: str = "moonshotai/kimi-k3"
+    OPENROUTER_KIMI_CODE_MODEL: str = "moonshotai/kimi-k2.7-code"
     SAMBANOVA_MODEL: str = "llama3-70b"
+
+    # NVIDIA Models
+    NVIDIA_GPT_OSS_MODEL: str = "openai/gpt-oss-120b"
+    NVIDIA_DEEPSEEK_MODEL: str = "deepseek-ai/deepseek-v4-flash-0731"
+    NVIDIA_MINIMAX_MODEL: str = "minimaxai/minimax-m3"
 
     # Job Settings
     MAX_ACTIVE_CHAPTER_JOBS_PER_STUDENT: int = 1
