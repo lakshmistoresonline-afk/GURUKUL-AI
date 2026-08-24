@@ -1,4 +1,5 @@
 ﻿import os
+from datetime import datetime
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Optional, List
 
@@ -102,6 +103,10 @@ class Settings(BaseSettings):
     # Storage
     DATABASE_URL: str = "sqlite+aiosqlite:///./gurukul_backend.db"
     STORAGE_PATH: str = os.path.join(PROJECT_ROOT, "backend", "storage")
+    STAGING_PATH: str = os.path.join(STORAGE_PATH, "generation_staging")
+
+    # Generation Run ID (Default to timestamp if not provided via ENV)
+    GENERATION_RUN_ID: str = os.getenv("GENERATION_RUN_ID", f"RUN_{datetime.now().strftime('%Y%m%d_%H%M%S')}")
 
     # Test/Validation Mode
     TEST_MODE: bool = False

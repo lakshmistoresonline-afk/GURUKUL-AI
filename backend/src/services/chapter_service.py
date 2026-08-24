@@ -13,6 +13,7 @@ from ..config.subject_frameworks import get_framework_for_subject
 from ..models.job import ChapterJob, JobStatus
 from ..orchestrator.ai_orchestrator import AIOrchestrator
 from ..utils.ai_utils import normalize_structured_response
+from ..utils.staging_manager import StagingManager
 
 logger = logging.getLogger(__name__)
 
@@ -113,6 +114,7 @@ class ChapterService:
 
     def __init__(self, orchestrator: AIOrchestrator):
         self.orchestrator = orchestrator
+        self.staging_manager = StagingManager()
 
     def get_stages_for_subject(self, subject: str) -> List[Dict[str, Any]]:
         framework = get_framework_for_subject(subject)
@@ -351,9 +353,12 @@ class ChapterService:
                         )
                         continue
                     else:
+                        # Update progress in staging manifest for fatal error
+                        self.staging_manager.update_progress(job.chapter_id, success=False, error=str(exc))
                         raise # Fatal/Transient provider error
 
             if stage_error:
+                self.staging_manager.update_progress(job.chapter_id, success=False, error=str(stage_error))
                 raise stage_error
 
             completed[stage_name] = response
@@ -658,43 +663,30 @@ class ChapterService:
         job: ChapterJob,
     ):
         """
-        Persist the completed chapter package in a human-readable hierarchy:
-        storage/output/{class_name}/{subject}/{chapter_id}/package.json
+        Persist the completed chapter package in a human-readable hierarchy in the STAGING AREA.
+        storage/generation_staging/<run_id>/{class_name}/{subject}/{chapter_id}/package.json
         """
 
-        # Sanitize path components
-        def sanitize(s: str) -> str:
-            if not s:
-                return "unknown"
-            return "".join([c for c in s if c.isalnum() or c in (" ", "-", "_")]).strip().replace(" ", "_")
-
-        safe_class = sanitize(job.class_name)
-        safe_subject = sanitize(job.subject)
-        safe_chapter = sanitize(job.chapter_id)
-
-        # Base structure
-        package_dir = os.path.join(
-            settings.STORAGE_PATH,
-            "output",
-            safe_class,
-            safe_subject,
-            safe_chapter
-        )
-
-        os.makedirs(
-            package_dir,
-            exist_ok=True,
+        # Get staging directory from manager
+        package_dir = self.staging_manager.get_chapter_staging_dir(
+            job.class_name,
+            job.subject,
+            job.chapter_id
         )
 
         # Include metadata in the package
         package_data = {
             "metadata": {
+                "run_id": self.staging_manager.run_id,
                 "job_id": job.job_id,
                 "class_name": job.class_name,
                 "subject": job.subject,
                 "chapter_id": job.chapter_id,
                 "completed_at": datetime.utcnow().isoformat() if not job.completed_at else job.completed_at.isoformat(),
-                "diksha_link": f"https://diksha.gov.in/play/collection/{job.chapter_id}" if job.chapter_id.startswith("do_") else None
+                "provider": job.provider,
+                "model": job.model,
+                "diksha_link": f"https://diksha.gov.in/play/collection/{job.chapter_id}" if job.chapter_id.startswith("do_") else None,
+                "source_file_hash": job.source_file_hash
             },
             "content": job.completed_stages
         }
@@ -713,8 +705,22 @@ class ChapterService:
                 ensure_ascii=False,
             )
 
-        # Also keep a copy by Job ID for backward compatibility/quick lookup if needed
-        # but the primary identification is now hierarchical.
-        legacy_path = os.path.join(settings.STORAGE_PATH, "output", job.job_id)
-        os.makedirs(legacy_path, exist_ok=True)
-        shutil.copy2(package_path, os.path.join(legacy_path, "package.json"))
+        # Record in staging manifest
+        self.staging_manager.record_generated_file({
+            "job_id": job.job_id,
+            "class": job.class_name,
+            "subject": job.subject,
+            "chapter_id": job.chapter_id,
+            "generated_path": package_path,
+            "hash": self.staging_manager.calculate_hash(package_path),
+            "provider": job.provider,
+            "model": job.model
+        })
+
+        # Update progress
+        self.staging_manager.update_progress(job.chapter_id, success=True)
+
+        # Also keep a copy by Job ID in staging for quick lookup
+        job_lookup_dir = os.path.join(self.staging_manager.run_dir, "jobs", job.job_id)
+        os.makedirs(job_lookup_dir, exist_ok=True)
+        shutil.copy2(package_path, os.path.join(job_lookup_dir, "package.json"))
