@@ -6,7 +6,7 @@ import re
 from datetime import datetime
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_CONTENT = "gemma4:e2b-it-qat"
+MODEL_CONTENT = "gemma4:2b-it-qat"
 
 PROGRESS_FILE = "D:/GURUKUL-AI/OLLAMA_QUALITY_IMPROVEMENT_PROGRESS.json"
 LOG_FILE = "D:/GURUKUL-AI/OLLAMA_QUALITY_IMPROVEMENT.log"

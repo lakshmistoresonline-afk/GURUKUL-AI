@@ -7,7 +7,7 @@ from datetime import datetime
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL_SIMPLE = "qwen3.5:2b-q4_K_M"
-MODEL_CONTENT = "gemma4:e2b-it-qat"
+MODEL_CONTENT = "gemma4:2b-it-qat"
 
 PROGRESS_FILE = "D:/GURUKUL-AI/OLLAMA_REGENERATION_PROGRESS.json"
 LOG_FILE = "D:/GURUKUL-AI/OLLAMA_REGENERATION.log"

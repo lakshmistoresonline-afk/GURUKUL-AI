@@ -39,9 +39,9 @@ class Settings(BaseSettings):
 
     # Models
     OLLAMA_CLOUD_MODEL: str = "gpt-oss:120b"
-    OLLAMA_LOCAL_MODEL: str = "gemma4:e2b-it-qat"
+    OLLAMA_LOCAL_MODEL: str = "gemma4:2b-it-qat"
     OLLAMA_QWEN_MODEL: str = "qwen3.5:2b-q4_K_M"
-    OLLAMA_GEMMA_MODEL: str = "gemma4:e2b-it-qat"
+    OLLAMA_GEMMA_MODEL: str = "gemma4:2b-it-qat"
     GEMINI_MODEL: str = "gemini-3.6-flash"
     GEMINI_FAST_MODEL: str = "gemini-3.5-flash-lite"
     GROQ_MODEL: str = "llama-3.3-70b-versatile"
