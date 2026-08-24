@@ -1,7 +1,7 @@
 # CLOUD_AI_ROUTER_IMPLEMENTATION_REPORT.md (Updated)
 
 ## Overview
-This report documents the implementation, correction pass, and safety fixes of the Cloud-First AI Router for the Gurukul AI backend. The architecture prioritizes cloud-based inference (Groq, NVIDIA, OpenRouter, Gemini) and disables local Ollama inference by default.
+This report documents the implementation, correction pass, and model expansion of the Cloud-First AI Router for the Gurukul AI backend. The architecture prioritizes cloud-based inference (Groq, NVIDIA, OpenRouter, Gemini) and disables local Ollama inference by default.
 
 ## Corrections & Fixes
 
@@ -17,46 +17,43 @@ This report documents the implementation, correction pass, and safety fixes of t
 
 ### 3. OpenRouter Quota-Safety Fix
 - **Token Ceiling**: Added `OPENROUTER_MAX_TOKENS = 2048` to `app_config.py`. All OpenRouter requests now explicitly specify this limit to prevent accidental high-quota consumption.
-- **Quota-Free Health Checks**: Modified `OpenRouterProvider.check_health()` and `NvidiaProvider.check_health()` to perform configuration and connectivity validation only. They no longer execute real model inference during normal health checks.
-- **Robustness**: Applied explicit `httpx.Timeout` and granular error handling for `TimeoutException`, `ConnectError`, and `RequestError` in the OpenRouter provider.
-- **Structured Generation**: `max_tokens` is now also applied to structured generation requests.
+- **Quota-Free Health Checks**: Modified `OpenRouterProvider.check_health()` and `NvidiaProvider.check_health()` to perform configuration and connectivity validation only.
 
-### 4. Cleanup
-- Removed temporary scratch test artifacts:
-  - `backend/scratch/test_ai_imports.py`
-  - `backend/scratch/test_nvidia_robustness.py`
-  - `backend/scratch/debug_nvidia.py`
-  - `backend/scratch/test_openrouter_quota.py`
+### 4. Nemotron Model Integration (Expansion)
+- **Nemotron 3.5 Lightning Free**: Verified with 4.31s response time. Assigned as **Primary** for `large_context`.
+- **Nemotron 3 Ultra Free**: Verified with 2.50s response time. Assigned as **Primary** for `advanced_reasoning` and fallback for other reasoning tasks.
+- **Orchestrator Refactor**: Modified `AIOrchestrator` to support granular (Provider, Model) routing sequences, allowing multiple models from the same provider to be tried in order.
 
 ## Files Created/Modified
 - [backend/src/providers/nvidia.py](file:///D:/GURUKUL-AI/backend/src/providers/nvidia.py): Robust implementation of the `NvidiaProvider`.
 - [backend/src/providers/openrouter.py](file:///D:/GURUKUL-AI/backend/src/providers/openrouter.py): Quota-safe implementation of the `OpenRouterProvider`.
-- [backend/src/config/app_config.py](file:///D:/GURUKUL-AI/backend/src/config/app_config.py): Updated models, defaults, and token limits.
-- [backend/src/orchestrator/ai_orchestrator.py](file:///D:/GURUKUL-AI/backend/src/orchestrator/ai_orchestrator.py): Task-based routing and provider registration.
+- [backend/src/config/app_config.py](file:///D:/GURUKUL-AI/backend/src/config/app_config.py): Added Nemotron models and updated defaults.
+- [backend/src/orchestrator/ai_orchestrator.py](file:///D:/GURUKUL-AI/backend/src/orchestrator/ai_orchestrator.py): Granular sequence-based routing implementation.
 
 ## Model Routing Table
 
 | Task Type | Primary Provider | Model | Fallback(s) |
 | :--- | :--- | :--- | :--- |
-| `simple` / `general` | **Groq** | qwen/qwen3.6-27b | OpenRouter, NVIDIA, Gemini |
-| `normal_coding` | **Groq** | qwen/qwen3.6-27b | NVIDIA, OpenRouter, Gemini |
-| `complex` / `reasoning` | **NVIDIA** | GPT-OSS 120B | OpenRouter (Kimi K3), Gemini |
-| `large_context` | **NVIDIA** | DeepSeek V4 Flash | OpenRouter (Kimi K3), Gemini |
-| `agentic_coding` | **OpenRouter** | Kimi K2.7 Code | NVIDIA (GPT-OSS), Gemini |
+| `simple` / `general` | **Groq** | qwen/qwen3.6-27b | OpenRouter, Gemini |
+| `normal_coding` | **Groq** | qwen/qwen3.6-27b | NVIDIA (GPT-OSS), OpenRouter (Kimi Code) |
+| `complex` / `reasoning` | **NVIDIA** | GPT-OSS 120B | OpenRouter (Kimi K3), Groq |
+| `large_context` | **OpenRouter** | Nemotron 3.5 Lightning | OpenRouter (Kimi K3), NVIDIA (GPT-OSS), Groq |
+| `agentic_coding` | **OpenRouter** | Kimi K2.7 Code | NVIDIA (GPT-OSS), Groq |
 | `vision` | **OpenRouter** | Kimi K2.6 | Gemini |
-| `advanced_reasoning` | **OpenRouter** | Kimi K3 | NVIDIA (DeepSeek), Gemini |
-| `agentic_reasoning` | **NVIDIA** | MiniMax M3 | OpenRouter (Kimi K3), Gemini |
+| `advanced_reasoning` | **OpenRouter** | Nemotron Ultra | OpenRouter (Kimi K3), NVIDIA (GPT-OSS) |
+| `agentic_reasoning` | **NVIDIA** | MiniMax M3 | OpenRouter (Nemotron Ultra), OpenRouter (Kimi K3), NVIDIA (GPT-OSS) |
 
 ## Verification Results
 - **Import & Registration**: PASS
 - **Groq Model Update**: PASS (`qwen/qwen3.6-27b`)
-- **NVIDIA Health Check**: PASS (Config-only)
-- **NVIDIA GPT-OSS 120B**: PASS (Verified)
-- **OpenRouter Token Limit**: PASS (`max_tokens: 2048` verified)
-- **OpenRouter Kimi K3**: PASS (Tiny request verified)
-- **OpenRouter Health Check**: PASS (Quota-free)
+- **NVIDIA GPT-OSS 120B**: PASS
+- **OpenRouter Token Limit**: PASS (`2048`)
+- **Nemotron Lightning E2E**: PASS (13.68s)
+- **Nemotron Ultra Routing**: PASS
+- **DeepSeek Routing**: Removed from primary path for reliability.
+- **Ollama Local State**: PASS (OLLAMA_LOCAL_ENABLED = False)
 - **Educational Content Integrity**: PASS
 - **.env Integrity**: PASS (Untouched)
 
 ---
-**OPENROUTER QUOTA SAFETY PASS**
+**NEMOTRON CLOUD ROUTING IMPLEMENTATION PASS**

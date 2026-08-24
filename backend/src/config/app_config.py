@@ -54,6 +54,8 @@ class Settings(BaseSettings):
     OPENROUTER_KIMI_K26_MODEL: str = "moonshotai/kimi-k2.6"
     OPENROUTER_KIMI_K3_MODEL: str = "moonshotai/kimi-k3"
     OPENROUTER_KIMI_CODE_MODEL: str = "moonshotai/kimi-k2.7-code"
+    OPENROUTER_NEMOTRON_LIGHTNING_MODEL: str = "nvidia/nemotron-3.5-lightning:free"
+    OPENROUTER_NEMOTRON_ULTRA_MODEL: str = "nvidia/nemotron-3-ultra-550b-a55b:free"
     SAMBANOVA_MODEL: str = "llama3-70b"
 
     # NVIDIA Models

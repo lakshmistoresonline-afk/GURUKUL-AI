@@ -53,22 +53,20 @@ class AIOrchestrator:
         last_error = None
         attempt_history = []
 
-        active_providers = self._get_ordered_providers(task_type)
-        if not active_providers:
-            raise AllProvidersUnavailableError("No AI providers are currently enabled or available.")
+        routing = self._get_task_routing(task_type)
+        if not routing:
+            raise AllProvidersUnavailableError("No AI providers are currently enabled or available for this task.")
 
-        for provider in active_providers:
-
+        for entry in routing:
+            provider = entry["provider"]
             provider_name = provider.get_name()
-            model = self._get_model_for_task(
-                provider_name,
-                task_type,
-            )
+            model = entry["model"]
 
             try:
                 logger.info(
-                    "Routing request to %s for task %s",
+                    "Routing request to %s (%s) for task %s",
                     provider_name,
+                    model,
                     task_type,
                 )
 
@@ -145,22 +143,20 @@ class AIOrchestrator:
         last_error = None
         attempt_history = []
 
-        active_providers = self._get_ordered_providers(task_type)
-        if not active_providers:
+        routing = self._get_task_routing(task_type)
+        if not routing:
             raise AllProvidersUnavailableError("No AI providers are currently enabled or available for structured output.")
 
-        for provider in active_providers:
-
+        for entry in routing:
+            provider = entry["provider"]
             provider_name = provider.get_name()
-            model = self._get_model_for_task(
-                provider_name,
-                task_type,
-            )
+            model = entry["model"]
 
             try:
                 logger.info(
-                    "Routing structured request to %s for task %s",
+                    "Routing structured request to %s (%s) for task %s",
                     provider_name,
+                    model,
                     task_type,
                 )
 
@@ -216,82 +212,115 @@ class AIOrchestrator:
             "is_all_failed": True
         }
 
+    def _get_task_routing(self, task_type: str) -> List[Dict[str, Any]]:
+        """Returns a list of (provider, model) pairs for the given task type, respecting priority and availability."""
+
+        # Get enabled and available providers
+        providers = {p.get_name(): p for p in self.providers if p.is_enabled() and quota_manager.is_available(p.get_name())}
+
+        # Model Shortcuts
+        groq_model = settings.GROQ_MODEL
+        nv_gpt_oss = settings.NVIDIA_GPT_OSS_MODEL
+        nv_minimax = settings.NVIDIA_MINIMAX_MODEL
+        or_kimi_k3 = settings.OPENROUTER_KIMI_K3_MODEL
+        or_kimi_k26 = settings.OPENROUTER_KIMI_K26_MODEL
+        or_kimi_code = settings.OPENROUTER_KIMI_CODE_MODEL
+        or_nemotron_lightning = settings.OPENROUTER_NEMOTRON_LIGHTNING_MODEL
+        or_nemotron_ultra = settings.OPENROUTER_NEMOTRON_ULTRA_MODEL
+        gemini_model = settings.GEMINI_MODEL
+        gemini_fast = settings.GEMINI_FAST_MODEL
+
+        # Task specific sequences (Provider Name, Model ID)
+        task_map = {
+            "simple": [
+                ("Groq", groq_model),
+                ("OpenRouter", or_kimi_k3),
+                ("Gemini", gemini_fast)
+            ],
+            "general": [
+                ("Groq", groq_model),
+                ("OpenRouter", or_kimi_k3),
+                ("Gemini", gemini_model)
+            ],
+            "normal_coding": [
+                ("Groq", groq_model),
+                ("NVIDIA", nv_gpt_oss),
+                ("OpenRouter", or_kimi_code)
+            ],
+            "complex": [
+                ("NVIDIA", nv_gpt_oss),
+                ("OpenRouter", or_kimi_k3),
+                ("Groq", groq_model)
+            ],
+            "reasoning": [
+                ("NVIDIA", nv_gpt_oss),
+                ("OpenRouter", or_kimi_k3),
+                ("OpenRouter", or_nemotron_ultra)
+            ],
+            "large_context": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("OpenRouter", or_kimi_k3),
+                ("NVIDIA", nv_gpt_oss),
+                ("Groq", groq_model)
+            ],
+            "agentic_coding": [
+                ("OpenRouter", or_kimi_code),
+                ("NVIDIA", nv_gpt_oss),
+                ("Groq", groq_model)
+            ],
+            "vision": [
+                ("OpenRouter", or_kimi_k26),
+                ("Gemini", gemini_model)
+            ],
+            "advanced_reasoning": [
+                ("OpenRouter", or_nemotron_ultra),
+                ("OpenRouter", or_kimi_k3),
+                ("NVIDIA", nv_gpt_oss)
+            ],
+            "agentic_reasoning": [
+                ("NVIDIA", nv_minimax),
+                ("OpenRouter", or_nemotron_ultra),
+                ("OpenRouter", or_kimi_k3),
+                ("NVIDIA", nv_gpt_oss)
+            ],
+            "android": [
+                ("Gemini", gemini_model),
+                ("Groq", groq_model),
+                ("NVIDIA", nv_gpt_oss),
+                ("OpenRouter", or_kimi_code)
+            ]
+        }
+
+        sequence = task_map.get(task_type, [("Groq", groq_model), ("NVIDIA", nv_gpt_oss), ("OpenRouter", or_kimi_k3)])
+
+        routing = []
+        for p_name, model_id in sequence:
+            if p_name in providers:
+                routing.append({
+                    "provider": providers[p_name],
+                    "model": model_id
+                })
+
+        return routing
+
     def _get_ordered_providers(
         self,
         task_type: str,
     ) -> List[AIProvider]:
-        """Returns active providers ordered by priority for the given task type."""
-        active = {p.get_name(): p for p in self.active_providers}
-
-        # Priority mapping
-        priorities = {
-            "simple": ["Groq", "OpenRouter", "NVIDIA", "Gemini"],
-            "general": ["Groq", "OpenRouter", "NVIDIA", "Gemini"],
-            "normal_coding": ["Groq", "NVIDIA", "OpenRouter", "Gemini"],
-            "complex": ["NVIDIA", "OpenRouter", "Gemini"],
-            "reasoning": ["NVIDIA", "OpenRouter", "Gemini"],
-            "large_context": ["NVIDIA", "OpenRouter", "Gemini"],
-            "agentic_coding": ["OpenRouter", "NVIDIA", "Gemini"],
-            "vision": ["OpenRouter", "Gemini"],
-            "advanced_reasoning": ["OpenRouter", "NVIDIA", "Gemini"],
-            "agentic_reasoning": ["NVIDIA", "OpenRouter", "Gemini"],
-            "android": ["Gemini", "Groq", "NVIDIA", "OpenRouter"]
-        }
-
-        order = priorities.get(task_type, ["Groq", "NVIDIA", "OpenRouter", "Gemini"])
-
-        # Build final list based on order, appending any remaining active providers
-        result = []
-        seen = set()
-        for name in order:
-            if name in active:
-                result.append(active[name])
-                seen.add(name)
-
-        for name, provider in active.items():
-            if name not in seen:
-                result.append(provider)
-
-        return result
+        """Deprecated: Use _get_task_routing instead."""
+        routing = self._get_task_routing(task_type)
+        return [r["provider"] for r in routing]
 
     def _get_model_for_task(
         self,
         provider_name: str,
         task_type: str,
     ) -> Optional[str]:
-
-        if provider_name == "Groq":
-            # Groq is prioritized for speed/efficiency
-            return settings.GROQ_MODEL
-
-        if provider_name == "NVIDIA":
-            if task_type in ["complex", "reasoning", "agentic_coding"]:
-                return settings.NVIDIA_GPT_OSS_MODEL
-            if task_type in ["large_context", "advanced_reasoning"]:
-                return settings.NVIDIA_DEEPSEEK_MODEL
-            if task_type == "agentic_reasoning":
-                return settings.NVIDIA_MINIMAX_MODEL
-            return settings.NVIDIA_GPT_OSS_MODEL
-
-        if provider_name == "OpenRouter":
-            if task_type == "vision":
-                return settings.OPENROUTER_KIMI_K26_MODEL
-            if task_type in ["advanced_reasoning", "complex", "reasoning", "agentic_reasoning", "large_context"]:
-                return settings.OPENROUTER_KIMI_K3_MODEL
-            if task_type == "agentic_coding":
-                return settings.OPENROUTER_KIMI_CODE_MODEL
-            return settings.OPENROUTER_MODEL
-
-        if provider_name == "Gemini":
-            if task_type == "simple":
-                return settings.GEMINI_FAST_MODEL
-            return settings.GEMINI_MODEL
-
-        if provider_name == "Ollama Local":
-            if task_type == "simple":
-                return settings.OLLAMA_QWEN_MODEL
-            return settings.OLLAMA_GEMMA_MODEL
-
+        """Deprecated: Use _get_task_routing instead."""
+        routing = self._get_task_routing(task_type)
+        for r in routing:
+            if r["provider"].get_name() == provider_name:
+                return r["model"]
         return None
 
     async def get_health_status(
