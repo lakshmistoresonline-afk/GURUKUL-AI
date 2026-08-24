@@ -76,25 +76,10 @@ class PathResolver:
     @staticmethod
     def normalize_chapter_id(class_name: str, chapter_id: str, subject: Optional[str] = None) -> str:
         """
-        Maps legacy IDs (e.g. fepr101) to canonical IDs (e.g. unit_01) used in the Master Index.
-        Currently primarily affects Class 6.
+        Maps IDs to canonical IDs used in the Master Index.
+        With V3 content, we prefer the IDs supplied in the packages (e.g. fepr101).
         """
         cid = str(chapter_id).strip().lower()
-        class_id = PathResolver.extract_class_id(class_name)
-
-        if class_id == "6":
-            # Class 6 English: fepr101 -> unit_01
-            if (cid.startswith('fepr') or (subject and subject.lower() == 'english' and cid.startswith('fe'))) and len(cid) >= 7:
-                num_part = cid[-2:]
-                if num_part.isdigit():
-                    return f"unit_{num_part}"
-
-            # Class 6 Others: fegp101, fesc101 -> chapter_01
-            if cid.startswith('fe') and len(cid) >= 7:
-                num_part = cid[-2:]
-                if num_part.isdigit():
-                    return f"chapter_{num_part}"
-
         return cid
 
     @staticmethod
@@ -103,12 +88,20 @@ class PathResolver:
         chapter_id: str,
         subject: Optional[str] = None,
     ) -> Optional[str]:
-        """
-        Resolve a chapter directory from the master index.
+        """Returns the directory of a chapter."""
+        pkg_path = PathResolver.get_chapter_package_path(class_name, chapter_id, subject=subject)
+        if pkg_path:
+            return os.path.dirname(pkg_path)
+        return None
 
-        If subject is supplied, chapter ID must belong to that subject.
-        This is essential because IDs such as chapter_01 can occur in
-        multiple subjects within the same class.
+    @staticmethod
+    def get_chapter_package_path(
+        class_name: str,
+        chapter_id: str,
+        subject: Optional[str] = None,
+    ) -> Optional[str]:
+        """
+        Resolve the full absolute path to the chapter's package.json or chapter_package.json.
         """
         class_id = PathResolver.extract_class_id(class_name)
         index = PathResolver._get_master_index(class_id)
@@ -116,27 +109,44 @@ class PathResolver:
         if not index:
             return None
 
-        normalized_subject = subject.strip().lower() if subject else None
-
-        # Apply normalization to the requested chapter_id
+        normalized_subject = subject.strip().lower().replace("_", " ") if subject else None
         canonical_chapter = PathResolver.normalize_chapter_id(class_name, chapter_id, subject=subject)
         normalized_chapter = canonical_chapter.strip().lower()
 
         for chapter in index.get("chapters", []):
             indexed_id = str(chapter.get("chapterId", "")).strip().lower()
-            indexed_subject = str(chapter.get("subject", "")).strip().lower()
+            indexed_subject = str(chapter.get("subject", "")).strip().lower().replace("_", " ")
 
             if indexed_id == normalized_chapter:
                 if not normalized_subject or indexed_subject == normalized_subject:
                     rel_path = chapter.get("path")
                     if rel_path:
-                        # Join with the class-specific directory
                         padded_id = class_id.zfill(2)
                         class_folder = f"class_{padded_id}"
-                        resolved_path = os.path.join(settings.MASTER_CONTENT_ROOT, class_folder, os.path.dirname(rel_path))
-                        return resolved_path
+                        resolved_path = os.path.normpath(os.path.join(settings.MASTER_CONTENT_ROOT, class_folder, rel_path))
 
-        logger.warning(f"PathResolver: Could not resolve chapter path for {chapter_id} (normalized as {normalized_chapter}) in Class {class_id} {subject or ''}")
+                        # Detect potential ambiguity/duplicate folders
+                        parent_dir = os.path.dirname(resolved_path)
+                        subject_dir = os.path.dirname(parent_dir)
+                        if os.path.exists(subject_dir):
+                            tech_id_folder = os.path.join(subject_dir, indexed_id)
+                            if os.path.exists(tech_id_folder) and os.path.abspath(tech_id_folder) != os.path.abspath(parent_dir):
+                                logger.warning(f"PathResolver: Detected ambiguity for {indexed_id}. "
+                                             f"Index points to '{parent_dir}', but a legacy folder '{tech_id_folder}' also exists. "
+                                             f"Strictly adhering to Index.")
+
+                        if os.path.exists(resolved_path):
+                            return resolved_path
+
+                        # Fallback: try different filenames if the index path is slightly off
+                        base_dir = os.path.dirname(resolved_path)
+                        for fname in ["chapter_package.json", "package.json"]:
+                            alt_path = os.path.join(base_dir, fname)
+                            if os.path.exists(alt_path):
+                                logger.info(f"PathResolver: Found package at alternate location: {alt_path}")
+                                return alt_path
+
+        logger.error(f"PathResolver: Could not resolve package for {chapter_id} (Subject: {subject}) in Class {class_name}")
         return None
 
     @staticmethod
@@ -147,11 +157,16 @@ class PathResolver:
         index = PathResolver._get_master_index(class_id)
 
         if not index:
+            logger.error(f"PathResolver: Master index not found for Class {class_id} (input: {class_name})")
             return {}
 
         hierarchy: Dict[str, List[Dict[str, Any]]] = {}
 
-        for chapter in index.get("chapters", []):
+        chapters = index.get("chapters", [])
+        if not chapters:
+            logger.warning(f"PathResolver: Index found but contains no chapters for Class {class_id}")
+
+        for chapter in chapters:
             subj = str(chapter.get("subject", "unknown")).strip().lower()
 
             if subj not in hierarchy:

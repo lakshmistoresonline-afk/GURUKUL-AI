@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "student_explanation",
+  "chapter_id": "gegp103",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_title": "A Peek Beyond the Point",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "simple_explanation": "To learn A Peek Beyond the Point, first understand the main idea, then identify supporting evidence/examples or steps, and finally apply the idea.",
+    "study_steps": [
+      "Read/observe carefully",
+      "Identify the central idea",
+      "Mark evidence or working",
+      "Practise",
+      "Transfer to a new situation",
+      "Self-check"
+    ],
+    "key_points": [
+      "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy.",
+      "She brought another screw from the box and was able to fix the toy.",
+      "But when he observed them closely, he saw they were of slightly different lengths.",
+      "Sonu was fascinated by how such a small difference in lengths could matter so much.",
+      "He was also curious to know how little the difference was because the screws looked nearly the same.",
+      "What is the meaning of 2 7 cm (the length of the first screw)?"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.student_explanation",
+    "domain": "learning",
+    "description": "Student-facing explanation",
+    "chapter_scoped": true
+  }
+}

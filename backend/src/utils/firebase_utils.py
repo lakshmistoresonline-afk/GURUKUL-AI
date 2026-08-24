@@ -49,7 +49,16 @@ async def verify_firebase_token(token: str):
         decoded_token = auth.verify_id_token(token)
         return decoded_token
     except Exception as e:
-        logger.error(f"Firebase: Token verification failed: {str(e)}")
+        err_msg = str(e)
+        logger.error(f"Firebase: Token verification failed: {err_msg}")
+        if "too early" in err_msg.lower():
+            import asyncio
+            logger.warning("Auth: Clock skew detected (used too early). Retrying in 3 seconds...")
+            await asyncio.sleep(3.0)
+            try:
+                return auth.verify_id_token(token)
+            except:
+                pass
         return None
 
 async def get_user_profile(uid: str):

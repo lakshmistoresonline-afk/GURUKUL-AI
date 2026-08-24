@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "student_explanation",
+  "chapter_id": "gees103",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "Climates of India",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "simple_explanation": "To learn Climates of India, first understand the main idea, then identify supporting evidence/examples or steps, and finally apply the idea.",
+    "study_steps": [
+      "Read/observe carefully",
+      "Identify the central idea",
+      "Mark evidence or working",
+      "Practise",
+      "Transfer to a new situation",
+      "Self-check"
+    ],
+    "key_points": [
+      "3 CHAPTER Climates of India kāle varṣhatu parjanyaha pṛiṭhivī sasyaśhālinī deśhoyam kṣhobharahitah brāhmaṇāsantu nirbhayāh May the rains be timely, may the Earth be lush with vegetation May this country be free from turmoil, may good people be fearless!",
+      "What is the effect of climate on 3 – Climates of India economy, culture and society?",
+      "How can understanding the climate help us to prepare for natural disasters?",
+      "45 Reprint 2026-27 Chapter 3.indd 45 08-04-2025 12:45:28 Weather, Seasons and the Climate ‘Climate’ is a word people use in everyday conversations.",
+      "But, quite often, what they really mean is ‘weather’, and not ‘climate’.",
+      "‘Weather’ is what we experience every hour or day: it might be raining, or there could be bright sunshine, a lot of wind, etc."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.student_explanation",
+    "domain": "learning",
+    "description": "Student-facing explanation",
+    "chapter_scoped": true
+  }
+}

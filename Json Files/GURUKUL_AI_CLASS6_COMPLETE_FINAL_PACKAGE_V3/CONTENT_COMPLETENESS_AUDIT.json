@@ -1,0 +1,58 @@
+{
+  "audit_version": "1.0.0",
+  "class": 6,
+  "core_chapters": 54,
+  "complete_union_items": 60,
+  "supplemental_only_items": 6,
+  "question_only_items": 5,
+  "enriched_and_teacher_supplemental_items": 1,
+  "question_only_chapter_ids": [
+    {
+      "class": 6,
+      "subject": "English",
+      "chapter_id": "fepr1ps"
+    },
+    {
+      "class": 6,
+      "subject": "Hindi",
+      "chapter_id": "fhml1ps"
+    },
+    {
+      "class": 6,
+      "subject": "Mathematics",
+      "chapter_id": "fegp1ps"
+    },
+    {
+      "class": 6,
+      "subject": "Science",
+      "chapter_id": "fecu1ps"
+    },
+    {
+      "class": 6,
+      "subject": "Social Science",
+      "chapter_id": "fees1ps"
+    }
+  ],
+  "enriched_and_teacher_supplemental_chapter_ids": [
+    {
+      "class": 6,
+      "subject": "Social Science",
+      "chapter_id": "fees1gl"
+    }
+  ],
+  "core_runtime_mapping": {
+    "chapters_checked": 54,
+    "components": 2268,
+    "runtime_mapped": 2268,
+    "unmapped": 0
+  },
+  "source_sha256_consistency": {
+    "teacher_vs_ncert_questions_checked": 55,
+    "mismatches": []
+  },
+  "json_validation": {
+    "json_files_checked": 3443,
+    "invalid": []
+  },
+  "conclusion": "All supplied Class-specific content from the four source packages has been merged non-destructively. The original 42-component core remains intact, while enriched, teacher-explanation and exact NCERT question content absent from the core is added and explicitly indexed."
+}

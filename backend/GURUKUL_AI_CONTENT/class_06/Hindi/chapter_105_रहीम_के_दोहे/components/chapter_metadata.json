@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_metadata",
+  "chapter_id": "fhml105",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "रहीम के दोहे",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "chapter_number": 105,
+    "title": "रहीम के दोहे",
+    "source_text_available": true,
+    "learning_focus": "Understand, explain and apply the central learning of रहीम के दोहे."
+  },
+  "runtime_mapping": {
+    "route": "content.chapter.metadata",
+    "domain": "content",
+    "description": "Chapter identity and source metadata",
+    "chapter_scoped": true
+  }
+}

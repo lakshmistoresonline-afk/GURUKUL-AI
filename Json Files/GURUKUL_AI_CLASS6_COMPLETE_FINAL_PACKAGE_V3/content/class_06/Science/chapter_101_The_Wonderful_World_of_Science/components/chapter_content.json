@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "fecu101",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "The Wonderful World of Science",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-derived learning unit: The Wonderful World of Science.",
+    "source_grounded_key_points": [
+      "We start exploring our surroundings and asking questions right from our childhood.",
+      "Did you enjoy discovering and exploring the world around you in the Preparatory Stage of school?",
+      "As you enter the Middle Stage, we will continue this fascinating journey, trying to explore and understand the beautiful world we live in.",
+      "Science is a way of thinking, observing and What is doing things to understand the world we live in Science?",
+      "Think of it as a big adventure—we ask questions, explore the world and try to understand how things work.",
+      "For this, the most important thing is to have ‘Curiosity’, which is where the title of this book comes from.",
+      "Whether it is studying tiny grains of sand or massive mountains, a leaf of grass or a vast forest, there is always something new and exciting to discover.",
+      "Have you ever looked up at the night sky and wondered why the stars shine?"
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Reflect",
+      "Assess"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

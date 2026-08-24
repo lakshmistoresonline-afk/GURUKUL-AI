@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import Sidebar from '@/components/Sidebar';
 import TopBar from '@/components/TopBar';
 import { Heart, Trophy, BarChart3, Clock, ChevronRight, BellRing } from 'lucide-react';
@@ -16,8 +17,8 @@ export default function ParentDashboard() {
 
            {/* Child Summary Hero */}
            <section className="bg-white border border-border rounded-[48px] p-12 shadow-sm flex flex-col md:flex-row items-center gap-12">
-              <div className="w-32 h-32 bg-blue-50 rounded-full flex items-center justify-center border-4 border-white shadow-xl ring-4 ring-blue-100">
-                 <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Scholar" alt="Child" className="w-24 h-24" />
+              <div className="w-32 h-32 bg-blue-50 rounded-full flex items-center justify-center border-4 border-white shadow-xl ring-4 ring-blue-100 overflow-hidden">
+                 <Image src="https://api.dicebear.com/7.x/avataaars/svg?seed=Scholar" alt="Child" width={96} height={96} />
               </div>
               <div className="flex-1 space-y-4 text-center md:text-left">
                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest">

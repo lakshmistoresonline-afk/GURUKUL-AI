@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "eemm111",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Grandmother’s Quilt",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "eemm111_concept_01",
+        "name": "Grandmother’s Quilt",
+        "definition": "Central learning focus developed by the chapter 'Grandmother’s Quilt'.",
+        "evidence": "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes."
+      },
+      {
+        "id": "eemm111_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "Tick the lace option that would cover the entire border of the quilt."
+      },
+      {
+        "id": "eemm111_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "She decides to use two different coloured laces."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

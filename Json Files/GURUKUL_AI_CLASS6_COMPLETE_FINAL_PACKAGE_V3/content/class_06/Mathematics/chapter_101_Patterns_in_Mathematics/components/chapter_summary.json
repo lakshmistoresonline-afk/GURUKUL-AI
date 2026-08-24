@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_summary",
+  "chapter_id": "fegp101",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Patterns in Mathematics",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "summary": "'Patterns in Mathematics' is organised around source-supported concepts, evidence and applications.",
+    "key_points": [
+      "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
+      "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
+      "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology.",
+      "The search for patterns and their explanations can be a fun and creative endeavour.",
+      "It is for this reason that mathematicians think of mathematics both as an art and as a science.",
+      "This year, we hope that you will get a chance to see the creativity and artistry involved in discovering and understanding mathematical patterns."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.summary",
+    "domain": "reader",
+    "description": "Chapter summary",
+    "chapter_scoped": true
+  }
+}

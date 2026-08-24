@@ -16,8 +16,11 @@ interface FormattedTextProps {
 export default function FormattedText({ content, className = '' }: FormattedTextProps) {
   if (!content) return null;
 
+  // Safe string conversion
+  let processedContent = typeof content === 'string' ? content : JSON.stringify(content, null, 2);
+
   // Pre-process common AI formatting quirks
-  let processedContent = content
+  processedContent = processedContent
     .replace(/\*\s\*\*/g, '\n* **') // Ensure bullets start on new lines
     .replace(/(\d+)\.\s\*\*/g, '\n$1. **'); // Ensure numbered lists start on new lines
 

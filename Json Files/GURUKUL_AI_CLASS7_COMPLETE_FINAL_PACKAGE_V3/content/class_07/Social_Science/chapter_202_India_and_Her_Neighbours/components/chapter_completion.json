@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_completion",
+  "chapter_id": "gees202",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "India and Her Neighbours",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "completion_rules": [
+      "required learning viewed",
+      "core activities completed",
+      "practice threshold met",
+      "mastery assessment passed",
+      "misconceptions remediated"
+    ],
+    "complete_only_when_all_applicable_rules_pass": true
+  },
+  "runtime_mapping": {
+    "route": "progress.chapter_completion",
+    "domain": "progress",
+    "description": "Chapter completion state and criteria",
+    "chapter_scoped": true
+  }
+}

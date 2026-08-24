@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "eesa110",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "Glass Bangles",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "eesa110_concept_01",
+        "name": "Glass Bangles",
+        "definition": "Central learning focus developed by the chapter 'Glass Bangles'.",
+        "evidence": "10 Glass Bangles Let us Read The busy district of Firozabad in Uttar Pradesh is popular for its rich tradition of glassware."
+      },
+      {
+        "id": "eesa110_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "Ravi was a skilled glass artisan who lived in this town."
+      },
+      {
+        "id": "eesa110_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "Firozabad is famous for its beautiful glass bangles, and Ravi’s family had been crafting these beautiful bangles for a very long time."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

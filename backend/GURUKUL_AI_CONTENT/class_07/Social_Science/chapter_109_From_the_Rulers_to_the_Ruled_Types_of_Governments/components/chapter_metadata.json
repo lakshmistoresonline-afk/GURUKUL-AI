@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_metadata",
+  "chapter_id": "gees109",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "From the Rulers to the Ruled: Types of Governments",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "chapter_number": 109,
+    "title": "From the Rulers to the Ruled: Types of Governments",
+    "subject": "Social Science",
+    "source_pdf": "gees109.pdf",
+    "source_pages": 24,
+    "source_text_characters": 92674
+  },
+  "runtime_mapping": {
+    "route": "content.chapter.metadata",
+    "domain": "content",
+    "description": "Chapter identity and source metadata",
+    "chapter_scoped": true
+  }
+}

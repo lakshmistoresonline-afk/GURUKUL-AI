@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "fees104",
+  "class": 6,
+  "subject": "Social Science",
+  "chapter_title": "Timeline and Sources of History",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "fees104_c01",
+        "name": "Timeline and Sources of History",
+        "definition": "Central learning focus of Timeline and Sources of History.",
+        "source_evidence": "4 CHAPTER Timeline and Sources of History History is “an unending dialogue between the present and the past ..."
+      },
+      {
+        "id": "fees104_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Support a conclusion with source information or valid working.",
+        "source_evidence": "between the society of today and the society of yesterday."
+      },
+      {
+        "id": "fees104_c03",
+        "name": "Application",
+        "definition": "Transfer the learned idea to a relevant new context.",
+        "source_evidence": "We can fully understand the present only in the light of the past.” — E.H."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

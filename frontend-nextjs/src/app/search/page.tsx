@@ -67,9 +67,12 @@ export default function SearchPage() {
 
 function ResultItem({ title, subject, classLevel, id }: any) {
   const displayData = getChapterDisplayData(id);
+  const safeClass = `class_${classLevel}`;
+  const safeSubject = subject.toLowerCase().replace(' ', '_');
+
   return (
     <Link
-      href={`/library/class_${classLevel}/${subject.toLowerCase()}/__CHAPTER_class_${classLevel}_${subject.toLowerCase()}_${id}`}
+      href={`/library/${safeClass}/${safeSubject}/${id}`}
       className="p-6 bg-white border border-border rounded-3xl hover:border-primary/40 hover:shadow-lg transition-all flex items-center justify-between group"
     >
       <div className="flex items-center gap-6">

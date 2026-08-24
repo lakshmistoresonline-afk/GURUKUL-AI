@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fhml101",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "मातृभूमि",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fhml101_q01",
+      "answer": "Option 1",
+      "evidence": "1 मातृभूमि ऊँचा खड़ा हिमालय आकाश चमू ता है, नीचे चरण तले झक ु , नित सिंधु झमू ता है।"
+    }
+  },
+  "runtime_mapping": {
+    "route": "assessment.answer_key",
+    "domain": "assessment",
+    "description": "Answer keys and scoring references",
+    "chapter_scoped": true
+  }
+}

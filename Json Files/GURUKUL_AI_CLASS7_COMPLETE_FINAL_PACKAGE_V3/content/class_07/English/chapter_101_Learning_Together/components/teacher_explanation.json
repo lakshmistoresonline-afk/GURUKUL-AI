@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "gepr101",
+  "class": 7,
+  "subject": "English",
+  "chapter_title": "Learning Together",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Learning Together.",
+    "explanation_sections": [
+      {
+        "title": "Activate",
+        "explanation": "Connect the chapter to prior knowledge, observation or experience."
+      },
+      {
+        "title": "Build",
+        "explanation": "Teach from the source-grounded points and examples.",
+        "source_evidence": [
+          "Learning Together Unit 1 LEARNING TOGETHER The Day the River Spoke Let us do these activities before we read.",
+          "I Close your eyes and quietly listen to the sounds around you for a minute.",
+          "Do you think the things around you also listen to you all day long?",
+          "II Jahnavi was a bright young girl who lived with her parents and three brothers in a coastal village in India.",
+          "slithered: moved A kingfisher swept down, its wings an arrow of blue in the by sliding from sunlight."
+        ]
+      },
+      {
+        "title": "Reason",
+        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
+      },
+      {
+        "title": "Transfer",
+        "explanation": "Move from the textbook context to a closely related new situation."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Predict, recall or observe."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model the chapter content.",
+        "student_action": "Identify evidence or method."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Probe reasoning.",
+        "student_action": "Explain and justify."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide transfer.",
+        "student_action": "Apply independently."
+      }
+    ],
+    "misconceptions": [
+      "Answering without evidence or working.",
+      "Confusing an example with the underlying concept."
+    ],
+    "checks_for_understanding": [
+      "What evidence supports this?",
+      "What changes if an important condition changes?"
+    ],
+    "closure": "Learner states the central idea, supporting evidence and one application."
+  },
+  "runtime_mapping": {
+    "route": "teacher.explanation",
+    "domain": "teacher",
+    "description": "Teacher-facing explanation",
+    "chapter_scoped": true
+  }
+}

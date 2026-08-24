@@ -1,436 +1,387 @@
 {
-  "class": 5,
-  "className": "Class 5",
-  "totalChapters": 47,
+  "classId": "5",
   "subjects": [
-    "english",
-    "evs",
-    "hindi",
-    "mathematics"
+    "EVS",
+    "English",
+    "Hindi",
+    "Mathematics"
   ],
   "chapters": [
     {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c1",
-      "chapterNumber": 1,
-      "chapterName": "Papa’s Spectacles",
-      "path": "english/chapters/chapter_01/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c2",
-      "chapterNumber": 2,
-      "chapterName": "Gone with the Scooter",
-      "path": "english/chapters/chapter_02/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c3",
-      "chapterNumber": 3,
-      "chapterName": "The Rainbow",
-      "path": "english/chapters/chapter_03/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c4",
-      "chapterNumber": 4,
-      "chapterName": "The Wise Parrot",
-      "path": "english/chapters/chapter_04/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c5",
-      "chapterNumber": 5,
-      "chapterName": "The Frog",
-      "path": "english/chapters/chapter_05/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c6",
-      "chapterNumber": 6,
-      "chapterName": "What a Tank!",
-      "path": "english/chapters/chapter_06/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c7",
-      "chapterNumber": 7,
-      "chapterName": "Gilli Danda",
-      "path": "english/chapters/chapter_07/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c8",
-      "chapterNumber": 8,
-      "chapterName": "The Decision of the Panchayat",
-      "path": "english/chapters/chapter_08/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c9",
-      "chapterNumber": 9,
-      "chapterName": "Vocation",
-      "path": "english/chapters/chapter_09/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e05_c10",
-      "chapterNumber": 10,
-      "chapterName": "Glass Bangles",
-      "path": "english/chapters/chapter_10/package.json"
-    },
-    {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c1",
-      "chapterNumber": 1,
+      "chapterId": "eeev101",
       "chapterName": "Water — The Essence of Life",
-      "path": "evs/chapters/chapter_01/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "EVS/chapter_101_Water_The_Essence_of_Life/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c2",
-      "chapterNumber": 2,
+      "chapterId": "eeev102",
       "chapterName": "Journey of a River",
-      "path": "evs/chapters/chapter_02/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "EVS/chapter_102_Journey_of_a_River/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c3",
-      "chapterNumber": 3,
+      "chapterId": "eeev103",
       "chapterName": "The Mystery of Food",
-      "path": "evs/chapters/chapter_03/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "EVS/chapter_103_The_Mystery_of_Food/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c4",
-      "chapterNumber": 4,
+      "chapterId": "eeev104",
       "chapterName": "Our School — A Happy Place",
-      "path": "evs/chapters/chapter_04/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "EVS/chapter_104_Our_School_A_Happy_Place/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c5",
-      "chapterNumber": 5,
+      "chapterId": "eeev105",
       "chapterName": "Our Vibrant Country",
-      "path": "evs/chapters/chapter_05/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "EVS/chapter_105_Our_Vibrant_Country/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c6",
-      "chapterNumber": 6,
+      "chapterId": "eeev106",
       "chapterName": "Some Unique Places",
-      "path": "evs/chapters/chapter_06/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 106,
+      "path": "EVS/chapter_106_Some_Unique_Places/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c7",
-      "chapterNumber": 7,
+      "chapterId": "eeev107",
       "chapterName": "Energy — How Things Work",
-      "path": "evs/chapters/chapter_07/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 107,
+      "path": "EVS/chapter_107_Energy_How_Things_Work/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c8",
-      "chapterNumber": 8,
+      "chapterId": "eeev108",
       "chapterName": "Clothes — How Things Are Made",
-      "path": "evs/chapters/chapter_08/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 108,
+      "path": "EVS/chapter_108_Clothes_How_Things_Are_Made/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c9",
-      "chapterNumber": 9,
+      "chapterId": "eeev109",
       "chapterName": "Rhythms of Nature",
-      "path": "evs/chapters/chapter_09/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 109,
+      "path": "EVS/chapter_109_Rhythms_of_Nature/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "evs",
-      "subjectName": "EVS",
-      "chapterId": "evs05_c10",
-      "chapterNumber": 10,
+      "chapterId": "eeev110",
       "chapterName": "Earth — Our Shared Home",
-      "path": "evs/chapters/chapter_10/package.json"
+      "subject": "EVS",
+      "part": null,
+      "chapterNumber": 110,
+      "path": "EVS/chapter_110_Earth_Our_Shared_Home/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c1",
-      "chapterNumber": 1,
+      "chapterId": "eesa101",
+      "chapterName": "Papa’s Spectacles",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "English/chapter_101_Papa_s_Spectacles/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa102",
+      "chapterName": "Gone with the Scooter",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "English/chapter_102_Gone_with_the_Scooter/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa103",
+      "chapterName": "The Rainbow",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "English/chapter_103_The_Rainbow/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa104",
+      "chapterName": "The Wise Parrot",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "English/chapter_104_The_Wise_Parrot/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa105",
+      "chapterName": "The Frog",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "English/chapter_105_The_Frog/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa106",
+      "chapterName": "What a Tank!",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 106,
+      "path": "English/chapter_106_What_a_Tank/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa107",
+      "chapterName": "Gilli Danda",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 107,
+      "path": "English/chapter_107_Gilli_Danda/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa108",
+      "chapterName": "The Decision of the Panchayat",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 108,
+      "path": "English/chapter_108_The_Decision_of_the_Panchayat/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa109",
+      "chapterName": "Vocation",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 109,
+      "path": "English/chapter_109_Vocation/chapter_package.json"
+    },
+    {
+      "chapterId": "eesa110",
+      "chapterName": "Glass Bangles",
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 110,
+      "path": "English/chapter_110_Glass_Bangles/chapter_package.json"
+    },
+    {
+      "chapterId": "ehve101",
       "chapterName": "किरन",
-      "path": "hindi/chapters/chapter_01/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "Hindi/chapter_101_किरन/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c2",
-      "chapterNumber": 2,
+      "chapterId": "ehve102",
       "chapterName": "न्याय की कुर्सी",
-      "path": "hindi/chapters/chapter_02/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "Hindi/chapter_102_न्याय_की_कुर्सी/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c3",
-      "chapterNumber": 3,
+      "chapterId": "ehve103",
       "chapterName": "चाँद का कुरता",
-      "path": "hindi/chapters/chapter_03/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "Hindi/chapter_103_चाँद_का_कुरता/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c4",
-      "chapterNumber": 4,
+      "chapterId": "ehve104",
       "chapterName": "साँकेन",
-      "path": "hindi/chapters/chapter_04/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "Hindi/chapter_104_साँकेन/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c5",
-      "chapterNumber": 5,
+      "chapterId": "ehve105",
       "chapterName": "सुंदरिया",
-      "path": "hindi/chapters/chapter_05/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "Hindi/chapter_105_सुंदरिया/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c6",
-      "chapterNumber": 6,
+      "chapterId": "ehve106",
       "chapterName": "चतुर चित्रकार",
-      "path": "hindi/chapters/chapter_06/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 106,
+      "path": "Hindi/chapter_106_चतुर_चित्रकार/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c7",
-      "chapterNumber": 7,
+      "chapterId": "ehve107",
       "chapterName": "मेरा बचपन",
-      "path": "hindi/chapters/chapter_07/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 107,
+      "path": "Hindi/chapter_107_मेरा_बचपन/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c8",
-      "chapterNumber": 8,
+      "chapterId": "ehve108",
       "chapterName": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
-      "path": "hindi/chapters/chapter_08/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 108,
+      "path": "Hindi/chapter_108_काजीरंगा_राष्ट्रीय_उद्यान_की_यात्रा/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c9",
-      "chapterNumber": 9,
+      "chapterId": "ehve109",
       "chapterName": "न्याय",
-      "path": "hindi/chapters/chapter_09/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 109,
+      "path": "Hindi/chapter_109_न्याय/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c10",
-      "chapterNumber": 10,
+      "chapterId": "ehve110",
       "chapterName": "तीन मछलियाँ",
-      "path": "hindi/chapters/chapter_10/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 110,
+      "path": "Hindi/chapter_110_तीन_मछलियाँ/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c11",
-      "chapterNumber": 11,
+      "chapterId": "ehve111",
       "chapterName": "हमारे ये कलामंदिर",
-      "path": "hindi/chapters/chapter_11/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 111,
+      "path": "Hindi/chapter_111_हमारे_ये_कलामंदिर/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h05_c12",
-      "chapterNumber": 12,
+      "chapterId": "ehve112",
       "chapterName": "गंगा की कहानी",
-      "path": "hindi/chapters/chapter_12/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 112,
+      "path": "Hindi/chapter_112_गंगा_की_कहानी/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c1",
-      "chapterNumber": 1,
+      "chapterId": "eemm101",
       "chapterName": "We the Travellers – I",
-      "path": "mathematics/chapters/chapter_01/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "Mathematics/chapter_101_We_the_Travellers_I/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c2",
-      "chapterNumber": 2,
+      "chapterId": "eemm102",
       "chapterName": "Fractions",
-      "path": "mathematics/chapters/chapter_02/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "Mathematics/chapter_102_Fractions/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c3",
-      "chapterNumber": 3,
+      "chapterId": "eemm103",
       "chapterName": "Angles",
-      "path": "mathematics/chapters/chapter_03/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "Mathematics/chapter_103_Angles/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c4",
-      "chapterNumber": 4,
+      "chapterId": "eemm104",
       "chapterName": "Playing with Numbers",
-      "path": "mathematics/chapters/chapter_04/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "Mathematics/chapter_104_Playing_with_Numbers/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c5",
-      "chapterNumber": 5,
+      "chapterId": "eemm105",
       "chapterName": "Far and Near",
-      "path": "mathematics/chapters/chapter_05/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "Mathematics/chapter_105_Far_and_Near/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c6",
-      "chapterNumber": 6,
+      "chapterId": "eemm106",
       "chapterName": "The Dairy Farm",
-      "path": "mathematics/chapters/chapter_06/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 106,
+      "path": "Mathematics/chapter_106_The_Dairy_Farm/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c7",
-      "chapterNumber": 7,
+      "chapterId": "eemm107",
       "chapterName": "Shapes and Patterns",
-      "path": "mathematics/chapters/chapter_07/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 107,
+      "path": "Mathematics/chapter_107_Shapes_and_Patterns/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c8",
-      "chapterNumber": 8,
+      "chapterId": "eemm108",
       "chapterName": "Weight and Capacity",
-      "path": "mathematics/chapters/chapter_08/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 108,
+      "path": "Mathematics/chapter_108_Weight_and_Capacity/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c9",
-      "chapterNumber": 9,
+      "chapterId": "eemm109",
       "chapterName": "Division",
-      "path": "mathematics/chapters/chapter_09/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 109,
+      "path": "Mathematics/chapter_109_Division/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c10",
-      "chapterNumber": 10,
+      "chapterId": "eemm110",
       "chapterName": "Symmetrical Designs",
-      "path": "mathematics/chapters/chapter_10/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 110,
+      "path": "Mathematics/chapter_110_Symmetrical_Designs/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c11",
-      "chapterNumber": 11,
+      "chapterId": "eemm111",
       "chapterName": "Grandmother’s Quilt",
-      "path": "mathematics/chapters/chapter_11/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 111,
+      "path": "Mathematics/chapter_111_Grandmother_s_Quilt/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c12",
-      "chapterNumber": 12,
+      "chapterId": "eemm112",
       "chapterName": "Racing Seconds",
-      "path": "mathematics/chapters/chapter_12/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 112,
+      "path": "Mathematics/chapter_112_Racing_Seconds/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c13",
-      "chapterNumber": 13,
+      "chapterId": "eemm113",
       "chapterName": "Animal Jumps",
-      "path": "mathematics/chapters/chapter_13/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 113,
+      "path": "Mathematics/chapter_113_Animal_Jumps/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c14",
-      "chapterNumber": 14,
+      "chapterId": "eemm114",
       "chapterName": "Maps and Locations",
-      "path": "mathematics/chapters/chapter_14/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 114,
+      "path": "Mathematics/chapter_114_Maps_and_Locations/chapter_package.json"
     },
     {
-      "class": 5,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m05_c15",
-      "chapterNumber": 15,
+      "chapterId": "eemm115",
       "chapterName": "Data Through Pictures",
-      "path": "mathematics/chapters/chapter_15/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 115,
+      "path": "Mathematics/chapter_115_Data_Through_Pictures/chapter_package.json"
     }
   ]
 }

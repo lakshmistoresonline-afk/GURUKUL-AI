@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "activities",
+  "chapter_id": "eeev102",
+  "class": 5,
+  "subject": "EVS",
+  "chapter_title": "Journey of a River",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "eeev102_act01",
+        "type": "think_pair_share",
+        "title": "Explain the chapter idea",
+        "steps": [
+          "Think individually",
+          "Compare with a partner",
+          "Agree on evidence",
+          "Share reasoning"
+        ]
+      },
+      {
+        "id": "eeev102_act02",
+        "type": "sort_or_sequence",
+        "title": "Organise the learning",
+        "steps": [
+          "Select important ideas",
+          "Sort or sequence them",
+          "Explain the relationship"
+        ]
+      },
+      {
+        "id": "eeev102_act03",
+        "type": "reflection",
+        "title": "One-minute reflection",
+        "prompt": "What is the most important thing you learned and what evidence supports it?"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.activities",
+    "domain": "learning",
+    "description": "Interactive and hands-on activities",
+    "chapter_scoped": true
+  }
+}

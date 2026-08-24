@@ -1,0 +1,80 @@
+{
+  "package_name": "GURUKUL_AI_CLASS5_COMPLETE_FINAL_PACKAGE",
+  "package_version": "1.0.0",
+  "status": "COMPLETE_MERGED_CONTENT_PACKAGE",
+  "class": 5,
+  "source_packages": {
+    "core_final_package": "GURUKUL_AI_CLASS5_FINAL_PACKAGE_CORRECTED.zip",
+    "ENRICHED_FULL_PACKAGE": "GURUKUL_CLASSES_5_6_7_ENRICHED_FULL_PACKAGE(1).zip",
+    "TEACHER_EXPLANATION_FULL_PACKAGE": "GURUKUL_CLASSES_5_6_7_TEACHER_EXPLANATION_FULL_PACKAGE(1).zip",
+    "NCERT_CHAPTER_QUESTIONS": "GURUKUL_CLASSES_5_6_7_NCERT_CHAPTER_QUESTIONS(1).zip"
+  },
+  "coverage": {
+    "core_chapters": 47,
+    "complete_union_items": 51,
+    "supplemental_only_items": 4,
+    "enriched_chapters": 47,
+    "teacher_explanation_chapters": 47,
+    "ncert_question_items": 51,
+    "core_component_types": 42,
+    "core_component_mappings": 1974,
+    "core_runtime_unmapped_components": 0,
+    "merged_json_files": 2984,
+    "invalid_json_files": 0
+  },
+  "supplementary_file_counts": {
+    "ENRICHED_FULL_PACKAGE": 376,
+    "TEACHER_EXPLANATION_FULL_PACKAGE": 423,
+    "NCERT_CHAPTER_QUESTIONS": 102
+  },
+  "supplemental_only_items": [
+    {
+      "class": 5,
+      "subject": "EVS",
+      "chapter_id": "eeev1ps",
+      "enriched": false,
+      "teacher_explanation": false,
+      "ncert_questions": true
+    },
+    {
+      "class": 5,
+      "subject": "English",
+      "chapter_id": "eesa1ps",
+      "enriched": false,
+      "teacher_explanation": false,
+      "ncert_questions": true
+    },
+    {
+      "class": 5,
+      "subject": "Hindi",
+      "chapter_id": "ehve1ps",
+      "enriched": false,
+      "teacher_explanation": false,
+      "ncert_questions": true
+    },
+    {
+      "class": 5,
+      "subject": "Mathematics",
+      "chapter_id": "eemm1ps",
+      "enriched": false,
+      "teacher_explanation": false,
+      "ncert_questions": true
+    }
+  ],
+  "integrity": {
+    "core_chapters_all_have_42_components": true,
+    "core_runtime_mapping_complete": true,
+    "teacher_vs_ncert_source_sha256_mismatches": 0,
+    "all_merged_json_valid": true
+  },
+  "source_zip_sha256": {
+    "GURUKUL_AI_CLASS5_FINAL_PACKAGE_CORRECTED.zip": "c0b04629d1192f8ef4a4e97813ab9bfebb7f5459cacd80137bd6c9d68018cee9",
+    "GURUKUL_CLASSES_5_6_7_ENRICHED_FULL_PACKAGE(1).zip": "6cf397dfd813212861dd17cee09fea120c2fcb17a4c8a3ad4a872c9c3cdb01c6",
+    "GURUKUL_CLASSES_5_6_7_TEACHER_EXPLANATION_FULL_PACKAGE(1).zip": "44436e66c5e9d2054688c3d86c156e82d86a5d9e0238950267a2eee2f4198aff",
+    "GURUKUL_CLASSES_5_6_7_NCERT_CHAPTER_QUESTIONS(1).zip": "7b9695e18c27cdc3f9ac6f89d2307ddefcb9f06d23ddf1a7b30fa994d58cf577"
+  },
+  "external_assets": {
+    "original_textbook_pdfs_included": false,
+    "note": "The supplied packages contain source references/metadata but not the original NCERT PDF binaries. No PDFs or images were invented."
+  }
+}

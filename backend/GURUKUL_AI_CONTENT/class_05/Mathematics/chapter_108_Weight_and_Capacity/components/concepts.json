@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "eemm108",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Weight and Capacity",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "eemm108_concept_01",
+        "name": "Weight and Capacity",
+        "definition": "Central learning focus developed by the chapter 'Weight and Capacity'.",
+        "evidence": "Anu has recorded the weights of the items in her house."
+      },
+      {
+        "id": "eemm108_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "Check if she has recorded them correctly by putting a tick against them if they look correct."
+      },
+      {
+        "id": "eemm108_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "Refrigerator – 50 g Let Us Do Read the scales."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

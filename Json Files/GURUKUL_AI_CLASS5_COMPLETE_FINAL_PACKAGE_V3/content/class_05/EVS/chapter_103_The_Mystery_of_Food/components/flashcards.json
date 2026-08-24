@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "eeev103",
+  "class": 5,
+  "subject": "EVS",
+  "chapter_title": "The Mystery of Food",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "eeev103_fc01",
+        "front": "What is a key idea from 'The Mystery of Food'?",
+        "back": "Students also learn how traditional agricultural, and cultural practices supported health and well-being in sync with changes in seasons.",
+        "concept_id": "eeev103_concept_01"
+      },
+      {
+        "id": "eeev103_fc02",
+        "front": "What is a key idea from 'The Mystery of Food'?",
+        "back": "This unit in Grade 5 helps students explore how everyday choices support personal and collective well-being.",
+        "concept_id": "eeev103_concept_01"
+      },
+      {
+        "id": "eeev103_fc03",
+        "front": "What is a key idea from 'The Mystery of Food'?",
+        "back": "Students learn how to take care of food and explore various traditional Indian methods of food preservation.",
+        "concept_id": "eeev103_concept_01"
+      },
+      {
+        "id": "eeev103_fc04",
+        "front": "What is a key idea from 'The Mystery of Food'?",
+        "back": "They learn about the role of good microbes and cultural practices that help keep the food safe.",
+        "concept_id": "eeev103_concept_01"
+      },
+      {
+        "id": "eeev103_fc05",
+        "front": "What is a key idea from 'The Mystery of Food'?",
+        "back": "This unit also encourages students to take care of their home and surroundings for better health.",
+        "concept_id": "eeev103_concept_01"
+      },
+      {
+        "id": "eeev103_fc06",
+        "front": "What is a key idea from 'The Mystery of Food'?",
+        "back": "They learn how to make their school a greener, cleaner and more caring place through actions like waste management, water conservation, and practising kindness.",
+        "concept_id": "eeev103_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "gegp103",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_title": "A Peek Beyond the Point",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-grounded learning unit for A Peek Beyond the Point.",
+    "source_grounded_key_points": [
+      "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy.",
+      "She brought another screw from the box and was able to fix the toy.",
+      "But when he observed them closely, he saw they were of slightly different lengths.",
+      "Sonu was fascinated by how such a small difference in lengths could matter so much.",
+      "He was also curious to know how little the difference was because the screws looked nearly the same.",
+      "What is the meaning of 2 7 cm (the length of the first screw)?",
+      "10 As seen on the ruler, the unit length between two consecutive numbers is divided into 10 equal parts.",
+      "To get the length 2 7 cm, we 10 go from 0 to 2 and then take seven parts of 1 .",
+      "10 10 We read 2 7 cm as two and seven-tenth centimeters, and 3 2 cm 10 10 as three and two-tenth centimeters.",
+      "Can you explain why the unit was divided into smaller parts to measure the screws?"
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Transfer",
+      "Reflect",
+      "Assess"
+    ],
+    "source_rule": "The uploaded textbook PDF is the factual source of truth."
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

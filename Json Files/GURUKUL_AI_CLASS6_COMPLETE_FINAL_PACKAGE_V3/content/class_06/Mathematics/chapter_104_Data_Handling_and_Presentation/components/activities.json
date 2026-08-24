@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "activities",
+  "chapter_id": "fegp104",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Data Handling and Presentation",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "fegp104_act01",
+        "type": "think_pair_share",
+        "title": "Explain and justify",
+        "steps": [
+          "Think",
+          "Discuss",
+          "Find evidence",
+          "Share"
+        ]
+      },
+      {
+        "id": "fegp104_act02",
+        "type": "sort_sequence",
+        "title": "Organise the learning",
+        "steps": [
+          "Select ideas",
+          "Sort or sequence",
+          "Explain relationships"
+        ]
+      },
+      {
+        "id": "fegp104_act03",
+        "type": "reflection",
+        "title": "One-minute reflection",
+        "prompt": "What is most important to remember from Data Handling and Presentation?"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.activities",
+    "domain": "learning",
+    "description": "Interactive and hands-on activities",
+    "chapter_scoped": true
+  }
+}

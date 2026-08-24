@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "real_world_applications",
+  "chapter_id": "fegp102",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Lines and Angles",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "applications": [
+      {
+        "context": "home",
+        "task": "Find an everyday connection to Lines and Angles."
+      },
+      {
+        "context": "school",
+        "task": "Demonstrate or explain the idea at school."
+      },
+      {
+        "context": "community",
+        "task": "Identify one responsible action informed by the chapter."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.real_world_applications",
+    "domain": "learning",
+    "description": "Real-world applications",
+    "chapter_scoped": true
+  }
+}

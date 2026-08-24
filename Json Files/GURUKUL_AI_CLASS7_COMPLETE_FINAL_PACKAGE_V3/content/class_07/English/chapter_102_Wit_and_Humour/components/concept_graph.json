@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concept_graph",
+  "chapter_id": "gepr102",
+  "class": 7,
+  "subject": "English",
+  "chapter_title": "Wit and Humour",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "nodes": [
+      {
+        "id": "gepr102_c01",
+        "label": "Wit and Humour"
+      },
+      {
+        "id": "gepr102_c02",
+        "label": "Evidence and reasoning"
+      },
+      {
+        "id": "gepr102_c03",
+        "label": "Application and transfer"
+      }
+    ],
+    "edges": [
+      {
+        "from": "gepr102_c01",
+        "to": "gepr102_c02",
+        "relation": "supported_by"
+      },
+      {
+        "from": "gepr102_c02",
+        "to": "gepr102_c03",
+        "relation": "enables"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concept_graph",
+    "domain": "learning",
+    "description": "Concept relationships and graph data",
+    "chapter_scoped": true
+  }
+}

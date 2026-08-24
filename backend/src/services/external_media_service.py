@@ -38,34 +38,35 @@ class ExternalMediaService:
         await self.load_api_import_catalog()
 
     async def load_catalog_v3(self):
-        path = settings.MULTIMEDIA_EXTERNAL_CATALOG_PATH
-        if not os.path.exists(path):
-            logger.warning(f"External Multimedia Catalog V3 not found at {path}")
-            return
+        # Load catalogs class-wise from GURUKUL_AI_CONTENT
+        total_loaded = 0
+        for cid in ["05", "06", "07"]:
+            class_folder = f"class_{cid}"
+            path = os.path.join(settings.MASTER_CONTENT_ROOT, class_folder, settings.MULTIMEDIA_CATALOG_FILENAME)
 
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                data = json.load(f)
+            if not os.path.exists(path):
+                continue
 
-            resources_to_add = []
-            # Support 'chapters' and 'chapter_resources' keys
-            chapters = data.get("chapters") or data.get("chapter_resources") or []
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
 
-            for chapter in chapters:
-                chapter_id = chapter.get("chapter_id")
-                class_num = chapter.get("class")
-                class_name = f"class_{class_num}" if isinstance(class_num, int) else chapter.get("class")
-                subject = chapter.get("subject")
+                resources_to_add = []
+                # Support 'resources' (as a flat list in distributed files)
+                # or the original nested structure
+                resources_list = data.get("resources") or []
 
-                # Support 'resources' and 'external_resources' keys
-                resources = chapter.get("resources") or chapter.get("external_resources") or []
+                # If it's the old nested structure (unlikely in distributed files but for safety)
+                chapters = data.get("chapters") or data.get("chapter_resources") or []
+                for chapter in chapters:
+                    resources_list.extend(chapter.get("resources") or chapter.get("external_resources") or [])
 
-
-                for res in resources:
+                for res in resources_list:
                     # Validate and Normalize
                     url = res.get("url")
+                    chapter_id = res.get("chapter_id") or res.get("chapterId") # distributed file uses chapterId
+
                     if url is None:
-                        # Handle resources without URL (like local sources)
                         url = f"local://{chapter_id}/{res.get('id')}"
 
                     url = url.strip().rstrip("/")
@@ -75,12 +76,15 @@ class ExternalMediaService:
                     if "youtube.com" in url.lower() or "youtu.be" in url.lower():
                         continue
 
+                    subject = res.get("subject") or "General"
+                    provider = res.get("provider")
+
                     resource_data = {
                         "chapter_id": chapter_id,
-                        "class_name": class_name,
+                        "class_name": class_folder,
                         "subject": subject,
-                        "provider": res.get("provider"),
-                        "title": f"{res.get('provider')} — {subject.capitalize()}",
+                        "provider": provider,
+                        "title": f"{provider} — {subject.capitalize()}",
                         "url": url,
                         "resource_types": res.get("resource_types", []),
                         "search_url": res.get("search_url"),
@@ -92,11 +96,14 @@ class ExternalMediaService:
                     }
                     resources_to_add.append(resource_data)
 
-            await self._persist_resources(resources_to_add)
-            logger.info(f"Loaded {len(resources_to_add)} resources from Catalog V3.")
+                await self._persist_resources(resources_to_add)
+                total_loaded += len(resources_to_add)
 
-        except Exception as e:
-            logger.error(f"Error loading Catalog V3: {e}")
+            except Exception as e:
+                logger.error(f"Error loading Multimedia Catalog for {class_folder}: {e}")
+
+        if total_loaded > 0:
+            logger.info(f"Loaded {total_loaded} resources from class-wise Catalog V3.")
 
     async def load_api_import_catalog(self):
         path = settings.MULTIMEDIA_EXTERNAL_API_IMPORT_PATH

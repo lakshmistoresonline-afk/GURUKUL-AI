@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "interactive_lab",
+  "chapter_id": "eeev102",
+  "class": 5,
+  "subject": "EVS",
+  "chapter_title": "Journey of a River",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "eeev102_lab01",
+        "title": "Explore Journey of a River",
+        "objective": "Apply a central idea from 'Journey of a River' through direct learner interaction.",
+        "materials": [
+          "chapter text",
+          "paper/notebook",
+          "pencil"
+        ],
+        "instructions": [
+          "Review the relevant chapter section.",
+          "Identify the information or pattern needed for the task.",
+          "Observe a relevant real-world example, record evidence, classify it and explain what the observation shows.",
+          "Record the result and explain it."
+        ],
+        "student_action": "Observe/solve/classify/create and explain.",
+        "success_condition": "The learner's result is consistent with the chapter and includes a reason."
+      },
+      {
+        "id": "eeev102_lab02",
+        "title": "Evidence Check",
+        "objective": "Distinguish supported ideas from unsupported claims.",
+        "instructions": [
+          "Select two claims related to the chapter.",
+          "Locate supporting evidence.",
+          "Reject unsupported claims.",
+          "Explain the choice."
+        ],
+        "student_action": "Match claims with evidence.",
+        "success_condition": "Every accepted claim has relevant chapter evidence."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.interactive_lab",
+    "domain": "learning",
+    "description": "Interactive lab content",
+    "chapter_scoped": true
+  }
+}

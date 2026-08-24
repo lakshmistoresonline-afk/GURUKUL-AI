@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "eemm113",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Animal Jumps",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "eemm113_concept_01",
+        "name": "Animal Jumps",
+        "definition": "Central learning focus developed by the chapter 'Animal Jumps'.",
+        "evidence": "Numbers put in this box get multiplied by a number and come out."
+      },
+      {
+        "id": "eemm113_concept_02",
+        "name": "Evidence and reasoning",
+        "definition": "Using chapter information to support an explanation or answer.",
+        "evidence": "(a) Can you guess the multiplier if you see the 4 numbers coming out of the box?"
+      },
+      {
+        "id": "eemm113_concept_03",
+        "name": "Application",
+        "definition": "Using the chapter idea in a new but related situation.",
+        "evidence": "(b) Is there more than one possible multiplier?"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

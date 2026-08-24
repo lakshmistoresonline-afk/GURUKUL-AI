@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "student_explanation",
+  "chapter_id": "gegp206",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_title": "Constructions and Tilings",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "simple_explanation": "To learn Constructions and Tilings, first understand the main idea, then identify supporting evidence/examples or steps, and finally apply the idea.",
+    "study_steps": [
+      "Read/observe carefully",
+      "Identify the central idea",
+      "Mark evidence or working",
+      "Practise",
+      "Transfer to a new situation",
+      "Self-check"
+    ],
+    "key_points": [
+      "6 CONSTRUCTIONS AND TILINGS 6.1 Geometric Constructions Eyes Do you recall the ‘Eyes’ construction we did in Grade 6?",
+      "Of course, eyes can be drawn freehand, but we wanted to construct them so that the lower arc and upper arc of each eye look symmetrical.",
+      "We relied on our spatial estimation to determine the two centres, A and B (see the figure), from which we drew A the lower arc and upper arc respectively.",
+      "The arcs define a line XY that ‘supports’ the drawing though it is not part of the final figure.",
+      "We can start with this supporting line and systematically find the centres A and B.",
+      "For the eye to be symmetrical, or for the X Y supporting line to be the line of symmetry, the upper and lower arcs should have the same radius."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.student_explanation",
+    "domain": "learning",
+    "description": "Student-facing explanation",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "gegp203",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_title": "Finding Common Ground",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "gegp203_fc01",
+        "front": "What should you remember from Finding Common Ground?",
+        "back": "3 FINDING COMMON GROUND 3.1 The Greatest of All Sameeksha is building her new house.",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_fc02",
+        "front": "What should you remember from Finding Common Ground?",
+        "back": "She feels that the room would look nice if the floor is covered with square tiles of the same size.",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_fc03",
+        "front": "What should you remember from Finding Common Ground?",
+        "back": "She also wants to use as few tiles as possible, and for the length of the tile to be a whole number of feet.",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_fc04",
+        "front": "What should you remember from Finding Common Ground?",
+        "back": "Let us explore how to find the largest square tile that can be used.",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_fc05",
+        "front": "What should you remember from Finding Common Ground?",
+        "back": "For the tiles to fit the breadth of the room exactly, the side of the tile should be a factor of 12.",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_fc06",
+        "front": "What should you remember from Finding Common Ground?",
+        "back": "Similarly, for the tiles to fit the length of the room exactly, the side should be a factor of 16.",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_fc07",
+        "front": "What should you remember from Finding Common Ground?",
+        "back": "So the side of the tile should be a factor of both 12 and 16.",
+        "concept_id": "gegp203_c01"
+      },
+      {
+        "id": "gegp203_fc08",
+        "front": "What should you remember from Finding Common Ground?",
+        "back": "What if Sameeksha did not insist on the length of the tile to be a Try whole number of feet and the length could be a fractional number This of feet?",
+        "concept_id": "gegp203_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

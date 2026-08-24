@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_summary",
+  "chapter_id": "gees104",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "New Beginnings: Cities and States",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "summary": "'New Beginnings: Cities and States' is organised around source-supported ideas, evidence, examples, methods or arguments.",
+    "key_points": [
+      "4 CHAPTER New Beginnings: Cities and States The kingdom shall be protected by fortifying the capital and the towns at the frontiers.",
+      "The land should not only be capable of sustaining the population but also outsiders in times of calamities.",
+      "It should be beautiful, being endowed with cultivable land, mines, timber forests, elephant forests, and good pastures rich in cattle.",
+      "It should have a productive economy, with a wide variety of commodities ….",
+      "Ruins of a major structure at Rājagṛiha (modern-day Rajgir in Bihar), when it was the capital of the Magadha mahājanapada.",
+      "Why were the janapadas and mahājanapadas an important development in India’s early history?",
+      "Some of its cities were abandoned; in others, some people continued living there, but reverting to a rural or village lifestyle."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.summary",
+    "domain": "reader",
+    "description": "Chapter summary",
+    "chapter_scoped": true
+  }
+}

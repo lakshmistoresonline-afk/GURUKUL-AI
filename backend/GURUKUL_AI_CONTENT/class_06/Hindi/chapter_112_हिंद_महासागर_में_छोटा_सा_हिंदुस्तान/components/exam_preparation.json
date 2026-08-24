@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "exam_preparation",
+  "chapter_id": "fhml112",
+  "class": 6,
+  "subject": "Hindi",
+  "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "strategy": [
+      "Read carefully",
+      "Identify the tested concept",
+      "Use evidence/working",
+      "Check the answer",
+      "Explain reasoning"
+    ],
+    "must_practice": [
+      "core understanding",
+      "application",
+      "higher-order reasoning",
+      "source-based questions"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "revision.exam",
+    "domain": "revision",
+    "description": "Exam preparation content",
+    "chapter_scoped": true
+  }
+}

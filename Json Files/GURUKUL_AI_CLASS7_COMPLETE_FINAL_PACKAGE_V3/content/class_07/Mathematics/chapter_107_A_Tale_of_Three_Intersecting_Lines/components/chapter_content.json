@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "gegp107",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_title": "A Tale of Three Intersecting Lines",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-grounded learning unit for A Tale of Three Intersecting Lines.",
+    "source_grounded_key_points": [
+      "A TALE OF THREE 7 INTERSECTING LINES A triangle is the most basic closed shape.",
+      "As we know, it consists of: • three corner points, that we call the vertex of the triangle, and • three line segments or the sides of the triangle that join the pairs of vertices.",
+      "B A U X Y Z B ∆ YZX A W C ∆ ABC V ∆WUV ∆BAU U Observe the symbol used to denote a triangle and how the triangles are named using their vertices.",
+      "While naming a triangle, the vertices can come in any order.",
+      "The three sides meeting at the corners give rise to three angles that we call the angles of the triangle.",
+      "For example, in ∆ABC, these angles are ∠CAB, ∠ABC, ∠BCA, which we simply denote as ∠A, ∠B and ∠C, respectively.",
+      "What happens when the three vertices lie on a straight line?",
+      "7.1 Equilateral Triangles Among all the triangles, the equilateral triangles are the most symmetric ones.",
+      "These are triangles in which all the sides are of equal lengths.",
+      "Construct a triangle in which all the sides are of length 4 cm."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Transfer",
+      "Reflect",
+      "Assess"
+    ],
+    "source_rule": "The uploaded textbook PDF is the factual source of truth."
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

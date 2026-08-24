@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "assessment_bank",
+  "chapter_id": "eemm104",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Playing with Numbers",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "eemm104_q01",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+        "options": [
+          "In each of the following, there are two groups of numbers.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "In each of the following, there are two groups of numbers.",
+        "difficulty": "easy",
+        "concept_id": "eemm104_concept_01"
+      },
+      {
+        "id": "eemm104_q02",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+        "options": [
+          "Look carefully at the numbers in each group and their sums.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Look carefully at the numbers in each group and their sums.",
+        "difficulty": "easy",
+        "concept_id": "eemm104_concept_01"
+      },
+      {
+        "id": "eemm104_q03",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+        "options": [
+          "Interchange pairs of numbers between the two groups to make their sums equal.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Interchange pairs of numbers between the two groups to make their sums equal.",
+        "difficulty": "medium",
+        "concept_id": "eemm104_concept_01"
+      },
+      {
+        "id": "eemm104_q04",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+        "options": [
+          "Try to do this using the least number of moves.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Try to do this using the least number of moves.",
+        "difficulty": "medium",
+        "concept_id": "eemm104_concept_01"
+      },
+      {
+        "id": "eemm104_q05",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+        "options": [
+          "You could write each number on a small piece of paper.",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "You could write each number on a small piece of paper.",
+        "difficulty": "hard",
+        "concept_id": "eemm104_concept_01"
+      },
+      {
+        "id": "eemm104_q06",
+        "type": "evidence_based_mcq",
+        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+        "options": [
+          "Making Sums Equal Think what will happen to the sums if we interchange 2 and 5?",
+          "A statement unrelated to the chapter.",
+          "A statement that contradicts the chapter.",
+          "A statement that cannot be checked from the chapter."
+        ],
+        "correct_option": 0,
+        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
+        "source_evidence": "Making Sums Equal Think what will happen to the sums if we interchange 2 and 5?",
+        "difficulty": "hard",
+        "concept_id": "eemm104_concept_01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.bank",
+    "domain": "assessment",
+    "description": "Assessment question bank",
+    "chapter_scoped": true
+  }
+}

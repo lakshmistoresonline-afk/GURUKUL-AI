@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "prerequisites",
+  "chapter_id": "gepr101",
+  "class": 7,
+  "subject": "English",
+  "chapter_title": "Learning Together",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "assumed_knowledge": [
+      "Foundational Grade 6 learning appropriate to the subject.",
+      "Ability to follow multi-step instructions and explain reasoning.",
+      "Basic comparison, classification and evidence-use skills."
+    ],
+    "diagnostic_prompts": [
+      "What do you already know about Learning Together?",
+      "Which related concept is easiest for you?"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.prerequisites",
+    "domain": "learning",
+    "description": "Prerequisite knowledge",
+    "chapter_scoped": true
+  }
+}

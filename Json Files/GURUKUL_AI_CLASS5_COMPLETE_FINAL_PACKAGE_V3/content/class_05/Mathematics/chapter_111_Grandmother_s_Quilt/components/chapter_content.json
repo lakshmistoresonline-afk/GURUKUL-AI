@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "eemm111",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Grandmother’s Quilt",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "The uploaded textbook chapter 'Grandmother’s Quilt' develops mathematical reasoning and application through the chapter 'Grandmother’s Quilt'.",
+    "source_grounded_key_points": [
+      "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes.",
+      "Tick the lace option that would cover the entire border of the quilt.",
+      "She decides to use two different coloured laces.",
+      "How much lace of each kind will be needed to cover the entire border?",
+      "Recall that the length of the border of a shape is called its perimeter.",
+      "Draw two rectangles each having the following perimeters.",
+      "(a) 26 cm (b) 18 cm 4 cm 5 cm Let Us Do (i) Red lace 40 units (ii) Green lace 50 units (iii) Blue lace 25 units Chapter-11 Grandmother's Quit.indd 142Chapter-11 Grandmother's Quit.indd 142 7/2/2025 6:18:33 PM7/2/2025 6:18:33 PM 143 Preetha and Adrit’s grandmother is making a rug with square patches.",
+      "How many patches have they used to make this?"
+    ],
+    "canonical_note": "These points were extracted from the uploaded chapter PDF; the full PDF remains the source of truth.",
+    "teaching_sequence": [
+      "Connect to prior knowledge.",
+      "Explore the chapter content and examples.",
+      "Check understanding after each major idea.",
+      "Apply the ideas in practice and discussion.",
+      "Review and assess mastery."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

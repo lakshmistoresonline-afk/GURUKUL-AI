@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "prerequisites",
+  "chapter_id": "gecu102",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "assumed_knowledge": [
+      "Foundational Grade 6 learning appropriate to the subject.",
+      "Ability to follow multi-step instructions and explain reasoning.",
+      "Basic comparison, classification and evidence-use skills."
+    ],
+    "diagnostic_prompts": [
+      "What do you already know about Exploring Substances: Acidic, Basic, and Neutral?",
+      "Which related concept is easiest for you?"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.prerequisites",
+    "domain": "learning",
+    "description": "Prerequisite knowledge",
+    "chapter_scoped": true
+  }
+}

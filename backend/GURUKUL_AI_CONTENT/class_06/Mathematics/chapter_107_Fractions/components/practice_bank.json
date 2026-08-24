@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "practice_bank",
+  "chapter_id": "fegp107",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Fractions",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fegp107_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Fractions?",
+        "options": [
+          "7 Fractions Recall that when some whole number of things are shared equally among some number of people, fractions tell us how much each share is.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "7 Fractions Recall that when some whole number of things are shared equally among some number of people, fractions tell us how much each share is.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Fractions?",
+        "options": [
+          "Shabnam: \u0007Do you remember, if one roti is divided equally between two children, how much roti will each child get?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Shabnam: \u0007Do you remember, if one roti is divided equally between two children, how much roti will each child get?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Fractions?",
+        "options": [
+          "We also sometimes read this as 2 ‘one upon two.’ Mukta: \u0007If one roti is equally shared among 4 children, how much roti will one child get?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "We also sometimes read this as 2 ‘one upon two.’ Mukta: \u0007If one roti is equally shared among 4 children, how much roti will one child get?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Fractions?",
+        "options": [
+          "Shabnam: When 2 children share 1 roti equally, each child gets 12 roti.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Shabnam: When 2 children share 1 roti equally, each child gets 12 roti.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Fractions?",
+        "options": [
+          "When 4 children share 1 roti equally, each child gets 14 roti.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "When 4 children share 1 roti equally, each child gets 14 roti.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Fractions?",
+        "options": [
+          "Since, in the second group more children share the Reprint 2026-27 Chapter 7_Fractions.indd 151 13-08-2024 15:39:38 Ganita Prakash | Grade 6 same one roti, each child gets a smaller share.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Since, in the second group more children share the Reprint 2026-27 Chapter 7_Fractions.indd 151 13-08-2024 15:39:38 Ganita Prakash | Grade 6 same one roti, each child gets a smaller share.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fegp107_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.bank",
+    "domain": "practice",
+    "description": "Practice question bank",
+    "chapter_scoped": true
+  }
+}

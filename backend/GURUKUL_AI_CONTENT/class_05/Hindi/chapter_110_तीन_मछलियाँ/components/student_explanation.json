@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "student_explanation",
+  "chapter_id": "ehve110",
+  "class": 5,
+  "subject": "Hindi",
+  "chapter_title": "तीन मछलियाँ",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "simple_explanation": "'तीन मछलियाँ' is studied by first understanding the main idea, then noticing the evidence, examples and relationships in the chapter.",
+    "study_steps": [
+      "Read/observe the chapter carefully.",
+      "Mark important ideas or steps.",
+      "Explain them in your own words.",
+      "Try a new example.",
+      "Check your answer with evidence."
+    ],
+    "key_points": [
+      "उत्तर भारत क े एक सुंदर सरोवर में तीन मछललयाँ रहती थीं लिनमें गाढ़ी लमत्रता थी।",
+      "तीनों मछललयाँ सरोवर की अनय मछललयों क े साथ लमल-िुलकर लवनोद और सैर करती रहती थीं।",
+      "वह बहुत बुलधिमती थी औ र अपने नाम क े अनुसार भलवषय की स ंभालवत समसयाओं का हल पहले से ही लनकालकर रखती थी।",
+      "िैसा उसका नाम था वैसी ही तीक्ष्ण और तीव्र उसकी ब ुलधि थी।",
+      "वह भलवषय की लकसी भी आशंलकत समसया का पहले से समाधान करने की आवश यकता नहीं समझती थी क योंलक उसकी सूझ-बूझ इतनी पैनी थी लक वह समय पड़ने पर लकसी भी उलझन का हल क्षष्ण भर में लनकाल ले ती थी।"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.student_explanation",
+    "domain": "learning",
+    "description": "Student-facing explanation",
+    "chapter_scoped": true
+  }
+}

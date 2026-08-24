@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "eeev108",
+  "class": 5,
+  "subject": "EVS",
+  "chapter_title": "Clothes — How Things Are Made",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "The uploaded textbook chapter 'Clothes — How Things Are Made' develops observation, evidence, everyday application and connected understanding through 'Clothes — How Things Are Made'.",
+    "source_grounded_key_points": [
+      "Patterns with Threads Look closely around you.",
+      "Do you see birds building nests or spiders spinning webs?",
+      "Nature is full of hidden artists — animals, birds and insects who weave, stitch, design, and even glue things together.",
+      "Did you know we have a hidden artist around us who has been weaving long before humans ever did?",
+      "Clothes — How Things are Made8 Chapter 8.indd 131Chapter 8.indd 131 10-Jul-25 6:18:10 PM10-Jul-25 6:18:10 PM Our Wondrous World 132 The Indian handloom sector employs over 45 lakh people, especially women and rural artisans, making it one of the largest cottage industries in the world.",
+      "The male baya weaver is a weaverbird, who builds beautiful hanging nests from grass.",
+      "They weave the strands over and under to make the nest strong.",
+      "The nest is shaped like a pouch and hangs from the branches of a tree."
+    ],
+    "canonical_note": "These points were extracted from the uploaded chapter PDF; the full PDF remains the source of truth.",
+    "teaching_sequence": [
+      "Connect to prior knowledge.",
+      "Explore the chapter content and examples.",
+      "Check understanding after each major idea.",
+      "Apply the ideas in practice and discussion.",
+      "Review and assess mastery."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

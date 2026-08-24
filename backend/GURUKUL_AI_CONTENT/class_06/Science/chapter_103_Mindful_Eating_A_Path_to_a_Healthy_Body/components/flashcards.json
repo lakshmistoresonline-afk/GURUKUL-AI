@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "fecu103",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Mindful Eating: A Path to a Healthy Body",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "fecu103_fc01",
+        "front": "What key point should you remember from Mindful Eating: A Path to a Healthy Body?",
+        "back": "One who eats food that is wholesome, in moderate quantities, and appropriate for the season, time, and place.",
+        "concept_id": "fecu103_c01"
+      },
+      {
+        "id": "fecu103_fc02",
+        "front": "What key point should you remember from Mindful Eating: A Path to a Healthy Body?",
+        "back": "(Wise saying) Medu and Mishti read ‘thought of the day’ on अन्‍नेन जातानि जीवन्‍त‍ि the school noticeboard annena jātāni jivanti every day.",
+        "concept_id": "fecu103_c01"
+      },
+      {
+        "id": "fecu103_fc03",
+        "front": "What key point should you remember from Mindful Eating: A Path to a Healthy Body?",
+        "back": "Today’s thought, ‘annena jātāni jivanti’, makes them curious.",
+        "concept_id": "fecu103_c01"
+      },
+      {
+        "id": "fecu103_fc04",
+        "front": "What key point should you remember from Mindful Eating: A Path to a Healthy Body?",
+        "back": "Mishti tells Medu that it is a Sanskrit saying which means ‘food gives life to living beings.’ Let us try to understand the significance of this saying.",
+        "concept_id": "fecu103_c01"
+      },
+      {
+        "id": "fecu103_fc05",
+        "front": "What key point should you remember from Mindful Eating: A Path to a Healthy Body?",
+        "back": "Activity 3.1: Let us record All of us eat food every day.",
+        "concept_id": "fecu103_c01"
+      },
+      {
+        "id": "fecu103_fc06",
+        "front": "What key point should you remember from Mindful Eating: A Path to a Healthy Body?",
+        "back": "List the food items you have consumed over the week in Table 3.1.",
+        "concept_id": "fecu103_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

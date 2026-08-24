@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "gecu108",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Measurement of Time and Motion",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Measurement of Time and Motion.",
+    "explanation_sections": [
+      {
+        "title": "Activate",
+        "explanation": "Connect the chapter to prior knowledge, observation or experience."
+      },
+      {
+        "title": "Build",
+        "explanation": "Teach from the source-grounded points and examples.",
+        "source_evidence": [
+          "Measurement of 8 Time and Motion Prerna and her younger sister are watching a sports channel on television.",
+          "Prerna enjoys running and she has been declared the fastest runner among the girls in her district for winning the 100 metre sprint at an interschool competition held at the district level.",
+          "She dreams of representing India at the international level in 100 metre sprint contests in future.",
+          "While watching the rerun of sprints at the Olympic games held in the past, Prerna is always amazed that the measurement of the time taken for the race is so advanced that they could identify the winner even when two sprinters seemed to cross the ﬁnish line almost together.",
+          "However, in her school, the sports teacher only used a special kind of watch called a ‘stopwatch’ for timing the school races."
+        ]
+      },
+      {
+        "title": "Reason",
+        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
+      },
+      {
+        "title": "Transfer",
+        "explanation": "Move from the textbook context to a closely related new situation."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Predict, recall or observe."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model the chapter content.",
+        "student_action": "Identify evidence or method."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Probe reasoning.",
+        "student_action": "Explain and justify."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide transfer.",
+        "student_action": "Apply independently."
+      }
+    ],
+    "misconceptions": [
+      "Answering without evidence or working.",
+      "Confusing an example with the underlying concept."
+    ],
+    "checks_for_understanding": [
+      "What evidence supports this?",
+      "What changes if an important condition changes?"
+    ],
+    "closure": "Learner states the central idea, supporting evidence and one application."
+  },
+  "runtime_mapping": {
+    "route": "teacher.explanation",
+    "domain": "teacher",
+    "description": "Teacher-facing explanation",
+    "chapter_scoped": true
+  }
+}

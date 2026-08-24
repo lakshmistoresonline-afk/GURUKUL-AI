@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "common_mistakes",
+  "chapter_id": "fecu111",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Nature’s Treasures",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "mistakes": [
+      {
+        "mistake": "Answering without evidence or working.",
+        "correction": "Return to the source and show support."
+      },
+      {
+        "mistake": "Applying an idea outside relevant conditions.",
+        "correction": "Check what makes the concept applicable."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "tutor.common_mistakes",
+    "domain": "tutor",
+    "description": "Common mistakes and correction guidance",
+    "chapter_scoped": true
+  }
+}

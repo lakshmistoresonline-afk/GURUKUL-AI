@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "student_explanation",
+  "chapter_id": "eesa104",
+  "class": 5,
+  "subject": "English",
+  "chapter_title": "The Wise Parrot",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "simple_explanation": "'The Wise Parrot' is studied by first understanding the main idea, then noticing the evidence, examples and relationships in the chapter.",
+    "study_steps": [
+      "Read/observe the chapter carefully.",
+      "Mark important ideas or steps.",
+      "Explain them in your own words.",
+      "Try a new example.",
+      "Check your answer with evidence."
+    ],
+    "key_points": [
+      "Let us Read 4 The Wise Parrot In a quiet village, a rich merchant kept a bright and talkative parrot in a cage of gold.",
+      "The parrot had a sharp mind and often entertained the merchant with stories and songs.",
+      "However, deep inside, the bird longed for the open skies and green trees.",
+      "One day, the merchant decided to travel far away for business.",
+      "He thought he would do something to please his pet."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.student_explanation",
+    "domain": "learning",
+    "description": "Student-facing explanation",
+    "chapter_scoped": true
+  }
+}

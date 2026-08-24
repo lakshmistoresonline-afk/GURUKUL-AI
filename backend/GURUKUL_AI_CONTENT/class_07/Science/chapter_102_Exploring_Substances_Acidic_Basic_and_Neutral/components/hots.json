@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "hots",
+  "chapter_id": "gecu102",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "gecu102_h1",
+        "question": "How would you apply an important idea from Exploring Substances: Acidic, Basic, and Neutral in a new situation?",
+        "reasoning": "Identify, justify and transfer."
+      },
+      {
+        "id": "gecu102_h2",
+        "question": "What evidence would strengthen or weaken a conclusion related to this chapter?",
+        "reasoning": "Evaluate evidence."
+      },
+      {
+        "id": "gecu102_h3",
+        "question": "Compare two possible approaches. Which is better and why?",
+        "reasoning": "Use criteria and evidence."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "assessment.hots",
+    "domain": "assessment",
+    "description": "Higher-order thinking questions",
+    "chapter_scoped": true
+  }
+}

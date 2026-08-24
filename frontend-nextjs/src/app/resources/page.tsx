@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import Sidebar from '@/components/Sidebar';
 import TopBar from '@/components/TopBar';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -67,10 +68,11 @@ export default function ResourcesPage() {
                     </div>
                  </div>
                  <div className="relative z-10 w-full md:w-[400px] aspect-square bg-blue-600/10 rounded-[48px] border border-white/5 flex items-center justify-center p-12 group overflow-hidden">
-                    <img
+                    <Image
                       src="https://api.dicebear.com/7.x/shapes/svg?seed=resource&backgroundColor=0ea5e9"
                       alt="Resource Hub"
-                      className="w-full h-full opacity-60 group-hover:scale-110 transition-transform duration-700"
+                      fill
+                      className="opacity-60 group-hover:scale-110 transition-transform duration-700 object-contain p-12"
                     />
                     <Sparkles className="absolute bottom-10 right-10 text-blue-400 animate-pulse" size={48} />
                  </div>

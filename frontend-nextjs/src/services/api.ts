@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8001';
+const API_URL = 'http://localhost:8001';
+console.log("API: Initializing with URL:", API_URL);
 
 const api = axios.create({
   baseURL: API_URL,
@@ -39,7 +40,7 @@ api.interceptors.response.use(
     } else if (error.response?.status === 404) {
        console.warn(`API: 404 Not Found - ${error.config.url}`);
     } else {
-      console.error(`API Error (${error.response?.status || 'Network'}):`, error.message);
+      console.error(`API Error (${error.response?.status || 'Network'}):`, error.message, "URL:", error.config?.url);
     }
     return Promise.reject(error);
   }
@@ -51,13 +52,13 @@ const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
 export const chapterService = {
   processChapter: async (formData: FormData) => {
-    const response = await api.post('/api/chapters/process', formData, {
+    const response = await api.post('api/chapters/process', formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
     });
     return response.data;
   },
   getJobStatus: async (jobId: string) => {
-    const response = await api.get(`/api/chapters/status/${jobId}`);
+    const response = await api.get(`api/chapters/status/${jobId}`);
     return response.data;
   },
   getPackage: async (className: string, subject: string, chapterId: string, signal?: AbortSignal) => {
@@ -66,16 +67,18 @@ export const chapterService = {
        return chapterCache[cacheKey].data;
     }
 
-    const response = await api.get(`/api/chapters/package/${className}/${subject}/${chapterId}`, { signal });
+    const response = await api.get(`api/chapters/package/${className}/${subject}/${chapterId}`, { signal });
     chapterCache[cacheKey] = { data: response.data, timestamp: Date.now() };
     return response.data;
   },
   getHierarchy: async () => {
     const cacheKey = 'hierarchy';
     if (chapterCache[cacheKey] && (Date.now() - chapterCache[cacheKey].timestamp < CACHE_TTL)) {
+       console.log("API: getHierarchy using cache");
        return chapterCache[cacheKey].data;
     }
-    const response = await api.get('/api/chapters/explorer/hierarchy');
+    const response = await api.get('api/chapters/explorer/hierarchy');
+    console.log("API: getHierarchy fetched from server", response.data);
     chapterCache[cacheKey] = { data: response.data, timestamp: Date.now() };
     return response.data;
   },
@@ -86,11 +89,11 @@ export const chapterService = {
 
 export const mediaService = {
   generateMedia: async (chapterId: string, className: string, subject: string, type = 'animation') => {
-    const response = await api.post('/api/media/generate', { chapter_id: chapterId, class_name: className, subject, type });
+    const response = await api.post('api/media/generate', { chapter_id: chapterId, class_name: className, subject, type });
     return response.data;
   },
   getStatus: async (jobId: string) => {
-    const response = await api.get(`/api/media/status/${jobId}`);
+    const response = await api.get(`api/media/status/${jobId}`);
     return response.data;
   },
   getChapterMedia: async (chapterId: string, signal?: AbortSignal) => {
@@ -98,12 +101,12 @@ export const mediaService = {
     if (chapterCache[cacheKey] && (Date.now() - chapterCache[cacheKey].timestamp < CACHE_TTL)) {
        return chapterCache[cacheKey].data;
     }
-    const response = await api.get(`/api/media/chapter/${chapterId}`, { signal });
+    const response = await api.get(`api/media/chapter/${chapterId}`, { signal });
     chapterCache[cacheKey] = { data: response.data, timestamp: Date.now() };
     return response.data;
   },
   discoverMedia: async (params: { class_name?: string, subject?: string, limit?: number }) => {
-    const response = await api.get('/api/media/discover', { params });
+    const response = await api.get('api/media/discover', { params });
     return response.data;
   },
   getExternalResources: async (params: {
@@ -114,19 +117,19 @@ export const mediaService = {
     search?: string,
     limit?: number
   }, signal?: AbortSignal) => {
-    const response = await api.get('/api/media/external', { params, signal });
+    const response = await api.get('api/media/external', { params, signal });
     return response.data;
   },
   getExternalStats: async () => {
-    const response = await api.get('/api/media/external/stats');
+    const response = await api.get('api/media/external/stats');
     return response.data;
   },
   getClassSummary: async (className: string) => {
-    const response = await api.get(`/api/media/summary/${className}`);
+    const response = await api.get(`api/media/summary/${className}`);
     return response.data;
   },
   getHubData: async () => {
-    const response = await api.get('/api/media/hub');
+    const response = await api.get('api/media/hub');
     return response.data;
   },
   getAdminAllExternal: async (params: {
@@ -134,7 +137,7 @@ export const mediaService = {
     subject?: string,
     status?: string
   }) => {
-    const response = await api.get('/api/media/admin/external/all', { params });
+    const response = await api.get('api/media/admin/external/all', { params });
     return response.data;
   },
   getAdminPending: async (params: {
@@ -142,19 +145,19 @@ export const mediaService = {
     subject?: string,
     provider?: string
   }) => {
-    const response = await api.get('/api/media/admin/external/pending', { params });
+    const response = await api.get('api/media/admin/external/pending', { params });
     return response.data;
   },
   verifyExternal: async (resourceId: string) => {
-    const response = await api.post(`/api/media/admin/external/${resourceId}/verify`);
+    const response = await api.post(`api/media/admin/external/${resourceId}/verify`);
     return response.data;
   },
   rejectExternal: async (resourceId: string) => {
-    const response = await api.post(`/api/media/admin/external/${resourceId}/reject`);
+    const response = await api.post(`api/media/admin/external/${resourceId}/reject`);
     return response.data;
   },
   reloadExternalCatalogs: async () => {
-    const response = await api.post('/api/media/admin/external/reload');
+    const response = await api.post('api/media/admin/external/reload');
     return response.data;
   }
 };
@@ -165,24 +168,24 @@ export const resourceService = {
     if (chapterCache[cacheKey] && (Date.now() - chapterCache[cacheKey].timestamp < CACHE_TTL)) {
        return chapterCache[cacheKey].data;
     }
-    const response = await api.get(`/api/resources/${chapterId}`, { signal });
+    const response = await api.get(`api/resources/${chapterId}`, { signal });
     chapterCache[cacheKey] = { data: response.data, timestamp: Date.now() };
     return response.data;
   },
   verifyResource: async (chapterInfo: any, candidate: any) => {
-    const response = await api.post('/api/resources/verify', { chapter_info: chapterInfo, candidate });
+    const response = await api.post('api/resources/verify', { chapter_info: chapterInfo, candidate });
     return response.data;
   },
   analyzeCollection: async (providerId: string, collectionId: string) => {
-    const response = await api.post(`/api/resources/analyze-collection?provider_id=${providerId}&collection_id=${collectionId}`);
+    const response = await api.post(`api/resources/analyze-collection?provider_id=${providerId}\u0026collection_id=${collectionId}`);
     return response.data;
   },
   runIntegrityCheck: async () => {
-    const response = await api.post('/api/resources/check-integrity');
+    const response = await api.post('api/resources/check-integrity');
     return response.data;
   },
   getCollections: async () => {
-    const response = await api.get('/api/resources/collections');
+    const response = await api.get('api/resources/collections');
     return response.data;
   },
 };

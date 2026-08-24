@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "fegp105",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Prime Time",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-derived learning unit: Prime Time.",
+    "source_grounded_key_points": [
+      "5 PRIME TIME 5.1 Common Multiples and Common Factors Idli-Vada Game Children sit in a circle and play a game of numbers.",
+      "But when it is the turn of 3, 6, 9, … (multiples of 3), the player should say ‘idli’ instead of the number.",
+      "When it is the turn of 5, 10, … (multiples of 5), the player should say ‘vada’ instead of the number.",
+      "When a number is both a multiple of 3 and a multiple of 5, the player should say ‘idli-vada’!",
+      "The game continues in rounds till only one person remains.",
+      "For which numbers should the players say ‘idli’ instead of saying the number?",
+      "Which is the first number for which the players should say, ‘idli-vada’?",
+      "It is 15, which is a multiple of 3, and also a multiple of 5."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Reflect",
+      "Assess"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

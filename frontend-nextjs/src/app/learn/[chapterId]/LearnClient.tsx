@@ -24,12 +24,37 @@ import {
   History,
   Info,
   AlertTriangle,
-  ArrowRight
+  ArrowRight,
+  Sparkles,
+  Layers,
+  Users
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FormattedText from '@/components/FormattedText';
 import MindMap from '@/components/mindmap/MindMap';
 import { useAuth } from '@/context/AuthContext';
+
+const BOILERPLATE_PHRASES = [
+  "chapter-relevant word",
+  "statement unrelated to the chapter",
+  "statement that contradicts",
+  "cannot be checked from the chapter",
+  "develops reading, language, interpretation",
+  "main learning is organised around",
+  "source-supported points below",
+  "Explain the central ideas and evidence",
+  "Use the chapter's concepts or language",
+  "Identify relationships, patterns",
+  "Communicate reasoning clearly",
+  "Apply at least one chapter idea",
+  "extracted from the uploaded chapter PDF",
+  "full PDF remains the source of truth"
+];
+
+function isBoilerplate(text: string): boolean {
+  if (!text) return true;
+  return BOILERPLATE_PHRASES.some(phrase => text.toLowerCase().includes(phrase.toLowerCase()));
+}
 
 export default function LearnClient() {
   const { profile, loading: authLoading } = useAuth();
@@ -47,6 +72,7 @@ export default function LearnClient() {
   const [isReading, setIsReading] = useState(false);
   const [remediationContent, setRemediationContent] = useState<any[]>([]);
   const [isRemediating, setIsRemediating] = useState(false);
+  const [selectedMedia, setSelectedMedia] = useState<{ title: string, url: string } | null>(null);
 
   useEffect(() => {
     if (authLoading || !profile || !className) return;
@@ -87,18 +113,26 @@ export default function LearnClient() {
 
   const lesson = pkg ? normalizeLesson(pkg) : null;
 
+  // Refined steps with boilerplate filtering
   const steps = isRemediating ? ['Remediation'] : [
-    'Overview',
+    (lesson?.introduction && !isBoilerplate(lesson.introduction)) ? 'Overview' : null,
     (lesson?.hasAnimation || lesson?.hasMindMap) ? 'Visual Lesson' : null,
-    lesson?.concepts?.length ? 'Concepts' : null,
-    'Study Material',
-    lesson?.story ? 'Story Mode' : null,
-    lesson?.activities?.length ? 'Activity' : null,
+    (lesson?.concepts?.filter(c => c.explanation && !isBoilerplate(c.explanation)).length) ? 'Concepts' : null,
+    (lesson?.teacherExplanation && !isBoilerplate(lesson.teacherExplanation)) ? 'Study Material' : null,
+    (lesson?.story && !isBoilerplate(lesson.story)) ? 'Story Mode' : null,
+    (lesson?.activities?.length) ? 'Activity' : null,
     'Quick Quiz',
-    lesson?.flashcards?.length ? 'Revision' : null,
+    (lesson?.flashcards?.length || lesson?.retrievalPractice?.length) ? 'Revision' : null,
     'AI Tutor',
     'Finish'
   ].filter(Boolean) as string[];
+
+  // Add Overview if everything else is missing but intro exists
+  if (steps.length === 2 && steps.includes('Quick Quiz')) { // Only Quiz and Tutor/Finish
+      if (lesson?.introduction && !steps.includes('Overview')) {
+          steps.unshift('Overview');
+      }
+  }
 
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
@@ -129,28 +163,70 @@ export default function LearnClient() {
 
              <div className="space-y-8">
                 {remediationContent.map((rem, i) => (
-                   <div key={i} className="p-10 bg-white border border-border rounded-[50px] shadow-xl space-y-6 relative overflow-hidden group">
+                   <div key={i} className="p-12 bg-white border border-border rounded-[50px] shadow-2xl space-y-10 relative overflow-hidden group">
                       <div className="flex items-center justify-between">
-                         <span className="px-4 py-1.5 bg-red-50 text-red-600 rounded-full text-[10px] font-black uppercase tracking-widest border border-red-100">Weak Concept Identified</span>
-                         <span className="text-slate-300 font-black italic">Ref: 0{i+1}</span>
-                      </div>
-                      <h3 className="text-3xl font-black text-slate-800 tracking-tighter">{rem.concept}</h3>
-                      <FormattedText content={rem.explanation} className="text-lg text-slate-600 leading-relaxed" />
-
-                      {rem.hint && (
-                         <div className="p-6 bg-blue-50/50 rounded-3xl border border-blue-100 flex gap-4">
-                            <Lightbulb className="text-amber-400 shrink-0" size={24} />
-                            <p className="text-sm font-medium text-slate-700 italic">{rem.hint}</p>
+                         <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center text-red-600">
+                               <Sparkles size={24} />
+                            </div>
+                            <span className="px-4 py-1.5 bg-red-50 text-red-600 rounded-full text-[10px] font-black uppercase tracking-widest border border-red-100">Targeted Review</span>
                          </div>
-                      )}
+                         <span className="text-slate-300 font-black italic">Module {i+1}</span>
+                      </div>
 
-                      <button
-                         onClick={() => router.push(`/quiz/${chapterId}?class=${className}&subject=${subject}&difficulty=Easy`)}
-                         className="flex items-center gap-3 text-primary font-black uppercase tracking-widest text-xs hover:gap-5 transition-all"
-                      >
-                         Practice Reassessment <ArrowRight size={16} />
-                      </button>
-                      <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/5 rounded-full blur-3xl -mr-10 -mt-10" />
+                      <div className="space-y-4">
+                         <h3 className="text-4xl font-black text-slate-800 tracking-tighter">{rem.concept}</h3>
+                         <div className="w-20 h-1.5 bg-red-500 rounded-full" />
+                      </div>
+
+                      <div className="grid grid-cols-1 gap-10">
+                         <div className="space-y-4">
+                            <h4 className="text-xs font-black uppercase tracking-widest text-slate-400">Core Explanation</h4>
+                            <FormattedText content={rem.explanation} className="text-xl text-slate-700 leading-relaxed font-medium" />
+                         </div>
+
+                         {rem.example && (
+                            <div className="p-8 bg-slate-50 rounded-[40px] border border-slate-100 space-y-4">
+                               <h4 className="text-[10px] font-black uppercase tracking-widest text-blue-500">Illustrative Example</h4>
+                               <FormattedText content={rem.example} className="text-lg text-slate-600 italic leading-relaxed" />
+                            </div>
+                         )}
+
+                         {rem.hint && (
+                            <div className="p-8 bg-amber-50/50 rounded-[40px] border border-amber-100 flex gap-6">
+                               <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-amber-500 shadow-sm shrink-0 mt-1">
+                                  <Lightbulb size={28} />
+                               </div>
+                               <div className="space-y-2">
+                                  <h4 className="text-[10px] font-black uppercase tracking-widest text-amber-600">Pro-Tip for Mastery</h4>
+                                  <p className="text-lg font-bold text-amber-900 leading-tight">{rem.hint}</p>
+                               </div>
+                            </div>
+                         )}
+
+                         {rem.application && (
+                            <div className="p-8 bg-indigo-50/30 rounded-[40px] border border-indigo-100 flex gap-6">
+                               <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-indigo-500 shadow-sm shrink-0 mt-1">
+                                  <Zap size={28} />
+                               </div>
+                               <div className="space-y-2">
+                                  <h4 className="text-[10px] font-black uppercase tracking-widest text-indigo-600">Real World Application</h4>
+                                  <p className="text-lg font-bold text-indigo-900 leading-tight">{rem.application}</p>
+                               </div>
+                            </div>
+                         )}
+                      </div>
+
+                      <div className="pt-10 border-t border-slate-100 flex items-center justify-between">
+                         <p className="text-sm text-slate-400 font-bold">Ready to try again?</p>
+                         <button
+                            onClick={() => router.push(`/quiz/${chapterId}?class=${className}&subject=${subject}&difficulty=Easy`)}
+                            className="bg-slate-900 text-white px-10 py-4 rounded-3xl font-black uppercase tracking-widest text-[10px] hover:bg-red-600 transition-all shadow-xl active:scale-95 flex items-center gap-3"
+                         >
+                            Retest this concept <ArrowRight size={16} />
+                         </button>
+                      </div>
+                      <div className="absolute top-0 right-0 w-64 h-64 bg-red-500/5 rounded-full blur-[100px] -mr-32 -mt-32" />
                    </div>
                 ))}
              </div>
@@ -191,23 +267,54 @@ export default function LearnClient() {
              </div>
 
              {lesson?.hasMindMap && (
-                <div className="bg-slate-50 p-10 rounded-[60px] border-2 border-slate-100 shadow-inner">
+                <div className="bg-white p-12 rounded-[60px] border border-slate-200 shadow-xl overflow-hidden">
                    <MindMap data={lesson.mindMap} />
                 </div>
              )}
 
              {lesson?.hasAnimation && (
-                <div className="aspect-video bg-slate-100 rounded-[40px] flex flex-col items-center justify-center border-2 border-dashed border-slate-200 relative group overflow-hidden">
-                   <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-primary shadow-xl group-hover:scale-110 transition-transform cursor-pointer">
-                      <Play size={32} fill="currentColor" />
+                <div
+                   onClick={() => {
+                      const multimedia = pkg?.components?.multimedia?.content;
+                      const video = multimedia?.resources?.find((r: any) => r.type === 'video' || r.type === 'video_discovery') ||
+                                    multimedia?.videos?.[0] ||
+                                    multimedia?.discovery_links?.[0];
+
+                      if (video?.url) {
+                          setSelectedMedia({ title: video.title || 'Visual Narrative', url: video.url });
+                      } else {
+                          alert("AI Visual Narrative is currently being indexed for this chapter.");
+                      }
+                   }}
+                   className="aspect-video bg-slate-900 rounded-[48px] flex flex-col items-center justify-center border-8 border-white shadow-2xl relative group overflow-hidden cursor-pointer"
+                >
+                   <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 group-hover:opacity-0 transition-opacity" />
+                   <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center text-primary shadow-2xl group-hover:scale-110 transition-transform relative z-10">
+                      <Play size={40} fill="currentColor" className="ml-1" />
                    </div>
-                   <p className="mt-6 font-black text-slate-400 text-xs uppercase tracking-[0.2em]">Play AI Animated Lesson</p>
+                   <p className="mt-8 font-black text-white text-sm uppercase tracking-[0.3em] relative z-10 shadow-sm">Launch AI Visual Narrative</p>
                 </div>
              )}
 
-             {!lesson?.hasMindMap && !lesson?.hasAnimation && lesson?.animationFallback && (
-                <div className="p-10 bg-blue-50/30 rounded-[40px] border border-blue-100 italic text-slate-600 leading-relaxed">
-                   <FormattedText content={lesson.animationFallback} />
+             {!lesson?.hasMindMap && !lesson?.hasAnimation && (
+                <div className="p-16 bg-white border border-slate-200 rounded-[64px] shadow-sm space-y-10">
+                    <div className="w-20 h-20 bg-indigo-50 text-indigo-600 rounded-[28px] flex items-center justify-center mx-auto shadow-inner"><Layers size={32} /></div>
+                    <div className="space-y-6 max-w-2xl mx-auto">
+                        <h3 className="text-2xl font-black text-slate-900 uppercase tracking-tight">Conceptual Visualization</h3>
+                        <p className="text-lg text-slate-600 font-medium leading-relaxed italic">
+                            {lesson?.introduction || "Synthesizing visual representation of chapter concepts..."}
+                        </p>
+                        <div className="pt-8 grid grid-cols-2 gap-4">
+                           <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100 text-left">
+                              <p className="text-[9px] font-black text-slate-400 uppercase mb-2">Primary Subject</p>
+                              <p className="font-bold text-slate-800">{subject}</p>
+                           </div>
+                           <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100 text-left">
+                              <p className="text-[9px] font-black text-slate-400 uppercase mb-2">Grade Level</p>
+                              <p className="font-bold text-slate-800">Class {className?.split('_').pop()}</p>
+                           </div>
+                        </div>
+                    </div>
                 </div>
              )}
           </div>
@@ -269,12 +376,45 @@ export default function LearnClient() {
                 <p className="text-lg text-slate-500 font-medium">Applying your knowledge through practical tasks.</p>
              </div>
 
-             <div className="space-y-6">
-                {lesson?.activities.map((act, i) => (
-                   <div key={i} className="p-10 bg-white border-2 border-emerald-100 rounded-[50px] text-left">
-                      <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-600 mb-6">{act.title}</h4>
-                      <FormattedText content={act.description} className="text-2xl font-bold text-slate-800 leading-tight" />
-                      {act.concept && <p className="mt-6 text-xs font-black text-slate-400 uppercase tracking-widest">Focus: {act.concept}</p>}
+             <div className="space-y-10">
+                {/* V3 Scenarios First */}
+                {pkg?.components?.interactive_scenarios?.content?.scenarios?.map((scene: any, i: number) => (
+                    <div key={`scene-${i}`} className="p-12 bg-white border border-slate-200 rounded-[56px] shadow-sm space-y-10 group hover:shadow-xl transition-all">
+                        <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-600 border border-amber-100"><Users size={24} /></div>
+                            <h3 className="text-2xl font-black text-slate-800">Scenario {i+1}</h3>
+                        </div>
+                        <p className="text-xl font-bold text-slate-700 leading-relaxed italic">{scene.situation}</p>
+                        <div className="grid grid-cols-1 gap-4">
+                            {scene.choices?.map((choice: any, idx: number) => (
+                                <button key={idx} className="p-8 bg-slate-50 border border-slate-100 rounded-[32px] text-left hover:bg-white hover:border-primary/30 transition-all flex items-center gap-5">
+                                    <span className="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center font-black text-xs text-slate-400">{choice.id}</span>
+                                    <div>
+                                        <p className="text-lg font-black text-slate-800">{choice.label}</p>
+                                        <p className="text-sm font-bold text-emerald-600 mt-1">{choice.feedback}</p>
+                                    </div>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+
+                {/* Other Activities */}
+                {lesson?.activities.filter(a => a.description !== 'Scenario choices available.').map((act, i) => (
+                   <div key={`act-${i}`} className="p-12 bg-white border border-slate-200 rounded-[56px] shadow-sm hover:shadow-xl transition-all text-left">
+                      <div className="flex items-center justify-between mb-8">
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-600">{act.title}</h4>
+                        <div className="px-4 py-1.5 bg-emerald-50 text-emerald-600 rounded-full text-[9px] font-black uppercase tracking-widest border border-emerald-100">Active Node</div>
+                      </div>
+                      <div className="text-2xl font-bold text-slate-800 leading-snug">
+                        <FormattedText content={act.description} />
+                      </div>
+                      {act.concept && (
+                        <div className="mt-8 pt-8 border-t border-slate-50 flex items-center gap-3">
+                           <div className="w-2 h-2 rounded-full bg-emerald-400" />
+                           <p className="text-xs font-black text-slate-400 uppercase tracking-widest">Focus Area: {act.concept}</p>
+                        </div>
+                      )}
                    </div>
                 ))}
              </div>
@@ -408,7 +548,7 @@ export default function LearnClient() {
                   {subject} • Class {className?.split('_').pop()}
                </p>
                <h1 className="text-sm font-black text-primary uppercase tracking-tight flex items-center gap-2">
-                  <span className="text-slate-800">{displayData.fullName}</span>
+                  <span className="text-slate-800">{displayData.name}</span>
                   <span className="w-1 h-1 bg-slate-200 rounded-full"></span>
                   {steps[currentStep]}
                </h1>
@@ -474,6 +614,36 @@ export default function LearnClient() {
             </button>
          </div>
       </footer>
+
+      {/* Media Modal */}
+      <AnimatePresence>
+        {selectedMedia && (
+            <motion.div
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                className="fixed inset-0 z-[110] bg-slate-900/90 backdrop-blur-2xl flex items-center justify-center p-6"
+                onClick={() => setSelectedMedia(null)}
+            >
+                <motion.div
+                    initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }}
+                    className="bg-black w-full max-w-6xl aspect-video rounded-[48px] overflow-hidden shadow-2xl border-8 border-white/10"
+                    onClick={e => e.stopPropagation()}
+                >
+                    <iframe
+                        src={selectedMedia.url.replace('watch?v=', 'embed/')}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    />
+                </motion.div>
+                <button
+                  onClick={() => setSelectedMedia(null)}
+                  className="absolute top-10 right-10 w-16 h-16 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white backdrop-blur-md transition-all"
+                >
+                    <X size={32} />
+                </button>
+            </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

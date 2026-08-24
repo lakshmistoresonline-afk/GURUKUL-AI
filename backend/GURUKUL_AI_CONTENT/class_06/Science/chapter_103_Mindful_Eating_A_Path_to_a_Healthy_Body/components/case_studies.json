@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "case_studies",
+  "chapter_id": "fecu103",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Mindful Eating: A Path to a Healthy Body",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cases": [
+      {
+        "id": "fecu103_case1",
+        "title": "Applying Mindful Eating: A Path to a Healthy Body",
+        "case": "A realistic situation requires use of an idea from Mindful Eating: A Path to a Healthy Body.",
+        "questions": [
+          "Which concept applies?",
+          "What evidence supports it?",
+          "What should happen next?"
+        ],
+        "answer_guidance": "Use the chapter as the factual source."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.case_studies",
+    "domain": "learning",
+    "description": "Case-study learning content",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "flashcards",
+  "chapter_id": "fegp107",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_title": "Fractions",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "cards": [
+      {
+        "id": "fegp107_fc01",
+        "front": "What key point should you remember from Fractions?",
+        "back": "7 Fractions Recall that when some whole number of things are shared equally among some number of people, fractions tell us how much each share is.",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_fc02",
+        "front": "What key point should you remember from Fractions?",
+        "back": "Shabnam: \u0007Do you remember, if one roti is divided equally between two children, how much roti will each child get?",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_fc03",
+        "front": "What key point should you remember from Fractions?",
+        "back": "We also sometimes read this as 2 ‘one upon two.’ Mukta: \u0007If one roti is equally shared among 4 children, how much roti will one child get?",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_fc04",
+        "front": "What key point should you remember from Fractions?",
+        "back": "Shabnam: When 2 children share 1 roti equally, each child gets 12 roti.",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_fc05",
+        "front": "What key point should you remember from Fractions?",
+        "back": "When 4 children share 1 roti equally, each child gets 14 roti.",
+        "concept_id": "fegp107_c01"
+      },
+      {
+        "id": "fegp107_fc06",
+        "front": "What key point should you remember from Fractions?",
+        "back": "Since, in the second group more children share the Reprint 2026-27 Chapter 7_Fractions.indd 151 13-08-2024 15:39:38 Ganita Prakash | Grade 6 same one roti, each child gets a smaller share.",
+        "concept_id": "fegp107_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.flashcards",
+    "domain": "practice",
+    "description": "Flashcard content",
+    "chapter_scoped": true
+  }
+}

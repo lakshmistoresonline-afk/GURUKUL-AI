@@ -17,10 +17,35 @@ export interface ChapterDisplayData {
  * Extracts chapter number and name from internal ID and optional package content.
  */
 export function getChapterDisplayData(id: string, pkg?: any): ChapterDisplayData {
+  if (!id) {
+    return {
+      id: '',
+      number: '',
+      name: 'Unknown Chapter',
+      fullName: 'Unknown Chapter',
+      subject: 'General',
+      className: 'Class'
+    };
+  }
   const parts = id.split('_');
   const code = parts[parts.length - 1] || id;
-  const subject = parts[parts.length - 2] || 'General';
-  const className = parts[parts.length - 3] || 'Class';
+
+  // Try to infer subject from code prefix (V3 style: eemm, eeev, ehve, eesa, fepr, fegp, gegp, etc.)
+  let inferredSubject = 'General';
+  if (code.startsWith('eemm') || code.startsWith('fegp') || code.startsWith('gegp')) inferredSubject = 'Mathematics';
+  else if (code.startsWith('eeev') || code.startsWith('fecu') || code.startsWith('gecu')) inferredSubject = 'Science';
+  else if (code.startsWith('ehve') || code.startsWith('fhml') || code.startsWith('ghml')) inferredSubject = 'Hindi';
+  else if (code.startsWith('eesa') || code.startsWith('fepr') || code.startsWith('gepr')) inferredSubject = 'English';
+  else if (code.startsWith('fees') || code.startsWith('gees')) inferredSubject = 'Social Science';
+
+  const subject = parts[parts.length - 2] || inferredSubject;
+  let className = parts[parts.length - 3] || 'Class';
+
+  if (pkg?.chapter?.class) {
+      className = `class_${pkg.chapter.class}`;
+  } else if (pkg?.metadata?.class) {
+      className = `class_${pkg.metadata.class}`;
+  }
 
   // 1. Extract Number: assumes last 2 digits of the code are the chapter number (e.g. eemm110 -> 10)
   const numMatch = code.match(/\d+$/);
@@ -44,17 +69,26 @@ export function getChapterDisplayData(id: string, pkg?: any): ChapterDisplayData
   }
 
   if (pkg) {
-    const { content, metadata, original_data } = pkg;
+    const { content, metadata, chapter, components } = pkg;
+    const comps = components || pkg.components || {};
 
-    // Priority: curriculum.displayName → curriculum.chapterTitle → metadata.chapter_name → content.topic
-    if (original_data?.curriculum?.displayName) {
-      chapterName = original_data.curriculum.displayName;
-    } else if (original_data?.curriculum?.chapterTitle) {
-      chapterName = original_data.curriculum.chapterTitle;
+    // Priority 1: chapter object (V3 Root)
+    if (chapter?.chapter_title) {
+      chapterName = chapter.chapter_title;
+    } else if (chapter?.title) {
+      chapterName = chapter.title;
+    }
+    // Priority 2: components.chapter_metadata (V3 Component)
+    else if (comps.chapter_metadata?.content?.title) {
+      chapterName = comps.chapter_metadata.content.title;
+    } else if (comps.chapter_metadata?.chapter_title) {
+      chapterName = comps.chapter_metadata.chapter_title;
+    }
+    // Priority 3: original_data (Migration Metadata)
+    else if (pkg.original_data?.curriculum?.displayName) {
+      chapterName = pkg.original_data.curriculum.displayName;
     } else if (metadata?.chapter_name) {
       chapterName = metadata.chapter_name;
-    } else if (metadata?.chapterTitle) {
-      chapterName = metadata.chapterTitle;
     } else if (content?.topic && content.topic !== 'N/A') {
       chapterName = content.topic;
     } else if (content?.title) {
@@ -71,6 +105,18 @@ export function getChapterDisplayData(id: string, pkg?: any): ChapterDisplayData
         chapterName = match[1].replace(/\*/g, '').trim();
       }
     }
+
+    // Resolve chapter number from V3 metadata if available
+    if (chapter?.chapter_number) {
+        chapterNumber = chapter.chapter_number.toString();
+    } else if (comps.chapter_metadata?.content?.chapter_number) {
+        chapterNumber = comps.chapter_metadata.content.chapter_number.toString();
+    }
+  }
+
+  // Cleanup: If chapterName is still a code (no spaces, contains numbers and letters)
+  if (chapterName === code.toUpperCase() && /^[A-Z0-9]+$/.test(chapterName)) {
+      chapterName = `${subject.charAt(0).toUpperCase() + subject.slice(1)} Module ${chapterNumber || 'Core'}`;
   }
 
   const numberPrefix = chapterNumber ? `Chapter ${chapterNumber}` : '';

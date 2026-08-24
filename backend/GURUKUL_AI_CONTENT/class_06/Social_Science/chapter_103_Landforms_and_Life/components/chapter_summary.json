@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_summary",
+  "chapter_id": "fees103",
+  "class": 6,
+  "subject": "Social Science",
+  "chapter_title": "Landforms and Life",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "summary": "'Landforms and Life' is organised around source-supported concepts, evidence and applications.",
+    "key_points": [
+      "3 CHAPTER Landforms and Life Free from the burden of human beings, may the Earth with many heights, slopes and great plains, bearing plants endowed with varied powers, spread out for us and show us her riches!",
+      "— Atharva Veda, Bhūmi Sūkta (‘Hymn to the Earth’) 3 – Landforms and Life The Big 1.",
+      "What are the major types of landforms and their significance Questions to life and culture?",
+      "What are the challenges and opportunities of life associated with each landform?",
+      "41 chapter3_161224.indd 41 03-02-2025 04:57:22 Introduction Humans, like most mammals, live on land.",
+      "Land, as you may have noticed, has many forms and features; its appearance changes a lot from one region to another."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.summary",
+    "domain": "reader",
+    "description": "Chapter summary",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_summary",
+  "chapter_id": "eemm105",
+  "class": 5,
+  "subject": "Mathematics",
+  "chapter_title": "Far and Near",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "summary": "'Far and Near' develops mathematical reasoning and application through the chapter 'Far and Near'. The main learning is organised around the source-supported points below.",
+    "key_points": [
+      "55 ChapterChapter Far and Near Identify the appropriate units for measuring each of the following.",
+      "We have learnt about measuring length and some standard units we use to measure length.",
+      "In this chapter we will learn some more units of measuring distances and the relationships between different units.",
+      "Let Us Find Quantity Unit of measurement Metre (m) or centimetre (cm) Height of India Gate 42 Length of a handkerchief 40 Depth of a well 50 Length of a mobile phone 13 Length of an elephant’s trunk 2 Distance between two buttons on a shirt 5 Shikha and Sonu are measuring the lengths of saris and stoles in the village weaving centre.",
+      "Find which measures represent the same sari or stole.",
+      "You can take help of the double number line below."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.summary",
+    "domain": "reader",
+    "description": "Chapter summary",
+    "chapter_scoped": true
+  }
+}

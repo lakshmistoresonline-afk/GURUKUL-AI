@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "practice_bank",
+  "chapter_id": "fecu105",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Measurement of Length and Motion",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "items": [
+      {
+        "id": "fecu105_q01",
+        "type": "source_based",
+        "question": "Which statement is supported by Measurement of Length and Motion?",
+        "options": [
+          "The shopkeeper measures the cloth using a metal measuring rod.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "The shopkeeper measures the cloth using a metal measuring rod.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fecu105_c01"
+      },
+      {
+        "id": "fecu105_q02",
+        "type": "source_based",
+        "question": "Which statement is supported by Measurement of Length and Motion?",
+        "options": [
+          "Then, the tailor takes her measurements using a flexible measuring tape.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Then, the tailor takes her measurements using a flexible measuring tape.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "easy",
+        "concept_id": "fecu105_c01"
+      },
+      {
+        "id": "fecu105_q03",
+        "type": "source_based",
+        "question": "Which statement is supported by Measurement of Length and Motion?",
+        "options": [
+          "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width).",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width).",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fecu105_c01"
+      },
+      {
+        "id": "fecu105_q04",
+        "type": "source_based",
+        "question": "Which statement is supported by Measurement of Length and Motion?",
+        "options": [
+          "Are the tape and rod similar to the scale that the elder sister has in her geometry box?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Are the tape and rod similar to the scale that the elder sister has in her geometry box?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "medium",
+        "concept_id": "fecu105_c01"
+      },
+      {
+        "id": "fecu105_q05",
+        "type": "source_based",
+        "question": "Which statement is supported by Measurement of Length and Motion?",
+        "options": [
+          "Deepa shares her experience with her school friends Anish, Hardeep, Padma, Tasneem and this leads to a discussion amongst them.",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Deepa shares her experience with her school friends Anish, Hardeep, Padma, Tasneem and this leads to a discussion amongst them.",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fecu105_c01"
+      },
+      {
+        "id": "fecu105_q06",
+        "type": "source_based",
+        "question": "Which statement is supported by Measurement of Length and Motion?",
+        "options": [
+          "Hardeep says, “I have seen my grandmother measuring cloth by the length of her arm.” “Have you ever seen how a farmer measures length to divide his field into beds?",
+          "An unrelated statement.",
+          "A contradictory statement.",
+          "An unsupported statement."
+        ],
+        "correct_option": 0,
+        "source_evidence": "Hardeep says, “I have seen my grandmother measuring cloth by the length of her arm.” “Have you ever seen how a farmer measures length to divide his field into beds?",
+        "explanation": "The answer must be supported by the supplied chapter source.",
+        "difficulty": "hard",
+        "concept_id": "fecu105_c01"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "practice.bank",
+    "domain": "practice",
+    "description": "Practice question bank",
+    "chapter_scoped": true
+  }
+}

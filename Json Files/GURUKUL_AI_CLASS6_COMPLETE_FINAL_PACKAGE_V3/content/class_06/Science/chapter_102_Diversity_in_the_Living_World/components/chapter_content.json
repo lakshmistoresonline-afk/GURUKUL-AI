@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "fecu102",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Diversity in the Living World",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-derived learning unit: Diversity in the Living World.",
+    "source_grounded_key_points": [
+      "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
+      "Likewise, good people bear all hardships and bring welfare to others.",
+      "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain.",
+      "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
+      "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
+      "He is also brilliant at identifying a variety of plants and animals.",
+      "To prepare them for the nature walk, Dr Raghu informs the students that the objective of this walk is to experience the beauty and variety of plants and animals in the nature.",
+      "The teacher advises the students to carry a notebook, a pen and a water bottle."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Reflect",
+      "Assess"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

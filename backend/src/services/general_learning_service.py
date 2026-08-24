@@ -19,48 +19,54 @@ class GeneralLearningService:
         self._load_data()
 
     def _load_data(self):
-        data_path = settings.GENERAL_LEARNING_DATA_PATH
-        if not os.path.exists(data_path):
-            logger.error(f"General Learning data not found at {data_path}")
-            return
+        # Load General Learning items class-wise from GURUKUL_AI_CONTENT
+        for cid in ["05", "06", "07"]:
+            class_folder = f"class_{cid}"
+            path = os.path.join(settings.MASTER_CONTENT_ROOT, class_folder, settings.GENERAL_LEARNING_FILENAME)
 
-        try:
-            with open(data_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
+            if not os.path.exists(path):
+                continue
 
-            self.content = data.get('content', [])
-            from ..utils.path_resolver import PathResolver
-            for item in self.content:
-                # Normalize classId to class_N
-                c_id_raw = item.get('classId')
-                c_num = PathResolver.extract_class_id(str(c_id_raw))
-                class_key = f"class_{c_num}"
-                item['class_key'] = class_key
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
 
-                # Infer type if missing
-                if 'type' not in item:
-                    item_id = item.get('id', '')
-                    if '_vocab_' in item_id: item['type'] = 'english_vocabulary'
-                    elif '_gk_' in item_id: item['type'] = 'general_knowledge'
-                    elif '_sci_' in item_id: item['type'] = 'science_facts'
-                    elif '_math_' in item_id: item['type'] = 'maths_quick_practice'
-                    elif '_geo_' in item_id: item['type'] = 'india_and_world'
-                    elif '_life_' in item_id: item['type'] = 'life_skills'
-                    elif '_logic_' in item_id: item['type'] = 'logic_and_reasoning'
-                    else: item['type'] = 'unknown'
+                items = data.get('content', [])
+                from ..utils.path_resolver import PathResolver
+                for item in items:
+                    # Normalize classId to class_N
+                    c_id_raw = item.get('classId')
+                    c_num = PathResolver.extract_class_id(str(c_id_raw))
+                    class_key = f"class_{c_num}"
+                    item['class_key'] = class_key
 
-                self.index[item['id']] = item
+                    # Infer type if missing
+                    if 'type' not in item:
+                        item_id = item.get('id', '')
+                        if '_vocab_' in item_id: item['type'] = 'english_vocabulary'
+                        elif '_gk_' in item_id: item['type'] = 'general_knowledge'
+                        elif '_sci_' in item_id: item['type'] = 'science_facts'
+                        elif '_math_' in item_id: item['type'] = 'maths_quick_practice'
+                        elif '_geo_' in item_id: item['type'] = 'india_and_world'
+                        elif '_life_' in item_id: item['type'] = 'life_skills'
+                        elif '_logic_' in item_id: item['type'] = 'logic_and_reasoning'
+                        else: item['type'] = 'unknown'
 
-                if class_key not in self.by_class: self.by_class[class_key] = []
-                self.by_class[class_key].append(item['id'])
+                    self.index[item['id']] = item
+                    self.content.append(item)
 
-                i_type = item['type']
-                if i_type not in self.by_type: self.by_type[i_type] = []
-                self.by_type[i_type].append(item['id'])
+                    if class_key not in self.by_class: self.by_class[class_key] = []
+                    self.by_class[class_key].append(item['id'])
 
-            logger.info(f"GeneralLearningService: Loaded {len(self.content)} items.")
-        except Exception as e:
-            logger.error(f"Error loading General Learning data: {e}")
+                    i_type = item['type']
+                    if i_type not in self.by_type: self.by_type[i_type] = []
+                    self.by_type[i_type].append(item['id'])
+
+            except Exception as e:
+                logger.error(f"Error loading General Learning data for {class_folder}: {e}")
+
+        if self.content:
+            logger.info(f"GeneralLearningService: Loaded {len(self.content)} items from class-wise files.")
 
     async def get_summary(self, student_id: str, class_name: str) -> Dict[str, Any]:
         """Returns a summary of progress for the student's class."""

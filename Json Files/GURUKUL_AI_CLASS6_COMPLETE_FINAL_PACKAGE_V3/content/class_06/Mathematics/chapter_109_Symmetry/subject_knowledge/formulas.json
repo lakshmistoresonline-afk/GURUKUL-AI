@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "class": 6,
+  "subject": "Mathematics",
+  "chapter_id": "chapter_109_Symmetry",
+  "chapter_title": "chapter_109_Symmetry",
+  "category": "formulas",
+  "content_status": "SOURCE_DERIVED",
+  "items": [
+    {
+      "value": "Use source-grounded reasoning.",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.story_mode.content.learning_checkpoints[0].answer_rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "All answers must be checked against the supplied chapter source.",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.answer_key.content.validation_rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "Accessibility adaptations preserve source meaning.",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.accessibility.content.rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "required learning viewed",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[0]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "core activities completed",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[1]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "practice threshold met",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[2]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "mastery assessment passed",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[3]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "misconceptions remediated",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.chapter_completion.content.completion_rules[4]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "True",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/chapter_package.json",
+      "source_path": "components.chapter_completion.content.complete_only_when_all_applicable_rules_pass",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "Accessibility adaptations preserve source meaning.",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/accessibility.json",
+      "source_path": "content.rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "All answers must be checked against the supplied chapter source.",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/answer_key.json",
+      "source_path": "content.validation_rule",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "required learning viewed",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/chapter_completion.json",
+      "source_path": "content.completion_rules[0]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "core activities completed",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/chapter_completion.json",
+      "source_path": "content.completion_rules[1]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "practice threshold met",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/chapter_completion.json",
+      "source_path": "content.completion_rules[2]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "mastery assessment passed",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/chapter_completion.json",
+      "source_path": "content.completion_rules[3]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "misconceptions remediated",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/chapter_completion.json",
+      "source_path": "content.completion_rules[4]",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "True",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/chapter_completion.json",
+      "source_path": "content.complete_only_when_all_applicable_rules_pass",
+      "provenance": "source_derived"
+    },
+    {
+      "value": "Use source-grounded reasoning.",
+      "source_file": "content/class_06/Mathematics/chapter_109_Symmetry/components/story_mode.json",
+      "source_path": "content.learning_checkpoints[0].answer_rule",
+      "provenance": "source_derived"
+    }
+  ],
+  "source_policy": "All factual items are extracted from supplied chapter/package content; no unsupported facts are invented."
+}

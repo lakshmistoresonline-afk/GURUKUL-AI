@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "student_explanation",
+  "chapter_id": "eeev109",
+  "class": 5,
+  "subject": "EVS",
+  "chapter_title": "Rhythms of Nature",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "Uploaded Class 5 NCERT PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "simple_explanation": "'Rhythms of Nature' is studied by first understanding the main idea, then noticing the evidence, examples and relationships in the chapter.",
+    "study_steps": [
+      "Read/observe the chapter carefully.",
+      "Mark important ideas or steps.",
+      "Explain them in your own words.",
+      "Try a new example.",
+      "Check your answer with evidence."
+    ],
+    "key_points": [
+      "They also know about the Sun, moon, stars and wonders of the world they live in.",
+      "This unit invites students to explore the deep connection between nature and everyday life.",
+      "This unit in Grade 5, helps students explore the natural rhythms and deep connections that shape the life on Earth.",
+      "Through seasons, stories and journeys of birds, foods and ideas, they discover how nature, people and cultures are linked.",
+      "With journaling and hands-on activities, they connect to their surroundings and understand that Earth is our shared, living home."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.student_explanation",
+    "domain": "learning",
+    "description": "Student-facing explanation",
+    "chapter_scoped": true
+  }
+}

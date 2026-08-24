@@ -1,500 +1,444 @@
 {
-  "class": 6,
-  "className": "Class 6",
-  "totalChapters": 54,
+  "classId": "6",
   "subjects": [
-    "english",
-    "hindi",
-    "mathematics",
-    "science",
-    "social_science"
+    "English",
+    "Hindi",
+    "Mathematics",
+    "Science",
+    "Social Science"
   ],
   "chapters": [
     {
-      "class": 6,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e06_c1",
-      "chapterNumber": 1,
+      "chapterId": "fepr101",
       "chapterName": "A Bottle of Dew",
-      "path": "english/chapters/chapter_01/package.json"
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "English/chapter_101_A_Bottle_of_Dew/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e06_c2",
-      "chapterNumber": 2,
+      "chapterId": "fepr102",
       "chapterName": "The Unlikely Best Friends",
-      "path": "english/chapters/chapter_02/package.json"
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "English/chapter_102_The_Unlikely_Best_Friends/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e06_c3",
-      "chapterNumber": 3,
+      "chapterId": "fepr103",
       "chapterName": "Neem BaBa",
-      "path": "english/chapters/chapter_03/package.json"
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "English/chapter_103_Neem_BaBa/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e06_c4",
-      "chapterNumber": 4,
+      "chapterId": "fepr104",
       "chapterName": "Change of Heart",
-      "path": "english/chapters/chapter_04/package.json"
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "English/chapter_104_Change_of_Heart/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "english",
-      "subjectName": "English",
-      "chapterId": "e06_c5",
-      "chapterNumber": 5,
+      "chapterId": "fepr105",
       "chapterName": "Hamara Bharat — Incredible India!",
-      "path": "english/chapters/chapter_05/package.json"
+      "subject": "English",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "English/chapter_105_Hamara_Bharat_Incredible_India/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c1",
-      "chapterNumber": 1,
+      "chapterId": "fhml101",
       "chapterName": "मातृभूमि",
-      "path": "hindi/chapters/chapter_01/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "Hindi/chapter_101_मातृभूमि/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c2",
-      "chapterNumber": 2,
+      "chapterId": "fhml102",
       "chapterName": "गोल",
-      "path": "hindi/chapters/chapter_02/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "Hindi/chapter_102_गोल/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c3",
-      "chapterNumber": 3,
+      "chapterId": "fhml103",
       "chapterName": "पहली बूँद",
-      "path": "hindi/chapters/chapter_03/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "Hindi/chapter_103_पहली_बूँद/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c4",
-      "chapterNumber": 4,
+      "chapterId": "fhml104",
       "chapterName": "हार की जीत",
-      "path": "hindi/chapters/chapter_04/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "Hindi/chapter_104_हार_की_जीत/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c5",
-      "chapterNumber": 5,
+      "chapterId": "fhml105",
       "chapterName": "रहीम के दोहे",
-      "path": "hindi/chapters/chapter_05/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "Hindi/chapter_105_रहीम_के_दोहे/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c6",
-      "chapterNumber": 6,
+      "chapterId": "fhml106",
       "chapterName": "मेरी माँ",
-      "path": "hindi/chapters/chapter_06/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 106,
+      "path": "Hindi/chapter_106_मेरी_माँ/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c7",
-      "chapterNumber": 7,
+      "chapterId": "fhml107",
       "chapterName": "जलाते चलो",
-      "path": "hindi/chapters/chapter_07/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 107,
+      "path": "Hindi/chapter_107_जलाते_चलो/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c8",
-      "chapterNumber": 8,
+      "chapterId": "fhml108",
       "chapterName": "सत्रिया और बिहू नृत्य",
-      "path": "hindi/chapters/chapter_08/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 108,
+      "path": "Hindi/chapter_108_सत्रिया_और_बिहू_नृत्य/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c9",
-      "chapterNumber": 9,
+      "chapterId": "fhml109",
       "chapterName": "मैया मैं नहि माखन खायो",
-      "path": "hindi/chapters/chapter_09/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 109,
+      "path": "Hindi/chapter_109_मैया_मैं_नहि_माखन_खायो/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c10",
-      "chapterNumber": 10,
+      "chapterId": "fhml110",
       "chapterName": "परीक्षा",
-      "path": "hindi/chapters/chapter_10/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 110,
+      "path": "Hindi/chapter_110_परीक्षा/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c11",
-      "chapterNumber": 11,
+      "chapterId": "fhml111",
       "chapterName": "चेतक की वीरता",
-      "path": "hindi/chapters/chapter_11/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 111,
+      "path": "Hindi/chapter_111_चेतक_की_वीरता/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c12",
-      "chapterNumber": 12,
+      "chapterId": "fhml112",
       "chapterName": "हिंद महासागर में छोटा-सा हिंदुस्तान",
-      "path": "hindi/chapters/chapter_12/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 112,
+      "path": "Hindi/chapter_112_हिंद_महासागर_में_छोटा_सा_हिंदुस्तान/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "hindi",
-      "subjectName": "Hindi",
-      "chapterId": "h06_c13",
-      "chapterNumber": 13,
+      "chapterId": "fhml113",
       "chapterName": "पेड़ की बात",
-      "path": "hindi/chapters/chapter_13/package.json"
+      "subject": "Hindi",
+      "part": null,
+      "chapterNumber": 113,
+      "path": "Hindi/chapter_113_पेड़_की_बात/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c1",
-      "chapterNumber": 1,
+      "chapterId": "fegp101",
       "chapterName": "Patterns in Mathematics",
-      "path": "mathematics/chapters/chapter_01/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "Mathematics/chapter_101_Patterns_in_Mathematics/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c2",
-      "chapterNumber": 2,
+      "chapterId": "fegp102",
       "chapterName": "Lines and Angles",
-      "path": "mathematics/chapters/chapter_02/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "Mathematics/chapter_102_Lines_and_Angles/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c3",
-      "chapterNumber": 3,
+      "chapterId": "fegp103",
       "chapterName": "Number Play",
-      "path": "mathematics/chapters/chapter_03/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "Mathematics/chapter_103_Number_Play/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c4",
-      "chapterNumber": 4,
+      "chapterId": "fegp104",
       "chapterName": "Data Handling and Presentation",
-      "path": "mathematics/chapters/chapter_04/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "Mathematics/chapter_104_Data_Handling_and_Presentation/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c5",
-      "chapterNumber": 5,
+      "chapterId": "fegp105",
       "chapterName": "Prime Time",
-      "path": "mathematics/chapters/chapter_05/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "Mathematics/chapter_105_Prime_Time/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c6",
-      "chapterNumber": 6,
+      "chapterId": "fegp106",
       "chapterName": "Perimeter and Area",
-      "path": "mathematics/chapters/chapter_06/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 106,
+      "path": "Mathematics/chapter_106_Perimeter_and_Area/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c7",
-      "chapterNumber": 7,
+      "chapterId": "fegp107",
       "chapterName": "Fractions",
-      "path": "mathematics/chapters/chapter_07/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 107,
+      "path": "Mathematics/chapter_107_Fractions/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c8",
-      "chapterNumber": 8,
+      "chapterId": "fegp108",
       "chapterName": "Playing with Constructions",
-      "path": "mathematics/chapters/chapter_08/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 108,
+      "path": "Mathematics/chapter_108_Playing_with_Constructions/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c9",
-      "chapterNumber": 9,
+      "chapterId": "fegp109",
       "chapterName": "Symmetry",
-      "path": "mathematics/chapters/chapter_09/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 109,
+      "path": "Mathematics/chapter_109_Symmetry/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "mathematics",
-      "subjectName": "Mathematics",
-      "chapterId": "m06_c10",
-      "chapterNumber": 10,
+      "chapterId": "fegp110",
       "chapterName": "The Other Side of Zero",
-      "path": "mathematics/chapters/chapter_10/package.json"
+      "subject": "Mathematics",
+      "part": null,
+      "chapterNumber": 110,
+      "path": "Mathematics/chapter_110_The_Other_Side_of_Zero/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c1",
-      "chapterNumber": 1,
+      "chapterId": "fecu101",
       "chapterName": "The Wonderful World of Science",
-      "path": "science/chapters/chapter_01/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "Science/chapter_101_The_Wonderful_World_of_Science/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c2",
-      "chapterNumber": 2,
+      "chapterId": "fecu102",
       "chapterName": "Diversity in the Living World",
-      "path": "science/chapters/chapter_02/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "Science/chapter_102_Diversity_in_the_Living_World/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c3",
-      "chapterNumber": 3,
+      "chapterId": "fecu103",
       "chapterName": "Mindful Eating: A Path to a Healthy Body",
-      "path": "science/chapters/chapter_03/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "Science/chapter_103_Mindful_Eating_A_Path_to_a_Healthy_Body/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c4",
-      "chapterNumber": 4,
+      "chapterId": "fecu104",
       "chapterName": "Exploring Magnets",
-      "path": "science/chapters/chapter_04/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "Science/chapter_104_Exploring_Magnets/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c5",
-      "chapterNumber": 5,
+      "chapterId": "fecu105",
       "chapterName": "Measurement of Length and Motion",
-      "path": "science/chapters/chapter_05/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "Science/chapter_105_Measurement_of_Length_and_Motion/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c6",
-      "chapterNumber": 6,
+      "chapterId": "fecu106",
       "chapterName": "Materials Around Us",
-      "path": "science/chapters/chapter_06/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 106,
+      "path": "Science/chapter_106_Materials_Around_Us/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c7",
-      "chapterNumber": 7,
+      "chapterId": "fecu107",
       "chapterName": "Temperature and its Measurement",
-      "path": "science/chapters/chapter_07/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 107,
+      "path": "Science/chapter_107_Temperature_and_its_Measurement/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c8",
-      "chapterNumber": 8,
+      "chapterId": "fecu108",
       "chapterName": "A Journey through States of Water",
-      "path": "science/chapters/chapter_08/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 108,
+      "path": "Science/chapter_108_A_Journey_through_States_of_Water/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c9",
-      "chapterNumber": 9,
+      "chapterId": "fecu109",
       "chapterName": "Methods of Separation in Everyday Life",
-      "path": "science/chapters/chapter_09/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 109,
+      "path": "Science/chapter_109_Methods_of_Separation_in_Everyday_Life/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c10",
-      "chapterNumber": 10,
+      "chapterId": "fecu110",
       "chapterName": "Living Creatures: Exploring their Characteristics",
-      "path": "science/chapters/chapter_10/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 110,
+      "path": "Science/chapter_110_Living_Creatures_Exploring_their_Characteristics/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c11",
-      "chapterNumber": 11,
+      "chapterId": "fecu111",
       "chapterName": "Nature’s Treasures",
-      "path": "science/chapters/chapter_11/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 111,
+      "path": "Science/chapter_111_Nature_s_Treasures/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "science",
-      "subjectName": "Science",
-      "chapterId": "s06_c12",
-      "chapterNumber": 12,
+      "chapterId": "fecu112",
       "chapterName": "Beyond Earth",
-      "path": "science/chapters/chapter_12/package.json"
+      "subject": "Science",
+      "part": null,
+      "chapterNumber": 112,
+      "path": "Science/chapter_112_Beyond_Earth/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c1",
-      "chapterNumber": 1,
+      "chapterId": "fees101",
       "chapterName": "Introduction – Why Social Science?",
-      "path": "social_science/chapters/chapter_01/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 101,
+      "path": "Social_Science/chapter_101_Introduction_Why_Social_Science/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c2",
-      "chapterNumber": 2,
+      "chapterId": "fees102",
       "chapterName": "Oceans and Continents",
-      "path": "social_science/chapters/chapter_02/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 102,
+      "path": "Social_Science/chapter_102_Oceans_and_Continents/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c3",
-      "chapterNumber": 3,
+      "chapterId": "fees103",
       "chapterName": "Landforms and Life",
-      "path": "social_science/chapters/chapter_03/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 103,
+      "path": "Social_Science/chapter_103_Landforms_and_Life/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c4",
-      "chapterNumber": 4,
+      "chapterId": "fees104",
       "chapterName": "Timeline and Sources of History",
-      "path": "social_science/chapters/chapter_04/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 104,
+      "path": "Social_Science/chapter_104_Timeline_and_Sources_of_History/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c5",
-      "chapterNumber": 5,
+      "chapterId": "fees105",
       "chapterName": "India, That Is Bharat",
-      "path": "social_science/chapters/chapter_05/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 105,
+      "path": "Social_Science/chapter_105_India_That_Is_Bharat/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c6",
-      "chapterNumber": 6,
+      "chapterId": "fees106",
       "chapterName": "The Beginnings of Indian Civilisation",
-      "path": "social_science/chapters/chapter_06/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 106,
+      "path": "Social_Science/chapter_106_The_Beginnings_of_Indian_Civilisation/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c7",
-      "chapterNumber": 7,
+      "chapterId": "fees107",
       "chapterName": "India’s Cultural Roots",
-      "path": "social_science/chapters/chapter_07/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 107,
+      "path": "Social_Science/chapter_107_India_s_Cultural_Roots/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c8",
-      "chapterNumber": 8,
+      "chapterId": "fees108",
       "chapterName": "Unity in Diversity, or ‘Many in the One’",
-      "path": "social_science/chapters/chapter_08/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 108,
+      "path": "Social_Science/chapter_108_Unity_in_Diversity_or_Many_in_the_One/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c9",
-      "chapterNumber": 9,
+      "chapterId": "fees109",
       "chapterName": "Family and Community",
-      "path": "social_science/chapters/chapter_09/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 109,
+      "path": "Social_Science/chapter_109_Family_and_Community/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c10",
-      "chapterNumber": 10,
+      "chapterId": "fees110",
       "chapterName": "Grassroots Democracy – Part 1",
-      "path": "social_science/chapters/chapter_10/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 110,
+      "path": "Social_Science/chapter_110_Grassroots_Democracy_Part_1/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c11",
-      "chapterNumber": 11,
+      "chapterId": "fees111",
       "chapterName": "Grassroots Democracy – Part 2",
-      "path": "social_science/chapters/chapter_11/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 111,
+      "path": "Social_Science/chapter_111_Grassroots_Democracy_Part_2/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c12",
-      "chapterNumber": 12,
+      "chapterId": "fees112",
       "chapterName": "Grassroots Democracy – Part 3",
-      "path": "social_science/chapters/chapter_12/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 112,
+      "path": "Social_Science/chapter_112_Grassroots_Democracy_Part_3/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c13",
-      "chapterNumber": 13,
+      "chapterId": "fees113",
       "chapterName": "The Value of Work",
-      "path": "social_science/chapters/chapter_13/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 113,
+      "path": "Social_Science/chapter_113_The_Value_of_Work/chapter_package.json"
     },
     {
-      "class": 6,
-      "subject": "social_science",
-      "subjectName": "Social Science",
-      "chapterId": "ss06_c14",
-      "chapterNumber": 14,
+      "chapterId": "fees114",
       "chapterName": "Economic Activities Around Us",
-      "path": "social_science/chapters/chapter_14/package.json"
+      "subject": "Social Science",
+      "part": null,
+      "chapterNumber": 114,
+      "path": "Social_Science/chapter_114_Economic_Activities_Around_Us/chapter_package.json"
     }
   ]
 }

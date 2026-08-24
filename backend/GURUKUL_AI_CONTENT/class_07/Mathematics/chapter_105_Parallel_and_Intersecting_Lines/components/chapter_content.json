@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "gegp105",
+  "class": 7,
+  "subject": "Mathematics",
+  "chapter_title": "Parallel and Intersecting Lines",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-grounded learning unit for Parallel and Intersecting Lines.",
+    "source_grounded_key_points": [
+      "PARALLEL AND 5 INTERSECTING LINES 5.1 Across the Line Take a piece of square paper and fold it in different ways.",
+      "Now, on the creases formed by the folds, draw lines using a pencil and a scale.",
+      "Take any pair of lines and observe their relationship with each other.",
+      "If they do not meet within the paper, do you think they would meet if they were extended beyond the paper?",
+      "5.1 In this chapter, we will explore the relationship between lines on a plane surface.",
+      "The table top, your piece of paper, the blackboard, and the bulletin board are all examples of plane surfaces.",
+      "When a pair of lines meet each other at a point on a plane surface, we say that the lines intersect each other.",
+      "5.2, where line l intersects line m, we can see that four angles are formed.",
+      "5.2 Can two straight lines intersect at more than one point?",
+      "Activity 1 Draw two lines on a plain sheet of paper so that they intersect."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Transfer",
+      "Reflect",
+      "Assess"
+    ],
+    "source_rule": "The uploaded textbook PDF is the factual source of truth."
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

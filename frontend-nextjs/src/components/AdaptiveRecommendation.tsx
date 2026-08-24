@@ -22,7 +22,7 @@ export default function AdaptiveRecommendation({ profile, currentChapter }: { pr
   useEffect(() => {
     if (!profile) return;
 
-    const class_name = profile.className;
+    const class_name = profile.className || `class_${profile.classId}`;
     if (!class_name) return;
 
     const fetchRecommendation = async () => {
@@ -30,13 +30,34 @@ export default function AdaptiveRecommendation({ profile, currentChapter }: { pr
       try {
         let student_record: any = { conceptPerformance: {} };
         let chapterId = currentChapter?.id;
-        let subject = currentChapter?.subject || 'general';
+        let subject = (currentChapter?.subject || 'general').toLowerCase().replace(/ /g, '_');
 
         if (chapterId) {
           const record = await progressService.getMastery(chapterId);
           if (record) student_record = record;
         } else {
-          // If no current chapter, we might want to suggest starting the library
+          // If no current chapter, fetch the first one from hierarchy to suggest starting
+          try {
+              const h = await api.get('/api/chapters/explorer/hierarchy');
+              const classKey = Object.keys(h.data).find(k => k.includes(profile.classId)) || Object.keys(h.data)[0];
+              if (classKey && h.data[classKey]) {
+                  const firstSub = Object.keys(h.data[classKey])[0];
+                  const firstChap = h.data[classKey][firstSub][0];
+                  if (firstChap) {
+                      setRecommendation({
+                        action: 'LEARN_CONCEPT',
+                        target_id: firstChap.id,
+                        reason: `Start your journey with ${firstChap.name}`,
+                        context: 'INITIAL'
+                      });
+                      setLoading(false);
+                      return;
+                  }
+              }
+          } catch (e) {
+              console.warn("Recommendation: Fallback fetch failed", e);
+          }
+
           setRecommendation({
             action: 'EXPLORE_LIBRARY',
             target_id: '',
@@ -72,7 +93,7 @@ export default function AdaptiveRecommendation({ profile, currentChapter }: { pr
     fetchRecommendation();
   }, [profile?.uid, currentChapter?.id, currentChapter?.subject, profile?.className, profile]);
 
-  if (loading) return <div className="h-40 bg-slate-100 rounded-[40px] animate-pulse" />;
+  if (loading) return <div className="h-32 bg-slate-100 rounded-3xl animate-pulse" />;
   if (!recommendation) return null;
 
   const getActionConfig = (action: string) => {
@@ -84,8 +105,8 @@ export default function AdaptiveRecommendation({ profile, currentChapter }: { pr
     switch (action) {
       case 'LEARN_CONCEPT': return { icon: BookOpen, color: 'text-blue-600', bg: 'bg-blue-50', border: 'border-blue-100', label: 'Recommended Study', path: `/learn/${chapterId}${queryParams}` };
       case 'PRACTICE_CONCEPT': return { icon: Target, color: 'text-emerald-600', bg: 'bg-emerald-50', border: 'border-emerald-100', label: 'Practice Session', path: `/quiz/${chapterId}${queryParams}` };
-      case 'REMEDIATE_CONCEPT': return { icon: RotateCcw, color: 'text-amber-600', bg: 'bg-amber-50', border: 'border-amber-100', label: 'Neural Repair', path: `/quiz/interleaved?mode=remediation&conceptId=${recommendation.target_id}&class=${className}&subject=${subject}` };
-      case 'RETENTION_REVIEW': return { icon: Brain, color: 'text-indigo-600', bg: 'bg-indigo-50', border: 'border-indigo-100', label: 'Daily Retrieval', path: `/quiz/interleaved?type=quick&class=${className}&subject=${subject}` };
+      case 'REMEDIATE_CONCEPT': return { icon: RotateCcw, color: 'text-amber-600', bg: 'bg-amber-50', border: 'border-amber-100', label: 'Remediation', path: `/quiz/interleaved?mode=remediation&conceptId=${recommendation.target_id}&class=${className}&subject=${subject}` };
+      case 'RETENTION_REVIEW': return { icon: Brain, color: 'text-indigo-600', bg: 'bg-indigo-50', border: 'border-indigo-100', label: 'Daily Review', path: `/quiz/interleaved?type=quick&class=${className}&subject=${subject}` };
       case 'EXPLORE_LIBRARY': return { icon: Library, color: 'text-primary', bg: 'bg-blue-50', border: 'border-blue-100', label: 'Curriculum Hub', path: `/library` };
       default: return { icon: Sparkles, color: 'text-blue-600', bg: 'bg-blue-50', border: 'border-blue-100', label: 'Next Step', path: '/library' };
     }
@@ -95,26 +116,26 @@ export default function AdaptiveRecommendation({ profile, currentChapter }: { pr
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-white border border-slate-200/60 rounded-[40px] p-8 flex flex-col md:flex-row items-center justify-between gap-8 group hover:bg-slate-50 transition-all shadow-sm"
+      className="bg-white border border-slate-200 rounded-3xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 group hover:bg-slate-50 transition-all shadow-sm"
     >
-       <div className="flex items-center gap-6 text-center md:text-left">
-          <div className={`w-16 h-16 rounded-3xl ${config.bg} flex items-center justify-center ${config.color} border ${config.border} shadow-sm`}>
-             <config.icon size={32} />
+       <div className="flex items-center gap-5 text-center md:text-left">
+          <div className={`w-12 h-12 rounded-2xl ${config.bg} flex items-center justify-center ${config.color} border ${config.border} shadow-sm shrink-0`}>
+             <config.icon size={24} />
           </div>
-          <div className="space-y-1">
-             <p className={`text-[10px] font-black uppercase tracking-[0.2em] ${config.color}`}>{config.label}</p>
-             <h4 className="text-2xl font-black text-slate-900">{recommendation.reason}</h4>
-             <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">{recommendation.context} PHASE</p>
+          <div className="space-y-0.5">
+             <p className={`text-[8px] font-black uppercase tracking-widest ${config.color}`}>{config.label}</p>
+             <h4 className="text-lg font-black text-slate-900">{recommendation.reason}</h4>
+             <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">{recommendation.context} Phase</p>
           </div>
        </div>
 
        <button
          onClick={() => router.push(config.path)}
-         className="bg-slate-900 text-white px-10 py-5 rounded-2xl font-black text-sm uppercase tracking-widest flex items-center gap-3 shadow-md hover:bg-blue-600 active:scale-95 transition-all"
+         className="bg-slate-900 text-white px-8 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2 shadow-md hover:bg-primary active:scale-95 transition-all"
        >
-          Initialize <ArrowRight size={18} />
+          Start Now <ArrowRight size={14} />
        </button>
     </motion.div>
   );

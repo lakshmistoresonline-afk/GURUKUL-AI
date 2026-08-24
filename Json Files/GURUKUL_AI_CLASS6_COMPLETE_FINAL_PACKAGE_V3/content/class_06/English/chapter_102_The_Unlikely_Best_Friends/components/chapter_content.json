@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_content",
+  "chapter_id": "fepr102",
+  "class": 6,
+  "subject": "English",
+  "chapter_title": "The Unlikely Best Friends",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "overview": "Canonical source-derived learning unit: The Unlikely Best Friends.",
+    "source_grounded_key_points": [
+      "What do you do when you are with your friends and how do you feel?",
+      "Now, complete the following sentences by writing in the shapes given below.",
+      "Share your completed sentences with your classmates and teacher.",
+      "play happy With my friend With my friend I feel I _____________ _____________ II The title of the chapter is ‘The Unlikely Best Friends’.",
+      "The king was fond of Gajaraj, rectangular space and he had ordered that the elephant should stables: living be well looked after.",
+      "spaces for In spite of royal comforts, Gajaraj was sad animals because he had no friends.",
+      "The mahout, or elephant trainer, was the only one he ever interacted with.",
+      "The mahout was a kind man interacted with: who served Gajaraj food, and gave him a bath communicated in the elephant pond daily."
+    ],
+    "learning_sequence": [
+      "Connect",
+      "Explore",
+      "Explain",
+      "Practice",
+      "Apply",
+      "Reflect",
+      "Assess"
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.chapter_content",
+    "domain": "reader",
+    "description": "Primary chapter learning content",
+    "chapter_scoped": true
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "interactive_lab",
+  "chapter_id": "gecu103",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Electricity: Circuits and their Components",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "activities": [
+      {
+        "id": "gecu103_lab01",
+        "title": "Explore Electricity: Circuits and their Components",
+        "objective": "Investigate a central idea from Electricity: Circuits and their Components.",
+        "materials": [
+          "chapter text",
+          "notebook",
+          "pencil"
+        ],
+        "instructions": [
+          "Review the relevant source section.",
+          "Identify the evidence or method needed.",
+          "observe, measure, classify or safely investigate the scientific phenomenon",
+          "Record the result and reasoning."
+        ],
+        "student_action": "Investigate and explain.",
+        "success_condition": "The outcome is consistent with the source and includes reasoning."
+      },
+      {
+        "id": "gecu103_lab02",
+        "title": "Evidence Check",
+        "objective": "Distinguish supported from unsupported claims.",
+        "instructions": [
+          "Choose two chapter-related claims.",
+          "Locate supporting evidence.",
+          "Accept or reject each claim.",
+          "Explain why."
+        ],
+        "student_action": "Match claims to evidence.",
+        "success_condition": "Accepted claims have relevant source support."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.interactive_lab",
+    "domain": "learning",
+    "description": "Interactive lab content",
+    "chapter_scoped": true
+  }
+}

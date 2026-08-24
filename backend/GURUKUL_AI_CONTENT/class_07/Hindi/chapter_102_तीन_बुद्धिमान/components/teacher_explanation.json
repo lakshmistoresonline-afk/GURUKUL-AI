@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "teacher_explanation",
+  "chapter_id": "ghml102",
+  "class": 7,
+  "subject": "Hindi",
+  "chapter_title": "तीन बुद्धिमान",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of तीन बुद्धिमान.",
+    "explanation_sections": [
+      {
+        "title": "Activate",
+        "explanation": "Connect the chapter to prior knowledge, observation or experience."
+      },
+      {
+        "title": "Build",
+        "explanation": "Teach from the source-grounded points and examples.",
+        "source_evidence": [
+          "2 तीन बु�द्धमान एक समय क� बात है िक एक िनधर्न व्यिक्त के तीन बेटे थे।",
+          "इसिलए तम्ु हें एक दसू रे प्रकार का धन सिं चत करना चािहए— हर वस्तु और िस्थित को पणू तर् : समझने और जानने का प्रयास करो।",
+          "रुपये-पैसे के स्थान पर तम्ु हारे पास पैनी दृिष्ट होगी और सोने-चाँदी के स्थान पर तीव्र बिु द्ध होगी।",
+          "ऐसा धन संिचत कर लेने पर तम्ु हें कभी िकसी प्रकार क� कमी न रहेगी और तमु दसू रों क� तल ु ना में उन्नीस नहीं रहोगे।” समय बीता और कुछ समय पश्चात् िपता चल बसे।",
+          "बेटे िमलकर बैठे, उन्होंने सारी िस्थित पर िवचार िकया और िफर बोले— “हमारे िलए यहाँ कुछ भी तो करने को नहीं।"
+        ]
+      },
+      {
+        "title": "Reason",
+        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
+      },
+      {
+        "title": "Transfer",
+        "explanation": "Move from the textbook context to a closely related new situation."
+      }
+    ],
+    "teaching_sequence": [
+      {
+        "step": 1,
+        "teacher_action": "Activate prior knowledge.",
+        "student_action": "Predict, recall or observe."
+      },
+      {
+        "step": 2,
+        "teacher_action": "Model the chapter content.",
+        "student_action": "Identify evidence or method."
+      },
+      {
+        "step": 3,
+        "teacher_action": "Probe reasoning.",
+        "student_action": "Explain and justify."
+      },
+      {
+        "step": 4,
+        "teacher_action": "Guide transfer.",
+        "student_action": "Apply independently."
+      }
+    ],
+    "misconceptions": [
+      "Answering without evidence or working.",
+      "Confusing an example with the underlying concept."
+    ],
+    "checks_for_understanding": [
+      "What evidence supports this?",
+      "What changes if an important condition changes?"
+    ],
+    "closure": "Learner states the central idea, supporting evidence and one application."
+  },
+  "runtime_mapping": {
+    "route": "teacher.explanation",
+    "domain": "teacher",
+    "description": "Teacher-facing explanation",
+    "chapter_scoped": true
+  }
+}

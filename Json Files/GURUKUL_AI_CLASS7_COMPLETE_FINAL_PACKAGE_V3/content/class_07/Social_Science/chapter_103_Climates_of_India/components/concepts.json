@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "gees103",
+  "class": 7,
+  "subject": "Social Science",
+  "chapter_title": "Climates of India",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "gees103_c01",
+        "name": "Climates of India",
+        "definition": "Central learning focus of Climates of India.",
+        "source_evidence": "3 CHAPTER Climates of India kāle varṣhatu parjanyaha pṛiṭhivī sasyaśhālinī deśhoyam kṣhobharahitah brāhmaṇāsantu nirbhayāh May the rains be timely, may the Earth be lush with vegetation May this country be free from turmoil, may good people be fearless!"
+      },
+      {
+        "id": "gees103_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Use source information, observation or valid working to support a conclusion.",
+        "source_evidence": "What is the effect of climate on 3 – Climates of India economy, culture and society?"
+      },
+      {
+        "id": "gees103_c03",
+        "name": "Application and transfer",
+        "definition": "Use the learned idea in a relevant new context.",
+        "source_evidence": "How can understanding the climate help us to prepare for natural disasters?"
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

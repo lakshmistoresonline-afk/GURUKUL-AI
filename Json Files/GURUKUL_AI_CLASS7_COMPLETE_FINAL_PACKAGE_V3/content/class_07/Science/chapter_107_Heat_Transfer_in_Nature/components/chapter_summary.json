@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "chapter_summary",
+  "chapter_id": "gecu107",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "Heat Transfer in Nature",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "summary": "'Heat Transfer in Nature' is organised around source-supported ideas, evidence, examples, methods or arguments.",
+    "key_points": [
+      "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok.",
+      "On a cold winter evening, they are sitting around a ﬁreplace.",
+      "Palden shares his experiences of visiting Kerala during the winter vacation.",
+      "He says that compared to Gangtok, winter in Kerala is comparatively warm and humid.",
+      "Both Pema and Palden are curious about why some places are so cold and others quite hot.",
+      "Hearing them express their curiosity, their grandfather, a retired science teacher, says, “Kerala is closer to the equator than Sikkim and it also has a long coastline, which results in warmer and more humid weather conditions”.",
+      "Palden replies, “Yes, we learnt in Grade 6 Science and Social Science that for us on the Earth, the Sun is the main source of heat and light, and around the equator, the climate is generally hot”."
+    ]
+  },
+  "runtime_mapping": {
+    "route": "reader.summary",
+    "domain": "reader",
+    "description": "Chapter summary",
+    "chapter_scoped": true
+  }
+}

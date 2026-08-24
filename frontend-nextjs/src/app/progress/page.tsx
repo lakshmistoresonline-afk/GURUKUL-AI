@@ -7,7 +7,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { TrendingUp, Award, Clock, BookOpen, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { progressService, MasteryRecord } from '@/services/progress';
-import { normalizeClassName } from '@/utils/chapter';
+import { normalizeClassName, getChapterDisplayData } from '@/utils/chapter';
 
 export default function ProgressPage() {
   const { profile, loading: authLoading } = useAuth();
@@ -103,7 +103,9 @@ export default function ProgressPage() {
                 <div className="space-y-6">
                   {metrics.weak.length > 0 ? metrics.weak.map((w, i) => (
                     <div key={i} className="p-6 bg-red-50 rounded-[32px] border border-red-100">
-                      <p className="text-red-700 font-black text-lg leading-tight uppercase tracking-tight">{w.topic}</p>
+                      <p className="text-red-700 font-black text-lg leading-tight uppercase tracking-tight">
+                        {getChapterDisplayData(w.topic).name}
+                      </p>
                       <p className="text-red-400 text-xs font-bold mt-1 uppercase tracking-widest">{w.subject} • {w.score}% Mastery</p>
                     </div>
                   )) : (

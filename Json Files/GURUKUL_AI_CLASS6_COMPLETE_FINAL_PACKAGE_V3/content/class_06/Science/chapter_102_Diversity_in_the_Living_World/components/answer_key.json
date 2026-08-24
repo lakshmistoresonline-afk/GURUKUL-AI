@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "answer_key",
+  "chapter_id": "fecu102",
+  "class": 6,
+  "subject": "Science",
+  "chapter_title": "Diversity in the Living World",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 6 NCERT textbook PDFs"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "validation_rule": "All answers must be checked against the supplied chapter source.",
+    "sample": {
+      "question_id": "fecu102_q01",
+      "answer": "Option 1",
+      "evidence": "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others."
+    }
+  },
+  "runtime_mapping": {
+    "route": "assessment.answer_key",
+    "domain": "assessment",
+    "description": "Answer keys and scoring references",
+    "chapter_scoped": true
+  }
+}

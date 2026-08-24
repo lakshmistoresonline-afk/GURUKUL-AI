@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "component_id": "concepts",
+  "chapter_id": "gecu104",
+  "class": 7,
+  "subject": "Science",
+  "chapter_title": "The World of Metals and Non-metals",
+  "provenance": {
+    "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+    "source": "User-provided Class 7 NCERT textbook PDF"
+  },
+  "quality": {
+    "chapter_grounded": true,
+    "schema_valid": true,
+    "semantic_unique": true,
+    "runtime_mapped": true,
+    "runtime_mapping_version": "1.0.0"
+  },
+  "content": {
+    "concepts": [
+      {
+        "id": "gecu104_c01",
+        "name": "The World of Metals and Non-metals",
+        "definition": "Central learning focus of The World of Metals and Non-metals.",
+        "source_evidence": "The World of Metals 4 and Non-metals Yashwant and Anandi live in a village in Rajasthan."
+      },
+      {
+        "id": "gecu104_c02",
+        "name": "Evidence and reasoning",
+        "definition": "Use source information, observation or valid working to support a conclusion.",
+        "source_evidence": "Their school has assigned them a project to learn about craftspersons who work with metals."
+      },
+      {
+        "id": "gecu104_c03",
+        "name": "Application and transfer",
+        "definition": "Use the learned idea in a relevant new context.",
+        "source_evidence": "They decide to visit the local ironsmiths who practise this craft."
+      }
+    ]
+  },
+  "runtime_mapping": {
+    "route": "learning.concepts",
+    "domain": "learning",
+    "description": "Core concepts",
+    "chapter_scoped": true
+  }
+}

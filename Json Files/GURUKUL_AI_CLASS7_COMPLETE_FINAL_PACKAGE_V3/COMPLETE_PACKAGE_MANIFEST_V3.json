@@ -1,0 +1,57 @@
+{
+  "package_name": "GURUKUL_AI_CLASS7_COMPLETE_FINAL_PACKAGE",
+  "version": "3.0.0",
+  "status": "COMPLETE_STRUCTURED_CONTENT_PACKAGE",
+  "source_package": "GURUKUL_AI_CLASS7_COMPLETE_FINAL_PACKAGE_V2.zip",
+  "core_chapters": 62,
+  "subject_knowledge_files_generated": 503,
+  "gap_records": 240,
+  "taxonomy": {
+    "Languages": [
+      "vocabulary",
+      "grammar",
+      "idioms_phrases",
+      "comprehension",
+      "writing"
+    ],
+    "Mathematics": [
+      "concepts",
+      "definitions",
+      "formulas",
+      "theorems",
+      "properties",
+      "methods",
+      "worked_examples",
+      "problem_types"
+    ],
+    "Science": [
+      "concepts",
+      "definitions",
+      "processes",
+      "laws",
+      "principles",
+      "experiments",
+      "diagrams",
+      "applications",
+      "terminology"
+    ],
+    "Social_Science": [
+      "facts",
+      "concepts",
+      "events",
+      "dates",
+      "people",
+      "places",
+      "causes",
+      "effects",
+      "comparisons",
+      "maps"
+    ]
+  },
+  "generation_policy": "Source-grounded extraction only. Where the supplied content did not contain an explicit category, a GAP_RECORDED object is included instead of fabricated facts.",
+  "naming_convention": {
+    "class_root": "class_07",
+    "component_json": "lowercase_snake_case.json",
+    "subject_knowledge_root": "subject_knowledge"
+  }
+}
