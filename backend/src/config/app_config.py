@@ -50,6 +50,7 @@ class Settings(BaseSettings):
     GROQ_MODEL: str = "qwen/qwen3.6-27b"
     CEREBRAS_MODEL: str = "gpt-oss-120b"
     OPENROUTER_MODEL: str = "openrouter/free"
+    OPENROUTER_MAX_TOKENS: int = 2048
     OPENROUTER_KIMI_K26_MODEL: str = "moonshotai/kimi-k2.6"
     OPENROUTER_KIMI_K3_MODEL: str = "moonshotai/kimi-k3"
     OPENROUTER_KIMI_CODE_MODEL: str = "moonshotai/kimi-k2.7-code"
