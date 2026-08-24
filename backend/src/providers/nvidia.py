@@ -8,44 +8,48 @@ from ..utils.ai_utils import normalize_structured_response
 
 logger = logging.getLogger(__name__)
 
-class OpenRouterProvider(AIProvider):
+class NvidiaProvider(AIProvider):
     def __init__(self):
-        self.api_key = settings.OPENROUTER_API_KEY
-        self.model = settings.OPENROUTER_MODEL
-        self.base_url = "https://openrouter.ai/api/v1"
+        self.api_key = settings.NVIDIA_API_KEY.strip() if settings.NVIDIA_API_KEY else None
+        self.base_url = settings.NVIDIA_BASE_URL.rstrip('/')
+        self.default_model = settings.NVIDIA_GPT_OSS_MODEL
+        # Explicit timeout configuration for large cloud models
         self.timeout_cfg = httpx.Timeout(
             connect=10.0,
-            read=60.0,
-            write=30.0,
+            read=300.0,  # Highly generous for heavy reasoning models
+            write=60.0,
             pool=10.0
         )
 
     def get_name(self) -> str:
-        return "OpenRouter"
+        return "NVIDIA"
 
     def is_enabled(self) -> bool:
-        return settings.OPENROUTER_ENABLED and self.api_key is not None
+        return settings.NVIDIA_ENABLED and self.api_key is not None
 
     def _create_client(self) -> httpx.AsyncClient:
+        """Creates a robust HTTP client for NVIDIA API communication."""
         return httpx.AsyncClient(
             timeout=self.timeout_cfg,
-            follow_redirects=True
+            http2=False,           # Ensure HTTP/1.1 for broad compatibility
+            follow_redirects=True  # Support API redirects if any
         )
 
     async def generate(self, prompt: str, model_override: Optional[str] = None) -> str:
         url = f"{self.base_url}/chat/completions"
         headers = {
             "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json",
-            "HTTP-Referer": "https://gurukul-ai.local",
-            "X-Title": "Gurukul AI"
+            "Content-Type": "application/json"
         }
 
-        model = model_override or self.model
+        model = model_override or self.default_model
         payload = {
             "model": model,
             "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": settings.OPENROUTER_MAX_TOKENS
+            "temperature": 0.5,
+            "top_p": 0.7,
+            "max_tokens": 1024,
+            "stream": False
         }
 
         try:
@@ -53,17 +57,28 @@ class OpenRouterProvider(AIProvider):
                 response = await client.post(url, json=payload, headers=headers)
                 response.raise_for_status()
                 data = response.json()
-                return data['choices'][0]['message']['content']
+                # Existing response parsing as requested
+                content = data['choices'][0]['message']['content']
+                # Note: Some reasoning models might return content=None if using reasoning_content
+                return content or ""
         except httpx.HTTPStatusError as e:
-            error_msg = f"OpenRouter API Error ({model}): {e.response.status_code} - {e.response.text}"
+            error_msg = f"NVIDIA API Error ({model}): {e.response.status_code} - {e.response.text}"
             logger.error(error_msg)
             raise Exception(error_msg)
-        except (httpx.TimeoutException, httpx.ConnectError, httpx.RequestError) as e:
-            error_msg = f"OpenRouter Network Error ({model}): {type(e).__name__} - {str(e)}"
+        except httpx.TimeoutException as e:
+            error_msg = f"NVIDIA Timeout ({model}): {type(e).__name__} - {str(e)}"
+            logger.error(error_msg)
+            raise Exception(error_msg)
+        except httpx.ConnectError as e:
+            error_msg = f"NVIDIA Connection Error ({model}): {type(e).__name__} - {str(e)}"
+            logger.error(error_msg)
+            raise Exception(error_msg)
+        except httpx.RequestError as e:
+            error_msg = f"NVIDIA Request Error ({model}): {type(e).__name__} - {str(e)}"
             logger.error(error_msg)
             raise Exception(error_msg)
         except Exception as e:
-            error_msg = f"OpenRouter Unexpected Error ({model}): {type(e).__name__} - {str(e)}"
+            error_msg = f"NVIDIA Unexpected Error ({model}): {type(e).__name__} - {str(e)}"
             logger.error(error_msg)
             raise Exception(error_msg)
 
@@ -74,15 +89,15 @@ class OpenRouterProvider(AIProvider):
             "Content-Type": "application/json"
         }
 
-        model = model_override or self.model
+        model = model_override or self.default_model
         payload = {
             "model": model,
             "messages": [
-                {"role": "system", "content": "You are a helpful assistant that outputs ONLY valid JSON."},
+                {"role": "system", "content": "You are a helpful assistant that outputs only valid JSON."},
                 {"role": "user", "content": f"{prompt}\n\nReturn ONLY a JSON object matching this schema: {json.dumps(schema)}"}
             ],
-            "response_format": {"type": "json_object"},
-            "max_tokens": settings.OPENROUTER_MAX_TOKENS
+            "temperature": 0.2,
+            "stream": False
         }
 
         try:
@@ -93,20 +108,28 @@ class OpenRouterProvider(AIProvider):
                 content = data['choices'][0]['message']['content']
                 return normalize_structured_response(content)
         except httpx.HTTPStatusError as e:
-            error_msg = f"OpenRouter Structured API Error ({model}): {e.response.status_code} - {e.response.text}"
+            error_msg = f"NVIDIA Structured API Error ({model}): {e.response.status_code} - {e.response.text}"
             logger.error(error_msg)
             raise Exception(error_msg)
-        except (httpx.TimeoutException, httpx.ConnectError, httpx.RequestError) as e:
-            error_msg = f"OpenRouter Structured Network Error ({model}): {type(e).__name__} - {str(e)}"
+        except httpx.TimeoutException as e:
+            error_msg = f"NVIDIA Structured Timeout ({model}): {type(e).__name__} - {str(e)}"
+            logger.error(error_msg)
+            raise Exception(error_msg)
+        except httpx.ConnectError as e:
+            error_msg = f"NVIDIA Structured Connection Error ({model}): {type(e).__name__} - {str(e)}"
+            logger.error(error_msg)
+            raise Exception(error_msg)
+        except httpx.RequestError as e:
+            error_msg = f"NVIDIA Structured Request Error ({model}): {type(e).__name__} - {str(e)}"
             logger.error(error_msg)
             raise Exception(error_msg)
         except Exception as e:
-            error_msg = f"OpenRouter Structured Unexpected Error ({model}): {type(e).__name__} - {str(e)}"
+            error_msg = f"NVIDIA Structured Unexpected Error ({model}): {type(e).__name__} - {str(e)}"
             logger.error(error_msg)
             raise Exception(error_msg)
 
     async def generate_embeddings(self, text: str) -> List[float]:
-        raise NotImplementedError("OpenRouter does not support embeddings directly")
+        raise NotImplementedError("NVIDIA embedding implementation pending specific model selection")
 
     async def check_health(self) -> Dict[str, Any]:
         if not self.api_key:

@@ -9,6 +9,7 @@ from ..providers.groq import GroqProvider
 from ..providers.cerebras import CerebrasProvider
 from ..providers.openrouter import OpenRouterProvider
 from ..providers.ollama_local import OllamaLocalProvider
+from ..providers.nvidia import NvidiaProvider
 from ..config.app_config import settings
 from .quota_manager import quota_manager
 
@@ -25,12 +26,13 @@ class AIOrchestrator:
 
     def __init__(self):
         self.providers: List[AIProvider] = [
-            OllamaLocalProvider(),
+            GroqProvider(),
+            NvidiaProvider(),
+            OpenRouterProvider(),
             GeminiProvider(),
             OllamaCloudProvider(),
-            GroqProvider(),
+            OllamaLocalProvider(),
             CerebrasProvider(),
-            OpenRouterProvider(),
         ]
 
     @property
@@ -51,22 +53,20 @@ class AIOrchestrator:
         last_error = None
         attempt_history = []
 
-        active_providers = self._get_ordered_providers(task_type)
-        if not active_providers:
-            raise AllProvidersUnavailableError("No AI providers are currently enabled or available.")
+        routing = self._get_task_routing(task_type)
+        if not routing:
+            raise AllProvidersUnavailableError("No AI providers are currently enabled or available for this task.")
 
-        for provider in active_providers:
-
+        for entry in routing:
+            provider = entry["provider"]
             provider_name = provider.get_name()
-            model = self._get_model_for_task(
-                provider_name,
-                task_type,
-            )
+            model = entry["model"]
 
             try:
                 logger.info(
-                    "Routing request to %s for task %s",
+                    "Routing request to %s (%s) for task %s",
                     provider_name,
+                    model,
                     task_type,
                 )
 
@@ -143,22 +143,20 @@ class AIOrchestrator:
         last_error = None
         attempt_history = []
 
-        active_providers = self._get_ordered_providers(task_type)
-        if not active_providers:
+        routing = self._get_task_routing(task_type)
+        if not routing:
             raise AllProvidersUnavailableError("No AI providers are currently enabled or available for structured output.")
 
-        for provider in active_providers:
-
+        for entry in routing:
+            provider = entry["provider"]
             provider_name = provider.get_name()
-            model = self._get_model_for_task(
-                provider_name,
-                task_type,
-            )
+            model = entry["model"]
 
             try:
                 logger.info(
-                    "Routing structured request to %s for task %s",
+                    "Routing structured request to %s (%s) for task %s",
                     provider_name,
+                    model,
                     task_type,
                 )
 
@@ -214,45 +212,115 @@ class AIOrchestrator:
             "is_all_failed": True
         }
 
+    def _get_task_routing(self, task_type: str) -> List[Dict[str, Any]]:
+        """Returns a list of (provider, model) pairs for the given task type, respecting priority and availability."""
+
+        # Get enabled and available providers
+        providers = {p.get_name(): p for p in self.providers if p.is_enabled() and quota_manager.is_available(p.get_name())}
+
+        # Model Shortcuts
+        groq_model = settings.GROQ_MODEL
+        nv_gpt_oss = settings.NVIDIA_GPT_OSS_MODEL
+        nv_minimax = settings.NVIDIA_MINIMAX_MODEL
+        or_kimi_k3 = settings.OPENROUTER_KIMI_K3_MODEL
+        or_kimi_k26 = settings.OPENROUTER_KIMI_K26_MODEL
+        or_kimi_code = settings.OPENROUTER_KIMI_CODE_MODEL
+        or_nemotron_lightning = settings.OPENROUTER_NEMOTRON_LIGHTNING_MODEL
+        or_nemotron_ultra = settings.OPENROUTER_NEMOTRON_ULTRA_MODEL
+        gemini_model = settings.GEMINI_MODEL
+        gemini_fast = settings.GEMINI_FAST_MODEL
+
+        # Task specific sequences (Provider Name, Model ID)
+        task_map = {
+            "simple": [
+                ("Groq", groq_model),
+                ("OpenRouter", or_kimi_k3),
+                ("Gemini", gemini_fast)
+            ],
+            "general": [
+                ("Groq", groq_model),
+                ("OpenRouter", or_kimi_k3),
+                ("Gemini", gemini_model)
+            ],
+            "normal_coding": [
+                ("Groq", groq_model),
+                ("NVIDIA", nv_gpt_oss),
+                ("OpenRouter", or_kimi_code)
+            ],
+            "complex": [
+                ("NVIDIA", nv_gpt_oss),
+                ("OpenRouter", or_kimi_k3),
+                ("Groq", groq_model)
+            ],
+            "reasoning": [
+                ("NVIDIA", nv_gpt_oss),
+                ("OpenRouter", or_kimi_k3),
+                ("OpenRouter", or_nemotron_ultra)
+            ],
+            "large_context": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("OpenRouter", or_kimi_k3),
+                ("NVIDIA", nv_gpt_oss),
+                ("Groq", groq_model)
+            ],
+            "agentic_coding": [
+                ("OpenRouter", or_kimi_code),
+                ("NVIDIA", nv_gpt_oss),
+                ("Groq", groq_model)
+            ],
+            "vision": [
+                ("OpenRouter", or_kimi_k26),
+                ("Gemini", gemini_model)
+            ],
+            "advanced_reasoning": [
+                ("OpenRouter", or_nemotron_ultra),
+                ("OpenRouter", or_kimi_k3),
+                ("NVIDIA", nv_gpt_oss)
+            ],
+            "agentic_reasoning": [
+                ("NVIDIA", nv_minimax),
+                ("OpenRouter", or_nemotron_ultra),
+                ("OpenRouter", or_kimi_k3),
+                ("NVIDIA", nv_gpt_oss)
+            ],
+            "android": [
+                ("Gemini", gemini_model),
+                ("Groq", groq_model),
+                ("NVIDIA", nv_gpt_oss),
+                ("OpenRouter", or_kimi_code)
+            ]
+        }
+
+        sequence = task_map.get(task_type, [("Groq", groq_model), ("NVIDIA", nv_gpt_oss), ("OpenRouter", or_kimi_k3)])
+
+        routing = []
+        for p_name, model_id in sequence:
+            if p_name in providers:
+                routing.append({
+                    "provider": providers[p_name],
+                    "model": model_id
+                })
+
+        return routing
+
     def _get_ordered_providers(
         self,
         task_type: str,
     ) -> List[AIProvider]:
-        """Returns active providers ordered by priority for the given task type."""
-        active = self.active_providers
-
-        if task_type == "complex":
-            # Gemini has priority for complex tasks
-            return sorted(
-                active,
-                key=lambda p: p.get_name() != "Gemini",
-            )
-        else:
-            # Local first for simple and normal tasks
-            return sorted(
-                active,
-                key=lambda p: p.get_name() != "Ollama Local",
-            )
+        """Deprecated: Use _get_task_routing instead."""
+        routing = self._get_task_routing(task_type)
+        return [r["provider"] for r in routing]
 
     def _get_model_for_task(
         self,
         provider_name: str,
         task_type: str,
     ) -> Optional[str]:
-
-        if provider_name == "Gemini":
-            return (
-                settings.GEMINI_FAST_MODEL
-                if task_type == "simple"
-                else settings.GEMINI_MODEL
-            )
-
-        if provider_name == "Ollama Local":
-            if task_type == "simple":
-                return settings.OLLAMA_QWEN_MODEL
-            # Default to Gemma for normal/complex (failover logic in orchestrator will move to Gemini if needed)
-            return settings.OLLAMA_GEMMA_MODEL
-
+        """Deprecated: Use _get_task_routing instead."""
+        routing = self._get_task_routing(task_type)
+        for r in routing:
+            if r["provider"].get_name() == provider_name:
+                return r["model"]
         return None
 
     async def get_health_status(
