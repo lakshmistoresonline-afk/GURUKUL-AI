@@ -190,12 +190,12 @@ class ChapterService:
             start = occurrences[i]['end']
             end = occurrences[i+1]['start'] if i+1 < len(occurrences) else len(text)
             block_text = text[start:end]
-            # A block is substantial if it has > 400 words
-            if len(block_text.split()) > 400:
+            # A block is substantial if it has > 200 words (reduced from 400)
+            if len(block_text.split()) > 200:
                 substantial_blocks += 1
 
         threshold = max(
-            2,
+            4,
             int(settings.MULTI_CHAPTER_MARKER_THRESHOLD),
         )
 
@@ -219,7 +219,7 @@ class ChapterService:
         # 4. If is_prelims and only 1 substantial block (often Note to Teacher) -> Index Skip
 
         # 1. Wide marker range check (TOC/Overview signal)
-        if len(unique_marker_ids) > 2 and substantial_blocks < threshold:
+        if len(unique_marker_ids) > 4 and substantial_blocks < threshold:
              raise SourceClassificationError(
                 "VALIDATION_ERROR:INDEX_OR_CONTENTS_SKIP - Detected multiple chapter markers in likely index/overview structure.",
                 "CONTENTS_INDEX_DOCUMENT"
@@ -227,14 +227,14 @@ class ChapterService:
 
         # 2. Traditional TOC signals
         if substantial_blocks == 0 or is_toc_structure:
-            if is_index_header or is_toc_structure or (len(text.split()) < 1500 and not is_prelims):
+            if is_index_header or is_toc_structure or (len(text.split()) < 500 and not is_prelims):
                 raise SourceClassificationError(
                     "VALIDATION_ERROR:INDEX_OR_CONTENTS_SKIP - Detected INDEX or CONTENTS document.",
                     "CONTENTS_INDEX_DOCUMENT"
                 )
 
         # 3. Prelims with limited content
-        if is_prelims and substantial_blocks < threshold:
+        if is_prelims and substantial_blocks < threshold and len(text.split()) < 2000:
              raise SourceClassificationError(
                 "VALIDATION_ERROR:INDEX_OR_CONTENTS_SKIP - Detected PRELIMS/FRONT-MATTER document.",
                 "CONTENTS_INDEX_DOCUMENT"
@@ -340,7 +340,15 @@ class ChapterService:
                     if stage.get("type") == "structured":
                         response = normalize_structured_response(response)
 
-                    self._validate_stage_result(stage_name, response)
+                    try:
+                        self._validate_stage_result(stage_name, response)
+                    except ValueError as ve:
+                        # Report content generation failure to quota manager for this specific provider/model
+                        provider_name = result.get("provider")
+                        if provider_name:
+                            self.orchestrator.quota_manager.report_error(provider_name, f"VALIDATION_FAILURE: {str(ve)}")
+                        raise ve
+
                     stage_error = None
                     break # Success
 
@@ -489,9 +497,10 @@ class ChapterService:
                     "properties": {
                         "term": {"type": "string"},
                         "definition": {"type": "string"},
-                        "socratic_hint": {"type": "string"}
+                        "socratic_hint": {"type": "string"},
+                        "real_world_application": {"type": "string"}
                     },
-                    "required": ["term", "definition", "socratic_hint"]
+                    "required": ["term", "definition", "socratic_hint", "real_world_application"]
                 }
             }
 
@@ -615,7 +624,7 @@ class ChapterService:
 
             if stage_name == "concepts":
                 for index, item in enumerate(response, start=1):
-                    if not isinstance(item, dict) or not item.get("term") or not item.get("definition") or not item.get("socratic_hint"):
+                    if not isinstance(item, dict) or not item.get("term") or not item.get("definition") or not item.get("socratic_hint") or not item.get("real_world_application"):
                         raise ValueError(f"Concept {index} is missing required fields.")
 
     def _validate_complete_package(

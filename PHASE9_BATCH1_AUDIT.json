@@ -1,0 +1,28 @@
+{
+  "run_id": "RUN_20260824_180723",
+  "batch_size": 10,
+  "results": {
+    "completed": 1,
+    "failed_quota": 9
+  },
+  "chapters": [
+    {
+      "id": "chapter_101_Water_The_Essence_of_Life",
+      "status": "SUCCESS",
+      "provider_distribution": {
+        "Groq": "Normal",
+        "NVIDIA": "Fallback (MiniMax)",
+        "OpenRouter": "Fallback (Nemotron)"
+      }
+    },
+    {
+      "id": "chapter_102_Journey_of_a_River",
+      "status": "FAILED_ALL_PROVIDERS",
+      "errors": ["429", "402", "Timeout"]
+    }
+  ],
+  "production_integrity": {
+    "file_count": 8456,
+    "status": "PASS"
+  }
+}

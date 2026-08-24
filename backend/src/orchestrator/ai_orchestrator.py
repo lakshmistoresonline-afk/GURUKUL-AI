@@ -17,7 +17,7 @@ from .quota_manager import quota_manager
 logger = logging.getLogger(__name__)
 
 
-class AllProvidersUnavailableError(Exception):
+class AllProvidersUnavailableError(RuntimeError):
     """Raised when no AI providers are currently available or all failed."""
     pass
 
@@ -25,6 +25,7 @@ class AllProvidersUnavailableError(Exception):
 class AIOrchestrator:
 
     def __init__(self):
+        self.quota_manager = quota_manager
         self.providers: List[AIProvider] = [
             GroqProvider(),
             NvidiaProvider(),
@@ -103,11 +104,20 @@ class AIOrchestrator:
 
                 error_text = str(exc) or repr(exc)
 
+                # Check for specific error codes in the message
+                status_code = None
+                if "429" in error_text: status_code = 429
+                elif "402" in error_text: status_code = 402
+                elif "401" in error_text: status_code = 401
+                elif "403" in error_text: status_code = 403
+                elif "Timeout" in error_text: status_code = "TIMEOUT"
+
                 logger.warning(
-                    "Provider %s failed for task %s: %s",
+                    "Provider %s failed for task %s (Model: %s): %s",
                     provider_name,
                     task_type,
-                    error_text,
+                    model,
+                    error_text[:200],
                 )
 
                 quota_manager.report_error(
@@ -120,10 +130,16 @@ class AIOrchestrator:
                         "provider": provider_name,
                         "error": error_text,
                         "model": model,
+                        "status_code": status_code
                     }
                 )
 
                 last_error = exc
+
+                # Immediate skip for quota errors
+                if status_code in [429, 402, 401, 403]:
+                    logger.info("Immediate fallback due to critical provider error.")
+                    continue
 
         return {
             "success": False,
@@ -178,11 +194,20 @@ class AIOrchestrator:
 
                 error_text = str(exc) or repr(exc)
 
+                # Check for specific error codes in the message
+                status_code = None
+                if "429" in error_text: status_code = 429
+                elif "402" in error_text: status_code = 402
+                elif "401" in error_text: status_code = 401
+                elif "403" in error_text: status_code = 403
+                elif "Timeout" in error_text: status_code = "TIMEOUT"
+
                 logger.warning(
-                    "Structured provider %s failed for task %s: %s",
+                    "Structured provider %s failed for task %s (Model: %s): %s",
                     provider_name,
                     task_type,
-                    error_text,
+                    model,
+                    error_text[:200],
                 )
 
                 quota_manager.report_error(
@@ -195,10 +220,16 @@ class AIOrchestrator:
                         "provider": provider_name,
                         "error": error_text,
                         "model": model,
+                        "status_code": status_code
                     }
                 )
 
                 last_error = exc
+
+                # Immediate skip for quota errors
+                if status_code in [429, 402, 401, 403]:
+                    logger.info("Immediate structured fallback due to critical provider error.")
+                    continue
 
         return {
             "success": False,
@@ -241,6 +272,44 @@ class AIOrchestrator:
                 ("Groq", groq_model),
                 ("OpenRouter", or_kimi_k3),
                 ("Gemini", gemini_model)
+            ],
+            "prerequisites": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("NVIDIA", nv_minimax),
+                ("Groq", groq_model)
+            ],
+            "concepts": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("NVIDIA", nv_minimax),
+                ("OpenRouter", or_nemotron_ultra),
+                ("Groq", groq_model)
+            ],
+            "quiz": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("NVIDIA", nv_minimax),
+                ("OpenRouter", or_nemotron_ultra),
+                ("Groq", groq_model)
+            ],
+            "flashcards": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("NVIDIA", nv_minimax),
+                ("OpenRouter", or_nemotron_ultra),
+                ("Groq", groq_model)
+            ],
+            "mind_map": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("NVIDIA", nv_minimax),
+                ("Groq", groq_model)
+            ],
+            "related_chapters": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("NVIDIA", nv_minimax),
+                ("Groq", groq_model)
+            ],
+            "subject_knowledge": [
+                ("OpenRouter", or_nemotron_lightning),
+                ("NVIDIA", nv_minimax),
+                ("Groq", groq_model)
             ],
             "normal_coding": [
                 ("Groq", groq_model),
@@ -291,7 +360,13 @@ class AIOrchestrator:
             ]
         }
 
-        sequence = task_map.get(task_type, [("Groq", groq_model), ("NVIDIA", nv_gpt_oss), ("OpenRouter", or_kimi_k3)])
+        sequence = task_map.get(task_type, [
+            ("Groq", groq_model),
+            ("OpenRouter", or_nemotron_lightning),
+            ("OpenRouter", or_nemotron_ultra),
+            ("NVIDIA", nv_gpt_oss),
+            ("OpenRouter", or_kimi_k3)
+        ])
 
         routing = []
         for p_name, model_id in sequence:

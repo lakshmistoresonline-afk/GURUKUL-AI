@@ -1,0 +1,21 @@
+{
+  "run_id": "RUN_20260824_142717",
+  "status": "STABILIZED",
+  "problems_resolved": [
+    "INDEX_OR_CONTENTS_SKIP_AGGRESSION",
+    "UNHANDLED_402_CREDIT_ERROR",
+    "INSUFFICIENT_429_COOLDOWN",
+    "MISSING_TIMEOUT_COOLDOWN"
+  ],
+  "metrics": {
+    "production_files": 8456,
+    "staging_files_created": 15,
+    "fallback_events_recorded": 12,
+    "max_tokens_enforced": 2048
+  },
+  "filter_tuning": {
+    "min_word_count": 500,
+    "max_markers": 4,
+    "substantial_block_words": 200
+  }
+}
