@@ -1,2197 +1,2197 @@
 {
-  "schema_version": "1.0.0",
-  "chapter": {
-    "chapter_id": "gecu112",
-    "class": 7,
-    "subject": "Science",
-    "chapter_number": 112,
-    "chapter_title": "Earth, Moon, and the Sun",
-    "source_pdf": "gecu112.pdf",
-    "pages": 20,
-    "source_text_file": "SOURCE_TEXT/Science_gecu112.txt",
-    "source_key_points": [
-      "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-      "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-      "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-      "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-      "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-      "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-      "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-      " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-      "While you are sitting on the moving merry- go-round, look around you.",
-      "While you turn in the anti-clockwise direction, the objects appear to turn around you in the opposite direction, that is, in the clockwise direction."
-    ]
-  },
-  "components": {
-    "chapter_metadata": {
-      "schema_version": "1.0.0",
-      "component_id": "chapter_metadata",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "chapter_number": 112,
-        "title": "Earth, Moon, and the Sun",
+    "schema_version": "1.0.0",
+    "chapter": {
+        "chapter_id": "gecu112",
+        "class": 7,
         "subject": "Science",
+        "chapter_number": 112,
+        "chapter_title": "Earth, Moon, and the Sun",
         "source_pdf": "gecu112.pdf",
-        "source_pages": 20,
-        "source_text_characters": 78600
-      },
-      "runtime_mapping": {
-        "route": "content.chapter.metadata",
-        "domain": "content",
-        "description": "Chapter identity and source metadata",
-        "chapter_scoped": true
-      }
-    },
-    "learning_objectives": {
-      "schema_version": "1.0.0",
-      "component_id": "learning_objectives",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "objectives": [
-          "Explain the central ideas presented in Earth, Moon, and the Sun.",
-          "Identify evidence, examples, patterns, relationships, processes or arguments from the chapter.",
-          "Apply a chapter concept or method to a new related situation.",
-          "Communicate reasoning accurately and independently.",
-          "Reflect on learning and identify areas needing further practice."
+        "pages": 20,
+        "source_text_file": "SOURCE_TEXT/Science_gecu112.txt",
+        "source_key_points": [
+            "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+            "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+            "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+            "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+            "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+            "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+            "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
+            " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
+            "While you are sitting on the moving merry- go-round, look around you.",
+            "While you turn in the anti-clockwise direction, the objects appear to turn around you in the opposite direction, that is, in the clockwise direction."
         ]
-      },
-      "runtime_mapping": {
-        "route": "learning.objectives",
-        "domain": "learning",
-        "description": "Learning objectives",
-        "chapter_scoped": true
-      }
     },
-    "prerequisites": {
-      "schema_version": "1.0.0",
-      "component_id": "prerequisites",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "assumed_knowledge": [
-          "Foundational Grade 6 learning appropriate to the subject.",
-          "Ability to follow multi-step instructions and explain reasoning.",
-          "Basic comparison, classification and evidence-use skills."
-        ],
-        "diagnostic_prompts": [
-          "What do you already know about Earth, Moon, and the Sun?",
-          "Which related concept is easiest for you?"
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.prerequisites",
-        "domain": "learning",
-        "description": "Prerequisite knowledge",
-        "chapter_scoped": true
-      }
-    },
-    "chapter_content": {
-      "schema_version": "1.0.0",
-      "component_id": "chapter_content",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "overview": "Canonical source-grounded learning unit for Earth, Moon, and the Sun.",
-        "source_grounded_key_points": [
-          "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-          "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-          "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-          "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-          "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-          "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-          "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-          " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-          "While you are sitting on the moving merry- go-round, look around you.",
-          "While you turn in the anti-clockwise direction, the objects appear to turn around you in the opposite direction, that is, in the clockwise direction."
-        ],
-        "learning_sequence": [
-          "Connect",
-          "Explore",
-          "Explain",
-          "Practice",
-          "Apply",
-          "Transfer",
-          "Reflect",
-          "Assess"
-        ],
-        "source_rule": "The uploaded textbook PDF is the factual source of truth."
-      },
-      "runtime_mapping": {
-        "route": "reader.chapter_content",
-        "domain": "reader",
-        "description": "Primary chapter learning content",
-        "chapter_scoped": true
-      }
-    },
-    "teacher_explanation": {
-      "schema_version": "1.0.0",
-      "component_id": "teacher_explanation",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Earth, Moon, and the Sun.",
-        "explanation_sections": [
-          {
-            "title": "Activate",
-            "explanation": "Connect the chapter to prior knowledge, observation or experience."
-          },
-          {
-            "title": "Build",
-            "explanation": "Teach from the source-grounded points and examples.",
-            "source_evidence": [
-              "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-              "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-              "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-              "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-              "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled."
-            ]
-          },
-          {
-            "title": "Reason",
-            "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-          },
-          {
-            "title": "Transfer",
-            "explanation": "Move from the textbook context to a closely related new situation."
-          }
-        ],
-        "teaching_sequence": [
-          {
-            "step": 1,
-            "teacher_action": "Activate prior knowledge.",
-            "student_action": "Predict, recall or observe."
-          },
-          {
-            "step": 2,
-            "teacher_action": "Model the chapter content.",
-            "student_action": "Identify evidence or method."
-          },
-          {
-            "step": 3,
-            "teacher_action": "Probe reasoning.",
-            "student_action": "Explain and justify."
-          },
-          {
-            "step": 4,
-            "teacher_action": "Guide transfer.",
-            "student_action": "Apply independently."
-          }
-        ],
-        "misconceptions": [
-          "Answering without evidence or working.",
-          "Confusing an example with the underlying concept."
-        ],
-        "checks_for_understanding": [
-          "What evidence supports this?",
-          "What changes if an important condition changes?"
-        ],
-        "closure": "Learner states the central idea, supporting evidence and one application."
-      },
-      "runtime_mapping": {
-        "route": "teacher.explanation",
-        "domain": "teacher",
-        "description": "Teacher-facing explanation",
-        "chapter_scoped": true
-      }
-    },
-    "student_explanation": {
-      "schema_version": "1.0.0",
-      "component_id": "student_explanation",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "simple_explanation": "To learn Earth, Moon, and the Sun, first understand the main idea, then identify supporting evidence/examples or steps, and finally apply the idea.",
-        "study_steps": [
-          "Read/observe carefully",
-          "Identify the central idea",
-          "Mark evidence or working",
-          "Practise",
-          "Transfer to a new situation",
-          "Self-check"
-        ],
-        "key_points": [
-          "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-          "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-          "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-          "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-          "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-          "Have you ever enjoyed riding a merry-go-round at a park or at your school?"
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.student_explanation",
-        "domain": "learning",
-        "description": "Student-facing explanation",
-        "chapter_scoped": true
-      }
-    },
-    "concepts": {
-      "schema_version": "1.0.0",
-      "component_id": "concepts",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "concepts": [
-          {
-            "id": "gecu112_c01",
-            "name": "Earth, Moon, and the Sun",
-            "definition": "Central learning focus of Earth, Moon, and the Sun.",
-            "source_evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school."
-          },
-          {
-            "id": "gecu112_c02",
-            "name": "Evidence and reasoning",
-            "definition": "Use source information, observation or valid working to support a conclusion.",
-            "source_evidence": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations."
-          },
-          {
-            "id": "gecu112_c03",
-            "name": "Application and transfer",
-            "definition": "Use the learned idea in a relevant new context.",
-            "source_evidence": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.concepts",
-        "domain": "learning",
-        "description": "Core concepts",
-        "chapter_scoped": true
-      }
-    },
-    "concept_graph": {
-      "schema_version": "1.0.0",
-      "component_id": "concept_graph",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "nodes": [
-          {
-            "id": "gecu112_c01",
-            "label": "Earth, Moon, and the Sun"
-          },
-          {
-            "id": "gecu112_c02",
-            "label": "Evidence and reasoning"
-          },
-          {
-            "id": "gecu112_c03",
-            "label": "Application and transfer"
-          }
-        ],
-        "edges": [
-          {
-            "from": "gecu112_c01",
-            "to": "gecu112_c02",
-            "relation": "supported_by"
-          },
-          {
-            "from": "gecu112_c02",
-            "to": "gecu112_c03",
-            "relation": "enables"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.concept_graph",
-        "domain": "learning",
-        "description": "Concept relationships and graph data",
-        "chapter_scoped": true
-      }
-    },
-    "key_terms": {
-      "schema_version": "1.0.0",
-      "component_id": "key_terms",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "terms": [
-          {
-            "term": "Earth",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "Moon",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "morning",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "Kanniyakumari",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "Tamil",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "12-year-old",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "Rashmika",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "eagerly",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "cycling",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "school",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "science",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          },
-          {
-            "term": "teacher",
-            "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.key_terms",
-        "domain": "learning",
-        "description": "Key terms and vocabulary",
-        "chapter_scoped": true
-      }
-    },
-    "story_mode": {
-      "schema_version": "1.0.0",
-      "component_id": "story_mode",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "mode_type": "science_inquiry",
-        "opening": "Enter a learning scenario connected to Earth, Moon, and the Sun.",
-        "scenes": [
-          {
-            "scene_id": "s1",
-            "narration": "Observe the starting situation and identify what you already know.",
-            "learning_purpose": "Activate prior knowledge."
-          },
-          {
-            "scene_id": "s2",
-            "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-            "learning_purpose": "Apply the chapter."
-          },
-          {
-            "scene_id": "s3",
-            "narration": "Transfer the idea to a new related situation.",
-            "learning_purpose": "Build independent reasoning."
-          }
-        ],
-        "learning_checkpoints": [
-          {
-            "question": "Which idea from Earth, Moon, and the Sun supports your decision?",
-            "answer_rule": "Answer must use source-grounded reasoning."
-          }
-        ],
-        "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-        "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-      },
-      "runtime_mapping": {
-        "route": "learning.story_mode",
-        "domain": "learning",
-        "description": "Story-based learning mode",
-        "chapter_scoped": true
-      }
-    },
-    "interactive_scenarios": {
-      "schema_version": "1.0.0",
-      "component_id": "interactive_scenarios",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "scenarios": [
-          {
-            "id": "gecu112_sc01",
-            "situation": "A learner faces a problem related to Earth, Moon, and the Sun.",
-            "choices": [
-              {
-                "id": "A",
-                "choice": "Use relevant evidence or working.",
-                "feedback": "Good reasoning."
-              },
-              {
-                "id": "B",
-                "choice": "Guess without checking.",
-                "feedback": "Return to the evidence."
-              },
-              {
-                "id": "C",
-                "choice": "Use an unrelated idea.",
-                "feedback": "Keep the response connected to the chapter."
-              }
-            ]
-          },
-          {
-            "id": "gecu112_sc02",
-            "situation": "A classmate gives an answer without justification.",
-            "choices": [
-              {
-                "id": "A",
-                "choice": "Ask for evidence or working.",
-                "feedback": "Strong reasoning practice."
-              },
-              {
-                "id": "B",
-                "choice": "Accept it without checking.",
-                "feedback": "Check support first."
-              },
-              {
-                "id": "C",
-                "choice": "Ignore the reasoning.",
-                "feedback": "Reasoning is part of mastery."
-              }
-            ]
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.interactive_scenarios",
-        "domain": "learning",
-        "description": "Scenario-based interaction",
-        "chapter_scoped": true
-      }
-    },
-    "worked_examples": {
-      "schema_version": "1.0.0",
-      "component_id": "worked_examples",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "examples": [
-          {
-            "id": "gecu112_ex01",
-            "task": "Explain a central idea from Earth, Moon, and the Sun using source evidence or working.",
-            "method": [
-              "Identify the concept",
-              "Locate evidence/working",
-              "Explain the connection",
-              "Check"
-            ]
-          },
-          {
-            "id": "gecu112_ex02",
-            "task": "Transfer the idea to a new related example.",
-            "method": [
-              "Identify what transfers",
-              "Adapt",
-              "Justify",
-              "Check"
-            ]
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.worked_examples",
-        "domain": "learning",
-        "description": "Worked examples",
-        "chapter_scoped": true
-      }
-    },
-    "practice_bank": {
-      "schema_version": "1.0.0",
-      "component_id": "practice_bank",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "items": [
-          {
-            "id": "gecu112_q01",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "easy",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q02",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "easy",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q03",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "easy",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q04",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "medium",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q05",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "medium",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q06",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "medium",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q07",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "hard",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q08",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "hard",
-            "concept_id": "gecu112_c01"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "practice.bank",
-        "domain": "practice",
-        "description": "Practice question bank",
-        "chapter_scoped": true
-      }
-    },
-    "adaptive_practice": {
-      "schema_version": "1.0.0",
-      "component_id": "adaptive_practice",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "selection_rules": [
-          {
-            "condition": "accuracy < 60%",
-            "action": "revisit explanation and serve simpler evidence practice"
-          },
-          {
-            "condition": "60–84%",
-            "action": "serve application practice"
-          },
-          {
-            "condition": ">=85%",
-            "action": "serve transfer/HOTS practice"
-          }
-        ],
-        "items": [
-          {
-            "id": "gecu112_a1",
-            "difficulty": "easy"
-          },
-          {
-            "id": "gecu112_a2",
-            "difficulty": "medium"
-          },
-          {
-            "id": "gecu112_a3",
-            "difficulty": "hard"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "practice.adaptive",
-        "domain": "practice",
-        "description": "Adaptive practice content",
-        "chapter_scoped": true
-      }
-    },
-    "interactive_lab": {
-      "schema_version": "1.0.0",
-      "component_id": "interactive_lab",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "activities": [
-          {
-            "id": "gecu112_lab01",
-            "title": "Explore Earth, Moon, and the Sun",
-            "objective": "Investigate a central idea from Earth, Moon, and the Sun.",
-            "materials": [
-              "chapter text",
-              "notebook",
-              "pencil"
-            ],
-            "instructions": [
-              "Review the relevant source section.",
-              "Identify the evidence or method needed.",
-              "observe, measure, classify or safely investigate the scientific phenomenon",
-              "Record the result and reasoning."
-            ],
-            "student_action": "Investigate and explain.",
-            "success_condition": "The outcome is consistent with the source and includes reasoning."
-          },
-          {
-            "id": "gecu112_lab02",
-            "title": "Evidence Check",
-            "objective": "Distinguish supported from unsupported claims.",
-            "instructions": [
-              "Choose two chapter-related claims.",
-              "Locate supporting evidence.",
-              "Accept or reject each claim.",
-              "Explain why."
-            ],
-            "student_action": "Match claims to evidence.",
-            "success_condition": "Accepted claims have relevant source support."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.interactive_lab",
-        "domain": "learning",
-        "description": "Interactive lab content",
-        "chapter_scoped": true
-      }
-    },
-    "activities": {
-      "schema_version": "1.0.0",
-      "component_id": "activities",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "activities": [
-          {
-            "id": "gecu112_act01",
-            "type": "think_pair_share",
-            "title": "Explain and justify",
-            "steps": [
-              "Think",
-              "Discuss",
-              "Find evidence",
-              "Share"
-            ]
-          },
-          {
-            "id": "gecu112_act02",
-            "type": "sort_sequence",
-            "title": "Organise the learning",
-            "steps": [
-              "Select key ideas",
-              "Sort or sequence",
-              "Explain relationships"
-            ]
-          },
-          {
-            "id": "gecu112_act03",
-            "type": "reflection",
-            "title": "One-minute reflection",
-            "prompt": "What is the most important learning from Earth, Moon, and the Sun?"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.activities",
-        "domain": "learning",
-        "description": "Interactive and hands-on activities",
-        "chapter_scoped": true
-      }
-    },
-    "diagnostic_assessment": {
-      "schema_version": "1.0.0",
-      "component_id": "diagnostic_assessment",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "items": [
-          {
-            "id": "gecu112_d1",
-            "question": "What do you already know about Earth, Moon, and the Sun?",
-            "type": "short_answer"
-          },
-          {
-            "id": "gecu112_d2",
-            "question": "Which related concept or skill needs more support?",
-            "type": "self_assessment"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "assessment.diagnostic",
-        "domain": "assessment",
-        "description": "Diagnostic assessment",
-        "chapter_scoped": true
-      }
-    },
-    "formative_assessment": {
-      "schema_version": "1.0.0",
-      "component_id": "formative_assessment",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "items": [
-          {
-            "id": "gecu112_f1",
-            "question": "State a key idea and its supporting evidence or working.",
-            "checkpoint": "understanding"
-          },
-          {
-            "id": "gecu112_f2",
-            "question": "Apply the idea to a new related situation.",
-            "checkpoint": "application"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "assessment.formative",
-        "domain": "assessment",
-        "description": "Formative assessment",
-        "chapter_scoped": true
-      }
-    },
-    "assessment_blueprint": {
-      "schema_version": "1.0.0",
-      "component_id": "assessment_blueprint",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "total_questions": 12,
-        "difficulty": {
-          "easy": 4,
-          "medium": 5,
-          "hard": 3
+    "components": {
+        "chapter_metadata": {
+            "schema_version": "1.0.0",
+            "component_id": "chapter_metadata",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "chapter_number": 112,
+                "title": "Earth, Moon, and the Sun",
+                "subject": "Science",
+                "source_pdf": "gecu112.pdf",
+                "source_pages": 20,
+                "source_text_characters": 78600
+            },
+            "runtime_mapping": {
+                "route": "content.chapter.metadata",
+                "domain": "content",
+                "description": "Chapter identity and source metadata",
+                "chapter_scoped": true
+            }
         },
-        "skills": {
-          "recall": 2,
-          "understanding": 3,
-          "application": 4,
-          "higher_order": 3
+        "learning_objectives": {
+            "schema_version": "1.0.0",
+            "component_id": "learning_objectives",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "objectives": [
+                    "Explain the central ideas presented in Earth, Moon, and the Sun.",
+                    "Identify evidence, examples, patterns, relationships, processes or arguments from the chapter.",
+                    "Apply a chapter concept or method to a new related situation.",
+                    "Communicate reasoning accurately and independently.",
+                    "Reflect on learning and identify areas needing further practice."
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.objectives",
+                "domain": "learning",
+                "description": "Learning objectives",
+                "chapter_scoped": true
+            }
         },
-        "coverage": [
-          {
-            "concept_id": "gecu112_c01",
-            "minimum_items": 7
-          },
-          {
-            "concept_id": "gecu112_c02",
-            "minimum_items": 3
-          },
-          {
-            "concept_id": "gecu112_c03",
-            "minimum_items": 2
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "assessment.blueprint",
-        "domain": "assessment",
-        "description": "Assessment blueprint and distribution",
-        "chapter_scoped": true
-      }
-    },
-    "assessment_bank": {
-      "schema_version": "1.0.0",
-      "component_id": "assessment_bank",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "items": [
-          {
-            "id": "gecu112_q01",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "easy",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q02",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "easy",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q03",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "easy",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q04",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "medium",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q05",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "medium",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q06",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "medium",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q07",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "hard",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_q08",
-            "type": "source_based",
-            "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-            "options": [
-              " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-              "An unrelated statement.",
-              "A statement that contradicts the chapter.",
-              "A statement not supported by the source."
-            ],
-            "correct_option": 0,
-            "source_evidence": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-            "explanation": "The correct response must be supported by the supplied chapter.",
-            "difficulty": "hard",
-            "concept_id": "gecu112_c01"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "assessment.bank",
-        "domain": "assessment",
-        "description": "Assessment question bank",
-        "chapter_scoped": true
-      }
-    },
-    "answer_key": {
-      "schema_version": "1.0.0",
-      "component_id": "answer_key",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "validation_rule": "All answers must be validated against the supplied chapter source.",
-        "sample": {
-          "question_id": "gecu112_q01",
-          "answer": "Option 1",
-          "evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school."
+        "prerequisites": {
+            "schema_version": "1.0.0",
+            "component_id": "prerequisites",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "assumed_knowledge": [
+                    "Foundational Grade 6 learning appropriate to the subject.",
+                    "Ability to follow multi-step instructions and explain reasoning.",
+                    "Basic comparison, classification and evidence-use skills."
+                ],
+                "diagnostic_prompts": [
+                    "What do you already know about Earth, Moon, and the Sun?",
+                    "Which related concept is easiest for you?"
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.prerequisites",
+                "domain": "learning",
+                "description": "Prerequisite knowledge",
+                "chapter_scoped": true
+            }
+        },
+        "chapter_content": {
+            "schema_version": "1.0.0",
+            "component_id": "chapter_content",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "overview": "Canonical source-grounded learning unit for Earth, Moon, and the Sun.",
+                "source_grounded_key_points": [
+                    "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                    "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                    "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                    "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                    "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+                    "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+                    "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
+                    " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
+                    "While you are sitting on the moving merry- go-round, look around you.",
+                    "While you turn in the anti-clockwise direction, the objects appear to turn around you in the opposite direction, that is, in the clockwise direction."
+                ],
+                "learning_sequence": [
+                    "Connect",
+                    "Explore",
+                    "Explain",
+                    "Practice",
+                    "Apply",
+                    "Transfer",
+                    "Reflect",
+                    "Assess"
+                ],
+                "source_rule": "The uploaded textbook PDF is the factual source of truth."
+            },
+            "runtime_mapping": {
+                "route": "reader.chapter_content",
+                "domain": "reader",
+                "description": "Primary chapter learning content",
+                "chapter_scoped": true
+            }
+        },
+        "teacher_explanation": {
+            "schema_version": "1.0.0",
+            "component_id": "teacher_explanation",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Earth, Moon, and the Sun.",
+                "explanation_sections": [
+                    {
+                        "title": "Activate",
+                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
+                    },
+                    {
+                        "title": "Build",
+                        "explanation": "Teach from the source-grounded points and examples.",
+                        "source_evidence": [
+                            "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                            "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                            "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                            "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                            "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled."
+                        ]
+                    },
+                    {
+                        "title": "Reason",
+                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
+                    },
+                    {
+                        "title": "Transfer",
+                        "explanation": "Move from the textbook context to a closely related new situation."
+                    }
+                ],
+                "teaching_sequence": [
+                    {
+                        "step": 1,
+                        "teacher_action": "Activate prior knowledge.",
+                        "student_action": "Predict, recall or observe."
+                    },
+                    {
+                        "step": 2,
+                        "teacher_action": "Model the chapter content.",
+                        "student_action": "Identify evidence or method."
+                    },
+                    {
+                        "step": 3,
+                        "teacher_action": "Probe reasoning.",
+                        "student_action": "Explain and justify."
+                    },
+                    {
+                        "step": 4,
+                        "teacher_action": "Guide transfer.",
+                        "student_action": "Apply independently."
+                    }
+                ],
+                "misconceptions": [
+                    "Answering without evidence or working.",
+                    "Confusing an example with the underlying concept."
+                ],
+                "checks_for_understanding": [
+                    "What evidence supports this?",
+                    "What changes if an important condition changes?"
+                ],
+                "closure": "Learner states the central idea, supporting evidence and one application."
+            },
+            "runtime_mapping": {
+                "route": "teacher.explanation",
+                "domain": "teacher",
+                "description": "Teacher-facing explanation",
+                "chapter_scoped": true
+            }
+        },
+        "student_explanation": {
+            "schema_version": "1.0.0",
+            "component_id": "student_explanation",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "simple_explanation": "To learn Earth, Moon, and the Sun, first understand the main idea, then identify supporting evidence/examples or steps, and finally apply the idea.",
+                "study_steps": [
+                    "Read/observe carefully",
+                    "Identify the central idea",
+                    "Mark evidence or working",
+                    "Practise",
+                    "Transfer to a new situation",
+                    "Self-check"
+                ],
+                "key_points": [
+                    "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                    "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                    "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                    "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                    "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+                    "Have you ever enjoyed riding a merry-go-round at a park or at your school?"
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.student_explanation",
+                "domain": "learning",
+                "description": "Student-facing explanation",
+                "chapter_scoped": true
+            }
+        },
+        "concepts": {
+            "schema_version": "1.0.0",
+            "component_id": "concepts",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "concepts": [
+                    {
+                        "id": "gecu112_c01",
+                        "name": "Earth, Moon, and the Sun",
+                        "definition": "Central learning focus of Earth, Moon, and the Sun.",
+                        "source_evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school."
+                    },
+                    {
+                        "id": "gecu112_c02",
+                        "name": "Evidence and reasoning",
+                        "definition": "Use source information, observation or valid working to support a conclusion.",
+                        "source_evidence": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations."
+                    },
+                    {
+                        "id": "gecu112_c03",
+                        "name": "Application and transfer",
+                        "definition": "Use the learned idea in a relevant new context.",
+                        "source_evidence": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.concepts",
+                "domain": "learning",
+                "description": "Core concepts",
+                "chapter_scoped": true
+            }
+        },
+        "concept_graph": {
+            "schema_version": "1.0.0",
+            "component_id": "concept_graph",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "nodes": [
+                    {
+                        "id": "gecu112_c01",
+                        "label": "Earth, Moon, and the Sun"
+                    },
+                    {
+                        "id": "gecu112_c02",
+                        "label": "Evidence and reasoning"
+                    },
+                    {
+                        "id": "gecu112_c03",
+                        "label": "Application and transfer"
+                    }
+                ],
+                "edges": [
+                    {
+                        "from": "gecu112_c01",
+                        "to": "gecu112_c02",
+                        "relation": "supported_by"
+                    },
+                    {
+                        "from": "gecu112_c02",
+                        "to": "gecu112_c03",
+                        "relation": "enables"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.concept_graph",
+                "domain": "learning",
+                "description": "Concept relationships and graph data",
+                "chapter_scoped": true
+            }
+        },
+        "key_terms": {
+            "schema_version": "1.0.0",
+            "component_id": "key_terms",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "terms": [
+                    {
+                        "term": "Earth",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "Moon",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "morning",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "Kanniyakumari",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "Tamil",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "12-year-old",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "Rashmika",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "eagerly",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "cycling",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "school",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "science",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    },
+                    {
+                        "term": "teacher",
+                        "meaning": "Learner-friendly meaning must remain grounded in the chapter context."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.key_terms",
+                "domain": "learning",
+                "description": "Key terms and vocabulary",
+                "chapter_scoped": true
+            }
+        },
+        "story_mode": {
+            "schema_version": "1.0.0",
+            "component_id": "story_mode",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "mode_type": "science_inquiry",
+                "opening": "Enter a learning scenario connected to Earth, Moon, and the Sun.",
+                "scenes": [
+                    {
+                        "scene_id": "s1",
+                        "narration": "Observe the starting situation and identify what you already know.",
+                        "learning_purpose": "Activate prior knowledge."
+                    },
+                    {
+                        "scene_id": "s2",
+                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
+                        "learning_purpose": "Apply the chapter."
+                    },
+                    {
+                        "scene_id": "s3",
+                        "narration": "Transfer the idea to a new related situation.",
+                        "learning_purpose": "Build independent reasoning."
+                    }
+                ],
+                "learning_checkpoints": [
+                    {
+                        "question": "Which idea from Earth, Moon, and the Sun supports your decision?",
+                        "answer_rule": "Answer must use source-grounded reasoning."
+                    }
+                ],
+                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
+                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
+            },
+            "runtime_mapping": {
+                "route": "learning.story_mode",
+                "domain": "learning",
+                "description": "Story-based learning mode",
+                "chapter_scoped": true
+            }
+        },
+        "interactive_scenarios": {
+            "schema_version": "1.0.0",
+            "component_id": "interactive_scenarios",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "scenarios": [
+                    {
+                        "id": "gecu112_sc01",
+                        "situation": "A learner faces a problem related to Earth, Moon, and the Sun.",
+                        "choices": [
+                            {
+                                "id": "A",
+                                "choice": "Use relevant evidence or working.",
+                                "feedback": "Good reasoning."
+                            },
+                            {
+                                "id": "B",
+                                "choice": "Guess without checking.",
+                                "feedback": "Return to the evidence."
+                            },
+                            {
+                                "id": "C",
+                                "choice": "Use an unrelated idea.",
+                                "feedback": "Keep the response connected to the chapter."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "gecu112_sc02",
+                        "situation": "A classmate gives an answer without justification.",
+                        "choices": [
+                            {
+                                "id": "A",
+                                "choice": "Ask for evidence or working.",
+                                "feedback": "Strong reasoning practice."
+                            },
+                            {
+                                "id": "B",
+                                "choice": "Accept it without checking.",
+                                "feedback": "Check support first."
+                            },
+                            {
+                                "id": "C",
+                                "choice": "Ignore the reasoning.",
+                                "feedback": "Reasoning is part of mastery."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.interactive_scenarios",
+                "domain": "learning",
+                "description": "Scenario-based interaction",
+                "chapter_scoped": true
+            }
+        },
+        "worked_examples": {
+            "schema_version": "1.0.0",
+            "component_id": "worked_examples",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "examples": [
+                    {
+                        "id": "gecu112_ex01",
+                        "task": "Explain a central idea from Earth, Moon, and the Sun using source evidence or working.",
+                        "method": [
+                            "Identify the concept",
+                            "Locate evidence/working",
+                            "Explain the connection",
+                            "Check"
+                        ]
+                    },
+                    {
+                        "id": "gecu112_ex02",
+                        "task": "Transfer the idea to a new related example.",
+                        "method": [
+                            "Identify what transfers",
+                            "Adapt",
+                            "Justify",
+                            "Check"
+                        ]
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.worked_examples",
+                "domain": "learning",
+                "description": "Worked examples",
+                "chapter_scoped": true
+            }
+        },
+        "practice_bank": {
+            "schema_version": "1.0.0",
+            "component_id": "practice_bank",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "items": [
+                    {
+                        "id": "gecu112_q01",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "easy",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q02",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "easy",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q03",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "easy",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q04",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "medium",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q05",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "medium",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q06",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "medium",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q07",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "hard",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q08",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "hard",
+                        "concept_id": "gecu112_c01"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "practice.bank",
+                "domain": "practice",
+                "description": "Practice question bank",
+                "chapter_scoped": true
+            }
+        },
+        "adaptive_practice": {
+            "schema_version": "1.0.0",
+            "component_id": "adaptive_practice",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "selection_rules": [
+                    {
+                        "condition": "accuracy < 60%",
+                        "action": "revisit explanation and serve simpler evidence practice"
+                    },
+                    {
+                        "condition": "60–84%",
+                        "action": "serve application practice"
+                    },
+                    {
+                        "condition": ">=85%",
+                        "action": "serve transfer/HOTS practice"
+                    }
+                ],
+                "items": [
+                    {
+                        "id": "gecu112_a1",
+                        "difficulty": "easy"
+                    },
+                    {
+                        "id": "gecu112_a2",
+                        "difficulty": "medium"
+                    },
+                    {
+                        "id": "gecu112_a3",
+                        "difficulty": "hard"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "practice.adaptive",
+                "domain": "practice",
+                "description": "Adaptive practice content",
+                "chapter_scoped": true
+            }
+        },
+        "interactive_lab": {
+            "schema_version": "1.0.0",
+            "component_id": "interactive_lab",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "activities": [
+                    {
+                        "id": "gecu112_lab01",
+                        "title": "Explore Earth, Moon, and the Sun",
+                        "objective": "Investigate a central idea from Earth, Moon, and the Sun.",
+                        "materials": [
+                            "chapter text",
+                            "notebook",
+                            "pencil"
+                        ],
+                        "instructions": [
+                            "Review the relevant source section.",
+                            "Identify the evidence or method needed.",
+                            "observe, measure, classify or safely investigate the scientific phenomenon",
+                            "Record the result and reasoning."
+                        ],
+                        "student_action": "Investigate and explain.",
+                        "success_condition": "The outcome is consistent with the source and includes reasoning."
+                    },
+                    {
+                        "id": "gecu112_lab02",
+                        "title": "Evidence Check",
+                        "objective": "Distinguish supported from unsupported claims.",
+                        "instructions": [
+                            "Choose two chapter-related claims.",
+                            "Locate supporting evidence.",
+                            "Accept or reject each claim.",
+                            "Explain why."
+                        ],
+                        "student_action": "Match claims to evidence.",
+                        "success_condition": "Accepted claims have relevant source support."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.interactive_lab",
+                "domain": "learning",
+                "description": "Interactive lab content",
+                "chapter_scoped": true
+            }
+        },
+        "activities": {
+            "schema_version": "1.0.0",
+            "component_id": "activities",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "activities": [
+                    {
+                        "id": "gecu112_act01",
+                        "type": "think_pair_share",
+                        "title": "Explain and justify",
+                        "steps": [
+                            "Think",
+                            "Discuss",
+                            "Find evidence",
+                            "Share"
+                        ]
+                    },
+                    {
+                        "id": "gecu112_act02",
+                        "type": "sort_sequence",
+                        "title": "Organise the learning",
+                        "steps": [
+                            "Select key ideas",
+                            "Sort or sequence",
+                            "Explain relationships"
+                        ]
+                    },
+                    {
+                        "id": "gecu112_act03",
+                        "type": "reflection",
+                        "title": "One-minute reflection",
+                        "prompt": "What is the most important learning from Earth, Moon, and the Sun?"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.activities",
+                "domain": "learning",
+                "description": "Interactive and hands-on activities",
+                "chapter_scoped": true
+            }
+        },
+        "diagnostic_assessment": {
+            "schema_version": "1.0.0",
+            "component_id": "diagnostic_assessment",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "items": [
+                    {
+                        "id": "gecu112_d1",
+                        "question": "What do you already know about Earth, Moon, and the Sun?",
+                        "type": "short_answer"
+                    },
+                    {
+                        "id": "gecu112_d2",
+                        "question": "Which related concept or skill needs more support?",
+                        "type": "self_assessment"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "assessment.diagnostic",
+                "domain": "assessment",
+                "description": "Diagnostic assessment",
+                "chapter_scoped": true
+            }
+        },
+        "formative_assessment": {
+            "schema_version": "1.0.0",
+            "component_id": "formative_assessment",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "items": [
+                    {
+                        "id": "gecu112_f1",
+                        "question": "State a key idea and its supporting evidence or working.",
+                        "checkpoint": "understanding"
+                    },
+                    {
+                        "id": "gecu112_f2",
+                        "question": "Apply the idea to a new related situation.",
+                        "checkpoint": "application"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "assessment.formative",
+                "domain": "assessment",
+                "description": "Formative assessment",
+                "chapter_scoped": true
+            }
+        },
+        "assessment_blueprint": {
+            "schema_version": "1.0.0",
+            "component_id": "assessment_blueprint",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "total_questions": 12,
+                "difficulty": {
+                    "easy": 4,
+                    "medium": 5,
+                    "hard": 3
+                },
+                "skills": {
+                    "recall": 2,
+                    "understanding": 3,
+                    "application": 4,
+                    "higher_order": 3
+                },
+                "coverage": [
+                    {
+                        "concept_id": "gecu112_c01",
+                        "minimum_items": 7
+                    },
+                    {
+                        "concept_id": "gecu112_c02",
+                        "minimum_items": 3
+                    },
+                    {
+                        "concept_id": "gecu112_c03",
+                        "minimum_items": 2
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "assessment.blueprint",
+                "domain": "assessment",
+                "description": "Assessment blueprint and distribution",
+                "chapter_scoped": true
+            }
+        },
+        "assessment_bank": {
+            "schema_version": "1.0.0",
+            "component_id": "assessment_bank",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "items": [
+                    {
+                        "id": "gecu112_q01",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "easy",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q02",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "easy",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q03",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "easy",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q04",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "medium",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q05",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "medium",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q06",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "medium",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q07",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "hard",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_q08",
+                        "type": "source_based",
+                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "options": [
+                            " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
+                            "An unrelated statement.",
+                            "A statement that contradicts the chapter.",
+                            "A statement not supported by the source."
+                        ],
+                        "correct_option": 0,
+                        "source_evidence": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
+                        "explanation": "The correct response must be supported by the supplied chapter.",
+                        "difficulty": "hard",
+                        "concept_id": "gecu112_c01"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "assessment.bank",
+                "domain": "assessment",
+                "description": "Assessment question bank",
+                "chapter_scoped": true
+            }
+        },
+        "answer_key": {
+            "schema_version": "1.0.0",
+            "component_id": "answer_key",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "validation_rule": "All answers must be validated against the supplied chapter source.",
+                "sample": {
+                    "question_id": "gecu112_q01",
+                    "answer": "Option 1",
+                    "evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school."
+                }
+            },
+            "runtime_mapping": {
+                "route": "assessment.answer_key",
+                "domain": "assessment",
+                "description": "Answer keys and scoring references",
+                "chapter_scoped": true
+            }
+        },
+        "summative_assessment": {
+            "schema_version": "1.0.0",
+            "component_id": "summative_assessment",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "sections": [
+                    {
+                        "name": "Core understanding",
+                        "items": 4
+                    },
+                    {
+                        "name": "Application",
+                        "items": 5
+                    },
+                    {
+                        "name": "Higher order",
+                        "items": 3
+                    }
+                ],
+                "mastery_threshold": 0.7
+            },
+            "runtime_mapping": {
+                "route": "assessment.summative",
+                "domain": "assessment",
+                "description": "Summative assessment",
+                "chapter_scoped": true
+            }
+        },
+        "hots": {
+            "schema_version": "1.0.0",
+            "component_id": "hots",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "items": [
+                    {
+                        "id": "gecu112_h1",
+                        "question": "How would you apply an important idea from Earth, Moon, and the Sun in a new situation?",
+                        "reasoning": "Identify, justify and transfer."
+                    },
+                    {
+                        "id": "gecu112_h2",
+                        "question": "What evidence would strengthen or weaken a conclusion related to this chapter?",
+                        "reasoning": "Evaluate evidence."
+                    },
+                    {
+                        "id": "gecu112_h3",
+                        "question": "Compare two possible approaches. Which is better and why?",
+                        "reasoning": "Use criteria and evidence."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "assessment.hots",
+                "domain": "assessment",
+                "description": "Higher-order thinking questions",
+                "chapter_scoped": true
+            }
+        },
+        "case_studies": {
+            "schema_version": "1.0.0",
+            "component_id": "case_studies",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "cases": [
+                    {
+                        "id": "gecu112_case01",
+                        "title": "Applying Earth, Moon, and the Sun",
+                        "case": "A realistic situation requires a learner to use an idea from Earth, Moon, and the Sun.",
+                        "questions": [
+                            "Which concept applies?",
+                            "What evidence supports the choice?",
+                            "What should happen next?"
+                        ],
+                        "answer_guidance": "Ground the response in the chapter."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.case_studies",
+                "domain": "learning",
+                "description": "Case-study learning content",
+                "chapter_scoped": true
+            }
+        },
+        "real_world_applications": {
+            "schema_version": "1.0.0",
+            "component_id": "real_world_applications",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "applications": [
+                    {
+                        "context": "home",
+                        "task": "Find an everyday connection to Earth, Moon, and the Sun."
+                    },
+                    {
+                        "context": "school",
+                        "task": "Demonstrate or explain the chapter idea at school."
+                    },
+                    {
+                        "context": "community",
+                        "task": "Identify a responsible action informed by the learning."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "learning.real_world_applications",
+                "domain": "learning",
+                "description": "Real-world applications",
+                "chapter_scoped": true
+            }
+        },
+        "common_mistakes": {
+            "schema_version": "1.0.0",
+            "component_id": "common_mistakes",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "mistakes": [
+                    {
+                        "mistake": "Answering without evidence or working.",
+                        "correction": "Return to the relevant source and show support."
+                    },
+                    {
+                        "mistake": "Applying an idea without checking conditions.",
+                        "correction": "Identify the conditions that make the concept applicable."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "tutor.common_mistakes",
+                "domain": "tutor",
+                "description": "Common mistakes and correction guidance",
+                "chapter_scoped": true
+            }
+        },
+        "remediation": {
+            "schema_version": "1.0.0",
+            "component_id": "remediation",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "path": [
+                    {
+                        "trigger": "incorrect core concept",
+                        "action": "revisit source-grounded explanation"
+                    },
+                    {
+                        "trigger": "second error",
+                        "action": "complete simpler evidence/step activity"
+                    },
+                    {
+                        "trigger": "third error",
+                        "action": "complete guided worked example"
+                    },
+                    {
+                        "trigger": "successful remediation",
+                        "action": "retry original difficulty"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "tutor.remediation",
+                "domain": "tutor",
+                "description": "Remedial learning paths",
+                "chapter_scoped": true
+            }
+        },
+        "mastery_map": {
+            "schema_version": "1.0.0",
+            "component_id": "mastery_map",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "concepts": [
+                    {
+                        "concept_id": "gecu112_c01",
+                        "levels": [
+                            "Beginning",
+                            "Developing",
+                            "Proficient",
+                            "Mastered"
+                        ],
+                        "evidence": [
+                            "diagnostic",
+                            "practice",
+                            "assessment",
+                            "transfer"
+                        ]
+                    },
+                    {
+                        "concept_id": "gecu112_c02",
+                        "levels": [
+                            "Beginning",
+                            "Developing",
+                            "Proficient",
+                            "Mastered"
+                        ],
+                        "evidence": [
+                            "evidence explanation",
+                            "application"
+                        ]
+                    },
+                    {
+                        "concept_id": "gecu112_c03",
+                        "levels": [
+                            "Beginning",
+                            "Developing",
+                            "Proficient",
+                            "Mastered"
+                        ],
+                        "evidence": [
+                            "application",
+                            "HOTS"
+                        ]
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "mastery.map",
+                "domain": "mastery",
+                "description": "Mastery map",
+                "chapter_scoped": true
+            }
+        },
+        "mastery_rules": {
+            "schema_version": "1.0.0",
+            "component_id": "mastery_rules",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "levels": {
+                    "Beginning": "Needs guided support",
+                    "Developing": "Can solve supported tasks",
+                    "Proficient": "Can apply independently",
+                    "Mastered": "Can transfer and explain"
+                },
+                "promotion": {
+                    "Beginning_to_Developing": "60% guided accuracy",
+                    "Developing_to_Proficient": "75% independent accuracy",
+                    "Proficient_to_Mastered": "85% plus successful transfer"
+                }
+            },
+            "runtime_mapping": {
+                "route": "mastery.rules",
+                "domain": "mastery",
+                "description": "Mastery progression rules",
+                "chapter_scoped": true
+            }
+        },
+        "spaced_retrieval": {
+            "schema_version": "1.0.0",
+            "component_id": "spaced_retrieval",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "schedule": [
+                    {
+                        "stage": "day_1",
+                        "task": "2 core recall questions"
+                    },
+                    {
+                        "stage": "day_4",
+                        "task": "2 mixed retrieval questions"
+                    },
+                    {
+                        "stage": "day_10",
+                        "task": "1 application question"
+                    },
+                    {
+                        "stage": "day_21",
+                        "task": "1 transfer/HOTS question"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "practice.spaced_retrieval",
+                "domain": "practice",
+                "description": "Spaced retrieval schedule/content",
+                "chapter_scoped": true
+            }
+        },
+        "chapter_summary": {
+            "schema_version": "1.0.0",
+            "component_id": "chapter_summary",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "summary": "'Earth, Moon, and the Sun' is organised around source-supported ideas, evidence, examples, methods or arguments.",
+                "key_points": [
+                    "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                    "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                    "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                    "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                    "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+                    "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+                    "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig."
+                ]
+            },
+            "runtime_mapping": {
+                "route": "reader.summary",
+                "domain": "reader",
+                "description": "Chapter summary",
+                "chapter_scoped": true
+            }
+        },
+        "quick_revision": {
+            "schema_version": "1.0.0",
+            "component_id": "quick_revision",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "checklist": [
+                    "I can explain the central idea of Earth, Moon, and the Sun.",
+                    "I can identify evidence or working.",
+                    "I can apply the concept.",
+                    "I can explain a common mistake.",
+                    "I can answer a transfer question."
+                ]
+            },
+            "runtime_mapping": {
+                "route": "revision.quick",
+                "domain": "revision",
+                "description": "Quick revision content",
+                "chapter_scoped": true
+            }
+        },
+        "flashcards": {
+            "schema_version": "1.0.0",
+            "component_id": "flashcards",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "cards": [
+                    {
+                        "id": "gecu112_fc01",
+                        "front": "What should you remember from Earth, Moon, and the Sun?",
+                        "back": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_fc02",
+                        "front": "What should you remember from Earth, Moon, and the Sun?",
+                        "back": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_fc03",
+                        "front": "What should you remember from Earth, Moon, and the Sun?",
+                        "back": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_fc04",
+                        "front": "What should you remember from Earth, Moon, and the Sun?",
+                        "back": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_fc05",
+                        "front": "What should you remember from Earth, Moon, and the Sun?",
+                        "back": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_fc06",
+                        "front": "What should you remember from Earth, Moon, and the Sun?",
+                        "back": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_fc07",
+                        "front": "What should you remember from Earth, Moon, and the Sun?",
+                        "back": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
+                        "concept_id": "gecu112_c01"
+                    },
+                    {
+                        "id": "gecu112_fc08",
+                        "front": "What should you remember from Earth, Moon, and the Sun?",
+                        "back": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
+                        "concept_id": "gecu112_c01"
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "practice.flashcards",
+                "domain": "practice",
+                "description": "Flashcard content",
+                "chapter_scoped": true
+            }
+        },
+        "important_questions": {
+            "schema_version": "1.0.0",
+            "component_id": "important_questions",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "questions": [
+                    "What is the central idea of Earth, Moon, and the Sun?",
+                    "Which evidence or example is important?",
+                    "How are the key ideas connected?",
+                    "How can the idea be applied elsewhere?",
+                    "What common mistake should be avoided?",
+                    "What would you explain to a classmate?"
+                ]
+            },
+            "runtime_mapping": {
+                "route": "revision.important_questions",
+                "domain": "revision",
+                "description": "Important questions and revision targets",
+                "chapter_scoped": true
+            }
+        },
+        "exam_preparation": {
+            "schema_version": "1.0.0",
+            "component_id": "exam_preparation",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "strategy": [
+                    "Read the question carefully",
+                    "Identify the tested concept",
+                    "Use evidence/working",
+                    "Explain reasoning",
+                    "Check the final response"
+                ],
+                "must_practice": [
+                    "core understanding",
+                    "application",
+                    "higher-order reasoning",
+                    "source-based questions",
+                    "mixed retrieval"
+                ]
+            },
+            "runtime_mapping": {
+                "route": "revision.exam",
+                "domain": "revision",
+                "description": "Exam preparation content",
+                "chapter_scoped": true
+            }
+        },
+        "multimedia": {
+            "schema_version": "1.0.0",
+            "component_id": "multimedia",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "resources": [
+                    {
+                        "id": "gecu112_official",
+                        "type": "official_resource",
+                        "title": "NCERT ePathshala eResources — Earth, Moon, and the Sun",
+                        "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
+                        "verification_status": "VERIFIED_OFFICIAL_PORTAL",
+                        "purpose": "Official chapter-linked digital resource portal."
+                    },
+                    {
+                        "id": "gecu112_yt_search",
+                        "type": "youtube_discovery",
+                        "title": "Video discovery — Earth, Moon, and the Sun",
+                        "url": "https://www.youtube.com/results?search_query=Class+7+Science+Earth,+Moon,+and+the+Sun+NCERT",
+                        "verification_status": "DISCOVERY_ONLY",
+                        "purpose": "Discovery link only; not represented as a verified direct video."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "media.chapter_resources",
+                "domain": "media",
+                "description": "Multimedia and external resource metadata",
+                "chapter_scoped": true
+            }
+        },
+        "accessibility": {
+            "schema_version": "1.0.0",
+            "component_id": "accessibility",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "features": [
+                    "short text chunks",
+                    "read-aloud compatible text",
+                    "alt-text fields",
+                    "keyboard-accessible interactions",
+                    "clear labels",
+                    "high-contrast compatible UI"
+                ],
+                "rule": "Accessibility adaptations preserve source meaning."
+            },
+            "runtime_mapping": {
+                "route": "system.accessibility",
+                "domain": "system",
+                "description": "Runtime accessibility metadata and behavior contract",
+                "chapter_scoped": true
+            }
+        },
+        "tutor_prompts": {
+            "schema_version": "1.0.0",
+            "component_id": "tutor_prompts",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "prompts": [
+                    "Help me understand Earth, Moon, and the Sun without giving me the answer immediately.",
+                    "Ask what evidence or working supports my answer.",
+                    "Give one small hint and wait.",
+                    "If I am wrong, identify the concept I should revisit."
+                ]
+            },
+            "runtime_mapping": {
+                "route": "tutor.prompts",
+                "domain": "tutor",
+                "description": "Tutor prompt templates",
+                "chapter_scoped": true
+            }
+        },
+        "hint_system": {
+            "schema_version": "1.0.0",
+            "component_id": "hint_system",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "levels": [
+                    {
+                        "level": 1,
+                        "hint": "Re-read the relevant section."
+                    },
+                    {
+                        "level": 2,
+                        "hint": "Identify the concept being tested."
+                    },
+                    {
+                        "level": 3,
+                        "hint": "Find the supporting evidence, example or method."
+                    },
+                    {
+                        "level": 4,
+                        "hint": "Explain the reasoning in your own words."
+                    }
+                ]
+            },
+            "runtime_mapping": {
+                "route": "tutor.hints",
+                "domain": "tutor",
+                "description": "Hint generation and progressive support",
+                "chapter_scoped": true
+            }
+        },
+        "socratic_questions": {
+            "schema_version": "1.0.0",
+            "component_id": "socratic_questions",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "questions": [
+                    "What makes your answer correct according to Earth, Moon, and the Sun?",
+                    "What evidence would change your conclusion?",
+                    "Can you give another example?",
+                    "What changes if an important condition changes?"
+                ]
+            },
+            "runtime_mapping": {
+                "route": "tutor.socratic",
+                "domain": "tutor",
+                "description": "Socratic questioning prompts",
+                "chapter_scoped": true
+            }
+        },
+        "chapter_mastery_assessment": {
+            "schema_version": "1.0.0",
+            "component_id": "chapter_mastery_assessment",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "components": [
+                    "core concept",
+                    "evidence/working",
+                    "application",
+                    "higher-order transfer"
+                ],
+                "mastery_threshold": 0.85,
+                "remediation_below": 0.7
+            },
+            "runtime_mapping": {
+                "route": "assessment.mastery",
+                "domain": "assessment",
+                "description": "Mastery assessment",
+                "chapter_scoped": true
+            }
+        },
+        "chapter_completion": {
+            "schema_version": "1.0.0",
+            "component_id": "chapter_completion",
+            "chapter_id": "gecu112",
+            "class": 7,
+            "subject": "Science",
+            "chapter_title": "Earth, Moon, and the Sun",
+            "provenance": {
+                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
+                "source": "User-provided Class 7 NCERT textbook PDF"
+            },
+            "quality": {
+                "chapter_grounded": true,
+                "schema_valid": true,
+                "semantic_unique": true,
+                "runtime_mapped": true,
+                "runtime_mapping_version": "1.0.0"
+            },
+            "content": {
+                "completion_rules": [
+                    "required learning viewed",
+                    "core activities completed",
+                    "practice threshold met",
+                    "mastery assessment passed",
+                    "misconceptions remediated"
+                ],
+                "complete_only_when_all_applicable_rules_pass": true
+            },
+            "runtime_mapping": {
+                "route": "progress.chapter_completion",
+                "domain": "progress",
+                "description": "Chapter completion state and criteria",
+                "chapter_scoped": true
+            }
         }
-      },
-      "runtime_mapping": {
-        "route": "assessment.answer_key",
-        "domain": "assessment",
-        "description": "Answer keys and scoring references",
-        "chapter_scoped": true
-      }
-    },
-    "summative_assessment": {
-      "schema_version": "1.0.0",
-      "component_id": "summative_assessment",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "sections": [
-          {
-            "name": "Core understanding",
-            "items": 4
-          },
-          {
-            "name": "Application",
-            "items": 5
-          },
-          {
-            "name": "Higher order",
-            "items": 3
-          }
-        ],
-        "mastery_threshold": 0.7
-      },
-      "runtime_mapping": {
-        "route": "assessment.summative",
-        "domain": "assessment",
-        "description": "Summative assessment",
-        "chapter_scoped": true
-      }
-    },
-    "hots": {
-      "schema_version": "1.0.0",
-      "component_id": "hots",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "items": [
-          {
-            "id": "gecu112_h1",
-            "question": "How would you apply an important idea from Earth, Moon, and the Sun in a new situation?",
-            "reasoning": "Identify, justify and transfer."
-          },
-          {
-            "id": "gecu112_h2",
-            "question": "What evidence would strengthen or weaken a conclusion related to this chapter?",
-            "reasoning": "Evaluate evidence."
-          },
-          {
-            "id": "gecu112_h3",
-            "question": "Compare two possible approaches. Which is better and why?",
-            "reasoning": "Use criteria and evidence."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "assessment.hots",
-        "domain": "assessment",
-        "description": "Higher-order thinking questions",
-        "chapter_scoped": true
-      }
-    },
-    "case_studies": {
-      "schema_version": "1.0.0",
-      "component_id": "case_studies",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "cases": [
-          {
-            "id": "gecu112_case01",
-            "title": "Applying Earth, Moon, and the Sun",
-            "case": "A realistic situation requires a learner to use an idea from Earth, Moon, and the Sun.",
-            "questions": [
-              "Which concept applies?",
-              "What evidence supports the choice?",
-              "What should happen next?"
-            ],
-            "answer_guidance": "Ground the response in the chapter."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.case_studies",
-        "domain": "learning",
-        "description": "Case-study learning content",
-        "chapter_scoped": true
-      }
-    },
-    "real_world_applications": {
-      "schema_version": "1.0.0",
-      "component_id": "real_world_applications",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "applications": [
-          {
-            "context": "home",
-            "task": "Find an everyday connection to Earth, Moon, and the Sun."
-          },
-          {
-            "context": "school",
-            "task": "Demonstrate or explain the chapter idea at school."
-          },
-          {
-            "context": "community",
-            "task": "Identify a responsible action informed by the learning."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "learning.real_world_applications",
-        "domain": "learning",
-        "description": "Real-world applications",
-        "chapter_scoped": true
-      }
-    },
-    "common_mistakes": {
-      "schema_version": "1.0.0",
-      "component_id": "common_mistakes",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "mistakes": [
-          {
-            "mistake": "Answering without evidence or working.",
-            "correction": "Return to the relevant source and show support."
-          },
-          {
-            "mistake": "Applying an idea without checking conditions.",
-            "correction": "Identify the conditions that make the concept applicable."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "tutor.common_mistakes",
-        "domain": "tutor",
-        "description": "Common mistakes and correction guidance",
-        "chapter_scoped": true
-      }
-    },
-    "remediation": {
-      "schema_version": "1.0.0",
-      "component_id": "remediation",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "path": [
-          {
-            "trigger": "incorrect core concept",
-            "action": "revisit source-grounded explanation"
-          },
-          {
-            "trigger": "second error",
-            "action": "complete simpler evidence/step activity"
-          },
-          {
-            "trigger": "third error",
-            "action": "complete guided worked example"
-          },
-          {
-            "trigger": "successful remediation",
-            "action": "retry original difficulty"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "tutor.remediation",
-        "domain": "tutor",
-        "description": "Remedial learning paths",
-        "chapter_scoped": true
-      }
-    },
-    "mastery_map": {
-      "schema_version": "1.0.0",
-      "component_id": "mastery_map",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "concepts": [
-          {
-            "concept_id": "gecu112_c01",
-            "levels": [
-              "Beginning",
-              "Developing",
-              "Proficient",
-              "Mastered"
-            ],
-            "evidence": [
-              "diagnostic",
-              "practice",
-              "assessment",
-              "transfer"
-            ]
-          },
-          {
-            "concept_id": "gecu112_c02",
-            "levels": [
-              "Beginning",
-              "Developing",
-              "Proficient",
-              "Mastered"
-            ],
-            "evidence": [
-              "evidence explanation",
-              "application"
-            ]
-          },
-          {
-            "concept_id": "gecu112_c03",
-            "levels": [
-              "Beginning",
-              "Developing",
-              "Proficient",
-              "Mastered"
-            ],
-            "evidence": [
-              "application",
-              "HOTS"
-            ]
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "mastery.map",
-        "domain": "mastery",
-        "description": "Mastery map",
-        "chapter_scoped": true
-      }
-    },
-    "mastery_rules": {
-      "schema_version": "1.0.0",
-      "component_id": "mastery_rules",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "levels": {
-          "Beginning": "Needs guided support",
-          "Developing": "Can solve supported tasks",
-          "Proficient": "Can apply independently",
-          "Mastered": "Can transfer and explain"
-        },
-        "promotion": {
-          "Beginning_to_Developing": "60% guided accuracy",
-          "Developing_to_Proficient": "75% independent accuracy",
-          "Proficient_to_Mastered": "85% plus successful transfer"
-        }
-      },
-      "runtime_mapping": {
-        "route": "mastery.rules",
-        "domain": "mastery",
-        "description": "Mastery progression rules",
-        "chapter_scoped": true
-      }
-    },
-    "spaced_retrieval": {
-      "schema_version": "1.0.0",
-      "component_id": "spaced_retrieval",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "schedule": [
-          {
-            "stage": "day_1",
-            "task": "2 core recall questions"
-          },
-          {
-            "stage": "day_4",
-            "task": "2 mixed retrieval questions"
-          },
-          {
-            "stage": "day_10",
-            "task": "1 application question"
-          },
-          {
-            "stage": "day_21",
-            "task": "1 transfer/HOTS question"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "practice.spaced_retrieval",
-        "domain": "practice",
-        "description": "Spaced retrieval schedule/content",
-        "chapter_scoped": true
-      }
-    },
-    "chapter_summary": {
-      "schema_version": "1.0.0",
-      "component_id": "chapter_summary",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "summary": "'Earth, Moon, and the Sun' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-        "key_points": [
-          "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-          "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-          "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-          "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-          "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-          "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-          "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig."
-        ]
-      },
-      "runtime_mapping": {
-        "route": "reader.summary",
-        "domain": "reader",
-        "description": "Chapter summary",
-        "chapter_scoped": true
-      }
-    },
-    "quick_revision": {
-      "schema_version": "1.0.0",
-      "component_id": "quick_revision",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "checklist": [
-          "I can explain the central idea of Earth, Moon, and the Sun.",
-          "I can identify evidence or working.",
-          "I can apply the concept.",
-          "I can explain a common mistake.",
-          "I can answer a transfer question."
-        ]
-      },
-      "runtime_mapping": {
-        "route": "revision.quick",
-        "domain": "revision",
-        "description": "Quick revision content",
-        "chapter_scoped": true
-      }
-    },
-    "flashcards": {
-      "schema_version": "1.0.0",
-      "component_id": "flashcards",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "cards": [
-          {
-            "id": "gecu112_fc01",
-            "front": "What should you remember from Earth, Moon, and the Sun?",
-            "back": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_fc02",
-            "front": "What should you remember from Earth, Moon, and the Sun?",
-            "back": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_fc03",
-            "front": "What should you remember from Earth, Moon, and the Sun?",
-            "back": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_fc04",
-            "front": "What should you remember from Earth, Moon, and the Sun?",
-            "back": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_fc05",
-            "front": "What should you remember from Earth, Moon, and the Sun?",
-            "back": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_fc06",
-            "front": "What should you remember from Earth, Moon, and the Sun?",
-            "back": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_fc07",
-            "front": "What should you remember from Earth, Moon, and the Sun?",
-            "back": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-            "concept_id": "gecu112_c01"
-          },
-          {
-            "id": "gecu112_fc08",
-            "front": "What should you remember from Earth, Moon, and the Sun?",
-            "back": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-            "concept_id": "gecu112_c01"
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "practice.flashcards",
-        "domain": "practice",
-        "description": "Flashcard content",
-        "chapter_scoped": true
-      }
-    },
-    "important_questions": {
-      "schema_version": "1.0.0",
-      "component_id": "important_questions",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "questions": [
-          "What is the central idea of Earth, Moon, and the Sun?",
-          "Which evidence or example is important?",
-          "How are the key ideas connected?",
-          "How can the idea be applied elsewhere?",
-          "What common mistake should be avoided?",
-          "What would you explain to a classmate?"
-        ]
-      },
-      "runtime_mapping": {
-        "route": "revision.important_questions",
-        "domain": "revision",
-        "description": "Important questions and revision targets",
-        "chapter_scoped": true
-      }
-    },
-    "exam_preparation": {
-      "schema_version": "1.0.0",
-      "component_id": "exam_preparation",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "strategy": [
-          "Read the question carefully",
-          "Identify the tested concept",
-          "Use evidence/working",
-          "Explain reasoning",
-          "Check the final response"
-        ],
-        "must_practice": [
-          "core understanding",
-          "application",
-          "higher-order reasoning",
-          "source-based questions",
-          "mixed retrieval"
-        ]
-      },
-      "runtime_mapping": {
-        "route": "revision.exam",
-        "domain": "revision",
-        "description": "Exam preparation content",
-        "chapter_scoped": true
-      }
-    },
-    "multimedia": {
-      "schema_version": "1.0.0",
-      "component_id": "multimedia",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "resources": [
-          {
-            "id": "gecu112_official",
-            "type": "official_resource",
-            "title": "NCERT ePathshala eResources — Earth, Moon, and the Sun",
-            "url": "https://epathshala.ncert.gov.in/topics.php?ln=en",
-            "verification_status": "VERIFIED_OFFICIAL_PORTAL",
-            "purpose": "Official chapter-linked digital resource portal."
-          },
-          {
-            "id": "gecu112_yt_search",
-            "type": "youtube_discovery",
-            "title": "Video discovery — Earth, Moon, and the Sun",
-            "url": "https://www.youtube.com/results?search_query=Class+7+Science+Earth,+Moon,+and+the+Sun+NCERT",
-            "verification_status": "DISCOVERY_ONLY",
-            "purpose": "Discovery link only; not represented as a verified direct video."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "media.chapter_resources",
-        "domain": "media",
-        "description": "Multimedia and external resource metadata",
-        "chapter_scoped": true
-      }
-    },
-    "accessibility": {
-      "schema_version": "1.0.0",
-      "component_id": "accessibility",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "features": [
-          "short text chunks",
-          "read-aloud compatible text",
-          "alt-text fields",
-          "keyboard-accessible interactions",
-          "clear labels",
-          "high-contrast compatible UI"
-        ],
-        "rule": "Accessibility adaptations preserve source meaning."
-      },
-      "runtime_mapping": {
-        "route": "system.accessibility",
-        "domain": "system",
-        "description": "Runtime accessibility metadata and behavior contract",
-        "chapter_scoped": true
-      }
-    },
-    "tutor_prompts": {
-      "schema_version": "1.0.0",
-      "component_id": "tutor_prompts",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "prompts": [
-          "Help me understand Earth, Moon, and the Sun without giving me the answer immediately.",
-          "Ask what evidence or working supports my answer.",
-          "Give one small hint and wait.",
-          "If I am wrong, identify the concept I should revisit."
-        ]
-      },
-      "runtime_mapping": {
-        "route": "tutor.prompts",
-        "domain": "tutor",
-        "description": "Tutor prompt templates",
-        "chapter_scoped": true
-      }
-    },
-    "hint_system": {
-      "schema_version": "1.0.0",
-      "component_id": "hint_system",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "levels": [
-          {
-            "level": 1,
-            "hint": "Re-read the relevant section."
-          },
-          {
-            "level": 2,
-            "hint": "Identify the concept being tested."
-          },
-          {
-            "level": 3,
-            "hint": "Find the supporting evidence, example or method."
-          },
-          {
-            "level": 4,
-            "hint": "Explain the reasoning in your own words."
-          }
-        ]
-      },
-      "runtime_mapping": {
-        "route": "tutor.hints",
-        "domain": "tutor",
-        "description": "Hint generation and progressive support",
-        "chapter_scoped": true
-      }
-    },
-    "socratic_questions": {
-      "schema_version": "1.0.0",
-      "component_id": "socratic_questions",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "questions": [
-          "What makes your answer correct according to Earth, Moon, and the Sun?",
-          "What evidence would change your conclusion?",
-          "Can you give another example?",
-          "What changes if an important condition changes?"
-        ]
-      },
-      "runtime_mapping": {
-        "route": "tutor.socratic",
-        "domain": "tutor",
-        "description": "Socratic questioning prompts",
-        "chapter_scoped": true
-      }
-    },
-    "chapter_mastery_assessment": {
-      "schema_version": "1.0.0",
-      "component_id": "chapter_mastery_assessment",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "components": [
-          "core concept",
-          "evidence/working",
-          "application",
-          "higher-order transfer"
-        ],
-        "mastery_threshold": 0.85,
-        "remediation_below": 0.7
-      },
-      "runtime_mapping": {
-        "route": "assessment.mastery",
-        "domain": "assessment",
-        "description": "Mastery assessment",
-        "chapter_scoped": true
-      }
-    },
-    "chapter_completion": {
-      "schema_version": "1.0.0",
-      "component_id": "chapter_completion",
-      "chapter_id": "gecu112",
-      "class": 7,
-      "subject": "Science",
-      "chapter_title": "Earth, Moon, and the Sun",
-      "provenance": {
-        "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-        "source": "User-provided Class 7 NCERT textbook PDF"
-      },
-      "quality": {
-        "chapter_grounded": true,
-        "schema_valid": true,
-        "semantic_unique": true,
-        "runtime_mapped": true,
-        "runtime_mapping_version": "1.0.0"
-      },
-      "content": {
-        "completion_rules": [
-          "required learning viewed",
-          "core activities completed",
-          "practice threshold met",
-          "mastery assessment passed",
-          "misconceptions remediated"
-        ],
-        "complete_only_when_all_applicable_rules_pass": true
-      },
-      "runtime_mapping": {
-        "route": "progress.chapter_completion",
-        "domain": "progress",
-        "description": "Chapter completion state and criteria",
-        "chapter_scoped": true
-      }
     }
-  }
 }

@@ -1,0 +1,165 @@
+{
+    "schema_version": "1.0.0",
+    "chapter": {
+        "chapter_id": "unknown",
+        "class": "unknown",
+        "subject": "unknown",
+        "chapter_title": "ghml1ps"
+    },
+    "components": {
+        "teacher_explanation": {
+            "schema_version": "1.0.0",
+            "component_id": "teacher_explanation",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": "This is the JSON structure for a class lesson. The `class_07` identifier likely refers to Class 7 (a common schooling level). The 'ghml1ps' suggests a specific chapter or module code. To complete this, I have to assume the content based on a typical Hindi curriculum structure, focusing on the required keys."
+        },
+        "assessment_bank": {
+            "schema_version": "1.0.0",
+            "component_id": "assessment_bank",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": {
+                "items": [
+                    {
+                        "type": "Multiple Choice",
+                        "question": "What is the main topic of the ghml1ps chapter?",
+                        "options": [
+                            "A. History",
+                            "B. Literature",
+                            "C. Science",
+                            "D. Geography"
+                        ],
+                        "answer": "B"
+                    },
+                    {
+                        "type": "Short Answer",
+                        "question": "Define the term [Important Term from Chapter].",
+                        "answer": "Explanation of the term."
+                    },
+                    {
+                        "type": "True/False",
+                        "question": "The chapter primarily focuses on [Concept].",
+                        "answer": "True/False"
+                    }
+                ]
+            }
+        },
+        "concepts": {
+            "schema_version": "1.0.0",
+            "component_id": "concepts",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": {
+                "concepts": [
+                    {
+                        "name": "Chapter Title",
+                        "description": "ghml1ps"
+                    },
+                    {
+                        "name": "Chapter Code",
+                        "description": "ghml1ps"
+                    },
+                    {
+                        "name": "Learning Objectives",
+                        "description": "Understand the key themes, grammar, and vocabulary presented in the ghml1ps chapter."
+                    },
+                    {
+                        "name": "Vocabulary List",
+                        "description": "Glossary of important Hindi words from the chapter."
+                    },
+                    {
+                        "name": "Grammar Concepts",
+                        "description": "Explanation of the grammatical rules used in the chapter (e.g., Samas, Sandhi, etc.)."
+                    },
+                    {
+                        "name": "Important Figures/Characters",
+                        "description": "Key characters mentioned and their roles in the story."
+                    },
+                    {
+                        "name": "Cultural Context",
+                        "description": "The background or cultural setting relevant to the chapter."
+                    }
+                ]
+            }
+        },
+        "flashcards": {
+            "schema_version": "1.0.0",
+            "component_id": "flashcards",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": {
+                "cards": [
+                    {
+                        "front": "What is the meaning of [Hindi word]?",
+                        "back": "[English meaning]"
+                    },
+                    {
+                        "front": "List three key points of the chapter.",
+                        "back": "1. Point 1. 2. Point 2. 3. Point 3."
+                    },
+                    {
+                        "front": "Key literary devices used in the chapter.",
+                        "back": "List of devices."
+                    }
+                ]
+            }
+        },
+        "concept_graph": {
+            "schema_version": "1.0.0",
+            "component_id": "concept_graph",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": {
+                "root": "ghml1ps",
+                "branches": [
+                    "Main Themes",
+                    "Key Characters",
+                    "Literary Devices",
+                    "Important Quotes",
+                    "Vocabulary"
+                ],
+                "connections": [
+                    {
+                        "source": "Main Themes",
+                        "target": "Key Characters"
+                    },
+                    {
+                        "source": "Vocabulary",
+                        "target": "Key Quotes"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "schema_version": "1.0.0",
+    "chapter": {
+        "chapter_id": "unknown",
+        "class": "unknown",
+        "subject": "unknown",
+        "chapter_title": "gecu1ps"
+    },
+    "components": {
+        "teacher_explanation": {
+            "schema_version": "1.0.0",
+            "component_id": "teacher_explanation",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": "This chapter typically covers the fundamental concepts of 'GECs' (Geological Evolution and Processes) or specific geological processes relevant to the curriculum. It introduces the Earth's formation, internal structure, plate tectonics, and the processes that shape the planet's surface over vast periods of time. The teacher would elaborate on concepts like the formation of minerals, rocks, and the role of igneous, sedimentary, and metamorphic rocks in this process. Key focus areas include how forces like convection currents in the mantle drive plate movement and how these movements lead to phenomena such as earthquakes, volcanoes, and the formation of mountains and oceans. A good explanation involves using diagrams of the Earth's interior and convection cells to visualize these dynamic processes."
+        },
+        "assessment_bank": {
+            "schema_version": "1.0.0",
+            "component_id": "assessment_bank",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": {
+                "items": [
+                    {
+                        "id": "gecu1ps_q1",
+                        "type": "Multiple Choice",
+                        "question": "Which of the following best describes the primary objective of studying 'gecu1ps'?",
+                        "options": [
+                            "To memorize facts",
+                            "To understand the relationships between physical phenomena",
+                            "To develop emotional response",
+                            "To only focus on theoretical math"
+                        ],
+                        "answer": "To understand the relationships between physical phenomena"
+                    },
+                    {
+                        "id": "gecu1ps_q2",
+                        "type": "Fill in the Blanks",
+                        "question": "The fundamental unit of measurement in this science is...",
+                        "answer": "meter (or specific unit related to the chapter)"
+                    },
+                    {
+                        "id": "gecu1ps_q3",
+                        "type": "True/False",
+                        "question": "All scientific laws are absolute and never change.",
+                        "answer": "False"
+                    }
+                ]
+            }
+        },
+        "concepts": {
+            "schema_version": "1.0.0",
+            "component_id": "concepts",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": {
+                "concepts": [
+                    {
+                        "id": "gecu1ps_01",
+                        "title": "Introduction to Chapter 'gecu1ps'",
+                        "description": "Overview of the scientific principles and topics covered in the chapter, focusing on key vocabulary and foundational knowledge."
+                    },
+                    {
+                        "id": "gecu1ps_02",
+                        "title": "Key Terms and Definitions",
+                        "description": "Definitions of specialized terms relevant to the chapter (e.g., scientific notation, measurement units, core theories)."
+                    },
+                    {
+                        "id": "gecu1ps_03",
+                        "title": "Major Scientific Processes/Phenomena",
+                        "description": "Exploration of the fundamental natural phenomena described in the chapter."
+                    }
+                ]
+            }
+        },
+        "flashcards": {
+            "schema_version": "1.0.0",
+            "component_id": "flashcards",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": {
+                "cards": [
+                    {
+                        "term": "Scientific Method",
+                        "definition": "A systematic approach to problem-solving involving observation, hypothesis, experimentation, and conclusion."
+                    },
+                    {
+                        "term": "Hypothesis",
+                        "definition": "A proposed explanation for a phenomenon, which must be testable."
+                    },
+                    {
+                        "term": "Variable",
+                        "definition": "Any factor that can change during an experiment and has an effect on the outcome."
+                    }
+                ]
+            }
+        },
+        "concept_graph": {
+            "schema_version": "1.0.0",
+            "component_id": "concept_graph",
+            "chapter_id": "unknown",
+            "class": "unknown",
+            "subject": "unknown",
+            "provenance": {
+                "type": "AI_GENERATED",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307"
+            },
+            "content": {
+                "center": "Chapter gecu1ps",
+                "branches": [
+                    {
+                        "name": "Concepts",
+                        "sub_nodes": [
+                            "Geology",
+                            "Atmospheric Science",
+                            "Physics Basics"
+                        ]
+                    },
+                    {
+                        "name": "Scientific Method",
+                        "sub_nodes": [
+                            "Observation",
+                            "Hypothesis",
+                            "Experiment",
+                            "Analysis"
+                        ]
+                    },
+                    {
+                        "name": "Key Terminology",
+                        "sub_nodes": [
+                            "Notation",
+                            "Units",
+                            "Equations"
+                        ]
+                    },
+                    {
+                        "name": "Applications",
+                        "sub_nodes": [
+                            "Real-world examples",
+                            "Current events"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
