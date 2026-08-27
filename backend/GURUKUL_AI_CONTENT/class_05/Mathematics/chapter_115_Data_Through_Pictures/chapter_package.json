@@ -178,8 +178,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Through Pictures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.264172"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +190,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Data Through Pictures'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Data Through Pictures and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "Data Through Pictures ChapterChapter 1515 Samaira and Kabir decided to act like reporters and collect information from their friends.",
-                            "Child TV Reporter How many hours a day do you spend watching TV?",
-                            "They collected data from 35 friends and recorded it in a notebook as shown below.",
-                            "He tries to record the items in his shop using a pictograph."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Data Through Pictures' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "This chapter introduces the concept of visualizing data through pictures. We learn how to collect data from pictures (like pictographs) and represent it using different pictorial formats such as bar graphs, pie charts, and histograms. It helps us understand trends, comparisons, and distributions in a clear and engaging way.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +248,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Through Pictures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.264204"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +263,29 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "eemm115_concept_01",
-                        "name": "Data Through Pictures",
-                        "definition": "Central learning focus developed by the chapter 'Data Through Pictures'.",
-                        "evidence": "Data Through Pictures ChapterChapter 1515 Samaira and Kabir decided to act like reporters and collect information from their friends."
+                        "id": "c115_001",
+                        "topic": "Introduction to Data Through Pictures",
+                        "description": "Understanding how visual representations (graphs, charts, pictographs) can be used to represent and analyze data sets."
                     },
                     {
-                        "id": "eemm115_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "Child TV Reporter How many hours a day do you spend watching TV?"
+                        "id": "c115_002",
+                        "topic": "Types of Charts and Graphs",
+                        "description": "Distinguishing between different visualization tools such as bar graphs, line graphs, pie charts, and pictographs based on the type of data presented."
                     },
                     {
-                        "id": "eemm115_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "They collected data from 35 friends and recorded it in a notebook as shown below."
+                        "id": "c115_003",
+                        "topic": "Reading and Interpreting Charts",
+                        "description": "Skills required to accurately read and interpret the information presented in various data visuals, including identifying scales, labels, axes, and data points."
+                    },
+                    {
+                        "id": "c115_004",
+                        "topic": "Interpreting Data Trends",
+                        "description": "Analyzing patterns, trends, and changes over time using line graphs and other trend-based visualizations."
+                    },
+                    {
+                        "id": "c115_005",
+                        "topic": "Representing Data in Pictures (Pictographs)",
+                        "description": "Learning to create and construct pictographs using symbols to represent quantities in a visually appealing way."
                     }
                 ]
             },
@@ -350,8 +304,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Through Pictures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.264219"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -386,7 +342,60 @@
                         "to": "eemm115_concept_03",
                         "relation": "applied_through"
                     }
-                ]
+                ],
+                "Data Through Pictures": {
+                    "children": [
+                        {
+                            "node": "Introduction",
+                            "links": [
+                                "Types of Charts",
+                                "Reading Charts"
+                            ]
+                        },
+                        {
+                            "node": "Types of Charts",
+                            "children": [
+                                {
+                                    "node": "Pie Chart",
+                                    "details": [
+                                        "Used for proportion",
+                                        "Shows parts of a whole"
+                                    ]
+                                },
+                                {
+                                    "node": "Bar Graph",
+                                    "details": [
+                                        "Used for comparing categories",
+                                        "Simple and effective"
+                                    ]
+                                },
+                                {
+                                    "node": "Line Graph",
+                                    "details": [
+                                        "Used for trends over time",
+                                        "Shows continuity"
+                                    ]
+                                },
+                                {
+                                    "node": "Pictograph",
+                                    "details": [
+                                        "Used for visual representation",
+                                        "Uses symbols/icons"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "node": "Reading and Interpreting Charts",
+                            "children": [
+                                "Identify Scales",
+                                "Labels and Axes",
+                                "Identify Data Points",
+                                "Drawing Conclusions"
+                            ]
+                        }
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -1060,8 +1069,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Through Pictures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.264196"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1084,50 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm115_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Data Through Pictures'?",
+                        "id": "q115_001",
+                        "question": "Which type of graph is best suited to compare the sales of different products over several months?",
+                        "type": "Multiple Choice",
                         "options": [
-                            "Data Through Pictures ChapterChapter 1515 Samaira and Kabir decided to act like reporters and collect information from their friends.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "Pie Chart",
+                            "Bar Graph",
+                            "Pictograph",
+                            "Line Graph"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Data Through Pictures ChapterChapter 1515 Samaira and Kabir decided to act like reporters and collect information from their friends.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm115_concept_01"
+                        "answer": "Line Graph"
                     },
                     {
-                        "id": "eemm115_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Data Through Pictures'?",
+                        "id": "q115_002",
+                        "question": "If a chart uses a scale where each symbol represents 10 items, what is the total number of items represented by 5 symbols?",
+                        "type": "Multiple Choice",
                         "options": [
-                            "Child TV Reporter How many hours a day do you spend watching TV?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "5",
+                            "10",
+                            "50",
+                            "100"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Child TV Reporter How many hours a day do you spend watching TV?",
-                        "difficulty": "easy",
-                        "concept_id": "eemm115_concept_01"
+                        "answer": "50"
                     },
                     {
-                        "id": "eemm115_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Data Through Pictures'?",
+                        "id": "q115_003",
+                        "question": "Identify the primary purpose of a pie chart.",
+                        "type": "Fill in the Blank",
                         "options": [
-                            "They collected data from 35 friends and recorded it in a notebook as shown below.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "They collected data from 35 friends and recorded it in a notebook as shown below.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm115_concept_01"
+                            "To show trends over time.",
+                            "To compare the proportion of parts to a whole.",
+                            "To show changes in temperature.",
+                            "To compare categories of items."
+                        ]
                     },
                     {
-                        "id": "eemm115_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Data Through Pictures'?",
+                        "id": "q115_004",
+                        "question": "What essential element must be present in a line graph to show data changes over time?",
+                        "type": "Fill in the Blank",
                         "options": [
-                            "He tries to record the items in his shop using a pictograph.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "He tries to record the items in his shop using a pictograph.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm115_concept_01"
-                    },
-                    {
-                        "id": "eemm115_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Data Through Pictures'?",
-                        "options": [
-                            "He notices that there are too many items of each kind in his shop and it is not easy to make a picture for every item.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "He notices that there are too many items of each kind in his shop and it is not easy to make a picture for every item.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm115_concept_01"
-                    },
-                    {
-                        "id": "eemm115_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Data Through Pictures'?",
-                        "options": [
-                            "Stock-Taking in a Shop How can I show these with pictures?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Stock-Taking in a Shop How can I show these with pictures?",
-                        "difficulty": "hard",
-                        "concept_id": "eemm115_concept_01"
+                            "Category",
+                            "Scale",
+                            "Axis (Time)",
+                            "Legend"
+                        ]
                     }
                 ]
             },
@@ -1689,8 +1650,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Through Pictures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.264212"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1665,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm115_fc01",
-                        "front": "What is a key idea from 'Data Through Pictures'?",
-                        "back": "Data Through Pictures ChapterChapter 1515 Samaira and Kabir decided to act like reporters and collect information from their friends.",
-                        "concept_id": "eemm115_concept_01"
+                        "id": "f115_001",
+                        "term": "Pie Chart",
+                        "definition": "A circular graph used to show the proportion or percentage of different categories that make up a whole."
                     },
                     {
-                        "id": "eemm115_fc02",
-                        "front": "What is a key idea from 'Data Through Pictures'?",
-                        "back": "Child TV Reporter How many hours a day do you spend watching TV?",
-                        "concept_id": "eemm115_concept_01"
+                        "id": "f115_002",
+                        "term": "Bar Graph",
+                        "definition": "A graph that uses bars to compare quantities of different categories."
                     },
                     {
-                        "id": "eemm115_fc03",
-                        "front": "What is a key idea from 'Data Through Pictures'?",
-                        "back": "They collected data from 35 friends and recorded it in a notebook as shown below.",
-                        "concept_id": "eemm115_concept_01"
+                        "id": "f115_003",
+                        "term": "Line Graph",
+                        "definition": "A line graph that connects data points to show trends and changes over a continuous period."
                     },
                     {
-                        "id": "eemm115_fc04",
-                        "front": "What is a key idea from 'Data Through Pictures'?",
-                        "back": "He tries to record the items in his shop using a pictograph.",
-                        "concept_id": "eemm115_concept_01"
-                    },
-                    {
-                        "id": "eemm115_fc05",
-                        "front": "What is a key idea from 'Data Through Pictures'?",
-                        "back": "He notices that there are too many items of each kind in his shop and it is not easy to make a picture for every item.",
-                        "concept_id": "eemm115_concept_01"
-                    },
-                    {
-                        "id": "eemm115_fc06",
-                        "front": "What is a key idea from 'Data Through Pictures'?",
-                        "back": "Stock-Taking in a Shop How can I show these with pictures?",
-                        "concept_id": "eemm115_concept_01"
+                        "id": "f115_004",
+                        "term": "Pictograph",
+                        "definition": "A graphical representation of data using symbols or icons to represent quantities."
                     }
                 ]
             },

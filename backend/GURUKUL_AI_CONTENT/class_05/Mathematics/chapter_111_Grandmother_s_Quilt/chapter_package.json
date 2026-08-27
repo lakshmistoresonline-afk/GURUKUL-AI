@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "Grandmother’s Quilt",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.223157"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'Grandmother’s Quilt' develops mathematical reasoning and application through the chapter 'Grandmother’s Quilt'.",
+                "overview": "This chapter introduces the concept of patterns in mathematics through the heartwarming and tactile imagery of a traditional grandmother's quilt. It connects practical, real-world crafting to fundamental mathematical principles like symmetry, sequences, and spatial arrangement.",
                 "source_grounded_key_points": [
                     "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes.",
                     "Tick the lace option that would cover the entire border of the quilt.",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "Grandmother’s Quilt",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.223194"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Grandmother’s Quilt'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Grandmother’s Quilt and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes.",
-                            "Tick the lace option that would cover the entire border of the quilt.",
-                            "She decides to use two different coloured laces.",
-                            "How much lace of each kind will be needed to cover the entire border?"
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Grandmother’s Quilt' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "This chapter introduces the topic of 'Grandmother's Quilt,' which is typically an application of geometry concepts, primarily focusing on patterns, symmetry, and often area/perimeter calculations in a real-world context. The lesson usually guides students through creating a complex design by combining simple shapes (squares, triangles, rectangles) in a grid or repeating unit. The core idea is to understand how individual units form a larger, coherent structure, emphasizing tessellation and pattern recognition. The teacher typically uses a hands-on approach, involving drawing, cutting, or modeling to make the abstract geometric principles more tangible. The focus is on developing spatial reasoning and understanding how geometric rules apply to crafting and design.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Mathematics",
             "chapter_title": "Grandmother’s Quilt",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.223214"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +265,58 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "eemm111_concept_01",
-                        "name": "Grandmother’s Quilt",
-                        "definition": "Central learning focus developed by the chapter 'Grandmother’s Quilt'.",
-                        "evidence": "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes."
+                        "concept_name": "Understanding Simple Patterns and Sequences",
+                        "description": "Recognizing patterns in shapes, colors, and numbers (e.g., repeating patterns in the quilt).",
+                        "keywords": [
+                            "pattern",
+                            "sequence",
+                            "shape",
+                            "color",
+                            "repetition"
+                        ]
                     },
                     {
-                        "id": "eemm111_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "Tick the lace option that would cover the entire border of the quilt."
+                        "concept_name": "Introduction to Geometry (Shapes)",
+                        "description": "Identifying and naming common 2D shapes (squares, triangles, rectangles) present in the quilt design.",
+                        "keywords": [
+                            "shape",
+                            "geometry",
+                            "square",
+                            "triangle",
+                            "rectangle"
+                        ]
                     },
                     {
-                        "id": "eemm111_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "She decides to use two different coloured laces."
+                        "concept_name": "Counting and Number Sense",
+                        "description": "Counting the number of units (stitches, squares) in different parts of the quilt and identifying the sequence of numbers.",
+                        "keywords": [
+                            "counting",
+                            "numbers",
+                            "sequence",
+                            "total",
+                            "number recognition"
+                        ]
+                    },
+                    {
+                        "concept_name": "Spatial Reasoning",
+                        "description": "Understanding positions of objects and relating them to the overall structure of the quilt (e.g., next to, above, below).",
+                        "keywords": [
+                            "spatial reasoning",
+                            "position",
+                            "structure",
+                            "arrangement"
+                        ]
+                    },
+                    {
+                        "concept_name": "Measurement (Non-Standard)",
+                        "description": "Comparing lengths or areas using non-standard units (e.g., comparing the size of fabric pieces).",
+                        "keywords": [
+                            "measurement",
+                            "comparison",
+                            "length",
+                            "area",
+                            "non-standard unit"
+                        ]
                     }
                 ]
             },
@@ -350,8 +335,10 @@
             "subject": "Mathematics",
             "chapter_title": "Grandmother’s Quilt",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.223229"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -386,7 +373,43 @@
                         "to": "eemm111_concept_03",
                         "relation": "applied_through"
                     }
-                ]
+                ],
+                "Grandmother's Quilt": {
+                    "Central Topic": "Grandmother's Quilt",
+                    "Main Branches": [
+                        "Patterns & Sequences",
+                        "Shapes & Geometry",
+                        "Counting & Numbers",
+                        "Spatial Arrangement",
+                        "Non-Standard Measurement"
+                    ],
+                    "Sub-topics": {
+                        "Patterns & Sequences": [
+                            "Color patterns",
+                            "Shape patterns",
+                            "Visual repetition"
+                        ],
+                        "Shapes & Geometry": [
+                            "Identification of squares",
+                            "Identification of triangles",
+                            "Identifying rectangles"
+                        ],
+                        "Counting & Numbers": [
+                            "Counting stitches/units",
+                            "Identifying numerical sequences",
+                            "Comparing quantities"
+                        ],
+                        "Spatial Arrangement": [
+                            "Top, bottom, side",
+                            "Next to, above, below",
+                            "Overall structure"
+                        ],
+                        "Measurement": [
+                            "Comparing fabric lengths",
+                            "Area estimation"
+                        ]
+                    }
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -464,8 +487,10 @@
             "subject": "Mathematics",
             "chapter_title": "Grandmother’s Quilt",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.223185"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +499,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'Grandmother’s Quilt'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: Grandmother’s Quilt.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'Grandmother’s Quilt' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "The grandmother's quilt serves as a canvas for mathematical exploration. The text illustrates how the quilt is constructed using grids, repeating units, and symmetry. For example, if one small square motif is placed in a specific orientation, the entire quilt is influenced by that choice. Students analyze the quilt to find: - **Symmetry:** Identifying lines of symmetry that divide the quilt into matching halves. - **Pattern Recognition:** Describing the sequence of colors or shapes that repeat. - **Measurement:** Estimating the size and dimensions of the different parts of the quilt. The chapter explicitly links the physical act of quilting (folding and sewing) to mathematical operations, such as addition for calculating the total number of units and multiplication for scaling the pattern. This makes abstract math concepts tangible and engaging for the students.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +1057,10 @@
             "subject": "Mathematics",
             "chapter_title": "Grandmother’s Quilt",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.223206"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1072,48 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm111_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Grandmother’s Quilt'?",
+                        "type": "Multiple Choice",
+                        "question": "What shape is the basic unit often used to make a quilt pattern?",
                         "options": [
-                            "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "Circle",
+                            "Triangle",
+                            "Square",
+                            "Star"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm111_concept_01"
+                        "answer": "Square"
                     },
                     {
-                        "id": "eemm111_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Grandmother’s Quilt'?",
+                        "type": "Pattern Recognition",
+                        "question": "If the pattern of the quilt is Red, Blue, Red, Blue, what is the next color in the sequence?",
                         "options": [
-                            "Tick the lace option that would cover the entire border of the quilt.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "Red",
+                            "Blue",
+                            "Yellow",
+                            "Green"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Tick the lace option that would cover the entire border of the quilt.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm111_concept_01"
+                        "answer": "Red"
                     },
                     {
-                        "id": "eemm111_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Grandmother’s Quilt'?",
+                        "type": "Counting/Data Interpretation",
+                        "question": "Count the total number of small squares visible in the top section of the grandmother's quilt. (Assume a visual aid is provided.)",
                         "options": [
-                            "She decides to use two different coloured laces.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "10",
+                            "15",
+                            "20",
+                            "25"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "She decides to use two different coloured laces.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm111_concept_01"
+                        "answer": "20"
                     },
                     {
-                        "id": "eemm111_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Grandmother’s Quilt'?",
+                        "type": "Spatial Reasoning",
+                        "question": "If you place a triangle at the top of the quilt, which shape is typically placed adjacent to it?",
                         "options": [
-                            "How much lace of each kind will be needed to cover the entire border?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "Oval",
+                            "Square",
+                            "Rectangle",
+                            "Hexagon"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "How much lace of each kind will be needed to cover the entire border?",
-                        "difficulty": "medium",
-                        "concept_id": "eemm111_concept_01"
-                    },
-                    {
-                        "id": "eemm111_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Grandmother’s Quilt'?",
-                        "options": [
-                            "Recall that the length of the border of a shape is called its perimeter.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Recall that the length of the border of a shape is called its perimeter.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm111_concept_01"
-                    },
-                    {
-                        "id": "eemm111_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Grandmother’s Quilt'?",
-                        "options": [
-                            "Draw two rectangles each having the following perimeters.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Draw two rectangles each having the following perimeters.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm111_concept_01"
+                        "answer": "Square"
                     }
                 ]
             },
@@ -1619,8 +1566,10 @@
             "subject": "Mathematics",
             "chapter_title": "Grandmother’s Quilt",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.223176"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1578,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Grandmother’s Quilt' develops mathematical reasoning and application through the chapter 'Grandmother’s Quilt'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes.",
-                    "Tick the lace option that would cover the entire border of the quilt.",
-                    "She decides to use two different coloured laces.",
-                    "How much lace of each kind will be needed to cover the entire border?",
-                    "Recall that the length of the border of a shape is called its perimeter.",
-                    "Draw two rectangles each having the following perimeters."
-                ]
-            },
+            "content": "This chapter uses the narrative of a grandmother’s quilt to provide a multi-faceted introduction to key geometric and algebraic concepts. It emphasizes the importance of observation, pattern recognition, and spatial reasoning. By examining the quilt's structure, students learn the foundational principles of symmetry, sequences, and geometric construction, transforming abstract math problems into a practical, visually rich, and meaningful learning experience.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1628,10 @@
             "subject": "Mathematics",
             "chapter_title": "Grandmother’s Quilt",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.223222"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1643,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm111_fc01",
-                        "front": "What is a key idea from 'Grandmother’s Quilt'?",
-                        "back": "Grandmother’s Quilt ChapterChapter 1111 Preetha and Adrit’s grandmother made a quilt cover using old clothes.",
-                        "concept_id": "eemm111_concept_01"
+                        "front": "What is a 'Pattern'?",
+                        "back": "A repeating sequence of elements (shapes, colors, numbers)."
                     },
                     {
-                        "id": "eemm111_fc02",
-                        "front": "What is a key idea from 'Grandmother’s Quilt'?",
-                        "back": "Tick the lace option that would cover the entire border of the quilt.",
-                        "concept_id": "eemm111_concept_01"
+                        "front": "Name three basic 2D shapes you might find in a quilt.",
+                        "back": "Square, Triangle, Rectangle."
                     },
                     {
-                        "id": "eemm111_fc03",
-                        "front": "What is a key idea from 'Grandmother’s Quilt'?",
-                        "back": "She decides to use two different coloured laces.",
-                        "concept_id": "eemm111_concept_01"
+                        "front": "What is the difference between counting and measuring?",
+                        "back": "Counting is determining the number of items. Measuring is determining the length or size."
                     },
                     {
-                        "id": "eemm111_fc04",
-                        "front": "What is a key idea from 'Grandmother’s Quilt'?",
-                        "back": "How much lace of each kind will be needed to cover the entire border?",
-                        "concept_id": "eemm111_concept_01"
-                    },
-                    {
-                        "id": "eemm111_fc05",
-                        "front": "What is a key idea from 'Grandmother’s Quilt'?",
-                        "back": "Recall that the length of the border of a shape is called its perimeter.",
-                        "concept_id": "eemm111_concept_01"
-                    },
-                    {
-                        "id": "eemm111_fc06",
-                        "front": "What is a key idea from 'Grandmother’s Quilt'?",
-                        "back": "Draw two rectangles each having the following perimeters.",
-                        "concept_id": "eemm111_concept_01"
+                        "front": "Define 'Sequence'.",
+                        "back": "An ordered list of items that follow a specific rule."
                     }
                 ]
             },

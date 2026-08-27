@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "Heat Transfer in Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.208051"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Heat Transfer in Nature.",
+                "overview": "Heat transfer is the movement of thermal energy from a hotter region to a colder region. In nature, heat transfer occurs primarily through three mechanisms: conduction, convection, and radiation. Understanding these processes is crucial for explaining phenomena ranging from the warming of the Earth to the movement of water.",
                 "source_grounded_key_points": [
                     "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok.",
                     "On a cold winter evening, they are sitting around a ﬁreplace.",
@@ -185,8 +187,10 @@
             "subject": "Science",
             "chapter_title": "Heat Transfer in Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.208089"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Heat Transfer in Nature.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok.",
-                            "On a cold winter evening, they are sitting around a ﬁreplace.",
-                            "Palden shares his experiences of visiting Kerala during the winter vacation.",
-                            "He says that compared to Gangtok, winter in Kerala is comparatively warm and humid.",
-                            "Both Pema and Palden are curious about why some places are so cold and others quite hot."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Class 07 Science, Chapter 107: Heat Transfer in Nature, explores the principles by which heat energy moves from warmer objects or regions to cooler ones. It covers three main modes of heat transfer: conduction, convection, and radiation. For conduction, students learn that heat travels through direct contact, often involving solids, and how temperature differences lead to net heat flow. Convection is explained as the movement of fluids (liquids and gases), where warmer, less dense fluids rise and cooler, denser fluids sink, creating currents. Radiation is described as the transfer of heat via electromagnetic waves, which doesn't require a medium and is evident in phenomena like the heat felt from the sun or a fire. The chapter emphasizes that all matter can transfer heat, and these mechanisms are fundamental to understanding weather patterns and everyday heating systems.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Science",
             "chapter_title": "Heat Transfer in Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.208110"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,44 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu107_c01",
-                        "name": "Heat Transfer in Nature",
-                        "definition": "Central learning focus of Heat Transfer in Nature.",
-                        "source_evidence": "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok."
+                        "concept_name": "Heat and Temperature",
+                        "definition": "Heat is the mode of energy transfer between objects with different temperatures. Temperature is a measure of the average kinetic energy of the particles in a substance.",
+                        "key_points": [
+                            "Units of heat: Joule (J).",
+                            "Measurement: Thermometer (Celsius, Fahrenheit, Kelvin).",
+                            "Specific heat capacity: Energy required to change the temperature of a unit mass of a substance."
+                        ]
                     },
                     {
-                        "id": "gecu107_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "On a cold winter evening, they are sitting around a ﬁreplace."
+                        "concept_name": "Modes of Heat Transfer",
+                        "definition": "The movement of thermal energy from a hotter body to a cooler body through conduction, convection, or radiation.",
+                        "sub_types": [
+                            {
+                                "mode": "Conduction",
+                                "description": "Heat transfer through direct contact between particles (e.g., heat flowing through a metal rod)."
+                            },
+                            {
+                                "mode": "Convection",
+                                "description": "Heat transfer through the movement of fluids (liquids or gases); hotter, less dense fluid rises, and cooler, denser fluid sinks."
+                            },
+                            {
+                                "mode": "Radiation",
+                                "description": "Heat transfer through electromagnetic waves (e.g., the Sun heating the Earth)."
+                            }
+                        ]
                     },
                     {
-                        "id": "gecu107_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "Palden shares his experiences of visiting Kerala during the winter vacation."
+                        "concept_name": "Latent Heat",
+                        "definition": "The heat absorbed or released by a substance during a change of state (phase change) without a corresponding change in temperature.",
+                        "examples": [
+                            "Latent heat of fusion (melting ice) and latent heat of vaporization (boiling water)."
+                        ]
+                    },
+                    {
+                        "concept_name": "Specific Heat Capacity",
+                        "definition": "The amount of heat required to raise the temperature of a unit mass of a substance by one degree.",
+                        "formula": "Q = mcΔT",
+                        "units": "Joules per kilogram per degree Celsius (J/kg°C)"
                     }
                 ]
             },
@@ -360,8 +330,10 @@
             "subject": "Science",
             "chapter_title": "Heat Transfer in Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.208127"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +368,40 @@
                         "to": "gecu107_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Central_Node": "Heat Transfer in Nature",
+                "Branch_1": {
+                    "Title": "Temperature & Heat",
+                    "Sub_Branches": [
+                        "Definition of Heat",
+                        "Measuring Temperature (Thermometer)",
+                        "Specific Heat Capacity (Q=mcΔT)"
+                    ]
+                },
+                "Branch_2": {
+                    "Title": "Modes of Transfer",
+                    "Sub_Branches": [
+                        {
+                            "Mode": "Conduction",
+                            "Detail": "Direct contact between particles."
+                        },
+                        {
+                            "Mode": "Convection",
+                            "Detail": "Movement of fluids."
+                        },
+                        {
+                            "Mode": "Radiation",
+                            "Detail": "Electromagnetic waves."
+                        }
+                    ]
+                },
+                "Branch_3": {
+                    "Title": "Related Concepts",
+                    "Sub_Branches": [
+                        "Latent Heat (Phase change)",
+                        "Specific Heat Capacity (Formula)"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +495,10 @@
             "subject": "Science",
             "chapter_title": "Heat Transfer in Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.208080"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +507,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Heat Transfer in Nature.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Heat Transfer in Nature supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a sunny day. Sunlight (radiation) reaches the Earth and heats it up. The Earth then transfers this heat to the oceans and atmosphere primarily through **convection**. As water near the surface heats up, it becomes less dense and rises, carrying the heat with it, while cooler, denser water sinks to take its place. This movement of fluids (like boiling water or circulating ocean currents) is a classic example of convection. Simultaneously, heat moves from the hotter areas (like the Sun) to the cooler space between them via **radiation**, which travels through the vacuum of space. In materials like metals, heat moves from the hotter particles to the cooler ones through **conduction**, such as when you hold a metal spoon in hot soup. These interconnected processes ensure that thermal energy is efficiently distributed throughout the natural environment.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1102,10 @@
             "subject": "Science",
             "chapter_title": "Heat Transfer in Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.208102"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1117,31 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu107_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Heat Transfer in Nature'?",
+                        "type": "Multiple Choice",
+                        "question": "Which mode of heat transfer requires a medium (matter) to travel?",
                         "options": [
-                            "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Radiation",
+                            "Conduction",
+                            "Convection",
+                            "All of the above"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu107_c01"
+                        "answer": "Convection"
                     },
                     {
-                        "id": "gecu107_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Heat Transfer in Nature'?",
-                        "options": [
-                            "On a cold winter evening, they are sitting around a ﬁreplace.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "On a cold winter evening, they are sitting around a ﬁreplace.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu107_c01"
+                        "type": "Fill in the Blank",
+                        "question": "The movement of fluid due to density differences is called __________. (Convection/Conduction/Radiation)",
+                        "answer": "Convection"
                     },
                     {
-                        "id": "gecu107_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Heat Transfer in Nature'?",
-                        "options": [
-                            "Palden shares his experiences of visiting Kerala during the winter vacation.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Palden shares his experiences of visiting Kerala during the winter vacation.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu107_c01"
+                        "type": "True/False",
+                        "question": "Latent heat is always negative.",
+                        "answer": "False"
                     },
                     {
-                        "id": "gecu107_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Heat Transfer in Nature'?",
-                        "options": [
-                            "He says that compared to Gangtok, winter in Kerala is comparatively warm and humid.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "He says that compared to Gangtok, winter in Kerala is comparatively warm and humid.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu107_c01"
-                    },
-                    {
-                        "id": "gecu107_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Heat Transfer in Nature'?",
-                        "options": [
-                            "Both Pema and Palden are curious about why some places are so cold and others quite hot.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Both Pema and Palden are curious about why some places are so cold and others quite hot.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu107_c01"
-                    },
-                    {
-                        "id": "gecu107_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Heat Transfer in Nature'?",
-                        "options": [
-                            "Hearing them express their curiosity, their grandfather, a retired science teacher, says, “Kerala is closer to the equator than Sikkim and it also has a long coastline, which results in warmer and more humid weather conditions”.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Hearing them express their curiosity, their grandfather, a retired science teacher, says, “Kerala is closer to the equator than Sikkim and it also has a long coastline, which results in warmer and more humid weather conditions”.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu107_c01"
-                    },
-                    {
-                        "id": "gecu107_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Heat Transfer in Nature'?",
-                        "options": [
-                            "Palden replies, “Yes, we learnt in Grade 6 Science and Social Science that for us on the Earth, the Sun is the main source of heat and light, and around the equator, the climate is generally hot”.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Palden replies, “Yes, we learnt in Grade 6 Science and Social Science that for us on the Earth, the Sun is the main source of heat and light, and around the equator, the climate is generally hot”.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu107_c01"
-                    },
-                    {
-                        "id": "gecu107_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Heat Transfer in Nature'?",
-                        "options": [
-                            "As they are talking, Pema is keenly observing her grandmother cooking thukpa (a traditional Sikkimese dish) in a large metal pan.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "As they are talking, Pema is keenly observing her grandmother cooking thukpa (a traditional Sikkimese dish) in a large metal pan.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu107_c01"
+                        "type": "Calculation",
+                        "question": "If 100 Joules of heat is required to raise the temperature of 2 kg of water by 1°C, what is the specific heat capacity of water?",
+                        "calculation": "Q = mcΔT",
+                        "answer": "50 J/kg°C"
                     }
                 ]
             },
@@ -1715,8 +1595,10 @@
             "subject": "Science",
             "chapter_title": "Heat Transfer in Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.208071"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1607,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Heat Transfer in Nature' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok.",
-                    "On a cold winter evening, they are sitting around a ﬁreplace.",
-                    "Palden shares his experiences of visiting Kerala during the winter vacation.",
-                    "He says that compared to Gangtok, winter in Kerala is comparatively warm and humid.",
-                    "Both Pema and Palden are curious about why some places are so cold and others quite hot.",
-                    "Hearing them express their curiosity, their grandfather, a retired science teacher, says, “Kerala is closer to the equator than Sikkim and it also has a long coastline, which results in warmer and more humid weather conditions”.",
-                    "Palden replies, “Yes, we learnt in Grade 6 Science and Social Science that for us on the Earth, the Sun is the main source of heat and light, and around the equator, the climate is generally hot”."
-                ]
-            },
+            "content": "Heat transfer in nature is the process of thermal energy movement driven by three main mechanisms: **Conduction** (transfer through direct contact, e.g., through solids), **Convection** (transfer through the movement of fluids, e.g., currents in water or air), and **Radiation** (transfer via electromagnetic waves, e.g., sunlight). These mechanisms work together to regulate temperature and redistribute thermal energy across the universe.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1657,10 @@
             "subject": "Science",
             "chapter_title": "Heat Transfer in Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.208119"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1672,29 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu107_fc01",
-                        "front": "What should you remember from Heat Transfer in Nature?",
-                        "back": "Heat Transfer 7 in Nature Pema and her brother Palden reside in Gangtok.",
-                        "concept_id": "gecu107_c01"
+                        "term": "Heat",
+                        "definition": "Energy that is transferred due to a temperature difference.",
+                        "icon": "🔥"
                     },
                     {
-                        "id": "gecu107_fc02",
-                        "front": "What should you remember from Heat Transfer in Nature?",
-                        "back": "On a cold winter evening, they are sitting around a ﬁreplace.",
-                        "concept_id": "gecu107_c01"
+                        "term": "Conduction",
+                        "definition": "Heat transfer by direct contact (through particles).",
+                        "icon": "〰️"
                     },
                     {
-                        "id": "gecu107_fc03",
-                        "front": "What should you remember from Heat Transfer in Nature?",
-                        "back": "Palden shares his experiences of visiting Kerala during the winter vacation.",
-                        "concept_id": "gecu107_c01"
+                        "term": "Convection",
+                        "definition": "Heat transfer by the movement of fluids (liquids or gases).",
+                        "icon": "🔄"
                     },
                     {
-                        "id": "gecu107_fc04",
-                        "front": "What should you remember from Heat Transfer in Nature?",
-                        "back": "He says that compared to Gangtok, winter in Kerala is comparatively warm and humid.",
-                        "concept_id": "gecu107_c01"
+                        "term": "Radiation",
+                        "definition": "Heat transfer through electromagnetic waves.",
+                        "icon": "☀️"
                     },
                     {
-                        "id": "gecu107_fc05",
-                        "front": "What should you remember from Heat Transfer in Nature?",
-                        "back": "Both Pema and Palden are curious about why some places are so cold and others quite hot.",
-                        "concept_id": "gecu107_c01"
-                    },
-                    {
-                        "id": "gecu107_fc06",
-                        "front": "What should you remember from Heat Transfer in Nature?",
-                        "back": "Hearing them express their curiosity, their grandfather, a retired science teacher, says, “Kerala is closer to the equator than Sikkim and it also has a long coastline, which results in warmer and more humid weather conditions”.",
-                        "concept_id": "gecu107_c01"
-                    },
-                    {
-                        "id": "gecu107_fc07",
-                        "front": "What should you remember from Heat Transfer in Nature?",
-                        "back": "Palden replies, “Yes, we learnt in Grade 6 Science and Social Science that for us on the Earth, the Sun is the main source of heat and light, and around the equator, the climate is generally hot”.",
-                        "concept_id": "gecu107_c01"
-                    },
-                    {
-                        "id": "gecu107_fc08",
-                        "front": "What should you remember from Heat Transfer in Nature?",
-                        "back": "As they are talking, Pema is keenly observing her grandmother cooking thukpa (a traditional Sikkimese dish) in a large metal pan.",
-                        "concept_id": "gecu107_c01"
+                        "term": "Specific Heat Capacity",
+                        "definition": "Heat needed to change the temperature of 1 kg of substance by 1°C.",
+                        "icon": "🌡️"
                     }
                 ]
             },

@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "Banks and the Magic of Finance",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.458105"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Banks and the Magic of Finance.",
+                "overview": "Chapter 208 explores the role and significance of banks in the modern financial system. Banks are the crucial intermediaries that transform deposits into loans, facilitating economic activities, investments, and financial inclusion. This chapter delves into how banks operate, their various functions, and their impact on individuals and the national economy.",
                 "source_grounded_key_points": [
                     "8 CHAPTER Banks and the Magic of Finance The banker is not only a middleman; he is the producer of a vital service, enabling entrepreneurs to transform ideas into reality through credit.",
                     "What is financial infrastructure, and what does it comprise?",
@@ -185,8 +187,10 @@
             "subject": "Social Science",
             "chapter_title": "Banks and the Magic of Finance",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.458142"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Banks and the Magic of Finance.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "8 CHAPTER Banks and the Magic of Finance The banker is not only a middleman; he is the producer of a vital service, enabling entrepreneurs to transform ideas into reality through credit.",
-                            "What is financial infrastructure, and what does it comprise?",
-                            "What are the main functions performed by banks and how do they impact people’s lives?",
-                            "How does financial infrastructure contribute to a nation’s progress?",
-                            "8 – Banks and the Magic of Finance Economic Life Around Us 193 Reprint 2026-27 Chapter 8.indd 193 27-11-2025 14:10:03 In the previous chapter, we learned about India’s physical infrastructure, like roads, railways, and telecommunication, which support economic activities driven by money-related transactions."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 208, 'Banks and the Magic of Finance,' explores the fundamental role and functions of banks in the economy. Banks are central institutions that act as intermediaries between depositors (those with savings) and borrowers (those who need loans). They take in small, dispersed savings and aggregate them to provide large loans for various purposes—from agriculture and small businesses to housing and large corporate investments. This process is known as 'credit creation.' Banks introduce a significant element of 'magic' into finance by transforming idle money into productive capital. They manage risk by assessing creditworthiness and using sophisticated financial tools to stabilize the economy. The chapter delves into the various forms of banking, the different functions banks perform (deposit-taking, lending, remittance), and the importance of banks in promoting economic growth, managing inflation, and facilitating financial stability. Essentially, banks are the backbone of a functional modern economy.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Social Science",
             "chapter_title": "Banks and the Magic of Finance",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.458161"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,28 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gees208_c01",
-                        "name": "Banks and the Magic of Finance",
-                        "definition": "Central learning focus of Banks and the Magic of Finance.",
-                        "source_evidence": "8 CHAPTER Banks and the Magic of Finance The banker is not only a middleman; he is the producer of a vital service, enabling entrepreneurs to transform ideas into reality through credit."
+                        "concept": "Definition of Banks",
+                        "description": "Financial institutions that accept deposits and offer loans to individuals and businesses."
                     },
                     {
-                        "id": "gees208_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "What is financial infrastructure, and what does it comprise?"
+                        "concept": "Functions of Banks",
+                        "description": "Accepting deposits, providing loans, facilitating payments, and offering various financial services."
                     },
                     {
-                        "id": "gees208_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "What are the main functions performed by banks and how do they impact people’s lives?"
+                        "concept": "Types of Banks",
+                        "description": "Commercial banks, Cooperative banks, Central banks, and Small Finance Banks."
+                    },
+                    {
+                        "concept": "The Role of Banks in the Economy",
+                        "description": "Banks act as intermediaries in money supply, helping to allocate capital and promote economic growth."
+                    },
+                    {
+                        "concept": "Money and Credit",
+                        "description": "Banks are the primary source of credit, converting money into loans and encouraging spending."
+                    },
+                    {
+                        "concept": "Financial Inclusion",
+                        "description": "Banks play a crucial role in providing banking services to the unbanked population."
                     }
                 ]
             },
@@ -360,8 +314,10 @@
             "subject": "Social Science",
             "chapter_title": "Banks and the Magic of Finance",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.458176"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +351,42 @@
                         "from": "gees208_c02",
                         "to": "gees208_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_topic": "Banks and the Magic of Finance",
+                "branches": [
+                    {
+                        "branch": "Functions",
+                        "sub_branches": [
+                            "Deposits",
+                            "Loans",
+                            "Payments",
+                            "Credit Creation"
+                        ]
+                    },
+                    {
+                        "branch": "Types of Banks",
+                        "sub_branches": [
+                            "Commercial Banks",
+                            "Cooperative Banks",
+                            "Central Banks"
+                        ]
+                    },
+                    {
+                        "branch": "Role in Economy",
+                        "sub_branches": [
+                            "Money Supply",
+                            "Capital Allocation",
+                            "Credit Promotion"
+                        ]
+                    },
+                    {
+                        "branch": "Key Concepts",
+                        "sub_branches": [
+                            "Money and Credit",
+                            "Financial Inclusion",
+                            "Interest Rates"
+                        ]
                     }
                 ]
             },
@@ -490,8 +482,10 @@
             "subject": "Social Science",
             "chapter_title": "Banks and the Magic of Finance",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.458133"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +494,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to Banks and the Magic of Finance.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Banks and the Magic of Finance supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The chapter explains the life cycle of money and how banks are central to its management. It covers the mechanisms of money creation (monetary policy) and how banks manage risk. A key part involves 'Story Explanations' where a bank is highlighted as a catalyst for development—how a small local bank provided capital to an entrepreneur, or how a central bank managed a financial crisis. This section might illustrate a 'case study' demonstrating the ripple effect of credit—showing how a loan from one bank leads to investment, job creation, and ultimately, national prosperity. The explanation focuses on the symbiotic relationship between banks, governments, and the public in maintaining a stable and dynamic financial environment.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1089,10 @@
             "subject": "Social Science",
             "chapter_title": "Banks and the Magic of Finance",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.458153"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1104,44 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees208_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Banks and the Magic of Finance'?",
+                        "question": "What is the primary function of a bank?",
                         "options": [
-                            "8 CHAPTER Banks and the Magic of Finance The banker is not only a middleman; he is the producer of a vital service, enabling entrepreneurs to transform ideas into reality through credit.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Investing in real estate",
+                            "Accepting deposits and granting loans",
+                            "Regulating the stock market",
+                            "Providing educational services"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "8 CHAPTER Banks and the Magic of Finance The banker is not only a middleman; he is the producer of a vital service, enabling entrepreneurs to transform ideas into reality through credit.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees208_c01"
+                        "answer": "Accepting deposits and granting loans"
                     },
                     {
-                        "id": "gees208_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Banks and the Magic of Finance'?",
+                        "question": "Which type of bank acts as the 'banker' of the country and manages monetary policy?",
                         "options": [
-                            "What is financial infrastructure, and what does it comprise?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Commercial Bank",
+                            "Cooperative Bank",
+                            "Central Bank",
+                            "Housing Finance Company"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "What is financial infrastructure, and what does it comprise?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees208_c01"
+                        "answer": "Central Bank"
                     },
                     {
-                        "id": "gees208_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Banks and the Magic of Finance'?",
+                        "question": "Define 'Financial Inclusion'.",
                         "options": [
-                            "What are the main functions performed by banks and how do they impact people’s lives?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Having access to high-interest loans",
+                            "Providing banking services to all segments of society",
+                            "Storing money in secure vaults",
+                            "Managing a large corporate portfolio"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "What are the main functions performed by banks and how do they impact people’s lives?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees208_c01"
+                        "answer": "Providing banking services to all segments of society"
                     },
                     {
-                        "id": "gees208_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Banks and the Magic of Finance'?",
+                        "question": "How do banks influence the money supply?",
                         "options": [
-                            "How does financial infrastructure contribute to a nation’s progress?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "By printing money directly",
+                            "Through fractional reserve banking",
+                            "By controlling interest rates only",
+                            "By limiting interest payments"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "How does financial infrastructure contribute to a nation’s progress?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees208_c01"
-                    },
-                    {
-                        "id": "gees208_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Banks and the Magic of Finance'?",
-                        "options": [
-                            "8 – Banks and the Magic of Finance Economic Life Around Us 193 Reprint 2026-27 Chapter 8.indd 193 27-11-2025 14:10:03 In the previous chapter, we learned about India’s physical infrastructure, like roads, railways, and telecommunication, which support economic activities driven by money-related transactions.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "8 – Banks and the Magic of Finance Economic Life Around Us 193 Reprint 2026-27 Chapter 8.indd 193 27-11-2025 14:10:03 In the previous chapter, we learned about India’s physical infrastructure, like roads, railways, and telecommunication, which support economic activities driven by money-related transactions.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees208_c01"
-                    },
-                    {
-                        "id": "gees208_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Banks and the Magic of Finance'?",
-                        "options": [
-                            "Do you recall the flow of money from shopkeepers to workers as salaries, who further spent it on essential items (chapter ‘From Barter to Money’ in Part 1 of Grade 7 textbook)?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Do you recall the flow of money from shopkeepers to workers as salaries, who further spent it on essential items (chapter ‘From Barter to Money’ in Part 1 of Grade 7 textbook)?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees208_c01"
-                    },
-                    {
-                        "id": "gees208_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Banks and the Magic of Finance'?",
-                        "options": [
-                            "Bank: How do these monetary transactions take place between people?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Bank: How do these monetary transactions take place between people?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees208_c01"
-                    },
-                    {
-                        "id": "gees208_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Banks and the Magic of Finance'?",
-                        "options": [
-                            "A financial Also, how is the development and maintenance of the vast institution that collects physical infrastructure funded?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A financial Also, how is the development and maintenance of the vast institution that collects physical infrastructure funded?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees208_c01"
+                        "answer": "Through fractional reserve banking"
                     }
                 ]
             },
@@ -1715,8 +1595,10 @@
             "subject": "Social Science",
             "chapter_title": "Banks and the Magic of Finance",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.458125"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1607,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Banks and the Magic of Finance' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "8 CHAPTER Banks and the Magic of Finance The banker is not only a middleman; he is the producer of a vital service, enabling entrepreneurs to transform ideas into reality through credit.",
-                    "What is financial infrastructure, and what does it comprise?",
-                    "What are the main functions performed by banks and how do they impact people’s lives?",
-                    "How does financial infrastructure contribute to a nation’s progress?",
-                    "8 – Banks and the Magic of Finance Economic Life Around Us 193 Reprint 2026-27 Chapter 8.indd 193 27-11-2025 14:10:03 In the previous chapter, we learned about India’s physical infrastructure, like roads, railways, and telecommunication, which support economic activities driven by money-related transactions.",
-                    "Do you recall the flow of money from shopkeepers to workers as salaries, who further spent it on essential items (chapter ‘From Barter to Money’ in Part 1 of Grade 7 textbook)?",
-                    "Bank: How do these monetary transactions take place between people?"
-                ]
-            },
+            "content": "Chapter 208 provides a comprehensive overview of banking. It establishes banks as the backbone of the financial system, detailing their functions in credit creation, payment systems, and monetary policy. By examining the operations of commercial, cooperative, and central banks, the chapter highlights the indispensable role of banks in promoting economic development and financial stability. In essence, the chapter underscores that banking is not just a service provider but a vital infrastructure that drives economic activity, connects savers with borrowers, and shapes the landscape of modern finance.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1657,10 @@
             "subject": "Social Science",
             "chapter_title": "Banks and the Magic of Finance",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.458169"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1672,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees208_fc01",
-                        "front": "What should you remember from Banks and the Magic of Finance?",
-                        "back": "8 CHAPTER Banks and the Magic of Finance The banker is not only a middleman; he is the producer of a vital service, enabling entrepreneurs to transform ideas into reality through credit.",
-                        "concept_id": "gees208_c01"
+                        "term": "Bank",
+                        "definition": "A financial institution that accepts deposits and provides loans to the public."
                     },
                     {
-                        "id": "gees208_fc02",
-                        "front": "What should you remember from Banks and the Magic of Finance?",
-                        "back": "What is financial infrastructure, and what does it comprise?",
-                        "concept_id": "gees208_c01"
+                        "term": "Commercial Bank",
+                        "definition": "A bank that deals primarily with individuals and businesses."
                     },
                     {
-                        "id": "gees208_fc03",
-                        "front": "What should you remember from Banks and the Magic of Finance?",
-                        "back": "What are the main functions performed by banks and how do they impact people’s lives?",
-                        "concept_id": "gees208_c01"
+                        "term": "Central Bank",
+                        "definition": "The apex monetary authority of a country, responsible for managing the currency and interest rates."
                     },
                     {
-                        "id": "gees208_fc04",
-                        "front": "What should you remember from Banks and the Magic of Finance?",
-                        "back": "How does financial infrastructure contribute to a nation’s progress?",
-                        "concept_id": "gees208_c01"
-                    },
-                    {
-                        "id": "gees208_fc05",
-                        "front": "What should you remember from Banks and the Magic of Finance?",
-                        "back": "8 – Banks and the Magic of Finance Economic Life Around Us 193 Reprint 2026-27 Chapter 8.indd 193 27-11-2025 14:10:03 In the previous chapter, we learned about India’s physical infrastructure, like roads, railways, and telecommunication, which support economic activities driven by money-related transactions.",
-                        "concept_id": "gees208_c01"
-                    },
-                    {
-                        "id": "gees208_fc06",
-                        "front": "What should you remember from Banks and the Magic of Finance?",
-                        "back": "Do you recall the flow of money from shopkeepers to workers as salaries, who further spent it on essential items (chapter ‘From Barter to Money’ in Part 1 of Grade 7 textbook)?",
-                        "concept_id": "gees208_c01"
-                    },
-                    {
-                        "id": "gees208_fc07",
-                        "front": "What should you remember from Banks and the Magic of Finance?",
-                        "back": "Bank: How do these monetary transactions take place between people?",
-                        "concept_id": "gees208_c01"
-                    },
-                    {
-                        "id": "gees208_fc08",
-                        "front": "What should you remember from Banks and the Magic of Finance?",
-                        "back": "A financial Also, how is the development and maintenance of the vast institution that collects physical infrastructure funded?",
-                        "concept_id": "gees208_c01"
+                        "term": "Money Multiplier",
+                        "definition": "A concept in which banks create money through lending activities."
                     }
                 ]
             },

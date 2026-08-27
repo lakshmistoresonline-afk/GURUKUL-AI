@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "Geographical Diversity of India",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.272314"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Geographical Diversity of India.",
+                "overview": "India is a land of immense geographical diversity, encompassing a variety of landforms, climates, vegetation, and physical features. This diversity is a result of India's varied location, extending from the northern Himalayas in the north to the southern peninsular coast. It is this diversity that creates a rich tapestry of ecosystems, cultural landscapes, and different modes of life across the country.",
                 "source_grounded_key_points": [
                     "1 CHAPTER Geographical Diversity of India To us, by its very geography, the country [India] appears to be quite distinct from other countries, and that itself gives it a certain national character.",
                     "The power of the waterfall is converted into electricity (hydroelectricity; ‘hydro’ means water) through special turbines.",
@@ -185,8 +187,10 @@
             "subject": "Social Science",
             "chapter_title": "Geographical Diversity of India",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.272397"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Geographical Diversity of India.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "1 CHAPTER Geographical Diversity of India To us, by its very geography, the country [India] appears to be quite distinct from other countries, and that itself gives it a certain national character.",
-                            "The power of the waterfall is converted into electricity (hydroelectricity; ‘hydro’ means water) through special turbines.",
-                            "India and the World: Land and the People 1 –Geographical Diversity of India 1.",
-                            "What are some key The Big geographical features Questions of India?",
-                            "1 Reprint 2026-27 Chapter 1.indd 1 08-04-2025 11:30:22 In 1984, Rakesh Sharma, the first Indian astronaut to go into space, spoke with the then Prime Minister of India, Indira Gandhi."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 101 introduces the concept of Geographical Diversity of India, highlighting the vast and varied physical features that contribute to the country's unique landscape. The teacher is expected to explain the key geographical divisions of India, such as the Himalayan, Northern Plains, Peninsular Plateau, Indian Desert, Coastal Plains, and Islands, emphasizing their characteristics, physical significance, and the climatic variations they influence. The teacher should use maps to visually represent these regions and discuss how these diverse formations have influenced human settlement, vegetation, and economic activities.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Social Science",
             "chapter_title": "Geographical Diversity of India",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.272420"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,19 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gees101_c01",
-                        "name": "Geographical Diversity of India",
-                        "definition": "Central learning focus of Geographical Diversity of India.",
-                        "source_evidence": "1 CHAPTER Geographical Diversity of India To us, by its very geography, the country [India] appears to be quite distinct from other countries, and that itself gives it a certain national character."
+                        "id": 1,
+                        "name": "Introduction to Geographical Diversity of India",
+                        "description": "India is renowned for its immense geographical diversity, encompassing varied relief, climate, and natural resources."
                     },
                     {
-                        "id": "gees101_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "The power of the waterfall is converted into electricity (hydroelectricity; ‘hydro’ means water) through special turbines."
+                        "id": 2,
+                        "name": "Physical Divisions of India",
+                        "description": "India is divided into six major physical divisions: Himalayas, Northern Plains, Peninsular Plateau, Indian Desert, Coastal Plains, and Islands."
                     },
                     {
-                        "id": "gees101_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "India and the World: Land and the People 1 –Geographical Diversity of India 1."
+                        "id": 3,
+                        "name": "Himalayan Region",
+                        "description": "The youngest and highest fold mountains in the world, influencing the climate and influencing river systems."
                     }
                 ]
             },
@@ -360,8 +305,10 @@
             "subject": "Social Science",
             "chapter_title": "Geographical Diversity of India",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.272435"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,6 +343,14 @@
                         "to": "gees101_c03",
                         "relation": "enables"
                     }
+                ],
+                "central_topic": "Geographical Diversity of India",
+                "branches": [
+                    "Physical Divisions (Himalayas, Plains, Plateau, Desert, Coastal Plains, Islands)",
+                    "Key Features of Regions",
+                    "Climate and Vegetation Distribution",
+                    "Natural Resources",
+                    "River Systems and their Significance"
                 ]
             },
             "runtime_mapping": {
@@ -490,8 +445,10 @@
             "subject": "Social Science",
             "chapter_title": "Geographical Diversity of India",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.272384"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +457,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to Geographical Diversity of India.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Geographical Diversity of India supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The narrative of India's geographical diversity can be explored through its evolution. It starts with the formation of the Himalayas, which act as a physical boundary and influence the climate and agriculture of the northern plains. As the subcontinent spreads, it encounters the diverse landscape of the Indian plateau, where various river systems carve out fertile plains. Moving south, the country transitions into the Western Ghats and Eastern Ghats—striking mountain ranges that trap moisture, leading to heavy rainfall, and creating the Western and Eastern coastlines. Finally, the Deccan Plateau forms the southern expanse, characterized by its unique geological structures and diverse soil types. This geographical journey from the snow-capped peaks to the tropical beaches illustrates a continuous interplay between geology, climate, and human life, making India a living example of spatial diversity.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1052,10 @@
             "subject": "Social Science",
             "chapter_title": "Geographical Diversity of India",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.272411"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1067,48 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees101_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Geographical Diversity of India'?",
+                        "id": 1,
+                        "question": "Name the major physiographic divisions of India.",
                         "options": [
-                            "1 CHAPTER Geographical Diversity of India To us, by its very geography, the country [India] appears to be quite distinct from other countries, and that itself gives it a certain national character.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Himalayas, Deccan Plateau, Northern Plains, Thar Desert, Coastal Plains, Islands",
+                            "Only Himalayas and Northern Plains",
+                            "Only Northern and Southern regions",
+                            "South India and the Gangetic plains"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "1 CHAPTER Geographical Diversity of India To us, by its very geography, the country [India] appears to be quite distinct from other countries, and that itself gives it a certain national character.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees101_c01"
+                        "answer": "Himalayas, Deccan Plateau, Northern Plains, Thar Desert, Coastal Plains, Islands"
                     },
                     {
-                        "id": "gees101_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Geographical Diversity of India'?",
+                        "id": 2,
+                        "question": "Which state is known as the 'Croton of India' due to its significant diversity of flora and fauna?",
                         "options": [
-                            "The power of the waterfall is converted into electricity (hydroelectricity; ‘hydro’ means water) through special turbines.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Himachal Pradesh",
+                            "Assam",
+                            "Rajasthan",
+                            "Kerala"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "The power of the waterfall is converted into electricity (hydroelectricity; ‘hydro’ means water) through special turbines.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees101_c01"
+                        "answer": "Assam"
                     },
                     {
-                        "id": "gees101_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Geographical Diversity of India'?",
+                        "id": 3,
+                        "question": "What is the average annual rainfall of the Western Ghats?",
                         "options": [
-                            "India and the World: Land and the People 1 –Geographical Diversity of India 1.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Less than 10 inches",
+                            "More than 200 inches",
+                            "Approximately 200-300 inches",
+                            "Around 500-1000 inches"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "India and the World: Land and the People 1 –Geographical Diversity of India 1.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees101_c01"
+                        "answer": "More than 200 inches"
                     },
                     {
-                        "id": "gees101_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Geographical Diversity of India'?",
+                        "id": 4,
+                        "question": "Identify the two largest island groups of India.",
                         "options": [
-                            "What are some key The Big geographical features Questions of India?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Andaman and Nicobar Islands, Lakshadweep Islands",
+                            "Sri Lanka and Andaman and Nicobar Islands",
+                            "Andaman and Nicobar Islands and Lakshadweep Islands",
+                            "Maldives and Seychelles"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "What are some key The Big geographical features Questions of India?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees101_c01"
-                    },
-                    {
-                        "id": "gees101_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Geographical Diversity of India'?",
-                        "options": [
-                            "1 Reprint 2026-27 Chapter 1.indd 1 08-04-2025 11:30:22 In 1984, Rakesh Sharma, the first Indian astronaut to go into space, spoke with the then Prime Minister of India, Indira Gandhi.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "1 Reprint 2026-27 Chapter 1.indd 1 08-04-2025 11:30:22 In 1984, Rakesh Sharma, the first Indian astronaut to go into space, spoke with the then Prime Minister of India, Indira Gandhi.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees101_c01"
-                    },
-                    {
-                        "id": "gees101_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Geographical Diversity of India'?",
-                        "options": [
-                            "When she asked him, “How does India look from space?”, he replied, “Sāre jahān se achchha” — better than the whole world.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "When she asked him, “How does India look from space?”, he replied, “Sāre jahān se achchha” — better than the whole world.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees101_c01"
-                    },
-                    {
-                        "id": "gees101_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Geographical Diversity of India'?",
-                        "options": [
-                            "(This is the title of a well-known poem of the early 20th century.) LET’S EXPLORE Look at the map of India at the end of this book.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "(This is the title of a well-known poem of the early 20th century.) LET’S EXPLORE Look at the map of India at the end of this book.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees101_c01"
-                    },
-                    {
-                        "id": "gees101_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Geographical Diversity of India'?",
-                        "options": [
-                            "Recall your lesson on different types of landforms — mountains, plains and plateaus.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Recall your lesson on different types of landforms — mountains, plains and plateaus.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees101_c01"
+                        "answer": "Andaman and Nicobar Islands and Lakshadweep Islands"
                     }
                 ]
             },
@@ -1715,8 +1562,10 @@
             "subject": "Social Science",
             "chapter_title": "Geographical Diversity of India",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.272370"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1574,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Geographical Diversity of India' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "1 CHAPTER Geographical Diversity of India To us, by its very geography, the country [India] appears to be quite distinct from other countries, and that itself gives it a certain national character.",
-                    "The power of the waterfall is converted into electricity (hydroelectricity; ‘hydro’ means water) through special turbines.",
-                    "India and the World: Land and the People 1 –Geographical Diversity of India 1.",
-                    "What are some key The Big geographical features Questions of India?",
-                    "1 Reprint 2026-27 Chapter 1.indd 1 08-04-2025 11:30:22 In 1984, Rakesh Sharma, the first Indian astronaut to go into space, spoke with the then Prime Minister of India, Indira Gandhi.",
-                    "When she asked him, “How does India look from space?”, he replied, “Sāre jahān se achchha” — better than the whole world.",
-                    "(This is the title of a well-known poem of the early 20th century.) LET’S EXPLORE Look at the map of India at the end of this book."
-                ]
-            },
+            "content": "The chapter 'Geographical Diversity of India' highlights the extensive range of physical features that make India unique. Key geographical components include the Himalayas (providing climate moderation and water sources), the Northern Plains (vital for agriculture), the Plateaus (geologically complex), the Eastern and Western Ghats (influencing rainfall and biodiversity), and the diverse river systems. This geographical variation directly impacts India's climate, ecology, soil types, and economic activities. Ultimately, the chapter emphasizes that India's geographical diversity is not just a set of landforms but a dynamic system that shapes its culture, economy, and human experience.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1624,10 @@
             "subject": "Social Science",
             "chapter_title": "Geographical Diversity of India",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.272428"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1639,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees101_fc01",
-                        "front": "What should you remember from Geographical Diversity of India?",
-                        "back": "1 CHAPTER Geographical Diversity of India To us, by its very geography, the country [India] appears to be quite distinct from other countries, and that itself gives it a certain national character.",
-                        "concept_id": "gees101_c01"
+                        "id": 1,
+                        "term": "Himalayas",
+                        "definition": "The youngest fold mountains in the world, characterized by high peaks and glaciers. They serve as a divide between the Tibetan Plateau and the Indian subcontinent."
                     },
                     {
-                        "id": "gees101_fc02",
-                        "front": "What should you remember from Geographical Diversity of India?",
-                        "back": "The power of the waterfall is converted into electricity (hydroelectricity; ‘hydro’ means water) through special turbines.",
-                        "concept_id": "gees101_c01"
+                        "id": 2,
+                        "term": "Northern Plains",
+                        "definition": "Extensive fertile plains formed by the deposition of sediments by the rivers (Indus, Ganga, Brahmaputra). They are suitable for agriculture."
                     },
                     {
-                        "id": "gees101_fc03",
-                        "front": "What should you remember from Geographical Diversity of India?",
-                        "back": "India and the World: Land and the People 1 –Geographical Diversity of India 1.",
-                        "concept_id": "gees101_c01"
+                        "id": 3,
+                        "term": "Peninsular Plateau",
+                        "definition": "The oldest and most stable landmass of India, characterized by a plateau structure, containing mineral deposits like coal and iron ore."
                     },
                     {
-                        "id": "gees101_fc04",
-                        "front": "What should you remember from Geographical Diversity of India?",
-                        "back": "What are some key The Big geographical features Questions of India?",
-                        "concept_id": "gees101_c01"
-                    },
-                    {
-                        "id": "gees101_fc05",
-                        "front": "What should you remember from Geographical Diversity of India?",
-                        "back": "1 Reprint 2026-27 Chapter 1.indd 1 08-04-2025 11:30:22 In 1984, Rakesh Sharma, the first Indian astronaut to go into space, spoke with the then Prime Minister of India, Indira Gandhi.",
-                        "concept_id": "gees101_c01"
-                    },
-                    {
-                        "id": "gees101_fc06",
-                        "front": "What should you remember from Geographical Diversity of India?",
-                        "back": "When she asked him, “How does India look from space?”, he replied, “Sāre jahān se achchha” — better than the whole world.",
-                        "concept_id": "gees101_c01"
-                    },
-                    {
-                        "id": "gees101_fc07",
-                        "front": "What should you remember from Geographical Diversity of India?",
-                        "back": "(This is the title of a well-known poem of the early 20th century.) LET’S EXPLORE Look at the map of India at the end of this book.",
-                        "concept_id": "gees101_c01"
-                    },
-                    {
-                        "id": "gees101_fc08",
-                        "front": "What should you remember from Geographical Diversity of India?",
-                        "back": "Recall your lesson on different types of landforms — mountains, plains and plateaus.",
-                        "concept_id": "gees101_c01"
+                        "id": 4,
+                        "term": "Western Ghats",
+                        "definition": "A series of mountains running parallel to the western coast of India, facing the Arabian Sea. They receive heavy rainfall due to the monsoon winds."
                     }
                 ]
             },

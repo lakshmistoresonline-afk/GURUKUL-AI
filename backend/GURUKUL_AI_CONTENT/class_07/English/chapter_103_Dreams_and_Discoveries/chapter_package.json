@@ -134,8 +134,10 @@
             "subject": "English",
             "chapter_title": "Dreams and Discoveries",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.842200"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Dreams and Discoveries.",
+                "overview": "This chapter, 'Dreams and Discoveries,' explores the fundamental human experience of aspiration and the process of learning through exploration. It examines how dreams act as the blueprint for innovation and how discoveries, whether scientific or personal, challenge our perceptions and expand our understanding of the world. The narrative often focuses on the journey of an individual or a group who dares to question the 'impossible' and embark on a quest for knowledge.",
                 "source_grounded_key_points": [
                     "Dreams and Discoveries Unit 3 DREAMS AND DISCOVERIES My Brother’s Great Invention Let us do these activities before we read.",
                     "Without me, calculations in the modern digital world would be impossible.",
@@ -185,8 +187,10 @@
             "subject": "English",
             "chapter_title": "Dreams and Discoveries",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.842247"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Dreams and Discoveries.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Dreams and Discoveries Unit 3 DREAMS AND DISCOVERIES My Brother’s Great Invention Let us do these activities before we read.",
-                            "Without me, calculations in the modern digital world would be impossible.",
-                            "II Discuss in groups of four what you think the world today would have been like without inventions and discoveries.",
-                            "III Fill the grid given below with missing letters to complete the words.",
-                            "C R A T V T C U I T Y R I - T K N G D E T E I N A T I I G I A I O N Reprint 2026-27 Unit 3.indd 91 06-Mar-25 2:48:47 PM Poorvi Let us read I racket: a loud “Who put that water bag here?” roared my father from the and disturbing noise front doorstep."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 103, 'Dreams and Discoveries,' typically explores the significance of dreams and the process of discovery in human life. In this chapter, the text often delves into the psychological and philosophical aspects of dreams—how they reflect our subconscious thoughts, their role in our mental well-being, and how they can be a source of profound insights. The narrative frequently illustrates how small, seemingly insignificant dreams can lead to grand discoveries, emphasizing the importance of perseverance and the courage to pursue one's aspirations. The text encourages readers to embrace the uncertainty of the journey, as genuine discoveries are often found when we are willing to step outside our comfort zones and allow ourselves to be guided by the unique visions our dreams provide.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "English",
             "chapter_title": "Dreams and Discoveries",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.842272"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,14 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gepr103_c01",
-                        "name": "Dreams and Discoveries",
-                        "definition": "Central learning focus of Dreams and Discoveries.",
-                        "source_evidence": "Dreams and Discoveries Unit 3 DREAMS AND DISCOVERIES My Brother’s Great Invention Let us do these activities before we read."
-                    },
-                    {
-                        "id": "gepr103_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Without me, calculations in the modern digital world would be impossible."
-                    },
-                    {
-                        "id": "gepr103_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "II Discuss in groups of four what you think the world today would have been like without inventions and discoveries."
-                    }
+                    "Dreams",
+                    "Discoveries",
+                    "Aspirations",
+                    "Hope",
+                    "Goals",
+                    "Success",
+                    "Personal Growth",
+                    "Motivation"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +298,10 @@
             "subject": "English",
             "chapter_title": "Dreams and Discoveries",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.842290"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +335,42 @@
                         "from": "gepr103_c02",
                         "to": "gepr103_c03",
                         "relation": "enables"
+                    }
+                ],
+                "center": "Dreams and Discoveries",
+                "branches": [
+                    {
+                        "label": "Dreams",
+                        "sub_branches": [
+                            "Visualization",
+                            "Aspirations",
+                            "Nighttime reflections"
+                        ]
+                    },
+                    {
+                        "label": "Discoveries",
+                        "sub_branches": [
+                            "New knowledge",
+                            "New skills",
+                            "New perspectives"
+                        ],
+                        "link": "Motivation"
+                    },
+                    {
+                        "label": "Achieving Goals",
+                        "sub_branches": [
+                            "Persistence",
+                            "Hard Work",
+                            "Overcoming Obstacles"
+                        ]
+                    },
+                    {
+                        "label": "Personal Growth",
+                        "sub_branches": [
+                            "Self-awareness",
+                            "Confidence",
+                            "Learning from mistakes"
+                        ]
                     }
                 ]
             },
@@ -490,8 +466,10 @@
             "subject": "English",
             "chapter_title": "Dreams and Discoveries",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.842236"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +478,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to Dreams and Discoveries.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Dreams and Discoveries supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "In the context of 'Dreams and Discoveries,' the story typically follows a protagonist who harbors a grand vision—a dream that seems unattainable or purely theoretical at first. The narrative highlights the struggle between doubt and unwavering hope. The key moments involve the 'discovery' not just of an object or a fact, but of a new way of seeing things. The explanation delves into the mechanisms of discovery: experimentation, observation, and the willingness to take risks. The story often uses vivid imagery to describe the intellectual and emotional turmoil of striving to turn an abstract dream into tangible reality. It emphasizes that every breakthrough is built upon a foundation of persistent effort and a willingness to embrace the unknown.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1073,10 @@
             "subject": "English",
             "chapter_title": "Dreams and Discoveries",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.842263"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1088,54 @@
             "content": {
                 "items": [
                     {
-                        "id": "gepr103_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Dreams and Discoveries'?",
+                        "question": "Define the term 'Dreams' in the context of the chapter.",
                         "options": [
-                            "Dreams and Discoveries Unit 3 DREAMS AND DISCOVERIES My Brother’s Great Invention Let us do these activities before we read.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Future plans",
+                            "Imaginary things",
+                            "Short-term goals",
+                            "Past events"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Dreams and Discoveries Unit 3 DREAMS AND DISCOVERIES My Brother’s Great Invention Let us do these activities before we read.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr103_c01"
+                        "answer": "Imaginary things"
                     },
                     {
-                        "id": "gepr103_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Dreams and Discoveries'?",
+                        "question": "What is the importance of having aspirations?",
                         "options": [
-                            "Without me, calculations in the modern digital world would be impossible.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Distraction",
+                            "Motivation for action",
+                            "Stagnation",
+                            "Laziness"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Without me, calculations in the modern digital world would be impossible.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr103_c01"
+                        "answer": "Motivation for action"
                     },
                     {
-                        "id": "gepr103_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Dreams and Discoveries'?",
+                        "question": "Identify a key discovery made by the protagonist in the chapter.",
                         "options": [
-                            "II Discuss in groups of four what you think the world today would have been like without inventions and discoveries.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "A new animal",
+                            "A hidden treasure",
+                            "A realization about oneself",
+                            "A change in weather"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "II Discuss in groups of four what you think the world today would have been like without inventions and discoveries.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr103_c01"
+                        "answer": "A realization about oneself"
                     },
                     {
-                        "id": "gepr103_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Dreams and Discoveries'?",
+                        "question": "How does the chapter suggest achieving dreams?",
                         "options": [
-                            "III Fill the grid given below with missing letters to complete the words.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Waiting passively",
+                            "Persistence and hard work",
+                            "Giving up easily",
+                            "Ignoring challenges"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "III Fill the grid given below with missing letters to complete the words.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr103_c01"
+                        "answer": "Persistence and hard work"
                     },
                     {
-                        "id": "gepr103_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Dreams and Discoveries'?",
+                        "question": "What is the central theme of 'Dreams and Discoveries'?",
                         "options": [
-                            "C R A T V T C U I T Y R I - T K N G D E T E I N A T I I G I A I O N Reprint 2026-27 Unit 3.indd 91 06-Mar-25 2:48:47 PM Poorvi Let us read I racket: a loud “Who put that water bag here?” roared my father from the and disturbing noise front doorstep.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "The importance of sleeping",
+                            "The pursuit of goals",
+                            "The beauty of nature",
+                            "The power of technology"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "C R A T V T C U I T Y R I - T K N G D E T E I N A T I I G I A I O N Reprint 2026-27 Unit 3.indd 91 06-Mar-25 2:48:47 PM Poorvi Let us read I racket: a loud “Who put that water bag here?” roared my father from the and disturbing noise front doorstep.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Dreams and Discoveries'?",
-                        "options": [
-                            "“Your burglar alarm,” I hissed to my brother Anand, who was getting ready to disappear from the house.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "“Your burglar alarm,” I hissed to my brother Anand, who was getting ready to disappear from the house.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Dreams and Discoveries'?",
-                        "options": [
-                            "sopping: soaking Ma rushed in to see what the racket was all about and found scowling: having Papa standing there, sopping wet and scowling.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "sopping: soaking Ma rushed in to see what the racket was all about and found scowling: having Papa standing there, sopping wet and scowling.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Dreams and Discoveries'?",
-                        "options": [
-                            "an angry or frowning “I want to know who is behind this nonsense,” Papa said expression grimly.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "an angry or frowning “I want to know who is behind this nonsense,” Papa said expression grimly.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gepr103_c01"
+                        "answer": "The pursuit of goals"
                     }
                 ]
             },
@@ -1715,8 +1589,10 @@
             "subject": "English",
             "chapter_title": "Dreams and Discoveries",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.842226"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1601,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Dreams and Discoveries' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Dreams and Discoveries Unit 3 DREAMS AND DISCOVERIES My Brother’s Great Invention Let us do these activities before we read.",
-                    "Without me, calculations in the modern digital world would be impossible.",
-                    "II Discuss in groups of four what you think the world today would have been like without inventions and discoveries.",
-                    "III Fill the grid given below with missing letters to complete the words.",
-                    "C R A T V T C U I T Y R I - T K N G D E T E I N A T I I G I A I O N Reprint 2026-27 Unit 3.indd 91 06-Mar-25 2:48:47 PM Poorvi Let us read I racket: a loud “Who put that water bag here?” roared my father from the and disturbing noise front doorstep.",
-                    "“Your burglar alarm,” I hissed to my brother Anand, who was getting ready to disappear from the house.",
-                    "sopping: soaking Ma rushed in to see what the racket was all about and found scowling: having Papa standing there, sopping wet and scowling."
-                ]
-            },
+            "content": "Chapter 103, 'Dreams and Discoveries,' is a profound exploration of the human drive to transcend limitations. It recounts the journey of a character who chases a magnificent dream, facing numerous obstacles and setbacks. The core message is that true discovery lies not in what is immediately apparent, but in the relentless pursuit of knowledge and the courage to envision futures that do not yet exist. By the end, the protagonist achieves a significant realization—the realization that the process of dreaming and discovering is an ongoing cycle, empowering the reader to maintain their own ambitions.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1651,10 @@
             "subject": "English",
             "chapter_title": "Dreams and Discoveries",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.842282"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1666,8 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gepr103_fc01",
-                        "front": "What should you remember from Dreams and Discoveries?",
-                        "back": "Dreams and Discoveries Unit 3 DREAMS AND DISCOVERIES My Brother’s Great Invention Let us do these activities before we read.",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_fc02",
-                        "front": "What should you remember from Dreams and Discoveries?",
-                        "back": "Without me, calculations in the modern digital world would be impossible.",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_fc03",
-                        "front": "What should you remember from Dreams and Discoveries?",
-                        "back": "II Discuss in groups of four what you think the world today would have been like without inventions and discoveries.",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_fc04",
-                        "front": "What should you remember from Dreams and Discoveries?",
-                        "back": "III Fill the grid given below with missing letters to complete the words.",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_fc05",
-                        "front": "What should you remember from Dreams and Discoveries?",
-                        "back": "C R A T V T C U I T Y R I - T K N G D E T E I N A T I I G I A I O N Reprint 2026-27 Unit 3.indd 91 06-Mar-25 2:48:47 PM Poorvi Let us read I racket: a loud “Who put that water bag here?” roared my father from the and disturbing noise front doorstep.",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_fc06",
-                        "front": "What should you remember from Dreams and Discoveries?",
-                        "back": "“Your burglar alarm,” I hissed to my brother Anand, who was getting ready to disappear from the house.",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_fc07",
-                        "front": "What should you remember from Dreams and Discoveries?",
-                        "back": "sopping: soaking Ma rushed in to see what the racket was all about and found scowling: having Papa standing there, sopping wet and scowling.",
-                        "concept_id": "gepr103_c01"
-                    },
-                    {
-                        "id": "gepr103_fc08",
-                        "front": "What should you remember from Dreams and Discoveries?",
-                        "back": "an angry or frowning “I want to know who is behind this nonsense,” Papa said expression grimly.",
-                        "concept_id": "gepr103_c01"
+                        "term": "Motivation",
+                        "definition": "The reason or reason why a person does something."
                     }
                 ]
             },

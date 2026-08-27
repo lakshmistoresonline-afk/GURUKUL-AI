@@ -185,8 +185,10 @@
             "subject": "Social Science",
             "chapter_title": "How the Land Becomes Sacred",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.343997"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +197,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of How the Land Becomes Sacred.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "8 CHAPTER How the Land Becomes Sacred Ether, air, fire, water, earth, planets, all creatures, directions, trees and plants, rivers and seas, are organs of the supreme Lord’s body.",
-                            "How do sacred sites and pilgrimage networks connect with the life and culture of the people?",
-                            "What role did sacred geography play in the cultural integration of the Indian Subcontinent?",
-                            "167 Reprint 2026-27 Chapter 8.indd 167 08-04-2025 12:53:19 LET’S EXPLORE Do any of the pictures look familiar to you?",
-                            "In the limited context of this chapter, sacredness is finding something of deep religious or spiritual significance, worthy of respect and reverence, holy or divine."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter explores the deep emotional, cultural, and spiritual connection humans have with the land. It explains how mountains, rivers, forests, and temples become 'sacred spaces'—places set aside for worship, reverence, and protection. It discusses various rituals, festivals, and traditions that involve interacting with nature. It emphasizes the concept of the land as the source of life, sustenance, and identity, not just a resource. It highlights the moral obligation to protect natural environments as they hold spiritual significance for communities.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +257,10 @@
             "subject": "Social Science",
             "chapter_title": "How the Land Becomes Sacred",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.344032"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +271,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gees108_c01",
-                        "name": "How the Land Becomes Sacred",
-                        "definition": "Central learning focus of How the Land Becomes Sacred.",
-                        "source_evidence": "8 CHAPTER How the Land Becomes Sacred Ether, air, fire, water, earth, planets, all creatures, directions, trees and plants, rivers and seas, are organs of the supreme Lord’s body."
-                    },
-                    {
-                        "id": "gees108_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "How do sacred sites and pilgrimage networks connect with the life and culture of the people?"
-                    },
-                    {
-                        "id": "gees108_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "What role did sacred geography play in the cultural integration of the Indian Subcontinent?"
-                    }
+                    "Introduction to Sacred Spaces",
+                    "Definition and Components of Sacred Geography",
+                    "Historical and Cultural Significance of Land",
+                    "The Concept of 'Sacred' in Indian/Local Context",
+                    "Religions and Spirituality related to Land"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +293,10 @@
             "subject": "Social Science",
             "chapter_title": "How the Land Becomes Sacred",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.344048"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,6 +331,14 @@
                         "to": "gees108_c03",
                         "relation": "enables"
                     }
+                ],
+                "center": "How the Land Becomes Sacred",
+                "branches": [
+                    "Definition of Sacred",
+                    "Components of Sacred Geography",
+                    "Spiritual Beliefs and Practices",
+                    "Human-Environment Interaction",
+                    "Evolution of Sacred Sites (History)"
                 ]
             },
             "runtime_mapping": {
@@ -1123,8 +1066,10 @@
             "subject": "Social Science",
             "chapter_title": "How the Land Becomes Sacred",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.344023"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1081,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees108_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'How the Land Becomes Sacred'?",
+                        "question": "What is the primary difference between a 'natural feature' and a 'sacred feature' in the context of land?",
                         "options": [
-                            "8 CHAPTER How the Land Becomes Sacred Ether, air, fire, water, earth, planets, all creatures, directions, trees and plants, rivers and seas, are organs of the supreme Lord’s body.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Natural features are physical, while sacred features are spiritual.",
+                            "Sacred features only exist in religious texts.",
+                            "Natural features are always negative, while sacred features are always positive.",
+                            "There is no difference."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "8 CHAPTER How the Land Becomes Sacred Ether, air, fire, water, earth, planets, all creatures, directions, trees and plants, rivers and seas, are organs of the supreme Lord’s body.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees108_c01"
+                        "answer": "Natural features are physical, while sacred features are spiritual."
                     },
                     {
-                        "id": "gees108_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'How the Land Becomes Sacred'?",
+                        "question": "Identify one specific type of sacred landscape found in your region (e.g., temple site, ancient tree, river, mountain).",
                         "options": [
-                            "How do sacred sites and pilgrimage networks connect with the life and culture of the people?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "A large forest",
+                            "A river/water source",
+                            "An ancient temple or pilgrimage site",
+                            "A modern highway"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "How do sacred sites and pilgrimage networks connect with the life and culture of the people?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees108_c01"
+                        "answer": "This question is context-dependent, requiring a local answer."
                     },
                     {
-                        "id": "gees108_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'How the Land Becomes Sacred'?",
+                        "question": "How does the community's relationship with the land influence how it is perceived as sacred?",
                         "options": [
-                            "What role did sacred geography play in the cultural integration of the Indian Subcontinent?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "It only influences economic activities.",
+                            "It shapes rituals, beliefs, and conservation practices.",
+                            "It has no influence on perception.",
+                            "It is determined solely by the government."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "What role did sacred geography play in the cultural integration of the Indian Subcontinent?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees108_c01"
-                    },
-                    {
-                        "id": "gees108_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'How the Land Becomes Sacred'?",
-                        "options": [
-                            "167 Reprint 2026-27 Chapter 8.indd 167 08-04-2025 12:53:19 LET’S EXPLORE Do any of the pictures look familiar to you?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "167 Reprint 2026-27 Chapter 8.indd 167 08-04-2025 12:53:19 LET’S EXPLORE Do any of the pictures look familiar to you?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees108_c01"
-                    },
-                    {
-                        "id": "gees108_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'How the Land Becomes Sacred'?",
-                        "options": [
-                            "In the limited context of this chapter, sacredness is finding something of deep religious or spiritual significance, worthy of respect and reverence, holy or divine.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In the limited context of this chapter, sacredness is finding something of deep religious or spiritual significance, worthy of respect and reverence, holy or divine.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees108_c01"
-                    },
-                    {
-                        "id": "gees108_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'How the Land Becomes Sacred'?",
-                        "options": [
-                            "It can be a special location or shrine that evokes such deep feelings, high thoughts or emotions.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "It can be a special location or shrine that evokes such deep feelings, high thoughts or emotions.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees108_c01"
-                    },
-                    {
-                        "id": "gees108_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'How the Land Becomes Sacred'?",
-                        "options": [
-                            "It can also be, as we will see in this chapter, a journey of a special kind (often called a ‘pilgrimage’), the route the journey takes, or even the very land covered.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "It can also be, as we will see in this chapter, a journey of a special kind (often called a ‘pilgrimage’), the route the journey takes, or even the very land covered.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees108_c01"
-                    },
-                    {
-                        "id": "gees108_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'How the Land Becomes Sacred'?",
-                        "options": [
-                            "Sacredness, therefore, is not just connected with religion and spirituality, but also with geography, all sorts of traditions, and, in the case of India, with something more that we will discover soon.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Sacredness, therefore, is not just connected with religion and spirituality, but also with geography, all sorts of traditions, and, in the case of India, with something more that we will discover soon.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees108_c01"
+                        "answer": "It shapes rituals, beliefs, and conservation practices."
                     }
                 ]
             },
@@ -1786,8 +1633,10 @@
             "subject": "Social Science",
             "chapter_title": "How the Land Becomes Sacred",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.344041"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1648,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees108_fc01",
-                        "front": "What should you remember from How the Land Becomes Sacred?",
-                        "back": "8 CHAPTER How the Land Becomes Sacred Ether, air, fire, water, earth, planets, all creatures, directions, trees and plants, rivers and seas, are organs of the supreme Lord’s body.",
-                        "concept_id": "gees108_c01"
+                        "term": "Sacred Space",
+                        "definition": "An area or location that is considered holy, revered, or having special spiritual significance."
                     },
                     {
-                        "id": "gees108_fc02",
-                        "front": "What should you remember from How the Land Becomes Sacred?",
-                        "back": "How do sacred sites and pilgrimage networks connect with the life and culture of the people?",
-                        "concept_id": "gees108_c01"
+                        "term": "Sacred Geography",
+                        "definition": "The study of the spatial distribution of sacred places and their relationship with human cultures."
                     },
                     {
-                        "id": "gees108_fc03",
-                        "front": "What should you remember from How the Land Becomes Sacred?",
-                        "back": "What role did sacred geography play in the cultural integration of the Indian Subcontinent?",
-                        "concept_id": "gees108_c01"
+                        "term": "Ritual and Land",
+                        "definition": "Actions performed on or in a specific piece of land that reinforce its sanctity."
                     },
                     {
-                        "id": "gees108_fc04",
-                        "front": "What should you remember from How the Land Becomes Sacred?",
-                        "back": "167 Reprint 2026-27 Chapter 8.indd 167 08-04-2025 12:53:19 LET’S EXPLORE Do any of the pictures look familiar to you?",
-                        "concept_id": "gees108_c01"
+                        "term": "Cultural Significance",
+                        "definition": "The importance of land in terms of tradition, identity, and community memory."
                     },
                     {
-                        "id": "gees108_fc05",
-                        "front": "What should you remember from How the Land Becomes Sacred?",
-                        "back": "In the limited context of this chapter, sacredness is finding something of deep religious or spiritual significance, worthy of respect and reverence, holy or divine.",
-                        "concept_id": "gees108_c01"
-                    },
-                    {
-                        "id": "gees108_fc06",
-                        "front": "What should you remember from How the Land Becomes Sacred?",
-                        "back": "It can be a special location or shrine that evokes such deep feelings, high thoughts or emotions.",
-                        "concept_id": "gees108_c01"
-                    },
-                    {
-                        "id": "gees108_fc07",
-                        "front": "What should you remember from How the Land Becomes Sacred?",
-                        "back": "It can also be, as we will see in this chapter, a journey of a special kind (often called a ‘pilgrimage’), the route the journey takes, or even the very land covered.",
-                        "concept_id": "gees108_c01"
-                    },
-                    {
-                        "id": "gees108_fc08",
-                        "front": "What should you remember from How the Land Becomes Sacred?",
-                        "back": "Sacredness, therefore, is not just connected with religion and spirituality, but also with geography, all sorts of traditions, and, in the case of India, with something more that we will discover soon.",
-                        "concept_id": "gees108_c01"
+                        "term": "Pilgrimage Site",
+                        "definition": "A place visited by people on religious grounds for spiritual reasons."
                     }
                 ]
             },

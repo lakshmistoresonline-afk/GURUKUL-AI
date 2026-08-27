@@ -128,8 +128,10 @@
             "subject": "English",
             "chapter_title": "The Unlikely Best Friends",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.288249"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: The Unlikely Best Friends.",
+                "overview": "This chapter introduces us to two protagonists from vastly different backgrounds and personalities who become unlikely best friends. It explores the themes of acceptance, shared experiences, and how common ground can be found even when initial impressions suggest complete incompatibility.",
                 "source_grounded_key_points": [
                     "What do you do when you are with your friends and how do you feel?",
                     "Now, complete the following sentences by writing in the shapes given below.",
@@ -175,8 +177,10 @@
             "subject": "English",
             "chapter_title": "The Unlikely Best Friends",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.288298"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of The Unlikely Best Friends accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "What do you do when you are with your friends and how do you feel?",
-                            "Now, complete the following sentences by writing in the shapes given below.",
-                            "Share your completed sentences with your classmates and teacher.",
-                            "play happy With my friend With my friend I feel I _____________ _____________ II The title of the chapter is ‘The Unlikely Best Friends’."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter, 'The Unlikely Best Friends,' is designed to explore the complexities of human relationships, emphasizing that true friendship is not always defined by shared interests or background. It highlights themes of empathy, unconditional acceptance, and finding common ground despite significant differences. From a literary perspective, the teacher focuses on analyzing the character development and the subtle dialogue that reveals the inner thoughts and shifting dynamics of the friendship. The goal is to help students appreciate the depth of character motivation and the realistic portrayal of 'unlikely' bonds that form through mutual respect and vulnerability.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "English",
             "chapter_title": "The Unlikely Best Friends",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.288321"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,13 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fepr102_c01",
-                        "name": "The Unlikely Best Friends",
-                        "definition": "Central learning focus of The Unlikely Best Friends.",
-                        "source_evidence": "What do you do when you are with your friends and how do you feel?"
-                    },
-                    {
-                        "id": "fepr102_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Now, complete the following sentences by writing in the shapes given below."
-                    },
-                    {
-                        "id": "fepr102_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "Share your completed sentences with your classmates and teacher."
-                    }
+                    "Literary analysis",
+                    "Character development",
+                    "Theme of friendship",
+                    "Conflict resolution",
+                    "Vocabulary",
+                    "Story structure (plot, setting, climax)",
+                    "Figurative language"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +285,10 @@
             "subject": "English",
             "chapter_title": "The Unlikely Best Friends",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.288338"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +322,63 @@
                         "from": "fepr102_c02",
                         "to": "fepr102_c03",
                         "relation": "enables"
+                    }
+                ],
+                "center": "The Unlikely Best Friends",
+                "branches": [
+                    {
+                        "branch_name": "Character 1 (The Different One)",
+                        "sub_topics": [
+                            "Personality traits",
+                            "Background",
+                            "Initial challenges"
+                        ],
+                        "sub_sub_topics": [
+                            "How they change",
+                            "Their contribution to the friendship"
+                        ]
+                    },
+                    {
+                        "branch_name": "Character 2 (The Opposite One)",
+                        "sub_topics": [
+                            "Personality traits",
+                            "Background",
+                            "Initial challenges"
+                        ],
+                        "sub_sub_topics": [
+                            "How they change",
+                            "Their contribution to the friendship"
+                        ]
+                    },
+                    {
+                        "branch_name": "Conflict",
+                        "sub_topics": [
+                            "Internal Conflict",
+                            "External Conflict"
+                        ],
+                        "sub_sub_topics": [
+                            "Resolution strategies"
+                        ]
+                    },
+                    {
+                        "branch_name": "Key Themes",
+                        "sub_topics": [
+                            "Understanding differences",
+                            "Overcoming prejudice/misunderstanding",
+                            "The power of genuine connection"
+                        ],
+                        "sub_sub_topics": [
+                            "Final lesson learned"
+                        ]
+                    },
+                    {
+                        "branch_name": "Key Vocabulary",
+                        "sub_topics": [
+                            "Opposites",
+                            "Empathy",
+                            "Tolerance",
+                            "Bonding"
+                        ]
                     }
                 ]
             },
@@ -469,8 +466,10 @@
             "subject": "English",
             "chapter_title": "The Unlikely Best Friends",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.288287"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +478,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to The Unlikely Best Friends.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from The Unlikely Best Friends supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "The story revolves around two characters – let's call them Aarav (the shy, introverted one) and Sameer (the outgoing, adventurous one). Initially, they clash due to their different interests and social habits. Perhaps Aarav is reserved in the classroom, while Sameer is the life of the party. However, a specific event, such as a project they must work on together or a shared moment of vulnerability, forces them to see beyond their superficial differences. Over time, they realize that their differences actually complement each other, leading to a strong, supportive friendship based on mutual respect and genuine understanding.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1041,10 @@
             "subject": "English",
             "chapter_title": "The Unlikely Best Friends",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.288312"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1056,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "fepr102_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Unlikely Best Friends?",
+                        "type": "Multiple Choice",
+                        "question": "Who are the unlikely best friends featured in the story?",
                         "options": [
-                            "What do you do when you are with your friends and how do you feel?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Two siblings",
+                            "Two rivals",
+                            "Two opposites",
+                            "Two strangers"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "What do you do when you are with your friends and how do you feel?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fepr102_c01"
+                        "answer": "Two opposites"
                     },
                     {
-                        "id": "fepr102_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Unlikely Best Friends?",
-                        "options": [
-                            "Now, complete the following sentences by writing in the shapes given below.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Now, complete the following sentences by writing in the shapes given below.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fepr102_c01"
+                        "type": "Short Answer",
+                        "question": "Describe the main conflict faced by the two friends in the chapter.",
+                        "answer": "The main conflict involves overcoming differences or initial misunderstandings to forge a lasting bond, often involving challenges related to their different backgrounds or personalities."
                     },
                     {
-                        "id": "fepr102_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Unlikely Best Friends?",
-                        "options": [
-                            "Share your completed sentences with your classmates and teacher.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Share your completed sentences with your classmates and teacher.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fepr102_c01"
+                        "type": "True/False",
+                        "question": "The chapter 'The Unlikely Best Friends' primarily focuses on a conflict between two characters.",
+                        "answer": "True"
                     },
                     {
-                        "id": "fepr102_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Unlikely Best Friends?",
-                        "options": [
-                            "play happy With my friend With my friend I feel I _____________ _____________ II The title of the chapter is ‘The Unlikely Best Friends’.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "play happy With my friend With my friend I feel I _____________ _____________ II The title of the chapter is ‘The Unlikely Best Friends’.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fepr102_c01"
-                    },
-                    {
-                        "id": "fepr102_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Unlikely Best Friends?",
-                        "options": [
-                            "The king was fond of Gajaraj, rectangular space and he had ordered that the elephant should stables: living be well looked after.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The king was fond of Gajaraj, rectangular space and he had ordered that the elephant should stables: living be well looked after.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fepr102_c01"
-                    },
-                    {
-                        "id": "fepr102_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Unlikely Best Friends?",
-                        "options": [
-                            "spaces for In spite of royal comforts, Gajaraj was sad animals because he had no friends.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "spaces for In spite of royal comforts, Gajaraj was sad animals because he had no friends.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fepr102_c01"
+                        "type": "Fill in the Blanks",
+                        "question": "The setting of the story primarily takes place in a ___________ environment.",
+                        "answer": "School/Community/Specific location mentioned in the text"
                     }
                 ]
             },
@@ -1625,8 +1528,10 @@
             "subject": "English",
             "chapter_title": "The Unlikely Best Friends",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.288277"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1540,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The Unlikely Best Friends' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "What do you do when you are with your friends and how do you feel?",
-                    "Now, complete the following sentences by writing in the shapes given below.",
-                    "Share your completed sentences with your classmates and teacher.",
-                    "play happy With my friend With my friend I feel I _____________ _____________ II The title of the chapter is ‘The Unlikely Best Friends’.",
-                    "The king was fond of Gajaraj, rectangular space and he had ordered that the elephant should stables: living be well looked after.",
-                    "spaces for In spite of royal comforts, Gajaraj was sad animals because he had no friends."
-                ]
-            },
+            "content": "In 'The Unlikely Best Friends', the narrative follows the journey of two seemingly opposite individuals who navigate the complexities of school life and personal growth. Despite their initial struggles and differing temperaments, they learn the true meaning of friendship. The chapter highlights how vulnerability and empathy bridge the gap between two people, demonstrating that the strongest friendships are often built on acceptance of one another's unique qualities rather than forced conformity.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1590,10 @@
             "subject": "English",
             "chapter_title": "The Unlikely Best Friends",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.288330"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1605,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fepr102_fc01",
-                        "front": "What key point should you remember from The Unlikely Best Friends?",
-                        "back": "What do you do when you are with your friends and how do you feel?",
-                        "concept_id": "fepr102_c01"
+                        "term": "Protagonist/Main Character",
+                        "definition": "The character who drives the main plot and undergoes the most significant change.",
+                        "image_concept": "A determined-looking young person"
                     },
                     {
-                        "id": "fepr102_fc02",
-                        "front": "What key point should you remember from The Unlikely Best Friends?",
-                        "back": "Now, complete the following sentences by writing in the shapes given below.",
-                        "concept_id": "fepr102_c01"
+                        "term": "Antagonist",
+                        "definition": "The character or force that opposes the protagonist.",
+                        "image_concept": "A character representing the opposition or a challenge"
                     },
                     {
-                        "id": "fepr102_fc03",
-                        "front": "What key point should you remember from The Unlikely Best Friends?",
-                        "back": "Share your completed sentences with your classmates and teacher.",
-                        "concept_id": "fepr102_c01"
+                        "term": "Theme of Friendship",
+                        "definition": "The central message or idea the story explores, often focusing on support, understanding, and acceptance.",
+                        "image_concept": "Two hands shaking or two different colored puzzle pieces fitting together"
                     },
                     {
-                        "id": "fepr102_fc04",
-                        "front": "What key point should you remember from The Unlikely Best Friends?",
-                        "back": "play happy With my friend With my friend I feel I _____________ _____________ II The title of the chapter is ‘The Unlikely Best Friends’.",
-                        "concept_id": "fepr102_c01"
-                    },
-                    {
-                        "id": "fepr102_fc05",
-                        "front": "What key point should you remember from The Unlikely Best Friends?",
-                        "back": "The king was fond of Gajaraj, rectangular space and he had ordered that the elephant should stables: living be well looked after.",
-                        "concept_id": "fepr102_c01"
-                    },
-                    {
-                        "id": "fepr102_fc06",
-                        "front": "What key point should you remember from The Unlikely Best Friends?",
-                        "back": "spaces for In spite of royal comforts, Gajaraj was sad animals because he had no friends.",
-                        "concept_id": "fepr102_c01"
+                        "term": "Setting",
+                        "definition": "The time and place in which the story occurs.",
+                        "image_concept": "A depiction of the environment (e.g., classroom, park)"
                     }
                 ]
             },

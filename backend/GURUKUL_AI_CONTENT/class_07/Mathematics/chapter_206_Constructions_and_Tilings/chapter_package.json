@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Constructions and Tilings",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.120717"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Constructions and Tilings.",
+                "overview": "In this chapter, we explore the fascinating world of geometric constructions and tilings. Constructions involve creating geometric figures using only a compass and straightedge. Tilings are patterns formed by covering a plane using specific geometric shapes (like triangles, squares, and hexagons) without any gaps or overlaps. This chapter lays the foundation for understanding how shapes fit together in space.",
                 "source_grounded_key_points": [
                     "6 CONSTRUCTIONS AND TILINGS 6.1 Geometric Constructions Eyes Do you recall the ‘Eyes’ construction we did in Grade 6?",
                     "Of course, eyes can be drawn freehand, but we wanted to construct them so that the lower arc and upper arc of each eye look symmetrical.",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "Constructions and Tilings",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.120753"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Constructions and Tilings.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "6 CONSTRUCTIONS AND TILINGS 6.1 Geometric Constructions Eyes Do you recall the ‘Eyes’ construction we did in Grade 6?",
-                            "Of course, eyes can be drawn freehand, but we wanted to construct them so that the lower arc and upper arc of each eye look symmetrical.",
-                            "We relied on our spatial estimation to determine the two centres, A and B (see the figure), from which we drew A the lower arc and upper arc respectively.",
-                            "The arcs define a line XY that ‘supports’ the drawing though it is not part of the final figure.",
-                            "We can start with this supporting line and systematically find the centres A and B."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter introduces students to geometric constructions and tilings. It covers fundamental techniques for drawing geometric shapes on paper using only a compass and straightedge, such as drawing perpendicular bisectors, constructing specific polygons, and finding intersections of lines. It also introduces the concept of tessellations, which are patterns of shapes that fill a plane without gaps. The chapter includes various types of tessellations, including regular, irregular, and semi-regular tilings, and explores the properties related to symmetry and angle sums. The chapter aims to develop spatial reasoning, precision in drawing, and an understanding of how geometric figures interact in a two-dimensional space.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "Constructions and Tilings",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.120771"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,15 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gegp206_c01",
-                        "name": "Constructions and Tilings",
-                        "definition": "Central learning focus of Constructions and Tilings.",
-                        "source_evidence": "6 CONSTRUCTIONS AND TILINGS 6.1 Geometric Constructions Eyes Do you recall the ‘Eyes’ construction we did in Grade 6?"
-                    },
-                    {
-                        "id": "gegp206_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Of course, eyes can be drawn freehand, but we wanted to construct them so that the lower arc and upper arc of each eye look symmetrical."
-                    },
-                    {
-                        "id": "gegp206_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "We relied on our spatial estimation to determine the two centres, A and B (see the figure), from which we drew A the lower arc and upper arc respectively."
-                    }
+                    "Introduction to Constructions",
+                    "Basic Geometric Constructions (e.g., drawing lines, angles, perpendicular lines)",
+                    "Constructing specific geometric figures (e.g., triangles, quadrilaterals)",
+                    "Introduction to Tilings (Tessellations)",
+                    "Types of Tilings (Regular, Semi-regular, Irregular)",
+                    "Defining properties of a Tiling (e.g., vertex figures, edge conditions)",
+                    "Construction of Equilateral Triangles and other basic shapes using only a compass and straightedge",
+                    "Understanding symmetry in geometric constructions",
+                    "Introduction to Periodic Tilings (translational symmetry)"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +299,10 @@
             "subject": "Mathematics",
             "chapter_title": "Constructions and Tilings",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.120787"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -372,18 +313,12 @@
             },
             "content": {
                 "nodes": [
-                    {
-                        "id": "gegp206_c01",
-                        "label": "Constructions and Tilings"
-                    },
-                    {
-                        "id": "gegp206_c02",
-                        "label": "Evidence and reasoning"
-                    },
-                    {
-                        "id": "gegp206_c03",
-                        "label": "Application and transfer"
-                    }
+                    "Core Concepts (Construction Tools)",
+                    "Basic Geometric Constructions",
+                    "Defining Tilings (Periodic and Non-periodic)",
+                    "Types of Tilings (Regular, Semi-regular, Irregular)",
+                    "Properties of Tilings (Symmetry, Vertex Figures)",
+                    "Examples of Tiles (Triangles, Squares, Hexagons)"
                 ],
                 "edges": [
                     {
@@ -395,6 +330,34 @@
                         "from": "gegp206_c02",
                         "to": "gegp206_c03",
                         "relation": "enables"
+                    }
+                ],
+                "title": "Constructions and Tilings",
+                "root": "Chapter 206: Constructions and Tilings",
+                "connections": [
+                    {
+                        "source": "Core Concepts",
+                        "target": "Basic Geometric Constructions"
+                    },
+                    {
+                        "source": "Basic Geometric Constructions",
+                        "target": "Construction of Specific Figures"
+                    },
+                    {
+                        "source": "Construction of Specific Figures",
+                        "target": "Geometric Analysis (Properties)"
+                    },
+                    {
+                        "source": "Geometric Analysis (Properties)",
+                        "target": "Tilings"
+                    },
+                    {
+                        "source": "Tilings",
+                        "target": "Types of Tilings"
+                    },
+                    {
+                        "source": "Types of Tilings",
+                        "target": "Vertex Figures"
                     }
                 ]
             },
@@ -490,8 +453,10 @@
             "subject": "Mathematics",
             "chapter_title": "Constructions and Tilings",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.120744"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +465,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Constructions and Tilings.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Constructions and Tilings supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a master architect tasked with designing a decorative pattern for a temple floor. The architect must use precise mathematical techniques (constructions) to draw the boundary of the temple and then use specific shapes (tilings) to fill the floor completely, ensuring no stones are left out and no stones overlap. The story of this chapter is one of transformation: starting with simple tools (compass and straightedge) and applying logical rules to create infinite, beautiful geometric patterns. We will see how a single triangle or square can generate a complex, repeating design, showcasing the power of symmetry and tessellation.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1060,10 @@
             "subject": "Mathematics",
             "chapter_title": "Constructions and Tilings",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.120763"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1075,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp206_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Constructions and Tilings'?",
+                        "type": "Multiple Choice",
+                        "question": "What is the primary tool used for geometric constructions?",
                         "options": [
-                            "6 CONSTRUCTIONS AND TILINGS 6.1 Geometric Constructions Eyes Do you recall the ‘Eyes’ construction we did in Grade 6?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Protractor",
+                            "Compass and Straightedge",
+                            "Set Square and Ruler",
+                            "Calculator"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "6 CONSTRUCTIONS AND TILINGS 6.1 Geometric Constructions Eyes Do you recall the ‘Eyes’ construction we did in Grade 6?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp206_c01"
+                        "answer": "Compass and Straightedge"
                     },
                     {
-                        "id": "gegp206_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Constructions and Tilings'?",
-                        "options": [
-                            "Of course, eyes can be drawn freehand, but we wanted to construct them so that the lower arc and upper arc of each eye look symmetrical.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Of course, eyes can be drawn freehand, but we wanted to construct them so that the lower arc and upper arc of each eye look symmetrical.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp206_c01"
+                        "type": "True/False",
+                        "question": "A tiling is a closed shape that covers a plane without any gaps.",
+                        "answer": "True"
                     },
                     {
-                        "id": "gegp206_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Constructions and Tilings'?",
-                        "options": [
-                            "We relied on our spatial estimation to determine the two centres, A and B (see the figure), from which we drew A the lower arc and upper arc respectively.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We relied on our spatial estimation to determine the two centres, A and B (see the figure), from which we drew A the lower arc and upper arc respectively.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp206_c01"
+                        "type": "Short Answer",
+                        "question": "Name one type of regular tiling.",
+                        "answer": "Regular hexagonal tiling (or any valid regular tiling)"
                     },
                     {
-                        "id": "gegp206_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Constructions and Tilings'?",
-                        "options": [
-                            "The arcs define a line XY that ‘supports’ the drawing though it is not part of the final figure.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The arcs define a line XY that ‘supports’ the drawing though it is not part of the final figure.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp206_c01"
-                    },
-                    {
-                        "id": "gegp206_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Constructions and Tilings'?",
-                        "options": [
-                            "We can start with this supporting line and systematically find the centres A and B.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We can start with this supporting line and systematically find the centres A and B.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp206_c01"
-                    },
-                    {
-                        "id": "gegp206_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Constructions and Tilings'?",
-                        "options": [
-                            "For the eye to be symmetrical, or for the X Y supporting line to be the line of symmetry, the upper and lower arcs should have the same radius.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "For the eye to be symmetrical, or for the X Y supporting line to be the line of symmetry, the upper and lower arcs should have the same radius.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp206_c01"
-                    },
-                    {
-                        "id": "gegp206_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Constructions and Tilings'?",
-                        "options": [
-                            "Since AX = AY and BX = BY, this means B AX = AY = BX = BY Chapter-6.indd 136 10/17/2025 3:19:36 PM Constructions and Tilings How do we find such A and B?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Since AX = AY and BX = BY, this means B AX = AY = BX = BY Chapter-6.indd 136 10/17/2025 3:19:36 PM Constructions and Tilings How do we find such A and B?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp206_c01"
-                    },
-                    {
-                        "id": "gegp206_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Constructions and Tilings'?",
-                        "options": [
-                            "A From X and Y, draw arcs above and below XY, with the same radii.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A From X and Y, draw arcs above and below XY, with the same radii.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp206_c01"
+                        "type": "Definition",
+                        "question": "What is the vertex figure in the context of tilings?",
+                        "answer": "The polygon formed by the vertices of the tiles meeting at a single vertex."
                     }
                 ]
             },
@@ -1715,8 +1552,10 @@
             "subject": "Mathematics",
             "chapter_title": "Constructions and Tilings",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.120735"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1564,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Constructions and Tilings' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "6 CONSTRUCTIONS AND TILINGS 6.1 Geometric Constructions Eyes Do you recall the ‘Eyes’ construction we did in Grade 6?",
-                    "Of course, eyes can be drawn freehand, but we wanted to construct them so that the lower arc and upper arc of each eye look symmetrical.",
-                    "We relied on our spatial estimation to determine the two centres, A and B (see the figure), from which we drew A the lower arc and upper arc respectively.",
-                    "The arcs define a line XY that ‘supports’ the drawing though it is not part of the final figure.",
-                    "We can start with this supporting line and systematically find the centres A and B.",
-                    "For the eye to be symmetrical, or for the X Y supporting line to be the line of symmetry, the upper and lower arcs should have the same radius.",
-                    "Since AX = AY and BX = BY, this means B AX = AY = BX = BY Chapter-6.indd 136 10/17/2025 3:19:36 PM Constructions and Tilings How do we find such A and B?"
-                ]
-            },
+            "content": "Chapter 206, 'Constructions and Tilings,' serves as a practical guide to the intersection of geometry and design. It provides the essential tools for creating precise geometric figures and an understanding of how regular polygons can perfectly tile a plane. Key themes include the use of the compass and straightedge, the concept of tessellation (tiling), and the importance of symmetry in geometric patterns. By mastering these concepts, students gain a foundational skill in spatial reasoning, pattern recognition, and a deep appreciation for the mathematical structures that govern the visible world.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1614,10 @@
             "subject": "Mathematics",
             "chapter_title": "Constructions and Tilings",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.120779"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1629,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp206_fc01",
-                        "front": "What should you remember from Constructions and Tilings?",
-                        "back": "6 CONSTRUCTIONS AND TILINGS 6.1 Geometric Constructions Eyes Do you recall the ‘Eyes’ construction we did in Grade 6?",
-                        "concept_id": "gegp206_c01"
+                        "term": "Straightedge",
+                        "definition": "A straightedge is a tool used to draw straight lines."
                     },
                     {
-                        "id": "gegp206_fc02",
-                        "front": "What should you remember from Constructions and Tilings?",
-                        "back": "Of course, eyes can be drawn freehand, but we wanted to construct them so that the lower arc and upper arc of each eye look symmetrical.",
-                        "concept_id": "gegp206_c01"
+                        "term": "Compass",
+                        "definition": "A compass is a tool used to draw circles and arcs."
                     },
                     {
-                        "id": "gegp206_fc03",
-                        "front": "What should you remember from Constructions and Tilings?",
-                        "back": "We relied on our spatial estimation to determine the two centres, A and B (see the figure), from which we drew A the lower arc and upper arc respectively.",
-                        "concept_id": "gegp206_c01"
+                        "term": "Tiling",
+                        "definition": "A pattern made up of repeating geometric shapes that cover a flat surface."
                     },
                     {
-                        "id": "gegp206_fc04",
-                        "front": "What should you remember from Constructions and Tilings?",
-                        "back": "The arcs define a line XY that ‘supports’ the drawing though it is not part of the final figure.",
-                        "concept_id": "gegp206_c01"
-                    },
-                    {
-                        "id": "gegp206_fc05",
-                        "front": "What should you remember from Constructions and Tilings?",
-                        "back": "We can start with this supporting line and systematically find the centres A and B.",
-                        "concept_id": "gegp206_c01"
-                    },
-                    {
-                        "id": "gegp206_fc06",
-                        "front": "What should you remember from Constructions and Tilings?",
-                        "back": "For the eye to be symmetrical, or for the X Y supporting line to be the line of symmetry, the upper and lower arcs should have the same radius.",
-                        "concept_id": "gegp206_c01"
-                    },
-                    {
-                        "id": "gegp206_fc07",
-                        "front": "What should you remember from Constructions and Tilings?",
-                        "back": "Since AX = AY and BX = BY, this means B AX = AY = BX = BY Chapter-6.indd 136 10/17/2025 3:19:36 PM Constructions and Tilings How do we find such A and B?",
-                        "concept_id": "gegp206_c01"
-                    },
-                    {
-                        "id": "gegp206_fc08",
-                        "front": "What should you remember from Constructions and Tilings?",
-                        "back": "A From X and Y, draw arcs above and below XY, with the same radii.",
-                        "concept_id": "gegp206_c01"
+                        "term": "Regular Tiling",
+                        "definition": "A tiling where every vertex is identical (i.e., the same number and type of polygons meet at each vertex)."
                     }
                 ]
             },

@@ -128,8 +128,10 @@
             "subject": "Social Science",
             "chapter_title": "Family and Community",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.758871"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Family and Community.",
+                "overview": "Chapter 109, 'Family and Community,' explores the foundational aspects of human social organization. It delves into the structure, functions, roles, and dynamics of the family as the primary unit of society, and subsequently examines the role of community in shaping individual lives and collective well-being.",
                 "source_grounded_key_points": [
                     "9 CHAPTER Family and Community Love and dharma are the flower and fruit of family life.",
                     "The family is the fundamental and most ancient unit of any society.",
@@ -175,8 +177,10 @@
             "subject": "Social Science",
             "chapter_title": "Family and Community",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.758912"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Family and Community accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "9 CHAPTER Family and Community Love and dharma are the flower and fruit of family life.",
-                            "The family is the fundamental and most ancient unit of any society.",
-                            "In Indian society today, there are several types of families — from joint families to nuclear families.",
-                            "A joint family has several generations living together — grandparents, parents, uncles and aunts, 9 ― Family and Community Examples of joint families 137 chapter9.indd 137 03-02-2025 05:03:58 Examples of nuclear families brothers, sisters and cousins."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter delves into the complex and dynamic unit of society: the family and community. It is not just a nuclear unit but encompasses various structures, from the immediate family to the larger community and society at large. Families provide primary socialization, emotional support, and economic stability. Communities are groups of people living in close proximity with shared interests, culture, and geographical boundaries. They are crucial for social organization, governance, and the transmission of values. Understanding these units helps us appreciate how society is structured, how individuals are formed, and how social problems are addressed collectively.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Social Science",
             "chapter_title": "Family and Community",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.758933"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,15 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fees109_c01",
-                        "name": "Family and Community",
-                        "definition": "Central learning focus of Family and Community.",
-                        "source_evidence": "9 CHAPTER Family and Community Love and dharma are the flower and fruit of family life."
-                    },
-                    {
-                        "id": "fees109_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "The family is the fundamental and most ancient unit of any society."
-                    },
-                    {
-                        "id": "fees109_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "In Indian society today, there are several types of families — from joint families to nuclear families."
-                    }
+                    "Definition of Family",
+                    "Types of Family Structures",
+                    "The Role of Family in Society",
+                    "Kinship and Relationships",
+                    "Community vs. Society",
+                    "Community Development",
+                    "Functions of Family",
+                    "Challenges facing the Family",
+                    "Interdependence and Socialization"
                 ]
             },
             "runtime_mapping": {
@@ -469,8 +409,10 @@
             "subject": "Social Science",
             "chapter_title": "Family and Community",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.758902"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +421,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to Family and Community.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Family and Community supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "This chapter uses real-life examples, case studies, and historical perspectives to illustrate how families and communities interact. It explains how family structures change over time due to social, economic, and technological shifts. A key narrative often involves describing the day-to-day interactions within a family setting, highlighting the importance of communication and mutual respect. The explanation emphasizes the reciprocal relationship: individuals contribute to the community, and the community, in turn, provides the framework for the family to thrive. The story focuses on challenges such as inter-generational conflicts and the integration of diverse groups within the larger community, demonstrating how these forces shape social identity.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +984,10 @@
             "subject": "Social Science",
             "chapter_title": "Family and Community",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.758925"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,101 +999,58 @@
             "content": {
                 "items": [
                     {
-                        "id": "fees109_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Family and Community?",
+                        "id": 1,
+                        "type": "Multiple Choice",
+                        "question": "Which of the following best describes the primary function of the family?",
                         "options": [
-                            "9 CHAPTER Family and Community Love and dharma are the flower and fruit of family life.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Economic Production",
+                            "Socialization and Emotional Support",
+                            "Political Governance",
+                            "Industrial Manufacturing"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "9 CHAPTER Family and Community Love and dharma are the flower and fruit of family life.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees109_c01"
+                        "answer": "Socialization and Emotional Support"
                     },
                     {
-                        "id": "fees109_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Family and Community?",
-                        "options": [
-                            "The family is the fundamental and most ancient unit of any society.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The family is the fundamental and most ancient unit of any society.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees109_c01"
+                        "id": 2,
+                        "type": "True/False",
+                        "question": "A nuclear family is the only valid type of family in modern society.",
+                        "answer": "False"
                     },
                     {
-                        "id": "fees109_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Family and Community?",
-                        "options": [
-                            "In Indian society today, there are several types of families — from joint families to nuclear families.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In Indian society today, there are several types of families — from joint families to nuclear families.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees109_c01"
+                        "id": 3,
+                        "type": "Short Answer",
+                        "question": "Define 'community' and give an example of a community.",
+                        "answer": "A community is a group of people living in a specific area who share a common social, cultural, or geographical identity. Example: A village, a neighborhood, or a school town."
                     },
                     {
-                        "id": "fees109_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Family and Community?",
-                        "options": [
-                            "A joint family has several generations living together — grandparents, parents, uncles and aunts, 9 ― Family and Community Examples of joint families 137 chapter9.indd 137 03-02-2025 05:03:58 Examples of nuclear families brothers, sisters and cousins.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A joint family has several generations living together — grandparents, parents, uncles and aunts, 9 ― Family and Community Examples of joint families 137 chapter9.indd 137 03-02-2025 05:03:58 Examples of nuclear families brothers, sisters and cousins.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees109_c01"
+                        "id": 4,
+                        "type": "Matching",
+                        "question": "Match the family structure with its description.",
+                        "options": {
+                            "A": "Joint Family",
+                            "B": "Nuclear Family",
+                            "C": "Extended Family",
+                            "D": "Single-Parent Family",
+                            "Options_List": [
+                                "Shared residence and joint decision-making",
+                                "Two parents and their children living together",
+                                "A group that includes grandparents, aunts, uncles, and cousins",
+                                "A family with one parent raising the child"
+                            ]
+                        },
+                        "answer": {
+                            "A": "Joint Family",
+                            "B": "Nuclear Family",
+                            "C": "Extended Family",
+                            "D": "Single-Parent Family"
+                        }
                     },
-                    {
-                        "id": "fees109_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Family and Community?",
-                        "options": [
-                            "A nuclear family, on the other hand, is limited to a couple and their children, and sometimes one parent and children.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A nuclear family, on the other hand, is limited to a couple and their children, and sometimes one parent and children.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees109_c01"
-                    },
-                    {
-                        "id": "fees109_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Family and Community?",
-                        "options": [
-                            "LET’S EXPLORE Æ What types of families do you see in your neighbourhood?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "LET’S EXPLORE Æ What types of families do you see in your neighbourhood?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees109_c01"
-                    }
+                    "flashcards_keys_topic_1_family_basics",
+                    "flashcards_keys_topic_2_community_basics",
+                    "mind_map_keys_chapter_109_structure_flow",
+                    "mind_map_keys_chapter_109_family_functions_cycle",
+                    "quiz_difficulty_level_beginner_intermediate",
+                    "quiz_total_questions_4"
                 ]
             },
             "runtime_mapping": {
@@ -1625,8 +1498,10 @@
             "subject": "Social Science",
             "chapter_title": "Family and Community",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.758892"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1510,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Family and Community' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "9 CHAPTER Family and Community Love and dharma are the flower and fruit of family life.",
-                    "The family is the fundamental and most ancient unit of any society.",
-                    "In Indian society today, there are several types of families — from joint families to nuclear families.",
-                    "A joint family has several generations living together — grandparents, parents, uncles and aunts, 9 ― Family and Community Examples of joint families 137 chapter9.indd 137 03-02-2025 05:03:58 Examples of nuclear families brothers, sisters and cousins.",
-                    "A nuclear family, on the other hand, is limited to a couple and their children, and sometimes one parent and children.",
-                    "LET’S EXPLORE Æ What types of families do you see in your neighbourhood?"
-                ]
-            },
+            "content": "Chapter 109 is a comprehensive study of the family and community as the two primary building blocks of society. It outlines the core principles of family roles (providing structure, emotional bonds, and socialization) and the dynamic nature of community life (providing safety, shared values, and collective action). The chapter stresses that the strength and stability of both units are crucial for the development of an individual. Ultimately, it portrays the interconnectedness of these entities, emphasizing that a healthy family unit is the nucleus of a vibrant and progressive community, which, in turn, drives the overall progress of society.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.155741"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Exploring Substances: Acidic, Basic, and Neutral.",
+                "overview": "Chapter 102, 'Exploring Substances: Acidic, Basic, and Neutral,' is fundamental to understanding the chemical properties of matter. It introduces the concept of pH, a scale used to measure the acidity or basicity of aqueous solutions. This chapter explores the definitions of acids, bases, and neutral substances, along with their chemical behaviors and their real-world applications in daily life and industry.",
                 "source_grounded_key_points": [
                     "Exploring 2 Substances: Acidic, Basic, and Neutral On 28 February, the school hosted a science fair to celebrate National Science Day.",
                     "At the entry gate, siblings Ashwin and Keerthi were greeted with a white sheet of paper.",
@@ -185,8 +187,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.155781"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Exploring Substances: Acidic, Basic, and Neutral.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Exploring 2 Substances: Acidic, Basic, and Neutral On 28 February, the school hosted a science fair to celebrate National Science Day.",
-                            "At the entry gate, siblings Ashwin and Keerthi were greeted with a white sheet of paper.",
-                            "They were curious to know why a white sheet of paper was given to them!",
-                            "A few steps ahead, there was a volunteer spraying a liquid on these sheets of paper.",
-                            "To their surprise, the words ‘Welcome to the Wonderful World of Science’ appeared on the papers the moment the liquid was sprayed (Fig."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "In this chapter, we explore the fundamental properties of substances that relate to acidity, basicity, and neutrality. Acidity is a measure of how acidic a substance is, defined by the concentration of hydrogen ions (H+) it releases in an aqueous solution. Bases, on the other hand, are substances that have an excess of hydrogen ions or a tendency to accept hydrogen ions. Neutral substances have a pH of 7, meaning the concentration of H+ ions and hydroxide ions (OH-) is equal. We use the pH scale (ranging from 0 to 14) to categorize these substances. Strong acids and bases dissociate completely in water, while weak ones do not. This chapter is crucial for understanding chemical reactions, chemical equilibrium, and the properties of everyday chemicals like citric acid, baking soda, and milk.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.155804"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,16 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gecu102_c01",
-                        "name": "Exploring Substances: Acidic, Basic, and Neutral",
-                        "definition": "Central learning focus of Exploring Substances: Acidic, Basic, and Neutral.",
-                        "source_evidence": "Exploring 2 Substances: Acidic, Basic, and Neutral On 28 February, the school hosted a science fair to celebrate National Science Day."
-                    },
-                    {
-                        "id": "gecu102_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "At the entry gate, siblings Ashwin and Keerthi were greeted with a white sheet of paper."
-                    },
-                    {
-                        "id": "gecu102_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "They were curious to know why a white sheet of paper was given to them!"
-                    }
+                    "Definition of Acid",
+                    "Definition of Base",
+                    "Definition of Neutral Substance",
+                    "Properties of Acids",
+                    "Properties of Bases",
+                    "pH Scale and its significance",
+                    "Chemical Reactions between Acids and Bases",
+                    "Neutralization Reaction",
+                    "Indicators for Acids and Bases",
+                    "Types of Acids and Bases (e.g., strong and weak)"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +300,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.155820"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,6 +338,55 @@
                         "to": "gecu102_c03",
                         "relation": "enables"
                     }
+                ],
+                "root": "Chapter 102: Acidic, Basic, and Neutral Substances",
+                "branches": [
+                    {
+                        "branch_1": "Acids",
+                        "sub_branches": [
+                            "Definition",
+                            "Concentration (Concentrated/Dilute)",
+                            "Examples",
+                            "Properties"
+                        ]
+                    },
+                    {
+                        "branch_2": "Bases (Alkalies)",
+                        "sub_branches": [
+                            "Definition",
+                            "Concentration",
+                            "Examples",
+                            "Properties",
+                            "Chemical Formula (NaOH, KOH)"
+                        ]
+                    },
+                    {
+                        "branch_3": "Neutral Substances",
+                        "sub_branches": [
+                            "Definition",
+                            "pH Scale (0-14)",
+                            "Pure Water (pH 7)",
+                            "Indicators"
+                        ]
+                    },
+                    {
+                        "branch_4": "Acid-Base Reactions",
+                        "sub_branches": [
+                            "Neutralization Reaction (Acid + Base -> Salt + Water)",
+                            "pH changes during neutralization",
+                            "Reaction examples"
+                        ]
+                    },
+                    {
+                        "branch_5": "Indicators",
+                        "sub_branches": [
+                            "Phenolphthalein",
+                            "Litmus paper",
+                            "Methyl Orange",
+                            "Color change based on pH"
+                        ]
+                    },
+                    "connections_to_key_terms"
                 ]
             },
             "runtime_mapping": {
@@ -490,8 +481,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.155771"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +493,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Exploring Substances: Acidic, Basic, and Neutral.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Exploring Substances: Acidic, Basic, and Neutral supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a world where every substance had a specific 'personality'—some were sour (acids), some were slippery and stinging (bases), and some were perfectly balanced (neutral). This chapter, 'Exploring Substances: Acidic, Basic, and Neutral,' is like a detective mission to decipher these personalities. We start by introducing the pH scale, a powerful tool that translates the concentration of hydrogen ions in a water solution into a single number. Think of it as a chemical scoreboard. Acids are often characterized by their sour taste, and when mixed with bases, they engage in a 'secret handshake' called a neutralization reaction, which results in water and salt. Bases, conversely, have that slippery, alkaline feel. By observing how these substances interact—how they react with metals, how they change the color of natural indicators, and how they affect the pH of various household liquids—we uncover the underlying principles of chemical balance. This exploration is not just about definitions; it's about witnessing the invisible chemical dynamics that govern everything from the rain we experience to the cleaning products we use, revealing the intricate system of acids, bases, and neutrals that make our world function.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1088,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.155796"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1103,36 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu102_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Exploring Substances: Acidic, Basic, and Neutral'?",
-                        "options": [
-                            "Exploring 2 Substances: Acidic, Basic, and Neutral On 28 February, the school hosted a science fair to celebrate National Science Day.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Exploring 2 Substances: Acidic, Basic, and Neutral On 28 February, the school hosted a science fair to celebrate National Science Day.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu102_c01"
+                        "question": "What is the pH scale used to measure?",
+                        "answer": "The concentration of hydrogen ions in a solution."
                     },
                     {
-                        "id": "gecu102_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Exploring Substances: Acidic, Basic, and Neutral'?",
-                        "options": [
-                            "At the entry gate, siblings Ashwin and Keerthi were greeted with a white sheet of paper.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "At the entry gate, siblings Ashwin and Keerthi were greeted with a white sheet of paper.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu102_c01"
+                        "question": "What is the pH of a pure water?",
+                        "answer": "7 (Neutral)."
                     },
                     {
-                        "id": "gecu102_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Exploring Substances: Acidic, Basic, and Neutral'?",
-                        "options": [
-                            "They were curious to know why a white sheet of paper was given to them!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They were curious to know why a white sheet of paper was given to them!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu102_c01"
+                        "question": "Define a strong acid.",
+                        "answer": "An acid that ionizes completely in water."
                     },
                     {
-                        "id": "gecu102_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Exploring Substances: Acidic, Basic, and Neutral'?",
-                        "options": [
-                            "A few steps ahead, there was a volunteer spraying a liquid on these sheets of paper.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A few steps ahead, there was a volunteer spraying a liquid on these sheets of paper.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu102_c01"
+                        "question": "Name two common examples of an acid.",
+                        "answer": "Hydrochloric acid (HCl), Acetic acid (in vinegar)."
                     },
                     {
-                        "id": "gecu102_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Exploring Substances: Acidic, Basic, and Neutral'?",
-                        "options": [
-                            "To their surprise, the words ‘Welcome to the Wonderful World of Science’ appeared on the papers the moment the liquid was sprayed (Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "To their surprise, the words ‘Welcome to the Wonderful World of Science’ appeared on the papers the moment the liquid was sprayed (Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu102_c01"
+                        "question": "What is the common name for a base?",
+                        "answer": "Alkali."
                     },
                     {
-                        "id": "gecu102_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Exploring Substances: Acidic, Basic, and Neutral'?",
-                        "options": [
-                            "They were excited and eager to know how this happened and the reason behind it.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They were excited and eager to know how this happened and the reason behind it.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu102_c01"
+                        "question": "Write the chemical equation for the neutralization reaction.",
+                        "answer": "Acid + Base -> Salt + Water."
                     },
                     {
-                        "id": "gecu102_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Exploring Substances: Acidic, Basic, and Neutral'?",
-                        "options": [
-                            "Their curiosity was partly satisﬁed at the ‘Colourful World of Substances’ stall.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Their curiosity was partly satisﬁed at the ‘Colourful World of Substances’ stall.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu102_c01"
+                        "question": "How does a pH value of 2 compare to a pH value of 10?",
+                        "answer": "pH 2 is more acidic than pH 10."
                     },
                     {
-                        "id": "gecu102_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Exploring Substances: Acidic, Basic, and Neutral'?",
-                        "options": [
-                            "They saw many activities showing colour changes on mixing diﬀerent substances.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They saw many activities showing colour changes on mixing diﬀerent substances.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu102_c01"
+                        "question": "What is the function of an indicator?",
+                        "answer": "To change color in response to the presence of an acid or base."
                     }
                 ]
             },
@@ -1715,8 +1586,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.155762"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1598,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Exploring Substances: Acidic, Basic, and Neutral' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Exploring 2 Substances: Acidic, Basic, and Neutral On 28 February, the school hosted a science fair to celebrate National Science Day.",
-                    "At the entry gate, siblings Ashwin and Keerthi were greeted with a white sheet of paper.",
-                    "They were curious to know why a white sheet of paper was given to them!",
-                    "A few steps ahead, there was a volunteer spraying a liquid on these sheets of paper.",
-                    "To their surprise, the words ‘Welcome to the Wonderful World of Science’ appeared on the papers the moment the liquid was sprayed (Fig.",
-                    "They were excited and eager to know how this happened and the reason behind it.",
-                    "Their curiosity was partly satisﬁed at the ‘Colourful World of Substances’ stall."
-                ]
-            },
+            "content": "This chapter provides a comprehensive overview of the properties and classifications of acids, bases, and neutral solutions. Key takeaways include: the definition of pH and its relationship to hydrogen ion concentration; the unique chemical characteristics of acids and bases (including their reaction with metal oxides and indicators); the mechanism of neutralization reactions (forming water and salt); and the practical applications of pH in everyday scenarios like food preservation, industrial processes, and environmental monitoring. Mastering this chapter equips students with the foundational knowledge needed to analyze chemical reactions and understand the quantitative aspects of chemical solutions.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1648,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Substances: Acidic, Basic, and Neutral",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.155813"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1663,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu102_fc01",
-                        "front": "What should you remember from Exploring Substances: Acidic, Basic, and Neutral?",
-                        "back": "Exploring 2 Substances: Acidic, Basic, and Neutral On 28 February, the school hosted a science fair to celebrate National Science Day.",
-                        "concept_id": "gecu102_c01"
+                        "term": "Acid",
+                        "definition": "A substance that produces hydrogen ions when dissolved in water."
                     },
                     {
-                        "id": "gecu102_fc02",
-                        "front": "What should you remember from Exploring Substances: Acidic, Basic, and Neutral?",
-                        "back": "At the entry gate, siblings Ashwin and Keerthi were greeted with a white sheet of paper.",
-                        "concept_id": "gecu102_c01"
+                        "term": "Base",
+                        "definition": "A substance that accepts hydrogen ions or donates hydroxide ions when dissolved in water."
                     },
                     {
-                        "id": "gecu102_fc03",
-                        "front": "What should you remember from Exploring Substances: Acidic, Basic, and Neutral?",
-                        "back": "They were curious to know why a white sheet of paper was given to them!",
-                        "concept_id": "gecu102_c01"
+                        "term": "Neutral Substance",
+                        "definition": "A substance that has a pH of 7 (e.g., pure water)."
                     },
                     {
-                        "id": "gecu102_fc04",
-                        "front": "What should you remember from Exploring Substances: Acidic, Basic, and Neutral?",
-                        "back": "A few steps ahead, there was a volunteer spraying a liquid on these sheets of paper.",
-                        "concept_id": "gecu102_c01"
-                    },
-                    {
-                        "id": "gecu102_fc05",
-                        "front": "What should you remember from Exploring Substances: Acidic, Basic, and Neutral?",
-                        "back": "To their surprise, the words ‘Welcome to the Wonderful World of Science’ appeared on the papers the moment the liquid was sprayed (Fig.",
-                        "concept_id": "gecu102_c01"
-                    },
-                    {
-                        "id": "gecu102_fc06",
-                        "front": "What should you remember from Exploring Substances: Acidic, Basic, and Neutral?",
-                        "back": "They were excited and eager to know how this happened and the reason behind it.",
-                        "concept_id": "gecu102_c01"
-                    },
-                    {
-                        "id": "gecu102_fc07",
-                        "front": "What should you remember from Exploring Substances: Acidic, Basic, and Neutral?",
-                        "back": "Their curiosity was partly satisﬁed at the ‘Colourful World of Substances’ stall.",
-                        "concept_id": "gecu102_c01"
-                    },
-                    {
-                        "id": "gecu102_fc08",
-                        "front": "What should you remember from Exploring Substances: Acidic, Basic, and Neutral?",
-                        "back": "They saw many activities showing colour changes on mixing diﬀerent substances.",
-                        "concept_id": "gecu102_c01"
+                        "term": "Indicator",
+                        "definition": "A substance that changes color in acidic or basic solutions."
                     }
                 ]
             },

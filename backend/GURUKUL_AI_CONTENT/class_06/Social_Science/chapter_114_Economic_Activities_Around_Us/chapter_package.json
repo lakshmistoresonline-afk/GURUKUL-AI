@@ -175,8 +175,10 @@
             "subject": "Social Science",
             "chapter_title": "Economic Activities Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.807958"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +187,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Economic Activities Around Us accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "14 CHAPTER Economic Activities Around Us The root of prosperity is economic activity, the lack of it brings material distress.",
-                            "The absence of fruitful economic activity endangers both current prosperity and future growth.",
-                            "What differentiates these activities to be grouped into sectors?",
-                            "Introduction In Chapter 13, we learnt about two types of activities – Monetary economic and non- economic."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "In this chapter, we explore the various economic activities that exist in our immediate surroundings. Economic activities are the actions that people undertake to produce goods and services or to obtain their needs. These include primary activities like agriculture (farming), mining, fishing, and forestry, which involve extracting or producing natural resources. Secondary activities involve processing raw materials to create finished goods, such as manufacturing textiles or automobiles. Tertiary activities deal with services, which are intangible products that people use to meet their needs, like banking, transportation, healthcare, education, and communication. Understanding these activities is crucial because they form the backbone of an economy and show how resources are utilized to create wealth and satisfy human wants.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +245,10 @@
             "subject": "Social Science",
             "chapter_title": "Economic Activities Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.807991"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +259,16 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fees114_c01",
-                        "name": "Economic Activities Around Us",
-                        "definition": "Central learning focus of Economic Activities Around Us.",
-                        "source_evidence": "14 CHAPTER Economic Activities Around Us The root of prosperity is economic activity, the lack of it brings material distress."
-                    },
-                    {
-                        "id": "fees114_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "The absence of fruitful economic activity endangers both current prosperity and future growth."
-                    },
-                    {
-                        "id": "fees114_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "What differentiates these activities to be grouped into sectors?"
-                    }
+                    "Definition of Economic Activities",
+                    "Classification of Economic Activities (Primary, Secondary, Tertiary)",
+                    "Characteristics of Economic Activities",
+                    "Economic Activities in the Household Sector",
+                    "Economic Activities in the Non-Farm and Farm-Based Sector",
+                    "Economic Activities in the Government Sector",
+                    "Economic Activities in the Business Sector",
+                    "Role and Significance of Economic Activities in a Society",
+                    "Poverty and Economic Activities",
+                    "Employment and Unemployment related to Economic Activities"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +286,10 @@
             "subject": "Social Science",
             "chapter_title": "Economic Activities Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.808007"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +324,42 @@
                         "to": "fees114_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Economic Activities": {
+                    "Primary": [
+                        "Agriculture",
+                        "Mining",
+                        "Fishing"
+                    ],
+                    "Secondary": [
+                        "Manufacturing",
+                        "Construction",
+                        "Oil & Gas"
+                    ],
+                    "Tertiary": [
+                        "Trade",
+                        "Banking",
+                        "Education",
+                        "Healthcare"
+                    ]
+                },
+                "Key Concepts": {
+                    "Classification": [
+                        "Primary",
+                        "Secondary",
+                        "Tertiary"
+                    ],
+                    "Sectors": [
+                        "Household",
+                        "Government",
+                        "Business"
+                    ],
+                    "Employment": [
+                        "Workforce",
+                        "Job",
+                        "Jobless"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -1070,8 +1046,10 @@
             "subject": "Social Science",
             "chapter_title": "Economic Activities Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.807982"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1061,40 @@
             "content": {
                 "items": [
                     {
-                        "id": "fees114_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Economic Activities Around Us?",
+                        "id": 1,
+                        "type": "Multiple Choice",
+                        "question": "Which of the following is an example of a primary economic activity?",
                         "options": [
-                            "14 CHAPTER Economic Activities Around Us The root of prosperity is economic activity, the lack of it brings material distress.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Manufacturing a product",
+                            "Providing banking services",
+                            "Growing crops",
+                            "Transporting goods"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "14 CHAPTER Economic Activities Around Us The root of prosperity is economic activity, the lack of it brings material distress.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees114_c01"
+                        "answer": "Growing crops"
                     },
                     {
-                        "id": "fees114_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Economic Activities Around Us?",
-                        "options": [
-                            "The absence of fruitful economic activity endangers both current prosperity and future growth.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The absence of fruitful economic activity endangers both current prosperity and future growth.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees114_c01"
+                        "id": 2,
+                        "type": "True/False",
+                        "question": "The tertiary sector is also known as the service sector.",
+                        "answer": "True"
                     },
                     {
-                        "id": "fees114_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Economic Activities Around Us?",
-                        "options": [
-                            "What differentiates these activities to be grouped into sectors?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What differentiates these activities to be grouped into sectors?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees114_c01"
+                        "id": 3,
+                        "type": "Fill in the Blanks",
+                        "question": "The economic activities related to manufacturing products are called __________ sector.",
+                        "answer": "Secondary"
                     },
                     {
-                        "id": "fees114_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Economic Activities Around Us?",
-                        "options": [
-                            "Introduction In Chapter 13, we learnt about two types of activities – Monetary economic and non- economic.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Introduction In Chapter 13, we learnt about two types of activities – Monetary economic and non- economic.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees114_c01"
+                        "id": 4,
+                        "type": "Short Answer",
+                        "question": "Give two examples of economic activities in the household sector.",
+                        "answer": "Saving money, spending money, earning income."
                     },
                     {
-                        "id": "fees114_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Economic Activities Around Us?",
-                        "options": [
-                            "Activities that create monetary value: Value of something value are called economic activities.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Activities that create monetary value: Value of something value are called economic activities.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees114_c01"
-                    },
-                    {
-                        "id": "fees114_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Economic Activities Around Us?",
-                        "options": [
-                            "We also learnt about that can be the importance of non-economic activities.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We also learnt about that can be the importance of non-economic activities.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees114_c01"
+                        "id": 5,
+                        "type": "Short Answer",
+                        "question": "Define unemployment.",
+                        "answer": "Unemployment is a situation where people are jobless and actively seeking work."
                     }
                 ]
             },
@@ -1695,8 +1613,10 @@
             "subject": "Social Science",
             "chapter_title": "Economic Activities Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.808000"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1628,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fees114_fc01",
-                        "front": "What key point should you remember from Economic Activities Around Us?",
-                        "back": "14 CHAPTER Economic Activities Around Us The root of prosperity is economic activity, the lack of it brings material distress.",
-                        "concept_id": "fees114_c01"
+                        "term": "Primary Economic Activities",
+                        "definition": "Activities involving direct extraction or harvesting of natural resources, such as farming, mining, and fishing."
                     },
                     {
-                        "id": "fees114_fc02",
-                        "front": "What key point should you remember from Economic Activities Around Us?",
-                        "back": "The absence of fruitful economic activity endangers both current prosperity and future growth.",
-                        "concept_id": "fees114_c01"
+                        "term": "Secondary Economic Activities",
+                        "definition": "Activities that involve the transformation of raw materials into finished or semi-finished goods, like manufacturing."
                     },
                     {
-                        "id": "fees114_fc03",
-                        "front": "What key point should you remember from Economic Activities Around Us?",
-                        "back": "What differentiates these activities to be grouped into sectors?",
-                        "concept_id": "fees114_c01"
+                        "term": "Tertiary Economic Activities",
+                        "definition": "Activities that involve providing services, such as banking, healthcare, and education."
                     },
                     {
-                        "id": "fees114_fc04",
-                        "front": "What key point should you remember from Economic Activities Around Us?",
-                        "back": "Introduction In Chapter 13, we learnt about two types of activities – Monetary economic and non- economic.",
-                        "concept_id": "fees114_c01"
+                        "term": "Household Sector",
+                        "definition": "Activities conducted by individuals and families in their own homes."
                     },
                     {
-                        "id": "fees114_fc05",
-                        "front": "What key point should you remember from Economic Activities Around Us?",
-                        "back": "Activities that create monetary value: Value of something value are called economic activities.",
-                        "concept_id": "fees114_c01"
-                    },
-                    {
-                        "id": "fees114_fc06",
-                        "front": "What key point should you remember from Economic Activities Around Us?",
-                        "back": "We also learnt about that can be the importance of non-economic activities.",
-                        "concept_id": "fees114_c01"
+                        "term": "Economic Activities in the Government Sector",
+                        "definition": "Activities performed by the government to maintain public order, infrastructure, and welfare."
                     }
                 ]
             },

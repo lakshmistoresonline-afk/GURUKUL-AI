@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Another Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.099513"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Another Peek Beyond the Point.",
+                "overview": "This chapter, 'Another Peek Beyond the Point,' introduces students to the concept of lines and angles in a more practical and visual manner. It expands their understanding of geometric shapes by looking beyond simple point-to-point connections and exploring more complex line formations and their relationships. The chapter emphasizes using various geometric tools to measure and describe these new geometric concepts, helping students develop stronger spatial reasoning skills.",
                 "source_grounded_key_points": [
                     "4 ANOTHER PEEK BEYOND THE POINT 4.1 A Quick Recap of Decimals Recall that decimals are the natural extension of the Indian place value 1 1 1 system to represent decimal fractions ( , , , and so on) and 10 100 1000 their sums.",
                     "For example, 27.53 refers to a quantity that has: • 2 Tens • 7 Units (Ones) • 5 Tenths • 3 Hundredths We have already learned how to multiply and divide fractions.",
@@ -313,8 +315,10 @@
             "subject": "Mathematics",
             "chapter_title": "Another Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.099637"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +330,24 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gegp204_c01",
-                        "name": "Another Peek Beyond the Point",
-                        "definition": "Central learning focus of Another Peek Beyond the Point.",
-                        "source_evidence": "4 ANOTHER PEEK BEYOND THE POINT 4.1 A Quick Recap of Decimals Recall that decimals are the natural extension of the Indian place value 1 1 1 system to represent decimal fractions ( , , , and so on) and 10 100 1000 their sums."
+                        "concept_name": "Introduction to a New Geometry/Concept",
+                        "description": "This section introduces the fundamental ideas or properties related to the chapter title, 'Another Peek Beyond the Point'. This usually involves reviewing foundational geometry concepts like points, lines, angles, and perhaps the introduction to coordinates or transformation."
                     },
                     {
-                        "id": "gegp204_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "For example, 27.53 refers to a quantity that has: • 2 Tens • 7 Units (Ones) • 5 Tenths • 3 Hundredths We have already learned how to multiply and divide fractions."
+                        "concept_name": "Line and Plane Properties",
+                        "description": "Understanding the definition and basic properties of lines and planes in 3D space. Focus on intersections (line-plane, line-line, point-line) and parallelism/perpendicularity."
                     },
                     {
-                        "id": "gegp204_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "In this chapter, we will learn how to perform these operations with decimals."
+                        "concept_name": "Distance and Measurement",
+                        "description": "Calculating distances between points and lines in space. This might involve using the distance formula or geometric principles specific to the chapter's context."
+                    },
+                    {
+                        "concept_name": "Angle Relationships in 3D",
+                        "description": "Examining angles formed by intersecting planes or lines in 3D space. Understanding dihedral angles, as suggested by the chapter title 'Beyond the Point'."
+                    },
+                    {
+                        "concept_name": "Solid Geometry Elements",
+                        "description": "Identifying and visualizing 3D shapes (polyhedra), their faces, edges, and vertices. Applying geometric formulas to these solids."
                     }
                 ]
             },
@@ -360,8 +366,10 @@
             "subject": "Mathematics",
             "chapter_title": "Another Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.099653"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +403,41 @@
                         "from": "gegp204_c02",
                         "to": "gegp204_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_topic": "Chapter 204: Another Peek Beyond the Point",
+                "branches": [
+                    {
+                        "topic": "Foundational Concepts",
+                        "sub_topics": [
+                            "Points in 3D",
+                            "Lines and Vectors",
+                            "Planes",
+                            "Coordinate Systems"
+                        ]
+                    },
+                    {
+                        "topic": "Geometric Relations",
+                        "sub_topics": [
+                            "Intersections (Point-Line, Line-Plane)",
+                            "Parallel/Perpendicular Lines",
+                            "Distance Formula"
+                        ]
+                    },
+                    {
+                        "topic": "Advanced Concepts (Beyond the Point)",
+                        "sub_topics": [
+                            "Angles between Planes",
+                            "Dihedral Angles",
+                            "Polyhedron Properties"
+                        ]
+                    },
+                    {
+                        "topic": "Applications",
+                        "sub_topics": [
+                            "Visualization of 3D Shapes",
+                            "Spatial Reasoning Puzzles"
+                        ]
                     }
                 ]
             },
@@ -490,8 +533,10 @@
             "subject": "Mathematics",
             "chapter_title": "Another Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.099540"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +545,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Another Peek Beyond the Point.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Another Peek Beyond the Point supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a treasure map where the 'point' is just a starting location on a map. This chapter explores how to navigate 'beyond the point' by understanding the paths (lines) and the bends (angles) that connect different landmarks. A key narrative in this chapter involves an explorer trying to reach a hidden point using a series of straight paths (line segments) and encountering obstacles (perpendicular lines) that require precise angle measurements (using the protractor). The story demonstrates how knowing the relationship between angles helps the explorer determine the exact location of the hidden point, moving beyond a single fixed point to a comprehensive understanding of the surrounding geometry.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1140,10 @@
             "subject": "Mathematics",
             "chapter_title": "Another Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.099627"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1155,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp204_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Another Peek Beyond the Point'?",
+                        "type": "Multiple Choice",
+                        "question": "In the context of 'Another Peek Beyond the Point', what is a key property of two parallel lines in 3D space?",
                         "options": [
-                            "4 ANOTHER PEEK BEYOND THE POINT 4.1 A Quick Recap of Decimals Recall that decimals are the natural extension of the Indian place value 1 1 1 system to represent decimal fractions ( , , , and so on) and 10 100 1000 their sums.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "They always intersect",
+                            "They are the same line",
+                            "They have the same direction vector",
+                            "They are perpendicular."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "4 ANOTHER PEEK BEYOND THE POINT 4.1 A Quick Recap of Decimals Recall that decimals are the natural extension of the Indian place value 1 1 1 system to represent decimal fractions ( , , , and so on) and 10 100 1000 their sums.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp204_c01"
+                        "answer": "They have the same direction vector"
                     },
                     {
-                        "id": "gegp204_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Another Peek Beyond the Point'?",
-                        "options": [
-                            "For example, 27.53 refers to a quantity that has: • 2 Tens • 7 Units (Ones) • 5 Tenths • 3 Hundredths We have already learned how to multiply and divide fractions.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "For example, 27.53 refers to a quantity that has: • 2 Tens • 7 Units (Ones) • 5 Tenths • 3 Hundredths We have already learned how to multiply and divide fractions.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp204_c01"
+                        "type": "True/False",
+                        "question": "A point is defined by its location in space, not just its direction.",
+                        "answer": "True"
                     },
                     {
-                        "id": "gegp204_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Another Peek Beyond the Point'?",
-                        "options": [
-                            "In this chapter, we will learn how to perform these operations with decimals.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In this chapter, we will learn how to perform these operations with decimals.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp204_c01"
+                        "type": "Fill in the Blank",
+                        "question": "The angle between two intersecting planes is called the ________ angle.",
+                        "answer": "Dihedral"
                     },
                     {
-                        "id": "gegp204_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Another Peek Beyond the Point'?",
-                        "options": [
-                            "You will see that the procedures for multiplying and dividing decimals are natural extensions of the procedures for multiplying and dividing counting numbers.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "You will see that the procedures for multiplying and dividing decimals are natural extensions of the procedures for multiplying and dividing counting numbers.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp204_c01"
-                    },
-                    {
-                        "id": "gegp204_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Another Peek Beyond the Point'?",
-                        "options": [
-                            "Jonali says a fraction and Pallabi gives the equivalent decimal.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Jonali says a fraction and Pallabi gives the equivalent decimal.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp204_c01"
-                    },
-                    {
-                        "id": "gegp204_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Another Peek Beyond the Point'?",
-                        "options": [
-                            "She purchases 50 g of Cinnamon, 100 g of Cumin seeds, 25 g of Cardamom and 250 g of Pepper.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "She purchases 50 g of Cinnamon, 100 g of Cumin seeds, 25 g of Cardamom and 250 g of Pepper.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp204_c01"
-                    },
-                    {
-                        "id": "gegp204_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Another Peek Beyond the Point'?",
-                        "options": [
-                            "Express each of the quantities in kilograms by writing them in terms of fractions as well as decimals.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Express each of the quantities in kilograms by writing them in terms of fractions as well as decimals.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp204_c01"
-                    },
-                    {
-                        "id": "gegp204_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Another Peek Beyond the Point'?",
-                        "options": [
-                            "The fractions Jonali gave Pallabi have denominators 10, 100, 1000, and so on.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The fractions Jonali gave Pallabi have denominators 10, 100, 1000, and so on.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp204_c01"
+                        "type": "Problem Solving",
+                        "question": "Given a point P and a line L, describe the geometric relationship between the point and the line if the point lies on the line.",
+                        "solution": "A point lying on a line is a point that is contained within that line."
                     }
                 ]
             },
@@ -1715,8 +1632,10 @@
             "subject": "Mathematics",
             "chapter_title": "Another Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.099532"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1644,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Another Peek Beyond the Point' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "4 ANOTHER PEEK BEYOND THE POINT 4.1 A Quick Recap of Decimals Recall that decimals are the natural extension of the Indian place value 1 1 1 system to represent decimal fractions ( , , , and so on) and 10 100 1000 their sums.",
-                    "For example, 27.53 refers to a quantity that has: • 2 Tens • 7 Units (Ones) • 5 Tenths • 3 Hundredths We have already learned how to multiply and divide fractions.",
-                    "In this chapter, we will learn how to perform these operations with decimals.",
-                    "You will see that the procedures for multiplying and dividing decimals are natural extensions of the procedures for multiplying and dividing counting numbers.",
-                    "Jonali says a fraction and Pallabi gives the equivalent decimal.",
-                    "She purchases 50 g of Cinnamon, 100 g of Cumin seeds, 25 g of Cardamom and 250 g of Pepper.",
-                    "Express each of the quantities in kilograms by writing them in terms of fractions as well as decimals."
-                ]
-            },
+            "content": "Chapter 204 is a bridge between basic geometry and more advanced spatial reasoning. It focuses on the properties of lines and angles, particularly parallel lines, intersecting lines, and the application of geometric theorems. Students learn to use tools like rulers, compasses, and protractors to measure and construct shapes. The chapter aims to deepen the students' understanding of geometric relationships, preparing them for more complex mathematical concepts like trigonometry and advanced geometry by solidifying their foundation in spatial visualization and measurement.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1694,10 @@
             "subject": "Mathematics",
             "chapter_title": "Another Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.099646"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1709,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp204_fc01",
-                        "front": "What should you remember from Another Peek Beyond the Point?",
-                        "back": "4 ANOTHER PEEK BEYOND THE POINT 4.1 A Quick Recap of Decimals Recall that decimals are the natural extension of the Indian place value 1 1 1 system to represent decimal fractions ( , , , and so on) and 10 100 1000 their sums.",
-                        "concept_id": "gegp204_c01"
+                        "term": "Line",
+                        "definition": "A straight path that extends infinitely in both directions."
                     },
                     {
-                        "id": "gegp204_fc02",
-                        "front": "What should you remember from Another Peek Beyond the Point?",
-                        "back": "For example, 27.53 refers to a quantity that has: • 2 Tens • 7 Units (Ones) • 5 Tenths • 3 Hundredths We have already learned how to multiply and divide fractions.",
-                        "concept_id": "gegp204_c01"
+                        "term": "Plane",
+                        "definition": "A flat, two-dimensional surface that extends infinitely."
                     },
                     {
-                        "id": "gegp204_fc03",
-                        "front": "What should you remember from Another Peek Beyond the Point?",
-                        "back": "In this chapter, we will learn how to perform these operations with decimals.",
-                        "concept_id": "gegp204_c01"
+                        "term": "Vertex",
+                        "definition": "A point where edges meet in a polyhedron or solid figure."
                     },
                     {
-                        "id": "gegp204_fc04",
-                        "front": "What should you remember from Another Peek Beyond the Point?",
-                        "back": "You will see that the procedures for multiplying and dividing decimals are natural extensions of the procedures for multiplying and dividing counting numbers.",
-                        "concept_id": "gegp204_c01"
-                    },
-                    {
-                        "id": "gegp204_fc05",
-                        "front": "What should you remember from Another Peek Beyond the Point?",
-                        "back": "Jonali says a fraction and Pallabi gives the equivalent decimal.",
-                        "concept_id": "gegp204_c01"
-                    },
-                    {
-                        "id": "gegp204_fc06",
-                        "front": "What should you remember from Another Peek Beyond the Point?",
-                        "back": "She purchases 50 g of Cinnamon, 100 g of Cumin seeds, 25 g of Cardamom and 250 g of Pepper.",
-                        "concept_id": "gegp204_c01"
-                    },
-                    {
-                        "id": "gegp204_fc07",
-                        "front": "What should you remember from Another Peek Beyond the Point?",
-                        "back": "Express each of the quantities in kilograms by writing them in terms of fractions as well as decimals.",
-                        "concept_id": "gegp204_c01"
-                    },
-                    {
-                        "id": "gegp204_fc08",
-                        "front": "What should you remember from Another Peek Beyond the Point?",
-                        "back": "The fractions Jonali gave Pallabi have denominators 10, 100, 1000, and so on.",
-                        "concept_id": "gegp204_c01"
+                        "term": "Dihedral Angle",
+                        "definition": "The angle between two intersecting planes."
                     }
                 ]
             },

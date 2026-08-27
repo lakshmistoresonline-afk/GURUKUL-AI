@@ -128,8 +128,10 @@
             "subject": "Science",
             "chapter_title": "Temperature and its Measurement",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.625476"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Temperature and its Measurement.",
+                "overview": "Temperature is a fundamental physical quantity that measures the degree of hotness or coldness of a substance. It is a measure of the average kinetic energy of the molecules within a substance. Understanding temperature is crucial in various fields, including physics, chemistry, meteorology, and engineering, as it dictates the phase transitions of matter and the speed of chemical reactions.",
                 "source_grounded_key_points": [
                     "— Anna Mani Lambok and his elder sister Phiban live in Shillong.",
                     "Their parents were away at work and Lambok complained that he was feeling feverish.",
@@ -175,8 +177,10 @@
             "subject": "Science",
             "chapter_title": "Temperature and its Measurement",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.625510"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Temperature and its Measurement accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "— Anna Mani Lambok and his elder sister Phiban live in Shillong.",
-                            "Their parents were away at work and Lambok complained that he was feeling feverish.",
-                            "Phiban touched his forehead and felt that he might be having a fever.",
-                            "To confirm this, she took out the thermometer kept in the almirah."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter is fundamental to physics, dealing with temperature, its properties, and the methods of measurement. Temperature is essentially the degree of hotness or coldness of a substance, which is related to the average kinetic energy of its particles. We need to understand the different scales of temperature, such as Celsius, Fahrenheit, and Kelvin, and how they are used in scientific calculations. Measurement involves using specific instruments like thermometers to quantify temperature. Key concepts include the concept of temperature intervals and conversions between these different scales, along with the relationship between temperature and the states of matter. Understanding temperature is crucial for many scientific applications, including chemistry, engineering, and weather forecasting.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Science",
             "chapter_title": "Temperature and its Measurement",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.625527"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,15 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fecu107_c01",
-                        "name": "Temperature and its Measurement",
-                        "definition": "Central learning focus of Temperature and its Measurement.",
-                        "source_evidence": "— Anna Mani Lambok and his elder sister Phiban live in Shillong."
-                    },
-                    {
-                        "id": "fecu107_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Their parents were away at work and Lambok complained that he was feeling feverish."
-                    },
-                    {
-                        "id": "fecu107_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "Phiban touched his forehead and felt that he might be having a fever."
-                    }
+                    "Temperature",
+                    "Measurement of Temperature",
+                    "Temperature Scales",
+                    "Conversion between Scales (Celsius, Fahrenheit, Kelvin)",
+                    "Thermal Expansion",
+                    "Specific Heat Capacity",
+                    "Heat Transfer (Conduction, Convection, Radiation)",
+                    "Thermodynamics Basics (Internal Energy, Laws of Thermodynamics)",
+                    "Phase Changes"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +287,10 @@
             "subject": "Science",
             "chapter_title": "Temperature and its Measurement",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.625542"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +325,41 @@
                         "to": "fecu107_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Temperature": {
+                    "measurement": [
+                        "Celsius",
+                        "Fahrenheit",
+                        "Kelvin"
+                    ],
+                    "related_properties": [
+                        "Thermal Expansion",
+                        "Specific Heat"
+                    ],
+                    "units": [
+                        "Kelvin"
+                    ],
+                    "conversions": [
+                        "C↔F",
+                        "C↔K"
+                    ]
+                },
+                "Heat_Transfer": {
+                    "modes": [
+                        "Conduction",
+                        "Convection",
+                        "Radiation"
+                    ],
+                    "factors": [
+                        "Temperature difference",
+                        "Material",
+                        "Medium"
+                    ],
+                    "related_laws": [
+                        "Zeroth Law",
+                        "First Law"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -469,8 +445,10 @@
             "subject": "Science",
             "chapter_title": "Temperature and its Measurement",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.625502"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +457,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Temperature and its Measurement.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Temperature and its Measurement supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine you are in a kitchen preparing a recipe. You need to know if the oven is hot enough or if the water is boiling. Temperature helps you make informed decisions. In science, we use instruments like thermometers to precisely quantify this 'hotness' or 'coldness.' A thermometer works based on the principle of thermal expansion: when a substance is heated, its particles move faster and spread out, increasing the volume it occupies. Different scales exist to standardize these measurements. For example, the Kelvin scale is the absolute temperature scale, where 0 Kelvin represents absolute zero (the theoretical lowest possible temperature where molecular motion stops). Scientists use these tools to study everything from the heat absorbed by the sun to the internal temperature of a chemical reaction, which is essential for understanding natural phenomena and designing technologies that operate effectively under specific thermal conditions.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1020,10 @@
             "subject": "Science",
             "chapter_title": "Temperature and its Measurement",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.625520"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1035,36 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu107_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Temperature and its Measurement?",
+                        "question": "What is the SI unit of temperature?",
                         "options": [
-                            "— Anna Mani Lambok and his elder sister Phiban live in Shillong.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Celsius",
+                            "Fahrenheit",
+                            "Kelvin",
+                            "Rankine"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "— Anna Mani Lambok and his elder sister Phiban live in Shillong.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu107_c01"
+                        "answer": "Kelvin",
+                        "type": "multiple choice"
                     },
                     {
-                        "id": "fecu107_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Temperature and its Measurement?",
+                        "question": "Which temperature scale is used in nuclear physics?",
                         "options": [
-                            "Their parents were away at work and Lambok complained that he was feeling feverish.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Celsius",
+                            "Fahrenheit",
+                            "Kelvin",
+                            "Rankine"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Their parents were away at work and Lambok complained that he was feeling feverish.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu107_c01"
+                        "answer": "Kelvin",
+                        "type": "multiple choice"
                     },
                     {
-                        "id": "fecu107_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Temperature and its Measurement?",
-                        "options": [
-                            "Phiban touched his forehead and felt that he might be having a fever.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Phiban touched his forehead and felt that he might be having a fever.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu107_c01"
+                        "question": "Define thermal expansion.",
+                        "answer": "The tendency of matter to change its volume or liquid state in response to a change in temperature.",
+                        "type": "short answer"
                     },
                     {
-                        "id": "fecu107_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Temperature and its Measurement?",
-                        "options": [
-                            "To confirm this, she took out the thermometer kept in the almirah.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "To confirm this, she took out the thermometer kept in the almirah.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu107_c01"
-                    },
-                    {
-                        "id": "fecu107_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Temperature and its Measurement?",
-                        "options": [
-                            "She washed its tip with soap and water, and measured Lambok’s temperature.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "She washed its tip with soap and water, and measured Lambok’s temperature.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu107_c01"
-                    },
-                    {
-                        "id": "fecu107_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Temperature and its Measurement?",
-                        "options": [
-                            "To her relief, she found that his temperature was normal.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "To her relief, she found that his temperature was normal.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu107_c01"
+                        "question": "Differentiate between heat and temperature.",
+                        "answer": "Temperature is the degree of hotness or coldness of a substance, while heat is the capacity to do work.",
+                        "type": "short answer"
                     }
                 ]
             },
@@ -1625,8 +1513,10 @@
             "subject": "Science",
             "chapter_title": "Temperature and its Measurement",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.625494"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1525,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Temperature and its Measurement' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "— Anna Mani Lambok and his elder sister Phiban live in Shillong.",
-                    "Their parents were away at work and Lambok complained that he was feeling feverish.",
-                    "Phiban touched his forehead and felt that he might be having a fever.",
-                    "To confirm this, she took out the thermometer kept in the almirah.",
-                    "She washed its tip with soap and water, and measured Lambok’s temperature.",
-                    "To her relief, she found that his temperature was normal."
-                ]
-            },
+            "content": "Class 06 Science Chapter 107, 'Temperature and its Measurement,' introduces the concept of temperature as a measure of molecular kinetic energy. It covers the key temperature scales (Celsius, Fahrenheit, Kelvin) and the basic principles of temperature measurement, such as thermal expansion. It explains the physical significance of temperature in determining the state of matter and its role in various scientific applications, emphasizing the importance of temperature in understanding energy and physical processes.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1575,10 @@
             "subject": "Science",
             "chapter_title": "Temperature and its Measurement",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.625535"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1590,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu107_fc01",
-                        "front": "What key point should you remember from Temperature and its Measurement?",
-                        "back": "— Anna Mani Lambok and his elder sister Phiban live in Shillong.",
-                        "concept_id": "fecu107_c01"
+                        "term": "SI Unit of Temperature",
+                        "definition": "Kelvin (K)"
                     },
                     {
-                        "id": "fecu107_fc02",
-                        "front": "What key point should you remember from Temperature and its Measurement?",
-                        "back": "Their parents were away at work and Lambok complained that he was feeling feverish.",
-                        "concept_id": "fecu107_c01"
+                        "term": "Conversion Formula (C to K)",
+                        "definition": "K = C + 273.15"
                     },
                     {
-                        "id": "fecu107_fc03",
-                        "front": "What key point should you remember from Temperature and its Measurement?",
-                        "back": "Phiban touched his forehead and felt that he might be having a fever.",
-                        "concept_id": "fecu107_c01"
+                        "term": "Conduction",
+                        "definition": "Heat transfer through direct contact."
                     },
                     {
-                        "id": "fecu107_fc04",
-                        "front": "What key point should you remember from Temperature and its Measurement?",
-                        "back": "To confirm this, she took out the thermometer kept in the almirah.",
-                        "concept_id": "fecu107_c01"
+                        "term": "Convection",
+                        "definition": "Heat transfer through the movement of fluids (liquids and gases)."
                     },
                     {
-                        "id": "fecu107_fc05",
-                        "front": "What key point should you remember from Temperature and its Measurement?",
-                        "back": "She washed its tip with soap and water, and measured Lambok’s temperature.",
-                        "concept_id": "fecu107_c01"
-                    },
-                    {
-                        "id": "fecu107_fc06",
-                        "front": "What key point should you remember from Temperature and its Measurement?",
-                        "back": "To her relief, she found that his temperature was normal.",
-                        "concept_id": "fecu107_c01"
+                        "term": "Radiation",
+                        "definition": "Heat transfer via electromagnetic waves."
                     }
                 ]
             },

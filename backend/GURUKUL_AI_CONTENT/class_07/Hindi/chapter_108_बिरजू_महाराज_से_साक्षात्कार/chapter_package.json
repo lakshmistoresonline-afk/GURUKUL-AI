@@ -134,8 +134,10 @@
             "subject": "Hindi",
             "chapter_title": "बिरजू महाराज से साक्षात्कार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.949734"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for बिरजू महाराज से साक्षात्कार.",
+                "overview": "यह JSON संरचना कक्षा 07 हिंदी विषय के अध्याय 'बिरजू महाराज से साक्षात्कार' के लिए बनाई गई है। इस अध्याय में बिरजू महाराज के जीवन, उनके संगीत के प्रति समर्पण और उनके अनुभवों के बारे में जानकारी दी गई है। यह पाठ विद्यार्थियों को महान कलाकारों के जीवन और उनके संघर्षों से परिचित कराता है।",
                 "source_grounded_key_points": [
                     "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।",
                     "कथक क� कला उन्हें िवरासत में िमली थी, भारत ही नहीं बिल्क िवदेशों में भी िबरजू महाराज का स्मरण उनक� मनमोहक प्रस्तिु तयों के िलए िकया जाता है।",
@@ -185,8 +187,10 @@
             "subject": "Hindi",
             "chapter_title": "बिरजू महाराज से साक्षात्कार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.949773"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of बिरजू महाराज से साक्षात्कार.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।",
-                            "कथक क� कला उन्हें िवरासत में िमली थी, भारत ही नहीं बिल्क िवदेशों में भी िबरजू महाराज का स्मरण उनक� मनमोहक प्रस्तिु तयों के िलए िकया जाता है।",
-                            "िबरजू महाराज का जीवन शास्त्रीय संगीत के रागों के समान ही उतार-चढ़ाव भरा था।",
-                            "अपने जीवन में प्राप्त सफलताओ ं के िलए उन्होंने किठन साधना क� थी।",
-                            "िजन िडब्बों में कभी तीन-चार लाख क� क�मत के हार ह�आ करते थे वे अब खाली पड़े थे।"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 108, 'Birju Maharaj's Interview' (बिरजू महाराज से साक्षात्कार), is a crucial text that provides insights into the life, philosophy, and artistic genius of the legendary Kathak dancer and music master, Pandit Birju Maharaj. It's an autobiographical or biographical account that offers a detailed look at his childhood, training, and the rigorous discipline he maintained to achieve greatness. The chapter usually highlights the deep connection between Birju Maharaj's artistic expression and spiritual values, the importance of discipline, and the role of Guru-shishya parampara (teacher-disciple tradition) in shaping an artist. The teacher's perspective is often rich with anecdotes about the struggles, the dedication, and the unique personality that made Birju Maharaj not just a performer, but a spiritual icon. The goal of this chapter is not merely to tell a story, but to inspire the reader with the life journey of a true artist, emphasizing humility, perseverance, and devotion.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Hindi",
             "chapter_title": "बिरजू महाराज से साक्षात्कार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.949793"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "ghml108_c01",
-                        "name": "बिरजू महाराज से साक्षात्कार",
-                        "definition": "Central learning focus of बिरजू महाराज से साक्षात्कार.",
-                        "source_evidence": "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।"
-                    },
-                    {
-                        "id": "ghml108_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "कथक क� कला उन्हें िवरासत में िमली थी, भारत ही नहीं बिल्क िवदेशों में भी िबरजू महाराज का स्मरण उनक� मनमोहक प्रस्तिु तयों के िलए िकया जाता है।"
-                    },
-                    {
-                        "id": "ghml108_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "िबरजू महाराज का जीवन शास्त्रीय संगीत के रागों के समान ही उतार-चढ़ाव भरा था।"
-                    }
+                    "कक्षा 07 हिंदी पाठ 108: बिरजू महाराज से साक्षात्कार के प्रमुख विषय",
+                    "बिरजू महाराज का जीवन और संगीत",
+                    "संगीत की दुनिया और उसके प्रभाव",
+                    "साक्षात्कार के मुख्य प्रश्न और उत्तर",
+                    "सांस्कृतिक महत्व और विरासत"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +295,10 @@
             "subject": "Hindi",
             "chapter_title": "बिरजू महाराज से साक्षात्कार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.949809"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +333,21 @@
                         "to": "ghml108_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                " बिरजू महाराज": {
+                    "जीवन": [
+                        "जन्म",
+                        "संगीत यात्रा"
+                    ],
+                    "संगीत": [
+                        "शैली",
+                        "प्रभाव"
+                    ],
+                    "साक्षात्कार": [
+                        "उद्देश्य",
+                        "मुख्य बिंदु"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +441,10 @@
             "subject": "Hindi",
             "chapter_title": "बिरजू महाराज से साक्षात्कार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.949763"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +453,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to बिरजू महाराज से साक्षात्कार.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from बिरजू महाराज से साक्षात्कार supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "बिरजू महाराज के जीवन के विभिन्न पहलुओं का विस्तार से वर्णन: उनके जन्म, संगीत में उनकी प्रतिभा का विकास, उनके गुरुओं का प्रभाव, उनके संघर्ष, रियाज़ और मंच पर उनकी उपस्थिति। उनके द्वारा प्रस्तुत की गई विभिन्न कला शैलियों और उनके व्यक्तित्व की विशिष्ट विशेषताओं पर प्रकाश डाला जाएगा। पाठ के केंद्रीय भाव को स्पष्ट किया जाएगा कि कैसे संगीत केवल एक कला नहीं, बल्कि एक जीवन जीने का तरीका है। यह भाग पाठ में आए कठिन शब्दों और प्रतीकों का विश्लेषण भी करेगा।",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1048,10 @@
             "subject": "Hindi",
             "chapter_title": "बिरजू महाराज से साक्षात्कार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.949785"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1063,44 @@
             "content": {
                 "items": [
                     {
-                        "id": "ghml108_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'बिरजू महाराज से साक्षात्कार'?",
+                        "question": "कक्षा 7 के पाठ 108 में बिरजू महाराज के जीवन और संगीत से संबंधित एक प्रश्न पूछिए।",
                         "options": [
-                            "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "बिरजू महाराज का जन्म",
+                            "उनकी संगीत यात्रा",
+                            "उनके बचपन के किस्से",
+                            "साक्षात्कार की तिथि"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml108_c01"
+                        "answer": "उनकी संगीत यात्रा"
                     },
                     {
-                        "id": "ghml108_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'बिरजू महाराज से साक्षात्कार'?",
+                        "question": "साक्षात्कार के मुख्य उद्देश्य क्या थे?",
                         "options": [
-                            "कथक क� कला उन्हें िवरासत में िमली थी, भारत ही नहीं बिल्क िवदेशों में भी िबरजू महाराज का स्मरण उनक� मनमोहक प्रस्तिु तयों के िलए िकया जाता है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "बिरजू महाराज के जीवन के बारे में जानना",
+                            "संगीत के इतिहास पर चर्चा करना",
+                            "साक्षात्कार की तैयारी करना",
+                            "साक्षात्कार का समय तय करना"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "कथक क� कला उन्हें िवरासत में िमली थी, भारत ही नहीं बिल्क िवदेशों में भी िबरजू महाराज का स्मरण उनक� मनमोहक प्रस्तिु तयों के िलए िकया जाता है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml108_c01"
+                        "answer": "बिरजू महाराज के जीवन के बारे में जानना"
                     },
                     {
-                        "id": "ghml108_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'बिरजू महाराज से साक्षात्कार'?",
+                        "question": "बिरजू महाराज के संगीत को किस रूप में वर्णित किया गया है?",
                         "options": [
-                            "िबरजू महाराज का जीवन शास्त्रीय संगीत के रागों के समान ही उतार-चढ़ाव भरा था।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "शास्त्रीय संगीत",
+                            "लोक संगीत",
+                            "धार्मिक संगीत",
+                            "क्लासिकल संगीत"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "िबरजू महाराज का जीवन शास्त्रीय संगीत के रागों के समान ही उतार-चढ़ाव भरा था।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml108_c01"
+                        "answer": "शास्त्रीय संगीत"
                     },
                     {
-                        "id": "ghml108_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'बिरजू महाराज से साक्षात्कार'?",
+                        "question": "इस पाठ से मिलने वाली मुख्य सीख क्या है?",
                         "options": [
-                            "अपने जीवन में प्राप्त सफलताओ ं के िलए उन्होंने किठन साधना क� थी।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "अनुशासन का महत्व",
+                            "संगीत के प्रति प्रेम",
+                            "मेहनत और सफलता",
+                            "अकेलेपन का सामना"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "अपने जीवन में प्राप्त सफलताओ ं के िलए उन्होंने किठन साधना क� थी।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml108_c01"
-                    },
-                    {
-                        "id": "ghml108_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'बिरजू महाराज से साक्षात्कार'?",
-                        "options": [
-                            "िजन िडब्बों में कभी तीन-चार लाख क� क�मत के हार ह�आ करते थे वे अब खाली पड़े थे।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "िजन िडब्बों में कभी तीन-चार लाख क� क�मत के हार ह�आ करते थे वे अब खाली पड़े थे।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml108_c01"
-                    },
-                    {
-                        "id": "ghml108_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'बिरजू महाराज से साक्षात्कार'?",
-                        "options": [
-                            "जीवन में उतार-चढ़ाव Reprint 2026-27 Chapter 08.indd 96 04-04-2025 17:05:35 तो होता ही है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "जीवन में उतार-चढ़ाव Reprint 2026-27 Chapter 08.indd 96 04-04-2025 17:05:35 तो होता ही है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml108_c01"
-                    },
-                    {
-                        "id": "ghml108_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'बिरजू महाराज से साक्षात्कार'?",
-                        "options": [
-                            "कभी कजर् लेते थे तो कभी परु ानी ज़री क� सािड़याँ जलाकर उनके सोने-चाँदी के तार बेचते थे और गजु ारा करते थे।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "कभी कजर् लेते थे तो कभी परु ानी ज़री क� सािड़याँ जलाकर उनके सोने-चाँदी के तार बेचते थे और गजु ारा करते थे।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml108_c01"
-                    },
-                    {
-                        "id": "ghml108_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'बिरजू महाराज से साक्षात्कार'?",
-                        "options": [
-                            "अम्मा बार-बार यही कहा करती थीं, “खाने को भले ही चना िमले या कुछ भी न िमले पर अभ्यास जरूर करो।” तनुश्री आपने कथक िकससे सीखा?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "अम्मा बार-बार यही कहा करती थीं, “खाने को भले ही चना िमले या कुछ भी न िमले पर अभ्यास जरूर करो।” तनुश्री आपने कथक िकससे सीखा?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml108_c01"
+                        "answer": "संगीत के प्रति प्रेम"
                     }
                 ]
             },
@@ -1715,8 +1554,10 @@
             "subject": "Hindi",
             "chapter_title": "बिरजू महाराज से साक्षात्कार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.949754"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1566,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'बिरजू महाराज से साक्षात्कार' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।",
-                    "कथक क� कला उन्हें िवरासत में िमली थी, भारत ही नहीं बिल्क िवदेशों में भी िबरजू महाराज का स्मरण उनक� मनमोहक प्रस्तिु तयों के िलए िकया जाता है।",
-                    "िबरजू महाराज का जीवन शास्त्रीय संगीत के रागों के समान ही उतार-चढ़ाव भरा था।",
-                    "अपने जीवन में प्राप्त सफलताओ ं के िलए उन्होंने किठन साधना क� थी।",
-                    "िजन िडब्बों में कभी तीन-चार लाख क� क�मत के हार ह�आ करते थे वे अब खाली पड़े थे।",
-                    "जीवन में उतार-चढ़ाव Reprint 2026-27 Chapter 08.indd 96 04-04-2025 17:05:35 तो होता ही है।",
-                    "कभी कजर् लेते थे तो कभी परु ानी ज़री क� सािड़याँ जलाकर उनके सोने-चाँदी के तार बेचते थे और गजु ारा करते थे।"
-                ]
-            },
+            "content": "अध्याय 'बिरजू महाराज से साक्षात्कार' का सार यह है कि यह बिरजू महाराज के असाधारण जीवन और कला के प्रति उनके गहन प्रेम को दर्शाता है। यह कहानी उनके प्रारंभिक संघर्षों से लेकर उनके शिखर तक की यात्रा को दर्शाती है। बिरजू महाराज के संगीत की गहराई, उनकी गुरुओं का मार्गदर्शन और उनके व्यक्तित्व की विशिष्टता को मुख्य रूप से उजागर किया जाता है। यह अध्याय छात्रों को यह सिखाता है कि अनुशासन, समर्पण और कड़ी मेहनत के बल पर कोई भी व्यक्ति अपनी प्रतिभा के माध्यम से समाज में एक अमिट छाप छोड़ सकता है। कुल मिलाकर, यह एक प्रेरणादायक यात्रा है जो संगीत की शक्ति और कला के प्रति उनके आजीवन समर्पण का उत्सव है।",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1616,10 @@
             "subject": "Hindi",
             "chapter_title": "बिरजू महाराज से साक्षात्कार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.949802"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1631,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ghml108_fc01",
-                        "front": "What should you remember from बिरजू महाराज से साक्षात्कार?",
-                        "back": "8 िबरजू महाराज से साक्षा�ार कथक क� जब भी बात होती है तो हमारे मिस्तष्क में एक नाम अवश्य आता है— िबरजू महाराज।",
-                        "concept_id": "ghml108_c01"
+                        "front": "बिरजू महाराज कौन हैं?",
+                        "back": "प्रसिद्ध भारतीय शास्त्रीय नृत्यांग और संगीतकार।"
                     },
                     {
-                        "id": "ghml108_fc02",
-                        "front": "What should you remember from बिरजू महाराज से साक्षात्कार?",
-                        "back": "कथक क� कला उन्हें िवरासत में िमली थी, भारत ही नहीं बिल्क िवदेशों में भी िबरजू महाराज का स्मरण उनक� मनमोहक प्रस्तिु तयों के िलए िकया जाता है।",
-                        "concept_id": "ghml108_c01"
+                        "front": "पाठ का मुख्य शीर्षक क्या है?",
+                        "back": "बिरजू महाराज से साक्षात्कार"
                     },
                     {
-                        "id": "ghml108_fc03",
-                        "front": "What should you remember from बिरजू महाराज से साक्षात्कार?",
-                        "back": "िबरजू महाराज का जीवन शास्त्रीय संगीत के रागों के समान ही उतार-चढ़ाव भरा था।",
-                        "concept_id": "ghml108_c01"
+                        "front": "बिरजू महाराज किस प्रकार संगीत से जुड़े हैं?",
+                        "back": "उन्होंने अपनी संगीत यात्रा के अनुभवों को साझा किया।"
                     },
                     {
-                        "id": "ghml108_fc04",
-                        "front": "What should you remember from बिरजू महाराज से साक्षात्कार?",
-                        "back": "अपने जीवन में प्राप्त सफलताओ ं के िलए उन्होंने किठन साधना क� थी।",
-                        "concept_id": "ghml108_c01"
-                    },
-                    {
-                        "id": "ghml108_fc05",
-                        "front": "What should you remember from बिरजू महाराज से साक्षात्कार?",
-                        "back": "िजन िडब्बों में कभी तीन-चार लाख क� क�मत के हार ह�आ करते थे वे अब खाली पड़े थे।",
-                        "concept_id": "ghml108_c01"
-                    },
-                    {
-                        "id": "ghml108_fc06",
-                        "front": "What should you remember from बिरजू महाराज से साक्षात्कार?",
-                        "back": "जीवन में उतार-चढ़ाव Reprint 2026-27 Chapter 08.indd 96 04-04-2025 17:05:35 तो होता ही है।",
-                        "concept_id": "ghml108_c01"
-                    },
-                    {
-                        "id": "ghml108_fc07",
-                        "front": "What should you remember from बिरजू महाराज से साक्षात्कार?",
-                        "back": "कभी कजर् लेते थे तो कभी परु ानी ज़री क� सािड़याँ जलाकर उनके सोने-चाँदी के तार बेचते थे और गजु ारा करते थे।",
-                        "concept_id": "ghml108_c01"
-                    },
-                    {
-                        "id": "ghml108_fc08",
-                        "front": "What should you remember from बिरजू महाराज से साक्षात्कार?",
-                        "back": "अम्मा बार-बार यही कहा करती थीं, “खाने को भले ही चना िमले या कुछ भी न िमले पर अभ्यास जरूर करो।” तनुश्री आपने कथक िकससे सीखा?",
-                        "concept_id": "ghml108_c01"
+                        "front": "साक्षात्कार में कौन से प्रश्न पूछे गए?",
+                        "back": "उनके जीवन, संगीत की बारीकियों और उनके करियर से जुड़े प्रश्न।"
                     }
                 ]
             },

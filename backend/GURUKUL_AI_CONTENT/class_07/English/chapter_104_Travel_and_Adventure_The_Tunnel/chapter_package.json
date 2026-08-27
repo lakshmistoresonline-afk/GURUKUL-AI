@@ -134,8 +134,10 @@
             "subject": "English",
             "chapter_title": "Travel and Adventure — The Tunnel",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.853092"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Travel and Adventure — The Tunnel.",
+                "overview": "This chapter, 'The Tunnel,' is a compelling account of a thrilling journey and adventure that takes place inside a tunnel. It highlights themes of bravery, resilience, and the challenges faced by travelers, emphasizing the excitement and tension associated with traversing confined spaces.",
                 "source_grounded_key_points": [
                     "I What kind of an adventure activity would you like to be a part of?",
                     "(i) Trying new activities (ii) Reading a book (iii) Spending time with friends (iv) Learning something new 2.",
@@ -185,8 +187,10 @@
             "subject": "English",
             "chapter_title": "Travel and Adventure — The Tunnel",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.853132"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Travel and Adventure — The Tunnel.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "I What kind of an adventure activity would you like to be a part of?",
-                            "(i) Trying new activities (ii) Reading a book (iii) Spending time with friends (iv) Learning something new 2.",
-                            "(i) Dense forests and clear streams (ii) Magical lands with fairies (iii) Busy cities with interesting people (iv) Quiet places to think and create 3.",
-                            "(i) Climbing a mountain or exploring a jungle (ii) Finding a hidden treasure or discovering a secret world (iii) Solving puzzles or guessing riddles with friends (iv) Making something creative or building a model 4.",
-                            "• Bold Explorer • Imaginative Dreamer • Energetic Planner • Thoughtful Creator You may add to the list as per your choices."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter introduces a journey where characters use a tunnel for travel and adventure. A primary focus is likely on describing the setting, the various experiences, the challenges faced, and the emotional journey of the travelers. It explores themes of exploration, human ingenuity (especially regarding tunnels), and perhaps the relationship between technology and nature. The teacher's explanation would typically analyze literary devices, character development, and the narrative structure of the story.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "English",
             "chapter_title": "Travel and Adventure — The Tunnel",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.853154"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gepr104_c01",
-                        "name": "Travel and Adventure — The Tunnel",
-                        "definition": "Central learning focus of Travel and Adventure — The Tunnel.",
-                        "source_evidence": "I What kind of an adventure activity would you like to be a part of?"
-                    },
-                    {
-                        "id": "gepr104_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "(i) Trying new activities (ii) Reading a book (iii) Spending time with friends (iv) Learning something new 2."
-                    },
-                    {
-                        "id": "gepr104_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "(i) Dense forests and clear streams (ii) Magical lands with fairies (iii) Busy cities with interesting people (iv) Quiet places to think and create 3."
-                    }
+                    "Travel and Adventure",
+                    "Tunnel Exploration",
+                    "Overcoming Challenges",
+                    "Descriptive Writing",
+                    "Vocabulary related to travel and adventure"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +295,10 @@
             "subject": "English",
             "chapter_title": "Travel and Adventure — The Tunnel",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.853170"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +333,24 @@
                         "to": "gepr104_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Travel and Adventure": {
+                    "Tunnel Exploration": {
+                        "Types of Tunnels": [
+                            "Natural",
+                            "Man-made"
+                        ],
+                        "Journey Experience": [
+                            "Exciting",
+                            "Challenging"
+                        ],
+                        "Sights and Scenery": [
+                            "Unique views",
+                            "Strange formations"
+                        ],
+                        "Theme": "Courage and Discovery"
+                    }
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +444,10 @@
             "subject": "English",
             "chapter_title": "Travel and Adventure — The Tunnel",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.853122"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +456,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to Travel and Adventure — The Tunnel.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Travel and Adventure — The Tunnel supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The chapter 'The Tunnel' typically follows a protagonist who embarks on a journey through a dramatic tunnel. The story describes the physical environment of the tunnel—its darkness, the sound of dripping water, the confined walls, and the creeping sense of unknown at the end. It focuses on the emotional and mental state of the traveler. Usually, the traveler faces obstacles such as fear, claustrophobia, or unexpected events (like encountering wildlife or mechanical failures). The narrative builds tension as the protagonist must rely on their courage and determination to complete the journey. It serves as a vivid exploration of human endurance against the backdrop of a challenging physical space.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1051,10 @@
             "subject": "English",
             "chapter_title": "Travel and Adventure — The Tunnel",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.853145"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1135,134 +1065,11 @@
             },
             "content": {
                 "items": [
-                    {
-                        "id": "gepr104_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Travel and Adventure — The Tunnel'?",
-                        "options": [
-                            "I What kind of an adventure activity would you like to be a part of?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "I What kind of an adventure activity would you like to be a part of?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Travel and Adventure — The Tunnel'?",
-                        "options": [
-                            "(i) Trying new activities (ii) Reading a book (iii) Spending time with friends (iv) Learning something new 2.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "(i) Trying new activities (ii) Reading a book (iii) Spending time with friends (iv) Learning something new 2.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Travel and Adventure — The Tunnel'?",
-                        "options": [
-                            "(i) Dense forests and clear streams (ii) Magical lands with fairies (iii) Busy cities with interesting people (iv) Quiet places to think and create 3.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "(i) Dense forests and clear streams (ii) Magical lands with fairies (iii) Busy cities with interesting people (iv) Quiet places to think and create 3.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Travel and Adventure — The Tunnel'?",
-                        "options": [
-                            "(i) Climbing a mountain or exploring a jungle (ii) Finding a hidden treasure or discovering a secret world (iii) Solving puzzles or guessing riddles with friends (iv) Making something creative or building a model 4.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "(i) Climbing a mountain or exploring a jungle (ii) Finding a hidden treasure or discovering a secret world (iii) Solving puzzles or guessing riddles with friends (iv) Making something creative or building a model 4.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Travel and Adventure — The Tunnel'?",
-                        "options": [
-                            "• Bold Explorer • Imaginative Dreamer • Energetic Planner • Thoughtful Creator You may add to the list as per your choices.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "• Bold Explorer • Imaginative Dreamer • Energetic Planner • Thoughtful Creator You may add to the list as per your choices.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Travel and Adventure — The Tunnel'?",
-                        "options": [
-                            "Let us read shimmered: shined with a light that I appears to move It was almost noon, and the jungle was very still, very silent.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Let us read shimmered: shined with a light that I appears to move It was almost noon, and the jungle was very still, very silent.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Travel and Adventure — The Tunnel'?",
-                        "options": [
-                            "railway Heat waves shimmered along the railway embankment where embankment: it cut a path through the tall evergreen trees.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "railway Heat waves shimmered along the railway embankment where embankment: it cut a path through the tall evergreen trees.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Travel and Adventure — The Tunnel'?",
-                        "options": [
-                            "The railway lines a stone wall were two straight black serpents disappearing into the tunnel made to carry in the hillside.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The railway lines a stone wall were two straight black serpents disappearing into the tunnel made to carry in the hillside.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gepr104_c01"
-                    }
+                    "What are some types of tunnels found in the chapter?",
+                    "Why is the journey through the tunnel an adventure?",
+                    "Identify three interesting sights encountered by the characters in the tunnel.",
+                    "Define 'adventure' in the context of the chapter.",
+                    "How did the characters use their courage and teamwork to overcome obstacles in the tunnel?"
                 ]
             },
             "runtime_mapping": {
@@ -1715,8 +1522,10 @@
             "subject": "English",
             "chapter_title": "Travel and Adventure — The Tunnel",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.853112"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1534,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Travel and Adventure — The Tunnel' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "I What kind of an adventure activity would you like to be a part of?",
-                    "(i) Trying new activities (ii) Reading a book (iii) Spending time with friends (iv) Learning something new 2.",
-                    "(i) Dense forests and clear streams (ii) Magical lands with fairies (iii) Busy cities with interesting people (iv) Quiet places to think and create 3.",
-                    "(i) Climbing a mountain or exploring a jungle (ii) Finding a hidden treasure or discovering a secret world (iii) Solving puzzles or guessing riddles with friends (iv) Making something creative or building a model 4.",
-                    "• Bold Explorer • Imaginative Dreamer • Energetic Planner • Thoughtful Creator You may add to the list as per your choices.",
-                    "Let us read shimmered: shined with a light that I appears to move It was almost noon, and the jungle was very still, very silent.",
-                    "railway Heat waves shimmered along the railway embankment where embankment: it cut a path through the tall evergreen trees."
-                ]
-            },
+            "content": "In 'The Tunnel,' a traveler undertakes an adventurous journey through a mysterious and challenging tunnel. Despite the inherent fears of the confined and dark space, the protagonist navigates the obstacles with remarkable courage and resilience. The story is a journey not just through physical space but also through their own inner fortitude. It is a testament to the human spirit's ability to face daunting challenges, concluding the adventure with a sense of triumph and profound realization.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1584,10 @@
             "subject": "English",
             "chapter_title": "Travel and Adventure — The Tunnel",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.853163"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1599,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gepr104_fc01",
-                        "front": "What should you remember from Travel and Adventure — The Tunnel?",
-                        "back": "I What kind of an adventure activity would you like to be a part of?",
-                        "concept_id": "gepr104_c01"
+                        "term": "Tunnel",
+                        "definition": "A long underground passage used for transportation or exploration."
                     },
                     {
-                        "id": "gepr104_fc02",
-                        "front": "What should you remember from Travel and Adventure — The Tunnel?",
-                        "back": "(i) Trying new activities (ii) Reading a book (iii) Spending time with friends (iv) Learning something new 2.",
-                        "concept_id": "gepr104_c01"
+                        "term": "The Expedition",
+                        "definition": "A journey undertaken to explore or discover something new."
                     },
                     {
-                        "id": "gepr104_fc03",
-                        "front": "What should you remember from Travel and Adventure — The Tunnel?",
-                        "back": "(i) Dense forests and clear streams (ii) Magical lands with fairies (iii) Busy cities with interesting people (iv) Quiet places to think and create 3.",
-                        "concept_id": "gepr104_c01"
+                        "term": "Overcoming Obstacles",
+                        "definition": "The act of successfully dealing with difficulties or challenges."
                     },
                     {
-                        "id": "gepr104_fc04",
-                        "front": "What should you remember from Travel and Adventure — The Tunnel?",
-                        "back": "(i) Climbing a mountain or exploring a jungle (ii) Finding a hidden treasure or discovering a secret world (iii) Solving puzzles or guessing riddles with friends (iv) Making something creative or building a model 4.",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_fc05",
-                        "front": "What should you remember from Travel and Adventure — The Tunnel?",
-                        "back": "• Bold Explorer • Imaginative Dreamer • Energetic Planner • Thoughtful Creator You may add to the list as per your choices.",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_fc06",
-                        "front": "What should you remember from Travel and Adventure — The Tunnel?",
-                        "back": "Let us read shimmered: shined with a light that I appears to move It was almost noon, and the jungle was very still, very silent.",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_fc07",
-                        "front": "What should you remember from Travel and Adventure — The Tunnel?",
-                        "back": "railway Heat waves shimmered along the railway embankment where embankment: it cut a path through the tall evergreen trees.",
-                        "concept_id": "gepr104_c01"
-                    },
-                    {
-                        "id": "gepr104_fc08",
-                        "front": "What should you remember from Travel and Adventure — The Tunnel?",
-                        "back": "The railway lines a stone wall were two straight black serpents disappearing into the tunnel made to carry in the hillside.",
-                        "concept_id": "gepr104_c01"
+                        "term": "Adventure",
+                        "definition": "An unusual, exciting, or daring experience."
                     }
                 ]
             },

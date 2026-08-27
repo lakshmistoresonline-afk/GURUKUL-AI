@@ -128,8 +128,10 @@
             "subject": "Hindi",
             "chapter_title": "पेड़ की बात",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.450261"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: पेड़ की बात.",
+                "overview": "Class 06 Hindi chapter 'Chapter 113 - पेड़ की बात' is an important poem/prose piece that explores the deep connection between humans and trees. It highlights the ecological importance of trees, their role in providing oxygen, shade, and fruits, and the necessity of saving them.",
                 "source_grounded_key_points": [
                     "कै से अक ं ु र फूटता है, पौधा बनता है, धीरे -धीरे बढ़ता है और बड़ा पेड़ बन जाता है।",
                     "मानों बाहर से कोई शिशु को पक ु ार रहा हो, ‘और सोए मत रहो, ऊपर उठ जाओ, सरू ज की रोशनी देखो।’ आहिस्ता-आहिस्ता बीज का ढक्कन दरक गया, दो सक ु ोमल पत्तियों के बीच अक ं ु र बाहर निकला।",
@@ -175,8 +177,10 @@
             "subject": "Hindi",
             "chapter_title": "पेड़ की बात",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.450299"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of पेड़ की बात accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "कै से अक ं ु र फूटता है, पौधा बनता है, धीरे -धीरे बढ़ता है और बड़ा पेड़ बन जाता है।",
-                            "मानों बाहर से कोई शिशु को पक ु ार रहा हो, ‘और सोए मत रहो, ऊपर उठ जाओ, सरू ज की रोशनी देखो।’ आहिस्ता-आहिस्ता बीज का ढक्कन दरक गया, दो सक ु ोमल पत्तियों के बीच अक ं ु र बाहर निकला।",
-                            "अक ं ुर का एक अश ं नीचे माटी में मज़बतू ी से गड़ गया और दसू रा अश ं माटी भेदकर ऊपर की ओर उठा।",
-                            "जैसे कोई शिशु अपना नन्हा-सा सिर उठाकर आश्‍चर्य से नई दनि ु या को देख रहा है!"
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "छात्रों के लिए, इस पाठ का मुख्य उद्देश्य यह समझाना है कि पेड़ हमारे लिए कितने महत्वपूर्ण हैं और हमें उनकी रक्षा क्यों करनी चाहिए। हम पेड़ के विभिन्न गुणों (जैसे ऑक्सीजन देना, फल देना, छाया देना, पर्यावरण को साफ रखना) पर चर्चा करेंगे। यह पाठ छात्रों में प्रकृति के प्रति सम्मान और पर्यावरण संरक्षण की भावना विकसित करने के लिए है। भाषा को सरल रखकर यह सुनिश्चित करना है कि छात्र कविता के भाव को आसानी से समझ सकें और उन्हें पेड़ लगाने के महत्व को अपने दैनिक जीवन से जोड़ सकें।",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Hindi",
             "chapter_title": "पेड़ की बात",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.450316"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,38 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fhml113_c01",
-                        "name": "पेड़ की बात",
-                        "definition": "Central learning focus of पेड़ की बात.",
-                        "source_evidence": "कै से अक ं ु र फूटता है, पौधा बनता है, धीरे -धीरे बढ़ता है और बड़ा पेड़ बन जाता है।"
+                        "topic": "Chapter Title",
+                        "details": "पेड़ की बात",
+                        "keywords": [
+                            "पर्यावरण",
+                            "वन",
+                            "प्रकृति",
+                            "पेड़"
+                        ]
                     },
                     {
-                        "id": "fhml113_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "मानों बाहर से कोई शिशु को पक ु ार रहा हो, ‘और सोए मत रहो, ऊपर उठ जाओ, सरू ज की रोशनी देखो।’ आहिस्ता-आहिस्ता बीज का ढक्कन दरक गया, दो सक ु ोमल पत्तियों के बीच अक ं ु र बाहर निकला।"
+                        "topic": "Main Idea",
+                        "details": "पेड़ हमारे जीवन और पर्यावरण के लिए कितने महत्वपूर्ण हैं और उनका संरक्षण क्यों आवश्यक है।"
                     },
                     {
-                        "id": "fhml113_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "अक ं ुर का एक अश ं नीचे माटी में मज़बतू ी से गड़ गया और दसू रा अश ं माटी भेदकर ऊपर की ओर उठा।"
+                        "topic": "Types of Trees",
+                        "details": "भारतीय संदर्भ में महत्वपूर्ण वृक्ष जैसे - बरगद, पीपल, नीम, आम, शीशम।"
+                    },
+                    {
+                        "topic": "Role of Trees",
+                        "details": "वायु शुद्धिकरण, ऑक्सीजन का उत्पादन, मिट्टी का कटाव रोकना, जल चक्र में भूमिका, वन्यजीवों का आवास।"
+                    },
+                    {
+                        "topic": "Problems Related to Trees",
+                        "details": "वनों की कटाई (Deforestation), प्रदूषण, जलवायु परिवर्तन, अवैध कटाई।"
+                    },
+                    {
+                        "topic": "Importance of Planting Trees",
+                        "details": "हरित आवरण बढ़ाना, गर्मी में राहत, कार्बन डाइऑक्साइड का अवशोषण, जैव विविधता का संरक्षण।"
+                    },
+                    {
+                        "topic": "Conservation Measures",
+                        "details": "वृक्षारोपण अभियान, वनीकरण, वृक्षों की सुरक्षा, वन नीतियों का कार्यान्वयन।"
                     }
                 ]
             },
@@ -347,8 +312,10 @@
             "subject": "Hindi",
             "chapter_title": "पेड़ की बात",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.450331"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +349,45 @@
                         "from": "fhml113_c02",
                         "to": "fhml113_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_node": "पेड़ की बात",
+                "branches": [
+                    {
+                        "label": "पेड़ के लाभ",
+                        "sub_branches": [
+                            "ऑक्सीजन उत्पादन",
+                            "जल संरक्षण",
+                            "मिट्टी का स्थिरीकरण",
+                            "जलवायु नियंत्रण"
+                        ]
+                    },
+                    {
+                        "label": "पेड़ों का महत्व",
+                        "sub_branches": [
+                            "पर्यावरण संतुलन",
+                            "जैव विविधता",
+                            "वन्यजीवों का घर",
+                            "कार्बन सिंक"
+                        ]
+                    },
+                    {
+                        "label": "पेड़ों से जुड़ी समस्याएँ",
+                        "sub_branches": [
+                            "वनों की कटाई",
+                            "प्रदूषण",
+                            "अतिक्रमण",
+                            "सूखा"
+                        ]
+                    },
+                    {
+                        "label": "संरक्षण के उपाय",
+                        "sub_branches": [
+                            "वृक्षारोपण",
+                            "वन नीतियाँ",
+                            "जागरूकता",
+                            "वृक्षों की सुरक्षा"
+                        ]
                     }
                 ]
             },
@@ -469,8 +475,10 @@
             "subject": "Hindi",
             "chapter_title": "पेड़ की बात",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.450289"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +487,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to पेड़ की बात.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from पेड़ की बात supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "The chapter revolves around the theme of 'The talk of trees' (पेड़ की बात). It typically begins by describing the various ways trees benefit us—the oxygen they give, the fruit and food they provide, the coolness they offer, and their aesthetic beauty. The core message emphasizes that trees are not just plants; they are essential life support systems for the planet. The poem/prose often uses a reflective tone to criticize the destruction of forests by humans and urges readers to actively participate in planting and preserving trees as a matter of responsibility.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1050,10 @@
             "subject": "Hindi",
             "chapter_title": "पेड़ की बात",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.450309"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1065,54 @@
             "content": {
                 "items": [
                     {
-                        "id": "fhml113_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by पेड़ की बात?",
+                        "question": "पेड़ हमारे जीवन के लिए क्यों महत्वपूर्ण हैं?",
                         "options": [
-                            "कै से अक ं ु र फूटता है, पौधा बनता है, धीरे -धीरे बढ़ता है और बड़ा पेड़ बन जाता है।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "ताजगी देने के कारण",
+                            "छाया प्रदान करने के कारण",
+                            "दोनों ही कारण",
+                            "इनमें से कोई नहीं"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "कै से अक ं ु र फूटता है, पौधा बनता है, धीरे -धीरे बढ़ता है और बड़ा पेड़ बन जाता है।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fhml113_c01"
+                        "answer": "दोनों ही कारण"
                     },
                     {
-                        "id": "fhml113_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by पेड़ की बात?",
+                        "question": "पेड़ किस गैस को अवशोषित करते हैं?",
                         "options": [
-                            "मानों बाहर से कोई शिशु को पक ु ार रहा हो, ‘और सोए मत रहो, ऊपर उठ जाओ, सरू ज की रोशनी देखो।’ आहिस्ता-आहिस्ता बीज का ढक्कन दरक गया, दो सक ु ोमल पत्तियों के बीच अक ं ु र बाहर निकला।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "नाइट्रोजन",
+                            "कार्बन डाइऑक्साइड",
+                            "ऑक्सीजन",
+                            "अमोनिया"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "मानों बाहर से कोई शिशु को पक ु ार रहा हो, ‘और सोए मत रहो, ऊपर उठ जाओ, सरू ज की रोशनी देखो।’ आहिस्ता-आहिस्ता बीज का ढक्कन दरक गया, दो सक ु ोमल पत्तियों के बीच अक ं ु र बाहर निकला।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fhml113_c01"
+                        "answer": "कार्बन डाइऑक्साइड"
                     },
                     {
-                        "id": "fhml113_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by पेड़ की बात?",
+                        "question": "वनों की कटाई का मुख्य परिणाम क्या है?",
                         "options": [
-                            "अक ं ुर का एक अश ं नीचे माटी में मज़बतू ी से गड़ गया और दसू रा अश ं माटी भेदकर ऊपर की ओर उठा।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "जल स्तर बढ़ना",
+                            "जलवायु परिवर्तन",
+                            "जंगल का विस्तार",
+                            "मिट्टी का सूखना"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "अक ं ुर का एक अश ं नीचे माटी में मज़बतू ी से गड़ गया और दसू रा अश ं माटी भेदकर ऊपर की ओर उठा।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fhml113_c01"
+                        "answer": "जलवायु परिवर्तन"
                     },
                     {
-                        "id": "fhml113_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by पेड़ की बात?",
+                        "question": "भारत में पाए जाने वाले प्रमुख वृक्षों में से एक कौन सा है?",
                         "options": [
-                            "जैसे कोई शिशु अपना नन्हा-सा सिर उठाकर आश्‍चर्य से नई दनि ु या को देख रहा है!",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "बर्च",
+                            "सेब",
+                            "सागवान",
+                            "आड़ू"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "जैसे कोई शिशु अपना नन्हा-सा सिर उठाकर आश्‍चर्य से नई दनि ु या को देख रहा है!",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fhml113_c01"
+                        "answer": "सेब"
                     },
                     {
-                        "id": "fhml113_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by पेड़ की बात?",
+                        "question": "पेड़ों की सुरक्षा के लिए सबसे महत्वपूर्ण कदम क्या है?",
                         "options": [
-                            "वृक्ष का अकं ु र निकलने पर जो अश ं माटी के भीतर प्रवेश करता है, उसका नाम जड़ है और जो अश ं ऊपर की ओर बढ़ता है, उसे तना कहते हैं।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "अधिक फल उगाना",
+                            "पेड़ों की कटाई करना",
+                            "वृक्षारोपण करना",
+                            "पशुओं को खाना देना"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "वृक्ष का अकं ु र निकलने पर जो अश ं माटी के भीतर प्रवेश करता है, उसका नाम जड़ है और जो अश ं ऊपर की ओर बढ़ता है, उसे तना कहते हैं।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fhml113_c01"
-                    },
-                    {
-                        "id": "fhml113_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by पेड़ की बात?",
-                        "options": [
-                            "यह एक आश्‍चर्य की बात है कि पेड़-पौधों को जिस तरह ही रखो, जड़ नीचे की ओर जाएगी व तना ऊपर की ओर उठे गा।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "यह एक आश्‍चर्य की बात है कि पेड़-पौधों को जिस तरह ही रखो, जड़ नीचे की ओर जाएगी व तना ऊपर की ओर उठे गा।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fhml113_c01"
+                        "answer": "वृक्षारोपण करना"
                     }
                 ]
             },
@@ -1625,8 +1561,10 @@
             "subject": "Hindi",
             "chapter_title": "पेड़ की बात",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.450280"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1573,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'पेड़ की बात' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "कै से अक ं ु र फूटता है, पौधा बनता है, धीरे -धीरे बढ़ता है और बड़ा पेड़ बन जाता है।",
-                    "मानों बाहर से कोई शिशु को पक ु ार रहा हो, ‘और सोए मत रहो, ऊपर उठ जाओ, सरू ज की रोशनी देखो।’ आहिस्ता-आहिस्ता बीज का ढक्कन दरक गया, दो सक ु ोमल पत्तियों के बीच अक ं ु र बाहर निकला।",
-                    "अक ं ुर का एक अश ं नीचे माटी में मज़बतू ी से गड़ गया और दसू रा अश ं माटी भेदकर ऊपर की ओर उठा।",
-                    "जैसे कोई शिशु अपना नन्हा-सा सिर उठाकर आश्‍चर्य से नई दनि ु या को देख रहा है!",
-                    "वृक्ष का अकं ु र निकलने पर जो अश ं माटी के भीतर प्रवेश करता है, उसका नाम जड़ है और जो अश ं ऊपर की ओर बढ़ता है, उसे तना कहते हैं।",
-                    "यह एक आश्‍चर्य की बात है कि पेड़-पौधों को जिस तरह ही रखो, जड़ नीचे की ओर जाएगी व तना ऊपर की ओर उठे गा।"
-                ]
-            },
+            "content": "The chapter 'Chapter 113 - पेड़ की बात' is a powerful appeal to the conservation of trees. It emphasizes that trees are the lungs of the Earth, providing the air we breathe and a beautiful living habitat. It reminds the reader that if we cut down trees without considering the consequences, we are damaging our own future. The summary concludes with a strong call to action, urging everyone to plant more trees, love nature, and take immediate steps to protect forests for the survival of humanity.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1623,10 @@
             "subject": "Hindi",
             "chapter_title": "पेड़ की बात",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.450324"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1638,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fhml113_fc01",
-                        "front": "What key point should you remember from पेड़ की बात?",
-                        "back": "कै से अक ं ु र फूटता है, पौधा बनता है, धीरे -धीरे बढ़ता है और बड़ा पेड़ बन जाता है।",
-                        "concept_id": "fhml113_c01"
+                        "question": "पेड़ हमारे लिए 'इतने' क्यों महत्वपूर्ण हैं?",
+                        "answer": "क्योंकि वे हमें शुद्ध हवा (ऑक्सीजन) प्रदान करते हैं।"
                     },
                     {
-                        "id": "fhml113_fc02",
-                        "front": "What key point should you remember from पेड़ की बात?",
-                        "back": "मानों बाहर से कोई शिशु को पक ु ार रहा हो, ‘और सोए मत रहो, ऊपर उठ जाओ, सरू ज की रोशनी देखो।’ आहिस्ता-आहिस्ता बीज का ढक्कन दरक गया, दो सक ु ोमल पत्तियों के बीच अक ं ु र बाहर निकला।",
-                        "concept_id": "fhml113_c01"
+                        "question": "वातावरण के लिए 'मुख्य' कौन सा वृक्ष है?",
+                        "answer": "बुलबुल या बरगद।"
                     },
                     {
-                        "id": "fhml113_fc03",
-                        "front": "What key point should you remember from पेड़ की बात?",
-                        "back": "अक ं ुर का एक अश ं नीचे माटी में मज़बतू ी से गड़ गया और दसू रा अश ं माटी भेदकर ऊपर की ओर उठा।",
-                        "concept_id": "fhml113_c01"
+                        "question": "वनों की कटाई से 'कौन सा' खतरा उत्पन्न होता है?",
+                        "answer": "कार्बन उत्सर्जन और ग्लोबल वार्मिंग।"
                     },
                     {
-                        "id": "fhml113_fc04",
-                        "front": "What key point should you remember from पेड़ की बात?",
-                        "back": "जैसे कोई शिशु अपना नन्हा-सा सिर उठाकर आश्‍चर्य से नई दनि ु या को देख रहा है!",
-                        "concept_id": "fhml113_c01"
-                    },
-                    {
-                        "id": "fhml113_fc05",
-                        "front": "What key point should you remember from पेड़ की बात?",
-                        "back": "वृक्ष का अकं ु र निकलने पर जो अश ं माटी के भीतर प्रवेश करता है, उसका नाम जड़ है और जो अश ं ऊपर की ओर बढ़ता है, उसे तना कहते हैं।",
-                        "concept_id": "fhml113_c01"
-                    },
-                    {
-                        "id": "fhml113_fc06",
-                        "front": "What key point should you remember from पेड़ की बात?",
-                        "back": "यह एक आश्‍चर्य की बात है कि पेड़-पौधों को जिस तरह ही रखो, जड़ नीचे की ओर जाएगी व तना ऊपर की ओर उठे गा।",
-                        "concept_id": "fhml113_c01"
+                        "question": "पेड़ लगने से कौन-सी समस्या कम होती है?",
+                        "answer": "तापमान बढ़ना और मिट्टी का कटाव।"
                     }
                 ]
             },

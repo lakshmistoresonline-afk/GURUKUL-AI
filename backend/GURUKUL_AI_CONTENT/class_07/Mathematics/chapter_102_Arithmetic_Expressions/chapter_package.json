@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Arithmetic Expressions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.995469"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Arithmetic Expressions.",
+                "overview": "Welcome to Chapter 102: Arithmetic Expressions! In mathematics, an arithmetic expression is a combination of numbers, variables, and operators (like addition, subtraction, multiplication, and division) that we use to represent a calculation. This chapter introduces you to the fundamental concepts of how these expressions work, including order of operations, simplification, and solving for unknown values.",
                 "source_grounded_key_points": [
                     "2 ARITHMETIC EXPRESSIONS 2.1 Simple Expressions You may have seen mathematical phrases like 13 + 2, 20 – 4, 12 × 5, and 18 ÷ 3.",
                     "Every arithmetic expression has a value which is the number it evaluates to.",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "Arithmetic Expressions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.995504"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Arithmetic Expressions.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "2 ARITHMETIC EXPRESSIONS 2.1 Simple Expressions You may have seen mathematical phrases like 13 + 2, 20 – 4, 12 × 5, and 18 ÷ 3.",
-                            "Every arithmetic expression has a value which is the number it evaluates to.",
-                            "This expression can be read as ‘13 plus 2’ or ‘the sum of 13 and 2’.",
-                            "We use the equality sign ‘=’ to denote the relationship between an arithmetic expression and its value.",
-                            "Example 1: Mallika spends ₹25 every day for lunch at school."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter introduces the concept of Arithmetic Expressions. An arithmetic expression is a combination of numbers (constants), variables, and mathematical operators (like +, -, ×, ÷). The goal is to evaluate these expressions to find a single numerical value. It covers the basic operations (addition, subtraction, multiplication, division) and follows the standard order of operations (BODMAS/PEMDAS). Understanding how to substitute values for variables and using parentheses to control the order of operations is key to solving these expressions accurately.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "Arithmetic Expressions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.995523"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,14 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gegp102_c01",
-                        "name": "Arithmetic Expressions",
-                        "definition": "Central learning focus of Arithmetic Expressions.",
-                        "source_evidence": "2 ARITHMETIC EXPRESSIONS 2.1 Simple Expressions You may have seen mathematical phrases like 13 + 2, 20 – 4, 12 × 5, and 18 ÷ 3."
-                    },
-                    {
-                        "id": "gegp102_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Every arithmetic expression has a value which is the number it evaluates to."
-                    },
-                    {
-                        "id": "gegp102_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "This expression can be read as ‘13 plus 2’ or ‘the sum of 13 and 2’."
-                    }
+                    "Definition of Arithmetic Expressions",
+                    "Terms in an Arithmetic Expression",
+                    "Place Value in Arithmetic Expressions",
+                    "Evaluation of Arithmetic Expressions",
+                    "Order of Operations (BODMAS/PEMDAS)",
+                    "Properties of Operations (Associative, Commutative, Distributive)",
+                    "Simplification of Arithmetic Expressions",
+                    "Variable vs. Constant in Mathematics"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +298,10 @@
             "subject": "Mathematics",
             "chapter_title": "Arithmetic Expressions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.995538"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -373,16 +313,45 @@
             "content": {
                 "nodes": [
                     {
-                        "id": "gegp102_c01",
-                        "label": "Arithmetic Expressions"
+                        "type": "Topic",
+                        "title": "Introduction",
+                        "children": [
+                            "Definition of Arithmetic Expressions",
+                            "Terms"
+                        ]
                     },
                     {
-                        "id": "gegp102_c02",
-                        "label": "Evidence and reasoning"
+                        "type": "Topic",
+                        "title": "Classification",
+                        "children": [
+                            "Monomial",
+                            "Binomial",
+                            "Polynomial",
+                            "Terms in an expression"
+                        ]
                     },
                     {
-                        "id": "gegp102_c03",
-                        "label": "Application and transfer"
+                        "type": "Topic",
+                        "title": "Evaluation",
+                        "children": [
+                            "Place Value",
+                            "Order of Operations (BODMAS)",
+                            "Simplification"
+                        ]
+                    },
+                    {
+                        "type": "Topic",
+                        "title": "Properties",
+                        "children": [
+                            "Commutative Property",
+                            "Associative Property",
+                            "Distributive Property"
+                        ]
+                    },
+                    {
+                        "type": "Concept",
+                        "title": "Variable vs. Constant",
+                        "description": "Distinguishing between symbols representing changing values and fixed numerical values."
                     }
                 ],
                 "edges": [
@@ -396,7 +365,8 @@
                         "to": "gegp102_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "root": "Chapter 102: Arithmetic Expressions"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +460,10 @@
             "subject": "Mathematics",
             "chapter_title": "Arithmetic Expressions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.995496"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +472,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Arithmetic Expressions.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Arithmetic Expressions supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine you are a chef preparing a special recipe. The recipe says: 'Start with 2 cups of flour, add 1.5 cups of sugar, multiply by 2 to get the base mixture, and then subtract 0.5 cups of butter.' This entire process can be represented by an arithmetic expression: (2 + 1.5) * 2 - 0.5. In this scenario, the numbers (2, 1.5, 2, 0.5) are the ingredients, and the operations (+, *, -) are the steps we take. Mastering arithmetic expressions helps you understand how to sequence these steps accurately to reach the final result—the perfect batch of dough!",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1067,10 @@
             "subject": "Mathematics",
             "chapter_title": "Arithmetic Expressions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.995515"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1082,67 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp102_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Arithmetic Expressions'?",
+                        "id": 1,
+                        "question": "Identify the type of expression: a) 5x + 3, b) 10 - 2x, c) 4y^2",
                         "options": [
-                            "2 ARITHMETIC EXPRESSIONS 2.1 Simple Expressions You may have seen mathematical phrases like 13 + 2, 20 – 4, 12 × 5, and 18 ÷ 3.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "2 ARITHMETIC EXPRESSIONS 2.1 Simple Expressions You may have seen mathematical phrases like 13 + 2, 20 – 4, 12 × 5, and 18 ÷ 3.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp102_c01"
+                            "Monomial",
+                            "Binomial",
+                            "Trinomial",
+                            "Polynomial"
+                        ]
                     },
                     {
-                        "id": "gegp102_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Arithmetic Expressions'?",
+                        "id": 2,
+                        "question": "What is the result of simplifying the expression: 4(x + 2) + 3x?",
                         "options": [
-                            "Every arithmetic expression has a value which is the number it evaluates to.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "7x + 8",
+                            "7x + 12",
+                            "4x + 11",
+                            "x + 11"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Every arithmetic expression has a value which is the number it evaluates to.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp102_c01"
+                        "answer": "7x + 8"
                     },
                     {
-                        "id": "gegp102_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Arithmetic Expressions'?",
+                        "id": 3,
+                        "question": "Apply the order of operations to simplify: 10 - 2 * 3 + 4",
                         "options": [
-                            "This expression can be read as ‘13 plus 2’ or ‘the sum of 13 and 2’.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "12",
+                            "4",
+                            "2",
+                            "10"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "This expression can be read as ‘13 plus 2’ or ‘the sum of 13 and 2’.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp102_c01"
+                        "answer": "4"
                     },
                     {
-                        "id": "gegp102_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Arithmetic Expressions'?",
+                        "id": 4,
+                        "question": "True or False: The operation '+' is commutative, i.e., a + b = b + a.",
                         "options": [
-                            "We use the equality sign ‘=’ to denote the relationship between an arithmetic expression and its value.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "True",
+                            "False"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "We use the equality sign ‘=’ to denote the relationship between an arithmetic expression and its value.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp102_c01"
+                        "answer": "True"
                     },
                     {
-                        "id": "gegp102_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Arithmetic Expressions'?",
+                        "id": 5,
+                        "question": "What is the degree of the monomial 5x³y²?",
                         "options": [
-                            "Example 1: Mallika spends ₹25 every day for lunch at school.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "3",
+                            "2",
+                            "5",
+                            "6"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Example 1: Mallika spends ₹25 every day for lunch at school.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp102_c01"
+                        "answer": "5"
                     },
                     {
-                        "id": "gegp102_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Arithmetic Expressions'?",
+                        "id": 6,
+                        "question": "Simplify the expression using the distributive property: 5(2a - b).",
                         "options": [
-                            "Write the expression for the total amount she spends on lunch in a week from Monday to Friday.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "10a - 5b",
+                            "10a + 5b",
+                            "10a - b",
+                            "10a - 2b"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Write the expression for the total amount she spends on lunch in a week from Monday to Friday.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp102_c01"
-                    },
-                    {
-                        "id": "gegp102_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Arithmetic Expressions'?",
-                        "options": [
-                            "Here are multiple ways to express the number 12, using two numbers and any of the four operations +, – , × and ÷: 10 + 2, 15 – 3, 3 × 4, 24 ÷ 2.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Here are multiple ways to express the number 12, using two numbers and any of the four operations +, – , × and ÷: 10 + 2, 15 – 3, 3 × 4, 24 ÷ 2.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp102_c01"
-                    },
-                    {
-                        "id": "gegp102_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Arithmetic Expressions'?",
-                        "options": [
-                            "Choose your favourite number and write as many expressions as you can having that value.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Choose your favourite number and write as many expressions as you can having that value.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp102_c01"
+                        "answer": "10a - 5b"
                     }
                 ]
             },
@@ -1715,8 +1596,10 @@
             "subject": "Mathematics",
             "chapter_title": "Arithmetic Expressions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.995488"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1608,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Arithmetic Expressions' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "2 ARITHMETIC EXPRESSIONS 2.1 Simple Expressions You may have seen mathematical phrases like 13 + 2, 20 – 4, 12 × 5, and 18 ÷ 3.",
-                    "Every arithmetic expression has a value which is the number it evaluates to.",
-                    "This expression can be read as ‘13 plus 2’ or ‘the sum of 13 and 2’.",
-                    "We use the equality sign ‘=’ to denote the relationship between an arithmetic expression and its value.",
-                    "Example 1: Mallika spends ₹25 every day for lunch at school.",
-                    "Write the expression for the total amount she spends on lunch in a week from Monday to Friday.",
-                    "Here are multiple ways to express the number 12, using two numbers and any of the four operations +, – , × and ÷: 10 + 2, 15 – 3, 3 × 4, 24 ÷ 2."
-                ]
-            },
+            "content": "Chapter 102 focuses on the language of calculations—Arithmetic Expressions. By understanding how to construct, interpret, and solve these expressions, students learn the essential rules of mathematics. The key concepts include the roles of variables and operators, the critical hierarchy provided by the Order of Operations (PEMDAS/BODMAS), and the technique of 'like terms' for simplification. This chapter provides the foundation necessary to move from basic calculation to solving more advanced problems in algebra and real-world modeling.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1658,10 @@
             "subject": "Mathematics",
             "chapter_title": "Arithmetic Expressions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.995531"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1673,28 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp102_fc01",
-                        "front": "What should you remember from Arithmetic Expressions?",
-                        "back": "2 ARITHMETIC EXPRESSIONS 2.1 Simple Expressions You may have seen mathematical phrases like 13 + 2, 20 – 4, 12 × 5, and 18 ÷ 3.",
-                        "concept_id": "gegp102_c01"
+                        "term": "Arithmetic Expression",
+                        "definition": "A combination of numbers (constants), variables, and mathematical operators (+, -, *, /) that represents a mathematical value."
                     },
                     {
-                        "id": "gegp102_fc02",
-                        "front": "What should you remember from Arithmetic Expressions?",
-                        "back": "Every arithmetic expression has a value which is the number it evaluates to.",
-                        "concept_id": "gegp102_c01"
+                        "term": "Monomial",
+                        "definition": "An algebraic expression consisting of a single term (e.g., 5x², -3y)."
                     },
                     {
-                        "id": "gegp102_fc03",
-                        "front": "What should you remember from Arithmetic Expressions?",
-                        "back": "This expression can be read as ‘13 plus 2’ or ‘the sum of 13 and 2’.",
-                        "concept_id": "gegp102_c01"
+                        "term": "Variable",
+                        "definition": "A symbol (usually a letter like x, y, z) that represents a quantity that can change or vary."
                     },
                     {
-                        "id": "gegp102_fc04",
-                        "front": "What should you remember from Arithmetic Expressions?",
-                        "back": "We use the equality sign ‘=’ to denote the relationship between an arithmetic expression and its value.",
-                        "concept_id": "gegp102_c01"
+                        "term": "Constant",
+                        "definition": "A fixed numerical value in an arithmetic expression (e.g., 5, -2)."
                     },
                     {
-                        "id": "gegp102_fc05",
-                        "front": "What should you remember from Arithmetic Expressions?",
-                        "back": "Example 1: Mallika spends ₹25 every day for lunch at school.",
-                        "concept_id": "gegp102_c01"
+                        "term": "Order of Operations",
+                        "definition": "The established rules for performing calculations in an arithmetic expression, often remembered by acronyms like BODMAS or PEMDAS."
                     },
                     {
-                        "id": "gegp102_fc06",
-                        "front": "What should you remember from Arithmetic Expressions?",
-                        "back": "Write the expression for the total amount she spends on lunch in a week from Monday to Friday.",
-                        "concept_id": "gegp102_c01"
-                    },
-                    {
-                        "id": "gegp102_fc07",
-                        "front": "What should you remember from Arithmetic Expressions?",
-                        "back": "Here are multiple ways to express the number 12, using two numbers and any of the four operations +, – , × and ÷: 10 + 2, 15 – 3, 3 × 4, 24 ÷ 2.",
-                        "concept_id": "gegp102_c01"
-                    },
-                    {
-                        "id": "gegp102_fc08",
-                        "front": "What should you remember from Arithmetic Expressions?",
-                        "back": "Choose your favourite number and write as many expressions as you can having that value.",
-                        "concept_id": "gegp102_c01"
+                        "term": "Commutative Property",
+                        "definition": "A property stating that the order of two operands in an operation does not change (e.g., a + b = b + a)."
                     }
                 ]
             },

@@ -128,8 +128,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Other Side of Zero",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.552317"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: The Other Side of Zero.",
+                "overview": "This chapter explores the concept of zeros beyond the standard integers. It introduces real numbers as an ordered set on the number line, focusing specifically on the concept of additive inverses and the number zero as a unique element (the identity element). We define and visualize irrational numbers through their decimal expansions and their relationship to fractions.",
                 "source_grounded_key_points": [
                     "10 THE OTHER SIDE OF ZERO Integers More and more numbers!",
                     "Recall that the very first numbers we learned about in the study of mathematics were the counting numbers 1, 2, 3, 4, … Then we learned that there are even more numbers!",
@@ -175,8 +177,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Other Side of Zero",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.552355"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of The Other Side of Zero accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "10 THE OTHER SIDE OF ZERO Integers More and more numbers!",
-                            "Recall that the very first numbers we learned about in the study of mathematics were the counting numbers 1, 2, 3, 4, … Then we learned that there are even more numbers!",
-                            "For example, there is the number 0 (zero), representing nothing, which comes before 1.",
-                            "The number 0 has a very important history in India and now in the world."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "Class 06 Mathematics: Chapter 110, 'The Other Side of Zero', introduces the concept of negative numbers and their representation on the number line. It starts by defining zero as the origin and then shows that numbers to the left of zero are negative. The teacher explains that negative numbers have a negative sign and are smaller than zero. The lesson typically covers: 1. Identifying the negative side of zero. 2. Understanding the relationship between positive and negative numbers (the number line analogy). 3. Using pairs of positive and negative numbers to demonstrate their equality (e.g., -5 is the opposite of 5). 4. Representing negative numbers visually on a number line. The chapter aims to build a conceptual understanding of negative numbers as the 'other side' of positive numbers.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Other Side of Zero",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.552373"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,61 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fegp110_c01",
-                        "name": "The Other Side of Zero",
-                        "definition": "Central learning focus of The Other Side of Zero.",
-                        "source_evidence": "10 THE OTHER SIDE OF ZERO Integers More and more numbers!"
+                        "title": "Understanding Negative Numbers",
+                        "keywords": [
+                            "negative numbers",
+                            "opposites",
+                            "number line",
+                            "absolute value"
+                        ],
+                        "description": "Introduction to negative numbers, their relationship to positive numbers, and visualization on the number line."
                     },
                     {
-                        "id": "fegp110_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Recall that the very first numbers we learned about in the study of mathematics were the counting numbers 1, 2, 3, 4, … Then we learned that there are even more numbers!"
+                        "title": "Operations with Negative Numbers",
+                        "keywords": [
+                            "addition",
+                            "subtraction",
+                            "multiplication",
+                            "division"
+                        ],
+                        "description": "Rules for performing arithmetic operations involving positive and negative integers (e.g., signs when adding/subtracting, rules for multiplication and division)."
                     },
                     {
-                        "id": "fegp110_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "For example, there is the number 0 (zero), representing nothing, which comes before 1."
+                        "title": "Absolute Value",
+                        "keywords": [
+                            "absolute value",
+                            "|x|",
+                            "distance"
+                        ],
+                        "description": "Definition of absolute value as the distance of a number from zero on the number line, and how to calculate it."
+                    },
+                    {
+                        "title": "Integers",
+                        "keywords": [
+                            "integers",
+                            "whole numbers",
+                            "rational numbers"
+                        ],
+                        "description": "Formal definition of integers ($\\mathbb{Z}$), including whole numbers, negative whole numbers, and their representation."
+                    },
+                    {
+                        "title": "Comparing and Ordering Integers",
+                        "keywords": [
+                            "ordering",
+                            "comparisons",
+                            "greater than",
+                            "less than"
+                        ],
+                        "description": "Methods for comparing two integers on the number line and arranging a set of integers in ascending or descending order."
+                    },
+                    {
+                        "title": "Number Line Representation",
+                        "keywords": [
+                            "number line",
+                            "visualization",
+                            "midpoint"
+                        ],
+                        "description": "Visualizing the position of negative numbers and understanding concepts like additive inverse and zero as the midpoint between two numbers."
                     }
                 ]
             },
@@ -347,8 +335,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Other Side of Zero",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.552388"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +373,18 @@
                         "to": "fegp110_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "root": "The Other Side of Zero (Chapter 110)",
+                "children": [
+                    "Negative Numbers",
+                    "Positive Numbers",
+                    "Number Line Placement",
+                    "Absolute Value (Distance)",
+                    "Operations with Negatives",
+                    "Order of Integers",
+                    "Integers (Z)"
+                ],
+                "structure": "Center (The Topic) -> Main Branches (Concepts) -> Sub-branches (Details/Rules)"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -469,8 +470,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Other Side of Zero",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.552346"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +482,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to The Other Side of Zero.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from The Other Side of Zero supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "In the city of 'Infinity-Town,' there were two types of residents: Integers, who had a specific address (positive or negative), and Rationals, who could be expressed as a simple ratio of two whole numbers. Suddenly, a new group of travelers arrived: the 'Irrationals.' These travelers were strange because their addresses could never be perfectly written down using a ratio. One traveler, 'Pi,' showed them that even though the length of a circle is fixed, its decimal representation goes on forever without repeating. The story centers on how the integers and rationals form a structured foundation, while the irrationals introduce the 'other side' of the number line, demonstrating that the continuum of numbers extends infinitely beyond the simple counting system.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1045,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Other Side of Zero",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.552365"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1060,58 @@
             "content": {
                 "items": [
                     {
-                        "id": "fegp110_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Other Side of Zero?",
-                        "options": [
-                            "10 THE OTHER SIDE OF ZERO Integers More and more numbers!",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "10 THE OTHER SIDE OF ZERO Integers More and more numbers!",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp110_c01"
-                    },
-                    {
-                        "id": "fegp110_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Other Side of Zero?",
-                        "options": [
-                            "Recall that the very first numbers we learned about in the study of mathematics were the counting numbers 1, 2, 3, 4, … Then we learned that there are even more numbers!",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Recall that the very first numbers we learned about in the study of mathematics were the counting numbers 1, 2, 3, 4, … Then we learned that there are even more numbers!",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp110_c01"
-                    },
-                    {
-                        "id": "fegp110_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Other Side of Zero?",
-                        "options": [
-                            "For example, there is the number 0 (zero), representing nothing, which comes before 1.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "For example, there is the number 0 (zero), representing nothing, which comes before 1.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp110_c01"
-                    },
-                    {
-                        "id": "fegp110_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Other Side of Zero?",
-                        "options": [
-                            "The number 0 has a very important history in India and now in the world.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The number 0 has a very important history in India and now in the world.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp110_c01"
-                    },
-                    {
-                        "id": "fegp110_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Other Side of Zero?",
-                        "options": [
-                            "For example, around the world we learn to write numbers in the Indian number system using the digits 0 to 9, allowing us to write numbers however large or however small using just these 10 digits.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "For example, around the world we learn to write numbers in the Indian number system using the digits 0 to 9, allowing us to write numbers however large or however small using just these 10 digits.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp110_c01"
-                    },
-                    {
-                        "id": "fegp110_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Other Side of Zero?",
-                        "options": [
-                            "We then learned about more numbers that exist between the numbers 0, 1, 2, 3, 4, … , such as 1 , 3 , and 13 .",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We then learned about more numbers that exist between the numbers 0, 1, 2, 3, 4, … , such as 1 , 3 , and 13 .",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp110_c01"
+                        "type": "Multiple Choice",
+                        "questions": [
+                            {
+                                "q": "What is the additive inverse of -15?",
+                                "options": [
+                                    "15",
+                                    "-15",
+                                    "0",
+                                    "1/15"
+                                ],
+                                "answer": "-15"
+                            },
+                            {
+                                "q": "Find the absolute value of -8.",
+                                "options": [
+                                    "-8",
+                                    "8",
+                                    "0",
+                                    "1/8"
+                                ],
+                                "answer": "8"
+                            },
+                            {
+                                "q": "Which statement is true? -5 > -2",
+                                "options": [
+                                    "True",
+                                    "False",
+                                    "Equal"
+                                ],
+                                "answer": "False"
+                            },
+                            {
+                                "q": "What is the result of (-4) + (7) - (2)?",
+                                "options": [
+                                    "1",
+                                    "-1",
+                                    "9",
+                                    "-9"
+                                ],
+                                "answer": "1"
+                            },
+                            {
+                                "q": "What is the value of $|-10|$?",
+                                "options": [
+                                    "-10",
+                                    10,
+                                    0,
+                                    100
+                                ],
+                                "answer": "10"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1625,8 +1560,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Other Side of Zero",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.552337"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1572,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The Other Side of Zero' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "10 THE OTHER SIDE OF ZERO Integers More and more numbers!",
-                    "Recall that the very first numbers we learned about in the study of mathematics were the counting numbers 1, 2, 3, 4, … Then we learned that there are even more numbers!",
-                    "For example, there is the number 0 (zero), representing nothing, which comes before 1.",
-                    "The number 0 has a very important history in India and now in the world.",
-                    "For example, around the world we learn to write numbers in the Indian number system using the digits 0 to 9, allowing us to write numbers however large or however small using just these 10 digits.",
-                    "We then learned about more numbers that exist between the numbers 0, 1, 2, 3, 4, … , such as 1 , 3 , and 13 ."
-                ]
-            },
+            "content": "Chapter 110, 'The Other Side of Zero,' provides a comprehensive look at the extension of the number system beyond integers and rational numbers into the realm of real numbers. It emphasizes the number zero as the essential pivot point for defining opposites (additive inverses) and introduces the nature of irrational numbers. Students learn to classify real numbers and grasp how these numbers constitute a complete, continuous line on the number line. The chapter bridges the gap between the discrete world of integers and the continuous world of real numbers, proving that every point on the number line, whether rational or irrational, exists as a real number.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1622,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Other Side of Zero",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.552381"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1637,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fegp110_fc01",
-                        "front": "What key point should you remember from The Other Side of Zero?",
-                        "back": "10 THE OTHER SIDE OF ZERO Integers More and more numbers!",
-                        "concept_id": "fegp110_c01"
+                        "front": "Definition of Additive Inverse",
+                        "back": "The number that, when added to itself, results in zero. For any integer $a$, the additive inverse of $a$ is $-a$."
                     },
                     {
-                        "id": "fegp110_fc02",
-                        "front": "What key point should you remember from The Other Side of Zero?",
-                        "back": "Recall that the very first numbers we learned about in the study of mathematics were the counting numbers 1, 2, 3, 4, … Then we learned that there are even more numbers!",
-                        "concept_id": "fegp110_c01"
+                        "front": "Concept of Absolute Value",
+                        "back": "The distance of an integer from zero. It is always non-negative. $|x|$ represents this distance."
                     },
                     {
-                        "id": "fegp110_fc03",
-                        "front": "What key point should you remember from The Other Side of Zero?",
-                        "back": "For example, there is the number 0 (zero), representing nothing, which comes before 1.",
-                        "concept_id": "fegp110_c01"
+                        "front": "Order of Integers",
+                        "back": "Numbers increase as they move from left to right on the number line. Larger numbers are further to the right."
                     },
                     {
-                        "id": "fegp110_fc04",
-                        "front": "What key point should you remember from The Other Side of Zero?",
-                        "back": "The number 0 has a very important history in India and now in the world.",
-                        "concept_id": "fegp110_c01"
+                        "front": "Rule: Negative times Negative",
+                        "back": "Negative × Negative = Positive. (e.g., $-3 \times -4 = 12$)"
                     },
                     {
-                        "id": "fegp110_fc05",
-                        "front": "What key point should you remember from The Other Side of Zero?",
-                        "back": "For example, around the world we learn to write numbers in the Indian number system using the digits 0 to 9, allowing us to write numbers however large or however small using just these 10 digits.",
-                        "concept_id": "fegp110_c01"
-                    },
-                    {
-                        "id": "fegp110_fc06",
-                        "front": "What key point should you remember from The Other Side of Zero?",
-                        "back": "We then learned about more numbers that exist between the numbers 0, 1, 2, 3, 4, … , such as 1 , 3 , and 13 .",
-                        "concept_id": "fegp110_c01"
+                        "front": "Rule: Subtraction as Addition",
+                        "back": "Subtracting a number is equivalent to adding its additive inverse. (e.g., $5 - (-3) = 5 + 3 = 8$)"
                     }
                 ]
             },

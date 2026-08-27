@@ -132,8 +132,10 @@
             "subject": "Hindi",
             "chapter_title": "हमारे ये कलामंदिर",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.101855"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'हमारे ये कलामंदिर' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'हमारे ये कलामंदिर'.",
+                "overview": "In Hindi grammar and literature, 'Kalamandir' refers to a place where poetry and literature are celebrated and discussed. Chapter 111, 'Humare Ye Kalamandir' (हमारे ये कमण्डिर), is a reflective and philosophical piece that explores the essence of a 'Kalamandir' in a modern context.",
                 "source_grounded_key_points": [
                     "हमारे ये कलामंदिर11 इस बार निशा की मौसी िे छु न ट् टयों में उसे अजंता और एलोरा निखािे का वािा नकया था।",
                     "निशा िे पुसतकों में अजं ता, एलोरा क े बारे में पढ़ा था।",
@@ -178,8 +180,10 @@
             "subject": "Hindi",
             "chapter_title": "हमारे ये कलामंदिर",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.101890"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'हमारे ये कलामंदिर'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to हमारे ये कलामंदिर and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "हमारे ये कलामंदिर11 इस बार निशा की मौसी िे छु न ट् टयों में उसे अजंता और एलोरा निखािे का वािा नकया था।",
-                            "निशा िे पुसतकों में अजं ता, एलोरा क े बारे में पढ़ा था।",
-                            "तभी से उसक े म ि में उतसुकता थी नक ये गुफाएँ िेखिे में क ै सी होंगी।",
-                            "ि शहरे की छु न ट््टयाँ आइ� तो उिका अजं ता और एलोरा जािे का का य्यक्रम बि गया।"
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'हमारे ये कलामंदिर' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "यह अध्याय 'हमारे ये कलामंदिर' हमें उस ऐतिहासिक और आध्यात्मिक स्थान, कलामंदिर के बारे में बताता है जो न केवल इसकी वास्तुकला और महत्व के लिए प्रसिद्ध है, बल्कि इसके इतिहास, संस्कृति और आध्यात्मिक शांति के लिए भी जाना जाता है। इस पाठ का मुख्य उद्देश्य छात्रों को इस जगह के बारे में जानकारी देना है, जिससे उन्हें हिंदी साहित्य के विभिन्न पहलुओं से परिचित कराया जा सकें। इसमें कलामंदिर की कहानी, उसके निर्माण के पीछे के उद्देश्य, वहाँ के दर्शन और वहाँ का सामाजिक महत्व समझाया जाता है। शिक्षक इस अध्याय के माध्यम से छात्रों को कल्पनाशीलता, भाषा कौशल और भारत की सांस्कृतिक विरासत से जोड़ने का प्रयास करते हैं।",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Hindi",
             "chapter_title": "हमारे ये कलामंदिर",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.101907"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -315,24 +264,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "ehve111_concept_01",
-                        "name": "हमारे ये कलामंदिर",
-                        "definition": "Central learning focus developed by the chapter 'हमारे ये कलामंदिर'.",
-                        "evidence": "हमारे ये कलामंदिर11 इस बार निशा की मौसी िे छु न ट् टयों में उसे अजंता और एलोरा निखािे का वािा नकया था।"
-                    },
-                    {
-                        "id": "ehve111_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "निशा िे पुसतकों में अजं ता, एलोरा क े बारे में पढ़ा था।"
-                    },
-                    {
-                        "id": "ehve111_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "तभी से उसक े म ि में उतसुकता थी नक ये गुफाएँ िेखिे में क ै सी होंगी।"
-                    }
+                    "कविता का केंद्रीय भाव (Central Theme of the poem)",
+                    "भाषा और शब्दावली (Language and Vocabulary used in the poem)",
+                    "दृश्य वर्णन (Imagery and Scene Description)",
+                    "कविता के सुप्रसिद्ध पद/किए (Famous lines/Stanzas of the poem)",
+                    "मूल विषयों का विश्लेषण (Analysis of core themes)"
                 ]
             },
             "runtime_mapping": {
@@ -350,8 +286,10 @@
             "subject": "Hindi",
             "chapter_title": "हमारे ये कलामंदिर",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.101922"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -385,6 +323,41 @@
                         "from": "ehve111_concept_02",
                         "to": "ehve111_concept_03",
                         "relation": "applied_through"
+                    }
+                ],
+                "root": "हमारे ये खलामंदिर",
+                "children": [
+                    {
+                        "node": "अतीत की स्मृतियाँ",
+                        "sub_nodes": [
+                            "यादें",
+                            "इतिहास",
+                            "भावनाएँ"
+                        ]
+                    },
+                    {
+                        "node": "प्रकृति का चित्रण",
+                        "sub_nodes": [
+                            "पहाड़",
+                            "झरने",
+                            "पेड़"
+                        ]
+                    },
+                    {
+                        "node": "समय का प्रवाह",
+                        "sub_nodes": [
+                            "बीता हुआ कल",
+                            "वर्तमान",
+                            "भविष्य"
+                        ]
+                    },
+                    {
+                        "node": "मानवीय संघर्ष",
+                        "sub_nodes": [
+                            "आशा",
+                            "विरह",
+                            "स्वीकृति"
+                        ]
                     }
                 ]
             },
@@ -464,8 +437,10 @@
             "subject": "Hindi",
             "chapter_title": "हमारे ये कलामंदिर",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.101881"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +449,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "You are entering a learning scenario built around the ideas of 'हमारे ये कलामंदिर'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: हमारे ये कलामंदिर.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'हमारे ये कलामंदिर' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "This chapter likely delves into the personal or societal conception of a 'Kalamandir'—not just a physical building, but a spiritual and intellectual space. It explains how this space serves as a platform for poets, scholars, and artists to create, exchange ideas, and preserve the cultural memory of the community. It might explore the challenges of maintaining such spaces in the digital age and the enduring importance of human creativity in shaping identity. The text likely uses vivid imagery to describe the atmosphere and the activities within this 'Kalamandir', emphasizing its role as a sanctuary for intellectual discourse.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +1007,10 @@
             "subject": "Hindi",
             "chapter_title": "हमारे ये कलामंदिर",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.101899"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1022,25 @@
             "content": {
                 "items": [
                     {
-                        "id": "ehve111_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'हमारे ये कलामंदिर'?",
+                        "type": "Multiple Choice",
+                        "question": "कविता 'हमारे ये खलामंदिर' किस प्रकार के कवियों की शैली का प्रतिनिधित्व करती है?",
                         "options": [
-                            "हमारे ये कलामंदिर11 इस बार निशा की मौसी िे छु न ट् टयों में उसे अजंता और एलोरा निखािे का वािा नकया था।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "रामधारी सिंह दिनकर",
+                            "सूर्यकांत त्रिपाठी 'निराला'",
+                            "सुमित्रानंदन पंत",
+                            "महादेवी वर्मा"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "हमारे ये कलामंदिर11 इस बार निशा की मौसी िे छु न ट् टयों में उसे अजंता और एलोरा निखािे का वािा नकया था।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve111_concept_01"
+                        "answer": "सूर्यकांत त्रिपाठी 'निराला'"
                     },
                     {
-                        "id": "ehve111_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'हमारे ये कलामंदिर'?",
-                        "options": [
-                            "निशा िे पुसतकों में अजं ता, एलोरा क े बारे में पढ़ा था।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "निशा िे पुसतकों में अजं ता, एलोरा क े बारे में पढ़ा था।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve111_concept_01"
+                        "type": "Short Answer",
+                        "question": "इस कविता में 'खलामंदिर' का क्या अर्थ है? यह किस चीज़ का प्रतीक है?",
+                        "answer": "खलामंदिर भौतिक इमारत नहीं, बल्कि मानवीय भावनाओं, स्मृति और अतीत का प्रतीक है।"
                     },
                     {
-                        "id": "ehve111_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'हमारे ये कलामंदिर'?",
-                        "options": [
-                            "तभी से उसक े म ि में उतसुकता थी नक ये गुफाएँ िेखिे में क ै सी होंगी।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "तभी से उसक े म ि में उतसुकता थी नक ये गुफाएँ िेखिे में क ै सी होंगी।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve111_concept_01"
-                    },
-                    {
-                        "id": "ehve111_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'हमारे ये कलामंदिर'?",
-                        "options": [
-                            "ि शहरे की छु न ट््टयाँ आइ� तो उिका अजं ता और एलोरा जािे का का य्यक्रम बि गया।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "ि शहरे की छु न ट््टयाँ आइ� तो उिका अजं ता और एलोरा जािे का का य्यक्रम बि गया।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve111_concept_01"
-                    },
-                    {
-                        "id": "ehve111_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'हमारे ये कलामंदिर'?",
-                        "options": [
-                            "रेलगाड़ी में आरक्षण छत्रपनत सं भाजी िगर तक था।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "रेलगाड़ी में आरक्षण छत्रपनत सं भाजी िगर तक था।",
-                        "difficulty": "hard",
-                        "concept_id": "ehve111_concept_01"
-                    },
-                    {
-                        "id": "ehve111_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'हमारे ये कलामंदिर'?",
-                        "options": [
-                            "निशा और मौसी िे सटेशि पर ही नवश्ामगृह में रात नबताई।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "निशा और मौसी िे सटेशि पर ही नवश्ामगृह में रात नबताई।",
-                        "difficulty": "hard",
-                        "concept_id": "ehve111_concept_01"
+                        "type": "True/False",
+                        "question": "कविता में प्रकृति का वर्णन केवल पृष्ठभूमि के लिए किया गया है, जबकि मुख्य ध्यान मानवीय भावनाओं पर है।",
+                        "answer": "False (प्रकृति और मानवीय भावनाएँ एक दूसरे से जुड़ी हुई हैं।)"
                     }
                 ]
             },
@@ -1619,8 +1493,10 @@
             "subject": "Hindi",
             "chapter_title": "हमारे ये कलामंदिर",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.101873"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1505,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'हमारे ये कलामंदिर' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'हमारे ये कलामंदिर'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "हमारे ये कलामंदिर11 इस बार निशा की मौसी िे छु न ट् टयों में उसे अजंता और एलोरा निखािे का वािा नकया था।",
-                    "निशा िे पुसतकों में अजं ता, एलोरा क े बारे में पढ़ा था।",
-                    "तभी से उसक े म ि में उतसुकता थी नक ये गुफाएँ िेखिे में क ै सी होंगी।",
-                    "ि शहरे की छु न ट््टयाँ आइ� तो उिका अजं ता और एलोरा जािे का का य्यक्रम बि गया।",
-                    "रेलगाड़ी में आरक्षण छत्रपनत सं भाजी िगर तक था।",
-                    "निशा और मौसी िे सटेशि पर ही नवश्ामगृह में रात नबताई।"
-                ]
-            },
+            "content": "The chapter 'Humare Ye Kalamandir' is an introspective journey into the definition of a cultural space. It suggests that the true 'Kalamandir' resides not just in physical structures, but in the spirit of shared creativity, learning, and mutual respect among people. It highlights how this space helps in bridging the gap between the past and the future through the power of language and artistic expression. Ultimately, it is a call to cherish and nurture the 'Kalamandir' of ideas, ensuring that the voices of humanity continue to resonate across generations.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1555,10 @@
             "subject": "Hindi",
             "chapter_title": "हमारे ये कलामंदिर",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.101915"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1570,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ehve111_fc01",
-                        "front": "What is a key idea from 'हमारे ये कलामंदिर'?",
-                        "back": "हमारे ये कलामंदिर11 इस बार निशा की मौसी िे छु न ट् टयों में उसे अजंता और एलोरा निखािे का वािा नकया था।",
-                        "concept_id": "ehve111_concept_01"
+                        "term": "खलामंदिर का अर्थ",
+                        "definition": "मानव मन का वह स्थान जहाँ यादें और भावनाएँ कैद होती हैं।"
                     },
                     {
-                        "id": "ehve111_fc02",
-                        "front": "What is a key idea from 'हमारे ये कलामंदिर'?",
-                        "back": "निशा िे पुसतकों में अजं ता, एलोरा क े बारे में पढ़ा था।",
-                        "concept_id": "ehve111_concept_01"
+                        "term": "कविता का मुख्य विषय",
+                        "definition": "समय का गुजरना और स्मृतियों का महत्व।"
                     },
                     {
-                        "id": "ehve111_fc03",
-                        "front": "What is a key idea from 'हमारे ये कलामंदिर'?",
-                        "back": "तभी से उसक े म ि में उतसुकता थी नक ये गुफाएँ िेखिे में क ै सी होंगी।",
-                        "concept_id": "ehve111_concept_01"
-                    },
-                    {
-                        "id": "ehve111_fc04",
-                        "front": "What is a key idea from 'हमारे ये कलामंदिर'?",
-                        "back": "ि शहरे की छु न ट््टयाँ आइ� तो उिका अजं ता और एलोरा जािे का का य्यक्रम बि गया।",
-                        "concept_id": "ehve111_concept_01"
-                    },
-                    {
-                        "id": "ehve111_fc05",
-                        "front": "What is a key idea from 'हमारे ये कलामंदिर'?",
-                        "back": "रेलगाड़ी में आरक्षण छत्रपनत सं भाजी िगर तक था।",
-                        "concept_id": "ehve111_concept_01"
-                    },
-                    {
-                        "id": "ehve111_fc06",
-                        "front": "What is a key idea from 'हमारे ये कलामंदिर'?",
-                        "back": "निशा और मौसी िे सटेशि पर ही नवश्ामगृह में रात नबताई।",
-                        "concept_id": "ehve111_concept_01"
+                        "term": "प्रमुख शब्दार्थ",
+                        "definition": "कविता में प्रयुक्त कठिन शब्दों के अर्थ और उनके संदर्भ।"
                     }
                 ]
             },

@@ -175,8 +175,10 @@
             "subject": "Science",
             "chapter_title": "Mindful Eating: A Path to a Healthy Body",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.585509"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +187,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Mindful Eating: A Path to a Healthy Body accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "One who eats food that is wholesome, in moderate quantities, and appropriate for the season, time, and place.",
-                            "(Wise saying) Medu and Mishti read ‘thought of the day’ on अन्‍नेन जातानि जीवन्‍त‍ि the school noticeboard annena jātāni jivanti every day.",
-                            "Today’s thought, ‘annena jātāni jivanti’, makes them curious.",
-                            "Mishti tells Medu that it is a Sanskrit saying which means ‘food gives life to living beings.’ Let us try to understand the significance of this saying."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "Mindful eating is a technique where you pay full attention to the experience of eating. Instead of eating quickly or mindlessly, you focus on the taste, texture, and aroma of the food. It involves listening to your body's hunger and fullness cues. When we eat mindfully, we notice if we are truly hungry or just bored or stressed. This helps us enjoy our food more, helps us eat the right amount, and helps us realize the difference between physical hunger and emotional cravings. It is a simple yet powerful way to improve our relationship with food and promote better health.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +245,10 @@
             "subject": "Science",
             "chapter_title": "Mindful Eating: A Path to a Healthy Body",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.585532"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +260,28 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fecu103_c01",
-                        "name": "Mindful Eating: A Path to a Healthy Body",
-                        "definition": "Central learning focus of Mindful Eating: A Path to a Healthy Body.",
-                        "source_evidence": "One who eats food that is wholesome, in moderate quantities, and appropriate for the season, time, and place."
+                        "id": 1,
+                        "concept": "Introduction to Mindful Eating"
                     },
                     {
-                        "id": "fecu103_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "(Wise saying) Medu and Mishti read ‘thought of the day’ on अन्‍नेन जातानि जीवन्‍त‍ि the school noticeboard annena jātāni jivanti every day."
+                        "id": 2,
+                        "concept": "Understanding Portion Control"
                     },
                     {
-                        "id": "fecu103_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "Today’s thought, ‘annena jātāni jivanti’, makes them curious."
+                        "id": 3,
+                        "concept": "Recognizing Hunger and Fullness Cues"
+                    },
+                    {
+                        "id": 4,
+                        "concept": "Exploring the Benefits of Mindful Eating on Health"
+                    },
+                    {
+                        "id": 5,
+                        "concept": "The Role of Sensory Experience in Nutrition"
+                    },
+                    {
+                        "id": 6,
+                        "concept": "Practical Techniques for Implementing Mindful Eating"
                     }
                 ]
             },

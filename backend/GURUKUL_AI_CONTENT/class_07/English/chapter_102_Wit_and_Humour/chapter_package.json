@@ -134,8 +134,10 @@
             "subject": "English",
             "chapter_title": "Wit and Humour",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.832092"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Wit and Humour.",
+                "overview": "This JSON object provides a structured overview of the English chapter 'Chapter 102: Wit and Humour'. It is designed to be a comprehensive resource for studying the narrative, exploring the themes of intelligence, playful interaction, and the power of words in making an impact.",
                 "source_grounded_key_points": [
                     "Wit and Humour Unit 2 WIT AND HUMOUR Animals, Birds, and Dr.",
                     "How do people usually spend time with a pet or domestic animal?",
@@ -185,8 +187,10 @@
             "subject": "English",
             "chapter_title": "Wit and Humour",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.832133"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Wit and Humour.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Wit and Humour Unit 2 WIT AND HUMOUR Animals, Birds, and Dr.",
-                            "How do people usually spend time with a pet or domestic animal?",
-                            "If you had a chance to communicate with an animal or a bird, who would you like to speak to and why?",
-                            "III If we closely observe the body language of animals and birds, we can understand what they want to tell us.",
-                            "Find out what emotions these animals and birds are trying to convey."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "In Chapter 102, 'Wit and Humour', we explore the fascinating world of wit and humor. This chapter often delves into how clever words, lighthearted jokes, and witty observations play a crucial role in human communication, social interaction, and entertainment. We examine different types of humor—from slapstick and irony to satire—and analyze why people find humor funny. The chapter likely uses literature (like poems or anecdotes) or real-life examples to illustrate the power of language to connect and entertain. It highlights the intelligence behind saying the right thing at the right time, emphasizing how humor can be a tool for social commentary, and how it shapes our perception of the world. The core idea is that humor isn't just a break from seriousness; it's a form of deep understanding and social intelligence.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "English",
             "chapter_title": "Wit and Humour",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.832153"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gepr102_c01",
-                        "name": "Wit and Humour",
-                        "definition": "Central learning focus of Wit and Humour.",
-                        "source_evidence": "Wit and Humour Unit 2 WIT AND HUMOUR Animals, Birds, and Dr."
-                    },
-                    {
-                        "id": "gepr102_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "How do people usually spend time with a pet or domestic animal?"
-                    },
-                    {
-                        "id": "gepr102_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "If you had a chance to communicate with an animal or a bird, who would you like to speak to and why?"
-                    }
+                    "Definition and types of wit and humour (e.g., irony, satire, puns, satire)",
+                    "Identifying humorous situations and punchlines in literature",
+                    "Analyse the role of humour in character development and plot advancement",
+                    "Understanding different tones and styles of humour (light-hearted, dark, sophisticated)",
+                    "Exploring the relationship between wit, intelligence, and social commentary"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +295,10 @@
             "subject": "English",
             "chapter_title": "Wit and Humour",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.832171"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +332,44 @@
                         "from": "gepr102_c02",
                         "to": "gepr102_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_topic": "Wit and Humour",
+                "branches": [
+                    {
+                        "topic": "Types of Humour",
+                        "sub-topics": [
+                            "Wit",
+                            "Humour",
+                            "Irony",
+                            "Satire",
+                            "Wit in Dialogue"
+                        ]
+                    },
+                    {
+                        "topic": "Analysis of Humour",
+                        "sub-topics": [
+                            "Character Development",
+                            "Plot Advancement",
+                            "Social Commentary",
+                            "Tone"
+                        ]
+                    },
+                    {
+                        "topic": "Literary Devices",
+                        "sub-topics": [
+                            "Puns",
+                            "Sarcasm",
+                            "Exaggeration"
+                        ]
+                    },
+                    {
+                        "topic": "Contextual Understanding",
+                        "sub-topics": [
+                            "Cultural References",
+                            "Historical Humour",
+                            "Figurative Language"
+                        ]
                     }
                 ]
             },
@@ -490,8 +465,10 @@
             "subject": "English",
             "chapter_title": "Wit and Humour",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.832124"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +477,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to Wit and Humour.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Wit and Humour supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Chapter 102, 'Wit and Humour', is a captivating piece that revolves around a central conflict or interaction where clever wordplay and lighthearted humour take center stage. The story typically features characters whose personalities are defined by their quick minds and the ability to deliver sharp remarks. The explanation should focus on the narrative flow: introducing the characters, setting the scene, the main events that drive the humour, and the progression towards the resolution. Key aspects to highlight include:\n\n1.  **Character Dynamics:** Describe the personalities of the characters, emphasizing how their contrasting or complementary personalities amplify the humorous situations. (e.g., the sharp-tongued friend vs. the slow-witted observer). \n2.  **The Nature of the Wit:** Detail the types of wit displayed—whether it is verbal sparring, situational irony, or the clever use of metaphors. Provide specific examples of the dialogue that exemplify the 'wit' central theme.\n3.  **Humorous Situations:** Elaborate on the plot moments that are inherently comical. These are the scenarios where the characters' quick-thinking responses lead to unexpected and amusing outcomes. \n4.  **The Theme of Humour:** Analyze why the author chose humour as a vehicle. Does the humour serve to critique society, bring relief from seriousness, or build stronger bonds between the characters? Explain how the humor helps reveal deeper truths about the characters or the setting.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1072,10 @@
             "subject": "English",
             "chapter_title": "Wit and Humour",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.832145"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1087,25 @@
             "content": {
                 "items": [
                     {
-                        "id": "gepr102_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Wit and Humour'?",
+                        "type": "Multiple Choice",
+                        "question": "Which literary device involves using words to express an idea by using unfamiliar meanings?",
                         "options": [
-                            "Wit and Humour Unit 2 WIT AND HUMOUR Animals, Birds, and Dr.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Irony",
+                            "Satire",
+                            "Metaphor",
+                            "Pun"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Wit and Humour Unit 2 WIT AND HUMOUR Animals, Birds, and Dr.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr102_c01"
+                        "answer": "Pun"
                     },
                     {
-                        "id": "gepr102_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Wit and Humour'?",
-                        "options": [
-                            "How do people usually spend time with a pet or domestic animal?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "How do people usually spend time with a pet or domestic animal?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr102_c01"
+                        "type": "Short Answer",
+                        "question": "Define 'wit' and provide one example from the chapter.",
+                        "answer": "Wit is clever and quick, inventive verbal humour. (Example: [Insert relevant example from the chapter])"
                     },
                     {
-                        "id": "gepr102_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Wit and Humour'?",
-                        "options": [
-                            "If you had a chance to communicate with an animal or a bird, who would you like to speak to and why?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "If you had a chance to communicate with an animal or a bird, who would you like to speak to and why?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Wit and Humour'?",
-                        "options": [
-                            "III If we closely observe the body language of animals and birds, we can understand what they want to tell us.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "III If we closely observe the body language of animals and birds, we can understand what they want to tell us.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Wit and Humour'?",
-                        "options": [
-                            "Find out what emotions these animals and birds are trying to convey.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Find out what emotions these animals and birds are trying to convey.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Wit and Humour'?",
-                        "options": [
-                            "Share your observations with your classmates and the teacher.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Share your observations with your classmates and the teacher.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Wit and Humour'?",
-                        "options": [
-                            "“Why don’t you give up being a people’s doctor, and be an animal doctor?” asked the Cat’s-food-Man.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "“Why don’t you give up being a people’s doctor, and be an animal doctor?” asked the Cat’s-food-Man.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Wit and Humour'?",
-                        "options": [
-                            "The parrot, Polynesia, was sitting in the window looking out at the rain and singing a sailor song to herself.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The parrot, Polynesia, was sitting in the window looking out at the rain and singing a sailor song to herself.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gepr102_c01"
+                        "type": "True/False",
+                        "question": "Humour in literature is solely used for entertainment and has no deeper meaning.",
+                        "answer": "False"
                     }
                 ]
             },
@@ -1715,8 +1559,10 @@
             "subject": "English",
             "chapter_title": "Wit and Humour",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.832115"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1571,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Wit and Humour' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Wit and Humour Unit 2 WIT AND HUMOUR Animals, Birds, and Dr.",
-                    "How do people usually spend time with a pet or domestic animal?",
-                    "If you had a chance to communicate with an animal or a bird, who would you like to speak to and why?",
-                    "III If we closely observe the body language of animals and birds, we can understand what they want to tell us.",
-                    "Find out what emotions these animals and birds are trying to convey.",
-                    "Share your observations with your classmates and the teacher.",
-                    "“Why don’t you give up being a people’s doctor, and be an animal doctor?” asked the Cat’s-food-Man."
-                ]
-            },
+            "content": "Chapter 102, 'Wit and Humour', is a narrative about the vibrant interplay between intelligence and lighthearted humour. The story centers on [Insert brief plot point, e.g., two friends engaging in a series of verbal challenges or a specific comical mishap]. The central narrative arc follows [Character A] and [Character B] as they utilize their unique forms of wit to navigate [the central conflict/setting], ultimately leading to a resolution that highlights the transformative power of humour. The chapter successfully demonstrates how words, when used intelligently and playfully, can not only entertain but also provide insight into the complex human relationships and the essence of intelligent living.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1621,10 @@
             "subject": "English",
             "chapter_title": "Wit and Humour",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.832163"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1636,19 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gepr102_fc01",
-                        "front": "What should you remember from Wit and Humour?",
-                        "back": "Wit and Humour Unit 2 WIT AND HUMOUR Animals, Birds, and Dr.",
-                        "concept_id": "gepr102_c01"
+                        "term": "Irony",
+                        "definition": "A literary device where the intended meaning is the opposite of the actual meaning.",
+                        "example": "Sarcasm is a type of verbal irony."
                     },
                     {
-                        "id": "gepr102_fc02",
-                        "front": "What should you remember from Wit and Humour?",
-                        "back": "How do people usually spend time with a pet or domestic animal?",
-                        "concept_id": "gepr102_c01"
+                        "term": "Satire",
+                        "definition": "Humorous or critical commentary on human behaviour, typically aimed at correcting vices or foolish behaviour.",
+                        "example": "Using exaggerated descriptions to mock a social trend."
                     },
                     {
-                        "id": "gepr102_fc03",
-                        "front": "What should you remember from Wit and Humour?",
-                        "back": "If you had a chance to communicate with an animal or a bird, who would you like to speak to and why?",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_fc04",
-                        "front": "What should you remember from Wit and Humour?",
-                        "back": "III If we closely observe the body language of animals and birds, we can understand what they want to tell us.",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_fc05",
-                        "front": "What should you remember from Wit and Humour?",
-                        "back": "Find out what emotions these animals and birds are trying to convey.",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_fc06",
-                        "front": "What should you remember from Wit and Humour?",
-                        "back": "Share your observations with your classmates and the teacher.",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_fc07",
-                        "front": "What should you remember from Wit and Humour?",
-                        "back": "“Why don’t you give up being a people’s doctor, and be an animal doctor?” asked the Cat’s-food-Man.",
-                        "concept_id": "gepr102_c01"
-                    },
-                    {
-                        "id": "gepr102_fc08",
-                        "front": "What should you remember from Wit and Humour?",
-                        "back": "The parrot, Polynesia, was sitting in the window looking out at the rain and singing a sailor song to herself.",
-                        "concept_id": "gepr102_c01"
+                        "term": "Punchline",
+                        "definition": "The climax or sudden twist of a joke or humorous story.",
+                        "example": "In a joke, the punchline is the last part that delivers the humorous effect."
                     }
                 ]
             },

@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "Earth, Moon, and the Sun",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.259184"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Earth, Moon, and the Sun.",
+                "overview": "Earth, Moon, and the Sun form our solar system. This chapter explores the fundamental relationship between these three celestial bodies, focusing on their gravitational interactions, the formation of the Moon, the rotation and revolution of Earth, and the cycles that govern them. Understanding these dynamics provides a comprehensive view of our local universe.",
                 "source_grounded_key_points": [
                     "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
                     "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
@@ -313,8 +315,10 @@
             "subject": "Science",
             "chapter_title": "Earth, Moon, and the Sun",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.259232"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +330,36 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu112_c01",
-                        "name": "Earth, Moon, and the Sun",
-                        "definition": "Central learning focus of Earth, Moon, and the Sun.",
-                        "source_evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school."
+                        "name": "Earth: The Third Planet",
+                        "description": "An overview of the Earth, including its position in the solar system, rotation, and revolution around the Sun."
                     },
                     {
-                        "id": "gecu112_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations."
+                        "name": "Rotation of the Earth",
+                        "description": "The process of the Earth spinning on its axis, leading to day and night."
                     },
                     {
-                        "id": "gecu112_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back."
+                        "name": "Revolution of the Earth",
+                        "description": "The process of the Earth moving around the Sun, leading to the year and the change of seasons."
+                    },
+                    {
+                        "name": "Natural Satellites of Earth",
+                        "description": "Introduction to the Moon and its relationship with the Earth."
+                    },
+                    {
+                        "name": "The Moon: Characteristics",
+                        "description": "Physical features of the Moon, such as its surface, appearance, and phases."
+                    },
+                    {
+                        "name": "Phases of the Moon",
+                        "description": "The different stages in which the Moon appears due to the changing angles between the Sun, Earth, and Moon."
+                    },
+                    {
+                        "name": "Earth's Seasons",
+                        "description": "Explanation of how the tilt of the Earth causes the seasons."
+                    },
+                    {
+                        "name": "The Sun: Source of Light and Heat",
+                        "description": "The Sun's role as the central star in our solar system and its impact on Earth's climate."
                     }
                 ]
             },
@@ -360,8 +378,10 @@
             "subject": "Science",
             "chapter_title": "Earth, Moon, and the Sun",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.259247"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +416,42 @@
                         "to": "gecu112_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Earth": {
+                    "main_branches": [
+                        "Rotation"
+                    ],
+                    "sub_branches": [
+                        {
+                            "name": "Day and Night"
+                        }
+                    ]
+                },
+                "Solar System": {
+                    "main_branches": [
+                        "Sun",
+                        "Planets"
+                    ],
+                    "sub_branches": [
+                        {
+                            "name": "Orbit"
+                        }
+                    ]
+                },
+                "Earth and Moon System": {
+                    "main_branches": [
+                        "Earth",
+                        "Moon"
+                    ],
+                    "sub_branches": [
+                        {
+                            "name": "Tides"
+                        },
+                        {
+                            "name": "Earth's Movement"
+                        }
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +545,10 @@
             "subject": "Science",
             "chapter_title": "Earth, Moon, and the Sun",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.259212"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +557,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Earth, Moon, and the Sun.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Earth, Moon, and the Sun supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Our story begins with the Sun, a giant star at the center of our solar system, providing the light and heat necessary for life on Earth. Earth, a rocky planet orbiting the Sun, is constantly revolving around it. The Moon, Earth's natural satellite, is gravitationally bound to Earth. The gravitational pull between the Sun and Earth keeps the Earth in orbit, while the gravitational pull between Earth and the Moon keeps the Moon in its place. Every month, the Moon appears to change shape (phases) as it orbits the Earth relative to the Sun. Furthermore, the continuous rotation of the Earth on its axis gives us day and night. This relationship is intricate: the Sun drives the cycle of seasons, the Earth rotates daily, and the Moon interacts with Earth's rotation to create the tides.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1152,10 @@
             "subject": "Science",
             "chapter_title": "Earth, Moon, and the Sun",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.259224"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1167,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu112_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
+                        "type": "Multiple Choice",
+                        "question": "Which celestial body is at the center of our solar system?",
                         "options": [
-                            "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu112_c01"
+                            "Earth",
+                            "Moon",
+                            "Sun",
+                            "Mars",
+                            "Jupiter"
+                        ]
                     },
                     {
-                        "id": "gecu112_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-                        "options": [
-                            "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu112_c01"
+                        "type": "True/False",
+                        "question": "The Moon produces its own light.",
+                        "answer": "False",
+                        "explanation": "The Moon reflects light from the Sun."
                     },
                     {
-                        "id": "gecu112_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-                        "options": [
-                            "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu112_c01"
+                        "type": "Fill in the Blank",
+                        "question": "The time it takes the Earth to complete one revolution around the Sun is called the ______.",
+                        "answer": "Year"
                     },
                     {
-                        "id": "gecu112_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-                        "options": [
-                            "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu112_c01"
-                    },
-                    {
-                        "id": "gecu112_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-                        "options": [
-                            "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu112_c01"
-                    },
-                    {
-                        "id": "gecu112_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-                        "options": [
-                            "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu112_c01"
-                    },
-                    {
-                        "id": "gecu112_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-                        "options": [
-                            "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu112_c01"
-                    },
-                    {
-                        "id": "gecu112_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Earth, Moon, and the Sun'?",
-                        "options": [
-                            " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu112_c01"
+                        "type": "Short Answer",
+                        "question": "What causes the occurrence of day and night?"
                     }
                 ]
             },
@@ -1715,8 +1644,10 @@
             "subject": "Science",
             "chapter_title": "Earth, Moon, and the Sun",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.259204"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1656,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Earth, Moon, and the Sun' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-                    "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-                    "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-                    "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-                    "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-                    "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-                    "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig."
-                ]
-            },
+            "content": "Earth, Moon, and the Sun are interconnected by gravity, forming a dynamic system. The Sun is the central source of energy, the Earth orbits the Sun, and the Moon orbits the Earth. The Moon's phases are a direct result of its orbital position relative to the Sun and Earth. Earth's rotation provides the cycle of day and night, and the Moon's gravitational influence with Earth causes ocean tides. This chapter highlights the fundamental physical principles (gravity and orbital mechanics) that dictate the movement and appearance of these celestial bodies.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1706,10 @@
             "subject": "Science",
             "chapter_title": "Earth, Moon, and the Sun",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.259240"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1721,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu112_fc01",
-                        "front": "What should you remember from Earth, Moon, and the Sun?",
-                        "back": "Earth, Moon, and 12 the Sun One morning in Kanniyakumari, Tamil Nadu, 12-year-old Rashmika was eagerly cycling to school.",
-                        "concept_id": "gecu112_c01"
+                        "term": "Rotation",
+                        "term_name": "Rotation",
+                        "definition": "The spinning of the Earth on its axis."
                     },
                     {
-                        "id": "gecu112_fc02",
-                        "front": "What should you remember from Earth, Moon, and the Sun?",
-                        "back": "That was the day her science teacher had dedicated a class for students to share and try to explain interesting observations.",
-                        "concept_id": "gecu112_c01"
+                        "term": "Revolution",
+                        "term_name": "Revolution",
+                        "definition": "The movement of the Earth around the Sun."
                     },
                     {
-                        "id": "gecu112_fc03",
-                        "front": "What should you remember from Earth, Moon, and the Sun?",
-                        "back": "Rashmika had been noticing that the coconut tree shadows were long in the morning but shorter in the afternoon on her way back.",
-                        "concept_id": "gecu112_c01"
+                        "term": "Day and Night",
+                        "term_name": "Day and Night",
+                        "definition": "The result of the Earth's rotation on its axis."
                     },
                     {
-                        "id": "gecu112_fc04",
-                        "front": "What should you remember from Earth, Moon, and the Sun?",
-                        "back": "She thought about it and decided that the size of the shadows changed because the Sun moved across the sky during the day.",
-                        "concept_id": "gecu112_c01"
-                    },
-                    {
-                        "id": "gecu112_fc05",
-                        "front": "What should you remember from Earth, Moon, and the Sun?",
-                        "back": "But she also remembered learning that the Earth moved around the Sun (in chapter ‘Beyond Earth’ in the Grade 6 Science textbook Curiosity) so she was puzzled.",
-                        "concept_id": "gecu112_c01"
-                    },
-                    {
-                        "id": "gecu112_fc06",
-                        "front": "What should you remember from Earth, Moon, and the Sun?",
-                        "back": "Have you ever enjoyed riding a merry-go-round at a park or at your school?",
-                        "concept_id": "gecu112_c01"
-                    },
-                    {
-                        "id": "gecu112_fc07",
-                        "front": "What should you remember from Earth, Moon, and the Sun?",
-                        "back": "Activity 12.1: Let us explore  Sit on a merry-go-round facing towards the outer side as shown in Fig.",
-                        "concept_id": "gecu112_c01"
-                    },
-                    {
-                        "id": "gecu112_fc08",
-                        "front": "What should you remember from Earth, Moon, and the Sun?",
-                        "back": " Ask someone to turn the merry-go- round slowly in the anti-clockwise direction as shown in Fig.",
-                        "concept_id": "gecu112_c01"
+                        "term": "Phases of the Moon",
+                        "term_name": "Phases of the Moon",
+                        "definition": "The changing appearance of the Moon due to the changing angle between the Sun, Earth, and Moon."
                     }
                 ]
             },

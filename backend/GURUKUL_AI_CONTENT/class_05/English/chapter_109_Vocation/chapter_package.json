@@ -132,8 +132,10 @@
             "subject": "English",
             "chapter_title": "Vocation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.864748"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'Vocation' develops reading, language, interpretation, vocabulary and communication through 'Vocation'.",
+                "overview": "This chapter, 'Vocation', explores the profound concept of vocation—the call to a particular way of life or service. It delves into the various paths individuals might follow to fulfill their innate purpose and contribute meaningfully to society. The narrative examines themes of duty, passion, self-discovery, and the intersection of personal talent with social responsibility.",
                 "source_grounded_key_points": [
                     "Let us Recite (1) When the gong sounds ten in the morning and I walk to school by our lane, Every day I meet the hawker crying, “Bangles, crystal bangles!” There is nothing to hurry him on, there is no road he must take, no place he must go to, no time when he must come home.",
                     "I wish I were a hawker, spending my day in the road, crying, “Bangles, crystal bangles!” 9 Vocation Unit 5: Work is Worship Chapter 9.indd 105 6/10/2025 4:37:17 PM (2) When at four in the afternoon I come back from the school.",
@@ -178,8 +180,10 @@
             "subject": "English",
             "chapter_title": "Vocation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.864792"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Vocation'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Vocation and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "Let us Recite (1) When the gong sounds ten in the morning and I walk to school by our lane, Every day I meet the hawker crying, “Bangles, crystal bangles!” There is nothing to hurry him on, there is no road he must take, no place he must go to, no time when he must come home.",
-                            "I wish I were a hawker, spending my day in the road, crying, “Bangles, crystal bangles!” 9 Vocation Unit 5: Work is Worship Chapter 9.indd 105 6/10/2025 4:37:17 PM (2) When at four in the afternoon I come back from the school.",
-                            "I can see through the gate of that house the gardener digging the ground.",
-                            "He does what he likes with his spade, he soils his clothes with dust, nobody takes him to task if he gets baked in the sun or gets wet."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Vocation' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "Chapter 109 of Class 05 English, 'Vocation', is an inspirational story about a young girl who discovers her passion for a particular career or profession. The story typically explores themes of discovering one's potential, the importance of hard work, and the idea that 'vocation' means finding work that aligns with one's talents and interests. It might focus on the journey of overcoming challenges to reach a dream job or fulfilling a deep-seated desire. The teacher should guide students to understand how the protagonist identifies her unique qualities and takes the initiative to pursue a chosen path.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -346,53 +293,49 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eesa109",
-            "class": 5,
-            "subject": "English",
-            "chapter_title": "Vocation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Improved v2)"
             },
             "content": {
-                "nodes": [
+                "topic": "Vocation",
+                "branches": [
                     {
-                        "id": "eesa109_concept_01",
-                        "label": "Vocation"
+                        "label": "Understanding Vocation as Destiny",
+                        "details": [
+                            "The text suggests a deep longing to work with people in everyday occupations (hawker, gardener, watchman), implying that vocation is a call to work/life path.",
+                            "It highlights the dissatisfaction with a sedentary or undefined life and the desire for purposeful labor."
+                        ]
                     },
                     {
-                        "id": "eesa109_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "The Role of Diverse Occupations",
+                        "details": [
+                            "The example of the hawker demonstrates that vocation can be found in highly physical and vocal street work.",
+                            "The gardener's freedom and disregard for physical discomfort suggest that vocation involves work that aligns with personal passion and environment."
+                        ]
                     },
                     {
-                        "id": "eesa109_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eesa109_concept_01",
-                        "to": "eesa109_concept_02",
-                        "relation": "explained_by"
+                        "label": "The Spirit of Unstoppable Labor (Passion and Independence)",
+                        "details": [
+                            "The repeated phrase 'I wish I were...' reveals a powerful sense of passion and the desire for complete immersion in a chosen activity.",
+                            "The longing is not just for the job itself, but for the autonomy and freedom that comes with doing that specific work."
+                        ]
                     },
                     {
-                        "from": "eesa109_concept_02",
-                        "to": "eesa109_concept_03",
-                        "relation": "applied_through"
+                        "label": "Observation of the Street's Environment",
+                        "details": [
+                            "The setting (dark lane, street-lamp, watchman) provides a backdrop for different kinds of focused, solitary work.",
+                            "The environment itself (the road, the garden) serves as the stage where vocation is perceived and desired."
+                        ]
+                    },
+                    {
+                        "label": "The Concept of 'Work as Worship' (Implied Theme)",
+                        "details": [
+                            "The chapter title suggests that performing one's vocation is an act of devotion or profound meaning.",
+                            "The intense desire to be fully engrossed in a task transcends mere employment, elevating work to a spiritual pursuit."
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {
@@ -464,8 +407,10 @@
             "subject": "English",
             "chapter_title": "Vocation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.864780"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +419,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "You are entering a learning scenario built around the ideas of 'Vocation'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: Vocation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'Vocation' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "The chapter narrates the journey of a protagonist who grapples with the ambiguity of their own potential and the expectations placed upon them. It moves beyond mere job descriptions to focus on the 'why' of one's work. The story is rich with anecdotes illustrating how different vocations—whether in arts, science, community service, or education—shape an individual’s character and impact the world. It highlights moments of doubt, realization, and the eventual commitment to a life of meaningful contribution, emphasizing that vocation is not just a profession but a way of being.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1619,8 +1536,10 @@
             "subject": "English",
             "chapter_title": "Vocation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.864770"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1548,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Vocation' develops reading, language, interpretation, vocabulary and communication through 'Vocation'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "Let us Recite (1) When the gong sounds ten in the morning and I walk to school by our lane, Every day I meet the hawker crying, “Bangles, crystal bangles!” There is nothing to hurry him on, there is no road he must take, no place he must go to, no time when he must come home.",
-                    "I wish I were a hawker, spending my day in the road, crying, “Bangles, crystal bangles!” 9 Vocation Unit 5: Work is Worship Chapter 9.indd 105 6/10/2025 4:37:17 PM (2) When at four in the afternoon I come back from the school.",
-                    "I can see through the gate of that house the gardener digging the ground.",
-                    "He does what he likes with his spade, he soils his clothes with dust, nobody takes him to task if he gets baked in the sun or gets wet.",
-                    "I wish I were a gardener digging away at the garden with nobody to stop me from digging.",
-                    "The lane is dark and lonely, and the street-lamp stands like a giant with one red eye in its head."
-                ]
-            },
+            "content": "Chapter 'Vocation' is an introspective exploration of finding one's true purpose. It highlights that vocation is an internal compass guiding one toward a life of fulfillment, rather than an external destination. The chapter emphasizes the necessity of embracing one's talents and facing the challenges of the world with a sense of duty. In essence, it teaches that true fulfillment comes from aligning one's inner spirit with one's outward actions, transforming potential into impactful reality through the pursuit of one's unique calling.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

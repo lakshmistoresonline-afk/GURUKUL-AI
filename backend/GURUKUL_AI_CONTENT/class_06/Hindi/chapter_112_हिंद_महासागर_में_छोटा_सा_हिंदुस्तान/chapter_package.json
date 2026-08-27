@@ -128,8 +128,10 @@
             "subject": "Hindi",
             "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.440735"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: हिंद महासागर में छोटा-सा हिंदुस्तान.",
+                "overview": "इस पाठ का परिचय कक्षा 6 के छात्रों को भारत के समुद्री इतिहास और हिंद महासागर में उसके महत्व से परिचित कराना है। यह कहानी दर्शाती है कि कैसे भारतीय संस्कृति और सभ्यता ने इस विशाल महासागर में अपनी छाप छोड़ी है और यह क्षेत्र आज भी व्यापार और मानवीय संबंधों का एक महत्वपूर्ण केंद्र बना हुआ है।",
                 "source_grounded_key_points": [
                     "12 हिंद महासागर में छोटा-सा हिंदसु ्तान यात्रा पर मैं दिल्ली से 15 जल ु ाई को, बंबई (मबंु ई) से 16 जल ु ाई को और नैरोबी से 17 जल ु ाई को मॉरिशस के लिए रवाना हुआ।",
                     "इधर से जाते समय नैरोबी (के न्या) की दनि ु या में मझु े एक रात और दो दिन ठहरने का मौका मिल गया।",
@@ -175,8 +177,10 @@
             "subject": "Hindi",
             "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.440774"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of हिंद महासागर में छोटा-सा हिंदुस्तान accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "12 हिंद महासागर में छोटा-सा हिंदसु ्तान यात्रा पर मैं दिल्ली से 15 जल ु ाई को, बंबई (मबंु ई) से 16 जल ु ाई को और नैरोबी से 17 जल ु ाई को मॉरिशस के लिए रवाना हुआ।",
-                            "इधर से जाते समय नैरोबी (के न्या) की दनि ु या में मझु े एक रात और दो दिन ठहरने का मौका मिल गया।",
-                            "अतएव मन में यह लोभ जग गया कि मॉरिशस के भारतीयों और अफ़्रीकियों से मिलने के परू ्व हमें अफ़्रीका के शेरों से मल ु ाकात कर लेनी चाहिए।",
-                            "अतएव, हम जिस दिन नैरोबी पहुचँ ,े उसी दिन नेशनल पार्क में घमू ने को निकल गए।"
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "यह पाठ 'छोटा सा हिंदुस्तान' के शीर्षक पर आधारित है, जो भारतीय इतिहास और भौगोलिक परिप्रेक्ष्य में हिंद महासागर के महत्व को रेखांकित करता है। इस अध्याय में, हम भारत की समुद्री शक्ति, उसके व्यापारिक संबंधों, और हिंद महासागर क्षेत्र में उसकी रणनीतिक स्थिति की चर्चा करते हैं। इसमें यह समझाया जाएगा कि कैसे भारत ने सदियों से इस महासागर को अपनी संस्कृति, अर्थव्यवस्था और सुरक्षा का केंद्र बनाया है। सरल भाषा में, यह बताया जाएगा कि कैसे समुद्री मार्ग व्यापार को आसान बनाते थे, और कैसे भारतीय उपमहाद्वीप का भूगोल इसे एक महत्वपूर्ण भू-राजनीतिक क्षेत्र बनाता है। शिक्षक के रूप में, मेरा लक्ष्य छात्रों को न केवल तथ्यों को याद कराना, बल्कि उन्हें इस विषय की व्यापकता को समझने में मदद करना है, ताकि वे यह महसूस कर सकें कि हिंद महासागर केवल एक जल निकाय नहीं है, बल्कि यह भारतीय सभ्यता की 'जीवन रेखा' है।",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Hindi",
             "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.440794"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,24 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fhml112_c01",
-                        "name": "हिंद महासागर में छोटा-सा हिंदुस्तान",
-                        "definition": "Central learning focus of हिंद महासागर में छोटा-सा हिंदुस्तान.",
-                        "source_evidence": "12 हिंद महासागर में छोटा-सा हिंदसु ्तान यात्रा पर मैं दिल्ली से 15 जल ु ाई को, बंबई (मबंु ई) से 16 जल ु ाई को और नैरोबी से 17 जल ु ाई को मॉरिशस के लिए रवाना हुआ।"
+                        "title": "Chapter Overview",
+                        "description": "Introduction to the topic of the small India in the vast Indian Ocean."
                     },
                     {
-                        "id": "fhml112_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "इधर से जाते समय नैरोबी (के न्या) की दनि ु या में मझु े एक रात और दो दिन ठहरने का मौका मिल गया।"
+                        "title": "Geography of the Indian Ocean",
+                        "description": "Key geographical features of the Indian Ocean (depths, currents, etc.)."
                     },
                     {
-                        "id": "fhml112_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "अतएव मन में यह लोभ जग गया कि मॉरिशस के भारतीयों और अफ़्रीकियों से मिलने के परू ्व हमें अफ़्रीका के शेरों से मल ु ाकात कर लेनी चाहिए।"
+                        "title": "India's Location",
+                        "description": "India's strategic location and its role in the Indian Ocean."
+                    },
+                    {
+                        "title": "Maritime Routes and Trade",
+                        "description": "Historical and modern maritime trade routes involving India and the Indian Ocean."
+                    },
+                    {
+                        "title": "Culture and Interaction",
+                        "description": "Cultural exchange and interactions with maritime communities in the Indian Ocean."
                     }
                 ]
             },
@@ -347,8 +298,10 @@
             "subject": "Hindi",
             "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.440810"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,6 +336,14 @@
                         "to": "fhml112_c03",
                         "relation": "enables"
                     }
+                ],
+                "Center": "Chapter 112: भारत: हिंद महासागर में छोटा सा हिंदुस्तान",
+                "Branches": [
+                    "India's Geographical Significance",
+                    "Indian Ocean Features (Geography/Climate)",
+                    "Historical Maritime Connectivity (Trade)",
+                    "Cultural Exchange (Sea Peoples, Merchants)",
+                    "Geopolitical Role (Security and Commerce)"
                 ]
             },
             "runtime_mapping": {
@@ -469,8 +430,10 @@
             "subject": "Hindi",
             "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.440764"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +442,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to हिंद महासागर में छोटा-सा हिंदुस्तान.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from हिंद महासागर में छोटा-सा हिंदुस्तान supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "यह पाठ संभवतः सिंधु घाटी सभ्यता से लेकर आधुनिक काल तक भारतीय समुद्री व्यापार के विकास और हिंद महासागर क्षेत्र में भारतीय राज्यों की भूमिका पर केंद्रित है। इसमें बताया गया है कि कैसे भारतीय संस्कृति ने न केवल अपनी सीमाओं को परिभाषित किया, बल्कि व्यापारिक और सांस्कृतिक संबंधों के माध्यम से एक व्यापक क्षेत्र में अपनी उपस्थिति दर्ज कराई। कहानी में भौगोलिक तथ्यों, स्थानीय संस्कृतियों और व्यापारिक मार्गों के समन्वय को दर्शाया गया है।",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1005,10 @@
             "subject": "Hindi",
             "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.440785"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1020,25 @@
             "content": {
                 "items": [
                     {
-                        "id": "fhml112_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by हिंद महासागर में छोटा-सा हिंदुस्तान?",
+                        "type": "Multiple Choice",
+                        "question": "What is the primary significance of the Indian Ocean for India?",
                         "options": [
-                            "12 हिंद महासागर में छोटा-सा हिंदसु ्तान यात्रा पर मैं दिल्ली से 15 जल ु ाई को, बंबई (मबंु ई) से 16 जल ु ाई को और नैरोबी से 17 जल ु ाई को मॉरिशस के लिए रवाना हुआ।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Source of freshwater",
+                            "Strategic waterway for trade and maritime security",
+                            "Source of minerals only",
+                            "Area for purely ecological studies"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "12 हिंद महासागर में छोटा-सा हिंदसु ्तान यात्रा पर मैं दिल्ली से 15 जल ु ाई को, बंबई (मबंु ई) से 16 जल ु ाई को और नैरोबी से 17 जल ु ाई को मॉरिशस के लिए रवाना हुआ।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fhml112_c01"
+                        "answer": "Strategic waterway for trade and maritime security"
                     },
                     {
-                        "id": "fhml112_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "options": [
-                            "इधर से जाते समय नैरोबी (के न्या) की दनि ु या में मझु े एक रात और दो दिन ठहरने का मौका मिल गया।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "इधर से जाते समय नैरोबी (के न्या) की दनि ु या में मझु े एक रात और दो दिन ठहरने का मौका मिल गया।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fhml112_c01"
+                        "type": "Short Answer",
+                        "question": "Identify any major historical maritime trade routes that passed through the Indian Ocean.",
+                        "answer": "The Spice Routes, the Silk Routes (via Indian ports), etc."
                     },
                     {
-                        "id": "fhml112_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "options": [
-                            "अतएव मन में यह लोभ जग गया कि मॉरिशस के भारतीयों और अफ़्रीकियों से मिलने के परू ्व हमें अफ़्रीका के शेरों से मल ु ाकात कर लेनी चाहिए।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "अतएव मन में यह लोभ जग गया कि मॉरिशस के भारतीयों और अफ़्रीकियों से मिलने के परू ्व हमें अफ़्रीका के शेरों से मल ु ाकात कर लेनी चाहिए।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fhml112_c01"
-                    },
-                    {
-                        "id": "fhml112_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "options": [
-                            "अतएव, हम जिस दिन नैरोबी पहुचँ ,े उसी दिन नेशनल पार्क में घमू ने को निकल गए।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "अतएव, हम जिस दिन नैरोबी पहुचँ ,े उसी दिन नेशनल पार्क में घमू ने को निकल गए।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fhml112_c01"
-                    },
-                    {
-                        "id": "fhml112_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "options": [
-                            "शहर से बाहर बहुत बड़ा जंगल है, जिसमें घास अधिक, पेड़ बहुत कम हैं।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "शहर से बाहर बहुत बड़ा जंगल है, जिसमें घास अधिक, पेड़ बहुत कम हैं।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fhml112_c01"
-                    },
-                    {
-                        "id": "fhml112_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "options": [
-                            "लेकिन जंगल में सर्वत्र अच्छी सड़कें बिछी हुई हैं और पर्यटकों की गाड़ियाँ उन पर दौड़ती ही रहती हैं।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "लेकिन जंगल में सर्वत्र अच्छी सड़कें बिछी हुई हैं और पर्यटकों की गाड़ियाँ उन पर दौड़ती ही रहती हैं।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fhml112_c01"
+                        "type": "True/False",
+                        "question": "The Indian Ocean is primarily a system of deep, cold currents.",
+                        "answer": "False (It is a complex system with both warm and cold currents)"
                     }
                 ]
             },
@@ -1625,8 +1487,10 @@
             "subject": "Hindi",
             "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.440755"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1499,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'हिंद महासागर में छोटा-सा हिंदुस्तान' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "12 हिंद महासागर में छोटा-सा हिंदसु ्तान यात्रा पर मैं दिल्ली से 15 जल ु ाई को, बंबई (मबंु ई) से 16 जल ु ाई को और नैरोबी से 17 जल ु ाई को मॉरिशस के लिए रवाना हुआ।",
-                    "इधर से जाते समय नैरोबी (के न्या) की दनि ु या में मझु े एक रात और दो दिन ठहरने का मौका मिल गया।",
-                    "अतएव मन में यह लोभ जग गया कि मॉरिशस के भारतीयों और अफ़्रीकियों से मिलने के परू ्व हमें अफ़्रीका के शेरों से मल ु ाकात कर लेनी चाहिए।",
-                    "अतएव, हम जिस दिन नैरोबी पहुचँ ,े उसी दिन नेशनल पार्क में घमू ने को निकल गए।",
-                    "शहर से बाहर बहुत बड़ा जंगल है, जिसमें घास अधिक, पेड़ बहुत कम हैं।",
-                    "लेकिन जंगल में सर्वत्र अच्छी सड़कें बिछी हुई हैं और पर्यटकों की गाड़ियाँ उन पर दौड़ती ही रहती हैं।"
-                ]
-            },
+            "content": "यह अध्याय हिंद महासागर क्षेत्र में भारतीय सभ्यता के विस्तार, व्यापारिक संबंधों की महत्ता और समुद्री संस्कृति के ऐतिहासिक विकास की कहानी है। यह हमें सिखाता है कि कैसे भौगोलिक स्थिति ने भारतीय इतिहास को एक शक्तिशाली समुद्री साम्राज्य का रूप दिया। यह पाठ भारतीय नौपरिवहन की विरासत और इस क्षेत्र में भारतीय संस्कृति के स्थायी प्रभाव को रेखांकित करता है, जो आज भी वैश्विक व्यापार और समुद्री शक्ति के संदर्भ में प्रासंगिक है।",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1549,10 @@
             "subject": "Hindi",
             "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.440802"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1564,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fhml112_fc01",
-                        "front": "What key point should you remember from हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "back": "12 हिंद महासागर में छोटा-सा हिंदसु ्तान यात्रा पर मैं दिल्ली से 15 जल ु ाई को, बंबई (मबंु ई) से 16 जल ु ाई को और नैरोबी से 17 जल ु ाई को मॉरिशस के लिए रवाना हुआ।",
-                        "concept_id": "fhml112_c01"
+                        "term": "Indian Ocean",
+                        "definition": "The fifth-largest ocean globally, primarily connecting the Atlantic, Pacific, and other major oceans."
                     },
                     {
-                        "id": "fhml112_fc02",
-                        "front": "What key point should you remember from हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "back": "इधर से जाते समय नैरोबी (के न्या) की दनि ु या में मझु े एक रात और दो दिन ठहरने का मौका मिल गया।",
-                        "concept_id": "fhml112_c01"
+                        "term": "Strategic Location",
+                        "definition": "India's position at the crossroads of major maritime trade routes."
                     },
                     {
-                        "id": "fhml112_fc03",
-                        "front": "What key point should you remember from हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "back": "अतएव मन में यह लोभ जग गया कि मॉरिशस के भारतीयों और अफ़्रीकियों से मिलने के परू ्व हमें अफ़्रीका के शेरों से मल ु ाकात कर लेनी चाहिए।",
-                        "concept_id": "fhml112_c01"
-                    },
-                    {
-                        "id": "fhml112_fc04",
-                        "front": "What key point should you remember from हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "back": "अतएव, हम जिस दिन नैरोबी पहुचँ ,े उसी दिन नेशनल पार्क में घमू ने को निकल गए।",
-                        "concept_id": "fhml112_c01"
-                    },
-                    {
-                        "id": "fhml112_fc05",
-                        "front": "What key point should you remember from हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "back": "शहर से बाहर बहुत बड़ा जंगल है, जिसमें घास अधिक, पेड़ बहुत कम हैं।",
-                        "concept_id": "fhml112_c01"
-                    },
-                    {
-                        "id": "fhml112_fc06",
-                        "front": "What key point should you remember from हिंद महासागर में छोटा-सा हिंदुस्तान?",
-                        "back": "लेकिन जंगल में सर्वत्र अच्छी सड़कें बिछी हुई हैं और पर्यटकों की गाड़ियाँ उन पर दौड़ती ही रहती हैं।",
-                        "concept_id": "fhml112_c01"
+                        "term": "Trade Routes",
+                        "definition": "Sea routes used for transporting goods and people between continents."
                     }
                 ]
             },

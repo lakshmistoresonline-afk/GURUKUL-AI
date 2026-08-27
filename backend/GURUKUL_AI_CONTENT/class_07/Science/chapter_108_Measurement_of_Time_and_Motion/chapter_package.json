@@ -185,8 +185,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Time and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.218016"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +197,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Measurement of Time and Motion.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Measurement of 8 Time and Motion Prerna and her younger sister are watching a sports channel on television.",
-                            "Prerna enjoys running and she has been declared the fastest runner among the girls in her district for winning the 100 metre sprint at an interschool competition held at the district level.",
-                            "She dreams of representing India at the international level in 100 metre sprint contests in future.",
-                            "While watching the rerun of sprints at the Olympic games held in the past, Prerna is always amazed that the measurement of the time taken for the race is so advanced that they could identify the winner even when two sprinters seemed to cross the ﬁnish line almost together.",
-                            "However, in her school, the sports teacher only used a special kind of watch called a ‘stopwatch’ for timing the school races."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Class 07 Science, Chapter 108 focuses on the measurement of time and motion. The chapter begins by introducing the basic units of time like seconds, minutes, hours, and days, and then explores the need for standardized measurements. A major part involves understanding speed, displacement, and distance, and the relationship between them. Concepts like calculating uniform speed (distance/time) and interpreting time intervals in motion are central. The chapter emphasizes practical applications and the use of instruments like stopwatches and measuring tapes to quantify motion accurately.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +257,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Time and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.218049"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +272,44 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu108_c01",
-                        "name": "Measurement of Time and Motion",
-                        "definition": "Central learning focus of Measurement of Time and Motion.",
-                        "source_evidence": "Measurement of 8 Time and Motion Prerna and her younger sister are watching a sports channel on television."
+                        "term": "Types of Time",
+                        "description": "Classification of time including ordinary, proper, and absolute time."
                     },
                     {
-                        "id": "gecu108_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Prerna enjoys running and she has been declared the fastest runner among the girls in her district for winning the 100 metre sprint at an interschool competition held at the district level."
+                        "term": "Measurement of Time",
+                        "description": "Using clocks, watches, and calendars to quantify time."
                     },
                     {
-                        "id": "gecu108_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "She dreams of representing India at the international level in 100 metre sprint contests in future."
+                        "term": "Units of Time",
+                        "description": "Standard units like second, minute, hour, day, week, month, year."
+                    },
+                    {
+                        "term": "Units of Measurement (Motion)",
+                        "description": "Metric units for measuring distance, speed, and acceleration (meters, km, s, m/s, m/s²)."
+                    },
+                    {
+                        "term": "Concepts of Motion",
+                        "description": "Understanding relative motion, constant velocity, and non-uniform motion."
+                    },
+                    {
+                        "term": "Position",
+                        "description": "The location of an object relative to a reference point."
+                    },
+                    {
+                        "term": "Speed",
+                        "description": "Distance traveled per unit time ($v = d/t$)."
+                    },
+                    {
+                        "term": "Distance",
+                        "description": "The total path covered by an object."
+                    },
+                    {
+                        "term": "Velocity",
+                        "description": "Speed in a given direction."
+                    },
+                    {
+                        "term": "Acceleration",
+                        "description": "The rate of change of velocity ($a = \frac{v - u}{t}$)."
                     }
                 ]
             },
@@ -360,8 +328,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Time and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.218066"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -373,16 +343,34 @@
             "content": {
                 "nodes": [
                     {
-                        "id": "gecu108_c01",
-                        "label": "Measurement of Time and Motion"
+                        "name": "Time",
+                        "sub_nodes": [
+                            "Units of Time",
+                            "Classification of Time"
+                        ]
                     },
                     {
-                        "id": "gecu108_c02",
-                        "label": "Evidence and reasoning"
+                        "name": "Motion",
+                        "sub_nodes": [
+                            "Position",
+                            "Speed",
+                            "Velocity",
+                            "Acceleration"
+                        ]
                     },
                     {
-                        "id": "gecu108_c03",
-                        "label": "Application and transfer"
+                        "name": "Units",
+                        "sub_nodes": [
+                            "Time Units",
+                            "Measurement Units (Distance, Speed, Acceleration)"
+                        ]
+                    },
+                    {
+                        "name": "Kinematics",
+                        "sub_nodes": [
+                            "Constant Velocity Motion",
+                            "Non-uniform Motion"
+                        ]
                     }
                 ],
                 "edges": [
@@ -396,7 +384,8 @@
                         "to": "gecu108_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "root": "Measurement of Time and Motion"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -1123,8 +1112,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Time and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.218040"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1127,33 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu108_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Measurement of Time and Motion'?",
+                        "question": "What is the standard unit of time in the SI system?",
+                        "type": "multiple_choice",
                         "options": [
-                            "Measurement of 8 Time and Motion Prerna and her younger sister are watching a sports channel on television.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Measurement of 8 Time and Motion Prerna and her younger sister are watching a sports channel on television.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu108_c01"
+                            "Minute",
+                            "Hour",
+                            "Second",
+                            "Day"
+                        ]
                     },
                     {
-                        "id": "gecu108_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Measurement of Time and Motion'?",
-                        "options": [
-                            "Prerna enjoys running and she has been declared the fastest runner among the girls in her district for winning the 100 metre sprint at an interschool competition held at the district level.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Prerna enjoys running and she has been declared the fastest runner among the girls in her district for winning the 100 metre sprint at an interschool competition held at the district level.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu108_c01"
+                        "question": "If a car travels 100 meters in 10 seconds, what is its average speed?",
+                        "type": "numerical",
+                        "answer": "10 m/s"
                     },
                     {
-                        "id": "gecu108_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Measurement of Time and Motion'?",
-                        "options": [
-                            "She dreams of representing India at the international level in 100 metre sprint contests in future.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "She dreams of representing India at the international level in 100 metre sprint contests in future.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu108_c01"
+                        "question": "Differentiate between distance and displacement.",
+                        "type": "short_answer",
+                        "keywords": [
+                            "path covered",
+                            "start and end point"
+                        ]
                     },
                     {
-                        "id": "gecu108_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Measurement of Time and Motion'?",
-                        "options": [
-                            "While watching the rerun of sprints at the Olympic games held in the past, Prerna is always amazed that the measurement of the time taken for the race is so advanced that they could identify the winner even when two sprinters seemed to cross the ﬁnish line almost together.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "While watching the rerun of sprints at the Olympic games held in the past, Prerna is always amazed that the measurement of the time taken for the race is so advanced that they could identify the winner even when two sprinters seemed to cross the ﬁnish line almost together.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Measurement of Time and Motion'?",
-                        "options": [
-                            "However, in her school, the sports teacher only used a special kind of watch called a ‘stopwatch’ for timing the school races.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "However, in her school, the sports teacher only used a special kind of watch called a ‘stopwatch’ for timing the school races.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Measurement of Time and Motion'?",
-                        "options": [
-                            "She had noticed her mother wearing a watch on her wrist and her sister looking at her mobile phone when she needed to check the time.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "She had noticed her mother wearing a watch on her wrist and her sister looking at her mobile phone when she needed to check the time.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Measurement of Time and Motion'?",
-                        "options": [
-                            "Her uncle used a Braille watch and had recently acquired a talking watch that announced the time at the touch of a button.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Her uncle used a Braille watch and had recently acquired a talking watch that announced the time at the touch of a button.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Measurement of Time and Motion'?",
-                        "options": [
-                            "There was also a large clock on the wall near the school entrance.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "There was also a large clock on the wall near the school entrance.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu108_c01"
+                        "question": "Define acceleration.",
+                        "type": "true_false",
+                        "statement": "Acceleration is the change in displacement per unit time.",
+                        "answer": "False (It's the change in velocity.)"
                     }
                 ]
             },
@@ -1786,8 +1678,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Time and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.218059"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1693,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu108_fc01",
-                        "front": "What should you remember from Measurement of Time and Motion?",
-                        "back": "Measurement of 8 Time and Motion Prerna and her younger sister are watching a sports channel on television.",
-                        "concept_id": "gecu108_c01"
+                        "term": "Second",
+                        "definition": "The SI unit of time."
                     },
                     {
-                        "id": "gecu108_fc02",
-                        "front": "What should you remember from Measurement of Time and Motion?",
-                        "back": "Prerna enjoys running and she has been declared the fastest runner among the girls in her district for winning the 100 metre sprint at an interschool competition held at the district level.",
-                        "concept_id": "gecu108_c01"
+                        "term": "Meter per Second (m/s)",
+                        "definition": "SI unit of speed."
                     },
                     {
-                        "id": "gecu108_fc03",
-                        "front": "What should you remember from Measurement of Time and Motion?",
-                        "back": "She dreams of representing India at the international level in 100 metre sprint contests in future.",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_fc04",
-                        "front": "What should you remember from Measurement of Time and Motion?",
-                        "back": "While watching the rerun of sprints at the Olympic games held in the past, Prerna is always amazed that the measurement of the time taken for the race is so advanced that they could identify the winner even when two sprinters seemed to cross the ﬁnish line almost together.",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_fc05",
-                        "front": "What should you remember from Measurement of Time and Motion?",
-                        "back": "However, in her school, the sports teacher only used a special kind of watch called a ‘stopwatch’ for timing the school races.",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_fc06",
-                        "front": "What should you remember from Measurement of Time and Motion?",
-                        "back": "She had noticed her mother wearing a watch on her wrist and her sister looking at her mobile phone when she needed to check the time.",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_fc07",
-                        "front": "What should you remember from Measurement of Time and Motion?",
-                        "back": "Her uncle used a Braille watch and had recently acquired a talking watch that announced the time at the touch of a button.",
-                        "concept_id": "gecu108_c01"
-                    },
-                    {
-                        "id": "gecu108_fc08",
-                        "front": "What should you remember from Measurement of Time and Motion?",
-                        "back": "There was also a large clock on the wall near the school entrance.",
-                        "concept_id": "gecu108_c01"
+                        "term": "Velocity",
+                        "definition": "Speed in a specific direction."
                     }
                 ]
             },

@@ -128,8 +128,10 @@
             "subject": "Science",
             "chapter_title": "Living Creatures: Exploring their Characteristics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.655363"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Living Creatures: Exploring their Characteristics.",
+                "overview": "Chapter 110, 'Living Creatures: Exploring their Characteristics,' provides a foundational look into the incredible diversity of life on Earth. This chapter introduces the fundamental properties that define living organisms and the ways in which these characteristics allow different species to adapt to their environments. We explore what makes something 'alive' and the basic structures and functions that underpin all biological systems.",
                 "source_grounded_key_points": [
                     "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents.",
                     "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body.",
@@ -175,8 +177,10 @@
             "subject": "Science",
             "chapter_title": "Living Creatures: Exploring their Characteristics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.655412"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Living Creatures: Exploring their Characteristics accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents.",
-                            "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body.",
-                            "Avadhi and Aayush wonder how the shell that is not even moving could have a living being inside!",
-                            "Later that day in school, Avadhi and Aayush share this incident with their friends."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "Chapter 110, 'Living Creatures: Exploring their Characteristics,' introduces students to the fundamental characteristics that distinguish living organisms from non-living things. The teacher should guide the students through these key characteristics: 1. Organisation (cells), 2. Metabolism (energy processing), 3. Growth and Development, 4. Reproduction, 5. Response to Stimuli, 6. Locomotion, 7. Respiration, 8. Excretion, and 9. Interaction with the Environment. The explanation should emphasize how these characteristics apply to both plants and animals, using examples like a flower, a tree, and an insect to illustrate the concepts.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Science",
             "chapter_title": "Living Creatures: Exploring their Characteristics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.655437"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,12 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fecu110_c01",
-                        "name": "Living Creatures: Exploring their Characteristics",
-                        "definition": "Central learning focus of Living Creatures: Exploring their Characteristics.",
-                        "source_evidence": "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents."
-                    },
-                    {
-                        "id": "fecu110_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body."
-                    },
-                    {
-                        "id": "fecu110_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "Avadhi and Aayush wonder how the shell that is not even moving could have a living being inside!"
-                    }
+                    "Living World",
+                    "Characteristics of Living Things",
+                    "Cell",
+                    "Organ Systems",
+                    "Classification of Living Things",
+                    "Diversity of Life"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +284,10 @@
             "subject": "Science",
             "chapter_title": "Living Creatures: Exploring their Characteristics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.655456"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,6 +322,31 @@
                         "to": "fecu110_c03",
                         "relation": "enables"
                     }
+                ],
+                "Living World": [
+                    "Characteristics of Living Things",
+                    "Diversity of Life",
+                    "Classification of Living Things"
+                ],
+                "Characteristics of Living Things": [
+                    "Metabolism",
+                    "Reproduction",
+                    "Growth",
+                    "Sensitivity",
+                    "Response to Stimuli",
+                    "Respiration",
+                    "Excretion"
+                ],
+                "Classification of Living Things": [
+                    "Kingdoms",
+                    "Phylogenetic relationships"
+                ],
+                "Diversity of Life": [
+                    "Monera",
+                    "Protista",
+                    "Fungi",
+                    "Plantae",
+                    "Animalia"
                 ]
             },
             "runtime_mapping": {
@@ -469,8 +433,10 @@
             "subject": "Science",
             "chapter_title": "Living Creatures: Exploring their Characteristics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.655400"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +445,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Living Creatures: Exploring their Characteristics.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Living Creatures: Exploring their Characteristics supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine a vast, bustling world where everything is constantly interacting. This story starts with the simplest unit of life—the cell—and zooms out to encompass the intricate networks of ecosystems. We follow a hypothetical microbe that must quickly adapt its metabolism when its environment changes (like a sudden change in temperature or food availability). This 'story' illustrates the core principles: an organism needs to consume energy (metabolism), grow and replace itself (reproduction), and react to its surroundings (response). Through this narrative, we see how complex traits emerge and how evolution shapes life, highlighting the balance between internal biological processes and external environmental pressures.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1008,10 @@
             "subject": "Science",
             "chapter_title": "Living Creatures: Exploring their Characteristics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.655428"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1023,14 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu110_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
+                        "question": "What are the 7 main characteristics of living things?",
                         "options": [
-                            "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Growth, Reproduction, Metabolism, Response, Excretion, etc.",
+                            "Movement, Respiration, Nutrition, Sensitivity, etc.",
+                            "Structure, Function, Organization, etc.",
+                            "Energy, Matter, Space, Time, etc."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
-                        "options": [
-                            "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
-                        "options": [
-                            "Avadhi and Aayush wonder how the shell that is not even moving could have a living being inside!",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Avadhi and Aayush wonder how the shell that is not even moving could have a living being inside!",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
-                        "options": [
-                            "Later that day in school, Avadhi and Aayush share this incident with their friends.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Later that day in school, Avadhi and Aayush share this incident with their friends.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
-                        "options": [
-                            "They approach the teacher to understand how a shell which is not even moving could be a body part of a living snail.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They approach the teacher to understand how a shell which is not even moving could be a body part of a living snail.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Living Creatures: Exploring their Characteristics?",
-                        "options": [
-                            "The teacher initiates a discussion in the class on living and non-living.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The teacher initiates a discussion in the class on living and non-living.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu110_c01"
+                        "answer": "Growth, Reproduction, Metabolism, Response, Excretion, etc."
                     }
                 ]
             },
@@ -1625,8 +1479,10 @@
             "subject": "Science",
             "chapter_title": "Living Creatures: Exploring their Characteristics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.655390"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1491,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Living Creatures: Exploring their Characteristics' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents.",
-                    "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body.",
-                    "Avadhi and Aayush wonder how the shell that is not even moving could have a living being inside!",
-                    "Later that day in school, Avadhi and Aayush share this incident with their friends.",
-                    "They approach the teacher to understand how a shell which is not even moving could be a body part of a living snail.",
-                    "The teacher initiates a discussion in the class on living and non-living."
-                ]
-            },
+            "content": "This chapter delves into the defining characteristics of living creatures, focusing on the essential traits that distinguish them from inanimate objects. It establishes that all living things share basic processes like metabolism, homeostasis, and growth. Furthermore, it examines the structural levels of biological organization, from molecular components to complex ecosystems. By exploring how organisms use their unique characteristics to interact with their environment, the chapter provides a comprehensive overview of the diversity and complexity inherent in the living world.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1541,10 @@
             "subject": "Science",
             "chapter_title": "Living Creatures: Exploring their Characteristics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.655448"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1556,12 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu110_fc01",
-                        "front": "What key point should you remember from Living Creatures: Exploring their Characteristics?",
-                        "back": "10 Living Creatures: Exploring Chapter their Characteristics Avadhi and Aayush go for a morning walk with their parents.",
-                        "concept_id": "fecu110_c01"
+                        "term": "Cell",
+                        "definition": "The basic structural and functional unit of all known living organisms."
                     },
                     {
-                        "id": "fecu110_fc02",
-                        "front": "What key point should you remember from Living Creatures: Exploring their Characteristics?",
-                        "back": "Her mother advises her not to do so and explains that the shell could be home to a living snail and is actually a part of its body.",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_fc03",
-                        "front": "What key point should you remember from Living Creatures: Exploring their Characteristics?",
-                        "back": "Avadhi and Aayush wonder how the shell that is not even moving could have a living being inside!",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_fc04",
-                        "front": "What key point should you remember from Living Creatures: Exploring their Characteristics?",
-                        "back": "Later that day in school, Avadhi and Aayush share this incident with their friends.",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_fc05",
-                        "front": "What key point should you remember from Living Creatures: Exploring their Characteristics?",
-                        "back": "They approach the teacher to understand how a shell which is not even moving could be a body part of a living snail.",
-                        "concept_id": "fecu110_c01"
-                    },
-                    {
-                        "id": "fecu110_fc06",
-                        "front": "What key point should you remember from Living Creatures: Exploring their Characteristics?",
-                        "back": "The teacher initiates a discussion in the class on living and non-living.",
-                        "concept_id": "fecu110_c01"
+                        "term": "Characteristics of Living Things",
+                        "definition": "The traits that distinguish living organisms from non-living materials (e.g., metabolism, reproduction, response to stimuli)."
                     }
                 ]
             },

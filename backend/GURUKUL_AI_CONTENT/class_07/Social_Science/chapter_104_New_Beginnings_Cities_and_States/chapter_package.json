@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "New Beginnings: Cities and States",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.302580"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for New Beginnings: Cities and States.",
+                "overview": "Chapter 104, 'New Beginnings: Cities and States,' delves into the foundational role of cities and states in human civilization. It examines how these urban centers and political entities emerged not just as points of residence, but as dynamic hubs of cultural, economic, and political development. The chapter traces the historical evolution from small settlements to complex urban societies and the establishment of organized political units like states. It explores the symbiotic relationship between cities and states, highlighting how urbanization influenced political structures, governance, and the spread of knowledge and innovations.",
                 "source_grounded_key_points": [
                     "4 CHAPTER New Beginnings: Cities and States The kingdom shall be protected by fortifying the capital and the towns at the frontiers.",
                     "The land should not only be capable of sustaining the population but also outsiders in times of calamities.",
@@ -185,8 +187,10 @@
             "subject": "Social Science",
             "chapter_title": "New Beginnings: Cities and States",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.302619"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of New Beginnings: Cities and States.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "4 CHAPTER New Beginnings: Cities and States The kingdom shall be protected by fortifying the capital and the towns at the frontiers.",
-                            "The land should not only be capable of sustaining the population but also outsiders in times of calamities.",
-                            "It should be beautiful, being endowed with cultivable land, mines, timber forests, elephant forests, and good pastures rich in cattle.",
-                            "It should have a productive economy, with a wide variety of commodities ….",
-                            "Ruins of a major structure at Rājagṛiha (modern-day Rajgir in Bihar), when it was the capital of the Magadha mahājanapada."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter introduces the fundamental concepts of cities and states as organized human settlements. A city is a population of people concentrated in a specific area, usually involving more complex social and economic activities than a village. States, in this context, refer to larger political units of territory, often demarcated by borders, which serve as the administrative framework for governing a population. We explore how cities and states have evolved from simpler settlements to complex urban and political entities, examining their importance in human history, culture, and governance. Key aspects covered include urban planning, the growth of metropolitan areas, political organization, and the relationship between urban life and regional identity.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Social Science",
             "chapter_title": "New Beginnings: Cities and States",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.302639"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,32 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gees104_c01",
-                        "name": "New Beginnings: Cities and States",
-                        "definition": "Central learning focus of New Beginnings: Cities and States.",
-                        "source_evidence": "4 CHAPTER New Beginnings: Cities and States The kingdom shall be protected by fortifying the capital and the towns at the frontiers."
+                        "title": "Definition of New Beginnings",
+                        "description": "Understanding the historical and social shift represented by the rise of cities and states as new centers of civilization."
                     },
                     {
-                        "id": "gees104_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "The land should not only be capable of sustaining the population but also outsiders in times of calamities."
+                        "title": "Key Characteristics of Cities",
+                        "description": "Analysis of the features defining urban areas: high population density, specialized labor, complex infrastructure, and cultural diversity."
                     },
                     {
-                        "id": "gees104_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "It should be beautiful, being endowed with cultivable land, mines, timber forests, elephant forests, and good pastures rich in cattle."
+                        "title": "Role of States in Urbanization",
+                        "description": "Examining how political structures (states) influence the growth, organization, and governance of cities."
+                    },
+                    {
+                        "title": "Historical Evolution",
+                        "description": "Tracing the development of cities and states from early settlements to modern metropolitan areas."
+                    },
+                    {
+                        "title": "Socio-Economic Impact",
+                        "description": "Exploring the relationship between city life and economic activities, social stratification, and lifestyle changes."
+                    },
+                    {
+                        "title": "Challenges of Modern Cities",
+                        "description": "Discussion of issues like pollution, overcrowding, social inequality, and the need for sustainable urban planning."
+                    },
+                    {
+                        "title": "Urban Governance and Planning",
+                        "description": "The systems and policies used by states to manage and regulate urban development."
                     }
                 ]
             },
@@ -360,8 +318,10 @@
             "subject": "Social Science",
             "chapter_title": "New Beginnings: Cities and States",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.302656"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -372,18 +332,12 @@
             },
             "content": {
                 "nodes": [
-                    {
-                        "id": "gees104_c01",
-                        "label": "New Beginnings: Cities and States"
-                    },
-                    {
-                        "id": "gees104_c02",
-                        "label": "Evidence and reasoning"
-                    },
-                    {
-                        "id": "gees104_c03",
-                        "label": "Application and transfer"
-                    }
+                    "Definition of City",
+                    "Characteristics of Cities (Population, Labor, Infrastructure)",
+                    "Role of States (Governance, Planning)",
+                    "Economic Impacts (Specialization, Commerce)",
+                    "Socio-Cultural Evolution (Diversity, Lifestyle)",
+                    "Modern Challenges (Pollution, Overcrowding)"
                 ],
                 "edges": [
                     {
@@ -395,6 +349,33 @@
                         "from": "gees104_c02",
                         "to": "gees104_c03",
                         "relation": "enables"
+                    }
+                ],
+                "center": "New Beginnings: Cities and States",
+                "connections": [
+                    {
+                        "from": "New Beginnings",
+                        "to": "Definition of City"
+                    },
+                    {
+                        "from": "Definition of City",
+                        "to": "Characteristics of Cities"
+                    },
+                    {
+                        "from": "Characteristics of Cities",
+                        "to": "Role of States"
+                    },
+                    {
+                        "from": "Role of States",
+                        "to": "Urban Governance and Planning"
+                    },
+                    {
+                        "from": "Economic Impacts",
+                        "to": "Socio-Cultural Evolution"
+                    },
+                    {
+                        "from": "Socio-Cultural Evolution",
+                        "to": "Modern Challenges"
                     }
                 ]
             },
@@ -490,8 +471,10 @@
             "subject": "Social Science",
             "chapter_title": "New Beginnings: Cities and States",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.302609"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +483,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to New Beginnings: Cities and States.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from New Beginnings: Cities and States supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The narrative of 'New Beginnings: Cities and States' begins with the Neolithic Revolution, where the first villages and settlements laid the groundwork for urban life. It transitions into the Indus Valley Civilization, a landmark example of sophisticated urban planning and governance. The chapter then moves to the rise of early agricultural states in Mesopotamia, where complex legal systems and hierarchical social structures developed. Finally, it examines the subsequent rise of empires and their influence on the development of modern nation-states. Key themes include the challenges of urbanization (such as overcrowding, infrastructure, and social inequality) and the evolution of political ideologies that sought to manage these complex societies. The story emphasizes how cities served as laboratories for political experimentation and social change, constantly redefining the boundaries of human society and power. It shows how these entities provided the framework for the exchange of ideas, religions, and technologies that drove historical progress.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1078,10 @@
             "subject": "Social Science",
             "chapter_title": "New Beginnings: Cities and States",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.302631"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1093,41 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees104_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'New Beginnings: Cities and States'?",
+                        "type": "Multiple Choice",
+                        "question": "Which characteristic is primarily associated with the emergence of a city?",
                         "options": [
-                            "4 CHAPTER New Beginnings: Cities and States The kingdom shall be protected by fortifying the capital and the towns at the frontiers.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Monoculture farming",
+                            "High population density",
+                            "Primitive nomadic lifestyle",
+                            "Lack of organized labor"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "4 CHAPTER New Beginnings: Cities and States The kingdom shall be protected by fortifying the capital and the towns at the frontiers.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees104_c01"
+                        "answer": "High population density"
                     },
                     {
-                        "id": "gees104_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'New Beginnings: Cities and States'?",
-                        "options": [
-                            "The land should not only be capable of sustaining the population but also outsiders in times of calamities.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The land should not only be capable of sustaining the population but also outsiders in times of calamities.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees104_c01"
+                        "type": "True/False",
+                        "question": "The state primarily acts as a non-intervention force in the life of a small village.",
+                        "answer": "False (The state plays a crucial role in urban organization and governance)"
                     },
                     {
-                        "id": "gees104_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'New Beginnings: Cities and States'?",
-                        "options": [
-                            "It should be beautiful, being endowed with cultivable land, mines, timber forests, elephant forests, and good pastures rich in cattle.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "It should be beautiful, being endowed with cultivable land, mines, timber forests, elephant forests, and good pastures rich in cattle.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees104_c01"
+                        "type": "Short Answer",
+                        "question": "Define 'urbanization' in the context of New Beginnings."
                     },
                     {
-                        "id": "gees104_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'New Beginnings: Cities and States'?",
-                        "options": [
-                            "It should have a productive economy, with a wide variety of commodities ….",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                        "type": "Match the Following",
+                        "column1": [
+                            "Infrastructure",
+                            "Specialized Labor",
+                            "Cultural Diversity"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "It should have a productive economy, with a wide variety of commodities ….",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'New Beginnings: Cities and States'?",
-                        "options": [
-                            "Ruins of a major structure at Rājagṛiha (modern-day Rajgir in Bihar), when it was the capital of the Magadha mahājanapada.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                        "column2": [
+                            "Characteristics of Cities",
+                            "Economic Factors"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Ruins of a major structure at Rājagṛiha (modern-day Rajgir in Bihar), when it was the capital of the Magadha mahājanapada.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'New Beginnings: Cities and States'?",
-                        "options": [
-                            "Why were the janapadas and mahājanapadas an important development in India’s early history?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Why were the janapadas and mahājanapadas an important development in India’s early history?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'New Beginnings: Cities and States'?",
-                        "options": [
-                            "Some of its cities were abandoned; in others, some people continued living there, but reverting to a rural or village lifestyle.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Some of its cities were abandoned; in others, some people continued living there, but reverting to a rural or village lifestyle.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'New Beginnings: Cities and States'?",
-                        "options": [
-                            "They had to, since all the components of the Harappan urban order had disappeared: elaborate structures, both private and public; crowded streets and busy markets; different communities with specialised occupations (metalsmiths, potters, builders, weavers, craftspeople, and so on); a writing system; a sanitation system; the presence of an administration; and, behind it all, a larger state structure with a ruling class at the head.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They had to, since all the components of the Harappan urban order had disappeared: elaborate structures, both private and public; crowded streets and busy markets; different communities with specialised occupations (metalsmiths, potters, builders, weavers, craftspeople, and so on); a writing system; a sanitation system; the presence of an administration; and, behind it all, a larger state structure with a ruling class at the head.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees104_c01"
+                        "answer": {
+                            "Infrastructure": "Characteristics of Cities",
+                            "Specialized Labor": "Economic Factors",
+                            "Cultural Diversity": "Characteristics of Cities"
+                        }
                     }
                 ]
             },
@@ -1715,8 +1581,10 @@
             "subject": "Social Science",
             "chapter_title": "New Beginnings: Cities and States",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.302600"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1593,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'New Beginnings: Cities and States' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "4 CHAPTER New Beginnings: Cities and States The kingdom shall be protected by fortifying the capital and the towns at the frontiers.",
-                    "The land should not only be capable of sustaining the population but also outsiders in times of calamities.",
-                    "It should be beautiful, being endowed with cultivable land, mines, timber forests, elephant forests, and good pastures rich in cattle.",
-                    "It should have a productive economy, with a wide variety of commodities ….",
-                    "Ruins of a major structure at Rājagṛiha (modern-day Rajgir in Bihar), when it was the capital of the Magadha mahājanapada.",
-                    "Why were the janapadas and mahājanapadas an important development in India’s early history?",
-                    "Some of its cities were abandoned; in others, some people continued living there, but reverting to a rural or village lifestyle."
-                ]
-            },
+            "content": "Chapter 104 'New Beginnings: Cities and States' provides a comprehensive overview of the historical and sociological significance of cities and states. It establishes that cities are more than just concentrated populations; they are dynamic engines of economic growth, cultural synthesis, and technological advancement. The chapter details the transition from pre-urban settlements to complex urban civilizations, analyzing the political structures—from city-states to larger states—that arose to manage these growing populations. Ultimately, the summary highlights the indispensable role of cities and states in shaping human history, acting as crucibles where diverse elements interact, leading to new forms of governance, social organization, and global interconnectedness.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1643,10 @@
             "subject": "Social Science",
             "chapter_title": "New Beginnings: Cities and States",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.302648"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1658,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees104_fc01",
-                        "front": "What should you remember from New Beginnings: Cities and States?",
-                        "back": "4 CHAPTER New Beginnings: Cities and States The kingdom shall be protected by fortifying the capital and the towns at the frontiers.",
-                        "concept_id": "gees104_c01"
+                        "term": "Definition of City",
+                        "definition": "A densely populated, permanent settlement with complex social and political structures, providing various services."
                     },
                     {
-                        "id": "gees104_fc02",
-                        "front": "What should you remember from New Beginnings: Cities and States?",
-                        "back": "The land should not only be capable of sustaining the population but also outsiders in times of calamities.",
-                        "concept_id": "gees104_c01"
+                        "term": "Urbanization",
+                        "definition": "The process where populations migrate from rural areas to cities, leading to a shift in economic and social activities."
                     },
                     {
-                        "id": "gees104_fc03",
-                        "front": "What should you remember from New Beginnings: Cities and States?",
-                        "back": "It should be beautiful, being endowed with cultivable land, mines, timber forests, elephant forests, and good pastures rich in cattle.",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_fc04",
-                        "front": "What should you remember from New Beginnings: Cities and States?",
-                        "back": "It should have a productive economy, with a wide variety of commodities ….",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_fc05",
-                        "front": "What should you remember from New Beginnings: Cities and States?",
-                        "back": "Ruins of a major structure at Rājagṛiha (modern-day Rajgir in Bihar), when it was the capital of the Magadha mahājanapada.",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_fc06",
-                        "front": "What should you remember from New Beginnings: Cities and States?",
-                        "back": "Why were the janapadas and mahājanapadas an important development in India’s early history?",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_fc07",
-                        "front": "What should you remember from New Beginnings: Cities and States?",
-                        "back": "Some of its cities were abandoned; in others, some people continued living there, but reverting to a rural or village lifestyle.",
-                        "concept_id": "gees104_c01"
-                    },
-                    {
-                        "id": "gees104_fc08",
-                        "front": "What should you remember from New Beginnings: Cities and States?",
-                        "back": "They had to, since all the components of the Harappan urban order had disappeared: elaborate structures, both private and public; crowded streets and busy markets; different communities with specialised occupations (metalsmiths, potters, builders, weavers, craftspeople, and so on); a writing system; a sanitation system; the presence of an administration; and, behind it all, a larger state structure with a ruling class at the head.",
-                        "concept_id": "gees104_c01"
+                        "term": "State's Role",
+                        "definition": "The state provides the legal framework, infrastructure, and governance necessary to manage large urban populations."
                     }
                 ]
             },

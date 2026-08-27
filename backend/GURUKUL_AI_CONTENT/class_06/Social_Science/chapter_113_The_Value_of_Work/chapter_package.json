@@ -128,8 +128,10 @@
             "subject": "Social Science",
             "chapter_title": "The Value of Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.798190"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: The Value of Work.",
+                "overview": "Class 06 Social Science Chapter 113: The Value of Work",
                 "source_grounded_key_points": [
                     "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond.",
                     "Do it as worship, as the highest worship, and devote your whole life to it for the time being.",
@@ -175,8 +177,10 @@
             "subject": "Social Science",
             "chapter_title": "The Value of Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.798229"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of The Value of Work accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond.",
-                            "Do it as worship, as the highest worship, and devote your whole life to it for the time being.",
-                            "What are the different types of The Big activities that people engage in?",
-                            "Anu and Kabir were playing in the park when they saw their neighbour, Geeta Aunty, getting out of a taxi."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "The chapter 'The Value of Work' explores the fundamental concepts related to labor, work, and their significance in society. It emphasizes that work is a means of earning a livelihood, contributing to the economy, and fulfilling one's social obligations. The lesson typically covers how work is organized, the different types of work (paid and unpaid), and the impact of work on individuals, families, and the overall community. It often discusses the idea that work provides not only economic sustenance but also personal growth, skill development, and a sense of purpose. It highlights the symbiotic relationship between individuals and society: individuals need work to survive, and society needs the collective output of labor to function effectively.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Social Science",
             "chapter_title": "The Value of Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.798247"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,32 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fees113_c01",
-                        "name": "The Value of Work",
-                        "definition": "Central learning focus of The Value of Work.",
-                        "source_evidence": "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond."
+                        "term": "Definition of Work",
+                        "description": "Work is defined as any activity undertaken by a person to achieve a goal or outcome, involving the application of effort, skill, and time."
                     },
                     {
-                        "id": "fees113_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Do it as worship, as the highest worship, and devote your whole life to it for the time being."
+                        "term": "Types of Work",
+                        "description": "Classification of work into various types, such as physical, mental, occupational, and creative work."
                     },
                     {
-                        "id": "fees113_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "What are the different types of The Big activities that people engage in?"
+                        "term": "Economic Importance of Work",
+                        "description": "Work is essential for producing goods and services, increasing the material standard of living, and driving economic development."
+                    },
+                    {
+                        "term": "Role of Work in Society",
+                        "description": "Work plays a vital role in fulfilling social needs, ensuring the survival of communities, and providing structure to society."
+                    },
+                    {
+                        "term": "Work and Lifestyle",
+                        "description": "The relationship between work and personal life, considering work-life balance and individual fulfillment."
+                    },
+                    {
+                        "term": "Motivation in Work",
+                        "description": "Internal and external factors that drive individuals to perform work, including pay, recognition, and sense of purpose."
+                    },
+                    {
+                        "term": "Work and Human Development",
+                        "description": "How work contributes to the education, skill acquisition, and overall holistic development of individuals."
                     }
                 ]
             },
@@ -347,8 +306,10 @@
             "subject": "Social Science",
             "chapter_title": "The Value of Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.798263"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,6 +344,31 @@
                         "to": "fees113_c03",
                         "relation": "enables"
                     }
+                ],
+                "Work": [
+                    "Definition of Work",
+                    "Types of Work",
+                    "Economic Importance",
+                    "Role in Society",
+                    "Work and Lifestyle"
+                ],
+                "Definition": [
+                    "Definition of Work"
+                ],
+                "Economic Importance": [
+                    "Production of Goods",
+                    "Development",
+                    "Material Standard of Living"
+                ],
+                "Types of Work": [
+                    "Physical Work",
+                    "Mental Work",
+                    "Occupational Work",
+                    "Creative Work"
+                ],
+                "Social Role": [
+                    "Fulfilling Social Needs",
+                    "Ensuring Community Survival"
                 ]
             },
             "runtime_mapping": {
@@ -469,8 +455,10 @@
             "subject": "Social Science",
             "chapter_title": "The Value of Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.798220"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +467,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to The Value of Work.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from The Value of Work supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "This chapter uses a narrative approach, likely describing different professions (e.g., farmers, factory workers, teachers, doctors) and illustrating how each individual's role contributes to the 'Value of Work'. It highlights how work sustains communities and drives the economy. The story would emphasize the concept of 'skill', 'effort', and the cycle of production and consumption.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1030,10 @@
             "subject": "Social Science",
             "chapter_title": "The Value of Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.798239"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1045,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "fees113_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Value of Work?",
+                        "type": "Multiple Choice",
+                        "question": "Which of the following is NOT typically considered a type of work?",
                         "options": [
-                            "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Physical Work",
+                            "Intellectual Work",
+                            "Administrative Work",
+                            "Spiritual Work"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees113_c01"
+                        "answer": "Spiritual Work"
                     },
                     {
-                        "id": "fees113_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Value of Work?",
-                        "options": [
-                            "Do it as worship, as the highest worship, and devote your whole life to it for the time being.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Do it as worship, as the highest worship, and devote your whole life to it for the time being.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees113_c01"
+                        "type": "True/False",
+                        "question": "Work is primarily defined as any activity involving the application of effort, skill, and time.",
+                        "answer": "True"
                     },
                     {
-                        "id": "fees113_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Value of Work?",
-                        "options": [
-                            "What are the different types of The Big activities that people engage in?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What are the different types of The Big activities that people engage in?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees113_c01"
+                        "type": "Short Answer",
+                        "question": "Explain the economic importance of work in terms of production and development.",
+                        "answer": "Work is crucial for the production of goods and services, which in turn increases the material standard of living and fuels economic growth."
                     },
                     {
-                        "id": "fees113_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Value of Work?",
-                        "options": [
-                            "Anu and Kabir were playing in the park when they saw their neighbour, Geeta Aunty, getting out of a taxi.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Anu and Kabir were playing in the park when they saw their neighbour, Geeta Aunty, getting out of a taxi.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees113_c01"
-                    },
-                    {
-                        "id": "fees113_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Value of Work?",
-                        "options": [
-                            "She was returning home from work and was in her uniform.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "She was returning home from work and was in her uniform.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees113_c01"
-                    },
-                    {
-                        "id": "fees113_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Value of Work?",
-                        "options": [
-                            "A pilot in the Indian Air Force, she is the pride of the whole town.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A pilot in the Indian Air Force, she is the pride of the whole town.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees113_c01"
+                        "type": "Fill in the Blanks",
+                        "question": "Work provides structure and a sense of purpose to society, helping to ensure the survival of communities.",
+                        "answer": "Work provides structure and a sense of purpose to society, helping to ensure the survival of communities."
                     }
                 ]
             },
@@ -1625,8 +1517,10 @@
             "subject": "Social Science",
             "chapter_title": "The Value of Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.798211"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1529,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The Value of Work' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond.",
-                    "Do it as worship, as the highest worship, and devote your whole life to it for the time being.",
-                    "What are the different types of The Big activities that people engage in?",
-                    "Anu and Kabir were playing in the park when they saw their neighbour, Geeta Aunty, getting out of a taxi.",
-                    "She was returning home from work and was in her uniform.",
-                    "A pilot in the Indian Air Force, she is the pride of the whole town."
-                ]
-            },
+            "content": "Chapter 113, 'The Value of Work', explores the multifaceted importance of work in a modern society. It emphasizes that work is not just a means of earning a living but a fundamental contribution to social progress. The chapter details how diverse professions create interdependence, where everyone's skill adds value, leading to national growth and the fulfillment of societal needs. The core theme is that every type of work, from manual labor to intellectual pursuits, is essential for the survival and development of a thriving community.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1579,10 @@
             "subject": "Social Science",
             "chapter_title": "The Value of Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.798255"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1594,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fees113_fc01",
-                        "front": "What key point should you remember from The Value of Work?",
-                        "back": "13 CHAPTER The Value of Work When you are doing any work, do not think of anything beyond.",
-                        "concept_id": "fees113_c01"
+                        "term": "Work",
+                        "definition": "Any activity undertaken by a person to achieve a goal or outcome, involving effort, skill, and time."
                     },
                     {
-                        "id": "fees113_fc02",
-                        "front": "What key point should you remember from The Value of Work?",
-                        "back": "Do it as worship, as the highest worship, and devote your whole life to it for the time being.",
-                        "concept_id": "fees113_c01"
+                        "term": "Types of Work",
+                        "definition": "Physical, mental, occupational, and creative."
                     },
                     {
-                        "id": "fees113_fc03",
-                        "front": "What key point should you remember from The Value of Work?",
-                        "back": "What are the different types of The Big activities that people engage in?",
-                        "concept_id": "fees113_c01"
-                    },
-                    {
-                        "id": "fees113_fc04",
-                        "front": "What key point should you remember from The Value of Work?",
-                        "back": "Anu and Kabir were playing in the park when they saw their neighbour, Geeta Aunty, getting out of a taxi.",
-                        "concept_id": "fees113_c01"
-                    },
-                    {
-                        "id": "fees113_fc05",
-                        "front": "What key point should you remember from The Value of Work?",
-                        "back": "She was returning home from work and was in her uniform.",
-                        "concept_id": "fees113_c01"
-                    },
-                    {
-                        "id": "fees113_fc06",
-                        "front": "What key point should you remember from The Value of Work?",
-                        "back": "A pilot in the Indian Air Force, she is the pride of the whole town.",
-                        "concept_id": "fees113_c01"
+                        "term": "Economic Importance",
+                        "definition": "Work is essential for producing goods, services, and achieving economic growth."
                     }
                 ]
             },

@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding Markets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.375263"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Understanding Markets.",
+                "overview": "This chapter, 'Understanding Markets,' serves as a foundational pillar in Social Science, introducing students to the fundamental concepts of market economics. It explores what a market is, why it exists, the difference between various types of markets, and the forces that drive supply and demand. Understanding these concepts is crucial for comprehending how economic decisions are made at the broadest level.",
                 "source_grounded_key_points": [
                     "12 CHAPTER Understanding Markets Prosperity emanates from the market that develops when people need goods and services that they can’t create themselves.",
                     "How can consumers assess the quality of goods and services they purchase?",
@@ -185,8 +187,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding Markets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.375303"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Understanding Markets.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "12 CHAPTER Understanding Markets Prosperity emanates from the market that develops when people need goods and services that they can’t create themselves.",
-                            "How can consumers assess the quality of goods and services they purchase?",
-                            "In the picture on the following page you will see people buying and selling goods — vegetables, fruits, clothes, groceries, mobile phones, refrigerators, and so on.",
-                            "These goods result from various types of economic activities — primary, secondary, and tertiary — that you studied in Grade 6.",
-                            "12.1 247 Reprint 2026-27 Chapter 12.indd 247 4/8/2025 11:21:27 AM Fig."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Markets are the places (physical or virtual) where buyers and sellers come together to exchange goods, services, or ideas. The primary function of a market is to provide a mechanism for buying and selling. In a market, supply (how much is available) meets demand (how much people want). The interaction between supply and demand determines the price. Key concepts include: 1. Demand: The desire of consumers for a commodity at a given price. 2. Supply: The amount of a commodity that producers are willing to offer at a given price. 3. Equilibrium: The point where the quantity demanded equals the quantity supplied. This equilibrium price is the market price. 4. Demand Schedule: A table showing the quantity demanded at various prices. 5. Law of Demand: States that as the price of a good increases, the quantity demanded decreases (and vice versa). 6. Market Structures: This refers to the different ways markets can be organized, such as perfectly competitive, monopoly, and oligopoly. Understanding these structures helps us analyze how much power sellers have and how efficient the market is. The role of the government is often to regulate markets to ensure fairness and prevent exploitation.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding Markets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.375324"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,15 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gees112_c01",
-                        "name": "Understanding Markets",
-                        "definition": "Central learning focus of Understanding Markets.",
-                        "source_evidence": "12 CHAPTER Understanding Markets Prosperity emanates from the market that develops when people need goods and services that they can’t create themselves."
-                    },
-                    {
-                        "id": "gees112_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "How can consumers assess the quality of goods and services they purchase?"
-                    },
-                    {
-                        "id": "gees112_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "In the picture on the following page you will see people buying and selling goods — vegetables, fruits, clothes, groceries, mobile phones, refrigerators, and so on."
-                    }
+                    "Introduction to Markets",
+                    "Types of Markets (e.g., Primary and Secondary)",
+                    "Factors influencing the demand for goods and services (Tastes and Income)",
+                    "Factors influencing the supply of goods and services (Cost of Production and Technology)",
+                    "Demand and Supply Curve",
+                    "Elasticity of Demand (Price and Income)",
+                    "Equilibrium in Market",
+                    "Market Equilibrium and Disequilibrium (Shortage and Surplus)",
+                    "Market Structures (Perfect Competition, Monopoly, Oligopoly, Monopolistic Competition)"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +299,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding Markets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.375339"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +336,50 @@
                         "from": "gees112_c02",
                         "to": "gees112_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_topic": "Understanding Markets",
+                "branches": [
+                    {
+                        "topic": "Market Basics",
+                        "sub_topics": [
+                            "Types of Markets",
+                            "Market Participants",
+                            "Functions of Markets"
+                        ]
+                    },
+                    {
+                        "topic": "Demand Analysis",
+                        "sub_topics": [
+                            "Law of Demand",
+                            "Demand Determinants",
+                            "Shifts in Demand"
+                        ]
+                    },
+                    {
+                        "topic": "Supply Analysis",
+                        "sub_topics": [
+                            "Law of Supply",
+                            "Supply Determinants",
+                            "Shifts in Supply"
+                        ]
+                    },
+                    {
+                        "topic": "Market Mechanism",
+                        "sub_topics": [
+                            "Demand and Supply Intersection",
+                            "Equilibrium (Surplus/Shortage)",
+                            "Price Mechanism"
+                        ]
+                    },
+                    {
+                        "topic": "Market Structures",
+                        "sub_topics": [
+                            "Perfect Competition",
+                            "Monopoly",
+                            "Oligopoly",
+                            "Monopolistic Competition"
+                        ]
                     }
                 ]
             },
@@ -490,8 +475,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding Markets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.375293"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +487,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to Understanding Markets.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Understanding Markets supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "To understand markets, consider a simple story: Imagine a village with farmers producing fresh vegetables and a small group of buyers. This simple scenario is the 'primary market.' If there is high demand for tomatoes but low supply, the price of tomatoes will rise. The farmer, acting as a supplier, observes this price and decides to produce more. This interaction of 'what is available' (supply) and 'what people want' (demand) determines the market price. This dynamic process happens across all markets—from where raw materials are produced to where finished products are sold. The market is essentially a place (physical or virtual) where buyers and sellers interact to exchange goods and services.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1082,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding Markets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.375315"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1097,29 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees112_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Understanding Markets'?",
+                        "type": "Multiple Choice",
+                        "question": "What is the fundamental principle of the Law of Demand?",
                         "options": [
-                            "12 CHAPTER Understanding Markets Prosperity emanates from the market that develops when people need goods and services that they can’t create themselves.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "12 CHAPTER Understanding Markets Prosperity emanates from the market that develops when people need goods and services that they can’t create themselves.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees112_c01"
+                            "As price increases, quantity demanded increases",
+                            "As price increases, quantity demanded decreases",
+                            "Price and quantity demanded are independent",
+                            "Changes in income do not affect demand"
+                        ]
                     },
                     {
-                        "id": "gees112_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Understanding Markets'?",
-                        "options": [
-                            "How can consumers assess the quality of goods and services they purchase?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "How can consumers assess the quality of goods and services they purchase?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees112_c01"
+                        "type": "Short Answer",
+                        "question": "Define Market Equilibrium.",
+                        "answer_key": "Market equilibrium occurs when the quantity of a good demanded by consumers equals the quantity of a good supplied by producers at a given price."
                     },
                     {
-                        "id": "gees112_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Understanding Markets'?",
-                        "options": [
-                            "In the picture on the following page you will see people buying and selling goods — vegetables, fruits, clothes, groceries, mobile phones, refrigerators, and so on.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In the picture on the following page you will see people buying and selling goods — vegetables, fruits, clothes, groceries, mobile phones, refrigerators, and so on.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees112_c01"
+                        "type": "True/False",
+                        "question": "In a perfectly competitive market, a single buyer has significant influence on the market price.",
+                        "answer_key": "False. Individual buyers are 'price takers'."
                     },
                     {
-                        "id": "gees112_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Understanding Markets'?",
-                        "options": [
-                            "These goods result from various types of economic activities — primary, secondary, and tertiary — that you studied in Grade 6.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "These goods result from various types of economic activities — primary, secondary, and tertiary — that you studied in Grade 6.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees112_c01"
-                    },
-                    {
-                        "id": "gees112_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Understanding Markets'?",
-                        "options": [
-                            "12.1 247 Reprint 2026-27 Chapter 12.indd 247 4/8/2025 11:21:27 AM Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "12.1 247 Reprint 2026-27 Chapter 12.indd 247 4/8/2025 11:21:27 AM Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees112_c01"
-                    },
-                    {
-                        "id": "gees112_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Understanding Markets'?",
-                        "options": [
-                            "12.2 Reprint 2026-27 Chapter 12.indd 248 4/8/2025 11:21:28 AM Reprint 2026-27 Chapter 12.indd 249 4/8/2025 11:21:29 AM Needs: What is a Market?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "12.2 Reprint 2026-27 Chapter 12.indd 248 4/8/2025 11:21:28 AM Reprint 2026-27 Chapter 12.indd 249 4/8/2025 11:21:29 AM Needs: What is a Market?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees112_c01"
-                    },
-                    {
-                        "id": "gees112_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Understanding Markets'?",
-                        "options": [
-                            "In economics, a need is something A place where people buy and sell goods is called a market.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In economics, a need is something A place where people buy and sell goods is called a market.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees112_c01"
-                    },
-                    {
-                        "id": "gees112_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Understanding Markets'?",
-                        "options": [
-                            "that a person It is also known as bazaar, haat (in Hindi), and mārukatté requires to survive, (in Kannada).",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "that a person It is also known as bazaar, haat (in Hindi), and mārukatté requires to survive, (in Kannada).",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees112_c01"
+                        "type": "Calculation",
+                        "question": "If the demand for a product changes from 10 units to 8 units at a price of $5, and the supply remains constant, describe the resulting market situation.",
+                        "answer_key": "There is a shortage (demand > supply) at $5."
                     }
                 ]
             },
@@ -1715,8 +1573,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding Markets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.375284"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1585,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Understanding Markets' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "12 CHAPTER Understanding Markets Prosperity emanates from the market that develops when people need goods and services that they can’t create themselves.",
-                    "How can consumers assess the quality of goods and services they purchase?",
-                    "In the picture on the following page you will see people buying and selling goods — vegetables, fruits, clothes, groceries, mobile phones, refrigerators, and so on.",
-                    "These goods result from various types of economic activities — primary, secondary, and tertiary — that you studied in Grade 6.",
-                    "12.1 247 Reprint 2026-27 Chapter 12.indd 247 4/8/2025 11:21:27 AM Fig.",
-                    "12.2 Reprint 2026-27 Chapter 12.indd 248 4/8/2025 11:21:28 AM Reprint 2026-27 Chapter 12.indd 249 4/8/2025 11:21:29 AM Needs: What is a Market?",
-                    "In economics, a need is something A place where people buy and sell goods is called a market."
-                ]
-            },
+            "content": "The chapter 'Understanding Markets' establishes the framework for market economics. It defines markets as the mechanisms through which resources are allocated in an economy. Key themes include the laws of supply and demand, the determination of equilibrium prices, and the various structures of markets. By understanding how supply and demand interact, we can grasp the core principles of market efficiency and how consumer and producer choices are balanced in a system of choice. This knowledge is essential for analyzing business cycles, pricing strategies, and the overall health of an economic system.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1635,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding Markets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.375332"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1650,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees112_fc01",
-                        "front": "What should you remember from Understanding Markets?",
-                        "back": "12 CHAPTER Understanding Markets Prosperity emanates from the market that develops when people need goods and services that they can’t create themselves.",
-                        "concept_id": "gees112_c01"
+                        "term": "Demand",
+                        "definition": "The quantity of a good that consumers are willing and able to purchase at various prices."
                     },
                     {
-                        "id": "gees112_fc02",
-                        "front": "What should you remember from Understanding Markets?",
-                        "back": "How can consumers assess the quality of goods and services they purchase?",
-                        "concept_id": "gees112_c01"
+                        "term": "Supply",
+                        "definition": "The quantity of a good that producers are willing and able to offer for sale at various prices."
                     },
                     {
-                        "id": "gees112_fc03",
-                        "front": "What should you remember from Understanding Markets?",
-                        "back": "In the picture on the following page you will see people buying and selling goods — vegetables, fruits, clothes, groceries, mobile phones, refrigerators, and so on.",
-                        "concept_id": "gees112_c01"
+                        "term": "Demand Curve",
+                        "definition": "A graph showing the relationship between the price of a good and the quantity demanded, assuming all other factors are constant."
                     },
                     {
-                        "id": "gees112_fc04",
-                        "front": "What should you remember from Understanding Markets?",
-                        "back": "These goods result from various types of economic activities — primary, secondary, and tertiary — that you studied in Grade 6.",
-                        "concept_id": "gees112_c01"
-                    },
-                    {
-                        "id": "gees112_fc05",
-                        "front": "What should you remember from Understanding Markets?",
-                        "back": "12.1 247 Reprint 2026-27 Chapter 12.indd 247 4/8/2025 11:21:27 AM Fig.",
-                        "concept_id": "gees112_c01"
-                    },
-                    {
-                        "id": "gees112_fc06",
-                        "front": "What should you remember from Understanding Markets?",
-                        "back": "12.2 Reprint 2026-27 Chapter 12.indd 248 4/8/2025 11:21:28 AM Reprint 2026-27 Chapter 12.indd 249 4/8/2025 11:21:29 AM Needs: What is a Market?",
-                        "concept_id": "gees112_c01"
-                    },
-                    {
-                        "id": "gees112_fc07",
-                        "front": "What should you remember from Understanding Markets?",
-                        "back": "In economics, a need is something A place where people buy and sell goods is called a market.",
-                        "concept_id": "gees112_c01"
-                    },
-                    {
-                        "id": "gees112_fc08",
-                        "front": "What should you remember from Understanding Markets?",
-                        "back": "that a person It is also known as bazaar, haat (in Hindi), and mārukatté requires to survive, (in Kannada).",
-                        "concept_id": "gees112_c01"
+                        "term": "Elasticity of Demand",
+                        "definition": "A measure of how sensitive the quantity demanded of a good is to changes in its price or income."
                     }
                 ]
             },

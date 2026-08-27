@@ -128,8 +128,10 @@
             "subject": "Social Science",
             "chapter_title": "Oceans and Continents",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.689026"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Oceans and Continents.",
+                "overview": "This chapter explores the vast and diverse world of Oceans and Continents, focusing on their geological structure, major features, and ecological significance.",
                 "source_grounded_key_points": [
                     "2 CHAPTER Oceans and Continents The ocean is everything.",
                     "It is an immense desert, where man is never lonely, for he feels life stirring all around.",
@@ -300,8 +302,10 @@
             "subject": "Social Science",
             "chapter_title": "Oceans and Continents",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.689077"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +317,45 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fees102_c01",
-                        "name": "Oceans and Continents",
-                        "definition": "Central learning focus of Oceans and Continents.",
-                        "source_evidence": "2 CHAPTER Oceans and Continents The ocean is everything."
+                        "concept_name": "Major Oceans",
+                        "sub_topics": [
+                            "Introduction to oceans (definition, importance)",
+                            "Names and major oceans (Pacific, Atlantic, Indian, Southern, Arctic)",
+                            "Physical characteristics of major oceans (depth, currents, water bodies)"
+                        ],
+                        "key_terms": [
+                            "Abyssal plain",
+                            "Gulf stream",
+                            "Tides",
+                            "Water circulation"
+                        ]
                     },
                     {
-                        "id": "fees102_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "It is an immense desert, where man is never lonely, for he feels life stirring all around."
+                        "concept_name": "Continents of the World",
+                        "sub_topics": [
+                            "Definition and classification of continents (major and minor)",
+                            "The Seven Continents (Asia, Africa, North America, South America, Antarctica, Europe, Australia)",
+                            "Continents and their geographical features (mountain ranges, deserts, coastlines)"
+                        ],
+                        "key_terms": [
+                            "Continental shelf",
+                            "Landmass",
+                            "Islands",
+                            "Landforms"
+                        ]
                     },
                     {
-                        "id": "fees102_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "The globe began with the ocean, so to speak, and who knows if it will not end with it."
+                        "concept_name": "Oceans and Continents Interaction",
+                        "sub_topics": [
+                            "Influence of Oceans on Continents (climate, weather, trade)",
+                            "Impact of Continents on Oceans (plate tectonics, seafloor formation)",
+                            "Ocean currents and climate regulation"
+                        ],
+                        "key_terms": [
+                            "Climate regulation",
+                            "Plate tectonics",
+                            "Oceanic currents"
+                        ]
                     }
                 ]
             },
@@ -347,8 +374,10 @@
             "subject": "Social Science",
             "chapter_title": "Oceans and Continents",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.689093"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -359,18 +388,14 @@
             },
             "content": {
                 "nodes": [
-                    {
-                        "id": "fees102_c01",
-                        "label": "Oceans and Continents"
-                    },
-                    {
-                        "id": "fees102_c02",
-                        "label": "Evidence and reasoning"
-                    },
-                    {
-                        "id": "fees102_c03",
-                        "label": "Application"
-                    }
+                    "Oceans",
+                    "Continents",
+                    "Interaction",
+                    "Major Oceans (Pacific, Atlantic, Indian, Southern, Arctic)",
+                    "Seven Continents (Asia, Africa, Europe, etc.)",
+                    "Ocean Features (Currents, Depths)",
+                    "Climate Regulation",
+                    "Plate Tectonics"
                 ],
                 "edges": [
                     {
@@ -383,7 +408,8 @@
                         "to": "fees102_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "central_theme": "Oceans and Continents"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -469,8 +495,10 @@
             "subject": "Social Science",
             "chapter_title": "Oceans and Continents",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.689056"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +507,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to Oceans and Continents.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Oceans and Continents supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "The story of Oceans and Continents is one of immense geological time and dynamic processes. It begins with the early formation of the Earth and the separation of landmasses and water bodies. It chronicles the rise of major ocean currents, the evolution of continental shelves, and the intricate interplay between deep-sea ecosystems and surface life. This narrative highlights how these massive global features have shaped global climate, influenced migration, driven the distribution of life, and provided the foundation for human civilizations through maritime trade and colonization. The chapter essentially tells the story of a planet where land and water constantly interact and transform.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1070,10 @@
             "subject": "Social Science",
             "chapter_title": "Oceans and Continents",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.689069"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1085,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "fees102_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Oceans and Continents?",
+                        "type": "Multiple Choice",
+                        "question": "Which of the following is the largest ocean on Earth?",
                         "options": [
-                            "2 CHAPTER Oceans and Continents The ocean is everything.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Atlantic Ocean",
+                            "Indian Ocean",
+                            "Pacific Ocean",
+                            "Arctic Ocean"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "2 CHAPTER Oceans and Continents The ocean is everything.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees102_c01"
+                        "answer": "Pacific Ocean"
                     },
                     {
-                        "id": "fees102_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Oceans and Continents?",
-                        "options": [
-                            "It is an immense desert, where man is never lonely, for he feels life stirring all around.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "It is an immense desert, where man is never lonely, for he feels life stirring all around.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees102_c01"
+                        "type": "Fill in the Blank",
+                        "question": "The large landmass surrounding the Earth is called a _________.",
+                        "answer": "Ocean"
                     },
                     {
-                        "id": "fees102_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Oceans and Continents?",
-                        "options": [
-                            "The globe began with the ocean, so to speak, and who knows if it will not end with it.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The globe began with the ocean, so to speak, and who knows if it will not end with it.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees102_c01"
+                        "type": "True/False",
+                        "question": "The movement of large bodies of water on Earth is primarily due to wind and tides.",
+                        "answer": "True"
                     },
                     {
-                        "id": "fees102_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Oceans and Continents?",
-                        "options": [
-                            "In what ways do oceans and continents impact life on Earth, including human life?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In what ways do oceans and continents impact life on Earth, including human life?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees102_c01"
-                    },
-                    {
-                        "id": "fees102_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Oceans and Continents?",
-                        "options": [
-                            "2.1 The Earth seen from space (photograph by the Lunar Reconnaissance Orbiter).",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "2.1 The Earth seen from space (photograph by the Lunar Reconnaissance Orbiter).",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees102_c01"
-                    },
-                    {
-                        "id": "fees102_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Oceans and Continents?",
-                        "options": [
-                            "The view is centred on the Indian Ocean, with Africa to the left, India and part of Asia at the top, Australia to the right, and Antarctica at the bottom.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The view is centred on the Indian Ocean, with Africa to the left, India and part of Asia at the top, Australia to the right, and Antarctica at the bottom.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees102_c01"
+                        "type": "Short Answer",
+                        "question": "Name the seven continents of the world.",
+                        "answer": "Asia, Africa, North America, South America, Antarctica, Europe, Australia."
                     }
                 ]
             },
@@ -1625,8 +1557,10 @@
             "subject": "Social Science",
             "chapter_title": "Oceans and Continents",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.689047"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1569,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Oceans and Continents' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "2 CHAPTER Oceans and Continents The ocean is everything.",
-                    "It is an immense desert, where man is never lonely, for he feels life stirring all around.",
-                    "The globe began with the ocean, so to speak, and who knows if it will not end with it.",
-                    "In what ways do oceans and continents impact life on Earth, including human life?",
-                    "2.1 The Earth seen from space (photograph by the Lunar Reconnaissance Orbiter).",
-                    "The view is centred on the Indian Ocean, with Africa to the left, India and part of Asia at the top, Australia to the right, and Antarctica at the bottom."
-                ]
-            },
+            "content": "The chapter provides a comprehensive overview of the world's major oceans and continents, emphasizing their geological origins and physical characteristics. It highlights the immense biodiversity and the critical role these features play in regulating global climate and human history. Key themes include plate tectonics, oceanography, continental geography, and the interconnectedness of these global systems. The study underscores the importance of preserving these ecosystems for future generations due to their vital ecological functions and economic contributions.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1619,10 @@
             "subject": "Social Science",
             "chapter_title": "Oceans and Continents",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.689085"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1634,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fees102_fc01",
-                        "front": "What key point should you remember from Oceans and Continents?",
-                        "back": "2 CHAPTER Oceans and Continents The ocean is everything.",
-                        "concept_id": "fees102_c01"
+                        "term": "Definition of Ocean",
+                        "definition": "A very large expanse of salty water present in the Earth, covering about 71% of the Earth's surface."
                     },
                     {
-                        "id": "fees102_fc02",
-                        "front": "What key point should you remember from Oceans and Continents?",
-                        "back": "It is an immense desert, where man is never lonely, for he feels life stirring all around.",
-                        "concept_id": "fees102_c01"
+                        "term": "Pacific Ocean",
+                        "definition": "The largest and deepest of the five oceans."
                     },
                     {
-                        "id": "fees102_fc03",
-                        "front": "What key point should you remember from Oceans and Continents?",
-                        "back": "The globe began with the ocean, so to speak, and who knows if it will not end with it.",
-                        "concept_id": "fees102_c01"
+                        "term": "Continents",
+                        "definition": "Enclosed landmasses that are continuous and distinct, separated from each other by water."
                     },
                     {
-                        "id": "fees102_fc04",
-                        "front": "What key point should you remember from Oceans and Continents?",
-                        "back": "In what ways do oceans and continents impact life on Earth, including human life?",
-                        "concept_id": "fees102_c01"
-                    },
-                    {
-                        "id": "fees102_fc05",
-                        "front": "What key point should you remember from Oceans and Continents?",
-                        "back": "2.1 The Earth seen from space (photograph by the Lunar Reconnaissance Orbiter).",
-                        "concept_id": "fees102_c01"
-                    },
-                    {
-                        "id": "fees102_fc06",
-                        "front": "What key point should you remember from Oceans and Continents?",
-                        "back": "The view is centred on the Indian Ocean, with Africa to the left, India and part of Asia at the top, Australia to the right, and Antarctica at the bottom.",
-                        "concept_id": "fees102_c01"
+                        "term": "Plate Tectonics",
+                        "definition": "The theory that the Earth's outer layer is divided into several large plates that move slowly, causing geological events like earthquakes and volcanic eruptions."
                     }
                 ]
             },

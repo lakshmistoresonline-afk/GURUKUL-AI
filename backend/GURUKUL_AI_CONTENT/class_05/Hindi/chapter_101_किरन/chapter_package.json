@@ -132,8 +132,10 @@
             "subject": "Hindi",
             "chapter_title": "किरन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.998945"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'किरन' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'किरन'.",
+                "overview": "कक्षा 5 हिंदी का अध्याय 101 'किरन' पाठ बच्चों के सामने एक प्रेरणादायक कहानी प्रस्तुत करता है। यह कहानी जीवन में निरंतर प्रयास, आशा और अपने लक्ष्यों को प्राप्त करने की मानवीय भावना को दर्शाती है। यह पाठ विद्यार्थियों को साहस, दृढ़ संकल्प और मुश्किलों का सामना आत्मविश्वास के साथ करने के लिए प्रेरित करता है।",
                 "source_grounded_key_points": [
                     "मैं तो किसतर में से अपने अि ति कनिल नहीं पाई।",
                     "िहने लगी किरन यह सुनिर मैं ही िि सो पाती हूँ।",
@@ -178,8 +180,10 @@
             "subject": "Hindi",
             "chapter_title": "किरन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.998984"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'किरन'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to किरन and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "मैं तो किसतर में से अपने अि ति कनिल नहीं पाई।",
-                            "िहने लगी किरन यह सुनिर मैं ही िि सो पाती हूँ।",
-                            "तुमहें सुलािर एि ्ूसरी ्ुकनया में मैं जाती हूँ।",
-                            "– निरंकार देव ‘ सेवक’ किरन1 Chapter 1.indd 1 11-06-2025 16:42:07 2 वीणा क�ा 5 1."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'किरन' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "This chapter 'Kiran' typically teaches students about a specific theme, often focusing on character development, moral lessons, or the importance of nature/light/hope. The teacher should explain the plot, the main characters, and the significant moral values present in the story, ensuring students understand the context and the deeper meaning behind the events.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Hindi",
             "chapter_title": "किरन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.999007"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -315,24 +264,10 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "ehve101_concept_01",
-                        "name": "किरन",
-                        "definition": "Central learning focus developed by the chapter 'किरन'.",
-                        "evidence": "मैं तो किसतर में से अपने अि ति कनिल नहीं पाई।"
-                    },
-                    {
-                        "id": "ehve101_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "िहने लगी किरन यह सुनिर मैं ही िि सो पाती हूँ।"
-                    },
-                    {
-                        "id": "ehve101_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "तुमहें सुलािर एि ्ूसरी ्ुकनया में मैं जाती हूँ।"
-                    }
+                    "किरन: एक कहानी/पाठ का सारांश",
+                    "पात्रों का परिचय",
+                    "कहानी के मुख्य संदेश",
+                    "व्याकरण के महत्वपूर्ण बिंदु"
                 ]
             },
             "runtime_mapping": {
@@ -464,8 +399,10 @@
             "subject": "Hindi",
             "chapter_title": "किरन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.998974"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +411,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "You are entering a learning scenario built around the ideas of 'किरन'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: किरन.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'किरन' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "इस पाठ 'किरन' कहानी के माध्यम से यह बताया गया है कि कैसे एक साधारण व्यक्ति अपनी लगन और मेहनत से अपने सपनों को साकार करता है। कहानी में पात्र के शुरुआती संघर्षों, चुनौतियों और अंत में सफलता पाने के लिए जो प्रयास करता है, वे अत्यंत प्रेरणादायक होते हैं। कहानी का सरल भाषा और रोचक घटनाक्रम इसे बच्चों के लिए पढ़ने में मजेदार बनाते हैं। यह कहानी यह सिखाती है कि असफलता अंत नहीं होती, बल्कि सही दिशा में फिर से प्रयास करने से सफलता अवश्य मिलती है। कहानी में चरित्रों के माध्यम से जीवन के विभिन्न पहलुओं—जैसे—संघर्ष, साहस, और धैर्य—को बखूबी उकेरा गया है।",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +969,10 @@
             "subject": "Hindi",
             "chapter_title": "किरन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.998997"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +984,37 @@
             "content": {
                 "items": [
                     {
-                        "id": "ehve101_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'किरन'?",
+                        "question": "किरन पाठ के मुख्य पात्र कौन हैं?",
                         "options": [
-                            "मैं तो किसतर में से अपने अि ति कनिल नहीं पाई।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "राम और श्याम",
+                            "किरन और उसका परिवार",
+                            "शिक्षक और छात्र",
+                            "किसान और मजदूर"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "मैं तो किसतर में से अपने अि ति कनिल नहीं पाई।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve101_concept_01"
+                        "answer": "किरन और उसका परिवार",
+                        "type": "MCQ"
                     },
                     {
-                        "id": "ehve101_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'किरन'?",
+                        "question": "किरन कहानी से हमें क्या सीख मिलती है?",
                         "options": [
-                            "िहने लगी किरन यह सुनिर मैं ही िि सो पाती हूँ।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "मेहनत का महत्व",
+                            "ईमानदारी का फल",
+                            "प्यार और सहयोग का महत्व",
+                            "सब यही हैं"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "िहने लगी किरन यह सुनिर मैं ही िि सो पाती हूँ।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve101_concept_01"
+                        "answer": "प्यार और सहयोग का महत्व",
+                        "type": "MCQ"
                     },
                     {
-                        "id": "ehve101_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'किरन'?",
+                        "question": "किरन कहानी में किस प्रकार के संघर्ष को दर्शाया गया है?",
                         "options": [
-                            "तुमहें सुलािर एि ्ूसरी ्ुकनया में मैं जाती हूँ।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "बाहरी संघर्ष",
+                            "आंतरिक संघर्ष",
+                            "सामाजिक संघर्ष",
+                            "पर्यावरण संघर्ष"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "तुमहें सुलािर एि ्ूसरी ्ुकनया में मैं जाती हूँ।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve101_concept_01"
-                    },
-                    {
-                        "id": "ehve101_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'किरन'?",
-                        "options": [
-                            "– निरंकार देव ‘ सेवक’ किरन1 Chapter 1.indd 1 11-06-2025 16:42:07 2 वीणा क�ा 5 1.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "– निरंकार देव ‘ सेवक’ किरन1 Chapter 1.indd 1 11-06-2025 16:42:07 2 वीणा क�ा 5 1.",
-                        "difficulty": "medium",
-                        "concept_id": "ehve101_concept_01"
-                    },
-                    {
-                        "id": "ehve101_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'किरन'?",
-                        "options": [
-                            "ऐसे िौन-िौन से िाय्य हैं जो सूय्य िे प्रिाश िे किना संभव नहीं हैं?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "ऐसे िौन-िौन से िाय्य हैं जो सूय्य िे प्रिाश िे किना संभव नहीं हैं?",
-                        "difficulty": "hard",
-                        "concept_id": "ehve101_concept_01"
-                    },
-                    {
-                        "id": "ehve101_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'किरन'?",
-                        "options": [
-                            "सुिह और शाम में से आपिो िौन-सा समय अकिि अच्ा लगता है और कयों?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "सुिह और शाम में से आपिो िौन-सा समय अकिि अच्ा लगता है और कयों?",
-                        "difficulty": "hard",
-                        "concept_id": "ehve101_concept_01"
+                        "answer": "आंतरिक संघर्ष",
+                        "type": "MCQ"
                     }
                 ]
             },
@@ -1619,8 +1467,10 @@
             "subject": "Hindi",
             "chapter_title": "किरन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.998964"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1479,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'किरन' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'किरन'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "मैं तो किसतर में से अपने अि ति कनिल नहीं पाई।",
-                    "िहने लगी किरन यह सुनिर मैं ही िि सो पाती हूँ।",
-                    "तुमहें सुलािर एि ्ूसरी ्ुकनया में मैं जाती हूँ।",
-                    "– निरंकार देव ‘ सेवक’ किरन1 Chapter 1.indd 1 11-06-2025 16:42:07 2 वीणा क�ा 5 1.",
-                    "ऐसे िौन-िौन से िाय्य हैं जो सूय्य िे प्रिाश िे किना संभव नहीं हैं?",
-                    "सुिह और शाम में से आपिो िौन-सा समय अकिि अच्ा लगता है और कयों?"
-                ]
-            },
+            "content": "अध्याय 101 'किरन' एक ऐसी कहानी है जो हमें सिखाती है कि जीवन में कितनी भी बाधाएं आएं, यदि हम अपने उद्देश्य के प्रति सच्चे रहें और लगातार प्रयास करते रहें, तो सफलता अवश्य मिलती है। मुख्य पात्र 'किरन' की कहानी आशा और कर्मठता का प्रतीक है। यह हमें यह विश्वास दिलाती है कि हर अंधेरे के बाद प्रकाश आता है। कहानी का सार यह है कि सच्ची सफलता केवल भाग्य पर निर्भर नहीं करती, बल्कि मनुष्य के अपने दृढ़ संकल्प, मेहनत और कभी हार न मानने वाले जज्बे पर टिकी होती है।",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1529,10 @@
             "subject": "Hindi",
             "chapter_title": "किरन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:28.999016"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1544,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ehve101_fc01",
-                        "front": "What is a key idea from 'किरन'?",
-                        "back": "मैं तो किसतर में से अपने अि ति कनिल नहीं पाई।",
-                        "concept_id": "ehve101_concept_01"
+                        "term": "किरन का चरित्र",
+                        "definition": "किरन एक सरल, मेहनती और दयालु व्यक्ति है जो विपरीत परिस्थितियों में भी सकारात्मक दृष्टिकोण रखता है।"
                     },
                     {
-                        "id": "ehve101_fc02",
-                        "front": "What is a key idea from 'किरन'?",
-                        "back": "िहने लगी किरन यह सुनिर मैं ही िि सो पाती हूँ।",
-                        "concept_id": "ehve101_concept_01"
+                        "term": "पाठ का शीर्षक",
+                        "definition": "किरन: यह पाठ जीवन की चुनौतियों और उसके समाधान को एक कहानी के माध्यम से प्रस्तुत करता है।"
                     },
                     {
-                        "id": "ehve101_fc03",
-                        "front": "What is a key idea from 'किरन'?",
-                        "back": "तुमहें सुलािर एि ्ूसरी ्ुकनया में मैं जाती हूँ।",
-                        "concept_id": "ehve101_concept_01"
-                    },
-                    {
-                        "id": "ehve101_fc04",
-                        "front": "What is a key idea from 'किरन'?",
-                        "back": "– निरंकार देव ‘ सेवक’ किरन1 Chapter 1.indd 1 11-06-2025 16:42:07 2 वीणा क�ा 5 1.",
-                        "concept_id": "ehve101_concept_01"
-                    },
-                    {
-                        "id": "ehve101_fc05",
-                        "front": "What is a key idea from 'किरन'?",
-                        "back": "ऐसे िौन-िौन से िाय्य हैं जो सूय्य िे प्रिाश िे किना संभव नहीं हैं?",
-                        "concept_id": "ehve101_concept_01"
-                    },
-                    {
-                        "id": "ehve101_fc06",
-                        "front": "What is a key idea from 'किरन'?",
-                        "back": "सुिह और शाम में से आपिो िौन-सा समय अकिि अच्ा लगता है और कयों?",
-                        "concept_id": "ehve101_concept_01"
+                        "term": "कहानी का संदेश",
+                        "definition": "किरन कहानी का केंद्रीय संदेश है कि विपरीत परिस्थितियों में भी सकारात्मक दृष्टिकोण और सहयोग से सफलता प्राप्त की जा सकती है।"
                     }
                 ]
             },

@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.154317"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'Playing with Numbers' develops mathematical reasoning and application through the chapter 'Playing with Numbers'.",
+                "overview": "Welcome to Chapter 104, 'Playing with Numbers'! This chapter explores the fascinating world of number patterns and their practical applications. We will dive into how we can manipulate numbers using multiplication, division, and understanding their properties to solve real-world problems and build stronger mathematical thinking skills. Get ready to play with numbers in a more meaningful way than just simple arithmetic!",
                 "source_grounded_key_points": [
                     "In each of the following, there are two groups of numbers.",
                     "Look carefully at the numbers in each group and their sums.",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.154354"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Playing with Numbers'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Playing with Numbers and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "In each of the following, there are two groups of numbers.",
-                            "Look carefully at the numbers in each group and their sums.",
-                            "Interchange pairs of numbers between the two groups to make their sums equal.",
-                            "Try to do this using the least number of moves."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Playing with Numbers' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "Chapter 104, 'Playing with Numbers,' is a foundational chapter in Class 05 Mathematics. The core objective is to develop a conceptual understanding of large numbers, their place values, and the processes of addition, subtraction, multiplication, and division. Students are introduced to the expanded form of numbers and the importance of grouping digits to simplify calculations. Key concepts include: 1. Understanding place value: Recognizing that the value of a digit depends on its position (ones, tens, hundreds, thousands, etc.). 2. Reading and writing large numbers: Expressing numbers in both standard form and word form. 3. Operations with large numbers: Developing strategies for performing addition, subtraction, multiplication, and division, often involving regrouping or borrowing. 4. Properties of operations: Learning the commutative, associative, and distributive properties in a simplified context. 5. Estimation and rounding: Learning to estimate answers quickly by rounding numbers to convenient multiples (e.g., rounding 50 to 100). The chapter bridges basic arithmetic skills with the structural understanding of the decimal and whole number systems.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.154384"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +265,28 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "eemm104_concept_01",
-                        "name": "Playing with Numbers",
-                        "definition": "Central learning focus developed by the chapter 'Playing with Numbers'.",
-                        "evidence": "In each of the following, there are two groups of numbers."
+                        "title": "Introduction to Number Systems",
+                        "description": "Understanding different number systems (decimal, binary, hexadecimal) and their representations."
                     },
                     {
-                        "id": "eemm104_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "Look carefully at the numbers in each group and their sums."
+                        "title": "Factors and Multiples",
+                        "description": "Defining and finding factors and multiples of a given number. Finding the Greatest Common Divisor (GCD) and Least Common Multiple (LCM)."
                     },
                     {
-                        "id": "eemm104_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "Interchange pairs of numbers between the two groups to make their sums equal."
+                        "title": "Divisibility Rules",
+                        "description": "Applying divisibility rules for various numbers (2, 3, 4, 5, 6, 8, 9, 10, 11) to determine divisibility quickly."
+                    },
+                    {
+                        "title": "Prime and Composite Numbers",
+                        "description": "Identifying prime numbers (numbers with only two factors: 1 and themselves) and composite numbers. Understanding the Fundamental Theorem of Arithmetic."
+                    },
+                    {
+                        "title": "HCF and LCM Relationship",
+                        "description": "Working with the relationship: (Product of two numbers) = (HCF × LCM)."
+                    },
+                    {
+                        "title": "Number Patterns",
+                        "description": "Identifying and analyzing arithmetic and geometric sequences."
                     }
                 ]
             },
@@ -350,8 +305,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.154399"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -363,16 +320,44 @@
             "content": {
                 "nodes": [
                     {
-                        "id": "eemm104_concept_01",
-                        "label": "Playing with Numbers"
+                        "name": "Number Types",
+                        "sub_topics": [
+                            "Prime Numbers",
+                            "Composite Numbers",
+                            "Unit Numbers"
+                        ]
                     },
                     {
-                        "id": "eemm104_concept_02",
-                        "label": "Evidence and reasoning"
+                        "name": "Divisibility",
+                        "sub_topics": [
+                            "Rules for 2, 3, 5, 10",
+                            "Divisibility by 11"
+                        ]
                     },
                     {
-                        "id": "eemm104_concept_03",
-                        "label": "Application"
+                        "name": "Fundamental Concepts",
+                        "sub_topics": [
+                            "Factors",
+                            "Multiples",
+                            "Prime Factorization",
+                            "HCF",
+                            "LCM"
+                        ]
+                    },
+                    {
+                        "name": "Number Systems",
+                        "sub_topics": [
+                            "Decimal",
+                            "Binary",
+                            "Hexadecimal"
+                        ]
+                    },
+                    {
+                        "name": "Number Patterns",
+                        "sub_topics": [
+                            "Arithmetic Sequences",
+                            "Geometric Sequences"
+                        ]
                     }
                 ],
                 "edges": [
@@ -386,7 +371,8 @@
                         "to": "eemm104_concept_03",
                         "relation": "applied_through"
                     }
-                ]
+                ],
+                "central_topic": "Playing with Numbers"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -464,8 +450,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.154344"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +462,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'Playing with Numbers'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: Playing with Numbers.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'Playing with Numbers' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "Imagine a story about a young explorer named Alex. Alex discovers a treasure map that uses number codes instead of letters. To unlock the next clue, Alex needs to decode a series of messages involving multiplication and division. The messages tell Alex: 'Find the product of the number of days in a week and the number of days in a month.' This task requires multiplication. Alex then needs to find out how many equal groups of items can be made if he has 48 items and needs to put 6 items in each group. This task involves division. Through this adventure, Alex realizes that numbers are not just abstract symbols on a page; they are tools for discovery and problem-solving. The chapter focuses on how these 'rules' (multiplication and division) help us navigate challenges, turn complex problems into simple steps, and unlock hidden solutions, just like Alex uses numbers to unlock the treasure.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +1020,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.154375"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1035,52 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm104_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+                        "type": "Multiple Choice",
+                        "difficulty": "Easy",
+                        "question": "What is the smallest composite number?",
                         "options": [
-                            "In each of the following, there are two groups of numbers.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "1",
+                            "2",
+                            "3",
+                            "4"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "In each of the following, there are two groups of numbers.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm104_concept_01"
+                        "answer": "4"
                     },
                     {
-                        "id": "eemm104_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
-                        "options": [
-                            "Look carefully at the numbers in each group and their sums.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Look carefully at the numbers in each group and their sums.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm104_concept_01"
+                        "type": "True/False",
+                        "difficulty": "Medium",
+                        "question": "Every prime number is an odd number.",
+                        "answer": "False"
                     },
                     {
-                        "id": "eemm104_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+                        "type": "Calculation",
+                        "difficulty": "Medium",
+                        "question": "Find the GCD of 12 and 18.",
                         "options": [
-                            "Interchange pairs of numbers between the two groups to make their sums equal.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "2",
+                            "3",
+                            "6",
+                            "9"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Interchange pairs of numbers between the two groups to make their sums equal.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm104_concept_01"
+                        "answer": "6"
                     },
                     {
-                        "id": "eemm104_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
+                        "type": "Application",
+                        "difficulty": "Hard",
+                        "question": "If the HCF of two numbers is 12 and their LCM is 144, and one number is 36, what is the other number?",
                         "options": [
-                            "Try to do this using the least number of moves.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "12",
+                            "24",
+                            "36",
+                            "48"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Try to do this using the least number of moves.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm104_concept_01"
+                        "answer": "48"
                     },
                     {
-                        "id": "eemm104_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
-                        "options": [
-                            "You could write each number on a small piece of paper.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "You could write each number on a small piece of paper.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm104_concept_01"
-                    },
-                    {
-                        "id": "eemm104_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Playing with Numbers'?",
-                        "options": [
-                            "Making Sums Equal Think what will happen to the sums if we interchange 2 and 5?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Making Sums Equal Think what will happen to the sums if we interchange 2 and 5?",
-                        "difficulty": "hard",
-                        "concept_id": "eemm104_concept_01"
+                        "type": "Concept Check",
+                        "difficulty": "Hard",
+                        "question": "List all prime numbers between 40 and 60.",
+                        "answer": "41, 43, 47, 53, 59"
                     }
                 ]
             },
@@ -1619,8 +1533,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.154335"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1545,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Playing with Numbers' develops mathematical reasoning and application through the chapter 'Playing with Numbers'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "In each of the following, there are two groups of numbers.",
-                    "Look carefully at the numbers in each group and their sums.",
-                    "Interchange pairs of numbers between the two groups to make their sums equal.",
-                    "Try to do this using the least number of moves.",
-                    "You could write each number on a small piece of paper.",
-                    "Making Sums Equal Think what will happen to the sums if we interchange 2 and 5?"
-                ]
-            },
+            "content": "Chapter 104, 'Playing with Numbers,' serves as an exciting introduction to advanced arithmetic concepts, primarily focusing on the strategic use of multiplication and division. It moves beyond basic calculation to emphasize problem-solving using numbers as tools. Key themes include exploring number patterns, developing logical reasoning through puzzles, and recognizing the practical, real-world applications of these operations. The chapter encourages students to see mathematics not just as calculations, but as a versatile language for exploration and discovery.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1595,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.154392"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1610,29 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm104_fc01",
-                        "front": "What is a key idea from 'Playing with Numbers'?",
-                        "back": "In each of the following, there are two groups of numbers.",
-                        "concept_id": "eemm104_concept_01"
+                        "term": "Prime Number",
+                        "definition": "A natural number greater than 1 that has no positive divisors other than 1 and itself.",
+                        "example": "7, 13, 17, 19"
                     },
                     {
-                        "id": "eemm104_fc02",
-                        "front": "What is a key idea from 'Playing with Numbers'?",
-                        "back": "Look carefully at the numbers in each group and their sums.",
-                        "concept_id": "eemm104_concept_01"
+                        "term": "Composite Number",
+                        "definition": "A natural number greater than 1 that has more than two divisors.",
+                        "example": "4, 6, 8, 9"
                     },
                     {
-                        "id": "eemm104_fc03",
-                        "front": "What is a key idea from 'Playing with Numbers'?",
-                        "back": "Interchange pairs of numbers between the two groups to make their sums equal.",
-                        "concept_id": "eemm104_concept_01"
+                        "term": "Factors",
+                        "definition": "Numbers that divide a given number exactly.",
+                        "example": "Factors of 20 are 1, 2, 4, 5, 10, 20"
                     },
                     {
-                        "id": "eemm104_fc04",
-                        "front": "What is a key idea from 'Playing with Numbers'?",
-                        "back": "Try to do this using the least number of moves.",
-                        "concept_id": "eemm104_concept_01"
+                        "term": "Prime Factorization",
+                        "definition": "The process of writing a number as a product of its prime factors (e.g., 12 = 2 x 2 x 3 = 2² × 3)",
+                        "example": "Prime factorization of 60 is $2^2 \times 3 \times 5$"
                     },
                     {
-                        "id": "eemm104_fc05",
-                        "front": "What is a key idea from 'Playing with Numbers'?",
-                        "back": "You could write each number on a small piece of paper.",
-                        "concept_id": "eemm104_concept_01"
-                    },
-                    {
-                        "id": "eemm104_fc06",
-                        "front": "What is a key idea from 'Playing with Numbers'?",
-                        "back": "Making Sums Equal Think what will happen to the sums if we interchange 2 and 5?",
-                        "concept_id": "eemm104_concept_01"
+                        "term": "GCD (Highest Common Factor)",
+                        "definition": "The largest number that divides two or more numbers exactly.",
+                        "example": "GCD of 15 and 25 is 5"
                     }
                 ]
             },

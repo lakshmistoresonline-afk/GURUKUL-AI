@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Plants",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.238604"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Life Processes in Plants.",
+                "overview": "This chapter delves into the incredible world of plant life, focusing on the fundamental life processes that sustain plants. It explores the intricate mechanisms by which plants acquire energy, synthesize nutrients, and interact with their environment.",
                 "source_grounded_key_points": [
                     "Life Processes 10 in Plants In Grade 6, we learnt that all living beings grow and need food for their growth.",
                     "Also, in the previous chapter, we discussed the process through which animals obtain nutrition.",
@@ -185,8 +187,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Plants",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.238651"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Life Processes in Plants.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Life Processes 10 in Plants In Grade 6, we learnt that all living beings grow and need food for their growth.",
-                            "Also, in the previous chapter, we discussed the process through which animals obtain nutrition.",
-                            "We know that animals eat food to grow, but what about plants?",
-                            "As animals grow, their size and weight usually increase, and their bodies undergo various changes.",
-                            "We learnt that food provides nutrients like carbohydrates, fats, proteins, vitamins, and minerals, which, along with water, are all essential for growth."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 110, 'Life Processes in Plants', is fundamental to understanding how plants survive and thrive. This chapter explains the essential life functions that allow plants to grow, reproduce, and maintain themselves. Key concepts include photosynthesis (the process of converting light energy into chemical energy), respiration (the process of breaking down food to release energy), and transpiration (the evaporation of water from plants, primarily from the leaves). Understanding these processes is crucial for appreciating the plant's role in ecosystems, as they form the basis of almost all food chains. The chapter also covers modes of pollination and seed dispersal, which are vital for the sexual reproduction of plants. These processes are intricately linked and demonstrate the sophisticated energy conversion mechanisms plants use to sustain life.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Plants",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.238673"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,54 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu110_c01",
-                        "name": "Life Processes in Plants",
-                        "definition": "Central learning focus of Life Processes in Plants.",
-                        "source_evidence": "Life Processes 10 in Plants In Grade 6, we learnt that all living beings grow and need food for their growth."
+                        "topic": "Cell Structure and Functions",
+                        "sub_topics": [
+                            "Cell Membrane",
+                            "Mitochondria",
+                            "Nucleus",
+                            "Vacuole",
+                            "Chloroplast",
+                            "Cell Wall"
+                        ]
                     },
                     {
-                        "id": "gecu110_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Also, in the previous chapter, we discussed the process through which animals obtain nutrition."
+                        "topic": "Photosynthesis",
+                        "sub_topics": [
+                            "Definition and Equation",
+                            "Requirements (CO2, Water, Light)",
+                            "Location in the Plant",
+                            "Light-dependent Reactions",
+                            "Light-independent Reactions (Calvin Cycle)",
+                            "Pigments (Chlorophyll)"
+                        ]
                     },
                     {
-                        "id": "gecu110_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "We know that animals eat food to grow, but what about plants?"
+                        "topic": "Respiration",
+                        "sub_topics": [
+                            "Definition and Equation",
+                            "Aerobic Respiration",
+                            "Anaerobic Respiration",
+                            "Role of Glycolysis",
+                            "Energy Release (ATP)"
+                        ]
+                    },
+                    {
+                        "topic": "Transpiration",
+                        "sub_topics": [
+                            "Definition",
+                            "Stomata",
+                            "Xylem and Phloem",
+                            "Role in Plant Water Transport"
+                        ]
+                    },
+                    {
+                        "topic": "Plant Growth and Development",
+                        "sub_topics": [
+                            "Growth and Development Phases",
+                            "Plant Hormones (Auxins, Gibberellins, Ethylene, Cytokinins)",
+                            "Phototropism",
+                            "Gravitropism"
+                        ]
                     }
                 ]
             },
@@ -360,8 +340,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Plants",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.238695"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +378,17 @@
                         "to": "gecu110_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "central_node": "Life Processes in Plants",
+                "branch_1": "Nutrition",
+                "sub_branch_1_1": "Photosynthesis",
+                "sub_branch_1_2": "Respiration",
+                "branch_2": "Transport",
+                "sub_branch_2_1": "Xylem (Water/Minerals)",
+                "sub_branch_2_2": "Phloem (Food transport)",
+                "branch_3": "Regulation",
+                "sub_branch_3_1": "Hormones (Auxin, Ethylene, etc.)",
+                "sub_branch_3_2": "Movement (Tropisms)"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +482,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Plants",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.238641"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +494,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Life Processes in Plants.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Life Processes in Plants supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a tiny plant, a silent powerhouse absorbing sunlight like a solar panel. This chapter tells the story of the plant's daily life, starting with photosynthesis, the magical process where plants convert light energy into chemical energy (food). We'll journey into the plant cells, revealing the microscopic factories where all the life happens. We'll see how roots act as the anchor and food transporters, and how the stem transports water upwards. This chapter also highlights the vital process of transpiration, where plants release water vapor, creating a connection between the plant and the atmosphere. Through these interconnected processes, we see how plants thrive and maintain their existence, making them the foundation of almost every ecosystem on Earth.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1089,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Plants",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.238664"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1104,40 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu110_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Plants'?",
+                        "id": 1,
+                        "question": "Which organelle is primarily responsible for carrying out photosynthesis in plant cells?",
+                        "type": "Multiple Choice",
                         "options": [
-                            "Life Processes 10 in Plants In Grade 6, we learnt that all living beings grow and need food for their growth.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Mitochondria",
+                            "Ribosome",
+                            "Chloroplast",
+                            "Nucleus"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Life Processes 10 in Plants In Grade 6, we learnt that all living beings grow and need food for their growth.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu110_c01"
+                        "answer": "Chloroplast"
                     },
                     {
-                        "id": "gecu110_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Plants'?",
-                        "options": [
-                            "Also, in the previous chapter, we discussed the process through which animals obtain nutrition.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Also, in the previous chapter, we discussed the process through which animals obtain nutrition.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu110_c01"
+                        "id": 2,
+                        "question": "Name the process by which plants convert light energy into chemical energy (glucose).",
+                        "type": "Fill in the blanks",
+                        "answer": "Photosynthesis"
                     },
                     {
-                        "id": "gecu110_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Plants'?",
-                        "options": [
-                            "We know that animals eat food to grow, but what about plants?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We know that animals eat food to grow, but what about plants?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu110_c01"
+                        "id": 3,
+                        "question": "What is the primary function of the xylem in a plant?",
+                        "type": "Short Answer",
+                        "answer": "Transports water and minerals from roots to leaves."
                     },
                     {
-                        "id": "gecu110_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Plants'?",
+                        "id": 4,
+                        "question": "Which hormone is responsible for the bending of shoots towards sunlight (Phototropism)?",
+                        "type": "Multiple Choice",
                         "options": [
-                            "As animals grow, their size and weight usually increase, and their bodies undergo various changes.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Ethylene",
+                            "Auxin",
+                            "Gibberellins",
+                            "Cytokinins"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "As animals grow, their size and weight usually increase, and their bodies undergo various changes.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu110_c01"
-                    },
-                    {
-                        "id": "gecu110_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Plants'?",
-                        "options": [
-                            "We learnt that food provides nutrients like carbohydrates, fats, proteins, vitamins, and minerals, which, along with water, are all essential for growth.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We learnt that food provides nutrients like carbohydrates, fats, proteins, vitamins, and minerals, which, along with water, are all essential for growth.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu110_c01"
-                    },
-                    {
-                        "id": "gecu110_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Plants'?",
-                        "options": [
-                            "Let us explore how plants obtain nutrients for their growth.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Let us explore how plants obtain nutrients for their growth.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu110_c01"
-                    },
-                    {
-                        "id": "gecu110_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Plants'?",
-                        "options": [
-                            "Have you observed any changes in a plant during its life span?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Have you observed any changes in a plant during its life span?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu110_c01"
-                    },
-                    {
-                        "id": "gecu110_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Plants'?",
-                        "options": [
-                            "As a plant grows, new leaves and branches emerge, its height increases, and its stem thickens.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "As a plant grows, new leaves and branches emerge, its height increases, and its stem thickens.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu110_c01"
+                        "answer": "Auxin"
                     }
                 ]
             },
@@ -1715,8 +1591,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Plants",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.238631"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1603,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Life Processes in Plants' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Life Processes 10 in Plants In Grade 6, we learnt that all living beings grow and need food for their growth.",
-                    "Also, in the previous chapter, we discussed the process through which animals obtain nutrition.",
-                    "We know that animals eat food to grow, but what about plants?",
-                    "As animals grow, their size and weight usually increase, and their bodies undergo various changes.",
-                    "We learnt that food provides nutrients like carbohydrates, fats, proteins, vitamins, and minerals, which, along with water, are all essential for growth.",
-                    "Let us explore how plants obtain nutrients for their growth.",
-                    "Have you observed any changes in a plant during its life span?"
-                ]
-            },
+            "content": "Chapter 110, 'Life Processes in Plants', provides a comprehensive overview of the biochemical and physiological mechanisms that govern the survival of plants. Key topics include photosynthesis (the conversion of light energy into chemical energy), respiration (the release of energy from glucose), the structure and functions of plant tissues, water transport via xylem and phloem, and transpiration. The chapter underscores the interdependence of these processes, demonstrating how plants efficiently acquire resources, produce food, and maintain homeostasis, highlighting their complexity and essential role in sustaining life on our planet.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1653,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Plants",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.238682"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1668,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu110_fc01",
-                        "front": "What should you remember from Life Processes in Plants?",
-                        "back": "Life Processes 10 in Plants In Grade 6, we learnt that all living beings grow and need food for their growth.",
-                        "concept_id": "gecu110_c01"
+                        "term": "Photosynthesis",
+                        "definition": "The process by which green plants use sunlight to synthesize foods from carbon dioxide and water."
                     },
                     {
-                        "id": "gecu110_fc02",
-                        "front": "What should you remember from Life Processes in Plants?",
-                        "back": "Also, in the previous chapter, we discussed the process through which animals obtain nutrition.",
-                        "concept_id": "gecu110_c01"
+                        "term": "Stomata",
+                        "definition": "Small pores on the surface of leaves through which gases like CO2 and O2 are exchanged."
                     },
                     {
-                        "id": "gecu110_fc03",
-                        "front": "What should you remember from Life Processes in Plants?",
-                        "back": "We know that animals eat food to grow, but what about plants?",
-                        "concept_id": "gecu110_c01"
+                        "term": "Light-independent reactions",
+                        "definition": "The part of photosynthesis that does not directly require light energy but uses the energy captured in the light reactions to fix carbon dioxide into sugar."
                     },
                     {
-                        "id": "gecu110_fc04",
-                        "front": "What should you remember from Life Processes in Plants?",
-                        "back": "As animals grow, their size and weight usually increase, and their bodies undergo various changes.",
-                        "concept_id": "gecu110_c01"
-                    },
-                    {
-                        "id": "gecu110_fc05",
-                        "front": "What should you remember from Life Processes in Plants?",
-                        "back": "We learnt that food provides nutrients like carbohydrates, fats, proteins, vitamins, and minerals, which, along with water, are all essential for growth.",
-                        "concept_id": "gecu110_c01"
-                    },
-                    {
-                        "id": "gecu110_fc06",
-                        "front": "What should you remember from Life Processes in Plants?",
-                        "back": "Let us explore how plants obtain nutrients for their growth.",
-                        "concept_id": "gecu110_c01"
-                    },
-                    {
-                        "id": "gecu110_fc07",
-                        "front": "What should you remember from Life Processes in Plants?",
-                        "back": "Have you observed any changes in a plant during its life span?",
-                        "concept_id": "gecu110_c01"
-                    },
-                    {
-                        "id": "gecu110_fc08",
-                        "front": "What should you remember from Life Processes in Plants?",
-                        "back": "As a plant grows, new leaves and branches emerge, its height increases, and its stem thickens.",
-                        "concept_id": "gecu110_c01"
+                        "term": "Auxins",
+                        "definition": "Plant hormones that promote cell elongation and growth, crucial for phototropism."
                     }
                 ]
             },

@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Tale of Three Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.047168"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for A Tale of Three Intersecting Lines.",
+                "overview": "This chapter introduces students to the fascinating world of linear equations in two variables and their graphical representation. It begins with a narrative or 'tale' about three intersecting lines, providing a real-world context for understanding concepts such as 'solution', 'points', and the geometric interpretation of algebraic expressions.",
                 "source_grounded_key_points": [
                     "A TALE OF THREE 7 INTERSECTING LINES A triangle is the most basic closed shape.",
                     "As we know, it consists of: • three corner points, that we call the vertex of the triangle, and • three line segments or the sides of the triangle that join the pairs of vertices.",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Tale of Three Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.047219"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of A Tale of Three Intersecting Lines.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "A TALE OF THREE 7 INTERSECTING LINES A triangle is the most basic closed shape.",
-                            "As we know, it consists of: • three corner points, that we call the vertex of the triangle, and • three line segments or the sides of the triangle that join the pairs of vertices.",
-                            "B A U X Y Z B ∆ YZX A W C ∆ ABC V ∆WUV ∆BAU U Observe the symbol used to denote a triangle and how the triangles are named using their vertices.",
-                            "While naming a triangle, the vertices can come in any order.",
-                            "The three sides meeting at the corners give rise to three angles that we call the angles of the triangle."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Class 07 Mathematics Chapter 107, 'A Tale of Three Intersecting Lines,' is typically an introduction to geometry, specifically focusing on the properties of lines and their intersections. This chapter introduces key concepts like parallel lines, intersecting lines, transversal lines, and the angle relationships that arise from these configurations. The 'tale' metaphor suggests a narrative approach, making abstract geometric concepts relatable through visual examples. The main goal is to help students visualize how lines interact in a two-dimensional plane and understand how angles are formed when lines cross or when a third line cuts across two existing lines.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Tale of Three Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.047245"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,24 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gegp107_c01",
-                        "name": "A Tale of Three Intersecting Lines",
-                        "definition": "Central learning focus of A Tale of Three Intersecting Lines.",
-                        "source_evidence": "A TALE OF THREE 7 INTERSECTING LINES A triangle is the most basic closed shape."
+                        "name": "Intersecting Lines",
+                        "description": "Understanding how two or more lines meet at a single point."
                     },
                     {
-                        "id": "gegp107_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "As we know, it consists of: • three corner points, that we call the vertex of the triangle, and • three line segments or the sides of the triangle that join the pairs of vertices."
+                        "name": "Point of Intersection",
+                        "description": "The specific point where the lines intersect."
                     },
                     {
-                        "id": "gegp107_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "B A U X Y Z B ∆ YZX A W C ∆ ABC V ∆WUV ∆BAU U Observe the symbol used to denote a triangle and how the triangles are named using their vertices."
+                        "name": "Solution of Equations",
+                        "description": "Finding the value of the variable (x, y) that satisfies both linear equations."
+                    },
+                    {
+                        "name": "Coordinate Geometry Basics",
+                        "description": "Using coordinate pairs (x, y) to represent points on a plane."
+                    },
+                    {
+                        "name": "System of Linear Equations (Two Variables)",
+                        "description": "The setup and solution method (substitution, elimination) for finding the intersection point of two lines."
                     }
                 ]
             },
@@ -360,8 +310,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Tale of Three Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.047264"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +347,29 @@
                         "from": "gegp107_c02",
                         "to": "gegp107_c03",
                         "relation": "enables"
+                    }
+                ],
+                "Title": "Chapter 107A: Tale of Three Intersecting Lines",
+                "Nodes": [
+                    "Main Topic: Intersecting Lines",
+                    "Sub-topic 1: Types of Lines (Intersecting vs. Parallel)",
+                    "Sub-topic 2: Point of Intersection (Finding its Coordinates)",
+                    "Sub-topic 3: Solving Systems of Linear Equations (Method of Elimination, Substitution)",
+                    "Sub-topic 4: Graphical Representation (Visualizing the intersection)",
+                    "Sub-topic 5: Relationship with Coordinate Geometry (Points on the lines)"
+                ],
+                "Connections": [
+                    {
+                        "From": "Intersecting Lines",
+                        "To": "Point of Intersection"
+                    },
+                    {
+                        "From": "Point of Intersection",
+                        "To": "Solving Systems of Linear Equations"
+                    },
+                    {
+                        "From": "Solving Systems of Linear Equations",
+                        "To": "Graphical Representation"
                     }
                 ]
             },
@@ -490,8 +465,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Tale of Three Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.047207"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +477,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to A Tale of Three Intersecting Lines.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from A Tale of Three Intersecting Lines supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The story typically involves three lines, each representing a specific linear equation. For instance, Line A might represent $x + y = 3$, Line B might be $2x - y = 1$, and Line C might be $y = 2x - 4$. The narrative describes how the three lines converge at a single point, known as the 'solution'. The explanation emphasizes that this solution $(x, y)$ is the unique point where all three conditions are simultaneously satisfied. Students are guided through steps like checking the coordinates in the equations, using cross-multiplication or the intersection formula to find the point, and relating the algebraic variables back to the geometric coordinates on the graph. The tale uses the convergence of lines to illustrate the solution to a system of three linear equations.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1072,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Tale of Three Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.047237"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1087,32 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp107_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Tale of Three Intersecting Lines'?",
+                        "type": "Multiple Choice",
+                        "question": "If two lines are parallel, what is the number of intersection points?",
                         "options": [
-                            "A TALE OF THREE 7 INTERSECTING LINES A triangle is the most basic closed shape.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Zero",
+                            "One",
+                            "Infinite",
+                            "Two"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "A TALE OF THREE 7 INTERSECTING LINES A triangle is the most basic closed shape.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp107_c01"
+                        "answer": "Zero"
                     },
                     {
-                        "id": "gegp107_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Tale of Three Intersecting Lines'?",
-                        "options": [
-                            "As we know, it consists of: • three corner points, that we call the vertex of the triangle, and • three line segments or the sides of the triangle that join the pairs of vertices.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "As we know, it consists of: • three corner points, that we call the vertex of the triangle, and • three line segments or the sides of the triangle that join the pairs of vertices.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp107_c01"
+                        "type": "Short Answer",
+                        "question": "Write the algebraic method (substitution or elimination) used to solve a system of two linear equations."
                     },
                     {
-                        "id": "gegp107_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Tale of Three Intersecting Lines'?",
-                        "options": [
-                            "B A U X Y Z B ∆ YZX A W C ∆ ABC V ∆WUV ∆BAU U Observe the symbol used to denote a triangle and how the triangles are named using their vertices.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "B A U X Y Z B ∆ YZX A W C ∆ ABC V ∆WUV ∆BAU U Observe the symbol used to denote a triangle and how the triangles are named using their vertices.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp107_c01"
+                        "type": "Problem Solving",
+                        "question": "Find the coordinates of the point where the line $2x + y = 5$ and $x - y = 1$ intersect."
                     },
                     {
-                        "id": "gegp107_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Tale of Three Intersecting Lines'?",
-                        "options": [
-                            "While naming a triangle, the vertices can come in any order.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "While naming a triangle, the vertices can come in any order.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp107_c01"
+                        "type": "True/False",
+                        "question": "Two distinct lines in a plane can intersect at most at one point.",
+                        "answer": "True"
                     },
                     {
-                        "id": "gegp107_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Tale of Three Intersecting Lines'?",
-                        "options": [
-                            "The three sides meeting at the corners give rise to three angles that we call the angles of the triangle.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The three sides meeting at the corners give rise to three angles that we call the angles of the triangle.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp107_c01"
-                    },
-                    {
-                        "id": "gegp107_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Tale of Three Intersecting Lines'?",
-                        "options": [
-                            "For example, in ∆ABC, these angles are ∠CAB, ∠ABC, ∠BCA, which we simply denote as ∠A, ∠B and ∠C, respectively.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "For example, in ∆ABC, these angles are ∠CAB, ∠ABC, ∠BCA, which we simply denote as ∠A, ∠B and ∠C, respectively.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp107_c01"
-                    },
-                    {
-                        "id": "gegp107_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Tale of Three Intersecting Lines'?",
-                        "options": [
-                            "What happens when the three vertices lie on a straight line?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What happens when the three vertices lie on a straight line?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp107_c01"
-                    },
-                    {
-                        "id": "gegp107_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Tale of Three Intersecting Lines'?",
-                        "options": [
-                            "7.1 Equilateral Triangles Among all the triangles, the equilateral triangles are the most symmetric ones.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "7.1 Equilateral Triangles Among all the triangles, the equilateral triangles are the most symmetric ones.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp107_c01"
+                        "type": "Fill in the Blanks",
+                        "question": "The method of solving a system of equations by adding or subtracting the two equations is called the _______ method."
                     }
                 ]
             },
@@ -1715,8 +1566,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Tale of Three Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.047197"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1578,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'A Tale of Three Intersecting Lines' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "A TALE OF THREE 7 INTERSECTING LINES A triangle is the most basic closed shape.",
-                    "As we know, it consists of: • three corner points, that we call the vertex of the triangle, and • three line segments or the sides of the triangle that join the pairs of vertices.",
-                    "B A U X Y Z B ∆ YZX A W C ∆ ABC V ∆WUV ∆BAU U Observe the symbol used to denote a triangle and how the triangles are named using their vertices.",
-                    "While naming a triangle, the vertices can come in any order.",
-                    "The three sides meeting at the corners give rise to three angles that we call the angles of the triangle.",
-                    "For example, in ∆ABC, these angles are ∠CAB, ∠ABC, ∠BCA, which we simply denote as ∠A, ∠B and ∠C, respectively.",
-                    "What happens when the three vertices lie on a straight line?"
-                ]
-            },
+            "content": "Chapter 107, 'A Tale of Three Intersecting Lines,' serves as an educational narrative designed to simplify the complex topic of solving systems of three linear equations. It moves from a simple, illustrative story involving three intersecting lines to the systematic algebraic methods used to find the unique point of intersection. The chapter successfully bridges the abstract concept of 2D geometry and the practical application of solving simultaneous equations, ensuring students not only know how to calculate the solution but also understand its geometric significance.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1628,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Tale of Three Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.047257"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1643,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp107_fc01",
-                        "front": "What should you remember from A Tale of Three Intersecting Lines?",
-                        "back": "A TALE OF THREE 7 INTERSECTING LINES A triangle is the most basic closed shape.",
-                        "concept_id": "gegp107_c01"
+                        "front": "What is the definition of Intersecting Lines?",
+                        "back": "Lines that meet or cross each other at a common point."
                     },
                     {
-                        "id": "gegp107_fc02",
-                        "front": "What should you remember from A Tale of Three Intersecting Lines?",
-                        "back": "As we know, it consists of: • three corner points, that we call the vertex of the triangle, and • three line segments or the sides of the triangle that join the pairs of vertices.",
-                        "concept_id": "gegp107_c01"
+                        "front": "What is the key feature of parallel lines in terms of intersection points?",
+                        "back": "Parallel lines are straight lines in the same plane that never meet (intersection count is zero)."
                     },
                     {
-                        "id": "gegp107_fc03",
-                        "front": "What should you remember from A Tale of Three Intersecting Lines?",
-                        "back": "B A U X Y Z B ∆ YZX A W C ∆ ABC V ∆WUV ∆BAU U Observe the symbol used to denote a triangle and how the triangles are named using their vertices.",
-                        "concept_id": "gegp107_c01"
+                        "front": "How many solutions does a system of two linear equations usually have?",
+                        "back": "One solution (the point of intersection), or zero solutions (parallel lines), or infinite solutions (coincident lines)."
                     },
                     {
-                        "id": "gegp107_fc04",
-                        "front": "What should you remember from A Tale of Three Intersecting Lines?",
-                        "back": "While naming a triangle, the vertices can come in any order.",
-                        "concept_id": "gegp107_c01"
-                    },
-                    {
-                        "id": "gegp107_fc05",
-                        "front": "What should you remember from A Tale of Three Intersecting Lines?",
-                        "back": "The three sides meeting at the corners give rise to three angles that we call the angles of the triangle.",
-                        "concept_id": "gegp107_c01"
-                    },
-                    {
-                        "id": "gegp107_fc06",
-                        "front": "What should you remember from A Tale of Three Intersecting Lines?",
-                        "back": "For example, in ∆ABC, these angles are ∠CAB, ∠ABC, ∠BCA, which we simply denote as ∠A, ∠B and ∠C, respectively.",
-                        "concept_id": "gegp107_c01"
-                    },
-                    {
-                        "id": "gegp107_fc07",
-                        "front": "What should you remember from A Tale of Three Intersecting Lines?",
-                        "back": "What happens when the three vertices lie on a straight line?",
-                        "concept_id": "gegp107_c01"
-                    },
-                    {
-                        "id": "gegp107_fc08",
-                        "front": "What should you remember from A Tale of Three Intersecting Lines?",
-                        "back": "7.1 Equilateral Triangles Among all the triangles, the equilateral triangles are the most symmetric ones.",
-                        "concept_id": "gegp107_c01"
+                        "front": "Name the method used to solve the system of equations by adding the equations together.",
+                        "back": "Addition Method (or Elimination Method)."
                     }
                 ]
             },

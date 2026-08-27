@@ -128,8 +128,10 @@
             "subject": "Mathematics",
             "chapter_title": "Patterns in Mathematics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.463118"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Patterns in Mathematics.",
+                "overview": "Class 06 Mathematics Chapter 101, 'Patterns in Mathematics', introduces students to the fundamental concept of patterns. This chapter helps students to recognize, describe, extend, and create patterns in various forms, including numerical sequences, geometric shapes, and other mathematical structures. The chapter emphasizes the importance of observation and logical reasoning as a foundation for understanding advanced mathematical concepts.",
                 "source_grounded_key_points": [
                     "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
                     "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
@@ -175,8 +177,10 @@
             "subject": "Mathematics",
             "chapter_title": "Patterns in Mathematics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.463155"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Patterns in Mathematics accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
-                            "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
-                            "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology.",
-                            "The search for patterns and their explanations can be a fun and creative endeavour."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "In Class 6 Mathematics, the chapter 'Patterns in Mathematics' introduces students to the concept of mathematical patterns. A pattern is essentially a predictable sequence of numbers, shapes, or other objects that follows a specific rule. The core idea is to observe, identify the rule governing the sequence, and then use that rule to find the next term or predict future terms. This chapter is foundational as it teaches logical thinking and numerical sequencing, helping students develop their ability to spot relationships between numbers.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Mathematics",
             "chapter_title": "Patterns in Mathematics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.463173"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,28 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fegp101_c01",
-                        "name": "Patterns in Mathematics",
-                        "definition": "Central learning focus of Patterns in Mathematics.",
-                        "source_evidence": "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist."
+                        "name": "Introduction to Patterns",
+                        "description": "Definition of a mathematical pattern and types of patterns (numerical, geometric, and logic)."
                     },
                     {
-                        "id": "fegp101_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars."
+                        "name": "Types of Numerical Patterns",
+                        "description": "Recognizing and identifying arithmetic progressions (AP), geometric progressions (GP), and other linear sequences."
                     },
                     {
-                        "id": "fegp101_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology."
+                        "name": "Identifying the Rule",
+                        "description": "Developing the ability to find the common difference, common ratio, or the constant rule governing a given sequence."
+                    },
+                    {
+                        "name": "Term-wise Representation",
+                        "description": "Expressing the $n$-th term of a sequence using an explicit formula (e.g., $a_n = a + (n-1)d$ for AP)."
+                    },
+                    {
+                        "name": "Visual Patterns (Geometric)",
+                        "description": "Analyzing and describing patterns formed by shapes, rotations, and translations."
+                    },
+                    {
+                        "name": "Recursive Patterns",
+                        "description": "Understanding patterns where each term is defined by the previous term (e.g., Fibonacci sequence)."
                     }
                 ]
             },
@@ -347,8 +302,10 @@
             "subject": "Mathematics",
             "chapter_title": "Patterns in Mathematics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.463188"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +340,19 @@
                         "to": "fegp101_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Patterns in Mathematics": {
+                    "Main Node": "Chapter 101",
+                    "Sub-Node 1": "Types of Patterns",
+                    "Sub-Node 1a": "Numerical (AP, GP)",
+                    "Sub-Node 1b": "Geometric",
+                    "Sub-Node 2": "Identification of Rules",
+                    "Sub-Node 2a": "Finding Common Difference (AP)",
+                    "Sub-Node 2b": "Finding Common Ratio (GP)",
+                    "Sub-Node 3": "Term Formulas",
+                    "Sub-Node 3a": "AP Formula",
+                    "Sub-Node 3b": "GP Formula"
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -469,8 +438,10 @@
             "subject": "Mathematics",
             "chapter_title": "Patterns in Mathematics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.463145"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +450,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Patterns in Mathematics.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Patterns in Mathematics supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine you are a detective trying to solve a puzzle. The chapter 'Patterns in Mathematics' is like the detective's toolkit. A pattern can be seen in anything from the arrangement of colored blocks on a wall (a visual pattern) to the sequence of odd numbers (a numerical pattern) or the repeating angles of a snowflake (a geometric pattern). The chapter teaches you how to look closely at the clues to figure out the rule that generates the sequence. Once you understand the 'rule' (e.g., adding 2 each time, doubling each time), you can use that rule to complete the sequence or even design new patterns. Just like in a story, finding a pattern is like discovering a hidden logic or a repeating rhythm in the world around us. It helps you see the underlying structure connecting seemingly random objects and numbers.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1013,10 @@
             "subject": "Mathematics",
             "chapter_title": "Patterns in Mathematics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.463165"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1028,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "fegp101_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Patterns in Mathematics?",
+                        "type": "Multiple Choice",
+                        "question": "What is the common ratio of the Geometric Progression: 2, 6, 18, 54, ...?",
                         "options": [
-                            "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "2",
+                            "3",
+                            "4",
+                            "5"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp101_c01"
+                        "answer": "3"
                     },
                     {
-                        "id": "fegp101_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Patterns in Mathematics?",
-                        "options": [
-                            "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp101_c01"
+                        "type": "True/False",
+                        "question": "A sequence where the difference between consecutive terms is constant is called an arithmetic progression.",
+                        "answer": "True"
                     },
                     {
-                        "id": "fegp101_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Patterns in Mathematics?",
-                        "options": [
-                            "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp101_c01"
+                        "type": "Calculation",
+                        "question": "Find the next term in the sequence: 5, 11, 17, 23, ...",
+                        "answer": "29 (Arithmetic progression with difference 6)"
                     },
                     {
-                        "id": "fegp101_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Patterns in Mathematics?",
-                        "options": [
-                            "The search for patterns and their explanations can be a fun and creative endeavour.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The search for patterns and their explanations can be a fun and creative endeavour.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp101_c01"
-                    },
-                    {
-                        "id": "fegp101_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Patterns in Mathematics?",
-                        "options": [
-                            "It is for this reason that mathematicians think of mathematics both as an art and as a science.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "It is for this reason that mathematicians think of mathematics both as an art and as a science.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp101_c01"
-                    },
-                    {
-                        "id": "fegp101_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Patterns in Mathematics?",
-                        "options": [
-                            "This year, we hope that you will get a chance to see the creativity and artistry involved in discovering and understanding mathematical patterns.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "This year, we hope that you will get a chance to see the creativity and artistry involved in discovering and understanding mathematical patterns.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp101_c01"
+                        "type": "Concept Application",
+                        "question": "In a geometric pattern, if the first term is 3 and the common ratio is 4, what is the 4th term?",
+                        "answer": "48 ($a_4 = a \times r^{4-1} = 3 \times 4^3 = 3 \times 64 = 192$)"
                     }
                 ]
             },
@@ -1625,8 +1500,10 @@
             "subject": "Mathematics",
             "chapter_title": "Patterns in Mathematics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.463137"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1512,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Patterns in Mathematics' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
-                    "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
-                    "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology.",
-                    "The search for patterns and their explanations can be a fun and creative endeavour.",
-                    "It is for this reason that mathematicians think of mathematics both as an art and as a science.",
-                    "This year, we hope that you will get a chance to see the creativity and artistry involved in discovering and understanding mathematical patterns."
-                ]
-            },
+            "content": "Chapter 101, 'Patterns in Mathematics', provides a comprehensive exploration of how patterns work in mathematics. It teaches students to recognize, analyze, and generate patterns across different domains like numbers, shapes, and structures. By focusing on observation and logical reasoning, students develop crucial skills in predicting future elements in sequences and applying the rules of patterns to solve various mathematical problems. The chapter serves as a bridge between basic arithmetic and more complex algebraic thinking.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1562,10 @@
             "subject": "Mathematics",
             "chapter_title": "Patterns in Mathematics",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.463181"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1577,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fegp101_fc01",
-                        "front": "What key point should you remember from Patterns in Mathematics?",
-                        "back": "Mathematics is, in large part, the search for patterns, and for the explanations as to why those patterns exist.",
-                        "concept_id": "fegp101_c01"
+                        "term": "Arithmetic Progression (AP)",
+                        "definition": "A sequence of numbers where the difference between any two consecutive terms is constant (the common difference, $d$). Formula: $a_n = a + (n-1)d$."
                     },
                     {
-                        "id": "fegp101_fc02",
-                        "front": "What key point should you remember from Patterns in Mathematics?",
-                        "back": "Such patterns indeed exist all around us — in nature, in our homes and schools, and in the motion of the sun, moon, and stars.",
-                        "concept_id": "fegp101_c01"
+                        "term": "Geometric Progression (GP)",
+                        "definition": "A sequence of numbers where each term after the first is found by multiplying the previous term by a fixed, non-zero number (the common ratio, $r$). Formula: $a_n = a \times r^{n-1}$."
                     },
                     {
-                        "id": "fegp101_fc03",
-                        "front": "What key point should you remember from Patterns in Mathematics?",
-                        "back": "They occur in everything that we do and see, from shopping and cooking, to throwing a ball and playing games, to understanding weather patterns and using technology.",
-                        "concept_id": "fegp101_c01"
+                        "term": "Common Difference (d)",
+                        "definition": "The constant value added to the previous term in an AP."
                     },
                     {
-                        "id": "fegp101_fc04",
-                        "front": "What key point should you remember from Patterns in Mathematics?",
-                        "back": "The search for patterns and their explanations can be a fun and creative endeavour.",
-                        "concept_id": "fegp101_c01"
-                    },
-                    {
-                        "id": "fegp101_fc05",
-                        "front": "What key point should you remember from Patterns in Mathematics?",
-                        "back": "It is for this reason that mathematicians think of mathematics both as an art and as a science.",
-                        "concept_id": "fegp101_c01"
-                    },
-                    {
-                        "id": "fegp101_fc06",
-                        "front": "What key point should you remember from Patterns in Mathematics?",
-                        "back": "This year, we hope that you will get a chance to see the creativity and artistry involved in discovering and understanding mathematical patterns.",
-                        "concept_id": "fegp101_c01"
+                        "term": "Common Ratio (r)",
+                        "definition": "The constant value multiplied by the previous term in a GP."
                     }
                 ]
             },

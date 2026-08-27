@@ -175,8 +175,10 @@
             "subject": "Science",
             "chapter_title": "Methods of Separation in Everyday Life",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.645395"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +187,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Methods of Separation in Everyday Life accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "\b —कबीर \bJust like winnowing makes the husk blow away while retaining the grains, similarly, sages let the virtues stay while discarding the vices.",
-                            "—Kabir Malli and his sister Valli are excited for their summer vacations.",
-                            "Their parents have planned a trip to visit their relatives and friends living across India.",
-                            "They always stay in touch with their relatives and friends."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "In this chapter, we explore the various methods we use to separate different components of mixtures. Mixtures are substances composed of two or more elements or compounds that are not chemically bonded. Everyday life involves countless examples of mixtures, like salt water, air, oil and water, and various blends of fruits. Separation techniques are essential because they allow us to obtain the different constituents of a mixture for various uses. The primary methods of separation in this chapter include: 1. Filtration: Separating insoluble solids from liquids. 2. Evaporation: Separating a dissolved solid from a liquid. 3. Decantation: Carefully pouring off a liquid from a solid precipitate. 4. Sedimentation: Allowing the heavier particles to settle at the bottom by gravity. 5. Chromatography: A technique used to separate the components of a mixture based on their differential migration through a stationary medium. 6. Centrifugation: Using centrifugal force to separate components based on their density. 7. Distillation: Separating two miscible liquids with different boiling points. Understanding these methods helps us appreciate the physical properties of substances like solubility, density, and boiling points.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +245,10 @@
             "subject": "Science",
             "chapter_title": "Methods of Separation in Everyday Life",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.645426"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +259,17 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fecu109_c01",
-                        "name": "Methods of Separation in Everyday Life",
-                        "definition": "Central learning focus of Methods of Separation in Everyday Life.",
-                        "source_evidence": "\b —कबीर \bJust like winnowing makes the husk blow away while retaining the grains, similarly, sages let the virtues stay while discarding the vices."
-                    },
-                    {
-                        "id": "fecu109_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "—Kabir Malli and his sister Valli are excited for their summer vacations."
-                    },
-                    {
-                        "id": "fecu109_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "Their parents have planned a trip to visit their relatives and friends living across India."
-                    }
+                    "Introduction to Separation Methods",
+                    "Physical Separation Techniques",
+                    "Filtration (Basic and Advanced)",
+                    "Evaporation",
+                    "Condensation",
+                    "Centrifugation",
+                    "Different Types of Filtration (e.g., Gravity Filtration, Vacuum Filtration)",
+                    "Differential Sedimentation",
+                    "Magnetic Separation",
+                    "Fractional Crystallization",
+                    "Chromatography (Column and Paper)"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +287,10 @@
             "subject": "Science",
             "chapter_title": "Methods of Separation in Everyday Life",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.645445"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +325,19 @@
                         "to": "fecu109_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Root": "Chapter 109: Methods of Separation in Everyday Life",
+                "Node_1": "Physical Separation Techniques",
+                "Child_1_1": "Filtration",
+                "Child_1_2": "Evaporation",
+                "Child_1_3": "Centrifugation",
+                "Child_1_4": "Sedimentation",
+                "Node_2": "Chromatography",
+                "Child_2_1": "Paper Chromatography",
+                "Child_2_2": "Column Chromatography",
+                "Node_3": "Other Methods",
+                "Child_3_1": "Magnetic Separation",
+                "Child_3_2": "Differential Crystallization"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -1070,8 +1024,10 @@
             "subject": "Science",
             "chapter_title": "Methods of Separation in Everyday Life",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.645417"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1039,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu109_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Methods of Separation in Everyday Life?",
+                        "question": "Which separation method separates substances based on their boiling points?",
                         "options": [
-                            "\b —कबीर \bJust like winnowing makes the husk blow away while retaining the grains, similarly, sages let the virtues stay while discarding the vices.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Filtration",
+                            "Evaporation",
+                            "Centrifugation",
+                            "Sublimation"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "\b —कबीर \bJust like winnowing makes the husk blow away while retaining the grains, similarly, sages let the virtues stay while discarding the vices.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu109_c01"
+                        "answer": "Evaporation"
                     },
                     {
-                        "id": "fecu109_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Methods of Separation in Everyday Life?",
+                        "question": "What is the primary function of chromatography?",
                         "options": [
-                            "—Kabir Malli and his sister Valli are excited for their summer vacations.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "To separate large particles",
+                            "To separate mixtures based on differential distribution between a stationary phase and a mobile phase",
+                            "To remove impurities by boiling",
+                            "To separate based on magnetic properties"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "—Kabir Malli and his sister Valli are excited for their summer vacations.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu109_c01"
+                        "answer": "To separate mixtures based on differential distribution between a stationary phase and a mobile phase"
                     },
                     {
-                        "id": "fecu109_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Methods of Separation in Everyday Life?",
+                        "question": "Which technique is commonly used in the industrial production of milk to separate cream?",
                         "options": [
-                            "Their parents have planned a trip to visit their relatives and friends living across India.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Filtration",
+                            "Centrifugation",
+                            "Differential Sedimentation",
+                            "Sublimation"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Their parents have planned a trip to visit their relatives and friends living across India.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu109_c01"
-                    },
-                    {
-                        "id": "fecu109_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Methods of Separation in Everyday Life?",
-                        "options": [
-                            "They always stay in touch with their relatives and friends.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They always stay in touch with their relatives and friends.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu109_c01"
-                    },
-                    {
-                        "id": "fecu109_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Methods of Separation in Everyday Life?",
-                        "options": [
-                            "Their first halt is at their Nani’s (maternal grandmother’s) house in Haryana.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Their first halt is at their Nani’s (maternal grandmother’s) house in Haryana.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu109_c01"
-                    },
-                    {
-                        "id": "fecu109_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Methods of Separation in Everyday Life?",
-                        "options": [
-                            "Malli and Valli are fascinated by the variety of grains piled up in the courtyard.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Malli and Valli are fascinated by the variety of grains piled up in the courtyard.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu109_c01"
+                        "answer": "Centrifugation"
                     }
                 ]
             },
@@ -1695,8 +1585,10 @@
             "subject": "Science",
             "chapter_title": "Methods of Separation in Everyday Life",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.645435"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1600,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu109_fc01",
-                        "front": "What key point should you remember from Methods of Separation in Everyday Life?",
-                        "back": "\b —कबीर \bJust like winnowing makes the husk blow away while retaining the grains, similarly, sages let the virtues stay while discarding the vices.",
-                        "concept_id": "fecu109_c01"
+                        "term": "Filtration",
+                        "definition": "A separation technique used to separate insoluble solid particles from a liquid by passing the mixture through a medium with pores.",
+                        "tip": "Separates solids from liquids."
                     },
                     {
-                        "id": "fecu109_fc02",
-                        "front": "What key point should you remember from Methods of Separation in Everyday Life?",
-                        "back": "—Kabir Malli and his sister Valli are excited for their summer vacations.",
-                        "concept_id": "fecu109_c01"
+                        "term": "Evaporation",
+                        "definition": "The physical process of converting a liquid into a gas and then condensing the gas back into a liquid to obtain the solid residue.",
+                        "tip": "Solid residue is obtained."
                     },
                     {
-                        "id": "fecu109_fc03",
-                        "front": "What key point should you remember from Methods of Separation in Everyday Life?",
-                        "back": "Their parents have planned a trip to visit their relatives and friends living across India.",
-                        "concept_id": "fecu109_c01"
+                        "term": "Centrifugation",
+                        "definition": "A process used to separate components of a mixture by increasing the centrifugal force, causing denser components to settle faster.",
+                        "tip": "Separates based on density."
                     },
                     {
-                        "id": "fecu109_fc04",
-                        "front": "What key point should you remember from Methods of Separation in Everyday Life?",
-                        "back": "They always stay in touch with their relatives and friends.",
-                        "concept_id": "fecu109_c01"
-                    },
-                    {
-                        "id": "fecu109_fc05",
-                        "front": "What key point should you remember from Methods of Separation in Everyday Life?",
-                        "back": "Their first halt is at their Nani’s (maternal grandmother’s) house in Haryana.",
-                        "concept_id": "fecu109_c01"
-                    },
-                    {
-                        "id": "fecu109_fc06",
-                        "front": "What key point should you remember from Methods of Separation in Everyday Life?",
-                        "back": "Malli and Valli are fascinated by the variety of grains piled up in the courtyard.",
-                        "concept_id": "fecu109_c01"
+                        "term": "Chromatography",
+                        "definition": "A method of separation based on the differential partitioning of components of a mixture between a stationary phase and a mobile phase.",
+                        "tip": "Separates based on differential movement/retention."
                     }
                 ]
             },

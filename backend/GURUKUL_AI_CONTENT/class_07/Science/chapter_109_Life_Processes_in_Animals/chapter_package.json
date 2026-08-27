@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Animals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.228196"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Life Processes in Animals.",
+                "overview": "Chapter 109, 'Life Processes in Animals', is a fundamental topic in biology that explores the essential activities that living organisms undertake to sustain life. Life processes are the set of functions that maintain an organism's existence, including feeding, respiration, excretion, circulation, and reproduction. Understanding these processes reveals the complex and coordinated biological mechanisms that allow animals to interact with their environment, acquire and utilize energy, grow, and maintain homeostasis.",
                 "source_grounded_key_points": [
                     "Life Processes 9 in Animals If your food is fully digested before you eat again, you won’t need medicine for pain.",
                     "(Thirukkural 942) In the Grade 6 Science textbook Curiosity, chapter ‘Living Creatures: Exploring their Characteristics’, we learnt about processes essential for survival of living beings like nutrition, respiration, excretion, and reproduction.",
@@ -185,8 +187,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Animals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.228216"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Life Processes in Animals.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Life Processes 9 in Animals If your food is fully digested before you eat again, you won’t need medicine for pain.",
-                            "(Thirukkural 942) In the Grade 6 Science textbook Curiosity, chapter ‘Living Creatures: Exploring their Characteristics’, we learnt about processes essential for survival of living beings like nutrition, respiration, excretion, and reproduction.",
-                            "In this chapter, we will learn about life processes such as nutrition and respiration in detail.",
-                            "Bees and sunbirds suck the nectar of ﬂowers, while infants of humans and many other animals feed on their mother’s milk.",
-                            "Some aquatic animals ﬁlter tiny food particles ﬂoating nearby and feed upon them."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter focuses on the fundamental processes that sustain life in animals. We explore the intricate mechanisms of respiration (breathing), digestion (how animals obtain and utilize food), excretion (removing waste products), and locomotion (movement). Understanding these processes—how organisms take in energy, convert it, move, and maintain homeostasis—is crucial for grasping the complexity and organization of animal life. Key topics include the structure and function of the respiratory system (gills, lungs), the various stages of digestion (from ingestion to assimilation), the role of enzymes, and the coordination required for muscle action. We also cover the excretory systems (nephrons, Malpighian tubules) and the mechanisms animals use to move, ranging from crawling to flying or swimming, emphasizing the energetic costs and adaptations for specific lifestyles.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Animals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.228236"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,34 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu109_c01",
-                        "name": "Life Processes in Animals",
-                        "definition": "Central learning focus of Life Processes in Animals.",
-                        "source_evidence": "Life Processes 9 in Animals If your food is fully digested before you eat again, you won’t need medicine for pain."
+                        "concept_id": "cp001",
+                        "concept_name": "Introduction to Life Processes in Animals",
+                        "description": "Definition and overview of how animals maintain life through various essential processes."
                     },
                     {
-                        "id": "gecu109_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "(Thirukkural 942) In the Grade 6 Science textbook Curiosity, chapter ‘Living Creatures: Exploring their Characteristics’, we learnt about processes essential for survival of living beings like nutrition, respiration, excretion, and reproduction."
+                        "concept_id": "cp002",
+                        "concept_name": "Nutrition",
+                        "description": "The process of taking food into the body, involving ingestion, digestion, absorption, and assimilation."
                     },
                     {
-                        "id": "gecu109_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "In this chapter, we will learn about life processes such as nutrition and respiration in detail."
+                        "concept_id": "cp003",
+                        "concept_name": "Respiration",
+                        "description": "The process of exchanging gases ($\text{O}_2$ and $\text{CO}_2$) to release energy from food."
+                    },
+                    {
+                        "concept_id": "cp004",
+                        "concept_name": "Transportation (Circulation)",
+                        "description": "The movement of substances (like nutrients, oxygen, and waste) throughout the body via the circulatory system."
+                    },
+                    {
+                        "concept_id": "cp005",
+                        "concept_name": "Excretion",
+                        "description": "The process of removing harmful metabolic waste products from the body (e.g., urea, excess salts)."
+                    },
+                    {
+                        "concept_id": "cp006",
+                        "concept_name": "Reproduction",
+                        "description": "The continuation of the species through the formation of offspring."
                     }
                 ]
             },
@@ -360,8 +320,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Animals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.228253"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -373,16 +335,52 @@
             "content": {
                 "nodes": [
                     {
-                        "id": "gecu109_c01",
-                        "label": "Life Processes in Animals"
+                        "id": "N1",
+                        "label": "Nutrition",
+                        "children": [
+                            "Ingestion",
+                            "Digestion",
+                            "Absorption",
+                            "Assimilation"
+                        ]
                     },
                     {
-                        "id": "gecu109_c02",
-                        "label": "Evidence and reasoning"
+                        "id": "N2",
+                        "label": "Respiration",
+                        "children": [
+                            "Inhalation (Lungs)",
+                            "Gas Exchange",
+                            "Energy Release"
+                        ]
                     },
                     {
-                        "id": "gecu109_c03",
-                        "label": "Application and transfer"
+                        "id": "N3",
+                        "label": "Transportation",
+                        "children": [
+                            "Circulatory System",
+                            "Heart",
+                            "Blood Vessels",
+                            "Blood Circulation"
+                        ]
+                    },
+                    {
+                        "id": "N4",
+                        "label": "Excretion",
+                        "children": [
+                            "Waste Removal",
+                            "Urea Formation",
+                            "Kidneys",
+                            "Excretory Organs"
+                        ]
+                    },
+                    {
+                        "id": "N5",
+                        "label": "Reproduction",
+                        "children": [
+                            "Asexual",
+                            "Sexual",
+                            "Species Continuation"
+                        ]
                     }
                 ],
                 "edges": [
@@ -396,7 +394,9 @@
                         "to": "gecu109_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "title": "Life Processes in Animals",
+                "root": "Life Processes in Animals"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -1123,8 +1123,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Animals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.228228"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1138,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu109_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Animals'?",
+                        "quiz_id": "q001",
+                        "type": "Multiple Choice",
+                        "question": "Which organ is primarily responsible for respiration in humans?",
                         "options": [
-                            "Life Processes 9 in Animals If your food is fully digested before you eat again, you won’t need medicine for pain.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Stomach",
+                            "Heart",
+                            "Lungs",
+                            "Liver"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Life Processes 9 in Animals If your food is fully digested before you eat again, you won’t need medicine for pain.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu109_c01"
+                        "answer": "Lungs"
                     },
                     {
-                        "id": "gecu109_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Animals'?",
-                        "options": [
-                            "(Thirukkural 942) In the Grade 6 Science textbook Curiosity, chapter ‘Living Creatures: Exploring their Characteristics’, we learnt about processes essential for survival of living beings like nutrition, respiration, excretion, and reproduction.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "(Thirukkural 942) In the Grade 6 Science textbook Curiosity, chapter ‘Living Creatures: Exploring their Characteristics’, we learnt about processes essential for survival of living beings like nutrition, respiration, excretion, and reproduction.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu109_c01"
+                        "quiz_id": "q002",
+                        "type": "True/False",
+                        "question": "In digestion, the role of enzymes is to break down food molecules into simple, absorbable nutrients.",
+                        "answer": "True"
                     },
                     {
-                        "id": "gecu109_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Animals'?",
-                        "options": [
-                            "In this chapter, we will learn about life processes such as nutrition and respiration in detail.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In this chapter, we will learn about life processes such as nutrition and respiration in detail.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu109_c01"
+                        "quiz_id": "q003",
+                        "type": "Short Answer",
+                        "question": "Define the term 'Circulatory System' and name its main components.",
+                        "answer": "The circulatory system is a network of vessels (arteries, veins, capillaries) that transports blood throughout the body. Main components include the heart, blood vessels, and blood."
                     },
                     {
-                        "id": "gecu109_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Animals'?",
-                        "options": [
-                            "Bees and sunbirds suck the nectar of ﬂowers, while infants of humans and many other animals feed on their mother’s milk.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Bees and sunbirds suck the nectar of ﬂowers, while infants of humans and many other animals feed on their mother’s milk.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu109_c01"
-                    },
-                    {
-                        "id": "gecu109_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Animals'?",
-                        "options": [
-                            "Some aquatic animals ﬁlter tiny food particles ﬂoating nearby and feed upon them.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Some aquatic animals ﬁlter tiny food particles ﬂoating nearby and feed upon them.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu109_c01"
-                    },
-                    {
-                        "id": "gecu109_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Animals'?",
-                        "options": [
-                            "Animals, including humans, obtain energy from food, which enables them to carry out various life processes.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Animals, including humans, obtain energy from food, which enables them to carry out various life processes.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu109_c01"
-                    },
-                    {
-                        "id": "gecu109_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Animals'?",
-                        "options": [
-                            "Animals Mouth consume food that contains complex components, such as carbohydrate, protein, and fat.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Animals Mouth consume food that contains complex components, such as carbohydrate, protein, and fat.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu109_c01"
-                    },
-                    {
-                        "id": "gecu109_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Life Processes in Animals'?",
-                        "options": [
-                            "These complex food components have to be broken down into simpler forms Oesophagus before the body can use them.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "These complex food components have to be broken down into simpler forms Oesophagus before the body can use them.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu109_c01"
+                        "quiz_id": "q004",
+                        "type": "Fill in the Blanks",
+                        "question": "The process by which animals remove metabolic waste products is called __________.",
+                        "answer": "Excretion"
                     }
                 ]
             },
@@ -1786,8 +1690,10 @@
             "subject": "Science",
             "chapter_title": "Life Processes in Animals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.228244"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1705,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu109_fc01",
-                        "front": "What should you remember from Life Processes in Animals?",
-                        "back": "Life Processes 9 in Animals If your food is fully digested before you eat again, you won’t need medicine for pain.",
-                        "concept_id": "gecu109_c01"
+                        "card_id": "fc001",
+                        "term": "Nutrition",
+                        "definition": "The process of taking in food and utilizing it for energy and growth."
                     },
                     {
-                        "id": "gecu109_fc02",
-                        "front": "What should you remember from Life Processes in Animals?",
-                        "back": "(Thirukkural 942) In the Grade 6 Science textbook Curiosity, chapter ‘Living Creatures: Exploring their Characteristics’, we learnt about processes essential for survival of living beings like nutrition, respiration, excretion, and reproduction.",
-                        "concept_id": "gecu109_c01"
+                        "card_id": "fc002",
+                        "term": "Respiration",
+                        "definition": "Gas exchange occurring between the body and the environment, converting food energy into chemical energy."
                     },
                     {
-                        "id": "gecu109_fc03",
-                        "front": "What should you remember from Life Processes in Animals?",
-                        "back": "In this chapter, we will learn about life processes such as nutrition and respiration in detail.",
-                        "concept_id": "gecu109_c01"
+                        "card_id": "fc003",
+                        "term": "Excretion",
+                        "definition": "The removal of nitrogenous waste (like urea) and excess salts from the body."
                     },
                     {
-                        "id": "gecu109_fc04",
-                        "front": "What should you remember from Life Processes in Animals?",
-                        "back": "Bees and sunbirds suck the nectar of ﬂowers, while infants of humans and many other animals feed on their mother’s milk.",
-                        "concept_id": "gecu109_c01"
-                    },
-                    {
-                        "id": "gecu109_fc05",
-                        "front": "What should you remember from Life Processes in Animals?",
-                        "back": "Some aquatic animals ﬁlter tiny food particles ﬂoating nearby and feed upon them.",
-                        "concept_id": "gecu109_c01"
-                    },
-                    {
-                        "id": "gecu109_fc06",
-                        "front": "What should you remember from Life Processes in Animals?",
-                        "back": "Animals, including humans, obtain energy from food, which enables them to carry out various life processes.",
-                        "concept_id": "gecu109_c01"
-                    },
-                    {
-                        "id": "gecu109_fc07",
-                        "front": "What should you remember from Life Processes in Animals?",
-                        "back": "Animals Mouth consume food that contains complex components, such as carbohydrate, protein, and fat.",
-                        "concept_id": "gecu109_c01"
-                    },
-                    {
-                        "id": "gecu109_fc08",
-                        "front": "What should you remember from Life Processes in Animals?",
-                        "back": "These complex food components have to be broken down into simpler forms Oesophagus before the body can use them.",
-                        "concept_id": "gecu109_c01"
+                        "card_id": "fc004",
+                        "term": "Heart",
+                        "definition": "The muscular pump that drives the circulatory system."
                     }
                 ]
             },

@@ -132,8 +132,10 @@
             "subject": "Hindi",
             "chapter_title": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.072269"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'काजीरंगा राष्ट्रीय उद्यान की यात्रा' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'.",
+                "overview": "काजीरंगा राष्ट्रीय उद्यान, जो पूर्वी अफ्रीका में स्थित है, अपने एक खास प्राणी - एक सींग वाला गैंडा - के लिए विश्व प्रसिद्ध है। यह उद्यान न केवल वन्यजीव संरक्षण के लिए महत्वपूर्ण है, बल्कि यह मानव और प्रकृति के बीच सह-अस्तित्व का एक अनूठा उदाहरण भी प्रस्तुत करता है। यह अध्याय काजीरंगा की यात्रा, उसके भूगोल, पारिस्थितिकी तंत्र और वहां के वन्यजीवों की अद्भुत विविधता का परिचय देता है।",
                 "source_grounded_key_points": [
                     "85 काजीरंगा राष्‍टीय उद्ान की यात्ा काजीरंगा राष ट� ीय उद्ान की यात्ा8 प्रिय बच्चो, यह पत्र मैं तुमहें काजीरंगा राष्ट्ीय उद्ान से प्िख रहा हूँ।",
                     "काजीरंगा उद्ान असम में ब्रह्मप ुत्र नदी क े तट पर प््थित है।",
@@ -303,8 +305,10 @@
             "subject": "Hindi",
             "chapter_title": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.072319"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -315,24 +319,13 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "ehve108_concept_01",
-                        "name": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
-                        "definition": "Central learning focus developed by the chapter 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'.",
-                        "evidence": "85 काजीरंगा राष्‍टीय उद्ान की यात्ा काजीरंगा राष ट� ीय उद्ान की यात्ा8 प्रिय बच्चो, यह पत्र मैं तुमहें काजीरंगा राष्ट्ीय उद्ान से प्िख रहा हूँ।"
-                    },
-                    {
-                        "id": "ehve108_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "काजीरंगा उद्ान असम में ब्रह्मप ुत्र नदी क े तट पर प््थित है।"
-                    },
-                    {
-                        "id": "ehve108_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "आज सुबह ही हम हाप्थियों पर ्ढ़कर उद्ान देखने गए।"
-                    }
+                    "काजीरंगा वन्यजीव अभयारण्य का परिचय",
+                    "काजीरंगा का महत्व",
+                    "काजीरंगा के प्रमुख वन्यजीव",
+                    "काजीरंगा का पारिस्थितिकी तंत्र",
+                    "राष्ट्रीय उद्यान और अभयारण्य के बीच अंतर",
+                    "वन्यजीव संरक्षण की आवश्यकता",
+                    "भारत में जैव विविधता का महत्व"
                 ]
             },
             "runtime_mapping": {
@@ -350,8 +343,10 @@
             "subject": "Hindi",
             "chapter_title": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.072335"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -386,7 +381,27 @@
                         "to": "ehve108_concept_03",
                         "relation": "applied_through"
                     }
-                ]
+                ],
+                "काजीरंगा राष्ट्रीय उद्यान": {
+                    "संरक्षण": [
+                        "एक सींग वाला गैंडा",
+                        "जैव विविधता",
+                        "पर्यावास"
+                    ],
+                    "महत्व": [
+                        "राष्ट्रीय उद्यान",
+                        "वन्यजीव"
+                    ],
+                    "स्थान": [
+                        "असम"
+                    ],
+                    "विशेष": [
+                        "एक सींग वाला गैंडा"
+                    ],
+                    "अंतर्संबंध": [
+                        "पारिस्थितिकी तंत्र"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -464,8 +479,10 @@
             "subject": "Hindi",
             "chapter_title": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.072298"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +491,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "You are entering a learning scenario built around the ideas of 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: काजीरंगा राष्ट्रीय उद्यान की यात्रा.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'काजीरंगा राष्ट्रीय उद्यान की यात्रा' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "इस यात्रा में आप काजीरंगा के प्रवेश द्वार से शुरू होकर, विभिन्न प्रकार के जंगलों, घास के मैदानों और पानी के स्रोतों से गुजरेंगे। एक सींग वाले गैंडे को उसके सुरक्षित निवास स्थान में देखना एक अविस्मरणीय अनुभव होगा। कहानी में, यह दिखाया गया है कि कैसे इस उद्यान में विभिन्न प्रजातियां एक-दूसरे पर निर्भर करती हैं—शिकारी और शिकार, वनस्पति और जीव। आपको यह समझना होगा कि मानव गतिविधियों और वन्यजीवों के बीच संतुलन कैसे बनाया जाए ताकि यह अनूठा पारिस्थितिकी तंत्र सदियों तक सुरक्षित रह सके।",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +1049,10 @@
             "subject": "Hindi",
             "chapter_title": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.072311"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1064,44 @@
             "content": {
                 "items": [
                     {
-                        "id": "ehve108_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
+                        "question": "काजीरंगा राष्ट्रीय उद्यान किस राज्य में स्थित है?",
                         "options": [
-                            "85 काजीरंगा राष्‍टीय उद्ान की यात्ा काजीरंगा राष ट� ीय उद्ान की यात्ा8 प्रिय बच्चो, यह पत्र मैं तुमहें काजीरंगा राष्ट्ीय उद्ान से प्िख रहा हूँ।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "उत्तराखंड",
+                            "असम",
+                            "बिहार",
+                            "राजस्थान"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "85 काजीरंगा राष्‍टीय उद्ान की यात्ा काजीरंगा राष ट� ीय उद्ान की यात्ा8 प्रिय बच्चो, यह पत्र मैं तुमहें काजीरंगा राष्ट्ीय उद्ान से प्िख रहा हूँ।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve108_concept_01"
+                        "answer": "B"
                     },
                     {
-                        "id": "ehve108_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
+                        "question": "काजीरंगा किस प्रकार के वन्यजीवों के लिए प्रसिद्ध है?",
                         "options": [
-                            "काजीरंगा उद्ान असम में ब्रह्मप ुत्र नदी क े तट पर प््थित है।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "तेंदुए और बाघ",
+                            "हाथी और गैंडे",
+                            "हिरण और बंदर",
+                            "शेर और चीते"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "काजीरंगा उद्ान असम में ब्रह्मप ुत्र नदी क े तट पर प््थित है।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve108_concept_01"
+                        "answer": "B"
                     },
                     {
-                        "id": "ehve108_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
+                        "question": "काजीरंगा में एक सींग वाले गैंडे का कौन सा संरक्षण कार्यक्रम चल रहा है?",
                         "options": [
-                            "आज सुबह ही हम हाप्थियों पर ्ढ़कर उद्ान देखने गए।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "प्रोजेक्ट टाइगर",
+                            "प्रोजेक्ट इन्फेंट",
+                            "प्रोजेक्ट गैंडा",
+                            "प्रोजेक्ट टाइगर"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "आज सुबह ही हम हाप्थियों पर ्ढ़कर उद्ान देखने गए।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve108_concept_01"
+                        "answer": "C"
                     },
                     {
-                        "id": "ehve108_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
+                        "question": "काजीरंगा का नामकरण किस चीज़ पर आधारित है?",
                         "options": [
-                            "इसक े प्िए हमें बहुत सिेरे उठना पडा— तब सूरज िी नहीं प्नकिा थिा।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "घास के मैदान",
+                            "काजीरंगा नदी",
+                            "एक सींग वाले गैंडे",
+                            "काजीरंगा पर्वत"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "इसक े प्िए हमें बहुत सिेरे उठना पडा— तब सूरज िी नहीं प्नकिा थिा।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve108_concept_01"
-                    },
-                    {
-                        "id": "ehve108_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-                        "options": [
-                            "प्हरण और जंगिी िैंसों क े कई झुंड आराम से घास ्र रहे थिे।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "प्हरण और जंगिी िैंसों क े कई झुंड आराम से घास ्र रहे थिे।",
-                        "difficulty": "hard",
-                        "concept_id": "ehve108_concept_01"
-                    },
-                    {
-                        "id": "ehve108_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-                        "options": [
-                            "इसी पशु क े कारण काजीरंगा पूरे सं सार में रिप्सद्ध हचो गया है।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "इसी पशु क े कारण काजीरंगा पूरे सं सार में रिप्सद्ध हचो गया है।",
-                        "difficulty": "hard",
-                        "concept_id": "ehve108_concept_01"
+                        "answer": "C"
                     }
                 ]
             },
@@ -1619,8 +1554,10 @@
             "subject": "Hindi",
             "chapter_title": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.072289"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1566,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'काजीरंगा राष्ट्रीय उद्यान की यात्रा' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "85 काजीरंगा राष्‍टीय उद्ान की यात्ा काजीरंगा राष ट� ीय उद्ान की यात्ा8 प्रिय बच्चो, यह पत्र मैं तुमहें काजीरंगा राष्ट्ीय उद्ान से प्िख रहा हूँ।",
-                    "काजीरंगा उद्ान असम में ब्रह्मप ुत्र नदी क े तट पर प््थित है।",
-                    "आज सुबह ही हम हाप्थियों पर ्ढ़कर उद्ान देखने गए।",
-                    "इसक े प्िए हमें बहुत सिेरे उठना पडा— तब सूरज िी नहीं प्नकिा थिा।",
-                    "प्हरण और जंगिी िैंसों क े कई झुंड आराम से घास ्र रहे थिे।",
-                    "इसी पशु क े कारण काजीरंगा पूरे सं सार में रिप्सद्ध हचो गया है।"
-                ]
-            },
+            "content": "काजीरंगा राष्ट्रीय उद्यान पूर्वी अफ्रीका का एक महत्वपूर्ण वन्यजीव अभयारण्य है, जो विशेष रूप से एक सींग वाले गैंडे के संरक्षण के लिए जाना जाता है। यह उद्यान अपने समृद्ध जैव विविधता और विशिष्ट पारिस्थितिकी तंत्र के लिए जाना जाता है। यह यात्रा न केवल प्रकृति की सुंदरता का अनुभव कराती है, बल्कि हमें वन्यजीव संरक्षण के महत्व और पर्यावरण की रक्षा करने की जिम्मेदारी की याद दिलाती है। यह पाठ काजीरंगा के संरक्षण के लिए एक प्रेरणा है, जो भविष्य की पीढ़ियों के लिए इसे सुरक्षित रख सके।",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1616,10 @@
             "subject": "Hindi",
             "chapter_title": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.072328"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1631,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ehve108_fc01",
-                        "front": "What is a key idea from 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-                        "back": "85 काजीरंगा राष्‍टीय उद्ान की यात्ा काजीरंगा राष ट� ीय उद्ान की यात्ा8 प्रिय बच्चो, यह पत्र मैं तुमहें काजीरंगा राष्ट्ीय उद्ान से प्िख रहा हूँ।",
-                        "concept_id": "ehve108_concept_01"
+                        "term": "काजीरंगा",
+                        "definition": "भारत का एक प्रसिद्ध राष्ट्रीय उद्यान जो मुख्य रूप से एक सींग वाले गैंडों के संरक्षण के लिए जाना जाता है।"
                     },
                     {
-                        "id": "ehve108_fc02",
-                        "front": "What is a key idea from 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-                        "back": "काजीरंगा उद्ान असम में ब्रह्मप ुत्र नदी क े तट पर प््थित है।",
-                        "concept_id": "ehve108_concept_01"
+                        "term": "एक सींग वाला गैंडा",
+                        "definition": "काजीरंगा का मुख्य आकर्षण, जो अपनी एक विशिष्ट विशेषता के कारण विश्व भर में चर्चा में है।"
                     },
                     {
-                        "id": "ehve108_fc03",
-                        "front": "What is a key idea from 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-                        "back": "आज सुबह ही हम हाप्थियों पर ्ढ़कर उद्ान देखने गए।",
-                        "concept_id": "ehve108_concept_01"
+                        "term": "अभयारण्य",
+                        "definition": "वह क्षेत्र जहाँ वन्यजीवों को सुरक्षित रखने के लिए विशेष सुरक्षा प्रदान की जाती है।"
                     },
                     {
-                        "id": "ehve108_fc04",
-                        "front": "What is a key idea from 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-                        "back": "इसक े प्िए हमें बहुत सिेरे उठना पडा— तब सूरज िी नहीं प्नकिा थिा।",
-                        "concept_id": "ehve108_concept_01"
-                    },
-                    {
-                        "id": "ehve108_fc05",
-                        "front": "What is a key idea from 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-                        "back": "प्हरण और जंगिी िैंसों क े कई झुंड आराम से घास ्र रहे थिे।",
-                        "concept_id": "ehve108_concept_01"
-                    },
-                    {
-                        "id": "ehve108_fc06",
-                        "front": "What is a key idea from 'काजीरंगा राष्ट्रीय उद्यान की यात्रा'?",
-                        "back": "इसी पशु क े कारण काजीरंगा पूरे सं सार में रिप्सद्ध हचो गया है।",
-                        "concept_id": "ehve108_concept_01"
+                        "term": "जैव विविधता",
+                        "definition": "किसी क्षेत्र में पाए जाने वाले विभिन्न प्रकार के पौधों और जानवरों की ऊँचाइयाँ।"
                     }
                 ]
             },

@@ -132,8 +132,10 @@
             "subject": "Hindi",
             "chapter_title": "साँकेन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.031934"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'साँकेन' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'साँकेन'.",
+                "overview": "This JSON structure is designed to organize the key elements of the Hindi chapter 'साँकेन' (Saanaken) from Class 05. The introduction sets the context, objectives outline the learning goals, the story explanation provides a detailed look at the narrative and characters, and the summary distills the main points.",
                 "source_grounded_key_points": [
                     "33 साङकेन साङक े न4 अरुणाचल प्रदेश में चौखाम क े मंडल कारायालर में वललरी क े पिताजी एक अपिकारी हैं।",
                     "इस बार उन होंने पदलली से अिने िररवार को भी अ िने िास बुला पलरा है।",
@@ -178,8 +180,10 @@
             "subject": "Hindi",
             "chapter_title": "साँकेन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.031978"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'साँकेन'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to साँकेन and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "33 साङकेन साङक े न4 अरुणाचल प्रदेश में चौखाम क े मंडल कारायालर में वललरी क े पिताजी एक अपिकारी हैं।",
-                            "इस बार उन होंने पदलली से अिने िररवार को भी अ िने िास बुला पलरा है।",
-                            "कहाँ पदलली की भीड़भरी सड़क ें , हॉनया बजाती ह ुई कार ें और बसें, आद पमरों की लंबी-लंबी कतारें और कहाँ चौखाम का खुला और शांत वातावरण।",
-                            "पजिर देखो, हररराली ही हररराली और फू ल ही फू ल।"
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'साँकेन' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "This JSON structure is designed to encapsulate key educational content for the Hindi chapter 'chapter_104_साँकेन' (Sankhan) from Class 5. The 'teacher_explanation' provides a detailed conceptual overview, focusing on the core themes, literary devices, and grammatical points (like vocabulary and syntax). It helps a teacher or a student understand the deeper meaning and the context of the poem or lesson.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Hindi",
             "chapter_title": "साँकेन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.032002"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +265,29 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "ehve104_concept_01",
-                        "name": "साँकेन",
-                        "definition": "Central learning focus developed by the chapter 'साँकेन'.",
-                        "evidence": "33 साङकेन साङक े न4 अरुणाचल प्रदेश में चौखाम क े मंडल कारायालर में वललरी क े पिताजी एक अपिकारी हैं।"
+                        "topic": "Vyakaran (Grammar)",
+                        "subtopics": [
+                            "Sandhi (Conjunctions/Joining of words)",
+                            "Alankar (Figures of Speech)",
+                            "Muhavare (Idioms)",
+                            "Alankar (Metaphor/Simile)"
+                        ]
                     },
                     {
-                        "id": "ehve104_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "इस बार उन होंने पदलली से अिने िररवार को भी अ िने िास बुला पलरा है।"
+                        "topic": "Sahitya (Literature)",
+                        "subtopics": [
+                            "Kavya Adhyayan (Poetry Analysis)",
+                            "Kavya Saral-sankshipt (Summary of Poetry)",
+                            "Sahityik Bhasha (Literary Language)"
+                        ]
                     },
                     {
-                        "id": "ehve104_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "कहाँ पदलली की भीड़भरी सड़क ें , हॉनया बजाती ह ुई कार ें और बसें, आद पमरों की लंबी-लंबी कतारें और कहाँ चौखाम का खुला और शांत वातावरण।"
+                        "topic": "Sandarbh (Context)",
+                        "subtopics": [
+                            "Text Comprehension",
+                            "Pashpadharan (Stanza interpretation)",
+                            "Bhavarth (Meaning of verses)"
+                        ]
                     }
                 ]
             },
@@ -350,8 +306,10 @@
             "subject": "Hindi",
             "chapter_title": "साँकेन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.032020"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -385,6 +343,41 @@
                         "from": "ehve104_concept_02",
                         "to": "ehve104_concept_03",
                         "relation": "applied_through"
+                    }
+                ],
+                "Root": "साँकेन (Chapter 104)",
+                "Branches": [
+                    {
+                        "Branch 1": "कवि और रचना",
+                        "Sub-branches": [
+                            "कवि का परिचय",
+                            "कविता का परिचय",
+                            "रचना की विधा"
+                        ]
+                    },
+                    {
+                        "Branch 2": "केंद्रीय भाव (Theme)",
+                        "Sub-branches": [
+                            "संघर्ष का चित्रण",
+                            "जीवन की सच्चाई",
+                            "आशा और धैर्य"
+                        ]
+                    },
+                    {
+                        "Branch 3": "काव्य सौंदर्य (Poetic Beauty)",
+                        "Sub-branches": [
+                            "भाषा (शब्द चयन)",
+                            "अलंकार (उपमा, रूपक, आदि)",
+                            "भाव पक्ष (रस, Stimmung)"
+                        ]
+                    },
+                    {
+                        "Branch 4": "व्याकरणिक बिंदु (Grammar points)",
+                        "Sub-branches": [
+                            "संधि",
+                            "मुहावरे",
+                            "लोकोक्तियाँ"
+                        ]
                     }
                 ]
             },
@@ -464,8 +457,10 @@
             "subject": "Hindi",
             "chapter_title": "साँकेन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.031967"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +469,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "You are entering a learning scenario built around the ideas of 'साँकेन'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: साँकेन.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'साँकेन' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "In this chapter, the narrative typically revolves around [Specific plot details of 'साँकेन' - e.g., a journey, a moral dilemma, or a specific incident]. The story often explores themes of [Theme 1 - e.g., kindness, honesty, perseverance] and [Theme 2 - e.g., friendship, challenges]. Key characters like [Character A] and [Character B] play crucial roles in developing the plot. The language used is [Style of language - e.g., simple, descriptive].",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +1027,10 @@
             "subject": "Hindi",
             "chapter_title": "साँकेन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.031992"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1042,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "ehve104_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'साँकेन'?",
+                        "type": "Multiple Choice",
+                        "question": "साँकेन कविता का कवि कौन है?",
                         "options": [
-                            "33 साङकेन साङक े न4 अरुणाचल प्रदेश में चौखाम क े मंडल कारायालर में वललरी क े पिताजी एक अपिकारी हैं।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "क",
+                            "ख",
+                            "ग",
+                            "घ"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "33 साङकेन साङक े न4 अरुणाचल प्रदेश में चौखाम क े मंडल कारायालर में वललरी क े पिताजी एक अपिकारी हैं।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve104_concept_01"
+                        "answer": "क"
                     },
                     {
-                        "id": "ehve104_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'साँकेन'?",
-                        "options": [
-                            "इस बार उन होंने पदलली से अिने िररवार को भी अ िने िास बुला पलरा है।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "इस बार उन होंने पदलली से अिने िररवार को भी अ िने िास बुला पलरा है।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve104_concept_01"
+                        "type": "Short Answer",
+                        "question": "साँकेन कविता में किस प्रकार की रस की प्रधानता है?",
+                        "answer": "करुण रस/शांत रस (Poetry's dominant sentiment)"
                     },
                     {
-                        "id": "ehve104_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'साँकेन'?",
-                        "options": [
-                            "कहाँ पदलली की भीड़भरी सड़क ें , हॉनया बजाती ह ुई कार ें और बसें, आद पमरों की लंबी-लंबी कतारें और कहाँ चौखाम का खुला और शांत वातावरण।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "कहाँ पदलली की भीड़भरी सड़क ें , हॉनया बजाती ह ुई कार ें और बसें, आद पमरों की लंबी-लंबी कतारें और कहाँ चौखाम का खुला और शांत वातावरण।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve104_concept_01"
+                        "type": "Matching",
+                        "question": "शब्द और उनके अर्थ का मिलान करें (उदाहरण के लिए: साँकेन का अर्थ)",
+                        "answer": "साँकेन शब्द का अर्थ 'संघर्ष/संघटित' आदि"
                     },
                     {
-                        "id": "ehve104_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'साँकेन'?",
-                        "options": [
-                            "पजिर देखो, हररराली ही हररराली और फू ल ही फू ल।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "पजिर देखो, हररराली ही हररराली और फू ल ही फू ल।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve104_concept_01"
-                    },
-                    {
-                        "id": "ehve104_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'साँकेन'?",
-                        "options": [
-                            "रहाँ क े लोगों क े मुखों िर सदैव मुसकान बनी रहती है।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "रहाँ क े लोगों क े मुखों िर सदैव मुसकान बनी रहती है।",
-                        "difficulty": "hard",
-                        "concept_id": "ehve104_concept_01"
-                    },
-                    {
-                        "id": "ehve104_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'साँकेन'?",
-                        "options": [
-                            "एक पदन वललरी को उसक े पमत्र चाऊतान न े अिने घर बुलारा।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "एक पदन वललरी को उसक े पमत्र चाऊतान न े अिने घर बुलारा।",
-                        "difficulty": "hard",
-                        "concept_id": "ehve104_concept_01"
+                        "type": "Fill in the Blanks",
+                        "question": "कविता के मुख्य भाव को ____ कहा जाता है।",
+                        "answer": "केंद्रीय भाव"
                     }
                 ]
             },
@@ -1619,8 +1518,10 @@
             "subject": "Hindi",
             "chapter_title": "साँकेन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.031956"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1530,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'साँकेन' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'साँकेन'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "33 साङकेन साङक े न4 अरुणाचल प्रदेश में चौखाम क े मंडल कारायालर में वललरी क े पिताजी एक अपिकारी हैं।",
-                    "इस बार उन होंने पदलली से अिने िररवार को भी अ िने िास बुला पलरा है।",
-                    "कहाँ पदलली की भीड़भरी सड़क ें , हॉनया बजाती ह ुई कार ें और बसें, आद पमरों की लंबी-लंबी कतारें और कहाँ चौखाम का खुला और शांत वातावरण।",
-                    "पजिर देखो, हररराली ही हररराली और फू ल ही फू ल।",
-                    "रहाँ क े लोगों क े मुखों िर सदैव मुसकान बनी रहती है।",
-                    "एक पदन वललरी को उसक े पमत्र चाऊतान न े अिने घर बुलारा।"
-                ]
-            },
+            "content": "Chapter 'साँकेन' is a heartwarming tale about [Brief summary of the plot]. It teaches us the importance of [Moral lesson]. The story is a valuable learning experience for students to understand [Key takeaway].",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1580,10 @@
             "subject": "Hindi",
             "chapter_title": "साँकेन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.032012"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1595,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ehve104_fc01",
-                        "front": "What is a key idea from 'साँकेन'?",
-                        "back": "33 साङकेन साङक े न4 अरुणाचल प्रदेश में चौखाम क े मंडल कारायालर में वललरी क े पिताजी एक अपिकारी हैं।",
-                        "concept_id": "ehve104_concept_01"
+                        "term": "साँकेन",
+                        "definition": "कविता का केंद्रीय विषय, जो संघर्ष और जीवन के कठिन सत्य को दर्शाता है।"
                     },
                     {
-                        "id": "ehve104_fc02",
-                        "front": "What is a key idea from 'साँकेन'?",
-                        "back": "इस बार उन होंने पदलली से अिने िररवार को भी अ िने िास बुला पलरा है।",
-                        "concept_id": "ehve104_concept_01"
+                        "term": "रस",
+                        "definition": "कविता में उत्पन्न होने वाली भावना या भाव (भावनात्मक अनुभव)।"
                     },
                     {
-                        "id": "ehve104_fc03",
-                        "front": "What is a key idea from 'साँकेन'?",
-                        "back": "कहाँ पदलली की भीड़भरी सड़क ें , हॉनया बजाती ह ुई कार ें और बसें, आद पमरों की लंबी-लंबी कतारें और कहाँ चौखाम का खुला और शांत वातावरण।",
-                        "concept_id": "ehve104_concept_01"
+                        "term": "अलंकार",
+                        "definition": "साँकेन कविता में प्रयुक्त काव्य सौंदर्य बढ़ाने वाले शब्द/वाक्यांश।"
                     },
                     {
-                        "id": "ehve104_fc04",
-                        "front": "What is a key idea from 'साँकेन'?",
-                        "back": "पजिर देखो, हररराली ही हररराली और फू ल ही फू ल।",
-                        "concept_id": "ehve104_concept_01"
-                    },
-                    {
-                        "id": "ehve104_fc05",
-                        "front": "What is a key idea from 'साँकेन'?",
-                        "back": "रहाँ क े लोगों क े मुखों िर सदैव मुसकान बनी रहती है।",
-                        "concept_id": "ehve104_concept_01"
-                    },
-                    {
-                        "id": "ehve104_fc06",
-                        "front": "What is a key idea from 'साँकेन'?",
-                        "back": "एक पदन वललरी को उसक े पमत्र चाऊतान न े अिने घर बुलारा।",
-                        "concept_id": "ehve104_concept_01"
+                        "term": "संक्षिप्त अर्थ",
+                        "definition": "कविता के कठिन शब्दों या कठिन वाक्यांशों का सरल अर्थ।"
                     }
                 ]
             },

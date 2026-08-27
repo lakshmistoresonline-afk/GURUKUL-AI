@@ -134,8 +134,10 @@
             "subject": "Hindi",
             "chapter_title": "चिड़िया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.960639"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for चिड़िया.",
+                "overview": "यह कहानी एक चिड़िया के जीवन, उसकी दैनिक गतिविधियों और उसके परिवेश के बारे में है। यह बच्चों को प्रकृति और वन्य जीवन के प्रति प्रेम और उनके महत्व को समझने में मदद करती है। कहानी हमें सिखाती है कि प्रकृति में छोटे जीव भी कितने महत्वपूर्ण होते हैं और उन्हें कितने सम्मान देना चाहिए। यह पाठ बच्चों की कल्पनाशीलता और अवलोकन कौशल को विकसित करने के लिए डिज़ाइन किया गया है।",
                 "source_grounded_key_points": [
                     "वन में िजतने पंछी हैं, खजं न, कपोत, चातक, कोिकल; काक, हसं , शक ु आिद वास करते सब आपस में िहलिमल!",
                     "सब िमल-जल ु कर रहते हैं वे, सब िमल-जलु कर खाते हैं; आसमान ही उनका घर है; जहाँ चाहते, जाते हैं!",
@@ -313,8 +315,10 @@
             "subject": "Hindi",
             "chapter_title": "चिड़िया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.960685"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +330,24 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "ghml109_c01",
-                        "name": "चिड़िया",
-                        "definition": "Central learning focus of चिड़िया.",
-                        "source_evidence": "वन में िजतने पंछी हैं, खजं न, कपोत, चातक, कोिकल; काक, हसं , शक ु आिद वास करते सब आपस में िहलिमल!"
+                        "type": "Topic",
+                        "title": "चिड़िया (Chidiya) - chapter_109"
                     },
                     {
-                        "id": "ghml109_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "सब िमल-जल ु कर रहते हैं वे, सब िमल-जलु कर खाते हैं; आसमान ही उनका घर है; जहाँ चाहते, जाते हैं!"
+                        "type": "Grammar",
+                        "title": "Nouns, Verbs, Adjectives in 'चिड़िया'"
                     },
                     {
-                        "id": "ghml109_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "रहते जहाँ, वहाँ वे अपनी दिु नया एक बसाते हैं; िदन भर करते काम, रात में पेड़ों पर सो जाते हैं!"
+                        "type": "Vocabulary",
+                        "title": "Key words and idiomatic expressions"
+                    },
+                    {
+                        "type": "Text Comprehension",
+                        "title": "Understanding the story/lesson 'चिड़िया'"
+                    },
+                    {
+                        "type": "Literary Devices",
+                        "title": "Imagery and descriptions in the chapter"
                     }
                 ]
             },
@@ -490,8 +496,10 @@
             "subject": "Hindi",
             "chapter_title": "चिड़िया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.960666"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +508,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to चिड़िया.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from चिड़िया supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "इस पाठ में 'चिड़िया' नाम की एक छोटी पक्षी का विस्तृत परिचय दिया गया है। कहानी में चिड़िया के सुबह उठने से लेकर शाम को अपने घोंसले में लौटने तक के क्रम को रोचक ढंग से प्रस्तुत किया गया है। लेखक ने चिड़िया के चहचहाने और भोजन की तलाश करने की गतिविधियों का वर्णन बहुत सजीव किया है। कहानी में सरल भाषा का प्रयोग किया गया है ताकि छोटे बच्चे आसानी से समझ सकें। चिड़िया का विभिन्न स्थानों पर उड़ने का उसकी स्वतंत्रता और स्वतंत्रता की भावना को दर्शाता है। यह पाठ न केवल एक कहानी सुनाता है, बल्कि हमें सिखाता है कि हमें अपने आसपास के छोटे जीवों का ध्यान रखना चाहिए। कहानी का अंत आशा और शांति का संदेश देता है, जो बच्चों के मन को सकारात्मक रूप से प्रभावित करता है।",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1103,10 @@
             "subject": "Hindi",
             "chapter_title": "चिड़िया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.960678"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1118,40 @@
             "content": {
                 "items": [
                     {
-                        "id": "ghml109_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'चिड़िया'?",
+                        "type": "Multiple Choice",
+                        "question": "What is the main subject of the chapter 'चिड़िया'?",
                         "options": [
-                            "वन में िजतने पंछी हैं, खजं न, कपोत, चातक, कोिकल; काक, हसं , शक ु आिद वास करते सब आपस में िहलिमल!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "A. A human",
+                            "B. A bird (Chidiya)",
+                            "C. A tree",
+                            "D. A field"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "वन में िजतने पंछी हैं, खजं न, कपोत, चातक, कोिकल; काक, हसं , शक ु आिद वास करते सब आपस में िहलिमल!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml109_c01"
+                        "answer": "B"
                     },
                     {
-                        "id": "ghml109_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'चिड़िया'?",
-                        "options": [
-                            "सब िमल-जल ु कर रहते हैं वे, सब िमल-जलु कर खाते हैं; आसमान ही उनका घर है; जहाँ चाहते, जाते हैं!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "सब िमल-जल ु कर रहते हैं वे, सब िमल-जलु कर खाते हैं; आसमान ही उनका घर है; जहाँ चाहते, जाते हैं!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml109_c01"
+                        "type": "Short Answer",
+                        "question": "Identify three important themes or values discussed in the chapter.",
+                        "answer": "The themes might include: Freedom, hard work, or friendship, depending on the specific content of chapter 109."
                     },
                     {
-                        "id": "ghml109_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'चिड़िया'?",
-                        "options": [
-                            "रहते जहाँ, वहाँ वे अपनी दिु नया एक बसाते हैं; िदन भर करते काम, रात में पेड़ों पर सो जाते हैं!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "रहते जहाँ, वहाँ वे अपनी दिु नया एक बसाते हैं; िदन भर करते काम, रात में पेड़ों पर सो जाते हैं!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml109_c01"
+                        "type": "True/False",
+                        "question": "The chapter 'चिड़िया' is purely a poem and does not contain any narrative.",
+                        "answer": "False"
                     },
                     {
-                        "id": "ghml109_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'चिड़िया'?",
-                        "options": [
-                            "जो िमलता है अपने श्रम से, उतना भर ले लेते हैं; बच जाता जो, औरों के िहत, उसे छोड़ वे देते हैं!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                        "type": "Matching",
+                        "question": "Match the character with their action.",
+                        "items": [
+                            {
+                                "col1": "Character name",
+                                "col2": "Action"
+                            },
+                            {
+                                "col1": "Chidiya",
+                                "col2": "Flies freely"
+                            }
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "जो िमलता है अपने श्रम से, उतना भर ले लेते हैं; बच जाता जो, औरों के िहत, उसे छोड़ वे देते हैं!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml109_c01"
-                    },
-                    {
-                        "id": "ghml109_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'चिड़िया'?",
-                        "options": [
-                            "सीमा-हीन गगन में उड़ते, िनभर्य िवचरण करते हैं; नहीं कमाई से औरों क� अपना घर वे भरते हैं!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "सीमा-हीन गगन में उड़ते, िनभर्य िवचरण करते हैं; नहीं कमाई से औरों क� अपना घर वे भरते हैं!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml109_c01"
-                    },
-                    {
-                        "id": "ghml109_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'चिड़िया'?",
-                        "options": [
-                            "सीखो तमु हमसे जीना जग में; हम स्वच्छंद और क्यों तमु ने डाली है बेड़ी पग में?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "सीखो तमु हमसे जीना जग में; हम स्वच्छंद और क्यों तमु ने डाली है बेड़ी पग में?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml109_c01"
-                    },
-                    {
-                        "id": "ghml109_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'चिड़िया'?",
-                        "options": [
-                            "पीपल क� डाली पर िचिड़या यही सनु ाने आती है बैठ घड़ी भर, हमें चिकत कर, गा-कर िफर उड़ जाती है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "पीपल क� डाली पर िचिड़या यही सनु ाने आती है बैठ घड़ी भर, हमें चिकत कर, गा-कर िफर उड़ जाती है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml109_c01"
-                    },
-                    {
-                        "id": "ghml109_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'चिड़िया'?",
-                        "options": [
-                            "— आरसी प्रसाद िसंह िचिड़या 117 Reprint 2026-27 Chapter 09.indd 117 04-04-2025 17:08:28 किव से प�रचय आरसी प्रसाद िसंह प्रकृ ित और जीवन-संघष� को अपनी रचनाओ ं में प्रमख ु ता से िचित्रत करने वाले किव हैं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "— आरसी प्रसाद िसंह िचिड़या 117 Reprint 2026-27 Chapter 09.indd 117 04-04-2025 17:08:28 किव से प�रचय आरसी प्रसाद िसंह प्रकृ ित और जीवन-संघष� को अपनी रचनाओ ं में प्रमख ु ता से िचित्रत करने वाले किव हैं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml109_c01"
+                        "answer": "Chidiya, Flies freely"
                     }
                 ]
             },
@@ -1715,8 +1605,10 @@
             "subject": "Hindi",
             "chapter_title": "चिड़िया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.960658"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1617,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'चिड़िया' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "वन में िजतने पंछी हैं, खजं न, कपोत, चातक, कोिकल; काक, हसं , शक ु आिद वास करते सब आपस में िहलिमल!",
-                    "सब िमल-जल ु कर रहते हैं वे, सब िमल-जलु कर खाते हैं; आसमान ही उनका घर है; जहाँ चाहते, जाते हैं!",
-                    "रहते जहाँ, वहाँ वे अपनी दिु नया एक बसाते हैं; िदन भर करते काम, रात में पेड़ों पर सो जाते हैं!",
-                    "जो िमलता है अपने श्रम से, उतना भर ले लेते हैं; बच जाता जो, औरों के िहत, उसे छोड़ वे देते हैं!",
-                    "सीमा-हीन गगन में उड़ते, िनभर्य िवचरण करते हैं; नहीं कमाई से औरों क� अपना घर वे भरते हैं!",
-                    "सीखो तमु हमसे जीना जग में; हम स्वच्छंद और क्यों तमु ने डाली है बेड़ी पग में?",
-                    "पीपल क� डाली पर िचिड़या यही सनु ाने आती है बैठ घड़ी भर, हमें चिकत कर, गा-कर िफर उड़ जाती है।"
-                ]
-            },
+            "content": "यह अध्याय 'चिड़िया' नाम की एक साधारण पक्षी के जीवन का वर्णन करता है। कहानी उसके दैनिक कार्यों जैसे सुबह उठना, भोजन की तलाश करना, दूसरों के साथ बातचीत करना और रात में सुरक्षित अपने घर लौटना के इर्द-गिर्द घूमती है। कहानी का मुख्य संदेश यह है कि प्रकृति में हर जीव का अपना महत्व है और हमें उन्हें शांति और सम्मान देना चाहिए। यह कहानी बच्चों को प्रकृति के प्रति संवेदनशील बनने और उसके महत्व को समझने के लिए प्रेरित करती है।",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

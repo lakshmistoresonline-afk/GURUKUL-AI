@@ -128,8 +128,10 @@
             "subject": "Social Science",
             "chapter_title": "Timeline and Sources of History",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.707947"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Timeline and Sources of History.",
+                "overview": "This chapter introduces the concept of a timeline as a chronological sequence of events. It emphasizes its importance in history for establishing the sequence of events, understanding cause and effect, and identifying historical periods. It also explores various sources of history, including primary sources and secondary sources, and discusses how these sources help historians interpret the past.",
                 "source_grounded_key_points": [
                     "4 CHAPTER Timeline and Sources of History History is “an unending dialogue between the present and the past ...",
                     "between the society of today and the society of yesterday.",
@@ -175,8 +177,10 @@
             "subject": "Social Science",
             "chapter_title": "Timeline and Sources of History",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.707987"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Timeline and Sources of History accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "4 CHAPTER Timeline and Sources of History History is “an unending dialogue between the present and the past ...",
-                            "between the society of today and the society of yesterday.",
-                            "We can fully understand the present only in the light of the past.” — E.H.",
-                            "Carr 4 ― Timeline and Sources of History National Museum, New Delhi."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter is a fundamental exploration of how historians reconstruct the past. It introduces the concept of a 'historical timeline'—a chronological sequence of events—and various 'sources of history.' Historians don't rely on a single book; they gather evidence from diverse sources like: primary sources (contemporary documents like letters, coins, manuscripts, and artifacts), and secondary sources (interpretations and analyses written by others based on those primary sources). A key skill in this chapter is source criticism, where historians evaluate whether a source is biased, reliable, or accurate. Understanding the timeline helps us understand the context and sequence of events.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -469,8 +416,10 @@
             "subject": "Social Science",
             "chapter_title": "Timeline and Sources of History",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.707977"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +428,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to Timeline and Sources of History.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Timeline and Sources of History supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "A timeline provides a visual and ordered representation of historical events, making it easier to understand the chronological flow of events. Historical events are categorized into eras and periods, each with distinct characteristics and defining events. Understanding the relationship between events on a timeline is crucial for identifying patterns, trends, and causes and effects in history. Regarding historical sources, a primary source is a direct record or material from the time period being studied (e.g., ancient manuscripts, photographs, personal diaries). A secondary source is an interpretation or analysis of primary sources (e.g., textbooks, scholarly articles, biographies). Historians use both sources—primary sources to gather raw data and secondary sources to contextualize and interpret that data into a coherent narrative.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1625,8 +1546,10 @@
             "subject": "Social Science",
             "chapter_title": "Timeline and Sources of History",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.707967"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1558,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Timeline and Sources of History' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "4 CHAPTER Timeline and Sources of History History is “an unending dialogue between the present and the past ...",
-                    "between the society of today and the society of yesterday.",
-                    "We can fully understand the present only in the light of the past.” — E.H.",
-                    "Carr 4 ― Timeline and Sources of History National Museum, New Delhi.",
-                    "Such museums preserve objects from the past, such as statues, coins and ornaments, all of which help us understand our history.",
-                    "59 chapter4_310125.indd 59 03-02-2025 04:57:14 How Do We Learn About the Past?"
-                ]
-            },
+            "content": "Chapter 104, 'Timeline and Sources of History,' lays the foundation for understanding historical study. The timeline serves as a crucial tool for organizing historical information chronologically, enabling the study of historical progression and the identification of key historical periods. Furthermore, it distinguishes between primary sources and secondary sources, highlighting their respective roles in historical inquiry: primary sources provide direct evidence, while secondary sources offer expert interpretations. Together, these tools allow historians to construct a comprehensive understanding of the past, moving from raw evidence to informed historical narrative.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

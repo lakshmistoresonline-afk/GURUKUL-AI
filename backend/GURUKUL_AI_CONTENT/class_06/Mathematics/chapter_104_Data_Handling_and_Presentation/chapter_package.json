@@ -128,8 +128,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Handling and Presentation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.493240"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Data Handling and Presentation.",
+                "overview": "Class_06 Mathematics Chapter 104: Data Handling and Presentation",
                 "source_grounded_key_points": [
                     "4 Data Handling and Presentation If you ask your classmates about their favourite colours, you will get a list of colours.",
                     "Similarly, if you measure the weight of each student in your class, you would get a collection of measures of weight—again data.",
@@ -175,8 +177,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Handling and Presentation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.493276"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Data Handling and Presentation accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "4 Data Handling and Presentation If you ask your classmates about their favourite colours, you will get a list of colours.",
-                            "Similarly, if you measure the weight of each student in your class, you would get a collection of measures of weight—again data.",
-                            "Any collection of facts, numbers, measures, observations or other descriptions of things that convey information about those things is called data.",
-                            "We constantly see large amounts of data presented to us in new and interesting ways."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter introduces fundamental concepts of data handling and presentation in mathematics. It covers various methods used to collect, organize, display, and analyze data. Key topics include types of data (qualitative and quantitative), ways to present data using tables, pictographs, bar graphs, and pie charts. The chapter emphasizes the importance of accurate data collection and effective visualization to understand real-world phenomena. Students learn how to collect data through surveys and observations, organize it into tables for better analysis, and choose appropriate graphical representations (like bar graphs and pie charts) to visually represent the data in a meaningful way.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -347,8 +294,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Handling and Presentation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.493284"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +332,46 @@
                         "to": "fegp104_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Data_Handling_and_Presentation": {
+                    "Introduction": [
+                        "Definition of Data Handling",
+                        "Importance of Data Presentation",
+                        "Types of Data (Qualitative vs. Quantitative)"
+                    ],
+                    "Data Handling": {
+                        "Collection Methods": [
+                            "Primary Data Collection",
+                            "Secondary Data Collection",
+                            "Sampling Techniques"
+                        ],
+                        "Data Organizing": [
+                            "Frequency Distribution",
+                            "Grouping Data (Class Intervals)",
+                            "Creating Tables and Bar Graphs"
+                        ]
+                    },
+                    "Data Presentation": {
+                        "Graphical Representation": [
+                            "Types of Charts: Pie Charts, Bar Charts, Line Graphs",
+                            "Using Visual Aids for Comparison",
+                            "Drawing and Interpreting Graphs"
+                        ],
+                        "Data Interpretation": [
+                            "Analyzing Trends and Patterns",
+                            "Drawing Conclusions from Data",
+                            "Identifying Outliers"
+                        ]
+                    },
+                    "Statistical Measures": [
+                        "Measures of Central Tendency (Mean, Median, Mode)",
+                        "Measures of Dispersion (Range, Variance, Standard Deviation)"
+                    ],
+                    "Software Tools": [
+                        "Spreadsheets (e.g., Excel, Google Sheets)",
+                        "Statistical Software (Brief overview)"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -469,8 +457,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Handling and Presentation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.493268"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +469,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Data Handling and Presentation.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Data Handling and Presentation supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine a school conducting a survey on students' favorite subjects. They collected the responses, and the teacher needs a way to present this information clearly. They might use a simple bar graph to show the number of students who chose each subject (Math, Science, English, etc.). Another scenario involves tracking the weather every day and creating a line graph to show the temperature fluctuations over a week. The chapter teaches students how to take raw data (the survey responses or temperature readings) and use proper presentation techniques (graphs, tables) to make it easy to understand trends, patterns, and comparisons. It moves from simple counts to more complex graphical representations.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1625,8 +1587,10 @@
             "subject": "Mathematics",
             "chapter_title": "Data Handling and Presentation",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.493259"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1599,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Data Handling and Presentation' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "4 Data Handling and Presentation If you ask your classmates about their favourite colours, you will get a list of colours.",
-                    "Similarly, if you measure the weight of each student in your class, you would get a collection of measures of weight—again data.",
-                    "Any collection of facts, numbers, measures, observations or other descriptions of things that convey information about those things is called data.",
-                    "We constantly see large amounts of data presented to us in new and interesting ways.",
-                    "In this chapter, we will explore some of the ways that data is presented, and how we can use some of those ways to correctly display, interpret and make inferences from such data!",
-                    "4.1 Collecting and Organising Data Navya and Naresh are discussing their favourite games."
-                ]
-            },
+            "content": "Chapter 104 focuses on the essential skills needed to handle and present data effectively. Key topics include: identifying data types, organizing data into frequency distributions, and choosing the appropriate visual representation (pictographs, bar graphs, and line graphs) to illustrate the data. Students learn how to read, interpret, and draw these graphs to gain insights into the information being presented. This chapter bridges the gap between raw numbers and meaningful information, preparing students for real-world data analysis tasks.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

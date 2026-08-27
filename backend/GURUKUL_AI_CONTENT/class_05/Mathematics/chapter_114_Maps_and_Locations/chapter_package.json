@@ -178,8 +178,10 @@
             "subject": "Mathematics",
             "chapter_title": "Maps and Locations",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.254251"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +190,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Maps and Locations'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Maps and Locations and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "Maps And Locations Finding Directions … Manu is facing the rising Sun.",
-                            "His left hand is pointing in the_______ direction.",
-                            "His right hand is pointing in the ____________ direction.",
-                            "Four Little Chicks Four Little Chicks of a bird set out to fly, Spreading their wings they all flew high."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Maps and Locations' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "This chapter introduces the fundamental concepts of maps and locations. A map is essentially a scaled representation of the earth or a part of it. Key topics include: 1. **Basics of Maps:** Understanding the components of a map (like title, key, scale, direction, symbols). 2. **Scale of a Map:** Learning about different types of scales (representative, graphic, etc.) and how to calculate distances on the map using the given scale. 3. **Direction and Orientation:** Understanding how North, South, East, and West are represented in a map, and how to orient a map. 4. **Locating Places on the Map:** Using latitude and longitude to precisely locate specific cities, landmarks, and geographical features. 5. **Types of Maps:** Exploring various map types, such as political maps, physical maps, thematic maps, and topographic maps, and understanding the purpose of each.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +248,10 @@
             "subject": "Mathematics",
             "chapter_title": "Maps and Locations",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.254287"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +263,52 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "eemm114_concept_01",
-                        "name": "Maps and Locations",
-                        "definition": "Central learning focus developed by the chapter 'Maps and Locations'.",
-                        "evidence": "Maps And Locations Finding Directions … Manu is facing the rising Sun."
+                        "topic": "Introduction to Maps",
+                        "description": "Understanding what a map is, its purpose, and its relationship with the real world.",
+                        "subtopics": [
+                            "Definition and Types of Maps (Physical, Political, Thematic, etc.)",
+                            "Scale of a Map (Ratio and Representative Distance)",
+                            "Map and Drawing (Representing 3D objects in 2D)",
+                            "Map Elements (Title, Key/Legend, Scale, Direction, Map Body)"
+                        ]
                     },
                     {
-                        "id": "eemm114_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "His left hand is pointing in the_______ direction."
+                        "topic": "Map Scale and Distance Calculation",
+                        "description": "How to use the scale to calculate distances on a map and real-world distances.",
+                        "subtopics": [
+                            "Understanding Ratios (e.g., 1 cm : 1 km)",
+                            "Measuring real distances using the map scale",
+                            "Calculating actual distance from map reading",
+                            "Unit conversions in maps (e.g., kilometers to meters)"
+                        ]
                     },
                     {
-                        "id": "eemm114_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "His right hand is pointing in the ____________ direction."
+                        "topic": "Coordinates on a Plane (Basic)",
+                        "description": "Introduction to locating points using a grid system (latitude and longitude basics).",
+                        "subtopics": [
+                            "Introduction to Cartesian/Grid System (X and Y axes)",
+                            "Representing locations on a coordinate plane",
+                            "Interpreting basic coordinate pairs (e.g., (x, y))"
+                        ]
+                    },
+                    {
+                        "topic": "Direction and Orientation",
+                        "description": "Understanding and representing directions on a map.",
+                        "subtopics": [
+                            "Cardinal Directions (North, South, East, West)",
+                            "Interpreting Compass Directions",
+                            "Using Map Orientation and Angle measurement (introduction)"
+                        ]
+                    },
+                    {
+                        "topic": "Types of Maps and Application",
+                        "description": "Exploring different functional categories of maps and real-world uses.",
+                        "subtopics": [
+                            "Physical Maps (Relief, Rivers, Mountains)",
+                            "Political Maps (Borders, Cities, Countries)",
+                            "Thematic Maps (Population density, Rainfall, Soil)",
+                            "Using various map types for planning and navigation"
+                        ]
                     }
                 ]
             },
@@ -350,8 +327,10 @@
             "subject": "Mathematics",
             "chapter_title": "Maps and Locations",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.254302"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -385,6 +364,44 @@
                         "from": "eemm114_concept_02",
                         "to": "eemm114_concept_03",
                         "relation": "applied_through"
+                    }
+                ],
+                "center": "Maps and Locations",
+                "branches": [
+                    {
+                        "label": "Map Basics",
+                        "sub_branches": [
+                            "Definition",
+                            "Elements (Title, Key, Scale)"
+                        ]
+                    },
+                    {
+                        "label": "Scale",
+                        "sub_branches": [
+                            "Ratio concept",
+                            "Distance calculation"
+                        ]
+                    },
+                    {
+                        "label": "Types of Maps",
+                        "sub_branches": [
+                            "Physical",
+                            "Political",
+                            "Thematic"
+                        ]
+                    },
+                    {
+                        "label": "Orientation",
+                        "sub_branches": [
+                            "Compass Directions (N, S, E, W)",
+                            "Angle measurement"
+                        ]
+                    },
+                    {
+                        "label": "Coordinates",
+                        "sub_branches": [
+                            "X and Y axes"
+                        ]
                     }
                 ]
             },
@@ -1060,8 +1077,10 @@
             "subject": "Mathematics",
             "chapter_title": "Maps and Locations",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.254278"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1092,40 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm114_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Maps and Locations'?",
+                        "id": 1,
+                        "type": "MCQ",
+                        "question": "What is the primary function of a map?",
                         "options": [
-                            "Maps And Locations Finding Directions … Manu is facing the rising Sun.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "To show the history of a place.",
+                            "To provide a visual representation of an area on a plane.",
+                            "To list the names of all cities in a country.",
+                            "To describe the physical conditions of a place."
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Maps And Locations Finding Directions … Manu is facing the rising Sun.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm114_concept_01"
+                        "answer": "To provide a visual representation of an area on a plane."
                     },
                     {
-                        "id": "eemm114_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Maps and Locations'?",
+                        "id": 2,
+                        "type": "Calculation",
+                        "question": "If the scale of a map is 1 cm : 5 km, what is the actual distance between two points on the map that are 4 cm apart?",
                         "options": [
-                            "His left hand is pointing in the_______ direction.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "1 cm",
+                            "20 km",
+                            "5 km",
+                            "4 km"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "His left hand is pointing in the_______ direction.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm114_concept_01"
+                        "answer": "20 km"
                     },
                     {
-                        "id": "eemm114_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Maps and Locations'?",
-                        "options": [
-                            "His right hand is pointing in the ____________ direction.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "His right hand is pointing in the ____________ direction.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm114_concept_01"
+                        "id": 3,
+                        "type": "True/False",
+                        "question": "A political map primarily shows the geographical features like rivers and mountain ranges.",
+                        "answer": "False"
                     },
                     {
-                        "id": "eemm114_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Maps and Locations'?",
-                        "options": [
-                            "Four Little Chicks Four Little Chicks of a bird set out to fly, Spreading their wings they all flew high.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Four Little Chicks Four Little Chicks of a bird set out to fly, Spreading their wings they all flew high.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm114_concept_01"
-                    },
-                    {
-                        "id": "eemm114_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Maps and Locations'?",
-                        "options": [
-                            "They flew away from East to West, flew North to South, without any rest.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "They flew away from East to West, flew North to South, without any rest.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm114_concept_01"
-                    },
-                    {
-                        "id": "eemm114_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Maps and Locations'?",
-                        "options": [
-                            "As they flew and explored the land, finally, they returned home, hand in hand.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "As they flew and explored the land, finally, they returned home, hand in hand.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm114_concept_01"
+                        "id": 4,
+                        "type": "Definition",
+                        "question": "Define the 'Scale' of a map.",
+                        "answer": "The ratio between the distance on the map and the corresponding distance on the ground."
                     }
                 ]
             },
@@ -1689,8 +1648,10 @@
             "subject": "Mathematics",
             "chapter_title": "Maps and Locations",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.254295"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1663,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm114_fc01",
-                        "front": "What is a key idea from 'Maps and Locations'?",
-                        "back": "Maps And Locations Finding Directions … Manu is facing the rising Sun.",
-                        "concept_id": "eemm114_concept_01"
+                        "front": "Map Scale",
+                        "back": "Ratio of a distance on the map to the corresponding distance on the ground."
                     },
                     {
-                        "id": "eemm114_fc02",
-                        "front": "What is a key idea from 'Maps and Locations'?",
-                        "back": "His left hand is pointing in the_______ direction.",
-                        "concept_id": "eemm114_concept_01"
+                        "front": "Physical Map",
+                        "back": "Map that shows natural features like mountains, rivers, and soil."
                     },
                     {
-                        "id": "eemm114_fc03",
-                        "front": "What is a key idea from 'Maps and Locations'?",
-                        "back": "His right hand is pointing in the ____________ direction.",
-                        "concept_id": "eemm114_concept_01"
+                        "front": "Scale (Example)",
+                        "back": "1 cm : 1 km"
                     },
                     {
-                        "id": "eemm114_fc04",
-                        "front": "What is a key idea from 'Maps and Locations'?",
-                        "back": "Four Little Chicks Four Little Chicks of a bird set out to fly, Spreading their wings they all flew high.",
-                        "concept_id": "eemm114_concept_01"
-                    },
-                    {
-                        "id": "eemm114_fc05",
-                        "front": "What is a key idea from 'Maps and Locations'?",
-                        "back": "They flew away from East to West, flew North to South, without any rest.",
-                        "concept_id": "eemm114_concept_01"
-                    },
-                    {
-                        "id": "eemm114_fc06",
-                        "front": "What is a key idea from 'Maps and Locations'?",
-                        "back": "As they flew and explored the land, finally, they returned home, hand in hand.",
-                        "concept_id": "eemm114_concept_01"
+                        "front": "Key/Legend",
+                        "back": "A box that explains the symbols used on a map."
                     }
                 ]
             },

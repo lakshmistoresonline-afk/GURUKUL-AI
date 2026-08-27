@@ -128,8 +128,10 @@
             "subject": "Mathematics",
             "chapter_title": "Lines and Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.473515"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Lines and Angles.",
+                "overview": "Chapter 102, 'Lines and Angles,' serves as a fundamental pillar in geometry. It introduces the basic elements of lines and points and explores the relationships between them, particularly focusing on the concepts of various types of angles (acute, right, obtuse, straight), angles formed by intersecting lines, parallel lines, and transversals. Understanding this chapter is crucial for solving more complex problems in trigonometry, coordinate geometry, and higher-level geometry.",
                 "source_grounded_key_points": [
                     "2 Lines and Angles \u0007In this chapter, we will explore some of the most basic ideas of geometry including points, lines, rays, line segments and angles.",
                     "These ideas form the building blocks of ‘plane geometry’, and will help us in understanding more advanced topics in geometry such as the construction and analysis of different shapes.",
@@ -175,8 +177,10 @@
             "subject": "Mathematics",
             "chapter_title": "Lines and Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.473552"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Lines and Angles accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "2 Lines and Angles \u0007In this chapter, we will explore some of the most basic ideas of geometry including points, lines, rays, line segments and angles.",
-                            "These ideas form the building blocks of ‘plane geometry’, and will help us in understanding more advanced topics in geometry such as the construction and analysis of different shapes.",
-                            "2.1 Point Mark a dot on the paper with a sharp tip of a pencil.",
-                            "A point determines a precise location, but it has no length, breadth or height."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter is fundamental in geometry. It deals with the basic building blocks of two-dimensional space, specifically points, lines, line segments, angles, and their various relationships. We start with basic definitions like parallel and intersecting lines, and move into properties of angles formed by transversals, interior angles of polygons, and supplementary angles. Understanding these concepts is crucial as they form the basis for higher geometry topics like triangles, quadrilaterals, and proofs.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Mathematics",
             "chapter_title": "Lines and Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.473572"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,20 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fegp102_c01",
-                        "name": "Lines and Angles",
-                        "definition": "Central learning focus of Lines and Angles.",
-                        "source_evidence": "2 Lines and Angles \u0007In this chapter, we will explore some of the most basic ideas of geometry including points, lines, rays, line segments and angles."
-                    },
-                    {
-                        "id": "fegp102_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "These ideas form the building blocks of ‘plane geometry’, and will help us in understanding more advanced topics in geometry such as the construction and analysis of different shapes."
-                    },
-                    {
-                        "id": "fegp102_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "2.1 Point Mark a dot on the paper with a sharp tip of a pencil."
-                    }
+                    "Parallel Lines and Transversals",
+                    "Intersections of Lines",
+                    "Angles on a Straight Line",
+                    "Vertically Opposite Angles",
+                    "Interior Angles and Exterior Angles",
+                    "Alternate Interior and Exterior Angles",
+                    "Corresponding Angles",
+                    "Equivalent Angles",
+                    "Transversal Lines and Angles",
+                    "Angles formed by Parallel Lines and a Transversal",
+                    "Acute, Right, Obtuse, Straight, Reflex, and Complete Angles",
+                    "Angle Addition Postulate",
+                    "Linear Pair of Angles",
+                    "Parallel Postulate"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +292,10 @@
             "subject": "Mathematics",
             "chapter_title": "Lines and Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.473587"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,6 +330,15 @@
                         "to": "fegp102_c03",
                         "relation": "enables"
                     }
+                ],
+                "central_topic": "Chapter 102: Lines and Angles",
+                "branches": [
+                    "Types of Lines (Parallel, Perpendicular, Intersecting)",
+                    "Definitions of Angles (Acute, Obtuse, Right, Straight)",
+                    "Pairs of Angles (Linear Pair, Vertically Opposite)",
+                    "Parallel Lines and Transversals",
+                    "Properties of Angles Formed by Transversals (Alternate Interior, Corresponding, Consecutive Interior)",
+                    "Angle Sums (Angles on a Straight Line = 180°)"
                 ]
             },
             "runtime_mapping": {
@@ -469,8 +425,10 @@
             "subject": "Mathematics",
             "chapter_title": "Lines and Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.473543"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +437,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Lines and Angles.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Lines and Angles supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine a construction site. The engineer (a point) draws foundations (lines and line segments) and structural beams (rays). They need to ensure these beams meet at perfect corners (angles). As they build, they encounter different challenges:\n\n1. **The Right Angle Check:** They use a right-angled square to ensure corner joints are exactly 90 degrees. This is the basis for perpendicular lines.\n2. **The Straight Line Layout:** They establish long road paths (straight lines) and need to know how they connect to road segments (line segments).\n3. **The Corner Intersection:** When two roads cross, they have to calculate the angles formed at that intersection. They learn that 'straight-line crossings' create a set of 'opposite' angles (vertically opposite angles) that are equal, creating predictable patterns.\n4. **The Parallel Challenge:** The engineer's toughest task is maintaining perfectly straight rows of parallel roads. When a third road (a transversal) cuts across them, they study how the interior angles behave—they sum up to 180 degrees if the lines are parallel. This property allows them to perfectly align structures even on a large scale.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1000,10 @@
             "subject": "Mathematics",
             "chapter_title": "Lines and Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.473563"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1015,38 @@
             "content": {
                 "items": [
                     {
-                        "id": "fegp102_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Lines and Angles?",
+                        "id": 1,
+                        "type": "Multiple Choice",
+                        "question": "If two parallel lines are intersected by a transversal, the sum of interior angles on the same side of the transversal is always:",
                         "options": [
-                            "2 Lines and Angles \u0007In this chapter, we will explore some of the most basic ideas of geometry including points, lines, rays, line segments and angles.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "90 degrees",
+                            "180 degrees",
+                            "72 degrees",
+                            "360 degrees"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "2 Lines and Angles \u0007In this chapter, we will explore some of the most basic ideas of geometry including points, lines, rays, line segments and angles.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp102_c01"
+                        "answer": "180 degrees"
                     },
                     {
-                        "id": "fegp102_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Lines and Angles?",
+                        "id": 2,
+                        "type": "True/False",
+                        "question": "Vertically opposite angles are always supplementary.",
                         "options": [
-                            "These ideas form the building blocks of ‘plane geometry’, and will help us in understanding more advanced topics in geometry such as the construction and analysis of different shapes.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "True",
+                            "False"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "These ideas form the building blocks of ‘plane geometry’, and will help us in understanding more advanced topics in geometry such as the construction and analysis of different shapes.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp102_c01"
+                        "answer": "False"
                     },
                     {
-                        "id": "fegp102_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Lines and Angles?",
-                        "options": [
-                            "2.1 Point Mark a dot on the paper with a sharp tip of a pencil.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "2.1 Point Mark a dot on the paper with a sharp tip of a pencil.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp102_c01"
+                        "id": 3,
+                        "type": "Fill in the Blanks",
+                        "question": "Angles that are equal in measure and are located on the same side of the transversal and between the two parallel lines are called ________ angles.",
+                        "answer": "Alternate Interior Angles"
                     },
                     {
-                        "id": "fegp102_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Lines and Angles?",
-                        "options": [
-                            "A point determines a precise location, but it has no length, breadth or height.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A point determines a precise location, but it has no length, breadth or height.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp102_c01"
-                    },
-                    {
-                        "id": "fegp102_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Lines and Angles?",
-                        "options": [
-                            "The tip of a The sharpened The pointed compass end of a pencil end of a needle If you mark three points on a piece of paper, you may be required to distinguish these three Z P points.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The tip of a The sharpened The pointed compass end of a pencil end of a needle If you mark three points on a piece of paper, you may be required to distinguish these three Z P points.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp102_c01"
-                    },
-                    {
-                        "id": "fegp102_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Lines and Angles?",
-                        "options": [
-                            "For this purpose, each of the three points may be denoted by a single capital letter such as T Reprint 2026-27 Chapter 2_Lines and Angles.indd 13 13-08-2024 16:14:25 Ganita Prakash | Grade 6 Z, P and T.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "For this purpose, each of the three points may be denoted by a single capital letter such as T Reprint 2026-27 Chapter 2_Lines and Angles.indd 13 13-08-2024 16:14:25 Ganita Prakash | Grade 6 Z, P and T.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp102_c01"
+                        "id": 4,
+                        "type": "Diagram Based",
+                        "question": "If one angle is 75 degrees and it is a linear pair with another angle, what is the measure of the second angle?",
+                        "answer": "105 degrees"
                     }
                 ]
             },
@@ -1625,8 +1495,10 @@
             "subject": "Mathematics",
             "chapter_title": "Lines and Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.473534"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1507,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Lines and Angles' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "2 Lines and Angles \u0007In this chapter, we will explore some of the most basic ideas of geometry including points, lines, rays, line segments and angles.",
-                    "These ideas form the building blocks of ‘plane geometry’, and will help us in understanding more advanced topics in geometry such as the construction and analysis of different shapes.",
-                    "2.1 Point Mark a dot on the paper with a sharp tip of a pencil.",
-                    "A point determines a precise location, but it has no length, breadth or height.",
-                    "The tip of a The sharpened The pointed compass end of a pencil end of a needle If you mark three points on a piece of paper, you may be required to distinguish these three Z P points.",
-                    "For this purpose, each of the three points may be denoted by a single capital letter such as T Reprint 2026-27 Chapter 2_Lines and Angles.indd 13 13-08-2024 16:14:25 Ganita Prakash | Grade 6 Z, P and T."
-                ]
-            },
+            "content": "This chapter transitions the learner from basic geometric recognition to logical deduction. It establishes the 'language' of geometry by defining angles and exploring their dependencies. Key takeaways include the relationships between angles on a single line (linear pairs), the crucial relationship between triangles and their interior angle sums, and the systematic application of parallel line theorems (alternate interior, corresponding angles) which allow for the accurate measurement and prediction of spatial relationships in two dimensions. It is the foundation for spatial reasoning in geometry.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1557,10 @@
             "subject": "Mathematics",
             "chapter_title": "Lines and Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.473579"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1572,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fegp102_fc01",
-                        "front": "What key point should you remember from Lines and Angles?",
-                        "back": "2 Lines and Angles \u0007In this chapter, we will explore some of the most basic ideas of geometry including points, lines, rays, line segments and angles.",
-                        "concept_id": "fegp102_c01"
+                        "front": "Definition of Parallel Lines",
+                        "back": "Two lines in a plane that never intersect, no matter how far they are extended."
                     },
                     {
-                        "id": "fegp102_fc02",
-                        "front": "What key point should you remember from Lines and Angles?",
-                        "back": "These ideas form the building blocks of ‘plane geometry’, and will help us in understanding more advanced topics in geometry such as the construction and analysis of different shapes.",
-                        "concept_id": "fegp102_c01"
+                        "front": "Alternate Interior Angles",
+                        "back": "A pair of alternate interior angles formed when a transversal intersects two parallel lines are equal."
                     },
                     {
-                        "id": "fegp102_fc03",
-                        "front": "What key point should you remember from Lines and Angles?",
-                        "back": "2.1 Point Mark a dot on the paper with a sharp tip of a pencil.",
-                        "concept_id": "fegp102_c01"
+                        "front": "Corresponding Angles",
+                        "back": "Angles in the same relative position at each intersection when two lines are cut by a transversal are equal."
                     },
                     {
-                        "id": "fegp102_fc04",
-                        "front": "What key point should you remember from Lines and Angles?",
-                        "back": "A point determines a precise location, but it has no length, breadth or height.",
-                        "concept_id": "fegp102_c01"
-                    },
-                    {
-                        "id": "fegp102_fc05",
-                        "front": "What key point should you remember from Lines and Angles?",
-                        "back": "The tip of a The sharpened The pointed compass end of a pencil end of a needle If you mark three points on a piece of paper, you may be required to distinguish these three Z P points.",
-                        "concept_id": "fegp102_c01"
-                    },
-                    {
-                        "id": "fegp102_fc06",
-                        "front": "What key point should you remember from Lines and Angles?",
-                        "back": "For this purpose, each of the three points may be denoted by a single capital letter such as T Reprint 2026-27 Chapter 2_Lines and Angles.indd 13 13-08-2024 16:14:25 Ganita Prakash | Grade 6 Z, P and T.",
-                        "concept_id": "fegp102_c01"
+                        "front": "Transversal Line",
+                        "back": "A line that intersects two or more other lines."
                     }
                 ]
             },

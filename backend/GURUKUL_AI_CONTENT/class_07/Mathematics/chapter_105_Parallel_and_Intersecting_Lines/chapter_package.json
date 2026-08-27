@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Parallel and Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.027026"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Parallel and Intersecting Lines.",
+                "overview": "Parallel and intersecting lines are fundamental concepts in Euclidean geometry. Parallel lines are lines in a plane that never intersect, maintaining a constant distance between them. Intersecting lines are lines that cross each other at a single point. Understanding the relationship between these two types of lines is crucial for advanced geometric constructions and problem-solving.",
                 "source_grounded_key_points": [
                     "PARALLEL AND 5 INTERSECTING LINES 5.1 Across the Line Take a piece of square paper and fold it in different ways.",
                     "Now, on the creases formed by the folds, draw lines using a pencil and a scale.",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "Parallel and Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.027083"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Parallel and Intersecting Lines.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "PARALLEL AND 5 INTERSECTING LINES 5.1 Across the Line Take a piece of square paper and fold it in different ways.",
-                            "Now, on the creases formed by the folds, draw lines using a pencil and a scale.",
-                            "Take any pair of lines and observe their relationship with each other.",
-                            "If they do not meet within the paper, do you think they would meet if they were extended beyond the paper?",
-                            "5.1 In this chapter, we will explore the relationship between lines on a plane surface."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 105, 'Parallel and Intersecting Lines,' is a fundamental topic in Euclidean geometry. It deals with two primary types of lines in a plane: parallel lines and intersecting lines. Parallel lines are lines in a plane that are always the same distance apart and never meet, even if extended infinitely. The key property of parallel lines is that they have the same slope (gradient). Intersecting lines are lines that cross each other at exactly one point. If two lines are parallel, they have no intersection point. If two lines are not parallel, they will eventually meet at one specific point. This chapter involves defining parallel lines, understanding conditions for lines to be parallel (often using slopes in coordinate geometry), and learning about angles formed when a transversal line intersects parallel lines (alternate interior angles, corresponding angles). Understanding these concepts is crucial for further topics in geometry like triangles and vectors.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "Parallel and Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.027102"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,15 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gegp105_c01",
-                        "name": "Parallel and Intersecting Lines",
-                        "definition": "Central learning focus of Parallel and Intersecting Lines.",
-                        "source_evidence": "PARALLEL AND 5 INTERSECTING LINES 5.1 Across the Line Take a piece of square paper and fold it in different ways."
-                    },
-                    {
-                        "id": "gegp105_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Now, on the creases formed by the folds, draw lines using a pencil and a scale."
-                    },
-                    {
-                        "id": "gegp105_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "Take any pair of lines and observe their relationship with each other."
-                    }
+                    "Definitions of Parallel Lines (lines in the same plane, equidistant, and never intersecting).",
+                    "Identifying Intersecting Lines (two lines that cross at exactly one point).",
+                    "Identifying Perpendicular Lines (lines that intersect at a right angle).",
+                    "Relationship between Parallel and Intersecting Lines (they can exist in the same plane or different planes).",
+                    "Properties of Perpendicular Lines (bisecting each other, forming right angles).",
+                    "Angle relationships: Corresponding angles, Alternate interior angles, and Consecutive interior angles (supplementary angles when lines are parallel).",
+                    "Using Transversals to establish relationships between line pairs.",
+                    "Drawing and constructing parallel lines using a compass and straightedge.",
+                    "Using properties of angle addition and subtraction to prove relationships."
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +299,10 @@
             "subject": "Mathematics",
             "chapter_title": "Parallel and Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.027117"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +337,32 @@
                         "to": "gegp105_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Parallel and Intersecting Lines": {
+                    "Parallel Lines": {
+                        "Definition": "Equidistant, never intersect",
+                        "Key Property": "Alternate interior angles are equal"
+                    },
+                    "Intersecting Lines": {
+                        "Definition": "One common point",
+                        "Types": [
+                            "Perpendicular",
+                            "Intersecting at a general angle"
+                        ]
+                    },
+                    "Transversal Line": {
+                        "Role": "Crosses two or more lines",
+                        "Key Concepts": [
+                            "Corresponding angles",
+                            "Alternate interior angles"
+                        ]
+                    },
+                    "Angle Pairs": {
+                        "Corresponding Angles": "Equal when lines are parallel.",
+                        "Alternate Interior Angles": "Equal when lines are parallel.",
+                        "Consecutive Interior Angles": "Sum is 180 degrees when lines are parallel."
+                    }
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +456,10 @@
             "subject": "Mathematics",
             "chapter_title": "Parallel and Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.027074"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +468,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Parallel and Intersecting Lines.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Parallel and Intersecting Lines supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine two railway tracks as parallel lines on a flat map. They run side-by-side and will never meet, no matter how far they extend. This represents parallel lines. Now, consider a road (a transversal line) that crosses these two tracks. Each time the road crosses one track, it will also cross the other. This point where the road meets both tracks is an intersection point. The angles formed at these intersections have specific properties. In parallel lines, alternate interior angles are equal, corresponding angles are equal, and consecutive interior angles are supplementary. This concept helps us predict the shapes and relationships formed by lines in space. For example, if you have a set of parallel lines, drawing a transversal creates a series of equal angles, which is a key principle used in surveying and architecture to ensure structures are level and accurately aligned.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1063,10 @@
             "subject": "Mathematics",
             "chapter_title": "Parallel and Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.027094"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1078,40 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp105_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Parallel and Intersecting Lines'?",
+                        "id": 1,
+                        "type": "Multiple Choice",
+                        "question": "Which of the following is the defining characteristic of parallel lines?",
                         "options": [
-                            "PARALLEL AND 5 INTERSECTING LINES 5.1 Across the Line Take a piece of square paper and fold it in different ways.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "They are perpendicular to each other.",
+                            "They never intersect.",
+                            "They are equidistant.",
+                            "They have the same slope."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "PARALLEL AND 5 INTERSECTING LINES 5.1 Across the Line Take a piece of square paper and fold it in different ways.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp105_c01"
+                        "answer": "They never intersect."
                     },
                     {
-                        "id": "gegp105_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Parallel and Intersecting Lines'?",
-                        "options": [
-                            "Now, on the creases formed by the folds, draw lines using a pencil and a scale.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Now, on the creases formed by the folds, draw lines using a pencil and a scale.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp105_c01"
+                        "id": 2,
+                        "type": "Fill in the Blank",
+                        "question": "When two lines intersect, the angles opposite to each other are called ______ angles.",
+                        "answer": "Vertically opposite"
                     },
                     {
-                        "id": "gegp105_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Parallel and Intersecting Lines'?",
-                        "options": [
-                            "Take any pair of lines and observe their relationship with each other.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Take any pair of lines and observe their relationship with each other.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp105_c01"
+                        "id": 3,
+                        "type": "True/False",
+                        "question": "If two lines are intersected by a transversal and the sum of interior angles on the same side is 180 degrees, then the lines are parallel.",
+                        "answer": "True"
                     },
                     {
-                        "id": "gegp105_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Parallel and Intersecting Lines'?",
-                        "options": [
-                            "If they do not meet within the paper, do you think they would meet if they were extended beyond the paper?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "If they do not meet within the paper, do you think they would meet if they were extended beyond the paper?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp105_c01"
+                        "id": 4,
+                        "type": "Problem Solving",
+                        "question": "Two lines are cut by a transversal. If one pair of consecutive interior angles is 110 degrees, what is the measure of the other consecutive interior angle?",
+                        "answer": "70 degrees (since they are supplementary)"
                     },
                     {
-                        "id": "gegp105_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Parallel and Intersecting Lines'?",
-                        "options": [
-                            "5.1 In this chapter, we will explore the relationship between lines on a plane surface.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "5.1 In this chapter, we will explore the relationship between lines on a plane surface.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp105_c01"
-                    },
-                    {
-                        "id": "gegp105_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Parallel and Intersecting Lines'?",
-                        "options": [
-                            "The table top, your piece of paper, the blackboard, and the bulletin board are all examples of plane surfaces.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The table top, your piece of paper, the blackboard, and the bulletin board are all examples of plane surfaces.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp105_c01"
-                    },
-                    {
-                        "id": "gegp105_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Parallel and Intersecting Lines'?",
-                        "options": [
-                            "When a pair of lines meet each other at a point on a plane surface, we say that the lines intersect each other.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "When a pair of lines meet each other at a point on a plane surface, we say that the lines intersect each other.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp105_c01"
-                    },
-                    {
-                        "id": "gegp105_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Parallel and Intersecting Lines'?",
-                        "options": [
-                            "5.2, where line l intersects line m, we can see that four angles are formed.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "5.2, where line l intersects line m, we can see that four angles are formed.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp105_c01"
+                        "id": 5,
+                        "type": "Identification",
+                        "question": "In the given diagram, identify the pair of angles that are alternate interior angles.",
+                        "answer": "Provide the specific angle labels from a hypothetical diagram."
                     }
                 ]
             },
@@ -1715,8 +1565,10 @@
             "subject": "Mathematics",
             "chapter_title": "Parallel and Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.027060"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1577,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Parallel and Intersecting Lines' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "PARALLEL AND 5 INTERSECTING LINES 5.1 Across the Line Take a piece of square paper and fold it in different ways.",
-                    "Now, on the creases formed by the folds, draw lines using a pencil and a scale.",
-                    "Take any pair of lines and observe their relationship with each other.",
-                    "If they do not meet within the paper, do you think they would meet if they were extended beyond the paper?",
-                    "5.1 In this chapter, we will explore the relationship between lines on a plane surface.",
-                    "The table top, your piece of paper, the blackboard, and the bulletin board are all examples of plane surfaces.",
-                    "When a pair of lines meet each other at a point on a plane surface, we say that the lines intersect each other."
-                ]
-            },
+            "content": "Parallel and intersecting lines are distinct geometric elements with specific rules governing their interactions. Parallel lines are non-intersecting, while intersecting lines share a common point. The relationship between parallel lines and a transversal line dictates the equality of specific angle pairs (alternate interior/exterior, corresponding, and consecutive interior). Mastering the properties of these lines allows for the analysis of complex geometric figures, enabling us to determine unknown angles, areas, and positions in various real-world applications, from drafting and surveying to design.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1627,10 @@
             "subject": "Mathematics",
             "chapter_title": "Parallel and Intersecting Lines",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.027110"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1642,32 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp105_fc01",
-                        "front": "What should you remember from Parallel and Intersecting Lines?",
-                        "back": "PARALLEL AND 5 INTERSECTING LINES 5.1 Across the Line Take a piece of square paper and fold it in different ways.",
-                        "concept_id": "gegp105_c01"
+                        "term": "Parallel Lines",
+                        "definition": "Lines in a plane that are at a constant distance from each other and never meet."
                     },
                     {
-                        "id": "gegp105_fc02",
-                        "front": "What should you remember from Parallel and Intersecting Lines?",
-                        "back": "Now, on the creases formed by the folds, draw lines using a pencil and a scale.",
-                        "concept_id": "gegp105_c01"
+                        "term": "Intersecting Lines",
+                        "definition": "Lines that have exactly one common point."
                     },
                     {
-                        "id": "gegp105_fc03",
-                        "front": "What should you remember from Parallel and Intersecting Lines?",
-                        "back": "Take any pair of lines and observe their relationship with each other.",
-                        "concept_id": "gegp105_c01"
+                        "term": "Perpendicular Lines",
+                        "definition": "Intersecting lines that form a 90-degree angle."
                     },
                     {
-                        "id": "gegp105_fc04",
-                        "front": "What should you remember from Parallel and Intersecting Lines?",
-                        "back": "If they do not meet within the paper, do you think they would meet if they were extended beyond the paper?",
-                        "concept_id": "gegp105_c01"
+                        "term": "Corresponding Angles",
+                        "definition": "Angles in the same relative position at each intersection created by a transversal and parallel lines are equal."
                     },
                     {
-                        "id": "gegp105_fc05",
-                        "front": "What should you remember from Parallel and Intersecting Lines?",
-                        "back": "5.1 In this chapter, we will explore the relationship between lines on a plane surface.",
-                        "concept_id": "gegp105_c01"
+                        "term": "Alternate Interior Angles",
+                        "definition": "Angles on opposite sides of a transversal and between the two lines are equal if the lines are parallel."
                     },
                     {
-                        "id": "gegp105_fc06",
-                        "front": "What should you remember from Parallel and Intersecting Lines?",
-                        "back": "The table top, your piece of paper, the blackboard, and the bulletin board are all examples of plane surfaces.",
-                        "concept_id": "gegp105_c01"
+                        "term": "Consecutive Interior Angles",
+                        "definition": "Angles on the same side of a transversal and between the two lines. They are supplementary if the lines are parallel."
                     },
                     {
-                        "id": "gegp105_fc07",
-                        "front": "What should you remember from Parallel and Intersecting Lines?",
-                        "back": "When a pair of lines meet each other at a point on a plane surface, we say that the lines intersect each other.",
-                        "concept_id": "gegp105_c01"
-                    },
-                    {
-                        "id": "gegp105_fc08",
-                        "front": "What should you remember from Parallel and Intersecting Lines?",
-                        "back": "5.2, where line l intersects line m, we can see that four angles are formed.",
-                        "concept_id": "gegp105_c01"
+                        "term": "Transversal",
+                        "definition": "A line that intersects two or more other lines."
                     }
                 ]
             },

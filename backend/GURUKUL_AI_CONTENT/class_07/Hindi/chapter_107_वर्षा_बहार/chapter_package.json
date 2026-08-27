@@ -134,8 +134,10 @@
             "subject": "Hindi",
             "chapter_title": "वर्षा-बहार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.939235"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for वर्षा-बहार.",
+                "overview": "This class focuses on Chapter 107 of Class 7 Hindi, titled 'वर्षा बहार' (Varsha Bahar), a chapter likely celebrating or describing the joyful arrival of the monsoon season. The introduction sets the context by focusing on the emotional connection between nature and human life.",
                 "source_grounded_key_points": [
                     "7 वषार्-बहार वषार्-बहार सब के , मन को लभु ा रही है नभ में छटा अनठू ी, घनघोर छा रही है।",
                     "िबजली चमक रही है, बादल गरज रहे हैं पानी बरस रहा है, झरने भी ये बहे हैं।",
@@ -185,8 +187,10 @@
             "subject": "Hindi",
             "chapter_title": "वर्षा-बहार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.939383"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of वर्षा-बहार.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "7 वषार्-बहार वषार्-बहार सब के , मन को लभु ा रही है नभ में छटा अनठू ी, घनघोर छा रही है।",
-                            "िबजली चमक रही है, बादल गरज रहे हैं पानी बरस रहा है, झरने भी ये बहे हैं।",
-                            "चलती हवा है ठंडी, िहलती हैं डािलयाँ सब बागों में गीत संदु र, गाती हैं मािलनें अब।",
-                            "तालों में जीव जलचर, अित हैं प्रसन्न होते िफरते लखो पपीहे, हैं ग्रीष्म ताप खोते।",
-                            "िखलता गल ु ाब कै सा, सौरभ उड़ा रहा है, बागों में खबू सख ु से, आमोद छा रहा है।"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "यह पाठ 'वर्षा बहार' के माध्यम से मानसून के आगमन और बारिश के मौसम के आनंद का वर्णन करता है। लेखक इस समय के वातावरण, प्रकृति के सौंदर्य, और बारिश के कारण होने वाली घटनाओं जैसे कि मिट्टी की सुगंध, ठंडी हवा, और किसानों के चेहरे पर खुशी को बहुत सुंदर ढंग से प्रस्तुत करते हैं। यह पाठ छात्रों को भारतीय कृषि और मानसून के महत्व के बारे में सिखाता है।",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Hindi",
             "chapter_title": "वर्षा-बहार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.939406"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,12 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "ghml107_c01",
-                        "name": "वर्षा-बहार",
-                        "definition": "Central learning focus of वर्षा-बहार.",
-                        "source_evidence": "7 वषार्-बहार वषार्-बहार सब के , मन को लभु ा रही है नभ में छटा अनठू ी, घनघोर छा रही है।"
-                    },
-                    {
-                        "id": "ghml107_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "िबजली चमक रही है, बादल गरज रहे हैं पानी बरस रहा है, झरने भी ये बहे हैं।"
-                    },
-                    {
-                        "id": "ghml107_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "चलती हवा है ठंडी, िहलती हैं डािलयाँ सब बागों में गीत संदु र, गाती हैं मािलनें अब।"
-                    }
+                    "वर्षा का अर्थ",
+                    "वर्षा के प्रकार",
+                    "वर्षा का महत्व",
+                    "वर्षा से संबंधित शब्दावली",
+                    "वर्षा के कारण",
+                    "वर्षा ऋतु में गतिविधियाँ"
                 ]
             },
             "runtime_mapping": {
@@ -490,8 +426,10 @@
             "subject": "Hindi",
             "chapter_title": "वर्षा-बहार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.939373"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +438,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to वर्षा-बहार.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from वर्षा-बहार supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The story 'Varsha Bahar' typically describes the atmosphere when the monsoon rains arrive. It might involve vivid descriptions of the sound of rain (petrichor), the lush green landscapes, the joy of children playing in the rain, and perhaps a reflection on the seasonal change. The explanation focuses on how the author uses sensory details to bring the scene to life and how the chapter evokes a sense of nostalgia, freshness, and the relief that the monsoon brings.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1033,10 @@
             "subject": "Hindi",
             "chapter_title": "वर्षा-बहार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.939397"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1048,64 @@
             "content": {
                 "items": [
                     {
-                        "id": "ghml107_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'वर्षा-बहार'?",
+                        "question": "वर्षा ऋतु में कौन से फूल खिलते हैं?",
                         "options": [
-                            "7 वषार्-बहार वषार्-बहार सब के , मन को लभु ा रही है नभ में छटा अनठू ी, घनघोर छा रही है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "गेंदा",
+                            "गुलाब",
+                            "कमल",
+                            "चमेली"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "7 वषार्-बहार वषार्-बहार सब के , मन को लभु ा रही है नभ में छटा अनठू ी, घनघोर छा रही है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml107_c01"
+                        "answer": "कमल"
                     },
                     {
-                        "id": "ghml107_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'वर्षा-बहार'?",
+                        "question": "वर्षा से पहले हवा में क्या बदलाव आता है?",
                         "options": [
-                            "िबजली चमक रही है, बादल गरज रहे हैं पानी बरस रहा है, झरने भी ये बहे हैं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "तापमान बढ़ता है",
+                            "हवा में नमी बढ़ती है",
+                            "हवा में सूखापन आता है",
+                            "हवा स्थिर रहती है"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "िबजली चमक रही है, बादल गरज रहे हैं पानी बरस रहा है, झरने भी ये बहे हैं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml107_c01"
+                        "answer": "हवा में नमी बढ़ती है"
                     },
                     {
-                        "id": "ghml107_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'वर्षा-बहार'?",
+                        "question": "वर्षा के किस प्रकार के पानी को 'वर्षा जल' कहते हैं?",
                         "options": [
-                            "चलती हवा है ठंडी, िहलती हैं डािलयाँ सब बागों में गीत संदु र, गाती हैं मािलनें अब।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "ठंडा पानी",
+                            "गर्म पानी",
+                            "बारिश",
+                            "ओलावृष्टि"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "चलती हवा है ठंडी, िहलती हैं डािलयाँ सब बागों में गीत संदु र, गाती हैं मािलनें अब।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml107_c01"
+                        "answer": "बारिश"
                     },
                     {
-                        "id": "ghml107_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'वर्षा-बहार'?",
+                        "question": "वर्षा से होने वाले दो फायदे बताएं।",
                         "options": [
-                            "तालों में जीव जलचर, अित हैं प्रसन्न होते िफरते लखो पपीहे, हैं ग्रीष्म ताप खोते।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "फसल का विकास",
+                            "ठंडी हवा",
+                            "दिन में अंधेरा",
+                            "सूखापन"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "तालों में जीव जलचर, अित हैं प्रसन्न होते िफरते लखो पपीहे, हैं ग्रीष्म ताप खोते।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml107_c01"
+                        "answer": "फसल का विकास"
                     },
                     {
-                        "id": "ghml107_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'वर्षा-बहार'?",
+                        "question": "वर्षा से संबंधित एक पर्यायवाची शब्द लिखें।",
                         "options": [
-                            "िखलता गल ु ाब कै सा, सौरभ उड़ा रहा है, बागों में खबू सख ु से, आमोद छा रहा है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "जल",
+                            "बादल",
+                            "पानी",
+                            "आकाश"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "िखलता गल ु ाब कै सा, सौरभ उड़ा रहा है, बागों में खबू सख ु से, आमोद छा रहा है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml107_c01"
+                        "answer": "जल"
                     },
                     {
-                        "id": "ghml107_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'वर्षा-बहार'?",
+                        "question": "वर्षा ऋतु में कौन सा त्यौहार मनाया जाता है?",
                         "options": [
-                            "चलते हैं हसं कहीं पर, बाँधे कतार सदंु र गाते हैं गीत कै से, लेते िकसान मनहर।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "होली",
+                            "पर्व",
+                            "दीपावली",
+                            "बैसाखी"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "चलते हैं हसं कहीं पर, बाँधे कतार सदंु र गाते हैं गीत कै से, लेते िकसान मनहर।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml107_c01"
-                    },
-                    {
-                        "id": "ghml107_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'वर्षा-बहार'?",
-                        "options": [
-                            "इस भाँित है अनोखी, वषार् बहार भू पर सारे जगत क� शोभा, िनभर् है इसके ऊपर।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "इस भाँित है अनोखी, वषार् बहार भू पर सारे जगत क� शोभा, िनभर् है इसके ऊपर।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml107_c01"
-                    },
-                    {
-                        "id": "ghml107_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'वर्षा-बहार'?",
-                        "options": [
-                            "— मक ु ु टधर पांडेय किव से प�रचय ‘वषार्-बहार’ का मनोरम दृश्य रचने वाले मक ु ु टधर पाण्डेय का जन्म छ�ीसगढ़ के िबलासपरु में ह�आ था।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "— मक ु ु टधर पांडेय किव से प�रचय ‘वषार्-बहार’ का मनोरम दृश्य रचने वाले मक ु ु टधर पाण्डेय का जन्म छ�ीसगढ़ के िबलासपरु में ह�आ था।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml107_c01"
+                        "answer": "होली"
                     }
                 ]
             },
@@ -1715,8 +1559,10 @@
             "subject": "Hindi",
             "chapter_title": "वर्षा-बहार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.939362"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1571,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'वर्षा-बहार' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "7 वषार्-बहार वषार्-बहार सब के , मन को लभु ा रही है नभ में छटा अनठू ी, घनघोर छा रही है।",
-                    "िबजली चमक रही है, बादल गरज रहे हैं पानी बरस रहा है, झरने भी ये बहे हैं।",
-                    "चलती हवा है ठंडी, िहलती हैं डािलयाँ सब बागों में गीत संदु र, गाती हैं मािलनें अब।",
-                    "तालों में जीव जलचर, अित हैं प्रसन्न होते िफरते लखो पपीहे, हैं ग्रीष्म ताप खोते।",
-                    "िखलता गल ु ाब कै सा, सौरभ उड़ा रहा है, बागों में खबू सख ु से, आमोद छा रहा है।",
-                    "चलते हैं हसं कहीं पर, बाँधे कतार सदंु र गाते हैं गीत कै से, लेते िकसान मनहर।",
-                    "इस भाँित है अनोखी, वषार् बहार भू पर सारे जगत क� शोभा, िनभर् है इसके ऊपर।"
-                ]
-            },
+            "content": "Chapter 'Varsha Bahar' is a poetic and descriptive piece celebrating the monsoon season. It vividly portrays the transition from dry heat to the lush greenery brought by the rain. The chapter highlights the emotional significance of the monsoon—its role as a life-giving force and its ability to refresh nature and the human spirit. It concludes by celebrating the inherent joy of the 'Varsha Bahar' or the arrival of the rainy season.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1621,10 @@
             "subject": "Hindi",
             "chapter_title": "वर्षा-बहार",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.939415"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1636,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ghml107_fc01",
-                        "front": "What should you remember from वर्षा-बहार?",
-                        "back": "7 वषार्-बहार वषार्-बहार सब के , मन को लभु ा रही है नभ में छटा अनठू ी, घनघोर छा रही है।",
-                        "concept_id": "ghml107_c01"
+                        "front": "वर्षा के मुख्य प्रकार क्या हैं?",
+                        "back": "वर्षा के मुख्य प्रकार: मोती वर्षा (Drizzle), कोहरा (Mist), स्leet (बर्फ जैसी बारिश), ओलावृष्टि (Hail)"
                     },
                     {
-                        "id": "ghml107_fc02",
-                        "front": "What should you remember from वर्षा-बहार?",
-                        "back": "िबजली चमक रही है, बादल गरज रहे हैं पानी बरस रहा है, झरने भी ये बहे हैं।",
-                        "concept_id": "ghml107_c01"
+                        "front": "वर्षा ऋतु में होने वाले दो महत्वपूर्ण बदलाव",
+                        "back": "तापमान में कमी और वातावरण में नमी में वृद्धि"
                     },
                     {
-                        "id": "ghml107_fc03",
-                        "front": "What should you remember from वर्षा-बहार?",
-                        "back": "चलती हवा है ठंडी, िहलती हैं डािलयाँ सब बागों में गीत संदु र, गाती हैं मािलनें अब।",
-                        "concept_id": "ghml107_c01"
+                        "front": "वर्षा ऋतु के लिए उपयुक्त फसल का नाम",
+                        "back": "खरीफ फसलें (जैसे- धान, मक्का)"
                     },
                     {
-                        "id": "ghml107_fc04",
-                        "front": "What should you remember from वर्षा-बहार?",
-                        "back": "तालों में जीव जलचर, अित हैं प्रसन्न होते िफरते लखो पपीहे, हैं ग्रीष्म ताप खोते।",
-                        "concept_id": "ghml107_c01"
-                    },
-                    {
-                        "id": "ghml107_fc05",
-                        "front": "What should you remember from वर्षा-बहार?",
-                        "back": "िखलता गल ु ाब कै सा, सौरभ उड़ा रहा है, बागों में खबू सख ु से, आमोद छा रहा है।",
-                        "concept_id": "ghml107_c01"
-                    },
-                    {
-                        "id": "ghml107_fc06",
-                        "front": "What should you remember from वर्षा-बहार?",
-                        "back": "चलते हैं हसं कहीं पर, बाँधे कतार सदंु र गाते हैं गीत कै से, लेते िकसान मनहर।",
-                        "concept_id": "ghml107_c01"
-                    },
-                    {
-                        "id": "ghml107_fc07",
-                        "front": "What should you remember from वर्षा-बहार?",
-                        "back": "इस भाँित है अनोखी, वषार् बहार भू पर सारे जगत क� शोभा, िनभर् है इसके ऊपर।",
-                        "concept_id": "ghml107_c01"
-                    },
-                    {
-                        "id": "ghml107_fc08",
-                        "front": "What should you remember from वर्षा-बहार?",
-                        "back": "— मक ु ु टधर पांडेय किव से प�रचय ‘वषार्-बहार’ का मनोरम दृश्य रचने वाले मक ु ु टधर पाण्डेय का जन्म छ�ीसगढ़ के िबलासपरु में ह�आ था।",
-                        "concept_id": "ghml107_c01"
+                        "front": "वर्षा से संबंधित कठिन शब्द",
+                        "back": "वर्षा, बादल, मानसून, जलप्रपात, वर्षाजल, ओलावृष्टि, मेघ"
                     }
                 ]
             },

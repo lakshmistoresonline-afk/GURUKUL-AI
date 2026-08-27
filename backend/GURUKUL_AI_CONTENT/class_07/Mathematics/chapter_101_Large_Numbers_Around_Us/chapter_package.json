@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Large Numbers Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.984716"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Large Numbers Around Us.",
+                "overview": "This chapter introduces the concept of large numbers, their representation, place value, and their relationship to the numbers we encounter in everyday life. It aims to help students understand how numbers grow and how to read, write, and compare very large quantities.",
                 "source_grounded_key_points": [
                     "He visits the market regularly to buy seeds for his rice field.",
                     "During one such visit he overheard a conversation between Ramanna and Lakshmamma.",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "Large Numbers Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.984752"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Large Numbers Around Us.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "He visits the market regularly to buy seeds for his rice field.",
-                            "During one such visit he overheard a conversation between Ramanna and Lakshmamma.",
-                            "Ramanna said, “Earlier our country had about a lakh varieties of rice.",
-                            "Farmers used to preserve different varieties of seeds and use them to grow rice.",
-                            "So far, they have collected about a hundred indigenous varieties of rice seeds from different places."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Welcome to Chapter 101, 'Large Numbers Around Us'. In this chapter, we delve into the fascinating world of large numbers. We will explore the concept of place value, understanding how the position of a digit determines its value (ones, tens, hundreds, thousands, lakhs, crores, etc.). We will learn how to read, write, and compare very large numbers. The key idea is understanding the pattern and structure of numbers, which helps us in daily life when dealing with finances, population data, or scientific measurements. We'll also look at estimation, rounding off large numbers, and using scientific notation, which is a powerful tool for representing numbers that are too large to be written in standard form.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "Large Numbers Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.984771"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,65 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gegp101_c01",
-                        "name": "Large Numbers Around Us",
-                        "definition": "Central learning focus of Large Numbers Around Us.",
-                        "source_evidence": "He visits the market regularly to buy seeds for his rice field."
+                        "name": "Place Value",
+                        "description": "Understanding the value of each digit (ones, tens, hundreds, thousands, lakhs, crores) in a number.",
+                        "details": [
+                            "Identifying the units place.",
+                            "Identifying the tens place.",
+                            "Identifying the hundreds place.",
+                            "Identifying the thousands place.",
+                            "Identifying the lakhs place.",
+                            "Identifying the crores place."
+                        ],
+                        "examples": [
+                            "In the number 7,52,345, the digit 5 is in the ten thousands place."
+                        ]
                     },
                     {
-                        "id": "gegp101_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "During one such visit he overheard a conversation between Ramanna and Lakshmamma."
+                        "name": "Number Reading and Writing",
+                        "description": "Reading large numbers correctly (in words) and writing them in figures.",
+                        "details": [
+                            "Writing numbers in the international system (using commas).",
+                            "Converting words to numerals.",
+                            "Converting numerals to words."
+                        ],
+                        "examples": [
+                            "Writing 'Eight million nine hundred twenty-one' as 8,92,001."
+                        ]
                     },
                     {
-                        "id": "gegp101_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "Ramanna said, “Earlier our country had about a lakh varieties of rice."
+                        "name": "Comparing Numbers",
+                        "description": "Determining which is greater, lesser, or equal using symbols (>, <, =).",
+                        "details": [
+                            "Vertical comparison of numbers.",
+                            "Place value comparison (comparing the digit in the highest place value first)."
+                        ],
+                        "examples": [
+                            "7,89,105 > 7,89,005 because 105 is greater than 005."
+                        ]
+                    },
+                    {
+                        "name": "Number Sequence and Patterns",
+                        "description": "Identifying patterns, finding the predecessor and successor of a number, and finding the gap between numbers.",
+                        "details": [
+                            "Counting in even/odd numbers.",
+                            "Identifying increasing/decreasing patterns.",
+                            "Using arithmetic sequences."
+                        ],
+                        "examples": [
+                            "Find the next number in the sequence: 100, 200, 300, 400, ..."
+                        ]
+                    },
+                    {
+                        "name": "Roman Numerals (Introduction)",
+                        "description": "Basic introduction to representing large numbers using Roman numerals (optional depending on curriculum).",
+                        "details": [
+                            "Understanding symbols (I, V, X, L, C, D, M).",
+                            "Representing numbers up to 1000."
+                        ],
+                        "examples": [
+                            "Representing 100 as C."
+                        ]
                     }
                 ]
             },
@@ -360,8 +351,10 @@
             "subject": "Mathematics",
             "chapter_title": "Large Numbers Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.984785"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +388,44 @@
                         "from": "gegp101_c02",
                         "to": "gegp101_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_topic": "Large Numbers Around Us",
+                "branches": [
+                    {
+                        "title": "Place Value",
+                        "sub_branches": [
+                            "Units",
+                            "Tens",
+                            "Hundreds",
+                            "Thousands",
+                            "Lakhs",
+                            "Crores"
+                        ]
+                    },
+                    {
+                        "title": "Number System",
+                        "sub_branches": [
+                            "Writing Figures",
+                            "International System (Commas)",
+                            "Reading Numbers"
+                        ]
+                    },
+                    {
+                        "title": "Comparison",
+                        "sub_branches": [
+                            "Greater Than (>)",
+                            "Lesser Than (<)",
+                            "Equal To (=)"
+                        ]
+                    },
+                    {
+                        "title": "Patterns",
+                        "sub_branches": [
+                            "Sequences",
+                            "Predecessor/Successor",
+                            "Arithmetic Series"
+                        ]
                     }
                 ]
             },
@@ -490,8 +521,10 @@
             "subject": "Mathematics",
             "chapter_title": "Large Numbers Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.984743"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +533,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Large Numbers Around Us.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Large Numbers Around Us supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a scenario: You are visiting a city where the population is 5,43,210. To make sense of this number, you would use the place value system: 5 is in the lakhs place, 4 is in the ten thousands place, and so on. If you want to represent a distance traveled, say 12,345 km, you use the thousands place, hundreds place, etc. Large numbers are essential when dealing with economic data, astronomical distances, and global statistics. This chapter makes these abstract concepts tangible by showing how numbers are used daily—from calculating the price of a house to tracking population growth.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1128,10 @@
             "subject": "Mathematics",
             "chapter_title": "Large Numbers Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.984763"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1143,25 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp101_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Large Numbers Around Us'?",
+                        "type": "Multiple Choice",
+                        "question": "What is the place value of the digit 4 in the number 5,43,210?",
                         "options": [
-                            "He visits the market regularly to buy seeds for his rice field.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Ten Lakhs",
+                            "Lakhs",
+                            "Ten Thousands",
+                            "Thousands"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "He visits the market regularly to buy seeds for his rice field.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp101_c01"
+                        "answer": "Ten Thousands"
                     },
                     {
-                        "id": "gegp101_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Large Numbers Around Us'?",
-                        "options": [
-                            "During one such visit he overheard a conversation between Ramanna and Lakshmamma.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "During one such visit he overheard a conversation between Ramanna and Lakshmamma.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp101_c01"
+                        "type": "Fill in the Blanks",
+                        "question": "The international system uses _________ to separate groups of three digits (e.g., 1,23,45,67).",
+                        "answer": "Commas"
                     },
                     {
-                        "id": "gegp101_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Large Numbers Around Us'?",
-                        "options": [
-                            "Ramanna said, “Earlier our country had about a lakh varieties of rice.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Ramanna said, “Earlier our country had about a lakh varieties of rice.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Large Numbers Around Us'?",
-                        "options": [
-                            "Farmers used to preserve different varieties of seeds and use them to grow rice.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Farmers used to preserve different varieties of seeds and use them to grow rice.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Large Numbers Around Us'?",
-                        "options": [
-                            "So far, they have collected about a hundred indigenous varieties of rice seeds from different places.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "So far, they have collected about a hundred indigenous varieties of rice seeds from different places.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Large Numbers Around Us'?",
-                        "options": [
-                            "You can also buy seeds from there.” You may have heard the word ‘lakh’ before.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "You can also buy seeds from there.” You may have heard the word ‘lakh’ before.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Large Numbers Around Us'?",
-                        "options": [
-                            "Eshwarappa shared this incident with his daughter Roxie and son Estu .",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Eshwarappa shared this incident with his daughter Roxie and son Estu .",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Large Numbers Around Us'?",
-                        "options": [
-                            "Estu was surprised to know that there were about one lakh varieties of rice in this country.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Estu was surprised to know that there were about one lakh varieties of rice in this country.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp101_c01"
+                        "type": "True/False",
+                        "question": "The number 9,99,999 is equal to 9 million 99,999.",
+                        "answer": "False (It is 9,99,999)"
                     }
                 ]
             },
@@ -1715,8 +1615,10 @@
             "subject": "Mathematics",
             "chapter_title": "Large Numbers Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.984734"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1627,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Large Numbers Around Us' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "He visits the market regularly to buy seeds for his rice field.",
-                    "During one such visit he overheard a conversation between Ramanna and Lakshmamma.",
-                    "Ramanna said, “Earlier our country had about a lakh varieties of rice.",
-                    "Farmers used to preserve different varieties of seeds and use them to grow rice.",
-                    "So far, they have collected about a hundred indigenous varieties of rice seeds from different places.",
-                    "You can also buy seeds from there.” You may have heard the word ‘lakh’ before.",
-                    "Eshwarappa shared this incident with his daughter Roxie and son Estu ."
-                ]
-            },
+            "content": "Chapter 101, 'Large Numbers Around Us,' is a foundational chapter in mathematics that teaches students how to handle large quantities effectively. Key takeaways include mastering the Indian and International number systems, understanding the concept of place value to determine the value of each digit, and utilizing rounding techniques to approximate numbers. It connects mathematical concepts directly to real-life problems, demonstrating the utility of large numbers in areas like commerce, science, and statistics.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1677,10 @@
             "subject": "Mathematics",
             "chapter_title": "Large Numbers Around Us",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.984778"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1692,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp101_fc01",
-                        "front": "What should you remember from Large Numbers Around Us?",
-                        "back": "He visits the market regularly to buy seeds for his rice field.",
-                        "concept_id": "gegp101_c01"
+                        "term": "Place Value",
+                        "definition": "The position of a digit (Ones, Tens, Hundreds, etc.) which determines its value in a number."
                     },
                     {
-                        "id": "gegp101_fc02",
-                        "front": "What should you remember from Large Numbers Around Us?",
-                        "back": "During one such visit he overheard a conversation between Ramanna and Lakshmamma.",
-                        "concept_id": "gegp101_c01"
+                        "term": "Lakh",
+                        "definition": "The Indian system grouping of 1,00,000 (one hundred thousand)."
                     },
                     {
-                        "id": "gegp101_fc03",
-                        "front": "What should you remember from Large Numbers Around Us?",
-                        "back": "Ramanna said, “Earlier our country had about a lakh varieties of rice.",
-                        "concept_id": "gegp101_c01"
+                        "term": "Number Reading",
+                        "definition": "The process of converting a numerical representation into its written word form."
                     },
                     {
-                        "id": "gegp101_fc04",
-                        "front": "What should you remember from Large Numbers Around Us?",
-                        "back": "Farmers used to preserve different varieties of seeds and use them to grow rice.",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_fc05",
-                        "front": "What should you remember from Large Numbers Around Us?",
-                        "back": "So far, they have collected about a hundred indigenous varieties of rice seeds from different places.",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_fc06",
-                        "front": "What should you remember from Large Numbers Around Us?",
-                        "back": "You can also buy seeds from there.” You may have heard the word ‘lakh’ before.",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_fc07",
-                        "front": "What should you remember from Large Numbers Around Us?",
-                        "back": "Eshwarappa shared this incident with his daughter Roxie and son Estu .",
-                        "concept_id": "gegp101_c01"
-                    },
-                    {
-                        "id": "gegp101_fc08",
-                        "front": "What should you remember from Large Numbers Around Us?",
-                        "back": "Estu was surprised to know that there were about one lakh varieties of rice in this country.",
-                        "concept_id": "gegp101_c01"
+                        "term": "Crore",
+                        "definition": "The Indian system grouping of 1,00,00,000 (ten million)."
                     }
                 ]
             },

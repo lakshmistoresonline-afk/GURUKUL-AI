@@ -175,8 +175,10 @@
             "subject": "Social Science",
             "chapter_title": "Unity in Diversity, or ‘Many in the One’",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.748531"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +187,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Unity in Diversity, or ‘Many in the One’ accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "8 CHAPTER Unity in Diversity, or ‘Many in the One’ Oh, grant me my prayer, that I may never lose the bliss of the touch of the one in the play of the many.",
-                            "— Rabindranath Tagore … The principle of unity in diversity which has always been normal to [India] and its fulfilment the fundamental course of her being and its very nature, the Many in the One, would place her on the sure foundation of her Swabhava and Swadharma.",
-                            "— Sri Aurobindo 8 – Unity in Diversity, or ‘Many in the One’ The Big 1.",
-                            "What is meant by ‘unity in diversity’ in the Indian Questions scenario?"
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter introduces the concept of unity in diversity. Diversity refers to the variety of cultures, religions, languages, and ways of life that exist within a society. The central theme is how these diverse elements—people who believe different things, practice different customs, and come from different backgrounds—can coexist peacefully. It emphasizes that diversity is not a cause for division but a source of strength and richness. The chapter explores how various aspects of Indian society (like different languages, festivals, and religions) contribute to a unified whole. It highlights the importance of tolerance, respect, and mutual understanding in maintaining harmony. The text aims to teach students that 'unity in diversity' means celebrating our differences while standing together as one nation.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +245,10 @@
             "subject": "Social Science",
             "chapter_title": "Unity in Diversity, or ‘Many in the One’",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.748573"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +260,32 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fees108_c01",
-                        "name": "Unity in Diversity, or ‘Many in the One’",
-                        "definition": "Central learning focus of Unity in Diversity, or ‘Many in the One’.",
-                        "source_evidence": "8 CHAPTER Unity in Diversity, or ‘Many in the One’ Oh, grant me my prayer, that I may never lose the bliss of the touch of the one in the play of the many."
+                        "name": "Unity in Diversity",
+                        "definition": "The idea that a diverse society can maintain harmony and stability through mutual respect, understanding, and cooperation among people of different backgrounds (cultural, religious, linguistic, etc.)."
                     },
                     {
-                        "id": "fees108_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "— Rabindranath Tagore … The principle of unity in diversity which has always been normal to [India] and its fulfilment the fundamental course of her being and its very nature, the Many in the One, would place her on the sure foundation of her Swabhava and Swadharma."
+                        "name": "Diversity",
+                        "definition": "The state of being diverse, involving the presence of many different types of people with various attributes, beliefs, and ideas."
                     },
                     {
-                        "id": "fees108_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "— Sri Aurobindo 8 – Unity in Diversity, or ‘Many in the One’ The Big 1."
+                        "name": "Multiculturalism",
+                        "definition": "The presence of several distinct cultural or ethnic groups within a larger society, where they coexist and contribute to the overall culture."
+                    },
+                    {
+                        "name": "Social Harmony",
+                        "definition": "A state of peaceful coexistence and understanding among individuals and groups in a society."
+                    },
+                    {
+                        "name": "Tolerance",
+                        "definition": "The ability to accept and respect beliefs, ideas, or behaviors that are different from your own."
+                    },
+                    {
+                        "name": "Inclusion",
+                        "definition": "The practice of ensuring that everyone, regardless of their background, feels valued, respected, and has equal opportunities to participate in society."
+                    },
+                    {
+                        "name": "Coexistence",
+                        "definition": "The state where different groups live and work together peacefully, despite their differences."
                     }
                 ]
             },
@@ -347,8 +304,10 @@
             "subject": "Social Science",
             "chapter_title": "Unity in Diversity, or ‘Many in the One’",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.748589"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +341,47 @@
                         "from": "fees108_c02",
                         "to": "fees108_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_topic": "Unity in Diversity",
+                "branches": [
+                    {
+                        "node": "Diversity",
+                        "sub_topics": [
+                            "Cultural Diversity",
+                            "Religious Diversity",
+                            "Linguistic Diversity"
+                        ]
+                    },
+                    {
+                        "node": "Multiculturalism",
+                        "sub_topics": [
+                            "Coexistence",
+                            "Mutual Respect",
+                            "Contribution"
+                        ]
+                    },
+                    {
+                        "node": "Inclusion",
+                        "sub_topics": [
+                            "Equal Opportunity",
+                            "Value and Respect",
+                            "Belonging"
+                        ]
+                    },
+                    {
+                        "node": "Tolerance",
+                        "sub_topics": [
+                            "Acceptance of Differences",
+                            "Empathy"
+                        ]
+                    },
+                    {
+                        "node": "Social Harmony",
+                        "sub_topics": [
+                            "Peaceful Coexistence",
+                            "Mutual Understanding"
+                        ]
                     }
                 ]
             },
@@ -1070,8 +1070,10 @@
             "subject": "Social Science",
             "chapter_title": "Unity in Diversity, or ‘Many in the One’",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.748563"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1085,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "fees108_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Unity in Diversity, or ‘Many in the One’?",
+                        "type": "Multiple Choice",
+                        "question": "The core concept of 'Unity in Diversity' primarily focuses on:",
                         "options": [
-                            "8 CHAPTER Unity in Diversity, or ‘Many in the One’ Oh, grant me my prayer, that I may never lose the bliss of the touch of the one in the play of the many.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Imposing a single dominant culture on all others.",
+                            "Ignoring differences to maintain uniformity.",
+                            "Celebrating the presence of various differences while maintaining social harmony.",
+                            "Excluding minority groups from the main society."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "8 CHAPTER Unity in Diversity, or ‘Many in the One’ Oh, grant me my prayer, that I may never lose the bliss of the touch of the one in the play of the many.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees108_c01"
+                        "answer": "Celebrating the presence of various differences while maintaining social harmony."
                     },
                     {
-                        "id": "fees108_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Unity in Diversity, or ‘Many in the One’?",
-                        "options": [
-                            "— Rabindranath Tagore … The principle of unity in diversity which has always been normal to [India] and its fulfilment the fundamental course of her being and its very nature, the Many in the One, would place her on the sure foundation of her Swabhava and Swadharma.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "— Rabindranath Tagore … The principle of unity in diversity which has always been normal to [India] and its fulfilment the fundamental course of her being and its very nature, the Many in the One, would place her on the sure foundation of her Swabhava and Swadharma.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees108_c01"
+                        "type": "True/False",
+                        "question": "Tolerance is essential for achieving social harmony.",
+                        "answer": "True"
                     },
                     {
-                        "id": "fees108_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Unity in Diversity, or ‘Many in the One’?",
-                        "options": [
-                            "— Sri Aurobindo 8 – Unity in Diversity, or ‘Many in the One’ The Big 1.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "— Sri Aurobindo 8 – Unity in Diversity, or ‘Many in the One’ The Big 1.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees108_c01"
+                        "type": "Short Answer",
+                        "question": "Define multiculturalism in the context of social studies.",
+                        "answer": "Multiculturalism is the presence of several distinct cultural or ethnic groups within a larger society, where they coexist and contribute to the overall culture."
                     },
                     {
-                        "id": "fees108_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Unity in Diversity, or ‘Many in the One’?",
-                        "options": [
-                            "What is meant by ‘unity in diversity’ in the Indian Questions scenario?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What is meant by ‘unity in diversity’ in the Indian Questions scenario?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees108_c01"
-                    },
-                    {
-                        "id": "fees108_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Unity in Diversity, or ‘Many in the One’?",
-                        "options": [
-                            "What aspects of India’s diversity are the most striking?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What aspects of India’s diversity are the most striking?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees108_c01"
-                    },
-                    {
-                        "id": "fees108_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Unity in Diversity, or ‘Many in the One’?",
-                        "options": [
-                            "125 chapter8.indd 125 03-02-2025 05:04:12 A Rich Diversity If you travel through India by train, you will notice not only changing landscapes but also many different types of dresses and food; you will hear different languages, familiar and unfamiliar, and see different scripts on the way.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "125 chapter8.indd 125 03-02-2025 05:04:12 A Rich Diversity If you travel through India by train, you will notice not only changing landscapes but also many different types of dresses and food; you will hear different languages, familiar and unfamiliar, and see different scripts on the way.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees108_c01"
+                        "type": "Conceptual Understanding",
+                        "question": "How does inclusion promote unity in a diverse society?",
+                        "answer": "Inclusion ensures that everyone feels valued and has equal opportunities, which prevents feelings of marginalization and fosters a sense of belonging, thus promoting unity."
                     }
                 ]
             },
@@ -1695,8 +1627,10 @@
             "subject": "Social Science",
             "chapter_title": "Unity in Diversity, or ‘Many in the One’",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.748582"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1642,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fees108_fc01",
-                        "front": "What key point should you remember from Unity in Diversity, or ‘Many in the One’?",
-                        "back": "8 CHAPTER Unity in Diversity, or ‘Many in the One’ Oh, grant me my prayer, that I may never lose the bliss of the touch of the one in the play of the many.",
-                        "concept_id": "fees108_c01"
+                        "term": "Unity in Diversity",
+                        "definition": "The principle of coexistence and mutual respect among people of different backgrounds."
                     },
                     {
-                        "id": "fees108_fc02",
-                        "front": "What key point should you remember from Unity in Diversity, or ‘Many in the One’?",
-                        "back": "— Rabindranath Tagore … The principle of unity in diversity which has always been normal to [India] and its fulfilment the fundamental course of her being and its very nature, the Many in the One, would place her on the sure foundation of her Swabhava and Swadharma.",
-                        "concept_id": "fees108_c01"
+                        "term": "Inclusion",
+                        "definition": "Ensuring everyone feels valued, respected, and has equal opportunities to participate."
                     },
                     {
-                        "id": "fees108_fc03",
-                        "front": "What key point should you remember from Unity in Diversity, or ‘Many in the One’?",
-                        "back": "— Sri Aurobindo 8 – Unity in Diversity, or ‘Many in the One’ The Big 1.",
-                        "concept_id": "fees108_c01"
+                        "term": "Multiculturalism",
+                        "definition": "The coexistence of several distinct cultural or ethnic groups in a society."
                     },
                     {
-                        "id": "fees108_fc04",
-                        "front": "What key point should you remember from Unity in Diversity, or ‘Many in the One’?",
-                        "back": "What is meant by ‘unity in diversity’ in the Indian Questions scenario?",
-                        "concept_id": "fees108_c01"
-                    },
-                    {
-                        "id": "fees108_fc05",
-                        "front": "What key point should you remember from Unity in Diversity, or ‘Many in the One’?",
-                        "back": "What aspects of India’s diversity are the most striking?",
-                        "concept_id": "fees108_c01"
-                    },
-                    {
-                        "id": "fees108_fc06",
-                        "front": "What key point should you remember from Unity in Diversity, or ‘Many in the One’?",
-                        "back": "125 chapter8.indd 125 03-02-2025 05:04:12 A Rich Diversity If you travel through India by train, you will notice not only changing landscapes but also many different types of dresses and food; you will hear different languages, familiar and unfamiliar, and see different scripts on the way.",
-                        "concept_id": "fees108_c01"
+                        "term": "Tolerance",
+                        "definition": "The willingness to accept and respect beliefs or behaviors that are different from one's own."
                     }
                 ]
             },

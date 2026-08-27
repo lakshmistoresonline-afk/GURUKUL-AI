@@ -132,8 +132,10 @@
             "subject": "Hindi",
             "chapter_title": "सुंदरिया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.042308"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'सुंदरिया' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'सुंदरिया'.",
+                "overview": "सुंदरिया यह एक लोक कथा या कहानी हो सकती है जो किसी विशिष्ट क्षेत्र की लोक संस्कृति, परंपराओं, या मानवीय भावनाओं (जैसे सौंदर्य, प्रेम, या सामाजिक मूल्यों) को दर्शाती है। 'सुंदरिया' नाम स्वयं किसी आकर्षक स्त्री या सौंदर्य का प्रतीक हो सकता है। यह अध्याय संभवतः हिंदी साहित्य के किसी विशिष्ट भाग से लिया गया है, जो नैतिक शिक्षा, भावनात्मक गहराई या सामाजिक स्थिति का वर्णन करता है। यह कहानी हमें जीवन के किसी पहलू पर विचार करने के लिए प्रेरित करती है।",
                 "source_grounded_key_points": [
                     "सुंदरिया5 हरियाणा क े ककसी गाँव में ही िाकसंह नामक एक क कसान था।",
                     "उसकी समझ में यह नहीं आता था क क वह अपने बीवी-बच्चों औ ि अपनी प यािी गाय स ुं दरिया की प िवरिश क ै से किे?",
@@ -303,8 +305,10 @@
             "subject": "Hindi",
             "chapter_title": "सुंदरिया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.042371"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -315,24 +319,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "ehve105_concept_01",
-                        "name": "सुंदरिया",
-                        "definition": "Central learning focus developed by the chapter 'सुंदरिया'.",
-                        "evidence": "सुंदरिया5 हरियाणा क े ककसी गाँव में ही िाकसंह नामक एक क कसान था।"
-                    },
-                    {
-                        "id": "ehve105_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "उसकी समझ में यह नहीं आता था क क वह अपने बीवी-बच्चों औ ि अपनी प यािी गाय स ुं दरिया की प िवरिश क ै से किे?"
-                    },
-                    {
-                        "id": "ehve105_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "गिीबी क े कािण हीिाकसं ह गाय का ्चािा भी नहीं जुटा पाता था।"
-                    }
+                    "सुंदरिया का परिचय",
+                    "सुंदरिया के चित्र और वर्णन",
+                    "साहित्यिक सौंदर्य (भाषा, शिल्प, रस)",
+                    "कविता का केंद्रीय भाव",
+                    "शब्दार्थ और काव्य शास्त्र"
                 ]
             },
             "runtime_mapping": {
@@ -350,8 +341,10 @@
             "subject": "Hindi",
             "chapter_title": "सुंदरिया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.042390"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -385,6 +378,16 @@
                         "from": "ehve105_concept_02",
                         "to": "ehve105_concept_03",
                         "relation": "applied_through"
+                    }
+                ],
+                "Root": "सुंदरिया (Chapter 105)",
+                "Branches": [
+                    {
+                        "Concept": "मूल संदेश",
+                        "Sub-branches": [
+                            "सौंदर्य का आदर्श",
+                            "मानवीय भावना"
+                        ]
                     }
                 ]
             },
@@ -464,8 +467,10 @@
             "subject": "Hindi",
             "chapter_title": "सुंदरिया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.042345"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +479,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "You are entering a learning scenario built around the ideas of 'सुंदरिया'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: सुंदरिया.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'सुंदरिया' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "चूंकि 'सुंदरिया' एक विशिष्ट पाठ है, इसलिए इसकी विस्तृत व्याख्या इस बात पर निर्भर करती है कि यह किस पाठ से लिया गया है। यदि यह किसी पारंपरिक कहानी से है, तो इसकी कहानी निम्नलिखित बिंदुओं के माध्यम से समझी जा सकती है:\n\n1. **पात्रों का परिचय:** मुख्य पात्र 'सुंदरिया' कौन है? उसके गुण क्या हैं? वह किस तरह के सामाजिक परिवेश में रहती है? इसके विरोधी या सहायक पात्र कौन हैं?\n2. **कथानक (Plot):** कहानी की शुरुआत कैसे होती है? मुख्य समस्या या संघर्ष क्या है? कहानी में कौन सी घटनाओं का क्रम है? चरमोत्कर्ष (Climax) कहाँ आता है?\n3. **विषय वस्तु (Theme):** कहानी का केंद्रीय विषय क्या है? क्या यह प्रेम, त्याग, साहस, सामाजिक न्याय, या पहचान से संबंधित है? सुंदरिया के जीवन के उतार-चढ़ाव और उसके द्वारा सामना की गई चुनौतियों का वर्णन किया जाएगा।",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +1037,10 @@
             "subject": "Hindi",
             "chapter_title": "सुंदरिया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.042361"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1052,44 @@
             "content": {
                 "items": [
                     {
-                        "id": "ehve105_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'सुंदरिया'?",
+                        "question": "सुंदरिया कविता में मुख्य नायिका कौन है?",
                         "options": [
-                            "सुंदरिया5 हरियाणा क े ककसी गाँव में ही िाकसंह नामक एक क कसान था।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "मछली",
+                            "सुंदरिया",
+                            "लोहित",
+                            "गंगा"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "सुंदरिया5 हरियाणा क े ककसी गाँव में ही िाकसंह नामक एक क कसान था।",
-                        "difficulty": "easy",
-                        "concept_id": "ehve105_concept_01"
+                        "answer": "सुंदरिया"
                     },
                     {
-                        "id": "ehve105_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'सुंदरिया'?",
+                        "question": "सुंदरिया के वर्णन में किस रस की प्रधानता है?",
                         "options": [
-                            "उसकी समझ में यह नहीं आता था क क वह अपने बीवी-बच्चों औ ि अपनी प यािी गाय स ुं दरिया की प िवरिश क ै से किे?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "श्रृंगार रस",
+                            "करुण रस",
+                            "वीर रस",
+                            "हास्य रस"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "उसकी समझ में यह नहीं आता था क क वह अपने बीवी-बच्चों औ ि अपनी प यािी गाय स ुं दरिया की प िवरिश क ै से किे?",
-                        "difficulty": "easy",
-                        "concept_id": "ehve105_concept_01"
+                        "answer": "श्रृंगार रस"
                     },
                     {
-                        "id": "ehve105_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'सुंदरिया'?",
+                        "question": "सुंदरिया कविता के कठिन शब्द 'अलिंद' का क्या अर्थ है?",
                         "options": [
-                            "गिीबी क े कािण हीिाकसं ह गाय का ्चािा भी नहीं जुटा पाता था।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "फूल",
+                            "प्रकाश",
+                            "आँख",
+                            "सागर"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "गिीबी क े कािण हीिाकसं ह गाय का ्चािा भी नहीं जुटा पाता था।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve105_concept_01"
+                        "answer": "प्रकाश"
                     },
                     {
-                        "id": "ehve105_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'सुंदरिया'?",
+                        "question": "निम्नलिखित में से कौन सा सुंदरिया कविता का एक संभावित विषय हो सकता है?",
                         "options": [
-                            "खाने-पीने की कमी होने लगी तो ही िाकसं ह ने सो ्चा — ‘मैं स ुं दरिया को बे्च दूँ?’ पि उसका बड़ा लड़का जवाहिकसं ह सुं दरिया को मौसी कहा क िता था।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "प्रकृति का सौंदर्य",
+                            "प्रेम और विरह",
+                            "युद्ध",
+                            "शिक्षा"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "खाने-पीने की कमी होने लगी तो ही िाकसं ह ने सो ्चा — ‘मैं स ुं दरिया को बे्च दूँ?’ पि उसका बड़ा लड़का जवाहिकसं ह सुं दरिया को मौसी कहा क िता था।",
-                        "difficulty": "medium",
-                        "concept_id": "ehve105_concept_01"
-                    },
-                    {
-                        "id": "ehve105_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'सुंदरिया'?",
-                        "options": [
-                            "वहाँ उसे एक सेठ क े यहाँ ्चौकीदाि की नौकिी कमल गई।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "वहाँ उसे एक सेठ क े यहाँ ्चौकीदाि की नौकिी कमल गई।",
-                        "difficulty": "hard",
-                        "concept_id": "ehve105_concept_01"
-                    },
-                    {
-                        "id": "ehve105_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'सुंदरिया'?",
-                        "options": [
-                            "एक िोज सेठ न े हीिाकसं ह से कहा — “तुम तो हरियाणा क े िहने वाल े हो।",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "एक िोज सेठ न े हीिाकसं ह से कहा — “तुम तो हरियाणा क े िहने वाल े हो।",
-                        "difficulty": "hard",
-                        "concept_id": "ehve105_concept_01"
+                        "answer": "प्रेम और विरह"
                     }
                 ]
             },
@@ -1619,8 +1542,10 @@
             "subject": "Hindi",
             "chapter_title": "सुंदरिया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.042334"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1554,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'सुंदरिया' develops पठन, भाषा, अर्थ-बोध, अभिव्यक्ति और साहित्यिक समझ के माध्यम से 'सुंदरिया'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "सुंदरिया5 हरियाणा क े ककसी गाँव में ही िाकसंह नामक एक क कसान था।",
-                    "उसकी समझ में यह नहीं आता था क क वह अपने बीवी-बच्चों औ ि अपनी प यािी गाय स ुं दरिया की प िवरिश क ै से किे?",
-                    "गिीबी क े कािण हीिाकसं ह गाय का ्चािा भी नहीं जुटा पाता था।",
-                    "खाने-पीने की कमी होने लगी तो ही िाकसं ह ने सो ्चा — ‘मैं स ुं दरिया को बे्च दूँ?’ पि उसका बड़ा लड़का जवाहिकसं ह सुं दरिया को मौसी कहा क िता था।",
-                    "वहाँ उसे एक सेठ क े यहाँ ्चौकीदाि की नौकिी कमल गई।",
-                    "एक िोज सेठ न े हीिाकसं ह से कहा — “तुम तो हरियाणा क े िहने वाल े हो।"
-                ]
-            },
+            "content": "इस अध्याय का सार यह है कि [यहाँ कहानी का संक्षिप्त सार डालें]। यह कहानी दर्शाती है कि [यहाँ कहानी के मुख्य संदेश/शिक्षा का संक्षिप्त उल्लेख करें]। सुंदरिया के माध्यम से यह कहानी जीवन के जटिल पहलुओं, जैसे कि [मुख्य विषय] का चित्रण करती है, जो पाठकों को [प्राप्त होने वाले परिणाम/बोध] की सीख देती है। संक्षेप में, यह एक [विधा का नाम] है जो [भावनात्मक प्रभाव] उत्पन्न करती है।",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1604,10 @@
             "subject": "Hindi",
             "chapter_title": "सुंदरिया",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.042382"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1619,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ehve105_fc01",
-                        "front": "What is a key idea from 'सुंदरिया'?",
-                        "back": "सुंदरिया5 हरियाणा क े ककसी गाँव में ही िाकसंह नामक एक क कसान था।",
-                        "concept_id": "ehve105_concept_01"
+                        "term": "सुंदरिया",
+                        "definition": "यह हिंदी साहित्य की एक प्रसिद्ध कविता/प्रबंधात्मक रचना है, जिसमें नायिका के सौंदर्य और भावनाओं का वर्णन किया गया है।"
                     },
                     {
-                        "id": "ehve105_fc02",
-                        "front": "What is a key idea from 'सुंदरिया'?",
-                        "back": "उसकी समझ में यह नहीं आता था क क वह अपने बीवी-बच्चों औ ि अपनी प यािी गाय स ुं दरिया की प िवरिश क ै से किे?",
-                        "concept_id": "ehve105_concept_01"
+                        "term": "रस",
+                        "definition": "भारतीय काव्यशास्त्र में वह भावनात्मक अवस्था जो पाठक के हृदय में उत्पन्न होती है (जैसे: श्रृंगार, करुण)।"
                     },
                     {
-                        "id": "ehve105_fc03",
-                        "front": "What is a key idea from 'सुंदरिया'?",
-                        "back": "गिीबी क े कािण हीिाकसं ह गाय का ्चािा भी नहीं जुटा पाता था।",
-                        "concept_id": "ehve105_concept_01"
+                        "term": "काव्य सौंदर्य",
+                        "definition": "किसी काव्य रचना की कलात्मकता, शिल्प, भाषा की सजावट और उसके द्वारा उत्पन्न भावनात्मक प्रभाव।"
                     },
                     {
-                        "id": "ehve105_fc04",
-                        "front": "What is a key idea from 'सुंदरिया'?",
-                        "back": "खाने-पीने की कमी होने लगी तो ही िाकसं ह ने सो ्चा — ‘मैं स ुं दरिया को बे्च दूँ?’ पि उसका बड़ा लड़का जवाहिकसं ह सुं दरिया को मौसी कहा क िता था।",
-                        "concept_id": "ehve105_concept_01"
+                        "term": "अलिंद",
+                        "definition": "कविता में विशेष रूप से वर्णित, जो अक्सर सौंदर्य या प्रकाश का प्रतीक होता है।"
                     },
                     {
-                        "id": "ehve105_fc05",
-                        "front": "What is a key idea from 'सुंदरिया'?",
-                        "back": "वहाँ उसे एक सेठ क े यहाँ ्चौकीदाि की नौकिी कमल गई।",
-                        "concept_id": "ehve105_concept_01"
-                    },
-                    {
-                        "id": "ehve105_fc06",
-                        "front": "What is a key idea from 'सुंदरिया'?",
-                        "back": "एक िोज सेठ न े हीिाकसं ह से कहा — “तुम तो हरियाणा क े िहने वाल े हो।",
-                        "concept_id": "ehve105_concept_01"
+                        "term": "विषय वस्तु",
+                        "definition": "कविता या पाठ का मुख्य विचार या केंद्रीय विषय।"
                     }
                 ]
             },

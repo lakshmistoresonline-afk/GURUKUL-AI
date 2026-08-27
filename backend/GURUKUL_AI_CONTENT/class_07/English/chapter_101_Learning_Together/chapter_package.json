@@ -134,8 +134,10 @@
             "subject": "English",
             "chapter_title": "Learning Together",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.821718"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Learning Together.",
+                "overview": "Class 07 English chapter 'Chapter 101: Learning Together' is an inspiring narrative that explores the power of collaboration and mutual support in the classroom. The chapter sets the stage by introducing a group of students, highlighting their diverse talents and challenges, and emphasizing the belief that learning is not just an individual pursuit but a collective journey.",
                 "source_grounded_key_points": [
                     "Learning Together Unit 1 LEARNING TOGETHER The Day the River Spoke Let us do these activities before we read.",
                     "I Close your eyes and quietly listen to the sounds around you for a minute.",
@@ -185,8 +187,10 @@
             "subject": "English",
             "chapter_title": "Learning Together",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.821757"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Learning Together.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Learning Together Unit 1 LEARNING TOGETHER The Day the River Spoke Let us do these activities before we read.",
-                            "I Close your eyes and quietly listen to the sounds around you for a minute.",
-                            "Do you think the things around you also listen to you all day long?",
-                            "II Jahnavi was a bright young girl who lived with her parents and three brothers in a coastal village in India.",
-                            "slithered: moved A kingfisher swept down, its wings an arrow of blue in the by sliding from sunlight."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "The chapter 'Learning Together' explores the concept of collaborative education. It emphasizes that learning is not a solitary activity but a shared experience between teachers and students, and among students themselves. The core message is that through interaction, teachers can tailor their teaching methods to meet diverse learning needs, and students can learn from each other, bringing different perspectives and approaches. The chapter likely discusses strategies for creating an inclusive classroom where everyone feels valued and motivated to participate. It highlights the benefits of teamwork, such as deeper understanding, increased engagement, and the development of essential social skills.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "English",
             "chapter_title": "Learning Together",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.821779"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gepr101_c01",
-                        "name": "Learning Together",
-                        "definition": "Central learning focus of Learning Together.",
-                        "source_evidence": "Learning Together Unit 1 LEARNING TOGETHER The Day the River Spoke Let us do these activities before we read."
-                    },
-                    {
-                        "id": "gepr101_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "I Close your eyes and quietly listen to the sounds around you for a minute."
-                    },
-                    {
-                        "id": "gepr101_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "Do you think the things around you also listen to you all day long?"
-                    }
+                    "Learning Together",
+                    "Collaborative Learning",
+                    "Shared Knowledge",
+                    "Peer Teaching",
+                    "Active Participation"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +295,10 @@
             "subject": "English",
             "chapter_title": "Learning Together",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.821797"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,6 +333,25 @@
                         "to": "gepr101_c03",
                         "relation": "enables"
                     }
+                ],
+                "Learning Together": [
+                    "Collaborative Learning",
+                    "Shared Knowledge",
+                    "Active Participation"
+                ],
+                "Collaborative Learning": [
+                    "Group Work",
+                    "Discussion",
+                    "Team Projects"
+                ],
+                "Shared Knowledge": [
+                    "Mutual Understanding",
+                    "Reinforcement"
+                ],
+                "Active Participation": [
+                    "Contribution",
+                    "Sharing Ideas",
+                    "Discussion"
                 ]
             },
             "runtime_mapping": {
@@ -490,8 +446,10 @@
             "subject": "English",
             "chapter_title": "Learning Together",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.821747"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +458,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to Learning Together.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Learning Together supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "This chapter likely follows a plot where a group of students faces a challenging academic task or project. Initially, they might struggle due to their differing abilities or styles. However, through open communication, shared effort, and recognizing the strengths of each member, they start to overcome their obstacles. The story showcases moments of conflict followed by reconciliation, illustrating how working together leads to more innovative solutions and a deeper understanding of the material. Key scenes would involve group discussions, brainstorming sessions, and a final presentation or outcome that demonstrates the success achieved through collective learning.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1053,10 @@
             "subject": "English",
             "chapter_title": "Learning Together",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.821771"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1068,27 @@
             "content": {
                 "items": [
                     {
-                        "id": "gepr101_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Learning Together'?",
+                        "type": "Multiple Choice",
+                        "question": "What is the primary benefit of learning together?",
                         "options": [
-                            "Learning Together Unit 1 LEARNING TOGETHER The Day the River Spoke Let us do these activities before we read.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Lower individual effort",
+                            "Developing diverse perspectives",
+                            "Reducing competition",
+                            "Increasing individual isolation"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Learning Together Unit 1 LEARNING TOGETHER The Day the River Spoke Let us do these activities before we read.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr101_c01"
+                        "answer": 2,
+                        "topic": "Benefits"
                     },
                     {
-                        "id": "gepr101_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Learning Together'?",
-                        "options": [
-                            "I Close your eyes and quietly listen to the sounds around you for a minute.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "I Close your eyes and quietly listen to the sounds around you for a minute.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr101_c01"
+                        "type": "True/False",
+                        "question": "In collaborative learning, every student needs to contribute equally.",
+                        "answer": 2,
+                        "topic": "Participation"
                     },
                     {
-                        "id": "gepr101_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Learning Together'?",
-                        "options": [
-                            "Do you think the things around you also listen to you all day long?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Do you think the things around you also listen to you all day long?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Learning Together'?",
-                        "options": [
-                            "II Jahnavi was a bright young girl who lived with her parents and three brothers in a coastal village in India.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "II Jahnavi was a bright young girl who lived with her parents and three brothers in a coastal village in India.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Learning Together'?",
-                        "options": [
-                            "slithered: moved A kingfisher swept down, its wings an arrow of blue in the by sliding from sunlight.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "slithered: moved A kingfisher swept down, its wings an arrow of blue in the by sliding from sunlight.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Learning Together'?",
-                        "options": [
-                            "And a green lizard slithered down to the river’s edge side to side to bask in the sun.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "And a green lizard slithered down to the river’s edge side to side to bask in the sun.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Learning Together'?",
-                        "options": [
-                            "murmuring: “Dear, dear!” said a sleepy, murmuring voice, “What’s the speaking in a matter?” low voice Jahnavi was startled, because she was sure she had been quite startled: alone.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "murmuring: “Dear, dear!” said a sleepy, murmuring voice, “What’s the speaking in a matter?” low voice Jahnavi was startled, because she was sure she had been quite startled: alone.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Learning Together'?",
-                        "options": [
-                            "And the kingfisher was surprised up in the thicket of bamboo eating the fish it had caught.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "And the kingfisher was surprised up in the thicket of bamboo eating the fish it had caught.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gepr101_c01"
+                        "type": "Short Answer",
+                        "question": "Define 'Peer Teaching' in the context of the chapter.",
+                        "answer": "Peer teaching is a process where students help each other understand and teach new concepts."
                     }
                 ]
             },
@@ -1715,8 +1542,10 @@
             "subject": "English",
             "chapter_title": "Learning Together",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.821738"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1554,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Learning Together' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Learning Together Unit 1 LEARNING TOGETHER The Day the River Spoke Let us do these activities before we read.",
-                    "I Close your eyes and quietly listen to the sounds around you for a minute.",
-                    "Do you think the things around you also listen to you all day long?",
-                    "II Jahnavi was a bright young girl who lived with her parents and three brothers in a coastal village in India.",
-                    "slithered: moved A kingfisher swept down, its wings an arrow of blue in the by sliding from sunlight.",
-                    "And a green lizard slithered down to the river’s edge side to side to bask in the sun.",
-                    "murmuring: “Dear, dear!” said a sleepy, murmuring voice, “What’s the speaking in a matter?” low voice Jahnavi was startled, because she was sure she had been quite startled: alone."
-                ]
-            },
+            "content": "The chapter 'Learning Together' is a tribute to the idea that when students pool their strengths, share their knowledge, and offer assistance, they create a dynamic and successful learning environment. It emphasizes that the true goal of education is not just to pass a test, but to build a community where every student feels valued and empowered to grow. Ultimately, the chapter teaches valuable life lessons about the necessity of patience, empathy, and the importance of 'learning together' to achieve meaningful and lasting success.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1604,10 @@
             "subject": "English",
             "chapter_title": "Learning Together",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.821788"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1619,8 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gepr101_fc01",
-                        "front": "What should you remember from Learning Together?",
-                        "back": "Learning Together Unit 1 LEARNING TOGETHER The Day the River Spoke Let us do these activities before we read.",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_fc02",
-                        "front": "What should you remember from Learning Together?",
-                        "back": "I Close your eyes and quietly listen to the sounds around you for a minute.",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_fc03",
-                        "front": "What should you remember from Learning Together?",
-                        "back": "Do you think the things around you also listen to you all day long?",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_fc04",
-                        "front": "What should you remember from Learning Together?",
-                        "back": "II Jahnavi was a bright young girl who lived with her parents and three brothers in a coastal village in India.",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_fc05",
-                        "front": "What should you remember from Learning Together?",
-                        "back": "slithered: moved A kingfisher swept down, its wings an arrow of blue in the by sliding from sunlight.",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_fc06",
-                        "front": "What should you remember from Learning Together?",
-                        "back": "And a green lizard slithered down to the river’s edge side to side to bask in the sun.",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_fc07",
-                        "front": "What should you remember from Learning Together?",
-                        "back": "murmuring: “Dear, dear!” said a sleepy, murmuring voice, “What’s the speaking in a matter?” low voice Jahnavi was startled, because she was sure she had been quite startled: alone.",
-                        "concept_id": "gepr101_c01"
-                    },
-                    {
-                        "id": "gepr101_fc08",
-                        "front": "What should you remember from Learning Together?",
-                        "back": "And the kingfisher was surprised up in the thicket of bamboo eating the fish it had caught.",
-                        "concept_id": "gepr101_c01"
+                        "front": "Learning Together",
+                        "back": "A method of education where students work with others to achieve common goals and deepen understanding."
                     }
                 ]
             },

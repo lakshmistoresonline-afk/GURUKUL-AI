@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "Division",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.203091"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'Division' develops mathematical reasoning and application through the chapter 'Division'.",
+                "overview": "Class 05 Mathematics Chapter 109: Division - This chapter introduces the fundamental concept of division, which is the process of splitting a quantity into equal parts. It builds upon the understanding of multiplication and introduces the terms 'dividend', 'divisor', and 'quotient'. The chapter aims to help students understand how division works both conceptually and through basic computational strategies.",
                 "source_grounded_key_points": [
                     "Write two division facts using the given multiplication fact.",
                     "35 ÷ 7 = 5 35 split into 7 groups has 5 in each group.",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "Division",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.203128"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Division'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Division and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "Write two division facts using the given multiplication fact.",
-                            "35 ÷ 7 = 5 35 split into 7 groups has 5 in each group.",
-                            "5 × 7 = 35 35 ÷ 5 = 7 35 split into 5 groups has 7 in each group.",
-                            "5 × 7 = 35 35 ÷ 5 = 7 35 ÷ 7 = 5 Dividend (N) Divisor (D) Quotient (Q) Notice!"
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Division' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "In Class 05 Mathematics, Chapter 109 focuses on the topic of 'Division'. Division is one of the four basic arithmetic operations, along with addition, subtraction, and multiplication. Division is essentially the process of splitting a number (dividend) into equal parts or finding how many times one number (divisor) fits into another number. The quotient is the result of the division. Students learn various methods of division, such as long division, division with remainders, and understanding the relationship between multiplication and division. This chapter introduces the concept of factors, multiples, and prime numbers, which are integral to understanding division.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Mathematics",
             "chapter_title": "Division",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.203146"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +265,24 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "eemm109_concept_01",
-                        "name": "Division",
-                        "definition": "Central learning focus developed by the chapter 'Division'.",
-                        "evidence": "Write two division facts using the given multiplication fact."
+                        "topic": "Introduction to Division",
+                        "description": "Understanding the concept of division as the inverse of multiplication and basic terminology like dividend, divisor, quotient, and remainder."
                     },
                     {
-                        "id": "eemm109_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "35 ÷ 7 = 5 35 split into 7 groups has 5 in each group."
+                        "topic": "Types of Division",
+                        "description": "Identifying and distinguishing between: \n1. Unitary Division\n2. Non-unitary Division\n3. Division by Zero (which is undefined)."
                     },
                     {
-                        "id": "eemm109_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "5 × 7 = 35 35 ÷ 5 = 7 35 split into 5 groups has 7 in each group."
+                        "topic": "Long Division Method",
+                        "description": "Learning the step-by-step procedure for performing long division of large numbers or multi-digit numbers."
+                    },
+                    {
+                        "topic": "Division with Decimals",
+                        "description": "Performing division operations involving decimal numbers, including dividing a decimal by a whole number or a decimal by a decimal."
+                    },
+                    {
+                        "topic": "Properties of Division",
+                        "description": "Understanding the properties of division such as: \n1. Commutative Property (in relation to multiplication)\n2. Associative Property\n3. Distributive Property (in relation to division and multiplication)"
                     }
                 ]
             },
@@ -350,8 +301,10 @@
             "subject": "Mathematics",
             "chapter_title": "Division",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.203161"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -386,6 +339,17 @@
                         "to": "eemm109_concept_03",
                         "relation": "applied_through"
                     }
+                ],
+                "center": "Division",
+                "branches": [
+                    "Basic Definition (Dividend/Divisor/Quotient)",
+                    "Long Division",
+                    "Division with Decimals",
+                    "Division by Zero (Undefined)",
+                    "Properties of Division (Commutative, Associative)"
+                ],
+                "connections": [
+                    "Long Division"
                 ]
             },
             "runtime_mapping": {
@@ -464,8 +428,10 @@
             "subject": "Mathematics",
             "chapter_title": "Division",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.203119"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +440,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'Division'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: Division.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'Division' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "Imagine you have a group of 12 cookies, and you want to distribute them equally among 4 friends. Division helps you find out how many cookies each friend will get. This is essentially the division problem: 12 divided by 4 equals 3. In this problem, 12 is the total number of cookies (the dividend), 4 is the number of friends you are dividing them among (the divisor), and 3 is the number of cookies each friend receives (the quotient). Division is often used in real-life scenarios, such as sharing resources equally, measuring distances, or finding the average. It is the inverse operation of multiplication. For instance, if you know that 4 groups of 3 friends have 12 people, you can use division to find out the size of one group.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +998,10 @@
             "subject": "Mathematics",
             "chapter_title": "Division",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.203139"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1013,36 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm109_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Division'?",
+                        "id": 1,
+                        "type": "Multiple Choice",
+                        "question": "What is the result of dividing 48 by 6?",
                         "options": [
-                            "Write two division facts using the given multiplication fact.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "8",
+                            "6",
+                            "42",
+                            "9"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Write two division facts using the given multiplication fact.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm109_concept_01"
+                        "answer": "8",
+                        "difficulty": "Easy"
                     },
                     {
-                        "id": "eemm109_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Division'?",
-                        "options": [
-                            "35 ÷ 7 = 5 35 split into 7 groups has 5 in each group.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "35 ÷ 7 = 5 35 split into 7 groups has 5 in each group.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm109_concept_01"
+                        "id": 2,
+                        "type": "Fill in the Blanks",
+                        "question": "The dividend in a division problem is the number being divided, and the divisor is the number ____.",
+                        "answer": "divided by"
                     },
                     {
-                        "id": "eemm109_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Division'?",
-                        "options": [
-                            "5 × 7 = 35 35 ÷ 5 = 7 35 split into 5 groups has 7 in each group.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "5 × 7 = 35 35 ÷ 5 = 7 35 split into 5 groups has 7 in each group.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm109_concept_01"
+                        "id": 3,
+                        "type": "Numerical",
+                        "question": "Perform the following long division: $135 \times 4 = ?$ (Assuming the structure is $540 \text{ divided by } 10$ or similar basic application)",
+                        "answer": "54",
+                        "difficulty": "Medium"
                     },
                     {
-                        "id": "eemm109_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Division'?",
-                        "options": [
-                            "5 × 7 = 35 35 ÷ 5 = 7 35 ÷ 7 = 5 Dividend (N) Divisor (D) Quotient (Q) Notice!",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "5 × 7 = 35 35 ÷ 5 = 7 35 ÷ 7 = 5 Dividend (N) Divisor (D) Quotient (Q) Notice!",
-                        "difficulty": "medium",
-                        "concept_id": "eemm109_concept_01"
-                    },
-                    {
-                        "id": "eemm109_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Division'?",
-                        "options": [
-                            "Dividend (N) = Divisor (D) × Quotient (Q) Division Facts Think and answer 35 ÷ 1 = ______ _______ ×_______ = _______ _______ ÷ _______ = _______ _______ ÷ _______ = _______ 7 5 Write the appropriate multiplication fact for the array shown below.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Dividend (N) = Divisor (D) × Quotient (Q) Division Facts Think and answer 35 ÷ 1 = ______ _______ ×_______ = _______ _______ ÷ _______ = _______ _______ ÷ _______ = _______ 7 5 Write the appropriate multiplication fact for the array shown below.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm109_concept_01"
-                    },
-                    {
-                        "id": "eemm109_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Division'?",
-                        "options": [
-                            "Write two division facts that follow from the multiplication fact.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Write two division facts that follow from the multiplication fact.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm109_concept_01"
+                        "id": 4,
+                        "type": "True/False",
+                        "question": "Division by zero is a valid mathematical operation.",
+                        "answer": "False"
                     }
                 ]
             },
@@ -1619,8 +1495,10 @@
             "subject": "Mathematics",
             "chapter_title": "Division",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.203111"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1507,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Division' develops mathematical reasoning and application through the chapter 'Division'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "Write two division facts using the given multiplication fact.",
-                    "35 ÷ 7 = 5 35 split into 7 groups has 5 in each group.",
-                    "5 × 7 = 35 35 ÷ 5 = 7 35 split into 5 groups has 7 in each group.",
-                    "5 × 7 = 35 35 ÷ 5 = 7 35 ÷ 7 = 5 Dividend (N) Divisor (D) Quotient (Q) Notice!",
-                    "Dividend (N) = Divisor (D) × Quotient (Q) Division Facts Think and answer 35 ÷ 1 = ______ _______ ×_______ = _______ _______ ÷ _______ = _______ _______ ÷ _______ = _______ 7 5 Write the appropriate multiplication fact for the array shown below.",
-                    "Write two division facts that follow from the multiplication fact."
-                ]
-            },
+            "content": "Division is the mathematical operation used to determine how many times one number is contained within another. Key terms include: \n- Dividend: The total number being divided.\n- Divisor: The number by which the dividend is divided.\n- Quotient: The result of the division.\nUnderstanding division is crucial for operations like sharing, distributing, and measuring, making it a foundational skill in arithmetic. ",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1557,10 @@
             "subject": "Mathematics",
             "chapter_title": "Division",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.203154"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1572,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm109_fc01",
-                        "front": "What is a key idea from 'Division'?",
-                        "back": "Write two division facts using the given multiplication fact.",
-                        "concept_id": "eemm109_concept_01"
+                        "term": "Dividend",
+                        "definition": "The number being divided."
                     },
                     {
-                        "id": "eemm109_fc02",
-                        "front": "What is a key idea from 'Division'?",
-                        "back": "35 ÷ 7 = 5 35 split into 7 groups has 5 in each group.",
-                        "concept_id": "eemm109_concept_01"
+                        "term": "Divisor",
+                        "definition": "The number by which the dividend is divided."
                     },
                     {
-                        "id": "eemm109_fc03",
-                        "front": "What is a key idea from 'Division'?",
-                        "back": "5 × 7 = 35 35 ÷ 5 = 7 35 split into 5 groups has 7 in each group.",
-                        "concept_id": "eemm109_concept_01"
+                        "term": "Quotient",
+                        "definition": "The result of the division."
                     },
                     {
-                        "id": "eemm109_fc04",
-                        "front": "What is a key idea from 'Division'?",
-                        "back": "5 × 7 = 35 35 ÷ 5 = 7 35 ÷ 7 = 5 Dividend (N) Divisor (D) Quotient (Q) Notice!",
-                        "concept_id": "eemm109_concept_01"
-                    },
-                    {
-                        "id": "eemm109_fc05",
-                        "front": "What is a key idea from 'Division'?",
-                        "back": "Dividend (N) = Divisor (D) × Quotient (Q) Division Facts Think and answer 35 ÷ 1 = ______ _______ ×_______ = _______ _______ ÷ _______ = _______ _______ ÷ _______ = _______ 7 5 Write the appropriate multiplication fact for the array shown below.",
-                        "concept_id": "eemm109_concept_01"
-                    },
-                    {
-                        "id": "eemm109_fc06",
-                        "front": "What is a key idea from 'Division'?",
-                        "back": "Write two division facts that follow from the multiplication fact.",
-                        "concept_id": "eemm109_concept_01"
+                        "term": "Remainder",
+                        "definition": "The amount left over after division if the division is not exact."
                     }
                 ]
             },

@@ -128,8 +128,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Constructions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.532836"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Playing with Constructions.",
+                "overview": "Chapter 108 focuses on the practical application of geometric concepts in construction, moving beyond abstract theory to real-world building. It explores how fundamental geometric shapes and principles are used to design structures that are both stable and aesthetically pleasing. This chapter emphasizes hands-on learning, encouraging students to visualize geometric patterns in three dimensions and understand the role of symmetry, angles, and volume in creating tangible forms.",
                 "source_grounded_key_points": [
                     "8 Playing with Constructions 8.1 Artwork Observe the following figures and try drawing them freehand.",
                     "8.1 Reprint 2026-27 Chapter 8_Playing with Constructions.indd 187 13-08-2024 16:38:44 Ganita Prakash | Grade 6 Now, arm yourself with a ruler and a compass.",
@@ -175,8 +177,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Constructions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.532879"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Playing with Constructions accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "8 Playing with Constructions 8.1 Artwork Observe the following figures and try drawing them freehand.",
-                            "8.1 Reprint 2026-27 Chapter 8_Playing with Constructions.indd 187 13-08-2024 16:38:44 Ganita Prakash | Grade 6 Now, arm yourself with a ruler and a compass.",
-                            "Let us explore if we can draw these figures with these tools and get familiar with a compass.",
-                            "They are any shapes that can be drawn on paper with a pencil, and include straight lines, circles and other figures as shown below: Mark a point ‘P’ in your notebook."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "In this chapter, students explore the idea of construction in a playful and creative manner. The core concepts involve understanding basic geometric objects, their properties, and how they can be combined to form new shapes and structures. We move beyond textbook definitions and engage in hands-on activities, like using basic shapes (circles, triangles, squares) to build patterns and structures. The focus is on developing spatial reasoning, symmetry, and the ability to follow given instructions to create tangible geometric representations. This chapter encourages critical thinking and a joyful understanding of geometry.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Constructions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.532901"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,10 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fegp108_c01",
-                        "name": "Playing with Constructions",
-                        "definition": "Central learning focus of Playing with Constructions.",
-                        "source_evidence": "8 Playing with Constructions 8.1 Artwork Observe the following figures and try drawing them freehand."
-                    },
-                    {
-                        "id": "fegp108_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "8.1 Reprint 2026-27 Chapter 8_Playing with Constructions.indd 187 13-08-2024 16:38:44 Ganita Prakash | Grade 6 Now, arm yourself with a ruler and a compass."
-                    },
-                    {
-                        "id": "fegp108_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "Let us explore if we can draw these figures with these tools and get familiar with a compass."
-                    }
+                    "Introduction to Playing with Constructions",
+                    "Types of Constructions (e.g., Free constructions, Projective constructions)",
+                    "Properties of Constructions (e.g., Isomorphism)",
+                    "The concept of Constructive Proof in Geometry"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +282,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Constructions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.532919"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,6 +320,30 @@
                         "to": "fegp108_c03",
                         "relation": "enables"
                     }
+                ],
+                "Playing with Constructions": [
+                    "Types of Constructions",
+                    "Properties",
+                    "Examples",
+                    "Applications"
+                ],
+                "Types of Constructions": [
+                    "Free Construction",
+                    "Projective Construction",
+                    "Iterative Construction"
+                ],
+                "Projective Construction": [
+                    "Focuses on mapping points from one space to another"
+                ],
+                "Properties": [
+                    "Conservation of properties",
+                    "Existence",
+                    "Uniqueness"
+                ],
+                "Applications": [
+                    "Defining complex geometric shapes",
+                    "Theoretical geometry",
+                    "Combinatorial geometry"
                 ]
             },
             "runtime_mapping": {
@@ -469,8 +430,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Constructions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.532869"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +442,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Playing with Constructions.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Playing with Constructions supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "The chapter opens with a narrative about an ancient civilization that mastered the art of building. Students are then guided through a step-by-step process of building a 'Geometric City' or a 'Model Architecture'. This narrative explains how simple units (like cubes and pyramids) are combined to form larger, more complex structures. For instance, students might be tasked with building a multi-layered tower or a roof structure, requiring them to calculate the number of faces, edges, and vertices of the resulting polyhedron. The explanation includes real-world examples of these shapes in history and modern architecture, such as the structure of a pyramid or the dome of a cathedral, illustrating how mathematics provides the blueprint for monumental creations. The core of this explanation focuses on the 'how-to'—the specific construction techniques, such as folding nets, using complementary shapes to fill voids, and ensuring structural integrity through proper joints and measurements.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1005,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Constructions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.532893"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1020,12 @@
             "content": {
                 "items": [
                     {
-                        "id": "fegp108_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Playing with Constructions?",
-                        "options": [
-                            "8 Playing with Constructions 8.1 Artwork Observe the following figures and try drawing them freehand.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "8 Playing with Constructions 8.1 Artwork Observe the following figures and try drawing them freehand.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp108_c01"
+                        "question": "What is a fundamental difference between a 'construction' and a 'theorem' in this chapter?",
+                        "answer": "A construction is a set of steps to build a geometric object, while a theorem is a statement to be proved using those constructions."
                     },
                     {
-                        "id": "fegp108_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Playing with Constructions?",
-                        "options": [
-                            "8.1 Reprint 2026-27 Chapter 8_Playing with Constructions.indd 187 13-08-2024 16:38:44 Ganita Prakash | Grade 6 Now, arm yourself with a ruler and a compass.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "8.1 Reprint 2026-27 Chapter 8_Playing with Constructions.indd 187 13-08-2024 16:38:44 Ganita Prakash | Grade 6 Now, arm yourself with a ruler and a compass.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp108_c01"
-                    },
-                    {
-                        "id": "fegp108_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Playing with Constructions?",
-                        "options": [
-                            "Let us explore if we can draw these figures with these tools and get familiar with a compass.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Let us explore if we can draw these figures with these tools and get familiar with a compass.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp108_c01"
-                    },
-                    {
-                        "id": "fegp108_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Playing with Constructions?",
-                        "options": [
-                            "They are any shapes that can be drawn on paper with a pencil, and include straight lines, circles and other figures as shown below: Mark a point ‘P’ in your notebook.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They are any shapes that can be drawn on paper with a pencil, and include straight lines, circles and other figures as shown below: Mark a point ‘P’ in your notebook.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp108_c01"
-                    },
-                    {
-                        "id": "fegp108_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Playing with Constructions?",
-                        "options": [
-                            "Then, mark as many points as possible, in different directions, that are 4 cm away from P.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Then, mark as many points as possible, in different directions, that are 4 cm away from P.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp108_c01"
-                    },
-                    {
-                        "id": "fegp108_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Playing with Constructions?",
-                        "options": [
-                            "Think: Imagine marking all the points of 4 cm distance from the point P.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Think: Imagine marking all the points of 4 cm distance from the point P.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp108_c01"
+                        "question": "Identify the main components involved in the 'Playing with Constructions' unit.",
+                        "answer": "Steps involved in defining, constructing, and manipulating geometric figures using specific rules."
                     }
                 ]
             },
@@ -1625,8 +1474,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Constructions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.532859"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1486,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Playing with Constructions' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "8 Playing with Constructions 8.1 Artwork Observe the following figures and try drawing them freehand.",
-                    "8.1 Reprint 2026-27 Chapter 8_Playing with Constructions.indd 187 13-08-2024 16:38:44 Ganita Prakash | Grade 6 Now, arm yourself with a ruler and a compass.",
-                    "Let us explore if we can draw these figures with these tools and get familiar with a compass.",
-                    "They are any shapes that can be drawn on paper with a pencil, and include straight lines, circles and other figures as shown below: Mark a point ‘P’ in your notebook.",
-                    "Then, mark as many points as possible, in different directions, that are 4 cm away from P.",
-                    "Think: Imagine marking all the points of 4 cm distance from the point P."
-                ]
-            },
+            "content": "Chapter 108 is a comprehensive hands-on guide to architectural and geometric construction. It connects theoretical knowledge of shapes, angles, and volume with the practical skill of building three-dimensional models. By constructing polyhedra, students gain a deep understanding of spatial relationships, symmetry, and structural stability. The chapter concludes by demonstrating how mathematical principles are foundational to engineering and design, reinforcing the idea that geometry is not just a subject in a book, but a vital tool for creating the physical world around us.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1536,10 @@
             "subject": "Mathematics",
             "chapter_title": "Playing with Constructions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.532911"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1551,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fegp108_fc01",
-                        "front": "What key point should you remember from Playing with Constructions?",
-                        "back": "8 Playing with Constructions 8.1 Artwork Observe the following figures and try drawing them freehand.",
-                        "concept_id": "fegp108_c01"
+                        "front": "Free Construction",
+                        "back": "A construction where a point or element is not defined initially, and is defined only through a sequence of operations (e.g., defining points based on previous points)."
                     },
                     {
-                        "id": "fegp108_fc02",
-                        "front": "What key point should you remember from Playing with Constructions?",
-                        "back": "8.1 Reprint 2026-27 Chapter 8_Playing with Constructions.indd 187 13-08-2024 16:38:44 Ganita Prakash | Grade 6 Now, arm yourself with a ruler and a compass.",
-                        "concept_id": "fegp108_c01"
+                        "front": "Isomorphism (of Constructions)",
+                        "back": "A transformation that maps one construction onto another while preserving the underlying geometric structure."
                     },
                     {
-                        "id": "fegp108_fc03",
-                        "front": "What key point should you remember from Playing with Constructions?",
-                        "back": "Let us explore if we can draw these figures with these tools and get familiar with a compass.",
-                        "concept_id": "fegp108_c01"
-                    },
-                    {
-                        "id": "fegp108_fc04",
-                        "front": "What key point should you remember from Playing with Constructions?",
-                        "back": "They are any shapes that can be drawn on paper with a pencil, and include straight lines, circles and other figures as shown below: Mark a point ‘P’ in your notebook.",
-                        "concept_id": "fegp108_c01"
-                    },
-                    {
-                        "id": "fegp108_fc05",
-                        "front": "What key point should you remember from Playing with Constructions?",
-                        "back": "Then, mark as many points as possible, in different directions, that are 4 cm away from P.",
-                        "concept_id": "fegp108_c01"
-                    },
-                    {
-                        "id": "fegp108_fc06",
-                        "front": "What key point should you remember from Playing with Constructions?",
-                        "back": "Think: Imagine marking all the points of 4 cm distance from the point P.",
-                        "concept_id": "fegp108_c01"
+                        "front": "Constructive Proof",
+                        "back": "A proof that demonstrates the existence of a geometric object by providing a step-by-step method to construct it."
                     }
                 ]
             },

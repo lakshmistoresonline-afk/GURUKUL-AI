@@ -128,8 +128,10 @@
             "subject": "Science",
             "chapter_title": "A Journey through States of Water",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.635239"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: A Journey through States of Water.",
+                "overview": "Chapter 108: A Journey through States of Water, explores the fundamental concepts of the three primary states of water: solid (ice), liquid (water), and gas (steam/vapor). It delves into the physics and chemistry that govern the phase transitions of water, examining the molecular behavior at different temperatures and pressures, and the physical properties that distinguish these states.",
                 "source_grounded_key_points": [
                     "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
                     "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
@@ -175,8 +177,10 @@
             "subject": "Science",
             "chapter_title": "A Journey through States of Water",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.635274"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of A Journey through States of Water accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
-                            "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
-                            "No, Ice feels hard to these are the touch and we can same substances.",
-                            "hold it in our hands, whereas, water cannot be held in the same way."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "In this chapter, we delve into the fascinating world of states of water. Water is unique because it can change its form (solid, liquid, and gas) depending on temperature and pressure. Solids are called ice (solid water). Liquids are just regular water, and gas is steam or water vapor. We also learn about the three main processes: melting (solid to liquid), freezing (liquid to solid), boiling (liquid to gas), and condensation (gas to liquid). Understanding these changes is crucial for understanding water cycles and how water behaves in nature and in our daily lives. We examine the concept of thermal expansion and contraction, which explains why water takes up different volumes at different temperatures.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Science",
             "chapter_title": "A Journey through States of Water",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.635291"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,15 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fecu108_c01",
-                        "name": "A Journey through States of Water",
-                        "definition": "Central learning focus of A Journey through States of Water.",
-                        "source_evidence": "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade)."
-                    },
-                    {
-                        "id": "fecu108_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water."
-                    },
-                    {
-                        "id": "fecu108_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "No, Ice feels hard to these are the touch and we can same substances."
-                    }
+                    "States of Water (Solid, Liquid, Gas)",
+                    "Ice, Snow, and Hail (Solid forms)",
+                    "Melting and Freezing (Phase changes)",
+                    "Evaporation and Condensation (Liquid to Gas)",
+                    "Collection and Precipitation (Atmospheric processes)",
+                    "Water Cycle (The continuous movement of water)",
+                    "Properties of Water",
+                    "Water Distribution on Earth (Oceans, Rivers, Lakes, Groundwater)",
+                    "Importance of Water Resources"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +287,10 @@
             "subject": "Science",
             "chapter_title": "A Journey through States of Water",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.635306"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +325,41 @@
                         "to": "fecu108_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "States of Water": {
+                    "Solid": {
+                        "key": "Fixed Shape",
+                        "transitions": [
+                            "Melting",
+                            "Freezing"
+                        ]
+                    },
+                    "Liquid": {
+                        "key": "Takes container shape",
+                        "transitions": [
+                            "Melting",
+                            "Freezing",
+                            "Evaporation"
+                        ]
+                    },
+                    "Gas": {
+                        "key": "Fills entire volume",
+                        "transitions": [
+                            "Condensation",
+                            "Evaporation"
+                        ]
+                    }
+                },
+                "Water Cycle": {
+                    "Phase 1": "Evaporation (Solar energy heats water)",
+                    "Phase 2": "Condensation (Vapor cools and forms clouds)",
+                    "Phase 3": "Precipitation (Rain, snow, or hail)"
+                },
+                "Water Distribution": {
+                    "Oceans": "Saltwater majority",
+                    "Rivers": "Flowing water connecting sources to oceans",
+                    "Groundwater": "Water beneath the Earth's surface"
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -469,8 +445,10 @@
             "subject": "Science",
             "chapter_title": "A Journey through States of Water",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.635266"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +457,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to A Journey through States of Water.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from A Journey through States of Water supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "In this chapter, we embark on a journey guided by the enigmatic water molecule ($H_2O$). We begin in the solid state (ice), where the molecules are tightly packed in a crystalline structure with fixed positions. We then explore the liquid state (water), where molecules possess kinetic energy, allowing them to slide past one another while remaining cohesive. The journey continues into the gaseous state (steam), where molecules move rapidly and are far apart. Each state is linked by energy exchange. When energy is added (heating), ice melts, water boils, and steam forms. When energy is removed (cooling), water freezes, steam condenses into liquid water, and liquid water refreezes into ice. This cyclical movement of water between states forms the basis of the water cycle. This journey highlights how a seemingly simple substance can exhibit diverse physical properties depending on its thermal and pressure environment.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1020,10 @@
             "subject": "Science",
             "chapter_title": "A Journey through States of Water",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.635284"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1035,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu108_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by A Journey through States of Water?",
+                        "type": "Multiple Choice",
+                        "question": "Which state of water has a fixed shape and volume?",
                         "options": [
-                            "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Liquid",
+                            "Gas",
+                            "Solid",
+                            "Plasma"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu108_c01"
+                        "answer": "Solid"
                     },
                     {
-                        "id": "fecu108_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by A Journey through States of Water?",
-                        "options": [
-                            "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu108_c01"
+                        "type": "True/False",
+                        "question": "Evaporation occurs only at the surface of water.",
+                        "answer": "False (It occurs throughout the water body)."
                     },
                     {
-                        "id": "fecu108_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by A Journey through States of Water?",
-                        "options": [
-                            "No, Ice feels hard to these are the touch and we can same substances.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "No, Ice feels hard to these are the touch and we can same substances.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu108_c01"
+                        "type": "Fill in the Blank",
+                        "question": "The process where water vapor in the atmosphere changes into liquid water droplets is called ______.",
+                        "answer": "Condensation"
                     },
                     {
-                        "id": "fecu108_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by A Journey through States of Water?",
-                        "options": [
-                            "hold it in our hands, whereas, water cannot be held in the same way.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "hold it in our hands, whereas, water cannot be held in the same way.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu108_c01"
+                        "type": "Match the Following",
+                        "question": "Match the process with its description: 1. Melting, 2. Freezing, 3. Condensation. (a) Liquid to solid, (b) Gas to liquid, (c) Liquid to gas.",
+                        "answer": "1-a, 2-a, 3-b"
                     },
                     {
-                        "id": "fecu108_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by A Journey through States of Water?",
-                        "options": [
-                            "We can put Yes, I know when water in the freezer water is left in of a refrigerator the freezer, it gets and check if it gets converted into ice but converted probably something into ice.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We can put Yes, I know when water in the freezer water is left in of a refrigerator the freezer, it gets and check if it gets converted into ice but converted probably something into ice.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu108_c01"
-                    },
-                    {
-                        "id": "fecu108_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by A Journey through States of Water?",
-                        "options": [
-                            "Does this mean that ice and water are the same substance?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Does this mean that ice and water are the same substance?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu108_c01"
+                        "type": "Short Answer",
+                        "question": "Describe the main difference between evaporation and sublimation."
                     }
                 ]
             },
@@ -1625,8 +1511,10 @@
             "subject": "Science",
             "chapter_title": "A Journey through States of Water",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.635257"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1523,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'A Journey through States of Water' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
-                    "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
-                    "No, Ice feels hard to these are the touch and we can same substances.",
-                    "hold it in our hands, whereas, water cannot be held in the same way.",
-                    "We can put Yes, I know when water in the freezer water is left in of a refrigerator the freezer, it gets and check if it gets converted into ice but converted probably something into ice.",
-                    "Does this mean that ice and water are the same substance?"
-                ]
-            },
+            "content": "Chapter 108, 'A Journey through States of Water,' provides a comprehensive study of how water exists in different physical states—solid, liquid, and gas—and how these states change through phase transitions. Key themes include the molecular structure of water, the role of temperature and pressure in dictating phase changes, and the processes involved in the water cycle. By understanding the energy dynamics at each stage (e.g., heat absorbed for melting, heat released for condensation), we can better comprehend the phase behavior of water and its crucial impact on weather patterns and the life of our planet. The chapter emphasizes the unifying concept that water is constantly cycling, adapting its form to its surroundings.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1573,10 @@
             "subject": "Science",
             "chapter_title": "A Journey through States of Water",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.635299"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1588,32 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu108_fc01",
-                        "front": "What key point should you remember from A Journey through States of Water?",
-                        "back": "(Thirukkural) On a bright summer afternoon, Aavi and Thirav enjoy their shikanji (lemonade).",
-                        "concept_id": "fecu108_c01"
+                        "term": "Solid",
+                        "definition": "Matter in which particles are tightly packed in fixed positions."
                     },
                     {
-                        "id": "fecu108_fc02",
-                        "front": "What key point should you remember from A Journey through States of Water?",
-                        "back": "After looking at the ice in the lemonade, Thirav wonders about the nature of ice and water.",
-                        "concept_id": "fecu108_c01"
+                        "term": "Liquid",
+                        "definition": "Matter that flows and takes the shape of its container."
                     },
                     {
-                        "id": "fecu108_fc03",
-                        "front": "What key point should you remember from A Journey through States of Water?",
-                        "back": "No, Ice feels hard to these are the touch and we can same substances.",
-                        "concept_id": "fecu108_c01"
+                        "term": "Gas",
+                        "definition": "Matter that fills the entire volume of the container and has no fixed shape."
                     },
                     {
-                        "id": "fecu108_fc04",
-                        "front": "What key point should you remember from A Journey through States of Water?",
-                        "back": "hold it in our hands, whereas, water cannot be held in the same way.",
-                        "concept_id": "fecu108_c01"
+                        "term": "Melting",
+                        "definition": "The change of state from solid to liquid."
                     },
                     {
-                        "id": "fecu108_fc05",
-                        "front": "What key point should you remember from A Journey through States of Water?",
-                        "back": "We can put Yes, I know when water in the freezer water is left in of a refrigerator the freezer, it gets and check if it gets converted into ice but converted probably something into ice.",
-                        "concept_id": "fecu108_c01"
+                        "term": "Evaporation",
+                        "definition": "The process where liquid turns into gas due to heat."
                     },
                     {
-                        "id": "fecu108_fc06",
-                        "front": "What key point should you remember from A Journey through States of Water?",
-                        "back": "Does this mean that ice and water are the same substance?",
-                        "concept_id": "fecu108_c01"
+                        "term": "Water Cycle",
+                        "definition": "The continuous movement of water on, above, and below the surface of the Earth."
+                    },
+                    {
+                        "term": "Transpiration",
+                        "definition": "The process by which plants release water vapor into the atmosphere."
                     }
                 ]
             },

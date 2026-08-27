@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "Fractions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.134842"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'Fractions' develops mathematical reasoning and application through the chapter 'Fractions'.",
+                "overview": "Chapter 102 of Mathematics focuses on the fascinating world of fractions. Fractions are a way of representing parts of a whole. Unlike whole numbers, fractions allow us to express quantities that are less than one or greater than one.",
                 "source_grounded_key_points": [
                     "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
                     "When can we say that 1 2 of something is greater than 1 3 of something?",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "Fractions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.134877"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Fractions'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Fractions and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
-                            "When can we say that 1 2 of something is greater than 1 3 of something?",
-                            "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same.",
-                            "A B C Playing with a Grid  Shade 1 8 of Grid A in red."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Fractions' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "Chapter 102 of Class 5 Mathematics covers Fractions. In this chapter, we learn what a fraction is, how to identify the numerator and the denominator, and how to represent them on a number line. We also explore different types of fractions like proper, improper, and equivalent fractions. A proper fraction is a fraction where the numerator is smaller than the denominator (like 1/2). An improper fraction is a fraction where the numerator is greater than or equal to the denominator (like 5/4). Equivalent fractions are fractions that represent the same value, even though they have different numerators and denominators (e.g., 1/2 and 2/4). To add or subtract fractions, we must ensure they have the same denominator. For example, to add 1/3 and 1/3, we get 2/3. To subtract, we also find a common denominator. Understanding fractions is fundamental for almost all mathematics.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Mathematics",
             "chapter_title": "Fractions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.134895"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +265,40 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "eemm102_concept_01",
-                        "name": "Fractions",
-                        "definition": "Central learning focus developed by the chapter 'Fractions'.",
-                        "evidence": "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate."
+                        "topic": "Introduction to Fractions",
+                        "description": "What are fractions? Understanding numerator and denominator."
                     },
                     {
-                        "id": "eemm102_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "When can we say that 1 2 of something is greater than 1 3 of something?"
+                        "topic": "Types of Fractions",
+                        "description": "Proper, improper, and mixed fractions."
                     },
                     {
-                        "id": "eemm102_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same."
+                        "topic": "Equivalent Fractions",
+                        "description": "Finding equivalent fractions and simplifying them."
+                    },
+                    {
+                        "topic": "Comparing Fractions",
+                        "description": "Techniques for comparing fractions (common denominator, cross-multiplication)."
+                    },
+                    {
+                        "topic": "Addition and Subtraction of Fractions",
+                        "description": "Adding and subtracting fractions with unlike denominators and like denominators."
+                    },
+                    {
+                        "topic": "Multiplication of Fractions",
+                        "description": "Multiplying fractions (fraction by fraction, fraction by whole number)."
+                    },
+                    {
+                        "topic": "Division of Fractions",
+                        "description": "Dividing fractions (multiplying by the reciprocal)."
+                    },
+                    {
+                        "topic": "Decimal and Percentage Forms",
+                        "description": "Converting between fractions, decimals, and percentages."
+                    },
+                    {
+                        "topic": "Fraction Operations and Word Problems",
+                        "description": "Solving real-world problems involving fractions."
                     }
                 ]
             },
@@ -464,8 +431,10 @@
             "subject": "Mathematics",
             "chapter_title": "Fractions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.134869"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +443,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'Fractions'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: Fractions.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'Fractions' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "Imagine a delicious pizza cut into 8 equal slices. If you eat 3 of those slices, you have eaten 3/8 of the pizza. This is a fraction where 3 is the numerator (the number of slices eaten) and 8 is the denominator (the total number of slices). Fractions are everywhere in our daily lives. They help us share food, measure ingredients in cooking, understand percentages, and even calculate distances. For example, if a recipe calls for 1/2 cup of sugar and you want to make double the recipe, you simply need to double the fraction: 1/2 + 1/2 = 1 whole cup of sugar.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +1001,10 @@
             "subject": "Mathematics",
             "chapter_title": "Fractions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.134887"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,101 +1016,76 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm102_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Fractions'?",
-                        "options": [
-                            "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                        "quiz_type": "Multiple Choice",
+                        "questions": [
+                            {
+                                "question": "Which of the following is a proper fraction?",
+                                "options": [
+                                    "3/5",
+                                    "7/4",
+                                    "1/8",
+                                    "10/2"
+                                ],
+                                "answer": "1/8"
+                            },
+                            {
+                                "question": "What is the sum of 1/3 + 1/6?",
+                                "options": [
+                                    "2/9",
+                                    "3/6",
+                                    "1/2",
+                                    "1/3"
+                                ],
+                                "answer": "1/2"
+                            },
+                            {
+                                "question": "Simplify the fraction 12/18.",
+                                "options": [
+                                    "6/9",
+                                    "2/3",
+                                    "12/18",
+                                    "2/9"
+                                ],
+                                "answer": "2/3"
+                            }
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm102_concept_01"
+                        "difficulty": [
+                            "Easy",
+                            "Medium",
+                            "Medium"
+                        ]
                     },
                     {
-                        "id": "eemm102_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Fractions'?",
-                        "options": [
-                            "When can we say that 1 2 of something is greater than 1 3 of something?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                        "quiz_type": "Fill in the Blanks",
+                        "questions": [
+                            {
+                                "question": "The numerator is the ______ part of a fraction.",
+                                "answer": "part",
+                                "topic": "Introduction to Fractions"
+                            },
+                            {
+                                "question": "To subtract fractions, we must first find a ______ denominator.",
+                                "answer": "common",
+                                "topic": "Addition and Subtraction of Fractions"
+                            }
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "When can we say that 1 2 of something is greater than 1 3 of something?",
-                        "difficulty": "easy",
-                        "concept_id": "eemm102_concept_01"
+                        "difficulty": [
+                            "Easy",
+                            "Easy"
+                        ]
                     },
-                    {
-                        "id": "eemm102_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Fractions'?",
-                        "options": [
-                            "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm102_concept_01"
-                    },
-                    {
-                        "id": "eemm102_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Fractions'?",
-                        "options": [
-                            "A B C Playing with a Grid  Shade 1 8 of Grid A in red.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "A B C Playing with a Grid  Shade 1 8 of Grid A in red.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm102_concept_01"
-                    },
-                    {
-                        "id": "eemm102_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Fractions'?",
-                        "options": [
-                            "22 ChapterChapter Identify 1 2 of the chocolate Identify 1 3 of the chocolate Chapter-2 Fraction.indd 17Chapter-2 Fraction.indd 17 7/2/2025 3:30:30 PM7/2/2025 3:30:30 PM 18 Fun with Fraction Kit Gurpreet is playing with his fraction kit (a kit is given at the end of the textbook).",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "22 ChapterChapter Identify 1 2 of the chocolate Identify 1 3 of the chocolate Chapter-2 Fraction.indd 17Chapter-2 Fraction.indd 17 7/2/2025 3:30:30 PM7/2/2025 3:30:30 PM 18 Fun with Fraction Kit Gurpreet is playing with his fraction kit (a kit is given at the end of the textbook).",
-                        "difficulty": "hard",
-                        "concept_id": "eemm102_concept_01"
-                    },
-                    {
-                        "id": "eemm102_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Fractions'?",
-                        "options": [
-                            "Do you remember how to make a whole with pieces of the same size?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Do you remember how to make a whole with pieces of the same size?",
-                        "difficulty": "hard",
-                        "concept_id": "eemm102_concept_01"
-                    }
+                    "flashcards_basics_and_formulas",
+                    "concepts_summary",
+                    "key_terms_and_definitions",
+                    "practice_questions",
+                    "review_session",
+                    "mnemonic_techniques",
+                    "formula_charts",
+                    "visual_representations",
+                    "error_analysis_guide",
+                    "vocabulary_glossary",
+                    "challenging_problems",
+                    "quick_recall"
                 ]
             },
             "runtime_mapping": {
@@ -1619,8 +1537,10 @@
             "subject": "Mathematics",
             "chapter_title": "Fractions",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.134860"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1549,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Fractions' develops mathematical reasoning and application through the chapter 'Fractions'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "She says that 1 3 of one of her chocolates is bigger than 1 2 of the other chocolate.",
-                    "When can we say that 1 2 of something is greater than 1 3 of something?",
-                    "To compare two fractions of two wholes, the wholes from which the fractions are derived must be the same.",
-                    "A B C Playing with a Grid  Shade 1 8 of Grid A in red.",
-                    "22 ChapterChapter Identify 1 2 of the chocolate Identify 1 3 of the chocolate Chapter-2 Fraction.indd 17Chapter-2 Fraction.indd 17 7/2/2025 3:30:30 PM7/2/2025 3:30:30 PM 18 Fun with Fraction Kit Gurpreet is playing with his fraction kit (a kit is given at the end of the textbook).",
-                    "Do you remember how to make a whole with pieces of the same size?"
-                ]
-            },
+            "content": "Chapter 102 on Fractions introduces the fundamental concept of parts of a whole, using the numerator and denominator to represent these parts. Students learn to distinguish between proper, improper, and mixed fractions and develop the skills to perform all basic arithmetic operations (addition, subtraction, multiplication, and division) on fractions. This chapter emphasizes the importance of fractions in practical applications, helping students grasp how these mathematical concepts are used in everyday situations.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

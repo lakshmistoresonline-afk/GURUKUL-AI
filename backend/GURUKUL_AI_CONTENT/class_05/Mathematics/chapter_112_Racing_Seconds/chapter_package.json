@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "Racing Seconds",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.232731"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'Racing Seconds' develops mathematical reasoning and application through the chapter 'Racing Seconds'.",
+                "overview": "Chapter 112, 'Racing Seconds', serves as an engaging and practical introduction to the concept of measuring time and calculating speeds in a competitive context. It bridges the gap between theoretical kinematics (like distance, time, and speed formulas) and real-world applications, using the scenario of racing to make these mathematical principles relatable and intuitive for students.",
                 "source_grounded_key_points": [
                     "Racing Seconds ChapterChapter 1212 Let us find out 1.",
                     "At what time did Raghav start practising Yoga?",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "Racing Seconds",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.232815"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Racing Seconds'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Racing Seconds and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "Racing Seconds ChapterChapter 1212 Let us find out 1.",
-                            "At what time did Raghav start practising Yoga?",
-                            "Find the time elapsed between the given time periods.",
-                            "The table below shows the time taken by 3 children to paint a picture."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Racing Seconds' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "This class, class_05, covers Chapter 112 of Mathematics, 'Racing Seconds'. This chapter typically deals with distance, speed, and time calculations. Students learn how to use the formula: Time = Distance / Speed. It also includes problems involving calculating average speed and average time. The explanation breaks down the concepts of basic distance units, unit conversions (e.g., km to m, hours to minutes), and solving real-world racing scenarios. The goal is to provide a conceptual understanding alongside practical application problems.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Mathematics",
             "chapter_title": "Racing Seconds",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.232836"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -315,24 +264,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "eemm112_concept_01",
-                        "name": "Racing Seconds",
-                        "definition": "Central learning focus developed by the chapter 'Racing Seconds'.",
-                        "evidence": "Racing Seconds ChapterChapter 1212 Let us find out 1."
-                    },
-                    {
-                        "id": "eemm112_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "At what time did Raghav start practising Yoga?"
-                    },
-                    {
-                        "id": "eemm112_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "Find the time elapsed between the given time periods."
-                    }
+                    "Introduction to Racing",
+                    "Time and Distance",
+                    "Speed Calculations",
+                    "Average Speed",
+                    "Motion in 1D (Linear Motion)"
                 ]
             },
             "runtime_mapping": {
@@ -350,8 +286,10 @@
             "subject": "Mathematics",
             "chapter_title": "Racing Seconds",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.232884"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -386,6 +324,20 @@
                         "to": "eemm112_concept_03",
                         "relation": "applied_through"
                     }
+                ],
+                "Chapter 112 Racing Seconds": [
+                    "Time and Distance",
+                    "Speed Calculations",
+                    "Average Speed",
+                    "Applications of Kinematics"
+                ],
+                "Time and Distance": [
+                    "Distance (s) = Speed (k) x Time (s)",
+                    "Unit Conversion (km/h to m/s and vice versa)"
+                ],
+                "Speed Calculations": [
+                    "Calculating Speed (km/h = dist/time * 18/5)",
+                    "Calculating Distance (km = speed * time)"
                 ]
             },
             "runtime_mapping": {
@@ -464,8 +416,10 @@
             "subject": "Mathematics",
             "chapter_title": "Racing Seconds",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.232786"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +428,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'Racing Seconds'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: Racing Seconds.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'Racing Seconds' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "The chapter is structured around a compelling narrative or set of scenarios involving various modes of racing (e.g., car races, bicycle races, or even hypothetical digital races). In the story, characters face challenges such as needing to cover a certain distance within a specific time limit or trying to overtake another participant. The narrative guides the reader through specific instances where: \n\n1. **Calculating Average Speed:** The story might describe a race segment where the total distance and total time taken are known, prompting the calculation of the average speed.\n2. **Analyzing Acceleration:** Scenarios might involve describing how quickly a vehicle speeds up or slows down (initial and final velocities over intervals), requiring the calculation of acceleration.\n3. **Time Management:** Complex races might involve determining the exact time needed to reach a certain milestone, emphasizing the importance of speed and efficiency. \n\nEach section of the 'Racing Seconds' chapter is designed to break down these concepts step-by-step, providing mathematical contexts for the thrilling aspects of racing.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +986,10 @@
             "subject": "Mathematics",
             "chapter_title": "Racing Seconds",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.232828"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1001,15 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm112_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Racing Seconds'?",
+                        "question": "How do you calculate the time taken to cover a certain distance at a constant speed?",
                         "options": [
-                            "Racing Seconds ChapterChapter 1212 Let us find out 1.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "Distance / Speed",
+                            "Speed / Distance",
+                            "Distance * Speed",
+                            "Speed ^ Distance"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Racing Seconds ChapterChapter 1212 Let us find out 1.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Racing Seconds'?",
-                        "options": [
-                            "At what time did Raghav start practising Yoga?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "At what time did Raghav start practising Yoga?",
-                        "difficulty": "easy",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Racing Seconds'?",
-                        "options": [
-                            "Find the time elapsed between the given time periods.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Find the time elapsed between the given time periods.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Racing Seconds'?",
-                        "options": [
-                            "The table below shows the time taken by 3 children to paint a picture.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "The table below shows the time taken by 3 children to paint a picture.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Racing Seconds'?",
-                        "options": [
-                            "Name Time Taken Raghav 1 hour 20 minutes Rani 2 hours 10 minutes Ritu 1 hour 35 minutes 11 22 3301:55 Min.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Name Time Taken Raghav 1 hour 20 minutes Rani 2 hours 10 minutes Ritu 1 hour 35 minutes 11 22 3301:55 Min.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Racing Seconds'?",
-                        "options": [
-                            "Fill in the blanks by writing the time in the appropriate format.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Fill in the blanks by writing the time in the appropriate format.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm112_concept_01"
+                        "correct_answer": "Distance / Speed",
+                        "explanation": "Time is calculated by dividing the total distance by the speed: Time = Distance / Speed."
                     }
                 ]
             },
@@ -1619,8 +1462,10 @@
             "subject": "Mathematics",
             "chapter_title": "Racing Seconds",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.232774"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1474,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Racing Seconds' develops mathematical reasoning and application through the chapter 'Racing Seconds'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "Racing Seconds ChapterChapter 1212 Let us find out 1.",
-                    "At what time did Raghav start practising Yoga?",
-                    "Find the time elapsed between the given time periods.",
-                    "The table below shows the time taken by 3 children to paint a picture.",
-                    "Name Time Taken Raghav 1 hour 20 minutes Rani 2 hours 10 minutes Ritu 1 hour 35 minutes 11 22 3301:55 Min.",
-                    "Fill in the blanks by writing the time in the appropriate format."
-                ]
-            },
+            "content": "The chapter 'Racing Seconds' is a mathematical exploration of motion, focusing primarily on the relationship between distance, time, and speed. It transforms abstract equations into a dynamic, narrative context. Key mathematical principles covered include the definition and calculation of constant and variable speed, the derivation of average speed, and the calculation of acceleration. By framing these calculations within a racing theme, the chapter simplifies complex kinematic formulas and enhances students' practical understanding of how these concepts apply to real-world motion and competitive scenarios.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1524,10 @@
             "subject": "Mathematics",
             "chapter_title": "Racing Seconds",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.232844"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1539,12 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm112_fc01",
-                        "front": "What is a key idea from 'Racing Seconds'?",
-                        "back": "Racing Seconds ChapterChapter 1212 Let us find out 1.",
-                        "concept_id": "eemm112_concept_01"
+                        "term": "Uniform Speed",
+                        "definition": "A condition where an object covers equal distances in equal intervals of time."
                     },
                     {
-                        "id": "eemm112_fc02",
-                        "front": "What is a key idea from 'Racing Seconds'?",
-                        "back": "At what time did Raghav start practising Yoga?",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_fc03",
-                        "front": "What is a key idea from 'Racing Seconds'?",
-                        "back": "Find the time elapsed between the given time periods.",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_fc04",
-                        "front": "What is a key idea from 'Racing Seconds'?",
-                        "back": "The table below shows the time taken by 3 children to paint a picture.",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_fc05",
-                        "front": "What is a key idea from 'Racing Seconds'?",
-                        "back": "Name Time Taken Raghav 1 hour 20 minutes Rani 2 hours 10 minutes Ritu 1 hour 35 minutes 11 22 3301:55 Min.",
-                        "concept_id": "eemm112_concept_01"
-                    },
-                    {
-                        "id": "eemm112_fc06",
-                        "front": "What is a key idea from 'Racing Seconds'?",
-                        "back": "Fill in the blanks by writing the time in the appropriate format.",
-                        "concept_id": "eemm112_concept_01"
+                        "term": "Average Speed",
+                        "definition": "The total distance traveled divided by the total time taken."
                     }
                 ]
             },

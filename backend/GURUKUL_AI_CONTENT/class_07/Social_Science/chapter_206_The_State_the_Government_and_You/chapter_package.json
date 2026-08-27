@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "The State, the Government, and You",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.436777"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for The State, the Government, and You.",
+                "overview": "This chapter explores the fundamental relationship between the state, the government, and the individual. It delves into the concept of governance, the role of the state in maintaining order and welfare, and the various forms of government that exist. The chapter highlights the citizen's role in a democratic society, emphasizing civic duties, rights, and responsibilities, and how these concepts shape the socio-political landscape of a nation.",
                 "source_grounded_key_points": [
                     "6 CHAPTER The State, the Government, and You The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.",
                     "– Socrates, Greek philosopher (in ‘The Republic’ by Plato c.",
@@ -313,8 +315,10 @@
             "subject": "Social Science",
             "chapter_title": "The State, the Government, and You",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.436833"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +330,28 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gees206_c01",
-                        "name": "The State, the Government, and You",
-                        "definition": "Central learning focus of The State, the Government, and You.",
-                        "source_evidence": "6 CHAPTER The State, the Government, and You The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself."
+                        "topic": "Defining the State",
+                        "details": "The state is a political institution that has sovereignty over a defined territory and a population, and the power to impose laws and maintain order."
                     },
                     {
-                        "id": "gees206_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "– Socrates, Greek philosopher (in ‘The Republic’ by Plato c."
+                        "topic": "Components of a State",
+                        "details": "Key elements: Territory (geographical extent), Population (people living there), Government (the body that makes decisions), and Sovereignty (supreme power)."
                     },
                     {
-                        "id": "gees206_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "Governance and Democracy What makes India a democratic republic?"
+                        "topic": "Functions of Government",
+                        "details": "Primary functions: Law-making, Administration (implementation of laws), Justice (maintaining order and resolving disputes), and Welfare (providing public goods and services)."
+                    },
+                    {
+                        "topic": "Forms of Government",
+                        "details": "Diverse systems include Democracy (rule by the people), Monarchy (rule by a hereditary ruler), Dictatorship (rule by a single individual), and Oligarchy (rule by a small elite)."
+                    },
+                    {
+                        "topic": "Role of the Citizen",
+                        "details": "Citizens have rights (freedom of speech, assembly, etc.) and responsibilities (obeying laws, paying taxes, participating in civic duties)."
+                    },
+                    {
+                        "topic": "Public vs. Private Sector",
+                        "details": "Public sector refers to activities run by the government (e.g., schools, police, roads). Private sector refers to activities run by individuals or companies for profit."
                     }
                 ]
             },
@@ -360,8 +370,10 @@
             "subject": "Social Science",
             "chapter_title": "The State, the Government, and You",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.436851"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +408,35 @@
                         "to": "gees206_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "State": {
+                    "branches": [
+                        "Sovereignty",
+                        "Territory",
+                        "Population",
+                        "Government",
+                        "Laws"
+                    ],
+                    "connections": [
+                        "Forms of Government",
+                        "Citizen Role"
+                    ]
+                },
+                "Functions of Government": {
+                    "sub_branches": [
+                        "Law-making",
+                        "Administration",
+                        "Judiciary",
+                        "Welfare"
+                    ]
+                },
+                "Citizen Interaction": {
+                    "nodes": [
+                        "Rights",
+                        "Responsibilities",
+                        "Political Participation"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +530,10 @@
             "subject": "Social Science",
             "chapter_title": "The State, the Government, and You",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.436808"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +542,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to The State, the Government, and You.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from The State, the Government, and You supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The narrative centers on a fictional village where a conflict arises due to poor governance. Initially, the villagers struggle with lack of infrastructure, leading them to question the authority of the governing body. However, through a series of collective actions—forming associations, participating in local elections, and demanding accountability—the villagers learn that the government is not an abstract entity but a concrete system that can be influenced. The story illustrates how participation, through civic engagement, transforms a community from passive subjects into active participants, ultimately highlighting the power of collective action in shaping the future of the state.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1137,10 @@
             "subject": "Social Science",
             "chapter_title": "The State, the Government, and You",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.436824"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1152,25 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees206_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The State, the Government, and You'?",
+                        "type": "Multiple Choice",
+                        "question": "Who is considered the supreme authority in a sovereign state?",
                         "options": [
-                            "6 CHAPTER The State, the Government, and You The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "The Military",
+                            "The Judiciary",
+                            "The Government",
+                            "The Constitution"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "6 CHAPTER The State, the Government, and You The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees206_c01"
+                        "answer": "The Constitution"
                     },
                     {
-                        "id": "gees206_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The State, the Government, and You'?",
-                        "options": [
-                            "– Socrates, Greek philosopher (in ‘The Republic’ by Plato c.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "– Socrates, Greek philosopher (in ‘The Republic’ by Plato c.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees206_c01"
+                        "type": "True/False",
+                        "question": "The territory is an essential component of the State, but it is not a necessary condition for a group of people to be considered a State.",
+                        "answer": "False"
                     },
                     {
-                        "id": "gees206_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The State, the Government, and You'?",
-                        "options": [
-                            "Governance and Democracy What makes India a democratic republic?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Governance and Democracy What makes India a democratic republic?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The State, the Government, and You'?",
-                        "options": [
-                            "How do citizens engage with the government in day-to-day life?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "How do citizens engage with the government in day-to-day life?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The State, the Government, and You'?",
-                        "options": [
-                            "143 Reprint 2026-27 Chapter 6.indd 143 11/27/2025 12:30:41 PM LET’S REMEMBER This is an illustration from your Grade 6 textbook.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "143 Reprint 2026-27 Chapter 6.indd 143 11/27/2025 12:30:41 PM LET’S REMEMBER This is an illustration from your Grade 6 textbook.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The State, the Government, and You'?",
-                        "options": [
-                            "Do you recall that we discussed the need for a system of re Jud tu icia governance, commonly referred la gis ry Le Governance to as a government?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Do you recall that we discussed the need for a system of re Jud tu icia governance, commonly referred la gis ry Le Governance to as a government?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The State, the Government, and You'?",
-                        "options": [
-                            "There are three main functions that governments perform — making Executive laws (legislature), carrying out laws and making policies (executive), and ensuring laws are Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "There are three main functions that governments perform — making Executive laws (legislature), carrying out laws and making policies (executive), and ensuring laws are Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The State, the Government, and You'?",
-                        "options": [
-                            "We also looked briefly at the three levels of government in India and their functions.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We also looked briefly at the three levels of government in India and their functions.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees206_c01"
+                        "type": "Fill in the blanks",
+                        "question": "The process by which a government establishes its authority is called _________.",
+                        "answer": "Legitimation (or Formation/Establishment)"
                     }
                 ]
             },
@@ -1715,8 +1624,10 @@
             "subject": "Social Science",
             "chapter_title": "The State, the Government, and You",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.436799"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1636,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The State, the Government, and You' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "6 CHAPTER The State, the Government, and You The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.",
-                    "– Socrates, Greek philosopher (in ‘The Republic’ by Plato c.",
-                    "Governance and Democracy What makes India a democratic republic?",
-                    "How do citizens engage with the government in day-to-day life?",
-                    "143 Reprint 2026-27 Chapter 6.indd 143 11/27/2025 12:30:41 PM LET’S REMEMBER This is an illustration from your Grade 6 textbook.",
-                    "Do you recall that we discussed the need for a system of re Jud tu icia governance, commonly referred la gis ry Le Governance to as a government?",
-                    "There are three main functions that governments perform — making Executive laws (legislature), carrying out laws and making policies (executive), and ensuring laws are Fig."
-                ]
-            },
+            "content": "Class_07 Social Science chapter 'Chapter_206_The State, the Government and You' provides a comprehensive overview of the foundational elements of political science. It establishes the distinction between a 'state' (the territorial entity) and 'government' (the mechanism that runs it). It systematically explores the functions of the state (law enforcement, administration, welfare), the nature of political systems, and the importance of citizenship. The chapter concludes by emphasizing that the relationship between the state and the individual is dynamic and reciprocal, where citizens hold the ultimate power to hold their government accountable, thereby ensuring a just and functioning society.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1686,10 @@
             "subject": "Social Science",
             "chapter_title": "The State, the Government, and You",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.436843"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1701,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees206_fc01",
-                        "front": "What should you remember from The State, the Government, and You?",
-                        "back": "6 CHAPTER The State, the Government, and You The greatest punishment for being unwilling to rule is being ruled by someone worse than oneself.",
-                        "concept_id": "gees206_c01"
+                        "front": "What is Sovereignty?",
+                        "back": "Sovereignty is the supreme and absolute power of a state to make laws and enforce them within its territory."
                     },
                     {
-                        "id": "gees206_fc02",
-                        "front": "What should you remember from The State, the Government, and You?",
-                        "back": "– Socrates, Greek philosopher (in ‘The Republic’ by Plato c.",
-                        "concept_id": "gees206_c01"
+                        "front": "Define 'Territory'.",
+                        "back": "The physical area over which the state exercises jurisdiction."
                     },
                     {
-                        "id": "gees206_fc03",
-                        "front": "What should you remember from The State, the Government, and You?",
-                        "back": "Governance and Democracy What makes India a democratic republic?",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_fc04",
-                        "front": "What should you remember from The State, the Government, and You?",
-                        "back": "How do citizens engage with the government in day-to-day life?",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_fc05",
-                        "front": "What should you remember from The State, the Government, and You?",
-                        "back": "143 Reprint 2026-27 Chapter 6.indd 143 11/27/2025 12:30:41 PM LET’S REMEMBER This is an illustration from your Grade 6 textbook.",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_fc06",
-                        "front": "What should you remember from The State, the Government, and You?",
-                        "back": "Do you recall that we discussed the need for a system of re Jud tu icia governance, commonly referred la gis ry Le Governance to as a government?",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_fc07",
-                        "front": "What should you remember from The State, the Government, and You?",
-                        "back": "There are three main functions that governments perform — making Executive laws (legislature), carrying out laws and making policies (executive), and ensuring laws are Fig.",
-                        "concept_id": "gees206_c01"
-                    },
-                    {
-                        "id": "gees206_fc08",
-                        "front": "What should you remember from The State, the Government, and You?",
-                        "back": "We also looked briefly at the three levels of government in India and their functions.",
-                        "concept_id": "gees206_c01"
+                        "front": "What is the main function of the Government?",
+                        "back": "To make and enforce laws, provide justice, and manage public affairs."
                     }
                 ]
             },

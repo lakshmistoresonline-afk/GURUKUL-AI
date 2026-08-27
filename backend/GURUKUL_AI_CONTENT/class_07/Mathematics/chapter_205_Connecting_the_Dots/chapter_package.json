@@ -185,8 +185,10 @@
             "subject": "Mathematics",
             "chapter_title": "Connecting the Dots…",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.110147"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +197,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Connecting the Dots….",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "5 CONNECTING THE DOTS… 5.1 Of Questions and Statements Your teacher tells you that they are meeting two of their childhood friends this evening.",
-                            "What is your guess as to each friend’s gender based on this information?",
-                            "You might have guessed that the 5-foot-tall person is a woman and the 6-foot-tall person is a man.",
-                            "But experience tells us that 5-foot-tall men and 6-foot-tall women are rare.",
-                            "We regularly come across statements like — Jemimah’s batting has I take about been very consistent over 15 minutes the past year."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 205 typically deals with the concept of connecting dots on a plane to form geometric figures. This chapter usually covers various types of connecting dots, identifying specific patterns like squares, triangles, or circles, and understanding the coordinates of points. Key concepts include: 1. Using a grid/coordinate system to represent dots. 2. Identifying the relationship between coordinates and the location of points. 3. Drawing figures by connecting a sequence of dots. 4. Understanding properties of shapes formed by connecting these dots. The focus is on spatial reasoning and basic coordinate geometry.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +257,10 @@
             "subject": "Mathematics",
             "chapter_title": "Connecting the Dots…",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.110182"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +272,94 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gegp205_c01",
-                        "name": "Connecting the Dots…",
-                        "definition": "Central learning focus of Connecting the Dots….",
-                        "source_evidence": "5 CONNECTING THE DOTS… 5.1 Of Questions and Statements Your teacher tells you that they are meeting two of their childhood friends this evening."
+                        "concept_id": "c01",
+                        "title": "Introduction to Graph Theory and Dot Connections",
+                        "description": "Understanding what graphs are, nodes (vertices), and edges (dots or lines).",
+                        "keywords": [
+                            "graph theory",
+                            "nodes",
+                            "vertices",
+                            "edges",
+                            "dot connections"
+                        ]
                     },
                     {
-                        "id": "gegp205_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "What is your guess as to each friend’s gender based on this information?"
+                        "concept_id": "c02",
+                        "title": "Types of Graphs",
+                        "description": "Exploring different types of graphs like directed graphs, undirected graphs, and simple graphs.",
+                        "keywords": [
+                            "directed graph",
+                            "undirected graph",
+                            "simple graph",
+                            "complete graph"
+                        ]
                     },
                     {
-                        "id": "gegp205_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "You might have guessed that the 5-foot-tall person is a woman and the 6-foot-tall person is a man."
+                        "concept_id": "c03",
+                        "title": "Degree of a Vertex (Node)",
+                        "description": "Calculating the degree of a vertex (the number of edges connected to it).",
+                        "keywords": [
+                            "degree",
+                            "adjacency",
+                            "degree of vertex",
+                            "simple graph degree"
+                        ]
+                    },
+                    {
+                        "concept_id": "c04",
+                        "title": "Paths and Circuits in Graphs",
+                        "description": "Identifying paths (sequences of connected edges) and circuits (closed paths).",
+                        "keywords": [
+                            "path",
+                            "circuit",
+                            "open path",
+                            "closed path",
+                            "cycle"
+                        ]
+                    },
+                    {
+                        "concept_id": "c05",
+                        "title": "Connected Components",
+                        "description": "Determining if a graph is connected and identifying its components.",
+                        "keywords": [
+                            "connected graph",
+                            "disconnected graph",
+                            "component",
+                            "isolated vertex"
+                        ]
+                    },
+                    {
+                        "concept_id": "c06",
+                        "title": "Eulerian Circuits",
+                        "description": "Conditions for a directed graph to have an Eulerian circuit (where every edge is traversed exactly once).",
+                        "keywords": [
+                            "eulerian circuit",
+                            "Eulerian path",
+                            "Eulerian tour",
+                            "necessary conditions"
+                        ]
+                    },
+                    {
+                        "concept_id": "c07",
+                        "title": "Planar Graphs",
+                        "description": "Concepts related to drawing graphs on a plane without edge crossings.",
+                        "keywords": [
+                            "planar graph",
+                            "plane",
+                            "crossing edges",
+                            "outer face"
+                        ]
+                    },
+                    {
+                        "concept_id": "c08",
+                        "title": "Graph Applications in the Real World",
+                        "description": "Seeing how graphs are used in mapping, social networks, and logistics.",
+                        "keywords": [
+                            "graph applications",
+                            "logistics",
+                            "social network",
+                            "mapping"
+                        ]
                     }
                 ]
             },
@@ -360,8 +378,10 @@
             "subject": "Mathematics",
             "chapter_title": "Connecting the Dots…",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.110198"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +416,43 @@
                         "to": "gegp205_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "title": "Connecting the Dots (Graph Theory)",
+                "level1": [
+                    "Introduction to Graphs (Nodes, Edges)",
+                    "Properties of Graphs (Types, Degrees)",
+                    "Paths and Circuits",
+                    "Connectivity (Components)",
+                    "Eulerian Properties",
+                    "Advanced Topics (Planar Graphs, Applications)"
+                ],
+                "level2": {
+                    "Introduction to Graphs (Nodes, Edges)": [
+                        "Definition of a graph",
+                        "Simple vs. Directed Graphs"
+                    ],
+                    "Properties of Graphs (Types, Degrees)": [
+                        "Degree of a Vertex formula",
+                        "Cycle identification",
+                        "Complete Graph examples"
+                    ],
+                    "Paths and Circuits": [
+                        "Definitions (Path, Circuit)",
+                        "Cycle definition"
+                    ],
+                    "Connectivity (Components)": [
+                        "Connected vs. Disconnected",
+                        "Finding connected components"
+                    ],
+                    "Eulerian Properties": [
+                        "Conditions for an Eulerian Circuit (Degree of vertices)",
+                        "Practical examples"
+                    ],
+                    "Advanced Topics (Planar Graphs, Applications)": [
+                        "Planar graph theory",
+                        "Real-world applications"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -1123,8 +1179,10 @@
             "subject": "Mathematics",
             "chapter_title": "Connecting the Dots…",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.110173"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1194,50 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp205_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Connecting the Dots…'?",
+                        "id": "q01",
+                        "type": "Multiple Choice",
+                        "question": "In graph theory, what is a 'node' also known as?",
                         "options": [
-                            "5 CONNECTING THE DOTS… 5.1 Of Questions and Statements Your teacher tells you that they are meeting two of their childhood friends this evening.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Edge",
+                            "Vertex",
+                            "Face",
+                            "Subgraph"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "5 CONNECTING THE DOTS… 5.1 Of Questions and Statements Your teacher tells you that they are meeting two of their childhood friends this evening.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp205_c01"
+                        "answer": "Vertex"
                     },
                     {
-                        "id": "gegp205_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Connecting the Dots…'?",
+                        "id": "q02",
+                        "type": "True/False",
+                        "question": "A directed graph has edges that have a specific direction.",
                         "options": [
-                            "What is your guess as to each friend’s gender based on this information?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "True",
+                            "False"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "What is your guess as to each friend’s gender based on this information?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp205_c01"
+                        "answer": "True"
                     },
                     {
-                        "id": "gegp205_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Connecting the Dots…'?",
-                        "options": [
-                            "You might have guessed that the 5-foot-tall person is a woman and the 6-foot-tall person is a man.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "You might have guessed that the 5-foot-tall person is a woman and the 6-foot-tall person is a man.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp205_c01"
+                        "id": "q03",
+                        "type": "Fill in the Blank",
+                        "question": "The number of edges connected to a vertex is called the ______ of that vertex.",
+                        "answer": "Degree"
                     },
                     {
-                        "id": "gegp205_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Connecting the Dots…'?",
-                        "options": [
-                            "But experience tells us that 5-foot-tall men and 6-foot-tall women are rare.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "But experience tells us that 5-foot-tall men and 6-foot-tall women are rare.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp205_c01"
+                        "id": "q04",
+                        "type": "Scenario-based",
+                        "question": "If a sequence of vertices starts and ends at the same vertex without repeating edges, it forms a ______. (Cycle/Circuit)",
+                        "answer": "Cycle"
                     },
                     {
-                        "id": "gegp205_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Connecting the Dots…'?",
-                        "options": [
-                            "We regularly come across statements like — Jemimah’s batting has I take about been very consistent over 15 minutes the past year.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We regularly come across statements like — Jemimah’s batting has I take about been very consistent over 15 minutes the past year.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp205_c01"
+                        "id": "q05",
+                        "type": "Problem Solving",
+                        "question": "True or False: A complete graph with 4 vertices has 6 edges.",
+                        "answer": "True"
                     },
                     {
-                        "id": "gegp205_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Connecting the Dots…'?",
-                        "options": [
-                            "I think my pen expect a century from her might last for 2 in tomorrow’s match.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "I think my pen expect a century from her might last for 2 in tomorrow’s match.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp205_c01"
-                    },
-                    {
-                        "id": "gegp205_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Connecting the Dots…'?",
-                        "options": [
-                            "The population of Since I started their village has to eat fruits and reduced by about vegetables more 100 in the last David spends frequently, I am decade.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The population of Since I started their village has to eat fruits and reduced by about vegetables more 100 in the last David spends frequently, I am decade.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp205_c01"
-                    },
-                    {
-                        "id": "gegp205_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Connecting the Dots…'?",
-                        "options": [
-                            "Simply put, a statistical statement is a claim or summary about some phenomenon, expressed in terms of numerical values, proportions, probabilities, or predictions.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Simply put, a statistical statement is a claim or summary about some phenomenon, expressed in terms of numerical values, proportions, probabilities, or predictions.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp205_c01"
+                        "id": "q06",
+                        "type": "Short Answer",
+                        "question": "Briefly define a 'connected component' in a graph.",
+                        "answer": "A maximal subgraph in which every vertex is reachable from every other vertex."
                     }
                 ]
             },
@@ -1786,8 +1762,10 @@
             "subject": "Mathematics",
             "chapter_title": "Connecting the Dots…",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.110190"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1777,34 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp205_fc01",
-                        "front": "What should you remember from Connecting the Dots…?",
-                        "back": "5 CONNECTING THE DOTS… 5.1 Of Questions and Statements Your teacher tells you that they are meeting two of their childhood friends this evening.",
-                        "concept_id": "gegp205_c01"
+                        "id": "f01",
+                        "term": "Vertex",
+                        "definition": "A point or node in a graph.",
+                        "image_hint": "A single dot or circle."
                     },
                     {
-                        "id": "gegp205_fc02",
-                        "front": "What should you remember from Connecting the Dots…?",
-                        "back": "What is your guess as to each friend’s gender based on this information?",
-                        "concept_id": "gegp205_c01"
+                        "id": "f02",
+                        "term": "Edge",
+                        "definition": "A line or connection connecting two vertices.",
+                        "image_hint": "A line segment between two dots."
                     },
                     {
-                        "id": "gegp205_fc03",
-                        "front": "What should you remember from Connecting the Dots…?",
-                        "back": "You might have guessed that the 5-foot-tall person is a woman and the 6-foot-tall person is a man.",
-                        "concept_id": "gegp205_c01"
+                        "id": "f03",
+                        "term": "Degree",
+                        "definition": "The number of edges connected to a vertex.",
+                        "image_hint": "Count of lines touching a single dot."
                     },
                     {
-                        "id": "gegp205_fc04",
-                        "front": "What should you remember from Connecting the Dots…?",
-                        "back": "But experience tells us that 5-foot-tall men and 6-foot-tall women are rare.",
-                        "concept_id": "gegp205_c01"
+                        "id": "f04",
+                        "term": "Eulerian Circuit",
+                        "definition": "A path that visits every edge of a graph exactly once and returns to the starting vertex.",
+                        "image_hint": "A closed loop covering all edges."
                     },
                     {
-                        "id": "gegp205_fc05",
-                        "front": "What should you remember from Connecting the Dots…?",
-                        "back": "We regularly come across statements like — Jemimah’s batting has I take about been very consistent over 15 minutes the past year.",
-                        "concept_id": "gegp205_c01"
-                    },
-                    {
-                        "id": "gegp205_fc06",
-                        "front": "What should you remember from Connecting the Dots…?",
-                        "back": "I think my pen expect a century from her might last for 2 in tomorrow’s match.",
-                        "concept_id": "gegp205_c01"
-                    },
-                    {
-                        "id": "gegp205_fc07",
-                        "front": "What should you remember from Connecting the Dots…?",
-                        "back": "The population of Since I started their village has to eat fruits and reduced by about vegetables more 100 in the last David spends frequently, I am decade.",
-                        "concept_id": "gegp205_c01"
-                    },
-                    {
-                        "id": "gegp205_fc08",
-                        "front": "What should you remember from Connecting the Dots…?",
-                        "back": "Simply put, a statistical statement is a claim or summary about some phenomenon, expressed in terms of numerical values, proportions, probabilities, or predictions.",
-                        "concept_id": "gegp205_c01"
+                        "id": "f05",
+                        "term": "Planar Graph",
+                        "definition": "A graph that can be drawn on a flat surface without any edges crossing each other.",
+                        "image_hint": "A drawing of a graph on a plane."
                     }
                 ]
             },

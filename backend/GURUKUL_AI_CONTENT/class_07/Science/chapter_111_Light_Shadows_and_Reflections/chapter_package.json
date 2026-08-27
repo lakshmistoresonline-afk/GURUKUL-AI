@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "Light: Shadows and Reflections",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.248497"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Light: Shadows and Reflections.",
+                "overview": "Light is a fundamental phenomenon that allows us to perceive the world around us. This chapter introduces the basic concepts of light, including its properties, the source of light, and how it interacts with different surfaces. We explore how light travels in straight lines and how we can observe phenomena like shadows and reflections.",
                 "source_grounded_key_points": [
                     "Light: Shadows and 11 Reflections In the Western Ghat region of Maharashtra, Keshav spends part of his summer vacation at his friend Jatin’s grandparents’ village.",
                     "Having lived in a big city, he ﬁnds the forests, fresh air, sounds of gushing streams, and chirping birds a novel experience.",
@@ -185,8 +187,10 @@
             "subject": "Science",
             "chapter_title": "Light: Shadows and Reflections",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.248552"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Light: Shadows and Reflections.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Light: Shadows and 11 Reflections In the Western Ghat region of Maharashtra, Keshav spends part of his summer vacation at his friend Jatin’s grandparents’ village.",
-                            "Having lived in a big city, he ﬁnds the forests, fresh air, sounds of gushing streams, and chirping birds a novel experience.",
-                            "However, for Keshav, the most fascinating sight is the dance of hundreds of ﬁreﬂies at night, ﬂashing their lights in a wonderful performance.",
-                            "Jatin’s grandparents explain that ﬁreﬂies are seasonal insects and they use light to communicate.",
-                            "Unfortunately, Keshav also learns the number of ﬁreﬂies is decreasing due to light pollution, reduced forest cover, and excessive tourism."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "In this chapter, we explore the fundamental concepts of light. Light is energy that travels in straight lines. When light hits an opaque object, it gets blocked, forming a shadow. A shadow is a region where light is blocked by an opaque object. We learn about the properties of light, such as its reflection (bouncing back) and refraction (bending when it passes from one medium to another). Reflection is crucial for technologies like mirrors and eyeglasses. Refraction explains why objects in water or air appear at a different position than they actually are. We study the formation of images using plane mirrors and convex/concave lenses. Understanding these concepts helps us apply physics to our everyday life.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Science",
             "chapter_title": "Light: Shadows and Reflections",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.248591"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,100 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu111_c01",
-                        "name": "Light: Shadows and Reflections",
-                        "definition": "Central learning focus of Light: Shadows and Reflections.",
-                        "source_evidence": "Light: Shadows and 11 Reflections In the Western Ghat region of Maharashtra, Keshav spends part of his summer vacation at his friend Jatin’s grandparents’ village."
+                        "concept_id": "c111_01",
+                        "title": "Introduction to Light",
+                        "description": "Light is a form of energy that enables us to see objects. It travels in straight lines (rectilinear propagation).",
+                        "keywords": [
+                            "energy",
+                            "vision",
+                            "straight lines",
+                            "propagation",
+                            "objects"
+                        ]
                     },
                     {
-                        "id": "gecu111_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Having lived in a big city, he ﬁnds the forests, fresh air, sounds of gushing streams, and chirping birds a novel experience."
+                        "concept_id": "c111_02",
+                        "title": "Sources of Light",
+                        "description": "Light can originate from various sources, including natural sources (Sun, stars, fire) and artificial sources (Bulbs, lamps, candles).",
+                        "keywords": [
+                            "sources",
+                            "natural light",
+                            "artificial light",
+                            "sun",
+                            "stars"
+                        ]
                     },
                     {
-                        "id": "gecu111_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "However, for Keshav, the most fascinating sight is the dance of hundreds of ﬁreﬂies at night, ﬂashing their lights in a wonderful performance."
+                        "concept_id": "c111_03",
+                        "title": "Reflection of Light",
+                        "description": "When light hits a surface, it bounces back. This phenomenon is called reflection. Laws of reflection: Angle of incidence equals angle of reflection.",
+                        "keywords": [
+                            "reflection",
+                            "bounce back",
+                            "Law of reflection",
+                            "angle of incidence",
+                            "angle of reflection"
+                        ]
+                    },
+                    {
+                        "concept_id": "c111_04",
+                        "title": "Types of Reflection Surfaces",
+                        "description": "Surfaces can be classified as regular (smooth/specular, e.g., mirror) or irregular (rough/diffuse, e.g., paper, hand).",
+                        "keywords": [
+                            "surfaces",
+                            "regular reflection",
+                            "irregular reflection",
+                            "specular",
+                            "diffuse"
+                        ]
+                    },
+                    {
+                        "concept_id": "c111_05",
+                        "title": "Images Formed by Plane Mirrors",
+                        "description": "A plane mirror produces virtual, upright, and same-sized images. The image distance from the mirror is equal to the object distance.",
+                        "keywords": [
+                            "plane mirror",
+                            "virtual image",
+                            "upright image",
+                            "same size",
+                            "image distance"
+                        ]
+                    },
+                    {
+                        "concept_id": "c111_06",
+                        "title": "Shadow Formation",
+                        "description": "A shadow is formed when an opaque object blocks the path of light. It is a dark area created by the obstruction.",
+                        "keywords": [
+                            "shadow",
+                            "opaque object",
+                            "path of light",
+                            "obstruction",
+                            "dark area"
+                        ]
+                    },
+                    {
+                        "concept_id": "c111_07",
+                        "title": "Characteristics of Shadows",
+                        "description": "Shadows are always dark because they block light. The size and shape of a shadow depend on the source of light and the object.",
+                        "keywords": [
+                            "characteristics",
+                            "dark",
+                            "shape",
+                            "size",
+                            "light source"
+                        ]
+                    },
+                    {
+                        "concept_id": "c111_08",
+                        "title": "Types of Shadows",
+                        "description": "The type of shadow (e.g., sharp/defined, diffuse) depends on the source of light (Point source vs. Extended source).",
+                        "keywords": [
+                            "types",
+                            "point source",
+                            "extended source",
+                            "sharp shadow",
+                            "diffuse shadow"
+                        ]
                     }
                 ]
             },
@@ -360,8 +386,10 @@
             "subject": "Science",
             "chapter_title": "Light: Shadows and Reflections",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.248610"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +423,41 @@
                         "from": "gecu111_c02",
                         "to": "gecu111_c03",
                         "relation": "enables"
+                    }
+                ],
+                "center": "Light, Shadows and Reflections",
+                "branches": [
+                    {
+                        "title": "Light Properties",
+                        "sub_branches": [
+                            "Travels in straight lines",
+                            "Sources (Sun, Bulb)",
+                            "Propagation"
+                        ]
+                    },
+                    {
+                        "title": "Reflection",
+                        "sub_branches": [
+                            "Definition",
+                            "Law (Angle of incidence = Angle of reflection)",
+                            "Types (Regular vs Irregular)"
+                        ]
+                    },
+                    {
+                        "title": "Images",
+                        "sub_branches": [
+                            "Plane Mirror",
+                            "Upright Image",
+                            "Virtual Image"
+                        ]
+                    },
+                    {
+                        "title": "Shadows",
+                        "sub_branches": [
+                            "Formation (Opaque object blocks light)",
+                            "Characteristics (Always dark)",
+                            "Types (Point source vs Extended source)"
+                        ]
                     }
                 ]
             },
@@ -490,8 +553,10 @@
             "subject": "Science",
             "chapter_title": "Light: Shadows and Reflections",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.248524"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +565,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Light: Shadows and Reflections.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Light: Shadows and Reflections supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a journey through a dense forest where the sunlight first pierces the canopy. This journey illustrates how light travels in straight paths, encountering obstacles (trees), getting blocked (forming shadows), and bouncing off surfaces (reflections). Think of the protagonist, a young scientist, who sets out to understand these interactions. The story could focus on their discovery of how shadows are formed by opaque objects blocking light, and the fascinating mirror world where light can be reflected back in predictable ways. The narrative helps to contextualize abstract physical laws in a tangible, visual manner, making the concepts of optics more engaging and relatable through observation and narrative.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1160,10 @@
             "subject": "Science",
             "chapter_title": "Light: Shadows and Reflections",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.248578"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1175,70 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu111_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Light: Shadows and Reflections'?",
+                        "quiz_id": "q111_01",
+                        "question": "Define the term 'light' and state one property of how light travels.",
                         "options": [
-                            "Light: Shadows and 11 Reflections In the Western Ghat region of Maharashtra, Keshav spends part of his summer vacation at his friend Jatin’s grandparents’ village.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Light is a form of matter that travels slowly.",
+                            "Light travels in a straight line.",
+                            "Light is produced only by lamps.",
+                            "Light can be blocked by any surface."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Light: Shadows and 11 Reflections In the Western Ghat region of Maharashtra, Keshav spends part of his summer vacation at his friend Jatin’s grandparents’ village.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu111_c01"
+                        "answer": "Light travels in a straight line."
                     },
                     {
-                        "id": "gecu111_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Light: Shadows and Reflections'?",
+                        "quiz_id": "q111_02",
+                        "question": "Name two examples of sources of light.",
                         "options": [
-                            "Having lived in a big city, he ﬁnds the forests, fresh air, sounds of gushing streams, and chirping birds a novel experience.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Moon and stars",
+                            "Water and air",
+                            "Sun and electric bulb",
+                            "Books and trees"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Having lived in a big city, he ﬁnds the forests, fresh air, sounds of gushing streams, and chirping birds a novel experience.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu111_c01"
+                        "answer": "Sun and electric bulb."
                     },
                     {
-                        "id": "gecu111_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Light: Shadows and Reflections'?",
+                        "quiz_id": "q111_03",
+                        "question": "In the Law of Reflection, if the angle of incidence is 30 degrees, what is the angle of reflection?",
                         "options": [
-                            "However, for Keshav, the most fascinating sight is the dance of hundreds of ﬁreﬂies at night, ﬂashing their lights in a wonderful performance.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "60 degrees",
+                            "90 degrees",
+                            "30 degrees",
+                            "0 degrees"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "However, for Keshav, the most fascinating sight is the dance of hundreds of ﬁreﬂies at night, ﬂashing their lights in a wonderful performance.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu111_c01"
+                        "answer": "30 degrees"
                     },
                     {
-                        "id": "gecu111_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Light: Shadows and Reflections'?",
+                        "quiz_id": "q111_04",
+                        "question": "Differentiate between a regular and an irregular reflecting surface with one example each.",
                         "options": [
-                            "Jatin’s grandparents explain that ﬁreﬂies are seasonal insects and they use light to communicate.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Regular surfaces are rough (paper), irregular surfaces are smooth (mirror).",
+                            "Regular surfaces are smooth (mirror), irregular surfaces are rough (paper).",
+                            "Both surfaces reflect light equally.",
+                            "Irregular surfaces are always used for shadows."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Jatin’s grandparents explain that ﬁreﬂies are seasonal insects and they use light to communicate.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu111_c01"
+                        "answer": "Regular surfaces are smooth (mirror), irregular surfaces are rough (paper)."
                     },
                     {
-                        "id": "gecu111_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Light: Shadows and Reflections'?",
+                        "quiz_id": "q111_05",
+                        "question": "What kind of image does a plane mirror form?",
                         "options": [
-                            "Unfortunately, Keshav also learns the number of ﬁreﬂies is decreasing due to light pollution, reduced forest cover, and excessive tourism.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Real and inverted",
+                            "Virtual and upright",
+                            "Real and upright",
+                            "Virtual and same size"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Unfortunately, Keshav also learns the number of ﬁreﬂies is decreasing due to light pollution, reduced forest cover, and excessive tourism.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu111_c01"
+                        "answer": "Virtual and upright"
                     },
                     {
-                        "id": "gecu111_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Light: Shadows and Reflections'?",
+                        "quiz_id": "q111_06",
+                        "question": "What is a shadow formed by?",
                         "options": [
-                            "At the end of their vacation, Keshav and Jatin board an evening bus back to their city.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "A transparent object",
+                            "An opaque object blocking light",
+                            "A mirror",
+                            "A light source"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "At the end of their vacation, Keshav and Jatin board an evening bus back to their city.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu111_c01"
-                    },
-                    {
-                        "id": "gecu111_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Light: Shadows and Reflections'?",
-                        "options": [
-                            "As the bus winds through the hilly roads, Keshav watches the moonlit landscape and the beams from the headlights of passing vehicles ﬂashing by.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "As the bus winds through the hilly roads, Keshav watches the moonlit landscape and the beams from the headlights of passing vehicles ﬂashing by.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu111_c01"
-                    },
-                    {
-                        "id": "gecu111_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Light: Shadows and Reflections'?",
-                        "options": [
-                            "He is reminded of the many poems and songs about moonlight, and wonders — does the Moon actually produce its own light?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "He is reminded of the many poems and songs about moonlight, and wonders — does the Moon actually produce its own light?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu111_c01"
+                        "answer": "An opaque object blocking light."
                     }
                 ]
             },
@@ -1715,8 +1692,10 @@
             "subject": "Science",
             "chapter_title": "Light: Shadows and Reflections",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.248515"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1704,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Light: Shadows and Reflections' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Light: Shadows and 11 Reflections In the Western Ghat region of Maharashtra, Keshav spends part of his summer vacation at his friend Jatin’s grandparents’ village.",
-                    "Having lived in a big city, he ﬁnds the forests, fresh air, sounds of gushing streams, and chirping birds a novel experience.",
-                    "However, for Keshav, the most fascinating sight is the dance of hundreds of ﬁreﬂies at night, ﬂashing their lights in a wonderful performance.",
-                    "Jatin’s grandparents explain that ﬁreﬂies are seasonal insects and they use light to communicate.",
-                    "Unfortunately, Keshav also learns the number of ﬁreﬂies is decreasing due to light pollution, reduced forest cover, and excessive tourism.",
-                    "At the end of their vacation, Keshav and Jatin board an evening bus back to their city.",
-                    "As the bus winds through the hilly roads, Keshav watches the moonlit landscape and the beams from the headlights of passing vehicles ﬂashing by."
-                ]
-            },
+            "content": "This chapter serves as an introductory guide to the world of optics. It covers the origins and behavior of light, emphasizing that it travels in straight lines. Key topics include the formation of shadows, the difference between types of reflection, and the basic principles of image formation by mirrors. By understanding these interactions, we gain a fundamental understanding of how light shapes our perception of the environment, bridging the gap between the visible world and the principles of physics.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1754,10 @@
             "subject": "Science",
             "chapter_title": "Light: Shadows and Reflections",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.248602"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1769,29 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu111_fc01",
-                        "front": "What should you remember from Light: Shadows and Reflections?",
-                        "back": "Light: Shadows and 11 Reflections In the Western Ghat region of Maharashtra, Keshav spends part of his summer vacation at his friend Jatin’s grandparents’ village.",
-                        "concept_id": "gecu111_c01"
+                        "term": "Reflection",
+                        "definition": "The phenomenon of light bouncing back when it strikes a surface.",
+                        "back": "Angle of incidence = Angle of reflection."
                     },
                     {
-                        "id": "gecu111_fc02",
-                        "front": "What should you remember from Light: Shadows and Reflections?",
-                        "back": "Having lived in a big city, he ﬁnds the forests, fresh air, sounds of gushing streams, and chirping birds a novel experience.",
-                        "concept_id": "gecu111_c01"
+                        "term": "Plane Mirror",
+                        "definition": "A smooth, flat surface that produces virtual, upright images.",
+                        "back": "Produces virtual and upright images."
                     },
                     {
-                        "id": "gecu111_fc03",
-                        "front": "What should you remember from Light: Shadows and Reflections?",
-                        "back": "However, for Keshav, the most fascinating sight is the dance of hundreds of ﬁreﬂies at night, ﬂashing their lights in a wonderful performance.",
-                        "concept_id": "gecu111_c01"
+                        "term": "Opaque Object",
+                        "definition": "Any object that does not allow light to pass through it (used to form shadows).",
+                        "back": "Blocks the path of light."
                     },
                     {
-                        "id": "gecu111_fc04",
-                        "front": "What should you remember from Light: Shadows and Reflections?",
-                        "back": "Jatin’s grandparents explain that ﬁreﬂies are seasonal insects and they use light to communicate.",
-                        "concept_id": "gecu111_c01"
+                        "term": "Shadow",
+                        "definition": "A dark area created when light is blocked by an opaque object.",
+                        "back": "Depends on light source and object."
                     },
                     {
-                        "id": "gecu111_fc05",
-                        "front": "What should you remember from Light: Shadows and Reflections?",
-                        "back": "Unfortunately, Keshav also learns the number of ﬁreﬂies is decreasing due to light pollution, reduced forest cover, and excessive tourism.",
-                        "concept_id": "gecu111_c01"
-                    },
-                    {
-                        "id": "gecu111_fc06",
-                        "front": "What should you remember from Light: Shadows and Reflections?",
-                        "back": "At the end of their vacation, Keshav and Jatin board an evening bus back to their city.",
-                        "concept_id": "gecu111_c01"
-                    },
-                    {
-                        "id": "gecu111_fc07",
-                        "front": "What should you remember from Light: Shadows and Reflections?",
-                        "back": "As the bus winds through the hilly roads, Keshav watches the moonlit landscape and the beams from the headlights of passing vehicles ﬂashing by.",
-                        "concept_id": "gecu111_c01"
-                    },
-                    {
-                        "id": "gecu111_fc08",
-                        "front": "What should you remember from Light: Shadows and Reflections?",
-                        "back": "He is reminded of the many poems and songs about moonlight, and wonders — does the Moon actually produce its own light?",
-                        "concept_id": "gecu111_c01"
+                        "term": "Specular Reflection",
+                        "definition": "Reflection from smooth/polished surfaces (e.g., mirror).",
+                        "back": "Light reflects parallel to each other."
                     }
                 ]
             },

@@ -178,8 +178,10 @@
             "subject": "Mathematics",
             "chapter_title": "Animal Jumps",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.243801"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +190,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Animal Jumps'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Animal Jumps and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "Numbers put in this box get multiplied by a number and come out.",
-                            "(a) Can you guess the multiplier if you see the 4 numbers coming out of the box?",
-                            "(b) Is there more than one possible multiplier?",
-                            "(c) What numbers might have been put inside the box?"
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Animal Jumps' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "This chapter introduces students to the concept of jumping and related mathematical concepts, often involving patterns, averages, and logic. It might cover counting jumps, calculating distances, or solving simple word problems related to animal movement. The focus is on applying basic arithmetic to real-world scenarios.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +248,10 @@
             "subject": "Mathematics",
             "chapter_title": "Animal Jumps",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.243838"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +263,29 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "eemm113_concept_01",
-                        "name": "Animal Jumps",
-                        "definition": "Central learning focus developed by the chapter 'Animal Jumps'.",
-                        "evidence": "Numbers put in this box get multiplied by a number and come out."
+                        "concept_id": "C113_1",
+                        "concept_name": "Understanding the Topic",
+                        "description": "Introduction to the chapter focusing on patterns related to animal jumps. Identifying movement and counting in numerical sequences."
                     },
                     {
-                        "id": "eemm113_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "(a) Can you guess the multiplier if you see the 4 numbers coming out of the box?"
+                        "concept_id": "C113_2",
+                        "concept_name": "Pattern Recognition in Jumps",
+                        "description": "Analyzing and extrapolating mathematical patterns derived from the frequency or distance of animal jumps."
                     },
                     {
-                        "id": "eemm113_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "(b) Is there more than one possible multiplier?"
+                        "concept_id": "C113_3",
+                        "concept_name": "Addition and Subtraction in Context",
+                        "description": "Applying basic arithmetic operations (addition and subtraction) to solve problems involving cumulative jumps or calculating the number of jumps remaining."
+                    },
+                    {
+                        "concept_id": "C113_4",
+                        "concept_name": "Visual Representation of Patterns",
+                        "description": "Representing the sequence of jumps using visual models like pictographs or simple bar charts."
+                    },
+                    {
+                        "concept_id": "C113_5",
+                        "concept_name": "Logical Reasoning",
+                        "description": "Solving word problems that require logical reasoning to determine the next term or the total number of actions/jumps."
                     }
                 ]
             },
@@ -350,8 +304,10 @@
             "subject": "Mathematics",
             "chapter_title": "Animal Jumps",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.243855"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -385,6 +341,41 @@
                         "from": "eemm113_concept_02",
                         "to": "eemm113_concept_03",
                         "relation": "applied_through"
+                    }
+                ],
+                "central_node": "chapter_113_Animal_Jumps",
+                "branches": [
+                    {
+                        "topic": "Animal Jumps (Counting)",
+                        "sub_topics": [
+                            "Basic counting",
+                            "Identifying sequences",
+                            "Finding the next term"
+                        ]
+                    },
+                    {
+                        "topic": "Patterns",
+                        "sub_topics": [
+                            "Adding a constant",
+                            "Subtracting",
+                            "Multiplication (if applicable)"
+                        ]
+                    },
+                    {
+                        "topic": "Arithmetic Operations",
+                        "sub_topics": [
+                            "Addition (Total distance)",
+                            "Subtraction (Remaining jumps)",
+                            "Comparison"
+                        ]
+                    },
+                    {
+                        "topic": "Problem Solving",
+                        "sub_topics": [
+                            "Word problems",
+                            "Step-by-step solution",
+                            "Drawing models"
+                        ]
                     }
                 ]
             },
@@ -1060,8 +1051,10 @@
             "subject": "Mathematics",
             "chapter_title": "Animal Jumps",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.243829"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1066,46 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm113_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Animal Jumps'?",
+                        "quiz_id": "Q113_1",
+                        "question_number": 1,
+                        "question_type": "Multiple Choice",
+                        "question_text": "If a rabbit jumps 3 times, 5 times, 7 times, what is the next term in the sequence of jumps?",
                         "options": [
-                            "Numbers put in this box get multiplied by a number and come out.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "9",
+                            "10",
+                            "11",
+                            "12"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Numbers put in this box get multiplied by a number and come out.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm113_concept_01"
+                        "answer": "11",
+                        "difficulty": "Easy"
                     },
                     {
-                        "id": "eemm113_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Animal Jumps'?",
+                        "quiz_id": "Q113_2",
+                        "question_number": 2,
+                        "question_type": "Calculation",
+                        "question_text": "A monkey jumps 8 meters in the first jump and 10 meters in the second jump. How many meters total has the monkey jumped?",
                         "options": [
-                            "(a) Can you guess the multiplier if you see the 4 numbers coming out of the box?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "16 meters",
+                            "18 meters",
+                            "12 meters",
+                            "20 meters"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "(a) Can you guess the multiplier if you see the 4 numbers coming out of the box?",
-                        "difficulty": "easy",
-                        "concept_id": "eemm113_concept_01"
+                        "answer": "18 meters",
+                        "difficulty": "Medium"
                     },
                     {
-                        "id": "eemm113_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Animal Jumps'?",
+                        "quiz_id": "Q113_3",
+                        "question_number": 3,
+                        "question_type": "Word Problem",
+                        "question_text": "A frog jumps 4 units, then 6 units. How many units does it need to jump next to continue the pattern?",
                         "options": [
-                            "(b) Is there more than one possible multiplier?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "8",
+                            "10",
+                            "11",
+                            "12"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "(b) Is there more than one possible multiplier?",
-                        "difficulty": "medium",
-                        "concept_id": "eemm113_concept_01"
-                    },
-                    {
-                        "id": "eemm113_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Animal Jumps'?",
-                        "options": [
-                            "(c) What numbers might have been put inside the box?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "(c) What numbers might have been put inside the box?",
-                        "difficulty": "medium",
-                        "concept_id": "eemm113_concept_01"
-                    },
-                    {
-                        "id": "eemm113_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Animal Jumps'?",
-                        "options": [
-                            "You can also play this game with your friends.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "You can also play this game with your friends.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm113_concept_01"
-                    },
-                    {
-                        "id": "eemm113_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Animal Jumps'?",
-                        "options": [
-                            "The multipliers 1, 2, and 4 that you found above are the factors of the numbers that have come out of the box, that is, 28, 36, 48, and 72.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "The multipliers 1, 2, and 4 that you found above are the factors of the numbers that have come out of the box, that is, 28, 36, 48, and 72.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm113_concept_01"
+                        "answer": "8",
+                        "difficulty": "Medium"
                     }
                 ]
             },
@@ -1689,8 +1628,10 @@
             "subject": "Mathematics",
             "chapter_title": "Animal Jumps",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.243848"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1643,19 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm113_fc01",
-                        "front": "What is a key idea from 'Animal Jumps'?",
-                        "back": "Numbers put in this box get multiplied by a number and come out.",
-                        "concept_id": "eemm113_concept_01"
+                        "id": "F113_1",
+                        "front": "What is the next number in the pattern: 2, 4, 6, 8, ...?",
+                        "back": "10 (The pattern is adding 2 to the previous number)."
                     },
                     {
-                        "id": "eemm113_fc02",
-                        "front": "What is a key idea from 'Animal Jumps'?",
-                        "back": "(a) Can you guess the multiplier if you see the 4 numbers coming out of the box?",
-                        "concept_id": "eemm113_concept_01"
+                        "id": "F113_2",
+                        "front": "If a bird jumps 5 times, how many jumps does it make in total?",
+                        "back": "5 jumps (Total jumps = number of jumps)."
                     },
                     {
-                        "id": "eemm113_fc03",
-                        "front": "What is a key idea from 'Animal Jumps'?",
-                        "back": "(b) Is there more than one possible multiplier?",
-                        "concept_id": "eemm113_concept_01"
-                    },
-                    {
-                        "id": "eemm113_fc04",
-                        "front": "What is a key idea from 'Animal Jumps'?",
-                        "back": "(c) What numbers might have been put inside the box?",
-                        "concept_id": "eemm113_concept_01"
-                    },
-                    {
-                        "id": "eemm113_fc05",
-                        "front": "What is a key idea from 'Animal Jumps'?",
-                        "back": "You can also play this game with your friends.",
-                        "concept_id": "eemm113_concept_01"
-                    },
-                    {
-                        "id": "eemm113_fc06",
-                        "front": "What is a key idea from 'Animal Jumps'?",
-                        "back": "The multipliers 1, 2, and 4 that you found above are the factors of the numbers that have come out of the box, that is, 28, 36, 48, and 72.",
-                        "concept_id": "eemm113_concept_01"
+                        "id": "F113_3",
+                        "front": "Define a pattern in the context of animal jumps.",
+                        "back": "A sequence or rule that dictates the movement (number of jumps or distance jumped) over time."
                     }
                 ]
             },

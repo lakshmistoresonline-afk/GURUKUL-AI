@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "The Story of Indian Farming",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.385003"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for The Story of Indian Farming.",
+                "overview": "Chapter 201, 'The Story of Indian Farming', provides a comprehensive overview of the agrarian history and the socio-economic evolution of agriculture in India. It traces the transition from traditional subsistence farming to modern, industrial-scale agricultural practices.",
                 "source_grounded_key_points": [
                     "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes.",
                     "India and the World: Land and the People (3) Women transplanting rice seedlings.",
@@ -185,8 +187,10 @@
             "subject": "Social Science",
             "chapter_title": "The Story of Indian Farming",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.385060"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of The Story of Indian Farming.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes.",
-                            "India and the World: Land and the People (3) Women transplanting rice seedlings.",
-                            "(5) Separating wheat from the stalk using a threshing machine.",
-                            "What are the main The Big characteristics of Indian Questions agriculture?",
-                            "How can traditional practices and contemporary ones complement each other?"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "In this chapter, students will learn about the history and significance of agriculture in India. The story begins with the earliest agricultural practices, including the Indus Valley Civilization (Mauryan period) where farming was established. The chapter covers the evolution of farming from the early stages (pre-historic times) through different historical periods, focusing on key dynasties and their agricultural innovations. A major focus is placed on understanding how different regions of India developed unique farming systems (such as those in the Ganga valley, the Deccan plateau, and the Himalayan regions) based on their geographical conditions, rainfall patterns, and soil types. The chapter emphasizes the contribution of various farming techniques, tools, and crops, as well as the socio-economic impact of agriculture on Indian society.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Social Science",
             "chapter_title": "The Story of Indian Farming",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.385085"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,16 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gees201_c01",
-                        "name": "The Story of Indian Farming",
-                        "definition": "Central learning focus of The Story of Indian Farming.",
-                        "source_evidence": "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes."
-                    },
-                    {
-                        "id": "gees201_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "India and the World: Land and the People (3) Women transplanting rice seedlings."
-                    },
-                    {
-                        "id": "gees201_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "(5) Separating wheat from the stalk using a threshing machine."
-                    }
+                    "Introduction to Indian Agriculture: Historical background and significance.",
+                    "Pre-historic Farming Practices:",
+                    "Vedic Period Farming:",
+                    "Medieval Indian Agricultural Innovations (Irrigation systems, crop rotation).",
+                    "The Agrarian System of Ancient and Medieval India:",
+                    "Land Ownership Structures (Zamindari, Ryotwari systems).",
+                    "Major Crops and Seasonal Cultivation in different regions of India.",
+                    "Impact of Colonial Policies on Indian Agriculture.",
+                    "Post-Independence Green Revolution and its impact.",
+                    "Modern Agricultural Challenges (Soil degradation, water scarcity, poverty, etc.)."
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +300,10 @@
             "subject": "Social Science",
             "chapter_title": "The Story of Indian Farming",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.385102"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +338,40 @@
                         "to": "gees201_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Indian_Farming_History": {
+                    "Historical_Roots": [
+                        "Pre-historic",
+                        "Vedic Period",
+                        "Medieval Era"
+                    ],
+                    "Key_Systems": [
+                        "Primitive/Communal",
+                        "Zamindari",
+                        "Raiwari"
+                    ],
+                    "Major_Milestone": "Green Revolution (1960s-70s)"
+                },
+                "Factors_of_Change": {
+                    "Internal": [
+                        "Technological Advances",
+                        "Policy Changes (Colonial/Post-Independence)"
+                    ],
+                    "External": [
+                        "Colonial Exploitation",
+                        "Global Market Demand"
+                    ]
+                },
+                "Modern_Challenges": {
+                    "Environmental": [
+                        "Soil Degradation",
+                        "Water Scarcity"
+                    ],
+                    "Socio-Economic": [
+                        "Poverty",
+                        "Migration of Farmers"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +465,10 @@
             "subject": "Social Science",
             "chapter_title": "The Story of Indian Farming",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.385048"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +477,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to The Story of Indian Farming.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from The Story of Indian Farming supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The story begins with the ancient periods, where farming was driven by indigenous practices suited to local conditions. This evolves through various phases marked by the introduction and refinement of new technologies—such as the use of water-lifting devices and specialized crops. A significant part of this chapter focuses on the colonial period, which often led to land reforms and the reorganization of land ownership, fundamentally altering the relationship between farmers and the land. Post-independence, the focus shifted towards food security and agricultural modernization, involving government initiatives, Green Revolution, and the subsequent challenges of market volatility and environmental degradation. It highlights the struggle of the farmer to balance traditional wisdom with modern scientific approaches in an increasingly competitive global market.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1072,10 @@
             "subject": "Social Science",
             "chapter_title": "The Story of Indian Farming",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.385075"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1087,59 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees201_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Story of Indian Farming'?",
+                        "question_number": 1,
+                        "question": "What was the primary economic activity of ancient and medieval India?",
                         "options": [
-                            "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Trade",
+                            "Industry",
+                            "Agriculture",
+                            "Mining"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees201_c01"
+                        "answer": "Agriculture"
                     },
                     {
-                        "id": "gees201_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Story of Indian Farming'?",
+                        "question_number": 2,
+                        "question": "Identify the earliest known form of farming in the Indian subcontinent.",
                         "options": [
-                            "India and the World: Land and the People (3) Women transplanting rice seedlings.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Domestication of animals",
+                            "Brackish water farming",
+                            "Cultivation of rice and wheat",
+                            "Shifting cultivation"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "India and the World: Land and the People (3) Women transplanting rice seedlings.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees201_c01"
+                        "answer": "Shifting cultivation (or early cultivation of rice and wheat)"
                     },
                     {
-                        "id": "gees201_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Story of Indian Farming'?",
+                        "question_number": 3,
+                        "question": "Which system of land revenue collection involved direct settlement and assessment of land revenue by the government?",
                         "options": [
-                            "(5) Separating wheat from the stalk using a threshing machine.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Zamindari System",
+                            "Raiwari System",
+                            "Ryotwari System",
+                            "Permanent Settlement"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "(5) Separating wheat from the stalk using a threshing machine.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees201_c01"
+                        "answer": "Ryotwari System"
                     },
                     {
-                        "id": "gees201_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Story of Indian Farming'?",
+                        "question_number": 4,
+                        "question": "What is the main objective of the Green Revolution?",
                         "options": [
-                            "What are the main The Big characteristics of Indian Questions agriculture?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "To increase industrial output",
+                            "To improve agricultural productivity and achieve food self-sufficiency",
+                            "To establish cotton as a major export",
+                            "To focus only on organic farming"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "What are the main The Big characteristics of Indian Questions agriculture?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees201_c01"
+                        "answer": "To improve agricultural productivity and achieve food self-sufficiency"
                     },
                     {
-                        "id": "gees201_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Story of Indian Farming'?",
+                        "question_number": 5,
+                        "question": "How did the colonial period fundamentally change the nature of Indian agriculture?",
                         "options": [
-                            "How can traditional practices and contemporary ones complement each other?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "It introduced modern machinery and techniques",
+                            "It introduced commercial farming and exploitative land revenue policies",
+                            "It abolished all feudal systems",
+                            "It promoted communal farming"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "How can traditional practices and contemporary ones complement each other?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees201_c01"
-                    },
-                    {
-                        "id": "gees201_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Story of Indian Farming'?",
-                        "options": [
-                            "1 Reprint 2026-27 Chapter 1.indd 1 11/27/2025 12:11:26 PM India’s Agricultural Landscape Farming or agriculture is one of the oldest occupations of humankind.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "1 Reprint 2026-27 Chapter 1.indd 1 11/27/2025 12:11:26 PM India’s Agricultural Landscape Farming or agriculture is one of the oldest occupations of humankind.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees201_c01"
-                    },
-                    {
-                        "id": "gees201_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Story of Indian Farming'?",
-                        "options": [
-                            "It encompasses the preparation of soil, cultivation of plants, rearing of livestock, and, in many cases, the growing of trees as part of a comprehensive farming system.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "It encompasses the preparation of soil, cultivation of plants, rearing of livestock, and, in many cases, the growing of trees as part of a comprehensive farming system.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees201_c01"
-                    },
-                    {
-                        "id": "gees201_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Story of Indian Farming'?",
-                        "options": [
-                            "In some areas, farmers also practice pisciculture (fish rearing) or rear cocoons to extract silk thread.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In some areas, farmers also practice pisciculture (fish rearing) or rear cocoons to extract silk thread.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees201_c01"
+                        "answer": "It introduced commercial farming and exploitative land revenue policies"
                     }
                 ]
             },
@@ -1715,8 +1593,10 @@
             "subject": "Social Science",
             "chapter_title": "The Story of Indian Farming",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.385039"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1605,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The Story of Indian Farming' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes.",
-                    "India and the World: Land and the People (3) Women transplanting rice seedlings.",
-                    "(5) Separating wheat from the stalk using a threshing machine.",
-                    "What are the main The Big characteristics of Indian Questions agriculture?",
-                    "How can traditional practices and contemporary ones complement each other?",
-                    "1 Reprint 2026-27 Chapter 1.indd 1 11/27/2025 12:11:26 PM India’s Agricultural Landscape Farming or agriculture is one of the oldest occupations of humankind.",
-                    "It encompasses the preparation of soil, cultivation of plants, rearing of livestock, and, in many cases, the growing of trees as part of a comprehensive farming system."
-                ]
-            },
+            "content": "This chapter meticulously documents the odyssey of Indian agriculture, from its ancient roots to its complex, modern form. It explores key themes such as the resilience of farmers, the role of government policies, the transformative effects of agricultural technology, and the ongoing tension between sustainable practices and economic demands. Ultimately, 'The Story of Indian Farming' is a narrative of adaptation, innovation, and persistent socio-economic change, essential for understanding the food security and economic fabric of India.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1655,10 @@
             "subject": "Social Science",
             "chapter_title": "The Story of Indian Farming",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.385095"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1670,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees201_fc01",
-                        "front": "What should you remember from The Story of Indian Farming?",
-                        "back": "1 CHAPTER The Story of Indian Farming A farmer who looks after the welfare of his cattle, visits his farms daily, has the knowledge of the seasons, is careful about seeds, and is industrious, is rewarded with harvests of all kinds and never perishes.",
-                        "concept_id": "gees201_c01"
+                        "term": "Vedic Period Farming",
+                        "definition": "Simple subsistence farming, reliance on seasonal rainfall, early introduction of plough and wheel."
                     },
                     {
-                        "id": "gees201_fc02",
-                        "front": "What should you remember from The Story of Indian Farming?",
-                        "back": "India and the World: Land and the People (3) Women transplanting rice seedlings.",
-                        "concept_id": "gees201_c01"
+                        "term": "Zamindari System",
+                        "definition": "A system where landowners (Zamindars) collected revenue directly from the peasants, leading to exploitation."
                     },
                     {
-                        "id": "gees201_fc03",
-                        "front": "What should you remember from The Story of Indian Farming?",
-                        "back": "(5) Separating wheat from the stalk using a threshing machine.",
-                        "concept_id": "gees201_c01"
+                        "term": "Ryotwari System",
+                        "definition": "A land revenue system where the state dealt directly with the cultivators (Ryots) and established a direct relationship."
                     },
                     {
-                        "id": "gees201_fc04",
-                        "front": "What should you remember from The Story of Indian Farming?",
-                        "back": "What are the main The Big characteristics of Indian Questions agriculture?",
-                        "concept_id": "gees201_c01"
+                        "term": "Green Revolution",
+                        "definition": "A period in the 1960s and 1970s focused on increasing agricultural production through the introduction of high-yielding varieties (HYVs), irrigation, and chemical fertilizers."
                     },
                     {
-                        "id": "gees201_fc05",
-                        "front": "What should you remember from The Story of Indian Farming?",
-                        "back": "How can traditional practices and contemporary ones complement each other?",
-                        "concept_id": "gees201_c01"
-                    },
-                    {
-                        "id": "gees201_fc06",
-                        "front": "What should you remember from The Story of Indian Farming?",
-                        "back": "1 Reprint 2026-27 Chapter 1.indd 1 11/27/2025 12:11:26 PM India’s Agricultural Landscape Farming or agriculture is one of the oldest occupations of humankind.",
-                        "concept_id": "gees201_c01"
-                    },
-                    {
-                        "id": "gees201_fc07",
-                        "front": "What should you remember from The Story of Indian Farming?",
-                        "back": "It encompasses the preparation of soil, cultivation of plants, rearing of livestock, and, in many cases, the growing of trees as part of a comprehensive farming system.",
-                        "concept_id": "gees201_c01"
-                    },
-                    {
-                        "id": "gees201_fc08",
-                        "front": "What should you remember from The Story of Indian Farming?",
-                        "back": "In some areas, farmers also practice pisciculture (fish rearing) or rear cocoons to extract silk thread.",
-                        "concept_id": "gees201_c01"
+                        "term": "Shifting Cultivation",
+                        "definition": "The practice of clearing forests for cultivation and moving to new plots when the soil becomes exhausted."
                     }
                 ]
             },

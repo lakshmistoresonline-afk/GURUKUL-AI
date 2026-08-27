@@ -134,8 +134,10 @@
             "subject": "Hindi",
             "chapter_title": "फूल और काँटा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.898446"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for फूल और काँटा.",
+                "overview": "This chapter, 'फूल और काँटा' (Flower and Thorn), is a Hindi text that often serves as a philosophical or moral lesson. It explores the relationship between the beautiful yet delicate (flower) and the challenging or painful (thorn). It typically examines themes of acceptance, growth, the contrast between superficial beauty and inner strength, and the idea that every situation or person brings both joy and hardship.",
                 "source_grounded_key_points": [
                     "3 फूल और काँटा हैं जनम लेते जगह में एक ही, एक ही पौधा उन्हें है पालता।",
                     "प्यार-डूबी िततिलयों का पर कतर, भौंर का है बेध देता श्याम तन।",
@@ -185,8 +187,10 @@
             "subject": "Hindi",
             "chapter_title": "फूल और काँटा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.898485"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of फूल और काँटा.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "3 फूल और काँटा हैं जनम लेते जगह में एक ही, एक ही पौधा उन्हें है पालता।",
-                            "प्यार-डूबी िततिलयों का पर कतर, भौंर का है बेध देता श्याम तन।",
-                            "— अयोध्यािसहं उपाध्याय ‘ह�रऔध’ Reprint 2026-27 Chapter 03.indd 29 04-04-2025 15:07:00 किव से प�रचय ‘उठो लाल, अब आँखें खोलो।",
-                            "पानी लाई ह�,ँ महँु धो लो।’ बचपन में यह प्यारी किवता आपने भी पढ़ी होगी।",
-                            "इस किवता को रचने वाले अयोध्यािसंह उपाध्याय ‘ह�रऔध’ ही ‘फूल और काँटा’ के किव हैं।"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "In this chapter, the teacher introduces the concept of 'Phool aur Kaanta' (Flower and Thorns). The core idea is to differentiate between the beauty (flower) and the pain/difficulty (thorn). The teacher explains that everyone has both good and bad qualities. We discuss how flowers bring joy, scent, and beauty, while thorns can cause hurt or danger. A key takeaway is the idea that you must be careful with what you accept, recognizing both the positive and negative aspects of life. The chapter emphasizes appreciating the good things but also being aware of the challenges.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Hindi",
             "chapter_title": "फूल और काँटा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.898506"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,16 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "ghml103_c01",
-                        "name": "फूल और काँटा",
-                        "definition": "Central learning focus of फूल और काँटा.",
-                        "source_evidence": "3 फूल और काँटा हैं जनम लेते जगह में एक ही, एक ही पौधा उन्हें है पालता।"
+                        "topic": "पाठ की जानकारी",
+                        "details": "यह अध्याय फूलों और काँटों के बीच के संबंध, प्रकृति के विभिन्न रूपों और उनके महत्व का परिचय देता है। इसमें शायद यह बताया गया है कि कैसे अच्छे और बुरे दोनों प्रकार के पौधे जीवन में महत्वपूर्ण भूमिका निभाते हैं।"
                     },
                     {
-                        "id": "ghml103_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "प्यार-डूबी िततिलयों का पर कतर, भौंर का है बेध देता श्याम तन।"
+                        "topic": "विषय वस्तु का सार",
+                        "details": "अध्याय में फूल (सौंदर्य, प्रेम, आनंद के प्रतीक) और काँटा (दर्द, सुरक्षा, संघर्ष के प्रतीक) के बीच विरोधाभास और संबंध का वर्णन है। यह पाठ सिखाता है कि जीवन में हर चीज़ में अच्छाई और बुराई का संतुलन होता है।"
                     },
                     {
-                        "id": "ghml103_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "— अयोध्यािसहं उपाध्याय ‘ह�रऔध’ Reprint 2026-27 Chapter 03.indd 29 04-04-2025 15:07:00 किव से प�रचय ‘उठो लाल, अब आँखें खोलो।"
+                        "topic": "पात्र और पात्र-चित्रण",
+                        "details": "यदि इस पाठ में कोई विशिष्ट पात्र हैं, तो उनका वर्णन 'फूल' या 'काँटे' के रूपक में किया गया होगा। पात्रों के माध्यम से नैतिक शिक्षा दी जाती है।"
                     }
                 ]
             },
@@ -360,8 +302,10 @@
             "subject": "Hindi",
             "chapter_title": "फूल और काँटा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.898521"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +339,36 @@
                         "from": "ghml103_c02",
                         "to": "ghml103_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_theme": "फूल और काँटा (प्रकृति का द्वंद्व)",
+                "branches": [
+                    {
+                        "node": "फूल",
+                        "sub_nodes": [
+                            "सौंदर्य",
+                            "आनंद",
+                            "प्रेम का प्रतीक",
+                            "सकारात्मकता"
+                        ]
+                    },
+                    {
+                        "node": "काँटा",
+                        "sub_nodes": [
+                            "संघर्ष",
+                            "दर्द",
+                            "सुरक्षा कवच",
+                            "कठोरता"
+                        ]
+                    },
+                    {
+                        "node": "संबंध",
+                        "sub_nodes": [
+                            "संतुलन (Balance)",
+                            "जीवन चक्र",
+                            "द्वंद्व का महत्व",
+                            "सीख"
+                        ]
                     }
                 ]
             },
@@ -490,8 +464,10 @@
             "subject": "Hindi",
             "chapter_title": "फूल और काँटा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.898475"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +476,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to फूल और काँटा.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from फूल और काँटा supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The story 'Phool aur Kaanta' is generally a narrative (or a fable) that uses the imagery of a flower to represent happiness or beauty, and a thorn to represent pain, struggle, or reality. The protagonist usually learns that true beauty and strength are not found in avoiding pain, but in how one handles it. It teaches the student that even things that seem difficult or unpleasant (like the thorn) have a purpose, often to enrich the whole experience. The narrative highlights the duality of life: the pleasant moments are precious, and the hardships are necessary components of growth. The core message is one of acceptance and the realization that both the flower and the thorn are inseparable parts of the same whole existence.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1071,10 @@
             "subject": "Hindi",
             "chapter_title": "फूल और काँटा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.898498"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1086,47 @@
             "content": {
                 "items": [
                     {
-                        "id": "ghml103_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'फूल और काँटा'?",
+                        "question_type": "बहुविकल्पीय प्रश्न (MCQ)",
+                        "question": "फूल के किस गुण का प्रतीक माना जाता है?",
                         "options": [
-                            "3 फूल और काँटा हैं जनम लेते जगह में एक ही, एक ही पौधा उन्हें है पालता।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            {
+                                "text": "क्रोध",
+                                "index": 1
+                            },
+                            {
+                                "text": "सौंदर्य",
+                                "index": 0
+                            },
+                            {
+                                "text": "दुख",
+                                "index": 2
+                            },
+                            {
+                                "text": "संघर्ष",
+                                "index": 3
+                            }
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "3 फूल और काँटा हैं जनम लेते जगह में एक ही, एक ही पौधा उन्हें है पालता।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml103_c01"
+                        "answer": "सौंदर्य"
                     },
                     {
-                        "id": "ghml103_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'फूल और काँटा'?",
+                        "question_type": "सही/गलत",
+                        "question": "काँटे हमेशा खतरनाक होते हैं।",
                         "options": [
-                            "प्यार-डूबी िततिलयों का पर कतर, भौंर का है बेध देता श्याम तन।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            {
+                                "text": "सही",
+                                "index": 0
+                            },
+                            {
+                                "text": "गलत",
+                                "index": 1
+                            }
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "प्यार-डूबी िततिलयों का पर कतर, भौंर का है बेध देता श्याम तन।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml103_c01"
+                        "answer": "गलत"
                     },
                     {
-                        "id": "ghml103_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'फूल और काँटा'?",
-                        "options": [
-                            "— अयोध्यािसहं उपाध्याय ‘ह�रऔध’ Reprint 2026-27 Chapter 03.indd 29 04-04-2025 15:07:00 किव से प�रचय ‘उठो लाल, अब आँखें खोलो।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "— अयोध्यािसहं उपाध्याय ‘ह�रऔध’ Reprint 2026-27 Chapter 03.indd 29 04-04-2025 15:07:00 किव से प�रचय ‘उठो लाल, अब आँखें खोलो।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'फूल और काँटा'?",
-                        "options": [
-                            "पानी लाई ह�,ँ महँु धो लो।’ बचपन में यह प्यारी किवता आपने भी पढ़ी होगी।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "पानी लाई ह�,ँ महँु धो लो।’ बचपन में यह प्यारी किवता आपने भी पढ़ी होगी।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'फूल और काँटा'?",
-                        "options": [
-                            "इस किवता को रचने वाले अयोध्यािसंह उपाध्याय ‘ह�रऔध’ ही ‘फूल और काँटा’ के किव हैं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "इस किवता को रचने वाले अयोध्यािसंह उपाध्याय ‘ह�रऔध’ ही ‘फूल और काँटा’ के किव हैं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'फूल और काँटा'?",
-                        "options": [
-                            "ह�रऔध जी क� चिचर्त काव्य-कृ ित िप्रयप्रवास को खड़ी बोली का पहला महाकाव्य माना जाता है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "ह�रऔध जी क� चिचर्त काव्य-कृ ित िप्रयप्रवास को खड़ी बोली का पहला महाकाव्य माना जाता है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'फूल और काँटा'?",
-                        "options": [
-                            "बच्चों के िलए उनके अनेक किवता-संकलन प्रकािशत हैं िजनमें चद्रं -िखलौना और खेल-तमाशा उल्लेखनीय हैं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "बच्चों के िलए उनके अनेक किवता-संकलन प्रकािशत हैं िजनमें चद्रं -िखलौना और खेल-तमाशा उल्लेखनीय हैं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'फूल और काँटा'?",
-                        "options": [
-                            "मेरी समझ से (क) किवता के आधार पर नीचे िदए गए प्रश्नों का सटीक उ�र कौन-सा है?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "मेरी समझ से (क) किवता के आधार पर नीचे िदए गए प्रश्नों का सटीक उ�र कौन-सा है?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml103_c01"
+                        "question_type": "रिक्त स्थान भरें",
+                        "question": "जीवन में फूल और काँटे के संबंध से हमें _________ (सीख) मिलती है।",
+                        "answer": "जीवन में संतुलन/अच्छाई और बुराई के बीच संबंध"
                     }
                 ]
             },
@@ -1715,8 +1580,10 @@
             "subject": "Hindi",
             "chapter_title": "फूल और काँटा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.898466"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1592,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'फूल और काँटा' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "3 फूल और काँटा हैं जनम लेते जगह में एक ही, एक ही पौधा उन्हें है पालता।",
-                    "प्यार-डूबी िततिलयों का पर कतर, भौंर का है बेध देता श्याम तन।",
-                    "— अयोध्यािसहं उपाध्याय ‘ह�रऔध’ Reprint 2026-27 Chapter 03.indd 29 04-04-2025 15:07:00 किव से प�रचय ‘उठो लाल, अब आँखें खोलो।",
-                    "पानी लाई ह�,ँ महँु धो लो।’ बचपन में यह प्यारी किवता आपने भी पढ़ी होगी।",
-                    "इस किवता को रचने वाले अयोध्यािसंह उपाध्याय ‘ह�रऔध’ ही ‘फूल और काँटा’ के किव हैं।",
-                    "ह�रऔध जी क� चिचर्त काव्य-कृ ित िप्रयप्रवास को खड़ी बोली का पहला महाकाव्य माना जाता है।",
-                    "बच्चों के िलए उनके अनेक किवता-संकलन प्रकािशत हैं िजनमें चद्रं -िखलौना और खेल-तमाशा उल्लेखनीय हैं।"
-                ]
-            },
+            "content": " 'Phool aur Kaanta' is a reflective piece on the dual nature of life. It contrasts the delicate, beautiful aspect of existence (the flower) with the harsh, challenging aspect (the thorn). The story explains that true maturity and wisdom come from accepting both. It emphasizes the idea that pain is not something to be entirely rejected, but rather a necessary ingredient for appreciating beauty and achieving strength. In essence, the chapter summarizes the philosophy that life is a tapestry woven with both joy and sorrow, and to truly understand life, one must learn to value both the bloom and the sting.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1642,10 @@
             "subject": "Hindi",
             "chapter_title": "फूल और काँटा",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.898514"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1657,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ghml103_fc01",
-                        "front": "What should you remember from फूल और काँटा?",
-                        "back": "3 फूल और काँटा हैं जनम लेते जगह में एक ही, एक ही पौधा उन्हें है पालता।",
-                        "concept_id": "ghml103_c01"
+                        "term": "फूल",
+                        "definition": "सौंदर्य, प्रेम, खुशी और सकारात्मकता का प्रतीक।"
                     },
                     {
-                        "id": "ghml103_fc02",
-                        "front": "What should you remember from फूल और काँटा?",
-                        "back": "प्यार-डूबी िततिलयों का पर कतर, भौंर का है बेध देता श्याम तन।",
-                        "concept_id": "ghml103_c01"
+                        "term": "काँटा",
+                        "definition": "दर्द, संघर्ष, सुरक्षा और कठोरता का प्रतीक।"
                     },
                     {
-                        "id": "ghml103_fc03",
-                        "front": "What should you remember from फूल और काँटा?",
-                        "back": "— अयोध्यािसहं उपाध्याय ‘ह�रऔध’ Reprint 2026-27 Chapter 03.indd 29 04-04-2025 15:07:00 किव से प�रचय ‘उठो लाल, अब आँखें खोलो।",
-                        "concept_id": "ghml103_c01"
+                        "term": "विरोधाभास",
+                        "definition": "दो विपरीत विचारों या गुणों का एक साथ मौजूद होना।"
                     },
                     {
-                        "id": "ghml103_fc04",
-                        "front": "What should you remember from फूल और काँटा?",
-                        "back": "पानी लाई ह�,ँ महँु धो लो।’ बचपन में यह प्यारी किवता आपने भी पढ़ी होगी।",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_fc05",
-                        "front": "What should you remember from फूल और काँटा?",
-                        "back": "इस किवता को रचने वाले अयोध्यािसंह उपाध्याय ‘ह�रऔध’ ही ‘फूल और काँटा’ के किव हैं।",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_fc06",
-                        "front": "What should you remember from फूल और काँटा?",
-                        "back": "ह�रऔध जी क� चिचर्त काव्य-कृ ित िप्रयप्रवास को खड़ी बोली का पहला महाकाव्य माना जाता है।",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_fc07",
-                        "front": "What should you remember from फूल और काँटा?",
-                        "back": "बच्चों के िलए उनके अनेक किवता-संकलन प्रकािशत हैं िजनमें चद्रं -िखलौना और खेल-तमाशा उल्लेखनीय हैं।",
-                        "concept_id": "ghml103_c01"
-                    },
-                    {
-                        "id": "ghml103_fc08",
-                        "front": "What should you remember from फूल और काँटा?",
-                        "back": "मेरी समझ से (क) किवता के आधार पर नीचे िदए गए प्रश्नों का सटीक उ�र कौन-सा है?",
-                        "concept_id": "ghml103_c01"
+                        "term": "वाक्यांश",
+                        "definition": "पाठ से महत्वपूर्ण शब्द या मुहावरे जो गहरे अर्थ को व्यक्त करते हैं।"
                     }
                 ]
             },

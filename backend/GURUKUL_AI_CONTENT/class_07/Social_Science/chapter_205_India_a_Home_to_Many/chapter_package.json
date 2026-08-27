@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "India, a Home to Many",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.426739"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for India, a Home to Many.",
+                "overview": "Chapter 205, 'India: A Home to Many,' explores the socio-economic diversity, cultural richness, and vast population of the world's largest democracy. It highlights how India's multifaceted society is shaped by diverse religions, languages, and traditions, creating a unique tapestry of human existence.",
                 "source_grounded_key_points": [
                     "5 CHAPTER India, a Home to Many ayam nijah paro veti gaṇanā laghucetasām udāracharitānām tu vasudhaiva kutumbakam “This is mine, that is not mine,” so think the narrow-minded.",
                     "No one is a stranger, my child; the whole world is your own.",
@@ -185,8 +187,10 @@
             "subject": "Social Science",
             "chapter_title": "India, a Home to Many",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.426788"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of India, a Home to Many.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "5 CHAPTER India, a Home to Many ayam nijah paro veti gaṇanā laghucetasām udāracharitānām tu vasudhaiva kutumbakam “This is mine, that is not mine,” so think the narrow-minded.",
-                            "No one is a stranger, my child; the whole world is your own.",
-                            "— Last message of Sri Sarada Devi (spiritual consort of Sri Ramakrishna Paramahamsa) The Big 1.",
-                            "What has made India a home for people from different parts Questions of the world?",
-                            "Why did oppressed or persecuted people from other countries seek refuge in India?"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 205, 'India: A Home to Many', serves as an extensive overview of the diverse socio-cultural fabric of India. The teacher's explanation would typically delve into various aspects including India's immense cultural pluralism, spanning religions, languages, food, festivals, and traditions. It emphasizes how this diversity is not a source of conflict but rather a unique strength that enriches the national identity. Key themes covered include the concept of 'Unity in Diversity', the role of regional identities, the historical syncretism that has shaped Indian civilization, and the democratic way in which different communities coexist. The explanation highlights the profound impact of ancient civilizations like the Indus Valley and Vedic cultures on contemporary Indian society, underscoring the deep historical roots of its culture.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Social Science",
             "chapter_title": "India, a Home to Many",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.426815"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,61 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gees205_c01",
-                        "name": "India, a Home to Many",
-                        "definition": "Central learning focus of India, a Home to Many.",
-                        "source_evidence": "5 CHAPTER India, a Home to Many ayam nijah paro veti gaṇanā laghucetasām udāracharitānām tu vasudhaiva kutumbakam “This is mine, that is not mine,” so think the narrow-minded."
+                        "concept_id": "C07_205_01",
+                        "name": "India as a homeland for diverse communities",
+                        "description": "India is a country with a wide variety of ethnic, linguistic, religious, and cultural groups. This diversity is the defining feature of the country.",
+                        "keywords": [
+                            "Unity in diversity",
+                            "Diversity",
+                            "Heterogeneity",
+                            "Multiculturalism"
+                        ]
                     },
                     {
-                        "id": "gees205_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "No one is a stranger, my child; the whole world is your own."
+                        "concept_id": "C07_205_02",
+                        "name": "Linguistic diversity in India",
+                        "description": "India has hundreds of languages, making it linguistically diverse. Major languages include Hindi, English, Bengali, Tamil, and countless others, both in India and internationally.",
+                        "keywords": [
+                            "Multilingualism",
+                            "Languages",
+                            "Regional languages",
+                            "Indian languages"
+                        ]
                     },
                     {
-                        "id": "gees205_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "— Last message of Sri Sarada Devi (spiritual consort of Sri Ramakrishna Paramahamsa) The Big 1."
+                        "concept_id": "C07_205_03",
+                        "name": "Religious harmony and tolerance",
+                        "description": "The Indian constitution promotes religious harmony and tolerance, ensuring that all religious communities can practice their faiths peacefully. India has a rich history of interfaith dialogue.",
+                        "keywords": [
+                            "Tolerance",
+                            "Religious harmony",
+                            "Secularism",
+                            "Interfaith relations",
+                            "Syncretism"
+                        ]
+                    },
+                    {
+                        "concept_id": "C07_205_04",
+                        "name": "Cultural rich heritage",
+                        "description": "India possesses a vast and ancient cultural heritage, encompassing traditional art, music, dance, literature, festivals, and a unique way of life that varies across different regions.",
+                        "keywords": [
+                            "Culture",
+                            "Heritage",
+                            "Tradition",
+                            "Art and music",
+                            "Festivals"
+                        ]
+                    },
+                    {
+                        "concept_id": "C07_205_05",
+                        "name": "Regional identities",
+                        "description": "People in different regions have distinct regional identities based on their geography, local traditions, and customs, such as the distinct cuisines and languages found in the North-East, South, and West.",
+                        "keywords": [
+                            "Regional identity",
+                            "Local customs",
+                            "Regional traditions",
+                            "Geographical influence"
+                        ]
                     }
                 ]
             },
@@ -360,8 +347,10 @@
             "subject": "Social Science",
             "chapter_title": "India, a Home to Many",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.426834"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +384,42 @@
                         "from": "gees205_c02",
                         "to": "gees205_c03",
                         "relation": "enables"
+                    }
+                ],
+                "Central_Idea": "India as a Home to Many",
+                "Branches": [
+                    {
+                        "Branch_Name": "Diversity (Ethno-Religious)",
+                        "Sub_Branches": [
+                            "Many ethnic groups",
+                            "Multiple religions",
+                            "Political and social groups"
+                        ]
+                    },
+                    {
+                        "Branch_Name": "Linguistic Landscape",
+                        "Sub_Branches": [
+                            "Hundreds of languages",
+                            "Official languages (Hindi, English, etc.)",
+                            "Evolution of regional languages"
+                        ]
+                    },
+                    {
+                        "Branch_Name": "Cultural Richness",
+                        "Sub_Branches": [
+                            "Traditional festivals",
+                            "Art forms (Dance, Music)",
+                            "Literature",
+                            "Festivals unique to regions"
+                        ]
+                    },
+                    {
+                        "Branch_Name": "Unity and Harmony",
+                        "Sub_Branches": [
+                            "Promoting tolerance",
+                            "Constitution's role",
+                            "Interfaith harmony"
+                        ]
                     }
                 ]
             },
@@ -490,8 +515,10 @@
             "subject": "Social Science",
             "chapter_title": "India, a Home to Many",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.426777"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +527,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to India, a Home to Many.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from India, a Home to Many supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The chapter typically delves into the complexities of India's social fabric—examining how religious pluralism is managed, the impact of the caste system (historical and contemporary), the role of language in national integration, and the contributions of various communities to the nation's intellectual and cultural life. It often uses case studies to illustrate how different regions, from the Himalayas to the coastal areas, exhibit distinct socio-cultural patterns while remaining united by a common democratic ethos.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1122,10 @@
             "subject": "Social Science",
             "chapter_title": "India, a Home to Many",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.426806"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1137,33 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees205_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India, a Home to Many'?",
+                        "question_id": "Q07_205_01",
+                        "question": "Why is India often referred to as a 'home to many'? Provide examples from the concepts discussed.",
+                        "type": "Multiple Choice",
                         "options": [
-                            "5 CHAPTER India, a Home to Many ayam nijah paro veti gaṇanā laghucetasām udāracharitānām tu vasudhaiva kutumbakam “This is mine, that is not mine,” so think the narrow-minded.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Due to its strong central control over all groups.",
+                            "Due to its incredible diversity in ethnicity, religion, and language.",
+                            "Due to a single dominant culture.",
+                            "Due to its extreme lack of cultural heritage."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "5 CHAPTER India, a Home to Many ayam nijah paro veti gaṇanā laghucetasām udāracharitānām tu vasudhaiva kutumbakam “This is mine, that is not mine,” so think the narrow-minded.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees205_c01"
+                        "answer": "Due to its incredible diversity in ethnicity, religion, and language."
                     },
                     {
-                        "id": "gees205_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India, a Home to Many'?",
-                        "options": [
-                            "No one is a stranger, my child; the whole world is your own.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "No one is a stranger, my child; the whole world is your own.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees205_c01"
+                        "question_id": "Q07_205_02",
+                        "question": "What is the answer?",
+                        "type": "Short Answer",
+                        "answer": "Multilingualism."
                     },
                     {
-                        "id": "gees205_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India, a Home to Many'?",
-                        "options": [
-                            "— Last message of Sri Sarada Devi (spiritual consort of Sri Ramakrishna Paramahamsa) The Big 1.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "— Last message of Sri Sarada Devi (spiritual consort of Sri Ramakrishna Paramahamsa) The Big 1.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees205_c01"
+                        "question_id": "Q07_205_03",
+                        "question": "What is the answer?",
+                        "type": "Short Answer",
+                        "answer": "The acceptance and respect of different faiths without discrimination."
                     },
                     {
-                        "id": "gees205_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India, a Home to Many'?",
-                        "options": [
-                            "What has made India a home for people from different parts Questions of the world?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What has made India a home for people from different parts Questions of the world?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees205_c01"
-                    },
-                    {
-                        "id": "gees205_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India, a Home to Many'?",
-                        "options": [
-                            "Why did oppressed or persecuted people from other countries seek refuge in India?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Why did oppressed or persecuted people from other countries seek refuge in India?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees205_c01"
-                    },
-                    {
-                        "id": "gees205_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India, a Home to Many'?",
-                        "options": [
-                            "What is it about the nature Our Cultural Heritage and Knowledge Traditions of Indian society that enables people to assimilate here?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What is it about the nature Our Cultural Heritage and Knowledge Traditions of Indian society that enables people to assimilate here?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees205_c01"
-                    },
-                    {
-                        "id": "gees205_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India, a Home to Many'?",
-                        "options": [
-                            "5 – India, a Home to Many 125 Reprint 2026-27 Chapter 5.indd 125 27-11-2025 11:11:59 In the chapter “Unity in Diversity, or ‘Many in the One’ ” (Grade 6 Social Science textbook), we read that “many Indians may be called migrants, in the sense of people not living near their birthplace or with their original community.” In this chapter, we will explore another type of migrants — people who came to India from other parts of the world and settled here, adding another dimension to the diversity.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "5 – India, a Home to Many 125 Reprint 2026-27 Chapter 5.indd 125 27-11-2025 11:11:59 In the chapter “Unity in Diversity, or ‘Many in the One’ ” (Grade 6 Social Science textbook), we read that “many Indians may be called migrants, in the sense of people not living near their birthplace or with their original community.” In this chapter, we will explore another type of migrants — people who came to India from other parts of the world and settled here, adding another dimension to the diversity.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees205_c01"
-                    },
-                    {
-                        "id": "gees205_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India, a Home to Many'?",
-                        "options": [
-                            "There have been many such migrant communities in India’s history, up to recent times.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "There have been many such migrant communities in India’s history, up to recent times.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees205_c01"
+                        "question_id": "Q07_205_04",
+                        "question": "One aspect of India's cultural richness is its ________ (e.g., art, music, dance).",
+                        "type": "Fill in the Blanks"
                     }
                 ]
             },
@@ -1715,8 +1617,10 @@
             "subject": "Social Science",
             "chapter_title": "India, a Home to Many",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.426766"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1629,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'India, a Home to Many' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "5 CHAPTER India, a Home to Many ayam nijah paro veti gaṇanā laghucetasām udāracharitānām tu vasudhaiva kutumbakam “This is mine, that is not mine,” so think the narrow-minded.",
-                    "No one is a stranger, my child; the whole world is your own.",
-                    "— Last message of Sri Sarada Devi (spiritual consort of Sri Ramakrishna Paramahamsa) The Big 1.",
-                    "What has made India a home for people from different parts Questions of the world?",
-                    "Why did oppressed or persecuted people from other countries seek refuge in India?",
-                    "What is it about the nature Our Cultural Heritage and Knowledge Traditions of Indian society that enables people to assimilate here?",
-                    "5 – India, a Home to Many 125 Reprint 2026-27 Chapter 5.indd 125 27-11-2025 11:11:59 In the chapter “Unity in Diversity, or ‘Many in the One’ ” (Grade 6 Social Science textbook), we read that “many Indians may be called migrants, in the sense of people not living near their birthplace or with their original community.” In this chapter, we will explore another type of migrants — people who came to India from other parts of the world and settled here, adding another dimension to the diversity."
-                ]
-            },
+            "content": "This chapter provides a comprehensive overview of India's immense social diversity, emphasizing the strength found in its unity in diversity. It establishes that India is not just a political entity but a vibrant ecosystem where numerous cultures, languages, and faiths coexist. The chapter underscores the importance of the Constitution and inclusive policies in fostering social justice and ensuring equitable development for all citizens, reinforcing the theme of 'India: A Home to Many' as a testament to human pluralism.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1679,10 @@
             "subject": "Social Science",
             "chapter_title": "India, a Home to Many",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.426826"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1694,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees205_fc01",
-                        "front": "What should you remember from India, a Home to Many?",
-                        "back": "5 CHAPTER India, a Home to Many ayam nijah paro veti gaṇanā laghucetasām udāracharitānām tu vasudhaiva kutumbakam “This is mine, that is not mine,” so think the narrow-minded.",
-                        "concept_id": "gees205_c01"
+                        "id": "F07_205_01",
+                        "term": "Unity in diversity",
+                        "definition": "The idea that different people and groups can live together peacefully and form a single nation."
                     },
                     {
-                        "id": "gees205_fc02",
-                        "front": "What should you remember from India, a Home to Many?",
-                        "back": "No one is a stranger, my child; the whole world is your own.",
-                        "concept_id": "gees205_c01"
+                        "id": "F07_205_02",
+                        "term": "Linguistic diversity",
+                        "definition": "The existence of hundreds of languages spoken across India."
                     },
                     {
-                        "id": "gees205_fc03",
-                        "front": "What should you remember from India, a Home to Many?",
-                        "back": "— Last message of Sri Sarada Devi (spiritual consort of Sri Ramakrishna Paramahamsa) The Big 1.",
-                        "concept_id": "gees205_c01"
+                        "id": "F07_205_03",
+                        "term": "Interfaith dialogue",
+                        "definition": "Interaction between different religious communities to foster mutual understanding and respect."
                     },
                     {
-                        "id": "gees205_fc04",
-                        "front": "What should you remember from India, a Home to Many?",
-                        "back": "What has made India a home for people from different parts Questions of the world?",
-                        "concept_id": "gees205_c01"
-                    },
-                    {
-                        "id": "gees205_fc05",
-                        "front": "What should you remember from India, a Home to Many?",
-                        "back": "Why did oppressed or persecuted people from other countries seek refuge in India?",
-                        "concept_id": "gees205_c01"
-                    },
-                    {
-                        "id": "gees205_fc06",
-                        "front": "What should you remember from India, a Home to Many?",
-                        "back": "What is it about the nature Our Cultural Heritage and Knowledge Traditions of Indian society that enables people to assimilate here?",
-                        "concept_id": "gees205_c01"
-                    },
-                    {
-                        "id": "gees205_fc07",
-                        "front": "What should you remember from India, a Home to Many?",
-                        "back": "5 – India, a Home to Many 125 Reprint 2026-27 Chapter 5.indd 125 27-11-2025 11:11:59 In the chapter “Unity in Diversity, or ‘Many in the One’ ” (Grade 6 Social Science textbook), we read that “many Indians may be called migrants, in the sense of people not living near their birthplace or with their original community.” In this chapter, we will explore another type of migrants — people who came to India from other parts of the world and settled here, adding another dimension to the diversity.",
-                        "concept_id": "gees205_c01"
-                    },
-                    {
-                        "id": "gees205_fc08",
-                        "front": "What should you remember from India, a Home to Many?",
-                        "back": "There have been many such migrant communities in India’s history, up to recent times.",
-                        "concept_id": "gees205_c01"
+                        "id": "F07_205_04",
+                        "term": "Cultural heritage",
+                        "definition": "The sum total of the artistic, literary, and architectural achievements of a civilization."
                     }
                 ]
             },

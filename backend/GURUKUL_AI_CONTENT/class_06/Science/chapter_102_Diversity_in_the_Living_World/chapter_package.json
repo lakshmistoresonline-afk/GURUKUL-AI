@@ -128,8 +128,10 @@
             "subject": "Science",
             "chapter_title": "Diversity in the Living World",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.576072"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Diversity in the Living World.",
+                "overview": "Chapter 102, 'Diversity in the Living World,' is a fundamental topic in Biology that explores the incredible variety of life forms on Earth. It encompasses biodiversity, the classification of organisms, the various kingdoms, and the complex relationships between different species. Understanding diversity is essential for appreciating the intricate web of life and its role in ecological balance.",
                 "source_grounded_key_points": [
                     "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
                     "Likewise, good people bear all hardships and bring welfare to others.",
@@ -175,8 +177,10 @@
             "subject": "Science",
             "chapter_title": "Diversity in the Living World",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.576109"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Diversity in the Living World accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
-                            "Likewise, good people bear all hardships and bring welfare to others.",
-                            "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain.",
-                            "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "Class 06 Science, Chapter 102: Diversity in the Living World, introduces students to the incredible variety of life on Earth. The chapter emphasizes that life exhibits immense diversity in terms of its structure, size, color, habitat, and function. Scientists classify these organisms into different groups (Kingdoms) based on their characteristics. It explains that all living things share common traits but differ significantly from each other. Key concepts include the concept of 'habitat' and how organisms are adapted to their specific environments. The chapter typically covers the vast categories of living organisms, such as plants, animals, fungi, bacteria, and protozoans, highlighting the hierarchical classification system used by biologists.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Science",
             "chapter_title": "Diversity in the Living World",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.576129"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,62 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fecu102_c01",
-                        "name": "Diversity in the Living World",
-                        "definition": "Central learning focus of Diversity in the Living World.",
-                        "source_evidence": "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others."
+                        "concept_id": "C06_102_01",
+                        "topic": "Introduction to Diversity",
+                        "description": "Diversity in the living world refers to the wide variety of life forms found on Earth, including organisms from all kingdoms (Monera, Protista, Fungi, Plantae, Animalia).",
+                        "key_keywords": [
+                            "Biodiversity",
+                            "Variation",
+                            "Classification",
+                            "Taxonomy"
+                        ]
                     },
                     {
-                        "id": "fecu102_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Likewise, good people bear all hardships and bring welfare to others."
+                        "concept_id": "C06_102_02",
+                        "topic": "Defining Living Organisms",
+                        "description": "Characteristics that distinguish living organisms from non-living materials.",
+                        "key_keywords": [
+                            "Metabolism",
+                            "Reproduction",
+                            "Respiration",
+                            "Sensitivity",
+                            "Growth"
+                        ]
                     },
                     {
-                        "id": "fecu102_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain."
+                        "concept_id": "C06_102_03",
+                        "topic": "Need for Classification",
+                        "description": "The necessity of grouping organisms based on similarities to understand the vast complexity of life.",
+                        "key_keywords": [
+                            "Systematics",
+                            "Organization",
+                            "Identification",
+                            "Evolution"
+                        ]
+                    },
+                    {
+                        "concept_id": "C06_102_04",
+                        "topic": "Taxonomy and Taxonomy System",
+                        "description": "The science of naming, describing, and classifying organisms (Binomial Nomenclature).",
+                        "key_keywords": [
+                            "Binomial Nomenclature",
+                            "Hierarchy",
+                            "Taxonomic Ranks",
+                            "Linnaeus"
+                        ]
+                    },
+                    {
+                        "concept_id": "C06_102_05",
+                        "topic": "Key Kingdoms of Life",
+                        "description": "Overview of major groups of organisms and their basic characteristics.",
+                        "key_keywords": [
+                            "Monera",
+                            "Protista",
+                            "Fungi",
+                            "Plantae",
+                            "Animalia",
+                            "Cell Structure"
+                        ]
                     }
                 ]
             },
@@ -347,8 +336,10 @@
             "subject": "Science",
             "chapter_title": "Diversity in the Living World",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.576145"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +373,44 @@
                         "from": "fecu102_c02",
                         "to": "fecu102_c03",
                         "relation": "enables"
+                    }
+                ],
+                "central_node": "Diversity in the Living World",
+                "branches": [
+                    {
+                        "label": "What is Diversity?",
+                        "sub_branches": [
+                            "Variety of species",
+                            "Variety of habitats",
+                            "Variety of biological characteristics"
+                        ]
+                    },
+                    {
+                        "label": "Taxonomy",
+                        "sub_branches": [
+                            "Need for Classification (Organization)",
+                            "Binomial Nomenclature",
+                            "Taxonomic Ranks (Species, Genus, Family, etc.)"
+                        ]
+                    },
+                    {
+                        "label": "Characteristics of Life",
+                        "sub_branches": [
+                            "Metabolism",
+                            "Reproduction",
+                            "Sensitivity",
+                            "Growth"
+                        ]
+                    },
+                    {
+                        "label": "The Five Kingdoms",
+                        "sub_branches": [
+                            "Monera",
+                            "Protista",
+                            "Fungi",
+                            "Plantae",
+                            "Animalia"
+                        ]
                     }
                 ]
             },
@@ -469,8 +498,10 @@
             "subject": "Science",
             "chapter_title": "Diversity in the Living World",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.576100"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +510,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Diversity in the Living World.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Diversity in the Living World supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine a vast, sprawling garden where every plant, insect, microbe, and animal is unique—some are towering giants, others are microscopic, and all live in harmony. This garden represents the diversity of the living world. Taxonomic classification acts like a detailed map, helping us organize this complexity. Just as different countries have different languages and customs, different organisms have different structures and functions. From the smallest bacterium to the largest whale, each organism belongs to a specific 'family' or 'kingdom.' Studying this diversity isn't just about memorizing names; it's about recognizing the interconnectedness—how the loss of one species can impact the whole system, highlighting why preserving this 'living library' of life is critical for our planet's survival.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1073,10 @@
             "subject": "Science",
             "chapter_title": "Diversity in the Living World",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.576121"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1088,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu102_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Diversity in the Living World?",
-                        "options": [
-                            "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu102_c01"
+                        "id": "Q06_102_01",
+                        "type": "Multiple Choice",
+                        "question": "Which concept is defined as the wide variety of life forms on Earth?",
+                        "options": {
+                            "A": "Systematics",
+                            "B": "Biodiversity",
+                            "C": "Biodiversity Index",
+                            "D": "Taxonomy"
+                        },
+                        "answer": "B"
                     },
                     {
-                        "id": "fecu102_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Diversity in the Living World?",
-                        "options": [
-                            "Likewise, good people bear all hardships and bring welfare to others.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Likewise, good people bear all hardships and bring welfare to others.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu102_c01"
+                        "id": "Q06_102_02",
+                        "type": "True/False",
+                        "question": "Metabolism is an essential characteristic of living organisms that distinguishes them from non-living matter.",
+                        "answer": "True"
                     },
                     {
-                        "id": "fecu102_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Diversity in the Living World?",
-                        "options": [
-                            "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu102_c01"
+                        "id": "Q06_102_03",
+                        "type": "Fill in the Blank",
+                        "question": "The practice of naming organisms using two words is known as ______ Nomenclature.",
+                        "answer": "Binomial"
                     },
                     {
-                        "id": "fecu102_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Diversity in the Living World?",
-                        "options": [
-                            "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu102_c01"
-                    },
-                    {
-                        "id": "fecu102_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Diversity in the Living World?",
-                        "options": [
-                            "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu102_c01"
-                    },
-                    {
-                        "id": "fecu102_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Diversity in the Living World?",
-                        "options": [
-                            "He is also brilliant at identifying a variety of plants and animals.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "He is also brilliant at identifying a variety of plants and animals.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu102_c01"
+                        "id": "Q06_102_04",
+                        "type": "Short Answer",
+                        "question": "What is the hierarchy level between 'Phylum' and 'Class'?",
+                        "answer": "Class is below Phylum (Phylum -> Class -> Order...)"
                     }
                 ]
             },
@@ -1625,8 +1564,10 @@
             "subject": "Science",
             "chapter_title": "Diversity in the Living World",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.576091"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1576,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Diversity in the Living World' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
-                    "Likewise, good people bear all hardships and bring welfare to others.",
-                    "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain.",
-                    "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
-                    "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
-                    "He is also brilliant at identifying a variety of plants and animals."
-                ]
-            },
+            "content": "The chapter 'Diversity in the Living World' systematically introduces the concept of biodiversity—the variety of life on Earth. It establishes the principle of 'Unity in Diversity' and uses the hierarchical system of classification to organize the world's organisms. It details the major biological kingdoms and their distinguishing features, emphasizing the evolutionary and structural connections between them. Ultimately, the chapter stresses that biological diversity is not just a collection of species, but a vital resource that underpins the ecosystem and human survival. Effective classification and conservation are key to managing and protecting this magnificent variety of life.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1626,10 @@
             "subject": "Science",
             "chapter_title": "Diversity in the Living World",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.576138"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1641,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu102_fc01",
-                        "front": "What key point should you remember from Diversity in the Living World?",
-                        "back": "फलान्यपि परार्थाय वक ृ ्षाः सत्पुरुषा इव ॥ (सभ ु ाषित) Trees stand in the Sun and give shade to others.",
-                        "concept_id": "fecu102_c01"
+                        "front": "Definition of Biodiversity",
+                        "back": "The variety of life on Earth, encompassing different species, ecosystems, and genetic variations."
                     },
                     {
-                        "id": "fecu102_fc02",
-                        "front": "What key point should you remember from Diversity in the Living World?",
-                        "back": "Likewise, good people bear all hardships and bring welfare to others.",
-                        "concept_id": "fecu102_c01"
+                        "front": "What is Taxonomy?",
+                        "back": "The branch of science concerned with identifying, naming, and classifying organisms."
                     },
                     {
-                        "id": "fecu102_fc03",
-                        "front": "What key point should you remember from Diversity in the Living World?",
-                        "back": "(Wise saying) It is a pleasant morning after yesterday’s refreshing rain.",
-                        "concept_id": "fecu102_c01"
+                        "front": "Binomial Nomenclature",
+                        "back": "The system of naming organisms using two Latinized names (Genus and species)."
                     },
                     {
-                        "id": "fecu102_fc04",
-                        "front": "What key point should you remember from Diversity in the Living World?",
-                        "back": "Dr Raghu and Maniram chacha (uncle) have been invited to the school by the science teacher, Madam Sulekha, to Reprint 2026-27 Chapter 2.indd 9 10/4/2024 3:17:29 PM facilitate an exciting nature walk.",
-                        "concept_id": "fecu102_c01"
-                    },
-                    {
-                        "id": "fecu102_fc05",
-                        "front": "What key point should you remember from Diversity in the Living World?",
-                        "back": "Dr Raghu is a scientist at the nearby Research Laboratory and Maniram chacha is an elderly person from a nearby community.",
-                        "concept_id": "fecu102_c01"
-                    },
-                    {
-                        "id": "fecu102_fc06",
-                        "front": "What key point should you remember from Diversity in the Living World?",
-                        "back": "He is also brilliant at identifying a variety of plants and animals.",
-                        "concept_id": "fecu102_c01"
+                        "front": "Key Characteristic of Living Things",
+                        "back": "The ability to carry out metabolism, reproduce, and grow."
                     }
                 ]
             },

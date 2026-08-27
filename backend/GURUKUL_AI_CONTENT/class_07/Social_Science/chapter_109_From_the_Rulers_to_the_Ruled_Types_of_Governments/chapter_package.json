@@ -185,8 +185,10 @@
             "subject": "Social Science",
             "chapter_title": "From the Rulers to the Ruled: Types of Governments",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.354587"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +197,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of From the Rulers to the Ruled: Types of Governments.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "9 From the Rulers to CHAPTER the Ruled: Types of Governments A ruler’s duties in the internal administration of the country are three-fold: rakṣha (protection of the state from external aggression), pālana (maintenance of law and order within the state), and yogakṣhema (safeguarding the welfare of the people).",
-                            "Inside the Indian Parliament 9 – From the Rulers to the Ruled: Types of Government 1.",
-                            "What are the different types of Big Governance and Democracy The government?",
-                            "185 Reprint 2026-27 Chapter 9.indd 185 08-04-2025 11:43:43 What is Government?",
-                            "In Grade 6, we learned what government is and explored some of its roles."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Class 7 Social Science Chapter 109, 'From the Rulers to the Ruled - Types of Governments', introduces the fundamental concept of how human societies are organized. In this chapter, we explore the evolution of government and the various types of governments that exist around the world. Governments are essentially systems that set rules and maintain order within a country or community. The core idea is that rulers are chosen or appointed to govern, and they exercise authority through laws and institutions. We categorize governments based on who rules, how they rule, and the scope of their authority. For example, we might discuss Democracy (rule by the people), Monarchy (rule by a single hereditary ruler), and Dictatorship (rule by one person, often forcibly). Understanding these different types of governments helps students appreciate the complexities of political systems and recognize why different societies structure themselves in unique ways. We learn that the purpose of any government is to provide security, justice, and public welfare.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +257,10 @@
             "subject": "Social Science",
             "chapter_title": "From the Rulers to the Ruled: Types of Governments",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.354627"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +272,48 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gees109_c01",
-                        "name": "From the Rulers to the Ruled: Types of Governments",
-                        "definition": "Central learning focus of From the Rulers to the Ruled: Types of Governments.",
-                        "source_evidence": "9 From the Rulers to CHAPTER the Ruled: Types of Governments A ruler’s duties in the internal administration of the country are three-fold: rakṣha (protection of the state from external aggression), pālana (maintenance of law and order within the state), and yogakṣhema (safeguarding the welfare of the people)."
+                        "concept_name": "Introduction to Government",
+                        "description": "Definition of government, its functions (e.g., ruling, administration, law-making), and the essential need for a government to maintain order and deliver services."
                     },
                     {
-                        "id": "gees109_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Inside the Indian Parliament 9 – From the Rulers to the Ruled: Types of Government 1."
+                        "concept_name": "Types of Government based on Origin",
+                        "description": "Classification of governments into: Direct Democracy (citizens rule directly), Indirect Democracy (citizens rule through representatives), and Autocracy (rule by one person)."
                     },
                     {
-                        "id": "gees109_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "What are the different types of Big Governance and Democracy The government?"
+                        "concept_name": "Democracy",
+                        "description": "A system where the people hold the power, either directly or through elected representatives. Key features include free and fair elections, fundamental rights, and accountability of the rulers."
+                    },
+                    {
+                        "concept_name": "Monarchy",
+                        "description": "A system where a single person (King/Queen) rules the country, often through hereditary succession. Types include Absolute and Constitutional Monarchy."
+                    },
+                    {
+                        "concept_name": "Aristocracy",
+                        "description": "A form of government where the state is ruled by a small, privileged, or elite group, usually based on wealth, lineage, or ability."
+                    },
+                    {
+                        "concept_name": "Dictatorship/Totalitarianism",
+                        "description": "A system where absolute power is concentrated in the hands of a single person or a small group. Citizens have little to no political freedom."
+                    },
+                    {
+                        "concept_name": "Republic",
+                        "description": "A state in which the government is elected by the people, and the head of state (President) is not a hereditary monarch. Power is usually limited by a constitution."
+                    },
+                    {
+                        "concept_name": "Federalism",
+                        "description": "A system of government where power is divided and shared between a central government and various regional governments (states/provinces)."
+                    },
+                    {
+                        "concept_name": "Unitary Government",
+                        "description": "A system where all powers are concentrated in a central authority. Regional units rely on the center for their existence."
+                    },
+                    {
+                        "concept_name": "Parliamentary System",
+                        "description": "A system where the executive branch (Prime Minister) is chosen from the legislature (Parliament), and the executive is accountable to the legislature."
+                    },
+                    {
+                        "concept_name": "Electoral Systems",
+                        "description": "Mechanisms used to select representatives, such as First-Past-The-Post, Proportional Representation, etc."
                     }
                 ]
             },
@@ -360,8 +332,10 @@
             "subject": "Social Science",
             "chapter_title": "From the Rulers to the Ruled: Types of Governments",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.354645"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +370,26 @@
                         "to": "gees109_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Government_Systems": {
+                    "Primary_Categories": [
+                        "Democracy",
+                        "Monarchy",
+                        "Republic",
+                        "Autocracy"
+                    ]
+                },
+                "Government_Structures": {
+                    "Internal_Organization": {
+                        "Unitary_Government": "Central authority holds all powers.",
+                        "Federalism": "Power is shared between central and regional governments.",
+                        "Direct_Democracy": "Citizens rule directly."
+                    },
+                    "Executive_Types": {
+                        "Parliamentary": "Executive is drawn from the legislature.",
+                        "Presidential": "Executive is directly elected and separate from the legislature."
+                    }
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -1123,8 +1116,10 @@
             "subject": "Social Science",
             "chapter_title": "From the Rulers to the Ruled: Types of Governments",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.354616"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1131,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees109_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From the Rulers to the Ruled: Types of Governments'?",
+                        "type": "Multiple Choice",
+                        "question": "Which type of government is characterized by the rule of a single individual, often without constitutional limits?",
                         "options": [
-                            "9 From the Rulers to CHAPTER the Ruled: Types of Governments A ruler’s duties in the internal administration of the country are three-fold: rakṣha (protection of the state from external aggression), pālana (maintenance of law and order within the state), and yogakṣhema (safeguarding the welfare of the people).",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Democracy",
+                            "Monarchy",
+                            "Dictatorship",
+                            "Federalism"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "9 From the Rulers to CHAPTER the Ruled: Types of Governments A ruler’s duties in the internal administration of the country are three-fold: rakṣha (protection of the state from external aggression), pālana (maintenance of law and order within the state), and yogakṣhema (safeguarding the welfare of the people).",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees109_c01"
+                        "answer": "Dictatorship"
                     },
                     {
-                        "id": "gees109_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From the Rulers to the Ruled: Types of Governments'?",
-                        "options": [
-                            "Inside the Indian Parliament 9 – From the Rulers to the Ruled: Types of Government 1.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Inside the Indian Parliament 9 – From the Rulers to the Ruled: Types of Government 1.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees109_c01"
+                        "type": "True/False",
+                        "question": "In a Unitary Government, regional governments have significant and independent powers.",
+                        "answer": "False (Power is concentrated in the central authority)"
                     },
                     {
-                        "id": "gees109_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From the Rulers to the Ruled: Types of Governments'?",
-                        "options": [
-                            "What are the different types of Big Governance and Democracy The government?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What are the different types of Big Governance and Democracy The government?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees109_c01"
+                        "type": "Short Answer",
+                        "question": "Define 'Indirect Democracy' and provide an example of a country where this system is commonly used.",
+                        "answer": "Indirect democracy is a system where citizens rule through elected representatives. An example is the United States (Presidential system)."
                     },
                     {
-                        "id": "gees109_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From the Rulers to the Ruled: Types of Governments'?",
-                        "options": [
-                            "185 Reprint 2026-27 Chapter 9.indd 185 08-04-2025 11:43:43 What is Government?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "185 Reprint 2026-27 Chapter 9.indd 185 08-04-2025 11:43:43 What is Government?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees109_c01"
+                        "type": "Fill in the Blanks",
+                        "question": "A system where power is constitutionally limited and the head of state is elected by the people is called a ___________."
                     },
                     {
-                        "id": "gees109_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From the Rulers to the Ruled: Types of Governments'?",
-                        "options": [
-                            "In Grade 6, we learned what government is and explored some of its roles.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In Grade 6, we learned what government is and explored some of its roles.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees109_c01"
-                    },
-                    {
-                        "id": "gees109_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From the Rulers to the Ruled: Types of Governments'?",
-                        "options": [
-                            "This role includes:  maintaining law and order in society;  ensuring peace, stability, and security for the people;  managing relationships with other countries;  taking care of national defence;  delivering essential goods and services (education, healthcare, infrastructure);  managing the economy and economic activities;  working for the welfare and improving people’s lives.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "This role includes:  maintaining law and order in society;  ensuring peace, stability, and security for the people;  managing relationships with other countries;  taking care of national defence;  delivering essential goods and services (education, healthcare, infrastructure);  managing the economy and economic activities;  working for the welfare and improving people’s lives.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees109_c01"
-                    },
-                    {
-                        "id": "gees109_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From the Rulers to the Ruled: Types of Governments'?",
-                        "options": [
-                            "LET’S EXPLORE Æ Do you remember this picture from your Grade 6 textbook?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "LET’S EXPLORE Æ Do you remember this picture from your Grade 6 textbook?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees109_c01"
-                    },
-                    {
-                        "id": "gees109_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From the Rulers to the Ruled: Types of Governments'?",
-                        "options": [
-                            "Exploring Society: India and Beyond | Grade 7 Part 1 Æ The government also has many other roles.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Exploring Society: India and Beyond | Grade 7 Part 1 Æ The government also has many other roles.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees109_c01"
+                        "type": "Conceptual",
+                        "question": "What is the fundamental difference between a Parliamentary System and a Presidential System of government?",
+                        "answer": "In a Parliamentary System, the executive (Prime Minister) is drawn from and accountable to the legislature, whereas in a Presidential System, the executive (President) is independently elected and not directly responsible to the legislature."
                     }
                 ]
             },
@@ -1786,8 +1683,10 @@
             "subject": "Social Science",
             "chapter_title": "From the Rulers to the Ruled: Types of Governments",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.354637"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1698,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees109_fc01",
-                        "front": "What should you remember from From the Rulers to the Ruled: Types of Governments?",
-                        "back": "9 From the Rulers to CHAPTER the Ruled: Types of Governments A ruler’s duties in the internal administration of the country are three-fold: rakṣha (protection of the state from external aggression), pālana (maintenance of law and order within the state), and yogakṣhema (safeguarding the welfare of the people).",
-                        "concept_id": "gees109_c01"
+                        "front": "Absolute Monarchy",
+                        "back": "A system where the monarch has supreme and unlimited power, often by divine right. Example: Saudi Arabia (currently)."
                     },
                     {
-                        "id": "gees109_fc02",
-                        "front": "What should you remember from From the Rulers to the Ruled: Types of Governments?",
-                        "back": "Inside the Indian Parliament 9 – From the Rulers to the Ruled: Types of Government 1.",
-                        "concept_id": "gees109_c01"
+                        "front": "Constitutional Monarchy",
+                        "back": "A form of monarchy where the monarch's power is limited by a constitution and the ruling is largely ceremonial. Example: United Kingdom."
                     },
                     {
-                        "id": "gees109_fc03",
-                        "front": "What should you remember from From the Rulers to the Ruled: Types of Governments?",
-                        "back": "What are the different types of Big Governance and Democracy The government?",
-                        "concept_id": "gees109_c01"
+                        "front": "Republic",
+                        "back": "A state where the head of state (President) is elected by the people for a fixed term and is not a hereditary monarch."
                     },
                     {
-                        "id": "gees109_fc04",
-                        "front": "What should you remember from From the Rulers to the Ruled: Types of Governments?",
-                        "back": "185 Reprint 2026-27 Chapter 9.indd 185 08-04-2025 11:43:43 What is Government?",
-                        "concept_id": "gees109_c01"
+                        "front": "Federalism",
+                        "back": "A system of government involving a division of power between a national government and regional governments."
                     },
                     {
-                        "id": "gees109_fc05",
-                        "front": "What should you remember from From the Rulers to the Ruled: Types of Governments?",
-                        "back": "In Grade 6, we learned what government is and explored some of its roles.",
-                        "concept_id": "gees109_c01"
-                    },
-                    {
-                        "id": "gees109_fc06",
-                        "front": "What should you remember from From the Rulers to the Ruled: Types of Governments?",
-                        "back": "This role includes:  maintaining law and order in society;  ensuring peace, stability, and security for the people;  managing relationships with other countries;  taking care of national defence;  delivering essential goods and services (education, healthcare, infrastructure);  managing the economy and economic activities;  working for the welfare and improving people’s lives.",
-                        "concept_id": "gees109_c01"
-                    },
-                    {
-                        "id": "gees109_fc07",
-                        "front": "What should you remember from From the Rulers to the Ruled: Types of Governments?",
-                        "back": "LET’S EXPLORE Æ Do you remember this picture from your Grade 6 textbook?",
-                        "concept_id": "gees109_c01"
-                    },
-                    {
-                        "id": "gees109_fc08",
-                        "front": "What should you remember from From the Rulers to the Ruled: Types of Governments?",
-                        "back": "Exploring Society: India and Beyond | Grade 7 Part 1 Æ The government also has many other roles.",
-                        "concept_id": "gees109_c01"
+                        "front": "Autocracy",
+                        "back": "Rule by one person where no other party has legal or meaningful political power."
                     }
                 ]
             },

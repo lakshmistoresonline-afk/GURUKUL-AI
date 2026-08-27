@@ -128,8 +128,10 @@
             "subject": "English",
             "chapter_title": "Hamara Bharat — Incredible India!",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.317484"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Hamara Bharat — Incredible India!.",
+                "overview": "This chapter is an introduction to the concept of India as a diverse and incredible nation. It aims to evoke a sense of pride and understanding by highlighting India's rich cultural heritage, historical significance, and vast geographical diversity.",
                 "source_grounded_key_points": [
                     "Bharat has been known worldwide as a land of wise and heroic individuals.",
                     "Its rich and diverse culture has attracted numerous travellers since ancient times.",
@@ -175,8 +177,10 @@
             "subject": "English",
             "chapter_title": "Hamara Bharat — Incredible India!",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.317523"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Hamara Bharat — Incredible India! accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "Bharat has been known worldwide as a land of wise and heroic individuals.",
-                            "Its rich and diverse culture has attracted numerous travellers since ancient times.",
-                            "The people here live in unison, presenting to the world unity in diversity.",
-                            "Bharat is a land rich with rivers, lakes, and high mountains."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "In this chapter, we explore the rich history, culture, and diverse landscapes of India. The text highlights India's unity in diversity, mentioning various festivals like Diwali, Holi, and Eid, and the incredible architectural marvels such as the Taj Mahal. We also learn about India's natural beauty, from the Himalayas to the beaches and the lush forests. It emphasizes the importance of preserving India's traditions and celebrating the democratic spirit and hospitality that define the Indian people. The teacher will guide students to appreciate India as a land of ancient wisdom and vibrant traditions.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "English",
             "chapter_title": "Hamara Bharat — Incredible India!",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.317543"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fepr105_c01",
-                        "name": "Hamara Bharat — Incredible India!",
-                        "definition": "Central learning focus of Hamara Bharat — Incredible India!.",
-                        "source_evidence": "Bharat has been known worldwide as a land of wise and heroic individuals."
-                    },
-                    {
-                        "id": "fepr105_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Its rich and diverse culture has attracted numerous travellers since ancient times."
-                    },
-                    {
-                        "id": "fepr105_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "The people here live in unison, presenting to the world unity in diversity."
-                    }
+                    "Geography of India",
+                    "Diversity in India (Languages, Festivals, etc.)",
+                    "Unity in Diversity",
+                    "Tourism and Historical Sites in India",
+                    "India's Culture and Traditions"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +283,10 @@
             "subject": "English",
             "chapter_title": "Hamara Bharat — Incredible India!",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.317559"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +321,28 @@
                         "to": "fepr105_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "India": {
+                    "sub_branches": [
+                        "Geography",
+                        "History",
+                        "Culture",
+                        "Economy",
+                        "Diversity"
+                    ],
+                    "details": {
+                        "Culture": [
+                            "Languages",
+                            "Festivals",
+                            "Food",
+                            "Dance"
+                        ],
+                        "History": [
+                            "Ancient Civilizations",
+                            "British Rule"
+                        ]
+                    }
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -469,8 +428,10 @@
             "subject": "English",
             "chapter_title": "Hamara Bharat — Incredible India!",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.317512"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +440,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to Hamara Bharat — Incredible India!.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Hamara Bharat — Incredible India! supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "The narrative follows the journey of an Indian student or traveler who discovers the incredible array of India. It vividly describes diverse landscapes—from the snow-capped Himalayas to the backwaters of Kerala, the deserts of Rajasthan, and the vibrant cities like Delhi. It highlights the unique aspects of Indian festivals like Diwali, Eid, and Christmas, explaining the philosophical and social significance behind them. The explanation delves into India’s philosophy of 'Unity in Diversity,' emphasizing how different communities coexist harmoniously.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1003,10 @@
             "subject": "English",
             "chapter_title": "Hamara Bharat — Incredible India!",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.317534"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1018,24 @@
             "content": {
                 "items": [
                     {
-                        "id": "fepr105_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Hamara Bharat — Incredible India!?",
+                        "question": "Which festival is known as the 'Festival of Lights' and is celebrated across India?",
                         "options": [
-                            "Bharat has been known worldwide as a land of wise and heroic individuals.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Eid",
+                            "Christmas",
+                            "Diwali",
+                            "Holi"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Bharat has been known worldwide as a land of wise and heroic individuals.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fepr105_c01"
+                        "answer": "Diwali"
                     },
                     {
-                        "id": "fepr105_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Hamara Bharat — Incredible India!?",
+                        "question": "The concept of 'Unity in Diversity' in India refers to:",
                         "options": [
-                            "Its rich and diverse culture has attracted numerous travellers since ancient times.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Different religions living side by side.",
+                            "People having different clothing.",
+                            "People living in different states.",
+                            "All of the above."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Its rich and diverse culture has attracted numerous travellers since ancient times.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fepr105_c01"
-                    },
-                    {
-                        "id": "fepr105_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Hamara Bharat — Incredible India!?",
-                        "options": [
-                            "The people here live in unison, presenting to the world unity in diversity.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The people here live in unison, presenting to the world unity in diversity.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fepr105_c01"
-                    },
-                    {
-                        "id": "fepr105_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Hamara Bharat — Incredible India!?",
-                        "options": [
-                            "Bharat is a land rich with rivers, lakes, and high mountains.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Bharat is a land rich with rivers, lakes, and high mountains.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fepr105_c01"
-                    },
-                    {
-                        "id": "fepr105_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Hamara Bharat — Incredible India!?",
-                        "options": [
-                            "Its green forests are home to many plants, insects, birds, and animals.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Its green forests are home to many plants, insects, birds, and animals.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fepr105_c01"
-                    },
-                    {
-                        "id": "fepr105_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Hamara Bharat — Incredible India!?",
-                        "options": [
-                            "All these elements ensure that Bharat prospers and is respected globally.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "All these elements ensure that Bharat prospers and is respected globally.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fepr105_c01"
+                        "answer": "All of the above."
                     }
                 ]
             },
@@ -1625,8 +1484,10 @@
             "subject": "English",
             "chapter_title": "Hamara Bharat — Incredible India!",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.317503"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1496,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Hamara Bharat — Incredible India!' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "Bharat has been known worldwide as a land of wise and heroic individuals.",
-                    "Its rich and diverse culture has attracted numerous travellers since ancient times.",
-                    "The people here live in unison, presenting to the world unity in diversity.",
-                    "Bharat is a land rich with rivers, lakes, and high mountains.",
-                    "Its green forests are home to many plants, insects, birds, and animals.",
-                    "All these elements ensure that Bharat prospers and is respected globally."
-                ]
-            },
+            "content": "Chapter 'Hamara Bharat: Incredible India' serves as a comprehensive overview of India's multifaceted identity. It explores its deep historical roots, its profound religious and philosophical contributions, and its astonishing geographical variety. Through engaging descriptions of its diverse cultures and traditions, the chapter aims to instill a deep appreciation for India's rich heritage and its unique philosophy of being a vibrant, unified nation, emphasizing the beauty of its 'Incredible India'.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1546,10 @@
             "subject": "English",
             "chapter_title": "Hamara Bharat — Incredible India!",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.317551"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1561,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fepr105_fc01",
-                        "front": "What key point should you remember from Hamara Bharat — Incredible India!?",
-                        "back": "Bharat has been known worldwide as a land of wise and heroic individuals.",
-                        "concept_id": "fepr105_c01"
+                        "term": "Yoga",
+                        "definition": "A system of physical, mental, and spiritual practices that aims to unify the body and the mind."
                     },
                     {
-                        "id": "fepr105_fc02",
-                        "front": "What key point should you remember from Hamara Bharat — Incredible India!?",
-                        "back": "Its rich and diverse culture has attracted numerous travellers since ancient times.",
-                        "concept_id": "fepr105_c01"
+                        "term": "Taj Mahal",
+                        "definition": "A stunning white marble mausoleum located in Agra, India, considered a world wonder."
                     },
                     {
-                        "id": "fepr105_fc03",
-                        "front": "What key point should you remember from Hamara Bharat — Incredible India!?",
-                        "back": "The people here live in unison, presenting to the world unity in diversity.",
-                        "concept_id": "fepr105_c01"
-                    },
-                    {
-                        "id": "fepr105_fc04",
-                        "front": "What key point should you remember from Hamara Bharat — Incredible India!?",
-                        "back": "Bharat is a land rich with rivers, lakes, and high mountains.",
-                        "concept_id": "fepr105_c01"
-                    },
-                    {
-                        "id": "fepr105_fc05",
-                        "front": "What key point should you remember from Hamara Bharat — Incredible India!?",
-                        "back": "Its green forests are home to many plants, insects, birds, and animals.",
-                        "concept_id": "fepr105_c01"
-                    },
-                    {
-                        "id": "fepr105_fc06",
-                        "front": "What key point should you remember from Hamara Bharat — Incredible India!?",
-                        "back": "All these elements ensure that Bharat prospers and is respected globally.",
-                        "concept_id": "fepr105_c01"
+                        "term": "Unity in Diversity",
+                        "definition": "The idea that differences in religions, languages, and cultures are strengths that make the country unique."
                     }
                 ]
             },

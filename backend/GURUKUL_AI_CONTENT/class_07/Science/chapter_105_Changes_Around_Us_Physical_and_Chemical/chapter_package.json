@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "Changes Around Us: Physical and Chemical",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.186920"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Changes Around Us: Physical and Chemical.",
+                "overview": "This chapter introduces the fascinating world of changes that occur around us. It explores both physical changes (where the chemical composition remains the same, such as melting or boiling) and chemical changes (where a new substance is formed, such as rusting or burning). Understanding these changes helps us appreciate the dynamic nature of matter and how substances interact with their environment.",
                 "source_grounded_key_points": [
                     "Changes Around Us: 5 Physical and Chemical I placed a cube of ice here half an hour ago.",
                     "A bud that I saw yesterday on this rose plant has become a ﬂower today.",
@@ -185,8 +187,10 @@
             "subject": "Science",
             "chapter_title": "Changes Around Us: Physical and Chemical",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.186954"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Changes Around Us: Physical and Chemical.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "Changes Around Us: 5 Physical and Chemical I placed a cube of ice here half an hour ago.",
-                            "A bud that I saw yesterday on this rose plant has become a ﬂower today.",
-                            "Yesterday, I saw some brown spots on a banana, but today it has more brown spots and a strong smell.",
-                            "Some of them are listed in Table 5.1, you may notice that something is changing in each case.",
-                            "Any other Curiosity | Textbook of Science | Grade 7 You might have noticed that these changes could be in the size, shape, smell, or other property of the substance or object."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 105, 'Changes Around Us: Physical and Chemical', introduces the fundamental concept that matter is constantly changing in our surroundings, and these changes are broadly categorized into physical and chemical changes. **Physical changes** involve alterations in the form or state of matter but the chemical composition remains the same. Examples include melting ice (solid to liquid), boiling water (liquid to gas), cutting paper, or crushing a can. These changes are generally reversible and do not lead to a new substance. **Chemical changes**, on the other hand, involve the breaking of existing chemical bonds and the formation of new ones, resulting in a completely new substance with different properties. Examples include burning wood, rusting of iron, or cooking food. These changes are typically irreversible. The key indicators of a chemical change include the release of heat, change in color, production of gas, formation of a precipitate, or change in odor.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Science",
             "chapter_title": "Changes Around Us: Physical and Chemical",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.186973"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,49 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu105_c01",
-                        "name": "Changes Around Us: Physical and Chemical",
-                        "definition": "Central learning focus of Changes Around Us: Physical and Chemical.",
-                        "source_evidence": "Changes Around Us: 5 Physical and Chemical I placed a cube of ice here half an hour ago."
+                        "concept_id": 1,
+                        "name": "Introduction to Changes",
+                        "description": "Defining a change and classifying changes around us."
                     },
                     {
-                        "id": "gecu105_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "A bud that I saw yesterday on this rose plant has become a ﬂower today."
+                        "concept_id": 2,
+                        "name": "Physical Change",
+                        "description": "Changes that affect the form or appearance but do not change the chemical composition of the substance."
                     },
                     {
-                        "id": "gecu105_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "Yesterday, I saw some brown spots on a banana, but today it has more brown spots and a strong smell."
+                        "concept_id": 3,
+                        "name": "Examples of Physical Changes",
+                        "description": "Boiling, melting, freezing, dissolving, cutting, tearing."
+                    },
+                    {
+                        "concept_id": 4,
+                        "name": "Chemical Change",
+                        "description": "Changes in which new substances are formed, involving a change in the chemical composition of the substance."
+                    },
+                    {
+                        "concept_id": 5,
+                        "name": "Characteristics of Chemical Changes",
+                        "description": "Formation of a new substance, production of heat or light, change in color, formation of gas, formation of precipitate."
+                    },
+                    {
+                        "concept_id": 6,
+                        "name": "Physical vs. Chemical Change Differentiation",
+                        "description": "Key differences based on whether the substance remains chemically the same or changes its elemental makeup."
+                    },
+                    {
+                        "concept_id": 7,
+                        "name": "Reversible vs. Irreversible Changes",
+                        "description": "Understanding that some changes can be undone (reversible) and some cannot (irreversible)."
+                    },
+                    {
+                        "concept_id": 8,
+                        "name": "Conservation of Mass",
+                        "description": "The principle that the total mass of reactants equals the total mass of products in a chemical change."
+                    },
+                    {
+                        "concept_id": 9,
+                        "name": "Indicators of Chemical Change",
+                        "description": "Observations used to detect a chemical change, such as gas evolution, temperature change, color change, formation of precipitate."
                     }
                 ]
             },
@@ -490,8 +465,10 @@
             "subject": "Science",
             "chapter_title": "Changes Around Us: Physical and Chemical",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.186946"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +477,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Changes Around Us: Physical and Chemical.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Changes Around Us: Physical and Chemical supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine observing various everyday scenarios. When ice melts, it changes from solid to liquid—a physical change because water ($H_2O$) is still present. When wood burns, it changes into ash, smoke, and gases—a chemical change because new substances are formed. This chapter explores how energy affects these transitions. For physical changes, the change is often reversible (e.g., water turning back into ice). For chemical changes, the bonds are broken and reformed, making them generally irreversible. We investigate how substances react with heat, light, or other chemicals to transform their structure and properties, leading to completely new materials.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1072,10 @@
             "subject": "Science",
             "chapter_title": "Changes Around Us: Physical and Chemical",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.186965"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,133 +1087,54 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu105_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Changes Around Us: Physical and Chemical'?",
+                        "q_id": 1,
+                        "type": "Multiple Choice",
+                        "question": "Which of the following is an example of a physical change?",
                         "options": [
-                            "Changes Around Us: 5 Physical and Chemical I placed a cube of ice here half an hour ago.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Burning of wood",
+                            "Rusting of iron",
+                            "Melting of ice",
+                            "Cooking of an egg"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Changes Around Us: 5 Physical and Chemical I placed a cube of ice here half an hour ago.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu105_c01"
+                        "answer": "Melting of ice"
                     },
                     {
-                        "id": "gecu105_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Changes Around Us: Physical and Chemical'?",
-                        "options": [
-                            "A bud that I saw yesterday on this rose plant has become a ﬂower today.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A bud that I saw yesterday on this rose plant has become a ﬂower today.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu105_c01"
+                        "q_id": 2,
+                        "type": "True/False",
+                        "question": "The formation of a new substance always indicates a chemical change.",
+                        "answer": "True"
                     },
                     {
-                        "id": "gecu105_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Changes Around Us: Physical and Chemical'?",
-                        "options": [
-                            "Yesterday, I saw some brown spots on a banana, but today it has more brown spots and a strong smell.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Yesterday, I saw some brown spots on a banana, but today it has more brown spots and a strong smell.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu105_c01"
+                        "q_id": 3,
+                        "type": "Definition",
+                        "question": "Define a chemical change.",
+                        "answer": "A chemical change is a process where substances are converted into new substances with a change in their chemical composition."
                     },
                     {
-                        "id": "gecu105_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Changes Around Us: Physical and Chemical'?",
-                        "options": [
-                            "Some of them are listed in Table 5.1, you may notice that something is changing in each case.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Some of them are listed in Table 5.1, you may notice that something is changing in each case.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu105_c01"
+                        "q_id": 4,
+                        "type": "Application",
+                        "question": "Does the growth of a plant represent a physical or chemical change?",
+                        "answer": "Chemical change (due to cell division and growth involving chemical reactions)."
                     },
                     {
-                        "id": "gecu105_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Changes Around Us: Physical and Chemical'?",
-                        "options": [
-                            "Any other Curiosity | Textbook of Science | Grade 7 You might have noticed that these changes could be in the size, shape, smell, or other property of the substance or object.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Any other Curiosity | Textbook of Science | Grade 7 You might have noticed that these changes could be in the size, shape, smell, or other property of the substance or object.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu105_c01"
+                        "q_id": 5,
+                        "type": "Scenario",
+                        "question": "When salt is dissolved in water, is this physical or chemical change?",
+                        "answer": "Physical change."
                     },
                     {
-                        "id": "gecu105_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Changes Around Us: Physical and Chemical'?",
-                        "options": [
-                            "Can you think of some other changes that happen in your surroundings?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Can you think of some other changes that happen in your surroundings?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu105_c01"
+                        "q_id": 6,
+                        "type": "Identification",
+                        "question": "Name two physical changes.",
+                        "answer": [
+                            "Melting",
+                            "Dissolving"
+                        ]
                     },
-                    {
-                        "id": "gecu105_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Changes Around Us: Physical and Chemical'?",
-                        "options": [
-                            "We observe the changes occurring around us with the help of our senses of sight, smell, touch, hearing, and taste.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We observe the changes occurring around us with the help of our senses of sight, smell, touch, hearing, and taste.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu105_c01"
-                    },
-                    {
-                        "id": "gecu105_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Changes Around Us: Physical and Chemical'?",
-                        "options": [
-                            "58 Reprint 2026-27 Chapter 5.indd 58 4/3/2025 4:52:45 PM 59 5.1 A Substance May Change in Appearance but Remain the Same!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "58 Reprint 2026-27 Chapter 5.indd 58 4/3/2025 4:52:45 PM 59 5.1 A Substance May Change in Appearance but Remain the Same!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu105_c01"
-                    }
+                    "flashcards_structure_sample_1_physical_change_name_and_definition",
+                    "flashcards_structure_sample_2_chemical_change_characteristics",
+                    "mind_map_structure_sample_1_concept_hub_changes",
+                    "mind_map_structure_sample_2_physical_chemical_differentiation"
                 ]
             },
             "runtime_mapping": {
@@ -1715,8 +1587,10 @@
             "subject": "Science",
             "chapter_title": "Changes Around Us: Physical and Chemical",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.186938"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1599,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Changes Around Us: Physical and Chemical' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "Changes Around Us: 5 Physical and Chemical I placed a cube of ice here half an hour ago.",
-                    "A bud that I saw yesterday on this rose plant has become a ﬂower today.",
-                    "Yesterday, I saw some brown spots on a banana, but today it has more brown spots and a strong smell.",
-                    "Some of them are listed in Table 5.1, you may notice that something is changing in each case.",
-                    "Any other Curiosity | Textbook of Science | Grade 7 You might have noticed that these changes could be in the size, shape, smell, or other property of the substance or object.",
-                    "Can you think of some other changes that happen in your surroundings?",
-                    "We observe the changes occurring around us with the help of our senses of sight, smell, touch, hearing, and taste."
-                ]
-            },
+            "content": "Chapter 105 is a fundamental exploration of how matter undergoes transformation. It systematically categorizes changes into two types: physical changes, which alter appearance or state without changing the chemical identity, and chemical changes, which result in the formation of new substances. By examining examples like evaporation and oxidation, we learn to identify the key indicators of a chemical reaction, such as color change, temperature variation, or the release of energy. This chapter highlights the crucial role that energy and interaction play in shaping the world we see, emphasizing that all transformations, whether microscopic or macroscopic, are driven by specific energetic processes.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

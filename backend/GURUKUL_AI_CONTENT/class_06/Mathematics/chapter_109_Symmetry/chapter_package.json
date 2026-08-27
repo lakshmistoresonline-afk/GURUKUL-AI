@@ -128,8 +128,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetry",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.542486"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Symmetry.",
+                "overview": "Symmetry is a fundamental property in geometry that describes the properties of a shape or object where a part of the object is either identical to another part or can be transformed into the other part through a transformation (like rotation, reflection, or translation). It relates to the balance and shape of an object.",
                 "source_grounded_key_points": [
                     "9 SYMMETRY Look around you — you may find many objects that catch your attention.",
                     "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above.",
@@ -175,8 +177,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetry",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.542564"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Symmetry accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "9 SYMMETRY Look around you — you may find many objects that catch your attention.",
-                            "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above.",
-                            "In these pictures, it appears that some parts of the figure are repeated and these repetitions seem to occur in a definite pattern.",
-                            "Can you see what repeats in the beautiful rangoli figure?"
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter introduces the concept of symmetry in geometry, which is the invariance of a shape under some transformation. There are two main types of symmetry: line symmetry (reflectional symmetry) and point symmetry (rotational symmetry). Line symmetry exists if a shape can be folded along a line such that the two halves coincide. Point symmetry exists if a shape can be rotated around a center point by a certain angle and map onto itself. We study how these symmetries manifest in various 2D shapes like triangles, squares, pentagons, and regular polygons. The key is to identify the axes of symmetry and the centers of symmetry.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetry",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.542588"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,14 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fegp109_c01",
-                        "name": "Symmetry",
-                        "definition": "Central learning focus of Symmetry.",
-                        "source_evidence": "9 SYMMETRY Look around you — you may find many objects that catch your attention."
-                    },
-                    {
-                        "id": "fegp109_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above."
-                    },
-                    {
-                        "id": "fegp109_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "In these pictures, it appears that some parts of the figure are repeated and these repetitions seem to occur in a definite pattern."
-                    }
+                    "Types of Symmetry (Line Symmetry)",
+                    "Order of Symmetry (Rotational Symmetry)",
+                    "Isometry (Rigid Transformations)",
+                    "Reflectional Symmetry",
+                    "Rotational Symmetry around a point",
+                    "Reflectional Symmetry across a line/axis",
+                    "Tessellation and Symmetry of Patterns",
+                    "Regular vs. Irregular Polygons and their Symmetry"
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +286,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetry",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.542606"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +323,40 @@
                         "from": "fegp109_c02",
                         "to": "fegp109_c03",
                         "relation": "enables"
+                    }
+                ],
+                "title": "Symmetry in Shapes",
+                "root": "Symmetry",
+                "children": [
+                    {
+                        "node": "Types of Symmetry",
+                        "sub_nodes": [
+                            "Line Symmetry",
+                            "Rotational Symmetry",
+                            "Reflectional Symmetry"
+                        ]
+                    },
+                    {
+                        "node": "Order of Symmetry",
+                        "sub_nodes": [
+                            "Definition",
+                            "Calculating Order"
+                        ]
+                    },
+                    {
+                        "node": "Isometry (Rigid Transformations)",
+                        "sub_nodes": [
+                            "Translation",
+                            "Rotation",
+                            "Reflection"
+                        ]
+                    },
+                    {
+                        "node": "Applications",
+                        "sub_nodes": [
+                            "Tessellations",
+                            "Patterns"
+                        ]
                     }
                 ]
             },
@@ -469,8 +444,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetry",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.542549"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +456,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Symmetry.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Symmetry supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine you are an architect designing a building. Symmetry is a crucial tool for creating aesthetically pleasing and structurally stable designs. A famous example is the architecture of the Taj Mahal, which exhibits perfect bilateral symmetry. If you draw a line through the center of the Taj Mahal, it is almost certainly an axis of symmetry, meaning one side is a mirror image of the other. In nature, symmetry is also ubiquitous: the structure of a snowflake, the petals of a flower, or the arrangement of leaves on a stem often follow patterns of symmetry. These natural patterns minimize energy and maximize structural integrity, showcasing symmetry's importance in the universe, from the microscopic to the macroscopic.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1019,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetry",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.542578"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1034,41 @@
             "content": {
                 "items": [
                     {
-                        "id": "fegp109_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Symmetry?",
+                        "id": 1,
+                        "question": "What is the line of symmetry for an equilateral triangle?",
+                        "type": "Multiple Choice",
                         "options": [
-                            "9 SYMMETRY Look around you — you may find many objects that catch your attention.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Any line segment",
+                            "One line passing through a vertex",
+                            "The median of the triangle",
+                            "The altitude (or angle bisector) drawn from a vertex"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "9 SYMMETRY Look around you — you may find many objects that catch your attention.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp109_c01"
+                        "answer": 4
                     },
                     {
-                        "id": "fegp109_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Symmetry?",
+                        "id": 2,
+                        "question": "How many lines of symmetry does a regular hexagon have?",
+                        "type": "Multiple Choice",
                         "options": [
-                            "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "3",
+                            "4",
+                            "6",
+                            "12"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp109_c01"
+                        "answer": 6
                     },
                     {
-                        "id": "fegp109_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Symmetry?",
-                        "options": [
-                            "In these pictures, it appears that some parts of the figure are repeated and these repetitions seem to occur in a definite pattern.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In these pictures, it appears that some parts of the figure are repeated and these repetitions seem to occur in a definite pattern.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp109_c01"
+                        "id": 3,
+                        "question": "If a figure has rotational symmetry of order 2, what does this mean?",
+                        "type": "True/False",
+                        "statement": "The figure looks exactly the same after a 180-degree rotation.",
+                        "answer": true
                     },
                     {
-                        "id": "fegp109_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Symmetry?",
-                        "options": [
-                            "Can you see what repeats in the beautiful rangoli figure?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Can you see what repeats in the beautiful rangoli figure?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp109_c01"
-                    },
-                    {
-                        "id": "fegp109_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Symmetry?",
-                        "options": [
-                            "In the Reprint 2026-27 Chapter 9_Symmetry.indd 217 13-08-2024 17:05:22 Ganita Prakash | Grade 6 rangoli, the red petals come back onto themselves when the flower is rotated by 90˚ around the centre and so do the other parts of the rangoli.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In the Reprint 2026-27 Chapter 9_Symmetry.indd 217 13-08-2024 17:05:22 Ganita Prakash | Grade 6 rangoli, the red petals come back onto themselves when the flower is rotated by 90˚ around the centre and so do the other parts of the rangoli.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp109_c01"
-                    },
-                    {
-                        "id": "fegp109_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Symmetry?",
-                        "options": [
-                            "Now, can you say what figure repeats along each side of the hexagon?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Now, can you say what figure repeats along each side of the hexagon?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp109_c01"
+                        "id": 4,
+                        "question": "Define an isometry in the context of geometric transformations.",
+                        "type": "Fill in the Blank",
+                        "answer": "A transformation that preserves distance and angle (e.g., translation, rotation, reflection)."
                     }
                 ]
             },
@@ -1625,8 +1517,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetry",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.542504"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1529,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Symmetry' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "9 SYMMETRY Look around you — you may find many objects that catch your attention.",
-                    "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above.",
-                    "In these pictures, it appears that some parts of the figure are repeated and these repetitions seem to occur in a definite pattern.",
-                    "Can you see what repeats in the beautiful rangoli figure?",
-                    "In the Reprint 2026-27 Chapter 9_Symmetry.indd 217 13-08-2024 17:05:22 Ganita Prakash | Grade 6 rangoli, the red petals come back onto themselves when the flower is rotated by 90˚ around the centre and so do the other parts of the rangoli.",
-                    "Now, can you say what figure repeats along each side of the hexagon?"
-                ]
-            },
+            "content": "Chapter 109 on Symmetry explores the geometric concept of balance in shapes. It covers how a figure can be mapped onto itself using transformations. Key concepts include: \n1. Line Symmetry: The ability to divide a figure into two mirror-image halves.\n2. Rotational Symmetry: The ability to overlap a figure with itself after a certain degree of rotation around a central point.\n3. Point Symmetry: A special case of rotational symmetry around a single point.\nThe chapter emphasizes identifying, classifying, and applying these types of symmetry to geometric figures and real-world applications, highlighting symmetry's role in art, science, and architecture.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1579,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetry",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.542598"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1594,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fegp109_fc01",
-                        "front": "What key point should you remember from Symmetry?",
-                        "back": "9 SYMMETRY Look around you — you may find many objects that catch your attention.",
-                        "concept_id": "fegp109_c01"
+                        "term": "Line of Symmetry",
+                        "definition": "A line that divides a shape into two identical halves (mirror image)."
                     },
                     {
-                        "id": "fegp109_fc02",
-                        "front": "What key point should you remember from Symmetry?",
-                        "back": "Some such things are shown below: Flower Butterfly Rangoli Pinwheel There is something beautiful about the pictures above.",
-                        "concept_id": "fegp109_c01"
+                        "term": "Order of Rotational Symmetry",
+                        "definition": "The number of times a figure looks exactly the same during a full 360-degree rotation (including the original position)."
                     },
                     {
-                        "id": "fegp109_fc03",
-                        "front": "What key point should you remember from Symmetry?",
-                        "back": "In these pictures, it appears that some parts of the figure are repeated and these repetitions seem to occur in a definite pattern.",
-                        "concept_id": "fegp109_c01"
+                        "term": "Reflectional Symmetry",
+                        "definition": "The property where a shape can be folded along a line, and the two halves match perfectly."
                     },
                     {
-                        "id": "fegp109_fc04",
-                        "front": "What key point should you remember from Symmetry?",
-                        "back": "Can you see what repeats in the beautiful rangoli figure?",
-                        "concept_id": "fegp109_c01"
+                        "term": "Isometry",
+                        "definition": "A transformation that maps one geometric figure onto another without changing its size or shape."
                     },
                     {
-                        "id": "fegp109_fc05",
-                        "front": "What key point should you remember from Symmetry?",
-                        "back": "In the Reprint 2026-27 Chapter 9_Symmetry.indd 217 13-08-2024 17:05:22 Ganita Prakash | Grade 6 rangoli, the red petals come back onto themselves when the flower is rotated by 90˚ around the centre and so do the other parts of the rangoli.",
-                        "concept_id": "fegp109_c01"
-                    },
-                    {
-                        "id": "fegp109_fc06",
-                        "front": "What key point should you remember from Symmetry?",
-                        "back": "Now, can you say what figure repeats along each side of the hexagon?",
-                        "concept_id": "fegp109_c01"
+                        "term": "Point of Rotation",
+                        "definition": "A fixed point around which a shape is rotated."
                     }
                 ]
             },

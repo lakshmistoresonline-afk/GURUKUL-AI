@@ -128,8 +128,10 @@
             "subject": "Hindi",
             "chapter_title": "मैया मैं नहि माखन खायो",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.411045"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: मैया मैं नहि माखन खायो.",
+                "overview": "This JSON structure is designed for a comprehensive educational resource covering the Hindi chapter 'Maiya Main Nahin Makhan Khayo' (Chapter 109). It aims to provide a structured overview of the chapter, making it useful for students, teachers, or anyone seeking a deep understanding of the text.",
                 "source_grounded_key_points": [
                     "चार पहर बसं ीवट भटक्यो, साँझ परे घर आयो॥ मैं बालक बहियन को छोटो, छीको के हि बिधि पायो।",
                     "ग्वाल-बाल सब बैर परे हैं, बरबस मखु लपटायो॥ तू माता मन की अति भोरी, इनके कहे पतियायो।",
@@ -175,8 +177,10 @@
             "subject": "Hindi",
             "chapter_title": "मैया मैं नहि माखन खायो",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.411081"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of मैया मैं नहि माखन खायो accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "चार पहर बसं ीवट भटक्यो, साँझ परे घर आयो॥ मैं बालक बहियन को छोटो, छीको के हि बिधि पायो।",
-                            "ग्वाल-बाल सब बैर परे हैं, बरबस मखु लपटायो॥ तू माता मन की अति भोरी, इनके कहे पतियायो।",
-                            "जिय तेरे कछु भेद उपजि हैं, जानि परायो जायो॥ ये ले अपनी लकुटि कमरिया, बहुतहिं नाच नचायो।",
-                            "सरू दास तब बिहँसि जसोदा, लै उर कंठ लगायो॥ — सरू दास Reprint 2026-27 Chapter 9.indd 94 10/06/2024 11:23:28 कवि से पर‍िचय आपने जो रचना अभी पढ़ी है, वह सरू दास द्वारा रचित है।"
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "यह पाठ मुख्य रूप से बाल कृष्ण के आनंद और उनकी शरारतों पर आधारित है, विशेष रूप से माखन चोरी और उसकी प्रतिक्रियाओं को दर्शाता है। यह नैतिक शिक्षा और भक्ति का मिश्रण है। शिक्षक इस अध्याय के माध्यम से बच्चों को सिखाते हैं कि कृष्ण अपनी लीलाओं में कितने मनमोहक और आनंददायक हैं, लेकिन साथ ही यह भी सिखाते हैं कि हमें अपनी इंद्रियों पर नियंत्रण रखना चाहिए और दूसरों के प्रति प्रेम और सम्मान रखना चाहिए। 'मैया, मैं नहीं माखन खायो' जैसे संवाद में कृष्ण अपनी 'मास्टर' (साँझ या माता) को अपनी गलती स्वीकार करते हैं, जिससे बच्चों को यह समझने में मदद मिलती है कि शरारत करना स्वीकार करने और सुधारने की प्रक्रिया का हिस्सा है।",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -469,8 +416,10 @@
             "subject": "Hindi",
             "chapter_title": "मैया मैं नहि माखन खायो",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.411073"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +428,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to मैया मैं नहि माखन खायो.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from मैया मैं नहि माखन खायो supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "In this chapter, the narrative typically revolves around a situation where a child (often a mischievous one) expresses a desire, typically to take butter/cream (makhan) or some other forbidden treat, and the inevitable interaction with an elder figure, usually a mother or parent. The story usually unfolds through dialogue, showing the child's playful defiance and the adult's firm yet loving response. The text emphasizes not just the incident itself, but the underlying educational principle—that while childhood desires are natural, there is an importance of listening to guidance and respecting the boundaries set by those who care for us. The explanation should focus on the emotional dynamics: the child's impulse versus the need for discipline, and the wisdom communicated by the elder.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1625,8 +1546,10 @@
             "subject": "Hindi",
             "chapter_title": "मैया मैं नहि माखन खायो",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.411065"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1558,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'मैया मैं नहि माखन खायो' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "चार पहर बसं ीवट भटक्यो, साँझ परे घर आयो॥ मैं बालक बहियन को छोटो, छीको के हि बिधि पायो।",
-                    "ग्वाल-बाल सब बैर परे हैं, बरबस मखु लपटायो॥ तू माता मन की अति भोरी, इनके कहे पतियायो।",
-                    "जिय तेरे कछु भेद उपजि हैं, जानि परायो जायो॥ ये ले अपनी लकुटि कमरिया, बहुतहिं नाच नचायो।",
-                    "सरू दास तब बिहँसि जसोदा, लै उर कंठ लगायो॥ — सरू दास Reprint 2026-27 Chapter 9.indd 94 10/06/2024 11:23:28 कवि से पर‍िचय आपने जो रचना अभी पढ़ी है, वह सरू दास द्वारा रचित है।",
-                    "सरू दास ने अपना अधि‍कांश जीवन मथरु ा, गोवर्धन सहित ब्रज के क्षेत्रों में श्रीकृ ष्ण के गणु गान में भजन गाते हुए बिताया।",
-                    "मैया मैं नहिं माखन खायो उनकी रचनाएँ ब्रजभाषा में उपलब्ध हैं।"
-                ]
-            },
+            "content": "The story 'Maiya Main Nahin Makhan Khayo' is a brief yet profound lesson in the relationship between children and their parents. It captures a common childhood scenario: the tempting desire to indulge in something 'forbidden' or restricted (like makhan) and the subsequent lesson learned through discipline. The central message is a gentle reminder to children about listening to the wisdom of elders and understanding the boundaries set for their well-being. It beautifully illustrates the interplay between love, guidance, and self-control, ensuring that even in moments of temptation, there is a framework of respect and good upbringing that guides a child towards responsible behavior.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

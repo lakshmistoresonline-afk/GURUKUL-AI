@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Operations with Integers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.078854"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Operations with Integers.",
+                "overview": "Integers are whole numbers that can be positive, negative, or zero. This chapter introduces the fundamental operations performed on integers, including addition, subtraction, multiplication, and division. Understanding how to manipulate these numbers is crucial for mathematical reasoning and solving various real-world problems.",
                 "source_grounded_key_points": [
                     "2 OPERATIONS WITH INTEGERS 2.1 A Quick Recap of Integers Rakesh’s Puzzle: A Number Game Rakesh gives you a challenge.",
                     "“Their sum is 25, and their difference is 11.” Can you tell me the two numbers?",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "Operations with Integers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.078892"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Operations with Integers.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "2 OPERATIONS WITH INTEGERS 2.1 A Quick Recap of Integers Rakesh’s Puzzle: A Number Game Rakesh gives you a challenge.",
-                            "“Their sum is 25, and their difference is 11.” Can you tell me the two numbers?",
-                            "(Remember: the difference means first number – second number.) Write your guesses like this: First Number Second Number Sum Difference 10 15 25 –5 20 5 25 15 19 6 25 13 18 7 25 11 Did you find the right pair?",
-                            "Now that you’ve found the correct pair, Rakesh gives you a second challenge: “Think of two numbers whose sum is 25, but their difference is –11.” Use the same method.",
-                            "You will notice that if you swap the numbers from the first Chapter-2.indd 24 10/9/2025 2:27:38 PM Operations with Integers puzzle, you get the answer to Rakesh’s second puzzle."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter introduces the basic operations with integers. Integers are numbers that can be positive, negative, or zero. We have four main operations: addition, subtraction, multiplication, and division. The teacher should emphasize the 'number line' concept for addition and subtraction (moving right for addition, left for subtraction). For multiplication, the concept of repeated addition is crucial, and for division, the concept of 'groups' or 'pairs' is used. Specific focus should be placed on the rules governing the signs of the results (e.g., negative times positive is negative). Examples should be drawn from real-life scenarios involving temperature changes, profits/losses, and debt.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "Operations with Integers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.078913"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,28 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gegp202_c01",
-                        "name": "Operations with Integers",
-                        "definition": "Central learning focus of Operations with Integers.",
-                        "source_evidence": "2 OPERATIONS WITH INTEGERS 2.1 A Quick Recap of Integers Rakesh’s Puzzle: A Number Game Rakesh gives you a challenge."
+                        "name": "Understanding Integers",
+                        "description": "Reviewing positive, negative, zero, and the number line."
                     },
                     {
-                        "id": "gegp202_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "“Their sum is 25, and their difference is 11.” Can you tell me the two numbers?"
+                        "name": "Addition of Integers",
+                        "description": "Learning to add integers with positive and negative values (e.g., $5 + (-3)$)."
                     },
                     {
-                        "id": "gegp202_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "(Remember: the difference means first number – second number.) Write your guesses like this: First Number Second Number Sum Difference 10 15 25 –5 20 5 25 15 19 6 25 13 18 7 25 11 Did you find the right pair?"
+                        "name": "Subtraction of Integers",
+                        "description": "Understanding subtraction as adding the opposite, and calculating $a - b$ for integers."
+                    },
+                    {
+                        "name": "Multiplication of Integers",
+                        "description": "Rules for multiplying two integers (positive/positive, negative/negative, positive/negative)."
+                    },
+                    {
+                        "name": "Division of Integers",
+                        "description": "Rules for dividing integers, including the sign conventions."
+                    },
+                    {
+                        "name": "Order of Operations (PEMDAS/BODMAS)",
+                        "description": "Applying the hierarchy of operations in expressions involving multiple integer operations."
                     }
                 ]
             },
@@ -360,8 +314,10 @@
             "subject": "Mathematics",
             "chapter_title": "Operations with Integers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.078929"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +352,26 @@
                         "to": "gegp202_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Operations with Integers": {
+                    "Addition": [
+                        "Same Signs",
+                        "Different Signs",
+                        "Using Number Line"
+                    ],
+                    "Multiplication": [
+                        "Sign Rules",
+                        "Product of Two Negatives is Positive"
+                    ],
+                    "Subtraction": [
+                        "Definition: $a - b = a + (-b)$",
+                        "Changing signs for subtraction"
+                    ],
+                    "Division": [
+                        "Sign rules for division",
+                        "Absolute value division"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +465,10 @@
             "subject": "Mathematics",
             "chapter_title": "Operations with Integers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.078883"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +477,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Operations with Integers.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Operations with Integers supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine you are keeping track of your bank account balance. A positive balance represents money you have (e.g., +$500), and a negative balance represents an overdraft (e.g., -$200). Adding integers helps you calculate your total balance. Subtracting integers tells you the difference between two financial states. Multiplication of integers can represent repeated actions, such as withdrawing money multiple times or calculating the total cost of items. Division helps you split a total amount equally among several people. For example, if you owe $10 and pay $30, your new balance is $20 ($-10 + 30$). These operations are the backbone of many practical financial and scientific calculations.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1072,10 @@
             "subject": "Mathematics",
             "chapter_title": "Operations with Integers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.078904"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1087,64 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp202_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Operations with Integers'?",
+                        "id": 1,
+                        "question": "Solve: $-15 + 7$",
                         "options": [
-                            "2 OPERATIONS WITH INTEGERS 2.1 A Quick Recap of Integers Rakesh’s Puzzle: A Number Game Rakesh gives you a challenge.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "-22",
+                            "-8",
+                            "8",
+                            "22"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "2 OPERATIONS WITH INTEGERS 2.1 A Quick Recap of Integers Rakesh’s Puzzle: A Number Game Rakesh gives you a challenge.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp202_c01"
+                        "answer": "-8",
+                        "topic": "Addition"
                     },
                     {
-                        "id": "gegp202_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Operations with Integers'?",
+                        "id": 2,
+                        "question": "What is the product of $(-4) \times 6$?",
                         "options": [
-                            "“Their sum is 25, and their difference is 11.” Can you tell me the two numbers?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "-24",
+                            "24",
+                            "-2",
+                            "2"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "“Their sum is 25, and their difference is 11.” Can you tell me the two numbers?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp202_c01"
+                        "answer": "-24",
+                        "topic": "Multiplication"
                     },
                     {
-                        "id": "gegp202_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Operations with Integers'?",
+                        "id": 3,
+                        "question": "Find the result of $-20 \times (-3)$",
                         "options": [
-                            "(Remember: the difference means first number – second number.) Write your guesses like this: First Number Second Number Sum Difference 10 15 25 –5 20 5 25 15 19 6 25 13 18 7 25 11 Did you find the right pair?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "60",
+                            "-60",
+                            "20",
+                            "-20"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "(Remember: the difference means first number – second number.) Write your guesses like this: First Number Second Number Sum Difference 10 15 25 –5 20 5 25 15 19 6 25 13 18 7 25 11 Did you find the right pair?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp202_c01"
+                        "answer": "60",
+                        "topic": "Multiplication"
                     },
                     {
-                        "id": "gegp202_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Operations with Integers'?",
+                        "id": 4,
+                        "question": "Evaluate: $10 \times (-2) + 5$",
                         "options": [
-                            "Now that you’ve found the correct pair, Rakesh gives you a second challenge: “Think of two numbers whose sum is 25, but their difference is –11.” Use the same method.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "-15",
+                            "25",
+                            "-15",
+                            "5"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Now that you’ve found the correct pair, Rakesh gives you a second challenge: “Think of two numbers whose sum is 25, but their difference is –11.” Use the same method.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp202_c01"
+                        "answer": "-15",
+                        "topic": "Order of Operations"
                     },
                     {
-                        "id": "gegp202_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Operations with Integers'?",
+                        "id": 5,
+                        "question": "Calculate: $-30 \text{ divided by } 5$",
                         "options": [
-                            "You will notice that if you swap the numbers from the first Chapter-2.indd 24 10/9/2025 2:27:38 PM Operations with Integers puzzle, you get the answer to Rakesh’s second puzzle.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "-6",
+                            "6",
+                            "-150",
+                            "150"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "You will notice that if you swap the numbers from the first Chapter-2.indd 24 10/9/2025 2:27:38 PM Operations with Integers puzzle, you get the answer to Rakesh’s second puzzle.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp202_c01"
-                    },
-                    {
-                        "id": "gegp202_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Operations with Integers'?",
-                        "options": [
-                            "Figure it Out Let us try to find a few more pairs of numbers from their sums and differences: (a) Sum = 27, Difference = 9 (b) Sum = 4, Difference = 12 (c) Sum = 0, Difference = 10 (d) Sum = 0, Difference = – 10 (e) Sum = – 7, Difference = – 1 (f) Sum = – 7, Difference = – 13 Choose a partner and take turns to play this game.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Figure it Out Let us try to find a few more pairs of numbers from their sums and differences: (a) Sum = 27, Difference = 9 (b) Sum = 4, Difference = 12 (c) Sum = 0, Difference = 10 (d) Sum = 0, Difference = – 10 (e) Sum = – 7, Difference = – 1 (f) Sum = – 7, Difference = – 13 Choose a partner and take turns to play this game.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp202_c01"
-                    },
-                    {
-                        "id": "gegp202_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Operations with Integers'?",
-                        "options": [
-                            "In each turn, one of you can think of two integers, and give their sum and difference; the other person must then figure out the integers.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In each turn, one of you can think of two integers, and give their sum and difference; the other person must then figure out the integers.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp202_c01"
-                    },
-                    {
-                        "id": "gegp202_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Operations with Integers'?",
-                        "options": [
-                            "After some practice, you can perform this magic trick for your family members and surprise them!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "After some practice, you can perform this magic trick for your family members and surprise them!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp202_c01"
+                        "answer": "-6",
+                        "topic": "Division"
                     }
                 ]
             },
@@ -1715,8 +1598,10 @@
             "subject": "Mathematics",
             "chapter_title": "Operations with Integers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.078874"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1610,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Operations with Integers' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "2 OPERATIONS WITH INTEGERS 2.1 A Quick Recap of Integers Rakesh’s Puzzle: A Number Game Rakesh gives you a challenge.",
-                    "“Their sum is 25, and their difference is 11.” Can you tell me the two numbers?",
-                    "(Remember: the difference means first number – second number.) Write your guesses like this: First Number Second Number Sum Difference 10 15 25 –5 20 5 25 15 19 6 25 13 18 7 25 11 Did you find the right pair?",
-                    "Now that you’ve found the correct pair, Rakesh gives you a second challenge: “Think of two numbers whose sum is 25, but their difference is –11.” Use the same method.",
-                    "You will notice that if you swap the numbers from the first Chapter-2.indd 24 10/9/2025 2:27:38 PM Operations with Integers puzzle, you get the answer to Rakesh’s second puzzle.",
-                    "Figure it Out Let us try to find a few more pairs of numbers from their sums and differences: (a) Sum = 27, Difference = 9 (b) Sum = 4, Difference = 12 (c) Sum = 0, Difference = 10 (d) Sum = 0, Difference = – 10 (e) Sum = – 7, Difference = – 1 (f) Sum = – 7, Difference = – 13 Choose a partner and take turns to play this game.",
-                    "In each turn, one of you can think of two integers, and give their sum and difference; the other person must then figure out the integers."
-                ]
-            },
+            "content": "Chapter 202, 'Operations with Integers,' establishes the operational framework for integers (Positive, Negative, and Zero). It covers the rules of integer addition and subtraction, the properties of integer multiplication, and the logic behind integer division. The chapter emphasizes that negative numbers must be handled carefully, especially when dealing with the signs of products and quotients. Mastery of these operations is essential for performing higher-level mathematical computations.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1660,10 @@
             "subject": "Mathematics",
             "chapter_title": "Operations with Integers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.078922"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1675,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp202_fc01",
-                        "front": "What should you remember from Operations with Integers?",
-                        "back": "2 OPERATIONS WITH INTEGERS 2.1 A Quick Recap of Integers Rakesh’s Puzzle: A Number Game Rakesh gives you a challenge.",
-                        "concept_id": "gegp202_c01"
+                        "term": "Integer",
+                        "definition": "A whole number that can be positive, negative, or zero."
                     },
                     {
-                        "id": "gegp202_fc02",
-                        "front": "What should you remember from Operations with Integers?",
-                        "back": "“Their sum is 25, and their difference is 11.” Can you tell me the two numbers?",
-                        "concept_id": "gegp202_c01"
+                        "term": "Opposite of -a",
+                        "definition": "The additive inverse of a number; it is written as +a (e.g., the opposite of -7 is 7)."
                     },
                     {
-                        "id": "gegp202_fc03",
-                        "front": "What should you remember from Operations with Integers?",
-                        "back": "(Remember: the difference means first number – second number.) Write your guesses like this: First Number Second Number Sum Difference 10 15 25 –5 20 5 25 15 19 6 25 13 18 7 25 11 Did you find the right pair?",
-                        "concept_id": "gegp202_c01"
+                        "term": "Product of Signs",
+                        "definition": "Rules for multiplying two integers: Positive × Positive = Positive; Negative × Negative = Positive; Positive × Negative = Negative."
                     },
                     {
-                        "id": "gegp202_fc04",
-                        "front": "What should you remember from Operations with Integers?",
-                        "back": "Now that you’ve found the correct pair, Rakesh gives you a second challenge: “Think of two numbers whose sum is 25, but their difference is –11.” Use the same method.",
-                        "concept_id": "gegp202_c01"
-                    },
-                    {
-                        "id": "gegp202_fc05",
-                        "front": "What should you remember from Operations with Integers?",
-                        "back": "You will notice that if you swap the numbers from the first Chapter-2.indd 24 10/9/2025 2:27:38 PM Operations with Integers puzzle, you get the answer to Rakesh’s second puzzle.",
-                        "concept_id": "gegp202_c01"
-                    },
-                    {
-                        "id": "gegp202_fc06",
-                        "front": "What should you remember from Operations with Integers?",
-                        "back": "Figure it Out Let us try to find a few more pairs of numbers from their sums and differences: (a) Sum = 27, Difference = 9 (b) Sum = 4, Difference = 12 (c) Sum = 0, Difference = 10 (d) Sum = 0, Difference = – 10 (e) Sum = – 7, Difference = – 1 (f) Sum = – 7, Difference = – 13 Choose a partner and take turns to play this game.",
-                        "concept_id": "gegp202_c01"
-                    },
-                    {
-                        "id": "gegp202_fc07",
-                        "front": "What should you remember from Operations with Integers?",
-                        "back": "In each turn, one of you can think of two integers, and give their sum and difference; the other person must then figure out the integers.",
-                        "concept_id": "gegp202_c01"
-                    },
-                    {
-                        "id": "gegp202_fc08",
-                        "front": "What should you remember from Operations with Integers?",
-                        "back": "After some practice, you can perform this magic trick for your family members and surprise them!",
-                        "concept_id": "gegp202_c01"
+                        "term": "Division Rule",
+                        "definition": "When dividing integers, the sign is determined by the signs of the dividend and the divisor."
                     }
                 ]
             },

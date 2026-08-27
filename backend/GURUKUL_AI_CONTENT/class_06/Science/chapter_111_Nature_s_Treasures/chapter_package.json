@@ -128,8 +128,10 @@
             "subject": "Science",
             "chapter_title": "Nature’s Treasures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.664862"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Nature’s Treasures.",
+                "overview": "Nature is a vast library of wonders, where every organism and element plays a vital role in sustaining life on Earth. This chapter explores the diverse and interconnected treasures of the natural world—from ecosystems and flora and fauna to geological formations and various natural resources. Understanding nature's treasures helps us appreciate our planet and realize the importance of conservation.",
                 "source_grounded_key_points": [
                     "Ajji lives in a village on the edge of a forest in the Western Ghats.",
                     "The air in the village is fresh and cooler than in the city.",
@@ -300,8 +302,10 @@
             "subject": "Science",
             "chapter_title": "Nature’s Treasures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.664910"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +317,60 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fecu111_c01",
-                        "name": "Nature’s Treasures",
-                        "definition": "Central learning focus of Nature’s Treasures.",
-                        "source_evidence": "Ajji lives in a village on the edge of a forest in the Western Ghats."
+                        "topic": "Introduction to Nature's Treasures",
+                        "details": "Nature provides us with an unlimited wealth of resources essential for life, including air, water, land, plants, animals, minerals, and energy. Understanding these resources is the first step to sustainable living."
                     },
                     {
-                        "id": "fecu111_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "The air in the village is fresh and cooler than in the city."
+                        "topic": "Components of Natural Resources",
+                        "details": "Natural resources are broadly classified into renewable (can be replenished naturally like sunlight and air) and non-renewable (cannot be replenished in a short time, like fossil fuels and minerals).",
+                        "subtopics": [
+                            "Renewable Resources",
+                            "Non-renewable Resources"
+                        ]
                     },
                     {
-                        "id": "fecu111_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "They can see beautiful hills, streams, and many interesting plants, animals and birds around them."
+                        "topic": "Water: Nature's Most Vital Treasure",
+                        "details": "Water is fundamental for all life processes. It exists in various forms (liquid, solid, gas) and forms major parts of the Earth's surface. Water conservation and purification are critical environmental concerns.",
+                        "key_points": [
+                            "Water cycle",
+                            "Forms of water (ice, liquid, steam)",
+                            "Importance of freshwater"
+                        ]
+                    },
+                    {
+                        "topic": "Air and Atmosphere",
+                        "details": "The atmosphere protects the Earth from harmful solar radiation and provides the necessary oxygen for breathing and photosynthesis. Understanding air quality and the role of plants in oxygen production is crucial.",
+                        "subtopics": [
+                            "Composition of air",
+                            "Global warming and atmospheric pollution"
+                        ]
+                    },
+                    {
+                        "topic": "Soil: The Foundation of Agriculture",
+                        "details": "Soil is a dynamic mixture of minerals, organic matter, water, and air. It is the source of food for all living organisms. Soil health is essential for sustainable agriculture and prevents desertification.",
+                        "key_points": [
+                            "Types of soil (Alluvial, Black, Red)",
+                            "Importance of humus",
+                            "Soil degradation and conservation methods"
+                        ]
+                    },
+                    {
+                        "topic": "Energy Resources",
+                        "details": "Energy is needed for all human activities. It is derived from natural sources like solar energy, wind energy, and nuclear energy, as well as non-renewable sources like coal and petroleum. Transitioning to renewable energy is vital for combating climate change.",
+                        "subtopics": [
+                            "Conventional energy sources",
+                            "Green energy alternatives",
+                            "Sustainable energy practices"
+                        ]
+                    },
+                    {
+                        "topic": "Biodiversity and Ecosystems",
+                        "details": "Every species forms a complex food web and plays a role in maintaining ecosystem balance. Biodiversity (variety of life) is a treasure, and protecting biodiversity is crucial for ecological stability.",
+                        "key_points": [
+                            "Interdependence of organisms",
+                            "Ecosystem components (biotic and abiotic)",
+                            "Impact of human activities on biodiversity"
+                        ]
                     }
                 ]
             },
@@ -347,8 +389,10 @@
             "subject": "Science",
             "chapter_title": "Nature’s Treasures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.664926"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +426,49 @@
                         "from": "fecu111_c02",
                         "to": "fecu111_c03",
                         "relation": "enables"
+                    }
+                ],
+                "center": "Nature's Treasures",
+                "main_branches": [
+                    {
+                        "name": "Water",
+                        "children": [
+                            "Water Cycle",
+                            "Freshwater Importance",
+                            "Water Conservation"
+                        ]
+                    },
+                    {
+                        "name": "Air/Atmosphere",
+                        "children": [
+                            "Composition of Air",
+                            "Greenhouse Effect",
+                            "Climate Change"
+                        ]
+                    },
+                    {
+                        "name": "Soil",
+                        "children": [
+                            "Soil Types",
+                            "Importance of Humus",
+                            "Soil Conservation"
+                        ]
+                    },
+                    {
+                        "name": "Energy",
+                        "children": [
+                            "Renewable Sources",
+                            "Non-renewable Sources",
+                            "Green Energy"
+                        ]
+                    },
+                    {
+                        "name": "Biodiversity",
+                        "children": [
+                            "Ecosystem Components",
+                            "Importance of Conservation",
+                            "Human Impact"
+                        ]
                     }
                 ]
             },
@@ -469,8 +556,10 @@
             "subject": "Science",
             "chapter_title": "Nature’s Treasures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.664889"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +568,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Nature’s Treasures.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Nature’s Treasures supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "In many narratives, nature is portrayed as a source of immense wealth, though this wealth is defined not just by material possessions but also by the essential life-sustaining functions it provides. Imagine a village surrounded by lush forests (flora), flowing rivers (water), fertile land (soil), and diverse wildlife (fauna). The 'treasure' here is the interconnected system where the presence of one element—like a tree or a fish—influences all others. This system is an ecosystem. The story could involve characters learning that their survival depends on their responsible stewardship of nature's gifts. The narrative emphasizes that these treasures are not limitless; they require careful management. For instance, a farmer learns not to over-exploit the soil, or a community learns to protect water sources.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1131,10 @@
             "subject": "Science",
             "chapter_title": "Nature’s Treasures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.664901"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1146,24 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu111_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Nature’s Treasures?",
-                        "options": [
-                            "Ajji lives in a village on the edge of a forest in the Western Ghats.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Ajji lives in a village on the edge of a forest in the Western Ghats.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu111_c01"
+                        "question": "Which type of resource can be replenished naturally?",
+                        "answer": "Renewable Resources"
                     },
                     {
-                        "id": "fecu111_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Nature’s Treasures?",
-                        "options": [
-                            "The air in the village is fresh and cooler than in the city.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The air in the village is fresh and cooler than in the city.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu111_c01"
+                        "question": "What is the most vital natural resource for all life?",
+                        "answer": "Water"
                     },
                     {
-                        "id": "fecu111_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Nature’s Treasures?",
-                        "options": [
-                            "They can see beautiful hills, streams, and many interesting plants, animals and birds around them.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They can see beautiful hills, streams, and many interesting plants, animals and birds around them.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu111_c01"
+                        "question": "Name two renewable energy sources.",
+                        "answer": "Solar energy, Wind energy"
                     },
                     {
-                        "id": "fecu111_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Nature’s Treasures?",
-                        "options": [
-                            "One afternoon, Bhoomi and Surya ask Ajji to tell them more about the place.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "One afternoon, Bhoomi and Surya ask Ajji to tell them more about the place.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu111_c01"
+                        "question": "What is the primary role of the atmosphere regarding Earth?",
+                        "answer": "Protecting Earth from solar radiation and providing oxygen."
                     },
                     {
-                        "id": "fecu111_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Nature’s Treasures?",
-                        "options": [
-                            "Ajji says, “Children, do you know that this place has several treasures of nature that enrich our lives?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Ajji says, “Children, do you know that this place has several treasures of nature that enrich our lives?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu111_c01"
-                    },
-                    {
-                        "id": "fecu111_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Nature’s Treasures?",
-                        "options": [
-                            "The pure air is refreshing and the soil is so fertile that it supports a variety of living beings.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The pure air is refreshing and the soil is so fertile that it supports a variety of living beings.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu111_c01"
+                        "question": "Define 'Biodiversity'.",
+                        "answer": "The variety of life in a particular habitat or on Earth."
                     }
                 ]
             },
@@ -1625,8 +1612,10 @@
             "subject": "Science",
             "chapter_title": "Nature’s Treasures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.664880"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1624,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Nature’s Treasures' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "Ajji lives in a village on the edge of a forest in the Western Ghats.",
-                    "The air in the village is fresh and cooler than in the city.",
-                    "They can see beautiful hills, streams, and many interesting plants, animals and birds around them.",
-                    "One afternoon, Bhoomi and Surya ask Ajji to tell them more about the place.",
-                    "Ajji says, “Children, do you know that this place has several treasures of nature that enrich our lives?",
-                    "The pure air is refreshing and the soil is so fertile that it supports a variety of living beings."
-                ]
-            },
+            "content": "Chapter 'Chapter 111_Nature's Treasures' provides a comprehensive overview of the various components of nature. It establishes that nature consists of both living (biotic) and non-living (abiotic) elements, such as plants, animals, rocks, water, and minerals. The chapter delves into the concept of ecosystems, demonstrating how these elements interact dynamically to form balanced systems. It emphasizes that natural resources like air, water, and soil are fundamental to all life. Furthermore, the chapter introduces the concept of sustainable resource management, highlighting the ethical responsibility of humans to use these treasures wisely, ensuring their continued availability for future generations through conservation efforts.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1674,10 @@
             "subject": "Science",
             "chapter_title": "Nature’s Treasures",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.664918"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1689,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu111_fc01",
-                        "front": "What key point should you remember from Nature’s Treasures?",
-                        "back": "Ajji lives in a village on the edge of a forest in the Western Ghats.",
-                        "concept_id": "fecu111_c01"
+                        "term": "Renewable Resource",
+                        "definition": "A resource that can be naturally replenished over a short period."
                     },
                     {
-                        "id": "fecu111_fc02",
-                        "front": "What key point should you remember from Nature’s Treasures?",
-                        "back": "The air in the village is fresh and cooler than in the city.",
-                        "concept_id": "fecu111_c01"
+                        "term": "Non-renewable Resource",
+                        "definition": "A resource that exists in a fixed amount and cannot be replenished in a short time."
                     },
                     {
-                        "id": "fecu111_fc03",
-                        "front": "What key point should you remember from Nature’s Treasures?",
-                        "back": "They can see beautiful hills, streams, and many interesting plants, animals and birds around them.",
-                        "concept_id": "fecu111_c01"
+                        "term": "Water Cycle",
+                        "definition": "The continuous movement of water on, above, and below the surface of the Earth."
                     },
                     {
-                        "id": "fecu111_fc04",
-                        "front": "What key point should you remember from Nature’s Treasures?",
-                        "back": "One afternoon, Bhoomi and Surya ask Ajji to tell them more about the place.",
-                        "concept_id": "fecu111_c01"
+                        "term": "Atmosphere",
+                        "definition": "The layer of gases surrounding the Earth."
                     },
                     {
-                        "id": "fecu111_fc05",
-                        "front": "What key point should you remember from Nature’s Treasures?",
-                        "back": "Ajji says, “Children, do you know that this place has several treasures of nature that enrich our lives?",
-                        "concept_id": "fecu111_c01"
-                    },
-                    {
-                        "id": "fecu111_fc06",
-                        "front": "What key point should you remember from Nature’s Treasures?",
-                        "back": "The pure air is refreshing and the soil is so fertile that it supports a variety of living beings.",
-                        "concept_id": "fecu111_c01"
+                        "term": "Biodiversity",
+                        "definition": "The variety of living organisms on Earth."
                     }
                 ]
             },

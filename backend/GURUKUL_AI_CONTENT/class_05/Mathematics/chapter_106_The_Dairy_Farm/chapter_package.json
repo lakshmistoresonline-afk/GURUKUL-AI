@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Dairy Farm",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.174324"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'The Dairy Farm' develops mathematical reasoning and application through the chapter 'The Dairy Farm'.",
+                "overview": "Chapter 106 of Mathematics often serves as a foundational or thematic unit within a broader curriculum, designed to introduce students to core mathematical concepts through a real-world context. Specifically, 'The Dairy Farm' provides a practical scenario to illustrate fundamental arithmetic operations, data handling, basic statistics, and perhaps algebraic representations related to production, consumption, and financial management within a dairy setting. This chapter aims to connect abstract mathematical principles with tangible activities and practical life situations.",
                 "source_grounded_key_points": [
                     "The given shapes stand for numbers between 1 and 24.",
                     "The same shape denotes the same number across all problems.",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Dairy Farm",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.174362"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'The Dairy Farm'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to The Dairy Farm and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "The given shapes stand for numbers between 1 and 24.",
-                            "The same shape denotes the same number across all problems.",
-                            "A dairy has packed butter milk pouches in the following manner.",
-                            "Find the number of pouches kept in each arrangement."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'The Dairy Farm' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "In this chapter, we will be exploring various real-world applications of squares and shapes, particularly in the context of a dairy farm. We'll use concepts like area, perimeter, and volume to calculate things like the space needed for a circular barn, the area of a rectangular dairy shed, and the volume of a storage tank for milk. The explanation will cover the basic formulas, step-by-step calculations, and a practical demonstration of how geometric principles are applied to solve problems related to this farming scenario. We will emphasize the importance of understanding how to measure different shapes accurately.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Dairy Farm",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.174381"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -315,24 +264,14 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "eemm106_concept_01",
-                        "name": "The Dairy Farm",
-                        "definition": "Central learning focus developed by the chapter 'The Dairy Farm'.",
-                        "evidence": "The given shapes stand for numbers between 1 and 24."
-                    },
-                    {
-                        "id": "eemm106_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "The same shape denotes the same number across all problems."
-                    },
-                    {
-                        "id": "eemm106_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "A dairy has packed butter milk pouches in the following manner."
-                    }
+                    "Introduction to Dairy Farming",
+                    "Types of Dairy Farms (Dairy, Herd, Grazing)",
+                    "Dairy Management Principles",
+                    "Animal Nutrition in Dairy Production",
+                    "Milk Quality and Standardization",
+                    "Dairy Disease Management",
+                    "Record Keeping and Inventory in Dairy",
+                    "Economic Analysis of a Dairy Business"
                 ]
             },
             "runtime_mapping": {
@@ -464,8 +403,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Dairy Farm",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.174353"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +415,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'The Dairy Farm'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: The Dairy Farm.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'The Dairy Farm' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "The chapter is structured as a narrative following the lifecycle of a dairy farm. It might begin by introducing 'Dairy Farm Happy Acres,' describing the daily routine of the farm, the types of livestock (cows, goats), and the various processes involved in dairy production. Students would likely engage with stories like: 'Calculating Milk Yield': analyzing daily output data to find the average per cow and total production. 'Feed Budgeting': determining the necessary quantity of feed required for a specific number of cows over a month and calculating the associated cost. 'Inventory Management': tracking the stock of milk, milk products (butter, cheese), and raw materials (hay, fertilizer). The explanation involves step-by-step mathematical instructions on how to use these scenarios to find solutions, such as calculating profit margins after accounting for input costs (feed, veterinary expenses) and output sales.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +973,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Dairy Farm",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.174373"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +988,32 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm106_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'The Dairy Farm'?",
+                        "type": "Multiple Choice",
+                        "question": "Which of the following is a primary output of a dairy farm?",
                         "options": [
-                            "The given shapes stand for numbers between 1 and 24.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "Beef",
+                            "Eggs",
+                            "Milk",
+                            "Grains"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "The given shapes stand for numbers between 1 and 24.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm106_concept_01"
+                        "answer": "Milk",
+                        "difficulty": "Easy"
                     },
                     {
-                        "id": "eemm106_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'The Dairy Farm'?",
-                        "options": [
-                            "The same shape denotes the same number across all problems.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "The same shape denotes the same number across all problems.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm106_concept_01"
+                        "type": "True/False",
+                        "question": "Dairy farming requires specialized knowledge in animal husbandry and nutrition.",
+                        "answer": "True",
+                        "difficulty": "Medium"
                     },
                     {
-                        "id": "eemm106_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'The Dairy Farm'?",
-                        "options": [
-                            "A dairy has packed butter milk pouches in the following manner.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "A dairy has packed butter milk pouches in the following manner.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm106_concept_01"
+                        "type": "Short Answer",
+                        "question": "Define 'Herd Management' in the context of a dairy farm.",
+                        "expected_answer": "The management of a group of animals, specifically cows, focusing on breeding, health, feeding, and housing."
                     },
                     {
-                        "id": "eemm106_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'The Dairy Farm'?",
-                        "options": [
-                            "Find the number of pouches kept in each arrangement.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Find the number of pouches kept in each arrangement.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm106_concept_01"
-                    },
-                    {
-                        "id": "eemm106_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'The Dairy Farm'?",
-                        "options": [
-                            "Place the digits 2, 5, and 3 appropriately to get a product close to 100.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Place the digits 2, 5, and 3 appropriately to get a product close to 100.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm106_concept_01"
-                    },
-                    {
-                        "id": "eemm106_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'The Dairy Farm'?",
-                        "options": [
-                            "× By now, we know several multiplication facts.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "× By now, we know several multiplication facts.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm106_concept_01"
+                        "type": "Case Study",
+                        "question": "A dairy farm is experiencing a drop in milk yield. Suggest three potential causes and remedies.",
+                        "expected_answer": "Causes could include poor nutrition, environmental stress, or disease. Remedies could include adjusting feed, improving ventilation, or implementing a vaccination schedule."
                     }
                 ]
             },
@@ -1619,8 +1466,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Dairy Farm",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.174345"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1478,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The Dairy Farm' develops mathematical reasoning and application through the chapter 'The Dairy Farm'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "The given shapes stand for numbers between 1 and 24.",
-                    "The same shape denotes the same number across all problems.",
-                    "A dairy has packed butter milk pouches in the following manner.",
-                    "Find the number of pouches kept in each arrangement.",
-                    "Place the digits 2, 5, and 3 appropriately to get a product close to 100.",
-                    "× By now, we know several multiplication facts."
-                ]
-            },
+            "content": "The 'The Dairy Farm' chapter is an interdisciplinary unit that integrates arithmetic, basic statistics, and financial literacy into a cohesive, practical narrative. It moves beyond theoretical computation by immersing students in the ecosystem of a dairy operation. The core themes involve quantifying resources (milk, feed, labor), analyzing productivity using averages and ratios, and managing basic financial aspects like cost-benefit analysis and profit calculation. Ultimately, the chapter empowers students with the ability to apply mathematical principles effectively to solve complex, real-world problems related to production, efficiency, and sustainability in a practical setting.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1528,10 @@
             "subject": "Mathematics",
             "chapter_title": "The Dairy Farm",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.174388"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1543,15 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm106_fc01",
-                        "front": "What is a key idea from 'The Dairy Farm'?",
-                        "back": "The given shapes stand for numbers between 1 and 24.",
-                        "concept_id": "eemm106_concept_01"
+                        "term": "Milk Yield",
+                        "definition": "The total volume of milk produced by a herd over a specific period (e.g., daily, weekly, or monthly)."
                     },
                     {
-                        "id": "eemm106_fc02",
-                        "front": "What is a key idea from 'The Dairy Farm'?",
-                        "back": "The same shape denotes the same number across all problems.",
-                        "concept_id": "eemm106_concept_01"
+                        "term": "Feed Formulation",
+                        "definition": "The process of balancing feed ingredients (concentrates, silage, grains, supplements) to meet the nutritional requirements of dairy animals."
                     },
                     {
-                        "id": "eemm106_fc03",
-                        "front": "What is a key idea from 'The Dairy Farm'?",
-                        "back": "A dairy has packed butter milk pouches in the following manner.",
-                        "concept_id": "eemm106_concept_01"
-                    },
-                    {
-                        "id": "eemm106_fc04",
-                        "front": "What is a key idea from 'The Dairy Farm'?",
-                        "back": "Find the number of pouches kept in each arrangement.",
-                        "concept_id": "eemm106_concept_01"
-                    },
-                    {
-                        "id": "eemm106_fc05",
-                        "front": "What is a key idea from 'The Dairy Farm'?",
-                        "back": "Place the digits 2, 5, and 3 appropriately to get a product close to 100.",
-                        "concept_id": "eemm106_concept_01"
-                    },
-                    {
-                        "id": "eemm106_fc06",
-                        "front": "What is a key idea from 'The Dairy Farm'?",
-                        "back": "× By now, we know several multiplication facts.",
-                        "concept_id": "eemm106_concept_01"
+                        "term": "MDR"
                     }
                 ]
             },

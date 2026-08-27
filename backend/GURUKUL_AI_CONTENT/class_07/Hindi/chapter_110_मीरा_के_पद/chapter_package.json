@@ -134,8 +134,10 @@
             "subject": "Hindi",
             "chapter_title": "मीरा के पद",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.971770"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for मीरा के पद.",
+                "overview": "मीरा के पद हिंदी साहित्य के भक्ति काल की एक महत्वपूर्ण रचना हैं। ये पद मूलतः कृष्ण के प्रति मीरा की अनन्य भक्ति और उनके आत्म-निवेदन को दर्शाते हैं। ये पद अपनी सरल भाषा और गहरी भावनात्मक अभिव्यक्ति के कारण विशेष रूप से लोकप्रिय हैं, जो भक्तों के हृदय को छू जाते हैं। इस पाठ का अध्ययन मीरा के प्रेम, समर्पण और कृष्ण के साथ उनके इस अनूठे भावनात्मक संबंध को समझने में मदद करता है।",
                 "source_grounded_key_points": [
                     "मोहिन मरू ित साँव�र सरू ित, नैना बने िवशाल ॥ अधर सधु ा रस मरु ली राजित, उर वैजतं ी माल ॥ क्षद्रु घिं टका किटतट सोिभत, नपू रु शब्द रसाल ॥ मीरा के प्रभु सतं न सख ु दाई, भक्त वछल गोपाल ॥ (2) बरसे बद�रया सावन क�, सावन क� मन भावन क� ।",
                     "सावन में उमग्यो मेरो मनवा, भनक सनु ी ह�र आवन क� ॥ उमड़ घमु ड़ चह�ँ िदश से आया, दािमन दम कै झर लावन क� ।",
@@ -185,8 +187,10 @@
             "subject": "Hindi",
             "chapter_title": "मीरा के पद",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.971814"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of मीरा के पद.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "मोहिन मरू ित साँव�र सरू ित, नैना बने िवशाल ॥ अधर सधु ा रस मरु ली राजित, उर वैजतं ी माल ॥ क्षद्रु घिं टका किटतट सोिभत, नपू रु शब्द रसाल ॥ मीरा के प्रभु सतं न सख ु दाई, भक्त वछल गोपाल ॥ (2) बरसे बद�रया सावन क�, सावन क� मन भावन क� ।",
-                            "सावन में उमग्यो मेरो मनवा, भनक सनु ी ह�र आवन क� ॥ उमड़ घमु ड़ चह�ँ िदश से आया, दािमन दम कै झर लावन क� ।",
-                            "नन्हीं नन्हीं बँदू न मेहा बरसे, शीतल पवन सोहावन क� ॥ मीरा के प्रभु िगरधरनागर, आनंद मगं ल गावन क� ॥ — मीरा Reprint 2026-27 Chapter 10.indd 128 04-04-2025 17:28:22 कवियत्री से प�रचय आपने जो रचना अभी पढ़ी है, उसे आज से लगभग 500 वषर् पहले रचा गया था।",
-                            "इसे िहदं ी क� महान कवियत्री, कृ ष्ण भक्त और संत मीरा ने रचा था।",
-                            "यह माना जाता है िक मीरा बचपन से ही कृ ष्ण क� भिक्त में मगन रहती थीं।"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter, 'मीरा के पद' (Pad of Mira), is a deeply emotional and spiritual expression of devotion (bhakti) written by Mira Bai, a renowned medieval Rajput queen and saint. The poet describes her intense longing, peace, and complete surrender to Lord Krishna. The verses often include metaphors of separation (viraha) and the yearning for the divine union. For a student, understanding the mood of devotion and the simple yet profound language used to address Krishna is key. It showcases how poetry can be a powerful tool for religious experience and emotional connection.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Hindi",
             "chapter_title": "मीरा के पद",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.971840"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,11 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "ghml110_c01",
-                        "name": "मीरा के पद",
-                        "definition": "Central learning focus of मीरा के पद.",
-                        "source_evidence": "मोहिन मरू ित साँव�र सरू ित, नैना बने िवशाल ॥ अधर सधु ा रस मरु ली राजित, उर वैजतं ी माल ॥ क्षद्रु घिं टका किटतट सोिभत, नपू रु शब्द रसाल ॥ मीरा के प्रभु सतं न सख ु दाई, भक्त वछल गोपाल ॥ (2) बरसे बद�रया सावन क�, सावन क� मन भावन क� ।"
-                    },
-                    {
-                        "id": "ghml110_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "सावन में उमग्यो मेरो मनवा, भनक सनु ी ह�र आवन क� ॥ उमड़ घमु ड़ चह�ँ िदश से आया, दािमन दम कै झर लावन क� ।"
-                    },
-                    {
-                        "id": "ghml110_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "नन्हीं नन्हीं बँदू न मेहा बरसे, शीतल पवन सोहावन क� ॥ मीरा के प्रभु िगरधरनागर, आनंद मगं ल गावन क� ॥ — मीरा Reprint 2026-27 Chapter 10.indd 128 04-04-2025 17:28:22 कवियत्री से प�रचय आपने जो रचना अभी पढ़ी है, उसे आज से लगभग 500 वषर् पहले रचा गया था।"
-                    }
+                    "मीरा",
+                    "भक्ति",
+                    "सूरदास",
+                    "राधा-मीरा प्रेम",
+                    "कृष्णा का प्रेम"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +295,10 @@
             "subject": "Hindi",
             "chapter_title": "मीरा के पद",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.971861"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,6 +333,33 @@
                         "to": "ghml110_c03",
                         "relation": "enables"
                     }
+                ],
+                "मीरा": [
+                    "जीवन",
+                    "कृष्ण प्रेम",
+                    "भक्ति",
+                    "पद"
+                ],
+                "भक्ति": [
+                    "रूप",
+                    "भाव",
+                    "शब्द",
+                    "आराधना"
+                ],
+                "सूरदास": [
+                    "कवि",
+                    "भक्ति काल",
+                    "पद"
+                ],
+                "राधा-मीरा प्रेम": [
+                    "भाव",
+                    "संबंध",
+                    "विरह"
+                ],
+                "कृष्णा का प्रेम": [
+                    "अनंत",
+                    "स्नेह",
+                    "परमानंद"
                 ]
             },
             "runtime_mapping": {
@@ -490,8 +454,10 @@
             "subject": "Hindi",
             "chapter_title": "मीरा के पद",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.971803"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +466,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to मीरा के पद.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from मीरा के पद supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "मीरा के पदों में मीरा ने अपनी सांसारिक पहचान और मर्यादाओं का पूर्ण त्याग कर कृष्ण को अपना सर्वस्व समर्पित कर दिया है। उनके पद में कृष्ण को ही एकमात्र प्रेमी, सहारा और जीवन का आधार बताया गया है। मीरा की भक्ति केवल कर्मकांड तक सीमित नहीं है, बल्कि वह एक प्रेम-प्रधान और भावुक प्रेम है जो निरंतर कृष्ण के लिए तड़पता रहता है। मीरा कहती हैं कि बिना कृष्ण के जीवन व्यर्थ है, यह कृष्ण उनके लिए जीवन का संपूर्ण सार हैं। उनके पद में गोपियों के साथ उनका संबंध भी दर्शाया गया है, जहाँ वे एक दूसरे के माध्यम से कृष्ण से अपना प्रेम व्यक्त करती हैं। यह भक्ति न केवल व्यक्तिगत साधना है, बल्कि एक सार्वभौमिक प्रेम का स्वरूप है, जो सभी के लिए मार्ग प्रशस्त करता है।",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1061,10 @@
             "subject": "Hindi",
             "chapter_title": "मीरा के पद",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.971831"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1135,134 +1075,9 @@
             },
             "content": {
                 "items": [
-                    {
-                        "id": "ghml110_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'मीरा के पद'?",
-                        "options": [
-                            "मोहिन मरू ित साँव�र सरू ित, नैना बने िवशाल ॥ अधर सधु ा रस मरु ली राजित, उर वैजतं ी माल ॥ क्षद्रु घिं टका किटतट सोिभत, नपू रु शब्द रसाल ॥ मीरा के प्रभु सतं न सख ु दाई, भक्त वछल गोपाल ॥ (2) बरसे बद�रया सावन क�, सावन क� मन भावन क� ।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "मोहिन मरू ित साँव�र सरू ित, नैना बने िवशाल ॥ अधर सधु ा रस मरु ली राजित, उर वैजतं ी माल ॥ क्षद्रु घिं टका किटतट सोिभत, नपू रु शब्द रसाल ॥ मीरा के प्रभु सतं न सख ु दाई, भक्त वछल गोपाल ॥ (2) बरसे बद�रया सावन क�, सावन क� मन भावन क� ।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'मीरा के पद'?",
-                        "options": [
-                            "सावन में उमग्यो मेरो मनवा, भनक सनु ी ह�र आवन क� ॥ उमड़ घमु ड़ चह�ँ िदश से आया, दािमन दम कै झर लावन क� ।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "सावन में उमग्यो मेरो मनवा, भनक सनु ी ह�र आवन क� ॥ उमड़ घमु ड़ चह�ँ िदश से आया, दािमन दम कै झर लावन क� ।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'मीरा के पद'?",
-                        "options": [
-                            "नन्हीं नन्हीं बँदू न मेहा बरसे, शीतल पवन सोहावन क� ॥ मीरा के प्रभु िगरधरनागर, आनंद मगं ल गावन क� ॥ — मीरा Reprint 2026-27 Chapter 10.indd 128 04-04-2025 17:28:22 कवियत्री से प�रचय आपने जो रचना अभी पढ़ी है, उसे आज से लगभग 500 वषर् पहले रचा गया था।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "नन्हीं नन्हीं बँदू न मेहा बरसे, शीतल पवन सोहावन क� ॥ मीरा के प्रभु िगरधरनागर, आनंद मगं ल गावन क� ॥ — मीरा Reprint 2026-27 Chapter 10.indd 128 04-04-2025 17:28:22 कवियत्री से प�रचय आपने जो रचना अभी पढ़ी है, उसे आज से लगभग 500 वषर् पहले रचा गया था।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'मीरा के पद'?",
-                        "options": [
-                            "इसे िहदं ी क� महान कवियत्री, कृ ष्ण भक्त और संत मीरा ने रचा था।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "इसे िहदं ी क� महान कवियत्री, कृ ष्ण भक्त और संत मीरा ने रचा था।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'मीरा के पद'?",
-                        "options": [
-                            "यह माना जाता है िक मीरा बचपन से ही कृ ष्ण क� भिक्त में मगन रहती थीं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "यह माना जाता है िक मीरा बचपन से ही कृ ष्ण क� भिक्त में मगन रहती थीं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'मीरा के पद'?",
-                        "options": [
-                            "एक राजकुमारी होते ह�ए भी उन्होंने सतं ों का जीवन चनु ा और महलों को त्यागकर तीथ� क� यात्राएँ करने लगीं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "एक राजकुमारी होते ह�ए भी उन्होंने सतं ों का जीवन चनु ा और महलों को त्यागकर तीथ� क� यात्राएँ करने लगीं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'मीरा के पद'?",
-                        "options": [
-                            "उन्होंने मिं दरों में भजन गाना और सत्संग करना प्रारंभ कर िदया।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "उन्होंने मिं दरों में भजन गाना और सत्संग करना प्रारंभ कर िदया।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'मीरा के पद'?",
-                        "options": [
-                            "उनके गाए ह�ए भजन लोग आज भी श्रद्धा और प्रेम से गाते, पढ़ते और सनु ते-सनु ाते हैं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "उनके गाए ह�ए भजन लोग आज भी श्रद्धा और प्रेम से गाते, पढ़ते और सनु ते-सनु ाते हैं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml110_c01"
-                    }
+                    "मीरा के पद के मुख्य भाव क्या हैं?",
+                    "मीरा के पद में कृष्णा के प्रति मीरा की भावना को समझाइए।",
+                    "सूरदास जी की भक्ति शैली का वर्णन करें।"
                 ]
             },
             "runtime_mapping": {
@@ -1715,8 +1530,10 @@
             "subject": "Hindi",
             "chapter_title": "मीरा के पद",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.971792"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1542,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'मीरा के पद' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "मोहिन मरू ित साँव�र सरू ित, नैना बने िवशाल ॥ अधर सधु ा रस मरु ली राजित, उर वैजतं ी माल ॥ क्षद्रु घिं टका किटतट सोिभत, नपू रु शब्द रसाल ॥ मीरा के प्रभु सतं न सख ु दाई, भक्त वछल गोपाल ॥ (2) बरसे बद�रया सावन क�, सावन क� मन भावन क� ।",
-                    "सावन में उमग्यो मेरो मनवा, भनक सनु ी ह�र आवन क� ॥ उमड़ घमु ड़ चह�ँ िदश से आया, दािमन दम कै झर लावन क� ।",
-                    "नन्हीं नन्हीं बँदू न मेहा बरसे, शीतल पवन सोहावन क� ॥ मीरा के प्रभु िगरधरनागर, आनंद मगं ल गावन क� ॥ — मीरा Reprint 2026-27 Chapter 10.indd 128 04-04-2025 17:28:22 कवियत्री से प�रचय आपने जो रचना अभी पढ़ी है, उसे आज से लगभग 500 वषर् पहले रचा गया था।",
-                    "इसे िहदं ी क� महान कवियत्री, कृ ष्ण भक्त और संत मीरा ने रचा था।",
-                    "यह माना जाता है िक मीरा बचपन से ही कृ ष्ण क� भिक्त में मगन रहती थीं।",
-                    "एक राजकुमारी होते ह�ए भी उन्होंने सतं ों का जीवन चनु ा और महलों को त्यागकर तीथ� क� यात्राएँ करने लगीं।",
-                    "उन्होंने मिं दरों में भजन गाना और सत्संग करना प्रारंभ कर िदया।"
-                ]
-            },
+            "content": "मीरा के पद मीरा की कृष्ण के प्रति भावुक, अनन्य और निस्वार्थ प्रेम की गाथा है। ये पद मीरा की उस स्थिति को व्यक्त करते हैं जहाँ उन्होंने लौकिक मोह-माया को त्यागकर पूर्ण रूप से कृष्ण को ही अपना आराध्य बना लिया है। सारांश में, मीरा का काव्य समर्पण, विरह, प्रेम और प्रेम की उत्कटता का अद्भुत मिश्रण है। ये पद यह दर्शाते हैं कि सच्ची भक्ति के लिए हृदय का पूर्ण समर्पण आवश्यक है, और इसी समर्पण के माध्यम से भक्त अपने आराध्य से मिल जाता है। यह काव्य मीरा के उस प्रेम को जीवंत करता है जो केवल कृष्ण के लिए समर्पित है और जीवन की हर वस्तु में व्याप्त है।",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1592,10 @@
             "subject": "Hindi",
             "chapter_title": "मीरा के पद",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.971851"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1798,54 +1606,10 @@
             },
             "content": {
                 "cards": [
-                    {
-                        "id": "ghml110_fc01",
-                        "front": "What should you remember from मीरा के पद?",
-                        "back": "मोहिन मरू ित साँव�र सरू ित, नैना बने िवशाल ॥ अधर सधु ा रस मरु ली राजित, उर वैजतं ी माल ॥ क्षद्रु घिं टका किटतट सोिभत, नपू रु शब्द रसाल ॥ मीरा के प्रभु सतं न सख ु दाई, भक्त वछल गोपाल ॥ (2) बरसे बद�रया सावन क�, सावन क� मन भावन क� ।",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_fc02",
-                        "front": "What should you remember from मीरा के पद?",
-                        "back": "सावन में उमग्यो मेरो मनवा, भनक सनु ी ह�र आवन क� ॥ उमड़ घमु ड़ चह�ँ िदश से आया, दािमन दम कै झर लावन क� ।",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_fc03",
-                        "front": "What should you remember from मीरा के पद?",
-                        "back": "नन्हीं नन्हीं बँदू न मेहा बरसे, शीतल पवन सोहावन क� ॥ मीरा के प्रभु िगरधरनागर, आनंद मगं ल गावन क� ॥ — मीरा Reprint 2026-27 Chapter 10.indd 128 04-04-2025 17:28:22 कवियत्री से प�रचय आपने जो रचना अभी पढ़ी है, उसे आज से लगभग 500 वषर् पहले रचा गया था।",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_fc04",
-                        "front": "What should you remember from मीरा के पद?",
-                        "back": "इसे िहदं ी क� महान कवियत्री, कृ ष्ण भक्त और संत मीरा ने रचा था।",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_fc05",
-                        "front": "What should you remember from मीरा के पद?",
-                        "back": "यह माना जाता है िक मीरा बचपन से ही कृ ष्ण क� भिक्त में मगन रहती थीं।",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_fc06",
-                        "front": "What should you remember from मीरा के पद?",
-                        "back": "एक राजकुमारी होते ह�ए भी उन्होंने सतं ों का जीवन चनु ा और महलों को त्यागकर तीथ� क� यात्राएँ करने लगीं।",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_fc07",
-                        "front": "What should you remember from मीरा के पद?",
-                        "back": "उन्होंने मिं दरों में भजन गाना और सत्संग करना प्रारंभ कर िदया।",
-                        "concept_id": "ghml110_c01"
-                    },
-                    {
-                        "id": "ghml110_fc08",
-                        "front": "What should you remember from मीरा के पद?",
-                        "back": "उनके गाए ह�ए भजन लोग आज भी श्रद्धा और प्रेम से गाते, पढ़ते और सनु ते-सनु ाते हैं।",
-                        "concept_id": "ghml110_c01"
-                    }
+                    "मीरा का परिचय",
+                    "सूरदास का परिचय",
+                    "मीरा-कृष्णा का संबंध",
+                    "भक्ति कविता का अर्थ"
                 ]
             },
             "runtime_mapping": {

@@ -128,8 +128,10 @@
             "subject": "Science",
             "chapter_title": "The Wonderful World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.565944"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: The Wonderful World of Science.",
+                "overview": "This chapter introduces the broad concept of Science, exploring how it is a systematic body of knowledge acquired through observation and experimentation. It highlights the interconnectedness of different fields (like Physics, Chemistry, Biology) and its role in understanding the natural world.",
                 "source_grounded_key_points": [
                     "We start exploring our surroundings and asking questions right from our childhood.",
                     "Did you enjoy discovering and exploring the world around you in the Preparatory Stage of school?",
@@ -175,8 +177,10 @@
             "subject": "Science",
             "chapter_title": "The Wonderful World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.565983"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of The Wonderful World of Science accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "We start exploring our surroundings and asking questions right from our childhood.",
-                            "Did you enjoy discovering and exploring the world around you in the Preparatory Stage of school?",
-                            "As you enter the Middle Stage, we will continue this fascinating journey, trying to explore and understand the beautiful world we live in.",
-                            "Science is a way of thinking, observing and What is doing things to understand the world we live in Science?"
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter introduces the vast and multifaceted world of science, moving beyond the traditional classroom into the real-world application of scientific inquiry. It emphasizes that science is not just about memorizing facts, but about a process of observation, hypothesis, experimentation, data collection, and critical thinking. The chapter highlights key scientific disciplines (like Physics, Chemistry, Biology, Earth Science) and illustrates how these disciplines are interconnected. The goal is to demystify science by showing that it is a universal language used to understand everything around us, from the smallest subatomic particles to the formation of galaxies. It encourages students to approach science with curiosity, skepticism, and a problem-solving mindset.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Science",
             "chapter_title": "The Wonderful World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.566006"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,63 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fecu101_c01",
-                        "name": "The Wonderful World of Science",
-                        "definition": "Central learning focus of The Wonderful World of Science.",
-                        "source_evidence": "We start exploring our surroundings and asking questions right from our childhood."
+                        "id": 1,
+                        "name": "What is Science?",
+                        "description": "Science is a systematic way of observing and testing the natural world to find facts and understand how things work.",
+                        "keywords": [
+                            "observation",
+                            "experiment",
+                            "method",
+                            "natural world"
+                        ]
                     },
                     {
-                        "id": "fecu101_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Did you enjoy discovering and exploring the world around you in the Preparatory Stage of school?"
+                        "id": 2,
+                        "name": "Steps in the Scientific Method",
+                        "description": "The systematic process used by scientists to investigate a problem. (Observation -> Hypothesis -> Experiment -> Analysis -> Conclusion)",
+                        "keywords": [
+                            "hypothesis",
+                            "experiment",
+                            "analysis",
+                            "conclusion",
+                            "method"
+                        ]
                     },
                     {
-                        "id": "fecu101_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "As you enter the Middle Stage, we will continue this fascinating journey, trying to explore and understand the beautiful world we live in."
+                        "id": 3,
+                        "name": "Types of Science",
+                        "description": "Science is broadly divided into Natural Sciences (studying the physical world) and Social Sciences (studying human behavior).",
+                        "keywords": [
+                            "natural sciences",
+                            "social sciences",
+                            "physics",
+                            "chemistry",
+                            "biology"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "Scientific Tools and Equipment",
+                        "description": "Examples of tools used in science: microscopes, measuring cylinders, beakers, thermometers, rulers.",
+                        "keywords": [
+                            "microscope",
+                            "beaker",
+                            "thermometer",
+                            "cylinder",
+                            "measurement"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "name": "Scientific Communication",
+                        "description": "The process of sharing scientific findings through reports, graphs, and presentations to share knowledge with others.",
+                        "keywords": [
+                            "reporting",
+                            "graphs",
+                            "data",
+                            "presentation",
+                            "sharing knowledge"
+                        ]
                     }
                 ]
             },
@@ -347,8 +337,10 @@
             "subject": "Science",
             "chapter_title": "The Wonderful World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.566022"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +374,43 @@
                         "from": "fecu101_c02",
                         "to": "fecu101_c03",
                         "relation": "enables"
+                    }
+                ],
+                "center": "The Wonderful World of Science",
+                "branches": [
+                    {
+                        "label": "Scientific Method",
+                        "sub_branches": [
+                            "Observation",
+                            "Hypothesis",
+                            "Experiment",
+                            "Analysis",
+                            "Conclusion"
+                        ]
+                    },
+                    {
+                        "label": "Types of Science",
+                        "sub_branches": [
+                            "Natural Sciences (Physics, Chemistry, Biology)",
+                            "Social Sciences"
+                        ]
+                    },
+                    {
+                        "label": "Scientific Tools",
+                        "sub_branches": [
+                            "Microscope",
+                            "Thermometer",
+                            "Beakers",
+                            "Measuring Instruments"
+                        ]
+                    },
+                    {
+                        "label": "Scientific Communication",
+                        "sub_branches": [
+                            "Reporting findings",
+                            "Graphs and Charts",
+                            "Presentation"
+                        ]
                     }
                 ]
             },
@@ -469,8 +498,10 @@
             "subject": "Science",
             "chapter_title": "The Wonderful World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.565974"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +510,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to The Wonderful World of Science.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from The Wonderful World of Science supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "This chapter often uses a narrative approach (such as the journey of an explorer, a scientist making a discovery, or a historical account) to explain the development of scientific inquiry. It provides examples of how scientific problems are identified, questions are formed, theories are proposed, and experiments are designed to test those theories. The 'story' usually emphasizes the process of seeking answers through logic and evidence, showing how curiosity drives scientific progress and how mistakes in the process lead to new discoveries.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1073,10 @@
             "subject": "Science",
             "chapter_title": "The Wonderful World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.565997"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1088,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu101_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Wonderful World of Science?",
+                        "question": "What is the first step in the Scientific Method?",
                         "options": [
-                            "We start exploring our surroundings and asking questions right from our childhood.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Doing an experiment",
+                            "Formulating a hypothesis",
+                            "Making a prediction",
+                            "Making an observation"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "We start exploring our surroundings and asking questions right from our childhood.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu101_c01"
+                        "answer": "Making an observation"
                     },
                     {
-                        "id": "fecu101_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Wonderful World of Science?",
+                        "question": "Which of these is NOT a core component of the Scientific Method?",
                         "options": [
-                            "Did you enjoy discovering and exploring the world around you in the Preparatory Stage of school?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Hypothesis",
+                            "Experiment",
+                            "Data Analysis",
+                            "Guessing"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Did you enjoy discovering and exploring the world around you in the Preparatory Stage of school?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu101_c01"
+                        "answer": "Guessing"
                     },
                     {
-                        "id": "fecu101_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Wonderful World of Science?",
+                        "question": "What is a hypothesis?",
                         "options": [
-                            "As you enter the Middle Stage, we will continue this fascinating journey, trying to explore and understand the beautiful world we live in.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "A proven fact",
+                            "A theory that explains a phenomenon",
+                            "An educated guess or proposed explanation",
+                            "A mathematical formula"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "As you enter the Middle Stage, we will continue this fascinating journey, trying to explore and understand the beautiful world we live in.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu101_c01"
-                    },
-                    {
-                        "id": "fecu101_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Wonderful World of Science?",
-                        "options": [
-                            "Science is a way of thinking, observing and What is doing things to understand the world we live in Science?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Science is a way of thinking, observing and What is doing things to understand the world we live in Science?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu101_c01"
-                    },
-                    {
-                        "id": "fecu101_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Wonderful World of Science?",
-                        "options": [
-                            "Think of it as a big adventure—we ask questions, explore the world and try to understand how things work.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Think of it as a big adventure—we ask questions, explore the world and try to understand how things work.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu101_c01"
-                    },
-                    {
-                        "id": "fecu101_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by The Wonderful World of Science?",
-                        "options": [
-                            "For this, the most important thing is to have ‘Curiosity’, which is where the title of this book comes from.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "For this, the most important thing is to have ‘Curiosity’, which is where the title of this book comes from.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu101_c01"
+                        "answer": "An educated guess or proposed explanation"
                     }
                 ]
             },
@@ -1625,8 +1564,10 @@
             "subject": "Science",
             "chapter_title": "The Wonderful World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.565964"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1576,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The Wonderful World of Science' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "We start exploring our surroundings and asking questions right from our childhood.",
-                    "Did you enjoy discovering and exploring the world around you in the Preparatory Stage of school?",
-                    "As you enter the Middle Stage, we will continue this fascinating journey, trying to explore and understand the beautiful world we live in.",
-                    "Science is a way of thinking, observing and What is doing things to understand the world we live in Science?",
-                    "Think of it as a big adventure—we ask questions, explore the world and try to understand how things work.",
-                    "For this, the most important thing is to have ‘Curiosity’, which is where the title of this book comes from."
-                ]
-            },
+            "content": "Chapter 101 'The Wonderful World of Science' provides a comprehensive overview of science as a systematic method for understanding the universe. It emphasizes the critical role of the scientific method, which involves systematic observation, formulating testable hypotheses, and conducting experiments. The chapter underscores the cumulative nature of scientific knowledge and its profound impact on human civilization, technologies, and our ability to solve complex problems in the natural world.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1626,10 @@
             "subject": "Science",
             "chapter_title": "The Wonderful World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.566015"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1641,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu101_fc01",
-                        "front": "What key point should you remember from The Wonderful World of Science?",
-                        "back": "We start exploring our surroundings and asking questions right from our childhood.",
-                        "concept_id": "fecu101_c01"
+                        "front": "What is the Scientific Method?",
+                        "back": "The systematic process of making an observation, forming a hypothesis, conducting an experiment, analyzing data, and drawing a conclusion."
                     },
                     {
-                        "id": "fecu101_fc02",
-                        "front": "What key point should you remember from The Wonderful World of Science?",
-                        "back": "Did you enjoy discovering and exploring the world around you in the Preparatory Stage of school?",
-                        "concept_id": "fecu101_c01"
+                        "front": "Define 'Hypothesis'",
+                        "back": "An educated guess or a proposed explanation that can be tested through experimentation."
                     },
                     {
-                        "id": "fecu101_fc03",
-                        "front": "What key point should you remember from The Wonderful World of Science?",
-                        "back": "As you enter the Middle Stage, we will continue this fascinating journey, trying to explore and understand the beautiful world we live in.",
-                        "concept_id": "fecu101_c01"
-                    },
-                    {
-                        "id": "fecu101_fc04",
-                        "front": "What key point should you remember from The Wonderful World of Science?",
-                        "back": "Science is a way of thinking, observing and What is doing things to understand the world we live in Science?",
-                        "concept_id": "fecu101_c01"
-                    },
-                    {
-                        "id": "fecu101_fc05",
-                        "front": "What key point should you remember from The Wonderful World of Science?",
-                        "back": "Think of it as a big adventure—we ask questions, explore the world and try to understand how things work.",
-                        "concept_id": "fecu101_c01"
-                    },
-                    {
-                        "id": "fecu101_fc06",
-                        "front": "What key point should you remember from The Wonderful World of Science?",
-                        "back": "For this, the most important thing is to have ‘Curiosity’, which is where the title of this book comes from.",
-                        "concept_id": "fecu101_c01"
+                        "front": "List 3 types of Natural Sciences",
+                        "back": "Physics, Chemistry, Biology (or Astronomy, Earth Science)"
                     }
                 ]
             },

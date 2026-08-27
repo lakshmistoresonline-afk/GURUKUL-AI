@@ -313,8 +313,10 @@
             "subject": "Social Science",
             "chapter_title": "Understanding the Weather",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.282125"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +328,116 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gees102_c01",
-                        "name": "Understanding the Weather",
-                        "definition": "Central learning focus of Understanding the Weather.",
-                        "source_evidence": "2 CHAPTER Understanding the Weather A change in the weather is sufficient to create the world and oneself anew."
+                        "concept": "Definition of Weather",
+                        "description": "Weather is the condition of the atmosphere at a particular place and time, usually over a short period.",
+                        "keywords": [
+                            "Atmosphere",
+                            "Temperature",
+                            "Pressure",
+                            "Precipitation",
+                            "Humidity"
+                        ]
                     },
                     {
-                        "id": "gees102_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "2.1 India and the World: Land and the People 2 – Understanding the Weather 1."
+                        "concept": "Weather Elements",
+                        "description": "Key components that describe the weather, such as temperature, humidity, wind speed, and rainfall.",
+                        "keywords": [
+                            "Temperature",
+                            "Humidity",
+                            "Wind",
+                            "Rain",
+                            "Cloud Cover"
+                        ]
                     },
                     {
-                        "id": "gees102_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "How can we measure and The Big monitor the weather around us?"
+                        "concept": "Temperature",
+                        "description": "A measure of the degree of hotness or coldness of the air.",
+                        "keywords": [
+                            "Thermometer",
+                            "Hot",
+                            "Cold",
+                            "Celsius"
+                        ]
+                    },
+                    {
+                        "concept": "Humidity",
+                        "description": "The amount of water vapor present in the air.",
+                        "keywords": [
+                            "Water vapor",
+                            "Dew point",
+                            "Moisture"
+                        ]
+                    },
+                    {
+                        "concept": "Wind",
+                        "description": "The movement of air across the Earth.",
+                        "keywords": [
+                            "Air movement",
+                            "Wind speed",
+                            "Direction",
+                            "Draft"
+                        ]
+                    },
+                    {
+                        "concept": "Precipitation",
+                        "description": "Any liquid or solid form of water that falls from the atmosphere to the Earth.",
+                        "keywords": [
+                            "Rain",
+                            "Snow",
+                            "Hail",
+                            "Sleet"
+                        ]
+                    },
+                    {
+                        "concept": "Cloud Formation",
+                        "description": "The process by which water vapor condenses to form clouds.",
+                        "keywords": [
+                            "Condensation",
+                            "Water vapor",
+                            "Nuclei",
+                            "Cloud layers"
+                        ]
+                    },
+                    {
+                        "concept": "Air Pressure",
+                        "description": "The weight of the air in a given area due to the atmosphere above it.",
+                        "keywords": [
+                            "Atmospheric pressure",
+                            "High pressure",
+                            "Low pressure",
+                            "Barometer"
+                        ]
+                    },
+                    {
+                        "concept": "Seasons",
+                        "description": "Long-term variations in weather patterns caused by the tilt of the Earth's axis.",
+                        "keywords": [
+                            "Monsoon",
+                            "Winter",
+                            "Summer",
+                            "Spring",
+                            "Earth's rotation"
+                        ]
+                    },
+                    {
+                        "concept": "Weather Forecasting",
+                        "description": "The process of predicting future weather conditions.",
+                        "keywords": [
+                            "Meteorology",
+                            "Predicting",
+                            "Maps",
+                            "Satellite images"
+                        ]
+                    },
+                    {
+                        "concept": "Climatology",
+                        "description": "The scientific study of long-term weather patterns.",
+                        "keywords": [
+                            "Climate",
+                            "Long-term data",
+                            "Statistical analysis",
+                            "Weather patterns"
+                        ]
                     }
                 ]
             },

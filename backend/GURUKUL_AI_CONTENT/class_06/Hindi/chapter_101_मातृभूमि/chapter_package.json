@@ -175,8 +175,10 @@
             "subject": "Hindi",
             "chapter_title": "मातृभूमि",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.330345"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +187,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of मातृभूमि accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "1 मातृभूमि ऊँचा खड़ा हिमालय आकाश चमू ता है, नीचे चरण तले झक ु , नित सिंधु झमू ता है।",
-                            "गगं ा यमनु त्रिवेणी नदियाँ लहर रही हैं, जगमग छटा निराली, पग पग छहर रही हैं।",
-                            "झरने अनेक झरते जिसकी पहाड़ियों में, चिड़ियाँ चहक रही हैं, हो मस्त झाड़ियों में।",
-                            "जन्मे जहाँ थे रघपु ति, जन्मी जहाँ थी सीता, श्रीकृ ष्ण ने सनु ाई, वशं ी पनु ीत गीता।"
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "In this chapter from Class 6 Hindi, 'Matrubhumi' (Motherland), the teacher explains the importance of the motherland. The chapter discusses the relationship between a child and their homeland, the pride we should take in our country, and the duty we have towards it. It often includes stories, poems, or prose that evoke feelings of patriotism, such as descriptions of natural landscapes, historical significance, and the sacrifices made for the nation. The explanation guides students to understand the emotional and civic value of being an Indian citizen. Key themes are national pride, love for the motherland, and service to the nation.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +245,10 @@
             "subject": "Hindi",
             "chapter_title": "मातृभूमि",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.330381"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +260,59 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fhml101_c01",
-                        "name": "मातृभूमि",
-                        "definition": "Central learning focus of मातृभूमि.",
-                        "source_evidence": "1 मातृभूमि ऊँचा खड़ा हिमालय आकाश चमू ता है, नीचे चरण तले झक ु , नित सिंधु झमू ता है।"
+                        "id": 1,
+                        "title": "मातृभूमि का महत्व (Importance of Motherland)",
+                        "description": "भारत की धरती, संस्कृति और स्वतंत्रता का स्रोत।",
+                        "keywords": [
+                            "भारत",
+                            "संस्कृति",
+                            "स्वतंत्रता",
+                            "अर्थ"
+                        ]
                     },
                     {
-                        "id": "fhml101_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "गगं ा यमनु त्रिवेणी नदियाँ लहर रही हैं, जगमग छटा निराली, पग पग छहर रही हैं।"
+                        "id": 2,
+                        "title": "मातृभूमि के प्रति कर्तव्य (Duty towards Motherland)",
+                        "description": "देश के विकास में योगदान देना और उसकी रक्षा करना।",
+                        "keywords": [
+                            "कर्तव्य",
+                            "विकास",
+                            "रक्षा",
+                            "सेवा"
+                        ]
                     },
                     {
-                        "id": "fhml101_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "झरने अनेक झरते जिसकी पहाड़ियों में, चिड़ियाँ चहक रही हैं, हो मस्त झाड़ियों में।"
+                        "id": 3,
+                        "title": "भारत की विविध संस्कृति (Diverse Culture of India)",
+                        "description": "भारत की विभिन्न धर्मों, भाषाओं और परंपराओं का संगम।",
+                        "keywords": [
+                            "विविधता",
+                            "संस्कृति",
+                            "धर्म",
+                            "भाषा"
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "title": "प्रकृति और मातृभूमि (Nature and Motherland)",
+                        "description": "भारत की प्राकृतिक सुंदरता, नदियाँ, पहाड़ और उपजाऊ भूमि।",
+                        "keywords": [
+                            "प्रकृति",
+                            "सुंदरता",
+                            "नदियाँ",
+                            "पहाड़"
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "title": "अखण्ड भारत की भावना (Spirit of Undivided India)",
+                        "description": "सभी भारतीयों को एक राष्ट्र के रूप में एकजुट रखने की भावना।",
+                        "keywords": [
+                            "एकता",
+                            "एकजुटता",
+                            "राष्ट्रवाद",
+                            "भाईचारा"
+                        ]
                     }
                 ]
             },
@@ -347,8 +331,10 @@
             "subject": "Hindi",
             "chapter_title": "मातृभूमि",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.330397"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +368,48 @@
                         "from": "fhml101_c02",
                         "to": "fhml101_c03",
                         "relation": "enables"
+                    }
+                ],
+                "root": "मातृभूमि",
+                "branches": [
+                    {
+                        "node": "मूल्य",
+                        "children": [
+                            "गौरव",
+                            "प्रेम",
+                            "गर्व"
+                        ]
+                    },
+                    {
+                        "node": "संस्कृति",
+                        "children": [
+                            "भाषा",
+                            "कला",
+                            "त्योहार"
+                        ]
+                    },
+                    {
+                        "node": "प्रकृति",
+                        "children": [
+                            "नदियाँ",
+                            "पहाड़",
+                            "मैदान"
+                        ]
+                    },
+                    {
+                        "node": "कर्तव्य",
+                        "children": [
+                            "सेवा",
+                            "सुरक्षा",
+                            "विकास"
+                        ]
+                    },
+                    {
+                        "node": "भविष्य",
+                        "children": [
+                            "समृद्धि",
+                            "एकता"
+                        ]
                     }
                 ]
             },
@@ -1070,8 +1098,10 @@
             "subject": "Hindi",
             "chapter_title": "मातृभूमि",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.330371"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1113,44 @@
             "content": {
                 "items": [
                     {
-                        "id": "fhml101_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by मातृभूमि?",
+                        "question": "भारत को 'माँ' क्यों कहा जाता है?",
                         "options": [
-                            "1 मातृभूमि ऊँचा खड़ा हिमालय आकाश चमू ता है, नीचे चरण तले झक ु , नित सिंधु झमू ता है।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "क्योंकि इसमें बहुत सेना है।",
+                            "क्योंकि यह हमें जीवन देती है और हमें पालती है।",
+                            "क्योंकि इसमें केवल धन है।",
+                            "क्योंकि यहाँ बहुत से लोग हैं।"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "1 मातृभूमि ऊँचा खड़ा हिमालय आकाश चमू ता है, नीचे चरण तले झक ु , नित सिंधु झमू ता है।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fhml101_c01"
+                        "answer": "क्योंकि यह हमें जीवन देती है और हमें पालती है।"
                     },
                     {
-                        "id": "fhml101_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by मातृभूमि?",
+                        "question": "मातृभूमि के प्रति हमारा मुख्य कर्तव्य क्या है?",
                         "options": [
-                            "गगं ा यमनु त्रिवेणी नदियाँ लहर रही हैं, जगमग छटा निराली, पग पग छहर रही हैं।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "केवल युद्ध लड़ना।",
+                            "देश के विकास में योगदान देना और उसकी रक्षा करना।",
+                            "देश को छोड़कर कहीं और जाना।",
+                            "देश से कोई संबंध न रखना।"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "गगं ा यमनु त्रिवेणी नदियाँ लहर रही हैं, जगमग छटा निराली, पग पग छहर रही हैं।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fhml101_c01"
+                        "answer": "देश के विकास में योगदान देना और उसकी रक्षा करना।"
                     },
                     {
-                        "id": "fhml101_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by मातृभूमि?",
+                        "question": "भारत की संस्कृति की मुख्य विशेषता क्या है?",
                         "options": [
-                            "झरने अनेक झरते जिसकी पहाड़ियों में, चिड़ियाँ चहक रही हैं, हो मस्त झाड़ियों में।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "केवल एक धर्म का पालन।",
+                            "विभिन्न धर्मों, भाषाओं और परंपराओं का सुंदर संगम।",
+                            "अंधविश्वास।",
+                            "पश्चिमी संस्कृति का प्रभाव।"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "झरने अनेक झरते जिसकी पहाड़ियों में, चिड़ियाँ चहक रही हैं, हो मस्त झाड़ियों में।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fhml101_c01"
+                        "answer": "विभिन्न धर्मों, भाषाओं और परंपराओं का सुंदर संगम।"
                     },
                     {
-                        "id": "fhml101_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by मातृभूमि?",
+                        "question": "मातृभूमि के साथ हमारे संबंध को किस शब्द से दर्शाया गया है?",
                         "options": [
-                            "जन्मे जहाँ थे रघपु ति, जन्मी जहाँ थी सीता, श्रीकृ ष्ण ने सनु ाई, वशं ी पनु ीत गीता।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "शत्रु",
+                            "स्वामी",
+                            "मित्र",
+                            "भाई"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "जन्मे जहाँ थे रघपु ति, जन्मी जहाँ थी सीता, श्रीकृ ष्ण ने सनु ाई, वशं ी पनु ीत गीता।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fhml101_c01"
-                    },
-                    {
-                        "id": "fhml101_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by मातृभूमि?",
-                        "options": [
-                            "गौतम ने जन्म लेकर, जिसका सयु श बढ़ाया, जग को दया सिखाई, जग को दिया दिखाया।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "गौतम ने जन्म लेकर, जिसका सयु श बढ़ाया, जग को दया सिखाई, जग को दिया दिखाया।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fhml101_c01"
-                    },
-                    {
-                        "id": "fhml101_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by मातृभूमि?",
-                        "options": [
-                            "मल्हार 2 — सोहनलाल द्विवेदी Reprint 2026-27 Chapter 1.indd 2 10/06/2024 11:09:07 कवि से परिचय इस कविता को हिदं ी के प्रसिद्ध कवियों में से एक सोहनलाल द्विवेदी जी ने लिखा है।",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "मल्हार 2 — सोहनलाल द्विवेदी Reprint 2026-27 Chapter 1.indd 2 10/06/2024 11:09:07 कवि से परिचय इस कविता को हिदं ी के प्रसिद्ध कवियों में से एक सोहनलाल द्विवेदी जी ने लिखा है।",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fhml101_c01"
+                        "answer": "भाई"
                     }
                 ]
             },
@@ -1695,8 +1669,10 @@
             "subject": "Hindi",
             "chapter_title": "मातृभूमि",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.330390"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1684,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fhml101_fc01",
-                        "front": "What key point should you remember from मातृभूमि?",
-                        "back": "1 मातृभूमि ऊँचा खड़ा हिमालय आकाश चमू ता है, नीचे चरण तले झक ु , नित सिंधु झमू ता है।",
-                        "concept_id": "fhml101_c01"
+                        "term": "मातृभूमि",
+                        "definition": "वह देश जिसे हम अपनी जन्मभूमि के रूप में पुकारते हैं।"
                     },
                     {
-                        "id": "fhml101_fc02",
-                        "front": "What key point should you remember from मातृभूमि?",
-                        "back": "गगं ा यमनु त्रिवेणी नदियाँ लहर रही हैं, जगमग छटा निराली, पग पग छहर रही हैं।",
-                        "concept_id": "fhml101_c01"
+                        "term": "कर्तव्य",
+                        "definition": "वह जिम्मेदारी जो हमें अपने देश के लिए निभानी होती है।"
                     },
                     {
-                        "id": "fhml101_fc03",
-                        "front": "What key point should you remember from मातृभूमि?",
-                        "back": "झरने अनेक झरते जिसकी पहाड़ियों में, चिड़ियाँ चहक रही हैं, हो मस्त झाड़ियों में।",
-                        "concept_id": "fhml101_c01"
+                        "term": "अखण्ड भारत",
+                        "definition": "एक अविभाजित भारत की भावना, जो सभी भारतीयों को एक सूत्र में बांधती है।"
                     },
                     {
-                        "id": "fhml101_fc04",
-                        "front": "What key point should you remember from मातृभूमि?",
-                        "back": "जन्मे जहाँ थे रघपु ति, जन्मी जहाँ थी सीता, श्रीकृ ष्ण ने सनु ाई, वशं ी पनु ीत गीता।",
-                        "concept_id": "fhml101_c01"
-                    },
-                    {
-                        "id": "fhml101_fc05",
-                        "front": "What key point should you remember from मातृभूमि?",
-                        "back": "गौतम ने जन्म लेकर, जिसका सयु श बढ़ाया, जग को दया सिखाई, जग को दिया दिखाया।",
-                        "concept_id": "fhml101_c01"
-                    },
-                    {
-                        "id": "fhml101_fc06",
-                        "front": "What key point should you remember from मातृभूमि?",
-                        "back": "मल्हार 2 — सोहनलाल द्विवेदी Reprint 2026-27 Chapter 1.indd 2 10/06/2024 11:09:07 कवि से परिचय इस कविता को हिदं ी के प्रसिद्ध कवियों में से एक सोहनलाल द्विवेदी जी ने लिखा है।",
-                        "concept_id": "fhml101_c01"
+                        "term": "विविधता",
+                        "definition": "हमारे देश की अनेक संस्कृतियों, भाषाओं और धर्मों का मेल।"
                     }
                 ]
             },

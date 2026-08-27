@@ -128,8 +128,10 @@
             "subject": "Social Science",
             "chapter_title": "India, That Is Bharat",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.717850"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: India, That Is Bharat.",
+                "overview": "This chapter marks a transition in the study of India from a colonial subject to a nation-state. It explores the historical narrative of India's journey from ancient civilizations to the struggles for independence and the complexities of its modern political and social identity.",
                 "source_grounded_key_points": [
                     "5 CHAPTER India, That Is Bharat In India at a very early time the spiritual and cultural unity was made complete and became the very stuff of the life of all this great surge of humanity between the Himalayas and the two seas.",
                     "A scene from rural India about 2,300 years ago 5 ― India, That Is Bharat (north gate of the Great Sanchi Stupa) 1.",
@@ -175,8 +177,10 @@
             "subject": "Social Science",
             "chapter_title": "India, That Is Bharat",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.717889"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of India, That Is Bharat accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "5 CHAPTER India, That Is Bharat In India at a very early time the spiritual and cultural unity was made complete and became the very stuff of the life of all this great surge of humanity between the Himalayas and the two seas.",
-                            "A scene from rural India about 2,300 years ago 5 ― India, That Is Bharat (north gate of the Great Sanchi Stupa) 1.",
-                            "75 chapter5.indd 75 03-02-2025 04:57:08 U SH UK H ND IM HI s A du m ab In elu en L er Jh Ch A i Riv r v Bea er ve Ra s Riv Ri r r Y ve ve Ri Ri ut lej A Riv R e rS iver Sa ra svat i S Ri River s ve du rG r In an R ive Ya m ga un a tra hmapu ba l e r Bra am River Riv Ch Ga r ve ng Ri a mada River Nar r Tapti Rive Ri ve Mahanadi r Rive r G od av ar i Ri ve Krishna r Exploring Society: India and Beyond Ri ve r Kaveri Tapestry of the Past Fig.",
-                            "A physical map of the Indian Subcontinent, with some of its rivers."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "This chapter provides a comprehensive overview of the diverse landscape of India, emphasizing its geographical, historical, cultural, and economic unity. It delves into the various languages, religions, and religions practiced across the country, highlighting the deep-rooted traditions and the shared national identity despite tremendous diversity. The chapter likely covers the physical geography (rivers, mountains, plains), the historical evolution of various civilizations, the major social groups, the economic structures (agriculture, industry), and the importance of India's constitutional framework. The goal is to help students understand that India is not just a collection of states, but a multifaceted entity with a rich, complex, and interconnected identity.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Social Science",
             "chapter_title": "India, That Is Bharat",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.717908"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,40 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fees105_c01",
-                        "name": "India, That Is Bharat",
-                        "definition": "Central learning focus of India, That Is Bharat.",
-                        "source_evidence": "5 CHAPTER India, That Is Bharat In India at a very early time the spiritual and cultural unity was made complete and became the very stuff of the life of all this great surge of humanity between the Himalayas and the two seas."
+                        "concept": "Introduction to India (Geography & History)",
+                        "description": "Key geographical features like landmass, neighbors, and historical significance."
                     },
                     {
-                        "id": "fees105_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "A scene from rural India about 2,300 years ago 5 ― India, That Is Bharat (north gate of the Great Sanchi Stupa) 1."
+                        "concept": "Diversity in India",
+                        "description": "Multifaceted diversity including languages, religions, cultures, and traditions."
                     },
                     {
-                        "id": "fees105_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "75 chapter5.indd 75 03-02-2025 04:57:08 U SH UK H ND IM HI s A du m ab In elu en L er Jh Ch A i Riv r v Bea er ve Ra s Riv Ri r r Y ve ve Ri Ri ut lej A Riv R e rS iver Sa ra svat i S Ri River s ve du rG r In an R ive Ya m ga un a tra hmapu ba l e r Bra am River Riv Ch Ga r ve ng Ri a mada River Nar r Tapti Rive Ri ve Mahanadi r Rive r G od av ar i Ri ve Krishna r Exploring Society: India and Beyond Ri ve r Kaveri Tapestry of the Past Fig."
+                        "concept": "Major Religions in India",
+                        "description": "Overview of Hinduism, Islam, Christianity, Sikhism, and Buddhism, and their influence."
+                    },
+                    {
+                        "concept": "Cultural Heritage and Traditions",
+                        "description": "Discussion on festivals, architecture, literature, and arts as reflections of Indian identity."
+                    },
+                    {
+                        "concept": "Historical Landmarks",
+                        "description": "Significant historical sites and monuments that shape India's narrative."
+                    },
+                    {
+                        "concept": "Political Structure of India",
+                        "description": "Understanding the democratic system, federal structure, and governance in India."
+                    },
+                    {
+                        "concept": "Economy of India",
+                        "description": "Key sectors of the economy, economic challenges, and growth rates."
+                    },
+                    {
+                        "concept": "Social Issues in India",
+                        "description": "Themes like poverty, inequality, caste system, and women's empowerment."
+                    },
+                    {
+                        "concept": "Modern India",
+                        "description": "The impact of colonialism and globalization on contemporary Indian society."
                     }
                 ]
             },
@@ -347,8 +314,10 @@
             "subject": "Social Science",
             "chapter_title": "India, That Is Bharat",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.717923"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +351,49 @@
                         "from": "fees105_c02",
                         "to": "fees105_c03",
                         "relation": "enables"
+                    }
+                ],
+                "Central_Topic": "India: Diversity & Identity",
+                "Branches": [
+                    {
+                        "Branch_1": "Geography & Location",
+                        "Sub_topics": [
+                            "Landmass",
+                            "Neighbors",
+                            "Rivers"
+                        ]
+                    },
+                    {
+                        "Branch_2": "Religious Landscape",
+                        "Sub_topics": [
+                            "Hinduism",
+                            "Islam",
+                            "Buddhism",
+                            "Sikhism"
+                        ]
+                    },
+                    {
+                        "Branch_3": "Culture & Heritage",
+                        "Sub_topics": [
+                            "Festivals",
+                            "Architecture",
+                            "Literature"
+                        ]
+                    },
+                    {
+                        "Branch_4": "Challenges",
+                        "Sub_topics": [
+                            "Poverty",
+                            "Caste System",
+                            "Inequality"
+                        ]
+                    },
+                    {
+                        "Branch_5": "Modern India",
+                        "Sub_topics": [
+                            "Colonial Impact",
+                            "Globalization"
+                        ]
                     }
                 ]
             },
@@ -469,8 +481,10 @@
             "subject": "Social Science",
             "chapter_title": "India, That Is Bharat",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.717880"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +493,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to India, That Is Bharat.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from India, That Is Bharat supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "The story of India is a vast epic spanning millennia, characterized by its deep roots in ancient philosophy, the development of sophisticated legal and administrative systems, and periods of remarkable cultural synthesis. From the Indus Valley Civilization, through the Gupta Empire's golden age, to the various sultanates and empires, India has always been a land of intellectual inquiry and spiritual depth. The modern story is marked by the challenges of colonial rule, the immense struggle for liberation led by freedom fighters, and the complex process of nation-building. This journey reflects a nation defined not just by its past glories, but by its continuous striving towards social justice, equality, and inclusive growth in the present day.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1056,10 @@
             "subject": "Social Science",
             "chapter_title": "India, That Is Bharat",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.717900"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1071,32 @@
             "content": {
                 "items": [
                     {
-                        "id": "fees105_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by India, That Is Bharat?",
-                        "options": [
-                            "5 CHAPTER India, That Is Bharat In India at a very early time the spiritual and cultural unity was made complete and became the very stuff of the life of all this great surge of humanity between the Himalayas and the two seas.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "5 CHAPTER India, That Is Bharat In India at a very early time the spiritual and cultural unity was made complete and became the very stuff of the life of all this great surge of humanity between the Himalayas and the two seas.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees105_c01"
+                        "q": "What are the major rivers of India?",
+                        "a": "Indus, Ganges, Brahmaputra."
                     },
                     {
-                        "id": "fees105_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by India, That Is Bharat?",
-                        "options": [
-                            "A scene from rural India about 2,300 years ago 5 ― India, That Is Bharat (north gate of the Great Sanchi Stupa) 1.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A scene from rural India about 2,300 years ago 5 ― India, That Is Bharat (north gate of the Great Sanchi Stupa) 1.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fees105_c01"
+                        "q": "Mention two major historical periods of India.",
+                        "a": "Ancient and Medieval periods."
                     },
                     {
-                        "id": "fees105_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by India, That Is Bharat?",
-                        "options": [
-                            "75 chapter5.indd 75 03-02-2025 04:57:08 U SH UK H ND IM HI s A du m ab In elu en L er Jh Ch A i Riv r v Bea er ve Ra s Riv Ri r r Y ve ve Ri Ri ut lej A Riv R e rS iver Sa ra svat i S Ri River s ve du rG r In an R ive Ya m ga un a tra hmapu ba l e r Bra am River Riv Ch Ga r ve ng Ri a mada River Nar r Tapti Rive Ri ve Mahanadi r Rive r G od av ar i Ri ve Krishna r Exploring Society: India and Beyond Ri ve r Kaveri Tapestry of the Past Fig.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "75 chapter5.indd 75 03-02-2025 04:57:08 U SH UK H ND IM HI s A du m ab In elu en L er Jh Ch A i Riv r v Bea er ve Ra s Riv Ri r r Y ve ve Ri Ri ut lej A Riv R e rS iver Sa ra svat i S Ri River s ve du rG r In an R ive Ya m ga un a tra hmapu ba l e r Bra am River Riv Ch Ga r ve ng Ri a mada River Nar r Tapti Rive Ri ve Mahanadi r Rive r G od av ar i Ri ve Krishna r Exploring Society: India and Beyond Ri ve r Kaveri Tapestry of the Past Fig.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees105_c01"
+                        "q": "What is the primary source of diversity in India?",
+                        "a": "Multiple languages and religions."
                     },
                     {
-                        "id": "fees105_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by India, That Is Bharat?",
-                        "options": [
-                            "A physical map of the Indian Subcontinent, with some of its rivers.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "A physical map of the Indian Subcontinent, with some of its rivers.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fees105_c01"
+                        "q": "Define 'Secularism' in the context of Indian society.",
+                        "a": "The state's equal respect and non-interference in matters of religion."
                     },
                     {
-                        "id": "fees105_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by India, That Is Bharat?",
-                        "options": [
-                            "76 chapter5.indd 76 02-06-2026 10.30.36 AM Today, the India we know is a modern nation, with defined borders, defined states and a known population.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "76 chapter5.indd 76 02-06-2026 10.30.36 AM Today, the India we know is a modern nation, with defined borders, defined states and a known population.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees105_c01"
+                        "q": "Identify a major historical monument in India.",
+                        "a": "Taj Mahal or Red Fort."
                     },
                     {
-                        "id": "fees105_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by India, That Is Bharat?",
-                        "options": [
-                            "However, it was very different 500 years ago, 2,000 years ago or even 5,000 years ago.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "However, it was very different 500 years ago, 2,000 years ago or even 5,000 years ago.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fees105_c01"
+                        "q": "List two key challenges facing the Indian economy.",
+                        "a": "Poverty and inequality."
+                    },
+                    {
+                        "q": "What are the key elements of Indian cultural heritage?",
+                        "a": "Festivals, architecture, and literature."
                     }
                 ]
             },
@@ -1625,8 +1545,10 @@
             "subject": "Social Science",
             "chapter_title": "India, That Is Bharat",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.717871"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1557,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'India, That Is Bharat' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "5 CHAPTER India, That Is Bharat In India at a very early time the spiritual and cultural unity was made complete and became the very stuff of the life of all this great surge of humanity between the Himalayas and the two seas.",
-                    "A scene from rural India about 2,300 years ago 5 ― India, That Is Bharat (north gate of the Great Sanchi Stupa) 1.",
-                    "75 chapter5.indd 75 03-02-2025 04:57:08 U SH UK H ND IM HI s A du m ab In elu en L er Jh Ch A i Riv r v Bea er ve Ra s Riv Ri r r Y ve ve Ri Ri ut lej A Riv R e rS iver Sa ra svat i S Ri River s ve du rG r In an R ive Ya m ga un a tra hmapu ba l e r Bra am River Riv Ch Ga r ve ng Ri a mada River Nar r Tapti Rive Ri ve Mahanadi r Rive r G od av ar i Ri ve Krishna r Exploring Society: India and Beyond Ri ve r Kaveri Tapestry of the Past Fig.",
-                    "A physical map of the Indian Subcontinent, with some of its rivers.",
-                    "76 chapter5.indd 76 02-06-2026 10.30.36 AM Today, the India we know is a modern nation, with defined borders, defined states and a known population.",
-                    "However, it was very different 500 years ago, 2,000 years ago or even 5,000 years ago."
-                ]
-            },
+            "content": "Chapter 105 provides a comprehensive overview of India as a civilization with unparalleled historical depth, a dynamic modern state undergoing continuous transformation. It emphasizes the interplay between its rich ancient heritage, its diverse medieval cultures, and its democratic framework. The chapter concludes by highlighting India's status as a major player on the world stage, grappling with the challenges of poverty, diversity, and rapid industrialization, while reaffirming its constitutional commitment to secularism, democracy, and human rights.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1607,10 @@
             "subject": "Social Science",
             "chapter_title": "India, That Is Bharat",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.717916"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1622,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fees105_fc01",
-                        "front": "What key point should you remember from India, That Is Bharat?",
-                        "back": "5 CHAPTER India, That Is Bharat In India at a very early time the spiritual and cultural unity was made complete and became the very stuff of the life of all this great surge of humanity between the Himalayas and the two seas.",
-                        "concept_id": "fees105_c01"
+                        "term": "India's Neighbors",
+                        "definition": "Pakistan, China, Nepal, Bhutan, Bangladesh, Sri Lanka."
                     },
                     {
-                        "id": "fees105_fc02",
-                        "front": "What key point should you remember from India, That Is Bharat?",
-                        "back": "A scene from rural India about 2,300 years ago 5 ― India, That Is Bharat (north gate of the Great Sanchi Stupa) 1.",
-                        "concept_id": "fees105_c01"
+                        "term": "Diversity",
+                        "definition": "The variety of people, religions, and languages in India."
                     },
                     {
-                        "id": "fees105_fc03",
-                        "front": "What key point should you remember from India, That Is Bharat?",
-                        "back": "75 chapter5.indd 75 03-02-2025 04:57:08 U SH UK H ND IM HI s A du m ab In elu en L er Jh Ch A i Riv r v Bea er ve Ra s Riv Ri r r Y ve ve Ri Ri ut lej A Riv R e rS iver Sa ra svat i S Ri River s ve du rG r In an R ive Ya m ga un a tra hmapu ba l e r Bra am River Riv Ch Ga r ve ng Ri a mada River Nar r Tapti Rive Ri ve Mahanadi r Rive r G od av ar i Ri ve Krishna r Exploring Society: India and Beyond Ri ve r Kaveri Tapestry of the Past Fig.",
-                        "concept_id": "fees105_c01"
+                        "term": "Satyameva Jayate",
+                        "definition": "The national motto of India (Truth alone triumphs)."
                     },
                     {
-                        "id": "fees105_fc04",
-                        "front": "What key point should you remember from India, That Is Bharat?",
-                        "back": "A physical map of the Indian Subcontinent, with some of its rivers.",
-                        "concept_id": "fees105_c01"
-                    },
-                    {
-                        "id": "fees105_fc05",
-                        "front": "What key point should you remember from India, That Is Bharat?",
-                        "back": "76 chapter5.indd 76 02-06-2026 10.30.36 AM Today, the India we know is a modern nation, with defined borders, defined states and a known population.",
-                        "concept_id": "fees105_c01"
-                    },
-                    {
-                        "id": "fees105_fc06",
-                        "front": "What key point should you remember from India, That Is Bharat?",
-                        "back": "However, it was very different 500 years ago, 2,000 years ago or even 5,000 years ago.",
-                        "concept_id": "fees105_c01"
+                        "term": "Festivals",
+                        "definition": "Religious and cultural celebrations like Diwali, Holi, etc."
                     }
                 ]
             },

@@ -87,6 +87,17 @@ export const chapterService = {
   }
 };
 
+export const progressService = {
+  getMastery: async (chapterId: string) => {
+    const response = await api.get(`/api/mastery/state/${chapterId}`);
+    return response.data;
+  },
+  recordEvent: async (event: any) => {
+    const response = await api.post('/api/progress/event', event);
+    return response.data;
+  }
+};
+
 export const mediaService = {
   generateMedia: async (chapterId: string, className: string, subject: string, type = 'animation') => {
     const response = await api.post('api/media/generate', { chapter_id: chapterId, class_name: className, subject, type });
@@ -338,6 +349,29 @@ export const generalLearningService = {
   },
   recordProgress: async (uid: string, contentId: string, rating: number) => {
     const response = await api.post('/api/general-learning/progress', { uid, content_id: contentId, rating });
+    return response.data;
+  }
+};
+
+export const assessmentService = {
+  getPapers: async (classLevel: number, subject?: string) => {
+    const response = await api.get('/api/assessment/papers', { params: { class_level: classLevel, subject } });
+    return response.data;
+  },
+  generatePaper: async (classLevel: number, subject: string, paperType = 'MODEL') => {
+    const response = await api.post('/api/assessment/generate-paper', { class_level: classLevel, subject, paper_type: paperType });
+    return response.data;
+  },
+  startSession: async (paperId: string) => {
+    const response = await api.post('/api/assessment/session/start', { paper_id: paperId });
+    return response.data;
+  },
+  submitExam: async (sessionId: string, responses: any[]) => {
+    const response = await api.post('/api/assessment/session/submit', { session_id: sessionId, responses });
+    return response.data;
+  },
+  getResult: async (sessionId: string) => {
+    const response = await api.get(`/api/assessment/session/${sessionId}/result`);
     return response.data;
   }
 };

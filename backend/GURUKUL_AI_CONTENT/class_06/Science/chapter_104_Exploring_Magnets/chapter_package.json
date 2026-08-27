@@ -128,8 +128,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Magnets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.595853"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Exploring Magnets.",
+                "overview": "Magnetism is a fundamental force of nature that influences materials with magnetic properties. Magnets are objects that can exert a force on other materials, most notably magnetic materials. The study of magnetism involves understanding how magnetic fields are created, how they interact with different substances, and the different types of magnets.",
                 "source_grounded_key_points": [
                     "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday.",
                     "The story was based on a ship carrying spices from Kerala for trade in the olden days.",
@@ -175,8 +177,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Magnets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.595890"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Exploring Magnets accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday.",
-                            "The story was based on a ship carrying spices from Kerala for trade in the olden days.",
-                            "Reshma was aware that in those days, the sailors used stars to find directions at night.",
-                            "But in her story, a situation arose wherein the sailors got caught in a storm with an overcast sky and stars were not visible."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "Class 6 Science, Chapter 104: Exploring Magnets, introduces the concept of magnetism and magnetic poles. It explains that magnetic objects are substances that attract magnetic materials like iron. The chapter demonstrates how a magnet works and defines the poles (North and South). It also covers various properties of magnets, such as attracting certain metals, the magnetic force, and how magnets can be used in daily life (e.g., compass, loudspeakers, refrigerators). The explanation includes diagrams of magnetic field lines and simple experiments to illustrate the 'attraction' and 'repulsion' of magnetic poles.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Magnets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.595908"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -312,24 +261,17 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "fecu104_c01",
-                        "name": "Exploring Magnets",
-                        "definition": "Central learning focus of Exploring Magnets.",
-                        "source_evidence": "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday."
-                    },
-                    {
-                        "id": "fecu104_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "The story was based on a ship carrying spices from Kerala for trade in the olden days."
-                    },
-                    {
-                        "id": "fecu104_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "Reshma was aware that in those days, the sailors used stars to find directions at night."
-                    }
+                    "Definition of Magnet: A material that possesses the ability to produce a magnetic field.",
+                    "Magnetic Fields: Invisible areas around magnets where a force is exerted.",
+                    "Magnetic Field Lines: Imaginary lines used to represent the direction and strength of a magnetic field.",
+                    "Magnetic Poles: The two ends of a magnet, usually labeled North and South (N and S).",
+                    "Interaction between Magnets: Attraction and repulsion between magnetic poles.",
+                    "Types of Magnets: Permanent magnets and electromagnets.",
+                    "Magnetic Properties of Materials: Examples of magnetic materials (e.g., iron, nickel, cobalt) and non-magnetic materials (e.g., wood, copper, plastic).",
+                    "Drawing Magnetic Field Lines: The rules for drawing field lines (exit from N, enter S, no crossing).",
+                    "Hysteresis: The history of a material's magnetic state (permanent vs. temporary magnetism).",
+                    "Magnetic Materials and Applications: Uses of magnets in everyday life (e.g., refrigerator, compass, speakers).",
+                    "Concept of Magnetic Moment: A measure of the strength and orientation of a magnetic dipole."
                 ]
             },
             "runtime_mapping": {
@@ -347,8 +289,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Magnets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.595923"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -383,7 +327,36 @@
                         "to": "fecu104_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "root": "Exploring Magnets",
+                "level1": [
+                    "Definition & Properties of Magnets",
+                    "Magnetic Fields & Field Lines",
+                    "Interaction of Magnets",
+                    "Magnetic Materials & Applications"
+                ],
+                "level2": {
+                    "Definition & Properties of Magnets": [
+                        "Definition",
+                        "Magnetic Poles (N & S)",
+                        "Permanent vs. Temporary Magnets"
+                    ],
+                    "Magnetic Fields & Field Lines": [
+                        "Field Lines (Exit N, Enter S)",
+                        "Visualizing the Field",
+                        "Field Strength"
+                    ],
+                    "Interaction of Magnets": [
+                        "Attraction (N-S)",
+                        "Repulsion (N-N or S-S)",
+                        "Magnetic Dipoles"
+                    ],
+                    "Magnetic Materials & Applications": [
+                        "Magnetic Materials (e.g., Iron)",
+                        "Non-Magnetic Materials (e.g., Wood)",
+                        "Practical Uses (Compass, Speaker, Magnet)"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -469,8 +442,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Magnets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.595881"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +454,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Exploring Magnets.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Exploring Magnets supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine a journey across a landscape where certain objects act like powerful attractors, drawing nearby materials towards them, while others act as repellers. This is the essence of magnetism. A story about a young explorer discovers a mysterious compass that points towards the Earth's magnetic field, guiding them through dense forests and open plains. The explorer learns that the compass is a tiny marvel, a simple demonstration of how Earth itself acts as a giant magnet, and how even small pieces of iron can become powerful magnets when arranged in specific ways. The journey teaches them about the invisible forces that govern our world, linking the stories of ancient civilizations using magnets for navigation and the modern technology found in motors and generators.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1017,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Magnets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.595900"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1032,29 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu104_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Exploring Magnets?",
+                        "type": "Multiple Choice",
+                        "question": "Which of the following materials is generally non-magnetic?",
                         "options": [
-                            "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Iron",
+                            "Cobalt",
+                            "Copper",
+                            "Nickel"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu104_c01"
+                        "answer": "Copper"
                     },
                     {
-                        "id": "fecu104_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Exploring Magnets?",
-                        "options": [
-                            "The story was based on a ship carrying spices from Kerala for trade in the olden days.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The story was based on a ship carrying spices from Kerala for trade in the olden days.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu104_c01"
+                        "type": "Fill in the Blanks",
+                        "question": "The two ends of a magnet where the magnetic field is strongest are called the ________ poles.",
+                        "answer": "Magnetic"
                     },
                     {
-                        "id": "fecu104_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Exploring Magnets?",
-                        "options": [
-                            "Reshma was aware that in those days, the sailors used stars to find directions at night.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Reshma was aware that in those days, the sailors used stars to find directions at night.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu104_c01"
+                        "type": "True/False",
+                        "question": "Magnetic field lines always cross each other.",
+                        "answer": "False"
                     },
                     {
-                        "id": "fecu104_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Exploring Magnets?",
-                        "options": [
-                            "But in her story, a situation arose wherein the sailors got caught in a storm with an overcast sky and stars were not visible.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "But in her story, a situation arose wherein the sailors got caught in a storm with an overcast sky and stars were not visible.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu104_c01"
-                    },
-                    {
-                        "id": "fecu104_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Exploring Magnets?",
-                        "options": [
-                            "Reshma could not take her story forward as she could not think of a way for sailors to find directions.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Reshma could not take her story forward as she could not think of a way for sailors to find directions.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu104_c01"
-                    },
-                    {
-                        "id": "fecu104_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Exploring Magnets?",
-                        "options": [
-                            "She searched for information on the internet and her school library.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "She searched for information on the internet and her school library.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu104_c01"
+                        "type": "Short Answer",
+                        "question": "Define a permanent magnet."
                     }
                 ]
             },
@@ -1625,8 +1503,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Magnets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.595873"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1515,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Exploring Magnets' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday.",
-                    "The story was based on a ship carrying spices from Kerala for trade in the olden days.",
-                    "Reshma was aware that in those days, the sailors used stars to find directions at night.",
-                    "But in her story, a situation arose wherein the sailors got caught in a storm with an overcast sky and stars were not visible.",
-                    "Reshma could not take her story forward as she could not think of a way for sailors to find directions.",
-                    "She searched for information on the internet and her school library."
-                ]
-            },
+            "content": "This chapter explores the concept of magnetism, its basic principles, and the properties of magnetic materials. Key topics include the definition of magnetic fields, magnetic poles, the classification of magnets, the law of attraction and repulsion, and the difference between magnetic and non-magnetic materials. It lays the foundation for understanding how magnets are used in various everyday applications, such as compasses, household appliances, and medical devices.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1565,10 @@
             "subject": "Science",
             "chapter_title": "Exploring Magnets",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.595916"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1580,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu104_fc01",
-                        "front": "What key point should you remember from Exploring Magnets?",
-                        "back": "Her grandmother loves listening to her stories, so Reshma was writing a new story to share with her grandmother on her 60th birthday.",
-                        "concept_id": "fecu104_c01"
+                        "term": "Magnetic Field",
+                        "definition": "The region around a magnet where a force can be exerted on other magnetic materials."
                     },
                     {
-                        "id": "fecu104_fc02",
-                        "front": "What key point should you remember from Exploring Magnets?",
-                        "back": "The story was based on a ship carrying spices from Kerala for trade in the olden days.",
-                        "concept_id": "fecu104_c01"
+                        "term": "Magnetic Poles",
+                        "definition": "The ends of a magnet, identified as North (N) and South (S)."
                     },
                     {
-                        "id": "fecu104_fc03",
-                        "front": "What key point should you remember from Exploring Magnets?",
-                        "back": "Reshma was aware that in those days, the sailors used stars to find directions at night.",
-                        "concept_id": "fecu104_c01"
+                        "term": "Attraction",
+                        "definition": "The force of pull between two North and South poles."
                     },
                     {
-                        "id": "fecu104_fc04",
-                        "front": "What key point should you remember from Exploring Magnets?",
-                        "back": "But in her story, a situation arose wherein the sailors got caught in a storm with an overcast sky and stars were not visible.",
-                        "concept_id": "fecu104_c01"
+                        "term": "Repulsion",
+                        "definition": "The force of push between two North poles or between two South poles."
                     },
                     {
-                        "id": "fecu104_fc05",
-                        "front": "What key point should you remember from Exploring Magnets?",
-                        "back": "Reshma could not take her story forward as she could not think of a way for sailors to find directions.",
-                        "concept_id": "fecu104_c01"
-                    },
-                    {
-                        "id": "fecu104_fc06",
-                        "front": "What key point should you remember from Exploring Magnets?",
-                        "back": "She searched for information on the internet and her school library.",
-                        "concept_id": "fecu104_c01"
+                        "term": "Magnetic Dipole",
+                        "definition": "A small region of a magnet that has a North and South pole."
                     }
                 ]
             },

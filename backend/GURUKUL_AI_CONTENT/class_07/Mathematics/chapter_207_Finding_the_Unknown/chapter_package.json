@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Finding the Unknown",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.130869"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Finding the Unknown.",
+                "overview": "This chapter focuses on 'Finding the Unknown,' a fundamental concept in algebra. It introduces variables and the techniques used to set up and solve algebraic equations to find an unknown value within a given expression or word problem. Understanding how to translate real-world scenarios into mathematical equations is key to mastering this topic.",
                 "source_grounded_key_points": [
                     "7 FINDING THE UNKNOWN 7.1 Find the Unknowns Unknown Weights We have a weighing scale that behaves as follows.",
                     "The numbers represent same units of weight: Find the unknown weights in the following cases: Fig.",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "Finding the Unknown",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.130911"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Finding the Unknown.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "7 FINDING THE UNKNOWN 7.1 Find the Unknowns Unknown Weights We have a weighing scale that behaves as follows.",
-                            "The numbers represent same units of weight: Find the unknown weights in the following cases: Fig.",
-                            "7.3 Chapter-7.indd 164 10/9/2025 3:19:51 PM Finding the Unknown Fig.",
-                            "Talk Find the unknown weight of the sack in the following cases.",
-                            "7.10 [Hint: If we remove equal weights from both the plates, will the weighing scale still be balanced?"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter is a fundamental introduction to the concept of finding the unknown quantity in mathematical problems. It covers basic algebraic principles, specifically using variables and equations to represent unknown values. The core focus is on translating word problems into mathematical expressions (forming simple equations) and then solving them using inverse operations to isolate the variable. Students learn to identify which operations to perform based on the context of the problem, ensuring they understand the logic behind algebraic manipulation.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "Finding the Unknown",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.130934"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,24 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gegp207_c01",
-                        "name": "Finding the Unknown",
-                        "definition": "Central learning focus of Finding the Unknown.",
-                        "source_evidence": "7 FINDING THE UNKNOWN 7.1 Find the Unknowns Unknown Weights We have a weighing scale that behaves as follows."
+                        "id": 1,
+                        "name": "Introduction to Finding the Unknown",
+                        "description": "Basic principles of setting up an equation to find an unknown variable."
                     },
                     {
-                        "id": "gegp207_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "The numbers represent same units of weight: Find the unknown weights in the following cases: Fig."
+                        "id": 2,
+                        "name": "Linear Equations in One Variable",
+                        "description": "Solving simple linear equations of the form ax + b = c."
                     },
                     {
-                        "id": "gegp207_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "7.3 Chapter-7.indd 164 10/9/2025 3:19:51 PM Finding the Unknown Fig."
+                        "id": 3,
+                        "name": "Word Problems and Equations",
+                        "description": "Translating real-world scenarios into algebraic equations."
+                    },
+                    {
+                        "id": 4,
+                        "name": "Identifying Variables",
+                        "description": "Recognizing variables and constants in algebraic expressions."
                     }
                 ]
             },
@@ -360,8 +310,10 @@
             "subject": "Mathematics",
             "chapter_title": "Finding the Unknown",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.130949"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -395,6 +347,32 @@
                         "from": "gegp207_c02",
                         "to": "gegp207_c03",
                         "relation": "enables"
+                    }
+                ],
+                "title": "Chapter 207: Finding the Unknown",
+                "root": "Finding the Unknown",
+                "children": [
+                    {
+                        "node": "Linear Equations",
+                        "sub_nodes": [
+                            "Basic Setup",
+                            "Solving Techniques"
+                        ]
+                    },
+                    {
+                        "node": "Word Problems",
+                        "sub_nodes": [
+                            "Identify Key Information",
+                            "Translate to Algebra",
+                            "Solve"
+                        ]
+                    },
+                    {
+                        "node": "Variable Identification",
+                        "sub_nodes": [
+                            "Known vs. Unknown",
+                            "Expressions vs. Equations"
+                        ]
                     }
                 ]
             },
@@ -490,8 +468,10 @@
             "subject": "Mathematics",
             "chapter_title": "Finding the Unknown",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.130899"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +480,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Finding the Unknown.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Finding the Unknown supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a mysterious box. Inside the box are some candies. You know that you have a certain number of candies. Now, you add more candies, and the total number changes. The core idea of 'Finding the Unknown' is figuring out how many candies are in the box initially, or how many more were added, using mathematical logic. For example, if you have 5 apples and you buy 'x' more apples, and the total is 12, you can set up the equation: 5 + x = 12. The unknown is 'x'. By isolating 'x', you can find that $x = 12 - 5$, so $x = 7$. This chapter explains how to systematically approach 'unknowns' using principles of equality.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1075,10 @@
             "subject": "Mathematics",
             "chapter_title": "Finding the Unknown",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.130924"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1090,31 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp207_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Finding the Unknown'?",
+                        "id": 1,
+                        "type": "Multiple Choice",
+                        "question": "What is the solution to the equation x + 5 = 12?",
                         "options": [
-                            "7 FINDING THE UNKNOWN 7.1 Find the Unknowns Unknown Weights We have a weighing scale that behaves as follows.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "x = 7",
+                            "x = 17",
+                            "x = 2",
+                            "x = -7"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "7 FINDING THE UNKNOWN 7.1 Find the Unknowns Unknown Weights We have a weighing scale that behaves as follows.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp207_c01"
+                        "answer": "x = 7",
+                        "topic": "Linear Equations in One Variable"
                     },
                     {
-                        "id": "gegp207_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Finding the Unknown'?",
-                        "options": [
-                            "The numbers represent same units of weight: Find the unknown weights in the following cases: Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The numbers represent same units of weight: Find the unknown weights in the following cases: Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp207_c01"
+                        "id": 2,
+                        "type": "Short Answer",
+                        "question": "Solve for y: 3y - 4 = 11.",
+                        "answer": "3y = 15, y = 5",
+                        "topic": "Solving Linear Equations"
                     },
                     {
-                        "id": "gegp207_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Finding the Unknown'?",
-                        "options": [
-                            "7.3 Chapter-7.indd 164 10/9/2025 3:19:51 PM Finding the Unknown Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "7.3 Chapter-7.indd 164 10/9/2025 3:19:51 PM Finding the Unknown Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Finding the Unknown'?",
-                        "options": [
-                            "Talk Find the unknown weight of the sack in the following cases.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Talk Find the unknown weight of the sack in the following cases.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Finding the Unknown'?",
-                        "options": [
-                            "7.10 [Hint: If we remove equal weights from both the plates, will the weighing scale still be balanced?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "7.10 [Hint: If we remove equal weights from both the plates, will the weighing scale still be balanced?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Finding the Unknown'?",
-                        "options": [
-                            "7.10.] 165 Chapter-7.indd 165 10/9/2025 3:19:54 PM Ganita Prakash | Grade 7 | Part-II Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "7.10.] 165 Chapter-7.indd 165 10/9/2025 3:19:54 PM Ganita Prakash | Grade 7 | Part-II Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Finding the Unknown'?",
-                        "options": [
-                            "7.11 [Hint: Can you remove objects so that the sacks are only on one plate?] Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "7.11 [Hint: Can you remove objects so that the sacks are only on one plate?] Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Finding the Unknown'?",
-                        "options": [
-                            "7.12 Note to the Teacher: Encourage your students to find solutions to these problems using different strategies and methods, and ask them to compare and contrast their methods.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "7.12 Note to the Teacher: Encourage your students to find solutions to these problems using different strategies and methods, and ask them to compare and contrast their methods.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp207_c01"
+                        "id": 3,
+                        "type": "Application",
+                        "question": "The sum of a number and 10 is 25. Find the number.",
+                        "answer": "15",
+                        "topic": "Word Problems and Equations"
                     }
                 ]
             },
@@ -1786,8 +1639,10 @@
             "subject": "Mathematics",
             "chapter_title": "Finding the Unknown",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.130942"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1654,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp207_fc01",
-                        "front": "What should you remember from Finding the Unknown?",
-                        "back": "7 FINDING THE UNKNOWN 7.1 Find the Unknowns Unknown Weights We have a weighing scale that behaves as follows.",
-                        "concept_id": "gegp207_c01"
+                        "front": "Define an Unknown Variable",
+                        "back": "A letter (like x, y) used to represent a value that needs to be found."
                     },
                     {
-                        "id": "gegp207_fc02",
-                        "front": "What should you remember from Finding the Unknown?",
-                        "back": "The numbers represent same units of weight: Find the unknown weights in the following cases: Fig.",
-                        "concept_id": "gegp207_c01"
+                        "front": "Step 1 for Solving Linear Equations",
+                        "back": "Isolate the variable on one side of the equation by performing inverse operations."
                     },
                     {
-                        "id": "gegp207_fc03",
-                        "front": "What should you remember from Finding the Unknown?",
-                        "back": "7.3 Chapter-7.indd 164 10/9/2025 3:19:51 PM Finding the Unknown Fig.",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_fc04",
-                        "front": "What should you remember from Finding the Unknown?",
-                        "back": "Talk Find the unknown weight of the sack in the following cases.",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_fc05",
-                        "front": "What should you remember from Finding the Unknown?",
-                        "back": "7.10 [Hint: If we remove equal weights from both the plates, will the weighing scale still be balanced?",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_fc06",
-                        "front": "What should you remember from Finding the Unknown?",
-                        "back": "7.10.] 165 Chapter-7.indd 165 10/9/2025 3:19:54 PM Ganita Prakash | Grade 7 | Part-II Fig.",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_fc07",
-                        "front": "What should you remember from Finding the Unknown?",
-                        "back": "7.11 [Hint: Can you remove objects so that the sacks are only on one plate?] Fig.",
-                        "concept_id": "gegp207_c01"
-                    },
-                    {
-                        "id": "gegp207_fc08",
-                        "front": "What should you remember from Finding the Unknown?",
-                        "back": "7.12 Note to the Teacher: Encourage your students to find solutions to these problems using different strategies and methods, and ask them to compare and contrast their methods.",
-                        "concept_id": "gegp207_c01"
+                        "front": "Inverse Operations",
+                        "back": "Addition undoes subtraction; multiplication undoes division."
                     }
                 ]
             },

@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetrical Designs",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.213187"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'Symmetrical Designs' develops mathematical reasoning and application through the chapter 'Symmetrical Designs'.",
+                "overview": "This chapter explores the concept of symmetry in mathematics, specifically focusing on patterns and designs that possess various types of symmetry. Symmetry is a fundamental property in geometry, art, and nature, describing when a figure remains unchanged after a specific transformation (like reflection or rotation). Understanding symmetry helps us analyze shapes, understand architectural patterns, and appreciate the aesthetic beauty found in both natural and man-made objects.",
                 "source_grounded_key_points": [
                     "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
                     "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetrical Designs",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.213233"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Symmetrical Designs'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Symmetrical Designs and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
-                            "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
-                            "They used their knowledge of lines of symmetry to make the cutouts.",
-                            "The letter A has a vertical line of symmetry."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Symmetrical Designs' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "Welcome to Chapter 110 on Symmetrical Designs! This chapter introduces the fascinating world of symmetry in mathematics and design. In mathematics, symmetry refers to an object that looks the same after a specific transformation (like a flip or a turn). We will explore different types of symmetry, including reflectional symmetry (mirror lines), rotational symmetry (turning), and bilateral symmetry. Understanding these concepts is crucial for studying geometry and analyzing patterns in art and architecture. We will also practice drawing and identifying symmetrical patterns in various shapes.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetrical Designs",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.213258"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -316,22 +265,60 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "eemm110_concept_01",
-                        "name": "Symmetrical Designs",
-                        "definition": "Central learning focus developed by the chapter 'Symmetrical Designs'.",
-                        "evidence": "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way."
+                        "id": "C110_01",
+                        "title": "Introduction to Symmetrical Designs",
+                        "description": "Understanding what constitutes a symmetrical design in geometry and art. Focusing on reflectional symmetry and rotational symmetry.",
+                        "keywords": [
+                            "Symmetry",
+                            "Reflectional Symmetry",
+                            "Rotational Symmetry",
+                            "Mirror Image"
+                        ]
                     },
                     {
-                        "id": "eemm110_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4."
+                        "id": "C110_02",
+                        "title": "Types of Symmetry",
+                        "description": "Classification of symmetrical figures into different types (e.g., line symmetry, point symmetry, etc.) and determining the order of symmetry (n).",
+                        "keywords": [
+                            "Types of Symmetry",
+                            "Order of Symmetry",
+                            "Line of Symmetry",
+                            "Point of Symmetry",
+                            "Symmetry Groups"
+                        ]
                     },
                     {
-                        "id": "eemm110_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "They used their knowledge of lines of symmetry to make the cutouts."
+                        "id": "C110_03",
+                        "title": "Drawing Symmetrical Shapes",
+                        "description": "Techniques and steps involved in constructing symmetrical patterns using geometric tools like compass and ruler.",
+                        "keywords": [
+                            "Drawing Shapes",
+                            "Construction",
+                            "Geometric Tools",
+                            "Axis of Symmetry"
+                        ]
+                    },
+                    {
+                        "id": "C110_04",
+                        "title": "Application in Patterns and Tessellations",
+                        "description": "Using symmetrical designs to create repeating patterns, tessellations, and artistic motifs.",
+                        "keywords": [
+                            "Patterns",
+                            "Tessellations",
+                            "Repeating Designs",
+                            "Art Applications"
+                        ]
+                    },
+                    {
+                        "id": "C110_05",
+                        "title": "Complex Symmetrical Figures",
+                        "description": "Analyzing and sketching complex symmetrical figures and understanding how multiple axes of symmetry interact.",
+                        "keywords": [
+                            "Complex Figures",
+                            "Multiple Axes of Symmetry",
+                            "Compound Symmetry",
+                            "Complex Geometry"
+                        ]
                     }
                 ]
             },
@@ -350,8 +337,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetrical Designs",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.213275"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -386,6 +375,24 @@
                         "to": "eemm110_concept_03",
                         "relation": "applied_through"
                     }
+                ],
+                "central_topic": "Symmetrical Designs",
+                "branches": [
+                    "Types of Symmetry",
+                    "Order of Symmetry",
+                    "Reflectional Symmetry (Axis)",
+                    "Rotational Symmetry (Center)",
+                    "Construction Techniques",
+                    "Symmetrical Figures (Regular & Irregular)",
+                    "Symmetry in Art & Nature",
+                    "Application: Tessellations"
+                ],
+                "sub_branches": [
+                    "Line of Symmetry",
+                    "Number of Symmetry Axes",
+                    "Rule of Rotation",
+                    "Mirror Image Concept",
+                    "Composite Symmetry"
                 ]
             },
             "runtime_mapping": {
@@ -464,8 +471,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetrical Designs",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.213224"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +483,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'Symmetrical Designs'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: Symmetrical Designs.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'Symmetrical Designs' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "Imagine you are an archaeologist discovering ancient carvings on a wall. These carvings display intricate patterns that seem to repeat perfectly. As you examine them, you realize they have a perfect balance. Each pattern, when folded along a specific line, matches its other side, creating a mirror image. You observe that if you spin the pattern around a central point, it looks exactly the same as the original, just rotated. This observation leads you to understand the concept of rotational and reflectional symmetry. These symmetrical designs are not just abstract shapes; they are pervasive in nature—look at the spirals in a pinecone or the structure of a snowflake. From the ancient Greek temples to modern computer graphics, symmetry provides an underlying structure and a sense of harmony in everything from your DNA structure to the design of a balanced bridge.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +1041,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetrical Designs",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.213250"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1056,64 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm110_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+                        "id": "Q110_01",
+                        "level": "Easy",
+                        "question": "In a reflectional symmetry, what is the line of symmetry called?",
                         "options": [
-                            "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "Axis of Symmetry",
+                            "Line of Symmetry",
+                            "Radial Line",
+                            "Perpendicular Line"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm110_concept_01"
+                        "answer": "Axis of Symmetry"
                     },
                     {
-                        "id": "eemm110_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+                        "id": "Q110_02",
+                        "level": "Moderate",
+                        "question": "What is the order of rotational symmetry of a square?",
                         "options": [
-                            "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "1",
+                            "2",
+                            "3",
+                            "4"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm110_concept_01"
+                        "answer": "4"
                     },
                     {
-                        "id": "eemm110_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+                        "id": "Q110_03",
+                        "level": "Moderate",
+                        "question": "Which of the following figures possesses line symmetry?",
                         "options": [
-                            "They used their knowledge of lines of symmetry to make the cutouts.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "An irregular triangle",
+                            "A scalene triangle",
+                            "A rhombus",
+                            "An irregular hexagon"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "They used their knowledge of lines of symmetry to make the cutouts.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm110_concept_01"
+                        "answer": "A rhombus"
                     },
                     {
-                        "id": "eemm110_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+                        "id": "Q110_04",
+                        "level": "Hard",
+                        "question": "If a shape has an order of rotational symmetry of 6, what is the angle of rotation required to map the shape onto itself?",
                         "options": [
-                            "The letter A has a vertical line of symmetry.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "30°",
+                            "60°",
+                            "90°",
+                            "120°"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "The letter A has a vertical line of symmetry.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm110_concept_01"
+                        "answer": "60°"
                     },
                     {
-                        "id": "eemm110_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
+                        "id": "Q110_05",
+                        "level": "Hard",
+                        "question": "What is the number of axes of symmetry for a regular pentagon?",
                         "options": [
-                            "Alphabet Cutout Step 1 Step 1 Step 2 Step 3 Step 4 Step 3 Step 2 Step 4 The letter H has two lines of symmetry.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "1",
+                            "5",
+                            "8",
+                            "10"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Alphabet Cutout Step 1 Step 1 Step 2 Step 3 Step 4 Step 3 Step 2 Step 4 The letter H has two lines of symmetry.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm110_concept_01"
-                    },
-                    {
-                        "id": "eemm110_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Symmetrical Designs'?",
-                        "options": [
-                            "Fold the paper into one-fourth (once vertically, once horizontally).",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Fold the paper into one-fourth (once vertically, once horizontally).",
-                        "difficulty": "hard",
-                        "concept_id": "eemm110_concept_01"
+                        "answer": "5"
                     }
                 ]
             },
@@ -1619,8 +1566,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetrical Designs",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.213215"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1578,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Symmetrical Designs' develops mathematical reasoning and application through the chapter 'Symmetrical Designs'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
-                    "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
-                    "They used their knowledge of lines of symmetry to make the cutouts.",
-                    "The letter A has a vertical line of symmetry.",
-                    "Alphabet Cutout Step 1 Step 1 Step 2 Step 3 Step 4 Step 3 Step 2 Step 4 The letter H has two lines of symmetry.",
-                    "Fold the paper into one-fourth (once vertically, once horizontally)."
-                ]
-            },
+            "content": "The chapter 'Symmetrical Designs' introduces the concept of symmetry as a fundamental geometric property where a figure exhibits balance under specific transformations. It covers line symmetry (reflection), rotational symmetry (turning around a center point), and point symmetry. Students learn to recognize these types of symmetry in various 2D and 3D shapes. By exploring tessellations and real-world examples like architectural and natural designs, the chapter reinforces the importance of symmetry in mathematics, art, and the design of balanced structures. In essence, symmetry is a key tool for analyzing spatial relationships and understanding order in the universe.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1628,10 @@
             "subject": "Mathematics",
             "chapter_title": "Symmetrical Designs",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.213267"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1643,29 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm110_fc01",
-                        "front": "What is a key idea from 'Symmetrical Designs'?",
-                        "back": "While preparing cutouts of letters, they observe that some letters can be cut out in an easy way.",
-                        "concept_id": "eemm110_concept_01"
+                        "id": "F110_01",
+                        "term": "Reflectional Symmetry",
+                        "definition": "A transformation that maps a figure onto itself across a line, known as the axis of symmetry."
                     },
                     {
-                        "id": "eemm110_fc02",
-                        "front": "What is a key idea from 'Symmetrical Designs'?",
-                        "back": "They remember that they learnt about reflection symmetry and lines of symmetry in Grade 4.",
-                        "concept_id": "eemm110_concept_01"
+                        "id": "F110_02",
+                        "term": "Rotational Symmetry",
+                        "definition": "A transformation where a figure can be moved around a fixed center and appear unchanged after a certain angle of rotation."
                     },
                     {
-                        "id": "eemm110_fc03",
-                        "front": "What is a key idea from 'Symmetrical Designs'?",
-                        "back": "They used their knowledge of lines of symmetry to make the cutouts.",
-                        "concept_id": "eemm110_concept_01"
+                        "id": "F110_03",
+                        "term": "Order of Symmetry (n)",
+                        "definition": "The number of positions (including 360°) where a shape can be rotated to look exactly the same. The order is calculated as $360^\text{o} / (\text{angle of rotation})$."
                     },
                     {
-                        "id": "eemm110_fc04",
-                        "front": "What is a key idea from 'Symmetrical Designs'?",
-                        "back": "The letter A has a vertical line of symmetry.",
-                        "concept_id": "eemm110_concept_01"
+                        "id": "F110_04",
+                        "term": "Axis of Symmetry",
+                        "definition": "A line that divides a figure into two equal mirror-image halves."
                     },
                     {
-                        "id": "eemm110_fc05",
-                        "front": "What is a key idea from 'Symmetrical Designs'?",
-                        "back": "Alphabet Cutout Step 1 Step 1 Step 2 Step 3 Step 4 Step 3 Step 2 Step 4 The letter H has two lines of symmetry.",
-                        "concept_id": "eemm110_concept_01"
-                    },
-                    {
-                        "id": "eemm110_fc06",
-                        "front": "What is a key idea from 'Symmetrical Designs'?",
-                        "back": "Fold the paper into one-fourth (once vertically, once horizontally).",
-                        "concept_id": "eemm110_concept_01"
+                        "id": "F110_05",
+                        "term": "Tessellation",
+                        "definition": "A pattern of shapes that fit together perfectly to cover a surface without any gaps."
                     }
                 ]
             },

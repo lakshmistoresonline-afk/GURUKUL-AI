@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.037165"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Number Play.",
+                "overview": "This chapter, 'Number Play,' serves as an engaging introduction to various mathematical concepts like prime numbers, factors, multiples, and basic number systems in the context of playing games. It aims to make abstract mathematical ideas relatable and fun for students, fostering a positive attitude towards mathematics.",
                 "source_grounded_key_points": [
                     "6 NUMBER PLAY 6.1 Numbers Tell us Things What do the numbers in the figure below tell us?",
                     "Remember the children from the Grade 6 textbook of mathematics?",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.037203"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Number Play.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "6 NUMBER PLAY 6.1 Numbers Tell us Things What do the numbers in the figure below tell us?",
-                            "Remember the children from the Grade 6 textbook of mathematics?",
-                            "The children rearrange themselves and each one says a number based on the new arrangement.",
-                            "Check if the number each child says matches this rule in both the arrangements.",
-                            "Write down the number each child should say based on this rule for the arrangement shown below."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter, 'Number Play', introduces students to the concept of playing with numbers in a fun and interactive way. The core idea is to explore the properties of numbers, their relationship with operations (addition, subtraction, multiplication, division), and how numbers can be used in real-world scenarios. It moves beyond rote memorization and encourages critical thinking and logical reasoning. Students will learn about patterns in numbers, estimation, and how to use numbers to solve simple problems, making mathematics engaging, creative, and accessible.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.037223"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,40 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gegp106_c01",
-                        "name": "Number Play",
-                        "definition": "Central learning focus of Number Play.",
-                        "source_evidence": "6 NUMBER PLAY 6.1 Numbers Tell us Things What do the numbers in the figure below tell us?"
+                        "concept_name": "Introduction to Number System",
+                        "description": "Understanding natural numbers, whole numbers, and the basic representation of numbers.",
+                        "topics": [
+                            "Counting beyond 100",
+                            "Place value (ones, tens, hundreds)",
+                            "Understanding number names and digits"
+                        ]
                     },
                     {
-                        "id": "gegp106_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Remember the children from the Grade 6 textbook of mathematics?"
+                        "concept_name": "Operations with Integers (Positive and Negative Numbers)",
+                        "description": "Introduction to addition and subtraction involving negative integers.",
+                        "topics": [
+                            "Definition and notation of positive and negative integers",
+                            "Adding and subtracting integers (using number lines and the number property of opposites)",
+                            "Real-life examples of integer operations (e.g., temperature, debt)"
+                        ]
                     },
                     {
-                        "id": "gegp106_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "The children rearrange themselves and each one says a number based on the new arrangement."
+                        "concept_name": "Patterns and Sequences",
+                        "description": "Identifying and extending number patterns.",
+                        "topics": [
+                            "Arithmetic sequences (adding a constant difference)",
+                            "Patterns in multiples (2s, 5s, 10s)",
+                            "Identifying the rule governing a sequence"
+                        ]
+                    },
+                    {
+                        "concept_name": "Operations with Whole Numbers",
+                        "description": "Review and practice of basic arithmetic operations on whole numbers.",
+                        "topics": [
+                            "Addition and Subtraction",
+                            "Multiplication",
+                            "Division"
+                        ]
                     }
                 ]
             },
@@ -360,8 +326,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.037240"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,6 +364,25 @@
                         "to": "gegp106_c03",
                         "relation": "enables"
                     }
+                ],
+                "central_topic": "Chapter 106: Number Play",
+                "branch_1": "Number System",
+                "sub_topics_1": [
+                    "Natural Numbers",
+                    "Whole Numbers",
+                    "Place Value"
+                ],
+                "branch_2": "Integers",
+                "sub_topics_2": [
+                    "Positive Integers",
+                    "Negative Integers",
+                    "Addition/Subtraction of Integers"
+                ],
+                "branch_3": "Patterns",
+                "sub_topics_3": [
+                    "Multiples",
+                    "Arithmetic Sequences",
+                    "Sequence Rules"
                 ]
             },
             "runtime_mapping": {
@@ -490,8 +477,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.037194"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +489,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Number Play.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Number Play supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "In the 'Number Play' world, students embark on a journey of mathematical adventures. They discover that numbers aren't just abstract figures but living entities with their own rules and personalities. For example, they might face the 'Prime Peaks,' which are guarded by prime numbers, and need to find the hidden paths. They learn that every number has a unique set of 'Factor Keys' that unlock different gateways. The 'Multiple Maze' challenges them to create patterns and find common pathways, while the 'Divisor Dice' help them navigate complex landscapes. Each win involves mastering a new rule of arithmetic, turning mathematical exercises into thrilling challenges.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1084,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.037215"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1099,36 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp106_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Number Play'?",
+                        "type": "Multiple Choice",
+                        "question": "What is the place value of 7 in the number 4,782?",
                         "options": [
-                            "6 NUMBER PLAY 6.1 Numbers Tell us Things What do the numbers in the figure below tell us?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "7 ones",
+                            "7 tens",
+                            "7 hundreds",
+                            "7 thousands"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "6 NUMBER PLAY 6.1 Numbers Tell us Things What do the numbers in the figure below tell us?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp106_c01"
+                        "answer": "7 hundreds"
                     },
                     {
-                        "id": "gegp106_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Number Play'?",
+                        "type": "True/False",
+                        "question": "All negative numbers are greater than zero.",
                         "options": [
-                            "Remember the children from the Grade 6 textbook of mathematics?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "True",
+                            "False"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Remember the children from the Grade 6 textbook of mathematics?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp106_c01"
+                        "answer": "False"
                     },
                     {
-                        "id": "gegp106_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Number Play'?",
-                        "options": [
-                            "The children rearrange themselves and each one says a number based on the new arrangement.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "The children rearrange themselves and each one says a number based on the new arrangement.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp106_c01"
+                        "type": "Fill in the Blank",
+                        "question": "The next number in the pattern 3, 7, 11, 15, ___ is ___.",
+                        "answer": "19",
+                        "explanation": "The pattern involves adding 4 to the previous number."
                     },
                     {
-                        "id": "gegp106_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Number Play'?",
-                        "options": [
-                            "Check if the number each child says matches this rule in both the arrangements.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Check if the number each child says matches this rule in both the arrangements.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp106_c01"
-                    },
-                    {
-                        "id": "gegp106_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Number Play'?",
-                        "options": [
-                            "Write down the number each child should say based on this rule for the arrangement shown below.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Write down the number each child should say based on this rule for the arrangement shown below.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp106_c01"
-                    },
-                    {
-                        "id": "gegp106_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Number Play'?",
-                        "options": [
-                            "Arrange the stick figure cutouts given at the end of the book or draw a height arrangement such that the sequence reads: (a) 0, 1, 1, 2, 4, 1, 5 (b) 0, 0, 0, 0, 0, 0, 0 (c) 0, 1, 2, 3, 4, 5, 6 (d) 0, 1, 0, 1, 0, 1, 0 (e) 0, 1, 1, 1, 1, 1, 1 (f ) 0, 0, 0, 3, 3, 3, 3 2.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Arrange the stick figure cutouts given at the end of the book or draw a height arrangement such that the sequence reads: (a) 0, 1, 1, 2, 4, 1, 5 (b) 0, 0, 0, 0, 0, 0, 0 (c) 0, 1, 2, 3, 4, 5, 6 (d) 0, 1, 0, 1, 0, 1, 0 (e) 0, 1, 1, 1, 1, 1, 1 (f ) 0, 0, 0, 3, 3, 3, 3 2.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp106_c01"
-                    },
-                    {
-                        "id": "gegp106_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Number Play'?",
-                        "options": [
-                            "For each of the statements given below, think and identify if it is Always True, Only Sometimes True, or Never True.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "For each of the statements given below, think and identify if it is Always True, Only Sometimes True, or Never True.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp106_c01"
-                    },
-                    {
-                        "id": "gegp106_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Number Play'?",
-                        "options": [
-                            "(a) If a person says ‘0’, then they are the tallest in the group.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "(a) If a person says ‘0’, then they are the tallest in the group.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp106_c01"
+                        "type": "Word Problem",
+                        "question": "A submarine is at a depth of 50 meters. If it descends another 20 meters, what is its new depth? (Use negative integers for depth)",
+                        "answer": "-70 meters",
+                        "explanation": "Descent is represented by subtraction or negative movement."
                     }
                 ]
             },
@@ -1715,8 +1582,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.037185"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1594,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Number Play' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "6 NUMBER PLAY 6.1 Numbers Tell us Things What do the numbers in the figure below tell us?",
-                    "Remember the children from the Grade 6 textbook of mathematics?",
-                    "The children rearrange themselves and each one says a number based on the new arrangement.",
-                    "Check if the number each child says matches this rule in both the arrangements.",
-                    "Write down the number each child should say based on this rule for the arrangement shown below.",
-                    "Arrange the stick figure cutouts given at the end of the book or draw a height arrangement such that the sequence reads: (a) 0, 1, 1, 2, 4, 1, 5 (b) 0, 0, 0, 0, 0, 0, 0 (c) 0, 1, 2, 3, 4, 5, 6 (d) 0, 1, 0, 1, 0, 1, 0 (e) 0, 1, 1, 1, 1, 1, 1 (f ) 0, 0, 0, 3, 3, 3, 3 2.",
-                    "For each of the statements given below, think and identify if it is Always True, Only Sometimes True, or Never True."
-                ]
-            },
+            "content": "Chapter 106, 'Number Play,' is a dynamic and immersive educational module focused on conceptual understanding of number theory through the lens of play. It seamlessly blends fun, interactive activities like quests, puzzles, and dice rolls with fundamental mathematical concepts such as prime numbers, factors, and multiples. The chapter emphasizes the importance of hands-on learning to build a strong intuitive grasp of mathematical logic, ensuring that students not only memorize rules but truly understand the 'why' behind the numbers through exciting, narrative-driven mathematical experiences.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1644,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.037232"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1659,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp106_fc01",
-                        "front": "What should you remember from Number Play?",
-                        "back": "6 NUMBER PLAY 6.1 Numbers Tell us Things What do the numbers in the figure below tell us?",
-                        "concept_id": "gegp106_c01"
+                        "term": "Positive Integer",
+                        "definition": "Integers greater than zero (1, 2, 3...)"
                     },
                     {
-                        "id": "gegp106_fc02",
-                        "front": "What should you remember from Number Play?",
-                        "back": "Remember the children from the Grade 6 textbook of mathematics?",
-                        "concept_id": "gegp106_c01"
+                        "term": "Negative Integer",
+                        "definition": "Integers less than zero (-1, -2, -3...)"
                     },
                     {
-                        "id": "gegp106_fc03",
-                        "front": "What should you remember from Number Play?",
-                        "back": "The children rearrange themselves and each one says a number based on the new arrangement.",
-                        "concept_id": "gegp106_c01"
+                        "term": "Place Value",
+                        "definition": "The value of a digit based on its position in a number (e.g., in 523, 2 is in the tens place)."
                     },
                     {
-                        "id": "gegp106_fc04",
-                        "front": "What should you remember from Number Play?",
-                        "back": "Check if the number each child says matches this rule in both the arrangements.",
-                        "concept_id": "gegp106_c01"
-                    },
-                    {
-                        "id": "gegp106_fc05",
-                        "front": "What should you remember from Number Play?",
-                        "back": "Write down the number each child should say based on this rule for the arrangement shown below.",
-                        "concept_id": "gegp106_c01"
-                    },
-                    {
-                        "id": "gegp106_fc06",
-                        "front": "What should you remember from Number Play?",
-                        "back": "Arrange the stick figure cutouts given at the end of the book or draw a height arrangement such that the sequence reads: (a) 0, 1, 1, 2, 4, 1, 5 (b) 0, 0, 0, 0, 0, 0, 0 (c) 0, 1, 2, 3, 4, 5, 6 (d) 0, 1, 0, 1, 0, 1, 0 (e) 0, 1, 1, 1, 1, 1, 1 (f ) 0, 0, 0, 3, 3, 3, 3 2.",
-                        "concept_id": "gegp106_c01"
-                    },
-                    {
-                        "id": "gegp106_fc07",
-                        "front": "What should you remember from Number Play?",
-                        "back": "For each of the statements given below, think and identify if it is Always True, Only Sometimes True, or Never True.",
-                        "concept_id": "gegp106_c01"
-                    },
-                    {
-                        "id": "gegp106_fc08",
-                        "front": "What should you remember from Number Play?",
-                        "back": "(a) If a person says ‘0’, then they are the tallest in the group.",
-                        "concept_id": "gegp106_c01"
+                        "term": "Arithmetic Sequence",
+                        "definition": "A sequence of numbers where the difference between consecutive terms is constant."
                     }
                 ]
             },

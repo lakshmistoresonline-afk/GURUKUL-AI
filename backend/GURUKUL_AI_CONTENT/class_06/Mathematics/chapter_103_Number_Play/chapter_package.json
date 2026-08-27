@@ -128,8 +128,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.483231"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Number Play.",
+                "overview": "Welcome to Chapter 103: Number Play. In this exciting chapter, we step away from simple counting and dive into the fascinating world of numbers through games, puzzles, and creative applications. We will explore how numbers interact, their properties, and how they can be used in real-world scenarios.",
                 "source_grounded_key_points": [
                     "3 NUMBER PLAY Numbers are used in different contexts and in many different ways to organise our lives.",
                     "We have used numbers to count, and have applied the basic operations of addition, subtraction, multiplication and division on them, to solve problems related to our daily lives.",
@@ -175,8 +177,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.483266"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Number Play accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "3 NUMBER PLAY Numbers are used in different contexts and in many different ways to organise our lives.",
-                            "We have used numbers to count, and have applied the basic operations of addition, subtraction, multiplication and division on them, to solve problems related to our daily lives.",
-                            "In this chapter, we will continue this journey, by playing with numbers, seeing numbers around us, noticing patterns, and learning to use numbers and operations in new ways.",
-                            "Math List five different situations in which numbers are used."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "Class 06 Mathematics, Chapter 103, 'Number Play' (or 'Numbers' in many curricula), typically focuses on understanding and manipulating numbers, such as place value, number names, the Indian vs. International number system, and perhaps basic operations or number identification. This chapter aims to build a solid foundation for students to understand that numbers have a value based on their position, moving from whole numbers to potentially larger numbers. It introduces the concept of grouping and counting in a systematic way. The teacher should explain how to read, write, and compare numbers, and introduce the mathematical language used for number theory in an accessible and engaging manner.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -469,8 +416,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.483258"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +428,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Number Play.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Number Play supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine you are playing a game called 'Number Quest'. In this quest, you are given a starting number, and you must follow a series of rules involving addition, subtraction, and sometimes multiplication to reach a target number. The 'story' unfolds as you navigate different levels: Level 1 might require basic counting, Level 2 might involve finding patterns (e.g., adding the same number repeatedly), and Level 3 could introduce 'leap of faith' rules where you have to decide whether to add or subtract based on a condition. This chapter explains how these 'plays' (games) allow us to intuitively understand complex mathematical rules, making abstract concepts concrete and fun.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1625,8 +1546,10 @@
             "subject": "Mathematics",
             "chapter_title": "Number Play",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.483250"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1558,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Number Play' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "3 NUMBER PLAY Numbers are used in different contexts and in many different ways to organise our lives.",
-                    "We have used numbers to count, and have applied the basic operations of addition, subtraction, multiplication and division on them, to solve problems related to our daily lives.",
-                    "In this chapter, we will continue this journey, by playing with numbers, seeing numbers around us, noticing patterns, and learning to use numbers and operations in new ways.",
-                    "Math List five different situations in which numbers are used.",
-                    "See what Talk your classmates have listed, share, and discuss.",
-                    "3.1 Numbers can Tell us Things What are these numbers telling us?"
-                ]
-            },
+            "content": "Chapter 103, 'Number Play', is an interactive exploration of mathematics through games and puzzles. It focuses on transitioning from basic arithmetic to applying mathematical operations in creative, engaging scenarios. By engaging in 'Number Play,' students learn essential concepts like number properties, operations, and pattern recognition in an enjoyable context, fostering a deeper understanding and more intuitive mastery of the number system.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

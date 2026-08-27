@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "The World of Metals and Non-metals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.176547"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for The World of Metals and Non-metals.",
+                "overview": "Chapter 104, 'The World of Metals and Non-metals', explores the fundamental properties, classifications, and behaviors of the elements that make up the vast majority of the universe. Metals, generally good conductors of heat and electricity, possess characteristic properties like malleability, ductility, and a lustrous appearance. Non-metals, conversely, exhibit properties such as brittleness, poor conductivity, and often exist as gases or brittle solids. This chapter provides a comprehensive overview of the chemical, physical, and structural characteristics that define these two major classes of elements and their interactions.",
                 "source_grounded_key_points": [
                     "The World of Metals 4 and Non-metals Yashwant and Anandi live in a village in Rajasthan.",
                     "Their school has assigned them a project to learn about craftspersons who work with metals.",
@@ -185,8 +187,10 @@
             "subject": "Science",
             "chapter_title": "The World of Metals and Non-metals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.176582"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of The World of Metals and Non-metals.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "The World of Metals 4 and Non-metals Yashwant and Anandi live in a village in Rajasthan.",
-                            "Their school has assigned them a project to learn about craftspersons who work with metals.",
-                            "They decide to visit the local ironsmiths who practise this craft.",
-                            "Yashwant and Anandi request their grandfather to accompany them (Fig.",
-                            "They are curious to learn how these ironsmiths make diﬀerent items of daily use."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Chapter 104, 'The World of Metals and Non-metals,' is a fundamental chapter in chemistry that explores the properties, physical and chemical characteristics, and uses of metals and non-metals. Metals are generally shiny, malleable, ductile, good conductors of heat and electricity, and can be chemically reactive. Non-metals, on the other hand, are typically dull, brittle, poor conductors of heat and electricity, and tend to gain electrons to form negative ions. The chapter details the periodic table's arrangement and the key differences between these two elements. It highlights essential concepts like metallic bonding, lattice structures, ionic bonding, and the importance of these materials in everyday life, including their roles in construction, cooking utensils, and electrical wiring.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Science",
             "chapter_title": "The World of Metals and Non-metals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.176601"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,39 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu104_c01",
-                        "name": "The World of Metals and Non-metals",
-                        "definition": "Central learning focus of The World of Metals and Non-metals.",
-                        "source_evidence": "The World of Metals 4 and Non-metals Yashwant and Anandi live in a village in Rajasthan."
+                        "id": 1,
+                        "title": "Metals and Non-metals: Introduction",
+                        "description": "Definition and basic characteristics of metals and non-metals, including physical properties like state at room temperature, malleability, and conductivity."
                     },
                     {
-                        "id": "gecu104_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "Their school has assigned them a project to learn about craftspersons who work with metals."
+                        "id": 2,
+                        "title": "Physical Properties of Metals",
+                        "description": "Properties such as luster (shininess), ductility (ability to be drawn into wires), and magnetic properties."
                     },
                     {
-                        "id": "gecu104_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "They decide to visit the local ironsmiths who practise this craft."
+                        "id": 3,
+                        "title": "Physical Properties of Non-metals",
+                        "description": "Properties such as dullness, brittleness, and poor conductivity."
+                    },
+                    {
+                        "id": 4,
+                        "title": "Chemical Properties of Metals",
+                        "description": "Reactivity of metals with oxygen, water, and acids. Formation of oxides."
+                    },
+                    {
+                        "id": 5,
+                        "title": "Chemical Properties of Non-metals",
+                        "description": "Reactivity of non-metals with oxygen and hydrogen. Formation of acids and bases."
+                    },
+                    {
+                        "id": 6,
+                        "title": "Metallurgy: Extraction of Metals",
+                        "description": "Methods of obtaining metals from their ores, including roasting, calcinations, and reduction reactions."
+                    },
+                    {
+                        "id": 7,
+                        "title": "Periodic Table and Electronic Configuration",
+                        "description": "Arrangement of elements in the periodic table and basic electronic configuration of metals and non-metals."
                     }
                 ]
             },
@@ -360,8 +325,10 @@
             "subject": "Science",
             "chapter_title": "The World of Metals and Non-metals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.176616"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +363,32 @@
                         "to": "gecu104_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "node": "The World of Metals and Non-metals",
+                "level_1": [
+                    "Introduction to Metals & Non-metals",
+                    "Physical Properties (Metals vs Non-metals)",
+                    "Chemical Properties",
+                    "Metallurgy (Extraction)"
+                ],
+                "level_2": {
+                    "Physical Properties (Metals)": [
+                        "Lustre",
+                        "Malleability",
+                        "Ductility",
+                        "Conductivity"
+                    ],
+                    "Chemical Properties": [
+                        "Reaction with Oxygen",
+                        "Reaction with Water",
+                        "Reaction with Acids"
+                    ],
+                    "Metallurgy": [
+                        "Roasting",
+                        "Calcinations",
+                        "Reduction Reactions"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +482,10 @@
             "subject": "Science",
             "chapter_title": "The World of Metals and Non-metals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.176573"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +494,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to The World of Metals and Non-metals.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from The World of Metals and Non-metals supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine the universe as a bustling metropolis, where every atom is a citizen. **Metals** are the 'builders' and 'connectors' of this city. They are often found in structures, wires, and tools because their structure—featuring delocalized electrons—allows them to form strong metallic bonds that make them excellent conductors of energy. They are tough and ductile, allowing them to be shaped into many forms without breaking. \n\n**Non-metals**, on the other hand, are the 'flexible', 'reactive', and 'insulating' citizens. They include gases (like oxygen and nitrogen) and brittle solids. Their structure leads to covalent bonds, which allow them to form complex molecules (like water and carbon dioxide) but make them poor conductors. They are essential for life, playing roles in breathing, photosynthesis, and producing vital organic compounds. The relationship between metals and non-metals is dynamic: they combine to form diverse compounds, driving the chemical reactions that sustain life and drive geological processes on Earth. Their contrasting properties—conducting versus insulating—represent a fundamental division in how matter interacts with energy.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1089,10 @@
             "subject": "Science",
             "chapter_title": "The World of Metals and Non-metals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.176593"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1104,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu104_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The World of Metals and Non-metals'?",
+                        "id": 1,
+                        "type": "Multiple Choice",
+                        "question": "Which of the following is a physical property characteristic of metals?",
                         "options": [
-                            "The World of Metals 4 and Non-metals Yashwant and Anandi live in a village in Rajasthan.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Brittle",
+                            "Poor conductor",
+                            "Malleable",
+                            "Non-lustrous"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "The World of Metals 4 and Non-metals Yashwant and Anandi live in a village in Rajasthan.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu104_c01"
+                        "answer": "Malleable"
                     },
                     {
-                        "id": "gecu104_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The World of Metals and Non-metals'?",
-                        "options": [
-                            "Their school has assigned them a project to learn about craftspersons who work with metals.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Their school has assigned them a project to learn about craftspersons who work with metals.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu104_c01"
+                        "id": 2,
+                        "type": "Fill in the Blank",
+                        "question": "The property of metals that allows them to be beaten into thin sheets is called __________. (Answer: Malleability)",
+                        "answer": "Malleability"
                     },
                     {
-                        "id": "gecu104_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The World of Metals and Non-metals'?",
-                        "options": [
-                            "They decide to visit the local ironsmiths who practise this craft.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They decide to visit the local ironsmiths who practise this craft.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu104_c01"
+                        "id": 3,
+                        "type": "True/False",
+                        "question": "Non-metals are generally good conductors of electricity.",
+                        "answer": "False"
                     },
                     {
-                        "id": "gecu104_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The World of Metals and Non-metals'?",
-                        "options": [
-                            "Yashwant and Anandi request their grandfather to accompany them (Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Yashwant and Anandi request their grandfather to accompany them (Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu104_c01"
-                    },
-                    {
-                        "id": "gecu104_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The World of Metals and Non-metals'?",
-                        "options": [
-                            "They are curious to learn how these ironsmiths make diﬀerent items of daily use.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They are curious to learn how these ironsmiths make diﬀerent items of daily use.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu104_c01"
-                    },
-                    {
-                        "id": "gecu104_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The World of Metals and Non-metals'?",
-                        "options": [
-                            "They interact with an elderly craftsperson, Sudarshan uncle.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "They interact with an elderly craftsperson, Sudarshan uncle.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu104_c01"
-                    },
-                    {
-                        "id": "gecu104_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The World of Metals and Non-metals'?",
-                        "options": [
-                            "Sudarshan: Generally, we make items of daily use, such as ﬂat pans (tawas), buckets (baltis), tongs (chimtas), and farming tools like spades (phawras), axes (kulhadis), trowels (khurpis), and rakes (jelees).",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Sudarshan: Generally, we make items of daily use, such as ﬂat pans (tawas), buckets (baltis), tongs (chimtas), and farming tools like spades (phawras), axes (kulhadis), trowels (khurpis), and rakes (jelees).",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu104_c01"
-                    },
-                    {
-                        "id": "gecu104_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The World of Metals and Non-metals'?",
-                        "options": [
-                            "4.1: Ironsmith making various items Reprint 2026-27 Chapter 4.indd 41 4/3/2025 4:52:08 PM Sudarshan: We use iron metal to make these items.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "4.1: Ironsmith making various items Reprint 2026-27 Chapter 4.indd 41 4/3/2025 4:52:08 PM Sudarshan: We use iron metal to make these items.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu104_c01"
+                        "id": 4,
+                        "type": "Short Answer",
+                        "question": "Why are metals good conductors of heat and electricity?",
+                        "answer": "Metals have free moving electrons which can easily transfer energy (heat and electricity) throughout the material."
                     }
                 ]
             },
@@ -1715,8 +1585,10 @@
             "subject": "Science",
             "chapter_title": "The World of Metals and Non-metals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.176565"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1597,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The World of Metals and Non-metals' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "The World of Metals 4 and Non-metals Yashwant and Anandi live in a village in Rajasthan.",
-                    "Their school has assigned them a project to learn about craftspersons who work with metals.",
-                    "They decide to visit the local ironsmiths who practise this craft.",
-                    "Yashwant and Anandi request their grandfather to accompany them (Fig.",
-                    "They are curious to learn how these ironsmiths make diﬀerent items of daily use.",
-                    "They interact with an elderly craftsperson, Sudarshan uncle.",
-                    "Sudarshan: Generally, we make items of daily use, such as ﬂat pans (tawas), buckets (baltis), tongs (chimtas), and farming tools like spades (phawras), axes (kulhadis), trowels (khurpis), and rakes (jelees)."
-                ]
-            },
+            "content": "The chapter 'The World of Metals and Non-metals' categorizes elements into metals (characterized by high conductivity, malleability, and lustrous appearance) and non-metals (characterized by brittleness, low conductivity, and varied states of matter). Understanding their differences is crucial for predicting how they will react chemically. Metals tend to lose electrons (oxidation), while non-metals tend to gain electrons (reduction). The chapter highlights the importance of metallic bonding and covalent bonding in explaining their physical structures and chemical behaviors. Ultimately, metals and non-metals are not isolated entities but are constantly interacting to form the complex chemical makeup of all matter, including the compounds that form our world.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1647,10 @@
             "subject": "Science",
             "chapter_title": "The World of Metals and Non-metals",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.176609"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1662,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu104_fc01",
-                        "front": "What should you remember from The World of Metals and Non-metals?",
-                        "back": "The World of Metals 4 and Non-metals Yashwant and Anandi live in a village in Rajasthan.",
-                        "concept_id": "gecu104_c01"
+                        "id": 1,
+                        "front": "Definition of Luster",
+                        "back": "The ability of a material to shine or have a glossy appearance."
                     },
                     {
-                        "id": "gecu104_fc02",
-                        "front": "What should you remember from The World of Metals and Non-metals?",
-                        "back": "Their school has assigned them a project to learn about craftspersons who work with metals.",
-                        "concept_id": "gecu104_c01"
+                        "id": 2,
+                        "front": "Ductility",
+                        "back": "The ability of a metal to be drawn into thin wires."
                     },
                     {
-                        "id": "gecu104_fc03",
-                        "front": "What should you remember from The World of Metals and Non-metals?",
-                        "back": "They decide to visit the local ironsmiths who practise this craft.",
-                        "concept_id": "gecu104_c01"
+                        "id": 3,
+                        "front": "Which element is a non-metal and exists as a gas at room temperature?",
+                        "back": "Hydrogen (H) or Oxygen (O)."
                     },
                     {
-                        "id": "gecu104_fc04",
-                        "front": "What should you remember from The World of Metals and Non-metals?",
-                        "back": "Yashwant and Anandi request their grandfather to accompany them (Fig.",
-                        "concept_id": "gecu104_c01"
-                    },
-                    {
-                        "id": "gecu104_fc05",
-                        "front": "What should you remember from The World of Metals and Non-metals?",
-                        "back": "They are curious to learn how these ironsmiths make diﬀerent items of daily use.",
-                        "concept_id": "gecu104_c01"
-                    },
-                    {
-                        "id": "gecu104_fc06",
-                        "front": "What should you remember from The World of Metals and Non-metals?",
-                        "back": "They interact with an elderly craftsperson, Sudarshan uncle.",
-                        "concept_id": "gecu104_c01"
-                    },
-                    {
-                        "id": "gecu104_fc07",
-                        "front": "What should you remember from The World of Metals and Non-metals?",
-                        "back": "Sudarshan: Generally, we make items of daily use, such as ﬂat pans (tawas), buckets (baltis), tongs (chimtas), and farming tools like spades (phawras), axes (kulhadis), trowels (khurpis), and rakes (jelees).",
-                        "concept_id": "gecu104_c01"
-                    },
-                    {
-                        "id": "gecu104_fc08",
-                        "front": "What should you remember from The World of Metals and Non-metals?",
-                        "back": "4.1: Ironsmith making various items Reprint 2026-27 Chapter 4.indd 41 4/3/2025 4:52:08 PM Sudarshan: We use iron metal to make these items.",
-                        "concept_id": "gecu104_c01"
+                        "id": 4,
+                        "front": "What are the primary physical properties of metals?",
+                        "back": "Lustrous, Malleable, Ductile, Good conductors of heat and electricity."
                     }
                 ]
             },

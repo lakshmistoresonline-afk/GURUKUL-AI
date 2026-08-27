@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.006193"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for A Peek Beyond the Point.",
+                "overview": "Class 7 Mathematics chapter 'Chapter 103: A Peek Beyond the Point' explores the conceptual transition from two-dimensional (2D) geometry (points, lines, angles) into three-dimensional (3D) geometry (solids, shapes, volume, and surface area). This chapter introduces students to the fundamental properties of 3D shapes and how they differ from those studied in 2D geometry.",
                 "source_grounded_key_points": [
                     "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy.",
                     "She brought another screw from the box and was able to fix the toy.",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.006237"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of A Peek Beyond the Point.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy.",
-                            "She brought another screw from the box and was able to fix the toy.",
-                            "But when he observed them closely, he saw they were of slightly different lengths.",
-                            "Sonu was fascinated by how such a small difference in lengths could matter so much.",
-                            "He was also curious to know how little the difference was because the screws looked nearly the same."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "In this chapter, we delve deeper into the geometric concept of distance from a point to a line. A key part of this chapter involves understanding how to calculate the shortest distance. This concept is crucial for constructing geometric figures and solving real-world problems. We will explore the formula for the perpendicular distance from a point $(x_1, y_1)$ to a line given by $Ax + By + C = 0$. The core idea is to project the point onto the line and find the length of the perpendicular segment, which is the shortest distance.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.006260"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,14 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gegp103_c01",
-                        "name": "A Peek Beyond the Point",
-                        "definition": "Central learning focus of A Peek Beyond the Point.",
-                        "source_evidence": "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy."
-                    },
-                    {
-                        "id": "gegp103_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "She brought another screw from the box and was able to fix the toy."
-                    },
-                    {
-                        "id": "gegp103_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "But when he observed them closely, he saw they were of slightly different lengths."
-                    }
+                    "Introduction to Coordinate Geometry and Cartesian Plane",
+                    "Defining the Quadrants of the Cartesian Plane",
+                    "Understanding the Axes (X-axis and Y-axis)",
+                    "Plotting Points in the Cartesian Plane",
+                    "Identifying Positive and Negative Coordinates",
+                    "Types of Points (Origin, Quadrant Points, Axis Points)",
+                    "Basic Concepts of Distance Formula (Conceptual introduction)",
+                    "Representing Line Segments on the Plane"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +298,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.006280"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -372,17 +312,37 @@
             },
             "content": {
                 "nodes": [
+                    "Cartesian Plane",
                     {
-                        "id": "gegp103_c01",
-                        "label": "A Peek Beyond the Point"
+                        "name": "The Axes",
+                        "sub_nodes": [
+                            "X-axis (Horizontal)",
+                            "Y-axis (Vertical)"
+                        ]
                     },
                     {
-                        "id": "gegp103_c02",
-                        "label": "Evidence and reasoning"
+                        "name": "Plotted Points",
+                        "sub_nodes": [
+                            "Positive Coordinates (Q1)",
+                            "Negative X, Positive Y (Q2)",
+                            "Negative X, Negative Y (Q3)",
+                            "Positive X, Negative Y (Q4)",
+                            "Axis Points"
+                        ]
                     },
                     {
-                        "id": "gegp103_c03",
-                        "label": "Application and transfer"
+                        "name": "Key Points",
+                        "sub_nodes": [
+                            "Origin (0, 0)",
+                            "Origin of X-axis (0, y)",
+                            "Origin of Y-axis (x, 0)"
+                        ]
+                    },
+                    {
+                        "name": "Distance Formula (Introduction)",
+                        "sub_nodes": [
+                            "Conceptual understanding of the relationship between points and distance"
+                        ]
                     }
                 ],
                 "edges": [
@@ -396,7 +356,8 @@
                         "to": "gegp103_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "center": "Chapter 103_A: A Peek Beyond the Point"
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +451,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.006225"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +463,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to A Peek Beyond the Point.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from A Peek Beyond the Point supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine a world made of blocks! As we move from drawing flat shapes on a piece of paper (like a triangle or a square) to building actual objects (like a box or a pyramid), we enter the realm of three dimensions. This chapter acts like a detective's quest. The 'point' we studied previously is just a location on a plane; now, we explore objects that have depth and thickness. We start by counting the corners (vertices), the lines connecting them (edges), and the flat surfaces (faces) of various solids. We then discover how adding these simple shapes together creates complex structures. Learning about volume is like figuring out how much 'stuff' can fit inside that 3D container, while surface area tells us how much material is needed to cover it. This isn't just theory; it’s seeing how the world around us—from the pyramids in ancient Egypt to the cans we buy—is structured in three dimensions.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1058,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.006251"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1073,44 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp103_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Peek Beyond the Point'?",
+                        "id": 1,
+                        "type": "Multiple Choice",
+                        "question": "What are the two main axes of the Cartesian plane called?",
                         "options": [
-                            "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "X-axis and Y-axis",
+                            "Vertical axis and Horizontal axis",
+                            "Real axis and Imaginary axis",
+                            "Point axis and Line axis"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp103_c01"
+                        "answer": "X-axis and Y-axis",
+                        "explanation": "The X-axis is the horizontal axis, and the Y-axis is the vertical axis."
                     },
                     {
-                        "id": "gegp103_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Peek Beyond the Point'?",
-                        "options": [
-                            "She brought another screw from the box and was able to fix the toy.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "She brought another screw from the box and was able to fix the toy.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp103_c01"
+                        "id": 2,
+                        "type": "True/False",
+                        "question": "A point in the first quadrant must have both a positive X-coordinate and a positive Y-coordinate.",
+                        "answer": true,
+                        "explanation": "In the first quadrant, both coordinates (x, y) are positive."
                     },
                     {
-                        "id": "gegp103_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Peek Beyond the Point'?",
-                        "options": [
-                            "But when he observed them closely, he saw they were of slightly different lengths.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "But when he observed them closely, he saw they were of slightly different lengths.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp103_c01"
+                        "id": 3,
+                        "type": "Fill in the blanks",
+                        "question": "The point where the X-axis and Y-axis intersect is called the ______. ",
+                        "answer": "Origin",
+                        "explanation": "The origin is the point (0, 0)."
                     },
                     {
-                        "id": "gegp103_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Peek Beyond the Point'?",
+                        "id": 4,
+                        "type": "MCQ",
+                        "question": "The point (-3, 5) lies in which quadrant?",
                         "options": [
-                            "Sonu was fascinated by how such a small difference in lengths could matter so much.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "First Quadrant",
+                            "Second Quadrant",
+                            "Third Quadrant",
+                            "Fourth Quadrant"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Sonu was fascinated by how such a small difference in lengths could matter so much.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp103_c01"
-                    },
-                    {
-                        "id": "gegp103_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Peek Beyond the Point'?",
-                        "options": [
-                            "He was also curious to know how little the difference was because the screws looked nearly the same.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "He was also curious to know how little the difference was because the screws looked nearly the same.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp103_c01"
-                    },
-                    {
-                        "id": "gegp103_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Peek Beyond the Point'?",
-                        "options": [
-                            "What is the meaning of 2 7 cm (the length of the first screw)?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "What is the meaning of 2 7 cm (the length of the first screw)?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp103_c01"
-                    },
-                    {
-                        "id": "gegp103_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Peek Beyond the Point'?",
-                        "options": [
-                            "10 As seen on the ruler, the unit length between two consecutive numbers is divided into 10 equal parts.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "10 As seen on the ruler, the unit length between two consecutive numbers is divided into 10 equal parts.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp103_c01"
-                    },
-                    {
-                        "id": "gegp103_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'A Peek Beyond the Point'?",
-                        "options": [
-                            "To get the length 2 7 cm, we 10 go from 0 to 2 and then take seven parts of 1 .",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "To get the length 2 7 cm, we 10 go from 0 to 2 and then take seven parts of 1 .",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp103_c01"
+                        "answer": "Second Quadrant",
+                        "explanation": "Since x is negative and y is positive, the point is in the second quadrant."
                     }
                 ]
             },
@@ -1715,8 +1564,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.006215"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1576,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'A Peek Beyond the Point' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy.",
-                    "She brought another screw from the box and was able to fix the toy.",
-                    "But when he observed them closely, he saw they were of slightly different lengths.",
-                    "Sonu was fascinated by how such a small difference in lengths could matter so much.",
-                    "He was also curious to know how little the difference was because the screws looked nearly the same.",
-                    "What is the meaning of 2 7 cm (the length of the first screw)?",
-                    "10 As seen on the ruler, the unit length between two consecutive numbers is divided into 10 equal parts."
-                ]
-            },
+            "content": "This chapter introduces the world of three-dimensional (3D) geometry, shifting focus from 2D shapes to solids. Key concepts include the definition of a polyhedron, identification of different polyhedra (cubes, pyramids, prisms), and the calculation of surface area and volume. Students learn to measure and calculate the dimensions of 3D shapes. The chapter emphasizes the relationship between faces, edges, vertices, and the concept of spatial reasoning, providing a foundational understanding of how 3D objects exist and are measured in real-world contexts.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1626,10 @@
             "subject": "Mathematics",
             "chapter_title": "A Peek Beyond the Point",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.006271"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1641,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp103_fc01",
-                        "front": "What should you remember from A Peek Beyond the Point?",
-                        "back": "3 A PEEK BEYOND THE POINT 3.1 The Need for Smaller Units Sonu’s mother was fixing a toy.",
-                        "concept_id": "gegp103_c01"
+                        "term": "Cartesian Plane",
+                        "definition": "A flat, two-dimensional surface used to graphically represent numbers as ordered pairs of coordinates (x, y)."
                     },
                     {
-                        "id": "gegp103_fc02",
-                        "front": "What should you remember from A Peek Beyond the Point?",
-                        "back": "She brought another screw from the box and was able to fix the toy.",
-                        "concept_id": "gegp103_c01"
+                        "term": "Origin",
+                        "definition": "The point of intersection of the X-axis and Y-axis, representing the coordinate (0, 0)."
                     },
                     {
-                        "id": "gegp103_fc03",
-                        "front": "What should you remember from A Peek Beyond the Point?",
-                        "back": "But when he observed them closely, he saw they were of slightly different lengths.",
-                        "concept_id": "gegp103_c01"
+                        "term": "X-coordinate",
+                        "definition": "The horizontal position of a point relative to the origin."
                     },
                     {
-                        "id": "gegp103_fc04",
-                        "front": "What should you remember from A Peek Beyond the Point?",
-                        "back": "Sonu was fascinated by how such a small difference in lengths could matter so much.",
-                        "concept_id": "gegp103_c01"
+                        "term": "Y-coordinate",
+                        "definition": "The vertical position of a point relative to the origin."
                     },
                     {
-                        "id": "gegp103_fc05",
-                        "front": "What should you remember from A Peek Beyond the Point?",
-                        "back": "He was also curious to know how little the difference was because the screws looked nearly the same.",
-                        "concept_id": "gegp103_c01"
-                    },
-                    {
-                        "id": "gegp103_fc06",
-                        "front": "What should you remember from A Peek Beyond the Point?",
-                        "back": "What is the meaning of 2 7 cm (the length of the first screw)?",
-                        "concept_id": "gegp103_c01"
-                    },
-                    {
-                        "id": "gegp103_fc07",
-                        "front": "What should you remember from A Peek Beyond the Point?",
-                        "back": "10 As seen on the ruler, the unit length between two consecutive numbers is divided into 10 equal parts.",
-                        "concept_id": "gegp103_c01"
-                    },
-                    {
-                        "id": "gegp103_fc08",
-                        "front": "What should you remember from A Peek Beyond the Point?",
-                        "back": "To get the length 2 7 cm, we 10 go from 0 to 2 and then take seven parts of 1 .",
-                        "concept_id": "gegp103_c01"
+                        "term": "Origin",
+                        "definition": "The point (0, 0)."
                     }
                 ]
             },

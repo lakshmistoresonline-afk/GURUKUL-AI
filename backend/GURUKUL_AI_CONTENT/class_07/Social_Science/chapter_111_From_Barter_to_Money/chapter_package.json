@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "From Barter to Money",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.365264"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for From Barter to Money.",
+                "overview": "This chapter introduces the historical evolution of money, starting with the simplest exchange methods like bartering and examining how these evolved into modern systems of monetary exchange. It explores the economic and social reasons behind the transition from physical goods exchange to abstract forms of money.",
                 "source_grounded_key_points": [
                     "11 CHAPTER From Barter to Money The importance of money flows from it being a link between the present and the future.",
                     "How has money transformed 11 – From Barter to Money into various forms over time?",
@@ -185,8 +187,10 @@
             "subject": "Social Science",
             "chapter_title": "From Barter to Money",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.365303"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of From Barter to Money.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "11 CHAPTER From Barter to Money The importance of money flows from it being a link between the present and the future.",
-                            "How has money transformed 11 – From Barter to Money into various forms over time?",
-                            "Economic Life Around Us In the theme “Tapestry of the Past”, you read about the crops that people grew, such as food grains or goods they made like carnelian beads.",
-                            "How do you think they exchanged these goods for things that they needed?",
-                            "229 Reprint 2026-27 Chapter 11.indd 229 08-04-2025 12:58:29 Barter People exchanged goods or services for other goods and System: a way of services."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "In this chapter, we study the evolution of money. We start with a 'barter system' where goods and services are exchanged directly (e.g., giving apples for bread). We see how barter was 'inefficient' because of the 'double coincidence of wants'—meaning you need what the other person has exactly what you want, and they need exactly what you have. This created a lot of hassle. Then, to solve this, people started using 'commodity money' like gold or silver, which were valuable goods easily convertible into money.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Social Science",
             "chapter_title": "From Barter to Money",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.365326"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,24 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gees111_c01",
-                        "name": "From Barter to Money",
-                        "definition": "Central learning focus of From Barter to Money.",
-                        "source_evidence": "11 CHAPTER From Barter to Money The importance of money flows from it being a link between the present and the future."
+                        "term": "Barter System",
+                        "definition": "An economic system where goods and services are exchanged directly for other goods and services, without the use of money."
                     },
                     {
-                        "id": "gees111_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "How has money transformed 11 – From Barter to Money into various forms over time?"
+                        "term": "Limitations of Barter",
+                        "definition": "Barter is inefficient because it requires a 'double coincidence of wants'—both parties must want what the other has. It is also difficult to measure the value of different goods."
                     },
                     {
-                        "id": "gees111_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "Economic Life Around Us In the theme “Tapestry of the Past”, you read about the crops that people grew, such as food grains or goods they made like carnelian beads."
+                        "term": "Need for Money",
+                        "definition": "As a system of exchange, money solves the problems inherent in barter by acting as a 'medium of exchange,' a 'measure of value,' and a 'store of value.'"
+                    },
+                    {
+                        "term": "Functions of Money",
+                        "definition": "Money serves three primary functions: as a medium of exchange (easy transaction), as a measure of value (determining price), and as a store of value (saving wealth)."
+                    },
+                    {
+                        "term": "Definition of Money",
+                        "definition": "Money is anything that is generally accepted as payment for goods and services in exchange for other goods and services."
                     }
                 ]
             },
@@ -360,8 +310,10 @@
             "subject": "Social Science",
             "chapter_title": "From Barter to Money",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.365342"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -373,16 +325,57 @@
             "content": {
                 "nodes": [
                     {
-                        "id": "gees111_c01",
-                        "label": "From Barter to Money"
+                        "name": "Barter System",
+                        "children": [
+                            {
+                                "name": "Direct Exchange"
+                            },
+                            {
+                                "name": "Inefficiency"
+                            },
+                            {
+                                "name": "Double Coincidence of Wants"
+                            }
+                        ]
                     },
                     {
-                        "id": "gees111_c02",
-                        "label": "Evidence and reasoning"
+                        "name": "Need for Money",
+                        "children": [
+                            {
+                                "name": "Medium of Exchange"
+                            },
+                            {
+                                "name": "Measure of Value"
+                            },
+                            {
+                                "name": "Store of Value"
+                            }
+                        ]
                     },
                     {
-                        "id": "gees111_c03",
-                        "label": "Application and transfer"
+                        "name": "Functions of Money",
+                        "children": [
+                            {
+                                "name": "Medium of Exchange"
+                            },
+                            {
+                                "name": "Store of Value"
+                            },
+                            {
+                                "name": "Measure of Value"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Money",
+                        "children": [
+                            {
+                                "name": "Definition"
+                            },
+                            {
+                                "name": "Acceptance as Payment"
+                            }
+                        ]
                     }
                 ],
                 "edges": [
@@ -490,8 +483,10 @@
             "subject": "Social Science",
             "chapter_title": "From Barter to Money",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.365294"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +495,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to From Barter to Money.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from From Barter to Money supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The chapter typically follows a narrative tracing the journey of human economic exchange. It starts by depicting a primitive barter society where goods were directly exchanged. As complexity increased, people sought a medium of exchange that was more universally accepted. The chapter then moves through historical stages, such as the use of shells or standardized metals, leading up to the development of coin systems and finally discussing the concept of fiat money—money that derives its value not from intrinsic metal content but from government decree and public trust.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1090,10 @@
             "subject": "Social Science",
             "chapter_title": "From Barter to Money",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.365317"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1105,29 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees111_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From Barter to Money'?",
-                        "options": [
-                            "11 CHAPTER From Barter to Money The importance of money flows from it being a link between the present and the future.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "11 CHAPTER From Barter to Money The importance of money flows from it being a link between the present and the future.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees111_c01"
+                        "type": "Multiple Choice",
+                        "question": "Which of the following best describes the main limitation of the Barter System?",
+                        "options": {
+                            "A": "It is too slow for large transactions.",
+                            "B": "It requires a double coincidence of wants.",
+                            "C": "It cannot be used to buy luxury goods.",
+                            "D": "It lacks a common unit of account."
+                        },
+                        "answer": "B"
                     },
                     {
-                        "id": "gees111_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From Barter to Money'?",
-                        "options": [
-                            "How has money transformed 11 – From Barter to Money into various forms over time?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "How has money transformed 11 – From Barter to Money into various forms over time?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees111_c01"
+                        "type": "Fill in the Blanks",
+                        "question": "Money acts as a __________, a measure of value, and a store of value.",
+                        "answer": "medium of exchange"
                     },
                     {
-                        "id": "gees111_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From Barter to Money'?",
-                        "options": [
-                            "Economic Life Around Us In the theme “Tapestry of the Past”, you read about the crops that people grew, such as food grains or goods they made like carnelian beads.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Economic Life Around Us In the theme “Tapestry of the Past”, you read about the crops that people grew, such as food grains or goods they made like carnelian beads.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees111_c01"
+                        "type": "True/False",
+                        "question": "In the Barter System, goods are traded directly without the use of a medium of exchange.",
+                        "answer": "True"
                     },
                     {
-                        "id": "gees111_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From Barter to Money'?",
-                        "options": [
-                            "How do you think they exchanged these goods for things that they needed?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "How do you think they exchanged these goods for things that they needed?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From Barter to Money'?",
-                        "options": [
-                            "229 Reprint 2026-27 Chapter 11.indd 229 08-04-2025 12:58:29 Barter People exchanged goods or services for other goods and System: a way of services.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "229 Reprint 2026-27 Chapter 11.indd 229 08-04-2025 12:58:29 Barter People exchanged goods or services for other goods and System: a way of services.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From Barter to Money'?",
-                        "options": [
-                            "Suppose you need a pencil and have an extra goods and services eraser.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Suppose you need a pencil and have an extra goods and services eraser.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From Barter to Money'?",
-                        "options": [
-                            "Meanwhile, your classmate forgot to bring their without using eraser but has an extra pencil.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Meanwhile, your classmate forgot to bring their without using eraser but has an extra pencil.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'From Barter to Money'?",
-                        "options": [
-                            "Money: Wouldn’t this satisfy your and the classmate’s needs?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Money: Wouldn’t this satisfy your and the classmate’s needs?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees111_c01"
+                        "type": "Short Answer",
+                        "question": "What is the 'Double Coincidence of Wants'?"
                     }
                 ]
             },
@@ -1715,8 +1581,10 @@
             "subject": "Social Science",
             "chapter_title": "From Barter to Money",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.365285"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1593,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'From Barter to Money' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "11 CHAPTER From Barter to Money The importance of money flows from it being a link between the present and the future.",
-                    "How has money transformed 11 – From Barter to Money into various forms over time?",
-                    "Economic Life Around Us In the theme “Tapestry of the Past”, you read about the crops that people grew, such as food grains or goods they made like carnelian beads.",
-                    "How do you think they exchanged these goods for things that they needed?",
-                    "229 Reprint 2026-27 Chapter 11.indd 229 08-04-2025 12:58:29 Barter People exchanged goods or services for other goods and System: a way of services.",
-                    "Suppose you need a pencil and have an extra goods and services eraser.",
-                    "Meanwhile, your classmate forgot to bring their without using eraser but has an extra pencil."
-                ]
-            },
+            "content": "This chapter provides a comprehensive overview of the historical transition of economic systems from barter to modern monetary systems. It highlights the transition of money from direct goods exchange (barter) to commodity money and metallic money, emphasizing how the introduction of standardized mediums simplified trade and economic interactions. It concludes by explaining the nature and significance of modern fiat money, which relies on collective acceptance and governmental authority to maintain its value.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1643,10 @@
             "subject": "Social Science",
             "chapter_title": "From Barter to Money",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.365335"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1658,16 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees111_fc01",
-                        "front": "What should you remember from From Barter to Money?",
-                        "back": "11 CHAPTER From Barter to Money The importance of money flows from it being a link between the present and the future.",
-                        "concept_id": "gees111_c01"
+                        "term": "Barter System",
+                        "definition": "Exchange of goods/services directly for goods/services."
                     },
                     {
-                        "id": "gees111_fc02",
-                        "front": "What should you remember from From Barter to Money?",
-                        "back": "How has money transformed 11 – From Barter to Money into various forms over time?",
-                        "concept_id": "gees111_c01"
+                        "term": "Medium of Exchange",
+                        "definition": "Money acts as the link between sellers and buyers in an economy."
                     },
                     {
-                        "id": "gees111_fc03",
-                        "front": "What should you remember from From Barter to Money?",
-                        "back": "Economic Life Around Us In the theme “Tapestry of the Past”, you read about the crops that people grew, such as food grains or goods they made like carnelian beads.",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_fc04",
-                        "front": "What should you remember from From Barter to Money?",
-                        "back": "How do you think they exchanged these goods for things that they needed?",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_fc05",
-                        "front": "What should you remember from From Barter to Money?",
-                        "back": "229 Reprint 2026-27 Chapter 11.indd 229 08-04-2025 12:58:29 Barter People exchanged goods or services for other goods and System: a way of services.",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_fc06",
-                        "front": "What should you remember from From Barter to Money?",
-                        "back": "Suppose you need a pencil and have an extra goods and services eraser.",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_fc07",
-                        "front": "What should you remember from From Barter to Money?",
-                        "back": "Meanwhile, your classmate forgot to bring their without using eraser but has an extra pencil.",
-                        "concept_id": "gees111_c01"
-                    },
-                    {
-                        "id": "gees111_fc08",
-                        "front": "What should you remember from From Barter to Money?",
-                        "back": "Money: Wouldn’t this satisfy your and the classmate’s needs?",
-                        "concept_id": "gees111_c01"
+                        "term": "Measure of Value",
+                        "definition": "Money provides a common unit to determine the worth of all goods."
                     }
                 ]
             },

@@ -53,16 +53,16 @@ export default function MindMap({ data }: MindMapProps) {
                      <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform shadow-inner">
                         <Share2 size={24} />
                      </div>
-                     <h4 className="font-black text-base text-blue-100 leading-tight tracking-tight uppercase line-clamp-2">{branch.label}</h4>
+                     <h4 className="font-black text-base text-blue-100 leading-tight tracking-tight uppercase line-clamp-3">{branch.label}</h4>
                   </div>
 
                   <div className="flex-1">
                      {branch.details && branch.details.length > 0 && (
                         <ul className="space-y-3">
-                           {branch.details.slice(0, 4).map((detail, di) => (
+                           {branch.details.slice(0, 6).map((detail, di) => (
                               <li key={di} className="flex items-start gap-3 text-[13px] text-slate-400 font-medium leading-relaxed">
                                  <ArrowRight size={12} className="mt-1 shrink-0 text-primary opacity-40" />
-                                 <span className="line-clamp-2">{detail}</span>
+                                 <span className="line-clamp-3">{detail}</span>
                               </li>
                            ))}
                         </ul>

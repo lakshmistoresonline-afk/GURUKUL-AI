@@ -134,8 +134,10 @@
             "subject": "Hindi",
             "chapter_title": "माँ, कह एक कहानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.877549"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for माँ, कह एक कहानी.",
+                "overview": "यह JSON structure हिंदी पाठ 'माँ कह एक कहानी' के लिए डिज़ाइन किया गया है, जिसमें अध्याय की विस्तृत जानकारी शामिल है। यह संरचना शिक्षण उद्देश्यों, कहानी की व्याख्या और सारांश के लिए एक व्यवस्थित ढाँचा प्रदान करती है।",
                 "source_grounded_key_points": [
                     "1 माँ, कह एक कहानी “माँ, कह एक कहानी।” “बेटा, समझ िलया क्या तनू े मझु को अपनी नानी?” “कहती है मझु से यह चेटी, तू मेरी नानी क� बेटी!",
                     "माँ, कह एक कहानी।” “तू है हठी मानधन मेरे, सनु , उपवन में बड़े सबेरे, तात भ्रमण करते थे तेरे, Reprint 2026-27 Chapter 01.indd 1 04-04-2025 14:44:06 जहाँ, सरु िभ मनमानी।” “जहाँ सरु िभ मनमानी?",
@@ -185,8 +187,10 @@
             "subject": "Hindi",
             "chapter_title": "माँ, कह एक कहानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.877584"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of माँ, कह एक कहानी.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "1 माँ, कह एक कहानी “माँ, कह एक कहानी।” “बेटा, समझ िलया क्या तनू े मझु को अपनी नानी?” “कहती है मझु से यह चेटी, तू मेरी नानी क� बेटी!",
-                            "माँ, कह एक कहानी।” “तू है हठी मानधन मेरे, सनु , उपवन में बड़े सबेरे, तात भ्रमण करते थे तेरे, Reprint 2026-27 Chapter 01.indd 1 04-04-2025 14:44:06 जहाँ, सरु िभ मनमानी।” “जहाँ सरु िभ मनमानी?",
-                            "हाँ, माँ, यही कहानी।” “वणर् वणर् के फूल िखले थे, झलमल कर िहम-िबंदु िझले थे, हलके झोंके िहले-िमले थे, लहराता था पानी।” “लहराता था पानी?",
-                            "हाँ, हाँ, यही कहानी।” “गाते थे खग कल कल स्वर से, सहसा एक हसं ऊपर से, िगरा, िबद्ध होकर खर-शर से, ह�ई पक्ष क� हानी!” “ह�ई पक्ष क� हानी?",
-                            "करुणा-भरी कहानी!” “चौंक उन्होंने उसे उठाया, नया जन्म-सा उसने पाया।"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "यह अध्याय 'माँ' के महत्व और प्रेम को दर्शाता है। इस कहानी में माँ अपने बच्चों के लिए जो त्याग करती है, उनका बिना किसी स्वार्थ के समर्पण और निस्वार्थ प्रेम को उजागर करती है। यह कहानी सिखाती है कि माँ का स्थान किसी भी रिश्ते से ऊपर होता है और माँ का प्रेम संसार में सबसे शुद्ध और अमूल्य होता है। शिक्षक के रूप में, मैं इस अध्याय के नैतिक मूल्यों, जैसे त्याग, ममता और समर्पण को छात्रों के साथ साझा करूँगा, और उनसे चर्चा करवाऊँगा कि वे अपने जीवन में अपने माता-पिता के प्रति कैसे कृतज्ञ रहें।",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Hindi",
             "chapter_title": "माँ, कह एक कहानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.877604"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,20 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "ghml101_c01",
-                        "name": "माँ, कह एक कहानी",
-                        "definition": "Central learning focus of माँ, कह एक कहानी.",
-                        "source_evidence": "1 माँ, कह एक कहानी “माँ, कह एक कहानी।” “बेटा, समझ िलया क्या तनू े मझु को अपनी नानी?” “कहती है मझु से यह चेटी, तू मेरी नानी क� बेटी!"
+                        "topic": "कहानी लेखन",
+                        "details": "कहानी के विभिन्न तत्व, कहानी के प्रकार, भाषा का प्रयोग"
                     },
                     {
-                        "id": "ghml101_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "माँ, कह एक कहानी।” “तू है हठी मानधन मेरे, सनु , उपवन में बड़े सबेरे, तात भ्रमण करते थे तेरे, Reprint 2026-27 Chapter 01.indd 1 04-04-2025 14:44:06 जहाँ, सरु िभ मनमानी।” “जहाँ सरु िभ मनमानी?"
+                        "topic": "भावपूर्ण भाषा",
+                        "details": "माँ के प्रति प्रेम और समर्पण व्यक्त करने वाली भाषा"
                     },
                     {
-                        "id": "ghml101_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "हाँ, माँ, यही कहानी।” “वणर् वणर् के फूल िखले थे, झलमल कर िहम-िबंदु िझले थे, हलके झोंके िहले-िमले थे, लहराता था पानी।” “लहराता था पानी?"
+                        "topic": "नैतिक शिक्षा",
+                        "details": "कहानी से मिलने वाली सीख और जीवन की सीख"
+                    },
+                    {
+                        "topic": "शब्द भंडार",
+                        "details": "पाठ में आए नए और महत्वपूर्ण शब्दों का अभ्यास"
                     }
                 ]
             },
@@ -490,8 +436,10 @@
             "subject": "Hindi",
             "chapter_title": "माँ, कह एक कहानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.877576"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +448,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to माँ, कह एक कहानी.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from माँ, कह एक कहानी supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "माँ कह एक कहानी अध्याय में, माँ अपने बच्चे को कहानी सुनाती है ताकि उसे किसी महत्वपूर्ण पाठ या जीवन के अनुभव से जोड़ा जा सके। इस अध्याय का विवरण इस प्रकार हो सकता है: माँ की वाचक शैली, कहानी का विषय (जैसे धैर्य, प्रेम, त्याग, या किसी सामाजिक मूल्य पर आधारित), कहानी के मोड़ (turning points), और उस कहानी का भावनात्मक प्रभाव जिसे माँ सुनाती है। इस भाग में मुख्य रूप से कहानी के तत्वों की साहित्यिक और भावनात्मक व्याख्या की जाती है।",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1043,10 @@
             "subject": "Hindi",
             "chapter_title": "माँ, कह एक कहानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.877596"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1058,34 @@
             "content": {
                 "items": [
                     {
-                        "id": "ghml101_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'माँ, कह एक कहानी'?",
+                        "type": "Multiple Choice",
+                        "question": "माँ का सबसे महत्वपूर्ण कार्य क्या है?",
                         "options": [
-                            "1 माँ, कह एक कहानी “माँ, कह एक कहानी।” “बेटा, समझ िलया क्या तनू े मझु को अपनी नानी?” “कहती है मझु से यह चेटी, तू मेरी नानी क� बेटी!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "खाना बनाना",
+                            "बच्चों को पढ़ाना",
+                            "प्यार करना और सहारा देना",
+                            "घर की सफाई"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "1 माँ, कह एक कहानी “माँ, कह एक कहानी।” “बेटा, समझ िलया क्या तनू े मझु को अपनी नानी?” “कहती है मझु से यह चेटी, तू मेरी नानी क� बेटी!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml101_c01"
+                        "answer": 2,
+                        "topic": "नैतिक शिक्षा"
                     },
                     {
-                        "id": "ghml101_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'माँ, कह एक कहानी'?",
-                        "options": [
-                            "माँ, कह एक कहानी।” “तू है हठी मानधन मेरे, सनु , उपवन में बड़े सबेरे, तात भ्रमण करते थे तेरे, Reprint 2026-27 Chapter 01.indd 1 04-04-2025 14:44:06 जहाँ, सरु िभ मनमानी।” “जहाँ सरु िभ मनमानी?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "माँ, कह एक कहानी।” “तू है हठी मानधन मेरे, सनु , उपवन में बड़े सबेरे, तात भ्रमण करते थे तेरे, Reprint 2026-27 Chapter 01.indd 1 04-04-2025 14:44:06 जहाँ, सरु िभ मनमानी।” “जहाँ सरु िभ मनमानी?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml101_c01"
+                        "type": "Short Answer",
+                        "question": "कहानी में माँ ने अपने बच्चों के लिए क्या किया?",
+                        "answer": "बच्चे की आवश्यकतानुसार उनका पोषण किया और उन्हें संस्कार दिए।",
+                        "topic": "कहानी लेखन"
                     },
                     {
-                        "id": "ghml101_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'माँ, कह एक कहानी'?",
-                        "options": [
-                            "हाँ, माँ, यही कहानी।” “वणर् वणर् के फूल िखले थे, झलमल कर िहम-िबंदु िझले थे, हलके झोंके िहले-िमले थे, लहराता था पानी।” “लहराता था पानी?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "हाँ, माँ, यही कहानी।” “वणर् वणर् के फूल िखले थे, झलमल कर िहम-िबंदु िझले थे, हलके झोंके िहले-िमले थे, लहराता था पानी।” “लहराता था पानी?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml101_c01"
+                        "type": "True/False",
+                        "question": "माँ कभी गुस्सा नहीं करती।",
+                        "answer": false,
+                        "topic": "भावपूर्ण भाषा"
                     },
                     {
-                        "id": "ghml101_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'माँ, कह एक कहानी'?",
-                        "options": [
-                            "हाँ, हाँ, यही कहानी।” “गाते थे खग कल कल स्वर से, सहसा एक हसं ऊपर से, िगरा, िबद्ध होकर खर-शर से, ह�ई पक्ष क� हानी!” “ह�ई पक्ष क� हानी?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "हाँ, हाँ, यही कहानी।” “गाते थे खग कल कल स्वर से, सहसा एक हसं ऊपर से, िगरा, िबद्ध होकर खर-शर से, ह�ई पक्ष क� हानी!” “ह�ई पक्ष क� हानी?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'माँ, कह एक कहानी'?",
-                        "options": [
-                            "करुणा-भरी कहानी!” “चौंक उन्होंने उसे उठाया, नया जन्म-सा उसने पाया।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "करुणा-भरी कहानी!” “चौंक उन्होंने उसे उठाया, नया जन्म-सा उसने पाया।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'माँ, कह एक कहानी'?",
-                        "options": [
-                            "ल�य-िसिद्ध का मानी।” इतने में आखेटक आया, “ल�य-िसिद्ध का मानी?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "ल�य-िसिद्ध का मानी।” इतने में आखेटक आया, “ल�य-िसिद्ध का मानी?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'माँ, कह एक कहानी'?",
-                        "options": [
-                            "कोमल-किठन कहानी।” “माँगा उसने आहत पक्षी, तेरे तात �कतु थे रक्षी।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "कोमल-किठन कहानी।” “माँगा उसने आहत पक्षी, तेरे तात �कतु थे रक्षी।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'माँ, कह एक कहानी'?",
-                        "options": [
-                            "अब बढ़ चली कहानी।” “ह�आ िववाद सदय-िनदर्य में, उभय आग्रही थे स्विवषय में, गई बात तब न्यायालय में, मल्हार 2 Reprint 2026-27 Chapter 01.indd 2 04-04-2025 14:44:39 सनु ी सभी ने जानी।” “सनु ी सभी ने जानी?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "अब बढ़ चली कहानी।” “ह�आ िववाद सदय-िनदर्य में, उभय आग्रही थे स्विवषय में, गई बात तब न्यायालय में, मल्हार 2 Reprint 2026-27 Chapter 01.indd 2 04-04-2025 14:44:39 सनु ी सभी ने जानी।” “सनु ी सभी ने जानी?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml101_c01"
+                        "type": "Fill in the Blanks",
+                        "question": "माँ के प्यार की तुलना ___ से की जा सकती है।",
+                        "answer": "चाँद/सूरज",
+                        "topic": "भावपूर्ण भाषा"
                     }
                 ]
             },
@@ -1715,8 +1539,10 @@
             "subject": "Hindi",
             "chapter_title": "माँ, कह एक कहानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.877567"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1551,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'माँ, कह एक कहानी' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "1 माँ, कह एक कहानी “माँ, कह एक कहानी।” “बेटा, समझ िलया क्या तनू े मझु को अपनी नानी?” “कहती है मझु से यह चेटी, तू मेरी नानी क� बेटी!",
-                    "माँ, कह एक कहानी।” “तू है हठी मानधन मेरे, सनु , उपवन में बड़े सबेरे, तात भ्रमण करते थे तेरे, Reprint 2026-27 Chapter 01.indd 1 04-04-2025 14:44:06 जहाँ, सरु िभ मनमानी।” “जहाँ सरु िभ मनमानी?",
-                    "हाँ, माँ, यही कहानी।” “वणर् वणर् के फूल िखले थे, झलमल कर िहम-िबंदु िझले थे, हलके झोंके िहले-िमले थे, लहराता था पानी।” “लहराता था पानी?",
-                    "हाँ, हाँ, यही कहानी।” “गाते थे खग कल कल स्वर से, सहसा एक हसं ऊपर से, िगरा, िबद्ध होकर खर-शर से, ह�ई पक्ष क� हानी!” “ह�ई पक्ष क� हानी?",
-                    "करुणा-भरी कहानी!” “चौंक उन्होंने उसे उठाया, नया जन्म-सा उसने पाया।",
-                    "ल�य-िसिद्ध का मानी।” इतने में आखेटक आया, “ल�य-िसिद्ध का मानी?",
-                    "कोमल-किठन कहानी।” “माँगा उसने आहत पक्षी, तेरे तात �कतु थे रक्षी।"
-                ]
-            },
+            "content": "यह अध्याय एक ऐसी कहानी का वर्णन करता है जो माँ और बच्चे के बीच के भावनात्मक बंधन और जीवन के महत्वपूर्ण सबक को दर्शाती है। कहानी की मुख्य कथा क्या है, इसका मूल संदेश क्या है, और इस कहानी को सुनाने का उद्देश्य क्या है। सारांश में कहानी के प्रमुख घटनाक्रम संक्षेप में प्रस्तुत किए जाते हैं ताकि पाठक कहानी का सार जल्दी समझ सकें। इसमें कहानी का मुख्य निष्कर्ष शामिल होता है कि माँ के माध्यम से जीवन का कौन सा सत्य और मूल्य संप्रेषित किया गया है।",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1601,10 @@
             "subject": "Hindi",
             "chapter_title": "माँ, कह एक कहानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.877612"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1616,18 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ghml101_fc01",
-                        "front": "What should you remember from माँ, कह एक कहानी?",
-                        "back": "1 माँ, कह एक कहानी “माँ, कह एक कहानी।” “बेटा, समझ िलया क्या तनू े मझु को अपनी नानी?” “कहती है मझु से यह चेटी, तू मेरी नानी क� बेटी!",
-                        "concept_id": "ghml101_c01"
+                        "term": "कहानी के तत्व",
+                        "definition": "कहानी के वे हिस्से जो कहानी को पूरा करते हैं (चरित्र, घटनाएँ, स्थान, समय)",
+                        "term2": "चरित्र",
+                        "definition2": "कहानी का वह व्यक्ति या प्राणी जिसके इर्द-गिर्द कहानी घूमती है"
                     },
                     {
-                        "id": "ghml101_fc02",
-                        "front": "What should you remember from माँ, कह एक कहानी?",
-                        "back": "माँ, कह एक कहानी।” “तू है हठी मानधन मेरे, सनु , उपवन में बड़े सबेरे, तात भ्रमण करते थे तेरे, Reprint 2026-27 Chapter 01.indd 1 04-04-2025 14:44:06 जहाँ, सरु िभ मनमानी।” “जहाँ सरु िभ मनमानी?",
-                        "concept_id": "ghml101_c01"
+                        "term": "नैतिक शिक्षा",
+                        "definition": "कहानी के अंत में दी गई सीख या संदेश"
                     },
                     {
-                        "id": "ghml101_fc03",
-                        "front": "What should you remember from माँ, कह एक कहानी?",
-                        "back": "हाँ, माँ, यही कहानी।” “वणर् वणर् के फूल िखले थे, झलमल कर िहम-िबंदु िझले थे, हलके झोंके िहले-िमले थे, लहराता था पानी।” “लहराता था पानी?",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_fc04",
-                        "front": "What should you remember from माँ, कह एक कहानी?",
-                        "back": "हाँ, हाँ, यही कहानी।” “गाते थे खग कल कल स्वर से, सहसा एक हसं ऊपर से, िगरा, िबद्ध होकर खर-शर से, ह�ई पक्ष क� हानी!” “ह�ई पक्ष क� हानी?",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_fc05",
-                        "front": "What should you remember from माँ, कह एक कहानी?",
-                        "back": "करुणा-भरी कहानी!” “चौंक उन्होंने उसे उठाया, नया जन्म-सा उसने पाया।",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_fc06",
-                        "front": "What should you remember from माँ, कह एक कहानी?",
-                        "back": "ल�य-िसिद्ध का मानी।” इतने में आखेटक आया, “ल�य-िसिद्ध का मानी?",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_fc07",
-                        "front": "What should you remember from माँ, कह एक कहानी?",
-                        "back": "कोमल-किठन कहानी।” “माँगा उसने आहत पक्षी, तेरे तात �कतु थे रक्षी।",
-                        "concept_id": "ghml101_c01"
-                    },
-                    {
-                        "id": "ghml101_fc08",
-                        "front": "What should you remember from माँ, कह एक कहानी?",
-                        "back": "अब बढ़ चली कहानी।” “ह�आ िववाद सदय-िनदर्य में, उभय आग्रही थे स्विवषय में, गई बात तब न्यायालय में, मल्हार 2 Reprint 2026-27 Chapter 01.indd 2 04-04-2025 14:44:39 सनु ी सभी ने जानी।” “सनु ी सभी ने जानी?",
-                        "concept_id": "ghml101_c01"
+                        "term": "भावपूर्ण भाषा",
+                        "definition": "ऐसे शब्द और वाक्य जो भावनाओं को गहराई से व्यक्त करते हैं"
                     }
                 ]
             },

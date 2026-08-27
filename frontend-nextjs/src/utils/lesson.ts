@@ -35,6 +35,12 @@ export interface NormalizedLesson {
   animationFallback: string;
   mindMap?: any;
   subjectKnowledge?: { category: string, content: string }[];
+  realWorldApplications: any[];
+  caseStudies: any[];
+  commonMistakes: any[];
+  keyTerms: any[];
+  hindiSummary: string;
+  workedExamples: any[];
 }
 
 /**
@@ -59,7 +65,13 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
     hasAnimation: false,
     hasMindMap: false,
     animationFallback: '',
-    subjectKnowledge: []
+    subjectKnowledge: [],
+    realWorldApplications: [],
+    caseStudies: [],
+    commonMistakes: [],
+    keyTerms: [],
+    hindiSummary: '',
+    workedExamples: []
   };
 
   const content = pkg?.content || {};
@@ -150,8 +162,36 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
   }
 
   // 6. Visual assets
-  const mindMap = getComp('concept_graph') || content.mind_map || aiEnrichment.mindMap;
-  const hasMindMap = !!mindMap;
+  let mindMap = getComp('concept_graph') || content.mind_map || aiEnrichment.mindMap;
+
+  // Transform V3 concept_graph (nodes/edges) to MindMap format (topic/branches)
+  if (mindMap && Array.isArray(mindMap.nodes)) {
+    const nodes = mindMap.nodes;
+    const edges = mindMap.edges || [];
+    const topic = nodes[0]?.label || 'Chapter Mind Map';
+    const branches = nodes.slice(1).map((node: any) => {
+        const relatedEdges = edges.filter((e: any) => e.to === node.id || e.from === node.id);
+        const details = relatedEdges.map((e: any) => {
+            // Prefer descriptive labels over technical relations
+            if (e.relation === 'explained_by') return 'Explanation of core concept';
+            if (e.relation === 'applied_through') return 'Practical application';
+            return e.relation || 'related';
+        });
+        return { label: node.label, details };
+    });
+    mindMap = { topic, branches };
+  } else if (mindMap && !mindMap.branches) {
+      // Fallback for flat structures
+      mindMap = {
+          topic: mindMap.topic || mindMap.title || 'Chapter Concepts',
+          branches: Object.entries(mindMap).filter(([k]) => k !== 'topic').map(([k, v]) => ({
+              label: k,
+              details: Array.isArray(v) ? v : [String(v)]
+          }))
+      };
+  }
+
+  const hasMindMap = !!(mindMap && mindMap.branches && mindMap.branches.length > 0);
   const multimedia = getComp('multimedia');
   const hasAnimation = !!(multimedia?.animation_url || content.animation_url);
   const animationFallback = story || content.summary || content.introduction || '';
@@ -168,6 +208,25 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
   const practiceBank = getComp('practice_bank');
   const assessBank = getComp('assessment_bank');
   const fullQuiz = [...(practiceBank?.items || []), ...(assessBank?.items || []), ...(Array.isArray(content.quiz) ? content.quiz : [])];
+
+  // 10. Enrichment
+  const rwaData = getComp('real_world_applications');
+  const realWorldApplications = rwaData?.applications || content.real_world_applications || [];
+
+  const caseData = getComp('case_studies');
+  const caseStudies = caseData?.cases || content.case_studies || [];
+
+  const mistakesData = getComp('common_mistakes');
+  const commonMistakes = mistakesData?.mistakes || content.common_mistakes || [];
+
+  const termsData = getComp('key_terms');
+  const keyTerms = termsData?.terms || content.key_terms || [];
+
+  const hindiData = getComp('hindi_summary');
+  const hindiSummary = hindiData?.summary || content.hindi_summary || '';
+
+  const examplesData = getComp('worked_examples');
+  const workedExamples = examplesData?.examples || content.worked_examples || [];
 
   return {
     title: rootChapter.chapter_title || original?.curriculum?.displayName || metadata.chapterTitle || content.topic || 'Untitled Lesson',
@@ -187,6 +246,12 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
     hasMindMap,
     animationFallback,
     mindMap,
-    subjectKnowledge: content.subject_knowledge || []
+    subjectKnowledge: content.subject_knowledge || [],
+    realWorldApplications,
+    caseStudies,
+    commonMistakes,
+    keyTerms,
+    hindiSummary,
+    workedExamples
   };
 }

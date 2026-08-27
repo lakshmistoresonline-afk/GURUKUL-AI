@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.144618"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'Angles' develops mathematical reasoning and application through the chapter 'Angles'.",
+                "overview": "Angles are the fundamental building blocks of geometry. They are formed when two rays or line segments meet at a common endpoint, called a vertex. Understanding angles is crucial as they are used to describe the shape of figures, measure positions, and analyze spatial relationships.",
                 "source_grounded_key_points": [
                     "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”.",
                     "The learners can notice how much they have turned with respect to their original position.",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.144653"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'Angles'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to Angles and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”.",
-                            "The learners can notice how much they have turned with respect to their original position.",
-                            "Can you recognise the child in the picture who has made a full turn?",
-                            "Give examples of real-life situations where you observe turns."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'Angles' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "Class 5 Mathematics chapter 'Angles' introduces the fundamental concept of an angle. An angle is formed when two rays originate from a common endpoint, which is called the vertex. Angles are measured in degrees (°). Basic types of angles include Acute angles (less than 90°), Right angles (exactly 90°), and Obtuse angles (greater than 90° but less than 180°). This chapter also teaches the properties of angles, such as complementary angles (adding up to 90°) and supplementary angles (adding up to 180°).",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -303,8 +250,10 @@
             "subject": "Mathematics",
             "chapter_title": "Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.144671"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -315,24 +264,14 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "eemm103_concept_01",
-                        "name": "Angles",
-                        "definition": "Central learning focus developed by the chapter 'Angles'.",
-                        "evidence": "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”."
-                    },
-                    {
-                        "id": "eemm103_concept_02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Using chapter information to support an explanation or answer.",
-                        "evidence": "The learners can notice how much they have turned with respect to their original position."
-                    },
-                    {
-                        "id": "eemm103_concept_03",
-                        "name": "Application",
-                        "definition": "Using the chapter idea in a new but related situation.",
-                        "evidence": "Can you recognise the child in the picture who has made a full turn?"
-                    }
+                    "Basic types of angles: Acute, Right, Obtuse, Straight, Reflex.",
+                    "Angles on a Straight Line (Supplementary angles).",
+                    "Angles around a Point (Sum of angles = 360°).",
+                    "Adjacent angles and Vertically opposite angles.",
+                    "Linear Pairs and Co-linear angles.",
+                    "Angles in a Triangle (Sum of interior angles = 180°).",
+                    "Complementary angles (Sum = 90°).",
+                    "Supplementary angles (Sum = 180°)."
                 ]
             },
             "runtime_mapping": {
@@ -350,8 +289,10 @@
             "subject": "Mathematics",
             "chapter_title": "Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.144685"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -386,7 +327,31 @@
                         "to": "eemm103_concept_03",
                         "relation": "applied_through"
                     }
-                ]
+                ],
+                "Chapter_103_Angles": {
+                    "Types_of_Angles": [
+                        "Acute Angle",
+                        "Right Angle",
+                        "Obtuse Angle",
+                        "Straight Angle",
+                        "Reflex Angle"
+                    ],
+                    "Relationships": {
+                        "Supplementary_Angles": "Sum = 180°",
+                        "Complementary_Angles": "Sum = 90°",
+                        "Vertically_Opposite_Angles": "Equal",
+                        "Angles_on_a_Line": "Sum = 180°",
+                        "Angles_around_a_Point": "Sum = 360°",
+                        "Triangle_Property": "Sum of Interior Angles = 180°"
+                    },
+                    "Key_Terms": [
+                        "Interior angles",
+                        "Exterior angles",
+                        "Parallel lines",
+                        "Transversal lines",
+                        "Alternate angles"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -464,8 +429,10 @@
             "subject": "Mathematics",
             "chapter_title": "Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.144645"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +441,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'Angles'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: Angles.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'Angles' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "Imagine a construction crew building a wall. They need to ensure the corners are perfectly square. An angle is used to define the interior of these corners. If a worker measures the corner and finds the angle is exactly 90 degrees, they know it's a right angle. If they open a door wider, it becomes an obtuse angle (greater than 90 degrees). These measurements determine the structural integrity and aesthetic appeal of the wall. Similarly, in navigation, pilots use angles to determine the direction of flight, ensuring they stay on their path. In this chapter, we explore how these basic angle measurements dictate the structure of everything from a simple drawing to a complex architectural design.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1060,8 +999,10 @@
             "subject": "Mathematics",
             "chapter_title": "Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.144663"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1073,100 +1014,35 @@
             "content": {
                 "items": [
                     {
-                        "id": "eemm103_q01",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Angles'?",
+                        "type": "Multiple Choice",
+                        "question": "Two angles are supplementary if their sum is:",
                         "options": [
-                            "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
+                            "90°",
+                            "180°",
+                            "360°",
+                            "270°"
                         ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm103_concept_01"
+                        "answer": "180°"
                     },
                     {
-                        "id": "eemm103_q02",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Angles'?",
-                        "options": [
-                            "The learners can notice how much they have turned with respect to their original position.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "The learners can notice how much they have turned with respect to their original position.",
-                        "difficulty": "easy",
-                        "concept_id": "eemm103_concept_01"
+                        "type": "Short Answer",
+                        "question": "If two angles are complementary, and one angle measures 35°, what is the measure of the other angle?",
+                        "answer": "55°"
                     },
                     {
-                        "id": "eemm103_q03",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Angles'?",
-                        "options": [
-                            "Can you recognise the child in the picture who has made a full turn?",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Can you recognise the child in the picture who has made a full turn?",
-                        "difficulty": "medium",
-                        "concept_id": "eemm103_concept_01"
+                        "type": "True/False",
+                        "question": "The sum of the interior angles of any triangle is always 180°. (True/False)",
+                        "answer": "True"
                     },
                     {
-                        "id": "eemm103_q04",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Angles'?",
-                        "options": [
-                            "Give examples of real-life situations where you observe turns.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Give examples of real-life situations where you observe turns.",
-                        "difficulty": "medium",
-                        "concept_id": "eemm103_concept_01"
+                        "type": "Fill in the Blanks",
+                        "question": "Angles that share a common vertex and a common arm are called ______ angles.",
+                        "answer": "Adjacent"
                     },
                     {
-                        "id": "eemm103_q05",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Angles'?",
-                        "options": [
-                            "Ashutosh and Sahana are making circles, each having one foot fixed and rotating at one spot on the ground.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Ashutosh and Sahana are making circles, each having one foot fixed and rotating at one spot on the ground.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm103_concept_01"
-                    },
-                    {
-                        "id": "eemm103_q06",
-                        "type": "evidence_based_mcq",
-                        "question": "Which statement is supported by the chapter 'Angles'?",
-                        "options": [
-                            "Ashutosh made a complete circle by making a full turn.",
-                            "A statement unrelated to the chapter.",
-                            "A statement that contradicts the chapter.",
-                            "A statement that cannot be checked from the chapter."
-                        ],
-                        "correct_option": 0,
-                        "explanation": "The first option is directly supported by the source evidence used to generate this item.",
-                        "source_evidence": "Ashutosh made a complete circle by making a full turn.",
-                        "difficulty": "hard",
-                        "concept_id": "eemm103_concept_01"
+                        "type": "Diagram Based",
+                        "question": "If an angle is 120°, what is its supplementary angle?",
+                        "answer": "60°"
                     }
                 ]
             },
@@ -1619,8 +1495,10 @@
             "subject": "Mathematics",
             "chapter_title": "Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.144636"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1507,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Angles' develops mathematical reasoning and application through the chapter 'Angles'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”.",
-                    "The learners can notice how much they have turned with respect to their original position.",
-                    "Can you recognise the child in the picture who has made a full turn?",
-                    "Give examples of real-life situations where you observe turns.",
-                    "Ashutosh and Sahana are making circles, each having one foot fixed and rotating at one spot on the ground.",
-                    "Ashutosh made a complete circle by making a full turn."
-                ]
-            },
+            "content": "Chapter 103 on Angles provides a comprehensive study of angle types, their relationships (like complementary and supplementary), and practical applications. It builds the foundation for geometric analysis, teaching students how to measure, compare, and calculate angles, which are essential for understanding shapes and spatial geometry in higher mathematics.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1689,8 +1557,10 @@
             "subject": "Mathematics",
             "chapter_title": "Angles",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.144678"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1702,40 +1572,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "eemm103_fc01",
-                        "front": "What is a key idea from 'Angles'?",
-                        "back": "Learners can be asked to rotate themselves around and stop as the teacher announces “statue”.",
-                        "concept_id": "eemm103_concept_01"
+                        "term": "Acute Angle",
+                        "definition": "An angle that measures less than 90°."
                     },
                     {
-                        "id": "eemm103_fc02",
-                        "front": "What is a key idea from 'Angles'?",
-                        "back": "The learners can notice how much they have turned with respect to their original position.",
-                        "concept_id": "eemm103_concept_01"
+                        "term": "Right Angle",
+                        "definition": "An angle that measures exactly 90°."
                     },
                     {
-                        "id": "eemm103_fc03",
-                        "front": "What is a key idea from 'Angles'?",
-                        "back": "Can you recognise the child in the picture who has made a full turn?",
-                        "concept_id": "eemm103_concept_01"
+                        "term": "Obtuse Angle",
+                        "definition": "An angle that measures between 90° and 180°."
                     },
                     {
-                        "id": "eemm103_fc04",
-                        "front": "What is a key idea from 'Angles'?",
-                        "back": "Give examples of real-life situations where you observe turns.",
-                        "concept_id": "eemm103_concept_01"
+                        "term": "Linear Pair",
+                        "definition": "Two adjacent angles whose non-common sides are opposite rays (their sum is 180°)."
                     },
                     {
-                        "id": "eemm103_fc05",
-                        "front": "What is a key idea from 'Angles'?",
-                        "back": "Ashutosh and Sahana are making circles, each having one foot fixed and rotating at one spot on the ground.",
-                        "concept_id": "eemm103_concept_01"
-                    },
-                    {
-                        "id": "eemm103_fc06",
-                        "front": "What is a key idea from 'Angles'?",
-                        "back": "Ashutosh made a complete circle by making a full turn.",
-                        "concept_id": "eemm103_concept_01"
+                        "term": "Triangular Angle Property",
+                        "definition": "The sum of the interior angles of a triangle is 180°."
                     }
                 ]
             },

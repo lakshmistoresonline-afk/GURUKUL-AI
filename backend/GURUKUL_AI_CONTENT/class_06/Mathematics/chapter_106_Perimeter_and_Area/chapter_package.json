@@ -128,8 +128,10 @@
             "subject": "Mathematics",
             "chapter_title": "Perimeter and Area",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.513344"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Perimeter and Area.",
+                "overview": "This chapter introduces the fundamental concepts of perimeter and area in two-dimensional geometry. It explains how to calculate the total distance around a closed shape (perimeter) and the amount of surface covered by a flat shape (area).",
                 "source_grounded_key_points": [
                     "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?",
                     "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once.",
@@ -175,8 +177,10 @@
             "subject": "Mathematics",
             "chapter_title": "Perimeter and Area",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.513382"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Perimeter and Area accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?",
-                            "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once.",
-                            "For a polygon, i.e., a closed plane figure made up of line segments, the perimeter is simply the sum of the lengths of its all sides, i.e., the total distance along its outer boundary.",
-                            "The perimeter of a polygon = the sum of the lengths of its all sides."
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "Class 06 Mathematics Chapter 106: Perimeter and Area focuses on the fundamental concepts of measuring two-dimensional shapes. Perimeter is the total distance around the outside of a shape, calculated by adding the lengths of all its sides. For simple shapes like rectangles, it's P = 2(length + width). Area, on the other hand, is the amount of surface inside a shape, measured in square units. For a rectangle, the formula for area is A = length × width. This chapter introduces various shapes (triangles, squares, parallelograms, etc.) and their corresponding formulas for perimeter and area. It emphasizes the difference between the two concepts and provides step-by-step examples on how to calculate them for real-world scenarios.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Mathematics",
             "chapter_title": "Perimeter and Area",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.513400"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,34 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fegp106_c01",
-                        "name": "Perimeter and Area",
-                        "definition": "Central learning focus of Perimeter and Area.",
-                        "source_evidence": "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?"
+                        "concept_id": "C106.1",
+                        "name": "Understanding Perimeter",
+                        "description": "Definition of perimeter as the total length of the boundary of a closed shape. Calculating perimeter of triangles, quadrilaterals, and irregular polygons."
                     },
                     {
-                        "id": "fegp106_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once."
+                        "concept_id": "C106.2",
+                        "name": "Understanding Area",
+                        "description": "Definition of area as the amount of two-dimensional surface enclosed by a boundary. Calculating area of triangles, rectangles, squares, and composite shapes."
                     },
                     {
-                        "id": "fegp106_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "For a polygon, i.e., a closed plane figure made up of line segments, the perimeter is simply the sum of the lengths of its all sides, i.e., the total distance along its outer boundary."
+                        "concept_id": "C106.3",
+                        "name": "Perimeter Formulas",
+                        "description": "Memorizing formulas for common shapes: perimeter of a rectangle (2(l+w)), perimeter of a triangle (a+b+c), perimeter of a parallelogram, and perimeter of irregular polygons."
+                    },
+                    {
+                        "concept_id": "C106.4",
+                        "name": "Area Formulas",
+                        "description": "Memorizing formulas for common shapes: area of a rectangle (l x w), area of a square (side^2), area of a triangle (0.5 * base * height), area of a parallelogram, and area of composite figures."
+                    },
+                    {
+                        "concept_id": "C106.5",
+                        "name": "Unit Conversion",
+                        "description": "Converting different units of length and area (e.g., cm to m, sq cm to m²) and understanding that area units are always square units."
+                    },
+                    {
+                        "concept_id": "C106.6",
+                        "name": "Application and Word Problems",
+                        "description": "Solving real-world problems involving finding missing sides, calculating the cost of fencing (perimeter), and calculating the space needed for materials (area)."
                     }
                 ]
             },
@@ -347,8 +308,10 @@
             "subject": "Mathematics",
             "chapter_title": "Perimeter and Area",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.513414"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +345,47 @@
                         "from": "fegp106_c02",
                         "to": "fegp106_c03",
                         "relation": "enables"
+                    }
+                ],
+                "title": "Perimeter and Area",
+                "root": "Perimeter and Area",
+                "branches": [
+                    {
+                        "node": "Perimeter",
+                        "sub_nodes": [
+                            "Definition",
+                            "Perimeter of Rectangles",
+                            "Perimeter of Squares",
+                            "Perimeter of Triangles",
+                            "Perimeter of Composite Shapes"
+                        ]
+                    },
+                    {
+                        "node": "Area",
+                        "sub_nodes": [
+                            "Definition",
+                            "Area of Rectangles",
+                            "Area of Squares",
+                            "Area of Triangles",
+                            "Area of Parallelograms",
+                            "Area of Composite Shapes"
+                        ]
+                    },
+                    {
+                        "node": "Key Formulas",
+                        "sub_nodes": [
+                            "P = 2(l + w)",
+                            "A = l × w",
+                            "A = 0.5 * b × h"
+                        ]
+                    },
+                    {
+                        "node": "Applications",
+                        "sub_nodes": [
+                            "Finding missing side lengths",
+                            "Calculating fencing costs (Perimeter)",
+                            "Calculating surface coverage (Area)"
+                        ]
                     }
                 ]
             },
@@ -469,8 +473,10 @@
             "subject": "Mathematics",
             "chapter_title": "Perimeter and Area",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.513373"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +485,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Perimeter and Area.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Perimeter and Area supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine you are a master builder designing a new garden. Your first task is to calculate the perimeter of the garden to determine how much fencing you need to enclose it. The second task is to calculate the area to determine how much soil or grass is required to cover the garden. If the garden is rectangular, you would measure the length and width to find the perimeter (sum of all sides) and the area (length × width). You might encounter a circular flower bed, where you would need to use formulas involving $\\pi$ to estimate the circumference (perimeter) and the space covered (area). This story illustrates how perimeter and area are essential tools for planning and construction projects, from fencing boundaries to laying carpets or painting walls.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1048,10 @@
             "subject": "Mathematics",
             "chapter_title": "Perimeter and Area",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.513392"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1063,56 @@
             "content": {
                 "items": [
                     {
-                        "id": "fegp106_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Perimeter and Area?",
+                        "quiz_id": "Q106.1",
+                        "type": "Multiple Choice",
+                        "difficulty": "Easy",
+                        "question": "What is the primary measure of the boundary length of a shape?",
                         "options": [
-                            "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Area",
+                            "Perimeter",
+                            "Volume",
+                            "Curvature"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp106_c01"
+                        "answer": "Perimeter"
                     },
                     {
-                        "id": "fegp106_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Perimeter and Area?",
+                        "quiz_id": "Q106.2",
+                        "type": "Calculation",
+                        "difficulty": "Easy",
+                        "question": "Find the area of a rectangle with length 8 cm and width 5 cm.",
                         "options": [
-                            "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "13 cm²",
+                            "15 cm²",
+                            "40 cm²",
+                            "30 cm²"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fegp106_c01"
+                        "answer": "40 cm²"
                     },
                     {
-                        "id": "fegp106_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Perimeter and Area?",
+                        "quiz_id": "Q106.3",
+                        "type": "Formula Application",
+                        "difficulty": "Medium",
+                        "question": "The perimeter of a triangle with sides 3 cm, 4 cm, and 5 cm is:",
                         "options": [
-                            "For a polygon, i.e., a closed plane figure made up of line segments, the perimeter is simply the sum of the lengths of its all sides, i.e., the total distance along its outer boundary.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "12 cm",
+                            "12 cm",
+                            "10 cm",
+                            "14 cm"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "For a polygon, i.e., a closed plane figure made up of line segments, the perimeter is simply the sum of the lengths of its all sides, i.e., the total distance along its outer boundary.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp106_c01"
+                        "answer": "12 cm"
                     },
                     {
-                        "id": "fegp106_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Perimeter and Area?",
+                        "quiz_id": "Q106.4",
+                        "type": "Word Problem",
+                        "difficulty": "Medium",
+                        "question": "A rectangular garden is 10 meters long and 6 meters wide. Calculate its area.",
                         "options": [
-                            "The perimeter of a polygon = the sum of the lengths of its all sides.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "16 square meters",
+                            "60 square meters",
+                            "100 square meters",
+                            "32 square meters"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "The perimeter of a polygon = the sum of the lengths of its all sides.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fegp106_c01"
-                    },
-                    {
-                        "id": "fegp106_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Perimeter and Area?",
-                        "options": [
-                            "Let us revise the formulas for the perimeter of rectangles, squares, and triangles.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Let us revise the formulas for the perimeter of rectangles, squares, and triangles.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp106_c01"
-                    },
-                    {
-                        "id": "fegp106_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Perimeter and Area?",
-                        "options": [
-                            "Perimeter of a rectangle Consider a rectangle ABCD whose length and breadth are 12 cm and 8 cm, respectively.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Perimeter of a rectangle Consider a rectangle ABCD whose length and breadth are 12 cm and 8 cm, respectively.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fegp106_c01"
+                        "answer": "60 square meters"
                     }
                 ]
             },
@@ -1625,8 +1561,10 @@
             "subject": "Mathematics",
             "chapter_title": "Perimeter and Area",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.513365"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1573,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Perimeter and Area' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?",
-                    "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once.",
-                    "For a polygon, i.e., a closed plane figure made up of line segments, the perimeter is simply the sum of the lengths of its all sides, i.e., the total distance along its outer boundary.",
-                    "The perimeter of a polygon = the sum of the lengths of its all sides.",
-                    "Let us revise the formulas for the perimeter of rectangles, squares, and triangles.",
-                    "Perimeter of a rectangle Consider a rectangle ABCD whose length and breadth are 12 cm and 8 cm, respectively."
-                ]
-            },
+            "content": "Chapter 106, 'Perimeter and Area', provides a comprehensive guide to the mathematical concepts of perimeter and area. It establishes that perimeter is the linear measurement of the boundary of a two-dimensional figure, while area is the two-dimensional measurement of the surface enclosed by that boundary. The chapter covers formulas for polygons (square, rectangle, triangle) and introduces area calculations for circles. Mastery of these concepts is fundamental for solving practical problems in geometry and various real-world applications involving measuring boundaries and surface coverage.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1623,10 @@
             "subject": "Mathematics",
             "chapter_title": "Perimeter and Area",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.513408"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1638,29 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fegp106_fc01",
-                        "front": "What key point should you remember from Perimeter and Area?",
-                        "back": "6 PERIMETER AND AREA 6.1 Perimeter Do you remember what the perimeter of a closed plane figure is?",
-                        "concept_id": "fegp106_c01"
+                        "card_id": "F106.1",
+                        "term": "Perimeter",
+                        "definition": "The total distance around the outside of a closed shape. Units are always linear (e.g., cm, m)."
                     },
                     {
-                        "id": "fegp106_fc02",
-                        "front": "What key point should you remember from Perimeter and Area?",
-                        "back": "The perimeter of any closed plane figure is the distance covered along its boundary when you go around it once.",
-                        "concept_id": "fegp106_c01"
+                        "card_id": "F106.2",
+                        "term": "Area",
+                        "definition": "The measure of the space or surface occupied by a two-dimensional shape. Units are always square (e.g., cm², m², in²)."
                     },
                     {
-                        "id": "fegp106_fc03",
-                        "front": "What key point should you remember from Perimeter and Area?",
-                        "back": "For a polygon, i.e., a closed plane figure made up of line segments, the perimeter is simply the sum of the lengths of its all sides, i.e., the total distance along its outer boundary.",
-                        "concept_id": "fegp106_c01"
+                        "card_id": "F106.3",
+                        "term": "Perimeter of Rectangle",
+                        "definition": "P = 2(l + w)"
                     },
                     {
-                        "id": "fegp106_fc04",
-                        "front": "What key point should you remember from Perimeter and Area?",
-                        "back": "The perimeter of a polygon = the sum of the lengths of its all sides.",
-                        "concept_id": "fegp106_c01"
+                        "card_id": "F106.4",
+                        "term": "Area of Rectangle",
+                        "definition": "A = length × width (l × w)"
                     },
                     {
-                        "id": "fegp106_fc05",
-                        "front": "What key point should you remember from Perimeter and Area?",
-                        "back": "Let us revise the formulas for the perimeter of rectangles, squares, and triangles.",
-                        "concept_id": "fegp106_c01"
-                    },
-                    {
-                        "id": "fegp106_fc06",
-                        "front": "What key point should you remember from Perimeter and Area?",
-                        "back": "Perimeter of a rectangle Consider a rectangle ABCD whose length and breadth are 12 cm and 8 cm, respectively.",
-                        "concept_id": "fegp106_c01"
+                        "card_id": "F106.5",
+                        "term": "Area of Triangle",
+                        "definition": "A = 0.5 * base × height"
                     }
                 ]
             },

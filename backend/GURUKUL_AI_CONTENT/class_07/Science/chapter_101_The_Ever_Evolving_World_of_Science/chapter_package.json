@@ -134,8 +134,10 @@
             "subject": "Science",
             "chapter_title": "The Ever-Evolving World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.145199"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for The Ever-Evolving World of Science.",
+                "overview": "Welcome to the ever-evolving world of science! This chapter, 'The Ever Evolving World of Science,' explores how scientific knowledge is constantly being refined through observation, experimentation, and critical thinking. Science is not a static body of facts but a dynamic process, a way of understanding the universe that is continually being updated with new discoveries and perspectives. We will examine the core principles, key concepts, and the fundamental skills that drive scientific inquiry.",
                 "source_grounded_key_points": [
                     "The Ever-Evolving 1 World of Science The Ever-Evolving World of Science We hope you enjoyed your adventures with Curiosity in Grade 6, and are now ready to continue our journey into the wonderful world of science.",
                     "This again, is not just a textbook with facts — it is an invitation to question, to perform experiments, and to explore, as we try to understand the beautiful world we live in.",
@@ -185,8 +187,10 @@
             "subject": "Science",
             "chapter_title": "The Ever-Evolving World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.145237"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of The Ever-Evolving World of Science.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "The Ever-Evolving 1 World of Science The Ever-Evolving World of Science We hope you enjoyed your adventures with Curiosity in Grade 6, and are now ready to continue our journey into the wonderful world of science.",
-                            "This again, is not just a textbook with facts — it is an invitation to question, to perform experiments, and to explore, as we try to understand the beautiful world we live in.",
-                            "The world of science covers everything — small and large, near and far.",
-                            "We may be looking at tiny cells inside a leaf, or the movement of the sun and the stars.",
-                            "We may be testing out the materials around us at home, or discussing how water ﬂows underground."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "This chapter explores the nature of science, the scientific method, and how scientific knowledge is continuously refined. It emphasizes that science is not a static set of facts but a dynamic process of inquiry, observation, and experimentation. It covers key concepts like scientific theories, hypotheses, and the role of evidence in validating scientific claims. Students learn that science is an ongoing dialogue between scientists, where new data can challenge existing theories, leading to a more accurate and comprehensive understanding of the world. The chapter encourages a critical approach to scientific information, teaching students how to distinguish between scientific facts and opinions, and understanding the evolution of scientific thought over time. It highlights the importance of curiosity, skepticism, and systematic experimentation.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Science",
             "chapter_title": "The Ever-Evolving World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.145257"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,39 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gecu101_c01",
-                        "name": "The Ever-Evolving World of Science",
-                        "definition": "Central learning focus of The Ever-Evolving World of Science.",
-                        "source_evidence": "The Ever-Evolving 1 World of Science The Ever-Evolving World of Science We hope you enjoyed your adventures with Curiosity in Grade 6, and are now ready to continue our journey into the wonderful world of science."
+                        "concept_id": 1,
+                        "topic": "Definition of Science",
+                        "description": "The systematic study of the natural world using observation and experimentation."
                     },
                     {
-                        "id": "gecu101_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "This again, is not just a textbook with facts — it is an invitation to question, to perform experiments, and to explore, as we try to understand the beautiful world we live in."
+                        "concept_id": 2,
+                        "topic": "Scientific Method",
+                        "description": "The step-by-step process used by scientists to solve problems, including observation, hypothesis, experiment, analysis, and conclusion."
                     },
                     {
-                        "id": "gecu101_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "The world of science covers everything — small and large, near and far."
+                        "concept_id": 3,
+                        "topic": "Types of Scientific Inquiry",
+                        "description": "Experimental vs. Observational inquiry. Experiment involves manipulating variables; observation involves recording data."
+                    },
+                    {
+                        "concept_id": 4,
+                        "topic": "Variables in Science",
+                        "description": "Independent variable (the factor changed by the scientist), dependent variable (the factor being measured), and control variables (factors kept constant)."
+                    },
+                    {
+                        "concept_id": 5,
+                        "topic": "Scientific Theories vs. Laws",
+                        "description": "A theory explains why something happens (e.g., Theory of Evolution); a law describes *how* something happens (e.g., Law of Gravity)."
+                    },
+                    {
+                        "concept_id": 6,
+                        "topic": "Scientific Tools and Technology",
+                        "description": "Introduction to lab equipment, microscopes, sensors, and data recording tools used in modern science."
+                    },
+                    {
+                        "concept_id": 7,
+                        "topic": "Application of Science",
+                        "description": "How scientific knowledge is applied in various fields like medicine, technology, and environmental studies."
                     }
                 ]
             },
@@ -360,8 +325,10 @@
             "subject": "Science",
             "chapter_title": "The Ever-Evolving World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.145272"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,6 +363,14 @@
                         "to": "gecu101_c03",
                         "relation": "enables"
                     }
+                ],
+                "central_node": "The Ever Evolving World of Science",
+                "branches": [
+                    "Scientific Method (Observation -> Hypothesis -> Experiment -> Analysis -> Conclusion)",
+                    "Core Concepts (Variables, Theories, Laws)",
+                    "Types of Inquiry (Experimental vs. Observational)",
+                    "Scientific Tools & Technology (Microscopes, Sensors)",
+                    "Application (Medicine, Agriculture, Environment)"
                 ]
             },
             "runtime_mapping": {
@@ -490,8 +465,10 @@
             "subject": "Science",
             "chapter_title": "The Ever-Evolving World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.145228"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +477,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to The Ever-Evolving World of Science.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from The Ever-Evolving World of Science supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "The story of science is one of continuous iteration—a narrative of trial, error, and enlightenment. From early philosophical inquiries to the precision of modern physics, scientific progress is not a straight line but a series of iterative loops. Imagine a scientist noticing a peculiar pattern in the stars. This observation leads to a hypothesis. They design an experiment to test it. The results either confirm the hypothesis or force them to modify it. This cycle—observation $\rightarrow$ hypothesis $\rightarrow$ experimentation $\rightarrow$ analysis $\rightarrow$ conclusion—is the heartbeat of scientific progress. Each new discovery adds a layer of complexity and depth, challenging previous assumptions. A great example is the development of genetic knowledge: initially based on observation of traits, it was refined through meticulous genetic experiments, leading to a profound understanding of life’s complexity. Science is essentially a conversation between humanity and the universe, where we make educated guesses, rigorously test them, and collaboratively build a progressively more accurate model of reality.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1072,10 @@
             "subject": "Science",
             "chapter_title": "The Ever-Evolving World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.145249"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1087,37 @@
             "content": {
                 "items": [
                     {
-                        "id": "gecu101_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Ever-Evolving World of Science'?",
+                        "question_id": 1,
+                        "question": "What is the primary characteristic of scientific inquiry?",
                         "options": [
-                            "The Ever-Evolving 1 World of Science The Ever-Evolving World of Science We hope you enjoyed your adventures with Curiosity in Grade 6, and are now ready to continue our journey into the wonderful world of science.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Using personal opinion",
+                            "Systematic observation and experimentation",
+                            "Guess and trial",
+                            "Following religious texts"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "The Ever-Evolving 1 World of Science The Ever-Evolving World of Science We hope you enjoyed your adventures with Curiosity in Grade 6, and are now ready to continue our journey into the wonderful world of science.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu101_c01"
+                        "answer": "Using systematic observation and experimentation"
                     },
                     {
-                        "id": "gecu101_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Ever-Evolving World of Science'?",
+                        "question_id": 2,
+                        "question": "In an experiment testing the effect of fertilizer on plant growth, which factor is the independent variable?",
                         "options": [
-                            "This again, is not just a textbook with facts — it is an invitation to question, to perform experiments, and to explore, as we try to understand the beautiful world we live in.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "Type of plant",
+                            "Amount of water",
+                            "Type of fertilizer",
+                            "Size of pot"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "This again, is not just a textbook with facts — it is an invitation to question, to perform experiments, and to explore, as we try to understand the beautiful world we live in.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu101_c01"
+                        "answer": "Type of fertilizer"
                     },
                     {
-                        "id": "gecu101_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Ever-Evolving World of Science'?",
+                        "question_id": 3,
+                        "question": "Differentiate between a scientific theory and a scientific law.",
                         "options": [
-                            "The world of science covers everything — small and large, near and far.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "A theory is proven, a law is not.",
+                            "A theory is a well-supported explanation for a phenomenon, a law is a descriptive statement of facts.",
+                            "A law can be proven, a theory cannot.",
+                            "There is no difference."
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "The world of science covers everything — small and large, near and far.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Ever-Evolving World of Science'?",
-                        "options": [
-                            "We may be looking at tiny cells inside a leaf, or the movement of the sun and the stars.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We may be looking at tiny cells inside a leaf, or the movement of the sun and the stars.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Ever-Evolving World of Science'?",
-                        "options": [
-                            "We may be testing out the materials around us at home, or discussing how water ﬂows underground.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "We may be testing out the materials around us at home, or discussing how water ﬂows underground.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Ever-Evolving World of Science'?",
-                        "options": [
-                            "As you go through the chapters in this book, you will start new adventures that challenge your thinking, expand your knowledge, and help you become an explorer, making small discoveries for yourself.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "As you go through the chapters in this book, you will start new adventures that challenge your thinking, expand your knowledge, and help you become an explorer, making small discoveries for yourself.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Ever-Evolving World of Science'?",
-                        "options": [
-                            "Before we dive into our exciting journey, take a moment to observe something special about this book.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Before we dive into our exciting journey, take a moment to observe something special about this book.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'The Ever-Evolving World of Science'?",
-                        "options": [
-                            "Look at the page numbers — they follow the playful ﬂight of a butterﬂy and the soaring of a paper plane!",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Look at the page numbers — they follow the playful ﬂight of a butterﬂy and the soaring of a paper plane!",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gecu101_c01"
+                        "answer": "A theory is a well-supported explanation for a phenomenon, a law is a descriptive statement of facts."
                     }
                 ]
             },
@@ -1715,8 +1571,10 @@
             "subject": "Science",
             "chapter_title": "The Ever-Evolving World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.145218"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1583,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'The Ever-Evolving World of Science' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "The Ever-Evolving 1 World of Science The Ever-Evolving World of Science We hope you enjoyed your adventures with Curiosity in Grade 6, and are now ready to continue our journey into the wonderful world of science.",
-                    "This again, is not just a textbook with facts — it is an invitation to question, to perform experiments, and to explore, as we try to understand the beautiful world we live in.",
-                    "The world of science covers everything — small and large, near and far.",
-                    "We may be looking at tiny cells inside a leaf, or the movement of the sun and the stars.",
-                    "We may be testing out the materials around us at home, or discussing how water ﬂows underground.",
-                    "As you go through the chapters in this book, you will start new adventures that challenge your thinking, expand your knowledge, and help you become an explorer, making small discoveries for yourself.",
-                    "Before we dive into our exciting journey, take a moment to observe something special about this book."
-                ]
-            },
+            "content": "Chapter 'The Ever Evolving World of Science' emphasizes that science is a dynamic and self-correcting process rather than a collection of fixed truths. Its core is the scientific method, which provides the framework for systematic inquiry: forming questions, proposing testable hypotheses, conducting rigorous experiments, and analyzing data to draw evidence-based conclusions. The chapter highlights that scientific knowledge is tentative and always open to revision based on new evidence. Ultimately, it encourages students to adopt a mindset of lifelong learning, emphasizing curiosity, critical thinking, and the humility to accept that our understanding of the world will continue to evolve with every successful experiment and discovery.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1633,10 @@
             "subject": "Science",
             "chapter_title": "The Ever-Evolving World of Science",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.145265"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1648,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gecu101_fc01",
-                        "front": "What should you remember from The Ever-Evolving World of Science?",
-                        "back": "The Ever-Evolving 1 World of Science The Ever-Evolving World of Science We hope you enjoyed your adventures with Curiosity in Grade 6, and are now ready to continue our journey into the wonderful world of science.",
-                        "concept_id": "gecu101_c01"
+                        "term": "Scientific Method",
+                        "definition": "A structured approach involving making an observation, forming a hypothesis, conducting an experiment, analyzing results, and drawing a conclusion."
                     },
                     {
-                        "id": "gecu101_fc02",
-                        "front": "What should you remember from The Ever-Evolving World of Science?",
-                        "back": "This again, is not just a textbook with facts — it is an invitation to question, to perform experiments, and to explore, as we try to understand the beautiful world we live in.",
-                        "concept_id": "gecu101_c01"
+                        "term": "Hypothesis",
+                        "definition": "A tentative, testable explanation for an observation. It is an educated guess."
                     },
                     {
-                        "id": "gecu101_fc03",
-                        "front": "What should you remember from The Ever-Evolving World of Science?",
-                        "back": "The world of science covers everything — small and large, near and far.",
-                        "concept_id": "gecu101_c01"
+                        "term": "Control Variable",
+                        "definition": "Factors kept constant during an experiment to ensure that only the independent variable affects the dependent variable."
                     },
                     {
-                        "id": "gecu101_fc04",
-                        "front": "What should you remember from The Ever-Evolving World of Science?",
-                        "back": "We may be looking at tiny cells inside a leaf, or the movement of the sun and the stars.",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_fc05",
-                        "front": "What should you remember from The Ever-Evolving World of Science?",
-                        "back": "We may be testing out the materials around us at home, or discussing how water ﬂows underground.",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_fc06",
-                        "front": "What should you remember from The Ever-Evolving World of Science?",
-                        "back": "As you go through the chapters in this book, you will start new adventures that challenge your thinking, expand your knowledge, and help you become an explorer, making small discoveries for yourself.",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_fc07",
-                        "front": "What should you remember from The Ever-Evolving World of Science?",
-                        "back": "Before we dive into our exciting journey, take a moment to observe something special about this book.",
-                        "concept_id": "gecu101_c01"
-                    },
-                    {
-                        "id": "gecu101_fc08",
-                        "front": "What should you remember from The Ever-Evolving World of Science?",
-                        "back": "Look at the page numbers — they follow the playful ﬂight of a butterﬂy and the soaring of a paper plane!",
-                        "concept_id": "gecu101_c01"
+                        "term": "Scientific Theory",
+                        "definition": "A comprehensive explanation of some aspect of the natural world, supported by a large body of evidence."
                     }
                 ]
             },

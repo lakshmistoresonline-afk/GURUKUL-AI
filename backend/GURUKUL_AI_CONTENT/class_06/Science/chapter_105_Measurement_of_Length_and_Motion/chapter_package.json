@@ -128,8 +128,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Length and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.605254"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -139,7 +141,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-derived learning unit: Measurement of Length and Motion.",
+                "overview": "Measurement is the process of assigning a numerical value to a physical quantity. Length is a fundamental physical quantity that is represented by the distance between two points. A measurement requires a unit of measure. This chapter introduces the various systems of units for length and concepts related to motion.",
                 "source_grounded_key_points": [
                     "The shopkeeper measures the cloth using a metal measuring rod.",
                     "Then, the tailor takes her measurements using a flexible measuring tape.",
@@ -175,8 +177,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Length and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.605292"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -185,64 +189,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach the central ideas of Measurement of Length and Motion accurately and accessibly.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Activate prior knowledge and invite a prediction."
-                    },
-                    {
-                        "title": "Explain",
-                        "explanation": "Build understanding from the source-grounded evidence.",
-                        "source_evidence": [
-                            "The shopkeeper measures the cloth using a metal measuring rod.",
-                            "Then, the tailor takes her measurements using a flexible measuring tape.",
-                            "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width).",
-                            "Are the tape and rod similar to the scale that the elder sister has in her geometry box?"
-                        ]
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new related situation."
-                    },
-                    {
-                        "title": "Close",
-                        "explanation": "Retrieve the central idea and supporting reasoning."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict or recall."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the concept or text.",
-                        "student_action": "Identify evidence or working."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without support.",
-                    "Confusing an example with the general idea."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports your answer?",
-                    "Can you explain it in your own words?"
-                ],
-                "closure": "State the central idea and one application."
-            },
+            "content": "Welcome to Chapter 105! This chapter introduces fundamental concepts in Physics related to measuring physical quantities. We will explore length as a fundamental quantity and learn various methods and tools to measure it accurately. Key concepts include standard and non-standard units of length (like meter and foot), the necessity of standard units for communication, and the concept of motion. We will differentiate between scalar and vector quantities. Furthermore, we'll study methods of measuring distance and displacement, and the basic formulas for motion, including speed, velocity, and acceleration. Understanding these basics is crucial for understanding the rest of Physics.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -300,8 +247,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Length and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.605312"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -313,22 +262,70 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "fecu105_c01",
-                        "name": "Measurement of Length and Motion",
-                        "definition": "Central learning focus of Measurement of Length and Motion.",
-                        "source_evidence": "The shopkeeper measures the cloth using a metal measuring rod."
+                        "id": "c105_1",
+                        "title": "Definition of Length",
+                        "description": "Length is the physical distance between two points.",
+                        "type": "definition"
                     },
                     {
-                        "id": "fecu105_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Support a conclusion with source information or valid working.",
-                        "source_evidence": "Then, the tailor takes her measurements using a flexible measuring tape."
+                        "id": "c105_2",
+                        "title": "Fundamental Units of Length",
+                        "description": "The meter (m) is the SI unit of length.",
+                        "type": "concept"
                     },
                     {
-                        "id": "fecu105_c03",
-                        "name": "Application",
-                        "definition": "Transfer the learned idea to a relevant new context.",
-                        "source_evidence": "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width)."
+                        "id": "c105_3",
+                        "title": "Measuring Tools (Measuring Instruments)",
+                        "description": "Instruments used to measure length include: meter scale, ruler, measuring tape, and vernier calipers.",
+                        "type": "concept"
+                    },
+                    {
+                        "id": "c105_4",
+                        "title": "System of Units",
+                        "description": "The International System of Units (SI) is used globally, with the meter as the base unit.",
+                        "type": "concept"
+                    },
+                    {
+                        "id": "c105_5",
+                        "title": "Motion (Introduction)",
+                        "description": "Motion is the change in the position of an object with respect to a reference point.",
+                        "type": "definition"
+                    },
+                    {
+                        "id": "c105_6",
+                        "title": "Types of Motion",
+                        "description": "Motion can be classified as Rectilinear, Circular, Linear, or Random.",
+                        "type": "classification"
+                    },
+                    {
+                        "id": "c105_7",
+                        "title": "Speed",
+                        "description": "Speed is the distance traveled per unit time.",
+                        "type": "concept"
+                    },
+                    {
+                        "id": "c105_8",
+                        "title": "Velocity",
+                        "description": "Velocity is the rate of change of position with respect to time, including direction.",
+                        "type": "concept"
+                    },
+                    {
+                        "id": "c105_9",
+                        "title": "Acceleration",
+                        "description": "Acceleration is the rate of change of velocity with respect to time.",
+                        "type": "concept"
+                    },
+                    {
+                        "id": "c105_10",
+                        "title": "Equations of Motion (Scalar)",
+                        "description": "Equations relate initial velocity, final velocity, acceleration, and displacement.",
+                        "type": "formula"
+                    },
+                    {
+                        "id": "c105_11",
+                        "title": "Distance vs. Displacement",
+                        "description": "Distance is the total path covered; displacement is the shortest straight-line distance between the start and end points.",
+                        "type": "comparison"
                     }
                 ]
             },
@@ -347,8 +344,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Length and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.605327"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -382,6 +381,50 @@
                         "from": "fecu105_c02",
                         "to": "fecu105_c03",
                         "relation": "enables"
+                    }
+                ],
+                "root": "Measurement of Length and Motion",
+                "branches": [
+                    {
+                        "node": "Length",
+                        "sub_nodes": [
+                            "Definition",
+                            "Units (Meter)",
+                            "Instruments (Ruler, Meter Scale)"
+                        ]
+                    },
+                    {
+                        "node": "Motion",
+                        "sub_nodes": [
+                            "Concept (Change in position)",
+                            "Types (Linear, Circular)",
+                            "Quantities (Speed, Velocity, Acceleration)",
+                            "Equations (Kinematics)"
+                        ]
+                    },
+                    {
+                        "node": "Speed",
+                        "sub_nodes": [
+                            "Definition",
+                            "Formula",
+                            "Unit (m/s)"
+                        ]
+                    },
+                    {
+                        "node": "Velocity",
+                        "sub_nodes": [
+                            "Definition (Directed)",
+                            "Difference from Speed",
+                            "Formula"
+                        ]
+                    },
+                    {
+                        "node": "Acceleration",
+                        "sub_nodes": [
+                            "Definition",
+                            "Formula",
+                            "Unit (m/s²)"
+                        ]
                     }
                 ]
             },
@@ -469,8 +512,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Length and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.605283"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -479,35 +524,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "science_inquiry",
-                "opening": "Enter a learning scenario connected to Measurement of Length and Motion.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence or reasoning to decide.",
-                        "learning_purpose": "Apply learning."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independence."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Measurement of Length and Motion supports your decision?",
-                        "answer_rule": "Use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and why your reasoning is supported.",
-                "factuality": "AI-generated learning scenario derived from the supplied chapter; not presented as original textbook text."
-            },
+            "content": "Imagine a team of explorers embarking on a journey. The first explorer wants to know how far they have traveled. The second wants to know how fast they are going. To make their findings meaningful, they need a common language – a system of measurement. The team studies different measuring tools and standards. They learn about the meter (the base unit of length in the SI system) and how to measure distances accurately using rulers, measuring tapes, and other instruments. They track their journey by calculating distance and time, discovering the relationship between speed (distance per unit time) and motion. This story emphasizes that measurement is not just about numbers; it's about standardized, accurate tools and precise calculations to describe the world around us, from the distance between cities to the speed of a running athlete.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1070,8 +1087,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Length and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.605304"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1083,100 +1102,38 @@
             "content": {
                 "items": [
                     {
-                        "id": "fecu105_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Measurement of Length and Motion?",
+                        "id": "q1",
+                        "difficulty": "Easy",
+                        "question": "Which instrument is used to measure very small lengths like the thickness of a hair?",
                         "options": [
-                            "The shopkeeper measures the cloth using a metal measuring rod.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Meter Scale",
+                            "Vernier Calipers",
+                            "Measuring Tape",
+                            "Ruler"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "The shopkeeper measures the cloth using a metal measuring rod.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu105_c01"
+                        "answer": "Vernier Calipers"
                     },
                     {
-                        "id": "fecu105_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Measurement of Length and Motion?",
+                        "id": "q2",
+                        "difficulty": "Moderate",
+                        "question": "If an object moves at a constant speed, what is its acceleration?",
                         "options": [
-                            "Then, the tailor takes her measurements using a flexible measuring tape.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "Positive",
+                            "Negative",
+                            "Zero",
+                            "High"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Then, the tailor takes her measurements using a flexible measuring tape.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "easy",
-                        "concept_id": "fecu105_c01"
+                        "answer": "Zero"
                     },
                     {
-                        "id": "fecu105_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Measurement of Length and Motion?",
+                        "id": "q3",
+                        "difficulty": "Moderate",
+                        "question": "True or False: Displacement is always equal to or greater than the distance traveled.",
                         "options": [
-                            "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width).",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
+                            "True",
+                            "False"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width).",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu105_c01"
-                    },
-                    {
-                        "id": "fecu105_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Measurement of Length and Motion?",
-                        "options": [
-                            "Are the tape and rod similar to the scale that the elder sister has in her geometry box?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Are the tape and rod similar to the scale that the elder sister has in her geometry box?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "medium",
-                        "concept_id": "fecu105_c01"
-                    },
-                    {
-                        "id": "fecu105_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Measurement of Length and Motion?",
-                        "options": [
-                            "Deepa shares her experience with her school friends Anish, Hardeep, Padma, Tasneem and this leads to a discussion amongst them.",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Deepa shares her experience with her school friends Anish, Hardeep, Padma, Tasneem and this leads to a discussion amongst them.",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu105_c01"
-                    },
-                    {
-                        "id": "fecu105_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by Measurement of Length and Motion?",
-                        "options": [
-                            "Hardeep says, “I have seen my grandmother measuring cloth by the length of her arm.” “Have you ever seen how a farmer measures length to divide his field into beds?",
-                            "An unrelated statement.",
-                            "A contradictory statement.",
-                            "An unsupported statement."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Hardeep says, “I have seen my grandmother measuring cloth by the length of her arm.” “Have you ever seen how a farmer measures length to divide his field into beds?",
-                        "explanation": "The answer must be supported by the supplied chapter source.",
-                        "difficulty": "hard",
-                        "concept_id": "fecu105_c01"
+                        "answer": "False"
                     }
                 ]
             },
@@ -1625,8 +1582,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Length and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.605274"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1635,17 +1594,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Measurement of Length and Motion' is organised around source-supported concepts, evidence and applications.",
-                "key_points": [
-                    "The shopkeeper measures the cloth using a metal measuring rod.",
-                    "Then, the tailor takes her measurements using a flexible measuring tape.",
-                    "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width).",
-                    "Are the tape and rod similar to the scale that the elder sister has in her geometry box?",
-                    "Deepa shares her experience with her school friends Anish, Hardeep, Padma, Tasneem and this leads to a discussion amongst them.",
-                    "Hardeep says, “I have seen my grandmother measuring cloth by the length of her arm.” “Have you ever seen how a farmer measures length to divide his field into beds?"
-                ]
-            },
+            "content": "Measurement of length involves using defined units to quantify the distance between two points. The SI system, which uses the meter as the base unit, is the most commonly used standard globally. Key concepts in motion include: speed is the rate at which an object covers distance, velocity is the rate of change of displacement, and displacement is the shortest distance between the initial and final positions. Accurate measurements and a consistent system of units are crucial for scientific communication and technological applications.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1695,8 +1644,10 @@
             "subject": "Science",
             "chapter_title": "Measurement of Length and Motion",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 6 NCERT textbook PDFs"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.605320"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1708,40 +1659,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "fecu105_fc01",
-                        "front": "What key point should you remember from Measurement of Length and Motion?",
-                        "back": "The shopkeeper measures the cloth using a metal measuring rod.",
-                        "concept_id": "fecu105_c01"
+                        "id": "f1",
+                        "term": "SI Unit of Length",
+                        "definition": "Meter (m)"
                     },
                     {
-                        "id": "fecu105_fc02",
-                        "front": "What key point should you remember from Measurement of Length and Motion?",
-                        "back": "Then, the tailor takes her measurements using a flexible measuring tape.",
-                        "concept_id": "fecu105_c01"
+                        "id": "f2",
+                        "term": "Speed",
+                        "definition": "Distance covered per unit time ($v = d/t$)"
                     },
                     {
-                        "id": "fecu105_fc03",
-                        "front": "What key point should you remember from Measurement of Length and Motion?",
-                        "back": "Her mother instructs the tailor to increase the length of her uniform by char angula (four fingers width).",
-                        "concept_id": "fecu105_c01"
+                        "id": "f3",
+                        "term": "Velocity",
+                        "definition": "Displacement per unit time ($v = \triangle x / t$)"
                     },
                     {
-                        "id": "fecu105_fc04",
-                        "front": "What key point should you remember from Measurement of Length and Motion?",
-                        "back": "Are the tape and rod similar to the scale that the elder sister has in her geometry box?",
-                        "concept_id": "fecu105_c01"
-                    },
-                    {
-                        "id": "fecu105_fc05",
-                        "front": "What key point should you remember from Measurement of Length and Motion?",
-                        "back": "Deepa shares her experience with her school friends Anish, Hardeep, Padma, Tasneem and this leads to a discussion amongst them.",
-                        "concept_id": "fecu105_c01"
-                    },
-                    {
-                        "id": "fecu105_fc06",
-                        "front": "What key point should you remember from Measurement of Length and Motion?",
-                        "back": "Hardeep says, “I have seen my grandmother measuring cloth by the length of her arm.” “Have you ever seen how a farmer measures length to divide his field into beds?",
-                        "concept_id": "fecu105_c01"
+                        "id": "f4",
+                        "term": "Acceleration",
+                        "definition": "Change in velocity per unit time ($a = \frac{\text{change in velocity}}{\text{time}}$)"
                     }
                 ]
             },

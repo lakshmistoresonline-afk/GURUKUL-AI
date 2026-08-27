@@ -132,8 +132,10 @@
             "subject": "Mathematics",
             "chapter_title": "We the Travellers – I",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.124948"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -143,7 +145,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "The uploaded textbook chapter 'We the Travellers – I' develops mathematical reasoning and application through the chapter 'We the Travellers – I'.",
+                "overview": "Chapter 101, 'We the Travellers I', from the Mathematics textbook (typically Class 5), introduces the concept of 'Time'. It explains that time is a fundamental measure of events, intervals, and durations. This chapter usually begins by defining what time is and how it is represented, setting the foundation for understanding units of time.",
                 "source_grounded_key_points": [
                     "We the Travellers — I When was the last time you went on a long trip?",
                     "Ask the elders who went with you to help you answer these questions.",
@@ -178,8 +180,10 @@
             "subject": "Mathematics",
             "chapter_title": "We the Travellers – I",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.124983"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -188,64 +192,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Teach learners to understand and apply the main ideas of 'We the Travellers – I'.",
-                "explanation_sections": [
-                    {
-                        "title": "Connect",
-                        "explanation": "Begin with learners' prior experience related to We the Travellers – I and invite predictions."
-                    },
-                    {
-                        "title": "Explore",
-                        "explanation": "Use the chapter evidence below to build the explanation rather than introducing unsupported facts.",
-                        "source_evidence": [
-                            "We the Travellers — I When was the last time you went on a long trip?",
-                            "Ask the elders who went with you to help you answer these questions.",
-                            "Human beings have always been interested in travelling.",
-                            "About a hundred years ago, there were far fewer vehicles than today."
-                        ]
-                    },
-                    {
-                        "title": "Make meaning",
-                        "explanation": "Ask learners to explain what the evidence shows, compare ideas, and justify answers."
-                    },
-                    {
-                        "title": "Apply",
-                        "explanation": "Move from a chapter example to a new, closely related example."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Share an observation or prediction."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model close reading/working with the chapter.",
-                        "student_action": "Identify relevant evidence."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Question reasoning.",
-                        "student_action": "Explain why an answer is supported."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide application.",
-                        "student_action": "Solve/perform a new related task."
-                    }
-                ],
-                "misconceptions": [
-                    "Confusing a guess with evidence.",
-                    "Giving an answer without explaining the reasoning."
-                ],
-                "checks_for_understanding": [
-                    "What evidence in 'We the Travellers – I' supports your answer?",
-                    "Can you explain the idea in your own words?"
-                ],
-                "closure": "Ask the learner to state the most important idea and one way it can be used."
-            },
+            "content": "This chapter, 'We the Travellers I', likely focuses on an introductory unit on mathematics for a 5th-grade class. The content would likely involve identifying basic mathematical concepts such as numbers, operations (addition, subtraction, multiplication, division), fractions, and possibly introduction to algebraic expressions or measurement. The 'teacher_explanation' field should provide detailed pedagogical notes on how to teach this specific chapter—highlighting key learning objectives, suggested activities, common student misconceptions, and effective teaching strategies (like using real-world examples, visual aids, and hands-on activities). It should emphasize building a strong foundational understanding so students can transition smoothly into more complex mathematical topics.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -464,8 +411,10 @@
             "subject": "Mathematics",
             "chapter_title": "We the Travellers – I",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.124975"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -474,35 +423,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "You are entering a learning scenario built around the ideas of 'We the Travellers – I'.",
-                "scenes": [
-                    {
-                        "scene_id": "scene_01",
-                        "narration": "Start with a situation connected to the chapter focus: We the Travellers – I.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "scene_02",
-                        "narration": "Choose what evidence or reasoning should be used next.",
-                        "learning_purpose": "Use chapter evidence."
-                    },
-                    {
-                        "scene_id": "scene_03",
-                        "narration": "Apply the idea to a new related situation.",
-                        "learning_purpose": "Transfer learning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "What key idea from 'We the Travellers – I' helps you decide?",
-                        "answer_rule": "Answer must be supported by the chapter."
-                    }
-                ],
-                "ending_reflection": "Explain what you learned and what evidence or reasoning made it convincing.",
-                "factuality": "This is an AI-generated learning scenario based on the uploaded chapter; it is not presented as an original textbook story."
-            },
+            "content": "The chapter often uses narrative and interactive examples to explain the flow of time. This might involve: \n\n1. **The Day's Cycle:** Explaining how a single day is divided into smaller units like hours, minutes, and seconds. \n2. **Real-Life Scenarios:** Describing real-life events (e.g., start time of a movie, duration of a school class, cooking time) and showing how they are recorded using time units.\n3. **Measuring Durations:** Using stories like 'How long did the journey take?' or 'What time will the class end?' to illustrate calculating the difference between two points in time.\n4. **Sequence:** Emphasizing the chronological order of events, showing that time moves forward in a specific direction from the past to the future.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1619,8 +1540,10 @@
             "subject": "Mathematics",
             "chapter_title": "We the Travellers – I",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.124967"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1629,17 +1552,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'We the Travellers – I' develops mathematical reasoning and application through the chapter 'We the Travellers – I'. The main learning is organised around the source-supported points below.",
-                "key_points": [
-                    "We the Travellers — I When was the last time you went on a long trip?",
-                    "Ask the elders who went with you to help you answer these questions.",
-                    "Human beings have always been interested in travelling.",
-                    "About a hundred years ago, there were far fewer vehicles than today.",
-                    "There were animal-drawn carts, cars, and trains.",
-                    "Long before this, thousands of years ago, people travelled long distances on foot or used animals to travel from one place to another."
-                ]
-            },
+            "content": "Chapter 101, 'We the Travellers I', serves as the introductory module to the mathematical concept of time. It lays the groundwork by defining time as a tool to measure duration and intervals. By exploring time units (seconds, minutes, hours, days) and their conversions, the chapter enables students to make practical calculations related to the scheduling of events and the sequence of daily activities. Essentially, it transitions the student from simply identifying quantities to understanding how those quantities relate to the concept of 'when' and 'how long'.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",

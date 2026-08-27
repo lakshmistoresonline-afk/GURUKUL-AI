@@ -134,8 +134,10 @@
             "subject": "Mathematics",
             "chapter_title": "Expressions Using Letter-Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.016302"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for Expressions Using Letter-Numbers.",
+                "overview": "This chapter introduces the concept of algebraic expressions, which are mathematical phrases that contain variables (represented by letters) and numbers. Algebraic expressions are fundamental building blocks in algebra and help in modeling real-world situations involving quantities that can change.",
                 "source_grounded_key_points": [
                     "EXPRESSIONS 4 USING LETTER- NUMBERS 4.1 The Notion of Letter-Numbers In this chapter we shall look at a concise way of expressing mathematical relations and patterns.",
                     "We shall see how this helps us in thinking about these relationships and patterns, and in explaining why they may hold true.",
@@ -185,8 +187,10 @@
             "subject": "Mathematics",
             "chapter_title": "Expressions Using Letter-Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.016342"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of Expressions Using Letter-Numbers.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "EXPRESSIONS 4 USING LETTER- NUMBERS 4.1 The Notion of Letter-Numbers In this chapter we shall look at a concise way of expressing mathematical relations and patterns.",
-                            "We shall see how this helps us in thinking about these relationships and patterns, and in explaining why they may hold true.",
-                            "_______ Given Aftab’s age, how will you find out Shabnam’s age?",
-                            "In short, this can be written as: Shabnam’s age = Aftab’s age + 3.",
-                            "Such mathematical relations are Aftab’s Expression for generally represented in a shorthand age Shabnam’s age form."
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "Class 7 Mathematics, Chapter 104, focuses on 'Expressions Using Letter Numbers' (Algebraic Expressions). This chapter introduces the concept of representing arithmetic operations (addition, subtraction, multiplication, division) using symbols and variables (letters) instead of just numbers. A key part of this chapter is understanding the different components of an algebraic expression: terms, variables, constants, and coefficients. Students learn how to translate real-world situations into mathematical expressions and how to evaluate them. The process involves identifying the parts of an expression, following the rules of order of operations (BODMAS/PEMDAS), and manipulating these expressions. The chapter emphasizes the language of algebra, making abstract mathematical concepts more intuitive and practical.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Mathematics",
             "chapter_title": "Expressions Using Letter-Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.016363"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -326,22 +274,66 @@
             "content": {
                 "concepts": [
                     {
-                        "id": "gegp104_c01",
-                        "name": "Expressions Using Letter-Numbers",
-                        "definition": "Central learning focus of Expressions Using Letter-Numbers.",
-                        "source_evidence": "EXPRESSIONS 4 USING LETTER- NUMBERS 4.1 The Notion of Letter-Numbers In this chapter we shall look at a concise way of expressing mathematical relations and patterns."
+                        "concept_name": "Introduction to Algebraic Expressions",
+                        "description": "Identifying variables, constants, and terms within an algebraic expression.",
+                        "keywords": [
+                            "variables",
+                            "constants",
+                            "terms",
+                            "polynomial"
+                        ]
                     },
                     {
-                        "id": "gegp104_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "We shall see how this helps us in thinking about these relationships and patterns, and in explaining why they may hold true."
+                        "concept_name": "Types of Algebraic Expressions",
+                        "description": "Categorizing expressions based on the number of terms and variables (e.g., monomial, binomial, trinomial, monomial with coefficients).",
+                        "keywords": [
+                            "monomial",
+                            "binomial",
+                            "trinomial",
+                            "alphabetic",
+                            "polynomial"
+                        ]
                     },
                     {
-                        "id": "gegp104_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "_______ Given Aftab’s age, how will you find out Shabnam’s age?"
+                        "concept_name": "Simplification of Algebraic Expressions",
+                        "description": "Combining like terms by adding or subtracting terms with the same variables and exponents.",
+                        "keywords": [
+                            "like terms",
+                            "addition",
+                            "subtraction",
+                            "simplifying",
+                            "combining terms"
+                        ]
+                    },
+                    {
+                        "concept_name": "Writing Expressions from Word Problems",
+                        "description": "Translating real-world scenarios or given conditions into mathematical expressions.",
+                        "keywords": [
+                            "word problem",
+                            "translation",
+                            "expression writing",
+                            "variable definition"
+                        ]
+                    },
+                    {
+                        "concept_name": "Evaluating Algebraic Expressions",
+                        "description": "Finding the numerical value of an expression by substituting given values for the variables.",
+                        "keywords": [
+                            "substitution",
+                            "evaluation",
+                            "numerical value",
+                            "replacing variables"
+                        ]
+                    },
+                    {
+                        "concept_name": "Introduction to Algebraic Identities (Special Cases)",
+                        "description": "Understanding basic identities like the commutative and associative properties, and basic laws of exponents.",
+                        "keywords": [
+                            "commutative property",
+                            "associative property",
+                            "distributive property",
+                            "laws of exponents"
+                        ]
                     }
                 ]
             },
@@ -360,8 +352,10 @@
             "subject": "Mathematics",
             "chapter_title": "Expressions Using Letter-Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.016380"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,6 +390,36 @@
                         "to": "gegp104_c03",
                         "relation": "enables"
                     }
+                ],
+                "root": "Algebraic Expressions",
+                "level_1": [
+                    "Types of Expressions",
+                    "Simplification",
+                    "Word Problems",
+                    "Evaluation"
+                ],
+                "level_2": {
+                    "Types of Expressions": [
+                        "Monomial (1 term)",
+                        "Binomial (2 terms)",
+                        "Trinomial (3 terms)"
+                    ],
+                    "Simplification": [
+                        "Combining Like Terms (Same variables and exponents)",
+                        "Identifying and Grouping Like Terms"
+                    ],
+                    "Word Problems": [
+                        "Translating Words to Math",
+                        "Defining Variables"
+                    ],
+                    "Evaluation": [
+                        "Substituting values",
+                        "Finding the final result"
+                    ]
+                },
+                "connections": [
+                    "Terms are combined during Simplification.",
+                    "Variable definitions are crucial for Word Problems and Evaluation."
                 ]
             },
             "runtime_mapping": {
@@ -490,8 +514,10 @@
             "subject": "Mathematics",
             "chapter_title": "Expressions Using Letter-Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.016331"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +526,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "math_scenario",
-                "opening": "Enter a learning scenario connected to Expressions Using Letter-Numbers.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from Expressions Using Letter-Numbers supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "Imagine you are at a market. A vendor sells apples for ₹5 per kg and bananas for ₹8 per kg. If you buy 'x' kg of apples and 'y' kg of bananas, the total cost of your purchase can be expressed as an algebraic expression. The expression would be: 5x + 8y. Here, 'x' and 'y' are the variables representing the quantities of apples and bananas, and the expression $5x + 8y$ represents the total cost. This illustrates how algebraic expressions are used to describe mathematical relationships between different quantities and to solve problems where we know some values but not others.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1121,10 @@
             "subject": "Mathematics",
             "chapter_title": "Expressions Using Letter-Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.016355"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1136,62 @@
             "content": {
                 "items": [
                     {
-                        "id": "gegp104_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Expressions Using Letter-Numbers'?",
+                        "type": "Multiple Choice",
+                        "question": "Which of the following is an algebraic expression? \n(a) 5 + 8 \n(b) 3x + 7 \n(c) 10/2 \n(d) 2 + 3 + 4",
                         "options": [
-                            "EXPRESSIONS 4 USING LETTER- NUMBERS 4.1 The Notion of Letter-Numbers In this chapter we shall look at a concise way of expressing mathematical relations and patterns.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "(a)",
+                            "(b)",
+                            "(c)",
+                            "(d)"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "EXPRESSIONS 4 USING LETTER- NUMBERS 4.1 The Notion of Letter-Numbers In this chapter we shall look at a concise way of expressing mathematical relations and patterns.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp104_c01"
+                        "answer": "(b)",
+                        "difficulty": "Easy"
                     },
                     {
-                        "id": "gegp104_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Expressions Using Letter-Numbers'?",
+                        "type": "Fill in the Blanks",
+                        "question": "The constant in the expression 4a² - 2a + 5 is ____.",
                         "options": [
-                            "We shall see how this helps us in thinking about these relationships and patterns, and in explaining why they may hold true.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "4",
+                            "a",
+                            "2",
+                            "5"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "We shall see how this helps us in thinking about these relationships and patterns, and in explaining why they may hold true.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp104_c01"
+                        "answer": "5",
+                        "difficulty": "Easy"
                     },
                     {
-                        "id": "gegp104_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Expressions Using Letter-Numbers'?",
-                        "options": [
-                            "_______ Given Aftab’s age, how will you find out Shabnam’s age?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                        "type": "Identification",
+                        "question": "Identify the terms in the expression 7x^2 + 3x - 1.",
+                        "expected_answer": [
+                            "7x^2",
+                            "3x",
+                            "-1"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "_______ Given Aftab’s age, how will you find out Shabnam’s age?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gegp104_c01"
+                        "difficulty": "Medium"
                     },
                     {
-                        "id": "gegp104_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Expressions Using Letter-Numbers'?",
+                        "type": "Simplification",
+                        "question": "Simplify the expression: 5x + 3y + 2x - y.",
                         "options": [
-                            "In short, this can be written as: Shabnam’s age = Aftab’s age + 3.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "7x + 2y",
+                            "3x + 2y",
+                            "3x + 2y - y",
+                            "7x + 4y"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "In short, this can be written as: Shabnam’s age = Aftab’s age + 3.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp104_c01"
+                        "answer": "7x + 2y",
+                        "difficulty": "Medium"
                     },
                     {
-                        "id": "gegp104_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Expressions Using Letter-Numbers'?",
+                        "type": "Evaluation",
+                        "question": "If x = 3, find the value of the expression 2x + 10. \n(a) 16 \n(b) 14 \n(c) 13 \n(d) 6",
                         "options": [
-                            "Such mathematical relations are Aftab’s Expression for generally represented in a shorthand age Shabnam’s age form.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "(a)",
+                            "(b)",
+                            "(c)",
+                            "(d)"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "Such mathematical relations are Aftab’s Expression for generally represented in a shorthand age Shabnam’s age form.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp104_c01"
-                    },
-                    {
-                        "id": "gegp104_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Expressions Using Letter-Numbers'?",
-                        "options": [
-                            "In the relation above, instead 4 4 + 3 of writing the phrase ‘Aftab’s Age’, the convention is to use a convenient 10 10 + 3 symbol.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In the relation above, instead 4 4 + 3 of writing the phrase ‘Aftab’s Age’, the convention is to use a convenient 10 10 + 3 symbol.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gegp104_c01"
-                    },
-                    {
-                        "id": "gegp104_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Expressions Using Letter-Numbers'?",
-                        "options": [
-                            "Usually, letters or short phrases 23 23 + 3 are used for this purpose.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "Usually, letters or short phrases 23 23 + 3 are used for this purpose.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp104_c01"
-                    },
-                    {
-                        "id": "gegp104_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'Expressions Using Letter-Numbers'?",
-                        "options": [
-                            "+ 3 Let us say we use the letter a to denote Aftab’s age (we could have a a + 3 used any other letter), and s to denote Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "+ 3 Let us say we use the letter a to denote Aftab’s age (we could have a a + 3 used any other letter), and s to denote Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gegp104_c01"
+                        "answer": "(a)",
+                        "difficulty": "Medium"
                     }
                 ]
             },
@@ -1715,8 +1645,10 @@
             "subject": "Mathematics",
             "chapter_title": "Expressions Using Letter-Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.016321"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1657,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'Expressions Using Letter-Numbers' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "EXPRESSIONS 4 USING LETTER- NUMBERS 4.1 The Notion of Letter-Numbers In this chapter we shall look at a concise way of expressing mathematical relations and patterns.",
-                    "We shall see how this helps us in thinking about these relationships and patterns, and in explaining why they may hold true.",
-                    "_______ Given Aftab’s age, how will you find out Shabnam’s age?",
-                    "In short, this can be written as: Shabnam’s age = Aftab’s age + 3.",
-                    "Such mathematical relations are Aftab’s Expression for generally represented in a shorthand age Shabnam’s age form.",
-                    "In the relation above, instead 4 4 + 3 of writing the phrase ‘Aftab’s Age’, the convention is to use a convenient 10 10 + 3 symbol.",
-                    "Usually, letters or short phrases 23 23 + 3 are used for this purpose."
-                ]
-            },
+            "content": "Chapter 104 is about understanding and working with algebraic expressions. It teaches us how to translate verbal descriptions into mathematical language. Key concepts include identifying the parts of an expression, substituting values for variables to find the value of the expression, and applying basic rules of simplification. Mastering algebraic expressions is the foundation for higher-level algebra, enabling students to solve more complex mathematical problems involving unknown quantities.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1707,10 @@
             "subject": "Mathematics",
             "chapter_title": "Expressions Using Letter-Numbers",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.016371"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1722,34 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gegp104_fc01",
-                        "front": "What should you remember from Expressions Using Letter-Numbers?",
-                        "back": "EXPRESSIONS 4 USING LETTER- NUMBERS 4.1 The Notion of Letter-Numbers In this chapter we shall look at a concise way of expressing mathematical relations and patterns.",
-                        "concept_id": "gegp104_c01"
+                        "term": "Variable",
+                        "definition": "A symbol (usually a letter) that represents an unknown numerical value.",
+                        "image_suggestion": "Letter 'x' in a circle"
                     },
                     {
-                        "id": "gegp104_fc02",
-                        "front": "What should you remember from Expressions Using Letter-Numbers?",
-                        "back": "We shall see how this helps us in thinking about these relationships and patterns, and in explaining why they may hold true.",
-                        "concept_id": "gegp104_c01"
+                        "term": "Constant",
+                        "definition": " A fixed number that does not change.",
+                        "image_suggestion": "The number '7'"
                     },
                     {
-                        "id": "gegp104_fc03",
-                        "front": "What should you remember from Expressions Using Letter-Numbers?",
-                        "back": "_______ Given Aftab’s age, how will you find out Shabnam’s age?",
-                        "concept_id": "gegp104_c01"
+                        "term": "Term",
+                        "definition": "A single number, variable, or product of constants (e.g., in 3x² + 4y, the terms are 3x² and 4y).",
+                        "image_suggestion": "A group of terms"
                     },
                     {
-                        "id": "gegp104_fc04",
-                        "front": "What should you remember from Expressions Using Letter-Numbers?",
-                        "back": "In short, this can be written as: Shabnam’s age = Aftab’s age + 3.",
-                        "concept_id": "gegp104_c01"
+                        "term": "Monomial",
+                        "definition": " An algebraic expression with only one term.",
+                        "image_suggestion": "12p^2"
                     },
                     {
-                        "id": "gegp104_fc05",
-                        "front": "What should you remember from Expressions Using Letter-Numbers?",
-                        "back": "Such mathematical relations are Aftab’s Expression for generally represented in a shorthand age Shabnam’s age form.",
-                        "concept_id": "gegp104_c01"
+                        "term": "Binomial",
+                        "definition": " An algebraic expression with exactly two terms.",
+                        "image_suggestion": "x + 5"
                     },
                     {
-                        "id": "gegp104_fc06",
-                        "front": "What should you remember from Expressions Using Letter-Numbers?",
-                        "back": "In the relation above, instead 4 4 + 3 of writing the phrase ‘Aftab’s Age’, the convention is to use a convenient 10 10 + 3 symbol.",
-                        "concept_id": "gegp104_c01"
-                    },
-                    {
-                        "id": "gegp104_fc07",
-                        "front": "What should you remember from Expressions Using Letter-Numbers?",
-                        "back": "Usually, letters or short phrases 23 23 + 3 are used for this purpose.",
-                        "concept_id": "gegp104_c01"
-                    },
-                    {
-                        "id": "gegp104_fc08",
-                        "front": "What should you remember from Expressions Using Letter-Numbers?",
-                        "back": "+ 3 Let us say we use the letter a to denote Aftab’s age (we could have a a + 3 used any other letter), and s to denote Fig.",
-                        "concept_id": "gegp104_c01"
+                        "term": "Trinomial",
+                        "definition": " An algebraic expression with exactly three terms.",
+                        "image_suggestion": "3x² - 2x + 1"
                     }
                 ]
             },

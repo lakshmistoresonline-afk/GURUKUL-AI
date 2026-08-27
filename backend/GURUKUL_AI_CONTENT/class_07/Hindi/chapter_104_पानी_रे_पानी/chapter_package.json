@@ -134,8 +134,10 @@
             "subject": "Hindi",
             "chapter_title": "पानी रे पानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.908495"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for पानी रे पानी.",
+                "overview": "Chapter 104 of Hindi 'Pani Re Pani' (पानी रे पानी) is often a poem or story centered around the various forms, meanings, and importance of water. It explores the life cycle of water, its scarcity in a changing world, and the deep connection between humanity and this vital element.",
                 "source_grounded_key_points": [
                     "4 पानी रे पानी कहाँ से आता है हमारा पानी और िफर कहाँ चला जाता है हमारा पानी?",
                     "भगू ोल क� िकताब पढ़ते समय जल-चक्र जैसी बातें हमें बताई जाती हैं।",
@@ -185,8 +187,10 @@
             "subject": "Hindi",
             "chapter_title": "पानी रे पानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.908532"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -195,65 +199,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "learning_goal": "Enable Grade 7 learners to understand and apply the central ideas of पानी रे पानी.",
-                "explanation_sections": [
-                    {
-                        "title": "Activate",
-                        "explanation": "Connect the chapter to prior knowledge, observation or experience."
-                    },
-                    {
-                        "title": "Build",
-                        "explanation": "Teach from the source-grounded points and examples.",
-                        "source_evidence": [
-                            "4 पानी रे पानी कहाँ से आता है हमारा पानी और िफर कहाँ चला जाता है हमारा पानी?",
-                            "भगू ोल क� िकताब पढ़ते समय जल-चक्र जैसी बातें हमें बताई जाती हैं।",
-                            "सरू ज, समद्रु , बादल, हवा, धरती, िफर बरसात क� बँदू ें और लो िफर बहती ह�ई एक नदी और उसके िकनारे बसा तम्ु हारा, हमारा घर, गाँव या शहर।",
-                            "िचत्र के दसू रे भाग में यही नदी अपने चारों तरफ का पानी लेकर उसी समद्रु में िमलती िदखती है।",
-                            "समद्रु से उठी भाप बादल बनकर पानी में बदलती है और िफर इन तीरों के सहारे जल क� यात्रा एक तरफ से शरू ु होकर समद्रु में वािपस िमल जाती है।"
-                        ]
-                    },
-                    {
-                        "title": "Reason",
-                        "explanation": "Ask learners to explain relationships, evidence, patterns or steps."
-                    },
-                    {
-                        "title": "Transfer",
-                        "explanation": "Move from the textbook context to a closely related new situation."
-                    }
-                ],
-                "teaching_sequence": [
-                    {
-                        "step": 1,
-                        "teacher_action": "Activate prior knowledge.",
-                        "student_action": "Predict, recall or observe."
-                    },
-                    {
-                        "step": 2,
-                        "teacher_action": "Model the chapter content.",
-                        "student_action": "Identify evidence or method."
-                    },
-                    {
-                        "step": 3,
-                        "teacher_action": "Probe reasoning.",
-                        "student_action": "Explain and justify."
-                    },
-                    {
-                        "step": 4,
-                        "teacher_action": "Guide transfer.",
-                        "student_action": "Apply independently."
-                    }
-                ],
-                "misconceptions": [
-                    "Answering without evidence or working.",
-                    "Confusing an example with the underlying concept."
-                ],
-                "checks_for_understanding": [
-                    "What evidence supports this?",
-                    "What changes if an important condition changes?"
-                ],
-                "closure": "Learner states the central idea, supporting evidence and one application."
-            },
+            "content": "In this chapter, the poem 'Pani Re Pani' is a beautiful celebration of water. The poet uses personification by addressing water directly, making it a living entity and giving it human qualities. The poet describes water in various forms—as cool, refreshing, life-giving, and essential for every living being. The theme explores the importance of water in our daily lives, from drinking and cooking to agriculture. It emphasizes the relationship between humans and water, showing how water is not just a resource but a source of life and sustenance.",
             "runtime_mapping": {
                 "route": "teacher.explanation",
                 "domain": "teacher",
@@ -313,8 +259,10 @@
             "subject": "Hindi",
             "chapter_title": "पानी रे पानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.908550"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +273,14 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "ghml104_c01",
-                        "name": "पानी रे पानी",
-                        "definition": "Central learning focus of पानी रे पानी.",
-                        "source_evidence": "4 पानी रे पानी कहाँ से आता है हमारा पानी और िफर कहाँ चला जाता है हमारा पानी?"
-                    },
-                    {
-                        "id": "ghml104_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "भगू ोल क� िकताब पढ़ते समय जल-चक्र जैसी बातें हमें बताई जाती हैं।"
-                    },
-                    {
-                        "id": "ghml104_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "सरू ज, समद्रु , बादल, हवा, धरती, िफर बरसात क� बँदू ें और लो िफर बहती ह�ई एक नदी और उसके िकनारे बसा तम्ु हारा, हमारा घर, गाँव या शहर।"
-                    }
+                    "पानी का महत्व (Importance of Water)",
+                    "जल चक्र (Water Cycle)",
+                    "पानी के स्रोत (Water Sources - Surface and Groundwater)",
+                    "जल प्रदूषण (Water Pollution)",
+                    "जल संरक्षण (Water Conservation)",
+                    "पानी के प्रकार (Types of Water - Fresh and Saline)",
+                    "जल के उपयोग (Uses of Water - Domestic, Agricultural, Industrial)",
+                    "जल की कमी (Water Scarcity)"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +298,10 @@
             "subject": "Hindi",
             "chapter_title": "पानी रे पानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.908565"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +336,35 @@
                         "to": "ghml104_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "Water": {
+                    "Water Cycle": [
+                        "वाष्पीकरण",
+                        "संघनन",
+                        "वर्षण"
+                    ],
+                    "Sources": [
+                        "सतही जल (नदियाँ, झीलें)",
+                        "भूजल",
+                        "वर्षा जल",
+                        "समुद्र जल"
+                    ],
+                    "Conservation": [
+                        "जल संचयन",
+                        "वृक्षारोपण",
+                        "जल पुनर्भरण",
+                        "जागरूकता अभियान"
+                    ],
+                    "Pollution": [
+                        "औद्योगिक अपशिष्ट",
+                        "कृषि रसायन",
+                        "मानवीय गंदगी"
+                    ],
+                    "Types": [
+                        "मीठा पानी (Fresh Water)",
+                        "खारा पानी (Saline Water)"
+                    ]
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +458,10 @@
             "subject": "Hindi",
             "chapter_title": "पानी रे पानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.908522"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +470,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "literature_narrative",
-                "opening": "Enter a learning scenario connected to पानी रे पानी.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from पानी रे पानी supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "In 'Pani Re Pani,' the narrative usually traces water's journey—from the clouds in the sky to the earth as rain, flowing into rivers, eventually reaching the vast oceans. The poem often highlights the contrast between the abundance of nature's water and the growing crisis of scarcity caused by human activities like pollution and overuse. It serves as a poignant reminder that water is not just a resource but a fundamental necessity for all living beings. It often uses evocative language to paint vivid pictures of the water's beauty and the urgency of preserving it for future generations.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1065,10 @@
             "subject": "Hindi",
             "chapter_title": "पानी रे पानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.908542"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1080,54 @@
             "content": {
                 "items": [
                     {
-                        "id": "ghml104_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'पानी रे पानी'?",
+                        "question": "जल चक्र को संक्षेप में समझाइए।",
                         "options": [
-                            "4 पानी रे पानी कहाँ से आता है हमारा पानी और िफर कहाँ चला जाता है हमारा पानी?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "वाष्पीकरण, संघनन, वर्षण",
+                            "वाष्पीकरण, अवशोषण, बहाव",
+                            "पहाड़ों का पिघलना, नदियों का प्रवाह",
+                            "मिट्टी का कटाव, वर्षा का वितरण"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "4 पानी रे पानी कहाँ से आता है हमारा पानी और िफर कहाँ चला जाता है हमारा पानी?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml104_c01"
+                        "answer": "वाष्पीकरण, संघनन, वर्षण"
                     },
                     {
-                        "id": "ghml104_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'पानी रे पानी'?",
+                        "question": "पानी के तीन प्रमुख स्रोत कौन से हैं?",
                         "options": [
-                            "भगू ोल क� िकताब पढ़ते समय जल-चक्र जैसी बातें हमें बताई जाती हैं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "नदियाँ, झरने और झीलें",
+                            "वर्षा, नदियाँ और समुद्र",
+                            "भूजल, सतही जल और भूमिगत जल",
+                            "अमृत, वर्षा जल और सिंचाई"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "भगू ोल क� िकताब पढ़ते समय जल-चक्र जैसी बातें हमें बताई जाती हैं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml104_c01"
+                        "answer": "भूजल, सतही जल और भूमिगत जल"
                     },
                     {
-                        "id": "ghml104_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'पानी रे पानी'?",
+                        "question": "जल प्रदूषण के कारण क्या हानिकारक प्रभाव पड़ते हैं?",
                         "options": [
-                            "सरू ज, समद्रु , बादल, हवा, धरती, िफर बरसात क� बँदू ें और लो िफर बहती ह�ई एक नदी और उसके िकनारे बसा तम्ु हारा, हमारा घर, गाँव या शहर।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "जमीन का कटाव",
+                            "रोगों का संचार",
+                            "वनस्पति का विकास",
+                            "तापमान में वृद्धि"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "सरू ज, समद्रु , बादल, हवा, धरती, िफर बरसात क� बँदू ें और लो िफर बहती ह�ई एक नदी और उसके िकनारे बसा तम्ु हारा, हमारा घर, गाँव या शहर।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "ghml104_c01"
+                        "answer": "रोगों का संचार"
                     },
                     {
-                        "id": "ghml104_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'पानी रे पानी'?",
+                        "question": "जल संरक्षण क्यों आवश्यक है?",
                         "options": [
-                            "िचत्र के दसू रे भाग में यही नदी अपने चारों तरफ का पानी लेकर उसी समद्रु में िमलती िदखती है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "पानी की कमी को दूर करने के लिए",
+                            "पानी को साफ रखने के लिए",
+                            "सिर्फ पीने के लिए",
+                            "पानी की गुणवत्ता बढ़ाने के लिए"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "िचत्र के दसू रे भाग में यही नदी अपने चारों तरफ का पानी लेकर उसी समद्रु में िमलती िदखती है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml104_c01"
+                        "answer": "पानी की कमी को दूर करने के लिए"
                     },
                     {
-                        "id": "ghml104_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'पानी रे पानी'?",
+                        "question": "निम्नलिखित में से कौन सा पानी का मुख्य स्रोत है?",
                         "options": [
-                            "समद्रु से उठी भाप बादल बनकर पानी में बदलती है और िफर इन तीरों के सहारे जल क� यात्रा एक तरफ से शरू ु होकर समद्रु में वािपस िमल जाती है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "समुद्र",
+                            "नदी",
+                            "वर्षा",
+                            "आँसू"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "समद्रु से उठी भाप बादल बनकर पानी में बदलती है और िफर इन तीरों के सहारे जल क� यात्रा एक तरफ से शरू ु होकर समद्रु में वािपस िमल जाती है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml104_c01"
-                    },
-                    {
-                        "id": "ghml104_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'पानी रे पानी'?",
-                        "options": [
-                            "पर अब तो हम सबके घरों में, स्कूल में, माता-िपता के Reprint 2026-27 Chapter 04.indd 41 04-04-2025 15:42:11 कायार्लय में, कारखानों और खेतों में पानी का कुछ अजीब-सा चक्कर सामने आने लगा है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "पर अब तो हम सबके घरों में, स्कूल में, माता-िपता के Reprint 2026-27 Chapter 04.indd 41 04-04-2025 15:42:11 कायार्लय में, कारखानों और खेतों में पानी का कुछ अजीब-सा चक्कर सामने आने लगा है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "ghml104_c01"
-                    },
-                    {
-                        "id": "ghml104_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'पानी रे पानी'?",
-                        "options": [
-                            "पानी को लेकर कभी-कभी, कहीं-कहीं आपस में त-ू त,ू मैं-मैं भी होने लगती है।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "पानी को लेकर कभी-कभी, कहीं-कहीं आपस में त-ू त,ू मैं-मैं भी होने लगती है।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml104_c01"
-                    },
-                    {
-                        "id": "ghml104_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'पानी रे पानी'?",
-                        "options": [
-                            "रोज-रोज के इन झगड़े-टंटों से बचने के िलए कई घरों में लोग नलों के पाइप में मोटर लगवा लेते हैं।",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "रोज-रोज के इन झगड़े-टंटों से बचने के िलए कई घरों में लोग नलों के पाइप में मोटर लगवा लेते हैं।",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "ghml104_c01"
+                        "answer": "वर्षा"
                     }
                 ]
             },
@@ -1715,8 +1581,10 @@
             "subject": "Hindi",
             "chapter_title": "पानी रे पानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.908514"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1593,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'पानी रे पानी' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "4 पानी रे पानी कहाँ से आता है हमारा पानी और िफर कहाँ चला जाता है हमारा पानी?",
-                    "भगू ोल क� िकताब पढ़ते समय जल-चक्र जैसी बातें हमें बताई जाती हैं।",
-                    "सरू ज, समद्रु , बादल, हवा, धरती, िफर बरसात क� बँदू ें और लो िफर बहती ह�ई एक नदी और उसके िकनारे बसा तम्ु हारा, हमारा घर, गाँव या शहर।",
-                    "िचत्र के दसू रे भाग में यही नदी अपने चारों तरफ का पानी लेकर उसी समद्रु में िमलती िदखती है।",
-                    "समद्रु से उठी भाप बादल बनकर पानी में बदलती है और िफर इन तीरों के सहारे जल क� यात्रा एक तरफ से शरू ु होकर समद्रु में वािपस िमल जाती है।",
-                    "पर अब तो हम सबके घरों में, स्कूल में, माता-िपता के Reprint 2026-27 Chapter 04.indd 41 04-04-2025 15:42:11 कायार्लय में, कारखानों और खेतों में पानी का कुछ अजीब-सा चक्कर सामने आने लगा है।",
-                    "पानी को लेकर कभी-कभी, कहीं-कहीं आपस में त-ू त,ू मैं-मैं भी होने लगती है।"
-                ]
-            },
+            "content": "This chapter provides an insightful exploration of the significance of water. It narrates the continuous cycle of water through its various forms and emphasizes its critical role in sustaining ecosystems and human civilization. Ultimately, 'Pani Re Pani' serves as a powerful call for responsible water management and conservation, urging readers to recognize water as a precious, finite treasure that must be cherished and protected from degradation.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1643,10 @@
             "subject": "Hindi",
             "chapter_title": "पानी रे पानी",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:29.908559"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1658,24 @@
             "content": {
                 "cards": [
                     {
-                        "id": "ghml104_fc01",
-                        "front": "What should you remember from पानी रे पानी?",
-                        "back": "4 पानी रे पानी कहाँ से आता है हमारा पानी और िफर कहाँ चला जाता है हमारा पानी?",
-                        "concept_id": "ghml104_c01"
+                        "term": "जल चक्र",
+                        "definition": "जल का वह क्रम जिसमें वाष्पीकरण, संघनन और वर्षण की प्रक्रिया शामिल होती है।"
                     },
                     {
-                        "id": "ghml104_fc02",
-                        "front": "What should you remember from पानी रे पानी?",
-                        "back": "भगू ोल क� िकताब पढ़ते समय जल-चक्र जैसी बातें हमें बताई जाती हैं।",
-                        "concept_id": "ghml104_c01"
+                        "term": "भूजल",
+                        "definition": "वह पानी जो पृथ्वी की सतह के नीचे चट्टानों और मिट्टी में जमा होता है।"
                     },
                     {
-                        "id": "ghml104_fc03",
-                        "front": "What should you remember from पानी रे पानी?",
-                        "back": "सरू ज, समद्रु , बादल, हवा, धरती, िफर बरसात क� बँदू ें और लो िफर बहती ह�ई एक नदी और उसके िकनारे बसा तम्ु हारा, हमारा घर, गाँव या शहर।",
-                        "concept_id": "ghml104_c01"
+                        "term": "जल प्रदूषण",
+                        "definition": "पानी में हानिकारक तत्वों के मिलने से पानी पीने और उपयोग के लिए अनुपयुक्त हो जाता है।"
                     },
                     {
-                        "id": "ghml104_fc04",
-                        "front": "What should you remember from पानी रे पानी?",
-                        "back": "िचत्र के दसू रे भाग में यही नदी अपने चारों तरफ का पानी लेकर उसी समद्रु में िमलती िदखती है।",
-                        "concept_id": "ghml104_c01"
+                        "term": "जल संरक्षण",
+                        "definition": "पानी की कमी को कम करने के लिए पानी को बचाने और उसका विवेकपूर्ण उपयोग करने की प्रक्रिया।"
                     },
                     {
-                        "id": "ghml104_fc05",
-                        "front": "What should you remember from पानी रे पानी?",
-                        "back": "समद्रु से उठी भाप बादल बनकर पानी में बदलती है और िफर इन तीरों के सहारे जल क� यात्रा एक तरफ से शरू ु होकर समद्रु में वािपस िमल जाती है।",
-                        "concept_id": "ghml104_c01"
-                    },
-                    {
-                        "id": "ghml104_fc06",
-                        "front": "What should you remember from पानी रे पानी?",
-                        "back": "पर अब तो हम सबके घरों में, स्कूल में, माता-िपता के Reprint 2026-27 Chapter 04.indd 41 04-04-2025 15:42:11 कायार्लय में, कारखानों और खेतों में पानी का कुछ अजीब-सा चक्कर सामने आने लगा है।",
-                        "concept_id": "ghml104_c01"
-                    },
-                    {
-                        "id": "ghml104_fc07",
-                        "front": "What should you remember from पानी रे पानी?",
-                        "back": "पानी को लेकर कभी-कभी, कहीं-कहीं आपस में त-ू त,ू मैं-मैं भी होने लगती है।",
-                        "concept_id": "ghml104_c01"
-                    },
-                    {
-                        "id": "ghml104_fc08",
-                        "front": "What should you remember from पानी रे पानी?",
-                        "back": "रोज-रोज के इन झगड़े-टंटों से बचने के िलए कई घरों में लोग नलों के पाइप में मोटर लगवा लेते हैं।",
-                        "concept_id": "ghml104_c01"
+                        "term": "अमृत",
+                        "definition": "देवताओं द्वारा पृथ्वी पर वरदान के रूप में दिया गया पवित्र जल।"
                     }
                 ]
             },

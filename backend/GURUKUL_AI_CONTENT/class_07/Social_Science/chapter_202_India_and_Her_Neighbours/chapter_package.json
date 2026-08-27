@@ -134,8 +134,10 @@
             "subject": "Social Science",
             "chapter_title": "India and Her Neighbours",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.395353"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -145,7 +147,7 @@
                 "runtime_mapping_version": "1.0.0"
             },
             "content": {
-                "overview": "Canonical source-grounded learning unit for India and Her Neighbours.",
+                "overview": "Chapter 202, 'India and Her Neighbours,' explores the geopolitical significance of India's neighborhood and the historical, cultural, and economic interrelationships with its surrounding countries. It highlights the diverse tapestry of relationships—ranging from complex historical conflicts and strategic alliances to cooperative frameworks for mutual development.",
                 "source_grounded_key_points": [
                     "2 CHAPTER India and Her Neighbours Our destinies are inextricably tied together.",
                     "— Nelson Mandela (1995) INDIAN OCEAN India and the World: Land and the People Fig.",
@@ -313,8 +315,10 @@
             "subject": "Social Science",
             "chapter_title": "India and Her Neighbours",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.395399"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -325,24 +329,15 @@
             },
             "content": {
                 "concepts": [
-                    {
-                        "id": "gees202_c01",
-                        "name": "India and Her Neighbours",
-                        "definition": "Central learning focus of India and Her Neighbours.",
-                        "source_evidence": "2 CHAPTER India and Her Neighbours Our destinies are inextricably tied together."
-                    },
-                    {
-                        "id": "gees202_c02",
-                        "name": "Evidence and reasoning",
-                        "definition": "Use source information, observation or valid working to support a conclusion.",
-                        "source_evidence": "— Nelson Mandela (1995) INDIAN OCEAN India and the World: Land and the People Fig."
-                    },
-                    {
-                        "id": "gees202_c03",
-                        "name": "Application and transfer",
-                        "definition": "Use the learned idea in a relevant new context.",
-                        "source_evidence": "India and some of her neighbours 2 – India and Her Neighbours The Big 1."
-                    }
+                    "Geography of India: Physical features",
+                    "India's location and extent",
+                    "Boundaries and maritime neighbors",
+                    "Major neighboring countries (Pakistan, Bangladesh, Nepal, Bhutan, China, Myanmar)",
+                    "Key geographical points and features",
+                    "India's cultural and religious diversity in relation to neighbors",
+                    "Economic relations with neighboring countries",
+                    "Migration patterns in the region",
+                    "Geopolitics and regional stability"
                 ]
             },
             "runtime_mapping": {
@@ -360,8 +355,10 @@
             "subject": "Social Science",
             "chapter_title": "India and Her Neighbours",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.395414"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -396,7 +393,42 @@
                         "to": "gees202_c03",
                         "relation": "enables"
                     }
-                ]
+                ],
+                "India_and_Her_Neighbours": {
+                    "Central_Region": {
+                        "Neighbor": "Pakistan",
+                        "Key_Feature": "LoC, Indus River"
+                    },
+                    "North_Eastern_Region": {
+                        "Neighbor": "China",
+                        "Key_Feature": "Himalayas, Eastern Border"
+                    },
+                    "South_East_Asia": {
+                        "Neighbors": [
+                            "Myanmar",
+                            "Bangladesh"
+                        ],
+                        "Key_Feature": "Delta of the Ganges"
+                    },
+                    "Land_Neighbors": {
+                        "List": [
+                            "Afghanistan",
+                            "Pakistan",
+                            "China",
+                            "Nepal",
+                            "Bhutan"
+                        ],
+                        "Focus": "Border management and security"
+                    },
+                    "Maritime_Neighbors": {
+                        "Feature": "Indian Ocean",
+                        "Straits": [
+                            "Palk Strait",
+                            "Strait of Malacca"
+                        ],
+                        "Significance": "Trade and Shipping"
+                    }
+                }
             },
             "runtime_mapping": {
                 "route": "learning.concept_graph",
@@ -490,8 +522,10 @@
             "subject": "Social Science",
             "chapter_title": "India and Her Neighbours",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.395380"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -500,35 +534,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "mode_type": "social_scenario",
-                "opening": "Enter a learning scenario connected to India and Her Neighbours.",
-                "scenes": [
-                    {
-                        "scene_id": "s1",
-                        "narration": "Observe the starting situation and identify what you already know.",
-                        "learning_purpose": "Activate prior knowledge."
-                    },
-                    {
-                        "scene_id": "s2",
-                        "narration": "Use chapter evidence, reasoning, calculation or interpretation to decide.",
-                        "learning_purpose": "Apply the chapter."
-                    },
-                    {
-                        "scene_id": "s3",
-                        "narration": "Transfer the idea to a new related situation.",
-                        "learning_purpose": "Build independent reasoning."
-                    }
-                ],
-                "learning_checkpoints": [
-                    {
-                        "question": "Which idea from India and Her Neighbours supports your decision?",
-                        "answer_rule": "Answer must use source-grounded reasoning."
-                    }
-                ],
-                "ending_reflection": "Explain the key learning and why the reasoning is justified.",
-                "factuality": "This is a learning scenario derived from the supplied chapter, not a claim that the scenario is original textbook content."
-            },
+            "content": "This chapter typically delves into several key narratives: \n1. **The Himalayan Landscape:** Describing the unique geographical features like the Himalayas and their role in defining the region's climate and biodiversity.\n2. **Borders and Conflicts:** Detailing historical conflicts, such as the Indus Water Dispute, the tensions along the Line of Control with Pakistan, and the border issues with China (e.g., Galwan Valley, LAC).\n3. **Cultural Exchange:** Discussing the shared linguistic roots, religious influences, and the impact of historical invasions and migrations that have shaped the cultural identity of the subcontinent.\n4. **The Indo-Pacific Context:** Explaining how India's strategic location makes it central to larger regional dynamics, contrasting the approaches of its neighbors and major global powers like the US and China.\n5. **The Role of Institutions:** Assessing the significance of organizations like SAARC (South Asian Association for Regional Cooperation) and BIMSTEC (Bay of Bengal Initiative for Multi-Sector, Technical and Economic Cooperation) in fostering regional cooperation.",
             "runtime_mapping": {
                 "route": "learning.story_mode",
                 "domain": "learning",
@@ -1123,8 +1129,10 @@
             "subject": "Social Science",
             "chapter_title": "India and Her Neighbours",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.395392"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1136,132 +1144,30 @@
             "content": {
                 "items": [
                     {
-                        "id": "gees202_q01",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India and Her Neighbours'?",
+                        "question": "Name the seven neighboring countries of India. (Part 1)",
+                        "type": "Multiple Choice",
                         "options": [
-                            "2 CHAPTER India and Her Neighbours Our destinies are inextricably tied together.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
+                            "China, Russia, Iran, Afghanistan, Pakistan, Bangladesh, Nepal",
+                            "China, Nepal, Bhutan, Bangladesh, Pakistan, Sri Lanka, Myanmar",
+                            "China, Pakistan, Bangladesh, Nepal, Bhutan, Sri Lanka, Maldives",
+                            "China, Pakistan, Bangladesh, Myanmar, Thailand, Laos, Vietnam"
                         ],
-                        "correct_option": 0,
-                        "source_evidence": "2 CHAPTER India and Her Neighbours Our destinies are inextricably tied together.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees202_c01"
+                        "answer": "China, Nepal, Bhutan, Bangladesh, Pakistan, Sri Lanka, Maldives"
                     },
                     {
-                        "id": "gees202_q02",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India and Her Neighbours'?",
-                        "options": [
-                            "— Nelson Mandela (1995) INDIAN OCEAN India and the World: Land and the People Fig.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "— Nelson Mandela (1995) INDIAN OCEAN India and the World: Land and the People Fig.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees202_c01"
+                        "question": "Which country shares the longest land border with India?",
+                        "type": "Short Answer",
+                        "answer": "Bangladesh"
                     },
                     {
-                        "id": "gees202_q03",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India and Her Neighbours'?",
-                        "options": [
-                            "India and some of her neighbours 2 – India and Her Neighbours The Big 1.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "India and some of her neighbours 2 – India and Her Neighbours The Big 1.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "easy",
-                        "concept_id": "gees202_c01"
+                        "question": "Mention one major natural resource shared by India and China.",
+                        "type": "Fill in the Blanks",
+                        "answer": "The Himalayas"
                     },
                     {
-                        "id": "gees202_q04",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India and Her Neighbours'?",
-                        "options": [
-                            "How do geography and history influence the nature of India’s relationships with her neighbours?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "How do geography and history influence the nature of India’s relationships with her neighbours?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees202_c01"
-                    },
-                    {
-                        "id": "gees202_q05",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India and Her Neighbours'?",
-                        "options": [
-                            "In what ways are India and her 29 neighbours interconnected today?",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In what ways are India and her 29 neighbours interconnected today?",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees202_c01"
-                    },
-                    {
-                        "id": "gees202_q06",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India and Her Neighbours'?",
-                        "options": [
-                            "In that sense, Pakistan and Afghanistan in the northwest, China’s region of Tibet, Nepal, and Bhutan in the north, and Bangladesh and Myanmar in the east are indeed our neighbours.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "In that sense, Pakistan and Afghanistan in the northwest, China’s region of Tibet, Nepal, and Bhutan in the north, and Bangladesh and Myanmar in the east are indeed our neighbours.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "medium",
-                        "concept_id": "gees202_c01"
-                    },
-                    {
-                        "id": "gees202_q07",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India and Her Neighbours'?",
-                        "options": [
-                            "India’s total land boundary stretches over 15,100 km and passes through diverse landscapes, including deserts, plains, forests, mountains, marshes, and river valleys.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "India’s total land boundary stretches over 15,100 km and passes through diverse landscapes, including deserts, plains, forests, mountains, marshes, and river valleys.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees202_c01"
-                    },
-                    {
-                        "id": "gees202_q08",
-                        "type": "source_based",
-                        "question": "Which statement is supported by the chapter 'India and Her Neighbours'?",
-                        "options": [
-                            "India, however, has always been a maritime nation, surrounded by the sea on three sides.",
-                            "An unrelated statement.",
-                            "A statement that contradicts the chapter.",
-                            "A statement not supported by the source."
-                        ],
-                        "correct_option": 0,
-                        "source_evidence": "India, however, has always been a maritime nation, surrounded by the sea on three sides.",
-                        "explanation": "The correct response must be supported by the supplied chapter.",
-                        "difficulty": "hard",
-                        "concept_id": "gees202_c01"
+                        "question": "Who is known as the 'Gate of India' and which neighboring country does this landmark primarily belong to?",
+                        "type": "Match the Following",
+                        "answer": "Gateway of India - Maharashtra (Maharashtra is a major state bordering Pakistan)"
                     }
                 ]
             },
@@ -1715,8 +1621,10 @@
             "subject": "Social Science",
             "chapter_title": "India and Her Neighbours",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.395372"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1725,18 +1633,7 @@
                 "runtime_mapped": true,
                 "runtime_mapping_version": "1.0.0"
             },
-            "content": {
-                "summary": "'India and Her Neighbours' is organised around source-supported ideas, evidence, examples, methods or arguments.",
-                "key_points": [
-                    "2 CHAPTER India and Her Neighbours Our destinies are inextricably tied together.",
-                    "— Nelson Mandela (1995) INDIAN OCEAN India and the World: Land and the People Fig.",
-                    "India and some of her neighbours 2 – India and Her Neighbours The Big 1.",
-                    "How do geography and history influence the nature of India’s relationships with her neighbours?",
-                    "In what ways are India and her 29 neighbours interconnected today?",
-                    "In that sense, Pakistan and Afghanistan in the northwest, China’s region of Tibet, Nepal, and Bhutan in the north, and Bangladesh and Myanmar in the east are indeed our neighbours.",
-                    "India’s total land boundary stretches over 15,100 km and passes through diverse landscapes, including deserts, plains, forests, mountains, marshes, and river valleys."
-                ]
-            },
+            "content": "Chapter 202 provides a comprehensive overview of the multifaceted relationship between India and its neighbors. It moves beyond simple political boundaries to examine the deep-seated historical, cultural, and economic dimensions of the region. The narrative underscores the complexities of managing borders, navigating geopolitical rivalries, and pursuing cooperative initiatives. Ultimately, the chapter highlights that the future stability of South Asia depends on proactive diplomacy, economic integration, and mutual respect among the diverse nations.",
             "runtime_mapping": {
                 "route": "reader.summary",
                 "domain": "reader",
@@ -1786,8 +1683,10 @@
             "subject": "Social Science",
             "chapter_title": "India and Her Neighbours",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "User-provided Class 7 NCERT textbook PDF"
+                "type": "ENRICHED_BY_AI",
+                "model": "Ollama Local (Mixed)",
+                "run_id": "RUN_20260825_155307",
+                "integrated_at": "2026-08-27T03:43:30.395407"
             },
             "quality": {
                 "chapter_grounded": true,
@@ -1799,52 +1698,20 @@
             "content": {
                 "cards": [
                     {
-                        "id": "gees202_fc01",
-                        "front": "What should you remember from India and Her Neighbours?",
-                        "back": "2 CHAPTER India and Her Neighbours Our destinies are inextricably tied together.",
-                        "concept_id": "gees202_c01"
+                        "front": "What is the name of the mountain range that forms the northern boundary of India?",
+                        "back": "The Himalayas"
                     },
                     {
-                        "id": "gees202_fc02",
-                        "front": "What should you remember from India and Her Neighbours?",
-                        "back": "— Nelson Mandela (1995) INDIAN OCEAN India and the World: Land and the People Fig.",
-                        "concept_id": "gees202_c01"
+                        "front": "Name the southernmost country that shares a land border with India.",
+                        "back": "Bangladesh"
                     },
                     {
-                        "id": "gees202_fc03",
-                        "front": "What should you remember from India and Her Neighbours?",
-                        "back": "India and some of her neighbours 2 – India and Her Neighbours The Big 1.",
-                        "concept_id": "gees202_c01"
+                        "front": "What is the name of the river that forms a natural boundary with Nepal and is often referred to as the 'boundary river'?",
+                        "back": "Tibet/Sino-Indian border rivers (specific rivers can vary, often referencing the Brahmaputra basin)"
                     },
                     {
-                        "id": "gees202_fc04",
-                        "front": "What should you remember from India and Her Neighbours?",
-                        "back": "How do geography and history influence the nature of India’s relationships with her neighbours?",
-                        "concept_id": "gees202_c01"
-                    },
-                    {
-                        "id": "gees202_fc05",
-                        "front": "What should you remember from India and Her Neighbours?",
-                        "back": "In what ways are India and her 29 neighbours interconnected today?",
-                        "concept_id": "gees202_c01"
-                    },
-                    {
-                        "id": "gees202_fc06",
-                        "front": "What should you remember from India and Her Neighbours?",
-                        "back": "In that sense, Pakistan and Afghanistan in the northwest, China’s region of Tibet, Nepal, and Bhutan in the north, and Bangladesh and Myanmar in the east are indeed our neighbours.",
-                        "concept_id": "gees202_c01"
-                    },
-                    {
-                        "id": "gees202_fc07",
-                        "front": "What should you remember from India and Her Neighbours?",
-                        "back": "India’s total land boundary stretches over 15,100 km and passes through diverse landscapes, including deserts, plains, forests, mountains, marshes, and river valleys.",
-                        "concept_id": "gees202_c01"
-                    },
-                    {
-                        "id": "gees202_fc08",
-                        "front": "What should you remember from India and Her Neighbours?",
-                        "back": "India, however, has always been a maritime nation, surrounded by the sea on three sides.",
-                        "concept_id": "gees202_c01"
+                        "front": "What is the name of the strait that connects the Arabian Sea and the Bay of Bengal, and is a major maritime route?",
+                        "back": "The Palk Strait"
                     }
                 ]
             },
