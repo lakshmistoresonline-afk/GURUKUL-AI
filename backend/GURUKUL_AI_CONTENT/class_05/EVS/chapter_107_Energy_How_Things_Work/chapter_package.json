@@ -346,53 +346,110 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev107",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Energy — How Things Work",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Energy — How Things Work",
+                "branches": [
                     {
-                        "id": "eeev107_concept_01",
-                        "label": "Energy — How Things Work"
+                        "label": "What is Energy?",
+                        "details": [
+                            {
+                                "label": "Simple Definition",
+                                "details": [
+                                    "Energy is the ability to do work or make things happen.",
+                                    "It is what makes things move (motion) or light up (electricity)."
+                                ]
+                            },
+                            {
+                                "label": "Energy in Our Lives",
+                                "details": [
+                                    "Movement (Spinners, running, jumping)",
+                                    "Heat (Cooking food, keeping warm in winter)",
+                                    "Light (Sunlight, batteries, lamps)",
+                                    "Sound (Voices, music, the sound of a toy)"
+                                ]
+                            },
+                            {
+                                "label": "Energy Sources",
+                                "details": [
+                                    "Natural Sources",
+                                    "e.g., Sun: Provides light and warmth (Solar energy)",
+                                    "e.g., Wind: Moves things (windmills, kites)",
+                                    "e.g., Water: Powers machines (dams, flowing water for power)",
+                                    "e.g., Fire: Provides heat and light (stoves, candles)"
+                                ]
+                            }
+                        ]
                     },
                     {
-                        "id": "eeev107_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "How Energy Works (Simple Machines)",
+                        "details": [
+                            {
+                                "label": "The Basics of Motion",
+                                "details": [
+                                    "Energy helps objects move.",
+                                    "The connection between energy and toys (spinners) – how a force makes them turn."
+                                ]
+                            },
+                            {
+                                "label": "Energy Making Things (Simple Processes)",
+                                "details": [
+                                    "How energy helps us cook (heat/fire).",
+                                    "How energy helps us see (light)."
+                                ]
+                            }
+                        ]
                     },
                     {
-                        "id": "eeev107_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev107_concept_01",
-                        "to": "eeev107_concept_02",
-                        "relation": "explained_by"
+                        "label": "Materials and Making Things",
+                        "details": [
+                            {
+                                "label": "From Basics to Products",
+                                "details": [
+                                    "Energy is needed to melt or shape materials (e.g., heat to make metal or clay).",
+                                    "Understanding how bricks and paper are made (transportation and processing)."
+                                ]
+                            },
+                            {
+                                "label": "The Connection to Sustainability (The 5 R's)",
+                                "details": [
+                                    "Why clean energy matters (using sustainable sources).",
+                                    "The 5 R's: Reduce, Reuse, Repurpose, Recycle, Refuse.",
+                                    "Making responsible choices for our environment."
+                                ]
+                            }
+                        ]
                     },
                     {
-                        "from": "eeev107_concept_02",
-                        "to": "eeev107_concept_03",
-                        "relation": "applied_through"
+                        "label": "Energy in Everyday Things (Grade 5 Focus)",
+                        "details": [
+                            {
+                                "label": "Making Cloth",
+                                "details": [
+                                    "How energy and simple processes turn threads into fabric (weaving, stitching).",
+                                    "Seeing the unseen processes behind clothing."
+                                ]
+                            },
+                            {
+                                "label": "The Impact of Reusing (Cloth and Beyond)",
+                                "details": [
+                                    "The value of repurposing old materials.",
+                                    "Connecting our actions to caring for the environment."
+                                ]
+                            },
+                            {
+                                "label": "Local Practices and Observation",
+                                "details": [
+                                    "Observing how people use energy locally.",
+                                    "Examples: How people cook, keep warm (local insulation/heating methods), or reuse cloth in their community."
+                                ]
+                            }
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {

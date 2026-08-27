@@ -49,7 +49,13 @@ export default function FlashcardsClient() {
       try {
         const data = await chapterService.getPackage(className, subject, chapterId);
         setPackage(data);
-        const cardData = data?.content?.flashcards || [];
+
+        // Handle V3 and Legacy structures
+        const components = data?.components || {};
+        const content = data?.content || {};
+        const flashData = components.flashcards?.content;
+
+        const cardData = flashData?.cards || content.flashcards || [];
         setCards(cardData);
       } catch (error) {
         console.error("Failed to load flashcards", error);

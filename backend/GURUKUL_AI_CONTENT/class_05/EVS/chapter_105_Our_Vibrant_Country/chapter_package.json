@@ -346,114 +346,95 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev105",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Our Vibrant Country",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Our Vibrant Country",
+                "branches": [
                     {
-                        "id": "eeev105_concept_01",
-                        "label": "Our Vibrant Country"
+                        "label": "The Heart of Our Country: Unity in Diversity",
+                        "details": [
+                            "Core Belief: Vasudhaiva Kutumbakam (The World is One Family)",
+                            "Diversity as Strength: India is a land of colours, voices, and stories.",
+                            "Shared Purpose: Standing together through common goals and beliefs.",
+                            "Socio-cultural Reflection: How diversity is reflected in traditional practices and festivals."
+                        ]
                     },
                     {
-                        "id": "eeev105_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "Rich Landscapes and Natural Wonders",
+                        "details": [
+                            "Coastal Beauty: Exploring coral reefs and mangrove forests.",
+                            "Geographical Features: Diverse terrains and unique natural ecosystems.",
+                            "Connectivity: Seeing how nature and everyday life are deeply connected.",
+                            "Observation Task: Documenting local natural diversity."
+                        ]
                     },
                     {
-                        "id": "eeev105_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev105_concept_01",
-                        "to": "eeev105_concept_02",
-                        "relation": "explained_by"
+                        "label": "Culture, Identity, and Tradition",
+                        "details": [
+                            "Land of Stories: Celebrating the rich history and heritage.",
+                            "Human Diversity: Exploring different people, traditions, and languages.",
+                            "Daily Life and Symbols: Connecting culture to everyday items (e.g., currency notes, national symbols).",
+                            "Observation Task: Learning about local languages, clothing, festivals, and foods."
+                        ]
                     },
                     {
-                        "from": "eeev105_concept_02",
-                        "to": "eeev105_concept_03",
-                        "relation": "applied_through"
+                        "label": "Meaningful Development and Global Example",
+                        "details": [
+                            "Setting a Global Example: How our unique development and resilience inspires the world.",
+                            "Connecting Local to Global: Showing how small Indian practices impact the wider world.",
+                            "Personal Reflection: Reflecting on what makes our specific place (home/school) special.",
+                            "Empowerment: Understanding our role in preserving and sharing this richness."
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {
             "schema_version": "1.0.0",
             "component_id": "key_terms",
             "chapter_id": "eeev105",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Our Vibrant Country",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
                 "terms": [
                     {
-                        "term": "Vibrant",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our Vibrant Country'."
+                        "term": "Diverse Country",
+                        "student_friendly_meaning": "A country where there are many different types of people, traditions, and landscapes, all living together happily."
                     },
                     {
-                        "term": "Country",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our Vibrant Country'."
+                        "term": "Vasudhaiva Kutumbakam",
+                        "student_friendly_meaning": "An ancient Indian belief that means 'The world is one family.' It teaches us to care for everyone on Earth."
                     },
                     {
-                        "term": "Grade",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our Vibrant Country'."
+                        "term": "Culture",
+                        "student_friendly_meaning": "The way a group of people lives—including their clothes, music, and special festivals—which is part of their country's identity."
                     },
                     {
-                        "term": "introduces",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our Vibrant Country'."
+                        "term": "Diversity",
+                        "student_friendly_meaning": "The wonderful variety of differences that make our country beautiful, like different languages, foods, and clothing."
                     },
                     {
-                        "term": "different",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our Vibrant Country'."
+                        "term": "National Symbols",
+                        "student_friendly_meaning": "Special things like the flag, anthem, and coins that represent our country and make us feel proud."
                     },
                     {
-                        "term": "features",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our Vibrant Country'."
+                        "term": "Nature and Culture",
+                        "student_friendly_meaning": "How the beautiful natural surroundings, like forests and oceans, are closely connected to the people's traditions and daily lives."
                     },
                     {
-                        "term": "larger",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our Vibrant Country'."
+                        "term": "Common Goal",
+                        "student_friendly_meaning": "Something that all people in the country can agree on, helping everyone work together towards a positive future."
                     },
                     {
-                        "term": "society",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our Vibrant Country'."
+                        "term": "Shared Care",
+                        "student_friendly_meaning": "The feeling of looking out for each other and taking care of our home and our planet together."
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.key_terms",
-                "domain": "learning",
-                "description": "Key terms and vocabulary",
-                "chapter_scoped": true
             }
         },
         "story_mode": {

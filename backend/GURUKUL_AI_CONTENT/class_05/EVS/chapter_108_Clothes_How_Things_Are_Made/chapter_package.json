@@ -346,53 +346,59 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev108",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Clothes — How Things Are Made",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Clothes — How Things Are Made",
+                "branches": [
                     {
-                        "id": "eeev108_concept_01",
-                        "label": "Clothes — How Things Are Made"
-                    },
-                    {
-                        "id": "eeev108_concept_02",
-                        "label": "Evidence and reasoning"
-                    },
-                    {
-                        "id": "eeev108_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev108_concept_01",
-                        "to": "eeev108_concept_02",
-                        "relation": "explained_by"
-                    },
-                    {
-                        "from": "eeev108_concept_02",
-                        "to": "eeev108_concept_03",
-                        "relation": "applied_through"
+                        "label": "Chapter 8: Patterns with Threads",
+                        "details": [
+                            {
+                                "label": "Introduction to Nature as an Artistic Source",
+                                "details": [
+                                    "Observation: Finding weaving/design in nature (birds, spiders).",
+                                    "Concept: Nature is full of hidden artists (weaving, stitching, glue)."
+                                ]
+                            },
+                            {
+                                "label": "Historical Context",
+                                "details": [
+                                    "Hidden Artist: Pre-human weavers.",
+                                    "Key Example: Male Baya Weaver (Weaverbird)."
+                                ]
+                            },
+                            {
+                                "label": "Process: The Weaverbird's Craft",
+                                "details": [
+                                    "Input: Grass strands.",
+                                    "Technique: Weaving strands over and under.",
+                                    "Output: Strong, pouch-shaped hanging nest."
+                                ]
+                            },
+                            {
+                                "label": "Real-World Context: The Indian Handloom Sector",
+                                "details": [
+                                    "Economic Impact: Employs over 45 lakh people (women and rural artisans).",
+                                    "Industry Classification: One of the largest cottage industries globally."
+                                ]
+                            }
+                        ],
+                        "sub_branches": [
+                            {
+                                "label": "Related Concepts",
+                                "details": [
+                                    "Textile Science",
+                                    "Artisan Skills",
+                                    "Design Principles",
+                                    "Global Trade"
+                                ]
+                            }
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {

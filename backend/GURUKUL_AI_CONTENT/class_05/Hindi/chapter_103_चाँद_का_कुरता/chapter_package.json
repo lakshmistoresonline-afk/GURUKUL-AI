@@ -307,88 +307,42 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "ehve103",
-            "class": 5,
-            "subject": "Hindi",
-            "chapter_title": "चाँद का कुरता",
             "provenance": {
                 "type": "ENRICHED_BY_AI",
-                "model": "Ollama Local (Mixed)",
-                "run_id": "RUN_20260825_155307",
-                "integrated_at": "2026-08-27T03:43:29.021322"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "चाँद का कुरता",
+                "branches": [
                     {
-                        "id": "ehve103_concept_01",
-                        "label": "चाँद का कुरता"
-                    },
-                    {
-                        "id": "ehve103_concept_02",
-                        "label": "Evidence and reasoning"
-                    },
-                    {
-                        "id": "ehve103_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "ehve103_concept_01",
-                        "to": "ehve103_concept_02",
-                        "relation": "explained_by"
-                    },
-                    {
-                        "from": "ehve103_concept_02",
-                        "to": "ehve103_concept_03",
-                        "relation": "applied_through"
-                    }
-                ],
-                "Root": "Chapter 103: चाँद का कुर्ता",
-                "Branches": [
-                    {
-                        "Node": "Theme/Idea",
-                        "Sub_nodes": [
-                            "Childhood Experiences",
-                            "Simplicity",
-                            "Poverty"
+                        "label": "समस्या/तारा का कथन",
+                        "details": [
+                            "चाँद का ठिठुरना (ठंड लगना)।",
+                            "रात भर सिसकती हवा के कारण जाड़े से मरना।",
+                            "दहक-ठुर-दठुर कर यात्रा पूरी करना।",
+                            "आसमान के सफर और मौसम के लिए ऊन के मोटा दझंगोला (कुर्ता) की माँग।",
+                            "दलाल (कुर्ता) की आवश्यकता का कारण: ठंड से बचना।"
                         ]
                     },
                     {
-                        "Node": "Characters",
-                        "Sub_nodes": [
-                            "Chand",
-                            "Supporting Characters"
+                        "label": "माता का उत्तर/समाधान",
+                        "details": [
+                            "बच्चे की बात पर माता का स्नेहपूर्ण उत्तर: 'अरे सलोने!'",
+                            "दझंगोले के आकार पर चर्चा:",
+                            "कभी अंगुल-भर चौड़ा, कभी एक फुट मोटा।",
+                            "दहाड़े के आकार का बदलना: घटता-बढ़ता रोज़ दकसी ददिन।",
+                            "आँखों को दुख देने वाली स्थिति: दकसी की आँखों को ददखलाई पड़ता है।",
+                            "प्रमुख प्रश्न: 'अब तू ही तो बता, नाप तेरी दकस रोज़ दलवाएँ, सी दें एक दझंगोला जो हर रोज बदन में आए?'"
                         ]
                     },
                     {
-                        "Node": "Narrative Structure",
-                        "Sub_nodes": [
-                            "Introduction",
-                            "Climax",
-                            "Resolution"
-                        ]
-                    },
-                    {
-                        "Node": "Language/Style",
-                        "Sub_nodes": [
-                            "Simple Vocabulary",
-                            "Imagery"
+                        "label": "प्रकृति और चाँद (संदर्भ)",
+                        "details": [
+                            "आकाश का वर्णन: आकाश आपको कब-कब बहुत सुंदर दिखाई देता है?",
+                            "चाँद को ठंड लगने का कारण: उसने दझंगोला (कुर्ता) माँगा है।"
                         ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {

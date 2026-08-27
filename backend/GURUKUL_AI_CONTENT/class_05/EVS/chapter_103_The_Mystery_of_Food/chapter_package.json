@@ -346,114 +346,113 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev103",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "The Mystery of Food",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "The Mystery of Food: A Journey into Health, Culture, and the Environment",
+                "branches": [
                     {
-                        "id": "eeev103_concept_01",
-                        "label": "The Mystery of Food"
+                        "label": "Introduction to Healthy Eating & Personal Well-being",
+                        "details": [
+                            "The Role of Everyday Choices",
+                            "Understanding Nutrition Basics (Balanced Diet)",
+                            "How Food Supports Energy and Growth",
+                            "Connecting Food Choices to Personal Happiness and Health"
+                        ]
                     },
                     {
-                        "id": "eeev103_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "Global & Traditional Food Practices",
+                        "details": [
+                            "Traditional Indian Methods of Food Preservation (e.g., drying, pickling, sun-drying)",
+                            "How Agricultural Practices Change with Seasons",
+                            "The Role of Local/Traditional Foods in Culture and Health",
+                            "Sharing Family Food Stories and Habits"
+                        ]
                     },
                     {
-                        "id": "eeev103_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev103_concept_01",
-                        "to": "eeev103_concept_02",
-                        "relation": "explained_by"
+                        "label": "Microbes, Safety, and Food Preservation Science",
+                        "details": [
+                            "Introducing Good Microbes (Bacteria and Fungi) in Food",
+                            "The Role of Cultures in Keeping Food Safe",
+                            "Cultural Practices for Food Safety (Hygiene and Cleanliness)",
+                            "Exploring Preservation Techniques (e.g., fermentation, curing) and their scientific basis"
+                        ]
                     },
                     {
-                        "from": "eeev103_concept_02",
-                        "to": "eeev103_concept_03",
-                        "relation": "applied_through"
+                        "label": "Sustainable Living and Environmental Stewardship",
+                        "details": [
+                            "Caring for the Home and Surroundings for Better Health",
+                            "Waste Management Strategies",
+                            "Water Conservation Techniques",
+                            "Practicing Kindness and Community Responsibility in Food Systems"
+                        ]
+                    },
+                    {
+                        "label": "School Explorer Project: Food Detective & Green School",
+                        "details": [
+                            "Building the 'Food Detective' Notebook (Observation and Inquiry)",
+                            "Creating a Green and Cleaner School through Action",
+                            "Waste Management in the School Cafeteria/Classroom",
+                            "Water Conservation Projects at School"
+                        ]
+                    },
+                    {
+                        "label": "Knowledge Sharing and Reflection",
+                        "details": [
+                            "Small Group Discussions on Family Food Habits",
+                            "Sharing Findings from the 'Food Detective' Notebook",
+                            "Presentation of Traditional Preservation Techniques",
+                            "Connecting Personal Findings to Collective Well-being"
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {
             "schema_version": "1.0.0",
             "component_id": "key_terms",
             "chapter_id": "eeev103",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "The Mystery of Food",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
                 "terms": [
                     {
-                        "term": "Mystery",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'The Mystery of Food'."
+                        "term": "Food Preservation",
+                        "student_friendly_meaning": "Old and special ways of keeping food safe and fresh for a long time."
                     },
                     {
-                        "term": "Food",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'The Mystery of Food'."
+                        "term": "Traditional Agricultural Practices",
+                        "student_friendly_meaning": "The old, wise ways people grew food (like farming) that helped keep them healthy and happy with the changing seasons."
                     },
                     {
-                        "term": "Students",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'The Mystery of Food'."
+                        "term": "Culture and Well-being",
+                        "student_friendly_meaning": "How a person's community or culture (traditions, habits) helps people stay healthy and feel good."
                     },
                     {
-                        "term": "learn",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'The Mystery of Food'."
+                        "term": "Food Safety",
+                        "student_friendly_meaning": "The practices and things we do to make sure the food we eat is clean and won't make us sick."
                     },
                     {
-                        "term": "traditional",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'The Mystery of Food'."
+                        "term": "Microbes (Good and Bad)",
+                        "student_friendly_meaning": "Tiny living things, like germs and helpful ones, that are important for keeping our food safe."
                     },
                     {
-                        "term": "agricultural",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'The Mystery of Food'."
+                        "term": "Seasonal Changes",
+                        "student_friendly_meaning": "When the weather and time of year changes, and how people adjusted their activities like farming or eating to meet those changes."
                     },
                     {
-                        "term": "cultural",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'The Mystery of Food'."
+                        "term": "Waste Management",
+                        "student_friendly_meaning": "How we handle trash and garbage responsibly to keep our world clean."
                     },
                     {
-                        "term": "practices",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'The Mystery of Food'."
+                        "term": "Water Conservation",
+                        "student_friendly_meaning": "Using water wisely and carefully so we don't waste it and keep it available for everyone."
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.key_terms",
-                "domain": "learning",
-                "description": "Key terms and vocabulary",
-                "chapter_scoped": true
             }
         },
         "story_mode": {

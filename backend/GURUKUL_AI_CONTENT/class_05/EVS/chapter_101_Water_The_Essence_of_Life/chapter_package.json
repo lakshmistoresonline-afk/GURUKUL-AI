@@ -346,114 +346,78 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev101",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Water — The Essence of Life",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Water — The Essence of Life",
+                "branches": [
                     {
-                        "id": "eeev101_concept_01",
-                        "label": "Water — The Essence of Life"
+                        "label": "The Concept of Water",
+                        "details": [
+                            "Water as the only life-sustaining substance",
+                            "Water's unique properties (liquid, solid, gas states)"
+                        ]
                     },
                     {
-                        "id": "eeev101_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "Water's Forms and Movement",
+                        "details": [
+                            "Water in nature: Oceans, rivers, lakes, and underground aquifers",
+                            "Water's journey: The water cycle and its continuous movement",
+                            "Evaporation, condensation, and precipitation"
+                        ]
                     },
                     {
-                        "id": "eeev101_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev101_concept_01",
-                        "to": "eeev101_concept_02",
-                        "relation": "explained_by"
+                        "label": "Water's Role in Ecosystems",
+                        "details": [
+                            "Life's requirement: Why all living things depend on water",
+                            "Water as a key ingredient in food chains and photosynthesis",
+                            "Water's impact on terrestrial and aquatic habitats"
+                        ]
                     },
                     {
-                        "from": "eeev101_concept_02",
-                        "to": "eeev101_concept_03",
-                        "relation": "applied_through"
+                        "label": "Water and the Land (Geographic Impact)",
+                        "details": [
+                            "Water shapes the earth: Erosion and deposition processes",
+                            "Formation of landforms (valleys, deltas, meanders)",
+                            "The relationship between water and soil quality"
+                        ]
+                    },
+                    {
+                        "label": "Human Life and Water Use",
+                        "details": [
+                            "Water's importance for people: Drinking, sanitation, and agriculture",
+                            "Indigenous and close-to-nature lifestyles",
+                            "Water as a source of creativity and happy experiences"
+                        ]
+                    },
+                    {
+                        "label": "Water, Creativity and Materials",
+                        "details": [
+                            "Finding 'clean treasures' from nature (stones, woods, leaves)",
+                            "Using natural materials for daily needs",
+                            "Local materials and sustainable production"
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {
             "schema_version": "1.0.0",
             "component_id": "key_terms",
             "chapter_id": "eeev101",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Water — The Essence of Life",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
                 "terms": [
                     {
                         "term": "Water",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Water — The Essence of Life'."
-                    },
-                    {
-                        "term": "Essence",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Water — The Essence of Life'."
-                    },
-                    {
-                        "term": "Life",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Water — The Essence of Life'."
-                    },
-                    {
-                        "term": "Students",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Water — The Essence of Life'."
-                    },
-                    {
-                        "term": "Grades",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Water — The Essence of Life'."
-                    },
-                    {
-                        "term": "explored",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Water — The Essence of Life'."
-                    },
-                    {
-                        "term": "water",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Water — The Essence of Life'."
-                    },
-                    {
-                        "term": "learned",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Water — The Essence of Life'."
+                        "student_friendly_meaning": "Water is the essential substance that all living things need to survive, just like food is needed for people. It is vital for drinking, cleaning, and the growth of plants and animals."
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.key_terms",
-                "domain": "learning",
-                "description": "Key terms and vocabulary",
-                "chapter_scoped": true
             }
         },
         "story_mode": {

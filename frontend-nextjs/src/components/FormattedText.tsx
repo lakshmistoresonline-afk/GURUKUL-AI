@@ -3,6 +3,9 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 
 interface FormattedTextProps {
   content: string;
@@ -12,6 +15,7 @@ interface FormattedTextProps {
 /**
  * A kid-friendly markdown renderer that handles AI-generated text formatting.
  * Optimized for high readability, contrast, and Hindi character support.
+ * Now supports LaTeX mathematical notation.
  */
 export default function FormattedText({ content, className = '' }: FormattedTextProps) {
   if (!content) return null;
@@ -25,12 +29,8 @@ export default function FormattedText({ content, className = '' }: FormattedText
     .replace(/(\d+)\.\s\*\*/g, '\n$1. **'); // Ensure numbered lists start on new lines
 
   // AGGRESSIVE Hindi character spacing fix
-  // This removes all spaces that occur immediately before or after a Hindi vowel sign (matra)
-  // or a halant, ensuring characters like 'धक्का' don't render as 'ध क -का'
   processedContent = processedContent
-    // Remove spaces between consonants and vowel signs
     .replace(/([\u0905-\u0939])\s+([\u093E-\u094D])/g, '$1$2')
-    // Remove spaces between vowel signs and other characters (aggressive join)
     .replace(/([\u093E-\u094D])\s+([\u0905-\u0939])/g, '$1$2');
 
   const isInverted = className.includes('prose-invert');
@@ -46,7 +46,10 @@ export default function FormattedText({ content, className = '' }: FormattedText
       prose-headings:font-black
       prose-img:rounded-[40px]
       ${className}`}>
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm, remarkMath]}
+        rehypePlugins={[rehypeKatex]}
+      >
         {processedContent}
       </ReactMarkdown>
     </div>

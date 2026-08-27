@@ -346,114 +346,100 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev102",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Journey of a River",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Journey of a River (Godavari)",
+                "branches": [
                     {
-                        "id": "eeev102_concept_01",
-                        "label": "Journey of a River"
+                        "label": "Origin and Commencement",
+                        "details": [
+                            "Starting Point: Trimbakeshwar in Maharashtra",
+                            "Initial Form: A stream in the Western Ghats"
+                        ]
                     },
                     {
-                        "id": "eeev102_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "Transformation and Growth",
+                        "details": [
+                            "Accumulation of Water: Rainwater and other streams join the main flow",
+                            "Process: Moving across the land makes it wider and stronger",
+                            "Key Term: Tributaries (Small streams joining the main river)"
+                        ]
                     },
                     {
-                        "id": "eeev102_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev102_concept_01",
-                        "to": "eeev102_concept_02",
-                        "relation": "explained_by"
+                        "label": "The Hydrological Journey",
+                        "details": [
+                            "Duration: Travels 1,465 kilometers",
+                            "Ultimate Destination: Joining the Bay of Bengal"
+                        ]
                     },
                     {
-                        "from": "eeev102_concept_02",
-                        "to": "eeev102_concept_03",
-                        "relation": "applied_through"
+                        "label": "National Significance",
+                        "details": [
+                            "Rank: Second longest river in India (after River Ganga)",
+                            "Role: Crucial source of water for the region"
+                        ]
+                    },
+                    {
+                        "label": "Human Infrastructure (Dam Example)",
+                        "details": [
+                            "Dam Example: Kalgandhar Dam (Example of river utilization)"
+                        ]
+                    },
+                    {
+                        "label": "Ecological Importance (Wildlife Sanctuary)",
+                        "details": [
+                            "Sanctuary Example: Godavari Wildlife Sanctuary (Protecting biodiversity along its length)"
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {
             "schema_version": "1.0.0",
             "component_id": "key_terms",
             "chapter_id": "eeev102",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Journey of a River",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
                 "terms": [
                     {
-                        "term": "Journey",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Journey of a River'."
+                        "term": "Western Ghats",
+                        "student_friendly_meaning": "The mountain range in India where the river begins its journey."
                     },
                     {
-                        "term": "River",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Journey of a River'."
+                        "term": "Trimbakeshwar",
+                        "student_friendly_meaning": "The specific place in Maharashtra where the river's journey starts."
                     },
                     {
-                        "term": "Where",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Journey of a River'."
+                        "term": "Tributaries",
+                        "student_friendly_meaning": "Smaller streams that join the main river to make it wider and stronger."
                     },
                     {
-                        "term": "Begin",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Journey of a River'."
+                        "term": "Flow",
+                        "student_friendly_meaning": "The movement of the river from its beginning to its end."
                     },
                     {
-                        "term": "travel",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Journey of a River'."
+                        "term": "Fields and Forests",
+                        "student_friendly_meaning": "The various natural landscapes the river passes through on its way."
                     },
                     {
-                        "term": "Through",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Journey of a River'."
+                        "term": "Bay of Bengal",
+                        "student_friendly_meaning": "The large ocean where the river finally empties itself."
                     },
                     {
-                        "term": "fields",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Journey of a River'."
+                        "term": "Godavari",
+                        "student_friendly_meaning": "A major river in India that this journey involves."
                     },
                     {
-                        "term": "forests",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Journey of a River'."
+                        "term": "Dam",
+                        "student_friendly_meaning": "A barrier built across a river to hold back water, which is mentioned in the context of the river's journey."
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.key_terms",
-                "domain": "learning",
-                "description": "Key terms and vocabulary",
-                "chapter_scoped": true
             }
         },
         "story_mode": {

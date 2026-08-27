@@ -346,53 +346,47 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eesa102",
-            "class": 5,
-            "subject": "English",
-            "chapter_title": "Gone with the Scooter",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Gone with the Scooter",
+                "branches": [
                     {
-                        "id": "eesa102_concept_01",
-                        "label": "Gone with the Scooter"
+                        "label": "Setting",
+                        "details": [
+                            "Time: Summer afternoon",
+                            "Location: Veranda",
+                            "Location: Garden"
+                        ]
                     },
                     {
-                        "id": "eesa102_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "Characters",
+                        "details": [
+                            "Gopi (Main character)"
+                        ]
                     },
                     {
-                        "id": "eesa102_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eesa102_concept_01",
-                        "to": "eesa102_concept_02",
-                        "relation": "explained_by"
+                        "label": "Action Sequence",
+                        "details": [
+                            "Initial activity: Reading a book on the veranda",
+                            "Trigger event: Hearing something rustling and falling with a thud",
+                            "Hypothesis: Mango falling from the tree",
+                            "Action 1: Putting the book aside",
+                            "Action 2: Running into the garden",
+                            "Action 3: Searching in thick grass near the garden fence",
+                            "Action 4: Reaching out and taking the ball"
+                        ]
                     },
                     {
-                        "from": "eesa102_concept_02",
-                        "to": "eesa102_concept_03",
-                        "relation": "applied_through"
+                        "label": "Resolution/Ending",
+                        "details": [
+                            "Action 5: Going inside",
+                            "Action 6: Drinking a glass of water"
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {

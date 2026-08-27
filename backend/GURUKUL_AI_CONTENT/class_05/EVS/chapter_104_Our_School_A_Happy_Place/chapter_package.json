@@ -346,114 +346,90 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev104",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Our School — A Happy Place",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Our School — A Happy Place",
+                "branches": [
                     {
-                        "id": "eeev104_concept_01",
-                        "label": "Our School — A Happy Place"
+                        "label": "Core Feeling",
+                        "details": [
+                            "Love school (Mohit)",
+                            "Safe and cared for (Mohit)"
+                        ]
                     },
                     {
-                        "id": "eeev104_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "What School Offers",
+                        "details": [
+                            "Social Interaction (Seeing friends)",
+                            "Play games",
+                            "Learn new things"
+                        ]
                     },
                     {
-                        "id": "eeev104_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev104_concept_01",
-                        "to": "eeev104_concept_02",
-                        "relation": "explained_by"
+                        "label": "Asha's Vision: Green School",
+                        "details": [
+                            "Focus on nature",
+                            "Caring for plants, trees, and animals"
+                        ]
                     },
                     {
-                        "from": "eeev104_concept_02",
-                        "to": "eeev104_concept_03",
-                        "relation": "applied_through"
+                        "label": "Principles of a Green School (Mohit's Brother's Idea)",
+                        "details": [
+                            "Waste Management",
+                            "Water Conservation",
+                            "Electricity Saving",
+                            "Campus Greening (Planting more trees, caring for them)"
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {
             "schema_version": "1.0.0",
             "component_id": "key_terms",
             "chapter_id": "eeev104",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Our School — A Happy Place",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
                 "terms": [
                     {
-                        "term": "School",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our School — A Happy Place'."
+                        "term": "Happy Place",
+                        "student_friendly_meaning": "A school environment where everyone feels joyful, safe, and excited to go every day, filled with friends and new opportunities."
                     },
                     {
-                        "term": "Happy",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our School — A Happy Place'."
+                        "term": "Friends",
+                        "student_friendly_meaning": "The people we play with and learn from at school, who make us happy and help us have fun."
                     },
                     {
-                        "term": "Place",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our School — A Happy Place'."
+                        "term": "Safe and Cared For",
+                        "student_friendly_meaning": "A feeling of protection and warmth at school, where we know our well-being is important and we are treated with kindness."
                     },
                     {
-                        "term": "Green",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our School — A Happy Place'."
+                        "term": "Green School",
+                        "student_friendly_meaning": "A school that is environmentally friendly, focusing on protecting nature like planting more trees and looking after animals."
                     },
                     {
-                        "term": "Aasha",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our School — A Happy Place'."
+                        "term": "Care for Plants and Animals",
+                        "student_friendly_meaning": "Learning how to look after nature, like watering plants and treating animals with love."
                     },
                     {
-                        "term": "Mohit",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our School — A Happy Place'."
+                        "term": "Manage Waste",
+                        "student_friendly_meaning": "Being responsible for handling trash at school so we can keep our surroundings clean and healthy."
                     },
                     {
-                        "term": "walking",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our School — A Happy Place'."
+                        "term": "Save Water and Electricity",
+                        "student_friendly_meaning": "Using resources wisely by turning off taps and lights when not needed to save the planet."
                     },
                     {
-                        "term": "school",
-                        "student_friendly_meaning": "A chapter-relevant word or expression used while studying 'Our School — A Happy Place'."
+                        "term": "Campus Green",
+                        "student_friendly_meaning": "Making our school grounds beautiful and lush by planting more trees and taking good care of the outdoor areas."
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.key_terms",
-                "domain": "learning",
-                "description": "Key terms and vocabulary",
-                "chapter_scoped": true
             }
         },
         "story_mode": {

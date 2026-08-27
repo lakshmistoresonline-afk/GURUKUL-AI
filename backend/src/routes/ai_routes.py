@@ -91,3 +91,44 @@ async def generate_embeddings(
         except:
             continue
     raise HTTPException(status_code=502, detail="Failed to generate embeddings")
+
+class DictionaryRequest(BaseModel):
+    word: str
+    context: Optional[str] = ""
+
+@router.post("/dictionary")
+async def dictionary_lookup(
+    request: DictionaryRequest,
+    user: AuthUser = Depends(get_current_user)
+):
+    """Provides a simple dictionary entry for a student."""
+    prompt = f'''
+    Provide a simple dictionary entry for a Class 5-6 student:
+    Word: "{request.word}"
+    Context: "{request.context}"
+
+    Include:
+    1. Meaning (simple words)
+    2. Example sentence
+    3. Fun memory trick to remember it.
+
+    Return as JSON:
+    {{
+      "meaning": "...",
+      "example": "...",
+      "memoryTrick": "..."
+    }}
+    '''
+    schema = {
+        "type": "object",
+        "properties": {
+            "meaning": {"type": "string"},
+            "example": {"type": "string"},
+            "memoryTrick": {"type": "string"}
+        },
+        "required": ["meaning", "example", "memoryTrick"]
+    }
+    result = await orchestrator.generate_structured(prompt, schema, "DICTIONARY")
+    if not result["success"]:
+        raise HTTPException(status_code=502, detail=result["error"])
+    return result["data"]

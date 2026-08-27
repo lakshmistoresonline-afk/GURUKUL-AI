@@ -281,53 +281,45 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "ehve101",
-            "class": 5,
-            "subject": "Hindi",
-            "chapter_title": "किरन",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "किरन (निरंकार देव के सेवक)",
+                "branches": [
                     {
-                        "id": "ehve101_concept_01",
-                        "label": "किरन"
+                        "label": "किरन का मुख्य कार्य (Main Role of Kiran)",
+                        "details": [
+                            "रात में जागना और 'मैं ही सो पाती हूँ' वाली स्थिति बनाए रखना।",
+                            "दूसरी शुकनया (नर्सरी/दिन की जगह) में जाना ताकि दूसरी दुनिया में काम कर सके।",
+                            "निरंकार देव 'सेवक' के रूप में अपनी सेवा करना।"
+                        ]
                     },
                     {
-                        "id": "ehve101_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "किरन की कार्यप्रणाली और प्राथमिकताएं (Kiran's Methodology and Priorities)",
+                        "details": [
+                            "निश्चित समय पर काम करना: 'विणा' के समय और 'सूरज' के प्रकाश के प्रश्न का संदर्भ।",
+                            "प्रकृति के साथ तालमेल: 'उन मौकों' का जिक्र जो सूर्य के प्रकाश के बिना संभव नहीं हैं।",
+                            "मानसिक स्थिति का प्रबंधन: किस समय किससे बात होती है (सुख/शाम) और क्यों (व्यक्तिगत सुविधा)।"
+                        ]
                     },
                     {
-                        "id": "ehve101_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "ehve101_concept_01",
-                        "to": "ehve101_concept_02",
-                        "relation": "explained_by"
+                        "label": "किरन के संबंध में प्रश्न और विचार (Questions and Thoughts related to Kiran)",
+                        "details": [
+                            "किरन के अनुसार वह मुख्य रूप से कौन-सा काम करती है?",
+                            "दिन और शाम के समय में कौन-सा समय अधिक अच्छा लगता है और क्यों (व्यक्तिगत रुचि/कार्य दक्षता के आधार पर)।",
+                            "सूर्य के प्रकाश के प्रभाव में होने वाली गतिविधियों का विश्लेषण।"
+                        ]
                     },
                     {
-                        "from": "ehve101_concept_02",
-                        "to": "ehve101_concept_03",
-                        "relation": "applied_through"
+                        "label": "किरन की स्थिति का संदर्भ (Contextual Setting)",
+                        "details": [
+                            "किरन का स्थान: 'किस्तार' के 'अति कनिल' में न पाई जाना (अपूर्ण अस्तित्व/विशेष परिवेश)।",
+                            "किरन की दिनचर्या: सोने और जागने का क्रम (रात में जागना और दिन में दूसरी शुकनया में जाना)।"
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {

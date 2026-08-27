@@ -346,53 +346,45 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev110",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Earth — Our Shared Home",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Earth — Our Shared Home",
+                "branches": [
                     {
-                        "id": "eeev110_concept_01",
-                        "label": "Earth — Our Shared Home"
+                        "label": "Universal View of Earth",
+                        "details": [
+                            "Earth is completely one, with no visible borders from outside.",
+                            "No states, countries, or borders exist when viewed from space.",
+                            "A unified whole, emphasizing shared planetary identity.",
+                            "Quote: 'We all are part of humanity and the Earth is our one home, and all of us are in it.' (Group Captain Shubhanshu Shukla)"
+                        ]
                     },
                     {
-                        "id": "eeev110_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "The Indian Perspective on Earth",
+                        "details": [
+                            "Wing Commander Rakesh Sharma, the first Indian astronaut, viewed Earth from space.",
+                            "His quote: 'Saare Jahaan Se Achcha' (the best in the entire world).",
+                            "Focus on the beauty and perfection of the Earth."
+                        ]
                     },
                     {
-                        "id": "eeev110_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev110_concept_01",
-                        "to": "eeev110_concept_02",
-                        "relation": "explained_by"
+                        "label": "Our Planet as a Home (Personal Connection)",
+                        "details": [
+                            "We all live on this planet and each of us has a unique address/identity.",
+                            "Activity 1: Define our shared location structure (Name, House number, Street name, Village/Town/City, District, State/Union Territory, Country, Planet)."
+                        ]
                     },
                     {
-                        "from": "eeev110_concept_02",
-                        "to": "eeev110_concept_03",
-                        "relation": "applied_through"
+                        "label": "Geographical Features Visible",
+                        "details": [
+                            "Main visible features: Broad shapes of land masses and the sea.",
+                            "Blue Planet imagery."
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {

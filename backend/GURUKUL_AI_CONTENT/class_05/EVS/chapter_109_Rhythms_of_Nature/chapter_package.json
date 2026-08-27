@@ -346,53 +346,50 @@
             "schema_version": "1.0.0",
             "component_id": "concept_graph",
             "chapter_id": "eeev109",
-            "class": 5,
-            "subject": "EVS",
-            "chapter_title": "Rhythms of Nature",
             "provenance": {
-                "type": "CANONICAL_SOURCE_PLUS_DERIVED_PEDAGOGY",
-                "source": "Uploaded Class 5 NCERT PDF"
-            },
-            "quality": {
-                "chapter_grounded": true,
-                "schema_valid": true,
-                "semantic_unique": true,
-                "runtime_mapped": true,
-                "runtime_mapping_version": "1.0.0"
+                "type": "ENRICHED_BY_AI",
+                "model": "Gemma4-QA-Repair"
             },
             "content": {
-                "nodes": [
+                "topic": "Rhythms of Nature",
+                "branches": [
                     {
-                        "id": "eeev109_concept_01",
-                        "label": "Rhythms of Nature"
+                        "label": "The Celestial Rhythms",
+                        "details": [
+                            "The Sun: Daily cycles (day and night), influence on growth and weather.",
+                            "The Moon: Lunar phases, tides, and their effect on nature and life.",
+                            "Stars: Night sky patterns, constellations, and the rhythm of the night.",
+                            "Connection: How these celestial bodies dictate natural timing (seasons, sleep, and light)."
+                        ]
                     },
                     {
-                        "id": "eeev109_concept_02",
-                        "label": "Evidence and reasoning"
+                        "label": "Earth's Biological Rhythms",
+                        "details": [
+                            "Seasonal Changes: Spring, Summer, Autumn, Winter (cycles of temperature, light, and plant life).",
+                            "Patterns of Plants: Flowering, fruiting, leaf changes, and growth cycles.",
+                            "Animal Cycles: Migration of birds and butterflies, hibernation, and life cycles.",
+                            "Food and Sustenance: How nature provides food and the rhythms of harvesting/seasons."
+                        ]
                     },
                     {
-                        "id": "eeev109_concept_03",
-                        "label": "Application"
-                    }
-                ],
-                "edges": [
-                    {
-                        "from": "eeev109_concept_01",
-                        "to": "eeev109_concept_02",
-                        "relation": "explained_by"
+                        "label": "Nature and Everyday Life",
+                        "details": [
+                            "Connecting Nature to Daily Activities: Observing changes in weather, morning routines, and evening settings.",
+                            "The Living Home: Understanding that Earth is a shared, living home (emphasizing stewardship and care).",
+                            "Human Culture and Nature: How people have used and adapted to natural rhythms (traditions, stories, and traditions linked to seasons).",
+                            "Observation Skills: Encouraging students to actively observe surroundings (weather, flora, fauna)."
+                        ]
                     },
                     {
-                        "from": "eeev109_concept_02",
-                        "to": "eeev109_concept_03",
-                        "relation": "applied_through"
+                        "label": "Deep Connections & Exploration (Activities)",
+                        "details": [
+                            "Observation & Tracking: Using journals and charts to track seasonal changes, weather patterns, and natural occurrences.",
+                            "Field Exploration: Taking hands-on journeys to school grounds, gardens, or nearby ponds to see real-life patterns.",
+                            "Story & Idea Development: Linking natural events (birds, flowers) to stories, ideas, and cultural practices.",
+                            "Personal Reflection: Journaling to connect personal experiences with the rhythms of nature."
+                        ]
                     }
                 ]
-            },
-            "runtime_mapping": {
-                "route": "learning.concept_graph",
-                "domain": "learning",
-                "description": "Concept relationships and graph data",
-                "chapter_scoped": true
             }
         },
         "key_terms": {

@@ -137,7 +137,8 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
         return text;
     }).join('\n\n');
   } else {
-    teacherExplanation = teacherData?.explanation || teacherData?.learning_goal || content.teacher_explanation || content.detailedLesson?.overview || '';
+    teacherExplanation = (typeof teacherData === 'string' ? teacherData : (teacherData?.explanation || teacherData?.learning_goal)) ||
+                         content.teacher_explanation || content.detailedLesson?.overview || '';
   }
 
   // 5. Activities
@@ -164,15 +165,14 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
   // 6. Visual assets
   let mindMap = getComp('concept_graph') || content.mind_map || aiEnrichment.mindMap;
 
-  // Transform V3 concept_graph (nodes/edges) to MindMap format (topic/branches)
-  if (mindMap && Array.isArray(mindMap.nodes)) {
+  // Transform V3 concept_graph to MindMap format
+  if (mindMap && Array.isArray(mindMap.nodes) && mindMap.nodes.length > 0) {
     const nodes = mindMap.nodes;
     const edges = mindMap.edges || [];
     const topic = nodes[0]?.label || 'Chapter Mind Map';
     const branches = nodes.slice(1).map((node: any) => {
         const relatedEdges = edges.filter((e: any) => e.to === node.id || e.from === node.id);
         const details = relatedEdges.map((e: any) => {
-            // Prefer descriptive labels over technical relations
             if (e.relation === 'explained_by') return 'Explanation of core concept';
             if (e.relation === 'applied_through') return 'Practical application';
             return e.relation || 'related';
@@ -180,6 +180,14 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
         return { label: node.label, details };
     });
     mindMap = { topic, branches };
+  } else if (mindMap && mindMap.root && Array.isArray(mindMap.level1)) {
+      // Support hierarchical level1/level2 structure
+      const topic = mindMap.root;
+      const branches = mindMap.level1.map((label: string) => ({
+          label,
+          details: mindMap.level2?.[label] || []
+      }));
+      mindMap = { topic, branches };
   } else if (mindMap && !mindMap.branches) {
       // Fallback for flat structures
       mindMap = {
@@ -223,7 +231,7 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
   const keyTerms = termsData?.terms || content.key_terms || [];
 
   const hindiData = getComp('hindi_summary');
-  const hindiSummary = hindiData?.summary || content.hindi_summary || '';
+  const hindiSummary = (typeof hindiData === 'string' ? hindiData : hindiData?.summary) || content.hindi_summary || '';
 
   const examplesData = getComp('worked_examples');
   const workedExamples = examplesData?.examples || content.worked_examples || [];
@@ -233,7 +241,8 @@ export function normalizeLesson(pkg: any): NormalizedLesson {
     subject: rootChapter.subject || metadata.subject || 'general',
     classNumber: (rootChapter.class || metadata.class_name || '5').toString().split('_').pop() || '5',
     chapterId: rootChapter.chapter_id || metadata.chapterId || pkg.id || 'unknown',
-    introduction: getComp('chapter_content')?.overview || content.introduction || rootChapter.source_key_points?.[0] || '',
+    introduction: (typeof getComp('chapter_content') === 'string' ? getComp('chapter_content') : getComp('chapter_content')?.overview) ||
+                  content.introduction || rootChapter.source_key_points?.[0] || '',
     learningGoals,
     concepts,
     teacherExplanation,

@@ -19,7 +19,8 @@ from .routes import (
     feynman_routes,
     mastery_routes,
     adaptive_routes,
-    general_learning_routes
+    general_learning_routes,
+    assessment_routes
 )
 
 # Setup basic logging
@@ -66,6 +67,7 @@ app.include_router(feynman_routes.router, prefix="/api/feynman", tags=["Feynman 
 app.include_router(mastery_routes.router, prefix="/api/mastery", tags=["Chapter Mastery"])
 app.include_router(adaptive_routes.router, prefix="/api/adaptive", tags=["Adaptive Learning"])
 app.include_router(general_learning_routes.router, prefix="/api/general-learning", tags=["General Learning"])
+app.include_router(assessment_routes.router, prefix="/api/assessment", tags=["Assessment Center"])
 
 @app.on_event("startup")
 async def startup_event():

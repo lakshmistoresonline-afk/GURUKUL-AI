@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, Suspense } from 'react';
+import React, { useState, useEffect, useCallback, Suspense, useMemo } from 'react';
 import { useParams, useSearchParams, useRouter } from 'next/navigation';
 import { chapterService, progressService, masteryService } from '@/services/api';
 import { useAuth } from '@/context/AuthContext';
@@ -17,6 +17,7 @@ import FormattedText from '@/components/FormattedText';
 import { getChapterDisplayData } from '@/utils/chapter';
 import { normalizeLesson } from '@/utils/lesson';
 import MindMap from '@/components/mindmap/MindMap';
+import { voiceService } from '@/services/voice';
 
 const BOILERPLATE_PHRASES = [
   "chapter-relevant word",
@@ -87,21 +88,49 @@ function LearnContent() {
 
   const lesson = pkg ? normalizeLesson(pkg) : null;
 
-  const steps = isRemediating ? ['Remediation'] : [
-    (lesson?.introduction && !isBoilerplate(lesson.introduction)) ? 'Overview' : null,
-    (lesson?.hasAnimation || lesson?.hasMindMap) ? 'Visual Lesson' : null,
-    (lesson?.concepts?.filter(c => c.explanation && !isBoilerplate(c.explanation)).length) ? 'Concepts' : null,
-    (lesson?.workedExamples?.length) ? 'Study Examples' : null,
-    (lesson?.keyTerms?.length) ? 'Glossary' : null,
-    (lesson?.teacherExplanation && !isBoilerplate(lesson.teacherExplanation)) ? 'Study Material' : null,
-    (lesson?.story && !isBoilerplate(lesson.story)) ? 'Story Mode' : null,
-    (lesson?.realWorldApplications?.length || lesson?.caseStudies?.length) ? 'Applications' : null,
-    (lesson?.hindiSummary) ? 'Hindi Summary' : null,
-    'Quick Quiz',
-    (lesson?.flashcards?.length || lesson?.retrievalPractice?.length) ? 'Revision' : null,
-    'AI Tutor',
-    'Finish'
-  ].filter(Boolean) as string[];
+  const steps = useMemo(() => {
+    if (isRemediating) return ['Remediation'];
+    return [
+      (lesson?.introduction && !isBoilerplate(lesson.introduction)) ? 'Overview' : null,
+      (lesson?.hasAnimation || lesson?.hasMindMap) ? 'Visual Lesson' : null,
+      (lesson?.concepts?.filter(c => c.explanation && !isBoilerplate(c.explanation)).length) ? 'Concepts' : null,
+      (lesson?.workedExamples?.length) ? 'Study Examples' : null,
+      (lesson?.keyTerms?.length) ? 'Glossary' : null,
+      (lesson?.teacherExplanation && !isBoilerplate(lesson.teacherExplanation)) ? 'Study Material' : null,
+      (lesson?.story && !isBoilerplate(lesson.story)) ? 'Story Mode' : null,
+      (lesson?.realWorldApplications?.length || lesson?.caseStudies?.length) ? 'Applications' : null,
+      (lesson?.hindiSummary) ? 'Hindi Summary' : null,
+      'Quick Quiz',
+      (lesson?.flashcards?.length || lesson?.retrievalPractice?.length) ? 'Revision' : null,
+      'AI Tutor',
+      'Finish'
+    ].filter(Boolean) as string[];
+  }, [isRemediating, lesson]);
+
+  useEffect(() => {
+    if (isReading && lesson) {
+      // Speak the content of the current step
+      const stepName = steps[currentStep];
+      let textToRead = "";
+
+      switch(stepName) {
+        case 'Overview': textToRead = lesson.introduction; break;
+        case 'Concepts': textToRead = lesson.concepts.map(c => `${c.name}. ${c.explanation}`).join('. '); break;
+        case 'Study Material': textToRead = lesson.teacherExplanation; break;
+        case 'Story Mode': textToRead = lesson.story; break;
+        case 'Hindi Summary': textToRead = lesson.hindiSummary; break;
+        default: textToRead = "";
+      }
+
+      if (textToRead) {
+        voiceService.speak(textToRead.replace(/[#*]/g, ''));
+      }
+    } else {
+      voiceService.stop();
+    }
+
+    return () => voiceService.stop();
+  }, [isReading, currentStep, lesson, steps]);
 
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
