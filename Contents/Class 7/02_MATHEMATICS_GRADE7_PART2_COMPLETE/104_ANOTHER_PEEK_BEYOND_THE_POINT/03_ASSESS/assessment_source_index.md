@@ -1,0 +1,97 @@
+# Assessment / Question Index
+
+Questions detected in the source extraction. This index does not invent answers.
+
+- form 1 followed by zeroes — 10, 100, 1000, etc.? For example, 123
+- ? Look for a pattern in the previous problems.
+- shopkeeper?
+- What operation must we use here?
+- covered with 7.5 litres of petrol?
+- Can the product of two decimals be a natural number?
+- number?
+- evening, 6 days a week. How much does he walk in a week? Answer in
+- write down the product of 5.96 × 24.8?
+- decimals?
+- Multiplied?
+- When is the product of two decimals greater than both the numbers?
+- When is it less than both the numbers?
+- are needed for 3 shirts?
+- ₹15.50 and each eraser was ₹2.75. How much did she spend in all?
+- the cylinder formed by placing 36 rupee coins one over the other?
+- 2.250 kg of oranges? Can we write 56.50 as 56.5 and 2.250 as 2.25
+- and multiply? Will we get the same product? Why?
+- make if he sells 50 books in a week?
+- In which of the cases above is the product less than 1?
+- 9. In which of the following multiplications is the product less than 1?
+- Can you find the answer without actually doing the multiplications?
+- each piece in decimal?
+- So, what is 3.9 ÷ 10?
+- What is the length of each piece if the ribbon is cut into 100 equal pieces?
+- each piece in decimal?
+- What is 0.039 m in centimetres and millimetres?
+- ribbon that each of them will get?
+- 2 into a decimal?
+- with such a denominator?
+- of 2?
+- 4  with such a denominator?
+- Is 4 a factor of 10? No. Is it a factor of 100? Yes. 4 × 25 = 100. So we
+- 100, 1000, etc.?
+- 4 ?
+- equally in 4 bags. What is the weight of each bag of sugar?
+- Example 11: What is the value of 0.06 ÷ 5?
+- 3. What is the quotient?
+- 4. What is the quotient?
+- The distance was 126 km. What was his average speed?
+- Now, what about 4.68 ÷ 0.13?
+- What do you notice in these cases?
+- Does This Ever End?
+- Can you calculate 10 ÷ 3? Try dividing using long division.
+- Will this process end?
+- Can you find the quotients of 10 ÷ 9, and 100 ÷ 11?
+- Will this end?
+- What do you observe? Can you explain why this
+- division never ends?
+- What are the products? What do you notice?
+- Multiply 142857 by 7. What do you observe?
+- Are there other such numbers? Yes!
+- Are there infinitely many such “cyclic” numbers? That is, can we
+- keep finding more cyclic numbers, or do they eventually stop? In 1927,
+- But what happens when we divide 128 by 0.4?
+- divisor is a decimal? Try it out with different values of the divisor .
+- obtained in 2.46  ÷ 0.15?
+- What is the length of each piece?
+- is the length of its side?
+- much watermelon juice will each get? Express the quantity of juice
+- travelled per litre?
+- How much flour did each student receive?
+- 2 × 2 × 2 × 2 × 2 = ?
+- 5 × 5 × 5 × 5 × 5 = ?
+- What pattern do you observe? Why are 2 and 5 related in this way? Math
+- and not 365 days? For our convenience,
+- after 100 such calendar years?
+- Is the year divisible by 4?
+- Do you know which month has this extra day?
+- revolutions around the Sun?
+- is the number of days in 100 calendar years? Can you write an
+- expression to calculate that number?
+- How many years are divisible by 4 in 100 years?
+- Can you form different expressions for the same question?
+- Is the year divisible by 100?
+- The year has 365 days Is the year divisible by 4?
+- years with this new adjustment?
+- This is close to 36524.22 days but is it close enough? What happens
+- after 1000 years with this adjustment?
+- Is the year divisible by 400?
+- The year has 366 days Is the year divisible by 100?
+- Is the year divisible by 4?
+- In 1000 calendar years, how many years are divisible by 400? 2.
+- divisible by 400? 10 – 2 = 8.
+- divisible by 100 and 400? 250 – 10 = 240.
+- Sun? What is the difference? If there is a big
+- problem?
+- revolution around the Sun in exactly 364.2422 days?
+- packet of potato chips costs ₹33.25. Which is cheaper?
+- the bananas?
+- 160 cm long. How many books could be placed on the shelf? W
+- there any space left? If yes, how much?
+- fractions into decimals?

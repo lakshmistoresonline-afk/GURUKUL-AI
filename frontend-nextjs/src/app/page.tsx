@@ -169,14 +169,14 @@ export default function HomePage() {
                  <ArrowRight className="text-blue-600" />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                 {selectedClass.subjects.map((subj) => (
+                 {selectedClass.subjects && selectedClass.subjects.map((subj) => (
                     <Link key={subj.id} href={`/subject/${subj.id}`} className="bg-white border-2 border-slate-100 rounded-[32px] p-6 hover:border-blue-600 hover:shadow-xl transition-all group flex flex-col gap-6">
                        <div className="w-10 h-10 bg-slate-50 rounded-xl flex items-center justify-center text-slate-300 group-hover:bg-blue-600 group-hover:text-white transition-all">
                           <Book size={18} />
                        </div>
                        <div>
                           <h3 className="text-xl font-black text-slate-900 uppercase italic leading-tight">{subj.name}</h3>
-                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">{subj.chapters.length} Chapters</p>
+                          <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">{subj.chapters?.length || 0} Chapters</p>
                        </div>
                        <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest mt-auto">Explore &rarr;</span>
                     </Link>

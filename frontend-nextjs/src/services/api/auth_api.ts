@@ -25,11 +25,17 @@ export const authApi = {
 // Axios Interceptor for Authorization
 axios.interceptors.request.use(
   (config) => {
-    const user = localStorage.getItem('gurukul_user');
-    if (user) {
-      const stored = JSON.parse(user);
-      if (stored.token) {
-        config.headers.Authorization = `Bearer ${stored.token}`;
+    if (typeof window !== 'undefined') {
+      const user = localStorage.getItem('gurukul_user');
+      if (user) {
+        try {
+          const stored = JSON.parse(user);
+          if (stored.token) {
+            config.headers.Authorization = `Bearer ${stored.token}`;
+          }
+        } catch (e) {
+          console.error("Error parsing user from localStorage", e);
+        }
       }
     }
     return config;
@@ -41,11 +47,8 @@ axios.interceptors.request.use(
 axios.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401) {
+    if (error.response?.status === 401 && typeof window !== 'undefined') {
       localStorage.removeItem('gurukul_user');
-      // Optional: window.location.href = '/';
-      // We'll let the app handle redirection if needed,
-      // but clearing storage stops the polling.
     }
     return Promise.reject(error);
   }

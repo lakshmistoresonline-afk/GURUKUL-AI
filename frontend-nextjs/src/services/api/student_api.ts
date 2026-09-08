@@ -48,7 +48,7 @@ export interface ChapterFull {
     assess: ContentBlock[];
     revise: ContentBlock[];
     resources: ContentBlock[];
-    traceability: any[];
+    traceability?: any[];
 }
 
 export const studentApi = {

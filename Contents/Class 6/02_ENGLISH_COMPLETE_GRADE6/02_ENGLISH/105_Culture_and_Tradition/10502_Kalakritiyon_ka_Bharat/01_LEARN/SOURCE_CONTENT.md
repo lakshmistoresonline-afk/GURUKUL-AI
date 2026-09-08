@@ -1,0 +1,806 @@
+# Kalakritiyon ka Bharat
+
+--- SOURCE PAGE 3 ---
+Culture and Tradition
+
+
+
+
+            	Let us read
+                                                     I
+            “So, are you ready to meet your friends from all over the country?”
+            the teacher asked the students sitting in the big hall.
+               “Yes!” was the loud answer from the class.
+               “Can someone tell me for which programme are we here?”
+            the teacher asked.
+               “Ek Bharat, Shreshtha Bharat”, the students answered together
+            again.
+               “Please raise your hand to tell me what it is all about,” the
+            teacher said.
+               Many hands went up and some were jumping to answer. The
+            teacher asked Renu. With a smile on her face, she said, “It is to
+            know that we all belong to one nation and that is the bond we
+            share. And our unity in diversity makes us the most wonderful
+            country in the world.”
+
+            Let us discuss
+              1. What is the Ek Bharat, Shreshtha Bharat programme all about?
+              2. Why is this programme being conducted?
+
+
+
+
+                                                    II
+            The teacher smiled at her as everyone clapped. Just then, Bala
+            pointed out, “Look! The video has started!” The big screen now
+            had little windows each with a smiling child. Each child had
+            something to share.
+
+
+
+
+                                                                                    133
+
+                                           Reprint 2026-27
+
+Unit 5.indd 133                                                                     09-Dec-24 3:56:39 PM
+
+--- SOURCE PAGE 4 ---
+Poorvi—Grade 6
+
+
+
+
+               Pranam! I am
+            Aakansha         from
+            Uttarakhand. I am
+            going to tell you
+            about Aipan, our folk                                  geru: red clay
+            art, that we draw on                                   used as colour
+            family functions and
+            festivals. It is done
+                                          Aipan—Folk art
+            with white rice flour
+            paste on brick-red
+            walls coloured with geru. It is made on floors
+            and walls of puja rooms, and outside the main
+            door of the home. It is an art form made by
+            the women in the family. The designs are very
+            beautiful and mathematical, and are based on
+            our cultural traditions, and observations of
+            nature.
+               Suprabhat!     I     am
+            Priyaranjan from Odisha.
+            My tribe practises a
+            4000-year-old metal craft
+            named Dhokra. To begin,
+            we make a figure with
+            clay, dry it, and cover
+            it with a layer of wax.                Dhokra          carve: to make
+            Then, we carve the fine                                design with
+            details on the wax. After that, we cover the figure    sharp tool
+            with clay, and put it in the fire. The wax melts and
+            comes out of small openings. Next, brass scrap         scrap: small
+            is melted and poured into the empty space. The         unwanted pieces
+
+            liquid metal takes the same shape as the wax.
+
+
+
+             134
+
+                                          Reprint 2026-27
+
+Unit 5.indd 134                                                                     09-Dec-24 3:56:41 PM
+
+--- SOURCE PAGE 5 ---
+Culture and Tradition
+
+
+
+
+            Finally, we remove the outer layer of clay and
+            finish the metal figure as we want.
+                Suprabhaatam! I am
+            Chitra from Kerala. I want
+            to tell you about coconut
+            shell craft. First, we clean
+            the outside and inside of a
+            brown coconut shell. After      Coconut shell craft
+
+            that, we make it smooth by using sandpaper or
+            a machine. Then we give it the shape we want,
+            and make it stable by fixing a base under it.         stable: not able
+                                                                  to move
+            At last, we polish it using wood polish to make
+            it shine. We make household things like bowls
+            and even jewellery from the coconut shells. It        biodegradable:
+                                                                  something that
+            is a biodegradable craft.
+                                                                  will not harm the
+                  Subhodayam!   I  am Balamurali from             environment
+                                    Andhra Pradesh. I
+                                    want to tell you about
+                                    the 400-year-old art
+                                    of making toys in my
+                                    village,   Kondapalli.
+                                    To make the toys, we
+                   Kondapalli       take soft wood from           tamarind: an
+                                   the nearby hills. After        edible sour fruit
+            that, we carve each part of the toy separately.
+            Then, we use makku—a paste of tamarind
+            seed powder and sawdust to join the pieces            sawdust: dust of
+                                                                  wood
+            together. Next, we add details and finish the
+                                                                  dyes: colours
+            toys. Finally, we use oil and water-colours or
+                                                                  enamel: paints
+            vegetable dyes and enamel paints to colour            that form a
+            them. These toys are based on folk stories,           protective layer
+            animals, birds, bullock carts, rural life, etc.
+
+                                                                                  135
+
+                                          Reprint 2026-27
+
+Unit 5.indd 135                                                                   09-Dec-24 3:56:42 PM
+
+--- SOURCE PAGE 6 ---
+Poorvi—Grade 6
+
+
+
+
+            Let us discuss
+            On the basis of what the speakers said about the art forms, complete the
+            table given below.
+
+                  Name of the child        State              Art form       Things needed
+
+             Akanksha                                      Aipan
+                                                                         clay, brass scrap, wax,
+             Priyaranjan
+                                                                         fire
+             Chitra
+
+             Balamurali               Andhra Pradesh       Kondapalli
+
+
+
+
+                      Let us think and reflect
+                  I Fill in the blanks to complete the following sentences.
+                    1. The designs for Aipan are taken from ________________ and
+                       ________________.
+                    2. Dhokra metal craft is very old because it is ________________ old.
+                    3. A base is needed for coconut shell craft to make it ________________.
+                    4. Soft wood, ________________ and colours are used to make Kondapalli
+                       toys.
+                  II Why does Akanksha’s family make Aipan?
+             III In Dhokra, why does wax come out of the small openings?
+             IV What is common in the toys made in Balamurali’s village and coconut
+                shell craft in Kerala?
+
+
+
+
+             136
+
+                                                   Reprint 2026-27
+
+Unit 5.indd 136                                                                               09-Dec-24 3:56:42 PM
+
+--- SOURCE PAGE 7 ---
+Culture and Tradition
+
+
+
+
+            	Let us learn
+                  I Priyaranjan, Chitra and Balamurali share how art works of their states
+                    are made. They use some words to show the order of making it. Those
+                    words are given in the box below.
+            		              to begin           first                 then             after that
+                                        next             finally            at last
+
+            		 Now, use some of these words to complete the paragraph given below.
+               Use one word only once.
+
+                                          How I Get Ready for School
+
+            		1. ____________ I get up and go to take a shower. 2. ____________, I wear
+              my school dress. 3. ____________, I eat my food. 4. ____________, I wear my
+              shoes. 5. ____________, I pick up my bag and go out of my home.
+                  II The children from different states each speak about one art form from
+                     their state. When they speak, they use the first form of the verb. It shows
+                     something that happens regularly. It is called the present tense. With
+                     he, she and it, -s/-es is used with the verb to show the present tense.
+                     Make five sentences with the help of the words given in the table below.
+                     Use -s/-es wherever necessary. Two examples are given.
+
+                     Pronouns     Verbs        Part of a sentence                Complete Sentences
+
+                     I           ask           how to dance.                I know how to dance.
+
+                     You         know          questions to understand.     We
+
+                     He          tell          beautiful flowers.           You
+                                               a story every day.           He speaks very loudly.
+                     She         draw
+                                               very loudly.                 She
+                     It          make
+                                               paintings in free periods. They
+                     We          practise
+
+                     They        speak         spellings on Friday.         It
+
+
+
+
+                                                                                                     137
+
+                                                       Reprint 2026-27
+
+Unit 5.indd 137                                                                                      09-Dec-24 3:56:42 PM
+
+--- SOURCE PAGE 8 ---
+Poorvi—Grade 6
+
+
+
+
+            	Let us listen
+                  I Listen to the description of gakkad bharta and complete the notes
+                    given below. (refer to page 162 for transcript)
+                                                   Gakkad Bharta
+                    1. Name of the speaker                   :   __________________________
+                    2. The town of the speaker               :   __________________________
+                    3. The state he belongs to               :   __________________________
+                    4. The name of the food item             :   __________________________
+                    5. Vegetables roasted for bharta :           __________________________
+                  II Now, listen to the description again and complete the flowchart on how
+                     to make gakkad bharta.
+
+                                 To make gakkad, make balls of ___________ dough and
+                        1
+                                 ___________ them on high heat.
+                                 To make bharta, ___________ brinjal and tomatoes and garnish
+                        2
+                                 with ___________ onions, coriander, green chillies and salt.
+                                  To serve, crumble the gakkad, put some ___________ on it and
+                        3
+                                 add one spoon of ghee.
+
+
+            	Let us speak
+              1. Speak about a local art form of your region. It can be any one out of
+                 painting, rangoli, metal craft, embroidery, music, dance or drama.
+                 Remember to include:
+                      • the name of the art form
+                      • what things do they need for it
+                      • how do they make/present it
+              2. You may use the words given below when you speak.
+                      • I know about the art form called …
+                      • They need ...
+                      • To make it, first ... after that ... next ... then ... at last ...
+
+
+             138
+
+                                                      Reprint 2026-27
+
+Unit 5.indd 138                                                                                  09-Dec-24 3:56:42 PM
+
+--- SOURCE PAGE 9 ---
+Culture and Tradition
+
+
+
+
+            	Let us write
+                  You heard children from different states speak about the art forms from
+                  their state. Discuss in pairs which art form you liked the most.
+                  Now, write a paragraph with five sentences giving your reasons for
+                  liking it.
+
+
+            	Let us explore
+              1. Madhubani painting is a traditional art form from Bihar. The artists use
+                 natural colours to make them on the walls of their houses. You can also
+                 make and use natural colours as given below.
+                   • yellow from haldi
+                   • green from leaves
+                   • red from red flowers/geru/sindoor
+                   • orange from flowers
+                   • blue from neel/indigo powder
+           Given below is a Madhubani painting. Colour it with natural colours or any
+           other colour.
+
+
+
+
+                                                                                       139
+
+                                             Reprint 2026-27
+
+Unit 5.indd 139                                                                        09-Dec-24 3:56:43 PM
+
+--- SOURCE PAGE 10 ---
+Poorvi—Grade 6
+
+
+
+
+            2.    Ek Bharat, Shreshtha Bharat Programme
+                  Bharat has diverse languages, cuisines, music, dance, theatre, movies
+                  and films, handicrafts, sports, literature, festivals, paintings, sculptures,
+                  etc. The Ek Bharat, Shreshtha Bharat programme aims to enhance
+                  interaction and promote mutual understanding between people of
+                  different states/UTs through the concept of state/UT pairing. This is to
+                  celebrate the unity in diversity and strengthen the emotional bonds
+                  between its citizens. The vision is to enable people to develop a sense
+                  of common identity by sharing best practices and experiences. The
+                  programme aims to contribute to nation building by highlighting the
+                  inter-connectedness between various cultures and traditions.
+
+
+
+
+             140
+
+                                                Reprint 2026-27
+
+Unit 5.indd 140                                                                           09-Dec-24 3:56:44 PM
+
+--- SOURCE PAGE 11 ---
+Culture and Tradition
+
+
+
+
+                                                 The Kites
+            Let us do these activities before we read.
+                  I Answer the following questions and share them with your teacher and
+                    classmates.
+                     1. Have you ever flown a kite or seen someone fly it? Where? When?
+                     2. Describe the kite—colour(s), shape, design of tail, any other detail.
+                     3. What did you think when you saw the kite up in the sky?
+                  II Search the internet for videos on Kite Festivals and watch them with
+                     your teacher and classmates.
+                    1. Share the things with your teacher that you saw and what the people
+                       were doing.
+                    2. Would you like to participate in this kind of festival? Why?
+                    3. What kind of kite would you like to fly?
+             III Look at the picture and complete the sentences. Share your responses
+                 with your teacher.
+
+                      windy     kite    flying    birds      sky     looking   has ribbons
+
+
+                    1. I can see ___________, ___________ and ___________
+                       in the picture.
+                    2. The weather in the picture is ___________.
+                    3. The kite is ___________ high in the sky.
+                    4. The child is ___________ from below.
+                    5. The tail of the kite ___________.
+
+             IV Now, think and answer.
+                    1. List two more things that you want to add to the picture.
+                    2. If I were the child, I would ___________.
+                    3. If I were the kite, I would ___________.
+
+
+                                                                                                 141
+
+                                                   Reprint 2026-27
+
+Unit 5.indd 141                                                                                  09-Dec-24 3:56:44 PM
+
+--- SOURCE PAGE 12 ---
+Poorvi—Grade 6
+
+
+
+
+            	Let us read
+
+                                   Up in the air
+                                 See the kites fly,
+                               Like coloured birds
+                             In the wind-whipped sky.
+
+                                I wish I were small
+                                  And light as air,
+                              I would climb on a kite
+                                And sail up there.
+
+                             Then I would drift upon
+                                 The paper wings,
+                                And hear the songs
+                             That the wild wind sings.
+
+                               What fun it would be
+                               To look right down,
+                                  Over the park
+                             And the rooftops of town.
+
+                                The people below
+                              Would stand and stare,
+                             And wish they were me
+                               High, high in the air.
+
+                                                Daphne Lister
+
+
+
+
+             142
+
+                                     Reprint 2026-27
+
+Unit 5.indd 142                                                 09-Dec-24 3:56:47 PM
+
+--- SOURCE PAGE 13 ---
+Culture and Tradition
+
+
+
+
+            Let us discuss
+                  I Read the poem silently. As you read, mark the given statements as True
+                    or False.
+
+                                                Statements                               T/ F
+
+                     1. The child is looking at the kites.
+
+                     2. The kites look like birds of different colours.
+
+                     3. It was a rainy day.
+
+                     4. The child wants to be like a kite.
+
+                     5. The child wishes to climb on a kite.
+
+                     6. The kite is made of cloth and plastic.
+
+                     7. The child wants to ride the kite.
+
+                     8. The child knows they would have fun.
+
+                     9. The child wants to look at the kite from a rooftop.
+
+                     10. The child would like to look at people down below.
+
+                     11. The child knows that the people would stare.
+
+
+                  II Complete the following sentences.
+
+                     1.   The poet says that the kites are like coloured birds –
+                          See the kites fly/Like coloured birds in the sky.
+            		 The kites have been compared to b __ __ __ __ because they
+               ______________.
+
+                     2.   The child wishes to be like air – I wish I were small / And as light
+                          as air.
+            		 The child wishes to be as l __ __ __ t as __ __ __. The child wishes this
+               to be able to c __ __ m __ on a kite and fly.
+
+
+
+                                                                                                143
+
+                                                     Reprint 2026-27
+
+Unit 5.indd 143                                                                                 09-Dec-24 3:56:47 PM
+
+--- SOURCE PAGE 14 ---
+Poorvi—Grade 6
+
+
+
+
+                          The poet uses simile in 1 and 2 to compare the kites with coloured
+                          birds and the quality of being light as air. The poet uses ‘like’ and
+                          ‘as’ to compare.
+
+                    Do you think that the use of simile in this poem helps us imagine better
+                    when we read the poem? Share your thoughts with your teacher and
+                    classmates.
+              III Find a set of words from the poem that begin with the same consonant
+                  sound.
+                    Stanza 1
+                    Which consonant sound do both words begin with?
+                    Stanza 3
+                    Which consonant sound do both words begin with?
+                    This is called alliteration. For example, big bright blue bag, funny fan,
+                    etc.
+                    Create 4 other sets of words using alliteration.
+              IV In the last stanza, the two words that the poet repeats are __________,
+                 __________ to tell us that the kite is flying __ __ __ y high.
+                  V Study each stanza and underline the rhyming words from the end of
+                    each line. Also, circle the end words in the stanzas that do not rhyme.
+
+
+
+                        Let us think and reflect
+                   I Read the given lines from the poem and answer the following questions.
+            			           What fun it would be
+            			           To look right down,
+            			           Over the park
+            			           And the rooftops of town.
+                    1. Circle the word that does not share the same feeling as ‘fun’:
+                       joy, excitement, care, happiness.
+
+
+                  144
+
+                                                    Reprint 2026-27
+
+Unit 5.indd 144                                                                                   18-Mar-25 3:05:55 PM
+
+--- SOURCE PAGE 15 ---
+Culture and Tradition
+
+
+
+
+                    2. Which line tells us that the poet was somewhere above?
+                    3. Choose the scene the child saw.
+
+
+                       (i)                                         (ii)
+
+
+
+
+                       (iii)                                       (iv)
+
+
+
+
+                  II Answer the following questions.
+                    1. How does the poet describe the kites in the first two lines?
+                    2. Why does the child say that they have to climb a tree first to get onto
+                       the kite?
+                    3. What are the songs that the child hears when flying atop the kite?
+                    4. Why did the people look up at the child and stare? If you looked up
+                       and saw that, what feelings would you have?
+                    5. If you were the kite carrying the child high up in the air, what would
+                       you tell them?
+
+
+
+
+                                                                                            145
+
+                                                 Reprint 2026-27
+
+Unit 5.indd 145                                                                             09-Dec-24 3:56:50 PM
+
+--- SOURCE PAGE 16 ---
+Poorvi—Grade 6
+
+
+
+
+                        Let us learn
+                   I Look at the picture of the kite and read what some of its parts are named.
+
+                                                    Nose
+
+                                                                              Spine
+
+
+
+
+                         Cover
+
+
+
+                                                                                  Kite line
+
+
+
+
+                                   Tail
+
+
+
+                                                                               Reel
+
+
+                    Now, complete the given conversation by filling the blanks with some
+                    ‘parts of a kite’ from above.
+                    Bina : I like the long t _ _ _ at the end of my kite. What is your
+                           kite like?
+                    Saroj : My kite’s c _ _ _ _ _ is bright. The s _ _ _ e is black.
+                    Bina : Oh wonderful! My kite’s l _ _ _ is attached to the r_ _ l that
+                            wraps it. I really like it.
+                    Saroj : Did you know that the tip of a kite is called a _ _ s _?
+                    Bina : Wonderful! Thanks for letting me know. Let's go and fly our
+                           pretty kites.
+
+
+
+                  146
+
+                                                   Reprint 2026-27
+
+Unit 5.indd 146                                                                               18-Mar-25 2:57:43 PM
+
+--- SOURCE PAGE 17 ---
+Culture and Tradition
+
+
+
+
+                  II Let us create a poem using words in a kite!
+
+                     The first line is the subject. Keep this to one
+                                                                                    kite
+                     word. Use a noun.
+
+                     The second line is two describing words for the
+                                                                                    pretty, colourful
+                     noun.
+
+                     Line three includes three action words.                        flying, floating, soaring
+
+                     Line four uses two words that describe the action
+                                                                       quickly, happily
+                     words.
+
+                     Line five is one word that has the same meaning
+                                                                                    paper-bird
+                     as the subject/synonym.
+
+
+
+
+                                                                                      ____________
+                                      Kite
+                                                                               ____________ ____________
+                               pretty, colourful
+                           flying, floating, soaring                     ____________ ____________ ____________
+                               quickly, happily                                ____________ ____________
+                                  paper-bird
+                                                                                      ____________
+
+
+
+
+            		 This is called a cinquain poem. It is a five line poem that describes
+               a person, a place or a thing.
+            		 Now, create a cinquain poem yourself on anything you like.
+             III The poet uses the word ‘fly’ and ‘drift’ to tell us about the kite’s movement.
+
+
+
+
+                                                                                                             147
+
+                                                       Reprint 2026-27
+
+Unit 5.indd 147                                                                                              09-Dec-24 3:56:52 PM
+
+--- SOURCE PAGE 18 ---
+Poorvi—Grade 6
+
+
+
+
+                         1. Circle the words that match with the ‘drift’ movement. You can
+                            choose more than one word.
+            		slow                          fast                      quick    upward
+                           downward         round and round           float
+                         2. Study some other words about the kite’s movement and share
+                            what type of movement they show. You can look at 1 for the type of
+                            movement.
+
+                               glide       dive         soar           swoop       circle
+
+
+              IV The poet has used expressions like—
+            		 up in the air; look right down; stay up there; stand and stare
+                        1. Read how these expressions are used in the poem.
+                        2. In pairs, make sentences using these expressions. Discuss with
+                           your teacher and then write in your notebooks.
+
+
+                         Let us listen
+            		 Listen about the Kite Festival in India. As you listen, circle the words that
+               are not correct. Then, listen again and write the correct words. (refer to
+               page 163 for transcript)
+                        1. Kite Festival is celebrated during the month of June.
+                        2. The International Kite Festival is named Uttarayan in Eastern India.
+                        3. Uttarayan is mainly celebrated in Gujarat, but also in Maharashtra
+                           and Telangana.
+                        4. During the Kite Festival, we can see kites of different shapes, sizes
+                           and colours.
+                        5. In Karnataka, the Tourism Department organises the Kite Festival
+                           every year.
+
+
+
+
+                  148
+
+                                                    Reprint 2026-27
+
+Unit 5.indd 148                                                                              18-Mar-25 3:06:01 PM
+
+--- SOURCE PAGE 19 ---
+Culture and Tradition
+
+
+
+
+                  6. The Punjab region celebrates Basant Panchami and Baisakhi by
+                     flying kites.
+                  7. People of India also enjoy flying kites on Earth Day.
+
+
+            	Let us speak
+                  Share a kite-flying experience with your classmates. If you have not
+                  flown a kite yet, share an experience of watching kites fly. Give details—
+                  Where? When? Why? How? Speak in complete sentences.
+
+
+            	Let us write
+              1. Imagine yourself as a kite. In pairs, first discuss all the following hints.
+                   • What shape of kite are you? What colours do you have? What other
+                     parts of yourself are you happy about?
+                   • Where are you? Who do you belong to? What activities do you do?
+                     Who are your friends?
+                   • Do you have any message for humans?
+              2. Now, write a paragraph of about 100 words, with the title—I am a Kite.
+
+
+
+            	Let us explore
+                   I The mention of kites exists in ancient Indian texts. It can be found
+                     in the poetry of the thirteenth-century Marathi saint and poet,
+                     Namadeva. In his poems or gathas, he called a kite a gudi, and there
+                     is a mention that the kites were made from kaagad (paper).
+                  II Have a look at some of the different types of kites. Choose which
+                     one is commonly seen.
+
+
+
+
+                                                                                            149
+
+                                               Reprint 2026-27
+
+Unit 5.indd 149                                                                             09-Dec-24 3:56:52 PM
+
+--- SOURCE PAGE 20 ---
+Poorvi—Grade 6
+
+
+
+
+                        Parafoil                       Delta                 Rokkaku
+
+
+
+
+                                   Diamond-shaped kite                Box kites
+
+
+
+                    1. Find out the steps to make a kite.
+                    2. Follow the steps and create your own kite. Bring it to school to show
+                       your teacher and classmates.
+                    3. Write a message on the kite. For example: Happy Independence Day!
+
+
+
+
+                  150
+
+                                                 Reprint 2026-27
+
+Unit 5.indd 150                                                                        18-Mar-25 3:00:59 PM
