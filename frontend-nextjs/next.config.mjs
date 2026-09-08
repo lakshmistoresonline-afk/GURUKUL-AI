@@ -9,8 +9,8 @@ const withPWA = withPWAInit({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Only use static export for production builds to avoid hot-reload issues in dev
-  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
+  // Disable static export to support dynamic routes without generateStaticParams
+  // output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
   images: {
     unoptimized: true,
     remotePatterns: [

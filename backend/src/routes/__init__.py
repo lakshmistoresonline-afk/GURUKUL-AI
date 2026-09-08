@@ -1,1 +1,0 @@
-# Gurukul AI Backend Routes

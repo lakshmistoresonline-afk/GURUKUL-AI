@@ -10,12 +10,14 @@
     "desktop:dev": "npm --prefix ../desktop run dev",
     "desktop:build": "npm --prefix ../desktop run build",
     "clear-sw": "cmd /c \"del /f /q public\\sw.js public\\workbox-*.js 2>nul\"",
-    "clean": "npm run clear-sw && cmd /c \"if exist .next rd /s /q .next & if exist out rd /s /q out\""
+    "clean": "npm run clear-sw && cmd /c \"if exist .next rd /s /q .next & if exist out rd /s /q out\"",
+    "test:e2e:certify": "powershell -ExecutionPolicy Bypass -File ../certify_class5.ps1"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.20",
     "axios": "^1.7.2",
     "clsx": "^2.1.1",
+    "date-fns": "^4.4.0",
     "firebase": "^10.12.5",
     "framer-motion": "^11.3.21",
     "katex": "^0.18.4",
@@ -31,6 +33,7 @@
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
