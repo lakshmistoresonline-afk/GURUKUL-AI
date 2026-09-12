@@ -1,0 +1,261 @@
+{
+  "schema_version": "gurukul-ground-truth-certification-v1",
+  "generated_at": "2026-09-11T15:49:11.971307+00:00",
+  "status": "PRODUCTION_CERTIFIED",
+  "methodology": {
+    "source_authority": "Current repository artifacts only",
+    "runtime_educational_definition": "learn + practice + assess + revise + resources",
+    "runtime_student_facing_definition": "learn + practice + assess + revise",
+    "runtime_internal_forensic_definition": "resources + traceability metadata in the legacy forensic script; not equivalent to Class 5 adapter internal source records",
+    "class5_adapter_internal_definition": "source_records where student_facing is false",
+    "class5_adapter_student_facing_includes_resources": true,
+    "traceability_policy": "metadata/provenance is reported separately and is never counted as educational content",
+    "obsolete_hardcoded_certification": "Not used"
+  },
+  "source_files": {
+    "exists": true,
+    "files": 3108,
+    "by_suffix": {
+      ".csv": 1,
+      ".jpg": 3,
+      ".json": 1947,
+      ".md": 308,
+      ".pdf": 207,
+      ".png": 1,
+      ".txt": 641
+    }
+  },
+  "runtime": {
+    "chapter_files": 183,
+    "pillar_counts": {
+      "learn": 1294,
+      "practice": 1574,
+      "assess": 788,
+      "revise": 156,
+      "resources": 66
+    },
+    "student_facing": 3812,
+    "runtime_resources": 66,
+    "traceability_metadata_entries": 549,
+    "legacy_forensic_internal": 615,
+    "legacy_forensic_processed": 4427,
+    "processed_runtime_educational": 3878,
+    "classes": {
+      "class_5": {
+        "learn": 921,
+        "practice": 1428,
+        "assess": 642,
+        "revise": 155,
+        "resources": 66
+      },
+      "class_6": {
+        "learn": 191,
+        "practice": 69,
+        "assess": 64,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_7": {
+        "learn": 182,
+        "practice": 77,
+        "assess": 82,
+        "revise": 1,
+        "resources": 0
+      }
+    },
+    "subjects": {
+      "class_5/01_english_complete": {
+        "learn": 85,
+        "practice": 308,
+        "assess": 160,
+        "revise": 71,
+        "resources": 30
+      },
+      "class_5/02_hindi_complete": {
+        "learn": 327,
+        "practice": 377,
+        "assess": 250,
+        "revise": 84,
+        "resources": 36
+      },
+      "class_5/03_evs_complete": {
+        "learn": 0,
+        "practice": 477,
+        "assess": 61,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_5/03_maths_complete": {
+        "learn": 509,
+        "practice": 266,
+        "assess": 171,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_6/02_english_complete_grade6": {
+        "learn": 77,
+        "practice": 0,
+        "assess": 0,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_6/02_hindi_complete_grade6": {
+        "learn": 38,
+        "practice": 17,
+        "assess": 17,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_6/02_mathematics_complete_grade6": {
+        "learn": 23,
+        "practice": 17,
+        "assess": 15,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_6/03_science_complete_grade6": {
+        "learn": 23,
+        "practice": 17,
+        "assess": 17,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_6/03_social_science_complete_grade6": {
+        "learn": 30,
+        "practice": 18,
+        "assess": 15,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_7/02_english_grade7_complete": {
+        "learn": 28,
+        "practice": 22,
+        "assess": 23,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_7/02_hindi_grade7_complete": {
+        "learn": 25,
+        "practice": 15,
+        "assess": 12,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_7/02_mathematics_grade7_part1_complete": {
+        "learn": 26,
+        "practice": 0,
+        "assess": 0,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_7/02_mathematics_grade7_part2_complete": {
+        "learn": 19,
+        "practice": 11,
+        "assess": 10,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_7/03_science_grade7_complete": {
+        "learn": 28,
+        "practice": 0,
+        "assess": 0,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_7/03_social_science_grade7_part1_complete": {
+        "learn": 37,
+        "practice": 16,
+        "assess": 17,
+        "revise": 0,
+        "resources": 0
+      },
+      "class_7/03_social_science_grade7_part2_complete": {
+        "learn": 19,
+        "practice": 13,
+        "assess": 20,
+        "revise": 1,
+        "resources": 0
+      }
+    },
+    "parse_errors": [],
+    "traceability_shapes": {
+      "dict": 183
+    }
+  },
+  "class5_adapter": {
+    "manifest_present": true,
+    "manifest": {
+      "chapter_count": 47,
+      "student_facing_records": 3212,
+      "student_facing_unique_ids": 3212,
+      "source_records": 3771,
+      "source_unique_ids": 3751,
+      "internal_records": 559,
+      "student_id_collisions": 0,
+      "generated_student_records": 166,
+      "source_derived_student_records": 3046,
+      "adapter_version": "CLASS5_CANONICAL_ADAPTER_V2"
+    },
+    "derived_from_runtime": {
+      "chapter_files": 47,
+      "student_facing": 3212,
+      "resources": 66,
+      "source_records": 3771,
+      "internal_source_records": 559,
+      "student_unique_ids": 3212,
+      "source_unique_ids": 3751,
+      "student_id_collisions": 0
+    }
+  },
+  "record_count_reconciliation": {
+    "present": true,
+    "path": "D:\\GURUKUL-AI\\RECORD_COUNT_RECONCILIATION.json",
+    "grand_totals": {
+      "processed": 4427,
+      "student_facing": 3812,
+      "internal": 615
+    }
+  },
+  "canonical_validation_evidence": {
+    "files_examined": [
+      "CANONICAL_VALIDATION_PROMOTION_EVIDENCE.txt"
+    ],
+    "canonical_136_of_136_found": true,
+    "promoted_440_found": true,
+    "validation_mentions": [
+      {
+        "file": "CANONICAL_VALIDATION_PROMOTION_EVIDENCE.txt",
+        "evidence": "Jobs=136; Validated=136; Failed=0; Promotable=136"
+      },
+      {
+        "file": "CANONICAL_VALIDATION_PROMOTION_EVIDENCE.txt",
+        "evidence": "Promoted files=440; PROMOTION COMPLETE"
+      }
+    ]
+  },
+  "checks": {
+    "runtime_matches_reconciliation": true,
+    "traceability_not_treated_as_educational": true,
+    "class5_manifest_matches_runtime": true,
+    "class5_source_accounting_balances": true,
+    "no_runtime_parse_errors": true,
+    "class5_student_id_collisions_zero": true,
+    "canonical_validation_136_of_136": true,
+    "promotion_440_files": true,
+    "obsolete_certification_values_used": true
+  },
+  "failures": [],
+  "obsolete_values_documented_but_not_used": {
+    "32876": "obsolete processed total",
+    "31179": "obsolete student-facing total",
+    "1697": "obsolete internal total",
+    "9990": "obsolete recovery delta",
+    "1199": "obsolete hard-coded source-page count"
+  },
+  "certification_notes": [
+    "Different accounting populations are intentionally not forced to match.",
+    "Class 5 adapter source_records include both student-facing and internal source-preservation records.",
+    "The legacy forensic script's traceability count is metadata structure accounting, not a source-record internal count.",
+    "The certification must be regenerated after any content/runtime rebuild."
+  ]
+}

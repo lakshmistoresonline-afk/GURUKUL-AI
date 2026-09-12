@@ -1,0 +1,55 @@
+{
+  "certification": {
+    "name": "GURUKUL AI — COMPLETE API FIDELITY CERTIFICATION",
+    "status": "API_FIDELITY_PASS",
+    "started_utc": "2026-09-11T17:22:21Z",
+    "completed_utc": "2026-09-11T17:22:44Z",
+    "duration_seconds": 23.214
+  },
+  "api": {
+    "base": "http://127.0.0.1:8000/api/v1/student",
+    "timeout_seconds": 15.0,
+    "retries": 3
+  },
+  "runtime": {
+    "chapter_files": 183,
+    "classes": {
+      "Class 5": 47,
+      "Class 6": 64,
+      "Class 7": 72
+    },
+    "subjects": {
+      "Class 5/01_ENGLISH_COMPLETE": 10,
+      "Class 5/02_HINDI_COMPLETE": 12,
+      "Class 5/03_EVS_COMPLETE": 10,
+      "Class 5/03_MATHS_COMPLETE": 15,
+      "Class 6/02_ENGLISH_COMPLETE_GRADE6": 15,
+      "Class 6/02_HINDI_COMPLETE_GRADE6": 13,
+      "Class 6/02_MATHEMATICS_COMPLETE_GRADE6": 10,
+      "Class 6/03_SCIENCE_COMPLETE_GRADE6": 12,
+      "Class 6/03_SOCIAL_SCIENCE_COMPLETE_GRADE6": 14,
+      "Class 7/02_ENGLISH_GRADE7_COMPLETE": 15,
+      "Class 7/02_HINDI_GRADE7_COMPLETE": 10,
+      "Class 7/02_MATHEMATICS_GRADE7_PART1_COMPLETE": 8,
+      "Class 7/02_MATHEMATICS_GRADE7_PART2_COMPLETE": 7,
+      "Class 7/03_SCIENCE_GRADE7_COMPLETE": 12,
+      "Class 7/03_SOCIAL_SCIENCE_GRADE7_PART1_COMPLETE": 12,
+      "Class 7/03_SOCIAL_SCIENCE_GRADE7_PART2_COMPLETE": 8
+    },
+    "search_records": 3878,
+    "layer_record_counts": {
+      "learn": 1294,
+      "practice": 1574,
+      "assess": 788,
+      "revise": 156,
+      "resources": 66,
+      "traceability": 183
+    }
+  },
+  "tests": {
+    "total": 4164,
+    "passed": 4164,
+    "failed": 0
+  },
+  "failures": []
+}
