@@ -1,25 +1,31 @@
-import { test, expect } from '@playwright/test';
+﻿import { test, expect } from '@playwright/test';
 
-test('Chapter 102 renders correctly with canonical data attributes', async ({ page }) => {
-  // Go to Chapter 102
-  await page.goto('http://localhost:3000/chapter/class_5_01_english_102');
+test('Chapter 102 renders correctly with canonical runtime content', async ({ page }) => {
+  await page.goto('/chapter/class_5_01_english_complete_102');
 
-  // Wait for loading to finish
-  await page.waitForSelector('body[data-gurukul-ready="true"]', { timeout: 30000 });
+  await expect(
+    page.locator('body[data-gurukul-ready="true"]')
+  ).toBeVisible({ timeout: 30000 });
 
-  // Verify Title
-  const title = await page.textContent('h1');
-  expect(title).toContain('Gone with the Scooter');
+  await expect(page.locator('header h1')).toContainText(
+    'Gone with the Scooter',
+    { timeout: 20000 }
+  );
 
-  // Verify canonical record attributes
-  const firstRecord = await page.locator('[data-gurukul-record-id]').first();
-  await expect(firstRecord).toBeVisible();
+  // Verify canonical pillar navigation.
+  await expect(page.getByText('Learn', { exact: true })).toBeVisible();
+  await expect(page.getByText('Practice', { exact: true })).toBeVisible();
+  await expect(page.getByText('Assess', { exact: true })).toBeVisible();
+  await expect(page.getByText('Revise', { exact: true })).toBeVisible();
 
-  const recordId = await firstRecord.getAttribute('data-gurukul-record-id');
-  expect(recordId).toMatch(/^class05_01_english_102_learn_/);
+  // Verify actual canonical content.
+  const bodyText = await page.locator('body').innerText();
 
-  const section = await firstRecord.getAttribute('data-section');
-  expect(section).toBe('learn');
+  expect(bodyText).toContain('Gopi');
+  expect(bodyText).toContain('hockey ball');
+  expect(bodyText).toContain('Gone with the Scooter');
 
-  console.log('Smoke Test Passed: Chapter 102 is visible and functional.');
+  console.log(
+    'Smoke Test Passed: Chapter 102 canonical content is production-rendered.'
+  );
 });

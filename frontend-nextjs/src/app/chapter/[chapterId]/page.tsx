@@ -26,7 +26,7 @@ export default function ChapterContentPage() {
           if (mounted) {
             setData(res);
             // Fetch subject for navigation
-            const subj_id = res.id.split('_').slice(0, -1).join('_');
+            const subj_id = res.subjectId;
             studentApi.getSubject(subj_id).then(subj => {
                if (mounted) {
                   setSubject(subj);
@@ -114,7 +114,7 @@ export default function ChapterContentPage() {
         <div className="bg-white border-b sticky top-20 z-50 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 lg:px-8 py-3 flex flex-col lg:flex-row items-center justify-between gap-4">
              <div className="flex items-center gap-4 shrink-0">
-                <Link href={`/subject/${data.id.split('_').slice(0, -1).join('_')}`} className="flex items-center gap-2 text-slate-500 font-bold text-xs hover:text-blue-600 transition-all bg-slate-50 px-4 py-2 rounded-xl border border-slate-200">
+                <Link href={`/subject/${data.subjectId}`} className="flex items-center gap-2 text-slate-500 font-bold text-xs hover:text-blue-600 transition-all bg-slate-50 px-4 py-2 rounded-xl border border-slate-200">
                     <ChevronLeft size={16} /> Back
                 </Link>
                 <button onClick={() => setIsAuditMode(!isAuditMode)} className={`px-3 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest border transition-all ${isAuditMode ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-400 border-slate-100 hover:border-slate-200'}`}>
@@ -172,7 +172,7 @@ export default function ChapterContentPage() {
 
           <div className="space-y-16 lg:space-y-24 max-w-[1100px] mx-auto">
              {educationalUnits.map((unit, uIdx) => (
-                <EducationalUnitCard key={unit[0].id} unit={unit} index={uIdx + 1} audit={isAuditMode} chapterId={data.id} section={activePillar} />
+                <EducationalUnitCard key={`unit-${activePillar}-${uIdx}-${unit[0]?.id || "empty"}`} unit={unit} index={uIdx + 1} audit={isAuditMode} chapterId={data.id} section={activePillar} />
              ))}
              {educationalUnits.length === 0 && (
                 <div className="p-16 bg-slate-50 rounded-3xl border-2 border-dashed border-slate-200 text-center space-y-3">
@@ -223,16 +223,16 @@ function EducationalUnitCard({ unit, index, audit, chapterId, section }: { unit:
        )}
 
        <div className="space-y-12 lg:space-y-16">
-          {content.map((block) => (
-             <LogicalRecordRenderer key={block.id} block={block} audit={audit} chapterId={chapterId} section={section} />
+          {content.map((block, blockIndex) => (
+             <LogicalRecordRenderer key={`record-${section}-${index}-${block.id || "record"}-${blockIndex}`} block={block} audit={audit} chapterId={chapterId} section={section} />
           ))}
        </div>
 
        <div className="mt-16 pt-8 border-t border-slate-100 flex items-center justify-between opacity-0 group-hover/unit:opacity-100 transition-opacity">
           <span className="text-[10px] font-black text-slate-300 uppercase tracking-[0.3em]">Module Stream Unit {index}</span>
           <div className="flex gap-2">
-             {unit.map(b => (
-                <div key={b.id} className="w-1.5 h-1.5 rounded-full bg-slate-200" />
+             {unit.map((b, blockIndex) => (
+                <div key={`unit-marker-${section}-${index}-${b.id || "record"}-${blockIndex}`} className="w-1.5 h-1.5 rounded-full bg-slate-200" />
              ))}
           </div>
        </div>

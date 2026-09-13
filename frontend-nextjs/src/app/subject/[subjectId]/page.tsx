@@ -14,15 +14,31 @@ export default function SubjectChaptersPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (subjectId) {
-      studentApi.getSubject(subjectId).then(res => {
+    if (!subjectId) return;
+
+    // Reset readiness while a subject is loading.
+    document.body.removeAttribute('data-gurukul-ready');
+
+    studentApi.getSubject(subjectId)
+      .then(res => {
         setSubject(res);
         setLoading(false);
-      }).catch(err => {
+
+        // Canonical production-readiness contract.
+        // The page is ready only after a valid subject is loaded.
+        document.body.setAttribute('data-gurukul-ready', 'true');
+      })
+      .catch(err => {
         console.error("Failed to load subject", err);
         setLoading(false);
+
+        // Failed subject loads must never report the page as ready.
+        document.body.removeAttribute('data-gurukul-ready');
       });
-    }
+
+    return () => {
+      document.body.removeAttribute('data-gurukul-ready');
+    };
   }, [subjectId]);
 
   if (loading) return (

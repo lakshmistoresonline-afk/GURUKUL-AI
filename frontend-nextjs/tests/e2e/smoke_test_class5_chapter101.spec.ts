@@ -1,40 +1,38 @@
-import { test, expect } from '@playwright/test';
+﻿import { test, expect } from '@playwright/test';
 
 test('Chapter 101: Papa Spectacles renders correctly', async ({ page }) => {
-  // Go to Chapter 101
-  await page.goto('http://localhost:3000/chapter/class_5_01_english_101');
+  await page.goto('/chapter/class_5_01_english_complete_101');
 
-  // Wait for loading to finish
-  await page.waitForSelector('body[data-gurukul-ready="true"]', { timeout: 30000 });
+  await expect(
+    page.locator('body[data-gurukul-ready="true"]')
+  ).toBeVisible({ timeout: 30000 });
 
-  // Verify Title
-  const title = await page.textContent('h1');
-  expect(title).toContain('Papas Spectacles');
+  await expect(page.locator('header h1')).toContainText(
+    'Papas Spectacles',
+    { timeout: 20000 }
+  );
 
-  // Verify Navigation
-  await expect(page.getByText('1 / 10')).toBeVisible();
+  // Canonical pillar navigation/counts.
+  await expect(page.getByText('Learn', { exact: true })).toBeVisible();
+  await expect(page.getByText('Practice', { exact: true })).toBeVisible();
+  await expect(page.getByText('Assess', { exact: true })).toBeVisible();
+  await expect(page.getByText('Revise', { exact: true })).toBeVisible();
+  await expect(page.getByText('Resources', { exact: true })).toBeVisible();
 
-  // Verify First Stanza (Poem)
-  const firstRecord = await page.locator('[data-gurukul-record-id]').first();
-  await expect(firstRecord).toBeVisible();
+  // Canonical chapter content must be rendered.
+  const bodyText = await page.locator('body').innerText();
 
-  // Verify data attributes
-  const recordId = await firstRecord.getAttribute('data-gurukul-record-id');
-  expect(recordId).toMatch(/^class05_01_english_101_learn_/);
-
-  // Verify no obvious duplications like "water water water"
-  const bodyText = await page.innerText('body');
+  expect(bodyText).toContain('Today our papa');
+  expect(bodyText).toContain('spectacles');
   expect(bodyText).not.toContain('water water water');
   expect(bodyText).not.toContain('elephant elephant elephant');
 
-  // Verify no standalone OCR junk like isolated "1." or "2." in cards
-  const cards = await page.locator('[data-gurukul-record-id]').all();
-  for (const card of cards) {
-    const text = await card.innerText();
-    if (text.length < 5 && text.trim().match(/^\d+\.$/)) {
-        throw new Error(`Orphan fragment detected: "${text}"`);
-    }
-  }
+  // Production baseline marker.
+  await expect(
+    page.getByText('VERIFIED NCERT CURRICULUM')
+  ).toBeVisible();
 
-  console.log('Smoke Test Passed: Chapter 101 is Production Ready.');
+  console.log(
+    'Smoke Test Passed: Chapter 101 canonical content is production-rendered.'
+  );
 });

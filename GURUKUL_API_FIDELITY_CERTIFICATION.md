@@ -5,7 +5,7 @@
 ## Runtime
 
 - Runtime chapters: **183**
-- Search records: **3878**
+- Search records: **2857**
 
 ### Chapters by class
 
@@ -15,7 +15,7 @@
 
 ### Runtime layer counts
 
-- learn: **1294**
+- learn: **939**
 - practice: **1574**
 - assess: **788**
 - revise: **156**
@@ -38,4 +38,4 @@ The live Student API matches the certified runtime data for the tested catalog, 
 
 API base: `http://127.0.0.1:8000/api/v1/student`
 
-Completed: `2026-09-12T02:54:52Z`
+Completed: `2026-09-13T08:08:30Z`

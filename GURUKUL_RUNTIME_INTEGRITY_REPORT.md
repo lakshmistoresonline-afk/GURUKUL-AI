@@ -4,14 +4,14 @@
 
 ## Runtime Inventory
 - Runtime chapter files: **183**
-- Learn: **1294**
+- Learn: **939**
 - Practice: **1574**
 - Assess: **788**
 - Revise: **156**
 - Resources: **66**
-- Educational: **3812**
-- Processed: **3878**
-- Unique student IDs: **3878**
+- Educational: **3457**
+- Processed: **3523**
+- Unique student IDs: **3523**
 
 ## Structural QA
 - Status: **PASS**

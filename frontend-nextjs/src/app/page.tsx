@@ -30,7 +30,7 @@ export default function HomePage() {
 
   // Form State
   const [username, setUsername] = useState('tester_v1');
-  const [password, setPassword] = useState('password123');
+  const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
@@ -95,7 +95,7 @@ export default function HomePage() {
                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest text-center">Quick Credentials:</p>
                     <div className="grid grid-cols-3 gap-2">
                        {['tester_v1', 'class6_user', 'class7_user'].map(u => (
-                          <button key={u} type="button" onClick={() => { setUsername(u); setPassword('password123'); }} className="p-2 bg-slate-50 border border-slate-200 rounded-xl text-[10px] font-black hover:bg-blue-50 transition-all uppercase">{u.split('_')[0]}</button>
+                          <button key={u} type="button" onClick={() => { setUsername(u); setPassword(''); }} className="p-2 bg-slate-50 border border-slate-200 rounded-xl text-[10px] font-black hover:bg-blue-50 transition-all uppercase">{u.split('_')[0]}</button>
                        ))}
                     </div>
                  </div>

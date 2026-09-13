@@ -1,18 +1,37 @@
 import { test, expect } from '@playwright/test';
 
 test('Subject page renders curriculum for Class 5 English', async ({ page }) => {
-  await page.goto('http://localhost:3000/subject/class_5_01_english');
+  await page.goto('/subject/01_english_complete');
 
-  // Verify Title
-  const title = page.locator('h1');
-  await expect(title).toContainText('ENGLISH Curriculum');
+  await expect(
+    page.locator('body[data-gurukul-ready="true"]')
+  ).toBeVisible({ timeout: 30000 });
 
-  // Verify Chapters are listed
+  // The current canonical UI uses the stream name.
+  await expect(
+    page.locator('header h1')
+  ).toContainText('ENGLISH COMPLETE', { timeout: 30000 });
+
+  // Canonical Class 5 English contains 10 chapters.
   const chapterCards = page.locator('a[href^="/chapter/"]');
-  const count = await chapterCards.count();
-  expect(count).toBeGreaterThan(0);
 
-  // Verify Chapter 102 specifically
-  const ch102 = page.locator('h3:has-text("Gone with the Scooter")');
-  await expect(ch102).toBeVisible();
+  await expect(chapterCards.first()).toBeVisible({
+    timeout: 30000
+  });
+
+  const count = await chapterCards.count();
+  expect(count).toBe(10);
+
+  // Verify known canonical chapters.
+  await expect(
+    page.getByText('Papas Spectacles', { exact: true })
+  ).toBeVisible({ timeout: 20000 });
+
+  await expect(
+    page.getByText('Gone with the Scooter', { exact: true })
+  ).toBeVisible({ timeout: 20000 });
+
+  console.log(
+    'Smoke Test Passed: Class 5 English subject page is canonical and complete.'
+  );
 });

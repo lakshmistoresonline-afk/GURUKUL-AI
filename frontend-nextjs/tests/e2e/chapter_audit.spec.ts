@@ -1,50 +1,134 @@
 import { test, expect } from '@playwright/test';
-import * as fs from 'fs';
-import * as path from 'path';
 
-const STORAGE_STATE = path.join(__dirname, '../../playwright/.auth/user.json');
-const manifestPath = 'D:/GURUKUL-AI/Contents/GURUKUL_AI_CLASS_5_STUDENT_DASHBOARD_READY_FINAL_V3/dashboard/chapter_display_manifest.json';
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL_STUDENT ||
+  'http://127.0.0.1:8000/api/v1/student';
 
-const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
-const chapters = manifest.chapters;
+test.describe('Canonical Student Chapter Audit', () => {
+  test('All Class 5 chapters render from the canonical API', async ({ page, request }) => {
+    const catalogResponse = await request.get(`${API_URL}/catalog`);
 
-test.describe('Class 5 Chapter Audit', () => {
-  test.use({ storageState: STORAGE_STATE });
+    expect(
+      catalogResponse.ok(),
+      `Catalog request failed: ${catalogResponse.status()}`
+    ).toBeTruthy();
 
-  for (const chapter of chapters) {
-    test(`Audit Chapter: ${chapter.chapter_id} - ${chapter.chapter_name}`, async ({ page }) => {
-      await page.goto(`/chapter/${chapter.chapter_id}`);
+    const catalog = await catalogResponse.json();
 
-      // 1. Loading State
-      await expect(page.getByText('Synchronizing Neural Stream')).not.toBeVisible({ timeout: 30000 });
+    const class5 = catalog.classes?.find(
+      (item: any) => item.id === 'class_5'
+    );
 
-      // 2. Verification
-      const title = chapter.chapter_name === 'UNKNOWN' ? `Unit ${chapter.chapter_number}` : chapter.chapter_name;
-      const expectedTitle = title.replace(/\s+/g, ' ').trim();
+    expect(
+      class5,
+      'Canonical Class 5 not found in API catalog'
+    ).toBeTruthy();
 
-      const h1 = page.locator('h1');
-      await expect(h1).toBeVisible({ timeout: 15000 });
-      const h1Text = await h1.innerText();
-      expect(h1Text.toLowerCase().replace(/\s+/g, ' ')).toContain(expectedTitle.toLowerCase());
+    const chapters: Array<{
+      id: string;
+      chapter_id: string;
+      title?: string;
+      chapter_name?: string;
+    }> = [];
 
-      // 3. Section Availability
-      const tabs = page.locator('button:has(svg)');
-      const tabCount = await tabs.count();
-      expect(tabCount).toBeGreaterThan(0);
-
-      // 4. Content Scan
-      const bodyText = await page.innerText('body');
-      const placeholders = ['Concept 1', 'Concept 2', 'Concept 3', 'Concept 4', 'Concept 5'];
-      for (const p of placeholders) {
-        expect(bodyText, `Placeholder found: ${p}`).not.toContain(p);
+    for (const subject of class5.subjects ?? []) {
+      for (const chapter of subject.chapters ?? []) {
+        chapters.push(chapter);
       }
+    }
 
-      const artifacts = ['.indd', 'Reprint 2026-27'];
-      for (const a of artifacts) {
-        expect(bodyText, `Extraction artifact found: ${a}`).not.toContain(a);
-      }
+    expect(chapters.length).toBe(47);
 
-      await expect(page.getByText('Application error: a client-side exception')).not.toBeVisible();
-    });
-  }
+    console.log(
+      `Canonical Class 5 chapters discovered: ${chapters.length}`
+    );
+
+    for (const chapter of chapters) {
+      const canonicalChapterId = chapter.id;
+      const chapterNumber = chapter.chapter_id;
+      const expectedTitle =
+        chapter.title ||
+        chapter.chapter_name ||
+        `Chapter ${chapterNumber}`;
+
+      expect(
+        canonicalChapterId,
+        `Missing canonical ID for chapter ${chapterNumber}`
+      ).toBeTruthy();
+
+      await test.step(
+        `Audit ${canonicalChapterId} - ${expectedTitle}`,
+        async () => {
+          await page.goto(`/chapter/${canonicalChapterId}`);
+
+          await expect(
+            page.getByText('Synchronizing Neural Stream')
+          ).not.toBeVisible({ timeout: 30000 });
+
+          const bodyText = await page.innerText('body');
+
+          expect(
+            bodyText,
+            `Chapter Not Found for ${canonicalChapterId}`
+          ).not.toContain('Chapter Not Found');
+
+          const h1 = page.locator('header h1');
+
+          await expect(
+            h1,
+            `Missing H1 for ${canonicalChapterId}`
+          ).toBeVisible({ timeout: 15000 });
+
+          const h1Text = (await h1.innerText())
+            .replace(/\s+/g, ' ')
+            .trim();
+
+          expect(
+            h1Text.toLowerCase(),
+            `Unexpected chapter title for ${canonicalChapterId}`
+          ).toContain(
+            expectedTitle
+              .toLowerCase()
+              .replace(/\s+/g, ' ')
+              .trim()
+          );
+
+          const tabs = page.locator('button:has(svg)');
+
+          expect(
+            await tabs.count(),
+            `No chapter navigation controls for ${canonicalChapterId}`
+          ).toBeGreaterThan(0);
+
+          for (const placeholder of [
+            'Concept 1',
+            'Concept 2',
+            'Concept 3',
+            'Concept 4',
+            'Concept 5',
+          ]) {
+            expect(
+              bodyText,
+              `Placeholder found in ${canonicalChapterId}: ${placeholder}`
+            ).not.toContain(placeholder);
+          }
+
+          for (const artifact of ['.indd', 'Reprint 2026-27']) {
+            expect(
+              bodyText,
+              `Extraction artifact found in ${canonicalChapterId}: ${artifact}`
+            ).not.toContain(artifact);
+          }
+
+          await expect(
+            page.getByText('Application error: a client-side exception')
+          ).not.toBeVisible();
+        }
+      );
+    }
+
+    console.log(
+      `Canonical Class 5 chapter audit completed: ${chapters.length} chapters`
+    );
+  });
 });

@@ -79,7 +79,20 @@ export const studentApi = {
 
     getChapterFull: async (chapterUid: string): Promise<ChapterFull> => {
         const response = await axios.get(`${API_BASE_URL}/chapters/${chapterUid}/full`);
-        return response.data;
+        const data = response.data as ChapterFull;
+
+        // Canonical runtime stores pillar records directly.
+        // The runtime does not require a separate counts object,
+        // so derive UI counts from the canonical pillar arrays.
+        data.counts = data.counts ?? {
+            learn: Array.isArray(data.learn) ? data.learn.length : 0,
+            practice: Array.isArray(data.practice) ? data.practice.length : 0,
+            assess: Array.isArray(data.assess) ? data.assess.length : 0,
+            revise: Array.isArray(data.revise) ? data.revise.length : 0,
+            resources: Array.isArray(data.resources) ? data.resources.length : 0,
+        };
+
+        return data;
     },
 
     getDashboardSummary: async () => {

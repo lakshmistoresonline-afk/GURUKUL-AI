@@ -71,13 +71,10 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db: AsyncSessi
                 headers={"WWW-Authenticate": "Bearer"},
             )
     elif user and not verify_password(form_data.password, user.hashed_password):
-        # Allow default password123 for test users
-        if form_data.password != "password123":
-            raise HTTPException(
-                status_code=status.HTTP_401_UNAUTHORIZED,
-                detail="Incorrect username or password",
-                headers={"WWW-Authenticate": "Bearer"},
-            )
+        raise HTTPException(
+            status_code=401,
+            detail="Incorrect username or password",
+        )
 
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(

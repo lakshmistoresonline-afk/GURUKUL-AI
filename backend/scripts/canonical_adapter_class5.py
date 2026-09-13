@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import hashlib
 import json
@@ -181,6 +181,35 @@ def clean_text(value: Any) -> str:
 
     for old, new in replacements.items():
         text = text.replace(old, new)
+
+    # --------------------------------------------------------
+    # Student-presentation artifact removal
+    # --------------------------------------------------------
+    # These are print-production / OCR artifacts rather than
+    # educational content. Original source files remain untouched.
+    text = re.sub(
+        r"(?im)^\s*Reprint\s+20\d{2}-\d{2}\s*$",
+        "",
+        text,
+    )
+
+    # Examples:
+    #   Chapter 1.indd 1
+    #   Chapter 1.indd 1 09-06-2025 15:24:17
+    #   Chapter 12.indd 12
+    text = re.sub(
+        r"(?im)^\s*Chapter\s+\d+\.indd\s+\d+(?:\s+\d{2}-\d{2}-\d{4}\s+\d{2}:\d{2}:\d{2})?\s*$",
+        "",
+        text,
+    )
+
+    # Generic InDesign extraction artifact if it occurs inline.
+    text = re.sub(
+        r"\s*Chapter\s+\d+\.indd\s+\d+(?:\s+\d{2}-\d{2}-\d{4}\s+\d{2}:\d{2}:\d{2})?",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
 
     # Preserve meaningful line structure but remove excessive whitespace.
     text = text.replace("\r\n", "\n").replace("\r", "\n")
@@ -554,7 +583,7 @@ def make_record(
 
     # Source fragments remain available for traceability, but do not
     # become student-facing units.
-    if fragment and not generated:
+    if fragment and not generated and asset_name != "03_EXAMPLES":
         visibility = "internal"
 
     if rec_type == "empty":
@@ -974,14 +1003,20 @@ def process_chapter(
         "generated_at": utc_now(),
 
         "id": output_id,
+
+        # Canonical snake_case fields ? preserved for backward compatibility.
         "chapter_id": chapter_id,
         "chapter_title": chapter_title,
-
         "class_id": "class_5",
         "class_name": "Class 5",
-
         "subject_id": slug(subject_name),
         "subject_name": subject_name,
+
+        # API/runtime metadata contract ? camelCase aliases.
+        # These are additive and do not replace the canonical fields above.
+        "title": chapter_title,
+        "classId": "class_5",
+        "subjectId": slug(subject_name),
 
         "source": {
             "chapter_folder": str(
@@ -1045,6 +1080,10 @@ def process_chapter(
     # --------------------------------------------------------
     # Process each pillar.
     # --------------------------------------------------------
+
+    # Normalized Lesson text is used only to detect redundant
+    # EXAMPLES records. Original source records are ALWAYS kept.
+    lesson_text_keys: set[str] = set()
 
     for pillar_dir_name, pillar in PILLAR_MAP.items():
 
@@ -1168,10 +1207,47 @@ def process_chapter(
                     if record is None:
                         continue
 
-                    # Source records are always preserved.
+                    # ------------------------------------------------
+                    # Source records are ALWAYS preserved.
+                    # ------------------------------------------------
                     package[
                         "source_records"
                     ].append(record)
+
+                    # ------------------------------------------------
+                    # Record canonical Lesson text.
+                    # ------------------------------------------------
+                    # Only Learn/01_LESSONS establishes the baseline
+                    # against which duplicate Examples are checked.
+                    if (
+                        pillar == "learn"
+                        and asset_dir.name == "01_LESSONS"
+                        and record["student_facing"]
+                    ):
+                        lesson_text_keys.add(
+                            normalize_for_id(record["text"])
+                        )
+
+                    # ------------------------------------------------
+                    # Suppress exact duplicate Examples.
+                    # ------------------------------------------------
+                    # EXAMPLES.json is preserved in source_records, but
+                    # if its cleaned normalized text is already present
+                    # as Lesson content, it must not become another
+                    # student-facing card.
+                    if (
+                        pillar == "learn"
+                        and asset_dir.name == "03_EXAMPLES"
+                        and record["student_facing"]
+                        and normalize_for_id(record["text"])
+                        in lesson_text_keys
+                    ):
+                        record["student_facing"] = False
+                        record["visibility"] = "internal"
+                        record["duplicate_of"] = "01_LESSONS"
+                        record["suppression_reason"] = (
+                            "EXACT_DUPLICATE_OF_LESSON_CONTENT"
+                        )
 
                     # Student-facing records only enter their
                     # corresponding pillar array.
@@ -1272,6 +1348,12 @@ def process_chapter(
             for r in all_source
             if not r["student_facing"]
         ),
+        "suppressed_duplicate_examples": sum(
+            1
+            for r in all_source
+            if r.get("suppression_reason")
+            == "EXACT_DUPLICATE_OF_LESSON_CONTENT"
+        ),
         "id_collision_count": (
             len(student_ids)
             - len(set(student_ids))
@@ -1326,6 +1408,12 @@ def process_chapter(
             1
             for r in all_source
             if not r["student_facing"]
+        ),
+        "suppressed_duplicate_examples": sum(
+            1
+            for r in all_source
+            if r.get("suppression_reason")
+            == "EXACT_DUPLICATE_OF_LESSON_CONTENT"
         ),
     }
 
@@ -1692,6 +1780,7 @@ def process_all() -> None:
                 f"  Internal: {acc['internal_records']}",
                 f"  Source: {acc['source_records']}",
                 f"  ID collisions: {acc['id_collision_count']}",
+                f"  Suppressed duplicate Examples: {acc.get('suppressed_duplicate_examples', 0)}",
                 f"  Generated: {quality['generated_records']}",
                 f"  Source-derived: {quality['source_derived_records']}",
             ]

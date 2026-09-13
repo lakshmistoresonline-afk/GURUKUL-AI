@@ -1,72 +1,144 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Student End-to-End Journey', () => {
-  test('Full Journey: Subject to Assessment', async ({ page }) => {
-    page.on('console', msg => console.log('BROWSER CONSOLE:', msg.text()));
-    page.on('requestfailed', request => console.log('FAILED REQUEST:', request.url(), request.failure()?.errorText));
 
-    // 1. Dashboard
+  test('Full canonical Journey: Home → Subject → Chapter → Pillars', async ({ page }) => {
+
+    page.on('console', msg => {
+      if (msg.type() === 'error') {
+        console.log('BROWSER ERROR:', msg.text());
+      }
+    });
+
+    page.on('requestfailed', request => {
+      console.log(
+        'FAILED REQUEST:',
+        request.url(),
+        request.failure()?.errorText
+      );
+    });
+
+    // 1. Home / Unified Dashboard
     await page.goto('/');
 
-    // Check if we are logged in or on landing page
-    const dashboardTitle = page.getByText('Student Dashboard');
-    const loginForm = page.locator('input[placeholder="Username"]');
+    await expect(
+      page.getByText('Gurukul Unified Dashboard', { exact: true })
+    ).toBeVisible({ timeout: 30000 });
 
-    // Wait for either dashboard title or login form
-    await expect(dashboardTitle.or(loginForm)).toBeVisible({ timeout: 45000 });
+    // 2. Canonical Class 5 English stream.
+    const englishLink = page.locator(
+      'a[href="/subject/01_english_complete"]'
+    );
 
-    if (await loginForm.isVisible()) {
-        await page.fill('input[placeholder="Username"]', 'tester_v1');
-        await page.fill('input[placeholder="Password"]', 'password123');
-        await page.click('button:has-text("Authorize Access")');
-        await expect(dashboardTitle).toBeVisible({ timeout: 45000 });
-    }
+    await expect(englishLink).toBeVisible({
+      timeout: 20000
+    });
 
-    // 2. Select Subject (English)
-    const englishLink = page.locator('a:has-text("English")').first();
-    await expect(englishLink).toBeVisible({ timeout: 20000 });
     await englishLink.click();
 
-    await expect(page.getByText('Course Chapters')).toBeVisible({ timeout: 30000 });
+    // 3. Subject page.
+    await expect(page).toHaveURL(
+      /\/subject\/01_english_complete$/,
+      { timeout: 20000 }
+    );
 
-    // 3. Select Chapter (Papa s Spectacles)
-    // Wait for loading to finish
-    await expect(page.getByText('Assembling Course Curriculum')).not.toBeVisible({ timeout: 30000 });
+    await expect(
+      page.locator('body[data-gurukul-ready="true"]')
+    ).toBeVisible({ timeout: 30000 });
 
-    // Check if there are any error messages visible
-    const errorText = page.getByText(/error|failed|missing/i);
-    if (await errorText.isVisible()) {
-        console.log('Error visible on Subject Page:', await errorText.innerText());
-    }
+    await expect(
+      page.locator('header h1')
+    ).toContainText('ENGLISH COMPLETE', {
+      timeout: 30000
+    });
 
-    // Wait for any link to load
-    const firstChapter = page.locator('a[href*="/chapter/"]').first();
-    await expect(firstChapter).toBeVisible({ timeout: 30000 });
+    const chapterLinks = page.locator(
+      'a[href^="/chapter/"]'
+    );
 
-    await firstChapter.click();
+    await expect(chapterLinks.first()).toBeVisible({
+      timeout: 30000
+    });
 
-    await expect(page.getByText('Synchronizing Neural Stream')).not.toBeVisible({ timeout: 30000 });
+    expect(await chapterLinks.count()).toBe(10);
 
-    // 4. Learning Tab
-    const learnTab = page.getByRole('button', { name: 'Learn' });
-    await learnTab.click();
-    await expect(page.getByText('Orientation')).toBeVisible({ timeout: 20000 });
+    // 4. Open canonical Chapter 101.
+    const papaChapter = page.locator(
+      'a[href="/chapter/class_5_01_english_complete_101"]'
+    );
 
-    // 5. Practice Tab
-    const practiceTab = page.getByRole('button', { name: 'Practice' });
-    await practiceTab.click();
-    await expect(page.locator('div.bg-white.border-2').first()).toBeVisible({ timeout: 20000 });
+    await expect(papaChapter).toBeVisible({
+      timeout: 20000
+    });
 
-    // 6. Interaction: View Answer
-    const answerToggle = page.getByText('Access Canonical Truth').first();
-    if (await answerToggle.isVisible()) {
-      await answerToggle.click();
-      await expect(page.locator('details[open]')).toBeVisible();
-    }
+    await papaChapter.click();
 
-    // 9. Back to Dashboard
-    await page.click('a:has-text("Dashboard")');
-    await page.waitForURL('/', { timeout: 20000 });
-    await expect(page.getByText('Student Dashboard')).toBeVisible();
+    // 5. Chapter page.
+    await expect(page).toHaveURL(
+      /\/chapter\/class_5_01_english_complete_101$/,
+      { timeout: 20000 }
+    );
+
+    await expect(
+      page.locator('body[data-gurukul-ready="true"]')
+    ).toBeVisible({ timeout: 30000 });
+
+    await expect(
+      page.locator('header h1')
+    ).toContainText('Papas Spectacles', {
+      timeout: 20000
+    });
+
+    // 6. Verify all canonical pillars exist.
+    await expect(
+      page.getByText('Learn', { exact: true })
+    ).toBeVisible();
+
+    await expect(
+      page.getByText('Practice', { exact: true })
+    ).toBeVisible();
+
+    await expect(
+      page.getByText('Assess', { exact: true })
+    ).toBeVisible();
+
+    await expect(
+      page.getByText('Revise', { exact: true })
+    ).toBeVisible();
+
+    await expect(
+      page.getByText('Resources', { exact: true })
+    ).toBeVisible();
+
+    // 7. Verify actual educational content.
+    const bodyText = await page.locator('body').innerText();
+
+    expect(bodyText).toContain('Today our papa');
+    expect(bodyText).toContain('spectacles');
+
+    // 8. No obvious generated/duplicate junk.
+    expect(bodyText).not.toContain('water water water');
+    expect(bodyText).not.toContain('elephant elephant elephant');
+
+    // 9. Return through canonical Back link.
+    const backLink = page.locator(
+      'a[href="/subject/01_english_complete"]'
+    ).first();
+
+    await expect(backLink).toBeVisible({
+      timeout: 20000
+    });
+
+    await backLink.click();
+
+    await expect(page).toHaveURL(
+      /\/subject\/01_english_complete$/,
+      { timeout: 20000 }
+    );
+
+    console.log(
+      'E2E Passed: canonical Home → Subject → Chapter → Pillars → Back journey.'
+    );
   });
+
 });
