@@ -3,6 +3,12 @@ import os
 import sys
 import subprocess
 import socket
+from pathlib import Path
+from dotenv import load_dotenv
+
+env_file = Path(__file__).resolve().parent / ".env"
+if env_file.exists():
+    load_dotenv(dotenv_path=env_file)
 
 def kill_process_on_port(port: int):
     try:

@@ -28,6 +28,9 @@ export interface ContentBlock {
     text?: string;
     answer?: string;
     explanation?: string;
+    url?: string;
+    resource_category?: string;
+    video_id?: string;
     structuredData?: any;
     source: {
         file: string;

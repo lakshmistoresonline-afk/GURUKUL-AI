@@ -18,6 +18,22 @@ export default defineConfig({
     navigationTimeout: 30000,
   },
   timeout: 120000,
+  webServer: [
+    {
+      command: 'python backend/run_server.py',
+      url: 'http://localhost:8000/api/v1/student/catalog',
+      reuseExistingServer: true,
+      cwd: '..',
+      timeout: 30000,
+    },
+    {
+      command: 'npm --prefix frontend-nextjs run dev',
+      url: 'http://localhost:3000',
+      reuseExistingServer: true,
+      cwd: '..',
+      timeout: 30000,
+    },
+  ],
   projects: [
     {
       name: 'setup',

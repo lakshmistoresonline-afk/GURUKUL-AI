@@ -6,7 +6,7 @@
     "dev": "npm run kill-port && npm run clear-sw && next dev --turbo",
     "build": "next build",
     "start": "npm run kill-port && next start",
-    "kill-port": "powershell -NoProfile -Command \"try { Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force } } catch { } exit 0\"",
+    "kill-port": "powershell -NoProfile -Command \"try { Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Where-Object { $_.OwningProcess -gt 4 } | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force } } catch { } exit 0\"",
     "lint": "next lint",
     "desktop:dev": "npm --prefix ../desktop run dev",
     "desktop:build": "npm --prefix ../desktop run build",

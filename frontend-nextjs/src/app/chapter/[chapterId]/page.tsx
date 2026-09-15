@@ -4,7 +4,7 @@ import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { Layout } from '@/presentation/components/common/Layout';
 import { studentApi, ChapterFull, ContentBlock, Subject } from '@/services/api/student_api';
-import { ChevronLeft, ChevronRight, Info, BookOpen, Target, ShieldCheck, HelpCircle, RefreshCw, Globe, ChevronDown, CheckCircle2, List as ListIcon, Music, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Info, BookOpen, Target, ShieldCheck, HelpCircle, RefreshCw, Globe, CheckCircle2, Music, Sparkles, ExternalLink, Video, Play, Search } from 'lucide-react';
 import { MarkdownRenderer } from '@/presentation/components/common/MarkdownRenderer';
 import Link from 'next/link';
 
@@ -25,7 +25,6 @@ export default function ChapterContentPage() {
         .then(res => {
           if (mounted) {
             setData(res);
-            // Fetch subject for navigation
             const subj_id = res.subjectId;
             studentApi.getSubject(subj_id).then(subj => {
                if (mounted) {
@@ -76,15 +75,10 @@ export default function ChapterContentPage() {
        else {
           let shouldGroup = false;
 
-          // 1. If it follows a heading, always group the first block with it
           if (prevItem?.type === 'heading') shouldGroup = true;
-
-          // 2. Group same-type sequences (Poems, Dialogues, lists)
           else if (item.type === prevItem?.type) {
              if (['dialogue', 'poem', 'question'].includes(item.type)) shouldGroup = true;
           }
-
-          // 3. Group short sequence of paragraphs (likely a story flow)
           else if (item.type === 'paragraph' && prevItem?.type === 'paragraph' && (item.text?.length || 0) < 300) {
              shouldGroup = true;
           }
@@ -101,27 +95,36 @@ export default function ChapterContentPage() {
     return units;
   }, [data, activePillar]);
 
-  if (loading) return <Layout><div className="p-20 text-center font-black text-slate-300 uppercase animate-pulse italic">Synchronizing Educational Stream...</div></Layout>;
-  if (!data) return <Layout><div className="p-20 text-center text-red-500 font-black italic uppercase">Chapter Not Found</div></Layout>;
+  if (loading) return <Layout><div className="p-16 text-center font-bold text-slate-400 uppercase tracking-widest animate-pulse">Synchronizing Educational Stream...</div></Layout>;
+  if (!data) return <Layout><div className="p-16 text-center text-red-500 font-bold uppercase tracking-wider">Chapter Not Found</div></Layout>;
 
   const displayTitle = data.title && data.title.includes('_')
     ? data.title.split('_').slice(1).join(' ').replace(/\b\w/g, l => l.toUpperCase())
     : data.title || 'Untitled Chapter';
 
+  const pillarEmptyMessages: Record<string, string> = {
+    learn: 'No lesson material is available for this chapter.',
+    practice: 'No practice activities are available for this chapter.',
+    assess: 'No assessment questions are available for this chapter.',
+    revise: 'No revision material is available for this chapter.',
+    resources: 'No verified YouTube video lesson was found for this chapter.',
+  };
+
   return (
     <Layout>
-      <div id="gurukul-chapter-container" data-chapter-id={data.id} data-class-id={data.classId} data-subject-id={data.subjectId}>
-        <div className="bg-white border-b sticky top-20 z-50 shadow-sm">
-          <div className="max-w-7xl mx-auto px-4 lg:px-8 py-3 flex flex-col lg:flex-row items-center justify-between gap-4">
-             <div className="flex items-center gap-4 shrink-0">
-                <Link href={`/subject/${data.subjectId}`} className="flex items-center gap-2 text-slate-500 font-bold text-xs hover:text-blue-600 transition-all bg-slate-50 px-4 py-2 rounded-xl border border-slate-200">
-                    <ChevronLeft size={16} /> Back
+      <div id="gurukul-chapter-container" data-chapter-id={data.id} data-class-id={data.classId} data-subject-id={data.subjectId} className="w-full">
+        {/* COMPACT STICKY PILLAR BAR */}
+        <div className="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-16 z-40 shadow-xs py-2 px-4 sm:px-8">
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+             <div className="flex items-center gap-3 shrink-0">
+                <Link href={`/subject/${data.subjectId}`} className="flex items-center gap-1.5 text-slate-600 font-semibold text-xs hover:text-blue-600 transition-all bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+                    <ChevronLeft size={14} /> Back
                 </Link>
-                <button onClick={() => setIsAuditMode(!isAuditMode)} className={`px-3 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest border transition-all ${isAuditMode ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-400 border-slate-100 hover:border-slate-200'}`}>
-                  {isAuditMode ? 'Audit Mode Active' : 'Enable Audit Mode'}
+                <button onClick={() => setIsAuditMode(!isAuditMode)} className={`px-2.5 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider border transition-all ${isAuditMode ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50'}`}>
+                  {isAuditMode ? 'Audit Mode On' : 'Audit Mode'}
                 </button>
              </div>
-             <div className="flex items-center gap-2 overflow-x-auto w-full lg:w-auto no-scrollbar">
+             <div className="flex items-center gap-2 overflow-x-auto w-full sm:w-auto no-scrollbar py-1">
                 {[
                   { id: 'learn', label: 'Learn', icon: BookOpen },
                   { id: 'practice', label: 'Practice', icon: Target },
@@ -129,63 +132,62 @@ export default function ChapterContentPage() {
                   { id: 'revise', label: 'Revise', icon: RefreshCw },
                   { id: 'resources', label: 'Resources', icon: Globe },
                 ].map(pillar => (
-                  <button key={pillar.id} onClick={() => setActivePillar(pillar.id as any)} className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 border ${activePillar === pillar.id ? 'bg-blue-600 text-white border-blue-600 shadow-md' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'}`}>
-                    <pillar.icon size={16} />
+                  <button key={pillar.id} onClick={() => setActivePillar(pillar.id as any)} className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold transition-all shrink-0 border ${activePillar === pillar.id ? 'bg-blue-600 text-white border-blue-600 shadow-sm' : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'}`}>
+                    <pillar.icon size={14} />
                     <span className="capitalize">{pillar.label}</span>
-                    <span className={`ml-1.5 px-2 py-0.5 rounded-full text-[10px] ${activePillar === pillar.id ? 'bg-blue-500 text-white' : 'bg-slate-100 text-slate-500'}`}>{data.counts[pillar.id] || 0}</span>
+                    <span className={`ml-1 px-2 py-0.5 rounded-full text-[10px] font-bold ${activePillar === pillar.id ? 'bg-blue-500 text-white' : 'bg-slate-100 text-slate-600'}`}>{data.counts[pillar.id] || 0}</span>
                   </button>
                 ))}
              </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16 space-y-16">
-          <header className="space-y-6 text-center max-w-5xl mx-auto">
-             <div className="flex items-center justify-center gap-3 text-blue-600 font-black text-[11px] uppercase tracking-[0.4em] mb-2 bg-blue-50 w-fit mx-auto px-6 py-2 rounded-full border border-blue-100 shadow-sm">
-                <ShieldCheck size={18} /> Verified NCERT Curriculum
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+          {/* HEADER */}
+          <header className="space-y-4 text-center max-w-4xl mx-auto">
+             <div className="flex items-center justify-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-widest bg-blue-50 w-fit mx-auto px-4 py-1.5 rounded-full border border-blue-100">
+                <ShieldCheck size={16} /> Verified NCERT Curriculum
              </div>
-             <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black tracking-tighter text-slate-900 leading-[0.9] uppercase italic underline decoration-slate-100 decoration-[12px] underline-offset-[16px]">{displayTitle}</h1>
-             <div className="flex flex-col items-center gap-3 pt-10">
-                <p className="text-sm sm:text-base text-slate-400 font-bold uppercase tracking-[0.4em] flex items-center gap-4">
-                   <span>Level {data.classId?.split(' ')[1] || '5'}</span>
-                   <span className="w-1.5 h-1.5 rounded-full bg-slate-200" />
+             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight uppercase">{displayTitle}</h1>
+             <div className="flex flex-col items-center gap-2 pt-2">
+                <p className="text-xs sm:text-sm text-slate-500 font-semibold uppercase tracking-wider flex items-center gap-3">
+                   <span>Level {data.classId?.split('_')[1] || '5'}</span>
+                   <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
                    <span>{data.subjectId?.replace(/_/g, ' ')}</span>
                 </p>
                 {nav && (
-                   <div className="flex items-center gap-8 mt-6">
-                      <button disabled={!nav.prev} onClick={() => router.push(`/chapter/${nav.prev}`)} className="p-4 rounded-2xl bg-white border-2 border-slate-100 text-slate-400 hover:text-blue-600 hover:border-blue-600 disabled:opacity-20 transition-all shadow-sm group">
-                         <ChevronLeft size={24} className="group-hover:-translate-x-1 transition-transform" />
+                   <div className="flex items-center gap-4 mt-3">
+                      <button disabled={!nav.prev} onClick={() => router.push(`/chapter/${nav.prev}`)} className="p-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:text-blue-600 hover:border-blue-600 disabled:opacity-20 transition-all group">
+                         <ChevronLeft size={18} className="group-hover:-translate-x-0.5 transition-transform" />
                       </button>
-                      <div className="flex flex-col items-center">
-                         <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-1">Chapter Navigation</span>
-                         <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-900 bg-slate-50 px-6 py-2 rounded-full border border-slate-100 shadow-inner">
-                            {nav.current} / {nav.total}
-                         </span>
-                      </div>
-                      <button disabled={!nav.next} onClick={() => router.push(`/chapter/${nav.next}`)} className="p-4 rounded-2xl bg-white border-2 border-slate-100 text-slate-400 hover:text-blue-600 hover:border-blue-600 disabled:opacity-20 transition-all shadow-sm group">
-                         <ChevronRight size={24} className="group-hover:translate-x-1 transition-transform" />
+                      <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-4 py-1.5 rounded-full border border-slate-200">
+                         Chapter {nav.current} of {nav.total}
+                      </span>
+                      <button disabled={!nav.next} onClick={() => router.push(`/chapter/${nav.next}`)} className="p-2 rounded-xl bg-white border border-slate-200 text-slate-500 hover:text-blue-600 hover:border-blue-600 disabled:opacity-20 transition-all group">
+                         <ChevronRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
                       </button>
                    </div>
                 )}
              </div>
           </header>
 
-          <div className="space-y-16 lg:space-y-24 max-w-[1100px] mx-auto">
+          {/* MAIN CONTENT AREA */}
+          <div className="space-y-8 w-full max-w-5xl mx-auto">
              {educationalUnits.map((unit, uIdx) => (
                 <EducationalUnitCard key={`unit-${activePillar}-${uIdx}-${unit[0]?.id || "empty"}`} unit={unit} index={uIdx + 1} audit={isAuditMode} chapterId={data.id} section={activePillar} />
              ))}
              {educationalUnits.length === 0 && (
-                <div className="p-16 bg-slate-50 rounded-3xl border-2 border-dashed border-slate-200 text-center space-y-3">
-                   <Info size={40} className="mx-auto text-slate-300" />
-                   <p className="text-slate-500 font-bold text-sm">No content discovered in this archive stream.</p>
+                <div className="p-12 bg-slate-50 rounded-2xl border border-dashed border-slate-200 text-center space-y-2 w-full">
+                   <Info size={32} className="mx-auto text-slate-400" />
+                   <p className="text-slate-600 font-semibold text-sm">{pillarEmptyMessages[activePillar] || 'No content is available for this pillar.'}</p>
                 </div>
              )}
           </div>
 
           {nav && (
-             <div className="pt-20 pb-12 flex justify-center gap-4">
-                {nav.prev && <button onClick={() => router.push(`/chapter/${nav.prev}`)} className="flex flex-col items-start gap-1 p-6 rounded-[32px] border-2 border-slate-100 bg-white hover:border-blue-600 transition-all group max-w-xs text-left"><span className="text-[8px] font-black text-slate-400 uppercase tracking-widest">&larr; Previous</span><span className="text-sm font-black text-slate-900 group-hover:text-blue-600 uppercase italic truncate w-full">Back to Previous Unit</span></button>}
-                {nav.next && <button onClick={() => router.push(`/chapter/${nav.next}`)} className="flex flex-col items-end gap-1 p-6 rounded-[32px] border-2 border-slate-100 bg-white hover:border-blue-600 transition-all group max-w-xs text-right"><span className="text-[8px] font-black text-slate-400 uppercase tracking-widest">Next &rarr;</span><span className="text-sm font-black text-slate-900 group-hover:text-blue-600 uppercase italic truncate w-full">Continue Journey</span></button>}
+             <div className="pt-12 pb-8 flex justify-center gap-4">
+                {nav.prev && <button onClick={() => router.push(`/chapter/${nav.prev}`)} className="flex items-center gap-2 px-5 py-3 rounded-2xl border border-slate-200 bg-white hover:border-blue-600 text-slate-800 font-semibold text-xs transition-all group">&larr; Previous Unit</button>}
+                {nav.next && <button onClick={() => router.push(`/chapter/${nav.next}`)} className="flex items-center gap-2 px-5 py-3 rounded-2xl border border-slate-200 bg-white hover:border-blue-600 text-slate-800 font-semibold text-xs transition-all group">Continue Journey &rarr;</button>}
              </div>
           )}
         </div>
@@ -199,14 +201,13 @@ function EducationalUnitCard({ unit, index, audit, chapterId, section }: { unit:
   const headingText = hasHeading ? unit[0].text : null;
   const content = hasHeading ? unit.slice(1) : unit;
 
-  // Determine unit background based on content types
-  const isQuestionSet = content.some(b => b.type === 'question');
+  const isQuestionSet = content.some(b => b.type === 'question' || b.type === 'mcq' || b.type === 'short_answer');
 
   if (content.length === 0 && hasHeading) {
      return (
-        <div className="py-10 border-b-4 border-slate-900 mb-16">
-           <h2 className="text-4xl sm:text-6xl font-black text-slate-900 uppercase italic tracking-tighter flex items-center gap-6">
-              <span className="w-16 h-2 bg-blue-600 rounded-full" />
+        <div className="py-6 border-b-2 border-slate-200 mb-8 w-full">
+           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight flex items-center gap-3">
+              <span className="w-8 h-1 bg-blue-600 rounded-full" />
               {headingText}
            </h2>
         </div>
@@ -214,28 +215,26 @@ function EducationalUnitCard({ unit, index, audit, chapterId, section }: { unit:
   }
 
   return (
-    <div className={`transition-all relative group/unit ${isQuestionSet ? 'bg-slate-50/50 border-2 border-slate-100 rounded-[56px] p-8 sm:p-16' : 'space-y-12'}`}>
+    <div className={`transition-all relative group/unit w-full ${isQuestionSet ? 'bg-slate-50/70 border border-slate-200 rounded-3xl p-6 sm:p-8 space-y-6' : 'space-y-6'}`}>
        {headingText && (
-          <div className={`inline-flex items-center gap-4 font-black text-xs uppercase tracking-[0.4em] mb-12 ${isQuestionSet ? 'bg-blue-600 text-white px-8 py-3 rounded-2xl shadow-xl shadow-blue-100 -ml-4 sm:-ml-12' : 'text-blue-600'}`}>
-             {isQuestionSet ? <Target size={18} /> : <Sparkles size={16} />}
+          <div className={`inline-flex items-center gap-2 font-bold text-xs uppercase tracking-wider mb-4 ${isQuestionSet ? 'bg-blue-600 text-white px-4 py-1.5 rounded-lg shadow-sm' : 'text-blue-600'}`}>
+             {isQuestionSet ? <Target size={14} /> : <Sparkles size={14} />}
              {headingText}
           </div>
        )}
 
-       <div className="space-y-12 lg:space-y-16">
+       <div className="space-y-6 w-full">
           {content.map((block, blockIndex) => (
              <LogicalRecordRenderer key={`record-${section}-${index}-${block.id || "record"}-${blockIndex}`} block={block} audit={audit} chapterId={chapterId} section={section} />
           ))}
        </div>
 
-       <div className="mt-16 pt-8 border-t border-slate-100 flex items-center justify-between opacity-0 group-hover/unit:opacity-100 transition-opacity">
-          <span className="text-[10px] font-black text-slate-300 uppercase tracking-[0.3em]">Module Stream Unit {index}</span>
-          <div className="flex gap-2">
-             {unit.map((b, blockIndex) => (
-                <div key={`unit-marker-${section}-${index}-${b.id || "record"}-${blockIndex}`} className="w-1.5 h-1.5 rounded-full bg-slate-200" />
-             ))}
+       {audit && (
+          <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-[10px] text-slate-400 font-mono">
+             <span>Module Unit {index}</span>
+             <span>{content.length} records</span>
           </div>
-       </div>
+       )}
     </div>
   );
 }
@@ -246,73 +245,104 @@ function LogicalRecordRenderer({ block, audit, chapterId, section }: { block: Co
 
   const isPoem = block.type === 'poem';
   const isDialogue = block.type === 'dialogue';
-  const isQuestion = block.type === 'question';
+  const isQuestion = block.type === 'question' || block.type === 'mcq' || block.type === 'short_answer';
+  const isResource = section === 'resources' || ['video_resource', 'resource_search', 'channel_resource', 'official_resource', 'youtube'].includes(block.type);
+  const isYouTube = block.type === 'youtube' || (block.url && block.url.includes('youtube.com/watch'));
+  const isSearchQuery = block.type === 'resource_search' || block.resource_category === 'DISCOVERY_QUERY';
 
   return (
     <div
-      className="relative group/record"
+      className="relative group/record w-full"
       data-gurukul-record-id={block.id}
       data-chapter-id={chapterId}
       data-section={section}
       data-sequence={block.order}
       data-content-type={block.type}
     >
-       {isDialogue ? (
-          <div className="space-y-6 bg-white p-8 sm:p-12 rounded-[48px] border border-slate-100 shadow-xl shadow-slate-100/50 max-w-4xl">
+       {isResource ? (
+          <div className={`p-6 sm:p-8 rounded-3xl border shadow-md space-y-4 w-full ${isYouTube ? 'bg-red-950 text-white border-red-900' : isSearchQuery ? 'bg-slate-900 text-white border-slate-800' : 'bg-white text-slate-900 border-slate-200'}`}>
+             <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 font-bold text-xs uppercase tracking-wider text-blue-500">
+                   {isYouTube ? <Video size={18} className="text-red-500" /> : isSearchQuery ? <Search size={16} className="text-blue-400" /> : <Globe size={16} className="text-blue-600" />}
+                   <span>{isYouTube ? 'VERIFIED YOUTUBE LESSON' : isSearchQuery ? 'DISCOVER MORE SEARCH DESCRIPTOR' : 'OFFICIAL EDUCATIONAL RESOURCE'}</span>
+                </div>
+                <span className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md ${isYouTube ? 'bg-red-900 text-red-100' : isSearchQuery ? 'bg-slate-800 text-slate-300' : 'bg-blue-50 text-blue-700 border border-blue-200'}`}>
+                   {isYouTube ? 'Verified Video' : isSearchQuery ? 'Discovery Descriptor' : 'Official Portal'}
+                </span>
+             </div>
+
+             <div className={`text-base sm:text-lg font-semibold leading-relaxed ${isYouTube || isSearchQuery ? 'text-slate-100' : 'text-slate-900'}`}>
+                <MarkdownRenderer content={text} />
+             </div>
+
+             {block.url ? (
+                <a
+                   href={block.url}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className={`inline-flex items-center gap-2 px-5 py-2.5 font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-sm ${isYouTube ? 'bg-red-600 hover:bg-red-500 text-white' : 'bg-blue-600 hover:bg-blue-500 text-white'}`}
+                >
+                   {isYouTube ? <Play size={14} /> : <ExternalLink size={14} />}
+                   {isYouTube ? 'Watch Verified Video' : 'Open Resource Link &rarr;'}
+                </a>
+             ) : null}
+          </div>
+       ) : isDialogue ? (
+          <div className="space-y-3 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm w-full">
              {lines.map((line, idx) => {
                 const [speaker, ...speech] = line.split(':');
-                if (!speech.length) return <p key={idx} className="text-slate-600 font-medium text-xl leading-relaxed">{line}</p>;
+                if (!speech.length) return <p key={idx} className="text-slate-800 text-base leading-relaxed">{line}</p>;
                 return (
-                   <div key={idx} className="flex flex-col sm:flex-row gap-2 sm:gap-8 items-start">
-                      <span className="font-black text-blue-600 uppercase text-xs tracking-[0.25em] shrink-0 w-36 pt-2 text-left sm:text-right border-r-4 border-blue-50 pr-6">{speaker.trim()}</span>
-                      <span className="text-slate-900 font-bold text-2xl sm:text-3xl leading-snug tracking-tight">{speech.join(':').trim()}</span>
+                   <div key={idx} className="flex flex-col sm:flex-row gap-2 items-start">
+                      <span className="font-bold text-blue-600 uppercase text-xs tracking-wider shrink-0 w-28 pt-1 text-left sm:text-right border-r-2 border-blue-100 pr-3">{speaker.trim()}</span>
+                      <span className="text-slate-900 font-medium text-base sm:text-lg leading-relaxed">{speech.join(':').trim()}</span>
                    </div>
                 );
              })}
           </div>
        ) : isPoem ? (
-          <div className="py-12 px-12 sm:px-24 bg-indigo-50/20 rounded-[64px] border-l-[16px] border-blue-600 italic font-serif shadow-sm max-w-3xl">
-             <div className="inline-flex p-4 bg-blue-600 text-white rounded-2xl mb-10 shadow-2xl shadow-blue-100">
-                <Music size={28} />
+          <div className="py-6 px-8 bg-indigo-50/40 rounded-3xl border-l-4 border-blue-600 shadow-xs w-full">
+             <div className="inline-flex p-2 bg-blue-600 text-white rounded-lg mb-4 shadow-sm">
+                <Music size={20} />
              </div>
-             <div className="space-y-3">
+             <div className="space-y-2 font-serif">
                 {text.split('\n').map((line, idx) => (
-                   <p key={idx} className="text-slate-800 font-black tracking-wide text-2xl sm:text-4xl leading-relaxed">{line}</p>
+                   <p key={idx} className="text-slate-900 font-semibold tracking-wide text-lg sm:text-xl leading-relaxed">{line}</p>
                 ))}
              </div>
           </div>
        ) : isQuestion ? (
-          <div className="space-y-8">
-             <div className="flex items-center gap-4 text-blue-600 font-black text-[10px] uppercase tracking-[0.4em]">
-                <HelpCircle size={18} /> Exploration Prompt
+          <div className="space-y-4 w-full">
+             <div className="flex items-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-wider">
+                <HelpCircle size={16} /> Exploration Prompt
              </div>
-             <div className="text-2xl sm:text-4xl font-black text-slate-900 leading-[1.2] tracking-tighter max-w-4xl underline decoration-slate-100 decoration-8 underline-offset-8">
+             <div className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 <MarkdownRenderer content={text} />
              </div>
              {block.answer && (
-                <div className="mt-12 p-10 bg-emerald-50/50 border-2 border-emerald-100 rounded-[40px] space-y-6 animate-in fade-in slide-in-from-top-6">
-                   <div className="flex items-center gap-4 text-emerald-600 font-black text-[11px] uppercase tracking-[0.3em]">
-                      <CheckCircle2 size={22} /> Verified Guidance
+                <div className="mt-4 p-6 bg-emerald-50/60 border border-emerald-200 rounded-2xl space-y-3">
+                   <div className="flex items-center gap-2 text-emerald-700 font-bold text-xs uppercase tracking-wider">
+                      <CheckCircle2 size={18} /> Verified Answer / Guidance
                    </div>
-                   <div className="text-2xl font-bold text-emerald-900 leading-relaxed tracking-tight">
+                   <div className="text-base font-medium text-emerald-900 leading-relaxed">
                       <MarkdownRenderer content={block.answer} />
                    </div>
                 </div>
              )}
           </div>
        ) : (
-          <div className="text-2xl sm:text-3xl text-slate-700 leading-[1.6] font-bold max-w-4xl tracking-tight">
+          <div className="text-base sm:text-lg text-slate-800 leading-relaxed font-normal w-full">
              <MarkdownRenderer content={text} />
           </div>
        )}
 
        {audit && (
-          <div className="opacity-0 group-hover/record:opacity-100 transition-opacity absolute -right-10 top-0 translate-x-full p-6 bg-white shadow-2xl rounded-[32px] border border-slate-100 text-[10px] font-mono text-slate-400 space-y-2 w-64 z-10">
-             <p className="text-slate-900 font-black border-b pb-2 mb-2 uppercase tracking-widest">Forensic Integrity</p>
+          <div className="opacity-0 group-hover/record:opacity-100 transition-opacity absolute -right-6 top-0 translate-x-full p-4 bg-white shadow-xl rounded-xl border border-slate-200 text-[10px] font-mono text-slate-500 space-y-1 w-56 z-10">
+             <p className="text-slate-900 font-bold border-b pb-1 mb-1 uppercase tracking-wider">Forensic Audit</p>
              <p>UID: {block.id}</p>
-             <p>PAGE: {block.source.page}</p>
+             <p>PAGE: {block.source?.page || 'N/A'}</p>
              <p>TYPE: {block.type}</p>
-             <p className="truncate">FILE: {block.source.file}</p>
+             <p className="truncate">FILE: {block.source?.file}</p>
           </div>
        )}
     </div>

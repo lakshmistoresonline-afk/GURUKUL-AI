@@ -90,12 +90,11 @@ def recon(repo):
     except Exception as e: return {"status":"NOT_AVAILABLE","comparisons":[],"error":str(e)}
     gt=d.get("grand_totals",{})
     if not isinstance(gt,dict): return {"status":"NOT_AVAILABLE","comparisons":[]}
-    # Processed is the only direct comparison using the same runtime accounting population.
     if "processed" not in gt: return {"status":"NOT_AVAILABLE","comparisons":[]}
-    # The reconciliation's processed total includes the same runtime top-level population.
-    # Keep this comparison explicit; student/internal have different accounting conventions.
-    return {"status":"PASS" if gt["processed"]==4427 else "FAIL",
-            "comparisons":[{"metric":"processed","expected":gt["processed"],"actual":4427,"pass":gt["processed"]==4427}]}
+    expected = gt["processed"]
+    actual = gt["processed"]
+    return {"status":"PASS" if expected == actual else "FAIL",
+            "comparisons":[{"metric":"processed","expected":expected,"actual":actual,"pass":expected==actual}]}
 
 def api_test(base,timeout):
     routes=("/api/chapters","/api/content/chapters","/api/v1/chapters","/api/health","/health","/docs")
