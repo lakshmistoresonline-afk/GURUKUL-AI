@@ -1,0 +1,292 @@
+# Yoga A Way of Life
+
+--- SOURCE PAGE 20 ---
+Poorvi—Grade 6
+
+
+
+
+                                 Yoga–A Way of Life
+            Let us do these activities before we read.
+              1. What do you know about yoga? Discuss
+                 in pairs and share with the whole class.
+              2. What is 21st June known for? What do
+                 we do on this day?
+              3. List as many words you know related to
+                 yoga. Share them with your classmates.
+              4. Let us play the game of Antakshari. The first word is ‘yoga’. The next
+                 word must then begin with the letter ‘a’. This activity will go on and the
+                 whole class will participate and write the words on the blackboard. How
+                 many new words have you learnt?
+
+
+                   Let us read
+            Yoga is a physical, mental, and spiritual practice
+            that originated in ancient India. The word                  originated:
+            ‘Yoga’ comes from the Sanskrit root ‘yuj’, which            started
+            means ‘to join’ or ‘to unite’. This symbolises the
+            unity of mind and body; thought and action;
+            harmony between human and nature. It is a                   harmony:
+            holistic approach to health and well-being.                 balance
+                Sage Patanjali presented the ancient
+            tradition of yoga in a systematic way in ‘Yoga
+            Sutras of Patanjali’. He described yoga as the
+            means to make the mind quiet and free from
+            all distractions.                                           distractions:
+                Yoga has become increasingly popular                    disturbances
+            around the world due to its many health
+            benefits.
+
+
+             122
+
+                                              Reprint 2026-27
+
+Unit 4.indd 122                                                                         05-Dec-24 3:59:57 PM
+
+--- SOURCE PAGE 21 ---
+Sports and Wellness
+
+
+
+
+            Here are some of the benefits of yoga—
+            • Yoga postures (asanas) help to stretch and
+              strengthen the muscles, increase flexibility,
+              endurance and balance. This can improve           endurance:
+              overall physical fitness. This can also help to   capacity to
+                                                                continue
+              reduce body pains, such as lower back pain.
+                                                                without giving
+            • Yoga involves breathing techniques and            up
+              meditation, which can help to calm the mind
+              and reduce stress and anxiety. It relaxes         anxiety:
+              the mind, improves the quality of sleep and       worry
+              increases concentration.
+            • Yoga has been shown to boost the immune           boost:
+              system. It can improve heart health by            increase
+
+              lowering blood pressure and improving
+              circulation.
+            • Yoga can aid in weight loss by burning
+              calories, and maintaining health.
+                Yoga promotes a sense of overall well-being.
+             This is the reason why the benefits of practising
+             yoga are internationally recognised. The World
+             Health Organisation (WHO) on 20 June 2021,
+             launched an App called WHO mYoga. The app
+             contains a collection of videos and audio files to teach and support
+             yoga practice. The aim was to have an easy-to-use and free tool
+             for people across the world to encourage them to practise yoga.
+                We can start practising yoga at any given moment of time. We
+             must remember that when we practise yoga asanas (postures),
+             we do not just stretch the body. The mind has to be with the body.
+             This is the reason why it should be practised without distractions.
+             If each stretch is coordinated with the breath and awareness,
+             our practice will become a yogic practise.
+
+
+                                                                                 123
+
+                                          Reprint 2026-27
+
+Unit 4.indd 123                                                                  26-Mar-25 9:48:25 AM
+
+--- SOURCE PAGE 22 ---
+Poorvi—Grade 6
+
+
+
+
+                                            हठस्‍य प्रथमा�त्‍वादासनं परू ्वमच्ु ‍यते।
+                                            कुर्यात्तदासनं स्‍थैर्यमारोग्‍यं चा��ाघवम् ।।१९।।
+                                 haṭhasya prathamāṅgatvādāsanam pūrvamuchyate
+                                kuryāttadāsanam sthairyamārogyaṃ chāṅgalāghavam
+                   Being the first accessory of Haṭha-Yoga, āsana is described first. It should be
+                   practised for gaining steady posture, health and weightlessness of body.
+                                   -
+             Source: Haṭha Ῡoga Pradipikā
+
+
+             Let us discuss
+                    Read the passage again and fill in the blanks with words from the box.
+                        sleep   lifestyle   health          strength             calm           stress   balance
+
+             		Yoga is a practise that not only improves physical flexibility but also
+                    improves mental 1. ____________ and leads to a healthier 2. ______________.
+                    It involves a series of asanas, which increase muscular 3. ______________.
+                    Practising yoga also leads to a better body and mind 4. ______________
+                    and reduces body pain such as the lower back. Moreover, the focus on
+                    breathing techniques and meditation makes the mind 5. ______________,
+                    lessens 6. ______________, and improves the quality of 7. ______________.
+                    This helps to adopt a more positive lifestyle.
+
+
+
+                        Let us think and reflect
+                  1. What is the aim of yoga?
+                  2. Explain the idea of unity in yoga.
+                  3. What does the launch of the WHO mYoga app tell us about the
+                     importance of yoga?
+                  4. Describe one long-term effect that the practice of yoga can have on a
+                    person’s qualities.
+
+
+
+
+                  124
+
+                                                           Reprint 2026-27
+
+Unit 4.indd 124                                                                                                    24-09-2025 12.17.08 PM
+
+--- SOURCE PAGE 23 ---
+Sports and Wellness
+
+
+
+
+                      Let us learn
+                  I Read the extract given below and focus on the highlighted words.
+            		
+             The app (WHO mYoga) contains a collection of video and audio files to
+             teach and support yoga practice. The aim was to have an easy-to-use and
+             free tool for people across the world to encourage them to practise yoga.
+                    The word ‘practice’ and ‘practise’ sound the same but have different
+                    spellings and usage.
+
+                     The word ‘practice’ is a noun which means the actual application or exercise
+                     of a skill or knowledge. The word ‘practise’ is a verb wich refers to the act of
+                     engaging in an activity repeatedly to improve or acquire a skill.
+
+                      1. Complete the sentences given below by filling in the blanks with
+                         correct use of practice (as a noun) or practise (as a verb). Share the
+                         answers with your classmates and the teacher.
+                         (i)   It is important to have a regular _____________ of stretching
+                               every morning to stay flexible.
+                         (ii) I _____________ Yoga every day to keep my mind and body
+                              healthy.
+                         (iii) The teacher said, you can join the school hockey team but it
+                               requires a lot of _____________ to improve your skills.
+                         (iv) Our athletics coach asked us to _____________ running on grass
+                              to strengthen our grip while running.
+                         (v)   I _____________ deep breathing exercises when I feel stressed to
+                               calm myself down.
+                         (vi) Developing a good habit of eating fruits and vegetables should
+                              be a daily _____________.
+                      2. Another common word that has the ‘s’ and ‘c’ variation in spellings
+                         is ‘advice’ (noun) and ‘advise’ (verb).
+                         Make two sentences each using ‘advice’ and                             R
+                         ‘advise’ and share with your classmates and the                Y
+                         teacher.
+                                                                                  E         A        N
+                  II Make as many words as you can using the letters
+                     shown. Use the letter ‘A’ in all the words that you
+                                                                                        G       O
+                     make.
+
+
+                                                                                                    125
+
+                                                    Reprint 2026-27
+
+Unit 4.indd 125                                                                                     05-Dec-24 3:59:58 PM
+
+--- SOURCE PAGE 24 ---
+Poorvi—Grade 6
+
+
+
+
+                         Let us listen
+            		 You will listen to a girl talk about practising yoga. As you listen, select
+               four true statements from the sentences given in the table. (refer to page
+               129 for transcript)
+                                                     Statements                                      T/F
+
+                        1. The girl sees people at the park doing breathing exercises.
+
+                        2. Her grandfather began practising yoga sixteen years ago.
+
+                        3. The girl practises some easy yoga exercises with her grandfather.
+
+                        4. The girl practises breathing exercises to relax.
+
+                        5. Her grandfather is fit even though he has untimely meals.
+
+                        6. Her grandfather’s regular yoga practise has kept him strong.
+
+                        7. The girl wishes to learn asanas over the weekend.
+
+
+
+                         Let us speak
+                  1. Participate in groups of four to share your ‘yoga thoughts’.
+                                If you have tried yoga                    If you have not tried yoga, yet
+
+                        • I practise yoga because ...          • I wish to practise yoga because ...
+                        • My favourite thing about yoga is ... • I hope that once I begin practising
+                                                                 yoga, I ...
+                        • I feel ____________ after a yoga
+                                                               • The kind of exercise I want to try in
+                          session because ...
+                                                                 yoga is ____________ because ...
+                        • The one thing in yoga that I want to
+                          practise is ____________ because ...
+
+
+                  2. Take turns to speak and listen to others when they share their thoughts.
+
+
+
+
+                  126
+
+                                                        Reprint 2026-27
+
+Unit 4.indd 126                                                                                         18-Mar-25 2:47:53 PM
+
+--- SOURCE PAGE 25 ---
+Sports and Wellness
+
+
+
+
+                    Let us write
+            Write a short paragraph on ‘The Benefits of Yoga’. You may use the following
+            sentence starters along with your own ideas to create the paragraph.
+
+                   Opening line                   Yoga is important because ...
+
+             Supporting ideas        • One benefit of yoga that interests me is ...
+                                     • Practising yoga can help people ...
+                                     • A popular yoga pose is _____ because ...
+                                     • Yoga is not just physical exercise; it also ...
+             Concluding line         Finally, yoga can be a great way to ...
+
+
+
+
+                    Let us explore
+              1. Do you know?
+                  • A few seals of the Sindhu-Sarasvati Civilisation, dating back to
+                    2700 BC, indicate that yoga was prevalent in ancient India. Many
+                    people contributed to its development and now, yoga has spread
+                    all over the world. On 11th December 2014, the United Nations
+                    General Assembly (UNGA) with 193 members accepted the proposal
+                    to celebrate ‘21st June’ as ‘International Yoga Day’.
+              2. Find out about two asanas and their benefits, and share your findings
+                 with your classmates and teacher. You may visit the following websites
+                 to learn more about yoga.
+                  https://www.mygov.in/campaigns/international-yoga-day/
+            		https://www.un.org/en/observances/yoga-day
+            		https://www.mygov.in/campaigns/international-yoga-day/
+
+
+
+
+                                                                                            127
+
+                                             Reprint 2026-27
+
+Unit 4.indd 127                                                                              05-Dec-24 3:59:58 PM

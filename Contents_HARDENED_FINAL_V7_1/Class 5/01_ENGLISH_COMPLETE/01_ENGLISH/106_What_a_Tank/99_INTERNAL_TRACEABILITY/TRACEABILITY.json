@@ -1,0 +1,68 @@
+{
+  "chapter_id": "106",
+  "source_pdf": "eesa106.pdf",
+  "page_count": 14,
+  "source_files": [
+    {
+      "path": "01_LEARN/04_SOURCE_DERIVED/full_chapter_text.json",
+      "coverage": "ALL SOURCE PAGES",
+      "status": "COMPLETE"
+    },
+    {
+      "path": "01_LEARN/04_SOURCE_DERIVED/full_chapter_text.txt",
+      "coverage": "ALL SOURCE PAGES",
+      "status": "COMPLETE"
+    }
+  ],
+  "asset_traceability": [
+    {
+      "pillar": "Learn",
+      "files": [
+        "01_LEARN/01_LESSONS/LESSONS.json",
+        "01_LEARN/02_CONCEPTS/CONCEPTS.json",
+        "01_LEARN/03_EXAMPLES/EXAMPLES.json",
+        "01_LEARN/04_SOURCE_DERIVED/full_chapter_text.json"
+      ]
+    },
+    {
+      "pillar": "Practice",
+      "files": [
+        "02_PRACTICE/01_TEXTBOOK_ACTIVITIES/TEXTBOOK_ACTIVITIES.json",
+        "02_PRACTICE/02_QUESTIONS/QUESTIONS.json",
+        "02_PRACTICE/03_WORKED_PRACTICE/WORKED_PRACTICE.json",
+        "02_PRACTICE/04_APPLICATION/APPLICATION.json"
+      ]
+    },
+    {
+      "pillar": "Assess",
+      "files": [
+        "03_ASSESS/01_TEXTBOOK_ASSESSMENTS/TEXTBOOK_ASSESSMENTS.json",
+        "03_ASSESS/02_MCQ/MCQ.json",
+        "03_ASSESS/03_SHORT_ANSWER/SHORT_ANSWER.json"
+      ]
+    },
+    {
+      "pillar": "Revise",
+      "files": [
+        "04_REVISE/01_RECALL/RECALL.json",
+        "04_REVISE/02_KEY_POINTS/KEY_POINTS.json",
+        "04_REVISE/03_REVISION_ACTIVITIES/REVISION_ACTIVITIES.json"
+      ]
+    },
+    {
+      "pillar": "Resources",
+      "files": [
+        "05_RESOURCES/01_VIDEOS/VIDEO_RESOURCES.json",
+        "05_RESOURCES/02_YOUTUBE_SEARCH/YOUTUBE_SEARCH.json",
+        "05_RESOURCES/03_CHANNELS/CHANNELS.json",
+        "05_RESOURCES/04_OFFICIAL_PORTALS/OFFICIAL_PORTALS.json"
+      ]
+    }
+  ],
+  "completeness_check": {
+    "expected_source_pages": 14,
+    "preserved_source_pages": 14,
+    "all_pages_preserved": true,
+    "note": "Visual-only elements are preserved by source page reference; no visual content is fabricated."
+  }
+}

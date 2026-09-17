@@ -1,0 +1,64 @@
+# Assessment / Question Index
+
+Questions detected in the source extraction. This index does not invent answers.
+
+- How do we do it?
+- we do?
+- this figure? If yes, what measurements should we take?
+- Are the arm lengths AB and BC sufficient to exactly recreate this figure?
+- To get the exact replica, would it help to take any other measurement?
+- ∠ABC = 80°?
+- are indeed congruent. Can we use their measurements to verify this?
+- concluded that the two symbols are congruent?
+- (a) Circles are congruent?
+- (b) Rectangles are congruent?
+- 4. How would we check if two figures like the one below are congruent?
+- What do you think they can do?
+- Can certain measurements of the triangle be used for this? Using a
+- Do you agree with Meera?
+- and shape? If yes, can you do so?
+- Rabia: Do these two triangles have the same shape and size? If not,
+- superimposed?Whichverticesof∆XYZand∆ABCshouldweoverlap?
+- exactly over each other?
+- Can you identify a pair of congruent triangles below? Why are they
+- congruent?
+- triangles. Is this the case?
+- identify the corresponding vertices. Can they be the following?
+- Can you identify any pair of congruent triangles? If yes, explain why
+- Does AC divide ∠BAD and ∠BCD into two equal parts? Give reasons.
+- 4. In the figure below, are ΔDFE and ΔGED congruent to each other? It
+- exactly?
+- the frame with this?
+- Are they congruent?
+- trianglesallcongruent?Explainwhyallsuchtriangleswiththese
+- What if two sides and a non-included angle are equal?
+- Are they congruent?
+- Can there exist non-congruent triangles having these measurements?
+- How does one construct a triangle having these measurements?
+- Howdowefindtherequiredtrianglefromthisfigure?
+- congruence. Can we use two angles and a side?
+- Are they congruent?
+- Can there exist non-congruent triangles having these measurements?
+- about the lengths AB and CD?
+- Are there any other equal sides or angles?
+- What are the Corresponding Vertices?
+- did you use to establish their congruence? Express the congruence.
+- equal parts in this figure? (Hint: When the lines are parallel, the
+- alternate angles are equal. Are the two resulting triangles congruent?
+- ∠BAC = ∠BDC. Are the two triangles congruent?
+- ∠C = ∠Z = 75°, and BC = YZ = 4 cm. Are the triangles congruent? Give
+- How do we proceed with this problem? Here is a method.
+- What are the measures of ∠B and ∠Y?
+- thishelpinshowingthat∆ABCand∆XYZarecongruent?
+- C=XZ=5cm.Aretheycongruent?
+- Can there exist non-congruent triangles having these measurements?
+- construction when the sidelengths are given)? If so, would this lead to a
+- given measurements?
+- ∆PQR.Why?Therefore,alltriangleshavingthesemeasurementswillbe
+- and ∠C?
+- Can you use this fact to find ∠B and ∠C?
+- What can we say about their angles?
+- What could be their measures?
+- alternate angles?]
+- A?
+- ys?

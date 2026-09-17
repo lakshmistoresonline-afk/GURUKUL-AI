@@ -1,0 +1,27 @@
+{
+  "audit_version": "1.0.0",
+  "timestamp": "2026-09-15T08:47:18.260246+00:00",
+  "expected": {
+    "classes": 3,
+    "chapters": 183
+  },
+  "actual": {
+    "classes": 3,
+    "chapters": 183,
+    "student_facing_records": 14846,
+    "source_records": 0,
+    "search_records": 14846
+  },
+  "quality": {
+    "generic_records": 20,
+    "placeholder_records": 7
+  },
+  "api": {
+    "catalog": "FAIL",
+    "traversal": "FAIL",
+    "search": "FAIL",
+    "dashboard": "FAIL"
+  },
+  "overall_status": "PASS_WITH_REVIEW",
+  "remediation_queue_size": 27
+}

@@ -1,0 +1,155 @@
+# Playing With Constructions — Practice & Activity Prompts
+
+- **Source page 1:** Observe the following figures and try drawing them freehand.
+- **Source page 2:** Now, arm yourself with a ruler and a compass. Let us explore if
+- **Source page 2:** we can draw these figures with these tools and get familiar with a
+- **Source page 2:** Observe the way a compass is made. What can one draw with the
+- **Source page 2:** compass? Explore!
+- **Source page 2:** Do you know what curves are? They are any shapes that can be
+- **Source page 2:** Think: Imagine marking
+- **Source page 2:** point P. How would they look?
+- **Source page 2:** Try to dr
+- **Source page 2:** Explore, if you have not already done so,
+- **Source page 2:** How can this be done?
+- **Source page 3:** Now, try to get the full curve.
+- **Source page 3:** What is the shape of the curve? It is a circle!
+- **Source page 3:** to 4 cm, less than 4 cm or greater than 4 cm? Similarly, what will be
+- **Source page 3:** the distance between P and another point on the circle?
+- **Source page 3:** Can you make the figures look as good as the figures shown there?
+- **Source page 3:** Try again if you want to!
+- **Source page 3:** Also, has the use of instruments made the construction easier?
+- **Source page 3:** Now try constructing the following figures.
+- **Source page 4:** How will you draw this?
+- **Source page 4:** The challenge here is to find out where to place the tip of the
+- **Source page 4:** can fix a radius in the compass and try placing the tip of the
+- **Source page 5:** 1. What radius should be taken in the compass to get this half circle?
+- **Source page 5:** What should be the length of AX?
+- **Source page 5:** a central line of a different length and try to draw the wave
+- **Source page 5:** 3. Try to recreate
+- **Source page 6:** How do you draw these eyes with a compass?
+- **Source page 6:** What shapes are these? Yes, these are our familiar squares and
+- **Source page 6:** rectangles. But what makes them squares and rectangles?
+- **Source page 7:** any combination of the labels around its corners? No! For example,
+- **Source page 7:** it cannot be named ABDC or ACBD. Can you see what names are
+- **Source page 7:** allowed and what names are not?
+- **Source page 7:** Which of the following is not a name for this square?
+- **Source page 7:** still a square?
+- **Source page 7:** • Are all the sides still equal? Yes.
+- **Source page 7:** • Are all the angles still 90 °? Yes.
+- **Source page 8:** 1. Draw the rectangle and four squares configuration (shown in
+- **Source page 8:** are placed symmetrically around the rectangle? Discuss with
+- **Source page 8:**  Think:Is it possible to reason out if the sides are equal or
+- **Source page 8:** measuring instruments in the above figure? Can we do this
+- **Source page 8:** by only looking at the position of corners in the dot grid?
+- **Source page 8:** least 3 rotated squares and rectangles on a dot grid. Draw
+- **Source page 9:** you construct a square with a side of 6 cm?
+- **Source page 9:** Mark a point to draw a
+- **Source page 10:** Can you see why PS should be
+- **Source page 10:** 6 cm long?
+- **Source page 10:** Draw a perpendicular to line
+- **Source page 10:** are the measures of ∠ R and ∠S?
+- **Source page 11:** 1. Draw a rectangle with sides of length 4 cm and 6 cm. After
+- **Source page 11:** 2. Draw a
+- **Source page 11:** • opposite sides are not equal?
+- **Source page 12:** At which positions will the points X and Y be at their closest?
+- **Source page 12:** When do you think they will be the farthest? What does your
+- **Source page 12:** intuition say? Discuss with your classmates.
+- **Source page 12:** compare to the length of AB?
+- **Source page 12:** construct multiple copies of the rectangle and try out various
+- **Source page 12:** of X and Y?
+- **Source page 12:** Is there a shorthand way of writing it down? In all the sentences,
+- **Source page 13:** are placed at the same distance away from A and B, respectively?
+- **Source page 13:** the length of AC? BD?
+- **Source page 13:** two identical squares? Can you try it?
+- **Source page 13:** It is wise to first plan and then construct. But how do we plan?
+- **Source page 13:** Can you think of a way?
+- **Source page 14:** What can we infer from this figure?
+- **Source page 14:** Can you identify the equal sides?
+- **Source page 14:** can you try constructing it? Remember, all
+- **Source page 14:** example, if we assign AF = 4 cm, then what must the length of AC be?
+- **Source page 14:** Explore: Can the rectangle now be completed?
+- **Source page 15:** to get the point B. How do we do it without a ruler? Can it be
+- **Source page 15:** done using a compass?
+- **Source page 15:** Use it to mark out the points B and C, and complete the rectangle.
+- **Source page 15:** With this idea, try constructing a rectangle that can be divided
+- **Source page 15:** centre of the square is the same as the centre of the rectangle?
+- **Source page 16:** Hint: Draw a rough figure. What will be the sidelength of the
+- **Source page 16:** square? What will be the distance between the corners of
+- **Source page 16:** the square and the outer rectangle?
+- **Source page 16:** Now, try this.
+- **Source page 17:** Hint: Think where the centre of the circle should be.
+- **Source page 17:** Hint: Think where the
+- **Source page 17:** the sides. Try it out!
+- **Source page 18:** diagonal also divides angle P into c and d. Are g and h equal? Are
+- **Source page 18:** c and d equal?
+- **Source page 18:** you observe? Identify pairs of angles that are equal.
+- **Source page 18:** the opposite angles into equal parts?
+- **Source page 18:** How will you record your observations? First, identify the
+- **Source page 18:** measurements that you would want to keep track of?
+- **Source page 18:** sides of the rectangle are equal? That is, did you consider the case of
+- **Source page 18:** a square? See what happens in this special case!
+- **Source page 18:** sides? Try to frame and discuss them with
+- **Source page 18:** will always be true?
+- **Source page 19:** In what order should its parts be drawn?
+- **Source page 19:** AB is drawn with an arbitrary length. What is the next point that
+- **Source page 19:** can be located?
+- **Source page 20:** the line on which D lies. Draw a line through A
+- **Source page 21:** Draw a line perpendicular to BC at C to get the point D.
+- **Source page 21:** given. But what do we do if a side and a diagonal is given?
+- **Source page 22:** Let us draw a rough diagram.
+- **Source page 22:** Which line can be drawn first?
+- **Source page 22:** How do we spot it? What else do we know about the position of B?
+- **Source page 23:** 7 cm from D, let us explore a way of getting all the points of
+- **Source page 23:** Can you spot
+- **Source page 23:** the point B here? Remember that it is 7 cm
+- **Source page 23:** What is its distance from point D? If needed, check your figure.
+- **Source page 23:** What do you observe?
+- **Source page 24:** To locate the point B, was it necessary to draw the
+- **Source page 24:** entire circle? W
+- **Source page 24:** to complete it. Recall that we were in a similar situation in the
+- **Source page 25:** opposite angles into 45 ° and 45°. What do you observe about the
+- **Source page 26:** Can you complete the figure? Try!
+- **Source page 26:** construction can be further simplified. How?
+- **Source page 26:** compass, you are right! Go ahead and explore how the point A
+- **Source page 26:** Draw a curve that has all its points of 5 cm from the point B; the
+- **Source page 26:** in spotting the point A? Construct and explore
+- **Source page 26:** done using a ruler. But can we use a compass for this?
+- **Source page 27:** draw a circle.
+- **Source page 27:** Are you able to spot the point A? Check the figure in your
+- **Source page 27:** notebook. What do you observe?
+- **Source page 27:** it from the point B?
+- **Source page 27:** How far is it from C?
+- **Source page 27:** necessary to draw two full circles to get the point A? We
+- **Source page 28:** of the remaining arc. How do we do it?
+- **Source page 28:** Can we use the fact that A is of distance 5 cm from both B and C?
+- **Source page 28:** adius in the compass and from A, draw the arc
+- **Source page 29:** 2. Try to recreate
+- **Source page 29:** but is not a square? If such a figure exists, can you construct it?
+- **Source page 29:** The technique to draw the upper and the lower curves of the eye is the
+- **Source page 29:** B be placed? Make a good estimate.
+- **Source page 30:** Try to get the eyes as symmetrical and identical as possible. This might
+- **Source page 30:** How can such a point be found?
+- **Source page 30:** Can any of the ideas used in the ‘House’ problem be used here?
+- **Source page 31:** Think: Imagine marking all the points of 4 cm distance from the point P. How would
+- **Source page 31:** they look?
+- **Source page 31:** Q.1. What radius should be taken in the compass to get this half circle? What should be
+- **Source page 31:** the length of AX?
+- **Source page 31:** Q.2. Take a central line of a different length and try to draw the wave on it.
+- **Source page 31:** Q.3. Try to recreate the figure where the waves are smaller than a half circle (as
+- **Source page 31:** Q. Which of the following is not a name for this square?
+- **Source page 32:** Draw a rectangle & then leave one dot distance diagonally to place the four smaller squares.
+- **Source page 32:** Think: Is it possible to reason out if the sides are equal or not, and if the angles are
+- **Source page 32:** right or not without using any measuring instruments in the above figure? Can we
+- **Source page 32:** do this by only looking at the position of corners in the dot grid?
+- **Source page 32:** Q.3. Draw at least 3 rotated squares and rectangles on a dot grid. Draw them such that
+- **Source page 33:** Q.1. Draw a rectangle with sides of length 4 cm and 6 cm. After drawing, check if it
+- **Source page 33:** Q.2. Draw a rectangle of sides 2 cm and 10 cm. After drawing, check if it satisfies both
+- **Source page 33:** Q. Is there a shorthand way of writing it down? In all the sentences, only the
+- **Source page 34:** the same distance away from A and B, respectively? For example, as in the cases
+- **Source page 34:** Q. How does the farthest distance between X and Y compare with the length of AC?
+- **Source page 34:** Length = 4 cm and Breadth = 2.5cm (Try for more!)
+- **Source page 34:** (Try for other possibilities.)
+- **Source page 35:** angles into equal parts?
+- **Source page 35:** 45° and 45°. What do you observe about the sides?
+- **Source page 38:** Q.2. Try to recreate ‘A Person’, ‘Wavy Wave’ and ‘Eyes’ from the section Artwork,
+- **Source page 38:** square? If such a figure exists, can you construct it?

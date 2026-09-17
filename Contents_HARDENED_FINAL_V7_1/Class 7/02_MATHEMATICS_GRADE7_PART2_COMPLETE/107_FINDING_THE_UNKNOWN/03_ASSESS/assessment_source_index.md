@@ -1,0 +1,68 @@
+# Assessment / Question Index
+
+Questions detected in the source extraction. This index does not invent answers.
+
+- weighing scale still be balanced? Remove one sack from each plate for
+- [Hint: Can you remove objects so that the sacks are only on one plate?]
+- this arrangement in the sequence?
+- Can you find ways to get the value of n, such that 2n + 1 = 99?
+- sequence using exactly 200 sticks?
+- How did you solve the various equations framed in the previous section?
+- Can we try n = 30? The LHS is now 61, still much lower than 99.
+- Can this equation have any other solution?
+- balanced. Do equations have a similar property?
+- and RHS?
+- is the value of 14593 – 1459 + 145 – 14?
+- To find the value, do we need to evaluate 14593 – 1459 + 145 – 14?
+- Why can we do this?
+- value of the expression 23 × 41 × 11 × 8?
+- factor 7 and leaves only the expression to be evaluated on the LHS?
+- What is the value of the expression 12345 – 5432 + 135 – 24?
+- 113) × 24 × 14?
+- LHS and the RHS still holds?
+- 5  is the correct solution to the equation?
+- Can you check that this solution is correct?
+- side. What can be done to bring the unknown terms to the same side?
+- 15 = 6?
+- arrangement using 100 tiles? If yes, which step in the sequence will it
+- be?
+- person, including her family and friends?
+- ₹25, can be bought for ₹450?”.
+- What will be the cost in this case?
+- will they have the same amount of money?
+- months?
+- m months?
+- and  final answer?
+- What are the expressions we get after each step?
+- from the final answer?
+- each boy have?
+- that we have?
+- How do we find the unknowns using these equations? So far , we have
+- value of the letter−number?
+- Can you form a chain going from the bottom equation to the top?
+- equation in the chains above?
+- the equation, 100x + 75 = 250?
+- digits is 15. Who am I?
+- weight of the brick?
+- What is the number?
+- Can we come up with a formula to solve these equations? That is, for the
+- will directly give us the solution? Using a similar method, can you solve
+- the second equation using the numbers 3, – 6, 2 and 4?
+- Using this formula can you solve this equation 2x + 3 = 4x + 5?
+- of 50 and 100 rupee notes, how many notes of each does she have?
+- by one blob? Write an equation
+- 5. What are the inputs to these machines?
+- . What are the numbers?
+- gap between two rods in the grill?
+- given to the first person?
+- affe?
+- How many squares are in position number 11 of the sequence?
+- position number 11 of the sequence?
+- 85 sticks? If yes, which position number will it correspond to?
+- 150 sticks? If yes, which position number will it correspond to?
+- number?
+- have 28 heads and 80 feet. How many donkeys are there? How
+- many children are there?
+- I predict that you now have 8. Am I correct?
+- Can you explain why the trick works?
+- Can you make your own such tricks?

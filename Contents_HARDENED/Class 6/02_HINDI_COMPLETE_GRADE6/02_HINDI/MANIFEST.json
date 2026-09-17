@@ -1,0 +1,768 @@
+{
+  "package": "02_HINDI",
+  "class": 6,
+  "subject": "Hindi",
+  "textbook": "मल्हार",
+  "chapter_count": 13,
+  "source_pdf_count": 14,
+  "file_count": 149,
+  "files": [
+    {
+      "path": "00_SUBJECT_INFO/CONTENT_POLICY.md",
+      "size": 480,
+      "sha256": "c92442dfdf19cb2ab68e7b457359238e0539655099c3b6bd6633c9f7eca7c41a"
+    },
+    {
+      "path": "00_SUBJECT_INFO/SUBJECT_INFO.md",
+      "size": 1235,
+      "sha256": "73386f45f74fdbbd880622d684fa6b1272cb578eff7864445221f7865915834b"
+    },
+    {
+      "path": "00_SUBJECT_MAPPING/CHAPTER_MAPPING.csv",
+      "size": 1054,
+      "sha256": "293941190422b5b2fa758c46262093ef144ed4640d8ae1492d8deb08931857b9"
+    },
+    {
+      "path": "00_SUBJECT_MAPPING/SUBJECT_MAP.json",
+      "size": 2155,
+      "sha256": "503f28523c847f264dd795ceb422f2ee026be622bd92042a5b884d8144ffbd0d"
+    },
+    {
+      "path": "101_MATRIBHUMI/00_CHAPTER_INFO/README.md",
+      "size": 186,
+      "sha256": "a562d5f355c1132afc91c938577bb51f2cabb6aaa7385ae8f7815521700c973d"
+    },
+    {
+      "path": "101_MATRIBHUMI/00_CHAPTER_INFO/chapter_info.json",
+      "size": 211,
+      "sha256": "19776fd926896b7387d78fb219b63493226c2f22fa63083d844698dd223d6756"
+    },
+    {
+      "path": "101_MATRIBHUMI/01_LEARN/source_content.md",
+      "size": 31800,
+      "sha256": "972e83de67d89d6324d9d776428f76886dde2e2e359d7fe433facb1b18d62d73"
+    },
+    {
+      "path": "101_MATRIBHUMI/02_PRACTICE/practice_and_activities.md",
+      "size": 47496,
+      "sha256": "b6697d2a4725fd2c8970416f2a77a219e49c7a1a0bd024cba2d786beafd772c8"
+    },
+    {
+      "path": "101_MATRIBHUMI/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "101_MATRIBHUMI/04_REVISE/revision_index.md",
+      "size": 253,
+      "sha256": "f3aa27ced0aa10d7a3b3578726971cfe4fa079826a7c0deabd5c3a673881e0a9"
+    },
+    {
+      "path": "101_MATRIBHUMI/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "1edc14a66934dfc08a251e03ec3b8c4068db49efce655062d81d54e2619289d3"
+    },
+    {
+      "path": "101_MATRIBHUMI/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "64e8721eddaeb99de20dd8822205817b8b635e6e7ef659577438978a7ed88ee7"
+    },
+    {
+      "path": "101_MATRIBHUMI/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "102_GOL/00_CHAPTER_INFO/README.md",
+      "size": 171,
+      "sha256": "28faeaa8ec27907926f4f4c5b4d0fd88935285d69b8f1c7204b124fd47f52705"
+    },
+    {
+      "path": "102_GOL/00_CHAPTER_INFO/chapter_info.json",
+      "size": 196,
+      "sha256": "9a46d8b4d877c2bfd50a5ef7247bbea6f4bb5f5ae5e8ed46a44e9691b0ee9d67"
+    },
+    {
+      "path": "102_GOL/01_LEARN/source_content.md",
+      "size": 42375,
+      "sha256": "de46022dea5c4b1d967388791f2c67813af0a3a2024157344beeaba654321aa1"
+    },
+    {
+      "path": "102_GOL/02_PRACTICE/practice_and_activities.md",
+      "size": 50507,
+      "sha256": "f6ed9703d1f8773e540a883d06bcdb9ad48f38efc7c812c7af22c1bf7e837757"
+    },
+    {
+      "path": "102_GOL/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "102_GOL/04_REVISE/revision_index.md",
+      "size": 238,
+      "sha256": "9615b423474864971099a0a60e5e7ec0a639994cfe350f32ed79fe000c25129c"
+    },
+    {
+      "path": "102_GOL/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "15d3b9110c13fc0f3c3095a2a9b97413e1c0f5f5d001f3e36155b766c33d4db3"
+    },
+    {
+      "path": "102_GOL/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "6f5cb0beaea02435b5f7755a53d8c8a48267d94b5e19c6ce5e2688a0f87ed43d"
+    },
+    {
+      "path": "102_GOL/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "103_PEHLI_BOOND/00_CHAPTER_INFO/README.md",
+      "size": 187,
+      "sha256": "f735717e044f4bb1be56e7f79cb3e7a68d44d916be85171b388039def279bb3b"
+    },
+    {
+      "path": "103_PEHLI_BOOND/00_CHAPTER_INFO/chapter_info.json",
+      "size": 212,
+      "sha256": "a02d4e5ce823a945001b1ebbdaa3927f04c26242047581493debc4fa98eaa2fa"
+    },
+    {
+      "path": "103_PEHLI_BOOND/01_LEARN/source_content.md",
+      "size": 20310,
+      "sha256": "8049bb1c6cb13850e34f01717afed41ce43e89bc19fecde0baacb10325990a13"
+    },
+    {
+      "path": "103_PEHLI_BOOND/02_PRACTICE/practice_and_activities.md",
+      "size": 32615,
+      "sha256": "ed5489bfcae1ec27382636c27f7158ab57d0634716e07f8c05215f6f8321e16c"
+    },
+    {
+      "path": "103_PEHLI_BOOND/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "103_PEHLI_BOOND/04_REVISE/revision_index.md",
+      "size": 254,
+      "sha256": "4f54d9f558ae9b37bf721e4e5d8619027f01ed2aac73e4d41c3c08e59724dc10"
+    },
+    {
+      "path": "103_PEHLI_BOOND/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "c896fbc601aaafe53c30bc494c57cd6b7ffcb625fd100b9da73c7a0ae498d690"
+    },
+    {
+      "path": "103_PEHLI_BOOND/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "aa14e311143e596b6e0fb6782d689ec3a01337c3fcd7634da2d53850f7670738"
+    },
+    {
+      "path": "103_PEHLI_BOOND/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/00_CHAPTER_INFO/README.md",
+      "size": 188,
+      "sha256": "601c6169f71cb2769cbb46f6c28d3d25712ddba663d54ba036ed7c7b6aaf0473"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/00_CHAPTER_INFO/chapter_info.json",
+      "size": 213,
+      "sha256": "8d7a889c0322cb9421f064f70dc4a9bc8b5b5eb8bfd0efdb0232598dbee495ff"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/01_LEARN/source_content.md",
+      "size": 37979,
+      "sha256": "40b2b5665074583b4cefdf3993f9ba7e1bd637407900e8d1d66b0d33afbdbffc"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/02_PRACTICE/practice_and_activities.md",
+      "size": 47921,
+      "sha256": "a27b67bd5b469a74e07b96b18ff5252dcfd91fdff26cb07744778da1f87234b3"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/04_REVISE/revision_index.md",
+      "size": 255,
+      "sha256": "7406519f7127ac76545c1c3f36ebd7d1ae2132e2c3c68d341ff9fb0c6349948c"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "6a0c15d560eca17de6fcc65e6f754edea24eea35cfc4f13aa00476074fa82939"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "970691c9672331df117afc9251b2bcc9f81f4f3ee9169fa9c952e309b779588e"
+    },
+    {
+      "path": "104_HAAR_KI_JEET/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/00_CHAPTER_INFO/README.md",
+      "size": 195,
+      "sha256": "edd12d4f7a3846a5b9a98d7e2cbc5ef1663bbac9f905fd57255e3735d0f5c524"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/00_CHAPTER_INFO/chapter_info.json",
+      "size": 220,
+      "sha256": "988ea6860ee2cc82964814a38da60354df49c322f22567e1c19b667d9e99d486"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/01_LEARN/source_content.md",
+      "size": 20398,
+      "sha256": "02eec44fd2b62e4264c7583d9d6f1a5fd3ae2f2ef0440df11327bce842fc0c8f"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/02_PRACTICE/practice_and_activities.md",
+      "size": 37209,
+      "sha256": "90b8c4e4a347fb0ce439ab2a65623d5c7606eaad396191ea402192946ae48cb1"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/04_REVISE/revision_index.md",
+      "size": 262,
+      "sha256": "a754939b1210cadbc04f5311a4184470079d9ec7a4616b201afb36ec120209fc"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "5c4aac636532c76063c64878c9d5f43edc1175fbbd08112fd09e239446a3d61e"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "7823ad5831795d2fd01d74d613307cd2471f155c9de19e63a9b96bc5f94ea7cc"
+    },
+    {
+      "path": "105_RAHIM_KE_DOHE/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "106_MERI_MAA/00_CHAPTER_INFO/README.md",
+      "size": 184,
+      "sha256": "79edd9c352808aaf45427df91f04844281eb80cdaf7a3b9ed858e4e78c2abb9d"
+    },
+    {
+      "path": "106_MERI_MAA/00_CHAPTER_INFO/chapter_info.json",
+      "size": 209,
+      "sha256": "209d19ca822d157153925314e3d7cc534462fd36e407bcbda37802aa5b276501"
+    },
+    {
+      "path": "106_MERI_MAA/01_LEARN/source_content.md",
+      "size": 35965,
+      "sha256": "61bd884d3a427320988099fb17a4f7c32e117c4db608d57a306fcf04b92ac30b"
+    },
+    {
+      "path": "106_MERI_MAA/02_PRACTICE/practice_and_activities.md",
+      "size": 37788,
+      "sha256": "bfc014fc2db16483ffe9514bd95c9c1390a553b7235b9cd3e9e88b404d89c9e3"
+    },
+    {
+      "path": "106_MERI_MAA/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "106_MERI_MAA/04_REVISE/revision_index.md",
+      "size": 251,
+      "sha256": "05903fe4186d9cc26cc25f190f995e639e62514a8655744eeb7b1cfb4741b638"
+    },
+    {
+      "path": "106_MERI_MAA/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "4d459f38c5f75e20924b6c01524cd61240c6c44c13b4c4cf473211d3f0ef3e7f"
+    },
+    {
+      "path": "106_MERI_MAA/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "829f311d3da91d4ca951e85fb7d4ca334b39ff915d31e617c3b87e2db11b1281"
+    },
+    {
+      "path": "106_MERI_MAA/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "107_JALATE_CHALO/00_CHAPTER_INFO/README.md",
+      "size": 187,
+      "sha256": "c93e27a68d48c03ac8e3dd9b4bca48cfca08caeaacae21a9baa65e7de37b4b5a"
+    },
+    {
+      "path": "107_JALATE_CHALO/00_CHAPTER_INFO/chapter_info.json",
+      "size": 212,
+      "sha256": "f0f150d7e264221f7ca98f36a1e6a75d860c8ff4e75329c6b53650a410ca29e5"
+    },
+    {
+      "path": "107_JALATE_CHALO/01_LEARN/source_content.md",
+      "size": 41900,
+      "sha256": "f8f2d99908c01f9f60259e7c11efab97148ab94010a5ca6596980b576fcc235c"
+    },
+    {
+      "path": "107_JALATE_CHALO/02_PRACTICE/practice_and_activities.md",
+      "size": 81209,
+      "sha256": "115f0446aaf9818924af40704904cd60de3ba935764df4e1e5c1ba32967067f9"
+    },
+    {
+      "path": "107_JALATE_CHALO/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "107_JALATE_CHALO/04_REVISE/revision_index.md",
+      "size": 254,
+      "sha256": "1479192211e2f81ce05536010079cb67e71bd6196e0b52c78aa8bf2af0fe67df"
+    },
+    {
+      "path": "107_JALATE_CHALO/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "a10a87fd22eec86b9c0f8fbcc98f296ed91a13e1a8aab15b948b914f2bddd650"
+    },
+    {
+      "path": "107_JALATE_CHALO/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "783fd83d4aa26db21cafb2eb60ae6936ca26cd0fd67ea79f22b9f209679be14d"
+    },
+    {
+      "path": "107_JALATE_CHALO/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/00_CHAPTER_INFO/README.md",
+      "size": 219,
+      "sha256": "c4873c5944b711c67018e6985844689a8f3dff9e69892e8b1b7d29a448dbe4ff"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/00_CHAPTER_INFO/chapter_info.json",
+      "size": 244,
+      "sha256": "95cd9b6568967fc3eee855be761fb28e39a7b28ca12fb20064b5835711fb1df1"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/01_LEARN/source_content.md",
+      "size": 65466,
+      "sha256": "37f8cfd7f221d1e36c4fe03f8c39459132a7a9aa7f51e9a9114ce77009eab61f"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/02_PRACTICE/practice_and_activities.md",
+      "size": 62808,
+      "sha256": "53154bfe87806a5b4e29c3842acf97abc7b6e75d000114c83521d17e46e266f0"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/04_REVISE/revision_index.md",
+      "size": 286,
+      "sha256": "beb8dff15e887084d2f9718d5acdfa82db961a1097d96f67fab6721bf40156b2"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "3c1a2e6d91c17af889777682739dbf88e4ea36ec5e29356846ae0cc20db96abf"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "d945504a6a9ed18251188ec367a3f7fea51843f7d76d03ed1fb2a6ee6946f754"
+    },
+    {
+      "path": "108_SATTRIYA_AUR_BIHU_NRITYA/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/00_CHAPTER_INFO/README.md",
+      "size": 223,
+      "sha256": "2c41c19ccae9e4ede56b5e111e55146cd500b6681116db7c88b358a40bc2cf63"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/00_CHAPTER_INFO/chapter_info.json",
+      "size": 248,
+      "sha256": "1548db9704c15f25eca6477433f70ca6e801c0f8ba90c4cc7ff760531a52f607"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/01_LEARN/source_content.md",
+      "size": 31634,
+      "sha256": "3551b93a3d619f444f9ddcbcd09fe58a254edaf935ba31540fad622ea5cb2995"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/02_PRACTICE/practice_and_activities.md",
+      "size": 51132,
+      "sha256": "110dd8e6f0f7403cea82864556cd6aadacaf1abbb944e94fb4bc7f159719c9cf"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/04_REVISE/revision_index.md",
+      "size": 290,
+      "sha256": "3ccb05d4ee94d0c30385c5870bb8a8d096a01447500e926f81fad4c580169bda"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "8a13797acf5adae7a05fe3119af45c45b1af716884baee3da7fc158aba8f5a17"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "7d3ba7d4e03f35a5d4c5ab0a8b71e7161d1d52401bdf5456831bf470a8ab4cc1"
+    },
+    {
+      "path": "109_MAIYA_MAIN_NAHIN_MAKHAN_KHAYO/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "110_PARIKSHA/00_CHAPTER_INFO/README.md",
+      "size": 184,
+      "sha256": "cd60eb5fd9a98217536be4909406114b2ff53b684b7a0ee46088cb3908e807b2"
+    },
+    {
+      "path": "110_PARIKSHA/00_CHAPTER_INFO/chapter_info.json",
+      "size": 209,
+      "sha256": "fae9b0315ca75870fa6df8876159b72436da922c471de87847df1449017e6f94"
+    },
+    {
+      "path": "110_PARIKSHA/01_LEARN/source_content.md",
+      "size": 54295,
+      "sha256": "3ac2d5b6cddcef5d9f9558d892bc796555b88fd9e922cb0bcd3043712b84b4eb"
+    },
+    {
+      "path": "110_PARIKSHA/02_PRACTICE/practice_and_activities.md",
+      "size": 61374,
+      "sha256": "e0c1afe40d01a721e01f5ea6c016a7c7c2cbccaec314a7d520b4e760a625d70b"
+    },
+    {
+      "path": "110_PARIKSHA/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "110_PARIKSHA/04_REVISE/revision_index.md",
+      "size": 251,
+      "sha256": "d57763a50a2e3e2fd966eb0c7d8606d4823b44ccf840da81b0bb579696de55d1"
+    },
+    {
+      "path": "110_PARIKSHA/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "fad5e41c608dfc20f27252401069fac6969d6457972c0dd72c4c2d84047bc1bb"
+    },
+    {
+      "path": "110_PARIKSHA/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "53aa54ca92aab2ca33a693d5a0a54eea236472774ba2f23ae3ffd3a4f46adf38"
+    },
+    {
+      "path": "110_PARIKSHA/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/00_CHAPTER_INFO/README.md",
+      "size": 198,
+      "sha256": "d031549f7c56563dc535f431a42e80d9883948aad128cf61a0c9e1240a6f8df1"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/00_CHAPTER_INFO/chapter_info.json",
+      "size": 223,
+      "sha256": "a53f18ab372dd25fc2ca8ec89f1276b6993ecbd87fff8ee849660c7a44a23ad1"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/01_LEARN/source_content.md",
+      "size": 18413,
+      "sha256": "11712dddace872ddbcfb7faa62a2c18f0ceff3a78f914fbdc19552efd061b832"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/02_PRACTICE/practice_and_activities.md",
+      "size": 22954,
+      "sha256": "9af0336a624aaa302ecaabf5ad03b3aa2d3934512451ed9bbf19d9c70dae965b"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/04_REVISE/revision_index.md",
+      "size": 265,
+      "sha256": "3a7e22241633bedf3f143783119b47580db20e489f4e27d42d5c6fb752350486"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "777421a5f2e5a62e1273c960de90c4a1c29c1bf985fade0042add1e645a18561"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "34befaf6f859e43fdc2bce100efd97e70e73eb5c0e6a80efe4fc0b8282b810f4"
+    },
+    {
+      "path": "111_CHETAK_KI_VEERTA/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/00_CHAPTER_INFO/README.md",
+      "size": 207,
+      "sha256": "d0c039dae2518a76cfd077eec6df39dcb854d40b34fb2ac2795778b051bf26fe"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/00_CHAPTER_INFO/chapter_info.json",
+      "size": 232,
+      "sha256": "99bb36c741375360a0b9f2c1c2f43fe37ca6bf601befc82b20095ea92608ba4c"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/01_LEARN/source_content.md",
+      "size": 60357,
+      "sha256": "32fe53952d0e6447132220856efb761bf246b22cd2ca71638d4c27401a8733c2"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/02_PRACTICE/practice_and_activities.md",
+      "size": 74043,
+      "sha256": "d74ea1631d052faee96bd9187a4de4715767333778a370dedeea31bcee2ecb46"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/04_REVISE/revision_index.md",
+      "size": 274,
+      "sha256": "dc6464b85863647bdd5a914d4581ba3cd7737c3dc04fdb2fb25447eeaf2d9caa"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "9d92f507ce4c5044c380a0083020b535b40a4170421029dd0a20b26831090b44"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "385fabba6a4f0848efe639e8c830edeae267360ea9bc54b88e85561d556b8c36"
+    },
+    {
+      "path": "112_HIND_MAHASAGAR_MEIN/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "113_PED_KI_BAAT/00_CHAPTER_INFO/README.md",
+      "size": 192,
+      "sha256": "7236b81deba7a34b3aee8fc347b28ab10b3893ca1a95336532bcb098972c4a4e"
+    },
+    {
+      "path": "113_PED_KI_BAAT/00_CHAPTER_INFO/chapter_info.json",
+      "size": 217,
+      "sha256": "3b39b0ffccefc9751edfcdc68792873755af14781812f71a77c9fb44cfd22ed7"
+    },
+    {
+      "path": "113_PED_KI_BAAT/01_LEARN/source_content.md",
+      "size": 78344,
+      "sha256": "941d738156ed0ea1638d535c3d54e76bf1c6d8e04517139a134830e8a1ff41dc"
+    },
+    {
+      "path": "113_PED_KI_BAAT/02_PRACTICE/practice_and_activities.md",
+      "size": 33127,
+      "sha256": "e8dc7e6a1cabd99c3729354eab0f70523719e1f5bfe7473288b24171ffc55df5"
+    },
+    {
+      "path": "113_PED_KI_BAAT/03_ASSESS/assessment_source.md",
+      "size": 224,
+      "sha256": "c1367144a92c180664e87ee42dbeea4f665ba464da6e01460744b5eb99fd20c5"
+    },
+    {
+      "path": "113_PED_KI_BAAT/04_REVISE/revision_index.md",
+      "size": 259,
+      "sha256": "a2ea87454d96ececcb4d6f751ee50517ba3f6396b5f29f313ab5ed0c4791e959"
+    },
+    {
+      "path": "113_PED_KI_BAAT/05_RESOURCES/source_reference.json",
+      "size": 157,
+      "sha256": "7804ed36fb9a8aa5c2d878cfae81b298a9065ecf856f3ce342903271e35e783f"
+    },
+    {
+      "path": "113_PED_KI_BAAT/99_INTERNAL_TRACEABILITY/TRACEABILITY.json",
+      "size": 341,
+      "sha256": "70432c90353ec821be46a1dadec1fe6bc47bd80e2d40d15fff4ca753686c8d71"
+    },
+    {
+      "path": "113_PED_KI_BAAT/99_INTERNAL_TRACEABILITY/source_pages.txt",
+      "size": 126,
+      "sha256": "603fbed471106de68fd9f99c51e6797c278e55a321d1db9872d36b5f4775ae5d"
+    },
+    {
+      "path": "_raw_text/fhml101.txt",
+      "size": 32662,
+      "sha256": "f7b2e03be12ad27d9fd0d5904185af0849ee0067882f2a0ff00231ee52337974"
+    },
+    {
+      "path": "_raw_text/fhml102.txt",
+      "size": 43303,
+      "sha256": "b8ebad8175c339d013c145992d2737c2d19db6eb6173500a68beceac0ba04b91"
+    },
+    {
+      "path": "_raw_text/fhml103.txt",
+      "size": 20867,
+      "sha256": "a6e3a874723a921f1eeefcaf271afe3bda49afa4b0f9f30cb2c027787f0ab5cb"
+    },
+    {
+      "path": "_raw_text/fhml104.txt",
+      "size": 38876,
+      "sha256": "9db1a3173b88b4ac329fa2f6282ef817c929077f3125f47a8a6c5df6d847a9a5"
+    },
+    {
+      "path": "_raw_text/fhml105.txt",
+      "size": 20842,
+      "sha256": "660b2e264c7ecfc4dc6edae4bfb475039960e26dde9d3cda427684fca13de45b"
+    },
+    {
+      "path": "_raw_text/fhml106.txt",
+      "size": 36643,
+      "sha256": "a7a755d516db48fba93aec5fe1590ed95ca0291270ec3735bd20d2090c68dae0"
+    },
+    {
+      "path": "_raw_text/fhml107.txt",
+      "size": 43071,
+      "sha256": "10732222b6ed6315e1720cae428f15e2ff93a34ed4fb58b19648987f2a117a4a"
+    },
+    {
+      "path": "_raw_text/fhml108.txt",
+      "size": 66924,
+      "sha256": "7dbf7ba3481f67ae634203fc2a3f73b0589b842dfe5818f52ea15c0ec801fb94"
+    },
+    {
+      "path": "_raw_text/fhml109.txt",
+      "size": 32422,
+      "sha256": "ec5215369e99a51a2f3a637c950bcf5d67820cf7d22437ee5a2bd38b1d1df8ee"
+    },
+    {
+      "path": "_raw_text/fhml110.txt",
+      "size": 55570,
+      "sha256": "35048f07db59c8c6ab8dbaa3ee00c325b3a6b636ca3978c6ad9d5c3a9462e32f"
+    },
+    {
+      "path": "_raw_text/fhml111.txt",
+      "size": 18827,
+      "sha256": "5337e8f464c33a4b488da3e9bb4e7f5fc966190c19c40e1175f4ff71499417d3"
+    },
+    {
+      "path": "_raw_text/fhml112.txt",
+      "size": 61601,
+      "sha256": "2baba7f37ba6a20ec26f0af0cc123a0e58004fa0832f7859078e4f73c63d335a"
+    },
+    {
+      "path": "_raw_text/fhml113.txt",
+      "size": 80093,
+      "sha256": "4079746720bbe684b1997023372542873cf02dcd625bcde63e500e7d4bbc3e09"
+    },
+    {
+      "path": "_raw_text/fhml1ps.txt",
+      "size": 86906,
+      "sha256": "47c5f7dbaf967de66c556ef6e34ba279a4a08603e16115bc3b37acdcc663137d"
+    },
+    {
+      "path": "source_PDFs/fhml101.pdf",
+      "size": 2743223,
+      "sha256": "7e913dbed6dc5de053f1c3ac3385411315133e4b812ace6f361e09edf172c606"
+    },
+    {
+      "path": "source_PDFs/fhml102.pdf",
+      "size": 2278969,
+      "sha256": "9d9a58b74451f80b1ba956cd34f398c1db2eeb1429d71e1289e38f5d09c71727"
+    },
+    {
+      "path": "source_PDFs/fhml103.pdf",
+      "size": 2791671,
+      "sha256": "67f950bea171b7bb5337208b843bbb3764b18768017428a7bf52f11c838a7b51"
+    },
+    {
+      "path": "source_PDFs/fhml104.pdf",
+      "size": 2351735,
+      "sha256": "eee3f07a884a47d9472ef11c58f7132f186e27230aef66ca335f4c4f0e1e196b"
+    },
+    {
+      "path": "source_PDFs/fhml105.pdf",
+      "size": 1380580,
+      "sha256": "f0911e79632d2247626eb3e554f8828a0871c109758216a37de3124f069f6731"
+    },
+    {
+      "path": "source_PDFs/fhml106.pdf",
+      "size": 2006132,
+      "sha256": "7f762fe6a52f4265af95c1dbdd7d2ded09503567188a82123193162216e140cb"
+    },
+    {
+      "path": "source_PDFs/fhml107.pdf",
+      "size": 2869931,
+      "sha256": "bfc793dc4fad7917f6df4ec82af9dc386189c55964c3869669a4b556b890344c"
+    },
+    {
+      "path": "source_PDFs/fhml108.pdf",
+      "size": 3797748,
+      "sha256": "41eb4ad56984b06671a82bbb66659f2f76ff26da2ade2678bf5b9fe83f505cd6"
+    },
+    {
+      "path": "source_PDFs/fhml109.pdf",
+      "size": 2404608,
+      "sha256": "17a5c09b2870365256796da5c3cbfa2019f4ca61572ce16c591be01f84fcc12b"
+    },
+    {
+      "path": "source_PDFs/fhml110.pdf",
+      "size": 3061891,
+      "sha256": "23b29972669ac1cc0bd9108e6bc9fe3d13c4a2a54a835e4480fc87e8a0150581"
+    },
+    {
+      "path": "source_PDFs/fhml111.pdf",
+      "size": 1621132,
+      "sha256": "5a80fa5cb0b2861a54838ab0ec33f99c66d8c5172e2701e71c7a64fb52786c09"
+    },
+    {
+      "path": "source_PDFs/fhml112.pdf",
+      "size": 4209807,
+      "sha256": "fa783b968910078f71817239dd198570c5e5b131ad410bfe86e8aacb5421225a"
+    },
+    {
+      "path": "source_PDFs/fhml113.pdf",
+      "size": 3922407,
+      "sha256": "41db938247ad6bc0fbcbf7cef7a1d3b06b48edc41f75a5c3fdc9bff18c8b079c"
+    },
+    {
+      "path": "source_PDFs/fhml1ps.pdf",
+      "size": 5640282,
+      "sha256": "574f0e38c3af62bf911487b020ee2e2aedae7c4deb45525c46a212189ac6a80a"
+    }
+  ],
+  "class_id": "class_6",
+  "classId": "class_6",
+  "subject_id": "02_hindi_complete_grade6",
+  "subjectId": "02_hindi_complete_grade6",
+  "_gurukul": {
+    "schema_version": "GURUKUL_CONTENT_HARDENED_1.0",
+    "source_relative_file": "Class 6\\02_HINDI_COMPLETE_GRADE6\\02_HINDI\\MANIFEST.json",
+    "class_id": "class_6",
+    "subject_id": "02_hindi_complete_grade6",
+    "chapter_id": null,
+    "chapter_title": null
+  }
+}

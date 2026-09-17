@@ -1,0 +1,79 @@
+# Assessment / Question Index
+
+Questions detected in the source extraction. This index does not invent answers.
+
+- Do you recall the ‘Eyes’ construction we did in Grade 6?
+- How do we find such A and B?
+- formed between them?
+- radius of any length?
+- to XY)?
+- How do we get these different shapes? Try!
+- Will C and D lie on the perpendicular bisector AB?
+- unmarked ruler and a compass?
+- adius for the arcs above and below XY? Explore this
+- 2. Is it necessary to construct the pairs of arcs above and below XY?
+- XY? Explore this through construction, and then justify your answer .
+- use the same radii for  both of them ? Explore this
+- a line? Draw a line and mark a point O
+- perpendicular bisector of XY?
+- given point on a line using a rope?
+- How do we construct this figure?
+- What is the angle between two adjacent lines?
+- How do we construct a 45° angle using only a ruler and a compass?
+- How do we construct these congruent triangles, given the angle?
+- line OC still be an angle bisector?
+- bisection? Can you construct 65.5° angle?
+- possible size within a given square?
+- lengths using a compass, but how do we ensure equal angles?
+- and a compass?
+- Have you seen this kind of beautiful arch?
+- php?curid=28374748
+- How did they make these arches?
+- How would you construct these support lines?
+- How do we construct this shape?
+- draw this arch?
+- Grade 6 Textbook?
+- able to construct a pointed arch?
+- regular hexagon (6-sided figure)? To begin with, try to construct a
+- constructed?
+- regular hexagon? Since a regular hexagon has equal
+- sides and angles, can we expect a figure like this?
+- triangles?
+- together as in Fig. 6.12? If yes, will it result in a regular hexagon?
+- angles are 60 + 60 = 120° (how?). So what we really need to examine
+- Consider this figure. Will the 70° angle fit into the gap? What is the gap
+- angle ∠AOI?
+- In Fig. 6.12 can you explain why AOD, BOE and COF are straight lines?
+- How do we do it?
+- ?
+- How do we construct a 60° angle?
+- Why is ∠CAX = 60°? Is there an equilateral triangle here?
+- How will you construct 30° and 15° angles?
+- Do you see a hexagon here?
+- ∆DJK, ∆ELK, ∆FLG — equilateral? Why?
+- only a compass! Can you do it?
+- following figure? How does this
+- happen? Recreate this in your
+- following figures?
+- Can a 4 × 6 grid be tiled using multiple copies of 2 × 1 tiles?
+- Can a 4 × 7 grid be tiled using 2 × 1 tiles?
+- What about a 5 × 7 grid?
+- Is an m × n grid tileable with 2 × 1 tiles, if both m and n are even? If yes,
+- other is odd? If yes, come up with a general strategy to tile it.
+- Is an m × n grid tileable with 2 × 1 tiles, if both m and n are odd? Give
+- tileable with 2 × 1 tiles?
+- Is the following region tileable with 2 × 1 tiles?
+- What about this one?
+- Were you able to tile this? How can we be sure that this is not tileable?
+- makes it non-tileable?
+- If the plain grid is tileable, is the black-and-white-grid tileable?
+- If the black-and-white grid is tileable, is the plain grid tileable?
+- Is the black-and-white region in Fig. 6.14 tileable?
+- a 5 × 3 grid, makes it non-tileable?
+- problem more complicated, it becomes easier to tackle? What a creative
+- Are the following tilings possible?
+- entire plane?
+- Can you think of a shape whose copies can tile the entire plane?
+- Are there other regular polygons that can tile the plane?
+- What about equilateral triangles?
+- Have you seen tilings in daily life? They are often used in buildings

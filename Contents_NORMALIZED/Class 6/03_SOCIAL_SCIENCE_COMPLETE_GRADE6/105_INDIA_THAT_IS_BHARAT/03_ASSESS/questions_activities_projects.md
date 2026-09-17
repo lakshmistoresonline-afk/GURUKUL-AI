@@ -1,0 +1,42 @@
+# Assessment — India, That Is Bharat
+
+Questions, activities and projects
+1.	
+Discuss what could be the meaning of the quotation at the 
+start of the chapter.
+2.	
+True or false?
+	
+Æ
+The Ṛig Veda describes the entire geography of India.
+	
+Æ
+The Viṣhṇu Purāṇa describes the entire Subcontinent.
+	
+Æ
+In Aśhoka’s time, ‘Jambudvīpa’ included what is today 
+India, parts of Afghanistan, Bangladesh and Pakistan.
+	
+Æ
+The Mahābhārata lists many regions, including 
+Kashmir, Kutch, and Kerala.
+	
+Æ
+The term ‘Hindustān’ first appeared in a Greek 
+inscription more than 2,000 years ago.
+	
+Æ
+In ancient Persian, the word ‘Hindu’ refers to the 
+Hindu religion.
+	
+Æ
+‘Bhārata’ is a name given to India by foreign travellers.
+3.	
+If you were born some 2,000 years ago and had the chance 
+to name our country, what name or names might you have 
+chosen, and why? Use your imagination!
+4.	
+Why did people travel to India from various parts of the 
+world in ancient times? What could be their motivations 
+in undertaking such long journeys? (Hint: There could be at 
+least four or five motivations)

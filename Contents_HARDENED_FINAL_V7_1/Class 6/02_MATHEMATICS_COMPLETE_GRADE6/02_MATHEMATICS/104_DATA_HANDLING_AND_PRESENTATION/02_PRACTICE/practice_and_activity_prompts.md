@@ -1,0 +1,189 @@
+# Data Handling And Presentation — Practice & Activity Prompts
+
+- **Source page 1:** we will explore some of the ways that data is presented, and how we
+- **Source page 1:** I think cricket is the
+- **Source page 1:** I am not sure. How can we find
+- **Source page 2:** do? Can you help them?
+- **Source page 2:** can’t yet see the most popular game. How can we get it from this list?”.
+- **Source page 2:** 1. What would you do to find the most popular game among Naresh’s
+- **Source page 2:** and Navya’s classmates?
+- **Source page 2:** 2. What is the most popular game in their class?
+- **Source page 2:** 3. Try to find out the most popular game among your classmates.
+- **Source page 3:** data. Discuss your answers in the classroom.
+- **Source page 3:** a. What is the
+- **Source page 3:** most popular TV show among her classmates?
+- **Source page 3:** b. When did India get independence?
+- **Source page 3:** c. How much water is getting wasted in her locality?
+- **Source page 3:** d. What is the capital of India?
+- **Source page 3:** 1. Complete the table to help Shri Nilesh to purchase the correct
+- **Source page 3:** a. How many students chose jalebi?
+- **Source page 3:** b. Barfi was chosen by students?
+- **Source page 3:** c. How many students chose gujiya?
+- **Source page 3:** d. Rasgulla was chosen by students?
+- **Source page 3:** e. How many students chose gulab jamun?
+- **Source page 4:** the correct student? Explain. If it is not sufficient, what is the
+- **Source page 4:** alternative?
+- **Source page 4:** answer these questions?
+- **Source page 4:** 3. Are there other ways to arrange the data?
+- **Source page 5:** walking from one place to another place), record the data and fill
+- **Source page 5:** a. Which tree was found in the greatest number?
+- **Source page 5:** b. Which tree was found in the smallest number?
+- **Source page 5:** c. Were there any two trees found in the same numbers?
+- **Source page 5:** the news article, and fill in the table.
+- **Source page 5:** as theirs? (Almost everyone is likely to get the order ‘x, c, r ,
+- **Source page 5:** i, e’.) Why do you think this is the case?
+- **Source page 6:** d. Write the process you followed to complete this task.
+- **Source page 6:** e. Discuss with your friends the processes they followed.
+- **Source page 6:** would you follow?
+- **Source page 6:** to guess what is the most popular colour
+- **Source page 6:** data for it. It can be a fun activity in which they also learn about their
+- **Source page 6:** classmates. Discuss how they can organise the data in different ways,
+- **Source page 6:** tasks and the tasks under ‘Figure it Out’, discuss the tasks with the
+- **Source page 7:** • Which mode of travel is used by the most number of students?
+- **Source page 7:** • Which mode of travel is used by the least number of students?
+- **Source page 7:** 1. What is the number of children who always slept at least 9
+- **Source page 7:** hours at night?
+- **Source page 7:** 2. How many children sometimes slept at least 9 hours at night?
+- **Source page 7:** 3. How many children always slept less than 9 hours each night?
+- **Source page 7:** 2. There are 2 complete pictures (2 × 10 = 20) and a half
+- **Source page 8:** 3. There are 4 complete pictures for ‘Never’. Hence, 4 × 10 =
+- **Source page 8:** One day, Lakhanpal collected data on how many students were
+- **Source page 9:** the challenges they might face?
+- **Source page 10:** class is 33 or 27?
+- **Source page 11:** a. On which day were the minimum number of books borrowed?
+- **Source page 11:** c. On which day were the maximum number of books borrowed?
+- **Source page 11:** y be the possible reason?
+- **Source page 12:** a. How many symbols represent the kites that Rani purchased?
+- **Source page 12:** b. Who purchased the maximum number of kites?
+- **Source page 12:** c. Who purchased more kites, Jasmeet or Chaman?
+- **Source page 12:** number of kites that Rani purchased. Is she correct? Why?
+- **Source page 12:** newspaper?
+- **Source page 13:** 2. In which class were the maximum number of students absent?
+- **Source page 13:** 3. Which class had full attendance that day? ___________
+- **Source page 15:** 1. How many total cars passed through the crossing between 6 a.m.
+- **Source page 15:** and noon?
+- **Source page 15:** you think so little traffic occurred during the hour of
+- **Source page 15:** 6–7 a.m., as compared to the other hours from 7 a.m.–noon?
+- **Source page 15:** 3. Why do you think the traffic was the heaviest between 7–8 a.m.
+- **Source page 15:** you think the traffic was lesser and lesser each hour after
+- **Source page 15:** 8 a.m. all the way until noon?
+- **Source page 16:** may ask your friends?
+- **Source page 16:** • How much did the population of India increase over 50 years?
+- **Source page 16:** How much did the population increase in each decade?
+- **Source page 16:** try to prepare a bar graph to present his data —
+- **Source page 16:** First, we draw a horizontal
+- **Source page 16:** We must choose a scale. That means we must decide how many
+- **Source page 16:** for the other sweets we have to draw bars as high as their
+- **Source page 17:** length = 10 runs. We mark this scale on the vertical line and draw
+- **Source page 18:** • Draw two perpendicular lines, one horizontal and one vertical.
+- **Source page 19:** Finally, calculate the heights of the bars for various items as
+- **Source page 20:** second most?
+- **Source page 20:** 2. Is the cost of electricity about one-half the cost of education?
+- **Source page 20:** 3. Is the cost of education less than one-fourth the cost of food?
+- **Source page 20:** She used this data and prepared a bar graph on the board to discuss
+- **Source page 21:** is 5 unit lengths. What is the scale for this graph?
+- **Source page 21:** d. Draw the correct bar for Sagar .
+- **Source page 21:** f. Are the bars for Seoni and Indore correct in this graph? If
+- **Source page 22:** b. Which means of transport was used the most?
+- **Source page 22:** c. If you were there to collect this data, how could you do it?
+- **Source page 22:** Prepare a frequency distribution table using tally marks. Find the
+- **Source page 22:** c. Find numbers that appeared an equal number of times.
+- **Source page 22:** a. What information is this table giving?
+- **Source page 22:** b. What may be the title of this table?
+- **Source page 22:** c. What caught your attention in this table?
+- **Source page 22:** d. In how many matches has Bumrah tak
+- **Source page 22:** en 4 wickets?
+- **Source page 23:** number of wickets taken in this way? Why?
+- **Source page 23:** a. Which village has the smallest number of tractors?
+- **Source page 23:** b. Which village has the most tractors?
+- **Source page 23:** c. How many more tractors does Village C have than Village B
+- **Source page 23:** Village E.” Is she right?
+- **Source page 24:** a. Which class has the least number of girl students?
+- **Source page 24:** graph change?
+- **Source page 24:** d. HowmanygirlsarethereinClass7?
+- **Source page 25:** a. What will be a useful scale or key to draw this pictograph?
+- **Source page 25:** b. How many symbols will you use to represent the dogs in
+- **Source page 25:** Village B?
+- **Source page 25:** dogs in the other 4 villages. Is she right? Give reasons for
+- **Source page 25:** school students was conducted to find out which
+- **Source page 25:** activity they preferred to do in their free time:
+- **Source page 25:** Preferred Activity Number of Students
+- **Source page 25:** Draw a bar graph to illustrate the above data taking the scale of
+- **Source page 25:** 1 unit length = 5 students. Which activity is preferred by most
+- **Source page 25:** students other than playing?
+- **Source page 26:** y do you think that is the case? Why were more saplings
+- **Source page 26:** planted on certain days of the week and less on others? Can
+- **Source page 26:** you think of possible explanations or reasons? How could you
+- **Source page 26:** try and figure out whether your explanations are correct?
+- **Source page 26:** graph. Can you find those mistakes and fix them?
+- **Source page 27:** The main focus of this chapter is to learn how to handle data to find
+- **Source page 28:** How much taller is Mount Everest than Mount Koscuiszko? Are
+- **Source page 28:** Mount Denali and Mount Kilimanjaro very different in height? This
+- **Source page 29:** pillars you find in a building that hold up the roof.
+- **Source page 30:** with vertical bars or horizontal bars? Why?
+- **Source page 30:** vertical bars or with horizontal bars? Why? Try finding out this
+- **Source page 30:** graph! Which continents have the longest rivers?
+- **Source page 31:** taller mountains always wider? The infographic is implying additional
+- **Source page 31:** rectangular columns of equal width? The mountains look more
+- **Source page 32:** What is 5642 × 2?
+- **Source page 32:** also need to be careful that the pictures we draw do not mislead us
+- **Source page 34:** Q.1. What would you do to find the most popular game among Naresh’s and Navya’s
+- **Source page 34:** classmates?
+- **Source page 34:** Ans. One of the ways could be to arrange and organize the given data in a table. Think of
+- **Source page 34:** Q.2. What is the most popular game in their class?
+- **Source page 34:** where she doesn’t need to collect data. Discuss your answers in the classroom.
+- **Source page 34:** a. What is the most popular TV show among her classmates?
+- **Source page 34:** Q.1. Complete the table to help Shri Nilesh to purchase the correct numbers of sweets:
+- **Source page 34:** • How many students chose jalebi?
+- **Source page 34:** • Barfi was chosen by students?
+- **Source page 34:** • How many students chose gujiya?
+- **Source page 34:** • Rasgulla was chosen by students?
+- **Source page 35:** • How many students chose gulab jamun?
+- **Source page 35:** Q.2. Is the above table sufficient to distribute each type of sweet to the correct student?
+- **Source page 35:** Explain. If it is not sufficient, what is the alternative?
+- **Source page 35:** Q.2. How did arranging the data in ascending order help to answer these questions?
+- **Source page 36:** Q.3. Are there other ways to arrange the data?
+- **Source page 36:** of students present in a class is 33 or 27?
+- **Source page 36:** b. What was the total number of books borrowed during the week?
+- **Source page 36:** c. On which day were the maximum number of books borrowed? What may be the
+- **Source page 36:** possible reason?
+- **Source page 37:** that Rani purchased. Is she correct? Why?
+- **Source page 37:** Q2. In which class were the maximum number of students absent? ___________
+- **Source page 37:** Q3. Which class had full attendance that day? ___________
+- **Source page 38:** Q.1. How many total cars passed through the crossing between 6 am and noon?
+- **Source page 38:** Q. On which item does Imran’s family spend the most and the second most?
+- **Source page 38:** Q.2. Is the cost of electricity about one-half the cost of education?
+- **Source page 38:** Q.3. Is the cost of education less than one-fourth the cost of food?
+- **Source page 39:** She used this data and prepared a bar graph on the board to discuss the data with
+- **Source page 39:** What is the scale for this graph?
+- **Source page 39:** d. Draw the correct bar for Sagar.
+- **Source page 39:** f. Are the bars for Seoni and Indore correct in this graph? If not, draw the correct
+- **Source page 40:** c. If you were there to collect this data, how could you do it? Write the steps or
+- **Source page 41:** d. In how many matches has Bumrah taken 4 wickets?
+- **Source page 41:** get the total number of wickets taken in this way? Why?
+- **Source page 41:** in his last 30 matches, using this table?
+- **Source page 41:** Matches.(think of more!)
+- **Source page 41:** Jaspreet Bumrah only.(think of more!)
+- **Source page 41:** c. How many more tractors does Village C have than Village B?
+- **Source page 41:** d. Komal says, “Village D has half the number of tractors as Village E.” Is she right?
+- **Source page 41:** b. What is the difference between the number of girls in Classs 5 and 6?
+- **Source page 41:** c. If 2 more girls were admitted in Class 2, how would the graph change?
+- **Source page 41:** d. How many girls are there in Class 7?
+- **Source page 42:** b. How many symbols will you use to represent the dogs in Village B?
+- **Source page 42:** more than the number of dogs in the other 4 villages. Is she right? Give reasons
+- **Source page 43:** Q.9 A survey of 120 school students was conducted to find out which activity they
+- **Source page 43:** Draw a bar graph to illustrate the above data taking the scale of 1 unit length = 5
+- **Source page 43:** students. Which activity is preferred by most students other than playing?
+- **Source page 43:** number of saplings were planted on ___________. Why do you think that is the
+- **Source page 43:** case? Why were more saplings planted on certain days of the week and less on
+- **Source page 43:** others? Can you think of possible explanations or reasons? How could you try
+- **Source page 43:** and figure out whether your explanations are correct?
+- **Source page 43:** rainy season or different number of students present on different day s. (Discuss for
+- **Source page 43:** Preferred Activity
+- **Source page 44:** to present this data, but there are a few mistakes in the graph. Can you find those
+- **Source page 44:** mistakes and fix them?
+- **Source page 44:** bars? Why?
+- **Source page 44:** (Although both bar graphs can be used.) (Think of more reasons!)
+- **Source page 44:** bars? Why? Try finding out this information, and then make the corresponding
+- **Source page 44:** table and bar graph! Which continents have the longest rivers?
+- **Source page 44:** (Although both bar graphs can be used.) (can you think of any other reasons?)

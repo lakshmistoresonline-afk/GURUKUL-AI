@@ -1,0 +1,174 @@
+# Number Play — Practice & Activity Prompts
+
+- **Source page 1:** Think about various situations where we use numbers.
+- **Source page 1:** your classmates have listed, share, and discuss.
+- **Source page 1:** What are these numbers telling us?
+- **Source page 1:** What do you think these numbers mean?
+- **Source page 2:** Did you figure out what these numbers represent?
+- **Source page 2:** Hint: Could their heights be playing a role?
+- **Source page 2:** Try answering the questions below and share your reasoning.
+- **Source page 2:** standing at the ends say ‘2’?
+- **Source page 2:** ‘0’? Why or why not?
+- **Source page 2:** of 5 children, is the sequence 1, 1, 1, 1, 1 possible?
+- **Source page 2:** 6. Is the sequence 0, 1, 2, 1, 0 possible? Why or why not?
+- **Source page 2:** maximum number of children say ‘2’?
+- **Source page 3:** numbers coloured? Discuss.
+- **Source page 3:** 2. Fill the table below with only 4-digit numbers such that the
+- **Source page 3:** 3. Fill the table below such that we get as many supercells as possible.
+- **Source page 3:** 4. Out of the 9 numbers, how many supercells are there in the table
+- **Source page 3:** above? ___________
+- **Source page 3:** Find out how many supercells are possible for different
+- **Source page 3:** you notice any pattern? What is the method to fill a given
+- **Source page 3:** table to get the maximum number of supercells? Explore and
+- **Source page 4:** 6. Can you fill a supercell table without repeating numbers such
+- **Source page 4:** that there are no supercells? Why or why not?
+- **Source page 4:** supercell? Can the cell having the smallest number in a table
+- **Source page 4:** be a supercell? Why or why not?
+- **Source page 4:** Fill a table such that the cell having the second largest number
+- **Source page 4:** Fill a table such that the cell having the second largest
+- **Source page 4:** a supercell. Is it possible?
+- **Source page 4:** Let’s do the supercells activity with more rows.
+- **Source page 4:** Complete Table 2 with 5-digit
+- **Source page 6:** Find out how many numbers have two digits, three digits, four
+- **Source page 6:** b. What is the smallest number whose digit sum is 14?
+- **Source page 6:** c. What is the largest 5-digit whose digit sum is 14?
+- **Source page 6:** can you form having the digit sum
+- **Source page 6:** of 14? Can you make an even bigger number?
+- **Source page 6:** 2. Find out the digit
+- **Source page 6:** 3. Calculate the digit sums of 3-digit numbers whose digits are
+- **Source page 6:** 345). Do you see a pattern? Will this
+- **Source page 6:** pattern continue?
+- **Source page 7:** Dinesh wondered how many times he
+- **Source page 7:** many times will the digit ‘7’ occur?
+- **Source page 7:** What pattern do you see in these numbers: 66, 848, 575, 797, 1111?
+- **Source page 7:** Try and see. Such numbers are called palindromes or palindromic
+- **Source page 7:** Now, look at these additions. Try to figure out what is happening.
+- **Source page 7:** Try the same procedure
+- **Source page 8:** a 2-digit number, always give a palindrome? Explore and find
+- **Source page 8:** Who am I? _________________
+- **Source page 9:** doing this?
+- **Source page 9:** Take different 4-digit numbers and try carrying out these steps. Find
+- **Source page 9:** number will start repeating?
+- **Source page 10:** Try and find out all possible times on a 12-hour clock of each of
+- **Source page 10:** Find some other dates of this form
+- **Source page 10:** Find all possible dates of this form from the past.
+- **Source page 10:** y should we change the calendar every year? Can we not reuse a
+- **Source page 10:** calendar?”. What do you think?
+- **Source page 10:** years? Will all dates and days in a year match exactly with
+- **Source page 10:** that of another year?
+- **Source page 11:** 2. What is the sum of the smallest and largest 5-digit palindrome?
+- **Source page 11:** What is their difference?
+- **Source page 11:** 3. The time now is 10:01. How many minutes until the clock shows
+- **Source page 11:** the next palindromic time? What about the one after that?
+- **Source page 11:** How many rounds
+- **Source page 11:** constant?
+- **Source page 11:** Observe the figure below. What can you say about the numbers and
+- **Source page 11:** the lines drawn?
+- **Source page 11:** sum. Draw arrows from the middle to the numbers on the sides to
+- **Source page 12:** Can we make 1,000 using the numbers in the middle? Why not?
+- **Source page 12:** What about 14,000, 15,000 and 16,000? Yes, it is possible. Explore how.
+- **Source page 12:** What thousands cannot be made?
+- **Source page 13:** Could you find examples for all the cases? If not, think and
+- **Source page 13:** discuss what could be the reason. Make other such questions
+- **Source page 13:** Always, Sometimes, Never?
+- **Source page 13:** statements. Think, explore and find out if
+- **Source page 13:** or ‘Never true’. Why do you think so? Write your reasoning
+- **Source page 13:** and discuss this with the class.
+- **Source page 13:** Here are some numbers arranged in some patterns. Find out the
+- **Source page 13:** them one by one or can we use a quicker way?
+- **Source page 13:** Share and discuss in class the different methods each one of you
+- **Source page 14:** Do you see how these sequences were formed?
+- **Source page 15:** with your favourite whole numbers. Do you always reach 1?
+- **Source page 15:** Do you believe the conjecture of Collatz that all such sequences
+- **Source page 15:** will eventually reach 1? Why or why not?
+- **Source page 15:** count. How many students are in your school? About 150? 400? A
+- **Source page 15:** thousand?
+- **Source page 15:** We shall do some simple estimates. It is a fun exercise, and you may
+- **Source page 15:** find it amusing
+- **Source page 16:** Try to guess within 30 seconds. Check your guess with your friends.
+- **Source page 16:** estimates the cost to be ₹100. Do you
+- **Source page 16:** agree with him? Why or why not?
+- **Source page 17:** in school till date. Do you agree with her? Why or why not?
+- **Source page 17:** try it at home with your family!
+- **Source page 17:** to see the winning strategy?
+- **Source page 17:** Which player can always win if they play correctly? What is the
+- **Source page 17:** pattern of numbers that the winning player should say?
+- **Source page 18:** player can always win? What is the pattern of numbers that the
+- **Source page 18:** winning player should say this time?
+- **Source page 18:** Kaprekar constant?
+- **Source page 18:** group? Who is the smallest number in our group? Who among us
+- **Source page 18:** is the closest to 50,000?
+- **Source page 18:** weekends, festivals and vacation. Then, try to get an exact number
+- **Source page 19:** sequence?
+- **Source page 19:** The first person to reach 22 wins. What is the winning strategy now?
+- **Source page 20:** Q. Think about various situations where we use numbers. List five different situations in
+- **Source page 20:** which numbers are used. See what your classmates have listed, share, and discuss.
+- **Source page 20:** Q. What do you think these numbers mean?
+- **Source page 20:** Q2. Can we arrange the children in a line so that all would say only 0s?
+- **Source page 20:** Q3. Can two children standing next to each other say the same number?
+- **Source page 20:** of them say ‘1’ and the last one says ‘0’? Why or why not?
+- **Source page 21:** Q5. For this group of 5 children, is the sequence 1, 1, 1, 1, 1 possible?
+- **Source page 21:** Q6. Is the sequence 0, 1, 2, 1, 0 possible? Why or why not?
+- **Source page 22:** Q2. Fill the table below with only 4-digit numbers such that the supercells are exactly the
+- **Source page 22:** Ans. One of the ways could be-5346; 9636.Try more
+- **Source page 22:** Q3. Fill the table below such that we get as many supercells as possible. Use numbers
+- **Source page 22:** Q4. Out of the 9 numbers, how many supercells are there in the table above? ___________
+- **Source page 22:** Q5 Find out how many supercells are possible for different numbers of cells.
+- **Source page 22:** Do you notice any pattern? What is the method to fill a given table to get the
+- **Source page 22:** maximum number of supercells? Explore and share your strategy.
+- **Source page 22:** super cell & then fill alternately.
+- **Source page 22:** Q6. Can you fill a supercell table without repeating numbers such that there are no
+- **Source page 22:** supercells? Why or why not?
+- **Source page 22:** Q7. Will the cell having the largest number in a table always be a supercell? Can the cell
+- **Source page 22:** having the smallest number in a table be a supercell? Why or why not?
+- **Source page 22:** Q8. Fill a table such that the cell having the second largest number is not a supercell.
+- **Source page 23:** Q9. Fill a table such that the cell having the second largest number is not a supercell but
+- **Source page 23:** the second smallest number is a supercell. Is it possible?
+- **Source page 23:** Can you fill the table with 9 cells such that there are more than 5 super cells?
+- **Source page 23:** Can you fill the table with 9 cells such that there are exactly 4 super cells?
+- **Source page 23:** Q. Complete Table 2 with 5 -digit numbers whose digits are ‘1’, ‘0’, ‘6’, ‘3’, and ‘9’ in
+- **Source page 24:** Q. Find out how many numbers have two digits, three digits, four digits, and five digits:
+- **Source page 25:** c. What is the largest 5-digit number whose digit sum is 14?
+- **Source page 25:** d. How big a number can you form having the digit sum 14? Can you make an even
+- **Source page 25:** bigger number?
+- **Source page 25:** Q.3. Calculate the digit sums of 3 -digit numbers whose digits are consecutive (for
+- **Source page 25:** example, 345). Do you see a pattern? Will this pattern continue?
+- **Source page 25:** Q. Among the numbers 1 –100, how many times will the digit ‘7’ occur? Among the
+- **Source page 25:** numbers 1–1000, how many times will the digit ‘7’ occur?
+- **Source page 26:** always give a palindrome? Explore and find out.*
+- **Source page 26:** repeating?
+- **Source page 26:** Try for other 3-digit numbers.
+- **Source page 27:** Q. Try and find out all possible times on a 12-hour clock of each of these types.
+- **Source page 27:** 12:21 05:50 10:01 Think of some more!
+- **Source page 27:** Q. Find some other dates of this form from the past.
+- **Source page 27:** Ans. 20/04/2004, 20/06/2006, Try for yourself!
+- **Source page 27:** Q. Find all possible dates of this form from the past.
+- **Source page 27:** Ans. 01/02/2001, 02/02/2002, Think of some more!
+- **Source page 27:** Q. Will any year’s calendar repeat again after some years? Will all dates and days in a
+- **Source page 27:** year match exactly with that of another year?
+- **Source page 27:** Q.2. What is the sum of the smallest and largest 5 -digit palindrome? What is their
+- **Source page 27:** difference?
+- **Source page 28:** Q.3. The time now is 10:01. How many minutes until the clock shows the next palindromic
+- **Source page 28:** time? What about the one after that?
+- **Source page 28:** Q.4. How many rounds does the number 5683 take to reach the Kaprekar constant?
+- **Source page 28:** Q. Can we make 1,000 using the numbers in the middle? Why not? What about 14,000,
+- **Source page 28:** 15,000 and 16,000? Yes, it is possible. Explore how. What thousands cannot be made?
+- **Source page 28:** Could you find examples for all the cases? If not, think and discuss what could be
+- **Source page 29:** Q.2. Always, Sometimes, Never?
+- **Source page 29:** Below are some statements. Think, explore and find out if each of the statement is
+- **Source page 29:** ‘Always true’, ‘Only sometimes true’ or ‘Never true’. Why do you think so? Write
+- **Source page 29:** your reasoning; discuss this with the class.
+- **Source page 30:** whole numbers. Do you always reach 1?
+- **Source page 30:** Do you believe the conjecture of Collatz that all such sequences will eventually
+- **Source page 30:** reach 1? Why or why not?
+- **Source page 30:** estimates the cost to be ₹ 100. Do you agree with him? Why or why not?
+- **Source page 30:** Do you agree with her? Why or why not?
+- **Source page 30:** • How many students are there in your school?
+- **Source page 30:** • How many hours does a person sleep in his lifetime on an average?
+- **Source page 31:** Q.2. How many rounds does your year of birth take to reach the Kaprekar constant?
+- **Source page 31:** It takes 6 rounds. (Try now for your year of birth.)
+- **Source page 31:** digits are odd. Who is the largest number in our group? Who is the smallest number
+- **Source page 31:** in our group? Who among us is the closest to 50,000?
+- **Source page 31:** Ans. 18000 + 300 + 370 = 18670. Try for more.
+- **Source page 32:** conjecture correct for all the starting numbers in this sequence?
+- **Source page 32:** to reach 22 wins. What is the winning strategy now?
