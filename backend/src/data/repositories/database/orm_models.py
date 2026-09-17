@@ -4,12 +4,16 @@ from .db_config import Base
 
 class UserORM(Base):
     __tablename__ = "users"
+
     id = Column(String, primary_key=True)
     username = Column(String, unique=True, index=True)
     hashed_password = Column(String)
     role = Column(String, default="STUDENT")
     student_profile_id = Column(String, ForeignKey("students.id"), nullable=True)
     is_active = Column(Boolean, default=True)
+
+    # Firebase Authentication identity
+    firebase_uid = Column(String, unique=True, index=True, nullable=True)
 
 class StudentORM(Base):
     __tablename__ = "students"

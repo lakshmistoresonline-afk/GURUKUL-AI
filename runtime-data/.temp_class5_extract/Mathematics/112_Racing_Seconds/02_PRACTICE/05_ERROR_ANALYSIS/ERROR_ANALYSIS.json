@@ -1,0 +1,54 @@
+{
+  "record_type": "DERIVED_ERROR_ANALYSIS",
+  "chapter": "Racing Seconds",
+  "items": [
+    {
+      "error_id": "E01",
+      "skill": "reading time on clocks",
+      "common_error": "Applying a familiar rule without checking whether it matches reading time on clocks.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for reading time on clocks using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E02",
+      "skill": "12-hour and 24-hour formats",
+      "common_error": "Applying a familiar rule without checking whether it matches 12-hour and 24-hour formats.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for 12-hour and 24-hour formats using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E03",
+      "skill": "seconds as a small time unit",
+      "common_error": "Applying a familiar rule without checking whether it matches seconds as a small time unit.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for seconds as a small time unit using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E04",
+      "skill": "hours-minutes-seconds relationships",
+      "common_error": "Applying a familiar rule without checking whether it matches hours-minutes-seconds relationships.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for hours-minutes-seconds relationships using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E05",
+      "skill": "elapsed time",
+      "common_error": "Applying a familiar rule without checking whether it matches elapsed time.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for elapsed time using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E06",
+      "skill": "finding start and finish times",
+      "common_error": "Applying a familiar rule without checking whether it matches finding start and finish times.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for finding start and finish times using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    }
+  ]
+}

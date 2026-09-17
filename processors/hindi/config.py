@@ -1,0 +1,2 @@
+SUBJECT_NAME = "Hindi"
+CLASS_LEVEL = "5"

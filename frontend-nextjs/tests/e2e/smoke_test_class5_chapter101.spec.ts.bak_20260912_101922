@@ -1,0 +1,35 @@
+﻿import { test, expect } from '@playwright/test';
+
+test('Chapter 101: Papa Spectacles renders correctly', async ({ page }) => {
+  await page.goto('/chapter/class_5_01_english_complete_101');
+
+  // Wait for the actual canonical chapter heading.
+  const title = page.locator('header h1');
+  await expect(title).toContainText('Papas Spectacles', { timeout: 30000 });
+
+  // Verify navigation/content.
+  await expect(page.getByText('1 / 10')).toBeVisible({ timeout: 20000 });
+
+  const firstRecord = page.locator('[data-gurukul-record-id]').first();
+  await expect(firstRecord).toBeVisible({ timeout: 20000 });
+
+  const recordId = await firstRecord.getAttribute('data-gurukul-record-id');
+  expect(recordId).toMatch(/^class05_01_english_101_learn_/);
+
+  const bodyText = await page.innerText('body');
+
+  expect(bodyText).not.toContain('water water water');
+  expect(bodyText).not.toContain('elephant elephant elephant');
+
+  const cards = await page.locator('[data-gurukul-record-id]').all();
+
+  for (const card of cards) {
+    const text = await card.innerText();
+
+    if (text.length < 5 && text.trim().match(/^\d+\.$/)) {
+      throw new Error(`Orphan fragment detected: "${text}"`);
+    }
+  }
+
+  console.log('Smoke Test Passed: Chapter 101 is Production Ready.');
+});

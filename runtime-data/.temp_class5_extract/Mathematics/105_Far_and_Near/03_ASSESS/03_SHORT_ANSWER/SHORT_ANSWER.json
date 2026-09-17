@@ -1,0 +1,84 @@
+{
+  "record_type": "DERIVED_SHORT_ANSWER",
+  "chapter": "Far and Near",
+  "items": [
+    {
+      "id": "SA01",
+      "question": "Convert 4 cm 5 mm to millimetres.",
+      "expected_answer": "45 mm.",
+      "reasoning_points": [
+        "4 cm=40 mm; 40+5=45 mm."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        7
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA02",
+      "question": "Convert 89 mm to centimetres and millimetres.",
+      "expected_answer": "8 cm 9 mm.",
+      "reasoning_points": [
+        "80 mm=8 cm; 9 mm remain."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        7
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA03",
+      "question": "Add 3 km 450 m and 4 km 650 m.",
+      "expected_answer": "8 km 100 m.",
+      "reasoning_points": [
+        "450+650=1100 m=1 km 100 m; add kilometres."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        8
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA04",
+      "question": "Subtract 16 m 75 cm from 63 m.",
+      "expected_answer": "46 m 25 cm.",
+      "reasoning_points": [
+        "Regroup 63 m as 62 m 100 cm, then subtract."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        9
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA05",
+      "question": "Compare 20 cm and 201 mm.",
+      "expected_answer": "20 cm = 200 mm, so 20 cm < 201 mm.",
+      "reasoning_points": [
+        "Convert centimetres to millimetres."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        10
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA06",
+      "question": "A 3-km race has a water point every 500 m including the finish. How many marked points are there?",
+      "expected_answer": "6.",
+      "reasoning_points": [
+        "3 km=3000 m; 3000÷500=6."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        4
+      ],
+      "provenance": "DERIVED"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ import { GraduationCap, ArrowRight, Book, Layers, ShieldCheck, Zap, Target, Help
 import Link from 'next/link';
 
 export default function HomePage() {
-  const { user, login, loading: authLoading } = useAuth();
+  const { user, login, register, resetPassword, loading: authLoading } = useAuth();
   const [classes, setClasses] = useState<Class[]>([]);
   const [selectedClass, setSelectedClass] = useState<Class | null>(null);
   const [loading, setLoading] = useState(true);
@@ -28,9 +28,15 @@ export default function HomePage() {
     }
   }, [searchQuery]);
 
-  // Form State
-  const [username, setUsername] = useState('tester_v1');
+  // Authentication form state
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
+  const [classId, setClassId] = useState('class_5');
+  const [isRegistering, setIsRegistering] = useState(false);
+  const [isResettingPassword, setIsResettingPassword] = useState(false);
+  const [resetMessage, setResetMessage] = useState('');
+
   const [loginError, setLoginError] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
@@ -48,59 +54,286 @@ export default function HomePage() {
   }, [user]);
 
   const handleLogin = async (e: React.FormEvent) => {
-     e.preventDefault();
-     setLoginError('');
-     setSubmitting(true);
-     try {
-        await login(username, password);
-     } catch (err: any) {
-        setLoginError('Invalid username or password.');
+    e.preventDefault();
+
+    setLoginError('');
+    setResetMessage('');
+    setSubmitting(true);
+
+    try {
+      if (isResettingPassword) {
+        if (!email.trim()) {
+          throw new Error('Please enter your email address.');
+        }
+
+        await resetPassword(email.trim());
+
+        setResetMessage(
+          'Password reset email sent. Please check your inbox.'
+        );
+
         setSubmitting(false);
-     }
+        return;
+      }
+
+      if (isRegistering) {
+        await register({
+          email: email.trim(),
+          password,
+          name: name.trim(),
+          class_id: classId,
+        });
+      } else {
+        await login(
+          email.trim(),
+          password
+        );
+      }
+    } catch (err: any) {
+      console.error(
+        'Firebase authentication failed:',
+        err
+      );
+
+      const firebaseCode =
+        err?.code ||
+        err?.response?.data?.code;
+
+      const detail =
+        err?.response?.data?.detail;
+
+      let message =
+        detail ||
+        err?.message ||
+        'Authentication failed.';
+
+      if (
+        firebaseCode === 'auth/invalid-credential' ||
+        firebaseCode === 'auth/wrong-password'
+      ) {
+        message = 'Invalid email or password.';
+      }
+
+      if (firebaseCode === 'auth/user-not-found') {
+        message =
+          'No Firebase account exists for this email.';
+      }
+
+      if (firebaseCode === 'auth/email-already-in-use') {
+        message =
+          'This email already has a Firebase account. Please use Sign In or Forgot Password.';
+      }
+
+      if (firebaseCode === 'auth/weak-password') {
+        message =
+          'Password must contain at least 6 characters.';
+      }
+
+      if (firebaseCode === 'auth/too-many-requests') {
+        message =
+          'Too many attempts. Please wait and try again.';
+      }
+
+      setLoginError(message);
+      setSubmitting(false);
+    }
   };
 
-  if (authLoading) return <Layout><div className="p-20 text-center font-black text-slate-300 uppercase animate-pulse">Establishing Secure Link...</div></Layout>;
 
   if (!user) {
     return (
       <Layout>
-        <div className="min-h-[80vh] flex flex-col items-center justify-center px-4 sm:px-6 py-12 sm:py-20 relative overflow-hidden">
-           <div className="max-w-md w-full space-y-8 sm:space-y-12 relative z-10">
-              <div className="text-center space-y-4">
-                 <div className="inline-flex items-center gap-3 px-5 sm:px-6 py-2 bg-slate-900 text-white rounded-full font-black text-[10px] uppercase tracking-[0.3em]">
-                    <ShieldCheck size={14} className="text-blue-400" /> Gurukul AI Unified System
-                 </div>
-                 <h1 className="text-4xl sm:text-6xl font-black tracking-tighter text-slate-900 uppercase italic">Student Login</h1>
-                 <p className="text-sm text-slate-500 font-medium">Class 5, 6, and 7 Universal Access</p>
+        <div className="min-h-[80vh] flex items-center justify-center px-4 py-12">
+          <div className="w-full max-w-md">
+
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center rounded-full bg-slate-900 px-6 py-2 text-[10px] font-black uppercase tracking-[0.25em] text-white">
+                GURUKUL AI UNIFIED SYSTEM
               </div>
 
-              <div className="bg-white border-2 border-slate-100 rounded-[36px] p-6 sm:p-10 shadow-2xl space-y-6">
-                 <form onSubmit={handleLogin} className="space-y-4">
-                    {loginError && (
-                       <div className="p-4 bg-red-50 border border-red-200 rounded-2xl text-xs font-bold text-red-600">{loginError}</div>
-                    )}
+              <h1 className="mt-5 text-5xl font-black italic tracking-tighter uppercase text-slate-900">
+                {isResettingPassword
+                  ? 'Reset Password'
+                  : isRegistering
+                    ? 'Student Registration'
+                    : 'Student Login'}
+              </h1>
+
+              <p className="mt-4 text-sm font-medium text-slate-500">
+                Secure Firebase Authentication • Classes 5, 6, and 7
+              </p>
+            </div>
+
+            <div className="rounded-[32px] border-2 border-slate-100 bg-white p-8 shadow-2xl">
+
+              <form
+                onSubmit={handleLogin}
+                className="space-y-5"
+              >
+
+                {loginError && (
+                  <div className="rounded-2xl border border-red-200 bg-red-50 p-4 text-xs font-bold text-red-600">
+                    {loginError}
+                  </div>
+                )}
+
+                {resetMessage && (
+                  <div className="rounded-2xl border border-green-200 bg-green-50 p-4 text-xs font-bold text-green-700">
+                    {resetMessage}
+                  </div>
+                )}
+
+                {isRegistering && !isResettingPassword && (
+                  <>
                     <div>
-                       <label className="block text-[11px] font-black uppercase tracking-wider text-slate-500 mb-2">Username</label>
-                       <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-200 rounded-2xl font-bold text-slate-900 outline-none transition-all text-sm" required />
+                      <label className="mb-2 block text-[11px] font-black uppercase tracking-wider text-slate-500">
+                        Full Name
+                      </label>
+
+                      <input
+                        type="text"
+                        value={name}
+                        onChange={(e) =>
+                          setName(e.target.value)
+                        }
+                        autoComplete="name"
+                        className="w-full rounded-2xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-sm font-bold text-slate-900 outline-none"
+                        required
+                      />
                     </div>
+
                     <div>
-                       <label className="block text-[11px] font-black uppercase tracking-wider text-slate-500 mb-2">Password</label>
-                       <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full px-6 py-4 bg-slate-50 border-2 border-slate-200 rounded-2xl font-bold text-slate-900 outline-none transition-all text-sm" required />
+                      <label className="mb-2 block text-[11px] font-black uppercase tracking-wider text-slate-500">
+                        Class
+                      </label>
+
+                      <select
+                        value={classId}
+                        onChange={(e) =>
+                          setClassId(e.target.value)
+                        }
+                        className="w-full rounded-2xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-sm font-bold text-slate-900 outline-none"
+                        required
+                      >
+                        <option value="class_5">
+                          Class 5
+                        </option>
+
+                        <option value="class_6">
+                          Class 6
+                        </option>
+
+                        <option value="class_7">
+                          Class 7
+                        </option>
+                      </select>
                     </div>
-                    <button type="submit" disabled={submitting} className="w-full py-5 bg-blue-600 text-white rounded-2xl font-black uppercase text-xs hover:bg-blue-700 transition-all shadow-xl disabled:opacity-50">
-                      {submitting ? 'Authenticating...' : 'Authorize Access'}
+                  </>
+                )}
+
+                <div>
+                  <label className="mb-2 block text-[11px] font-black uppercase tracking-wider text-slate-500">
+                    Email
+                  </label>
+
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) =>
+                      setEmail(e.target.value)
+                    }
+                    autoComplete="email"
+                    className="w-full rounded-2xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-sm font-bold text-slate-900 outline-none"
+                    required
+                  />
+                </div>
+
+                {!isResettingPassword && (
+                  <div>
+                    <label className="mb-2 block text-[11px] font-black uppercase tracking-wider text-slate-500">
+                      Password
+                    </label>
+
+                    <input
+                      type="password"
+                      value={password}
+                      onChange={(e) =>
+                        setPassword(e.target.value)
+                      }
+                      autoComplete={
+                        isRegistering
+                          ? 'new-password'
+                          : 'current-password'
+                      }
+                      minLength={6}
+                      className="w-full rounded-2xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-sm font-bold text-slate-900 outline-none"
+                      required
+                    />
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="w-full rounded-2xl bg-blue-600 py-5 text-xs font-black uppercase text-white shadow-xl transition-all hover:bg-blue-700 disabled:opacity-50"
+                >
+                  {submitting
+                    ? 'Processing...'
+                    : isResettingPassword
+                      ? 'Send Reset Email'
+                      : isRegistering
+                        ? 'Create Student Account'
+                        : 'Authorize Access'}
+                </button>
+
+                {!isRegistering && !isResettingPassword && (
+                  <div className="pt-1 text-center">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsResettingPassword(true);
+                        setLoginError('');
+                        setResetMessage('');
+                        setSubmitting(false);
+                      }}
+                      className="text-xs font-black uppercase tracking-widest text-slate-500 transition-colors hover:text-blue-600"
+                    >
+                      Forgot Password?
                     </button>
-                 </form>
-                 <div className="border-t border-slate-100 pt-6 space-y-3">
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest text-center">Quick Credentials:</p>
-                    <div className="grid grid-cols-3 gap-2">
-                       {['tester_v1', 'class6_user', 'class7_user'].map(u => (
-                          <button key={u} type="button" onClick={() => { setUsername(u); setPassword(''); }} className="p-2 bg-slate-50 border border-slate-200 rounded-xl text-[10px] font-black hover:bg-blue-50 transition-all uppercase">{u.split('_')[0]}</button>
-                       ))}
-                    </div>
-                 </div>
+                  </div>
+                )}
+
+              </form>
+
+              <div className="mt-6 border-t border-slate-100 pt-6 text-center">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (isResettingPassword) {
+                      setIsResettingPassword(false);
+                      setIsRegistering(false);
+                    } else {
+                      setIsRegistering(
+                        (value) => !value
+                      );
+                    }
+
+                    setLoginError('');
+                    setResetMessage('');
+                    setSubmitting(false);
+                  }}
+                  className="text-xs font-black uppercase tracking-widest text-blue-600 transition-colors hover:text-blue-700"
+                >
+                  {isResettingPassword
+                    ? 'Back to Sign In'
+                    : isRegistering
+                      ? 'Already have an account? Sign in'
+                      : 'New student? Create an account'}
+                </button>
               </div>
-           </div>
+
+            </div>
+          </div>
         </div>
       </Layout>
     );
@@ -130,7 +363,7 @@ export default function HomePage() {
                        <Link key={res.id} href={`/chapter/${res.chapter_id}`} className="block p-4 hover:bg-slate-50 rounded-2xl border border-transparent hover:border-slate-100 transition-all">
                           <div className="flex items-center justify-between mb-1">
                              <span className="text-[8px] font-black text-blue-600 uppercase tracking-widest bg-blue-50 px-2 py-0.5 rounded">{res.layer}</span>
-                             <span className="text-[8px] font-bold text-slate-400 uppercase">{res.class} • {res.subject}</span>
+                             <span className="text-[8px] font-bold text-slate-400 uppercase">{res.class} â€¢ {res.subject}</span>
                           </div>
                           <p className="text-sm font-black text-slate-900 leading-tight">{res.title || 'Untitled Block'}</p>
                           <p className="text-[10px] text-slate-500 line-clamp-1 mt-1 font-medium">{res.text}</p>

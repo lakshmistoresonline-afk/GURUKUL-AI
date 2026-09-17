@@ -1,0 +1,30 @@
+{
+  "chapter_id": "109_Vocation",
+  "common_error_patterns": [
+    {
+      "error": "answers that repeat the question without answering it",
+      "diagnosis": "response does not address the asked task",
+      "repair": "underline the task word and answer it directly"
+    },
+    {
+      "error": "unsupported inference",
+      "diagnosis": "claim is not connected to a lesson detail",
+      "repair": "add a relevant detail or qualify the inference"
+    },
+    {
+      "error": "vocabulary used with the wrong meaning",
+      "diagnosis": "context was ignored",
+      "repair": "re-read the sentence and test the word in a new sentence"
+    },
+    {
+      "error": "incomplete sentence or weak punctuation",
+      "diagnosis": "language accuracy issue",
+      "repair": "read the answer aloud and edit subject, verb and punctuation"
+    }
+  ],
+  "student_reflection_prompts": [
+    "What did I misunderstand?",
+    "Which clue did I miss?",
+    "How will I avoid the same error next time?"
+  ]
+}

@@ -1,0 +1,410 @@
+﻿from __future__ import annotations
+
+import json
+import subprocess
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[2]
+
+RUNTIME_REPORT = ROOT / "GURUKUL_RUNTIME_INTEGRITY_REPORT.json"
+API_REPORT = ROOT / "GURUKUL_API_FIDELITY_CERTIFICATION.json"
+
+FINAL_JSON = ROOT / "FINAL_CERTIFICATION_RECONCILIATION.json"
+FINAL_MD = ROOT / "FINAL_CERTIFICATION_RECONCILIATION.md"
+
+CANONICAL_ROOT = ROOT / "Contents"
+RUNTIME_ROOT = ROOT / "runtime-data"
+
+
+def load_json(path: Path):
+    if not path.exists():
+        return None
+    try:
+        with path.open("r", encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8-sig") as f:
+    except UnicodeDecodeError:
+        with path.open("r", encoding="utf-8-sig") as f:
+            return json.load(f)
+
+
+def find_value(obj, names, default=None):
+    if isinstance(obj, dict):
+        for name in names:
+            if name in obj:
+                return obj[name]
+
+        for value in obj.values():
+            result = find_value(value, names, None)
+            if result is not None:
+                return result
+
+    elif isinstance(obj, list):
+        for value in obj:
+            result = find_value(value, names, None)
+            if result is not None:
+                return result
+
+    return default
+
+
+def count_runtime_chapters():
+    if not RUNTIME_ROOT.exists():
+        return 0
+
+    return len(list(RUNTIME_ROOT.glob("chapters/class_*/**/*.json")))
+
+
+def count_runtime_json():
+    if not RUNTIME_ROOT.exists():
+        return 0
+
+    return len(list(RUNTIME_ROOT.glob("**/*.json")))
+
+
+def canonical_fingerprint():
+    """
+    Returns file count and total bytes only.
+    This deliberately does not modify Contents.
+    """
+    if not CANONICAL_ROOT.exists():
+        return {
+            "exists": False,
+            "files": 0,
+            "bytes": 0,
+        }
+
+    files = list(CANONICAL_ROOT.rglob("*"))
+    files = [p for p in files if p.is_file()]
+
+    return {
+        "exists": True,
+        "files": len(files),
+        "bytes": sum(p.stat().st_size for p in files),
+    }
+
+
+def git_status():
+    try:
+        result = subprocess.run(
+            ["git", "status", "--short"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+
+        return result.stdout.strip()
+    except Exception as exc:
+        return f"git status unavailable: {exc}"
+
+
+def main():
+    runtime = load_json(RUNTIME_REPORT)
+    api = load_json(API_REPORT)
+
+    checks = {}
+
+    # ---------------------------------------------------------
+    # Runtime integrity
+    # ---------------------------------------------------------
+    runtime_status = find_value(
+        runtime,
+        ["overall_status", "status"],
+        None,
+    )
+
+    runtime_pass = runtime_status in {
+        "RUNTIME_INTEGRITY_PASS",
+        "PASS",
+        "PASS_WITH_REVIEW",
+    }
+
+    checks["runtime_integrity"] = {
+        "status": runtime_status,
+        "pass": runtime_pass,
+        "report": str(RUNTIME_REPORT),
+    }
+
+    # ---------------------------------------------------------
+    # API fidelity
+    # ---------------------------------------------------------
+    api_status = find_value(
+        api,
+        ["overall_status", "status"],
+        None,
+    )
+
+    # API certification supports both current and legacy report schemas.
+    tests_executed = find_value(
+        api,
+        ["tests_executed", "total_tests", "tests_executed_count"],
+        None,
+    )
+
+    tests_passed = find_value(
+        api,
+        ["tests_passed", "passed"],
+        None,
+    )
+
+    tests_failed = find_value(
+        api,
+        ["tests_failed", "failed"],
+        None,
+    )
+
+    # Some certification versions store the result under a nested
+    # final_result/result object. Search recursively if necessary.
+    if tests_executed is None:
+        tests_executed = find_value(
+            api,
+            ["executed", "total"],
+            None,
+        )
+
+    if tests_passed is None:
+        tests_passed = find_value(
+            api,
+            ["passed"],
+            None,
+        )
+
+    if tests_failed is None:
+        tests_failed = find_value(
+            api,
+            ["failed"],
+            None,
+        )
+
+    try:
+        tests_executed = int(tests_executed or 0)
+    except Exception:
+        tests_executed = 0
+
+    try:
+        tests_passed = int(tests_passed or 0)
+    except Exception:
+        tests_passed = 0
+
+    try:
+        tests_failed = int(tests_failed or 0)
+    except Exception:
+        tests_failed = 0
+
+    api_pass = (
+        tests_executed > 0
+        and tests_passed == tests_executed
+        and tests_failed == 0
+        and (
+            api_status in {"API_FIDELITY_PASS", "PASS", None}
+        )
+    )
+
+    checks["api_fidelity"] = {
+        "status": api_status,
+        "tests_executed": tests_executed,
+        "tests_passed": tests_passed,
+        "tests_failed": tests_failed,
+        "pass": api_pass,
+        "report": str(API_REPORT),
+    }
+
+    # ---------------------------------------------------------
+    # Runtime filesystem
+    # ---------------------------------------------------------
+    runtime_chapters = count_runtime_chapters()
+    runtime_json = count_runtime_json()
+
+    checks["runtime_filesystem"] = {
+        "chapter_files": runtime_chapters,
+        "json_files": runtime_json,
+        "pass": runtime_chapters == 183,
+    }
+
+    # ---------------------------------------------------------
+    # Canonical source existence
+    # ---------------------------------------------------------
+    canonical = canonical_fingerprint()
+
+    checks["canonical_source"] = {
+        **canonical,
+        "pass": canonical["exists"],
+    }
+
+    # ---------------------------------------------------------
+    # Playwright evidence
+    #
+    # This gate is deliberately evidence-based.
+    # The overnight runner writes this marker only after
+    # Playwright succeeds.
+    # ---------------------------------------------------------
+    playwright_marker = ROOT / "PLAYWRIGHT_E2E_CERTIFICATION.json"
+
+    playwright = load_json(playwright_marker)
+
+    playwright_pass = bool(
+        playwright
+        and playwright.get("status") == "PASS"
+        and int(playwright.get("passed", 0)) > 0
+        and int(playwright.get("failed", 0)) == 0
+    )
+
+    checks["playwright_e2e"] = {
+        "pass": playwright_pass,
+        "evidence": str(playwright_marker),
+        "details": playwright,
+    }
+
+    # ---------------------------------------------------------
+    # Production build evidence
+    # ---------------------------------------------------------
+    build_marker = ROOT / "NEXTJS_BUILD_CERTIFICATION.json"
+
+    build = load_json(build_marker)
+
+    build_pass = bool(
+        build
+        and build.get("status") == "PASS"
+    )
+
+    checks["production_build"] = {
+        "pass": build_pass,
+        "evidence": str(build_marker),
+        "details": build,
+    }
+
+    # ---------------------------------------------------------
+    # Source protection evidence
+    # ---------------------------------------------------------
+    source_marker = ROOT / "CANONICAL_SOURCE_PROTECTION.json"
+
+    source = load_json(source_marker)
+
+    source_pass = bool(
+        source
+        and source.get("status") == "PASS"
+    )
+
+    checks["source_protection"] = {
+        "pass": source_pass,
+        "evidence": str(source_marker),
+        "details": source,
+    }
+
+    # ---------------------------------------------------------
+    # Final gate
+    # ---------------------------------------------------------
+    all_gates = {
+        name: value["pass"]
+        for name, value in checks.items()
+    }
+
+    overall_pass = all(all_gates.values())
+
+    status = (
+        "PRODUCTION_CERTIFIED"
+        if overall_pass
+        else "CERTIFICATION_PENDING"
+    )
+
+    generated_at = datetime.now(timezone.utc).isoformat()
+
+    result = {
+        "certification_version": "2.0",
+        "generated_at_utc": generated_at,
+        "repository": str(ROOT),
+        "status": status,
+
+        "runtime": {
+            "chapter_files": runtime_chapters,
+            "json_files": runtime_json,
+        },
+
+        "api": {
+            "tests_executed": tests_executed,
+            "tests_passed": tests_passed,
+            "tests_failed": tests_failed,
+        },
+
+        "gates": all_gates,
+        "checks": checks,
+
+        "important_policy": [
+            "Certification is evidence-driven.",
+            "Historical hard-coded totals are not used.",
+            "Missing historical reconciliation files do not get fabricated.",
+            "Canonical Contents are never modified by certification.",
+            "Production certification requires every gate to pass.",
+        ],
+
+        "git_status_at_certification": git_status(),
+    }
+
+    with FINAL_JSON.open("w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)
+
+    lines = [
+        "# GURUKUL AI — FINAL PRODUCTION CERTIFICATION",
+        "",
+        f"Generated: {generated_at}",
+        "",
+        f"## STATUS: {status}",
+        "",
+        "## Runtime",
+        f"- Runtime chapter files: **{runtime_chapters}**",
+        f"- Runtime JSON files: **{runtime_json}**",
+        "",
+        "## API Fidelity",
+        f"- Tests executed: **{tests_executed}**",
+        f"- Tests passed: **{tests_passed}**",
+        f"- Tests failed: **{tests_failed}**",
+        "",
+        "## Certification Gates",
+    ]
+
+    for name, passed in all_gates.items():
+        lines.append(
+            f"- {'PASS' if passed else 'FAIL'} — {name}"
+        )
+
+    lines.extend([
+        "",
+        "## Certification Policy",
+        "",
+        "This certification is generated exclusively from current repository evidence.",
+        "No historical totals or missing reconciliation files are fabricated.",
+        "The canonical `Contents` source is treated as immutable.",
+        "",
+    ])
+
+    with FINAL_MD.open("w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print("=" * 72)
+    print("GURUKUL AI — FINAL PRODUCTION CERTIFICATION")
+    print("=" * 72)
+    print(f"STATUS                 : {status}")
+    print(f"Runtime chapters       : {runtime_chapters}")
+    print(f"Runtime JSON files     : {runtime_json}")
+    print(f"API tests              : {tests_executed}")
+    print(f"API passed             : {tests_passed}")
+    print(f"API failed             : {tests_failed}")
+    print("")
+    print("CERTIFICATION GATES")
+    for name, passed in all_gates.items():
+        print(f"{name:25}: {'PASS' if passed else 'FAIL'}")
+
+    print("")
+    print(f"JSON: {FINAL_JSON}")
+    print(f"MD  : {FINAL_MD}")
+    print("=" * 72)
+
+    raise SystemExit(0 if overall_pass else 1)
+
+
+if __name__ == "__main__":
+    main()
+
+

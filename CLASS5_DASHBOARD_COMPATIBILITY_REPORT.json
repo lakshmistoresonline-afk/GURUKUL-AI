@@ -1,0 +1,28 @@
+{
+  "audited_at": "2026-09-17T08:32:25.386952+00:00",
+  "class_level": "Class 5",
+  "compatibility_status": "COMPATIBLE",
+  "read_only_audit": true,
+  "dashboard_contract_fields": {
+    "id": "Available",
+    "classId": "Available",
+    "subjectId": "Available",
+    "chapter_id": "Available",
+    "title": "Available",
+    "learn": "Available",
+    "practice": "Available",
+    "assess": "Available",
+    "revise": "Available",
+    "resources": "Available"
+  },
+  "missing_fields": [],
+  "incompatible_fields": [],
+  "chapter_navigation_compatibility": "PASS",
+  "lesson_compatibility": "PASS",
+  "practice_compatibility": "PASS",
+  "assessment_compatibility": "PASS",
+  "revision_compatibility": "PASS",
+  "resource_compatibility": "PASS",
+  "rag_compatibility": "PASS",
+  "recommended_actions": "No frontend or dashboard contract modifications required. Dashboard consumes processed outputs cleanly."
+}

@@ -1,0 +1,113 @@
+﻿import { test } from '@playwright/test';
+
+test('PHASE 10 - inspect actual canonical frontend DOM', async ({ page }) => {
+
+  const failures: string[] = [];
+
+  page.on('console', msg => {
+    console.log(`CONSOLE [${msg.type()}]: ${msg.text()}`);
+  });
+
+  page.on('requestfailed', request => {
+    const line = `FAILED REQUEST: ${request.method()} ${request.url()} :: ${request.failure()?.errorText}`;
+    failures.push(line);
+    console.log(line);
+  });
+
+  const urls = [
+    '/chapter/class_5_01_english_complete_101',
+    '/chapter/class_5_01_english_complete_102',
+    '/subject/class_5_01_english_complete',
+    '/'
+  ];
+
+  for (const url of urls) {
+
+    console.log('');
+    console.log('======================================================');
+    console.log(`INSPECTING ${url}`);
+    console.log('======================================================');
+
+    await page.goto(url, {
+      waitUntil: 'networkidle',
+      timeout: 60000
+    });
+
+    await page.waitForTimeout(2000);
+
+    console.log(`FINAL URL: ${page.url()}`);
+    console.log(`PAGE TITLE: ${await page.title()}`);
+
+    const body = await page.locator('body').innerText().catch(() => '');
+    console.log('');
+    console.log('--- BODY TEXT ---');
+    console.log(body.substring(0, 12000));
+
+    const subjectLinks = await page.locator('a[href*="/subject/"]').evaluateAll(
+      els => els.map(e => ({
+        text: (e.textContent || '').trim(),
+        href: (e as HTMLAnchorElement).getAttribute('href')
+      }))
+    );
+
+    console.log('');
+    console.log('--- SUBJECT LINKS ---');
+    console.log(JSON.stringify(subjectLinks, null, 2));
+
+    const chapterLinks = await page.locator('a[href*="/chapter/"]').evaluateAll(
+      els => els.map(e => ({
+        text: (e.textContent || '').trim(),
+        href: (e as HTMLAnchorElement).getAttribute('href')
+      })).slice(0, 20)
+    );
+
+    console.log('');
+    console.log('--- CHAPTER LINKS ---');
+    console.log(JSON.stringify(chapterLinks, null, 2));
+
+    const gurukulAttributes = await page.locator('*').evaluateAll(els => {
+      const result: any[] = [];
+
+      for (const el of els) {
+        const attrs = Array.from(el.attributes)
+          .filter(a => a.name.startsWith('data-gurukul'))
+          .map(a => ({
+            name: a.name,
+            value: a.value
+          }));
+
+        if (attrs.length) {
+          result.push({
+            tag: el.tagName,
+            text: (el.textContent || '').trim().substring(0, 200),
+            attrs
+          });
+        }
+      }
+
+      return result.slice(0, 100);
+    });
+
+    console.log('');
+    console.log('--- GURUKUL DATA ATTRIBUTES ---');
+    console.log(JSON.stringify(gurukulAttributes, null, 2));
+
+    console.log('');
+    console.log('--- HEADINGS ---');
+
+    const headings = await page.locator('h1,h2,h3,h4').evaluateAll(
+      els => els.map(e => ({
+        tag: e.tagName,
+        text: (e.textContent || '').trim()
+      }))
+    );
+
+    console.log(JSON.stringify(headings, null, 2));
+  }
+
+  console.log('');
+  console.log('======================================================');
+  console.log('FAILED REQUEST SUMMARY');
+  console.log('======================================================');
+  console.log(failures.join('\n') || 'NONE');
+});

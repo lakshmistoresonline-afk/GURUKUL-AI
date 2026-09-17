@@ -1,55 +1,116 @@
 import axios from 'axios';
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+  signOut,
+} from 'firebase/auth';
+import { firebaseAuth } from '@/lib/firebase';
 
-const BASE_URL = 'http://127.0.0.1:8000/api/v1';
+const BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL_BASE ||
+  `${process.env.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:8000'}/api/v1`;
 
-export const authApi = {
-  login: async (username: string, password: string): Promise<string> => {
-    const params = new URLSearchParams();
-    params.append('username', username);
-    params.append('password', password);
-    const response = await axios.post(`${BASE_URL}/auth/login`, params);
-    return response.data.access_token;
+export const apiClient = axios.create({
+  baseURL: BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
   },
+});
 
-  register: async (data: any) => {
-    const response = await axios.post(`${BASE_URL}/auth/register`, data);
-    return response.data;
-  },
-
-  getMe: async (): Promise<any> => {
-    const response = await axios.get(`${BASE_URL}/auth/me`);
-    return response.data;
-  }
-};
-
-// Axios Interceptor for Authorization
-axios.interceptors.request.use(
-  (config) => {
+apiClient.interceptors.request.use(
+  async (config) => {
     if (typeof window !== 'undefined') {
-      const user = localStorage.getItem('gurukul_user');
-      if (user) {
-        try {
-          const stored = JSON.parse(user);
-          if (stored.token) {
-            config.headers.Authorization = `Bearer ${stored.token}`;
-          }
-        } catch (e) {
-          console.error("Error parsing user from localStorage", e);
-        }
+      const currentUser = firebaseAuth.currentUser;
+
+      if (currentUser) {
+        const token = await currentUser.getIdToken();
+
+        config.headers = config.headers ?? {};
+        config.headers.Authorization = `Bearer ${token}`;
       }
     }
+
     return config;
   },
   (error) => Promise.reject(error)
 );
 
-// Response Interceptor for Session Expiration
-axios.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    if (error.response?.status === 401 && typeof window !== 'undefined') {
-      localStorage.removeItem('gurukul_user');
+export const authApi = {
+  login: async (email: string, password: string) => {
+    const credential = await signInWithEmailAndPassword(
+      firebaseAuth,
+      email.trim(),
+      password
+    );
+
+    const token = await credential.user.getIdToken();
+
+    const response = await apiClient.post(
+      '/auth/firebase/session',
+      {},
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+
+    return response.data;
+  },
+
+  register: async (data: {
+    email: string;
+    password: string;
+    name: string;
+    username?: string;
+    class_id: string;
+  }) => {
+    const credential = await createUserWithEmailAndPassword(
+      firebaseAuth,
+      data.email.trim(),
+      data.password
+    );
+
+    await sendEmailVerification(credential.user);
+
+    const token = await credential.user.getIdToken();
+
+    const response = await apiClient.post(
+      '/auth/firebase/session',
+      {
+        name: data.name.trim(),
+        username: data.username?.trim() || undefined,
+        class_id: data.class_id,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+
+    return response.data;
+  },
+
+  resetPassword: async (email: string) => {
+    await sendPasswordResetEmail(
+      firebaseAuth,
+      email.trim()
+    );
+  },
+
+  getMe: async () => {
+    const response = await apiClient.get('/auth/me');
+    return response.data;
+  },
+
+  logout: async () => {
+    try {
+      await apiClient.post('/auth/logout');
+    } finally {
+      await signOut(firebaseAuth);
     }
-    return Promise.reject(error);
-  }
-);
+  },
+};

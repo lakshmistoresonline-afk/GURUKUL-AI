@@ -1,0 +1,60 @@
+{
+  "record_type": "DERIVED_EXAMPLES",
+  "chapter": "Weight and Capacity",
+  "items": [
+    {
+      "example_id": "EX01",
+      "skill": "Mass conversion",
+      "prompt": "Convert 3 kg 500 g to grams.",
+      "answer": "3,500 g.",
+      "method": "3 kg=3,000 g; add 500 g.",
+      "source_page": 3,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX02",
+      "skill": "Mass addition",
+      "prompt": "Add 2 kg 500 g and 1 kg 750 g.",
+      "answer": "4 kg 250 g.",
+      "method": "500+750=1,250 g=1 kg 250 g; add kilograms.",
+      "source_page": 7,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX03",
+      "skill": "Mass multiplication",
+      "prompt": "Four sacks each weigh 10 kg 500 g. Total?",
+      "answer": "42 kg.",
+      "method": "10.5 kg×4=42 kg.",
+      "source_page": 9,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX04",
+      "skill": "Milligrams",
+      "prompt": "Convert 800 mg to grams.",
+      "answer": "0.8 g.",
+      "method": "1,000 mg=1 g, so 800 mg is 0.8 g.",
+      "source_page": 6,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX05",
+      "skill": "Capacity addition",
+      "prompt": "Convert 1 l 500 ml to millilitres.",
+      "answer": "1,500 ml.",
+      "method": "1 l=1,000 ml; add 500 ml.",
+      "source_page": 12,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX06",
+      "skill": "Compare capacity",
+      "prompt": "Which is greater: 5 l 600 ml or 5,400 ml?",
+      "answer": "5 l 600 ml.",
+      "method": "5 l 600 ml=5,600 ml, which exceeds 5,400 ml.",
+      "source_page": 13,
+      "provenance": "DERIVED"
+    }
+  ]
+}

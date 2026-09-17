@@ -1,0 +1,19 @@
+﻿import { test, expect } from '@playwright/test';
+
+test('Chapter 102 renders correctly with canonical data attributes', async ({ page }) => {
+  await page.goto('/chapter/class_5_01_english_complete_102');
+
+  const title = page.locator('header h1');
+  await expect(title).toContainText('Gone with the Scooter', { timeout: 30000 });
+
+  const firstRecord = page.locator('[data-gurukul-record-id]').first();
+  await expect(firstRecord).toBeVisible({ timeout: 20000 });
+
+  const recordId = await firstRecord.getAttribute('data-gurukul-record-id');
+  expect(recordId).toMatch(/^class05_01_english_102_learn_/);
+
+  const section = await firstRecord.getAttribute('data-section');
+  expect(section).toBe('learn');
+
+  console.log('Smoke Test Passed: Chapter 102 is visible and functional.');
+});

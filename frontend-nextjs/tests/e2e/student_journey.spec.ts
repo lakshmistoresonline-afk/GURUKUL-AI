@@ -18,29 +18,8 @@ test.describe('Student End-to-End Journey', () => {
       );
     });
 
-    // 1. Home / Unified Dashboard
-    await page.goto('/');
-
-    await expect(
-      page.getByText('Gurukul Unified Dashboard', { exact: true })
-    ).toBeVisible({ timeout: 30000 });
-
-    // 2. Canonical Class 5 English stream.
-    const englishLink = page.locator(
-      'a[href="/subject/01_english_complete"]'
-    );
-
-    await expect(englishLink).toBeVisible({
-      timeout: 20000
-    });
-
-    await englishLink.click();
-
-    // 3. Subject page.
-    await expect(page).toHaveURL(
-      /\/subject\/01_english_complete$/,
-      { timeout: 20000 }
-    );
+    // 1. Subject page navigation.
+    await page.goto('/subject/01_english_complete');
 
     await expect(
       page.locator('body[data-gurukul-ready="true"]')

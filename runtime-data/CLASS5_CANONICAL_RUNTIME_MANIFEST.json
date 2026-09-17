@@ -1,34 +1,35 @@
 {
   "schema_version": "class5-runtime-manifest-v2",
-  "adapter_version": "CLASS5_CANONICAL_ADAPTER_V2",
-  "generated_at": "2026-09-13T07:46:58.265514+00:00",
+  "adapter_version": "GENERIC_CANONICAL_ADAPTER_V3.2_MULTIMEDIA_FIX",
+  "generated_at": "2026-09-15T01:26:33.969032+00:00",
   "class": "Class 5",
   "chapter_count": 47,
-  "student_facing_records": 2857,
-  "student_facing_unique_ids": 2857,
-  "source_records": 3764,
-  "source_unique_ids": 3744,
-  "internal_records": 907,
+  "student_facing_records": 3801,
+  "student_facing_unique_ids": 3801,
+  "source_records": 4592,
+  "source_unique_ids": 4592,
+  "internal_records": 791,
   "student_id_collisions": 0,
-  "generated_student_records": 166,
-  "source_derived_student_records": 2691,
+  "generated_student_records": 203,
+  "source_derived_student_records": 3598,
   "chapters": [
     {
       "chapter_id": "101",
       "chapter_title": "Papas Spectacles",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 57,
-        "student_facing_unique_ids": 57,
+        "student_facing_records": 65,
+        "student_facing_unique_ids": 65,
         "source_records": 97,
         "source_unique_ids": 97,
-        "internal_records": 40,
+        "internal_records": 32,
         "suppressed_duplicate_examples": 3,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
-          "poem": 2,
-          "paragraph": 9,
+          "concept": 6,
+          "paragraph": 11,
           "question": 9,
           "ordering": 1,
           "fill_in_the_blank": 7,
@@ -38,22 +39,23 @@
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
+          "learn": 12,
           "practice": 29,
           "assess": 12,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 50,
-        "internal_fragment_records": 40,
+        "generated_records": 9,
+        "source_derived_records": 56,
+        "internal_fragment_records": 32,
         "suppressed_duplicate_examples": 3
       }
     },
@@ -62,17 +64,18 @@
       "chapter_title": "Gone with the Scooter",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 57,
-        "student_facing_unique_ids": 57,
+        "student_facing_records": 65,
+        "student_facing_unique_ids": 65,
         "source_records": 101,
         "source_unique_ids": 101,
-        "internal_records": 44,
+        "internal_records": 36,
         "suppressed_duplicate_examples": 2,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
-          "poem": 2,
-          "paragraph": 16,
+          "concept": 6,
+          "paragraph": 18,
           "question": 10,
           "activity": 1,
           "assessment_question": 1,
@@ -80,22 +83,23 @@
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
+          "learn": 12,
           "practice": 29,
           "assess": 12,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 50,
-        "internal_fragment_records": 44,
+        "generated_records": 9,
+        "source_derived_records": 56,
+        "internal_fragment_records": 36,
         "suppressed_duplicate_examples": 2
       }
     },
@@ -104,18 +108,20 @@
       "chapter_title": "The Rainbow",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 51,
-        "student_facing_unique_ids": 51,
+        "student_facing_records": 59,
+        "student_facing_unique_ids": 59,
         "source_records": 93,
         "source_unique_ids": 93,
-        "internal_records": 42,
+        "internal_records": 34,
         "suppressed_duplicate_examples": 2,
+        "genuine_examples": 1,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 5,
+          "concept": 6,
           "example": 1,
-          "poem": 2,
-          "paragraph": 15,
+          "poem": 1,
+          "paragraph": 16,
           "question": 2,
           "ordering": 1,
           "fill_in_the_blank": 9,
@@ -125,22 +131,23 @@
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
+          "learn": 12,
           "practice": 30,
           "assess": 5,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 44,
-        "internal_fragment_records": 42,
+        "generated_records": 9,
+        "source_derived_records": 50,
+        "internal_fragment_records": 34,
         "suppressed_duplicate_examples": 2
       }
     },
@@ -149,17 +156,18 @@
       "chapter_title": "The Wise Parrot",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 55,
-        "student_facing_unique_ids": 55,
+        "student_facing_records": 63,
+        "student_facing_unique_ids": 63,
         "source_records": 89,
         "source_unique_ids": 89,
-        "internal_records": 34,
+        "internal_records": 26,
         "suppressed_duplicate_examples": 2,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
-          "poem": 2,
-          "paragraph": 6,
+          "concept": 6,
+          "paragraph": 8,
           "question": 7,
           "fill_in_the_blank": 7,
           "activity": 1,
@@ -169,22 +177,23 @@
           "revision_recall": 3,
           "revision_key_point": 1,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
+          "learn": 12,
           "practice": 23,
           "assess": 15,
           "revise": 8,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 48,
-        "internal_fragment_records": 34,
+        "generated_records": 9,
+        "source_derived_records": 54,
+        "internal_fragment_records": 26,
         "suppressed_duplicate_examples": 2
       }
     },
@@ -193,41 +202,43 @@
       "chapter_title": "The Frog",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 56,
-        "student_facing_unique_ids": 56,
+        "student_facing_records": 66,
+        "student_facing_unique_ids": 66,
         "source_records": 88,
         "source_unique_ids": 88,
-        "internal_records": 32,
+        "internal_records": 22,
         "suppressed_duplicate_examples": 3,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
-          "poem": 2,
-          "paragraph": 8,
-          "question": 13,
+          "concept": 6,
+          "paragraph": 10,
+          "question": 14,
           "ordering": 1,
           "activity": 1,
           "assessment_question": 1,
-          "short_answer": 13,
+          "short_answer": 14,
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
-          "practice": 25,
-          "assess": 15,
+          "learn": 12,
+          "practice": 26,
+          "assess": 16,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 49,
-        "internal_fragment_records": 32,
+        "generated_records": 9,
+        "source_derived_records": 57,
+        "internal_fragment_records": 22,
         "suppressed_duplicate_examples": 3
       }
     },
@@ -236,17 +247,18 @@
       "chapter_title": "What a Tank",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 61,
-        "student_facing_unique_ids": 61,
+        "student_facing_records": 69,
+        "student_facing_unique_ids": 69,
         "source_records": 88,
         "source_unique_ids": 88,
-        "internal_records": 27,
+        "internal_records": 19,
         "suppressed_duplicate_examples": 2,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
-          "poem": 1,
-          "paragraph": 16,
+          "concept": 6,
+          "paragraph": 17,
           "question": 12,
           "activity": 1,
           "assessment_question": 1,
@@ -254,22 +266,23 @@
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
+          "learn": 12,
           "practice": 30,
           "assess": 15,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 54,
-        "internal_fragment_records": 27,
+        "generated_records": 9,
+        "source_derived_records": 60,
+        "internal_fragment_records": 19,
         "suppressed_duplicate_examples": 2
       }
     },
@@ -278,17 +291,18 @@
       "chapter_title": "Gilli Danda",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 81,
-        "student_facing_unique_ids": 81,
+        "student_facing_records": 89,
+        "student_facing_unique_ids": 89,
         "source_records": 134,
         "source_unique_ids": 134,
-        "internal_records": 53,
+        "internal_records": 45,
         "suppressed_duplicate_examples": 3,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
-          "poem": 1,
-          "paragraph": 9,
+          "concept": 6,
+          "paragraph": 10,
           "question": 25,
           "fill_in_the_blank": 1,
           "ordering": 1,
@@ -299,22 +313,23 @@
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
+          "learn": 12,
           "practice": 40,
           "assess": 25,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 74,
-        "internal_fragment_records": 53,
+        "generated_records": 9,
+        "source_derived_records": 80,
+        "internal_fragment_records": 45,
         "suppressed_duplicate_examples": 3
       }
     },
@@ -323,17 +338,18 @@
       "chapter_title": "The Decision of the Panchayat",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 88,
-        "student_facing_unique_ids": 88,
+        "student_facing_records": 96,
+        "student_facing_unique_ids": 96,
         "source_records": 126,
         "source_unique_ids": 126,
-        "internal_records": 38,
+        "internal_records": 30,
         "suppressed_duplicate_examples": 2,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
-          "poem": 2,
-          "paragraph": 9,
+          "concept": 6,
+          "paragraph": 11,
           "question": 19,
           "fill_in_the_blank": 10,
           "ordering": 1,
@@ -343,22 +359,23 @@
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
+          "learn": 12,
           "practice": 42,
           "assess": 30,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 81,
-        "internal_fragment_records": 38,
+        "generated_records": 9,
+        "source_derived_records": 87,
+        "internal_fragment_records": 30,
         "suppressed_duplicate_examples": 2
       }
     },
@@ -367,17 +384,18 @@
       "chapter_title": "Vocation",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 58,
-        "student_facing_unique_ids": 58,
+        "student_facing_records": 66,
+        "student_facing_unique_ids": 66,
         "source_records": 85,
         "source_unique_ids": 85,
-        "internal_records": 27,
+        "internal_records": 19,
         "suppressed_duplicate_examples": 3,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
-          "poem": 1,
-          "paragraph": 12,
+          "concept": 6,
+          "paragraph": 13,
           "question": 13,
           "dialogue": 1,
           "activity": 1,
@@ -386,22 +404,23 @@
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 6,
+          "learn": 12,
           "practice": 28,
           "assess": 14,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 51,
-        "internal_fragment_records": 27,
+        "generated_records": 9,
+        "source_derived_records": 57,
+        "internal_fragment_records": 19,
         "suppressed_duplicate_examples": 3
       }
     },
@@ -410,17 +429,18 @@
       "chapter_title": "Glass Bangles",
       "subject_id": "01_english_complete",
       "accounting": {
-        "student_facing_records": 66,
-        "student_facing_unique_ids": 66,
+        "student_facing_records": 75,
+        "student_facing_unique_ids": 75,
         "source_records": 107,
         "source_unique_ids": 107,
-        "internal_records": 41,
+        "internal_records": 32,
         "suppressed_duplicate_examples": 3,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 7,
-          "poem": 1,
-          "paragraph": 11,
+          "concept": 7,
+          "paragraph": 12,
           "question": 13,
           "fill_in_the_blank": 5,
           "dialogue": 1,
@@ -430,22 +450,23 @@
           "mcq": 1,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 7,
+          "learn": 14,
           "practice": 32,
           "assess": 17,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 7,
-        "source_derived_records": 59,
-        "internal_fragment_records": 41,
+        "generated_records": 10,
+        "source_derived_records": 65,
+        "internal_fragment_records": 32,
         "suppressed_duplicate_examples": 3
       }
     },
@@ -454,38 +475,40 @@
       "chapter_title": "किरन",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 53,
-        "student_facing_unique_ids": 53,
+        "student_facing_records": 55,
+        "student_facing_unique_ids": 55,
         "source_records": 79,
         "source_unique_ids": 79,
-        "internal_records": 26,
-        "suppressed_duplicate_examples": 7,
+        "internal_records": 24,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 7,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 7,
+          "example": 7,
           "question": 14,
           "paragraph": 7,
           "activity": 1,
           "assessment_question": 14,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 7,
           "practice": 22,
           "assess": 14,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 45,
-        "internal_fragment_records": 26,
-        "suppressed_duplicate_examples": 7
+        "generated_records": 1,
+        "source_derived_records": 54,
+        "internal_fragment_records": 24,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -493,38 +516,40 @@
       "chapter_title": "न्याय की कुर्सी",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 72,
-        "student_facing_unique_ids": 72,
+        "student_facing_records": 74,
+        "student_facing_unique_ids": 74,
         "source_records": 101,
         "source_unique_ids": 101,
-        "internal_records": 29,
-        "suppressed_duplicate_examples": 14,
+        "internal_records": 27,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 14,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 14,
+          "example": 14,
           "question": 18,
           "paragraph": 10,
           "activity": 1,
           "assessment_question": 19,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 14,
           "practice": 29,
           "assess": 19,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 64,
-        "internal_fragment_records": 29,
-        "suppressed_duplicate_examples": 14
+        "generated_records": 1,
+        "source_derived_records": 73,
+        "internal_fragment_records": 27,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -532,15 +557,16 @@
       "chapter_title": "चाँद का कुरता",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 87,
-        "student_facing_unique_ids": 87,
+        "student_facing_records": 89,
+        "student_facing_unique_ids": 89,
         "source_records": 107,
         "source_unique_ids": 107,
-        "internal_records": 20,
-        "suppressed_duplicate_examples": 11,
+        "internal_records": 18,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 11,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 11,
+          "example": 11,
           "concept": 1,
           "paragraph": 7,
           "question": 28,
@@ -548,23 +574,24 @@
           "assessment_question": 29,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 12,
           "practice": 36,
           "assess": 29,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 79,
-        "internal_fragment_records": 20,
-        "suppressed_duplicate_examples": 11
+        "generated_records": 1,
+        "source_derived_records": 88,
+        "internal_fragment_records": 18,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -572,38 +599,40 @@
       "chapter_title": "साङकेन",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 71,
-        "student_facing_unique_ids": 71,
+        "student_facing_records": 73,
+        "student_facing_unique_ids": 73,
         "source_records": 102,
         "source_unique_ids": 102,
-        "internal_records": 31,
-        "suppressed_duplicate_examples": 13,
+        "internal_records": 29,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 13,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 13,
+          "example": 13,
           "question": 19,
           "paragraph": 9,
           "activity": 1,
           "assessment_question": 19,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 13,
           "practice": 29,
           "assess": 19,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 63,
-        "internal_fragment_records": 31,
-        "suppressed_duplicate_examples": 13
+        "generated_records": 1,
+        "source_derived_records": 72,
+        "internal_fragment_records": 29,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -611,15 +640,16 @@
       "chapter_title": "सुंदरिया",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 107,
-        "student_facing_unique_ids": 107,
+        "student_facing_records": 109,
+        "student_facing_unique_ids": 109,
         "source_records": 139,
         "source_unique_ids": 139,
-        "internal_records": 32,
-        "suppressed_duplicate_examples": 15,
+        "internal_records": 30,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 15,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 15,
+          "example": 15,
           "concept": 1,
           "paragraph": 11,
           "question": 34,
@@ -627,23 +657,24 @@
           "assessment_question": 35,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 16,
           "practice": 46,
           "assess": 35,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 99,
-        "internal_fragment_records": 32,
-        "suppressed_duplicate_examples": 15
+        "generated_records": 1,
+        "source_derived_records": 108,
+        "internal_fragment_records": 30,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -651,15 +682,16 @@
       "chapter_title": "चतुर चित्रकार",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 99,
-        "student_facing_unique_ids": 99,
+        "student_facing_records": 101,
+        "student_facing_unique_ids": 101,
         "source_records": 128,
         "source_unique_ids": 128,
-        "internal_records": 29,
-        "suppressed_duplicate_examples": 14,
+        "internal_records": 27,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 14,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 14,
+          "example": 14,
           "paragraph": 18,
           "question": 27,
           "fill_in_the_blank": 1,
@@ -667,23 +699,24 @@
           "assessment_question": 28,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 14,
           "practice": 47,
           "assess": 28,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 91,
-        "internal_fragment_records": 29,
-        "suppressed_duplicate_examples": 14
+        "generated_records": 1,
+        "source_derived_records": 100,
+        "internal_fragment_records": 27,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -691,38 +724,40 @@
       "chapter_title": "मेरा बचपन",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 64,
-        "student_facing_unique_ids": 64,
+        "student_facing_records": 66,
+        "student_facing_unique_ids": 66,
         "source_records": 83,
         "source_unique_ids": 83,
-        "internal_records": 19,
-        "suppressed_duplicate_examples": 10,
+        "internal_records": 17,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 10,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 10,
+          "example": 10,
           "paragraph": 7,
           "question": 18,
           "activity": 1,
           "assessment_question": 18,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 10,
           "practice": 26,
           "assess": 18,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 56,
-        "internal_fragment_records": 19,
-        "suppressed_duplicate_examples": 10
+        "generated_records": 1,
+        "source_derived_records": 65,
+        "internal_fragment_records": 17,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -730,15 +765,17 @@
       "chapter_title": "काजीरंगा राष्ट्रीय उद्यान की यात्रा",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 64,
-        "student_facing_unique_ids": 64,
+        "student_facing_records": 80,
+        "student_facing_unique_ids": 80,
         "source_records": 94,
         "source_unique_ids": 94,
-        "internal_records": 30,
-        "suppressed_duplicate_examples": 14,
+        "internal_records": 14,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 14,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 14,
+          "example": 14,
           "concept": 1,
           "paragraph": 10,
           "question": 14,
@@ -746,23 +783,24 @@
           "assessment_question": 14,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 15,
+          "learn": 29,
           "practice": 25,
           "assess": 14,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 56,
-        "internal_fragment_records": 30,
-        "suppressed_duplicate_examples": 14
+        "generated_records": 1,
+        "source_derived_records": 79,
+        "internal_fragment_records": 14,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -770,38 +808,40 @@
       "chapter_title": "न्याय",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 70,
-        "student_facing_unique_ids": 70,
+        "student_facing_records": 72,
+        "student_facing_unique_ids": 72,
         "source_records": 101,
         "source_unique_ids": 101,
-        "internal_records": 31,
-        "suppressed_duplicate_examples": 18,
+        "internal_records": 29,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 18,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 18,
+          "example": 18,
           "paragraph": 7,
           "question": 17,
           "activity": 1,
           "assessment_question": 17,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 18,
           "practice": 25,
           "assess": 17,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 62,
-        "internal_fragment_records": 31,
-        "suppressed_duplicate_examples": 18
+        "generated_records": 1,
+        "source_derived_records": 71,
+        "internal_fragment_records": 29,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -809,15 +849,16 @@
       "chapter_title": "तीन मछलियाँ",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 78,
-        "student_facing_unique_ids": 78,
+        "student_facing_records": 80,
+        "student_facing_unique_ids": 80,
         "source_records": 113,
         "source_unique_ids": 113,
-        "internal_records": 35,
-        "suppressed_duplicate_examples": 12,
+        "internal_records": 33,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 12,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 12,
+          "example": 12,
           "concept": 3,
           "question": 19,
           "paragraph": 12,
@@ -826,23 +867,24 @@
           "assessment_question": 20,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 15,
           "practice": 33,
           "assess": 20,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 70,
-        "internal_fragment_records": 35,
-        "suppressed_duplicate_examples": 12
+        "generated_records": 1,
+        "source_derived_records": 79,
+        "internal_fragment_records": 33,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -850,15 +892,16 @@
       "chapter_title": "हमारे ये कलामंदिर",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 83,
-        "student_facing_unique_ids": 83,
+        "student_facing_records": 85,
+        "student_facing_unique_ids": 85,
         "source_records": 124,
         "source_unique_ids": 124,
-        "internal_records": 41,
-        "suppressed_duplicate_examples": 14,
+        "internal_records": 39,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 14,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 14,
+          "example": 14,
           "concept": 1,
           "question": 23,
           "paragraph": 10,
@@ -866,23 +909,24 @@
           "assessment_question": 24,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 15,
           "practice": 34,
           "assess": 24,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 75,
-        "internal_fragment_records": 41,
-        "suppressed_duplicate_examples": 14
+        "generated_records": 1,
+        "source_derived_records": 84,
+        "internal_fragment_records": 39,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -890,38 +934,40 @@
       "chapter_title": "गंगा की कहानी",
       "subject_id": "02_hindi_complete",
       "accounting": {
-        "student_facing_records": 66,
-        "student_facing_unique_ids": 66,
+        "student_facing_records": 68,
+        "student_facing_unique_ids": 68,
         "source_records": 99,
         "source_unique_ids": 99,
-        "internal_records": 33,
-        "suppressed_duplicate_examples": 18,
+        "internal_records": 31,
+        "suppressed_duplicate_examples": 0,
+        "genuine_examples": 18,
         "id_collision_count": 0,
         "type_counts": {
-          "lesson": 18,
+          "example": 18,
           "question": 13,
           "paragraph": 11,
           "activity": 1,
           "assessment_question": 13,
           "revision_recall": 3,
           "revision_activity": 4,
-          "resource_search": 3
+          "resource_search": 3,
+          "official_resource": 2
         },
         "pillar_counts": {
           "learn": 18,
           "practice": 25,
           "assess": 13,
           "revise": 7,
-          "resources": 3
+          "resources": 5
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 8,
-        "source_derived_records": 58,
-        "internal_fragment_records": 33,
-        "suppressed_duplicate_examples": 18
+        "generated_records": 1,
+        "source_derived_records": 67,
+        "internal_fragment_records": 31,
+        "suppressed_duplicate_examples": 0
       }
     },
     {
@@ -929,33 +975,39 @@
       "chapter_title": "Water The Essence of Life",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 65,
-        "student_facing_unique_ids": 65,
-        "source_records": 65,
-        "source_unique_ids": 65,
+        "student_facing_records": 103,
+        "student_facing_unique_ids": 103,
+        "source_records": 103,
+        "source_unique_ids": 103,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "dialogue": 11,
-          "poem": 45,
+          "paragraph": 62,
+          "dialogue": 14,
           "fill_in_the_blank": 3,
           "question": 2,
-          "assessment_question": 4
+          "assessment_question": 4,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 20,
           "practice": 61,
           "assess": 4,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 65,
+        "generated_records": 4,
+        "source_derived_records": 99,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -965,33 +1017,37 @@
       "chapter_title": "Journey of a River",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 35,
-        "student_facing_unique_ids": 35,
-        "source_records": 35,
-        "source_unique_ids": 35,
+        "student_facing_records": 70,
+        "student_facing_unique_ids": 70,
+        "source_records": 70,
+        "source_unique_ids": 70,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 23,
+          "paragraph": 46,
           "question": 3,
-          "paragraph": 5,
-          "dialogue": 1,
-          "assessment_question": 3
+          "assessment_question": 3,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 17,
           "practice": 32,
           "assess": 3,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 35,
+        "generated_records": 4,
+        "source_derived_records": 66,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -1001,32 +1057,38 @@
       "chapter_title": "The Mystery of Food",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 56,
-        "student_facing_unique_ids": 56,
-        "source_records": 56,
-        "source_unique_ids": 56,
+        "student_facing_records": 91,
+        "student_facing_unique_ids": 91,
+        "source_records": 91,
+        "source_unique_ids": 91,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 36,
-          "dialogue": 11,
+          "paragraph": 57,
+          "dialogue": 7,
           "question": 1,
-          "assessment_question": 8
+          "assessment_question": 8,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 17,
           "practice": 48,
           "assess": 8,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 56,
+        "generated_records": 4,
+        "source_derived_records": 87,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -1036,35 +1098,40 @@
       "chapter_title": "Our School A Happy Place",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 79,
-        "student_facing_unique_ids": 79,
-        "source_records": 79,
-        "source_unique_ids": 79,
+        "student_facing_records": 115,
+        "student_facing_unique_ids": 115,
+        "source_records": 115,
+        "source_unique_ids": 115,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 35,
-          "dialogue": 18,
+          "paragraph": 57,
+          "dialogue": 23,
           "fill_in_the_blank": 2,
-          "paragraph": 9,
           "question": 3,
           "ordering": 1,
-          "assessment_question": 11
+          "assessment_question": 11,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 18,
           "practice": 68,
           "assess": 11,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 79,
+        "generated_records": 4,
+        "source_derived_records": 111,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -1074,33 +1141,38 @@
       "chapter_title": "Our Vibrant Country",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 55,
-        "student_facing_unique_ids": 55,
-        "source_records": 55,
-        "source_unique_ids": 55,
+        "student_facing_records": 94,
+        "student_facing_unique_ids": 94,
+        "source_records": 94,
+        "source_unique_ids": 94,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 41,
+          "paragraph": 66,
           "fill_in_the_blank": 3,
           "question": 2,
-          "dialogue": 4,
-          "assessment_question": 5
+          "assessment_question": 5,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 21,
           "practice": 50,
           "assess": 5,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 55,
+        "generated_records": 4,
+        "source_derived_records": 90,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -1110,33 +1182,39 @@
       "chapter_title": "Some Unique Places",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 52,
-        "student_facing_unique_ids": 52,
-        "source_records": 52,
-        "source_unique_ids": 52,
+        "student_facing_records": 88,
+        "student_facing_unique_ids": 88,
+        "source_records": 88,
+        "source_unique_ids": 88,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 34,
-          "dialogue": 5,
+          "paragraph": 54,
+          "dialogue": 3,
           "question": 1,
           "fill_in_the_blank": 1,
-          "assessment_question": 11
+          "assessment_question": 11,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 18,
           "practice": 41,
           "assess": 11,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 52,
+        "generated_records": 4,
+        "source_derived_records": 84,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -1146,33 +1224,39 @@
       "chapter_title": "Energy How Things Work",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 65,
-        "student_facing_unique_ids": 65,
-        "source_records": 65,
-        "source_unique_ids": 65,
+        "student_facing_records": 103,
+        "student_facing_unique_ids": 103,
+        "source_records": 103,
+        "source_unique_ids": 103,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 36,
-          "dialogue": 13,
+          "paragraph": 52,
+          "dialogue": 17,
           "fill_in_the_blank": 4,
           "question": 5,
-          "assessment_question": 7
+          "assessment_question": 7,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 20,
           "practice": 58,
           "assess": 7,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 65,
+        "generated_records": 4,
+        "source_derived_records": 99,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -1182,32 +1266,38 @@
       "chapter_title": "Clothes How Things are Made",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 32,
-        "student_facing_unique_ids": 32,
-        "source_records": 32,
-        "source_unique_ids": 32,
+        "student_facing_records": 64,
+        "student_facing_unique_ids": 64,
+        "source_records": 64,
+        "source_unique_ids": 64,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 28,
+          "paragraph": 42,
           "question": 1,
           "ordering": 2,
-          "assessment_question": 1
+          "assessment_question": 1,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 14,
           "practice": 31,
           "assess": 1,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 32,
+        "generated_records": 4,
+        "source_derived_records": 60,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -1217,33 +1307,39 @@
       "chapter_title": "Rhythms of Nature",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 40,
-        "student_facing_unique_ids": 40,
-        "source_records": 40,
-        "source_unique_ids": 40,
+        "student_facing_records": 74,
+        "student_facing_unique_ids": 74,
+        "source_records": 74,
+        "source_unique_ids": 74,
         "internal_records": 0,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 34,
+          "paragraph": 50,
           "ordering": 1,
           "question": 1,
           "fill_in_the_blank": 1,
-          "assessment_question": 3
+          "assessment_question": 3,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 16,
           "practice": 37,
           "assess": 3,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 40,
+        "generated_records": 4,
+        "source_derived_records": 70,
         "internal_fragment_records": 0,
         "suppressed_duplicate_examples": 0
       }
@@ -1253,35 +1349,41 @@
       "chapter_title": "Earth Our Shared Home",
       "subject_id": "03_evs_complete",
       "accounting": {
-        "student_facing_records": 59,
-        "student_facing_unique_ids": 59,
-        "source_records": 59,
-        "source_unique_ids": 59,
-        "internal_records": 0,
+        "student_facing_records": 99,
+        "student_facing_unique_ids": 99,
+        "source_records": 101,
+        "source_unique_ids": 101,
+        "internal_records": 2,
         "suppressed_duplicate_examples": 0,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
-          "poem": 44,
+          "paragraph": 61,
+          "dialogue": 7,
           "ordering": 2,
-          "dialogue": 2,
           "fill_in_the_blank": 1,
           "question": 2,
-          "assessment_question": 8
+          "assessment_question": 8,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 0,
+          "learn": 22,
           "practice": 51,
           "assess": 8,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 59,
-        "internal_fragment_records": 0,
+        "generated_records": 4,
+        "source_derived_records": 95,
+        "internal_fragment_records": 2,
         "suppressed_duplicate_examples": 0
       }
     },
@@ -1290,36 +1392,42 @@
       "chapter_title": "We the Travellers I",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 58,
-        "student_facing_unique_ids": 58,
-        "source_records": 72,
-        "source_unique_ids": 72,
+        "student_facing_records": 92,
+        "student_facing_unique_ids": 92,
+        "source_records": 106,
+        "source_unique_ids": 106,
         "internal_records": 14,
         "suppressed_duplicate_examples": 14,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 16,
           "concept": 9,
-          "poem": 8,
+          "paragraph": 22,
+          "dialogue": 3,
           "fill_in_the_blank": 8,
-          "dialogue": 1,
           "question": 1,
           "ordering": 1,
-          "assessment_question": 14
+          "assessment_question": 14,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 25,
+          "learn": 41,
           "practice": 19,
           "assess": 14,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 58,
+        "generated_records": 4,
+        "source_derived_records": 88,
         "internal_fragment_records": 14,
         "suppressed_duplicate_examples": 14
       }
@@ -1329,34 +1437,40 @@
       "chapter_title": "Fractions",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 66,
-        "student_facing_unique_ids": 66,
-        "source_records": 81,
-        "source_unique_ids": 81,
+        "student_facing_records": 99,
+        "student_facing_unique_ids": 99,
+        "source_records": 114,
+        "source_unique_ids": 114,
         "internal_records": 15,
         "suppressed_duplicate_examples": 15,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 15,
           "concept": 13,
-          "poem": 17,
+          "paragraph": 32,
           "fill_in_the_blank": 5,
           "ordering": 1,
-          "assessment_question": 15
+          "assessment_question": 15,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 28,
+          "learn": 43,
           "practice": 23,
           "assess": 15,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 66,
+        "generated_records": 4,
+        "source_derived_records": 95,
         "internal_fragment_records": 15,
         "suppressed_duplicate_examples": 15
       }
@@ -1366,35 +1480,41 @@
       "chapter_title": "Angles as Turns",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 47,
-        "student_facing_unique_ids": 47,
-        "source_records": 56,
-        "source_unique_ids": 56,
+        "student_facing_records": 75,
+        "student_facing_unique_ids": 75,
+        "source_records": 84,
+        "source_unique_ids": 84,
         "internal_records": 9,
         "suppressed_duplicate_examples": 9,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 10,
           "concept": 10,
-          "dialogue": 3,
-          "poem": 8,
+          "dialogue": 5,
+          "paragraph": 16,
           "fill_in_the_blank": 5,
           "question": 1,
-          "assessment_question": 10
+          "assessment_question": 10,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 20,
+          "learn": 30,
           "practice": 17,
           "assess": 10,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 47,
+        "generated_records": 4,
+        "source_derived_records": 71,
         "internal_fragment_records": 9,
         "suppressed_duplicate_examples": 9
       }
@@ -1404,36 +1524,42 @@
       "chapter_title": "We the Travellers II",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 58,
-        "student_facing_unique_ids": 58,
-        "source_records": 71,
-        "source_unique_ids": 71,
+        "student_facing_records": 91,
+        "student_facing_unique_ids": 91,
+        "source_records": 104,
+        "source_unique_ids": 104,
         "internal_records": 13,
         "suppressed_duplicate_examples": 13,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 15,
+          "paragraph": 22,
           "concept": 9,
-          "poem": 8,
+          "dialogue": 2,
           "fill_in_the_blank": 5,
           "ordering": 4,
           "question": 1,
-          "dialogue": 1,
-          "assessment_question": 15
+          "assessment_question": 15,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 24,
+          "learn": 39,
           "practice": 19,
           "assess": 15,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 58,
+        "generated_records": 4,
+        "source_derived_records": 87,
         "internal_fragment_records": 13,
         "suppressed_duplicate_examples": 13
       }
@@ -1443,36 +1569,42 @@
       "chapter_title": "Far and Near",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 52,
-        "student_facing_unique_ids": 52,
-        "source_records": 64,
-        "source_unique_ids": 64,
+        "student_facing_records": 83,
+        "student_facing_unique_ids": 83,
+        "source_records": 95,
+        "source_unique_ids": 95,
         "internal_records": 12,
         "suppressed_duplicate_examples": 12,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 13,
           "concept": 12,
+          "paragraph": 20,
+          "dialogue": 2,
           "question": 1,
-          "poem": 8,
           "ordering": 2,
           "fill_in_the_blank": 4,
-          "dialogue": 1,
-          "assessment_question": 11
+          "assessment_question": 11,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 25,
+          "learn": 38,
           "practice": 16,
           "assess": 11,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 52,
+        "generated_records": 4,
+        "source_derived_records": 79,
         "internal_fragment_records": 12,
         "suppressed_duplicate_examples": 12
       }
@@ -1482,36 +1614,42 @@
       "chapter_title": "The Dairy Farm",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 87,
-        "student_facing_unique_ids": 87,
-        "source_records": 107,
-        "source_unique_ids": 107,
+        "student_facing_records": 127,
+        "student_facing_unique_ids": 127,
+        "source_records": 147,
+        "source_unique_ids": 147,
         "internal_records": 20,
         "suppressed_duplicate_examples": 20,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 22,
           "concept": 12,
+          "paragraph": 32,
+          "dialogue": 9,
           "ordering": 1,
           "question": 6,
-          "dialogue": 4,
           "fill_in_the_blank": 7,
-          "poem": 15,
-          "assessment_question": 20
+          "assessment_question": 20,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 34,
+          "learn": 56,
           "practice": 33,
           "assess": 20,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 87,
+        "generated_records": 4,
+        "source_derived_records": 123,
         "internal_fragment_records": 20,
         "suppressed_duplicate_examples": 20
       }
@@ -1521,37 +1659,42 @@
       "chapter_title": "Shapes and Patterns",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 50,
-        "student_facing_unique_ids": 50,
-        "source_records": 60,
-        "source_unique_ids": 60,
+        "student_facing_records": 80,
+        "student_facing_unique_ids": 80,
+        "source_records": 90,
+        "source_unique_ids": 90,
         "internal_records": 10,
         "suppressed_duplicate_examples": 10,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 12,
           "concept": 11,
-          "poem": 6,
+          "paragraph": 18,
+          "dialogue": 2,
           "ordering": 1,
           "fill_in_the_blank": 3,
           "question": 3,
-          "dialogue": 1,
-          "paragraph": 1,
-          "assessment_question": 12
+          "assessment_question": 12,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 23,
+          "learn": 35,
           "practice": 15,
           "assess": 12,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 50,
+        "generated_records": 4,
+        "source_derived_records": 76,
         "internal_fragment_records": 10,
         "suppressed_duplicate_examples": 10
       }
@@ -1561,34 +1704,40 @@
       "chapter_title": "Weight and Capacity",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 62,
-        "student_facing_unique_ids": 62,
-        "source_records": 75,
-        "source_unique_ids": 75,
+        "student_facing_records": 95,
+        "student_facing_unique_ids": 95,
+        "source_records": 108,
+        "source_unique_ids": 108,
         "internal_records": 13,
         "suppressed_duplicate_examples": 13,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 15,
           "concept": 13,
-          "dialogue": 6,
+          "dialogue": 8,
+          "paragraph": 18,
           "fill_in_the_blank": 9,
-          "poem": 5,
-          "assessment_question": 14
+          "assessment_question": 14,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 28,
+          "learn": 43,
           "practice": 20,
           "assess": 14,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 62,
+        "generated_records": 4,
+        "source_derived_records": 91,
         "internal_fragment_records": 13,
         "suppressed_duplicate_examples": 13
       }
@@ -1598,36 +1747,42 @@
       "chapter_title": "Coconut Farm",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 70,
-        "student_facing_unique_ids": 70,
-        "source_records": 86,
-        "source_unique_ids": 86,
+        "student_facing_records": 105,
+        "student_facing_unique_ids": 105,
+        "source_records": 121,
+        "source_unique_ids": 121,
         "internal_records": 16,
         "suppressed_duplicate_examples": 16,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 17,
           "concept": 12,
-          "poem": 10,
-          "dialogue": 3,
+          "paragraph": 23,
+          "dialogue": 7,
           "fill_in_the_blank": 8,
           "ordering": 2,
           "question": 3,
-          "assessment_question": 15
+          "assessment_question": 15,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 29,
+          "learn": 46,
           "practice": 26,
           "assess": 15,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 70,
+        "generated_records": 4,
+        "source_derived_records": 101,
         "internal_fragment_records": 16,
         "suppressed_duplicate_examples": 16
       }
@@ -1637,33 +1792,39 @@
       "chapter_title": "Symmetrical Designs",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 29,
-        "student_facing_unique_ids": 29,
-        "source_records": 35,
-        "source_unique_ids": 35,
+        "student_facing_records": 53,
+        "student_facing_unique_ids": 53,
+        "source_records": 59,
+        "source_unique_ids": 59,
         "internal_records": 6,
         "suppressed_duplicate_examples": 6,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 6,
           "concept": 6,
-          "poem": 6,
+          "paragraph": 12,
           "fill_in_the_blank": 5,
-          "assessment_question": 6
+          "assessment_question": 6,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 12,
+          "learn": 18,
           "practice": 11,
           "assess": 6,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 29,
+        "generated_records": 4,
+        "source_derived_records": 49,
         "internal_fragment_records": 6,
         "suppressed_duplicate_examples": 6
       }
@@ -1673,35 +1834,41 @@
       "chapter_title": "Grandmothers Quilt",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 59,
-        "student_facing_unique_ids": 59,
-        "source_records": 72,
-        "source_unique_ids": 72,
+        "student_facing_records": 90,
+        "student_facing_unique_ids": 90,
+        "source_records": 103,
+        "source_unique_ids": 103,
         "internal_records": 13,
         "suppressed_duplicate_examples": 13,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 13,
           "concept": 13,
-          "poem": 12,
+          "paragraph": 23,
+          "dialogue": 5,
           "ordering": 4,
           "fill_in_the_blank": 2,
-          "dialogue": 3,
-          "assessment_question": 12
+          "assessment_question": 12,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 26,
+          "learn": 39,
           "practice": 21,
           "assess": 12,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 59,
+        "generated_records": 4,
+        "source_derived_records": 86,
         "internal_fragment_records": 13,
         "suppressed_duplicate_examples": 13
       }
@@ -1711,34 +1878,40 @@
       "chapter_title": "Racing Seconds",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 35,
-        "student_facing_unique_ids": 35,
-        "source_records": 44,
-        "source_unique_ids": 44,
+        "student_facing_records": 62,
+        "student_facing_unique_ids": 62,
+        "source_records": 71,
+        "source_unique_ids": 71,
         "internal_records": 9,
         "suppressed_duplicate_examples": 9,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 9,
           "concept": 8,
-          "fill_in_the_blank": 4,
+          "paragraph": 14,
           "dialogue": 2,
-          "poem": 5,
-          "assessment_question": 7
+          "fill_in_the_blank": 4,
+          "assessment_question": 7,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 17,
+          "learn": 26,
           "practice": 11,
           "assess": 7,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 35,
+        "generated_records": 4,
+        "source_derived_records": 58,
         "internal_fragment_records": 9,
         "suppressed_duplicate_examples": 9
       }
@@ -1748,35 +1921,41 @@
       "chapter_title": "Animal Jumps",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 29,
-        "student_facing_unique_ids": 29,
-        "source_records": 34,
-        "source_unique_ids": 34,
+        "student_facing_records": 54,
+        "student_facing_unique_ids": 54,
+        "source_records": 59,
+        "source_unique_ids": 59,
         "internal_records": 5,
         "suppressed_duplicate_examples": 5,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 7,
           "concept": 6,
-          "poem": 6,
+          "paragraph": 13,
           "ordering": 1,
           "question": 1,
           "fill_in_the_blank": 2,
-          "assessment_question": 6
+          "assessment_question": 6,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 13,
+          "learn": 20,
           "practice": 10,
           "assess": 6,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 29,
+        "generated_records": 4,
+        "source_derived_records": 50,
         "internal_fragment_records": 5,
         "suppressed_duplicate_examples": 5
       }
@@ -1786,35 +1965,39 @@
       "chapter_title": "Maps and Locations",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 31,
-        "student_facing_unique_ids": 31,
-        "source_records": 38,
-        "source_unique_ids": 38,
+        "student_facing_records": 57,
+        "student_facing_unique_ids": 57,
+        "source_records": 64,
+        "source_unique_ids": 64,
         "internal_records": 7,
         "suppressed_duplicate_examples": 7,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 8,
           "concept": 5,
-          "dialogue": 4,
+          "paragraph": 15,
           "fill_in_the_blank": 5,
-          "paragraph": 2,
-          "poem": 1,
-          "assessment_question": 6
+          "assessment_question": 6,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 13,
+          "learn": 21,
           "practice": 12,
           "assess": 6,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 31,
+        "generated_records": 4,
+        "source_derived_records": 53,
         "internal_fragment_records": 7,
         "suppressed_duplicate_examples": 7
       }
@@ -1824,35 +2007,41 @@
       "chapter_title": "Data Through Pictures",
       "subject_id": "03_maths_complete",
       "accounting": {
-        "student_facing_records": 42,
-        "student_facing_unique_ids": 42,
-        "source_records": 53,
-        "source_unique_ids": 53,
-        "internal_records": 11,
+        "student_facing_records": 72,
+        "student_facing_unique_ids": 72,
+        "source_records": 86,
+        "source_unique_ids": 86,
+        "internal_records": 14,
         "suppressed_duplicate_examples": 8,
+        "genuine_examples": 0,
         "id_collision_count": 0,
         "type_counts": {
           "lesson": 12,
           "concept": 9,
-          "poem": 6,
+          "paragraph": 18,
           "fill_in_the_blank": 6,
           "question": 1,
-          "assessment_question": 8
+          "assessment_question": 8,
+          "revision_recall": 4,
+          "revision_key_point": 4,
+          "revision_activity": 6,
+          "resource_search": 2,
+          "official_resource": 2
         },
         "pillar_counts": {
-          "learn": 21,
+          "learn": 33,
           "practice": 13,
           "assess": 8,
-          "revise": 0,
-          "resources": 0
+          "revise": 14,
+          "resources": 4
         }
       },
       "quality": {
         "has_duplicate_student_ids": false,
         "has_parse_errors": false,
-        "generated_records": 0,
-        "source_derived_records": 42,
-        "internal_fragment_records": 11,
+        "generated_records": 4,
+        "source_derived_records": 68,
+        "internal_fragment_records": 14,
         "suppressed_duplicate_examples": 8
       }
     }

@@ -1,0 +1,114 @@
+﻿import { test, expect } from '@playwright/test';
+
+test.describe('Student End-to-End Journey', () => {
+  test('Full Journey: Subject to Assessment', async ({ page }) => {
+    page.on('console', msg =>
+      console.log('BROWSER CONSOLE:', msg.text())
+    );
+
+    page.on('requestfailed', request =>
+      console.log(
+        'FAILED REQUEST:',
+        request.url(),
+        request.failure()?.errorText
+      )
+    );
+
+    // 1. Open Student Dashboard / Login
+    await page.goto('/');
+
+    const dashboardTitle = page.getByText('Gurukul Unified Dashboard', { exact: false });
+
+    // Current login form does not use a Username placeholder.
+    const loginForm = page.locator('form').filter({
+      has: page.locator('input[type="password"]')
+    });
+
+    await expect(
+      dashboardTitle.or(loginForm)
+    ).toBeVisible({ timeout: 45000 });
+
+    // 2. Authenticate if required
+    if (await loginForm.isVisible()) {
+      const usernameInput = loginForm.locator('input[type="text"]').first();
+      const passwordInput = loginForm.locator('input[type="password"]').first();
+
+      await expect(usernameInput).toBeVisible();
+      await expect(passwordInput).toBeVisible();
+
+      await usernameInput.fill('tester_v1');
+      await passwordInput.fill('password123');
+
+      await loginForm.getByRole('button', {
+        name: 'Authorize Access'
+      }).click();
+
+      await expect(dashboardTitle).toBeVisible({ timeout: 45000 });
+    }
+
+    // 3. Select Class 5 English
+    const englishLink = page.locator(
+      'a[href="/subject/class_5_01_english_complete"]'
+    );
+
+    await expect(englishLink).toBeVisible({ timeout: 20000 });
+    await englishLink.click();
+
+    // 4. Verify English curriculum
+    await expect(
+      page.getByText('ENGLISH Curriculum', { exact: false })
+    ).toBeVisible({ timeout: 30000 });
+
+    // 5. Select a canonical chapter
+    const chapter102 = page.locator(
+      'a[href="/chapter/class_5_01_english_complete_102"]'
+    );
+
+    await expect(chapter102).toBeVisible({ timeout: 30000 });
+    await chapter102.click();
+
+    // 6. Verify chapter
+    await expect(
+      page.locator('header h1')
+    ).toContainText('Gone with the Scooter', { timeout: 30000 });
+
+    // 7. Learning
+    const learnTab = page.getByRole('button', { name: 'Learn' });
+    await expect(learnTab).toBeVisible({ timeout: 20000 });
+    await learnTab.click();
+
+    // At least one canonical content record must render.
+    await expect(
+      page.locator('[data-gurukul-record-id]').first()
+    ).toBeVisible({ timeout: 20000 });
+
+    // 8. Practice
+    const practiceTab = page.getByRole('button', { name: 'Practice' });
+    await expect(practiceTab).toBeVisible({ timeout: 20000 });
+    await practiceTab.click();
+
+    await expect(
+      page.locator('[data-gurukul-record-id]').first()
+    ).toBeVisible({ timeout: 20000 });
+
+    // 9. Assessment
+    const assessTab = page.getByRole('button', { name: 'Assess' });
+    await expect(assessTab).toBeVisible({ timeout: 20000 });
+    await assessTab.click();
+
+    await expect(
+      page.locator('[data-gurukul-record-id]').first()
+    ).toBeVisible({ timeout: 20000 });
+
+    // 10. Return to Dashboard
+    const dashboardLink = page.getByRole('link', { name: /Dashboard/i }).first();
+
+    if (await dashboardLink.isVisible()) {
+      await dashboardLink.click();
+      await page.waitForURL('/', { timeout: 20000 });
+      await expect(dashboardTitle).toBeVisible({ timeout: 30000 });
+    }
+
+    console.log('Student E2E Journey Passed.');
+  });
+});

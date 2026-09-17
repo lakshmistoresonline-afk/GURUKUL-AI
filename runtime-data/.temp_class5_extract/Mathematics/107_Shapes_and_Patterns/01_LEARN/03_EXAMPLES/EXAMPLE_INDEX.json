@@ -1,0 +1,60 @@
+{
+  "record_type": "DERIVED_EXAMPLES",
+  "chapter": "Shapes and Patterns",
+  "items": [
+    {
+      "example_id": "EX01",
+      "skill": "Tessellation",
+      "prompt": "Why can a regular tiling pattern cover a region without gaps?",
+      "answer": "The shapes fit edge-to-edge according to a repeating pattern.",
+      "method": "Check that the repeated arrangement leaves no uncovered spaces or overlaps.",
+      "source_page": 3,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX02",
+      "skill": "Quadrilateral",
+      "prompt": "How many sides does a quadrilateral have?",
+      "answer": "4.",
+      "method": "The name 'quadrilateral' refers to a four-sided polygon.",
+      "source_page": 7,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX03",
+      "skill": "Circle",
+      "prompt": "A circle has radius 4 cm. Find its diameter.",
+      "answer": "8 cm.",
+      "method": "Diameter is twice radius: 2×4=8 cm.",
+      "source_page": 10,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX04",
+      "skill": "Cube",
+      "prompt": "How many square faces does a cube have?",
+      "answer": "6.",
+      "method": "A cube has six congruent square faces.",
+      "source_page": 11,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX05",
+      "skill": "Shape classification",
+      "prompt": "A shape has four sides and four right angles. What familiar shape can it be?",
+      "answer": "A rectangle; if all four sides are equal, it is a square.",
+      "method": "Use both side and angle properties.",
+      "source_page": 9,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX06",
+      "skill": "Polyhedra",
+      "prompt": "Why are icosahedron and dodecahedron named by face counts?",
+      "answer": "Their names describe the number of faces: icosahedron has 20, dodecahedron has 12.",
+      "method": "Count the faces of the solids/nets.",
+      "source_page": 12,
+      "provenance": "DERIVED"
+    }
+  ]
+}
