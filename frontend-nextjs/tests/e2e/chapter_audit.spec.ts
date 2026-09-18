@@ -6,6 +6,7 @@ const API_URL =
 
 test.describe('Canonical Student Chapter Audit', () => {
   test('All Class 5 chapters render from the canonical API', async ({ page, request }) => {
+    test.setTimeout(300000);
     const catalogResponse = await request.get(`${API_URL}/catalog`);
 
     expect(

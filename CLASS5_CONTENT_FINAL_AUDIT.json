@@ -1,0 +1,35 @@
+{
+  "audit_timestamp": "2026-09-17T16:13:31.222042+00:00",
+  "audit_status": "PASS",
+  "curriculum_scope": {
+    "class_level": "Class 5",
+    "total_subjects": 4,
+    "total_expected_chapters": 47,
+    "total_audited_chapters": 47,
+    "total_audited_records": 3801
+  },
+  "subject_counts": {
+    "English": 10,
+    "Hindi": 12,
+    "EVS": 10,
+    "Mathematics": 15
+  },
+  "defect_summary": {
+    "defects_found": 0,
+    "defects_fixed": 0,
+    "defects_remaining": 0
+  },
+  "verification_gates": {
+    "curriculum_identity": "PASS",
+    "source_fidelity": "PASS",
+    "provenance_and_traceability": "PASS",
+    "devanagari_unicode_qa": "PASS",
+    "mathematics_numerical_qa": "PASS",
+    "assessment_answer_safety": "PASS",
+    "revision_depth_qa": "PASS",
+    "resource_classification_qa": "PASS",
+    "source_packages_integrity": "PASS (Pre/Post SHA256 Match)",
+    "class_6_status": "NOT STARTED",
+    "class_7_status": "NOT STARTED"
+  }
+}

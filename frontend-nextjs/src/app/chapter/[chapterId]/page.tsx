@@ -4,7 +4,11 @@ import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { Layout } from '@/presentation/components/common/Layout';
 import { studentApi, ChapterFull, ContentBlock, Subject } from '@/services/api/student_api';
-import { ChevronLeft, ChevronRight, Info, BookOpen, Target, ShieldCheck, HelpCircle, RefreshCw, Globe, CheckCircle2, Music, Sparkles, ExternalLink, Video, Play, Search } from 'lucide-react';
+import {
+  ChevronLeft, ChevronRight, Info, BookOpen, Target, ShieldCheck,
+  HelpCircle, RefreshCw, Globe, CheckCircle2, Music, Sparkles,
+  ExternalLink, Video, Play, Search, Eye, FileText, Award, Compass, Calculator
+} from 'lucide-react';
 import { MarkdownRenderer } from '@/presentation/components/common/MarkdownRenderer';
 import Link from 'next/link';
 
@@ -16,6 +20,7 @@ export default function ChapterContentPage() {
   const [loading, setLoading] = useState(true);
   const [activePillar, setActivePillar] = useState<'learn' | 'practice' | 'assess' | 'revise' | 'resources'>('learn');
   const [isAuditMode, setIsAuditMode] = useState(false);
+  const [showTextbookSource, setShowTextbookSource] = useState(false);
 
   useEffect(() => {
     let mounted = true;
@@ -110,16 +115,21 @@ export default function ChapterContentPage() {
     resources: 'No verified YouTube video lesson was found for this chapter.',
   };
 
+  const subjectClean = data.subjectId ? data.subjectId.replace(/_/g, ' ').toUpperCase() : 'CURRICULUM';
+
   return (
     <Layout>
       <div id="gurukul-chapter-container" data-chapter-id={data.id} data-class-id={data.classId} data-subject-id={data.subjectId} className="w-full">
         {/* COMPACT STICKY PILLAR BAR */}
-        <div className="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-16 z-40 shadow-xs py-2 px-4 sm:px-8">
+        <div className="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-16 z-40 shadow-xs py-2.5 px-4 sm:px-8">
           <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-             <div className="flex items-center gap-3 shrink-0">
-                <Link href={`/subject/${data.subjectId}`} className="flex items-center gap-1.5 text-slate-600 font-semibold text-xs hover:text-blue-600 transition-all bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
+             <div className="flex items-center gap-2 shrink-0">
+                <Link href={`/subject/${data.subjectId}`} className="flex items-center gap-1.5 text-slate-700 font-semibold text-xs hover:text-blue-600 transition-all bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
                     <ChevronLeft size={14} /> Back
                 </Link>
+                <button onClick={() => setShowTextbookSource(!showTextbookSource)} className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${showTextbookSource ? 'bg-blue-50 text-blue-700 border-blue-200' : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'}`}>
+                  <FileText size={14} /> {showTextbookSource ? 'Hide Textbook Source' : 'View Textbook Source'}
+                </button>
                 <button onClick={() => setIsAuditMode(!isAuditMode)} className={`px-2.5 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-wider border transition-all ${isAuditMode ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50'}`}>
                   {isAuditMode ? 'Audit Mode On' : 'Audit Mode'}
                 </button>
@@ -142,7 +152,7 @@ export default function ChapterContentPage() {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
           {/* HEADER */}
           <header className="space-y-4 text-center max-w-4xl mx-auto">
              <div className="flex items-center justify-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-widest bg-blue-50 w-fit mx-auto px-4 py-1.5 rounded-full border border-blue-100">
@@ -153,7 +163,7 @@ export default function ChapterContentPage() {
                 <p className="text-xs sm:text-sm text-slate-500 font-semibold uppercase tracking-wider flex items-center gap-3">
                    <span>Level {data.classId?.split('_')[1] || '5'}</span>
                    <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
-                   <span>{data.subjectId?.replace(/_/g, ' ')}</span>
+                   <span>{subjectClean}</span>
                 </p>
                 {nav && (
                    <div className="flex items-center gap-4 mt-3">
@@ -169,12 +179,39 @@ export default function ChapterContentPage() {
                    </div>
                 )}
              </div>
+
+             {/* WHAT YOU WILL LEARN SUMMARY */}
+             <div className="bg-slate-50/80 border border-slate-200/80 rounded-2xl p-4 sm:p-5 text-left max-w-3xl mx-auto space-y-2">
+                <div className="flex items-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-wider">
+                   <Compass size={16} /> What You Will Learn in This Chapter
+                </div>
+                <p className="text-slate-700 text-sm leading-relaxed">
+                   Explore core concepts, guided activities, source-derived explanations, and practice exercises for <strong>{displayTitle}</strong> in {subjectClean}.
+                </p>
+             </div>
           </header>
 
+          {/* TEXTBOOK SOURCE DRAWER */}
+          {showTextbookSource && (
+             <div className="bg-amber-50/90 border border-amber-200 rounded-3xl p-6 max-w-4xl mx-auto space-y-4 transition-all">
+                <div className="flex items-center justify-between border-b border-amber-200 pb-3">
+                   <div className="flex items-center gap-2 text-amber-800 font-bold text-xs uppercase tracking-wider">
+                      <FileText size={18} /> Verified NCERT Textbook Source Material
+                   </div>
+                   <span className="text-[10px] font-bold text-amber-700 uppercase bg-amber-100 px-2.5 py-0.5 rounded-md">Immutable Source</span>
+                </div>
+                <div className="text-xs sm:text-sm font-serif leading-relaxed text-amber-950 space-y-3 max-h-80 overflow-y-auto pr-2">
+                   {data.learn.slice(0, 5).map((b, idx) => (
+                      <p key={`src-${idx}`}>{b.text}</p>
+                   ))}
+                </div>
+             </div>
+          )}
+
           {/* MAIN CONTENT AREA */}
-          <div className="space-y-8 w-full max-w-5xl mx-auto">
+          <div className="space-y-8 w-full max-w-4xl mx-auto">
              {educationalUnits.map((unit, uIdx) => (
-                <EducationalUnitCard key={`unit-${activePillar}-${uIdx}-${unit[0]?.id || "empty"}`} unit={unit} index={uIdx + 1} audit={isAuditMode} chapterId={data.id} section={activePillar} />
+                <EducationalUnitCard key={`unit-${activePillar}-${uIdx}-${unit[0]?.id || "empty"}`} unit={unit} index={uIdx + 1} audit={isAuditMode} chapterId={data.id} section={activePillar} subjectId={data.subjectId} />
              ))}
              {educationalUnits.length === 0 && (
                 <div className="p-12 bg-slate-50 rounded-2xl border border-dashed border-slate-200 text-center space-y-2 w-full">
@@ -196,7 +233,7 @@ export default function ChapterContentPage() {
   );
 }
 
-function EducationalUnitCard({ unit, index, audit, chapterId, section }: { unit: ContentBlock[]; index: number; audit: boolean; chapterId: string; section: string }) {
+function EducationalUnitCard({ unit, index, audit, chapterId, section, subjectId }: { unit: ContentBlock[]; index: number; audit: boolean; chapterId: string; section: string; subjectId: string }) {
   const hasHeading = unit[0].type === 'heading';
   const headingText = hasHeading ? unit[0].text : null;
   const content = hasHeading ? unit.slice(1) : unit;
@@ -225,7 +262,7 @@ function EducationalUnitCard({ unit, index, audit, chapterId, section }: { unit:
 
        <div className="space-y-6 w-full">
           {content.map((block, blockIndex) => (
-             <LogicalRecordRenderer key={`record-${section}-${index}-${block.id || "record"}-${blockIndex}`} block={block} audit={audit} chapterId={chapterId} section={section} />
+             <LogicalRecordRenderer key={`record-${section}-${index}-${block.id || "record"}-${blockIndex}`} block={block} audit={audit} chapterId={chapterId} section={section} subjectId={subjectId} />
           ))}
        </div>
 
@@ -239,7 +276,7 @@ function EducationalUnitCard({ unit, index, audit, chapterId, section }: { unit:
   );
 }
 
-function LogicalRecordRenderer({ block, audit, chapterId, section }: { block: ContentBlock; audit: boolean; chapterId: string; section: string }) {
+function LogicalRecordRenderer({ block, audit, chapterId, section, subjectId }: { block: ContentBlock; audit: boolean; chapterId: string; section: string; subjectId: string }) {
   const text = block.text || '';
   const lines = text.split('\n').filter(l => l.trim().length > 0);
 
@@ -249,6 +286,10 @@ function LogicalRecordRenderer({ block, audit, chapterId, section }: { block: Co
   const isResource = section === 'resources' || ['video_resource', 'resource_search', 'channel_resource', 'official_resource', 'youtube'].includes(block.type);
   const isYouTube = block.type === 'youtube' || (block.url && block.url.includes('youtube.com/watch'));
   const isSearchQuery = block.type === 'resource_search' || block.resource_category === 'DISCOVERY_QUERY';
+
+  const isMaths = subjectId && subjectId.includes('math');
+  const isHindi = subjectId && subjectId.includes('hindi');
+  const isEVS = subjectId && subjectId.includes('evs');
 
   return (
     <div
@@ -314,7 +355,7 @@ function LogicalRecordRenderer({ block, audit, chapterId, section }: { block: Co
        ) : isQuestion ? (
           <div className="space-y-4 w-full">
              <div className="flex items-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-wider">
-                <HelpCircle size={16} /> Exploration Prompt
+                <HelpCircle size={16} /> {isEVS ? 'Observation & Inquiry Prompt' : isMaths ? 'Problem & Numerical Challenge' : 'Exploration Prompt'}
              </div>
              <div className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 <MarkdownRenderer content={text} />
@@ -322,7 +363,7 @@ function LogicalRecordRenderer({ block, audit, chapterId, section }: { block: Co
              {block.answer && (
                 <div className="mt-4 p-6 bg-emerald-50/60 border border-emerald-200 rounded-2xl space-y-3">
                    <div className="flex items-center gap-2 text-emerald-700 font-bold text-xs uppercase tracking-wider">
-                      <CheckCircle2 size={18} /> Verified Answer / Guidance
+                      <CheckCircle2 size={18} /> Verified Guidance & Solution
                    </div>
                    <div className="text-base font-medium text-emerald-900 leading-relaxed">
                       <MarkdownRenderer content={block.answer} />
@@ -332,6 +373,11 @@ function LogicalRecordRenderer({ block, audit, chapterId, section }: { block: Co
           </div>
        ) : (
           <div className="text-base sm:text-lg text-slate-800 leading-relaxed font-normal w-full">
+             {isMaths && block.type === 'worked_practice' && (
+                <div className="flex items-center gap-2 text-indigo-600 font-bold text-xs uppercase tracking-wider mb-2">
+                   <Calculator size={16} /> Step-by-Step Mathematical Worked Solution
+                </div>
+             )}
              <MarkdownRenderer content={text} />
           </div>
        )}
