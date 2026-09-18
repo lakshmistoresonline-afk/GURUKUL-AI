@@ -1,0 +1,38 @@
+[
+  {
+    "id": "105_CONNECTING_THE_DOTS-WP01",
+    "problem": "Why can median represent data better than mean when an outlier is present?",
+    "solution": "Median depends on ordered position and is less affected by an extreme value, while the mean includes the outlier in the total.",
+    "reasoning": "This is the contrast developed through Poovizhi’s family data.",
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "id": "105_CONNECTING_THE_DOTS-WP02",
+    "problem": "Find the median of the 12 Yahapur onion prices: 25,24,26,28,30,35,39,43,49,56,59,44.",
+    "solution": "37",
+    "reasoning": "Sorted data has middle values 35 and 39; median=(35+39)/2=37.",
+    "source_pages": [
+      10
+    ]
+  },
+  {
+    "id": "105_CONNECTING_THE_DOTS-WP03",
+    "problem": "Compare mean and median for data with and without an outlier.",
+    "solution": "An outlier can shift the mean substantially because it changes the total, whereas the median is based on position and usually changes much less.",
+    "reasoning": "The chapter demonstrates this with family heights and story counts.",
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "id": "105_CONNECTING_THE_DOTS-WP04",
+    "problem": "Explain why a statistical question is different from a single factual question.",
+    "solution": "A statistical question anticipates variation and requires collecting and analysing data from a group or repeated observations; a single factual question may have one fixed answer.",
+    "reasoning": "The chapter contrasts questions such as Grade 7 heights with fixed numerical questions.",
+    "source_pages": [
+      2
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "record_type": "DERIVED_SHORT_ANSWER",
+  "chapter": "Coconut Farm",
+  "items": [
+    {
+      "id": "SA01",
+      "question": "Given 5×7=35, write two division facts.",
+      "expected_answer": "35÷5=7 and 35÷7=5.",
+      "reasoning_points": [
+        "Use the same three numbers in the multiplication/division family."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        1
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA02",
+      "question": "Find 1,248÷6.",
+      "expected_answer": "208.",
+      "reasoning_points": [
+        "Split 1,248 as 1,200+48; divide each by 6: 200+8."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        5
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA03",
+      "question": "Find quotient and remainder of 62÷5.",
+      "expected_answer": "12 remainder 2.",
+      "reasoning_points": [
+        "5×12=60; 62−60=2."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        10
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA04",
+      "question": "Find 4,376÷8.",
+      "expected_answer": "547.",
+      "reasoning_points": [
+        "8×500=4,000, remainder 376; 8×47=376; total 547."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        8
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA05",
+      "question": "Is 75 divisible by 5 and 10?",
+      "expected_answer": "By 5 yes; by 10 no.",
+      "reasoning_points": [
+        "75 ends in 5, not 0."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        13
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA06",
+      "question": "576 km over 12 days evenly. Daily distance?",
+      "expected_answer": "48 km/day.",
+      "reasoning_points": [
+        "576÷12=48."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        15
+      ],
+      "provenance": "DERIVED"
+    }
+  ]
+}

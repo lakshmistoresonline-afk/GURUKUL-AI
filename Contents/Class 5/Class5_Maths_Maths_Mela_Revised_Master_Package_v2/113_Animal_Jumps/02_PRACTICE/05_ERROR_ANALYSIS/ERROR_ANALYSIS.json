@@ -1,0 +1,54 @@
+{
+  "record_type": "DERIVED_ERROR_ANALYSIS",
+  "chapter": "Animal Jumps",
+  "items": [
+    {
+      "error_id": "E01",
+      "skill": "factors and multiples",
+      "common_error": "Applying a familiar rule without checking whether it matches factors and multiples.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for factors and multiples using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E02",
+      "skill": "prime numbers",
+      "common_error": "Applying a familiar rule without checking whether it matches prime numbers.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for prime numbers using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E03",
+      "skill": "common multiples",
+      "common_error": "Applying a familiar rule without checking whether it matches common multiples.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for common multiples using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E04",
+      "skill": "common factors",
+      "common_error": "Applying a familiar rule without checking whether it matches common factors.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for common factors using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E05",
+      "skill": "divisibility by 2, 5 and 10",
+      "common_error": "Applying a familiar rule without checking whether it matches divisibility by 2, 5 and 10.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for divisibility by 2, 5 and 10 using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E06",
+      "skill": "mathematical statements and patterns",
+      "common_error": "Applying a familiar rule without checking whether it matches mathematical statements and patterns.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for mathematical statements and patterns using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    }
+  ]
+}

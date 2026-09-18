@@ -1,0 +1,32 @@
+[
+  {
+    "id": "OI-APP-01",
+    "type": "application",
+    "question": "A coin starts at 0 and moves +6, then −4. Where does it finish?",
+    "answer": "2",
+    "explanation": "6−4=2.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "id": "OI-APP-02",
+    "type": "application",
+    "question": "A game uses signed movements. A player makes −7 followed by −3. What is the final position from 0?",
+    "answer": "−10",
+    "explanation": "Adding the signed movements gives −7+(−3)=−10.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "OI-APP-03",
+    "type": "application",
+    "question": "Without expanding 123×456, what is (−123)×456?",
+    "answer": "−56088",
+    "explanation": "Changing one factor to negative changes the sign of the known product 56088.",
+    "source_pages": [
+      8
+    ]
+  }
+]

@@ -7,9 +7,6 @@ const testChapters = [
   // Class 6
   { uid: 'class_6_02_english_complete_grade6_10101', name: 'A Bottle of Dew', classId: '6' },
   { uid: 'class_6_03_science_complete_grade6_101', name: 'Wonderful World of Science', classId: '6' },
-  // Class 7
-  { uid: 'class_7_02_english_grade7_complete_101', name: 'The Day the River Spoke', classId: '7' },
-  { uid: 'class_7_03_science_grade7_complete_101', name: 'The Ever Evolving World of Science', classId: '7' },
 ];
 
 for (const ch of testChapters) {

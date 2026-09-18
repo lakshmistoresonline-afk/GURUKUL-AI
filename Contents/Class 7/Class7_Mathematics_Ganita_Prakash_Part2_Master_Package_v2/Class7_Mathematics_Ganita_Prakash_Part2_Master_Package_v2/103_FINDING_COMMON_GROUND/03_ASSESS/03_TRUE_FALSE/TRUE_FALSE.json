@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CG-TF-01",
+    "type": "true_false",
+    "question": "The HCF of 12 and 16 is 8.",
+    "answer": "False",
+    "explanation": "8 is a factor of 16 but not of 12; the HCF is 4.",
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "id": "CG-TF-02",
+    "type": "true_false",
+    "question": "Prime factorisation can be used to find both HCF and LCM.",
+    "answer": "True",
+    "explanation": "Separate procedures are developed using common prime occurrences for HCF and maximum occurrences for LCM.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "CG-TF-03",
+    "type": "true_false",
+    "question": "For two numbers, the LCM is always greater than their product.",
+    "answer": "False",
+    "explanation": "The chapter shows the LCM is a factor of the product; in fact HCF×LCM=product.",
+    "source_pages": [
+      16
+    ]
+  }
+]

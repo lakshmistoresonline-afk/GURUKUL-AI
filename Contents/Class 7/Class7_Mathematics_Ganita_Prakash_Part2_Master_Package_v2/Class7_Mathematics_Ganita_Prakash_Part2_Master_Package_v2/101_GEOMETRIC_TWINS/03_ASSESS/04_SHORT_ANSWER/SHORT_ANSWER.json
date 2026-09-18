@@ -1,0 +1,32 @@
+[
+  {
+    "id": "GT-SA-01",
+    "type": "short_answer",
+    "question": "Why are AB and BC alone not sufficient to reproduce the signboard symbol exactly?",
+    "answer": "Because the angle ∠ABC can vary while the two arm lengths stay the same.",
+    "explanation": "Different included angles give different shapes even when the two arm lengths are fixed.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "GT-SA-02",
+    "type": "short_answer",
+    "question": "What does ΔABC ≅ ΔXYZ tell us about the corresponding vertices?",
+    "answer": "A corresponds to X, B to Y, and C to Z.",
+    "explanation": "The chapter uses the order of vertices to encode correspondence.",
+    "source_pages": [
+      7
+    ]
+  },
+  {
+    "id": "GT-SA-03",
+    "type": "short_answer",
+    "question": "Why is SSA not a reliable congruence condition?",
+    "answer": "Because the given two sides and a non-included angle can produce two non-congruent triangles.",
+    "explanation": "The chapter demonstrates this by constructing two different triangles from the same SSA data.",
+    "source_pages": [
+      12
+    ]
+  }
+]

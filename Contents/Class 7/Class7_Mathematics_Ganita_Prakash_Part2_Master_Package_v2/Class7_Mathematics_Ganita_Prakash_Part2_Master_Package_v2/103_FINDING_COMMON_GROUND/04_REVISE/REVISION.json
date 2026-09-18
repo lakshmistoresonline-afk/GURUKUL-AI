@@ -1,0 +1,135 @@
+{
+  "key_points": [
+    {
+      "id": "103_FINDING_COMMON_GROUND-R01",
+      "question": "What is HCF",
+      "answer": "Highest common factor, also called GCD.",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "id": "103_FINDING_COMMON_GROUND-R02",
+      "question": "What is LCM",
+      "answer": "Least common multiple.",
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "id": "103_FINDING_COMMON_GROUND-R03",
+      "question": "What is Prime-factor HCF",
+      "answer": "Use the minimum occurrences of common primes.",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "103_FINDING_COMMON_GROUND-R04",
+      "question": "What is Prime-factor LCM",
+      "answer": "Use the maximum occurrences of all required primes.",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "id": "103_FINDING_COMMON_GROUND-R05",
+      "question": "What is HCF scaling",
+      "answer": "If both numbers are multiplied by a common factor, the HCF scales accordingly.",
+      "source_pages": [
+        10
+      ]
+    },
+    {
+      "id": "103_FINDING_COMMON_GROUND-R06",
+      "question": "What is Product relation",
+      "answer": "HCF×LCM equals the product of two numbers.",
+      "source_pages": [
+        16
+      ]
+    }
+  ],
+  "quick_check": [
+    {
+      "id": "CG-MCQ-01",
+      "type": "mcq",
+      "question": "What is the HCF of 12 and 16 in the square-tile problem?",
+      "answer": "4",
+      "explanation": "The common factors are 1, 2 and 4; the highest is 4.",
+      "source_pages": [
+        1
+      ],
+      "options": [
+        "4",
+        "2",
+        "8",
+        "12"
+      ]
+    },
+    {
+      "id": "CG-MCQ-02",
+      "type": "mcq",
+      "question": "What is the LCM of 14 and 35?",
+      "answer": "70",
+      "explanation": "Prime factors are 14=2×7 and 35=5×7, so LCM=2×5×7=70.",
+      "source_pages": [
+        6
+      ],
+      "options": [
+        "70",
+        "49",
+        "35",
+        "14"
+      ]
+    },
+    {
+      "id": "CG-MCQ-03",
+      "type": "mcq",
+      "question": "What is the HCF of 45 and 75?",
+      "answer": "15",
+      "explanation": "The source example gives HCF 15.",
+      "source_pages": [
+        3
+      ],
+      "options": [
+        "15",
+        "5",
+        "25",
+        "30"
+      ]
+    },
+    {
+      "id": "CG-MCQ-04",
+      "type": "mcq",
+      "question": "What relationship does the chapter establish for two positive integers a and b?",
+      "answer": "HCF × LCM = a × b",
+      "explanation": "The chapter states this property explicitly.",
+      "source_pages": [
+        16
+      ],
+      "options": [
+        "HCF × LCM = a × b",
+        "HCF + LCM = a × b",
+        "HCF ÷ LCM = a × b",
+        "HCF = LCM always"
+      ]
+    },
+    {
+      "id": "CG-MCQ-05",
+      "type": "mcq",
+      "question": "If one number is n and the other is 5n, what is their HCF?",
+      "answer": "n",
+      "explanation": "The chapter gives the general statement HCF(n,5n)=n.",
+      "source_pages": [
+        9
+      ],
+      "options": [
+        "n",
+        "5n",
+        "6n",
+        "n/5"
+      ]
+    }
+  ],
+  "revision_note": "Use the source_content.md alongside these derived recall cards."
+}

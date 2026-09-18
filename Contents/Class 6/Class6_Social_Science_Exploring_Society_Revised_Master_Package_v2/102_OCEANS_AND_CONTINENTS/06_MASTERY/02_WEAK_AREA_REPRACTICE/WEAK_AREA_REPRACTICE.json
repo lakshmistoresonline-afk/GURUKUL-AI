@@ -1,0 +1,20 @@
+{
+  "chapter_code": "102",
+  "thresholds": [
+    {
+      "band": "secure",
+      "rule": "80%+",
+      "action": "Move to extension/application."
+    },
+    {
+      "band": "developing",
+      "rule": "50–79%",
+      "action": "Repractise the linked concept and source-based question."
+    },
+    {
+      "band": "needs_support",
+      "rule": "below 50%",
+      "action": "Return to lesson, key points and guided practice."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "chapter_id": "108_The_Decision_of_the_Panchayat",
+  "source_policy": "Source-derived records must retain their original provenance. Enriched records are not presented as verbatim textbook content.",
+  "artifact_map": [
+    {
+      "path": "00_CHAPTER_INFO/CHAPTER_INFO.json",
+      "origin": "existing_package",
+      "status": "preserved_and_reviewed"
+    },
+    {
+      "path": "01_LEARN/01_LESSONS/LESSONS.json",
+      "origin": "existing_package_enrichment",
+      "status": "review_required_against_original_text"
+    },
+    {
+      "path": "01_LEARN/02_CONCEPTS/CONCEPTS.json",
+      "origin": "existing_package_enrichment",
+      "status": "review_required_against_original_text"
+    },
+    {
+      "path": "01_LEARN/03_EXAMPLES/EXAMPLES.json",
+      "origin": "existing_package_enrichment",
+      "status": "review_required_against_original_text"
+    },
+    {
+      "path": "02_PRACTICE/01_TEXTBOOK_ACTIVITIES/ACTIVITIES.json",
+      "origin": "existing_package",
+      "status": "must_be_source_verified"
+    },
+    {
+      "path": "02_PRACTICE/02_QUESTIONS/QUESTION_BANK.json",
+      "origin": "existing_package_enrichment",
+      "status": "review_required_against_original_text"
+    },
+    {
+      "path": "02_PRACTICE/03_WORKED_PRACTICE/WORKED_PRACTICE.json",
+      "origin": "generated_enrichment",
+      "status": "generated"
+    },
+    {
+      "path": "03_ASSESS/ASSESSMENT.json",
+      "origin": "existing_package_enrichment",
+      "status": "review_required_against_original_text"
+    },
+    {
+      "path": "04_REVISE/REVISION.json",
+      "origin": "existing_package_enrichment",
+      "status": "review_required_against_original_text"
+    },
+    {
+      "path": "05_MULTIMEDIA/YOUTUBE_RESOURCES.json",
+      "origin": "web_verified_or_search_fallback",
+      "status": "recheck_before_runtime_display"
+    },
+    {
+      "path": "01_LEARN/05_ANALYZE/ANALYZE.json",
+      "origin": "generated_enrichment",
+      "status": "generated"
+    },
+    {
+      "path": "01_LEARN/06_TRANSFER/TRANSFER.json",
+      "origin": "generated_enrichment",
+      "status": "generated"
+    },
+    {
+      "path": "01_LEARN/07_TEACH_BACK/TEACH_BACK.json",
+      "origin": "generated_enrichment",
+      "status": "generated"
+    },
+    {
+      "path": "02_PRACTICE/05_ERROR_ANALYSIS/ERROR_ANALYSIS.json",
+      "origin": "generated_enrichment",
+      "status": "generated"
+    },
+    {
+      "path": "06_MASTERY/01_MASTERY_LAB/MASTERY_LAB.json",
+      "origin": "generated_enrichment",
+      "status": "generated"
+    }
+  ]
+}

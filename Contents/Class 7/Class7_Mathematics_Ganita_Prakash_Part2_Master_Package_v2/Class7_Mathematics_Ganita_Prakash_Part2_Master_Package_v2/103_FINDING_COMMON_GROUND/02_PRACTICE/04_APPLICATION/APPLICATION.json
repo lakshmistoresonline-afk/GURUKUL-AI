@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CG-APP-01",
+    "type": "application",
+    "question": "Two buses arrive every 12 and 18 minutes. After starting together, after how many minutes will they next arrive together?",
+    "answer": "36 minutes",
+    "explanation": "The next common arrival is the LCM of 12 and 18, which is 36.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "CG-APP-02",
+    "type": "application",
+    "question": "You have 48 red and 60 blue beads and want identical largest groups with none left. How many groups can be made?",
+    "answer": "12 groups",
+    "explanation": "The greatest number of equal groups is HCF(48,60)=12.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "id": "CG-APP-03",
+    "type": "application",
+    "question": "Find two numbers whose HCF is 1 and LCM is 66, as requested in the chapter.",
+    "answer": "6 and 11",
+    "explanation": "6 and 11 are coprime, so HCF=1 and LCM=66.",
+    "source_pages": [
+      16
+    ]
+  }
+]

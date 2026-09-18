@@ -1,0 +1,38 @@
+[
+  {
+    "id": "104_ANOTHER_PEEK_BEYOND_THE_POINT-ERR01",
+    "common_error": "In 27.53, what is the place value of 5?",
+    "correction": "Tenths",
+    "why": "The source decomposes 27.53 into 2 tens, 7 units, 5 tenths and 3 hundredths.",
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "id": "104_ANOTHER_PEEK_BEYOND_THE_POINT-ERR02",
+    "common_error": "What is 123 ÷ 10?",
+    "correction": "12.3",
+    "why": "Dividing by 10 moves the decimal point one place left.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "104_ANOTHER_PEEK_BEYOND_THE_POINT-ERR03",
+    "common_error": "What is 5.8 × 1.24?",
+    "correction": "7.192",
+    "why": "The source example multiplies 58×124=7192 and places three decimal digits.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "104_ANOTHER_PEEK_BEYOND_THE_POINT-ERR04",
+    "common_error": "What is 3.9 ÷ 10?",
+    "correction": "0.39",
+    "why": "The source converts 3.9 to 39/10 and obtains 39/100=0.39.",
+    "source_pages": [
+      8
+    ]
+  }
+]

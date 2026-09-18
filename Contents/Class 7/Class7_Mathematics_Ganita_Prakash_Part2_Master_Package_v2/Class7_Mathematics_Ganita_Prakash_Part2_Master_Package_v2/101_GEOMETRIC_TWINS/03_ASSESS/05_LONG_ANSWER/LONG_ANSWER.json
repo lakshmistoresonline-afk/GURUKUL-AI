@@ -1,0 +1,22 @@
+[
+  {
+    "id": "GT-LA-01",
+    "type": "long_answer",
+    "question": "Explain how the chapter develops SSS congruence from constructing a triangle with three given side lengths.",
+    "answer": "Draw one given side, construct arcs of the other two given radii from its endpoints, and use their intersection as the third vertex; repeating the construction fixes the same triangle.",
+    "explanation": "The source argues from the construction that all triangles with the same three side lengths are congruent.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "GT-LA-02",
+    "type": "long_answer",
+    "question": "Compare SSS, SAS, SSA and AAA using the chapter’s conclusions.",
+    "answer": "SSS guarantees congruence; SAS guarantees congruence; SSA does not; AAA does not guarantee congruence because it fixes shape but not size.",
+    "explanation": "These are the four cases examined in the chapter.",
+    "source_pages": [
+      6
+    ]
+  }
+]

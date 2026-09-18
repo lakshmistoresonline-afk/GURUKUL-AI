@@ -1,0 +1,7 @@
+{
+  "source_of_truth": "NCERT Poorvi Grade 6 source content",
+  "generation": "source-grounded derivation",
+  "validation": "All answers and generated assessment items must be checked against source text",
+  "no_hallucination": true,
+  "local_pipeline": "Source → Extraction → Generation → Validation → QA → Save"
+}

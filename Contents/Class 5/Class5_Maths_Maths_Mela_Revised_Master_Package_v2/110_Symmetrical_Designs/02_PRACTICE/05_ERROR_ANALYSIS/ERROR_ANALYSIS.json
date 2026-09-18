@@ -1,0 +1,54 @@
+{
+  "record_type": "DERIVED_ERROR_ANALYSIS",
+  "chapter": "Symmetrical Designs",
+  "items": [
+    {
+      "error_id": "E01",
+      "skill": "reflection symmetry",
+      "common_error": "Applying a familiar rule without checking whether it matches reflection symmetry.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for reflection symmetry using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E02",
+      "skill": "rotational symmetry",
+      "common_error": "Applying a familiar rule without checking whether it matches rotational symmetry.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for rotational symmetry using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E03",
+      "skill": "quarter-turn symmetry",
+      "common_error": "Applying a familiar rule without checking whether it matches quarter-turn symmetry.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for quarter-turn symmetry using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E04",
+      "skill": "symmetry in letters and designs",
+      "common_error": "Applying a familiar rule without checking whether it matches symmetry in letters and designs.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for symmetry in letters and designs using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E05",
+      "skill": "classifying designs by symmetry",
+      "common_error": "Applying a familiar rule without checking whether it matches classifying designs by symmetry.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for classifying designs by symmetry using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    },
+    {
+      "error_id": "E06",
+      "skill": "block-print patterns",
+      "common_error": "Applying a familiar rule without checking whether it matches block-print patterns.",
+      "diagnostic_prompt": "Ask the learner to show the reasoning for block-print patterns using a second representation.",
+      "repair_strategy": "Return to a concrete model or visual representation, redo one simple example, then solve a new example without copying the previous steps.",
+      "provenance": "DERIVED"
+    }
+  ]
+}

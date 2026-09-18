@@ -1,0 +1,84 @@
+{
+  "record_type": "DERIVED_SHORT_ANSWER",
+  "chapter": "Racing Seconds",
+  "items": [
+    {
+      "id": "SA01",
+      "question": "Convert 5:30 p.m. to 24-hour time.",
+      "expected_answer": "17:30.",
+      "reasoning_points": [
+        "For p.m. times after noon, add 12 to the hour."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        2
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA02",
+      "question": "Convert 180 minutes to hours.",
+      "expected_answer": "3 hours.",
+      "reasoning_points": [
+        "180÷60=3."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        7
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA03",
+      "question": "Convert 2 minutes to seconds.",
+      "expected_answer": "120 seconds.",
+      "reasoning_points": [
+        "2×60=120."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        3
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA04",
+      "question": "A game starts at 6:15 p.m. and lasts 1 h 45 min. Finish time?",
+      "expected_answer": "8:00 p.m.",
+      "reasoning_points": [
+        "6:15+1:45=8:00."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        9
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA05",
+      "question": "Four subjects take 50 minutes each. Total?",
+      "expected_answer": "200 min = 3 h 20 min.",
+      "reasoning_points": [
+        "4×50=200; 180 min=3 h, remainder 20 min."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        8
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA06",
+      "question": "Homework finishes at 9:40 p.m. after 1 h 10 min. Start?",
+      "expected_answer": "8:30 p.m.",
+      "reasoning_points": [
+        "9:40−1:10=8:30."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        9
+      ],
+      "provenance": "DERIVED"
+    }
+  ]
+}

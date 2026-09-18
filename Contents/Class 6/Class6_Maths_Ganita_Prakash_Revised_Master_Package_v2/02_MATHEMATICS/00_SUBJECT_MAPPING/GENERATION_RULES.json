@@ -1,0 +1,16 @@
+{
+  "source_of_truth": "preserved NCERT PDF and page-level source text",
+  "generation": "chapter-specific derived layers",
+  "validation": [
+    "JSON schema/parse",
+    "source-page coverage",
+    "duplicate-content checks",
+    "required-layer checks",
+    "source preservation/hash checks"
+  ],
+  "forbidden": [
+    "fabricating source quotations",
+    "replacing source PDFs",
+    "marking generic placeholders as complete"
+  ]
+}

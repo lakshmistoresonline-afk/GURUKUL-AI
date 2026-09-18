@@ -1,0 +1,38 @@
+[
+  {
+    "id": "101_GEOMETRIC_TWINS-ERR01",
+    "common_error": "Which measurements are used in the chapter example to fix the signboard symbol exactly?",
+    "correction": "AB = 4 cm, BC = 8 cm, ∠ABC = 80°",
+    "why": "The chapter explains that the two arm lengths alone allow several shapes; the included angle fixes the exact replica.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "101_GEOMETRIC_TWINS-ERR02",
+    "common_error": "Which congruence condition says that two triangles with the same three side lengths are congruent?",
+    "correction": "SSS",
+    "why": "The chapter explicitly names this the SSS (Side Side Side) condition.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "101_GEOMETRIC_TWINS-ERR03",
+    "common_error": "Why does SSA not guarantee triangle congruence in the chapter?",
+    "correction": "The same measurements can produce two non-congruent triangles",
+    "why": "The chapter constructs two non-congruent triangles satisfying the SSA data.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "id": "101_GEOMETRIC_TWINS-ERR04",
+    "common_error": "If ΔABC ≅ ΔXYZ, which vertices correspond by the naming convention?",
+    "correction": "A↔X, B↔Y, C↔Z",
+    "why": "The first, second and third vertices in the names correspond in order.",
+    "source_pages": [
+      7
+    ]
+  }
+]

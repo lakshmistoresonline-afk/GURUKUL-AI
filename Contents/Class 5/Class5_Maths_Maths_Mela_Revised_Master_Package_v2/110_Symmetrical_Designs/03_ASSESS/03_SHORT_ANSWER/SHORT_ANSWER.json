@@ -1,0 +1,84 @@
+{
+  "record_type": "DERIVED_SHORT_ANSWER",
+  "chapter": "Symmetrical Designs",
+  "items": [
+    {
+      "id": "SA01",
+      "question": "What does reflection symmetry mean?",
+      "expected_answer": "A line divides a figure into matching mirror halves.",
+      "reasoning_points": [
+        "Imagine folding along the symmetry line."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        1
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA02",
+      "question": "What is a quarter turn?",
+      "expected_answer": "90°.",
+      "reasoning_points": [
+        "A full turn has four equal quarter turns."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        4
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA03",
+      "question": "A design matches itself after every quarter turn. What order of rotational symmetry?",
+      "expected_answer": "4.",
+      "reasoning_points": [
+        "It matches at 0°, 90°, 180° and 270°."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        4
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA04",
+      "question": "A design has both mirror symmetry and rotational symmetry. How is it classified?",
+      "expected_answer": "It has both types of symmetry.",
+      "reasoning_points": [
+        "Test reflection and then rotation separately."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        5
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA05",
+      "question": "Why can repeating a block four times create rotationally related designs?",
+      "expected_answer": "Each placement can be related by repeated turns around a centre.",
+      "reasoning_points": [
+        "Observe the repeated orientation of the block."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        6
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA06",
+      "question": "How can you test a letter for rotational symmetry?",
+      "expected_answer": "Rotate the cut-out about a fixed centre and check whether it matches before a full turn.",
+      "reasoning_points": [
+        "Keep the centre fixed while turning."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        3
+      ],
+      "provenance": "DERIVED"
+    }
+  ]
+}

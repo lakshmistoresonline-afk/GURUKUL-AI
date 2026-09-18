@@ -1,0 +1,172 @@
+[
+  {
+    "id": "106-Q001",
+    "type": "mcq",
+    "question": "The sum of two odd numbers is always:",
+    "options": [
+      "odd",
+      "even",
+      "prime",
+      "zero"
+    ],
+    "answer": "even",
+    "explanation": "The answer follows from the chapter’s stated concept/example."
+  },
+  {
+    "id": "106-Q002",
+    "type": "mcq",
+    "question": "The sum of an odd number of odd numbers is:",
+    "options": [
+      "always even",
+      "always odd",
+      "always zero",
+      "always prime"
+    ],
+    "answer": "always odd",
+    "explanation": "The answer follows from the chapter’s stated concept/example."
+  },
+  {
+    "id": "106-Q003",
+    "type": "mcq",
+    "question": "Which is an even number?",
+    "options": [
+      "17",
+      "23",
+      "28",
+      "31"
+    ],
+    "answer": "28",
+    "explanation": "The answer follows from the chapter’s stated concept/example."
+  },
+  {
+    "id": "106-Q004",
+    "type": "mcq",
+    "question": "The chapter uses grids to explore patterns such as:",
+    "options": [
+      "magic squares",
+      "only fractions",
+      "only angles",
+      "place value only"
+    ],
+    "answer": "magic squares",
+    "explanation": "The answer follows from the chapter’s stated concept/example."
+  },
+  {
+    "id": "106-Q005",
+    "type": "mcq",
+    "question": "The Virahāṅka–Fibonacci sequence is introduced through:",
+    "options": [
+      "counting patterns",
+      "angle construction",
+      "decimal measurement",
+      "area formulas"
+    ],
+    "answer": "counting patterns",
+    "explanation": "The answer follows from the chapter’s stated concept/example."
+  },
+  {
+    "id": "106-Q006",
+    "type": "fill",
+    "question": "An even number can be arranged in pairs with no ______.",
+    "answer": "leftover",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q007",
+    "type": "fill",
+    "question": "The sum of two odd numbers is ______.",
+    "answer": "even",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q008",
+    "type": "fill",
+    "question": "1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = ______.",
+    "answer": "45",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q009",
+    "type": "fill",
+    "question": "A square grid in which rows, columns and diagonals have the same sum can form a ______ square.",
+    "answer": "magic",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q010",
+    "type": "tf",
+    "question": "The sum of any number of even numbers is even.",
+    "answer": "True",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q011",
+    "type": "tf",
+    "question": "The sum of two odd numbers is odd.",
+    "answer": "False",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q012",
+    "type": "tf",
+    "question": "A 3 × 3 magic square can have equal row, column and diagonal sums.",
+    "answer": "True",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q013",
+    "type": "tf",
+    "question": "Parity refers to whether a number is even or odd.",
+    "answer": "True",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q014",
+    "type": "short",
+    "question": "Why is the sum of two odd numbers even?",
+    "answer": "Each odd number is one more than an even number; the two extra ones make a pair, so the total is even.",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q015",
+    "type": "short",
+    "question": "What does parity tell us about a whole number?",
+    "answer": "Whether it is even or odd.",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q016",
+    "type": "short",
+    "question": "Find the sum 1 through 9.",
+    "answer": "45.",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q017",
+    "type": "short",
+    "question": "Why can parity help solve a puzzle without checking every possibility?",
+    "answer": "Parity can rule out impossible combinations by showing that the required sum must be even or odd.",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q018",
+    "type": "long",
+    "question": "Explain the parity argument for five odd numbers.",
+    "answer": "Two odd numbers make an even sum; adding another odd makes it odd; continuing, an odd number of odd addends gives an odd sum. Thus five odd numbers cannot total an even number such as 30.",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q019",
+    "type": "long",
+    "question": "Describe the role of patterns in the Virahāṅka–Fibonacci exploration.",
+    "answer": "The chapter counts ways of composing a number using 1s and 2s and observes a recurrence: the count for the next number is obtained from the previous two counts.",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  },
+  {
+    "id": "106-Q020",
+    "type": "application",
+    "question": "A puzzle asks for five odd-number cards whose sum is 30. Use parity to decide whether a solution is possible.",
+    "answer": "No. The sum of five odd numbers is odd, while 30 is even.",
+    "explanation": "The answer is derived from the chapter’s mathematical reasoning or the closely related calculation."
+  }
+]

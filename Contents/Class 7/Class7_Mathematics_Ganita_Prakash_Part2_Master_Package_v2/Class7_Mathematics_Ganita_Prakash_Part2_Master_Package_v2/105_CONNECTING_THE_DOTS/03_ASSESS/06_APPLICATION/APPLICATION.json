@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CD-APP-01",
+    "type": "application",
+    "question": "Two groups have the same mean height of 154.2 cm. Can you conclude every student in both groups has height 154.2 cm?",
+    "answer": "No",
+    "explanation": "A mean is an equal-share/representative value, not a statement that every observation equals the mean.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "CD-APP-02",
+    "type": "application",
+    "question": "A dataset has one unusually high value. Which measure should you inspect alongside the mean to understand the centre more robustly?",
+    "answer": "Median",
+    "explanation": "The chapter specifically introduces median to handle the influence of outliers.",
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "id": "CD-APP-03",
+    "type": "application",
+    "question": "The monthly totals are ₹458 for Yahapur and ₹450 for Wahapur, each over 12 months. Which has the higher arithmetic mean?",
+    "answer": "Yahapur",
+    "explanation": "458/12≈38.17, while 450/12=37.5.",
+    "source_pages": [
+      6
+    ]
+  }
+]

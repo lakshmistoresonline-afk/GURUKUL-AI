@@ -1,0 +1,82 @@
+[
+  {
+    "id": "GT-MCQ-01",
+    "type": "mcq",
+    "question": "Which measurements are used in the chapter example to fix the signboard symbol exactly?",
+    "answer": "AB = 4 cm, BC = 8 cm, ∠ABC = 80°",
+    "explanation": "The chapter explains that the two arm lengths alone allow several shapes; the included angle fixes the exact replica.",
+    "source_pages": [
+      2
+    ],
+    "options": [
+      "AB = 4 cm, BC = 8 cm, ∠ABC = 80°",
+      "AB = 4 cm, BC = 8 cm only",
+      "Three angles only",
+      "One side only"
+    ]
+  },
+  {
+    "id": "GT-MCQ-02",
+    "type": "mcq",
+    "question": "Which congruence condition says that two triangles with the same three side lengths are congruent?",
+    "answer": "SSS",
+    "explanation": "The chapter explicitly names this the SSS (Side Side Side) condition.",
+    "source_pages": [
+      6
+    ],
+    "options": [
+      "SSS",
+      "SAS",
+      "SSA",
+      "AAA"
+    ]
+  },
+  {
+    "id": "GT-MCQ-03",
+    "type": "mcq",
+    "question": "Why does SSA not guarantee triangle congruence in the chapter?",
+    "answer": "The same measurements can produce two non-congruent triangles",
+    "explanation": "The chapter constructs two non-congruent triangles satisfying the SSA data.",
+    "source_pages": [
+      12
+    ],
+    "options": [
+      "The same measurements can produce two non-congruent triangles",
+      "It uses three angles",
+      "It uses no side length",
+      "It is valid only for rectangles"
+    ]
+  },
+  {
+    "id": "GT-MCQ-04",
+    "type": "mcq",
+    "question": "If ΔABC ≅ ΔXYZ, which vertices correspond by the naming convention?",
+    "answer": "A↔X, B↔Y, C↔Z",
+    "explanation": "The first, second and third vertices in the names correspond in order.",
+    "source_pages": [
+      7
+    ],
+    "options": [
+      "A↔X, B↔Y, C↔Z",
+      "A↔Y, B↔Z, C↔X",
+      "A↔Z, B↔X, C↔Y",
+      "No correspondence is implied"
+    ]
+  },
+  {
+    "id": "GT-MCQ-05",
+    "type": "mcq",
+    "question": "A triangle with sides 40 cm, 60 cm and 80 cm is being replicated. Which information is sufficient according to SSS?",
+    "answer": "All three side lengths",
+    "explanation": "The chapter states that equal three side lengths are sufficient to construct a congruent triangle.",
+    "source_pages": [
+      6
+    ],
+    "options": [
+      "All three side lengths",
+      "Only the three angles",
+      "Only two side lengths",
+      "Only one angle"
+    ]
+  }
+]

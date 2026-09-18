@@ -1,0 +1,21 @@
+{
+  "chapter_id": "110",
+  "rules": [
+    {
+      "trigger": "recall<70%",
+      "action": "revisit key points and flashcards"
+    },
+    {
+      "trigger": "concept<70%",
+      "action": "redo evidence explanation"
+    },
+    {
+      "trigger": "investigation<70%",
+      "action": "repeat a relevant source activity"
+    },
+    {
+      "trigger": "application<70%",
+      "action": "complete two transfer tasks"
+    }
+  ]
+}

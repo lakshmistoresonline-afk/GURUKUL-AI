@@ -1,0 +1,232 @@
+[
+  {
+    "id": "CT-MCQ-01",
+    "type": "mcq",
+    "question": "What is the perpendicular bisector of a line segment?",
+    "answer": "A line that bisects it and is perpendicular to it",
+    "explanation": "The chapter gives this definition after the eye construction.",
+    "source_pages": [
+      2
+    ],
+    "options": [
+      "A line that bisects it and is perpendicular to it",
+      "Any line through an endpoint",
+      "A parallel line",
+      "A line of any slope through the midpoint"
+    ]
+  },
+  {
+    "id": "CT-MCQ-02",
+    "type": "mcq",
+    "question": "Why do the centres A and B in the eye construction lie on the perpendicular bisector of XY?",
+    "answer": "Each is equidistant from X and Y",
+    "explanation": "The chapter establishes that points equidistant from X and Y lie on their perpendicular bisector.",
+    "source_pages": [
+      4
+    ],
+    "options": [
+      "Each is equidistant from X and Y",
+      "They are endpoints of XY",
+      "They are arbitrary points",
+      "They are on a parallel line"
+    ]
+  },
+  {
+    "id": "CT-MCQ-03",
+    "type": "mcq",
+    "question": "How is a 45° angle constructed using the methods in the chapter?",
+    "answer": "Bisect a 90° angle",
+    "explanation": "The chapter constructs 90° first and then bisects it.",
+    "source_pages": [
+      9
+    ],
+    "options": [
+      "Bisect a 90° angle",
+      "Bisect a 60° angle",
+      "Double a 90° angle",
+      "Copy a 45° angle from a protractor"
+    ]
+  },
+  {
+    "id": "CT-MCQ-04",
+    "type": "mcq",
+    "question": "How is a 60° angle constructed?",
+    "answer": "Using an equilateral triangle construction",
+    "explanation": "The source explains that an equilateral triangle gives a 60° angle.",
+    "source_pages": [
+      18
+    ],
+    "options": [
+      "Using an equilateral triangle construction",
+      "Using a rectangle",
+      "Using only a ruler measurement",
+      "By halving 90°"
+    ]
+  },
+  {
+    "id": "CT-MCQ-05",
+    "type": "mcq",
+    "question": "What condition makes the hexagon constructed from six equilateral triangles regular?",
+    "answer": "Equal sides and equal 120° interior angles",
+    "explanation": "The chapter shows each hexagon side is equal and each interior angle is 60°+60°=120°.",
+    "source_pages": [
+      17
+    ],
+    "options": [
+      "Equal sides and equal 120° interior angles",
+      "Unequal sides",
+      "Only one equal angle",
+      "A total angle greater than 360°"
+    ]
+  },
+  {
+    "id": "CT-FILL-01",
+    "type": "fill",
+    "question": "A division of a line into two identical parts is called ______.",
+    "answer": "bisection",
+    "explanation": "This is the definition in section 6.1.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "CT-FILL-02",
+    "type": "fill",
+    "question": "A point equidistant from X and Y lies on the ______ bisector of XY.",
+    "answer": "perpendicular",
+    "explanation": "The source establishes this property through congruent triangles.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "CT-FILL-03",
+    "type": "fill",
+    "question": "A complete angle around a point is ______°.",
+    "answer": "360",
+    "explanation": "The chapter uses 360° to reason about angle gaps.",
+    "source_pages": [
+      17
+    ]
+  },
+  {
+    "id": "CT-FILL-04",
+    "type": "fill",
+    "question": "A regular polygon has equal sides and equal ______.",
+    "answer": "angles",
+    "explanation": "This definition is used before the regular hexagon construction.",
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "id": "CT-TF-01",
+    "type": "true_false",
+    "question": "The two arcs used to construct the perpendicular bisector must have the same radius.",
+    "answer": "True",
+    "explanation": "Equal radii make the intersection points equidistant from X and Y.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "CT-TF-02",
+    "type": "true_false",
+    "question": "A 60° angle can be constructed using an equilateral triangle.",
+    "answer": "True",
+    "explanation": "The chapter explicitly derives 60° from the equilateral triangle.",
+    "source_pages": [
+      18
+    ]
+  },
+  {
+    "id": "CT-TF-03",
+    "type": "true_false",
+    "question": "The angle between adjacent rays in an 8-petalled design is 60°.",
+    "answer": "False",
+    "explanation": "360°÷8=45°.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "id": "CT-SA-01",
+    "type": "short_answer",
+    "question": "Why is the midpoint obtained by perpendicular-bisector construction more accurate than simply measuring?",
+    "answer": "The construction is geometrically determined by equal-radius arcs and perpendicularity, avoiding dependence on scale-reading precision.",
+    "explanation": "The chapter explicitly notes this construction is more accurate than measuring the midpoint with a marked scale.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "CT-SA-02",
+    "type": "short_answer",
+    "question": "What is the angle between adjacent supporting lines in the 8-petalled design?",
+    "answer": "45°",
+    "explanation": "360° is divided equally into 8 parts.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "id": "CT-SA-03",
+    "type": "short_answer",
+    "question": "Why is a regular hexagon linked to six equilateral triangles?",
+    "answer": "Each central triangle has 60°, six such angles make 360°, and the outer sides are equal.",
+    "explanation": "The source constructs the hexagon from six congruent equilateral triangles.",
+    "source_pages": [
+      17
+    ]
+  },
+  {
+    "id": "CT-LA-01",
+    "type": "long_answer",
+    "question": "Describe the ruler-and-compass construction of the perpendicular bisector of XY.",
+    "answer": "Draw equal-radius arcs from X and Y above and below the segment; join their two intersection points. The joining line bisects XY at its midpoint and is perpendicular to XY.",
+    "explanation": "These are the construction steps developed in the chapter.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "CT-LA-02",
+    "type": "long_answer",
+    "question": "Describe how to copy an angle using only ruler and compass.",
+    "answer": "Draw an arc across the original angle; reproduce the same arc at the new vertex; transfer the chord length between the original arc intersections to the new arc; join the new point to the vertex.",
+    "explanation": "The chapter proves the copied triangles congruent by SSS, so the angles are equal.",
+    "source_pages": [
+      11
+    ]
+  },
+  {
+    "id": "CT-APP-01",
+    "type": "application",
+    "question": "You need a line parallel to an existing line using ruler and compass. What idea from the chapter is used?",
+    "answer": "Copy a corresponding angle with a transversal so that the corresponding angles are equal.",
+    "explanation": "The parallel-line construction follows the angle-copying method.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "id": "CT-APP-02",
+    "type": "application",
+    "question": "Can six angles of 70° meet around one point without overlap or a gap?",
+    "answer": "No; six 70° angles total 420°, which exceeds 360°.",
+    "explanation": "The chapter’s tiling test requires the angles around a point to total exactly 360°.",
+    "source_pages": [
+      17
+    ]
+  },
+  {
+    "id": "CT-APP-03",
+    "type": "application",
+    "question": "Constructing a regular hexagon of side 5 cm begins with a 60° construction. Why is the same side length reused?",
+    "answer": "The hexagon can be decomposed into six congruent equilateral triangles, so each radius/side is the same.",
+    "explanation": "The chapter derives the regular hexagon from six congruent equilateral triangles.",
+    "source_pages": [
+      18
+    ]
+  }
+]

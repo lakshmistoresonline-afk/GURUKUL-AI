@@ -1,0 +1,146 @@
+# Symmetry — Practice & Activity Prompts
+
+- **Source page 1:** Look around you — you may find many objects that catch your
+- **Source page 1:** about the butterfly? No doubt, the colours are very attractive. But
+- **Source page 1:** what else about the butterfly appeals to you?
+- **Source page 1:** Can you see what repeats in the beautiful rangoli figure? In the
+- **Source page 2:** What about the pinwheel? Can you spot which pattern is repeating?
+- **Source page 2:** Now, can you say what figure repeats
+- **Source page 2:** along each side of the hexagon? What
+- **Source page 2:** each side? Do you recognise it? How do
+- **Source page 2:** boundary of the hexagon? What about
+- **Source page 2:** — what is it
+- **Source page 2:** that repeat?
+- **Source page 2:** What are the symmetries that you see in these beautiful structures?
+- **Source page 3:** What if you fold the triangle along the dotted line? Yes, one half
+- **Source page 3:** passing through the middle? Are they mirror halves? No, when we fold
+- **Source page 3:** 1. Do you see any line of symmetry in the figures at the start of the
+- **Source page 3:** chapter? What about in the picture of the cloud?
+- **Source page 4:** Does a square have only one line of symmetry?
+- **Source page 4:** Take a square piece of paper. By folding, find all its lines of symmetry.
+- **Source page 5:** overlap? How many lines of symmetry does the square shape have?
+- **Source page 5:** below also have multiple lines of symmetry. Can you find them all?
+- **Source page 5:** symmetry?
+- **Source page 5:** folding it along its diagonal. What do you
+- **Source page 6:** happens to the points A, D? A occupies the position occupied by B and
+- **Source page 6:** What if we reflect along the diagonal from A to C? Where do
+- **Source page 6:** B, C and D go? What if we reflect along the horizontal line of
+- **Source page 6:** figures. How does one generate such symmetrical figures? Let us
+- **Source page 6:** explore this.
+- **Source page 6:** What do you see?
+- **Source page 6:** • Is the resulting figure symmetric?
+- **Source page 6:** • If yes, where is the line of symmetry?
+- **Source page 6:** two identical parts?
+- **Source page 6:** Try making more such patterns.
+- **Source page 7:** line shown. Draw a sketch of how the paper
+- **Source page 7:** Do you see a line of symmetry in this
+- **Source page 7:** figure? What is it?
+- **Source page 8:** paper folded?
+- **Source page 8:** 2. Given the line(s) of symmetry, find the other hole(s):
+- **Source page 10:** a single straight cut. How will you do it?
+- **Source page 10:** 6. How many lines of symmetry do these shapes have?
+- **Source page 11:** 7. Trace each figure and draw the lines of symmetry, if any:
+- **Source page 12:** 8. Find the lines of symmetry for the kolam below .
+- **Source page 12:** 9. Draw the following.
+- **Source page 12:** Is it possible to draw a triangle with exactly two lines of symmetry?
+- **Source page 12:** 10. Draw the following.
+- **Source page 12:** on squared paper. Complete them so that the
+- **Source page 13:** following drawing on squared paper. Complete each one
+- **Source page 14:** 13. Copy the following on a dot grid. For each figure draw two more
+- **Source page 14:** through an angle of less than 90°?
+- **Source page 15:** Do you know of any other shape that has exactly four angles of
+- **Source page 15:** How many angles of symmetry does a square have? How much
+- **Source page 15:** rotation does it require to get the initial square?
+- **Source page 15:** position of point A. Do you know where to mark the centre of rotation?
+- **Source page 15:** What are the other angles of symmetry?
+- **Source page 16:** Example: Find the angles of symmetry of the following strip.
+- **Source page 16:** complete rotation through 360°. So, we say that this figure does not
+- **Source page 16:** 4 radial arms. How many angles of
+- **Source page 16:** symmetry does it have? What are they?
+- **Source page 16:** Can you change the angles between
+- **Source page 16:** 4 angles of symmetry? Try drawing it.
+- **Source page 16:** you could draw the figure on two different pieces of paper. Cut out
+- **Source page 16:** angles of symmetry?
+- **Source page 17:** get a figure having exactly 3 angles of symmetry? Can you use radial
+- **Source page 17:** arms for this?
+- **Source page 17:** Let us try with 3 radial arms as in the figure below. How many
+- **Source page 17:** angles of symmetry does it have and what are they?
+- **Source page 17:** 3 angles of symmetry?
+- **Source page 18:** Can it be done by changing the angles between the dotted lines?
+- **Source page 18:** If these two figures must overlap, what can you tell about the
+- **Source page 18:** So, ∠A = ∠B = ∠C. What must this angle be?
+- **Source page 18:** Now how many angles of rotation does the figure have and what
+- **Source page 18:** are they?
+- **Source page 19:** Let us explore more figures.
+- **Source page 19:** Can you draw a figure with radial arms that has a) exactly 5
+- **Source page 19:** symmetry, b) 6 angles of symmetry? Also find the angles of
+- **Source page 19:** between two adjacent radial arms be?
+- **Source page 19:** of symmetry. What will be its smallest angle of symmetry? Is the
+- **Source page 19:** number of degrees a whole number in this case? If not, express it as
+- **Source page 19:** Let us find the angles of symmetry for other kinds of figures.
+- **Source page 19:** 1. Find the angles of symmetry for the given figures about the point
+- **Source page 19:** 2. Which of the following figures have more than one angle of
+- **Source page 20:** Do you observe something common about the angles of symmetries
+- **Source page 20:** in these cases? The first set of numbers are all multiples of 180. The
+- **Source page 20:** may wonder and ask if this will always happen. What do you
+- **Source page 21:** Is there a smallest angle of symmetry for all figures? It turns out
+- **Source page 21:** shapes like the circle, whose symmetries we now discuss.
+- **Source page 21:** circle clockwise about its centre? It coincides with itself. It does not
+- **Source page 21:** of reflection symmetry?
+- **Source page 21:** Like wheels, we can find other objects around us having rotational
+- **Source page 21:** symmetry. Find them. Some of them are shown below:
+- **Source page 22:** by colouring the sectors in different ways?
+- **Source page 22:** 2. Draw two figures other than a circle and a square that have both
+- **Source page 22:** 3. Draw, wherever possible, a rough sk
+- **Source page 22:** the other angles of symmetry of this figure?
+- **Source page 22:** of symmetry less than 60°. What is its smallest angle of symmetry?
+- **Source page 23:** symmetry? If
+- **Source page 23:** so, draw the lines of symmetries. How many are
+- **Source page 23:** rotational symmetry around its centre? If so, find
+- **Source page 23:** 8. How many
+- **Source page 23:** sequence in Chapter 1, Table 3, the Regular Polygons, have? What
+- **Source page 23:** number sequence do you get?
+- **Source page 23:** have? How many angles of symmetry?
+- **Source page 23:** symmetry does Ashoka Chakra have?
+- **Source page 23:** book to complete the following figure so that it has exactly 2 lines
+- **Source page 25:** Draw a 6 by 6 grid. Two players
+- **Source page 25:** With what strategy can one play to win this game?
+- **Source page 26:** Q1. Do you see any line of symmetry in the figures at the start of the chapter? What
+- **Source page 26:** about in the picture of the cloud?
+- **Source page 26:** Q. Is there any other way to fold the square so that the two halves overlap? How many
+- **Source page 26:** lines of symmetry does the square shape have?
+- **Source page 26:** that is not a square. Is its diagonal a line of symmetry?
+- **Source page 26:** Q. What if we reflect along the diagonal from A to C? Where do points A, B, C and D go?
+- **Source page 26:** What if we reflect along the horizontal line of symmetry?
+- **Source page 27:** Figure (d) was created by punching a single hole. How was the paper folded?
+- **Source page 27:** Q2. Given the line(s) of symmetry, find the other hole(s):
+- **Source page 28:** cut. How will you do it?
+- **Source page 29:** Q6. How many lines of symmetry do these shapes have?
+- **Source page 29:** Q7. Trace each figure and draw the lines of symmetry, if any:
+- **Source page 30:** Q8. Find the lines of symmetry for the kolam below.
+- **Source page 30:** Q9. Draw the following.
+- **Source page 31:** No, it is not possible to draw a triangle with exactly two lines of symmetry.
+- **Source page 31:** Q10. Draw the following. In each case, the figure should contain at least one curved
+- **Source page 32:** Q11. Copy the following on squared paper. Complete them so that the blue line is a line
+- **Source page 33:** Q12. Copy the following drawing on squared paper. Complete each one of them so that
+- **Source page 33:** Q13. Copy the following on a dot grid. For each figure draw two more lines to make a
+- **Source page 34:** Can you draw a figure with radial arms that has a) exactly 5 angles of symmetry, b)
+- **Source page 34:** 6 angles of symmetry? Also find the angles of symmetry in each case.
+- **Source page 35:** its smallest angle of symmetry? Is the number of degrees a whole number in this
+- **Source page 35:** case? If not, express it as a mixed faction.
+- **Source page 35:** Q1. Find the angles of symmetry for the given figures about the point marked.
+- **Source page 35:** Q2. Which of the following figures have more than one angle of symmetry?
+- **Source page 36:** ask if this will always happen. What do you think?
+- **Source page 37:** can obtain by coloring the sectors in different ways?
+- **Source page 37:** Q2. Draw two figures other than a circle and a square that have both reflection symmetry
+- **Source page 38:** Q3. Draw, wherever possible, a rough sketch of
+- **Source page 39:** symmetry of the figure?
+- **Source page 39:** less then 60°. What is its smallest angle of symmetry?
+- **Source page 39:** a. Does the outer boundary of the picture have reflection symmetry? If so, draw the
+- **Source page 39:** lines of symmetries. How many are they?
+- **Source page 39:** b. Does it have rotational symmetry around its centre? If so, find the angles of
+- **Source page 40:** Q8. How many lines of symmetry do the shapes in the first shape sequence in Chapter 1,
+- **Source page 40:** Table 3, the Regular Polygons, have? What number sequence do you get?
+- **Source page 40:** Q10. How many lines of symmetry do the shapes in the last shape sequence in Chapter 1,
+- **Source page 40:** Table 3, the Koch Snowflake sequence, have? How many angles of symmetry?
+- **Source page 40:** Q11. How many lines of symmetry and angles of symmetry does Ashoka Chakra have?

@@ -1,0 +1,18 @@
+{
+  "generation_policy": "Derived educational content must be chapter-specific, age-appropriate, non-duplicative, and traceable to source pages.",
+  "source_priority": [
+    "NCERT source PDF",
+    "preserved source-derived extraction",
+    "NCERT/DIKSHA metadata",
+    "derived pedagogy"
+  ],
+  "prohibited": "Do not present generated material as verbatim NCERT text. Do not invent citations or textbook claims.",
+  "qa": [
+    "JSON schema/parse",
+    "chapter completeness",
+    "source-page traceability",
+    "duplicate detection",
+    "answer consistency",
+    "resource link validation"
+  ]
+}

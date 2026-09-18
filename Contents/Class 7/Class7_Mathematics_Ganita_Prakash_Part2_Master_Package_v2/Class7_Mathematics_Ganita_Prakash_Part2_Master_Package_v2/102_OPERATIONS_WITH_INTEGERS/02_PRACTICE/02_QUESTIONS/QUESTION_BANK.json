@@ -1,0 +1,232 @@
+[
+  {
+    "id": "OI-MCQ-01",
+    "type": "mcq",
+    "question": "In Rakesh’s first puzzle, the two integers have sum 25 and difference 11. What pair is obtained?",
+    "answer": "18 and 7",
+    "explanation": "18+7=25 and 18−7=11.",
+    "source_pages": [
+      1
+    ],
+    "options": [
+      "18 and 7",
+      "20 and 5",
+      "19 and 6",
+      "15 and 10"
+    ]
+  },
+  {
+    "id": "OI-MCQ-02",
+    "type": "mcq",
+    "question": "On the integer number line, what does a negative movement represent in the chapter model?",
+    "answer": "Movement to the left",
+    "explanation": "The source uses positive integers for rightward movement and negative integers for leftward movement.",
+    "source_pages": [
+      3
+    ],
+    "options": [
+      "Movement to the left",
+      "Movement to the right",
+      "No movement",
+      "A larger magnitude only"
+    ]
+  },
+  {
+    "id": "OI-MCQ-03",
+    "type": "mcq",
+    "question": "What is the additive inverse of −18?",
+    "answer": "18",
+    "explanation": "The additive inverse of an integer a is −a.",
+    "source_pages": [
+      6
+    ],
+    "options": [
+      "18",
+      "−18",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "id": "OI-MCQ-04",
+    "type": "mcq",
+    "question": "What is (−4) × 2?",
+    "answer": "−8",
+    "explanation": "The token model shows four groups of two negatives, giving −8.",
+    "source_pages": [
+      7
+    ],
+    "options": [
+      "−8",
+      "8",
+      "−6",
+      "6"
+    ]
+  },
+  {
+    "id": "OI-MCQ-05",
+    "type": "mcq",
+    "question": "What sign does the product of two negative integers have?",
+    "answer": "Positive",
+    "explanation": "The multiplication rules developed in the chapter give a positive product for two negative integers.",
+    "source_pages": [
+      8
+    ],
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "It depends only on the larger number"
+    ]
+  },
+  {
+    "id": "OI-FILL-01",
+    "type": "fill",
+    "question": "The difference in Rakesh’s puzzle means first number ______ second number.",
+    "answer": "minus",
+    "explanation": "The source explicitly defines difference in that puzzle as first number − second number.",
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "id": "OI-FILL-02",
+    "type": "fill",
+    "question": "Positive movement is represented to the ______ on the number line.",
+    "answer": "right",
+    "explanation": "The chapter models rightward movement with positive integers.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "id": "OI-FILL-03",
+    "type": "fill",
+    "question": "A positive and a negative token together make ______.",
+    "answer": "zero",
+    "explanation": "The token model treats one positive and one negative token as a zero pair.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "OI-FILL-04",
+    "type": "fill",
+    "question": "The distributive property applies to multiplication over ______.",
+    "answer": "addition",
+    "explanation": "The chapter checks distributivity for integer expressions such as (−2)×(4+(−3)).",
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "id": "OI-TF-01",
+    "type": "true_false",
+    "question": "The additive inverse of −18 is −18.",
+    "answer": "False",
+    "explanation": "The additive inverse of −18 is 18.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "OI-TF-02",
+    "type": "true_false",
+    "question": "A movement of −4 has magnitude 4 and is leftward.",
+    "answer": "True",
+    "explanation": "This is exactly how the number-line model is interpreted.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "OI-TF-03",
+    "type": "true_false",
+    "question": "The product of a positive and a negative integer is negative.",
+    "answer": "True",
+    "explanation": "The sign rules developed in the multiplication section give a negative product.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "id": "OI-SA-01",
+    "type": "short_answer",
+    "question": "Solve the puzzle: sum 27 and difference 9.",
+    "answer": "The numbers are 18 and 9.",
+    "explanation": "18+9=27 and 18−9=9.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "OI-SA-02",
+    "type": "short_answer",
+    "question": "How does the token model help explain integer subtraction?",
+    "answer": "Zero pairs can be added without changing the value, allowing required tokens to be removed.",
+    "explanation": "The source uses positive/negative tokens and zero pairs to model subtraction.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "OI-SA-03",
+    "type": "short_answer",
+    "question": "Why can the order of positive and negative movements be represented by signed integers?",
+    "answer": "The sign records direction and the magnitude records distance.",
+    "explanation": "The source says signed integers capture both distance (magnitude) and direction.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "OI-LA-01",
+    "type": "long_answer",
+    "question": "Explain why (−4)×(−2) is positive using the chapter’s token interpretation.",
+    "answer": "The source extends the token model to multiplication and shows that removing negative groups results in positive tokens, leading to a positive product.",
+    "explanation": "The multiplication section develops the sign rule through tokens rather than merely stating it.",
+    "source_pages": [
+      7
+    ]
+  },
+  {
+    "id": "OI-LA-02",
+    "type": "long_answer",
+    "question": "Explain the distributive property with an integer example from the chapter.",
+    "answer": "For example, (−2)×(4+(−3)) equals (−2)×4+(−2)×(−3); both sides evaluate to −2.",
+    "explanation": "The chapter explicitly asks readers to verify distributivity for this expression.",
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "id": "OI-APP-01",
+    "type": "application",
+    "question": "A coin starts at 0 and moves +6, then −4. Where does it finish?",
+    "answer": "2",
+    "explanation": "6−4=2.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "id": "OI-APP-02",
+    "type": "application",
+    "question": "A game uses signed movements. A player makes −7 followed by −3. What is the final position from 0?",
+    "answer": "−10",
+    "explanation": "Adding the signed movements gives −7+(−3)=−10.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "OI-APP-03",
+    "type": "application",
+    "question": "Without expanding 123×456, what is (−123)×456?",
+    "answer": "−56088",
+    "explanation": "Changing one factor to negative changes the sign of the known product 56088.",
+    "source_pages": [
+      8
+    ]
+  }
+]

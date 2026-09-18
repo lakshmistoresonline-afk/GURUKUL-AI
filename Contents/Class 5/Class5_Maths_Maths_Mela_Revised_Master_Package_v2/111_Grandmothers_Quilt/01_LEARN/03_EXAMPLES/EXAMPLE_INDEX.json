@@ -1,0 +1,60 @@
+{
+  "record_type": "DERIVED_EXAMPLES",
+  "chapter": "Grandmother’s Quilt",
+  "items": [
+    {
+      "example_id": "EX01",
+      "skill": "Rectangle area",
+      "prompt": "Find area of a 6 cm by 4 cm rectangle.",
+      "answer": "24 cm².",
+      "method": "6×4=24 square centimetres.",
+      "source_page": 10,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX02",
+      "skill": "Rectangle perimeter",
+      "prompt": "Find perimeter of a 6 cm by 4 cm rectangle.",
+      "answer": "20 cm.",
+      "method": "2×(6+4)=20 cm.",
+      "source_page": 10,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX03",
+      "skill": "Square",
+      "prompt": "A square has side 5 cm. Find area and perimeter.",
+      "answer": "25 cm² and 20 cm.",
+      "method": "Area=5×5; perimeter=4×5.",
+      "source_page": 10,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX04",
+      "skill": "Same area",
+      "prompt": "Give two rectangles with area 24 cm².",
+      "answer": "6×4 and 8×3.",
+      "method": "Both products are 24, but their perimeters differ: 20 cm and 22 cm.",
+      "source_page": 7,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX05",
+      "skill": "Same perimeter",
+      "prompt": "Give two rectangles with perimeter 20 cm.",
+      "answer": "6×4 and 7×3.",
+      "method": "2(6+4)=20 and 2(7+3)=20; their areas are 24 and 21 cm².",
+      "source_page": 7,
+      "provenance": "DERIVED"
+    },
+    {
+      "example_id": "EX06",
+      "skill": "Grid area",
+      "prompt": "A shape covers 18 full 1-cm² squares on a grid. What is its area?",
+      "answer": "18 cm².",
+      "method": "Each full grid square represents 1 cm².",
+      "source_page": 5,
+      "provenance": "DERIVED"
+    }
+  ]
+}

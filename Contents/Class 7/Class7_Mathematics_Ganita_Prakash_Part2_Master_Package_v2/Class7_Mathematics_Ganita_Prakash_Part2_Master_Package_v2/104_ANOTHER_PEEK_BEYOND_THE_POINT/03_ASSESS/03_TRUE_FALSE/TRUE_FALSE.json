@@ -1,0 +1,32 @@
+[
+  {
+    "id": "DP-TF-01",
+    "type": "true_false",
+    "question": "Dividing by 1000 moves the decimal point three places to the left.",
+    "answer": "True",
+    "explanation": "This is the rule explicitly developed for powers of ten.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "id": "DP-TF-02",
+    "type": "true_false",
+    "question": "The product of two decimals is always greater than both factors.",
+    "answer": "False",
+    "explanation": "The source gives 0.25×0.8=0.2, which is less than both factors.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "DP-TF-03",
+    "type": "true_false",
+    "question": "29 ÷ 4 can be represented as 7.25.",
+    "answer": "True",
+    "explanation": "The source converts 29/4 to 725/100=7.25.",
+    "source_pages": [
+      10
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "106_CONSTRUCTIONS_AND_TILINGS-WP01",
+    "problem": "What is the angle between adjacent supporting lines in the 8-petalled design?",
+    "solution": "45°",
+    "reasoning": "360° is divided equally into 8 parts.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "id": "106_CONSTRUCTIONS_AND_TILINGS-WP02",
+    "problem": "Why is a regular hexagon linked to six equilateral triangles?",
+    "solution": "Each central triangle has 60°, six such angles make 360°, and the outer sides are equal.",
+    "reasoning": "The source constructs the hexagon from six congruent equilateral triangles.",
+    "source_pages": [
+      17
+    ]
+  },
+  {
+    "id": "106_CONSTRUCTIONS_AND_TILINGS-WP03",
+    "problem": "Describe the ruler-and-compass construction of the perpendicular bisector of XY.",
+    "solution": "Draw equal-radius arcs from X and Y above and below the segment; join their two intersection points. The joining line bisects XY at its midpoint and is perpendicular to XY.",
+    "reasoning": "These are the construction steps developed in the chapter.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "106_CONSTRUCTIONS_AND_TILINGS-WP04",
+    "problem": "Describe how to copy an angle using only ruler and compass.",
+    "solution": "Draw an arc across the original angle; reproduce the same arc at the new vertex; transfer the chord length between the original arc intersections to the new arc; join the new point to the vertex.",
+    "reasoning": "The chapter proves the copied triangles congruent by SSS, so the angles are equal.",
+    "source_pages": [
+      11
+    ]
+  }
+]

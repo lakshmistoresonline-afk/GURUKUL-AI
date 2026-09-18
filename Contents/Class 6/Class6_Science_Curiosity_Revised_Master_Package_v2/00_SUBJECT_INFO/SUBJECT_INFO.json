@@ -1,0 +1,33 @@
+{
+  "subject_id": "03_SCIENCE",
+  "subject_name": "Science",
+  "common_label": "Science",
+  "grade": 6,
+  "textbook": "Curiosity",
+  "publisher": "NCERT",
+  "source_package": "03_SCIENCE_COMPLETE_GRADE6",
+  "source_files": 13,
+  "chapter_count": 12,
+  "declared_source_pages": 266,
+  "pedagogy": [
+    "inquiry",
+    "observation",
+    "investigation",
+    "experimentation",
+    "measurement",
+    "classification",
+    "evidence-based reasoning",
+    "reflection",
+    "communication",
+    "everyday-life application"
+  ],
+  "content_principles": [
+    "source-grounded",
+    "non-duplicative",
+    "age-appropriate",
+    "activity-centred",
+    "traceable",
+    "RAG-ready"
+  ],
+  "generation_pipeline": "Source → Extraction → Gemma generation → Qwen validation → QA → Save"
+}

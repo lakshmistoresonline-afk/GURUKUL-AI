@@ -1,0 +1,18 @@
+{
+  "package": "Class 7 Science — Curiosity Master Package v2",
+  "chapters": 12,
+  "source_pdfs": 13,
+  "source_pages": 188,
+  "questions": 240,
+  "files": 343,
+  "quality_gates": {
+    "chapter_coverage": true,
+    "source_pdf_preservation": true,
+    "source_page_coverage": true,
+    "json_validity": true,
+    "internal_prompt_leakage": true,
+    "unresolved_placeholders": true,
+    "duplicate_question_texts": false,
+    "canonical_structure": true
+  }
+}

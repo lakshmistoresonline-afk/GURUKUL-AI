@@ -1,0 +1,21 @@
+{
+  "chapter_id": "109_Vocation",
+  "weak_area_rules": [
+    {
+      "trigger": "main_idea < 70%",
+      "action": "repeat Analyze main-idea tasks and write a 2-sentence summary"
+    },
+    {
+      "trigger": "vocabulary < 70%",
+      "action": "revisit vocabulary in context and create five original sentences"
+    },
+    {
+      "trigger": "written_response < 70%",
+      "action": "complete two worked answers and use the answer checklist"
+    },
+    {
+      "trigger": "application < 70%",
+      "action": "complete one Transfer task and one Teach-back task"
+    }
+  ]
+}

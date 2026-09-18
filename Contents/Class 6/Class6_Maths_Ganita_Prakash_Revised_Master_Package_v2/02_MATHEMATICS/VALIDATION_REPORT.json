@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "json_errors": 0,
+  "chapters": 10,
+  "source_pdfs_preserved": 11,
+  "declared_chapter_pages": 392,
+  "checks": [
+    "JSON parse",
+    "required chapter layers",
+    "source PDF hashes in original manifest",
+    "source text presence",
+    "traceability presence",
+    "derived/source separation"
+  ]
+}

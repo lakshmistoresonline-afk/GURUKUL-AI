@@ -1,0 +1,232 @@
+[
+  {
+    "id": "FU-MCQ-01",
+    "type": "mcq",
+    "question": "What is an equation?",
+    "answer": "A statement of equality between two algebraic expressions",
+    "explanation": "The source gives this definition in section 7.1.",
+    "source_pages": [
+      5
+    ],
+    "options": [
+      "A statement of equality between two algebraic expressions",
+      "A number line",
+      "A drawing",
+      "A list of unrelated values"
+    ]
+  },
+  {
+    "id": "FU-MCQ-02",
+    "type": "mcq",
+    "question": "What equation represents three slices of bread of weight 2 each balancing two fried eggs of weight e each?",
+    "answer": "2e=6",
+    "explanation": "The chapter writes 2+2+2=6 and e+e=2e, giving 2e=6.",
+    "source_pages": [
+      5
+    ],
+    "options": [
+      "2e=6",
+      "e+6=2",
+      "3e=2",
+      "2e=3"
+    ]
+  },
+  {
+    "id": "FU-MCQ-03",
+    "type": "mcq",
+    "question": "What is the n-th matchstick count in the sequence shown?",
+    "answer": "2n+1",
+    "explanation": "The chapter observes 3,5,7,... and generalises the n-th count as 2n+1.",
+    "source_pages": [
+      4
+    ],
+    "options": [
+      "2n+1",
+      "2n−1",
+      "n+2",
+      "n²"
+    ]
+  },
+  {
+    "id": "FU-MCQ-04",
+    "type": "mcq",
+    "question": "What value of x satisfies 5x−4=7?",
+    "answer": "11/5",
+    "explanation": "5x=11, so x=11/5.",
+    "source_pages": [
+      8
+    ],
+    "options": [
+      "11/5",
+      "3",
+      "7/5",
+      "11"
+    ]
+  },
+  {
+    "id": "FU-MCQ-05",
+    "type": "mcq",
+    "question": "What operation preserves an equation’s equality when performed on both sides?",
+    "answer": "The same addition, subtraction, multiplication or division (where valid)",
+    "explanation": "The chapter checks equality preservation by performing the same operation on both sides.",
+    "source_pages": [
+      6
+    ],
+    "options": [
+      "The same addition, subtraction, multiplication or division (where valid)",
+      "Only addition",
+      "Only subtraction",
+      "Only multiplication"
+    ]
+  },
+  {
+    "id": "FU-FILL-01",
+    "type": "fill",
+    "question": "Finding the value that makes an equation true is called ______ the equation.",
+    "answer": "solving",
+    "explanation": "The source defines solving an equation in these terms.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "FU-FILL-02",
+    "type": "fill",
+    "question": "The n-th position of the matchstick pattern has ______ sticks.",
+    "answer": "2n+1",
+    "explanation": "This formula is derived directly from the first four positions.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "FU-FILL-03",
+    "type": "fill",
+    "question": "In an equation, the two sides are called the LHS and the ______.",
+    "answer": "RHS",
+    "explanation": "The source uses LHS/RHS when checking equality.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "FU-FILL-04",
+    "type": "fill",
+    "question": "The historical Indian term bīja is explained as meaning ______.",
+    "answer": "seed",
+    "explanation": "The history section connects bīja with algebraic unknowns.",
+    "source_pages": [
+      9
+    ]
+  },
+  {
+    "id": "FU-TF-01",
+    "type": "true_false",
+    "question": "If equal quantities are removed from both plates of a balanced scale, the balance is preserved.",
+    "answer": "True",
+    "explanation": "This is the physical model used for maintaining equality.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "FU-TF-02",
+    "type": "true_false",
+    "question": "The solution of 2e=6 is e=3.",
+    "answer": "True",
+    "explanation": "Divide both sides by 2.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "FU-TF-03",
+    "type": "true_false",
+    "question": "The formula 2n+1 gives 99 sticks at n=49.",
+    "answer": "True",
+    "explanation": "2(49)+1=99.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "FU-SA-01",
+    "type": "short_answer",
+    "question": "Solve 4+2y=16.",
+    "answer": "y=6",
+    "explanation": "Subtract 4 from both sides: 2y=12; divide by 2: y=6.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "FU-SA-02",
+    "type": "short_answer",
+    "question": "Why can the same operation be performed on both sides of an equation?",
+    "answer": "Because equality is preserved when the same valid operation is applied to both sides.",
+    "explanation": "The chapter models this using a balanced scale and numerical equality.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "FU-SA-03",
+    "type": "short_answer",
+    "question": "Use 2n+1=99 to find the position number in the matchstick sequence.",
+    "answer": "n=49",
+    "explanation": "2n=98, so n=49.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "FU-LA-01",
+    "type": "long_answer",
+    "question": "Explain the balanced-scale idea as a model for solving equations.",
+    "answer": "Each side represents equal weight. Removing or adding the same quantity to both sides preserves balance, allowing the unknown term to be isolated.",
+    "explanation": "The chapter explicitly connects scale operations with equation-solving operations.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "FU-LA-02",
+    "type": "long_answer",
+    "question": "Solve 11y+(−5)=61 and explain the step.",
+    "answer": "y=6. First add 5 to both sides: 11y=66. Then divide by 11: y=6.",
+    "explanation": "The source gives this exact example and explains removing the −5 term by adding 5.",
+    "source_pages": [
+      8
+    ]
+  },
+  {
+    "id": "FU-APP-01",
+    "type": "application",
+    "question": "A pattern has 2n+1 sticks. How many sticks are used at position 20?",
+    "answer": "41",
+    "explanation": "2(20)+1=41.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "FU-APP-02",
+    "type": "application",
+    "question": "A balance gives 3x+4=19. What value of x keeps it balanced?",
+    "answer": "5",
+    "explanation": "Subtract 4: 3x=15; divide by 3: x=5.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "FU-APP-03",
+    "type": "application",
+    "question": "Check whether x=11/5 satisfies 5x−4=7.",
+    "answer": "Yes",
+    "explanation": "Substitution gives 5(11/5)−4=11−4=7, equal to the RHS.",
+    "source_pages": [
+      8
+    ]
+  }
+]

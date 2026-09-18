@@ -1,0 +1,50 @@
+{
+  "chapter_id": "106",
+  "source_pdf": "ehve106.pdf",
+  "source_sha256": "d7ca9c8ec82563d4d27ed4effeb79c07b2910bda5931ffdd4723435d1caf4b80",
+  "page_count": 14,
+  "preserved_pages": 14,
+  "all_pages_preserved": true,
+  "asset_map": {
+    "Learn": [
+      "01_LEARN/01_LESSONS/LESSONS.json",
+      "01_LEARN/02_CONCEPTS/CONCEPTS.json",
+      "01_LEARN/03_EXAMPLES/EXAMPLES.json",
+      "01_LEARN/04_SOURCE_DERIVED/full_chapter_text.json"
+    ],
+    "Practice": [
+      "02_PRACTICE/01_TEXTBOOK_ACTIVITIES/TEXTBOOK_ACTIVITIES.json",
+      "02_PRACTICE/02_QUESTIONS/QUESTIONS.json",
+      "02_PRACTICE/03_WORKED_PRACTICE/WORKED_PRACTICE.json",
+      "02_PRACTICE/04_APPLICATION/APPLICATION.json"
+    ],
+    "Assess": [
+      "03_ASSESS/01_TEXTBOOK_ASSESSMENTS/TEXTBOOK_ASSESSMENTS.json",
+      "03_ASSESS/02_MCQ/MCQ.json",
+      "03_ASSESS/03_SHORT_ANSWER/SHORT_ANSWER.json"
+    ],
+    "Revise": [
+      "04_REVISE/01_RECALL/RECALL.json",
+      "04_REVISE/02_KEY_POINTS/KEY_POINTS.json",
+      "04_REVISE/03_REVISION_ACTIVITIES/REVISION_ACTIVITIES.json"
+    ],
+    "Resources": [
+      "05_RESOURCES/01_VIDEOS/VIDEO_RESOURCES.json",
+      "05_RESOURCES/02_YOUTUBE_SEARCH/YOUTUBE_SEARCH.json",
+      "05_RESOURCES/03_CHANNELS/CHANNELS.json",
+      "05_RESOURCES/04_OFFICIAL_PORTALS/OFFICIAL_PORTALS.json"
+    ]
+  },
+  "completeness_rule": "Original PDF + page-by-page JSON/TXT extraction are the no-loss source layer.",
+  "revision_version": "3.0",
+  "source_preservation": true,
+  "enrichment_status": "ENRICHED_WITH_SOURCE_GROUNDED_LAYER",
+  "new_assets": [
+    "01_LEARN/04_SOURCE_DERIVED/CLEAN_TEXT.json",
+    "01_LEARN/04_SOURCE_DERIVED/EXTRACTION_QA.json",
+    "02_PRACTICE/03_WORKED_PRACTICE/WORKED_PRACTICE.json",
+    "03_ASSESS/02_MCQ/MCQ.json",
+    "03_ASSESS/03_SHORT_ANSWER/SHORT_ANSWER.json",
+    "05_RESOURCES/RESOURCE_AUDIT.json"
+  ]
+}

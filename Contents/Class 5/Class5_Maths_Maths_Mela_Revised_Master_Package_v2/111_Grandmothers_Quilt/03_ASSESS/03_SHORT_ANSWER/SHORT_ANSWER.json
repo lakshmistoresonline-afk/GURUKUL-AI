@@ -1,0 +1,84 @@
+{
+  "record_type": "DERIVED_SHORT_ANSWER",
+  "chapter": "Grandmother’s Quilt",
+  "items": [
+    {
+      "id": "SA01",
+      "question": "Find area of a 6 cm by 4 cm rectangle.",
+      "expected_answer": "24 cm².",
+      "reasoning_points": [
+        "6×4=24 square centimetres."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        10
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA02",
+      "question": "Find perimeter of a 6 cm by 4 cm rectangle.",
+      "expected_answer": "20 cm.",
+      "reasoning_points": [
+        "2×(6+4)=20 cm."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        10
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA03",
+      "question": "A square has side 5 cm. Find area and perimeter.",
+      "expected_answer": "25 cm² and 20 cm.",
+      "reasoning_points": [
+        "Area=5×5; perimeter=4×5."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        10
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA04",
+      "question": "Give two rectangles with area 24 cm².",
+      "expected_answer": "6×4 and 8×3.",
+      "reasoning_points": [
+        "Both products are 24, but their perimeters differ: 20 cm and 22 cm."
+      ],
+      "marks": 2,
+      "source_basis_pages": [
+        7
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA05",
+      "question": "Give two rectangles with perimeter 20 cm.",
+      "expected_answer": "6×4 and 7×3.",
+      "reasoning_points": [
+        "2(6+4)=20 and 2(7+3)=20; their areas are 24 and 21 cm²."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        7
+      ],
+      "provenance": "DERIVED"
+    },
+    {
+      "id": "SA06",
+      "question": "A shape covers 18 full 1-cm² squares on a grid. What is its area?",
+      "expected_answer": "18 cm².",
+      "reasoning_points": [
+        "Each full grid square represents 1 cm²."
+      ],
+      "marks": 3,
+      "source_basis_pages": [
+        5
+      ],
+      "provenance": "DERIVED"
+    }
+  ]
+}

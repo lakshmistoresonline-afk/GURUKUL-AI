@@ -1,0 +1,38 @@
+[
+  {
+    "id": "103_FINDING_COMMON_GROUND-ERR01",
+    "common_error": "What is the HCF of 12 and 16 in the square-tile problem?",
+    "correction": "4",
+    "why": "The common factors are 1, 2 and 4; the highest is 4.",
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "id": "103_FINDING_COMMON_GROUND-ERR02",
+    "common_error": "What is the LCM of 14 and 35?",
+    "correction": "70",
+    "why": "Prime factors are 14=2×7 and 35=5×7, so LCM=2×5×7=70.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "103_FINDING_COMMON_GROUND-ERR03",
+    "common_error": "What is the HCF of 45 and 75?",
+    "correction": "15",
+    "why": "The source example gives HCF 15.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "id": "103_FINDING_COMMON_GROUND-ERR04",
+    "common_error": "What relationship does the chapter establish for two positive integers a and b?",
+    "correction": "HCF × LCM = a × b",
+    "why": "The chapter states this property explicitly.",
+    "source_pages": [
+      16
+    ]
+  }
+]

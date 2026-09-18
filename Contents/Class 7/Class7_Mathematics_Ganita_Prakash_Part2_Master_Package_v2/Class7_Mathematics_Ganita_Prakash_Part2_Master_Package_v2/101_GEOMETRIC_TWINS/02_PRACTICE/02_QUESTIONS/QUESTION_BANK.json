@@ -1,0 +1,232 @@
+[
+  {
+    "id": "GT-MCQ-01",
+    "type": "mcq",
+    "question": "Which measurements are used in the chapter example to fix the signboard symbol exactly?",
+    "answer": "AB = 4 cm, BC = 8 cm, ∠ABC = 80°",
+    "explanation": "The chapter explains that the two arm lengths alone allow several shapes; the included angle fixes the exact replica.",
+    "source_pages": [
+      2
+    ],
+    "options": [
+      "AB = 4 cm, BC = 8 cm, ∠ABC = 80°",
+      "AB = 4 cm, BC = 8 cm only",
+      "Three angles only",
+      "One side only"
+    ]
+  },
+  {
+    "id": "GT-MCQ-02",
+    "type": "mcq",
+    "question": "Which congruence condition says that two triangles with the same three side lengths are congruent?",
+    "answer": "SSS",
+    "explanation": "The chapter explicitly names this the SSS (Side Side Side) condition.",
+    "source_pages": [
+      6
+    ],
+    "options": [
+      "SSS",
+      "SAS",
+      "SSA",
+      "AAA"
+    ]
+  },
+  {
+    "id": "GT-MCQ-03",
+    "type": "mcq",
+    "question": "Why does SSA not guarantee triangle congruence in the chapter?",
+    "answer": "The same measurements can produce two non-congruent triangles",
+    "explanation": "The chapter constructs two non-congruent triangles satisfying the SSA data.",
+    "source_pages": [
+      12
+    ],
+    "options": [
+      "The same measurements can produce two non-congruent triangles",
+      "It uses three angles",
+      "It uses no side length",
+      "It is valid only for rectangles"
+    ]
+  },
+  {
+    "id": "GT-MCQ-04",
+    "type": "mcq",
+    "question": "If ΔABC ≅ ΔXYZ, which vertices correspond by the naming convention?",
+    "answer": "A↔X, B↔Y, C↔Z",
+    "explanation": "The first, second and third vertices in the names correspond in order.",
+    "source_pages": [
+      7
+    ],
+    "options": [
+      "A↔X, B↔Y, C↔Z",
+      "A↔Y, B↔Z, C↔X",
+      "A↔Z, B↔X, C↔Y",
+      "No correspondence is implied"
+    ]
+  },
+  {
+    "id": "GT-MCQ-05",
+    "type": "mcq",
+    "question": "A triangle with sides 40 cm, 60 cm and 80 cm is being replicated. Which information is sufficient according to SSS?",
+    "answer": "All three side lengths",
+    "explanation": "The chapter states that equal three side lengths are sufficient to construct a congruent triangle.",
+    "source_pages": [
+      6
+    ],
+    "options": [
+      "All three side lengths",
+      "Only the three angles",
+      "Only two side lengths",
+      "Only one angle"
+    ]
+  },
+  {
+    "id": "GT-FILL-01",
+    "type": "fill",
+    "question": "The three measurements AB = 4 cm, BC = 8 cm and ∠ABC = 80° can fix the exact ______ of the symbol.",
+    "answer": "shape and size",
+    "explanation": "The chapter uses these measurements to fix both shape and size.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "GT-FILL-02",
+    "type": "fill",
+    "question": "The condition in which two sides and the included angle are equal is called ______.",
+    "answer": "SAS",
+    "explanation": "The chapter identifies this as the SAS condition for congruence.",
+    "source_pages": [
+      10
+    ]
+  },
+  {
+    "id": "GT-FILL-03",
+    "type": "fill",
+    "question": "A triangle with all three angles fixed can have the same shape but a different ______.",
+    "answer": "size",
+    "explanation": "The chapter notes that AAA fixes shape but not size.",
+    "source_pages": [
+      10
+    ]
+  },
+  {
+    "id": "GT-FILL-04",
+    "type": "fill",
+    "question": "In a right-angled triangle, the side opposite the right angle is called the ______.",
+    "answer": "hypotenuse",
+    "explanation": "The source defines the side opposite the right angle as the hypotenuse.",
+    "source_pages": [
+      14
+    ]
+  },
+  {
+    "id": "GT-TF-01",
+    "type": "true_false",
+    "question": "Two figures are congruent only if they have the same orientation.",
+    "answer": "False",
+    "explanation": "The source says a figure may be rotated or flipped before superimposition.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "GT-TF-02",
+    "type": "true_false",
+    "question": "Three equal side lengths are sufficient for triangle congruence.",
+    "answer": "True",
+    "explanation": "This is the SSS condition developed in the chapter.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "GT-TF-03",
+    "type": "true_false",
+    "question": "Two triangles with the same three angles must be congruent.",
+    "answer": "False",
+    "explanation": "The chapter constructs triangles with the same angles but different sizes.",
+    "source_pages": [
+      10
+    ]
+  },
+  {
+    "id": "GT-SA-01",
+    "type": "short_answer",
+    "question": "Why are AB and BC alone not sufficient to reproduce the signboard symbol exactly?",
+    "answer": "Because the angle ∠ABC can vary while the two arm lengths stay the same.",
+    "explanation": "Different included angles give different shapes even when the two arm lengths are fixed.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "GT-SA-02",
+    "type": "short_answer",
+    "question": "What does ΔABC ≅ ΔXYZ tell us about the corresponding vertices?",
+    "answer": "A corresponds to X, B to Y, and C to Z.",
+    "explanation": "The chapter uses the order of vertices to encode correspondence.",
+    "source_pages": [
+      7
+    ]
+  },
+  {
+    "id": "GT-SA-03",
+    "type": "short_answer",
+    "question": "Why is SSA not a reliable congruence condition?",
+    "answer": "Because the given two sides and a non-included angle can produce two non-congruent triangles.",
+    "explanation": "The chapter demonstrates this by constructing two different triangles from the same SSA data.",
+    "source_pages": [
+      12
+    ]
+  },
+  {
+    "id": "GT-LA-01",
+    "type": "long_answer",
+    "question": "Explain how the chapter develops SSS congruence from constructing a triangle with three given side lengths.",
+    "answer": "Draw one given side, construct arcs of the other two given radii from its endpoints, and use their intersection as the third vertex; repeating the construction fixes the same triangle.",
+    "explanation": "The source argues from the construction that all triangles with the same three side lengths are congruent.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "GT-LA-02",
+    "type": "long_answer",
+    "question": "Compare SSS, SAS, SSA and AAA using the chapter’s conclusions.",
+    "answer": "SSS guarantees congruence; SAS guarantees congruence; SSA does not; AAA does not guarantee congruence because it fixes shape but not size.",
+    "explanation": "These are the four cases examined in the chapter.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "GT-APP-01",
+    "type": "application",
+    "question": "A designer knows two arms are 4 cm and 8 cm but wants an exact copy of the sign. What additional measurement should be recorded?",
+    "answer": "The included angle between the two arms, as in ∠ABC.",
+    "explanation": "The chapter’s signboard example shows that the angle together with the two lengths fixes the figure.",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "GT-APP-02",
+    "type": "application",
+    "question": "Two triangles have sides 5 cm, 7 cm and 9 cm respectively. What congruence test can be used?",
+    "answer": "SSS",
+    "explanation": "All three corresponding side lengths are equal.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "GT-APP-03",
+    "type": "application",
+    "question": "Two triangles have angles 30°, 70° and 80°, but one is larger. Can they be declared congruent? Explain.",
+    "answer": "No. Equal three angles do not fix size, so AAA does not guarantee congruence.",
+    "explanation": "The source explicitly gives this type of example.",
+    "source_pages": [
+      10
+    ]
+  }
+]

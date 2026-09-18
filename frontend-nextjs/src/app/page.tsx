@@ -111,7 +111,11 @@ export default function HomePage() {
         firebaseCode === 'auth/invalid-credential' ||
         firebaseCode === 'auth/wrong-password'
       ) {
-        message = 'Invalid email or password.';
+        message = 'Invalid email or password. Please verify credentials.';
+      }
+
+      if (err?.message?.includes('Network Error') || err?.message?.includes('Failed to fetch') || err?.code === 'ERR_NETWORK') {
+        message = 'Backend server offline. Launch backend with `python run_server.py` in backend directory, or navigate directly to /subject/01_english_complete';
       }
 
       if (firebaseCode === 'auth/user-not-found') {

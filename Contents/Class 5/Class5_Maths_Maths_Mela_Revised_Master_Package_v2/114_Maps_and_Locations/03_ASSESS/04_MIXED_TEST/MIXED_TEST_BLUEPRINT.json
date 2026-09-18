@@ -1,0 +1,44 @@
+{
+  "record_type": "DERIVED_ASSESSMENT_BLUEPRINT",
+  "chapter": "Maps and Locations",
+  "total_marks": 30,
+  "sections": [
+    {
+      "section": "A",
+      "type": "MCQ",
+      "count": 5,
+      "marks_each": 1,
+      "marks": 5
+    },
+    {
+      "section": "B",
+      "type": "Short answer",
+      "count": 5,
+      "marks_each": 2,
+      "marks": 10
+    },
+    {
+      "section": "C",
+      "type": "Reasoning/worked problem",
+      "count": 3,
+      "marks_each": 3,
+      "marks": 9
+    },
+    {
+      "section": "D",
+      "type": "Application/representation",
+      "count": 2,
+      "marks_each": 3,
+      "marks": 6
+    }
+  ],
+  "coverage": [
+    "cardinal directions",
+    "left and right relative to facing direction",
+    "relative location",
+    "grid movement",
+    "routes and turns",
+    "reading simple and metro maps"
+  ],
+  "provenance": "DERIVED"
+}

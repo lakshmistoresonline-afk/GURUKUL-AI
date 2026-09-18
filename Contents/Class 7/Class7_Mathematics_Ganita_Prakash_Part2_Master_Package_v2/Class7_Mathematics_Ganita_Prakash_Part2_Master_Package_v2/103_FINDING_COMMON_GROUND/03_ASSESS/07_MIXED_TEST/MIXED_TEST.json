@@ -1,0 +1,132 @@
+[
+  {
+    "id": "CG-MCQ-01",
+    "type": "mcq",
+    "question": "What is the HCF of 12 and 16 in the square-tile problem?",
+    "answer": "4",
+    "explanation": "The common factors are 1, 2 and 4; the highest is 4.",
+    "source_pages": [
+      1
+    ],
+    "options": [
+      "4",
+      "2",
+      "8",
+      "12"
+    ]
+  },
+  {
+    "id": "CG-MCQ-02",
+    "type": "mcq",
+    "question": "What is the LCM of 14 and 35?",
+    "answer": "70",
+    "explanation": "Prime factors are 14=2×7 and 35=5×7, so LCM=2×5×7=70.",
+    "source_pages": [
+      6
+    ],
+    "options": [
+      "70",
+      "49",
+      "35",
+      "14"
+    ]
+  },
+  {
+    "id": "CG-MCQ-03",
+    "type": "mcq",
+    "question": "What is the HCF of 45 and 75?",
+    "answer": "15",
+    "explanation": "The source example gives HCF 15.",
+    "source_pages": [
+      3
+    ],
+    "options": [
+      "15",
+      "5",
+      "25",
+      "30"
+    ]
+  },
+  {
+    "id": "CG-MCQ-04",
+    "type": "mcq",
+    "question": "What relationship does the chapter establish for two positive integers a and b?",
+    "answer": "HCF × LCM = a × b",
+    "explanation": "The chapter states this property explicitly.",
+    "source_pages": [
+      16
+    ],
+    "options": [
+      "HCF × LCM = a × b",
+      "HCF + LCM = a × b",
+      "HCF ÷ LCM = a × b",
+      "HCF = LCM always"
+    ]
+  },
+  {
+    "id": "CG-MCQ-05",
+    "type": "mcq",
+    "question": "If one number is n and the other is 5n, what is their HCF?",
+    "answer": "n",
+    "explanation": "The chapter gives the general statement HCF(n,5n)=n.",
+    "source_pages": [
+      9
+    ],
+    "options": [
+      "n",
+      "5n",
+      "6n",
+      "n/5"
+    ]
+  },
+  {
+    "id": "CG-FILL-01",
+    "type": "fill",
+    "question": "HCF is also called the Greatest Common ______.",
+    "answer": "Divisor",
+    "explanation": "The source identifies HCF as the Greatest Common Divisor (GCD).",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "CG-FILL-02",
+    "type": "fill",
+    "question": "The LCM is the ______ common multiple of the given numbers.",
+    "answer": "least",
+    "explanation": "This is the definition developed in section 3.2.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "CG-FILL-03",
+    "type": "fill",
+    "question": "The HCF of two coprime numbers is ______.",
+    "answer": "1",
+    "explanation": "The source discusses cases where 1 is the only common factor.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "CG-FILL-04",
+    "type": "fill",
+    "question": "For two numbers, HCF × LCM equals their ______.",
+    "answer": "product",
+    "explanation": "This is the property stated near the end of the chapter.",
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "id": "CG-TF-01",
+    "type": "true_false",
+    "question": "The HCF of 12 and 16 is 8.",
+    "answer": "False",
+    "explanation": "8 is a factor of 16 but not of 12; the HCF is 4.",
+    "source_pages": [
+      1
+    ]
+  }
+]

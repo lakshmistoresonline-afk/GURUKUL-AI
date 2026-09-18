@@ -1,0 +1,38 @@
+[
+  {
+    "id": "102_OPERATIONS_WITH_INTEGERS-WP01",
+    "problem": "How does the token model help explain integer subtraction?",
+    "solution": "Zero pairs can be added without changing the value, allowing required tokens to be removed.",
+    "reasoning": "The source uses positive/negative tokens and zero pairs to model subtraction.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "102_OPERATIONS_WITH_INTEGERS-WP02",
+    "problem": "Why can the order of positive and negative movements be represented by signed integers?",
+    "solution": "The sign records direction and the magnitude records distance.",
+    "reasoning": "The source says signed integers capture both distance (magnitude) and direction.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "102_OPERATIONS_WITH_INTEGERS-WP03",
+    "problem": "Explain why (−4)×(−2) is positive using the chapter’s token interpretation.",
+    "solution": "The source extends the token model to multiplication and shows that removing negative groups results in positive tokens, leading to a positive product.",
+    "reasoning": "The multiplication section develops the sign rule through tokens rather than merely stating it.",
+    "source_pages": [
+      7
+    ]
+  },
+  {
+    "id": "102_OPERATIONS_WITH_INTEGERS-WP04",
+    "problem": "Explain the distributive property with an integer example from the chapter.",
+    "solution": "For example, (−2)×(4+(−3)) equals (−2)×4+(−2)×(−3); both sides evaluate to −2.",
+    "reasoning": "The chapter explicitly asks readers to verify distributivity for this expression.",
+    "source_pages": [
+      16
+    ]
+  }
+]

@@ -1,0 +1,232 @@
+[
+  {
+    "id": "CG-MCQ-01",
+    "type": "mcq",
+    "question": "What is the HCF of 12 and 16 in the square-tile problem?",
+    "answer": "4",
+    "explanation": "The common factors are 1, 2 and 4; the highest is 4.",
+    "source_pages": [
+      1
+    ],
+    "options": [
+      "4",
+      "2",
+      "8",
+      "12"
+    ]
+  },
+  {
+    "id": "CG-MCQ-02",
+    "type": "mcq",
+    "question": "What is the LCM of 14 and 35?",
+    "answer": "70",
+    "explanation": "Prime factors are 14=2×7 and 35=5×7, so LCM=2×5×7=70.",
+    "source_pages": [
+      6
+    ],
+    "options": [
+      "70",
+      "49",
+      "35",
+      "14"
+    ]
+  },
+  {
+    "id": "CG-MCQ-03",
+    "type": "mcq",
+    "question": "What is the HCF of 45 and 75?",
+    "answer": "15",
+    "explanation": "The source example gives HCF 15.",
+    "source_pages": [
+      3
+    ],
+    "options": [
+      "15",
+      "5",
+      "25",
+      "30"
+    ]
+  },
+  {
+    "id": "CG-MCQ-04",
+    "type": "mcq",
+    "question": "What relationship does the chapter establish for two positive integers a and b?",
+    "answer": "HCF × LCM = a × b",
+    "explanation": "The chapter states this property explicitly.",
+    "source_pages": [
+      16
+    ],
+    "options": [
+      "HCF × LCM = a × b",
+      "HCF + LCM = a × b",
+      "HCF ÷ LCM = a × b",
+      "HCF = LCM always"
+    ]
+  },
+  {
+    "id": "CG-MCQ-05",
+    "type": "mcq",
+    "question": "If one number is n and the other is 5n, what is their HCF?",
+    "answer": "n",
+    "explanation": "The chapter gives the general statement HCF(n,5n)=n.",
+    "source_pages": [
+      9
+    ],
+    "options": [
+      "n",
+      "5n",
+      "6n",
+      "n/5"
+    ]
+  },
+  {
+    "id": "CG-FILL-01",
+    "type": "fill",
+    "question": "HCF is also called the Greatest Common ______.",
+    "answer": "Divisor",
+    "explanation": "The source identifies HCF as the Greatest Common Divisor (GCD).",
+    "source_pages": [
+      2
+    ]
+  },
+  {
+    "id": "CG-FILL-02",
+    "type": "fill",
+    "question": "The LCM is the ______ common multiple of the given numbers.",
+    "answer": "least",
+    "explanation": "This is the definition developed in section 3.2.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "CG-FILL-03",
+    "type": "fill",
+    "question": "The HCF of two coprime numbers is ______.",
+    "answer": "1",
+    "explanation": "The source discusses cases where 1 is the only common factor.",
+    "source_pages": [
+      4
+    ]
+  },
+  {
+    "id": "CG-FILL-04",
+    "type": "fill",
+    "question": "For two numbers, HCF × LCM equals their ______.",
+    "answer": "product",
+    "explanation": "This is the property stated near the end of the chapter.",
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "id": "CG-TF-01",
+    "type": "true_false",
+    "question": "The HCF of 12 and 16 is 8.",
+    "answer": "False",
+    "explanation": "8 is a factor of 16 but not of 12; the HCF is 4.",
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "id": "CG-TF-02",
+    "type": "true_false",
+    "question": "Prime factorisation can be used to find both HCF and LCM.",
+    "answer": "True",
+    "explanation": "Separate procedures are developed using common prime occurrences for HCF and maximum occurrences for LCM.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "CG-TF-03",
+    "type": "true_false",
+    "question": "For two numbers, the LCM is always greater than their product.",
+    "answer": "False",
+    "explanation": "The chapter shows the LCM is a factor of the product; in fact HCF×LCM=product.",
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "id": "CG-SA-01",
+    "type": "short_answer",
+    "question": "Why are 4 ft tiles the correct choice for a 12 ft by 16 ft room?",
+    "answer": "4 is the greatest common factor of 12 and 16, so the largest square tile with whole-number side fitting both dimensions is 4 ft.",
+    "explanation": "The tile side must divide both dimensions and the largest common factor minimises the number of tiles.",
+    "source_pages": [
+      1
+    ]
+  },
+  {
+    "id": "CG-SA-02",
+    "type": "short_answer",
+    "question": "Find the HCF of 84 and 112 using prime factors.",
+    "answer": "28",
+    "explanation": "84=2×2×3×7 and 112=2×2×2×2×7; common prime factors give 2×2×7=28.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "id": "CG-SA-03",
+    "type": "short_answer",
+    "question": "Find the LCM of 96 and 360.",
+    "answer": "1440",
+    "explanation": "The chapter’s prime-factor method takes the highest occurrences: 2^5×3^2×5=1440.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "CG-LA-01",
+    "type": "long_answer",
+    "question": "Explain how prime factorisation gives the HCF and LCM.",
+    "answer": "For HCF, take the minimum occurrence of each prime common to all numbers. For LCM, take the maximum occurrence of every prime appearing in the numbers.",
+    "explanation": "This is the efficient procedure developed after listing factors/multiples.",
+    "source_pages": [
+      6
+    ]
+  },
+  {
+    "id": "CG-LA-02",
+    "type": "long_answer",
+    "question": "Explain and use HCF×LCM=product for 105 and 95.",
+    "answer": "HCF(105,95)=5; therefore LCM=(105×95)/5=1995.",
+    "explanation": "The chapter shows the product relationship and uses HCF as the factor connecting the LCM to the product.",
+    "source_pages": [
+      16
+    ]
+  },
+  {
+    "id": "CG-APP-01",
+    "type": "application",
+    "question": "Two buses arrive every 12 and 18 minutes. After starting together, after how many minutes will they next arrive together?",
+    "answer": "36 minutes",
+    "explanation": "The next common arrival is the LCM of 12 and 18, which is 36.",
+    "source_pages": [
+      5
+    ]
+  },
+  {
+    "id": "CG-APP-02",
+    "type": "application",
+    "question": "You have 48 red and 60 blue beads and want identical largest groups with none left. How many groups can be made?",
+    "answer": "12 groups",
+    "explanation": "The greatest number of equal groups is HCF(48,60)=12.",
+    "source_pages": [
+      3
+    ]
+  },
+  {
+    "id": "CG-APP-03",
+    "type": "application",
+    "question": "Find two numbers whose HCF is 1 and LCM is 66, as requested in the chapter.",
+    "answer": "6 and 11",
+    "explanation": "6 and 11 are coprime, so HCF=1 and LCM=66.",
+    "source_pages": [
+      16
+    ]
+  }
+]
