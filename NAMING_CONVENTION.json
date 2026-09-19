@@ -1,0 +1,63 @@
+﻿{
+    "schema_version":  "1.0",
+    "project":  "GURUKUL-AI",
+    "artifact_pattern":  "\u003cTYPE\u003e__C\u003cCLASS\u003e__\u003cSUBJECT\u003e__\u003cTEXTBOOK\u003e__P\u003cPART\u003e__V\u003cVERSION\u003e",
+    "artifact_types":  {
+                           "SOURCE":  "Authoritative curriculum source",
+                           "MASTER":  "Generated canonical/master package",
+                           "PROCESSED":  "Processor-generated intermediate/output",
+                           "RUNTIME":  "Runtime projection/cache",
+                           "AUDIT":  "Audit and verification artifacts",
+                           "ARCHIVE":  "Historical frozen artifact"
+                       },
+    "subjects":  [
+                     "ENGLISH",
+                     "HINDI",
+                     "MATHEMATICS",
+                     "EVS",
+                     "SCIENCE",
+                     "SOCIAL_SCIENCE"
+                 ],
+    "part_rule":  {
+                      "P00":  "Single-volume / no explicit part",
+                      "P01":  "Part 1",
+                      "P02":  "Part 2",
+                      "P03":  "Part 3",
+                      "P04":  "Part 4",
+                      "P05":  "Part 5",
+                      "P06":  "Part 6"
+                  },
+    "authority":  {
+                      "SOURCE":  "AUTHORITATIVE",
+                      "MASTER":  "NON_AUTHORITATIVE_GENERATED",
+                      "PROCESSED":  "NON_AUTHORITATIVE_GENERATED",
+                      "RUNTIME":  "NON_AUTHORITATIVE_RUNTIME",
+                      "AUDIT":  "VERIFICATION",
+                      "ARCHIVE":  "HISTORICAL"
+                  },
+    "rules":  [
+                  "SOURCE is authoritative curriculum input.",
+                  "MASTER is generated output and is never authoritative source.",
+                  "PROCESSED is generated/intermediate output.",
+                  "RUNTIME is never authoritative source.",
+                  "AUDIT contains verification artifacts.",
+                  "ARCHIVE contains historical frozen artifacts.",
+                  "Class is represented as C##.",
+                  "Subject uses one canonical identifier.",
+                  "MATHEMATICS is the canonical Mathematics identifier.",
+                  "SOCIAL_SCIENCE is the canonical Social Science identifier.",
+                  "Part is represented separately as P##.",
+                  "P00 means single-volume/non-partitioned.",
+                  "Part numbers must never become separate logical subjects.",
+                  "Generated artifact version must not be interpreted as textbook edition.",
+                  "Textbook names must come from actual source/package metadata.",
+                  "Do not invent textbook names.",
+                  "Existing package contents must not be modified during naming migration."
+              ],
+    "migration_scope":  "MASTER package directories only",
+    "classes":  [
+                    "C05",
+                    "C06",
+                    "C07"
+                ]
+}
