@@ -7,7 +7,7 @@ class Class5MathsLoader:
 
     @classmethod
     def load_all_files(cls) -> Dict[str, Any]:
-        files = ["Notes.json", "Master.json", "Flashcards.json", "Mindmaps.json", "Quiz.json"]
+        files = ["Notes.json", "Master.json", "Flashcards.json", "Mindmaps.json", "Quiz.json", "Overview.json", "Question Papers.json"]
         loaded = {}
         for f in files:
             fpath = os.path.join(cls.CONTENTS_DIR, f)

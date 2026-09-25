@@ -1,5 +1,5 @@
 import os
-from typing import Dict, Any, Optional
+from typing import Dict, Any
 from ...common.json_reader import JsonReader
 
 class Class5HindiLoader:
@@ -7,7 +7,7 @@ class Class5HindiLoader:
 
     @classmethod
     def load_all_files(cls) -> Dict[str, Any]:
-        files = ["Notes.json", "Master.json", "Hindi Master.json", "Flashcards.json", "Mindmaps.json", "Quiz.json"]
+        files = ["Notes.json", "Master.json", "Hindi Master.json", "Flashcards.json", "Mindmaps.json", "Quiz.json", "Overview.json", "Question Papers.json"]
         loaded = {}
         for f in files:
             fpath = os.path.join(cls.CONTENTS_DIR, f)

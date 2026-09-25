@@ -46,7 +46,7 @@ const FIXED_TABS = [
 
 export default function ChapterClient({ grade, subject, chapterId }: ChapterClientProps) {
   const [sourceData, setSourceData] = useState<ChapterSourceData | null>(null);
-  const [activeTab, setActiveTab] = useState<string>('notes');
+  const [activeTab, setActiveTab] = useState<string>('overview');
   const [loading, setLoading] = useState<boolean>(true);
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
 
@@ -99,7 +99,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#F8FAFC] text-slate-600">
         <div className="animate-spin w-8 h-8 border-2 border-indigo-600 border-t-transparent rounded-full mr-3" />
-        <span className="font-semibold">Loading Direct Source Content...</span>
+        <span className="font-semibold">Loading Persistent Processed Content...</span>
       </div>
     );
   }
@@ -115,7 +115,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
             Backend API Connection Error
           </h2>
           <p className="text-slate-600 text-sm leading-relaxed">
-            The frontend could not reach the FastAPI direct source endpoint.
+            The frontend could not reach the FastAPI persistent processed source endpoint.
           </p>
           <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl text-left space-y-2 font-mono text-xs text-red-600">
             <div><strong className="text-slate-500">Endpoint:</strong> {apiError.endpoint}</div>
@@ -157,19 +157,48 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
 
     switch (activeTab) {
       case 'overview':
-      case 'question_papers':
-        const tabName = activeTab === 'overview' ? 'Overview' : 'Question Papers';
-        return (
-          <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
-              <span>Section Ready</span>
+        if (!sections.overview) {
+          return (
+            <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
+                <span>Section Ready</span>
+              </div>
+              <h3 className="text-xl font-black text-slate-900 tracking-tight">Overview</h3>
+              <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
+                No overview content is available for this chapter yet. This section will automatically display the overview when the corresponding source data is added.
+              </p>
             </div>
-            <h3 className="text-xl font-black text-slate-900 tracking-tight">{tabName}</h3>
-            <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
-              {activeTab === 'overview'
-                ? 'No overview content is available for this chapter yet. This section will automatically display the overview when the corresponding source data is added.'
-                : 'No question papers are available for this chapter yet. Question papers will appear here when the corresponding source data is added.'}
-            </p>
+          );
+        }
+        return (
+          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Chapter Overview</h3>
+            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
+              {JSON.stringify(sections.overview, null, 2)}
+            </pre>
+          </div>
+        );
+
+      case 'question_papers':
+        if (!sections.question_papers) {
+          return (
+            <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
+                <span>Section Ready</span>
+              </div>
+              <h3 className="text-xl font-black text-slate-900 tracking-tight">Question Papers</h3>
+              <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
+                No question papers are available for this chapter yet. Question papers will appear here when the corresponding source data is added.
+              </p>
+            </div>
+          );
+        }
+        return (
+          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Question Papers</h3>
+            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
+              {JSON.stringify(sections.question_papers, null, 2)}
+            </pre>
           </div>
         );
 
@@ -204,8 +233,8 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
                 {sections.flashcards.map((fc: any, idx: number) => (
                   <div key={idx} className="p-5 bg-indigo-50/50 border border-indigo-100 rounded-2xl space-y-2">
                     <div className="text-xs font-bold text-indigo-600 uppercase">Card #{idx + 1}</div>
-                    <div className="text-sm font-bold text-slate-900">{fc.front || fc.term || fc.question || JSON.stringify(fc)}</div>
-                    <div className="text-xs text-slate-600 border-t border-indigo-100/60 pt-2">{fc.back || fc.definition || fc.answer || ''}</div>
+                    <div className="text-sm font-bold text-slate-900">{fc.front || fc.term || fc.question || fc.front_content || JSON.stringify(fc)}</div>
+                    <div className="text-xs text-slate-600 border-t border-indigo-100/60 pt-2">{fc.back || fc.definition || fc.answer || fc.back_content || ''}</div>
                   </div>
                 ))}
               </div>

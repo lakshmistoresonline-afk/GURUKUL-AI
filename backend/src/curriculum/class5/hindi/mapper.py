@@ -4,11 +4,11 @@ class Class5HindiMapper:
     @staticmethod
     def map_to_sections(resolved_bundle: Dict[str, Any]) -> Dict[str, Any]:
         return {
-            "overview": None,
+            "overview": resolved_bundle.get("overview"),
             "notes": resolved_bundle.get("notes"),
             "master": resolved_bundle.get("master"),
             "flashcards": resolved_bundle.get("flashcards", []),
             "mindmaps": resolved_bundle.get("mindmap", {}),
             "quiz": resolved_bundle.get("quiz", []),
-            "question_papers": None
+            "question_papers": resolved_bundle.get("question_papers")
         }
