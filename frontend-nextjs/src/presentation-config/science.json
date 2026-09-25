@@ -1,0 +1,41 @@
+{
+  "subject": "Science",
+  "groups": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "order": 10,
+      "contentTypes": ["overview", "summary"]
+    },
+    {
+      "id": "learn",
+      "label": "Learn",
+      "order": 20,
+      "contentTypes": ["keyTerminology", "glossary", "detailedBreakdown", "scientificPrinciples", "importantTakeaways", "didYouKnow", "activities", "numericalsAndFormulas"]
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "order": 30,
+      "contentTypes": ["studyQuestions", "practiceQuestions", "model_question_bank", "modelQuestionPaper"]
+    },
+    {
+      "id": "flashcards",
+      "label": "Flashcards",
+      "order": 40,
+      "contentTypes": ["flashcards", "flashcard"]
+    },
+    {
+      "id": "mindmap",
+      "label": "Mind Map",
+      "order": 50,
+      "contentTypes": ["mindmap"]
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz",
+      "order": 60,
+      "contentTypes": ["quiz"]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "subject": "Hindi",
+  "groups": [
+    {
+      "id": "overview",
+      "label": "विवरण (Overview)",
+      "order": 10,
+      "contentTypes": ["overview", "detailed_summary"]
+    },
+    {
+      "id": "learn",
+      "label": "सीखें (Learn)",
+      "order": 20,
+      "contentTypes": ["keyTerminology", "shabdart", "vocabulary", "shuddhi_vartani", "detailedBreakdown", "character_analysis", "theme_and_moral", "grammar"]
+    },
+    {
+      "id": "practice",
+      "label": "अभ्यास (Practice)",
+      "order": 30,
+      "contentTypes": ["studyQuestions", "question_bank", "model_question_bank", "model_question_paper"]
+    },
+    {
+      "id": "flashcards",
+      "label": "फ्लैशकार्ड (Flashcards)",
+      "order": 40,
+      "contentTypes": ["flashcards", "flashcard"]
+    },
+    {
+      "id": "mindmap",
+      "label": "माइंड मैप (Mind Map)",
+      "order": 50,
+      "contentTypes": ["mindmap", "story_mindmap"]
+    },
+    {
+      "id": "quiz",
+      "label": "क्विज़ (Quiz)",
+      "order": 60,
+      "contentTypes": ["quiz", "interactive_quiz"]
+    }
+  ]
+}

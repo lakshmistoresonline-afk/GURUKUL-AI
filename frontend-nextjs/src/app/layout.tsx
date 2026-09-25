@@ -1,12 +1,10 @@
 import React from "react";
 import type { Metadata, Viewport } from "next";
 import "../styles/globals.css";
-import { AuthProvider } from "../context/AuthContext";
-import { LearningProvider } from "../context/LearningContext";
 
 export const metadata: Metadata = {
   title: "Gurukul AI",
-  description: "Personalized AI Learning Classroom",
+  description: "Next-Generation AI Learning Platform",
 };
 
 export const viewport: Viewport = {
@@ -22,12 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased min-h-screen bg-background">
-        <AuthProvider>
-          <LearningProvider>
-            {children}
-          </LearningProvider>
-        </AuthProvider>
+      <body className="antialiased min-h-screen bg-slate-950 text-slate-100">
+        {children}
       </body>
     </html>
   );

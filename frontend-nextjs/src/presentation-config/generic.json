@@ -1,0 +1,35 @@
+{
+  "subject": "Generic",
+  "groups": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "order": 10,
+      "contentTypes": ["overview", "summary", "detailed_summary"]
+    },
+    {
+      "id": "learn",
+      "label": "Learn",
+      "order": 20,
+      "contentTypes": ["keyTerminology", "vocabulary", "shabdart", "shuddhi_vartani", "detailedBreakdown", "scientificPrinciples", "glossary", "didYouKnow", "activities", "numericalsAndFormulas", "grammar_extraction", "character_analysis"]
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "order": 30,
+      "contentTypes": ["studyQuestions", "question_bank", "fill_in_the_blanks", "master_testbank", "model_question_bank", "vsa_questions", "sa_questions", "la_questions", "case_study_questions", "sample_question_papers", "practiceQuestions", "modelQuestionPaper"]
+    },
+    {
+      "id": "revision",
+      "label": "Revision",
+      "order": 40,
+      "contentTypes": ["flashcards", "flashcard", "mindmap", "story_mindmap"]
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz",
+      "order": 60,
+      "contentTypes": ["quiz", "interactive_quiz", "quizzes_mcq"]
+    }
+  ]
+}

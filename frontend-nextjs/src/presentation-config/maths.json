@@ -1,0 +1,41 @@
+{
+  "subject": "Maths",
+  "groups": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "order": 10,
+      "contentTypes": ["overview", "chapter_notes"]
+    },
+    {
+      "id": "learn",
+      "label": "Concepts & Methods",
+      "order": 20,
+      "contentTypes": ["detailedBreakdown", "conceptual_foundation", "key_methods", "importantTakeaways"]
+    },
+    {
+      "id": "practice",
+      "label": "Practice Exercises",
+      "order": 30,
+      "contentTypes": ["studyQuestions", "quizzes_mcq", "vsa_questions", "sa_questions", "la_questions", "case_study_questions", "model_question_bank", "sample_question_papers"]
+    },
+    {
+      "id": "flashcards",
+      "label": "Flashcards",
+      "order": 40,
+      "contentTypes": ["flashcards", "flashcard"]
+    },
+    {
+      "id": "mindmap",
+      "label": "Mind Map",
+      "order": 50,
+      "contentTypes": ["mindmap"]
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz",
+      "order": 60,
+      "contentTypes": ["quiz"]
+    }
+  ]
+}

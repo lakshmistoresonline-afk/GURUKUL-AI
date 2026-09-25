@@ -1,0 +1,35 @@
+{
+  "subject": "Mathematics",
+  "groups": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "order": 10,
+      "contentTypes": ["overview", "summary"]
+    },
+    {
+      "id": "learn",
+      "label": "Learn",
+      "order": 20,
+      "contentTypes": ["keyTerminology", "detailedBreakdown", "terminology", "text_section"]
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "order": 30,
+      "contentTypes": ["studyQuestions", "vsa_questions", "sa_questions", "la_questions", "case_study_questions", "sample_question_papers"]
+    },
+    {
+      "id": "revision",
+      "label": "Revision",
+      "order": 40,
+      "contentTypes": ["flashcards", "flashcard", "mindmap"]
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz",
+      "order": 60,
+      "contentTypes": ["quiz", "quizzes_mcq"]
+    }
+  ]
+}

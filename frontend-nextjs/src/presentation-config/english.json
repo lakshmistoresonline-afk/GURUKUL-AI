@@ -1,0 +1,35 @@
+{
+  "subject": "English",
+  "groups": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "order": 10,
+      "contentTypes": ["overview", "summary", "detailed_summary"]
+    },
+    {
+      "id": "learn",
+      "label": "Learn",
+      "order": 20,
+      "contentTypes": ["keyTerminology", "vocabulary", "detailedBreakdown", "importantTakeaways", "terminology", "text_section", "grammar_extraction", "character_analysis"]
+    },
+    {
+      "id": "practice",
+      "label": "Practice",
+      "order": 30,
+      "contentTypes": ["studyQuestions", "fill_in_the_blanks", "master_testbank", "model_question_bank", "question_bank"]
+    },
+    {
+      "id": "revision",
+      "label": "Revision",
+      "order": 40,
+      "contentTypes": ["flashcards", "flashcard", "mindmap", "story_mindmap"]
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz",
+      "order": 60,
+      "contentTypes": ["quiz", "interactive_quiz"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Permit cleartext HTTP for Android Emulator & Local Wi-Fi Subnets -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Android Emulator Loopback Address -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <!-- Localhost Loopback -->
+        <domain includeSubdomains="true">10.0.0.1</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <!-- Local Wi-Fi Subnets -->
+        <domain includeSubdomains="true">192.168.0.1</domain>
+        <domain includeSubdomains="true">192.168.1.1</domain>
+    </domain-config>
+</network-security-config>
