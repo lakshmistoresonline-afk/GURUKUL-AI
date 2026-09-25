@@ -17,14 +17,11 @@ if src_dir not in sys.path:
     sys.path.insert(0, src_dir)
 
 try:
-    from src.routes import universal_routes
     from src.curriculum.api import chapters as curriculum_chapters
 except (ImportError, ValueError):
     try:
-        from routes import universal_routes
         from curriculum.api import chapters as curriculum_chapters
     except (ImportError, ValueError):
-        from .routes import universal_routes
         from .curriculum.api import chapters as curriculum_chapters
 
 # Initialize FastAPI Local Server
@@ -52,8 +49,7 @@ app.add_middleware(
     expose_headers=["*"]
 )
 
-# Mount Universal Content Pipeline Router & New Curriculum API Router (/api/v1/...)
-app.include_router(universal_routes.router)
+# Mount New Curriculum API Router (/api/v1/...)
 app.include_router(curriculum_chapters.router)
 
 CONTENT_ROOT = r"D:\GURUKUL\Contents\Class 5"
