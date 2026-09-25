@@ -1,0 +1,99 @@
+{
+  "English": {
+    "chapters": 10,
+    "sectionTypes": [
+      "overview",
+      "keyTerminology",
+      "detailedBreakdown",
+      "importantTakeaways",
+      "studyQuestions",
+      "flashcards",
+      "mindmap",
+      "quiz"
+    ],
+    "renderersRequired": [
+      "OverviewRenderer",
+      "TerminologyRenderer",
+      "SectionRenderer",
+      "StudyQuestionsRenderer",
+      "FlashcardDeck",
+      "MindMapRenderer",
+      "QuizRenderer"
+    ]
+  },
+  "Hindi": {
+    "chapters": 12,
+    "sectionTypes": [
+      "overview",
+      "stanza_wise_explanation",
+      "shabdart",
+      "shuddhi_vartani",
+      "character_analysis",
+      "comprehensive_grammar",
+      "comprehension_and_extracts",
+      "activities_and_projects",
+      "question_bank",
+      "model_question_paper",
+      "flashcards",
+      "story_mindmap",
+      "interactive_quiz"
+    ],
+    "renderersRequired": [
+      "OverviewRenderer",
+      "TerminologyRenderer",
+      "VocabularyRenderer",
+      "SectionRenderer",
+      "StudyQuestionsRenderer",
+      "FlashcardDeck",
+      "MindMapRenderer",
+      "QuizRenderer"
+    ]
+  },
+  "Maths": {
+    "chapters": 15,
+    "sectionTypes": [
+      "overview",
+      "keyTerminology",
+      "detailedBreakdown",
+      "studyQuestions",
+      "flashcards",
+      "mindmap",
+      "quiz"
+    ],
+    "renderersRequired": [
+      "OverviewRenderer",
+      "TerminologyRenderer",
+      "SectionRenderer",
+      "StudyQuestionsRenderer",
+      "FlashcardDeck",
+      "MindMapRenderer",
+      "QuizRenderer"
+    ]
+  },
+  "Science": {
+    "chapters": 10,
+    "sectionTypes": [
+      "overview",
+      "glossary",
+      "scientificPrinciples",
+      "keySections",
+      "activities",
+      "caseStudies",
+      "numericals",
+      "didYouKnow",
+      "practiceQuestions",
+      "flashcards",
+      "mindmap",
+      "quiz"
+    ],
+    "renderersRequired": [
+      "OverviewRenderer",
+      "TerminologyRenderer",
+      "SectionRenderer",
+      "StudyQuestionsRenderer",
+      "FlashcardDeck",
+      "MindMapRenderer",
+      "QuizRenderer"
+    ]
+  }
+}
