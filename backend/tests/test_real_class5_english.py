@@ -31,7 +31,7 @@ def test_chapter_processing_and_idempotency():
     # IDEMPOTENCY CHECK
     assert [b.id for b in blocks1] == [b.id for b in blocks2]
     assert [b.sourceType for b in blocks1] == [b.sourceType for b in blocks2]
-    assert manifest1.dict() == manifest2.dict()
+    assert manifest1.model_dump() == manifest2.model_dump()
     assert nav1 == nav2
 
 def test_all_10_chapters_processed():

@@ -3,20 +3,13 @@ from typing import List, Dict, Any, Optional
 
 try:
     from ..services.content_loader import ContentLoaderService
-    from ..adapters.adapter_resolver import AdapterResolver
-    from ..navigation.navigation_builder import BackendNavigationBuilder
 except (ImportError, ValueError):
     from src.services.content_loader import ContentLoaderService
-    from src.adapters.adapter_resolver import AdapterResolver
-    from src.navigation.navigation_builder import BackendNavigationBuilder
 
 router = APIRouter(prefix="/api/v1", tags=["Universal Content Pipeline"])
 
 @router.get("/classes")
 async def discover_classes():
-    """
-    Universal discovery API: Discovers available grades and subjects dynamically from CONTENT_ROOT.
-    """
     grades = ContentLoaderService.discover_grades()
     class_list = []
     for g in grades:
@@ -26,18 +19,11 @@ async def discover_classes():
 
 @router.get("/classes/{grade}/subjects")
 async def get_grade_subjects(grade: str):
-    """
-    Universal discovery API: Returns list of subjects available for a grade.
-    """
     subjects = ContentLoaderService.discover_subjects(grade)
     return {"grade": grade, "subjects": subjects}
 
 @router.get("/classes/{grade}/subjects/{subject}")
 async def get_subject_details(grade: str, subject: str):
-    """
-    Universal subject details API: Returns subject metadata including
-    curriculum framework, 4 curricular goals, unit themes, and chapter list for ANY subject.
-    """
     meta = ContentLoaderService.get_subject_curriculum_metadata(grade, subject)
     units_list = meta.get("units", [])
     total_chapters = sum(len(u.get("chapters", [])) for u in units_list)
@@ -57,16 +43,9 @@ async def get_chapter_details(
     grade: str = Query(default="5"),
     subject: str = Query(default="English")
 ):
-    """
-    Universal chapter details API: Returns chapter metadata and manifest summary.
-    """
     data = ContentLoaderService.load_chapter_source(grade, subject, chapterId)
     if not data:
         raise HTTPException(status_code=404, detail=f"Chapter {chapterId} not found in Class {grade} {subject}")
-
-    adapter = AdapterResolver.resolve("NCERT", grade, subject, data)
-    blocks = adapter.parse_chapter(data, chapterId)
-    manifest = adapter.generate_manifest(chapterId, blocks)
 
     ch_title = data.get("chapterTitle") or data.get("title") or chapterId
 
@@ -78,88 +57,48 @@ async def get_chapter_details(
         "title": ch_title,
         "chapterTitle": ch_title,
         "unitTitle": data.get("unitTitle", ""),
-        "unitNumber": data.get("unitNumber", 1),
-        "blockCount": len(blocks),
-        "manifest": manifest
+        "unitNumber": data.get("unitNumber", 1)
     }
 
-@router.get("/chapters/{chapterId}/manifest")
-async def get_chapter_manifest(
+@router.get("/chapters/{chapterId}/source")
+async def get_chapter_direct_source(
     chapterId: str,
     grade: str = Query(default="5"),
     subject: str = Query(default="English")
 ):
     """
-    Universal manifest API: Generates and returns ContentManifest for chapter.
+    DIRECT SOURCE ENDPOINT:
+    Loads authoritative source JSON directly without AdapterResolver, parse_chapter, ContentBlock, or manifest.
+    Returns the exact 7 fixed application sections:
+    - overview (null / empty state)
+    - notes (from Notes.json)
+    - master (from Master.json)
+    - flashcards (from Flashcards.json)
+    - mindmaps (from Mindmaps.json)
+    - quiz (from Quiz.json)
+    - question_papers (null / empty state)
     """
-    data = ContentLoaderService.load_chapter_source(grade, subject, chapterId)
-    if not data:
-        raise HTTPException(status_code=404, detail=f"Chapter {chapterId} not found")
+    raw_source = ContentLoaderService.load_chapter_source(grade, subject, chapterId)
+    if not raw_source:
+        raise HTTPException(status_code=404, detail=f"Chapter {chapterId} source not found")
 
-    adapter = AdapterResolver.resolve("NCERT", grade, subject, data)
-    blocks = adapter.parse_chapter(data, chapterId)
-    manifest = adapter.generate_manifest(chapterId, blocks)
+    # Extract section-specific source payloads directly from raw_source bundle
+    sections = {
+        "overview": None,
+        "notes": raw_source.get("notes") or raw_source.get("notesData") or raw_source,
+        "master": raw_source.get("master") or raw_source.get("masterData") or raw_source,
+        "flashcards": raw_source.get("flashcards") or [],
+        "mindmaps": raw_source.get("mindmap") or raw_source.get("mindmaps") or {},
+        "quiz": raw_source.get("quiz") or [],
+        "question_papers": None
+    }
 
-    return manifest
-
-@router.get("/chapters/{chapterId}/navigation")
-async def get_chapter_navigation(
-    chapterId: str,
-    grade: str = Query(default="5"),
-    subject: str = Query(default="English")
-):
-    """
-    Universal navigation API: Generates server-side navigation tabs with Quiz ALWAYS last (order 60).
-    """
-    data = ContentLoaderService.load_chapter_source(grade, subject, chapterId)
-    if not data:
-        raise HTTPException(status_code=404, detail=f"Chapter {chapterId} not found")
-
-    adapter = AdapterResolver.resolve("NCERT", grade, subject, data)
-    blocks = adapter.parse_chapter(data, chapterId)
-    manifest = adapter.generate_manifest(chapterId, blocks)
-
-    tabs = BackendNavigationBuilder.build_navigation(subject, manifest)
-    return {"chapterId": chapterId, "subject": subject, "tabs": tabs}
-
-@router.get("/chapters/{chapterId}/content")
-async def get_chapter_content(
-    chapterId: str,
-    grade: str = Query(default="5"),
-    subject: str = Query(default="English")
-):
-    """
-    Universal content API: Returns list of normalized ContentBlock items.
-    """
-    data = ContentLoaderService.load_chapter_source(grade, subject, chapterId)
-    if not data:
-        raise HTTPException(status_code=404, detail=f"Chapter {chapterId} not found")
-
-    adapter = AdapterResolver.resolve("NCERT", grade, subject, data)
-    blocks = adapter.parse_chapter(data, chapterId)
-
-    return blocks
-
-@router.get("/chapters/{chapterId}/content/{contentType}")
-async def get_chapter_content_by_type(
-    chapterId: str,
-    contentType: str,
-    grade: str = Query(default="5"),
-    subject: str = Query(default="English")
-):
-    """
-    Universal isolated content API: Returns ContentBlock items filtered by semantic contentType.
-    """
-    data = ContentLoaderService.load_chapter_source(grade, subject, chapterId)
-    if not data:
-        raise HTTPException(status_code=404, detail=f"Chapter {chapterId} not found")
-
-    adapter = AdapterResolver.resolve("NCERT", grade, subject, data)
-    blocks = adapter.parse_chapter(data, chapterId)
-
-    filtered = [
-        b for b in blocks
-        if b.normalizedType == contentType or b.sourceType == contentType or b.renderer == contentType
-    ]
-
-    return filtered
+    return {
+        "chapterId": chapterId,
+        "grade": grade,
+        "subject": subject,
+        "chapterNumber": raw_source.get("chapterNumber", 1),
+        "chapterTitle": raw_source.get("chapterTitle") or raw_source.get("title") or chapterId,
+        "unitTitle": raw_source.get("unitTitle", ""),
+        "sections": sections
+    }

@@ -2,29 +2,24 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { NavigationBuilder, NavigationTab, ContentManifest } from '../../../../navigation/NavigationBuilder';
-import { RendererRegistry } from '../../../../renderers/RendererRegistry';
 import { ReadingComfortControl, ReadingTheme, TextSize, LineSpacing } from '../../../../components/ReadingComfortControl';
 
-interface ContentBlockData {
-  id: string;
-  sourceType: string;
-  normalizedType: string;
-  type?: string;
-  title: string;
-  data: any;
-  renderer: string;
-  order: number;
-}
-
-interface ChapterMetadata {
+interface ChapterSourceData {
   chapterId: string;
-  title?: string;
-  chapterTitle?: string;
-  unitTitle?: string;
-  unitNumber?: number;
-  chapterNumber?: number;
-  blockCount?: number;
+  grade: string;
+  subject: string;
+  chapterNumber: number;
+  chapterTitle: string;
+  unitTitle: string;
+  sections: {
+    overview: any | null;
+    notes: any;
+    master: any;
+    flashcards: any[];
+    mindmaps: any;
+    quiz: any[];
+    question_papers: any | null;
+  };
 }
 
 interface ChapterClientProps {
@@ -39,12 +34,19 @@ interface ApiDiagnostics {
   error: string;
 }
 
+const FIXED_TABS = [
+  { id: 'overview', label: 'Overview' },
+  { id: 'notes', label: 'Notes' },
+  { id: 'master', label: 'Master' },
+  { id: 'flashcards', label: 'Flashcards' },
+  { id: 'mindmaps', label: 'Mindmaps' },
+  { id: 'quiz', label: 'Quiz' },
+  { id: 'question_papers', label: 'Question Papers' },
+];
+
 export default function ChapterClient({ grade, subject, chapterId }: ChapterClientProps) {
-  const [chapterDetails, setChapterDetails] = useState<ChapterMetadata | null>(null);
-  const [manifest, setManifest] = useState<ContentManifest | null>(null);
-  const [blocks, setBlocks] = useState<ContentBlockData[]>([]);
-  const [tabs, setTabs] = useState<NavigationTab[]>([]);
-  const [activeTab, setActiveTab] = useState<string>('overview');
+  const [sourceData, setSourceData] = useState<ChapterSourceData | null>(null);
+  const [activeTab, setActiveTab] = useState<string>('notes');
   const [loading, setLoading] = useState<boolean>(true);
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
 
@@ -53,71 +55,36 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const [lineSpacing, setLineSpacing] = useState<LineSpacing>('normal');
 
   useEffect(() => {
-    async function loadChapterData() {
+    async function loadChapterSource() {
       try {
         setLoading(true);
         setApiError(null);
 
         const primaryUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
         const fallbackUrl = 'http://127.0.0.1:8080';
+        const endpoint = `${primaryUrl}/api/v1/chapters/${chapterId}/source?grade=${grade}&subject=${subject}`;
 
-        let targetUrl = primaryUrl;
-        let contentRes: Response | null = null;
-        let chapterRes: Response | null = null;
-        let manifestRes: Response | null = null;
-
+        let res: Response;
         try {
-          [chapterRes, manifestRes, contentRes] = await Promise.all([
-            fetch(`${targetUrl}/api/v1/chapters/${chapterId}?grade=${grade}&subject=${subject}`),
-            fetch(`${targetUrl}/api/v1/chapters/${chapterId}/manifest?grade=${grade}&subject=${subject}`),
-            fetch(`${targetUrl}/api/v1/chapters/${chapterId}/content?grade=${grade}&subject=${subject}`),
-          ]);
+          res = await fetch(endpoint);
         } catch {
-          targetUrl = fallbackUrl;
-          try {
-            [chapterRes, manifestRes, contentRes] = await Promise.all([
-              fetch(`${targetUrl}/api/v1/chapters/${chapterId}?grade=${grade}&subject=${subject}`),
-              fetch(`${targetUrl}/api/v1/chapters/${chapterId}/manifest?grade=${grade}&subject=${subject}`),
-              fetch(`${targetUrl}/api/v1/chapters/${chapterId}/content?grade=${grade}&subject=${subject}`),
-            ]);
-          } catch (retryErr: any) {
-            setApiError({
-              endpoint: `${primaryUrl}/api/v1/chapters/${chapterId}`,
-              error: retryErr.message || 'TypeError: Failed to fetch (Connection Refused)',
-            });
-            setLoading(false);
-            return;
-          }
+          res = await fetch(`${fallbackUrl}/api/v1/chapters/${chapterId}/source?grade=${grade}&subject=${subject}`);
         }
 
-        if (chapterRes && chapterRes.ok) {
-          const details: ChapterMetadata = await chapterRes.json();
-          setChapterDetails(details);
-        }
-
-        if (manifestRes && manifestRes.ok && contentRes && contentRes.ok) {
-          const manifestData: ContentManifest = await manifestRes.json();
-          const blocksData: ContentBlockData[] = await contentRes.json();
-
-          setManifest(manifestData);
-          setBlocks(blocksData);
-
-          const computedTabs = NavigationBuilder.buildNavigation(subject, manifestData);
-          setTabs(computedTabs);
-          if (computedTabs.length > 0 && !computedTabs.some(t => t.id === activeTab)) {
-            setActiveTab(computedTabs[0].id);
-          }
+        if (res.ok) {
+          const data: ChapterSourceData = await res.json();
+          setSourceData(data);
         } else {
           setApiError({
-            endpoint: `${targetUrl}/api/v1/chapters/${chapterId}`,
-            status: contentRes?.status || 500,
-            error: `API returned HTTP ${contentRes?.status || 500}: ${contentRes?.statusText || 'Internal Server Error'}`,
+            endpoint,
+            status: res.status,
+            error: `API returned HTTP ${res.status}: ${res.statusText}`,
           });
         }
       } catch (err: any) {
-        console.error('Failed to load chapter content:', err);
+        console.error('Failed to load direct chapter source:', err);
         setApiError({
-          endpoint: `http://localhost:8080/api/v1/chapters/${chapterId}`,
+          endpoint: `http://localhost:8080/api/v1/chapters/${chapterId}/source`,
           error: err.message || 'TypeError: Failed to fetch',
         });
       } finally {
@@ -125,47 +92,14 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
       }
     }
 
-    loadChapterData();
+    loadChapterSource();
   }, [grade, subject, chapterId]);
-
-  const currentTabObj = tabs.find((t) => t.id === activeTab);
-  const activeTypes = currentTabObj ? currentTabObj.contentTypes : [];
-  const activeBlocks = blocks.filter(
-    (b) => activeTypes.includes(b.sourceType) || activeTypes.includes(b.normalizedType) || activeTypes.includes(b.renderer) || (activeTab === 'overview' && b.normalizedType === 'overview')
-  );
-
-  // Forensic test-only render trace instrumentation (accumulating)
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      if (!(window as any).__GURUKUL_RENDER_TRACE__) {
-        (window as any).__GURUKUL_RENDER_TRACE__ = [];
-      }
-      const existing = (window as any).__GURUKUL_RENDER_TRACE__ as any[];
-      activeBlocks.forEach((b, seq) => {
-        const entry = {
-          chapterId,
-          blockId: b.id,
-          sourceType: b.sourceType,
-          normalizedType: b.normalizedType,
-          renderer: b.renderer,
-          title: b.title,
-          activeTab: activeTab,
-          renderSequence: seq,
-          dataHash: b.data ? JSON.stringify(b.data).length : 0
-        };
-        if (!existing.some((ex) => ex.blockId === entry.blockId && ex.activeTab === entry.activeTab)) {
-          existing.push(entry);
-        }
-      });
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeBlocks, chapterId]);
 
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#F8FAFC] text-slate-600">
         <div className="animate-spin w-8 h-8 border-2 border-indigo-600 border-t-transparent rounded-full mr-3" />
-        <span className="font-semibold">Loading Chapter Content...</span>
+        <span className="font-semibold">Loading Direct Source Content...</span>
       </div>
     );
   }
@@ -181,7 +115,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
             Backend API Connection Error
           </h2>
           <p className="text-slate-600 text-sm leading-relaxed">
-            The frontend could not reach the FastAPI local engine bridge.
+            The frontend could not reach the FastAPI direct source endpoint.
           </p>
           <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl text-left space-y-2 font-mono text-xs text-red-600">
             <div><strong className="text-slate-500">Endpoint:</strong> {apiError.endpoint}</div>
@@ -199,16 +133,9 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     );
   }
 
-  const blockTitle = blocks.find((b) => b.data?.chapterTitle || b.data?.title)?.data?.chapterTitle || blocks.find((b) => b.data?.chapterTitle || b.data?.title)?.data?.title;
-
-  const displayTitle =
-    chapterDetails?.chapterTitle ||
-    chapterDetails?.title ||
-    blockTitle ||
-    'Chapter Information Unavailable';
-
-  const unitTitle = chapterDetails?.unitTitle || 'Curriculum Unit';
-  const chNumber = chapterDetails?.chapterNumber || 1;
+  const displayTitle = sourceData?.chapterTitle || 'Chapter Information Unavailable';
+  const unitTitle = sourceData?.unitTitle || 'Curriculum Unit';
+  const chNumber = sourceData?.chapterNumber || 1;
 
   const themeBgClass =
     readingTheme === 'dark'
@@ -222,6 +149,114 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
 
   const lineSpacingClass =
     lineSpacing === 'comfortable' ? 'leading-loose' : lineSpacing === 'spacious' ? 'leading-[2.2]' : 'leading-relaxed';
+
+  // Render Section Content based on activeTab
+  const renderActiveSectionContent = () => {
+    if (!sourceData) return null;
+    const { sections } = sourceData;
+
+    switch (activeTab) {
+      case 'overview':
+      case 'question_papers':
+        const tabName = activeTab === 'overview' ? 'Overview' : 'Question Papers';
+        return (
+          <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
+              <span>Section Ready</span>
+            </div>
+            <h3 className="text-xl font-black text-slate-900 tracking-tight">{tabName}</h3>
+            <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
+              {activeTab === 'overview'
+                ? 'No overview content is available for this chapter yet. This section will automatically display the overview when the corresponding source data is added.'
+                : 'No question papers are available for this chapter yet. Question papers will appear here when the corresponding source data is added.'}
+            </p>
+          </div>
+        );
+
+      case 'notes':
+        return (
+          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Chapter Notes & Summary</h3>
+            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
+              {JSON.stringify(sections.notes, null, 2)}
+            </pre>
+          </div>
+        );
+
+      case 'master':
+        return (
+          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Master Content & Practice</h3>
+            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
+              {JSON.stringify(sections.master, null, 2)}
+            </pre>
+          </div>
+        );
+
+      case 'flashcards':
+        return (
+          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">
+              Flashcards Deck ({Array.isArray(sections.flashcards) ? sections.flashcards.length : 0} Cards)
+            </h3>
+            {Array.isArray(sections.flashcards) && sections.flashcards.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {sections.flashcards.map((fc: any, idx: number) => (
+                  <div key={idx} className="p-5 bg-indigo-50/50 border border-indigo-100 rounded-2xl space-y-2">
+                    <div className="text-xs font-bold text-indigo-600 uppercase">Card #{idx + 1}</div>
+                    <div className="text-sm font-bold text-slate-900">{fc.front || fc.term || fc.question || JSON.stringify(fc)}</div>
+                    <div className="text-xs text-slate-600 border-t border-indigo-100/60 pt-2">{fc.back || fc.definition || fc.answer || ''}</div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-sm text-slate-500">No flashcards available in source.</p>
+            )}
+          </div>
+        );
+
+      case 'mindmaps':
+        return (
+          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Concept Mindmap</h3>
+            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
+              {JSON.stringify(sections.mindmaps, null, 2)}
+            </pre>
+          </div>
+        );
+
+      case 'quiz':
+        return (
+          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">
+              Master Quiz Assessment ({Array.isArray(sections.quiz) ? sections.quiz.length : 0} Questions)
+            </h3>
+            {Array.isArray(sections.quiz) && sections.quiz.length > 0 ? (
+              <div className="space-y-4">
+                {sections.quiz.map((q: any, idx: number) => (
+                  <div key={idx} className="p-5 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
+                    <div className="text-xs font-bold text-slate-500">Question #{idx + 1}</div>
+                    <div className="text-sm font-bold text-slate-900">{q.question || JSON.stringify(q)}</div>
+                    {Array.isArray(q.options) && (
+                      <ul className="list-disc list-inside text-xs text-slate-700 space-y-1 pt-1">
+                        {q.options.map((opt: string, oIdx: number) => (
+                          <li key={oIdx}>{opt}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-sm text-slate-500">No quiz items available in source.</p>
+            )}
+          </div>
+        );
+
+      default:
+        return <p className="text-sm text-slate-500">Select a section above.</p>;
+    }
+  };
 
   return (
     <div className={`min-h-screen ${themeBgClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white`}>
@@ -260,56 +295,29 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         </header>
 
         {/* Exactly 7 Fixed Tabs Navigation Bar */}
-        {tabs.length > 0 && (
-          <nav className="flex flex-wrap gap-2 border-b border-slate-200/80 pb-4" aria-label="Chapter Primary Navigation">
-            {tabs.map((tab) => {
-              const isActive = activeTab === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${
-                    isActive
-                      ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 border border-indigo-500'
-                      : 'bg-white text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-slate-200'
-                  }`}
-                  aria-selected={isActive}
-                  role="tab"
-                >
-                  {tab.label}
-                </button>
-              );
-            })}
-          </nav>
-        )}
+        <nav className="flex flex-wrap gap-2 border-b border-slate-200/80 pb-4" aria-label="Chapter Primary Navigation">
+          {FIXED_TABS.map((tab) => {
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${
+                  isActive
+                    ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 border border-indigo-500'
+                    : 'bg-white text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-slate-200'
+                }`}
+                aria-selected={isActive}
+                role="tab"
+              >
+                {tab.label}
+              </button>
+            );
+          })}
+        </nav>
 
         <main className={`space-y-8 min-h-[400px] ${textSizeClass} ${lineSpacingClass}`}>
-          {activeBlocks.length > 0 ? (
-            activeBlocks.map((block) => {
-              const RendererComponent = RendererRegistry.getRenderer(block.renderer);
-              return (
-                <section key={block.id} data-gurukul-record-id={block.id} className="space-y-4">
-                  <RendererComponent data={block.data} title={block.title} />
-                </section>
-              );
-            })
-          ) : (
-            <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
-                <span>Section Ready</span>
-              </div>
-              <h3 className="text-xl font-black text-slate-900 tracking-tight">
-                {activeTab === 'overview' ? 'Overview' : activeTab === 'question_papers' ? 'Question Papers' : 'Section Content'}
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
-                {activeTab === 'overview'
-                  ? 'No overview content is available for this chapter yet. This section will automatically display the overview when the corresponding source data is added.'
-                  : activeTab === 'question_papers'
-                  ? 'No question papers are available for this chapter yet. Question papers will appear here when the corresponding source data is added.'
-                  : 'No items are available for this section yet.'}
-              </p>
-            </div>
-          )}
+          {renderActiveSectionContent()}
         </main>
       </div>
     </div>
