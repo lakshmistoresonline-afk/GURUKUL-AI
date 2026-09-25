@@ -1,0 +1,76 @@
+{
+  "allRequests": [
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "resourceType": "fetch"
+    },
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "resourceType": "fetch"
+    },
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "resourceType": "fetch"
+    },
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "resourceType": "fetch"
+    }
+  ],
+  "apiResponses": [
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "status": 500,
+      "contentType": "text/html; charset=utf-8",
+      "body": null
+    },
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "status": 500,
+      "contentType": "text/html; charset=utf-8",
+      "body": null
+    },
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "status": 500,
+      "contentType": "text/html; charset=utf-8",
+      "body": null
+    },
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "status": 500,
+      "contentType": "text/html; charset=utf-8",
+      "body": null
+    },
+    {
+      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+      "method": "GET",
+      "status": 500,
+      "contentType": "text/html; charset=utf-8",
+      "body": null
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "renderTrace": []
+}

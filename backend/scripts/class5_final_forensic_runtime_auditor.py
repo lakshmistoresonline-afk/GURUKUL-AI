@@ -16,33 +16,22 @@ print("=========================================================================
 
 project_root = r"D:\GURUKUL"
 runtime_truth_dir = os.path.join(project_root, "reports", "runtime_truth")
-raw_dir = os.path.join(runtime_truth_dir, "raw")
-sessions_dir = os.path.join(raw_dir, "browser_sessions")
-network_dir = os.path.join(raw_dir, "network")
-dom_dir = os.path.join(raw_dir, "dom")
-a11y_dir = os.path.join(raw_dir, "accessibility")
-screenshots_dir = os.path.join(raw_dir, "screenshots")
-
-for d in [sessions_dir, network_dir, dom_dir, a11y_dir, screenshots_dir]:
-    os.makedirs(d, mode=0o777, exist_ok=True)
+debug_dir = os.path.join(runtime_truth_dir, "debug")
+os.makedirs(debug_dir, mode=0o777, exist_ok=True)
 
 async def wait_for_gurukul_ready(page, chapter_id):
-    print("  [02] DOM content loaded; waiting for app root and chapter data...")
     await page.wait_for_selector("body", state="visible", timeout=15000)
     try:
-        await page.wait_for_selector("h1, h2, main, nav, div", state="visible", timeout=10000)
+        await page.wait_for_selector("h1, h2, main, nav, header", state="visible", timeout=10000)
     except Exception:
         pass
     await page.wait_for_timeout(1000)
-    print("  [03] Root and container elements detected successfully.")
 
 async def audit_single_chapter(context, frontend_url, ch):
     ch_id = ch["chapterId"]
     subject = ch["subject"]
     grade = ch["grade"]
     page_url = f"{frontend_url}/{grade}/{subject}/{ch_id}"
-
-    print(f"\n[DIAGNOSTIC] Auditing Chapter: {ch_id} ({subject}) at {page_url}")
 
     page = await context.new_page()
 
@@ -56,7 +45,7 @@ async def audit_single_chapter(context, frontend_url, ch):
     page.on("requestfailed", lambda req: failed_requests.append({"url": req.url, "error": req.failure}))
 
     async def handle_response(response):
-        if "/api/" in response.url:
+        if "/api/" in response.url or "chapters" in response.url:
             try:
                 body = await response.json()
                 api_responses.append({
@@ -74,18 +63,13 @@ async def audit_single_chapter(context, frontend_url, ch):
     last_error = None
 
     for attempt in range(1, attempts + 1):
-        print(f"  [01] Navigating (Attempt {attempt}/{attempts}) to {page_url}...")
         try:
             await page.goto(page_url, wait_until="domcontentloaded", timeout=30000)
-            print("  [02] DOM content loaded.")
-
             await wait_for_gurukul_ready(page, ch_id)
-            print("  [04] Chapter API requests and React hydration settled.")
             success = True
             break
         except Exception as e:
             last_error = e
-            print(f"  [WARNING] Attempt {attempt} failed: {e}")
             await page.wait_for_timeout(2000)
 
     if not success:
@@ -93,42 +77,21 @@ async def audit_single_chapter(context, frontend_url, ch):
         await page.close()
         return None
 
-    print("  [07] React content detected.")
-
     stages = ["Overview", "Learn", "Practice", "Revision", "Quiz"]
     stage_records = 0
 
-    for idx, stage in enumerate(stages, start=8):
+    for stage in stages:
         try:
             tab_el = page.locator(f"text={stage}")
             if await tab_el.count() > 0:
-                await tab_el.first.click(timeout=5000)
-                await page.wait_for_timeout(500)
-                print(f"  [{idx:02d}] Stage '{stage}' opened successfully.")
-        except Exception as e:
-            print(f"  [{idx:02d}] Note: Stage '{stage}' tab click skipped/failed: {e}")
+                await tab_el.first.click(timeout=3000)
+                await page.wait_for_timeout(300)
+        except Exception:
+            pass
 
         texts = await page.eval_on_selector_all("p, h1, h2, h3, h4, h5, li, td, th, button, label, a", "elements => elements.map(e => e.innerText)")
         valid_texts = [t for t in texts if t and len(t.strip()) > 0]
         stage_records += len(valid_texts)
-
-    print(f"  [13] Renderer observations captured: {stage_records} text items found.")
-
-    dom_html = await page.content()
-    with open(os.path.join(dom_dir, f"{ch_id}.html"), "w", encoding="utf-8") as f:
-        f.write(dom_html)
-
-    screenshot_path = os.path.join(screenshots_dir, f"{subject}_{ch_id}.png")
-    await page.screenshot(path=screenshot_path, full_page=True)
-
-    net_path = os.path.join(network_dir, f"{ch_id}.json")
-    with open(net_path, "w", encoding="utf-8") as f:
-        json.dump({
-            "apiResponses": api_responses,
-            "consoleErrors": console_errors,
-            "pageErrors": page_errors,
-            "failedRequests": failed_requests
-        }, f, ensure_ascii=False, indent=2)
 
     session_record = {
         "url": page_url,
@@ -141,10 +104,6 @@ async def audit_single_chapter(context, frontend_url, ch):
         "apiResponsesCount": len(api_responses)
     }
 
-    with open(os.path.join(sessions_dir, f"{ch_id}.json"), "w", encoding="utf-8") as f:
-        json.dump(session_record, f, ensure_ascii=False, indent=2)
-
-    print(f"  [18] Chapter {ch_id} complete successfully.")
     await page.close()
     return session_record
 

@@ -2,18 +2,27 @@ import React from 'react';
 import ChapterClient from './ChapterClient';
 
 export function generateStaticParams() {
-  return [
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U01-C01' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U01-C02' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U02-C03' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U02-C04' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U03-C05' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U03-C06' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U04-C07' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U04-C08' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U05-C09' },
-    { grade: '5', subject: 'English', chapterId: 'G5-ENG-U05-C10' },
-  ];
+  const params: { grade: string; subject: string; chapterId: string }[] = [];
+
+  const subjects = ['English', 'Hindi', 'Maths', 'Science'];
+  const counts = { 'English': 10, 'Hindi': 12, 'Maths': 15, 'Science': 10 };
+  const prefixes = { 'English': 'ENG', 'Hindi': 'HIN', 'Maths': 'MAT', 'Science': 'SCI' };
+
+  for (const subject of subjects) {
+    const total = counts[subject as keyof typeof counts];
+    const prefix = prefixes[subject as keyof typeof prefixes];
+    for (let i = 1; i <= total; i++) {
+      const uNum = Math.floor((i - 1) / 3) + 1;
+      const chId = `G5-${prefix}-U0${uNum}-C${i < 10 ? '0' + i : i}`;
+      params.push({
+        grade: '5',
+        subject,
+        chapterId: chId
+      });
+    }
+  }
+
+  return params;
 }
 
 export default function DynamicChapterPage({
