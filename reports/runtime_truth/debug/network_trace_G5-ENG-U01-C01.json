@@ -1,76 +1,142 @@
-{
-  "allRequests": [
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "resourceType": "document"
-    },
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "resourceType": "fetch"
-    },
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "resourceType": "fetch"
-    },
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "resourceType": "fetch"
-    },
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "resourceType": "fetch"
-    }
-  ],
-  "apiResponses": [
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "status": 500,
-      "contentType": "text/html; charset=utf-8",
-      "body": null
-    },
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "status": 500,
-      "contentType": "text/html; charset=utf-8",
-      "body": null
-    },
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "status": 500,
-      "contentType": "text/html; charset=utf-8",
-      "body": null
-    },
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "status": 500,
-      "contentType": "text/html; charset=utf-8",
-      "body": null
-    },
-    {
-      "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
-      "method": "GET",
-      "status": 500,
-      "contentType": "text/html; charset=utf-8",
-      "body": null
-    }
-  ],
-  "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
-    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
-    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
-    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
-    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
-  ],
-  "pageErrors": [],
-  "failedRequests": [],
-  "renderTrace": []
-}
+[
+  {
+    "url": "http://localhost:3000/5/English/G5-ENG-U01-C01",
+    "method": "GET",
+    "resourceType": "document"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/src_styles_globals_92af3b.css",
+    "method": "GET",
+    "resourceType": "stylesheet"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react_a1d82d._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_cjs_react-dom_development_c9a189.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_87a050._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_e13b54._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_8bb71d._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_38ecb8._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_00636a._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_dev_client_hmr-client_ts_23f2be._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_esm_build_templates_app-page_6a365d.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_esm_build_templates_app-page_54922f.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/_0295c1._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/src_app_layout_tsx_854ffc._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/src_52a7ba._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/node_modules_next_8fd795._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/src_app_[grade]_[subject]_[chapterId]_page_tsx_d645a1._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/src_app_%5Bgrade%5D_%5Bsubject%5D_%5BchapterId%5D_page_tsx_d645a1._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:8080/api/v1/chapters/G5-ENG-U01-C01?grade=5&subject=English",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "http://localhost:8080/api/v1/chapters/G5-ENG-U01-C01/manifest?grade=5&subject=English",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "http://localhost:8080/api/v1/chapters/G5-ENG-U01-C01/navigation?grade=5&subject=English",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "http://localhost:8080/api/v1/chapters/G5-ENG-U01-C01/content?grade=5&subject=English",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_dev_client_dcbd7d._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_dev_client_hmr-client_ts_ddc16d._.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "http://localhost:8080/api/v1/chapters/G5-ENG-U01-C01?grade=5&subject=English",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "http://localhost:8080/api/v1/chapters/G5-ENG-U01-C01/manifest?grade=5&subject=English",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "http://localhost:8080/api/v1/chapters/G5-ENG-U01-C01/navigation?grade=5&subject=English",
+    "method": "GET",
+    "resourceType": "fetch"
+  },
+  {
+    "url": "http://localhost:8080/api/v1/chapters/G5-ENG-U01-C01/content?grade=5&subject=English",
+    "method": "GET",
+    "resourceType": "fetch"
+  }
+]

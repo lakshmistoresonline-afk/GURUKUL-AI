@@ -65,7 +65,6 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
 
         let targetUrl = primaryUrl;
 
-        // Diagnostic fetch with fallback port verification
         let contentRes: Response | null = null;
         let chapterRes: Response | null = null;
         let manifestRes: Response | null = null;
@@ -144,6 +143,28 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     loadChapterData();
   }, [grade, subject, chapterId]);
 
+  const currentTabObj = tabs.find((t) => t.id === activeTab);
+  const activeTypes = currentTabObj ? currentTabObj.contentTypes : [];
+  const activeBlocks = blocks.filter(
+    (b) => activeTypes.includes(b.sourceType) || activeTypes.includes(b.normalizedType) || activeTypes.includes(b.renderer)
+  );
+
+  // Forensic test-only render trace instrumentation
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      (window as any).__GURUKUL_RENDER_TRACE__ = activeBlocks.map((b) => ({
+        chapterId,
+        blockId: b.id,
+        sourceType: b.sourceType,
+        normalizedType: b.normalizedType,
+        renderer: b.renderer,
+        title: b.title,
+        activeTab: activeTab,
+        data: b.data
+      }));
+    }
+  }, [activeBlocks, activeTab, chapterId]);
+
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#F8FAFC] text-slate-600">
@@ -190,12 +211,6 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
       </div>
     );
   }
-
-  const currentTabObj = tabs.find((t) => t.id === activeTab);
-  const activeTypes = currentTabObj ? currentTabObj.contentTypes : [];
-  const activeBlocks = blocks.filter(
-    (b) => activeTypes.includes(b.sourceType) || activeTypes.includes(b.normalizedType) || activeTypes.includes(b.renderer)
-  );
 
   const blockTitle = blocks.find((b) => b.data?.chapterTitle || b.data?.title)?.data?.chapterTitle || blocks.find((b) => b.data?.chapterTitle || b.data?.title)?.data?.title;
 
@@ -247,7 +262,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
           />
         </div>
 
-        {/* Chapter Title Banner (LINE 1: Retained Metadata | LINE 2: REAL CHAPTER NAME | LINE 3: Retained Canonical ID) */}
+        {/* Chapter Title Banner */}
         <header className="space-y-2 border-b border-slate-200/80 pb-6">
           <div className="text-xs font-black tracking-widest text-indigo-600 uppercase">
             {subject} • {unitTitle} • Chapter {chNumber}
