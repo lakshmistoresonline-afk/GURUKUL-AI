@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ReadingComfortControl, ReadingTheme, TextSize, LineSpacing } from '../../../../components/ReadingComfortControl';
+import OverviewComponent from '../../../../components/presentation/OverviewComponent';
+import NotesComponent from '../../../../components/presentation/NotesComponent';
 
 interface ChapterSourceData {
   chapterId: string;
@@ -99,7 +101,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#F8FAFC] text-slate-600">
         <div className="animate-spin w-8 h-8 border-2 border-indigo-600 border-t-transparent rounded-full mr-3" />
-        <span className="font-semibold">Loading Persistent Processed Content...</span>
+        <span className="font-semibold">Loading Educational Experience...</span>
       </div>
     );
   }
@@ -150,33 +152,19 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const lineSpacingClass =
     lineSpacing === 'comfortable' ? 'leading-loose' : lineSpacing === 'spacious' ? 'leading-[2.2]' : 'leading-relaxed';
 
-  // Render Section Content based on activeTab
+  // Render Section Content based on activeTab with Purpose-Built UI Components
   const renderActiveSectionContent = () => {
     if (!sourceData) return null;
     const { sections } = sourceData;
 
     switch (activeTab) {
       case 'overview':
-        if (!sections.overview) {
-          return (
-            <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
-                <span>Section Ready</span>
-              </div>
-              <h3 className="text-xl font-black text-slate-900 tracking-tight">Overview</h3>
-              <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
-                No overview content is available for this chapter yet. This section will automatically display the overview when the corresponding source data is added.
-              </p>
-            </div>
-          );
-        }
         return (
-          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
-            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Chapter Overview</h3>
-            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
-              {JSON.stringify(sections.overview, null, 2)}
-            </pre>
-          </div>
+          <OverviewComponent
+            data={sections.overview}
+            chapterTitle={displayTitle}
+            unitTitle={unitTitle}
+          />
         );
 
       case 'question_papers':
@@ -203,14 +191,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         );
 
       case 'notes':
-        return (
-          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
-            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Chapter Notes & Summary</h3>
-            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
-              {JSON.stringify(sections.notes, null, 2)}
-            </pre>
-          </div>
-        );
+        return <NotesComponent data={sections.notes} />;
 
       case 'master':
         return (
