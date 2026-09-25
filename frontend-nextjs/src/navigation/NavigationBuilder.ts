@@ -1,7 +1,3 @@
-import englishConfig from '../presentation-config/english.json';
-import mathConfig from '../presentation-config/mathematics.json';
-import genericConfig from '../presentation-config/generic.json';
-
 export interface ContentManifestItem {
   type: string;
   sourceType?: string;
@@ -21,24 +17,20 @@ export interface NavigationTab {
   contentTypes: string[];
 }
 
-const CONFIG_MAP: Record<string, any> = {
-  english: englishConfig,
-  mathematics: mathConfig,
-  generic: genericConfig,
-};
-
 export class NavigationBuilder {
   /**
-   * Dynamically constructs available navigation tabs for a chapter.
-   * Sorts tabs strictly by explicit presentation order (Quiz always last: order 60).
-   * ZERO EMPTY PLACEHOLDERS RULE:
-   * Only tabs that contain at least one available content type in the manifest are returned.
+   * Returns the exact 7 fixed dashboard sections:
+   * 1. Overview
+   * 2. Notes
+   * 3. Master
+   * 4. Flashcards
+   * 5. Mindmaps
+   * 6. Quiz
+   * 7. Question Papers
+   * (Overview and Question Papers show professional empty states when source data is absent).
    */
   static buildNavigation(subject: string, manifest: ContentManifest): NavigationTab[] {
-    const subjectKey = subject.toLowerCase();
-    const config = CONFIG_MAP[subjectKey] || CONFIG_MAP['generic'];
     const presentTypes = new Set<string>();
-
     for (const item of manifest.contentTypes) {
       presentTypes.add(item.type);
       if (item.sourceType) {
@@ -46,32 +38,14 @@ export class NavigationBuilder {
       }
     }
 
-    const activeTabs: NavigationTab[] = [];
-    const sortedGroups = [...config.groups].sort((a, b) => (a.order || 999) - (b.order || 999));
-
-    for (const group of sortedGroups) {
-      if (group.contentTypes.includes('*')) {
-        if (presentTypes.size > 0) {
-          activeTabs.push({
-            id: group.id,
-            label: group.label,
-            order: group.order || 999,
-            contentTypes: Array.from(presentTypes),
-          });
-        }
-      } else {
-        const matchingTypes = group.contentTypes.filter((t: string) => presentTypes.has(t));
-        if (matchingTypes.length > 0) {
-          activeTabs.push({
-            id: group.id,
-            label: group.label,
-            order: group.order || 999,
-            contentTypes: matchingTypes,
-          });
-        }
-      }
-    }
-
-    return activeTabs;
+    return [
+      { id: 'overview', label: 'Overview', order: 10, contentTypes: ['overview'] },
+      { id: 'notes', label: 'Notes', order: 20, contentTypes: ['notes', 'detailedBreakdown', 'importantTakeaways', 'keyTerminology'] },
+      { id: 'master', label: 'Master', order: 30, contentTypes: ['master', 'studyQuestions', 'model_question_bank', 'fill_in_the_blanks'] },
+      { id: 'flashcards', label: 'Flashcards', order: 40, contentTypes: ['flashcards', 'flashcard'] },
+      { id: 'mindmaps', label: 'Mindmaps', order: 50, contentTypes: ['mindmap', 'mindmaps'] },
+      { id: 'quiz', label: 'Quiz', order: 60, contentTypes: ['quiz', 'master_quiz'] },
+      { id: 'question_papers', label: 'Question Papers', order: 70, contentTypes: ['question_papers', 'sampleModelPaper'] },
+    ];
   }
 }

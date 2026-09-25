@@ -44,11 +44,10 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const [manifest, setManifest] = useState<ContentManifest | null>(null);
   const [blocks, setBlocks] = useState<ContentBlockData[]>([]);
   const [tabs, setTabs] = useState<NavigationTab[]>([]);
-  const [activeTab, setActiveTab] = useState<string>('');
+  const [activeTab, setActiveTab] = useState<string>('overview');
   const [loading, setLoading] = useState<boolean>(true);
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
 
-  // Reading Comfort Controls State (Default: Light Theme matching Dashboard)
   const [readingTheme, setReadingTheme] = useState<ReadingTheme>('light');
   const [textSize, setTextSize] = useState<TextSize>('medium');
   const [lineSpacing, setLineSpacing] = useState<LineSpacing>('normal');
@@ -59,31 +58,26 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         setLoading(true);
         setApiError(null);
 
-        // Standardize primary backend URL to port 8080 (FastAPI main.py port)
         const primaryUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
         const fallbackUrl = 'http://127.0.0.1:8080';
 
         let targetUrl = primaryUrl;
-
         let contentRes: Response | null = null;
         let chapterRes: Response | null = null;
         let manifestRes: Response | null = null;
-        let navRes: Response | null = null;
 
         try {
-          [chapterRes, manifestRes, navRes, contentRes] = await Promise.all([
+          [chapterRes, manifestRes, contentRes] = await Promise.all([
             fetch(`${targetUrl}/api/v1/chapters/${chapterId}?grade=${grade}&subject=${subject}`),
             fetch(`${targetUrl}/api/v1/chapters/${chapterId}/manifest?grade=${grade}&subject=${subject}`),
-            fetch(`${targetUrl}/api/v1/chapters/${chapterId}/navigation?grade=${grade}&subject=${subject}`),
             fetch(`${targetUrl}/api/v1/chapters/${chapterId}/content?grade=${grade}&subject=${subject}`),
           ]);
         } catch {
           targetUrl = fallbackUrl;
           try {
-            [chapterRes, manifestRes, navRes, contentRes] = await Promise.all([
+            [chapterRes, manifestRes, contentRes] = await Promise.all([
               fetch(`${targetUrl}/api/v1/chapters/${chapterId}?grade=${grade}&subject=${subject}`),
               fetch(`${targetUrl}/api/v1/chapters/${chapterId}/manifest?grade=${grade}&subject=${subject}`),
-              fetch(`${targetUrl}/api/v1/chapters/${chapterId}/navigation?grade=${grade}&subject=${subject}`),
               fetch(`${targetUrl}/api/v1/chapters/${chapterId}/content?grade=${grade}&subject=${subject}`),
             ]);
           } catch (retryErr: any) {
@@ -108,18 +102,9 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
           setManifest(manifestData);
           setBlocks(blocksData);
 
-          let computedTabs: NavigationTab[] = [];
-          if (navRes && navRes.ok) {
-            const navData = await navRes.json();
-            computedTabs = navData.tabs || [];
-          }
-
-          if (computedTabs.length === 0) {
-            computedTabs = NavigationBuilder.buildNavigation(subject, manifestData);
-          }
-
+          const computedTabs = NavigationBuilder.buildNavigation(subject, manifestData);
           setTabs(computedTabs);
-          if (computedTabs.length > 0) {
+          if (computedTabs.length > 0 && !computedTabs.some(t => t.id === activeTab)) {
             setActiveTab(computedTabs[0].id);
           }
         } else {
@@ -146,24 +131,35 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const currentTabObj = tabs.find((t) => t.id === activeTab);
   const activeTypes = currentTabObj ? currentTabObj.contentTypes : [];
   const activeBlocks = blocks.filter(
-    (b) => activeTypes.includes(b.sourceType) || activeTypes.includes(b.normalizedType) || activeTypes.includes(b.renderer)
+    (b) => activeTypes.includes(b.sourceType) || activeTypes.includes(b.normalizedType) || activeTypes.includes(b.renderer) || (activeTab === 'overview' && b.normalizedType === 'overview')
   );
 
-  // Forensic test-only render trace instrumentation
+  // Forensic test-only render trace instrumentation (accumulating)
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      (window as any).__GURUKUL_RENDER_TRACE__ = activeBlocks.map((b) => ({
-        chapterId,
-        blockId: b.id,
-        sourceType: b.sourceType,
-        normalizedType: b.normalizedType,
-        renderer: b.renderer,
-        title: b.title,
-        activeTab: activeTab,
-        data: b.data
-      }));
+      if (!(window as any).__GURUKUL_RENDER_TRACE__) {
+        (window as any).__GURUKUL_RENDER_TRACE__ = [];
+      }
+      const existing = (window as any).__GURUKUL_RENDER_TRACE__ as any[];
+      activeBlocks.forEach((b, seq) => {
+        const entry = {
+          chapterId,
+          blockId: b.id,
+          sourceType: b.sourceType,
+          normalizedType: b.normalizedType,
+          renderer: b.renderer,
+          title: b.title,
+          activeTab: activeTab,
+          renderSequence: seq,
+          dataHash: b.data ? JSON.stringify(b.data).length : 0
+        };
+        if (!existing.some((ex) => ex.blockId === entry.blockId && ex.activeTab === entry.activeTab)) {
+          existing.push(entry);
+        }
+      });
     }
-  }, [activeBlocks, activeTab, chapterId]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeBlocks, chapterId]);
 
   if (loading) {
     return (
@@ -174,7 +170,6 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     );
   }
 
-  // Explicit API Error Diagnostic Card
   if (apiError) {
     return (
       <div className="min-h-screen bg-[#F8FAFC] text-slate-900 p-6 md:p-12 max-w-4xl mx-auto flex flex-col justify-center items-center text-center space-y-6">
@@ -188,22 +183,14 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
           <p className="text-slate-600 text-sm leading-relaxed">
             The frontend could not reach the FastAPI local engine bridge.
           </p>
-
           <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl text-left space-y-2 font-mono text-xs text-red-600">
             <div><strong className="text-slate-500">Endpoint:</strong> {apiError.endpoint}</div>
             {apiError.status && <div><strong className="text-slate-500">Status:</strong> {apiError.status}</div>}
             <div><strong className="text-slate-500">Error:</strong> {apiError.error}</div>
           </div>
-
-          <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-2xl text-left text-xs text-indigo-800 space-y-1">
-            <div className="font-bold text-indigo-900">Troubleshooting Steps:</div>
-            <div>1. Ensure the Python FastAPI server is running: <code className="bg-white px-1.5 py-0.5 rounded text-indigo-700 font-mono border border-indigo-200">python backend/src/main.py</code></div>
-            <div>2. Verify the server is listening on port <code className="bg-white px-1.5 py-0.5 rounded text-indigo-700 font-mono border border-indigo-200">http://localhost:8080</code>.</div>
-          </div>
-
           <button
             onClick={() => window.location.reload()}
-            className="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-2xl shadow-lg shadow-indigo-600/20 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+            className="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-2xl shadow-lg shadow-indigo-600/20 transition-all"
           >
             Retry Connection ↻
           </button>
@@ -218,12 +205,11 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     chapterDetails?.chapterTitle ||
     chapterDetails?.title ||
     blockTitle ||
-    (subject === 'Hindi' ? 'किरन' : subject === 'Maths' ? 'Travelling, Now and Then' : subject === 'Science' ? 'Water — The Essence of Life' : 'Papa’s Spectacles');
+    'Chapter Information Unavailable';
 
-  const unitTitle = chapterDetails?.unitTitle || 'Let’s Have Fun';
+  const unitTitle = chapterDetails?.unitTitle || 'Curriculum Unit';
   const chNumber = chapterDetails?.chapterNumber || 1;
 
-  // Compute Reading Comfort Styles (Default: Option C Soft Blue / Cloud White Light Theme)
   const themeBgClass =
     readingTheme === 'dark'
       ? 'bg-slate-950 text-slate-100'
@@ -240,7 +226,6 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   return (
     <div className={`min-h-screen ${themeBgClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white`}>
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-8 md:py-12 space-y-8">
-        {/* Top Header Bar with Breadcrumb & Reading Comfort Control */}
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200/80 pb-6">
           <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider opacity-70">
             <Link href="/" className="hover:text-indigo-600 transition-colors">
@@ -262,7 +247,6 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
           />
         </div>
 
-        {/* Chapter Title Banner */}
         <header className="space-y-2 border-b border-slate-200/80 pb-6">
           <div className="text-xs font-black tracking-widest text-indigo-600 uppercase">
             {subject} • {unitTitle} • Chapter {chNumber}
@@ -275,7 +259,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
           </div>
         </header>
 
-        {/* Unified 5-Stage Navigation Tabs Bar */}
+        {/* Exactly 7 Fixed Tabs Navigation Bar */}
         {tabs.length > 0 && (
           <nav className="flex flex-wrap gap-2 border-b border-slate-200/80 pb-4" aria-label="Chapter Primary Navigation">
             {tabs.map((tab) => {
@@ -284,7 +268,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-6 py-2.5 rounded-2xl text-sm font-extrabold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${
+                  className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${
                     isActive
                       ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 border border-indigo-500'
                       : 'bg-white text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-slate-200'
@@ -292,28 +276,38 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
                   aria-selected={isActive}
                   role="tab"
                 >
-                  {tab.label || tab.id}
+                  {tab.label}
                 </button>
               );
             })}
           </nav>
         )}
 
-        {/* Active Stage Content Blocks Area with Reading Width Constraint */}
         <main className={`space-y-8 min-h-[400px] ${textSizeClass} ${lineSpacingClass}`}>
           {activeBlocks.length > 0 ? (
             activeBlocks.map((block) => {
               const RendererComponent = RendererRegistry.getRenderer(block.renderer);
               return (
-                <section key={block.id} className="space-y-4">
+                <section key={block.id} data-gurukul-record-id={block.id} className="space-y-4">
                   <RendererComponent data={block.data} title={block.title} />
                 </section>
               );
             })
           ) : (
-            <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 space-y-2 shadow-sm">
-              <p className="text-base font-semibold text-slate-700">No content available for this section.</p>
-              <p className="text-xs text-slate-500">This learning stage contains no items for this chapter.</p>
+            <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
+                <span>Section Ready</span>
+              </div>
+              <h3 className="text-xl font-black text-slate-900 tracking-tight">
+                {activeTab === 'overview' ? 'Overview' : activeTab === 'question_papers' ? 'Question Papers' : 'Section Content'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
+                {activeTab === 'overview'
+                  ? 'No overview content is available for this chapter yet. This section will automatically display the overview when the corresponding source data is added.'
+                  : activeTab === 'question_papers'
+                  ? 'No question papers are available for this chapter yet. Question papers will appear here when the corresponding source data is added.'
+                  : 'No items are available for this section yet.'}
+              </p>
             </div>
           )}
         </main>
