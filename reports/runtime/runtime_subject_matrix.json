@@ -1,9 +1,22 @@
 {
-  "subjects": [
-    "English",
-    "Hindi",
-    "Maths",
-    "Science"
-  ],
-  "status": "PASS"
+  "English": {
+    "chapters": 10,
+    "domRecords": 0,
+    "status": "PASS"
+  },
+  "Hindi": {
+    "chapters": 12,
+    "domRecords": 0,
+    "status": "PASS"
+  },
+  "Maths": {
+    "chapters": 15,
+    "domRecords": 0,
+    "status": "PASS"
+  },
+  "Science": {
+    "chapters": 10,
+    "domRecords": 0,
+    "status": "PASS"
+  }
 }
