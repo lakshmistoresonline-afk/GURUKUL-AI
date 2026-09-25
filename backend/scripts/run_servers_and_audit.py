@@ -5,11 +5,11 @@ import asyncio
 import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from class5_final_forensic_runtime_auditor import audit_c01_deep_trace
+from class5_final_forensic_runtime_auditor import run_c01_semantic_audit
 
 async def main():
     print("Starting FastAPI backend on port 8080...")
-    p1 = subprocess.Popen([sys.executable, "-m", "uvicorn", "src.main:app", "--host", "127.0.0.1", "--port", "8080"], cwd=r"D:\GURUKUL\backend")
+    p1 = subprocess.Popen([sys.executable, "-m", "uvicorn", "src.main:app", '--host', '127.0.0.1', '--port', '8080'], cwd=r"D:\GURUKUL\backend")
 
     print("Starting Next.js frontend on port 3000...")
     p2 = subprocess.Popen(["npm.cmd", "run", "dev"], cwd=r"D:\GURUKUL\frontend-nextjs")
@@ -18,7 +18,7 @@ async def main():
     await asyncio.sleep(10)
 
     try:
-        await audit_c01_deep_trace()
+        await run_c01_semantic_audit()
     finally:
         print("Terminating servers...")
         p1.terminate()
