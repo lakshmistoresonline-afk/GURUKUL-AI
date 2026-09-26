@@ -88,7 +88,10 @@ class Class5ScienceChapterResolver:
                 found = True
                 break
 
+        if not found:
+            raise ChapterNotFoundError(f"Science chapter {chapter_id} not found in Class 5 source files.")
+
         if not resolved_bundle["chapterTitle"]:
-            resolved_bundle["chapterTitle"] = f"Science Chapter {target_c_num}"
+            raise ChapterNotFoundError(f"Science chapter {chapter_id} title could not be resolved from authoritative source.")
 
         return resolved_bundle
