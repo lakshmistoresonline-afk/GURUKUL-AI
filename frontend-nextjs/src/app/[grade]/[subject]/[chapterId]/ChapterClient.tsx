@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { ReadingComfortControl, ReadingTheme, TextSize, LineSpacing } from '../../../../components/ReadingComfortControl';
 import OverviewComponent from '../../../../components/presentation/OverviewComponent';
 import NotesComponent from '../../../../components/presentation/NotesComponent';
+import MasterComponent from '../../../../components/presentation/MasterComponent';
+import MindmapComponent from '../../../../components/presentation/MindmapComponent';
+import QuestionPapersComponent from '../../../../components/presentation/QuestionPapersComponent';
 
 interface ChapterSourceData {
   chapterId: string;
@@ -168,40 +171,13 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         );
 
       case 'question_papers':
-        if (!sections.question_papers) {
-          return (
-            <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold uppercase tracking-wider">
-                <span>Section Ready</span>
-              </div>
-              <h3 className="text-xl font-black text-slate-900 tracking-tight">Question Papers</h3>
-              <p className="text-slate-600 text-sm leading-relaxed max-w-md mx-auto">
-                No question papers are available for this chapter yet. Question papers will appear here when the corresponding source data is added.
-              </p>
-            </div>
-          );
-        }
-        return (
-          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
-            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Question Papers</h3>
-            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
-              {JSON.stringify(sections.question_papers, null, 2)}
-            </pre>
-          </div>
-        );
+        return <QuestionPapersComponent data={sections.question_papers} />;
 
       case 'notes':
         return <NotesComponent data={sections.notes} />;
 
       case 'master':
-        return (
-          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
-            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Master Content & Practice</h3>
-            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
-              {JSON.stringify(sections.master, null, 2)}
-            </pre>
-          </div>
-        );
+        return <MasterComponent data={sections.master} />;
 
       case 'flashcards':
         return (
@@ -226,14 +202,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         );
 
       case 'mindmaps':
-        return (
-          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
-            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Concept Mindmap</h3>
-            <pre className="whitespace-pre-wrap font-sans text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-2xl border border-slate-100 overflow-x-auto">
-              {JSON.stringify(sections.mindmaps, null, 2)}
-            </pre>
-          </div>
-        );
+        return <MindmapComponent data={sections.mindmaps} />;
 
       case 'quiz':
         return (
