@@ -8,6 +8,8 @@ import NotesComponent from '../../../../components/presentation/NotesComponent';
 import MasterComponent from '../../../../components/presentation/MasterComponent';
 import MindmapComponent from '../../../../components/presentation/MindmapComponent';
 import QuestionPapersComponent from '../../../../components/presentation/QuestionPapersComponent';
+import QuizComponent from '../../../../components/presentation/QuizComponent';
+import FlashcardsComponent from '../../../../components/presentation/FlashcardsComponent';
 
 interface ChapterSourceData {
   chapterId: string;
@@ -174,63 +176,19 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         return <QuestionPapersComponent data={sections.question_papers} />;
 
       case 'notes':
-        return <NotesComponent data={sections.notes} />;
+        return <NotesComponent data={sections.notes} subject={subject} />;
 
       case 'master':
-        return <MasterComponent data={sections.master} />;
+        return <MasterComponent data={sections.master} subject={subject} />;
 
       case 'flashcards':
-        return (
-          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
-            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">
-              Flashcards Deck ({Array.isArray(sections.flashcards) ? sections.flashcards.length : 0} Cards)
-            </h3>
-            {Array.isArray(sections.flashcards) && sections.flashcards.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {sections.flashcards.map((fc: any, idx: number) => (
-                  <div key={idx} className="p-5 bg-indigo-50/50 border border-indigo-100 rounded-2xl space-y-2">
-                    <div className="text-xs font-bold text-indigo-600 uppercase">Card #{idx + 1}</div>
-                    <div className="text-sm font-bold text-slate-900">{fc.front || fc.term || fc.question || fc.front_content || JSON.stringify(fc)}</div>
-                    <div className="text-xs text-slate-600 border-t border-indigo-100/60 pt-2">{fc.back || fc.definition || fc.answer || fc.back_content || ''}</div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-sm text-slate-500">No flashcards available in source.</p>
-            )}
-          </div>
-        );
+        return <FlashcardsComponent flashcards={sections.flashcards} />;
 
       case 'mindmaps':
         return <MindmapComponent data={sections.mindmaps} />;
 
       case 'quiz':
-        return (
-          <div className="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
-            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">
-              Master Quiz Assessment ({Array.isArray(sections.quiz) ? sections.quiz.length : 0} Questions)
-            </h3>
-            {Array.isArray(sections.quiz) && sections.quiz.length > 0 ? (
-              <div className="space-y-4">
-                {sections.quiz.map((q: any, idx: number) => (
-                  <div key={idx} className="p-5 bg-slate-50 border border-slate-200 rounded-2xl space-y-2">
-                    <div className="text-xs font-bold text-slate-500">Question #{idx + 1}</div>
-                    <div className="text-sm font-bold text-slate-900">{q.question || JSON.stringify(q)}</div>
-                    {Array.isArray(q.options) && (
-                      <ul className="list-disc list-inside text-xs text-slate-700 space-y-1 pt-1">
-                        {q.options.map((opt: string, oIdx: number) => (
-                          <li key={oIdx}>{opt}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-sm text-slate-500">No quiz items available in source.</p>
-            )}
-          </div>
-        );
+        return <QuizComponent quiz={sections.quiz} />;
 
       default:
         return <p className="text-sm text-slate-500">Select a section above.</p>;

@@ -67,15 +67,15 @@ class Class5ScienceChapterResolver:
         mm_data = files.get("Mindmaps.json", {})
         for idx, ch in enumerate(mm_data.get("chapters", [])):
             c = ch.get("chapter_number", 1) or (idx + 1)
-            if f"C{c:02d}" in chapter_id or c == target_c_num:
-                resolved_bundle["mindmap"] = ch.get("mindmap", {})
+            if c == target_c_num or f"C{c:02d}" in chapter_id:
+                resolved_bundle["mindmap"] = ch
                 found = True
                 break
 
         qz_data = files.get("Quiz.json", {})
         for idx, ch in enumerate(qz_data.get("chapters", [])):
             c = ch.get("chapter_number", 1) or (idx + 1)
-            if f"C{c:02d}" in chapter_id or c == target_c_num:
+            if c == target_c_num or f"C{c:02d}" in chapter_id:
                 resolved_bundle["quiz"] = ch.get("quizzes", []) or ch.get("questions", [])
                 found = True
                 break
@@ -83,7 +83,7 @@ class Class5ScienceChapterResolver:
         qp_data = files.get("Question Papers.json", {})
         for idx, ch in enumerate(qp_data.get("chapters", [])):
             c = ch.get("chapter_number", 1) or (idx + 1)
-            if f"C{c:02d}" in chapter_id or c == target_c_num:
+            if c == target_c_num or f"C{c:02d}" in chapter_id:
                 resolved_bundle["question_papers"] = ch
                 found = True
                 break

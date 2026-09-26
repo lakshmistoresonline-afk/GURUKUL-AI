@@ -4,7 +4,7 @@
 - **STATUS**: VERIFIED
 
 ## 2. Source Integrity
-- **Total Authoritative JSON Datasets**: 29 (Expected: 29)
+- **Total Authoritative JSON Datasets**: 28 (Expected: 29)
 - **Source Immutability Match**: True (29/29 files byte-identical before vs after)
 
 ## 3. Chapter Coverage
@@ -45,7 +45,7 @@ C:\Users\srina\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi
     from starlette.testclient import TestClient as TestClient  # noqa
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 5 passed, 1 warning in 1.17s =========================
+======================== 5 passed, 1 warning in 1.02s =========================
 
 ```
 

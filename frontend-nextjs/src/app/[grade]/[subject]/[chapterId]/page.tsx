@@ -1,25 +1,32 @@
 import React from 'react';
 import ChapterClient from './ChapterClient';
+import fs from 'fs';
+import path from 'path';
 
 export function generateStaticParams() {
   const params: { grade: string; subject: string; chapterId: string }[] = [];
+  const processedRoot = path.join(process.cwd(), '..', 'ProcessedContent', 'Class5');
 
-  const subjects = ['English', 'Hindi', 'Maths', 'Science'];
-  const counts = { 'English': 10, 'Hindi': 12, 'Maths': 15, 'Science': 10 };
-  const prefixes = { 'English': 'ENG', 'Hindi': 'HIN', 'Maths': 'MAT', 'Science': 'SCI' };
-
-  for (const subject of subjects) {
-    const total = counts[subject as keyof typeof counts];
-    const prefix = prefixes[subject as keyof typeof prefixes];
-    for (let i = 1; i <= total; i++) {
-      const uNum = Math.floor((i - 1) / 3) + 1;
-      const chId = `G5-${prefix}-U0${uNum}-C${i < 10 ? '0' + i : i}`;
-      params.push({
-        grade: '5',
-        subject,
-        chapterId: chId
-      });
+  if (fs.existsSync(processedRoot)) {
+    const subjects = fs.readdirSync(processedRoot);
+    for (const subject of subjects) {
+      const subjDir = path.join(processedRoot, subject);
+      if (fs.statSync(subjDir).isDirectory()) {
+        const chapters = fs.readdirSync(subjDir);
+        for (const chapterId of chapters) {
+          params.push({
+            grade: '5',
+            subject,
+            chapterId
+          });
+        }
+      }
     }
+  }
+
+  // Fallback if processedRoot is not found at build time
+  if (params.length === 0) {
+    params.push({ grade: '5', subject: 'English', chapterId: 'G5-ENG-U01-C01' });
   }
 
   return params;

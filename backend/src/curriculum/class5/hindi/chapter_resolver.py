@@ -73,7 +73,7 @@ class Class5HindiChapterResolver:
         for idx, ch in enumerate(mm_data.get("chapters", [])):
             c = ch.get("chapter_number") or ch.get("chapterNumber") or (idx + 1)
             if c == target_c_num or f"C{c:02d}" in chapter_id:
-                resolved_bundle["mindmap"] = ch.get("mindmap", {})
+                resolved_bundle["mindmap"] = ch
                 found = True
                 break
 
