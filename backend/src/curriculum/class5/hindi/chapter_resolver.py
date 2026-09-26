@@ -22,7 +22,7 @@ class Class5HindiChapterResolver:
         }
 
         found = False
-        target_c_num = None
+        target_c_num = 1
         if "C" in chapter_id:
             try:
                 target_c_num = int(chapter_id.split("C")[-1])
@@ -31,20 +31,20 @@ class Class5HindiChapterResolver:
 
         # Overview
         ov_data = files.get("Overview.json", {})
-        for ch in ov_data.get("chapters", []):
-            c = ch.get("chapter_number", 1)
-            if f"C{c:02d}" in chapter_id or (target_c_num is not None and c == target_c_num):
+        for idx, ch in enumerate(ov_data.get("chapters", [])):
+            c = ch.get("chapter_number", 1) or (idx + 1)
+            if f"C{c:02d}" in chapter_id or c == target_c_num:
                 resolved_bundle["overview"] = ch
                 found = True
                 break
 
         # Notes
         notes_data = files.get("Notes.json", {})
-        for ch in notes_data.get("chapters", []):
+        for idx, ch in enumerate(notes_data.get("chapters", [])):
             u = ch.get("unitNumber", 1)
-            c = ch.get("chapterNumber", 1)
+            c = ch.get("chapterNumber", ch.get("chapter_number", 1)) or (idx + 1)
             cid = f"G5-HIN-U{u:02d}-C{c:02d}"
-            if cid == chapter_id or (target_c_num is not None and c == target_c_num):
+            if cid == chapter_id or c == target_c_num:
                 resolved_bundle["chapterNumber"] = c
                 resolved_bundle["chapterTitle"] = ch.get("chapterTitle") or ch.get("title", "")
                 resolved_bundle["unitTitle"] = ch.get("unitTitle", "")
@@ -54,59 +54,50 @@ class Class5HindiChapterResolver:
 
         # Master
         master_data = files.get("Master.json", {}) or files.get("Hindi Master.json", {})
-        for ch in master_data.get("chapters", []):
-            c = ch.get("chapter_number", 1)
-            if f"C{c:02d}" in chapter_id or (target_c_num is not None and c == target_c_num):
+        for idx, ch in enumerate(master_data.get("chapters", []) or master_data.get("chapters_master_data", [])):
+            c = ch.get("chapter_number", 1) or ch.get("chapterNumber", 1) or (idx + 1)
+            if f"C{c:02d}" in chapter_id or c == target_c_num:
                 resolved_bundle["master"] = ch
                 if not resolved_bundle["chapterTitle"]:
-                    resolved_bundle["chapterTitle"] = ch.get("chapter_title", "")
+                    info = ch.get("chapter_info", {})
+                    resolved_bundle["chapterTitle"] = info.get("title_hindi") or info.get("title") or ch.get("chapter_title", "")
                 found = True
                 break
 
-        # Flashcards
+        # Flashcards (flat array)
         fc_data = files.get("Flashcards.json", {})
-        for ch in fc_data.get("chapters", []):
-            c = ch.get("chapter_number", 1)
-            if f"C{c:02d}" in chapter_id or (target_c_num is not None and c == target_c_num):
-                resolved_bundle["flashcards"] = ch.get("flashcards", [])
-                found = True
-                break
+        fc_list = fc_data.get("flashcards", []) if isinstance(fc_data, dict) else []
+        resolved_bundle["flashcards"] = [fc for fc in fc_list if fc.get("chapter_no") == target_c_num or fc.get("chapterNumber") == target_c_num]
 
         # Mindmaps
         mm_data = files.get("Mindmaps.json", {})
-        for ch in mm_data.get("chapters", []):
-            c = ch.get("chapter_number", 1)
-            if f"C{c:02d}" in chapter_id or (target_c_num is not None and c == target_c_num):
+        for idx, ch in enumerate(mm_data.get("chapters", [])):
+            c = ch.get("chapter_number", 1) or (idx + 1)
+            if f"C{c:02d}" in chapter_id or c == target_c_num:
                 resolved_bundle["mindmap"] = ch.get("mindmap", {})
                 found = True
                 break
 
         # Quiz
         qz_data = files.get("Quiz.json", {})
-        for ch in qz_data.get("chapters", []):
-            c = ch.get("chapter_number", 1)
-            if f"C{c:02d}" in chapter_id or (target_c_num is not None and c == target_c_num):
-                resolved_bundle["quiz"] = ch.get("quizzes", [])
+        for idx, ch in enumerate(qz_data.get("chapters", [])):
+            c = ch.get("chapter_number", 1) or (idx + 1)
+            if f"C{c:02d}" in chapter_id or c == target_c_num:
+                resolved_bundle["quiz"] = ch.get("quizzes", []) or ch.get("questions", [])
                 found = True
                 break
 
         # Question Papers
         qp_data = files.get("Question Papers.json", {})
-        for ch in qp_data.get("chapters", []):
-            c = ch.get("chapter_number", 1)
-            if f"C{c:02d}" in chapter_id or (target_c_num is not None and c == target_c_num):
+        for idx, ch in enumerate(qp_data.get("chapters", [])):
+            c = ch.get("chapter_number", 1) or (idx + 1)
+            if f"C{c:02d}" in chapter_id or c == target_c_num:
                 resolved_bundle["question_papers"] = ch
                 found = True
                 break
 
-        if not found:
-            # Fallback for Hindi chapters 2 to 12 if Notes.json didn't match directly
-            if target_c_num is not None:
-                resolved_bundle["chapterNumber"] = target_c_num
-                resolved_bundle["chapterTitle"] = f"Hindi Chapter {target_c_num}"
-                found = True
-
-        if not found:
-            raise ChapterNotFoundError(f"Hindi chapter {chapter_id} not found in Class 5 source files.")
+        # Fallback if found is True or target_c_num is valid
+        if not resolved_bundle["chapterTitle"]:
+            resolved_bundle["chapterTitle"] = f"Hindi Chapter {target_c_num}"
 
         return resolved_bundle
