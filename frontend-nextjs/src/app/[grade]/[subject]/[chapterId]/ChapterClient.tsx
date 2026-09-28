@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ReadingComfortControl, ReadingTheme, TextSize, LineSpacing } from '../../../../components/ReadingComfortControl';
+import { ReadingComfortControl, ReadingTheme, TextSize, LineSpacing, FontStyle } from '../../../../components/ReadingComfortControl';
 import AudioReaderToolbar from '../../../../components/AudioReaderToolbar';
 import OverviewComponent from '../../../../components/presentation/OverviewComponent';
 import NotesComponent from '../../../../components/presentation/NotesComponent';
@@ -80,6 +80,12 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const [readingTheme, setReadingTheme] = useState<ReadingTheme>('light');
   const [textSize, setTextSize] = useState<TextSize>('medium');
   const [lineSpacing, setLineSpacing] = useState<LineSpacing>('normal');
+  const [fontStyle, setFontStyle] = useState<FontStyle>('sans');
+
+  // Scroll to top on chapter, subject, or activeTab change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [chapterId, grade, subject, activeTab]);
 
   useEffect(() => {
     async function loadChapterSource() {
@@ -145,6 +151,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     setCompletedTabs(updated);
     localStorage.setItem(`gurukul_progress_${chapterId}`, JSON.stringify(updated));
     setIsMobileTocOpen(false);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   if (loading) {
@@ -189,18 +196,18 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const unitTitle = sourceData?.unitTitle || 'Curriculum Unit';
   const chNumber = sourceData?.chapterNumber || 1;
 
-  const themeBgClass =
-    readingTheme === 'dark'
-      ? 'bg-slate-950 text-slate-100'
-      : readingTheme === 'warm'
-      ? 'bg-[#FFFBEB] text-[#1C1917]'
-      : 'bg-[#F8FAFC] text-[#0F172A]';
+  let themeBgClass = 'bg-[#F8FAFC] text-[#0F172A]';
+  if (readingTheme === 'dark') themeBgClass = 'bg-slate-950 text-slate-100';
+  else if (readingTheme === 'warm') themeBgClass = 'bg-[#FFFBEB] text-[#1C1917]';
+  else if (readingTheme === 'storybook') themeBgClass = 'bg-[#FAF7F2] text-[#2C221E]';
 
   const textSizeClass =
     textSize === 'large' ? 'text-lg' : textSize === 'xlarge' ? 'text-xl' : 'text-base';
 
   const lineSpacingClass =
     lineSpacing === 'comfortable' ? 'leading-loose' : lineSpacing === 'spacious' ? 'leading-[2.2]' : 'leading-relaxed';
+
+  const fontClass = fontStyle === 'dyslexic' ? 'font-sans tracking-wide' : fontStyle === 'serif' ? 'font-serif' : 'font-sans';
 
   // Extract text to read from active section data for TTS
   const getActiveTextToRead = () => {
@@ -282,7 +289,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   };
 
   return (
-    <div className={`min-h-screen ${themeBgClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white`}>
+    <div className={`min-h-screen ${themeBgClass} ${fontClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white`}>
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-10 space-y-8">
         {/* Top Glassmorphic Navigation Bar */}
         {!isZenMode && (
@@ -315,9 +322,11 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
                 theme={readingTheme}
                 textSize={textSize}
                 lineSpacing={lineSpacing}
+                fontStyle={fontStyle}
                 onThemeChange={setReadingTheme}
                 onTextSizeChange={setTextSize}
                 onLineSpacingChange={setLineSpacing}
+                onFontStyleChange={setFontStyle}
               />
             </div>
           </div>
