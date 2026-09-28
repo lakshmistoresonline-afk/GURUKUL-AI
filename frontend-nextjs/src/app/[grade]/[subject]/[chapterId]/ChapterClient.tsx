@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ReadingComfortControl, ReadingTheme, TextSize, LineSpacing } from '../../../../components/ReadingComfortControl';
+import AudioReaderToolbar from '../../../../components/AudioReaderToolbar';
 import OverviewComponent from '../../../../components/presentation/OverviewComponent';
 import NotesComponent from '../../../../components/presentation/NotesComponent';
 import MasterComponent from '../../../../components/presentation/MasterComponent';
@@ -72,7 +73,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const [activeTab, setActiveTab] = useState<string>('overview');
   const [loading, setLoading] = useState<boolean>(true);
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
-  const [completedTabs, setCompletedTabs] = useState<Record<string, boolean>>({});
+  const [completedTabs, setCompletedTabs] = useState<Record<string, boolean>>({ overview: true });
   const [isMobileTocOpen, setIsMobileTocOpen] = useState<boolean>(false);
   const [isZenMode, setIsZenMode] = useState<boolean>(false);
 
@@ -131,6 +132,10 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
       try {
         setCompletedTabs(JSON.parse(saved));
       } catch {}
+    } else {
+      const initial = { overview: true };
+      setCompletedTabs(initial);
+      localStorage.setItem(`gurukul_progress_${chapterId}`, JSON.stringify(initial));
     }
   }, [grade, subject, chapterId]);
 
@@ -197,6 +202,18 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const lineSpacingClass =
     lineSpacing === 'comfortable' ? 'leading-loose' : lineSpacing === 'spacious' ? 'leading-[2.2]' : 'leading-relaxed';
 
+  // Extract text to read from active section data for TTS
+  const getActiveTextToRead = () => {
+    if (!sourceData) return '';
+    const { sections } = sourceData;
+    let targetData = null;
+    if (activeTab === 'overview') targetData = sections.overview;
+    if (activeTab === 'notes') targetData = sections.notes;
+    if (activeTab === 'master') targetData = sections.master;
+    if (!targetData) return '';
+    return JSON.stringify(targetData).replace(/[{}[\]",:]/g, ' ');
+  };
+
   // Render Section Content based on activeTab with Purpose-Built UI Components
   const renderActiveSectionContent = () => {
     if (!sourceData) return null;
@@ -209,6 +226,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
             data={sections.overview}
             chapterTitle={displayTitle}
             unitTitle={unitTitle}
+            subject={subject}
           />
         );
 
@@ -263,15 +281,12 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     }
   };
 
-  const completedCount = Object.values(completedTabs).filter(Boolean).length;
-  const progressPercent = Math.round((completedCount / FIXED_TABS.length) * 100);
-
   return (
     <div className={`min-h-screen ${themeBgClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white`}>
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-10 space-y-8">
         {/* Top Glassmorphic Navigation Bar */}
         {!isZenMode && (
-          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200/80 pb-6 backdrop-blur-md">
+          <div className="relative z-50 flex flex-wrap items-center justify-between gap-4 border-b border-slate-200/80 pb-6 backdrop-blur-md">
             <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider opacity-70">
               <Link href="/" className="hover:text-indigo-600 transition-colors">
                 Dashboard
@@ -296,12 +311,6 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
               >
                 ☰ Navigation
               </button>
-              <div className="hidden sm:flex items-center gap-2 text-xs font-extrabold text-slate-600 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-xs">
-                <span>Chapter Progress: {progressPercent}%</span>
-                <div className="w-16 h-2 bg-slate-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-indigo-600 transition-all duration-500" style={{ width: `${progressPercent}%` }} />
-                </div>
-              </div>
               <ReadingComfortControl
                 theme={readingTheme}
                 textSize={textSize}
@@ -338,6 +347,9 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
             </div>
           </header>
         )}
+
+        {/* Global Audio Assistant Toolbar (Placed cleanly below chapter header, above grid) */}
+        <AudioReaderToolbar textToRead={getActiveTextToRead()} subject={subject} />
 
         {/* Master-Detail Split Workspace */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative">

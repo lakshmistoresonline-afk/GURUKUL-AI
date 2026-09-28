@@ -118,6 +118,7 @@ export default function Dashboard() {
   const [xp, setXp] = useState<number>(1250);
   const [isCommandOpen, setIsCommandOpen] = useState<boolean>(false);
   const [isLockerOpen, setIsLockerOpen] = useState<boolean>(false);
+  const [viewMode, setViewMode] = useState<'grid' | 'constellation'>('grid');
 
   useEffect(() => {
     const savedStreak = localStorage.getItem('gurukul_streak');
@@ -254,6 +255,15 @@ export default function Dashboard() {
 
   const rank = getRankInfo(xp);
 
+  // Subject atmospheric gradient mapping
+  const getSubjectAtmosphere = (sub: string) => {
+    if (sub.includes('English')) return 'from-indigo-500/10 via-slate-900 to-indigo-950 text-indigo-200 border-indigo-500/30';
+    if (sub.includes('Hindi')) return 'from-amber-500/10 via-slate-900 to-amber-950 text-amber-200 border-amber-500/30';
+    if (sub.includes('Maths')) return 'from-emerald-500/10 via-slate-900 to-emerald-950 text-emerald-200 border-emerald-500/30';
+    if (sub.includes('Science')) return 'from-cyan-500/10 via-slate-900 to-cyan-950 text-cyan-200 border-cyan-500/30';
+    return 'from-teal-500/10 via-slate-900 to-teal-950 text-teal-200 border-teal-500/30';
+  };
+
   // Get first chapter for Continue Learning hero card
   const firstChapter = subjectData?.units?.[0]?.chapters?.[0];
 
@@ -357,28 +367,45 @@ export default function Dashboard() {
           </section>
         )}
 
-        {/* 2. YOUR SUBJECTS SELECTOR */}
+        {/* 2. YOUR SUBJECTS SELECTOR & VIEW MODE TOGGLE */}
         <section className="space-y-4 bg-white/80 backdrop-blur-2xl p-6 md:p-8 rounded-3xl border border-slate-200/80 shadow-xl shadow-slate-900/5">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-4">
             <h2 className="text-xs font-black tracking-widest text-slate-500 uppercase">
-              YOUR SUBJECTS
+              YOUR SUBJECTS & ATMOSPHERE
             </h2>
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-bold text-slate-400">Grade:</span>
-              <div className="flex gap-1">
-                {classes.map((c) => (
-                  <button
-                    key={`class-select-${c.grade}`}
-                    onClick={() => handleGradeChange(c.grade)}
-                    className={`px-3 py-1 rounded-xl text-xs font-extrabold transition-all ${
-                      selectedGrade === c.grade
-                        ? 'bg-slate-900 text-white shadow-xs'
-                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                    }`}
-                  >
-                    Class {c.grade}
-                  </button>
-                ))}
+            <div className="flex items-center gap-4">
+              <div className="flex bg-slate-100 p-1 rounded-2xl border border-slate-200 text-xs font-bold">
+                <button
+                  onClick={() => setViewMode('grid')}
+                  className={`px-3 py-1.5 rounded-xl transition-all ${viewMode === 'grid' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-500 hover:text-slate-900'}`}
+                >
+                  Grid View
+                </button>
+                <button
+                  onClick={() => setViewMode('constellation')}
+                  className={`px-3 py-1.5 rounded-xl transition-all ${viewMode === 'constellation' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-500 hover:text-slate-900'}`}
+                >
+                  ✨ Constellation Map
+                </button>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-slate-400">Grade:</span>
+                <div className="flex gap-1">
+                  {classes.map((c) => (
+                    <button
+                      key={`class-select-${c.grade}`}
+                      onClick={() => handleGradeChange(c.grade)}
+                      className={`px-3 py-1 rounded-xl text-xs font-extrabold transition-all ${
+                        selectedGrade === c.grade
+                          ? 'bg-slate-900 text-white shadow-xs'
+                          : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      }`}
+                    >
+                      Class {c.grade}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -431,11 +458,11 @@ export default function Dashboard() {
           />
         </div>
 
-        {/* 4. CHAPTERS LIST BY UNIT */}
+        {/* 4. CHAPTERS LIST BY UNIT OR CONSTELLATION MAP */}
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-xs font-black tracking-widest text-slate-500 uppercase">
-              Curriculum Chapters • {selectedSubject} (Class {selectedGrade})
+              Curriculum Chapters • {selectedSubject} (Class {selectedGrade}) {viewMode === 'constellation' ? '• Star Map' : ''}
             </h2>
             <span className="text-xs font-bold text-slate-400">
               {subjectData?.totalChapters || 0} Chapters Total
@@ -446,6 +473,37 @@ export default function Dashboard() {
             <div className="flex items-center justify-center py-16 text-slate-500 bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200/80">
               <div className="animate-spin w-6 h-6 border-2 border-indigo-600 border-t-transparent rounded-full mr-3" />
               <span className="font-bold text-sm">Loading Curriculum Units...</span>
+            </div>
+          ) : viewMode === 'constellation' ? (
+            /* Constellation Star Map View */
+            <div className={`p-8 rounded-3xl bg-gradient-to-br ${getSubjectAtmosphere(selectedSubject)} shadow-2xl space-y-8 border`}>
+              <div className="text-center space-y-2">
+                <span className="px-3 py-1 bg-white/10 rounded-full text-xs font-bold uppercase tracking-widest">✨ Celestial Constellation Map</span>
+                <h3 className="text-2xl font-black text-white">{selectedSubject} Star Trail</h3>
+                <p className="text-xs text-slate-300">Click any shining star node to warp directly into the chapter workspace.</p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+                {filteredUnits.flatMap(u => u.chapters).map((ch, idx) => (
+                  <Link
+                    key={ch.id}
+                    href={`/${selectedGrade}/${selectedSubject}/${ch.id}`}
+                    className="group relative p-6 rounded-3xl bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-xl transition-all hover:scale-105 hover:shadow-2xl flex flex-col justify-between gap-4"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl">⭐</span>
+                      <span className="text-xs font-mono font-bold opacity-70">Node #{idx + 1}</span>
+                    </div>
+                    <div className="space-y-1">
+                      <div className="text-xs font-bold opacity-80">Chapter {ch.chapterNumber}</div>
+                      <h4 className="text-base font-black text-white group-hover:text-teal-300 transition-colors">{ch.title}</h4>
+                    </div>
+                    <div className="text-[11px] font-bold text-teal-300 flex items-center gap-1">
+                      <span>Explore Constellation ➔</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           ) : filteredUnits.length > 0 ? (
             filteredUnits.map((unit) => (

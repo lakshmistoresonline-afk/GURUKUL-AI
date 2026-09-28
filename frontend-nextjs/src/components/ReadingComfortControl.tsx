@@ -2,26 +2,31 @@
 
 import React, { useState } from 'react';
 
-export type ReadingTheme = 'light' | 'warm' | 'dark';
+export type ReadingTheme = 'light' | 'warm' | 'dark' | 'storybook';
 export type TextSize = 'medium' | 'large' | 'xlarge';
 export type LineSpacing = 'normal' | 'comfortable' | 'spacious';
+export type FontStyle = 'sans' | 'dyslexic' | 'serif';
 
 interface ReadingComfortControlProps {
   theme: ReadingTheme;
   textSize: TextSize;
   lineSpacing: LineSpacing;
+  fontStyle?: FontStyle;
   onThemeChange: (theme: ReadingTheme) => void;
   onTextSizeChange: (size: TextSize) => void;
   onLineSpacingChange: (spacing: LineSpacing) => void;
+  onFontStyleChange?: (font: FontStyle) => void;
 }
 
 export const ReadingComfortControl: React.FC<ReadingComfortControlProps> = ({
   theme,
   textSize,
   lineSpacing,
+  fontStyle = 'sans',
   onThemeChange,
   onTextSizeChange,
   onLineSpacingChange,
+  onFontStyleChange,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,7 +36,7 @@ export const ReadingComfortControl: React.FC<ReadingComfortControlProps> = ({
         onClick={() => setIsOpen(!isOpen)}
         className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 text-sm font-bold border border-slate-700/80 shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
         aria-label="Reading Comfort Controls"
-        title="Adjust text size, line spacing, and theme"
+        title="Adjust text size, line spacing, font, and theme"
       >
         <span className="text-base font-black font-serif">Aa</span>
         <span>Reading Comfort</span>
@@ -39,7 +44,7 @@ export const ReadingComfortControl: React.FC<ReadingComfortControlProps> = ({
 
       {isOpen && (
         <div
-          className="origin-top-right absolute right-0 mt-2 w-72 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl p-5 z-50 space-y-5 backdrop-blur-md"
+          className="origin-top-right absolute right-0 mt-2 w-72 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl p-5 z-[100] space-y-5 backdrop-blur-md"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex items-center justify-between border-b border-slate-800 pb-3">
@@ -57,7 +62,7 @@ export const ReadingComfortControl: React.FC<ReadingComfortControlProps> = ({
           {/* Theme Selector */}
           <div className="space-y-2">
             <label className="text-xs font-bold text-slate-400 uppercase">Theme</label>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 gap-2">
               <button
                 onClick={() => onThemeChange('dark')}
                 className={`py-2 text-xs font-bold rounded-xl border transition-all ${
@@ -88,8 +93,52 @@ export const ReadingComfortControl: React.FC<ReadingComfortControlProps> = ({
               >
                 Light
               </button>
+              <button
+                onClick={() => onThemeChange('storybook')}
+                className={`py-2 text-xs font-bold rounded-xl border transition-all ${
+                  theme === 'storybook'
+                    ? 'bg-[#FAF7F2] text-[#B45309] border-[#D97706] shadow-sm'
+                    : 'bg-slate-900 text-slate-400 border-slate-800 hover:bg-slate-800'
+                }`}
+              >
+                📖 Storybook
+              </button>
             </div>
           </div>
+
+          {/* Font Style & Accessibility */}
+          {onFontStyleChange && (
+            <div className="space-y-2">
+              <label className="text-xs font-bold text-slate-400 uppercase">Font & Accessibility</label>
+              <div className="grid grid-cols-3 gap-2">
+                <button
+                  onClick={() => onFontStyleChange('sans')}
+                  className={`py-2 text-xs font-bold rounded-xl border transition-all ${
+                    fontStyle === 'sans' ? 'bg-indigo-600 text-white border-indigo-500' : 'bg-slate-900 text-slate-400 border-slate-800'
+                  }`}
+                >
+                  Sans
+                </button>
+                <button
+                  onClick={() => onFontStyleChange('dyslexic')}
+                  className={`py-2 text-xs font-bold rounded-xl border transition-all ${
+                    fontStyle === 'dyslexic' ? 'bg-teal-600 text-white border-teal-500' : 'bg-slate-900 text-slate-400 border-slate-800'
+                  }`}
+                  title="Dyslexia-friendly spacing"
+                >
+                  Dyslexia
+                </button>
+                <button
+                  onClick={() => onFontStyleChange('serif')}
+                  className={`py-2 text-xs font-bold rounded-xl border transition-all ${
+                    fontStyle === 'serif' ? 'bg-indigo-600 text-white border-indigo-500' : 'bg-slate-900 text-slate-400 border-slate-800'
+                  }`}
+                >
+                  Serif
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Text Size Selector */}
           <div className="space-y-2">
