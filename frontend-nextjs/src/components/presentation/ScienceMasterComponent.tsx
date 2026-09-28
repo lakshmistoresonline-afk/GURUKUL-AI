@@ -5,6 +5,7 @@ interface ScienceMasterProps {
 }
 
 export default function ScienceMasterComponent({ data }: ScienceMasterProps) {
+  const [activeSubTab, setActiveSubTab] = useState<string>('concepts');
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
 
   if (!data) {
@@ -21,11 +22,58 @@ export default function ScienceMasterComponent({ data }: ScienceMasterProps) {
     setShowAnswers(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
+  const hasQBank = questionBank && Object.keys(questionBank).length > 0;
+  const hasRevision = revision && Object.keys(revision).length > 0;
+
   return (
-    <div className="space-y-8">
-      {/* Scientific Concepts */}
-      {Array.isArray(concepts) && concepts.length > 0 && (
-        <div className="space-y-4">
+    <div className="space-y-6">
+      {/* Sub-Section Selector Tabs Bar */}
+      <div className="flex flex-wrap gap-2 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
+        {concepts.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('concepts')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'concepts' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            🔬 Scientific Concepts ({concepts.length})
+          </button>
+        )}
+        {experiments.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('experiments')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'experiments' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            🧪 Experiments ({experiments.length})
+          </button>
+        )}
+        {caseStudies.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('caseStudies')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'caseStudies' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            🏛️ Case Studies ({caseStudies.length})
+          </button>
+        )}
+        {hasQBank && (
+          <button
+            onClick={() => setActiveSubTab('qbank')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'qbank' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            📋 Question Bank
+          </button>
+        )}
+        {hasRevision && (
+          <button
+            onClick={() => setActiveSubTab('revision')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'revision' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            ⚡ Revision & Pitfalls
+          </button>
+        )}
+      </div>
+
+      {/* Tab 1: Concepts */}
+      {activeSubTab === 'concepts' && concepts.length > 0 && (
+        <div className="space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Core Scientific Concepts</h3>
           <div className="space-y-4">
             {concepts.map((c: any, idx: number) => (
@@ -45,9 +93,9 @@ export default function ScienceMasterComponent({ data }: ScienceMasterProps) {
         </div>
       )}
 
-      {/* Experiments & Activities */}
-      {Array.isArray(experiments) && experiments.length > 0 && (
-        <div className="space-y-4">
+      {/* Tab 2: Experiments */}
+      {activeSubTab === 'experiments' && experiments.length > 0 && (
+        <div className="space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Experiments & Practical Activities</h3>
           <div className="space-y-4">
             {experiments.map((exp: any, idx: number) => (
@@ -61,9 +109,9 @@ export default function ScienceMasterComponent({ data }: ScienceMasterProps) {
         </div>
       )}
 
-      {/* Case Studies & Stories */}
-      {Array.isArray(caseStudies) && caseStudies.length > 0 && (
-        <div className="space-y-4">
+      {/* Tab 3: Case Studies */}
+      {activeSubTab === 'caseStudies' && caseStudies.length > 0 && (
+        <div className="space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Case Studies & Heritage Stories</h3>
           <div className="space-y-4">
             {caseStudies.map((cs: any, idx: number) => (
@@ -77,9 +125,9 @@ export default function ScienceMasterComponent({ data }: ScienceMasterProps) {
         </div>
       )}
 
-      {/* Question Bank */}
-      {questionBank && Object.keys(questionBank).length > 0 && (
-        <div className="space-y-6">
+      {/* Tab 4: Question Bank */}
+      {activeSubTab === 'qbank' && hasQBank && (
+        <div className="space-y-6 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Scientific Question Bank & Practice</h3>
           {Object.entries(questionBank).map(([qType, qArr]: [string, any], tIdx: number) => (
             Array.isArray(qArr) && qArr.length > 0 && (
@@ -121,9 +169,9 @@ export default function ScienceMasterComponent({ data }: ScienceMasterProps) {
         </div>
       )}
 
-      {/* Quick Revision (Key Summary & Common Pitfalls) */}
-      {revision && Object.keys(revision).length > 0 && (
-        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
+      {/* Tab 5: Revision & Pitfalls */}
+      {activeSubTab === 'revision' && hasRevision && (
+        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Quick Revision & Pitfalls</h3>
           {Array.isArray(revision.key_summary) && revision.key_summary.length > 0 && (
             <div className="space-y-2">

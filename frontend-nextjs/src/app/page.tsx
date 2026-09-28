@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import CommandPalette from '../components/CommandPalette';
 
 interface CurricularGoal {
   code: string;
@@ -95,102 +96,13 @@ const FALLBACK_CLASS5_ENGLISH: SubjectDetails = {
         },
       ],
     },
-    {
-      id: 'U02',
-      unitNumber: 2,
-      title: 'My Colourful World',
-      theme: 'Wonder of nature, animals, and clever problem-solving.',
-      chapters: [
-        {
-          id: 'G5-ENG-U02-C03',
-          chapterNumber: 3,
-          title: 'The Rainbow',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-        {
-          id: 'G5-ENG-U02-C04',
-          chapterNumber: 4,
-          title: 'The Wise Parrot',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-      ],
-    },
-    {
-      id: 'U03',
-      unitNumber: 3,
-      title: 'Water and Nature',
-      theme: 'Environmental consciousness, biodiversity, and conservation.',
-      chapters: [
-        {
-          id: 'G5-ENG-U03-C05',
-          chapterNumber: 5,
-          title: 'My Frog’s World',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-        {
-          id: 'G5-ENG-U03-C06',
-          chapterNumber: 6,
-          title: 'What a Tank!',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-      ],
-    },
-    {
-      id: 'U04',
-      unitNumber: 4,
-      title: 'Ups and Downs',
-      theme: 'Sportsmanship, traditional games, justice, and community wisdom.',
-      chapters: [
-        {
-          id: 'G5-ENG-U04-C07',
-          chapterNumber: 7,
-          title: 'Gilli Danda',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-        {
-          id: 'G5-ENG-U04-C08',
-          chapterNumber: 8,
-          title: 'The Decision of the Panchayat',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-      ],
-    },
-    {
-      id: 'U05',
-      unitNumber: 5,
-      title: 'Work Is Worship',
-      theme: 'Dignity of labor, traditional crafts, and choosing life callings.',
-      chapters: [
-        {
-          id: 'G5-ENG-U05-C09',
-          chapterNumber: 9,
-          title: 'Vocation',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-        {
-          id: 'G5-ENG-U05-C10',
-          chapterNumber: 10,
-          title: 'Glass Bangles',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-      ],
-    },
   ],
 };
 
 export default function Dashboard() {
   const [classes, setClasses] = useState<ClassDiscovery[]>([
     { grade: '5', subjects: ['English', 'Hindi', 'Maths', 'Science'] },
-    { grade: '6', subjects: ['English', 'Hindi', 'Maths', 'Science'] },
-    { grade: '7', subjects: ['English', 'Hindi', 'Maths', 'Science'] },
+    { grade: '6', subjects: ['English', 'Hindi', 'Maths', 'Science', 'Social'] },
   ]);
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
   const [selectedSubject, setSelectedSubject] = useState<string>('English');
@@ -199,6 +111,45 @@ export default function Dashboard() {
   const [selectedGoalModal, setSelectedGoalModal] = useState<CurricularGoal | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [streak, setStreak] = useState<number>(5);
+  const [isCommandOpen, setIsCommandOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    const savedStreak = localStorage.getItem('gurukul_streak');
+    if (savedStreak) {
+      setStreak(parseInt(savedStreak, 10));
+    } else {
+      localStorage.setItem('gurukul_streak', '5');
+    }
+
+    const savedGrade = localStorage.getItem('gurukul_selected_grade');
+    if (savedGrade && (savedGrade === '5' || savedGrade === '6')) {
+      setSelectedGrade(savedGrade);
+      if (savedGrade === '6') {
+        setAvailableSubjects(['English', 'Hindi', 'Maths', 'Science', 'Social']);
+      }
+    }
+
+    const handleGlobalKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setIsCommandOpen(prev => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleGlobalKey);
+    return () => window.removeEventListener('keydown', handleGlobalKey);
+  }, []);
+
+  const handleGradeChange = (grade: string) => {
+    setSelectedGrade(grade);
+    localStorage.setItem('gurukul_selected_grade', grade);
+    const activeClass = classes.find((c) => c.grade === grade) || classes[0];
+    setAvailableSubjects(activeClass.subjects);
+    if (!activeClass.subjects.includes(selectedSubject)) {
+      setSelectedSubject(activeClass.subjects[0]);
+    }
+  };
 
   // Discovery Fetch
   useEffect(() => {
@@ -262,8 +213,8 @@ export default function Dashboard() {
         } else {
           setApiError({
             endpoint: `${targetUrl}/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`,
-            status: res?.status || 500,
-            error: `API returned HTTP ${res?.status || 500}: ${res?.statusText || 'Internal Server Error'}`,
+            status: res?.status,
+            error: `API returned HTTP ${res?.status}: ${res?.statusText}`,
           });
           setSubjectData(FALLBACK_CLASS5_ENGLISH);
         }
@@ -285,25 +236,54 @@ export default function Dashboard() {
   // Get first chapter for Continue Learning hero card
   const firstChapter = subjectData?.units?.[0]?.chapters?.[0];
 
+  // Filtered units based on live search query
+  const filteredUnits = subjectData?.units?.map(unit => ({
+    ...unit,
+    chapters: unit.chapters.filter(ch => ch.title.toLowerCase().includes(searchQuery.toLowerCase()) || ch.id.toLowerCase().includes(searchQuery.toLowerCase()))
+  })).filter(unit => unit.chapters.length > 0) || [];
+
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-[#0F172A] selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/50 via-slate-50 to-white text-[#0F172A] selection:bg-indigo-500 selection:text-white">
+      <CommandPalette isOpen={isCommandOpen} onClose={() => setIsCommandOpen(false)} />
+
       <main className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:pt-14 md:pb-20 space-y-10">
-        {/* Calm Welcome Header with Generous Top Padding */}
-        <header className="space-y-3 border-b border-slate-200 pb-6 pt-2">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-700 text-xs font-bold uppercase tracking-wider">
-            <span>Gurukul AI Classroom</span>
+        {/* Calm Welcome Header with Command Palette Trigger */}
+        <header className="space-y-4 border-b border-slate-200/80 pb-6 pt-2">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-700 text-xs font-bold uppercase tracking-wider">
+              <span>Gurukul AI Classroom</span>
+            </div>
+            <button
+              onClick={() => setIsCommandOpen(true)}
+              className="inline-flex items-center gap-3 px-4 py-2 bg-white/80 backdrop-blur-md border border-slate-200 hover:border-indigo-400 rounded-2xl shadow-xs text-xs font-bold text-slate-600 transition-all group hover:scale-[1.02]"
+            >
+              <span>🔍 Quick Search & Command</span>
+              <kbd className="px-2 py-0.5 bg-slate-100 border border-slate-200 rounded-lg text-[10px] font-mono text-slate-500 group-hover:border-indigo-300">Ctrl + K</kbd>
+            </button>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight pt-1">
-            Good morning, Learner 👋
-          </h1>
-          <p className="text-slate-600 text-base sm:text-lg max-w-2xl leading-relaxed">
-            Welcome to your personal learning journey. Explore curriculum units, lessons, practice exercises, flashcards, and quizzes.
-          </p>
+
+          <div className="flex flex-wrap items-center justify-between gap-6">
+            <div className="space-y-2 max-w-3xl">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight">
+                Good morning, Explorer 👋
+              </h1>
+              <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+                Welcome to your personal learning journey. Explore curriculum units, lessons, practice exercises, flashcards, and quizzes.
+              </p>
+            </div>
+            <div className="p-5 bg-white/80 backdrop-blur-xl border border-slate-200/80 rounded-3xl shadow-lg shadow-slate-900/5 flex items-center gap-4 hover:scale-[1.02] transition-all">
+              <span className="text-3xl">🔥</span>
+              <div>
+                <div className="text-xl font-black text-slate-900">{streak} Day Streak</div>
+                <div className="text-xs text-slate-500 font-bold">Keep learning daily!</div>
+              </div>
+            </div>
+          </div>
         </header>
 
         {/* 1. CONTINUE LEARNING HERO CARD */}
         {firstChapter && (
-          <section className="p-6 md:p-8 bg-gradient-to-r from-indigo-900 to-slate-900 text-white rounded-3xl shadow-xl space-y-4">
+          <section className="p-6 md:p-8 bg-gradient-to-r from-indigo-900 via-slate-900 to-indigo-950 text-white rounded-3xl shadow-2xl space-y-4 hover:scale-[1.005] transition-all">
             <div className="flex items-center justify-between gap-2">
               <span className="px-3 py-1 text-xs font-black uppercase tracking-widest bg-indigo-500/30 text-indigo-300 rounded-lg border border-indigo-400/20">
                 Continue Learning
@@ -335,7 +315,7 @@ export default function Dashboard() {
         )}
 
         {/* 2. YOUR SUBJECTS SELECTOR */}
-        <section className="space-y-4 bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm">
+        <section className="space-y-4 bg-white/80 backdrop-blur-2xl p-6 md:p-8 rounded-3xl border border-slate-200/80 shadow-xl shadow-slate-900/5">
           <div className="flex items-center justify-between">
             <h2 className="text-xs font-black tracking-widest text-slate-500 uppercase">
               YOUR SUBJECTS
@@ -346,16 +326,10 @@ export default function Dashboard() {
                 {classes.map((c) => (
                   <button
                     key={`class-select-${c.grade}`}
-                    onClick={() => {
-                      setSelectedGrade(c.grade);
-                      setAvailableSubjects(c.subjects);
-                      if (!c.subjects.includes(selectedSubject) && c.subjects.length > 0) {
-                        setSelectedSubject(c.subjects[0]);
-                      }
-                    }}
-                    className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${
+                    onClick={() => handleGradeChange(c.grade)}
+                    className={`px-3 py-1 rounded-xl text-xs font-extrabold transition-all ${
                       selectedGrade === c.grade
-                        ? 'bg-slate-900 text-white'
+                        ? 'bg-slate-900 text-white shadow-xs'
                         : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                     }`}
                   >
@@ -366,231 +340,161 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {availableSubjects.map((sub, sIdx) => {
-              const isSelected = selectedSubject === sub;
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+            {availableSubjects.map((sub) => {
+              const isActive = selectedSubject === sub;
               return (
                 <button
-                  key={`subject-btn-${sub}-${sIdx}`}
+                  key={sub}
                   onClick={() => setSelectedSubject(sub)}
-                  className={`p-4 rounded-2xl text-base font-extrabold transition-all text-center border ${
-                    isSelected
-                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-lg shadow-indigo-600/20 scale-[1.02]'
-                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border-slate-200'
+                  className={`p-4 rounded-2xl text-left border transition-all flex flex-col justify-between gap-2 hover:-translate-y-0.5 ${
+                    isActive
+                      ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-600/30'
+                      : 'bg-slate-50/80 text-slate-700 hover:bg-slate-100 border-slate-200/80'
                   }`}
                 >
-                  {sub}
+                  <span className="text-xl">
+                    {sub === 'English' ? '📚' : sub === 'Hindi' ? '🌸' : sub === 'Maths' ? '📐' : sub === 'Science' ? '🔬' : '🌍'}
+                  </span>
+                  <div>
+                    <div className="text-sm font-extrabold">{sub}</div>
+                    <div className={`text-[10px] font-bold ${isActive ? 'text-indigo-200' : 'text-slate-400'}`}>
+                      {selectedGrade === '6' ? 'Class 6 Curriculum' : 'Class 5 Curriculum'}
+                    </div>
+                  </div>
                 </button>
               );
             })}
           </div>
         </section>
 
-        {/* API Connection Warning Diagnostic Banner */}
+        {/* API Connection Warning Banner if Offline */}
         {apiError && (
-          <div className="p-6 bg-red-500/10 border border-red-500/30 rounded-3xl space-y-2 text-xs font-mono text-red-600">
-            <div className="font-bold text-red-700 text-sm">⚠️ Backend API Connection Warning:</div>
-            <div>Endpoint: {apiError.endpoint}</div>
-            <div>Error: {apiError.error}</div>
-            <div className="text-slate-600 font-sans pt-1">
-              Ensure FastAPI is running: <code className="bg-white px-1 py-0.5 rounded text-indigo-700 font-mono border border-slate-200">python backend/src/main.py</code> on port 8080.
+          <div className="p-4 bg-amber-50 border border-amber-200 rounded-2xl text-amber-900 text-xs flex items-center justify-between gap-4">
+            <div>
+              <strong>⚠️ Backend API Connection Notice:</strong> {apiError.error}. Operating with local fallback catalog. Ensure FastAPI server is running (`python backend/src/main.py`).
             </div>
           </div>
         )}
 
-        {/* 3. YOUR CHAPTERS LIST (Units & Chapters Grid) */}
-        {loading ? (
-          <div className="flex items-center justify-center py-24 text-slate-500 space-x-3">
-            <div className="animate-spin w-8 h-8 border-2 border-indigo-600 border-t-transparent rounded-full" />
-            <span className="text-base font-semibold">Loading Subject Content...</span>
-          </div>
-        ) : subjectData && subjectData.units && subjectData.units.length > 0 ? (
-          <div className="space-y-10">
-            <div className="text-xs font-black tracking-widest text-slate-500 uppercase">
-              YOUR CHAPTERS • {selectedSubject}
-            </div>
-
-            {subjectData.units.map((unit, uIdx) => {
-              const rawTitle = unit.title || `Unit ${unit.unitNumber || (uIdx + 1)}`;
-              const cleanUnitTitle = typeof rawTitle === 'string' ? rawTitle.replace(/^Unit \d+:\s*/i, '') : `Unit ${unit.unitNumber || (uIdx + 1)}`;
-              const unitKey = `unit-sec-${selectedSubject}-${unit.id || unit.unitNumber || uIdx}-${uIdx}`;
-
-              return (
-                <section key={unitKey} className="space-y-5 bg-white p-6 md:p-8 rounded-3xl border border-slate-200 shadow-sm">
-                  {/* Unit Section Header */}
-                  <div className="space-y-1 border-b border-slate-100 pb-4">
-                    <div className="text-xs font-black tracking-widest text-indigo-600 uppercase">
-                      UNIT {unit.unitNumber || (uIdx + 1)}
-                    </div>
-                    <h2 className="text-2xl font-extrabold text-slate-900 tracking-tight">
-                      {cleanUnitTitle}
-                    </h2>
-                    {unit.theme && (
-                      <p className="text-slate-500 text-sm italic font-normal">
-                        Theme: {unit.theme}
-                      </p>
-                    )}
-                  </div>
-
-                  {/* Clean Chapter Cards Grid (No Tiny Button Clutter) */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    {unit.chapters && unit.chapters.map((ch, cIdx) => {
-                      const chapterKey = `chapter-card-${selectedSubject}-${ch.id || ch.chapterNumber || cIdx}-${cIdx}`;
-                      return (
-                        <Link
-                          key={chapterKey}
-                          href={`/${selectedGrade}/${selectedSubject}/${ch.id}`}
-                          className="group p-6 bg-slate-50 hover:bg-slate-100/80 border border-slate-200/80 hover:border-indigo-400 rounded-2xl flex flex-col justify-between space-y-4 transition-all hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
-                          aria-label={`Open Chapter ${ch.chapterNumber}: ${ch.title}`}
-                        >
-                          <div className="space-y-3">
-                            {/* Card Top Badge Row */}
-                            <div className="flex items-center justify-between gap-2">
-                              <span className="px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wider bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-md">
-                                CHAPTER {ch.chapterNumber}
-                              </span>
-                              <span className="text-[11px] font-mono text-slate-400">
-                                {ch.id}
-                              </span>
-                            </div>
-
-                            {/* Chapter Title */}
-                            <h3 className="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors tracking-tight leading-snug">
-                              {ch.title}
-                            </h3>
-                          </div>
-
-                          {/* Clean CTA Footer */}
-                          <div className="flex items-center justify-between text-xs font-bold text-indigo-600 group-hover:text-indigo-700 transition-colors pt-3 border-t border-slate-200/60">
-                            <span>Open Chapter</span>
-                            <svg
-                              className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2.5}
-                                d="M14 5l7 7-7 7M3 12h18"
-                              />
-                            </svg>
-                          </div>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </section>
-              );
-            })}
-          </div>
-        ) : (
-          <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200">
-            No chapters discovered for Class {selectedGrade} {selectedSubject}.
-          </div>
-        )}
-
-        {/* 4. CURRICULUM FRAMEWORK OBJECTIVES (Secondary Footer Section) */}
-        {subjectData?.curricularGoals && subjectData.curricularGoals.length > 0 && (
-          <section className="p-6 md:p-8 bg-white border border-slate-200 rounded-3xl space-y-5 shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
-              <div className="space-y-0.5">
-                <div className="text-xs font-black uppercase tracking-widest text-teal-600">
-                  CURRICULUM FRAMEWORK ({subjectData.curriculumFramework || 'NEP 2020 & NCF-SE 2023'})
-                </div>
-                <h2 className="text-lg font-bold text-slate-900 tracking-tight">
-                  Subject Framework Objectives
-                </h2>
-              </div>
-              <span className="text-xs font-bold px-2.5 py-0.5 bg-slate-100 border border-slate-200 text-slate-600 rounded-md">
-                4 Core Goals
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {subjectData.curricularGoals.map((cg, gIdx) => (
-                <div
-                  key={`goal-card-${selectedSubject}-${cg.code || gIdx}-${gIdx}`}
-                  onClick={() => setSelectedGoalModal(cg)}
-                  className="group p-4 bg-slate-50 border border-slate-200/80 hover:border-teal-500/60 rounded-2xl space-y-2 flex flex-col justify-between cursor-pointer transition-all hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
-                  tabIndex={0}
-                  role="button"
-                  aria-label={`View details for ${cg.code}: ${cg.name || cg.code}`}
-                >
-                  <div className="space-y-1.5">
-                    <span className="inline-block px-2 py-0.5 text-[10px] font-black uppercase bg-teal-50 text-teal-700 border border-teal-200 rounded-md">
-                      {cg.code}
-                    </span>
-                    <h3 className="text-sm font-bold text-slate-900 group-hover:text-teal-700 transition-colors leading-snug">
-                      {cg.name || cg.code}
-                    </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed font-normal line-clamp-2">
-                      {cg.description}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center text-[11px] font-bold text-teal-600 group-hover:text-teal-700 transition-colors pt-2 border-t border-slate-200/60">
-                    <span>Goal Details</span>
-                    <svg className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-      </main>
-
-      {/* Navigable Curricular Goal Detail Modal */}
-      {selectedGoalModal && (
-        <div
-          className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6"
-          onClick={() => setSelectedGoalModal(null)}
-        >
-          <div
-            className="p-6 md:p-8 bg-white border border-slate-200 rounded-3xl max-w-xl w-full space-y-5 shadow-2xl relative"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between border-b border-slate-100 pb-4">
-              <div className="flex items-center gap-2">
-                <span className="px-3 py-1 text-xs font-black uppercase bg-teal-50 text-teal-700 border border-teal-200 rounded-lg">
-                  {selectedGoalModal.code}
-                </span>
-                <span className="text-xs font-bold text-slate-500">
-                  {subjectData?.curriculumFramework || 'NEP 2020 & NCF-SE 2023'}
-                </span>
-              </div>
-              <button
-                onClick={() => setSelectedGoalModal(null)}
-                className="w-8 h-8 rounded-full bg-slate-100 text-slate-500 hover:text-slate-900 flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
-                aria-label="Close goal details"
-              >
-                ✕
-              </button>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">
-                {selectedGoalModal.name || selectedGoalModal.code}
-              </h3>
-              <p className="text-slate-700 text-base md:text-lg leading-relaxed font-normal">
-                {selectedGoalModal.description}
-              </p>
-            </div>
-
-            <div className="pt-2 border-t border-slate-100 flex justify-end">
-              <button
-                onClick={() => setSelectedGoalModal(null)}
-                className="px-6 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-sm font-bold rounded-2xl shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
-              >
-                Close Goal Details
-              </button>
-            </div>
-          </div>
+        {/* 3. LIVE SEARCH BAR */}
+        <div className="relative">
+          <input
+            type="text"
+            placeholder="🔍 Search any chapter by name or ID..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full px-6 py-4 bg-white/80 backdrop-blur-xl border border-slate-200/80 rounded-2xl shadow-sm text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
+          />
         </div>
-      )}
+
+        {/* 4. CHAPTERS LIST BY UNIT */}
+        <section className="space-y-6">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xs font-black tracking-widest text-slate-500 uppercase">
+              Curriculum Chapters • {selectedSubject} (Class {selectedGrade})
+            </h2>
+            <span className="text-xs font-bold text-slate-400">
+              {subjectData?.totalChapters || 0} Chapters Total
+            </span>
+          </div>
+
+          {loading ? (
+            <div className="flex items-center justify-center py-16 text-slate-500 bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200/80">
+              <div className="animate-spin w-6 h-6 border-2 border-indigo-600 border-t-transparent rounded-full mr-3" />
+              <span className="font-bold text-sm">Loading Curriculum Units...</span>
+            </div>
+          ) : filteredUnits.length > 0 ? (
+            filteredUnits.map((unit) => (
+              <div key={unit.id} className="p-6 md:p-8 bg-white/80 backdrop-blur-2xl border border-slate-200/80 rounded-3xl shadow-xl shadow-slate-900/5 space-y-6">
+                <div className="border-b border-slate-100 pb-4">
+                  <div className="text-xs font-black uppercase tracking-widest text-indigo-600">
+                    Unit {unit.unitNumber}
+                  </div>
+                  <h3 className="text-xl font-black text-slate-900 tracking-tight">
+                    {unit.title}
+                  </h3>
+                  {unit.theme && (
+                    <p className="text-xs text-slate-500 mt-1">{unit.theme}</p>
+                  )}
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {unit.chapters.map((ch) => (
+                    <div
+                      key={ch.id}
+                      className="group p-5 bg-[#F8FAFC]/80 backdrop-blur-md border border-slate-200/80 hover:border-indigo-300 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg flex flex-col justify-between gap-4"
+                    >
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-[10px] font-black uppercase tracking-wider rounded-lg border border-indigo-100">
+                            Chapter {ch.chapterNumber}
+                          </span>
+                          <span className="text-[11px] font-mono text-slate-400">
+                            {ch.id}
+                          </span>
+                        </div>
+                        <h4 className="text-base font-bold text-slate-900 group-hover:text-indigo-600 transition-colors leading-snug">
+                          {ch.title}
+                        </h4>
+                      </div>
+
+                      <div className="pt-3 border-t border-slate-200/60 flex items-center justify-between">
+                        <span className="text-xs font-bold text-slate-500 group-hover:text-slate-700">
+                          Open Chapter Experience
+                        </span>
+                        <Link
+                          href={`/${selectedGrade}/${selectedSubject}/${ch.id}`}
+                          className="inline-flex items-center gap-1.5 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-extrabold rounded-xl shadow-md shadow-indigo-600/20 transition-all group-hover:translate-x-0.5"
+                        >
+                          <span>Explore</span>
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))
+          ) : (
+            <div className="p-12 text-center text-slate-500 bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200 space-y-2">
+              <h3 className="text-lg font-bold text-slate-900">No chapters found</h3>
+              <p className="text-xs text-slate-400">Try adjusting your live search term.</p>
+            </div>
+          )}
+        </section>
+
+        {/* 5. NEP 2020 PEDAGOGICAL GOALS */}
+        <section className="p-6 md:p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl shadow-2xl space-y-6">
+          <div className="space-y-2">
+            <span className="px-3 py-1 text-xs font-black uppercase tracking-widest bg-teal-500/20 text-teal-300 rounded-lg border border-teal-400/30">
+              National Education Policy 2020
+            </span>
+            <h2 className="text-2xl font-black tracking-tight">
+              Curricular Goals & Pedagogical Principles
+            </h2>
+            <p className="text-slate-300 text-sm max-w-2xl leading-relaxed">
+              Gurukul AI aligns fully with NCF-SE 2023 guidelines, fostering holistic, experiential, inquiry-driven, and multi-disciplinary learning.
+            </p>
+          </div>
+
+          <div className="grid grid-classes sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {subjectData?.curricularGoals?.map((goal) => (
+              <div
+                key={goal.code}
+                onClick={() => setSelectedGoalModal(goal)}
+                className="cursor-pointer p-5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl transition-all space-y-2 group"
+              >
+                <div className="text-xs font-black text-indigo-400">{goal.code}</div>
+                <div className="text-sm font-bold text-white group-hover:text-teal-300 transition-colors">{goal.name}</div>
+                <p className="text-xs text-slate-300 line-clamp-2 leading-relaxed">{goal.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     </div>
   );
 }

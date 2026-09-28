@@ -5,6 +5,7 @@ interface MathsMasterProps {
 }
 
 export default function MathsMasterComponent({ data }: MathsMasterProps) {
+  const [activeSubTab, setActiveSubTab] = useState<string>('concepts');
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
 
   if (!data) {
@@ -20,11 +21,49 @@ export default function MathsMasterComponent({ data }: MathsMasterProps) {
     setShowAnswers(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
+  const hasQBank = questionBank && Object.keys(questionBank).length > 0;
+
   return (
-    <div className="space-y-8">
-      {/* Core Concepts */}
-      {Array.isArray(coreConcepts) && coreConcepts.length > 0 && (
-        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
+    <div className="space-y-6">
+      {/* Sub-Section Selector Tabs Bar */}
+      <div className="flex flex-wrap gap-2 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
+        {coreConcepts.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('concepts')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'concepts' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            📐 Core Concepts ({coreConcepts.length})
+          </button>
+        )}
+        {competencies.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('competencies')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'competencies' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            🎯 Competencies ({competencies.length})
+          </button>
+        )}
+        {misconceptions.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('misconceptions')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'misconceptions' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            ⚠️ Misconceptions ({misconceptions.length})
+          </button>
+        )}
+        {hasQBank && (
+          <button
+            onClick={() => setActiveSubTab('qbank')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'qbank' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            📋 Question Bank
+          </button>
+        )}
+      </div>
+
+      {/* Tab 1: Core Concepts */}
+      {activeSubTab === 'concepts' && coreConcepts.length > 0 && (
+        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Core Mathematical Concepts</h3>
           <ul className="space-y-3">
             {coreConcepts.map((cc: string, idx: number) => (
@@ -37,9 +76,9 @@ export default function MathsMasterComponent({ data }: MathsMasterProps) {
         </div>
       )}
 
-      {/* Key Competencies */}
-      {Array.isArray(competencies) && competencies.length > 0 && (
-        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
+      {/* Tab 2: Competencies */}
+      {activeSubTab === 'competencies' && competencies.length > 0 && (
+        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Key Mathematical Competencies</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {competencies.map((comp: string, idx: number) => (
@@ -51,9 +90,9 @@ export default function MathsMasterComponent({ data }: MathsMasterProps) {
         </div>
       )}
 
-      {/* Common Misconceptions */}
-      {Array.isArray(misconceptions) && misconceptions.length > 0 && (
-        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
+      {/* Tab 3: Misconceptions */}
+      {activeSubTab === 'misconceptions' && misconceptions.length > 0 && (
+        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Common Misconceptions to Avoid</h3>
           <div className="space-y-3">
             {misconceptions.map((misc: string, idx: number) => (
@@ -66,9 +105,9 @@ export default function MathsMasterComponent({ data }: MathsMasterProps) {
         </div>
       )}
 
-      {/* Question Bank */}
-      {questionBank && Object.keys(questionBank).length > 0 && (
-        <div className="space-y-6">
+      {/* Tab 4: Question Bank */}
+      {activeSubTab === 'qbank' && hasQBank && (
+        <div className="space-y-6 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Master Question Bank & Practice</h3>
           {Object.entries(questionBank).map(([sectionKey, qList]: [string, any], sIdx: number) => (
             Array.isArray(qList) && qList.length > 0 && (

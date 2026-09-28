@@ -10,6 +10,22 @@ import MindmapComponent from '../../../../components/presentation/MindmapCompone
 import QuestionPapersComponent from '../../../../components/presentation/QuestionPapersComponent';
 import QuizComponent from '../../../../components/presentation/QuizComponent';
 import FlashcardsComponent from '../../../../components/presentation/FlashcardsComponent';
+import Class6MasterComponent from '../../../../components/presentation/Class6/Class6MasterComponent';
+import Class6HindiMasterComponent from '../../../../components/presentation/Class6/Class6HindiMasterComponent';
+import Class6HindiNotesComponent from '../../../../components/presentation/Class6/Class6HindiNotesComponent';
+import Class6MathsMasterComponent from '../../../../components/presentation/Class6/Class6MathsMasterComponent';
+import Class6MathsNotesComponent from '../../../../components/presentation/Class6/Class6MathsNotesComponent';
+import Class6ScienceMasterComponent from '../../../../components/presentation/Class6/Class6ScienceMasterComponent';
+import Class6SocialMasterComponent from '../../../../components/presentation/Class6/Class6SocialMasterComponent';
+import Class6SocialNotesComponent from '../../../../components/presentation/Class6/Class6SocialNotesComponent';
+import Class6SocialFlashcardsComponent from '../../../../components/presentation/Class6/Class6SocialFlashcardsComponent';
+import Class6SocialMindmapComponent from '../../../../components/presentation/Class6/Class6SocialMindmapComponent';
+import Class7UniversalNotesComponent from '../../../../components/presentation/Class7/Class7UniversalNotesComponent';
+import Class7UniversalMasterComponent from '../../../../components/presentation/Class7/Class7UniversalMasterComponent';
+import Class6MindmapComponent from '../../../../components/presentation/Class6/Class6MindmapComponent';
+import Class6HindiMindmapComponent from '../../../../components/presentation/Class6/Class6HindiMindmapComponent';
+import Class6MathsMindmapComponent from '../../../../components/presentation/Class6/Class6MathsMindmapComponent';
+import Class6ScienceMindmapComponent from '../../../../components/presentation/Class6/Class6ScienceMindmapComponent';
 
 interface ChapterSourceData {
   chapterId: string;
@@ -42,13 +58,13 @@ interface ApiDiagnostics {
 }
 
 const FIXED_TABS = [
-  { id: 'overview', label: 'Overview' },
-  { id: 'notes', label: 'Notes' },
-  { id: 'master', label: 'Master' },
-  { id: 'flashcards', label: 'Flashcards' },
-  { id: 'mindmaps', label: 'Mindmaps' },
-  { id: 'quiz', label: 'Quiz' },
-  { id: 'question_papers', label: 'Question Papers' },
+  { id: 'overview', label: 'Overview', icon: '📖' },
+  { id: 'notes', label: 'Notes', icon: '📝' },
+  { id: 'master', label: 'Master Practice', icon: '⚡' },
+  { id: 'flashcards', label: 'Flashcards', icon: '🃏' },
+  { id: 'mindmaps', label: 'Mindmaps', icon: '🧠' },
+  { id: 'quiz', label: 'Quiz', icon: '✍️' },
+  { id: 'question_papers', label: 'Question Papers', icon: '📋' },
 ];
 
 export default function ChapterClient({ grade, subject, chapterId }: ChapterClientProps) {
@@ -56,6 +72,8 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const [activeTab, setActiveTab] = useState<string>('overview');
   const [loading, setLoading] = useState<boolean>(true);
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
+  const [completedTabs, setCompletedTabs] = useState<Record<string, boolean>>({});
+  const [isMobileTocOpen, setIsMobileTocOpen] = useState<boolean>(false);
 
   const [readingTheme, setReadingTheme] = useState<ReadingTheme>('light');
   const [textSize, setTextSize] = useState<TextSize>('medium');
@@ -81,6 +99,13 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         if (res.ok) {
           const data: ChapterSourceData = await res.json();
           setSourceData(data);
+
+          try {
+            const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
+            const newEntry = { id: chapterId, title: data.chapterTitle, grade, subject, timestamp: Date.now() };
+            const filtered = recent.filter((r: any) => r.id !== chapterId);
+            localStorage.setItem('gurukul_recent_chapters', JSON.stringify([newEntry, ...filtered].slice(0, 5)));
+          } catch {}
         } else {
           setApiError({
             endpoint,
@@ -100,13 +125,27 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     }
 
     loadChapterSource();
+    const saved = localStorage.getItem(`gurukul_progress_${chapterId}`);
+    if (saved) {
+      try {
+        setCompletedTabs(JSON.parse(saved));
+      } catch {}
+    }
   }, [grade, subject, chapterId]);
+
+  const handleTabClick = (tabId: string) => {
+    setActiveTab(tabId);
+    const updated = { ...completedTabs, [tabId]: true };
+    setCompletedTabs(updated);
+    localStorage.setItem(`gurukul_progress_${chapterId}`, JSON.stringify(updated));
+    setIsMobileTocOpen(false);
+  };
 
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#F8FAFC] text-slate-600">
         <div className="animate-spin w-8 h-8 border-2 border-indigo-600 border-t-transparent rounded-full mr-3" />
-        <span className="font-semibold">Loading Educational Experience...</span>
+        <span className="font-semibold">Loading World-Class Workspace...</span>
       </div>
     );
   }
@@ -176,15 +215,43 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         return <QuestionPapersComponent data={sections.question_papers} />;
 
       case 'notes':
+        if (grade === '7') {
+          return <Class7UniversalNotesComponent data={sections.notes} />;
+        }
+        if (grade === '6') {
+          if (subject === 'Hindi') return <Class6HindiNotesComponent data={sections.notes} />;
+          if (subject === 'Maths') return <Class6MathsNotesComponent data={sections.notes} />;
+          if (subject === 'Social') return <Class6SocialNotesComponent data={sections.notes} />;
+        }
         return <NotesComponent data={sections.notes} subject={subject} />;
 
       case 'master':
+        if (grade === '7') {
+          return <Class7UniversalMasterComponent data={sections.master} />;
+        }
+        if (grade === '6') {
+          if (subject === 'English') return <Class6MasterComponent data={sections.master} />;
+          if (subject === 'Hindi') return <Class6HindiMasterComponent data={sections.master} />;
+          if (subject === 'Maths') return <Class6MathsMasterComponent data={sections.master} />;
+          if (subject === 'Science') return <Class6ScienceMasterComponent data={sections.master} />;
+          if (subject === 'Social') return <Class6SocialMasterComponent data={sections.master} />;
+        }
         return <MasterComponent data={sections.master} subject={subject} />;
 
       case 'flashcards':
+        if (grade === '6' && subject === 'Social') {
+          return <Class6SocialFlashcardsComponent flashcards={sections.flashcards} />;
+        }
         return <FlashcardsComponent flashcards={sections.flashcards} />;
 
       case 'mindmaps':
+        if (grade === '6') {
+          if (subject === 'Hindi') return <Class6HindiMindmapComponent data={sections.mindmaps} />;
+          if (subject === 'Maths') return <Class6MathsMindmapComponent data={sections.mindmaps} />;
+          if (subject === 'Science') return <Class6ScienceMindmapComponent data={sections.mindmaps} />;
+          if (subject === 'Social') return <Class6SocialMindmapComponent data={sections.mindmaps} />;
+          return <Class6MindmapComponent data={sections.mindmaps} />;
+        }
         return <MindmapComponent data={sections.mindmaps} />;
 
       case 'quiz':
@@ -195,10 +262,14 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     }
   };
 
+  const completedCount = Object.values(completedTabs).filter(Boolean).length;
+  const progressPercent = Math.round((completedCount / FIXED_TABS.length) * 100);
+
   return (
     <div className={`min-h-screen ${themeBgClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white`}>
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-8 md:py-12 space-y-8">
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200/80 pb-6">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-10 space-y-8">
+        {/* Top Glassmorphic Navigation Bar */}
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200/80 pb-6 backdrop-blur-md">
           <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider opacity-70">
             <Link href="/" className="hover:text-indigo-600 transition-colors">
               Dashboard
@@ -209,14 +280,28 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
             <span>{subject}</span>
           </div>
 
-          <ReadingComfortControl
-            theme={readingTheme}
-            textSize={textSize}
-            lineSpacing={lineSpacing}
-            onThemeChange={setReadingTheme}
-            onTextSizeChange={setTextSize}
-            onLineSpacingChange={setLineSpacing}
-          />
+          <div className="flex items-center gap-4">
+            <button
+              onClick={() => setIsMobileTocOpen(!isMobileTocOpen)}
+              className="lg:hidden px-3 py-1.5 bg-indigo-600 text-white rounded-xl text-xs font-bold"
+            >
+              ☰ Navigation
+            </button>
+            <div className="hidden sm:flex items-center gap-2 text-xs font-extrabold text-slate-600 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-xs">
+              <span>Chapter Progress: {progressPercent}%</span>
+              <div className="w-16 h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div className="h-full bg-indigo-600 transition-all duration-500" style={{ width: `${progressPercent}%` }} />
+              </div>
+            </div>
+            <ReadingComfortControl
+              theme={readingTheme}
+              textSize={textSize}
+              lineSpacing={lineSpacing}
+              onThemeChange={setReadingTheme}
+              onTextSizeChange={setTextSize}
+              onLineSpacingChange={setLineSpacing}
+            />
+          </div>
         </div>
 
         <header className="space-y-2 border-b border-slate-200/80 pb-6">
@@ -231,31 +316,46 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
           </div>
         </header>
 
-        {/* Exactly 7 Fixed Tabs Navigation Bar */}
-        <nav className="flex flex-wrap gap-2 border-b border-slate-200/80 pb-4" aria-label="Chapter Primary Navigation">
-          {FIXED_TABS.map((tab) => {
-            const isActive = activeTab === tab.id;
-            return (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-extrabold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${
-                  isActive
-                    ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 border border-indigo-500'
-                    : 'bg-white text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-slate-200'
-                }`}
-                aria-selected={isActive}
-                role="tab"
-              >
-                {tab.label}
-              </button>
-            );
-          })}
-        </nav>
+        {/* Master-Detail Split Workspace */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative">
+          {/* Sticky Left Sidebar TOC (Desktop + Mobile Drawer) */}
+          <aside className={`lg:col-span-3 lg:sticky lg:top-8 space-y-3 bg-white p-5 rounded-3xl border border-slate-200/80 shadow-sm z-30 ${isMobileTocOpen ? 'block' : 'hidden lg:block'}`}>
+            <div className="flex items-center justify-between border-b border-slate-100 pb-1">
+              <div className="text-xs font-black uppercase tracking-widest text-slate-400 px-2">
+                Chapter Navigation
+              </div>
+              <button onClick={() => setIsMobileTocOpen(false)} className="lg:hidden text-slate-400 font-bold text-xs">✕</button>
+            </div>
+            <nav className="space-y-1.5" aria-label="Chapter Workspace Navigation">
+              {FIXED_TABS.map((tab) => {
+                const isActive = activeTab === tab.id;
+                const isDone = completedTabs[tab.id];
+                return (
+                  <button
+                    key={tab.id}
+                    onClick={() => handleTabClick(tab.id)}
+                    className={`w-full text-left px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-all flex items-center justify-between group ${
+                      isActive
+                        ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                        : 'bg-slate-50/70 text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-100'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span>{tab.icon}</span>
+                      <span>{tab.label}</span>
+                    </div>
+                    {isDone && !isActive && <span className="text-emerald-600 font-black text-xs">✓</span>}
+                  </button>
+                );
+              })}
+            </nav>
+          </aside>
 
-        <main className={`space-y-8 min-h-[400px] ${textSizeClass} ${lineSpacingClass}`}>
-          {renderActiveSectionContent()}
-        </main>
+          {/* Right Main Reading Canvas */}
+          <main className={`lg:col-span-9 space-y-8 min-h-[500px] ${textSizeClass} ${lineSpacingClass}`}>
+            {renderActiveSectionContent()}
+          </main>
+        </div>
       </div>
     </div>
   );

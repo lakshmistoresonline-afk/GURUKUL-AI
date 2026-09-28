@@ -29,22 +29,26 @@ class Class5ScienceChapterResolver:
             except ValueError:
                 pass
 
+        def match_ch(ch: Dict[str, Any], idx: int) -> bool:
+            c = ch.get("chapter_number") or ch.get("chapterNumber") or ch.get("chapter_no") or ch.get("chapter") or (idx + 1)
+            return c == target_c_num or f"C{c:02d}" in chapter_id
+
         ov_data = files.get("Overview.json", {})
         for idx, ch in enumerate(ov_data.get("chapters", [])):
-            c = ch.get("chapter_number", 1) or (idx + 1)
-            if f"C{c:02d}" in chapter_id or c == target_c_num:
+            if match_ch(ch, idx):
                 resolved_bundle["overview"] = ch
+                c = ch.get("chapter_number") or ch.get("chapterNumber") or ch.get("chapter_no") or (idx + 1)
+                resolved_bundle["chapterNumber"] = c
+                resolved_bundle["chapterTitle"] = ch.get("chapter_title") or ch.get("chapterTitle") or ch.get("title", chapter_id)
                 found = True
                 break
 
         notes_data = files.get("Notes.json", {})
         for idx, ch in enumerate(notes_data.get("chapters", [])):
-            u = ch.get("unitNumber", 1)
-            c = ch.get("chapterNumber", ch.get("chapter_number", 1)) or (idx + 1)
-            cid = f"G5-SCI-U{u:02d}-C{c:02d}"
-            if cid == chapter_id or c == target_c_num:
+            if match_ch(ch, idx):
+                c = ch.get("chapter_number") or ch.get("chapterNumber") or ch.get("chapter_no") or (idx + 1)
                 resolved_bundle["chapterNumber"] = c
-                resolved_bundle["chapterTitle"] = ch.get("chapterTitle") or ch.get("title", "")
+                resolved_bundle["chapterTitle"] = ch.get("chapterTitle") or ch.get("chapter_title") or ch.get("title", "")
                 resolved_bundle["unitTitle"] = ch.get("unitTitle", "")
                 resolved_bundle["notes"] = ch
                 found = True
@@ -52,8 +56,7 @@ class Class5ScienceChapterResolver:
 
         master_data = files.get("Master.json", {})
         for idx, ch in enumerate(master_data.get("chapters", [])):
-            c = ch.get("chapter_number", 1) or (idx + 1)
-            if f"C{c:02d}" in chapter_id or c == target_c_num:
+            if match_ch(ch, idx):
                 resolved_bundle["master"] = ch
                 if not resolved_bundle["chapterTitle"]:
                     resolved_bundle["chapterTitle"] = ch.get("chapter_title", "")
@@ -62,28 +65,25 @@ class Class5ScienceChapterResolver:
 
         fc_data = files.get("Flashcards.json", {})
         fc_list = fc_data.get("flashcards", []) if isinstance(fc_data, dict) else []
-        resolved_bundle["flashcards"] = [fc for fc in fc_list if fc.get("chapter_no") == target_c_num or fc.get("chapterNumber") == target_c_num]
+        resolved_bundle["flashcards"] = [fc for fc in fc_list if fc.get("chapter_no") == target_c_num or fc.get("chapterNumber") == target_c_num or fc.get("chapter") == target_c_num]
 
         mm_data = files.get("Mindmaps.json", {})
         for idx, ch in enumerate(mm_data.get("chapters", [])):
-            c = ch.get("chapter_number", 1) or (idx + 1)
-            if c == target_c_num or f"C{c:02d}" in chapter_id:
+            if match_ch(ch, idx):
                 resolved_bundle["mindmap"] = ch
                 found = True
                 break
 
         qz_data = files.get("Quiz.json", {})
         for idx, ch in enumerate(qz_data.get("chapters", [])):
-            c = ch.get("chapter_number", 1) or (idx + 1)
-            if c == target_c_num or f"C{c:02d}" in chapter_id:
+            if match_ch(ch, idx):
                 resolved_bundle["quiz"] = ch.get("quizzes", []) or ch.get("questions", [])
                 found = True
                 break
 
         qp_data = files.get("Question Papers.json", {})
         for idx, ch in enumerate(qp_data.get("chapters", [])):
-            c = ch.get("chapter_number", 1) or (idx + 1)
-            if c == target_c_num or f"C{c:02d}" in chapter_id:
+            if match_ch(ch, idx):
                 resolved_bundle["question_papers"] = ch
                 found = True
                 break
@@ -92,6 +92,6 @@ class Class5ScienceChapterResolver:
             raise ChapterNotFoundError(f"Science chapter {chapter_id} not found in Class 5 source files.")
 
         if not resolved_bundle["chapterTitle"]:
-            raise ChapterNotFoundError(f"Science chapter {chapter_id} title could not be resolved from authoritative source.")
+            resolved_bundle["chapterTitle"] = f"Science Chapter {target_c_num}"
 
         return resolved_bundle

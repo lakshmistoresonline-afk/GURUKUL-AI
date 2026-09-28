@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface OverviewProps {
   data: any;
@@ -7,6 +7,8 @@ interface OverviewProps {
 }
 
 export default function OverviewComponent({ data, chapterTitle, unitTitle }: OverviewProps) {
+  const [activeSubTab, setActiveSubTab] = useState<string>('summary');
+
   if (!data) {
     return (
       <div className="p-12 text-center text-slate-600 bg-white rounded-3xl border border-slate-200 space-y-3 shadow-sm">
@@ -28,33 +30,70 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle }: Ove
   const terms = data.keyTerminology || data.vocabulary || data.key_terms || [];
 
   return (
-    <div className="space-y-8">
-      {/* Chapter Hero */}
-      <div className="p-8 sm:p-10 bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 rounded-3xl text-white shadow-xl space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-700/60 border border-indigo-500/40 text-indigo-200 text-xs font-bold uppercase tracking-wider">
-          <span>{unitTitle || 'Curriculum Unit'}</span>
-        </div>
-        <h2 className="text-3xl sm:text-4xl font-black tracking-tight">{chapterTitle || 'Chapter Overview'}</h2>
-        {summary && (
-          <p className="text-indigo-100 text-base sm:text-lg leading-relaxed max-w-3xl opacity-90">
-            {summary}
-          </p>
+    <div className="space-y-6">
+      {/* Sub-Section Selector Tabs Bar */}
+      <div className="flex flex-wrap gap-2 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
+        <button
+          onClick={() => setActiveSubTab('summary')}
+          className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'summary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+        >
+          📖 Summary & Theme
+        </button>
+        {objectives.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('objectives')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'objectives' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            🎯 Learning Objectives ({objectives.length})
+          </button>
+        )}
+        {takeaways.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('takeaways')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'takeaways' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            💡 Key Takeaways ({takeaways.length})
+          </button>
+        )}
+        {terms.length > 0 && (
+          <button
+            onClick={() => setActiveSubTab('vocabulary')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'vocabulary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+          >
+            📚 Vocabulary ({terms.length})
+          </button>
         )}
       </div>
 
-      {/* The Big Idea / Central Theme */}
-      {theme && (
-        <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-3">
-          <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">The Big Idea & Theme</h3>
-          <p className="text-slate-800 text-base font-semibold leading-relaxed">
-            {typeof theme === 'string' ? theme : JSON.stringify(theme)}
-          </p>
+      {/* Tab 1: Summary & Theme (Contains the Chapter Hero Gradient Card) */}
+      {activeSubTab === 'summary' && (
+        <div className="space-y-6 animate-in fade-in duration-200">
+          <div className="p-8 sm:p-10 bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 rounded-3xl text-white shadow-xl space-y-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-700/60 border border-indigo-500/40 text-indigo-200 text-xs font-bold uppercase tracking-wider">
+              <span>{unitTitle || 'Curriculum Unit'}</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black tracking-tight">{chapterTitle || 'Chapter Overview'}</h2>
+            {summary && (
+              <p className="text-indigo-100 text-base sm:text-lg leading-relaxed max-w-3xl opacity-90">
+                {summary}
+              </p>
+            )}
+          </div>
+
+          {theme && (
+            <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-3">
+              <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">The Big Idea & Theme</h3>
+              <p className="text-slate-800 text-base font-semibold leading-relaxed">
+                {typeof theme === 'string' ? theme : JSON.stringify(theme)}
+              </p>
+            </div>
+          )}
         </div>
       )}
 
-      {/* What You Will Learn / Key Concepts */}
-      {Array.isArray(objectives) && objectives.length > 0 && (
-        <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
+      {/* Tab 2: Learning Objectives */}
+      {activeSubTab === 'objectives' && Array.isArray(objectives) && objectives.length > 0 && (
+        <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">What You Will Learn</h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {objectives.map((obj: any, idx: number) => (
@@ -67,9 +106,9 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle }: Ove
         </div>
       )}
 
-      {/* Key Takeaways */}
-      {Array.isArray(takeaways) && takeaways.length > 0 && (
-        <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
+      {/* Tab 3: Key Takeaways */}
+      {activeSubTab === 'takeaways' && Array.isArray(takeaways) && takeaways.length > 0 && (
+        <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">Key Takeaways</h3>
           <div className="space-y-3">
             {takeaways.map((t: any, idx: number) => (
@@ -81,9 +120,9 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle }: Ove
         </div>
       )}
 
-      {/* Key Terms Vocabulary Chips */}
-      {Array.isArray(terms) && terms.length > 0 && (
-        <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4">
+      {/* Tab 4: Vocabulary */}
+      {activeSubTab === 'vocabulary' && Array.isArray(terms) && terms.length > 0 && (
+        <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">Key Vocabulary & Terms</h3>
           <div className="flex flex-wrap gap-2">
             {terms.map((term: any, idx: number) => {
