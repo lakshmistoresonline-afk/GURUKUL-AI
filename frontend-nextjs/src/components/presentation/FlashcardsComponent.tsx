@@ -5,7 +5,7 @@ interface FlashcardsProps {
 }
 
 export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
-  const [viewMode, setViewMode] = useState<'grid' | 'carousel'>('grid');
+  const [viewMode, setViewMode] = useState<'grid' | 'carousel'>('carousel');
   const [carouselIdx, setCarouselIdx] = useState<number>(0);
   const [flippedCards, setFlippedCards] = useState<Record<number, boolean>>({});
   const [masteredCards, setMasteredCards] = useState<Record<number, boolean>>({});
@@ -49,7 +49,7 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
           <h3 className="text-xl font-black text-slate-900 tracking-tight">
             Flashcards Deck ({flashcards.length} Cards)
           </h3>
-          <p className="text-xs text-slate-500 mt-1">Review key terms, concepts, definitions, and memory tips.</p>
+          <p className="text-xs text-slate-500 mt-1">Review key terms, concepts, definitions, and memory tips in Focus Mode.</p>
         </div>
         <div className="flex items-center gap-3">
           <div className="text-xs font-bold bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-full border border-indigo-200">
@@ -73,7 +73,7 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
       </div>
 
       {viewMode === 'carousel' ? (
-        /* Focus Mode Carousel */
+        /* Focus Mode Carousel (Default) */
         <div className="max-w-xl mx-auto space-y-6 py-4">
           <div className="flex items-center justify-between text-xs font-bold text-slate-500">
             <span>Card {carouselIdx + 1} of {flashcards.length}</span>

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import CommandPalette from '../components/CommandPalette';
+import ExplorerLockerModal from '../components/ExplorerLockerModal';
 
 interface CurricularGoal {
   code: string;
@@ -103,6 +104,7 @@ export default function Dashboard() {
   const [classes, setClasses] = useState<ClassDiscovery[]>([
     { grade: '5', subjects: ['English', 'Hindi', 'Maths', 'Science'] },
     { grade: '6', subjects: ['English', 'Hindi', 'Maths', 'Science', 'Social'] },
+    { grade: '7', subjects: ['English', 'Hindi', 'Maths I', 'Maths II', 'Science', 'Social I', 'Social II'] },
   ]);
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
   const [selectedSubject, setSelectedSubject] = useState<string>('English');
@@ -113,7 +115,9 @@ export default function Dashboard() {
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [streak, setStreak] = useState<number>(5);
+  const [xp, setXp] = useState<number>(1250);
   const [isCommandOpen, setIsCommandOpen] = useState<boolean>(false);
+  const [isLockerOpen, setIsLockerOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const savedStreak = localStorage.getItem('gurukul_streak');
@@ -123,11 +127,18 @@ export default function Dashboard() {
       localStorage.setItem('gurukul_streak', '5');
     }
 
+    const savedXp = localStorage.getItem('gurukul_xp');
+    if (savedXp) {
+      setXp(parseInt(savedXp, 10));
+    }
+
     const savedGrade = localStorage.getItem('gurukul_selected_grade');
-    if (savedGrade && (savedGrade === '5' || savedGrade === '6')) {
+    if (savedGrade) {
       setSelectedGrade(savedGrade);
       if (savedGrade === '6') {
         setAvailableSubjects(['English', 'Hindi', 'Maths', 'Science', 'Social']);
+      } else if (savedGrade === '7') {
+        setAvailableSubjects(['English', 'Hindi', 'Maths I', 'Maths II', 'Science', 'Social I', 'Social II']);
       }
     }
 
@@ -191,11 +202,11 @@ export default function Dashboard() {
 
         let res: Response | null = null;
         try {
-          res = await fetch(`${targetUrl}/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`);
+          res = await fetch(`${targetUrl}/api/v1/classes/${selectedGrade}/subjects/${encodeURIComponent(selectedSubject)}`);
         } catch {
           targetUrl = fallbackUrl;
           try {
-            res = await fetch(`${targetUrl}/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`);
+            res = await fetch(`${targetUrl}/api/v1/classes/${selectedGrade}/subjects/${encodeURIComponent(selectedSubject)}`);
           } catch (retryErr: any) {
             setApiError({
               endpoint: `${primaryUrl}/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`,
@@ -233,6 +244,16 @@ export default function Dashboard() {
     fetchSubjectData();
   }, [selectedGrade, selectedSubject]);
 
+  // Get rank title based on XP
+  const getRankInfo = (score: number) => {
+    if (score < 500) return { title: '🌱 Curious Novice', color: 'text-emerald-600 bg-emerald-50 border-emerald-200' };
+    if (score < 1500) return { title: '🚀 Active Explorer', color: 'text-indigo-600 bg-indigo-50 border-indigo-200' };
+    if (score < 3000) return { title: '⭐ Curriculum Scholar', color: 'text-amber-600 bg-amber-50 border-amber-200' };
+    return { title: '👑 Master Academic', color: 'text-purple-600 bg-purple-50 border-purple-200' };
+  };
+
+  const rank = getRankInfo(xp);
+
   // Get first chapter for Continue Learning hero card
   const firstChapter = subjectData?.units?.[0]?.chapters?.[0];
 
@@ -245,25 +266,40 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/50 via-slate-50 to-white text-[#0F172A] selection:bg-indigo-500 selection:text-white">
       <CommandPalette isOpen={isCommandOpen} onClose={() => setIsCommandOpen(false)} />
+      <ExplorerLockerModal isOpen={isLockerOpen} onClose={() => setIsLockerOpen(false)} xp={xp} streak={streak} />
 
       <main className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:pt-14 md:pb-20 space-y-10">
-        {/* Calm Welcome Header with Command Palette Trigger */}
+        {/* Calm Welcome Header with Gamified Explorer Rank & Locker Button */}
         <header className="space-y-4 border-b border-slate-200/80 pb-6 pt-2">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-700 text-xs font-bold uppercase tracking-wider">
               <span>Gurukul AI Classroom</span>
             </div>
-            <button
-              onClick={() => setIsCommandOpen(true)}
-              className="inline-flex items-center gap-3 px-4 py-2 bg-white/80 backdrop-blur-md border border-slate-200 hover:border-indigo-400 rounded-2xl shadow-xs text-xs font-bold text-slate-600 transition-all group hover:scale-[1.02]"
-            >
-              <span>🔍 Quick Search & Command</span>
-              <kbd className="px-2 py-0.5 bg-slate-100 border border-slate-200 rounded-lg text-[10px] font-mono text-slate-500 group-hover:border-indigo-300">Ctrl + K</kbd>
-            </button>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => setIsLockerOpen(true)}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 rounded-2xl shadow-xs text-xs font-bold transition-all hover:scale-[1.02]"
+              >
+                <span>🏆 My Explorer Locker</span>
+              </button>
+              <button
+                onClick={() => setIsCommandOpen(true)}
+                className="inline-flex items-center gap-3 px-4 py-2 bg-white/80 backdrop-blur-md border border-slate-200 hover:border-indigo-400 rounded-2xl shadow-xs text-xs font-bold text-slate-600 transition-all group hover:scale-[1.02]"
+              >
+                <span>🔍 Quick Search</span>
+                <kbd className="px-2 py-0.5 bg-slate-100 border border-slate-200 rounded-lg text-[10px] font-mono text-slate-500 group-hover:border-indigo-300">Ctrl + K</kbd>
+              </button>
+            </div>
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-6">
             <div className="space-y-2 max-w-3xl">
+              <div className="flex items-center gap-3">
+                <span className={`px-3 py-1 rounded-full text-xs font-black border ${rank.color}`}>
+                  {rank.title}
+                </span>
+                <span className="text-xs font-mono font-bold text-slate-500">{xp} XP Earned</span>
+              </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight">
                 Good morning, Explorer 👋
               </h1>
@@ -303,9 +339,16 @@ export default function Dashboard() {
             <div className="pt-2 flex justify-end">
               <Link
                 href={`/${selectedGrade}/${selectedSubject}/${firstChapter.id}`}
+                onClick={() => {
+                  setXp(prev => {
+                    const next = prev + 50;
+                    localStorage.setItem('gurukul_xp', next.toString());
+                    return next;
+                  });
+                }}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-extrabold rounded-2xl shadow-lg shadow-indigo-600/30 transition-all hover:translate-x-1"
               >
-                <span>Continue Learning</span>
+                <span>Continue Learning (+50 XP)</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7-7 7M3 12h18" />
                 </svg>
@@ -340,7 +383,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
             {availableSubjects.map((sub) => {
               const isActive = selectedSubject === sub;
               return (
@@ -354,12 +397,12 @@ export default function Dashboard() {
                   }`}
                 >
                   <span className="text-xl">
-                    {sub === 'English' ? '📚' : sub === 'Hindi' ? '🌸' : sub === 'Maths' ? '📐' : sub === 'Science' ? '🔬' : '🌍'}
+                    {sub.includes('English') ? '📚' : sub.includes('Hindi') ? '🌸' : sub.includes('Maths') ? '📐' : sub.includes('Science') ? '🔬' : '🌍'}
                   </span>
                   <div>
                     <div className="text-sm font-extrabold">{sub}</div>
                     <div className={`text-[10px] font-bold ${isActive ? 'text-indigo-200' : 'text-slate-400'}`}>
-                      {selectedGrade === '6' ? 'Class 6 Curriculum' : 'Class 5 Curriculum'}
+                      Class {selectedGrade}
                     </div>
                   </div>
                 </button>
@@ -480,7 +523,7 @@ export default function Dashboard() {
             </p>
           </div>
 
-          <div className="grid grid-classes sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {subjectData?.curricularGoals?.map((goal) => (
               <div
                 key={goal.code}

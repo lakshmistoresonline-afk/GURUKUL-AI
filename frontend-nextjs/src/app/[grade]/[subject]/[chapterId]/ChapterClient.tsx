@@ -74,6 +74,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
   const [completedTabs, setCompletedTabs] = useState<Record<string, boolean>>({});
   const [isMobileTocOpen, setIsMobileTocOpen] = useState<boolean>(false);
+  const [isZenMode, setIsZenMode] = useState<boolean>(false);
 
   const [readingTheme, setReadingTheme] = useState<ReadingTheme>('light');
   const [textSize, setTextSize] = useState<TextSize>('medium');
@@ -269,90 +270,114 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     <div className={`min-h-screen ${themeBgClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white`}>
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-10 space-y-8">
         {/* Top Glassmorphic Navigation Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200/80 pb-6 backdrop-blur-md">
-          <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider opacity-70">
-            <Link href="/" className="hover:text-indigo-600 transition-colors">
-              Dashboard
-            </Link>
-            <span>/</span>
-            <span>Class {grade}</span>
-            <span>/</span>
-            <span>{subject}</span>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => setIsMobileTocOpen(!isMobileTocOpen)}
-              className="lg:hidden px-3 py-1.5 bg-indigo-600 text-white rounded-xl text-xs font-bold"
-            >
-              ☰ Navigation
-            </button>
-            <div className="hidden sm:flex items-center gap-2 text-xs font-extrabold text-slate-600 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-xs">
-              <span>Chapter Progress: {progressPercent}%</span>
-              <div className="w-16 h-2 bg-slate-100 rounded-full overflow-hidden">
-                <div className="h-full bg-indigo-600 transition-all duration-500" style={{ width: `${progressPercent}%` }} />
-              </div>
+        {!isZenMode && (
+          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200/80 pb-6 backdrop-blur-md">
+            <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider opacity-70">
+              <Link href="/" className="hover:text-indigo-600 transition-colors">
+                Dashboard
+              </Link>
+              <span>/</span>
+              <span>Class {grade}</span>
+              <span>/</span>
+              <span>{subject}</span>
             </div>
-            <ReadingComfortControl
-              theme={readingTheme}
-              textSize={textSize}
-              lineSpacing={lineSpacing}
-              onThemeChange={setReadingTheme}
-              onTextSizeChange={setTextSize}
-              onLineSpacingChange={setLineSpacing}
-            />
-          </div>
-        </div>
 
-        <header className="space-y-2 border-b border-slate-200/80 pb-6">
-          <div className="text-xs font-black tracking-widest text-indigo-600 uppercase">
-            {subject} • {unitTitle} • Chapter {chNumber}
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => setIsZenMode(true)}
+                className="px-3 py-1.5 bg-teal-600 hover:bg-teal-500 text-white rounded-xl text-xs font-bold shadow-xs transition-all"
+                title="Zen Focus Mode"
+              >
+                🧘 Focus Mode
+              </button>
+              <button
+                onClick={() => setIsMobileTocOpen(!isMobileTocOpen)}
+                className="lg:hidden px-3 py-1.5 bg-indigo-600 text-white rounded-xl text-xs font-bold"
+              >
+                ☰ Navigation
+              </button>
+              <div className="hidden sm:flex items-center gap-2 text-xs font-extrabold text-slate-600 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-xs">
+                <span>Chapter Progress: {progressPercent}%</span>
+                <div className="w-16 h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div className="h-full bg-indigo-600 transition-all duration-500" style={{ width: `${progressPercent}%` }} />
+                </div>
+              </div>
+              <ReadingComfortControl
+                theme={readingTheme}
+                textSize={textSize}
+                lineSpacing={lineSpacing}
+                onThemeChange={setReadingTheme}
+                onTextSizeChange={setTextSize}
+                onLineSpacingChange={setLineSpacing}
+              />
+            </div>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight">
-            {displayTitle}
-          </h1>
-          <div className="text-xs font-mono opacity-50">
-            Canonical ID: {chapterId}
+        )}
+
+        {isZenMode && (
+          <div className="flex justify-end pb-2">
+            <button
+              onClick={() => setIsZenMode(false)}
+              className="px-4 py-2 bg-slate-900 text-white rounded-2xl text-xs font-bold shadow-lg"
+            >
+              ✕ Exit Focus Mode
+            </button>
           </div>
-        </header>
+        )}
+
+        {!isZenMode && (
+          <header className="space-y-2 border-b border-slate-200/80 pb-6">
+            <div className="text-xs font-black tracking-widest text-indigo-600 uppercase">
+              {subject} • {unitTitle} • Chapter {chNumber}
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight">
+              {displayTitle}
+            </h1>
+            <div className="text-xs font-mono opacity-50">
+              Canonical ID: {chapterId}
+            </div>
+          </header>
+        )}
 
         {/* Master-Detail Split Workspace */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative">
           {/* Sticky Left Sidebar TOC (Desktop + Mobile Drawer) */}
-          <aside className={`lg:col-span-3 lg:sticky lg:top-8 space-y-3 bg-white p-5 rounded-3xl border border-slate-200/80 shadow-sm z-30 ${isMobileTocOpen ? 'block' : 'hidden lg:block'}`}>
-            <div className="flex items-center justify-between border-b border-slate-100 pb-1">
-              <div className="text-xs font-black uppercase tracking-widest text-slate-400 px-2">
-                Chapter Navigation
+          {!isZenMode && (
+            <aside className={`lg:col-span-3 lg:sticky lg:top-8 space-y-3 bg-white p-5 rounded-3xl border border-slate-200/80 shadow-sm z-30 ${isMobileTocOpen ? 'block' : 'hidden lg:block'}`}>
+              <div className="flex items-center justify-between border-b border-slate-100 pb-1">
+                <div className="text-xs font-black uppercase tracking-widest text-slate-400 px-2">
+                  Chapter Navigation
+                </div>
+                <button onClick={() => setIsMobileTocOpen(false)} className="lg:hidden text-slate-400 font-bold text-xs">✕</button>
               </div>
-              <button onClick={() => setIsMobileTocOpen(false)} className="lg:hidden text-slate-400 font-bold text-xs">✕</button>
-            </div>
-            <nav className="space-y-1.5" aria-label="Chapter Workspace Navigation">
-              {FIXED_TABS.map((tab) => {
-                const isActive = activeTab === tab.id;
-                const isDone = completedTabs[tab.id];
-                return (
-                  <button
-                    key={tab.id}
-                    onClick={() => handleTabClick(tab.id)}
-                    className={`w-full text-left px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-all flex items-center justify-between group ${
-                      isActive
-                        ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                        : 'bg-slate-50/70 text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-100'
-                    }`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <span>{tab.icon}</span>
-                      <span>{tab.label}</span>
-                    </div>
-                    {isDone && !isActive && <span className="text-emerald-600 font-black text-xs">✓</span>}
-                  </button>
-                );
-              })}
-            </nav>
-          </aside>
+              <nav className="space-y-1.5" aria-label="Chapter Workspace Navigation">
+                {FIXED_TABS.map((tab) => {
+                  const isActive = activeTab === tab.id;
+                  const isDone = completedTabs[tab.id];
+                  return (
+                    <button
+                      key={tab.id}
+                      onClick={() => handleTabClick(tab.id)}
+                      className={`w-full text-left px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-all flex items-center justify-between group ${
+                        isActive
+                          ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                          : 'bg-slate-50/70 text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-100'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <span>{tab.icon}</span>
+                        <span>{tab.label}</span>
+                      </div>
+                      {isDone && !isActive && <span className="text-emerald-600 font-black text-xs">✓</span>}
+                    </button>
+                  );
+                })}
+              </nav>
+            </aside>
+          )}
 
           {/* Right Main Reading Canvas */}
-          <main className={`lg:col-span-9 space-y-8 min-h-[500px] ${textSizeClass} ${lineSpacingClass}`}>
+          <main className={`${isZenMode ? 'lg:col-span-12 max-w-4xl mx-auto' : 'lg:col-span-9'} space-y-8 min-h-[500px] ${textSizeClass} ${lineSpacingClass}`}>
             {renderActiveSectionContent()}
           </main>
         </div>

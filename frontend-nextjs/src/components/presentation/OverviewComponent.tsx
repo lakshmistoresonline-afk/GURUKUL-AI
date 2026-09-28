@@ -4,10 +4,13 @@ interface OverviewProps {
   data: any;
   chapterTitle?: string;
   unitTitle?: string;
+  subject?: string;
 }
 
-export default function OverviewComponent({ data, chapterTitle, unitTitle }: OverviewProps) {
+export default function OverviewComponent({ data, chapterTitle, unitTitle, subject }: OverviewProps) {
   const [activeSubTab, setActiveSubTab] = useState<string>('summary');
+  const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
+  const [reflectionAnswer, setReflectionAnswer] = useState<string | null>(null);
 
   if (!data) {
     return (
@@ -29,38 +32,66 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle }: Ove
   const takeaways = data.importantTakeaways || data.key_takeaways || [];
   const terms = data.keyTerminology || data.vocabulary || data.key_terms || [];
 
+  const isHindi = subject?.toLowerCase().includes('hindi');
+
+  const handleSpeak = (text: string) => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      if (isSpeaking) {
+        setIsSpeaking(false);
+        return;
+      }
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.9;
+      utterance.onend = () => setIsSpeaking(false);
+      window.speechSynthesis.speak(utterance);
+      setIsSpeaking(true);
+    }
+  };
+
   return (
     <div className="space-y-6">
-      {/* Sub-Section Selector Tabs Bar */}
-      <div className="flex flex-wrap gap-2 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
-        <button
-          onClick={() => setActiveSubTab('summary')}
-          className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'summary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
-        >
-          📖 Summary & Theme
-        </button>
-        {objectives.length > 0 && (
+      {/* Sub-Section Selector Tabs Bar & Audio TTS Toolbar (Except Hindi) */}
+      <div className="flex flex-wrap items-center justify-between gap-4 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
+        <div className="flex flex-wrap gap-2">
           <button
-            onClick={() => setActiveSubTab('objectives')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'objectives' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            onClick={() => setActiveSubTab('summary')}
+            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'summary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
           >
-            🎯 Learning Objectives ({objectives.length})
+            📖 Summary & Theme
           </button>
-        )}
-        {takeaways.length > 0 && (
+          {objectives.length > 0 && (
+            <button
+              onClick={() => setActiveSubTab('objectives')}
+              className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'objectives' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            >
+              🎯 Learning Objectives ({objectives.length})
+            </button>
+          )}
+          {takeaways.length > 0 && (
+            <button
+              onClick={() => setActiveSubTab('takeaways')}
+              className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'takeaways' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            >
+              💡 Key Takeaways ({takeaways.length})
+            </button>
+          )}
+          {terms.length > 0 && (
+            <button
+              onClick={() => setActiveSubTab('vocabulary')}
+              className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'vocabulary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            >
+              📚 Vocabulary ({terms.length})
+            </button>
+          )}
+        </div>
+
+        {summary && !isHindi && (
           <button
-            onClick={() => setActiveSubTab('takeaways')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'takeaways' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            onClick={() => handleSpeak(summary)}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold rounded-xl border border-indigo-200 transition-all shadow-xs"
           >
-            💡 Key Takeaways ({takeaways.length})
-          </button>
-        )}
-        {terms.length > 0 && (
-          <button
-            onClick={() => setActiveSubTab('vocabulary')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'vocabulary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
-          >
-            📚 Vocabulary ({terms.length})
+            <span>{isSpeaking ? '⏸ Pause Audio' : '🔊 Listen to Summary'}</span>
           </button>
         )}
       </div>
@@ -68,15 +99,16 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle }: Ove
       {/* Tab 1: Summary & Theme (Contains the Chapter Hero Gradient Card) */}
       {activeSubTab === 'summary' && (
         <div className="space-y-6 animate-in fade-in duration-200">
-          <div className="p-8 sm:p-10 bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 rounded-3xl text-white shadow-xl space-y-4">
+          <div className="p-8 sm:p-10 bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 rounded-3xl text-white shadow-xl space-y-4 relative overflow-hidden">
+            <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-700/60 border border-indigo-500/40 text-indigo-200 text-xs font-bold uppercase tracking-wider">
               <span>{unitTitle || 'Curriculum Unit'}</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight">{chapterTitle || 'Chapter Overview'}</h2>
             {summary && (
-              <p className="text-indigo-100 text-base sm:text-lg leading-relaxed max-w-3xl opacity-90">
+              <blockquote className="border-l-4 border-teal-400 pl-4 py-1 text-indigo-100 text-base sm:text-lg leading-relaxed max-w-3xl opacity-90 font-medium">
                 {summary}
-              </p>
+              </blockquote>
             )}
           </div>
 
@@ -88,6 +120,35 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle }: Ove
               </p>
             </div>
           )}
+
+          {/* Interactive Pause & Reflect Checkpoint */}
+          <div className="p-6 sm:p-8 bg-gradient-to-br from-teal-50 to-emerald-50 border border-teal-200/85 rounded-3xl shadow-sm space-y-4">
+            <div className="flex items-center gap-2 text-teal-800 text-xs font-black uppercase tracking-wider">
+              <span>🧠 Pause & Reflect Checkpoint</span>
+            </div>
+            <h4 className="text-sm font-bold text-slate-900">
+              How confident are you in explaining the core theme of &ldquo;{chapterTitle}&rdquo;?
+            </h4>
+            <div className="flex flex-wrap gap-3 pt-1">
+              <button
+                onClick={() => setReflectionAnswer('High Confidence 🌟')}
+                className={`px-4 py-2 rounded-xl text-xs font-extrabold border transition-all ${reflectionAnswer === 'High Confidence 🌟' ? 'bg-teal-600 text-white border-teal-600 shadow-md' : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'}`}
+              >
+                🌟 High Confidence
+              </button>
+              <button
+                onClick={() => setReflectionAnswer('Need Practice 🔍')}
+                className={`px-4 py-2 rounded-xl text-xs font-extrabold border transition-all ${reflectionAnswer === 'Need Practice 🔍' ? 'bg-amber-600 text-white border-amber-600 shadow-md' : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'}`}
+              >
+                🔍 Need Practice
+              </button>
+            </div>
+            {reflectionAnswer && (
+              <div className="p-3 bg-white/80 rounded-xl text-xs font-bold text-teal-900 border border-teal-200">
+                Recorded Response: &ldquo;{reflectionAnswer}&rdquo; — Keep up the fantastic curiosity!
+              </div>
+            )}
+          </div>
         </div>
       )}
 
