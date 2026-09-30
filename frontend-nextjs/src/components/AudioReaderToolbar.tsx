@@ -1,51 +1,89 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 interface AudioToolbarProps {
   textToRead: string;
   subject?: string;
+  activeTab?: string;
+  onAmbienceChange?: (ambience: 'off' | 'rain' | 'forest') => void;
 }
 
-export default function AudioReaderToolbar({ textToRead, subject }: AudioToolbarProps) {
+export default function AudioReaderToolbar({ textToRead, subject, activeTab, onAmbienceChange }: AudioToolbarProps) {
   const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
   const [rate, setRate] = useState<number>(1.0);
   const [ambient, setAmbient] = useState<'off' | 'rain' | 'forest'>('off');
+  const [activeAudioSource, setActiveAudioSource] = useState<any>(null);
+  const [activeAudioCtx, setActiveAudioCtx] = useState<any>(null);
 
   const isHindi = subject?.toLowerCase().includes('hindi');
 
-  // Ambient sound generator using Web Audio API
-  useEffect(() => {
-    if (ambient === 'off') return;
+  const stopAmbience = () => {
+    try {
+      if (activeAudioSource) {
+        activeAudioSource.stop();
+        activeAudioSource.disconnect();
+      }
+      if (activeAudioCtx && activeAudioCtx.state !== 'closed') {
+        activeAudioCtx.close();
+      }
+    } catch {}
+    setActiveAudioSource(null);
+    setActiveAudioCtx(null);
+  };
 
-    let audioCtx: AudioContext | null = null;
-    let node: ScriptProcessorNode | null = null;
-    let timer: any = null;
+  const handleToggleAmbience = (type: 'off' | 'rain' | 'forest') => {
+    stopAmbience();
+    setAmbient(type);
+    if (onAmbienceChange) onAmbienceChange(type);
+
+    if (type === 'off') return;
 
     try {
-      audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
-      const bufferSize = 4096;
-      node = audioCtx.createScriptProcessor(bufferSize, 1, 1);
-
-      node.onaudioprocess = (e) => {
-        const output = e.outputBuffer.getChannelData(0);
-        for (let i = 0; i < bufferSize; i++) {
-          // White noise for rain/forest background
-          const white = Math.random() * 2 - 1;
-          output[i] = white * (ambient === 'rain' ? 0.03 : 0.015);
-        }
-      };
-
-      node.connect(audioCtx.destination);
-    } catch (err) {
-      console.warn('Web Audio API not supported:', err);
-    }
-
-    return () => {
-      if (audioCtx && audioCtx.state !== 'closed') {
-        audioCtx.close();
+      const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+      const ctx = new AudioCtx();
+      if (ctx.state === 'suspended') {
+        ctx.resume();
       }
-      if (timer) clearInterval(timer);
-    };
-  }, [ambient]);
+
+      const bufferSize = ctx.sampleRate * 3;
+      const noiseBuffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+      const output = noiseBuffer.getChannelData(0);
+      let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
+
+      for (let i = 0; i < bufferSize; i++) {
+        const white = Math.random() * 2 - 1;
+        b0 = 0.99886 * b0 + white * 0.0555179;
+        b1 = 0.99332 * b1 + white * 0.0750759;
+        b2 = 0.96900 * b2 + white * 0.1538520;
+        b3 = 0.86650 * b3 + white * 0.3104856;
+        b4 = 0.55000 * b4 + white * 0.5329522;
+        b5 = -0.7616 * b5 - white * 0.0168980;
+        output[i] = b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362;
+        output[i] *= type === 'rain' ? 0.08 : 0.05;
+        b6 = white * 0.115926;
+      }
+
+      const whiteNoise = ctx.createBufferSource();
+      whiteNoise.buffer = noiseBuffer;
+      whiteNoise.loop = true;
+
+      const filter = ctx.createBiquadFilter();
+      filter.type = type === 'rain' ? 'lowpass' : 'bandpass';
+      filter.frequency.value = type === 'rain' ? 800 : 1200;
+
+      const gain = ctx.createGain();
+      gain.gain.value = 0.25;
+
+      whiteNoise.connect(filter);
+      filter.connect(gain);
+      gain.connect(ctx.destination);
+      whiteNoise.start(0);
+
+      setActiveAudioSource(whiteNoise);
+      setActiveAudioCtx(ctx);
+    } catch (err) {
+      console.warn('Web Audio API playback error:', err);
+    }
+  };
 
   if (isHindi || !textToRead) return null;
 
@@ -85,10 +123,10 @@ export default function AudioReaderToolbar({ textToRead, subject }: AudioToolbar
           onClick={handleToggleSpeech}
           className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-extrabold rounded-xl shadow-md shadow-indigo-600/20 transition-all hover:scale-[1.02]"
         >
-          <span>{isSpeaking ? '⏸ Pause Narration' : '🔊 Listen to Section'}</span>
+          <span>{isSpeaking ? '⏸ Stop Narration' : `🔊 Listen to Active ${activeTab || 'Section'}`}</span>
         </button>
         <span className="text-xs font-bold text-slate-600 hidden sm:inline">
-          {isSpeaking ? 'Narrating active study text...' : 'Audio Assistant Ready'}
+          {isSpeaking ? `Narrating active ${activeTab || 'section'} aloud...` : 'Audio Assistant Ready'}
         </span>
       </div>
 
@@ -111,20 +149,20 @@ export default function AudioReaderToolbar({ textToRead, subject }: AudioToolbar
         <div className="flex items-center gap-1 bg-white px-2.5 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 shadow-xs">
           <span>Ambience:</span>
           <button
-            onClick={() => setAmbient('off')}
+            onClick={() => handleToggleAmbience('off')}
             className={`px-2 py-0.5 rounded-lg text-[11px] font-bold ${ambient === 'off' ? 'bg-slate-900 text-white' : 'hover:bg-slate-100 text-slate-600'}`}
           >
             Off
           </button>
           <button
-            onClick={() => setAmbient('rain')}
+            onClick={() => handleToggleAmbience('rain')}
             className={`px-2 py-0.5 rounded-lg text-[11px] font-bold ${ambient === 'rain' ? 'bg-teal-600 text-white' : 'hover:bg-slate-100 text-slate-600'}`}
             title="Calming Rainfall Soundscape"
           >
             🌧️ Rain
           </button>
           <button
-            onClick={() => setAmbient('forest')}
+            onClick={() => handleToggleAmbience('forest')}
             className={`px-2 py-0.5 rounded-lg text-[11px] font-bold ${ambient === 'forest' ? 'bg-emerald-600 text-white' : 'hover:bg-slate-100 text-slate-600'}`}
             title="Relaxing Forest Soundscape"
           >

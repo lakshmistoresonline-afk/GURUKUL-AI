@@ -1,0 +1,1583 @@
+{
+  "board": "NCERT / CBSE Framework",
+  "class": "Class 7",
+  "subject": "Mathematics (Ganita Prakash Part II)",
+  "evaluation_pattern": {
+    "total_marks": 30,
+    "duration_minutes": 60,
+    "blooms_taxonomy_distribution": {
+      "Remembering_Knowledge": "15% (4.5 Marks)",
+      "Understanding_Comprehension": "30% (9 Marks)",
+      "Application_Problem_Solving": "35% (10.5 Marks)",
+      "Analyzing_Evaluating": "20% (6 Marks)"
+    },
+    "sections_breakdown": [
+      {
+        "section": "Section A",
+        "type": "Objective MCQs & Assertion-Reason",
+        "marks": 6,
+        "questions_count": 6
+      },
+      {
+        "section": "Section B",
+        "type": "Short Answer Questions (2 Marks each)",
+        "marks": 10,
+        "questions_count": 5
+      },
+      {
+        "section": "Section C",
+        "type": "Long Answer Questions / Proofs (4 Marks each)",
+        "marks": 8,
+        "questions_count": 2
+      },
+      {
+        "section": "Section D",
+        "type": "Competency / Case-Based Assessment",
+        "marks": 6,
+        "questions_count": 1
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Geometric Twins",
+      "model_paper": {
+        "paper_title": "Class 7 Mathematics - Chapter 1 (Geometric Twins) Model Test Paper",
+        "total_marks": 30,
+        "duration_minutes": 60,
+        "sections": [
+          {
+            "section": "Section A",
+            "section_title": "Objective MCQs & Assertion-Reason",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 1,
+                "question_type": "MCQ",
+                "question_text": "Which of the following conditions guarantees triangle congruence by fixing two sides and their included angle?",
+                "options": [
+                  "A) SSS",
+                  "B) SAS",
+                  "C) AAA",
+                  "D) SSA"
+                ],
+                "correct_answer": "B) SAS",
+                "step_by_step_solution": "SAS (Side-Angle-Side) criterion states that if two sides and the included angle of one triangle are equal to two sides and the included angle of another triangle, the two triangles are congruent.",
+                "marking_scheme": "1 mark for identifying option B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 2,
+                "question_type": "MCQ",
+                "question_text": "If \u0394HEN \u2245 \u0394BIG, which of the following vertex correspondences is strictly correct?",
+                "options": [
+                  "A) H \u2194 G",
+                  "B) E \u2194 B",
+                  "C) N \u2194 G",
+                  "D) H \u2194 I"
+                ],
+                "correct_answer": "C) N \u2194 G",
+                "step_by_step_solution": "In congruence notation \u0394HEN \u2245 \u0394BIG, the order of vertices shows exact alignment: H \u2194 B, E \u2194 I, and N \u2194 G.",
+                "marking_scheme": "1 mark for identifying option C.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 3,
+                "question_type": "MCQ",
+                "question_text": "In right-angled \u0394ABC (\u2220B = 90\u00b0) and \u0394PQR (\u2220Q = 90\u00b0), AC = PR = 10 cm and BC = QR = 6 cm. Which criterion proves \u0394ABC \u2245 \u0394PQR?",
+                "options": [
+                  "A) SSS",
+                  "B) SAS",
+                  "C) RHS",
+                  "D) ASA"
+                ],
+                "correct_answer": "C) RHS",
+                "step_by_step_solution": "In right triangles, if the hypotenuse (AC = PR = 10 cm) and one leg (BC = QR = 6 cm) are equal, the triangles are congruent by RHS (Right-Hypotenuse-Side) criterion.",
+                "marking_scheme": "1 mark for identifying option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 4,
+                "question_type": "MCQ",
+                "question_text": "Why does the AAA (Angle-Angle-Angle) condition fail to establish triangle congruence?",
+                "options": [
+                  "A) It changes the angles",
+                  "B) It guarantees same shape but not necessarily same size",
+                  "C) It applies only to right triangles",
+                  "D) It violates CPCT"
+                ],
+                "correct_answer": "B) It guarantees same shape but not necessarily same size",
+                "step_by_step_solution": "AAA ensures similarity (same shape), but side lengths can differ (e.g., two equilateral triangles of side 2 cm and 10 cm both have 60\u00b0 angles but are not congruent).",
+                "marking_scheme": "1 mark for identifying option B.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 5,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): In \u0394ABC, if AB = AC and \u2220A = 40\u00b0, then \u2220B = 70\u00b0.\nReason (R): Angles opposite to equal sides in an isosceles triangle are equal.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
+                "step_by_step_solution": "Since AB = AC, \u2220B = \u2220C. Sum of angles = 180\u00b0 \u21d2 40\u00b0 + 2\u2220B = 180\u00b0 \u21d2 2\u2220B = 140\u00b0 \u21d2 \u2220B = 70\u00b0. Reason R directly explains why \u2220B = \u2220C.",
+                "marking_scheme": "1 mark for correct selection of option A.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 6,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): Rigid motions like translation, rotation, and reflection alter the size and shape of geometric figures.\nReason (R): Superimposition tests congruence without changing a figure's dimensions.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is false but R is true",
+                  "D) A is true but R is false"
+                ],
+                "correct_answer": "C) A is false but R is true",
+                "step_by_step_solution": "Assertion A is FALSE because rigid motions PRESERVE distance and angle measures (leaving size and shape unchanged). Reason R is TRUE.",
+                "marking_scheme": "1 mark for correct selection of option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "section": "Section B",
+            "section_title": "Short Answer Questions (2 Marks each)",
+            "total_marks": 10,
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "List all six valid ways of stating the congruence \u0394HEN \u2245 \u0394BIG by maintaining vertex correspondence.",
+                "step_by_step_solution": "Corresponding vertices are H \u2194 B, E \u2194 I, N \u2194 G. The 6 permutations preserving this alignment are:\n1) \u0394HEN \u2245 \u0394BIG\n2) \u0394HNE \u2245 \u0394BGI\n3) \u0394EHN \u2245 \u0394IBG\n4) \u0394ENH \u2245 \u0394IGB\n5) \u0394NHE \u2245 \u0394GBI\n6) \u0394NEH \u2245 \u0394GIB",
+                "marking_scheme": "1 mark for listing first 3 valid permutations; 1 mark for completing all 6 permutations.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 2
+              },
+              {
+                "question_number": 8,
+                "question_text": "In \u0394ABC, AB = AC and \u2220A = 50\u00b0. Find the measures of \u2220B and \u2220C.",
+                "step_by_step_solution": "1) In \u0394ABC, AB = AC \u21d2 \u2220B = \u2220C (Angles opposite to equal sides are equal).\n2) Sum of interior angles = 180\u00b0 \u21d2 \u2220A + \u2220B + \u2220C = 180\u00b0\n3) 50\u00b0 + 2\u2220B = 180\u00b0 \u21d2 2\u2220B = 130\u00b0 \u21d2 \u2220B = 65\u00b0.\n4) Hence, \u2220B = 65\u00b0 and \u2220C = 65\u00b0.",
+                "marking_scheme": "1 mark for stating \u2220B = \u2220C and setup equation; 1 mark for obtaining 65\u00b0.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 9,
+                "question_text": "In quadrilateral ABCD, diagonal AC bisects \u2220BAD and AB = AD. Prove that \u0394ABC \u2245 \u0394ADC.",
+                "step_by_step_solution": "In \u0394ABC and \u0394ADC:\n1) AB = AD (Given)\n2) \u2220BAC = \u2220DAC (Given, AC bisects \u2220BAD)\n3) AC = AC (Common side)\nBy SAS criterion, \u0394ABC \u2245 \u0394ADC.",
+                "marking_scheme": "1 mark for writing all 3 equal components; 1 mark for naming SAS criterion correctly.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 10,
+                "question_text": "In right \u0394PQR (\u2220Q = 90\u00b0) and right \u0394XYZ (\u2220Y = 90\u00b0), PR = XZ = 13 cm and PQ = XY = 5 cm. Find QR if YZ = 12 cm.",
+                "step_by_step_solution": "1) In right \u0394PQR and \u0394XYZ: \u2220Q = \u2220Y = 90\u00b0, Hypotenuse PR = XZ = 13 cm, Leg PQ = XY = 5 cm.\n2) By RHS criterion, \u0394PQR \u2245 \u0394XYZ.\n3) By CPCT (Corresponding Parts of Congruent Triangles), QR = YZ = 12 cm.",
+                "marking_scheme": "1 mark for establishing RHS congruence; 1 mark for applying CPCT to get QR = 12 cm.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 11,
+                "question_text": "Explain why SSA (Side-Side-Angle) is not a reliable congruence criterion for general triangles.",
+                "step_by_step_solution": "In SSA, the given angle is not included between the two given sides. Depending on side lengths, a compass arc can intersect the third side at two distinct points, creating two non-congruent triangles (one acute, one obtuse) with identical SSA measurements. Hence, SSA does not guarantee congruence.",
+                "marking_scheme": "1 mark for explaining non-included angle ambiguity; 1 mark for noting the possibility of two distinct triangles.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 2
+              }
+            ]
+          },
+          {
+            "section": "Section C",
+            "section_title": "Long Answer Questions / Proofs (4 Marks each)",
+            "total_marks": 8,
+            "questions": [
+              {
+                "question_number": 12,
+                "question_text": "In quadrilateral ABCD, side AB = AD and side CB = CD. \n(a) Prove that \u0394ABC \u2245 \u0394ADC.\n(b) Prove that diagonal AC bisects \u2220BAD and \u2220BCD.",
+                "step_by_step_solution": "(a) In \u0394ABC and \u0394ADC:\n1) AB = AD (Given)\n2) CB = CD (Given)\n3) AC = AC (Common side)\nBy SSS (Side-Side-Side) criterion, \u0394ABC \u2245 \u0394ADC.\n\n(b) Since \u0394ABC \u2245 \u0394ADC, by CPCT:\n1) \u2220BAC = \u2220DAC \u21d2 AC bisects \u2220BAD.\n2) \u2220BCA = \u2220DCA \u21d2 AC bisects \u2220BCD.",
+                "marking_scheme": "2 marks for part (a) SSS proof steps; 2 marks for part (b) CPCT bisection deductions.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              },
+              {
+                "question_number": 13,
+                "question_text": "Two right-angled triangles \u0394ABC (\u2220B = 90\u00b0) and \u0394DEF (\u2220E = 90\u00b0) have AC = 10 cm, BC = 6 cm, DF = 10 cm, and EF = 6 cm.\n(a) State the congruence relation between the two triangles with proper vertex order.\n(b) Calculate the length of DE if AB = 8 cm.\n(c) Find \u2220C if \u2220F = 53\u00b0.",
+                "step_by_step_solution": "(a) In right \u0394ABC and \u0394DEF:\n1) \u2220B = \u2220E = 90\u00b0\n2) Hypotenuse AC = DF = 10 cm\n3) Side BC = EF = 6 cm\nBy RHS criterion, \u0394ABC \u2245 \u0394DEF.\n\n(b) By CPCT, corresponding side DE = AB = 8 cm.\n(c) By CPCT, corresponding angle \u2220C = \u2220F = 53\u00b0.",
+                "marking_scheme": "2 marks for part (a) RHS congruence proof; 1 mark for part (b) DE = 8 cm; 1 mark for part (c) \u2220C = 53\u00b0.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              }
+            ]
+          },
+          {
+            "section": "Section D",
+            "section_title": "Competency / Case-Based Assessment",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 14,
+                "case_scenario": "An architect is designing a symmetrical bridge truss with triangular support frames \u0394PQS and \u0394RQS constructed on either side of a central vertical support beam QS. Measurements show that frame side PQ = RQ = 15 meters, the angle between the upper frame and vertical beam \u2220PQS = \u2220RQS = 35\u00b0, and side PS = 12 meters.",
+                "sub_questions": [
+                  {
+                    "sub_q_number": "14(a)",
+                    "question_text": "Which congruence criterion proves that \u0394PQS \u2245 \u0394RQS?",
+                    "step_by_step_solution": "In \u0394PQS and \u0394RQS: PQ = RQ = 15 m (Given), \u2220PQS = \u2220RQS = 35\u00b0 (Given), and QS = QS (Common side). Two sides and their included angle are equal, so the criterion is SAS (Side-Angle-Side).",
+                    "marking_scheme": "1 mark for SAS criterion with justification.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(b)",
+                    "question_text": "Find the length of support beam RS.",
+                    "step_by_step_solution": "Since \u0394PQS \u2245 \u0394RQS, corresponding sides are equal (CPCT). Therefore, RS = PS = 12 meters.",
+                    "marking_scheme": "1 mark for applying CPCT; 1 mark for stating RS = 12 m.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(c)",
+                    "question_text": "If \u2220QPS = 55\u00b0, calculate the measure of \u2220QRS and verify that the base beam PR is perpendicular to QS.",
+                    "step_by_step_solution": "1) By CPCT, \u2220QRS = \u2220QPS = 55\u00b0.\n2) In \u0394PQS, sum of angles = 180\u00b0 \u21d2 \u2220PSQ = 180\u00b0 - (35\u00b0 + 55\u00b0) = 90\u00b0.\n3) Since \u2220PSQ = 90\u00b0, the vertical beam QS is perpendicular to the base beam PR.",
+                    "marking_scheme": "1 mark for finding \u2220QRS = 55\u00b0; 1 mark for calculating \u2220PSQ = 90\u00b0 and proving perpendicularity.",
+                    "marks": 2
+                  }
+                ],
+                "blooms_level": "Analyzing_Evaluating",
+                "marks": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Operations with Integers",
+      "model_paper": {
+        "paper_title": "Class 7 Mathematics - Chapter 2 (Operations with Integers) Model Test Paper",
+        "total_marks": 30,
+        "duration_minutes": 60,
+        "sections": [
+          {
+            "section": "Section A",
+            "section_title": "Objective MCQs & Assertion-Reason",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 1,
+                "question_type": "MCQ",
+                "question_text": "What is the product of (-16) \u00d7 (-5)?",
+                "options": [
+                  "A) -80",
+                  "B) +80",
+                  "C) -21",
+                  "D) +21"
+                ],
+                "correct_answer": "B) +80",
+                "step_by_step_solution": "Multiplying two negative integers yields a positive product: (-a) \u00d7 (-b) = +(a \u00d7 b). Here, 16 \u00d7 5 = 80, so (-16) \u00d7 (-5) = +80.",
+                "marking_scheme": "1 mark for selecting B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 2,
+                "question_type": "MCQ",
+                "question_text": "Evaluate 36 \u00f7 (-18).",
+                "options": [
+                  "A) 2",
+                  "B) -2",
+                  "C) 18",
+                  "D) -18"
+                ],
+                "correct_answer": "B) -2",
+                "step_by_step_solution": "Dividing a positive integer by a negative integer gives a negative quotient: (+) \u00f7 (-) = (-). 36 \u00f7 18 = 2, so 36 \u00f7 (-18) = -2.",
+                "marking_scheme": "1 mark for selecting B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 3,
+                "question_type": "MCQ",
+                "question_text": "In the token model for integers, what does a 'Zero Pair' represent?",
+                "options": [
+                  "A) Two positive tokens",
+                  "B) One green (+1) and one red (-1) token",
+                  "C) Two negative tokens",
+                  "D) Zero tokens in the bag"
+                ],
+                "correct_answer": "B) One green (+1) and one red (-1) token",
+                "step_by_step_solution": "A green token (+1) and a red token (-1) cancel each other out to equal zero, forming a Zero Pair.",
+                "marking_scheme": "1 mark for selecting B.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 4,
+                "question_type": "MCQ",
+                "question_text": "Which property is illustrated by (-5) \u00d7 [4 + (-2)] = [(-5) \u00d7 4] + [(-5) \u00d7 (-2)]?",
+                "options": [
+                  "A) Commutative Property",
+                  "B) Associative Property",
+                  "C) Distributive Property",
+                  "D) Closure Property"
+                ],
+                "correct_answer": "C) Distributive Property",
+                "step_by_step_solution": "The Distributive Property states that a \u00d7 (b + c) = (a \u00d7 b) + (a \u00d7 c) for all integers.",
+                "marking_scheme": "1 mark for selecting C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 5,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): The product of two negative integers is always positive.\nReason (R): In the token model, removing negative tokens from an empty bag requires adding zero pairs, leaving positive tokens.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
+                "step_by_step_solution": "Both statements are true and Reason R explains why (-m) \u00d7 (-n) = +mn using the physical token bag model.",
+                "marking_scheme": "1 mark for selecting A.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 6,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): (-46) \u00f7 (-23) = -2.\nReason (R): Division of a negative integer by another negative integer gives a positive quotient.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is false but R is true",
+                  "D) A is true but R is false"
+                ],
+                "correct_answer": "C) A is false but R is true",
+                "step_by_step_solution": "Assertion A is FALSE because (-46) \u00f7 (-23) = +2 (positive 2). Reason R is a TRUE general rule.",
+                "marking_scheme": "1 mark for selecting C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "section": "Section B",
+            "section_title": "Short Answer Questions (2 Marks each)",
+            "total_marks": 10,
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "Find the value of 14 \u00d7 (-15).",
+                "step_by_step_solution": "1) Multiply magnitudes: 14 \u00d7 15 = 210.\n2) Apply sign rule: (+) \u00d7 (-) = (-).\n3) Hence, 14 \u00d7 (-15) = -210.",
+                "marking_scheme": "1 mark for 14 \u00d7 15 = 210; 1 mark for correct negative sign.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 8,
+                "question_text": "A room temperature is lowered from 32\u00b0C at a rate of 5\u00b0C per hour. Find the room temperature after 10 hours.",
+                "step_by_step_solution": "1) Initial temperature = 32\u00b0C.\n2) Rate of temperature change = -5\u00b0C per hour.\n3) Total temperature change in 10 hours = 10 \u00d7 (-5\u00b0C) = -50\u00b0C.\n4) Final temperature = 32\u00b0C + (-50\u00b0C) = -18\u00b0C.",
+                "marking_scheme": "1 mark for calculating -50\u00b0C; 1 mark for final result -18\u00b0C.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 9,
+                "question_text": "Find three consecutive integers whose product is -6.",
+                "step_by_step_solution": "1) Test negative integers around zero: -3, -2, -1.\n2) Check product: (-3) \u00d7 (-2) \u00d7 (-1) = (+6) \u00d7 (-1) = -6.\n3) Since -3, -2, -1 are consecutive integers, the three numbers are -3, -2, and -1.",
+                "marking_scheme": "1 mark for setting up product; 1 mark for identifying -3, -2, -1.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 10,
+                "question_text": "Simplify using distributive property: (-25) \u00d7 37 + (-25) \u00d7 63.",
+                "step_by_step_solution": "1) Apply distributive property: a \u00d7 b + a \u00d7 c = a \u00d7 (b + c).\n2) (-25) \u00d7 37 + (-25) \u00d7 63 = (-25) \u00d7 (37 + 63)\n3) = (-25) \u00d7 100 = -2500.",
+                "marking_scheme": "1 mark for factoring out (-25); 1 mark for correct answer -2500.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 11,
+                "question_text": "How does the token bag model demonstrate that (-4) \u00d7 (-2) = +8?",
+                "step_by_step_solution": "1) Removing 2 red (-1) tokens 4 times requires starting with tokens.\n2) Since the bag is empty, place 8 zero pairs (8 green + 8 red tokens) into the bag.\n3) Remove 8 red tokens (4 \u00d7 2 negative tokens).\n4) Remaining in the bag are 8 green (+1) tokens. Hence (-4) \u00d7 (-2) = +8.",
+                "marking_scheme": "1 mark for zero pairs insertion step; 1 mark for removing red tokens leaving +8.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 2
+              }
+            ]
+          },
+          {
+            "section": "Section C",
+            "section_title": "Long Answer Questions / Proofs (4 Marks each)",
+            "total_marks": 8,
+            "questions": [
+              {
+                "question_number": 12,
+                "question_text": "A cement company earns a profit of \u20b98 per white bag sold and incurs a loss of \u20b95 per grey bag sold.\n(a) The company sells 3,000 bags of white cement and 5,000 bags of grey cement in a month. What is its net profit or loss?\n(b) What is the number of white cement bags it must sell to have neither profit nor loss, if the number of grey bags sold is 6,400?",
+                "step_by_step_solution": "(a) Profit on 3,000 white bags = 3000 \u00d7 (+8) = +\u20b924,000.\nLoss on 5,000 grey bags = 5000 \u00d7 (-5) = -\u20b925,000.\nNet income = 24,000 - 25,000 = -\u20b91,000. (Net Loss of \u20b91,000).\n\n(b) Total loss on 6,400 grey bags = 6400 \u00d7 5 = \u20b932,000.\nTo break even (zero profit/loss), profit on white bags must equal \u20b932,000.\nNumber of white bags = 32,000 / 8 = 4,000 bags.",
+                "marking_scheme": "2 marks for part (a) showing profit, loss, and net loss \u20b91,000; 2 marks for part (b) getting 4,000 bags.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              },
+              {
+                "question_number": 13,
+                "question_text": "In a class test containing 15 questions, (+4) marks are given for every correct answer and (-2) marks are given for every incorrect answer.\n(a) Gurpreet attempts all questions but only 9 of her answers are correct. What is her total score?\n(b) One of her friends gets only 5 answers correct. What will be her score?",
+                "step_by_step_solution": "(a) Gurpreet:\nCorrect answers = 9 \u21d2 Marks = 9 \u00d7 (+4) = +36.\nIncorrect answers = 15 - 9 = 6 \u21d2 Marks = 6 \u00d7 (-2) = -12.\nTotal score = 36 + (-12) = 24 marks.\n\n(b) Friend:\nCorrect answers = 5 \u21d2 Marks = 5 \u00d7 (+4) = +20.\nIncorrect answers = 15 - 5 = 10 \u21d2 Marks = 10 \u00d7 (-2) = -20.\nTotal score = 20 + (-20) = 0 marks.",
+                "marking_scheme": "2 marks for part (a) showing calculations yielding 24 marks; 2 marks for part (b) yielding 0 marks.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              }
+            ]
+          },
+          {
+            "section": "Section D",
+            "section_title": "Competency / Case-Based Assessment",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 14,
+                "case_scenario": "A submarine at sea level (0 meters) descends into the ocean at a steady rate of 4 meters per minute. Simultaneously, a mine elevator shaft located at a hilltop +20 meters above ground level begins descending into the mine at a rate of 5 meters per minute.",
+                "sub_questions": [
+                  {
+                    "sub_q_number": "14(a)",
+                    "question_text": "Write the position of the submarine after 15 minutes as an integer.",
+                    "step_by_step_solution": "Position = 15 minutes \u00d7 (-4 meters/minute) = -60 meters.",
+                    "marking_scheme": "1 mark for setup; 1 mark for answer -60 m.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(b)",
+                    "question_text": "Calculate the position of the mine elevator after 15 minutes.",
+                    "step_by_step_solution": "1) Elevator descent distance = 15 \u00d7 (-5 m) = -75 meters.\n2) Initial position = +20 meters.\n3) Final position = +20 + (-75) = -55 meters.",
+                    "marking_scheme": "1 mark for descent calculation; 1 mark for final position -55 m.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(c)",
+                    "question_text": "Determine the vertical distance between the submarine and the elevator after 15 minutes.",
+                    "step_by_step_solution": "Vertical distance = |(-55) - (-60)| = |-55 + 60| = 5 meters.",
+                    "marking_scheme": "1 mark for subtraction setup; 1 mark for obtaining 5 meters.",
+                    "marks": 2
+                  }
+                ],
+                "blooms_level": "Analyzing_Evaluating",
+                "marks": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Finding Common Ground",
+      "model_paper": {
+        "paper_title": "Class 7 Mathematics - Chapter 3 (Finding Common Ground) Model Test Paper",
+        "total_marks": 30,
+        "duration_minutes": 60,
+        "sections": [
+          {
+            "section": "Section A",
+            "section_title": "Objective MCQs & Assertion-Reason",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 1,
+                "question_type": "MCQ",
+                "question_text": "If two numbers are co-prime, what is their Highest Common Factor (HCF)?",
+                "options": [
+                  "A) 0",
+                  "B) 1",
+                  "C) Their product",
+                  "D) Their sum"
+                ],
+                "correct_answer": "B) 1",
+                "step_by_step_solution": "Co-prime numbers have no common prime factors, so their HCF is strictly 1.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 2,
+                "question_type": "MCQ",
+                "question_text": "The HCF of 45 and 36 is:",
+                "options": [
+                  "A) 3",
+                  "B) 6",
+                  "C) 9",
+                  "D) 180"
+                ],
+                "correct_answer": "C) 9",
+                "step_by_step_solution": "45 = 3\u00b2 \u00d7 5; 36 = 2\u00b2 \u00d7 3\u00b2. Common prime factor with lowest power is 3\u00b2 = 9.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 3,
+                "question_type": "MCQ",
+                "question_text": "The Least Common Multiple (LCM) of 6 and 8 is:",
+                "options": [
+                  "A) 2",
+                  "B) 14",
+                  "C) 24",
+                  "D) 48"
+                ],
+                "correct_answer": "C) 24",
+                "step_by_step_solution": "Multiples of 6: 6, 12, 18, 24... Multiples of 8: 8, 16, 24... Smallest common multiple is 24.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 4,
+                "question_type": "MCQ",
+                "question_text": "If the HCF of two numbers is 12 and their product is 2,160, what is their LCM?",
+                "options": [
+                  "A) 120",
+                  "B) 180",
+                  "C) 360",
+                  "D) 2,148"
+                ],
+                "correct_answer": "B) 180",
+                "step_by_step_solution": "Formula: HCF \u00d7 LCM = Product of two numbers \u21d2 12 \u00d7 LCM = 2160 \u21d2 LCM = 2160 / 12 = 180.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 5,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): The product of HCF and LCM of 45 and 36 equals 1,620.\nReason (R): For any two positive integers a and b, HCF(a,b) \u00d7 LCM(a,b) = a \u00d7 b.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
+                "step_by_step_solution": "a \u00d7 b = 45 \u00d7 36 = 1620. Reason R states the general rule that directly explains Assertion A.",
+                "marking_scheme": "1 mark for option A.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 6,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): For three numbers a, b, c, HCF(a,b,c) \u00d7 LCM(a,b,c) = a \u00d7 b \u00d7 c.\nReason (R): The simple product formula HCF \u00d7 LCM = Product holds strictly for two numbers.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is false but R is true",
+                  "D) A is true but R is false"
+                ],
+                "correct_answer": "C) A is false but R is true",
+                "step_by_step_solution": "Assertion A is FALSE because the product formula does NOT apply to three numbers. Reason R is TRUE.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "section": "Section B",
+            "section_title": "Short Answer Questions (2 Marks each)",
+            "total_marks": 10,
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "Find two numbers whose HCF is 1 and whose LCM is 66.",
+                "step_by_step_solution": "1) Since HCF = 1, the two numbers 'a' and 'b' are co-prime.\n2) a \u00d7 b = LCM = 66.\n3) Co-prime factors of 66 are (1, 66), (2, 33), (3, 22), (6, 11).\n4) Any valid pair like 6 and 11 is a correct answer.",
+                "marking_scheme": "1 mark for identifying co-prime factorization; 1 mark for giving a valid pair like (6, 11).",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 8,
+                "question_text": "Calculate the HCF and LCM of 225 and 750 using prime factorisation.",
+                "step_by_step_solution": "1) Prime factorisations: 225 = 3\u00b2 \u00d7 5\u00b2; 750 = 2\u00b9 \u00d7 3\u00b9 \u00d7 5\u00b3.\n2) HCF = 3\u00b9 \u00d7 5\u00b2 = 3 \u00d7 25 = 75.\n3) LCM = 2\u00b9 \u00d7 3\u00b2 \u00d7 5\u00b3 = 2 \u00d7 9 \u00d7 125 = 2,250.",
+                "marking_scheme": "1 mark for correct HCF (75); 1 mark for correct LCM (2,250).",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 9,
+                "question_text": "Anshu uses 6 cm cloth strips and Guna uses 8 cm cloth strips to construct torans. What is the shortest common length of toran they can both make without cutting strips?",
+                "step_by_step_solution": "1) The common length must be a common multiple of 6 and 8.\n2) To find the shortest length, calculate LCM(6, 8).\n3) 6 = 2 \u00d7 3; 8 = 2\u00b3. LCM = 2\u00b3 \u00d7 3 = 24 cm.",
+                "marking_scheme": "1 mark for identifying LCM requirement; 1 mark for obtaining 24 cm.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 10,
+                "question_text": "A rectangular floor measures 12 ft by 16 ft. Find the maximum side length of identical square tiles that can pave the floor without cutting.",
+                "step_by_step_solution": "1) Side length must divide both 12 and 16 evenly.\n2) For maximum size, side length = HCF(12, 16).\n3) Factors of 12 = {1,2,3,4,6,12}; Factors of 16 = {1,2,4,8,16}. HCF = 4 ft.",
+                "marking_scheme": "1 mark for HCF identification; 1 mark for 4 ft.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 11,
+                "question_text": "Determine the total number of 4 ft \u00d7 4 ft square tiles needed to pave the 12 ft \u00d7 16 ft floor.",
+                "step_by_step_solution": "1) Tiles along length (16 ft) = 16 / 4 = 4 tiles.\n2) Tiles along width (12 ft) = 12 / 4 = 3 tiles.\n3) Total tiles required = 4 \u00d7 3 = 12 square tiles.",
+                "marking_scheme": "1 mark for row/column tile counts; 1 mark for total 12 tiles.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              }
+            ]
+          },
+          {
+            "section": "Section C",
+            "section_title": "Long Answer Questions / Proofs (4 Marks each)",
+            "total_marks": 8,
+            "questions": [
+              {
+                "question_number": 12,
+                "question_text": "Three church bells toll together at intervals of 9, 12, and 15 minutes respectively.\n(a) If they toll together right now, after how many minutes will they toll together next?\n(b) Convert this duration into hours.\n(c) If they toll together at 8:00 AM, at what time will they toll together next?",
+                "step_by_step_solution": "(a) Next simultaneous toll = LCM(9, 12, 15).\n9 = 3\u00b2; 12 = 2\u00b2 \u00d7 3; 15 = 3 \u00d7 5.\nLCM = 2\u00b2 \u00d7 3\u00b2 \u00d7 5 = 4 \u00d7 9 \u00d7 5 = 180 minutes.\n\n(b) Duration in hours = 180 / 60 = 3 hours.\n\n(c) Next toll time = 8:00 AM + 3 hours = 11:00 AM.",
+                "marking_scheme": "2 marks for part (a) finding 180 min; 1 mark for part (b) converting to 3 hours; 1 mark for part (c) 11:00 AM.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              },
+              {
+                "question_number": 13,
+                "question_text": "Verify the relationship HCF(a,b) \u00d7 LCM(a,b) = a \u00d7 b for the numbers a = 45 and b = 36.\nShow all prime factorisation steps clearly.",
+                "step_by_step_solution": "1) Prime factorisation of 45 = 3\u00b2 \u00d7 5\u00b9.\n2) Prime factorisation of 36 = 2\u00b2 \u00d7 3\u00b2.\n3) HCF(45, 36) = 3\u00b2 = 9.\n4) LCM(45, 36) = 2\u00b2 \u00d7 3\u00b2 \u00d7 5\u00b9 = 4 \u00d7 9 \u00d7 5 = 180.\n5) LHS = HCF \u00d7 LCM = 9 \u00d7 180 = 1,620.\n6) RHS = a \u00d7 b = 45 \u00d7 36 = 1,620.\nSince LHS = RHS = 1,620, the formula is verified.",
+                "marking_scheme": "1 mark for prime factorisations; 1 mark for HCF & LCM; 2 marks for verifying LHS = RHS = 1620.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              }
+            ]
+          },
+          {
+            "section": "Section D",
+            "section_title": "Competency / Case-Based Assessment",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 14,
+                "case_scenario": "A disaster relief agency has received a stock of 225 kg of rice and 750 kg of wheat. They plan to pack these grains into identical bags containing either only rice or only wheat such that every bag weighs the exact same amount and is as heavy as possible.",
+                "sub_questions": [
+                  {
+                    "sub_q_number": "14(a)",
+                    "question_text": "Find the maximum weight of each grain bag.",
+                    "step_by_step_solution": "Maximum weight = HCF(225, 750).\n225 = 3\u00b2 \u00d7 5\u00b2; 750 = 2 \u00d7 3 \u00d7 5\u00b3.\nHCF = 3 \u00d7 5\u00b2 = 75 kg.",
+                    "marking_scheme": "1 mark for prime factorisation; 1 mark for obtaining 75 kg.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(b)",
+                    "question_text": "Calculate how many bags of rice and how many bags of wheat will be created.",
+                    "step_by_step_solution": "Rice bags = 225 / 75 = 3 bags.\nWheat bags = 750 / 75 = 10 bags.",
+                    "marking_scheme": "1 mark for 3 rice bags; 1 mark for 10 wheat bags.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(c)",
+                    "question_text": "Find the total number of relief bags prepared.",
+                    "step_by_step_solution": "Total bags = 3 + 10 = 13 relief bags.",
+                    "marking_scheme": "2 marks for total 13 bags.",
+                    "marks": 2
+                  }
+                ],
+                "blooms_level": "Analyzing_Evaluating",
+                "marks": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Another Peek Beyond the Point",
+      "model_paper": {
+        "paper_title": "Class 7 Mathematics - Chapter 4 (Another Peek Beyond the Point) Model Test Paper",
+        "total_marks": 30,
+        "duration_minutes": 60,
+        "sections": [
+          {
+            "section": "Section A",
+            "section_title": "Objective MCQs & Assertion-Reason",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 1,
+                "question_type": "MCQ",
+                "question_text": "What is the decimal equivalent of 13/4?",
+                "options": [
+                  "A) 3.1",
+                  "B) 3.25",
+                  "C) 3.4",
+                  "D) 0.325"
+                ],
+                "correct_answer": "B) 3.25",
+                "step_by_step_solution": "13/4 = (13 \u00d7 25)/(4 \u00d7 25) = 325/100 = 3.25.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 2,
+                "question_type": "MCQ",
+                "question_text": "Given 156 \u00d7 12 = 1,872, what is the value of 15.6 \u00d7 1.2?",
+                "options": [
+                  "A) 187.2",
+                  "B) 18.72",
+                  "C) 1.872",
+                  "D) 0.1872"
+                ],
+                "correct_answer": "B) 18.72",
+                "step_by_step_solution": "15.6 has 1 decimal place and 1.2 has 1 decimal place. Total decimal places = 2. So 18.72.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 3,
+                "question_type": "MCQ",
+                "question_text": "Evaluate 25 \u00f7 0.01.",
+                "options": [
+                  "A) 0.25",
+                  "B) 2.5",
+                  "C) 250",
+                  "D) 2,500"
+                ],
+                "correct_answer": "D) 2,500",
+                "step_by_step_solution": "25 \u00f7 0.01 = 25 \u00f7 (1/100) = 25 \u00d7 100 = 2,500.",
+                "marking_scheme": "1 mark for option D.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 4,
+                "question_type": "MCQ",
+                "question_text": "Convert 68 grams into kilograms.",
+                "options": [
+                  "A) 6.8 kg",
+                  "B) 0.68 kg",
+                  "C) 0.068 kg",
+                  "D) 0.0068 kg"
+                ],
+                "correct_answer": "C) 0.068 kg",
+                "step_by_step_solution": "1 kg = 1,000 g \u21d2 68 g = 68 / 1,000 = 0.068 kg.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 5,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): Multiplying 0.2 by 0.3 yields 0.06.\nReason (R): When multiplying decimals, the product's decimal places equal the sum of the decimal places of the factors.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
+                "step_by_step_solution": "0.2 (1 place) \u00d7 0.3 (1 place) = 0.06 (2 places). Reason R states the general rule.",
+                "marking_scheme": "1 mark for option A.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 6,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): To divide 18.72 by 1.2, multiply both numbers by 10 to get 187.2 \u00f7 12.\nReason (R): Multiplying both dividend and divisor by the same power of 10 alters the quotient value.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "C) A is true but R is false",
+                "step_by_step_solution": "Assertion A is TRUE. Reason R is FALSE because multiplying dividend and divisor by the same number PRESERVES the quotient.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "section": "Section B",
+            "section_title": "Short Answer Questions (2 Marks each)",
+            "total_marks": 10,
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "Convert 29/4 into decimal form using equivalent fractions.",
+                "step_by_step_solution": "1) Multiply numerator and denominator by 25: (29 \u00d7 25) / (4 \u00d7 25)\n2) = 725 / 100\n3) = 7.25.",
+                "marking_scheme": "1 mark for 725/100; 1 mark for 7.25.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 8,
+                "question_text": "A vehicle covers a distance of 43.2 km in 2.4 liters of petrol. How much distance will it cover in 1 liter of petrol?",
+                "step_by_step_solution": "1) Distance per liter = 43.2 \u00f7 2.4\n2) Shift decimal point by multiplying by 10: 432 \u00f7 24\n3) 432 / 24 = 18 km.",
+                "marking_scheme": "1 mark for division setup; 1 mark for obtaining 18 km.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 9,
+                "question_text": "Convert: (a) 35 cm to meters, and (b) 125.5 mL to liters.",
+                "step_by_step_solution": "(a) 35 cm = 35 / 100 = 0.35 m.\n(b) 125.5 mL = 125.5 / 1000 = 0.1255 L.",
+                "marking_scheme": "1 mark for 0.35 m; 1 mark for 0.1255 L.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 10,
+                "question_text": "Given 156 \u00d7 12 = 1,872, evaluate 0.156 \u00d7 0.12.",
+                "step_by_step_solution": "1) 0.156 has 3 decimal places.\n2) 0.12 has 2 decimal places.\n3) Total decimal places = 3 + 2 = 5 places.\n4) 0.156 \u00d7 0.12 = 0.01872.",
+                "marking_scheme": "1 mark for counting 5 decimal places; 1 mark for 0.01872.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 11,
+                "question_text": "Find the area of a rectangle of length 5.7 cm and breadth 3 cm.",
+                "step_by_step_solution": "1) Area = length \u00d7 breadth = 5.7 \u00d7 3.\n2) 57 \u00d7 3 = 171.\n3) Place 1 decimal place: 17.1 cm\u00b2.",
+                "marking_scheme": "1 mark for formula setup; 1 mark for 17.1 cm\u00b2.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              }
+            ]
+          },
+          {
+            "section": "Section C",
+            "section_title": "Long Answer Questions / Proofs (4 Marks each)",
+            "total_marks": 8,
+            "questions": [
+              {
+                "question_number": 12,
+                "question_text": "Each side of a regular polygon is 2.5 cm in length. The perimeter of the polygon is 12.5 cm.\n(a) How many sides does the polygon have?\n(b) Name the polygon.",
+                "step_by_step_solution": "(a) Perimeter = Number of sides (n) \u00d7 Side length\n12.5 = n \u00d7 2.5\nn = 12.5 / 2.5 = 125 / 25 = 5 sides.\n\n(b) A regular polygon with 5 sides is called a Regular Pentagon.",
+                "marking_scheme": "2 marks for calculation yielding n = 5; 2 marks for naming Regular Pentagon.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              },
+              {
+                "question_number": 13,
+                "question_text": "A tailor requires 1.8 m of cloth to stitch a shirt. He has a cloth roll measuring 37.8 m.\n(a) How many shirts can be stitched from the roll?\n(b) If each shirt sells for \u20b9450.50, find the total revenue from all stitched shirts.",
+                "step_by_step_solution": "(a) Number of shirts = 37.8 \u00f7 1.8 = 378 \u00f7 18 = 21 shirts.\n\n(b) Total revenue = 21 \u00d7 \u20b9450.50\n450.50 \u00d7 21 = \u20b99,460.50.",
+                "marking_scheme": "2 marks for 21 shirts; 2 marks for \u20b99,460.50 revenue.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              }
+            ]
+          },
+          {
+            "section": "Section D",
+            "section_title": "Competency / Case-Based Assessment",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 14,
+                "case_scenario": "A fruit vendor purchases 10.5 kg of apples at \u20b985.50 per kg and 15.2 kg of oranges at \u20b945.00 per kg. He pays with a \u20b92,000 note.",
+                "sub_questions": [
+                  {
+                    "sub_q_number": "14(a)",
+                    "question_text": "Calculate the total cost of apples.",
+                    "step_by_step_solution": "Cost of apples = 10.5 \u00d7 85.50 = \u20b9897.75.",
+                    "marking_scheme": "1 mark for setup; 1 mark for \u20b9897.75.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(b)",
+                    "question_text": "Calculate the total cost of oranges.",
+                    "step_by_step_solution": "Cost of oranges = 15.2 \u00d7 45.00 = \u20b9684.00.",
+                    "marking_scheme": "1 mark for setup; 1 mark for \u20b9684.00.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(c)",
+                    "question_text": "Find the total bill and the balance change returned to the vendor.",
+                    "step_by_step_solution": "1) Total bill = 897.75 + 684.00 = \u20b91,581.75.\n2) Change returned = 2000 - 1581.75 = \u20b9418.25.",
+                    "marking_scheme": "1 mark for total bill \u20b91,581.75; 1 mark for change \u20b9418.25.",
+                    "marks": 2
+                  }
+                ],
+                "blooms_level": "Analyzing_Evaluating",
+                "marks": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "Connecting the Dots...",
+      "model_paper": {
+        "paper_title": "Class 7 Mathematics - Chapter 5 (Connecting the Dots...) Model Test Paper",
+        "total_marks": 30,
+        "duration_minutes": 60,
+        "sections": [
+          {
+            "section": "Section A",
+            "section_title": "Objective MCQs & Assertion-Reason",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 1,
+                "question_type": "MCQ",
+                "question_text": "What is the arithmetic mean of the first five prime numbers?",
+                "options": [
+                  "A) 5.0",
+                  "B) 5.6",
+                  "C) 6.2",
+                  "D) 7.0"
+                ],
+                "correct_answer": "B) 5.6",
+                "step_by_step_solution": "First 5 prime numbers: 2, 3, 5, 7, 11. Sum = 28. Mean = 28 / 5 = 5.6.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 2,
+                "question_type": "MCQ",
+                "question_text": "Find the median of the dataset: 101, 102, 106, 109, 110, 112, 115, 117, 120.",
+                "options": [
+                  "A) 109",
+                  "B) 110",
+                  "C) 112",
+                  "D) 115"
+                ],
+                "correct_answer": "B) 110",
+                "step_by_step_solution": "N = 9 (odd). Median is at position (9+1)/2 = 5th position. The 5th value is 110.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 3,
+                "question_type": "MCQ",
+                "question_text": "Which statistical measure represents equalized 'fair share' distribution?",
+                "options": [
+                  "A) Range",
+                  "B) Arithmetic Mean",
+                  "C) Median",
+                  "D) Mode"
+                ],
+                "correct_answer": "B) Arithmetic Mean",
+                "step_by_step_solution": "Arithmetic mean redistributes total quantity equally across all observations.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 4,
+                "question_type": "MCQ",
+                "question_text": "Why is a cropped scale (starting above 0) used on the vertical axis of a bar graph?",
+                "options": [
+                  "A) To hide missing data",
+                  "B) To highlight subtle differences among large values",
+                  "C) To shorten the graph height",
+                  "D) To change the mean"
+                ],
+                "correct_answer": "B) To highlight subtle differences among large values",
+                "step_by_step_solution": "Starting baseline above zero zooms in to make small variations in large data clearly visible.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 5,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): Removing an extreme outlier from a dataset significantly shifts the arithmetic mean.\nReason (R): The median is heavily distorted by extreme values because it sums all data points.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "C) A is true but R is false",
+                "step_by_step_solution": "Assertion A is TRUE. Reason R is FALSE because the median depends on position and is NOT distorted by outliers.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 6,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): Neither the mean nor the median can lie outside the range [minimum, maximum] of a dataset.\nReason (R): Central tendency measures represent interior representative values.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
+                "step_by_step_solution": "Both statements are true and Reason R correctly explains why central measures must fall within the data range.",
+                "marking_scheme": "1 mark for option A.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "section": "Section B",
+            "section_title": "Short Answer Questions (2 Marks each)",
+            "total_marks": 10,
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "Find the median height for 11 girls: 135, 138, 138, 140, 140, 140, 141, 142, 142, 143, 145 (in cm).",
+                "step_by_step_solution": "1) Data is already sorted. N = 11 (odd).\n2) Median position = (11 + 1) / 2 = 6th position.\n3) The 6th value is 140 cm.",
+                "marking_scheme": "1 mark for position formula; 1 mark for 140 cm.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 8,
+                "question_text": "The mean mark of 6 students is 18. If one student scoring 8 marks is excluded, find the new mean of the remaining 5 students.",
+                "step_by_step_solution": "1) Original sum = 18 \u00d7 6 = 108.\n2) New sum after excluding 8 = 108 - 8 = 100.\n3) New mean = 100 / 5 = 20.",
+                "marking_scheme": "1 mark for new sum 100; 1 mark for new mean 20.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 9,
+                "question_text": "Explain what a Dot Plot is and state two visual features it displays.",
+                "step_by_step_solution": "A Dot Plot displays discrete data values as stacked dots above a number line. It visually displays: 1) Clusters (dense areas of frequent values), 2) Gaps (empty intervals with no data), and 3) Outliers.",
+                "marking_scheme": "1 mark for definition; 1 mark for naming 2 visual features.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 2
+              },
+              {
+                "question_number": 10,
+                "question_text": "Find the range of daily water usage in liters: 5.6, 8, 3.09, 12.9, 6.5, 12.1, 11.3, 20.5, 7.4.",
+                "step_by_step_solution": "1) Minimum value = 3.09 L.\n2) Maximum value = 20.5 L.\n3) Range = Maximum - Minimum = 20.5 - 3.09 = 17.41 L.",
+                "marking_scheme": "1 mark for identifying min and max; 1 mark for range 17.41 L.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 11,
+                "question_text": "The heights of 5 players are 140 cm, 142 cm, 145 cm, 148 cm, and 150 cm. Find the arithmetic mean.",
+                "step_by_step_solution": "1) Sum = 140 + 142 + 145 + 148 + 150 = 725 cm.\n2) Mean = 725 / 5 = 145 cm.",
+                "marking_scheme": "1 mark for sum 725; 1 mark for mean 145 cm.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              }
+            ]
+          },
+          {
+            "section": "Section C",
+            "section_title": "Long Answer Questions / Proofs (4 Marks each)",
+            "total_marks": 8,
+            "questions": [
+              {
+                "question_number": 12,
+                "question_text": "Heights of 10 students (in cm) are: 106, 110, 123, 125, 117, 120, 112, 115, 110, 102.\n(a) Arrange data in ascending order.\n(b) Find the minimum and maximum height.\n(c) Calculate the median height.",
+                "step_by_step_solution": "(a) Sorted data: 102, 106, 110, 110, 112, 115, 117, 120, 123, 125.\n(b) Minimum = 102 cm, Maximum = 125 cm.\n(c) N = 10 (even). Middle positions = 10/2 = 5th (112 cm) and 6th (115 cm).\nMedian = (112 + 115) / 2 = 227 / 2 = 113.5 cm.",
+                "marking_scheme": "1 mark for sorting; 1 mark for min/max; 2 marks for median calculation 113.5 cm.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              },
+              {
+                "question_number": 13,
+                "question_text": "A teacher recorded test scores for 5 students as: 12, 14, 15, 15, 84.\n(a) Calculate the arithmetic mean including the score 84.\n(b) Calculate the median.\n(c) Recalculate the mean without the outlier 84 and comment on the effect of the outlier.",
+                "step_by_step_solution": "(a) Sum = 12 + 14 + 15 + 15 + 84 = 140. Mean = 140 / 5 = 28.\n(b) Sorted: 12, 14, 15, 15, 84. N = 5 (odd). Median = 3rd value = 15.\n(c) Without 84: Sum = 56. New Mean = 56 / 4 = 14.\nComment: The outlier 84 artificially inflated the mean from 14 to 28, while the median (15) accurately reflected the central group.",
+                "marking_scheme": "1 mark for original mean (28); 1 mark for median (15); 1 mark for new mean (14); 1 mark for comment.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              }
+            ]
+          },
+          {
+            "section": "Section D",
+            "section_title": "Competency / Case-Based Assessment",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 14,
+                "case_scenario": "A market survey recorded pocket counts on garments:\nBoys' clothing: {2, 3, 4, 4, 5, 5, 5, 6, 7}\nGirls' clothing: {0, 1, 2, 2, 2, 3, 4}",
+                "sub_questions": [
+                  {
+                    "sub_q_number": "14(a)",
+                    "question_text": "Find the median pocket count for boys' clothing.",
+                    "step_by_step_solution": "Boys (N = 9, odd): 5th value = 5 pockets. Median = 5.",
+                    "marking_scheme": "1 mark for setup; 1 mark for median = 5.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(b)",
+                    "question_text": "Find the median pocket count for girls' clothing.",
+                    "step_by_step_solution": "Girls (N = 7, odd): 4th value = 2 pockets. Median = 2.",
+                    "marking_scheme": "1 mark for setup; 1 mark for median = 2.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(c)",
+                    "question_text": "Compare data spread (range) between boys' and girls' clothing.",
+                    "step_by_step_solution": "Boys range = 7 - 2 = 5 pockets. Girls range = 4 - 0 = 4 pockets. Boys' garments have a higher median and slightly larger range.",
+                    "marking_scheme": "1 mark for range calculations (5 and 4); 1 mark for comparative comment.",
+                    "marks": 2
+                  }
+                ],
+                "blooms_level": "Analyzing_Evaluating",
+                "marks": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "Constructions and Tilings",
+      "model_paper": {
+        "paper_title": "Class 7 Mathematics - Chapter 6 (Constructions and Tilings) Model Test Paper",
+        "total_marks": 30,
+        "duration_minutes": 60,
+        "sections": [
+          {
+            "section": "Section A",
+            "section_title": "Objective MCQs & Assertion-Reason",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 1,
+                "question_type": "MCQ",
+                "question_text": "How many equilateral triangles meet at the central point of a regular hexagon?",
+                "options": [
+                  "A) 4",
+                  "B) 5",
+                  "C) 6",
+                  "D) 8"
+                ],
+                "correct_answer": "C) 6",
+                "step_by_step_solution": "A regular hexagon decomposes into 6 congruent equilateral triangles meeting at its center (6 \u00d7 60\u00b0 = 360\u00b0).",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 2,
+                "question_type": "MCQ",
+                "question_text": "What is the measure of each interior angle of a regular hexagon?",
+                "options": [
+                  "A) 60\u00b0",
+                  "B) 90\u00b0",
+                  "C) 120\u00b0",
+                  "D) 108\u00b0"
+                ],
+                "correct_answer": "C) 120\u00b0",
+                "step_by_step_solution": "Each interior angle consists of two adjacent 60\u00b0 angles of the central equilateral triangles: 60\u00b0 + 60\u00b0 = 120\u00b0.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 3,
+                "question_type": "MCQ",
+                "question_text": "Which classical instruments are strictly permitted for pure geometric constructions?",
+                "options": [
+                  "A) Protractor and ruler",
+                  "B) Set square and divider",
+                  "C) Unmarked straightedge (ruler) and compass",
+                  "D) Measuring tape and protractor"
+                ],
+                "correct_answer": "C) Unmarked straightedge (ruler) and compass",
+                "step_by_step_solution": "Classical Euclidean constructions strictly allow only an unmarked straightedge and a compass.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 4,
+                "question_type": "MCQ",
+                "question_text": "How many total flat pieces make up a traditional Chinese Tangram puzzle?",
+                "options": [
+                  "A) 5",
+                  "B) 6",
+                  "C) 7",
+                  "D) 8"
+                ],
+                "correct_answer": "C) 7",
+                "step_by_step_solution": "A Tangram consists of 7 pieces: 5 triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 5,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): Any point on the perpendicular bisector of segment XY is equidistant from endpoints X and Y.\nReason (R): The perpendicular bisector divides \u0394PMX and \u0394PMY into congruent triangles by SAS criterion.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
+                "step_by_step_solution": "In \u0394PMX and \u0394PMY: MX = MY, \u2220PMX = \u2220PMY = 90\u00b0, PM = PM. SAS proves \u0394PMX \u2245 \u0394PMY, so PX = PY by CPCT.",
+                "marking_scheme": "1 mark for option A.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 6,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): Tiling (tessellation) allows shapes to overlap as long as there are no empty gaps.\nReason (R): Tessellation requires strictly zero gaps AND zero overlaps.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is false but R is true",
+                  "D) A is true but R is false"
+                ],
+                "correct_answer": "C) A is false but R is true",
+                "step_by_step_solution": "Assertion A is FALSE because overlapping violates tessellation rules. Reason R is TRUE.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "section": "Section B",
+            "section_title": "Short Answer Questions (2 Marks each)",
+            "total_marks": 10,
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "Explain how to construct a 30\u00b0 angle systematically using a ruler and compass.",
+                "step_by_step_solution": "1) Construct a 60\u00b0 angle using the equilateral triangle arc method.\n2) Construct the angle bisector of the 60\u00b0 angle.\n3) The resulting bisected angle is 30\u00b0.",
+                "marking_scheme": "1 mark for 60\u00b0 construction step; 1 mark for angle bisector step.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 8,
+                "question_text": "Explain why the compass radius used to draw intersecting arcs for a perpendicular bisector of segment XY must be greater than 0.5 XY.",
+                "step_by_step_solution": "If the compass radius is less than or equal to half of XY (r \u2264 0.5 XY), the arcs drawn from X and Y will not reach each other or intersect, making it impossible to locate the two points defining the bisector line.",
+                "marking_scheme": "1 mark for explaining lack of arc intersection; 1 mark for geometric reasoning.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 2
+              },
+              {
+                "question_number": 9,
+                "question_text": "Detail the 7 shapes that compose a standard Tangram puzzle.",
+                "step_by_step_solution": "A Tangram consists of:\n1) 2 large isosceles right triangles\n2) 1 medium isosceles right triangle\n3) 2 small isosceles right triangles\n4) 1 square\n5) 1 parallelogram",
+                "marking_scheme": "1 mark for listing triangles (5 total); 1 mark for square and parallelogram.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 2
+              },
+              {
+                "question_number": 10,
+                "question_text": "Explain how to construct a 45\u00b0 angle using ruler and compass.",
+                "step_by_step_solution": "1) Construct a 90\u00b0 right angle at a given point on a line.\n2) Construct the angle bisector of the 90\u00b0 angle.\n3) Half of 90\u00b0 gives a 45\u00b0 angle.",
+                "marking_scheme": "1 mark for 90\u00b0 construction; 1 mark for angle bisection.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 11,
+                "question_text": "What is a pointed arch, and how is its geometric curve constructed?",
+                "step_by_step_solution": "A pointed arch (Gothic arch) is a architectural curve formed by two intersecting circular arcs drawn from centers located at opposite ends/midpoints of a base horizontal support segment.",
+                "marking_scheme": "1 mark for definition; 1 mark for describing intersecting arcs from base centers.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 2
+              }
+            ]
+          },
+          {
+            "section": "Section C",
+            "section_title": "Long Answer Questions / Proofs (4 Marks each)",
+            "total_marks": 8,
+            "questions": [
+              {
+                "question_number": 12,
+                "question_text": "Outline the step-by-step construction procedure to draw a regular hexagon of side length 4 cm using a ruler and compass.",
+                "step_by_step_solution": "1) Draw a circle of radius r = 4 cm with center O.\n2) Mark a point A anywhere on the circumference.\n3) With compass radius kept at 4 cm, set point at A and draw an arc to intersect the circle at B.\n4) Move compass to B, mark C; continue stepping off points D, E, F around the circle.\n5) Join AB, BC, CD, DE, EF, FA using a ruler. ABCDEF is the regular hexagon.",
+                "marking_scheme": "1 mark for circle setup; 2 marks for stepping off radius 6 times; 1 mark for joining vertices.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              },
+              {
+                "question_number": 13,
+                "question_text": "Describe the construction steps to draw a line 'm' parallel to line 'l' passing through an external point P.",
+                "step_by_step_solution": "1) Mark any point A on line 'l' and draw segment AP.\n2) At point A, line AP forms angle \u2220PAL with line 'l'.\n3) At vertex P, copy angle \u2220PAL on the opposite side of transversal AP using the compass SSS angle copy method to construct alternate interior angle \u2220APM = \u2220PAL.\n4) Draw line 'm' through P along the copied ray. Line 'm' is parallel to 'l' by equal alternate interior angles.",
+                "marking_scheme": "1 mark for transversal AP; 2 marks for copying alternate interior angle; 1 mark for drawing line m.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              }
+            ]
+          },
+          {
+            "section": "Section D",
+            "section_title": "Competency / Case-Based Assessment",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 14,
+                "case_scenario": "A craftsperson is creating a floor tiling pattern using regular hexagons and equilateral triangles.",
+                "sub_questions": [
+                  {
+                    "sub_q_number": "14(a)",
+                    "question_text": "Calculate the sum of interior angles around a single vertex where tiles meet in a valid tessellation.",
+                    "step_by_step_solution": "In any valid plane tessellation without gaps or overlaps, the sum of interior angles meeting at a vertex must equal 360\u00b0.",
+                    "marking_scheme": "1 mark for stating 360\u00b0; 1 mark for tessellation angle rule.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(b)",
+                    "question_text": "Can regular hexagons alone tile a floor? Justify using interior angle measure.",
+                    "step_by_step_solution": "Yes. Each interior angle of a regular hexagon is 120\u00b0. Three regular hexagons meeting at a vertex give 120\u00b0 \u00d7 3 = 360\u00b0, forming a perfect gapless tile.",
+                    "marking_scheme": "1 mark for 120\u00b0 \u00d7 3 = 360\u00b0; 1 mark for confirming Yes.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(c)",
+                    "question_text": "How many equilateral triangles are required to fill the space around a vertex if combined with one regular hexagon?",
+                    "step_by_step_solution": "1) One regular hexagon angle = 120\u00b0.\n2) Remaining angle around vertex = 360\u00b0 - 120\u00b0 = 240\u00b0.\n3) Each equilateral triangle angle = 60\u00b0.\n4) Number of triangles = 240\u00b0 / 60\u00b0 = 4 equilateral triangles.",
+                    "marking_scheme": "1 mark for remaining 240\u00b0; 1 mark for obtaining 4 triangles.",
+                    "marks": 2
+                  }
+                ],
+                "blooms_level": "Analyzing_Evaluating",
+                "marks": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "Finding the Unknown",
+      "model_paper": {
+        "paper_title": "Class 7 Mathematics - Chapter 7 (Finding the Unknown) Model Test Paper",
+        "total_marks": 30,
+        "duration_minutes": 60,
+        "sections": [
+          {
+            "section": "Section A",
+            "section_title": "Objective MCQs & Assertion-Reason",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 1,
+                "question_type": "MCQ",
+                "question_text": "Solve for x in 3x - 5 = 10.",
+                "options": [
+                  "A) 3",
+                  "B) 5",
+                  "C) 15",
+                  "D) 45"
+                ],
+                "correct_answer": "B) 5",
+                "step_by_step_solution": "3x = 10 + 5 \u21d2 3x = 15 \u21d2 x = 5.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 2,
+                "question_type": "MCQ",
+                "question_text": "Given 4k + 1 = 13, what is the value of 8k + 2?",
+                "options": [
+                  "A) 12",
+                  "B) 24",
+                  "C) 26",
+                  "D) 28"
+                ],
+                "correct_answer": "C) 26",
+                "step_by_step_solution": "8k + 2 = 2(4k + 1) = 2(13) = 26. Alternatively, 4k = 12 \u21d2 k = 3 \u21d2 8(3)+2 = 26.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 3,
+                "question_type": "MCQ",
+                "question_text": "What historical term was used for algebra in ancient India?",
+                "options": [
+                  "A) Patiganita",
+                  "B) B\u012bjaga\u1e47ita",
+                  "C) Sulba Sutra",
+                  "D) Lilavati"
+                ],
+                "correct_answer": "B) B\u012bjaga\u1e47ita",
+                "step_by_step_solution": "B\u012bjaga\u1e47ita ('seed mathematics') was the ancient Indian name for algebra.",
+                "marking_scheme": "1 mark for option B.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 4,
+                "question_type": "MCQ",
+                "question_text": "Which operation is the inverse of multiplying by 5?",
+                "options": [
+                  "A) Adding 5",
+                  "B) Subtracting 5",
+                  "C) Dividing by 5",
+                  "D) Squaring 5"
+                ],
+                "correct_answer": "C) Dividing by 5",
+                "step_by_step_solution": "The inverse operation of multiplication is division.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Remembering_Knowledge",
+                "marks": 1
+              },
+              {
+                "question_number": 5,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): The expression 3(x + 2) simplifies to 3x + 6.\nReason (R): According to the distributive law, a factor outside parentheses must be multiplied by every term inside.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is true but R is false",
+                  "D) A is false but R is true"
+                ],
+                "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
+                "step_by_step_solution": "3(x + 2) = 3x + 6 by the distributive law.",
+                "marking_scheme": "1 mark for option A.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              },
+              {
+                "question_number": 6,
+                "question_type": "Assertion-Reason",
+                "question_text": "Assertion (A): If 2x = 8, then x = 8 - 2 = 6.\nReason (R): The inverse of multiplication is division, so 2x = 8 implies x = 8 / 2 = 4.",
+                "options": [
+                  "A) Both A and R are true and R is the correct explanation of A",
+                  "B) Both A and R are true but R is NOT the correct explanation of A",
+                  "C) A is false but R is true",
+                  "D) A is true but R is false"
+                ],
+                "correct_answer": "C) A is false but R is true",
+                "step_by_step_solution": "Assertion A is FALSE (incorrectly subtracted 2 instead of dividing). Reason R is TRUE.",
+                "marking_scheme": "1 mark for option C.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "section": "Section B",
+            "section_title": "Short Answer Questions (2 Marks each)",
+            "total_marks": 10,
+            "questions": [
+              {
+                "question_number": 7,
+                "question_text": "Solve for x: 3(x + 2) = 15.",
+                "step_by_step_solution": "1) Divide both sides by 3: x + 2 = 5.\n2) Subtract 2 from both sides: x = 3.",
+                "marking_scheme": "1 mark for x + 2 = 5; 1 mark for x = 3.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 8,
+                "question_text": "One quarter of a number increased by 9 equals the number itself. Frame an equation and find the number.",
+                "step_by_step_solution": "1) Equation: (1/4)x + 9 = x.\n2) Subtract (1/4)x: 9 = (3/4)x.\n3) x = 9 \u00d7 (4/3) = 12.",
+                "marking_scheme": "1 mark for equation setup; 1 mark for x = 12.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 9,
+                "question_text": "Explain the weighing scale metaphor for an algebraic equation.",
+                "step_by_step_solution": "An equation represents a balanced scale where LHS equals RHS. Adding, removing, multiplying, or dividing equal quantities on both sides maintains scale balance.",
+                "marking_scheme": "1 mark for LHS=RHS balance; 1 mark for operating on both sides.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 2
+              },
+              {
+                "question_number": 10,
+                "question_text": "A taxi driver charges a fixed fee of \u20b9800 plus \u20b920 per km. If a passenger's bill is \u20b92,200, find distance 'd'.",
+                "step_by_step_solution": "1) 800 + 20d = 2200\n2) 20d = 1400\n3) d = 1400 / 20 = 70 km.",
+                "marking_scheme": "1 mark for equation setup; 1 mark for d = 70 km.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 2
+              },
+              {
+                "question_number": 11,
+                "question_text": "Correct the mistake in the solution: 4x + 6 = 10 \u21d2 4x = 10 + 6 = 16 \u21d2 x = 4.",
+                "step_by_step_solution": "Mistake: +6 was added to RHS instead of subtracted.\nCorrect step: 4x = 10 - 6 \u21d2 4x = 4 \u21d2 x = 1.",
+                "marking_scheme": "1 mark for identifying addition mistake; 1 mark for correct x = 1.",
+                "blooms_level": "Understanding_Comprehension",
+                "marks": 2
+              }
+            ]
+          },
+          {
+            "section": "Section C",
+            "section_title": "Long Answer Questions / Proofs (4 Marks each)",
+            "total_marks": 8,
+            "questions": [
+              {
+                "question_number": 12,
+                "question_text": "Solve the linear equation 5z + 2 = 3z - 4 systematically step-by-step with justification and check your answer.",
+                "step_by_step_solution": "1) Subtract 3z from both sides: 2z + 2 = -4.\n2) Subtract 2 from both sides: 2z = -6.\n3) Divide both sides by 2: z = -3.\nCheck: LHS = 5(-3) + 2 = -13; RHS = 3(-3) - 4 = -13. LHS = RHS verified.",
+                "marking_scheme": "2 marks for step-by-step solution yielding z = -3; 2 marks for LHS = RHS check.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              },
+              {
+                "question_number": 13,
+                "question_text": "Sum of three consecutive natural numbers is 51. Find the three numbers.",
+                "step_by_step_solution": "1) Let numbers be x, x+1, x+2.\n2) Equation: x + (x+1) + (x+2) = 51\n3) 3x + 3 = 51 \u21d2 3x = 48 \u21d2 x = 16.\n4) The three numbers are 16, 17, and 18.",
+                "marking_scheme": "1 mark for setting x, x+1, x+2; 1 mark for 3x + 3 = 51; 2 marks for numbers 16, 17, 18.",
+                "blooms_level": "Application_Problem_Solving",
+                "marks": 4
+              }
+            ]
+          },
+          {
+            "section": "Section D",
+            "section_title": "Competency / Case-Based Assessment",
+            "total_marks": 6,
+            "questions": [
+              {
+                "question_number": 14,
+                "case_scenario": "A function machine doubles an input number 'x', adds 3 to the product, and then divides the result by 5 to produce an output of 7.",
+                "sub_questions": [
+                  {
+                    "sub_q_number": "14(a)",
+                    "question_text": "Write an algebraic equation representing the function machine.",
+                    "step_by_step_solution": "(2x + 3) / 5 = 7.",
+                    "marking_scheme": "1 mark for setup; 1 mark for (2x + 3)/5 = 7.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(b)",
+                    "question_text": "Solve the equation using inverse operations to find input 'x'.",
+                    "step_by_step_solution": "1) Multiply by 5: 2x + 3 = 35.\n2) Subtract 3: 2x = 32.\n3) Divide by 2: x = 16.",
+                    "marking_scheme": "1 mark for 2x = 32; 1 mark for x = 16.",
+                    "marks": 2
+                  },
+                  {
+                    "sub_q_number": "14(c)",
+                    "question_text": "If the desired output is 5, calculate the new input 'x'.",
+                    "step_by_step_solution": "1) (2x + 3) / 5 = 5\n2) 2x + 3 = 25 \u21d2 2x = 22 \u21d2 x = 11.",
+                    "marking_scheme": "1 mark for 2x = 22; 1 mark for x = 11.",
+                    "marks": 2
+                  }
+                ],
+                "blooms_level": "Analyzing_Evaluating",
+                "marks": 6
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

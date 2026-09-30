@@ -9,7 +9,6 @@ interface OverviewProps {
 
 export default function OverviewComponent({ data, chapterTitle, unitTitle, subject }: OverviewProps) {
   const [activeSubTab, setActiveSubTab] = useState<string>('summary');
-  const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
   const [reflectionAnswer, setReflectionAnswer] = useState<string | null>(null);
 
   if (!data) {
@@ -32,26 +31,9 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
   const takeaways = data.importantTakeaways || data.key_takeaways || [];
   const terms = data.keyTerminology || data.vocabulary || data.key_terms || [];
 
-  const isHindi = subject?.toLowerCase().includes('hindi');
-
-  const handleSpeak = (text: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      if (isSpeaking) {
-        setIsSpeaking(false);
-        return;
-      }
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = 0.9;
-      utterance.onend = () => setIsSpeaking(false);
-      window.speechSynthesis.speak(utterance);
-      setIsSpeaking(true);
-    }
-  };
-
   return (
     <div className="space-y-6">
-      {/* Sub-Section Selector Tabs Bar & Audio TTS Toolbar (Except Hindi) */}
+      {/* Sub-Section Selector Tabs Bar */}
       <div className="flex flex-wrap items-center justify-between gap-4 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
         <div className="flex flex-wrap gap-2">
           <button
@@ -85,15 +67,6 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
             </button>
           )}
         </div>
-
-        {summary && !isHindi && (
-          <button
-            onClick={() => handleSpeak(summary)}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold rounded-xl border border-indigo-200 transition-all shadow-xs"
-          >
-            <span>{isSpeaking ? '⏸ Pause Audio' : '🔊 Listen to Summary'}</span>
-          </button>
-        )}
       </div>
 
       {/* Tab 1: Summary & Theme (Contains the Chapter Hero Gradient Card) */}

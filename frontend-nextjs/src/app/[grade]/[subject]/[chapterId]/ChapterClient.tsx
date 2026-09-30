@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ReadingComfortControl, ReadingTheme, TextSize, LineSpacing, FontStyle } from '../../../../components/ReadingComfortControl';
 import AudioReaderToolbar from '../../../../components/AudioReaderToolbar';
+import AmbientAtmosphereOverlay from '../../../../components/AmbientAtmosphereOverlay';
 import OverviewComponent from '../../../../components/presentation/OverviewComponent';
 import NotesComponent from '../../../../components/presentation/NotesComponent';
 import MasterComponent from '../../../../components/presentation/MasterComponent';
@@ -76,6 +77,7 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const [completedTabs, setCompletedTabs] = useState<Record<string, boolean>>({ overview: true });
   const [isMobileTocOpen, setIsMobileTocOpen] = useState<boolean>(false);
   const [isZenMode, setIsZenMode] = useState<boolean>(false);
+  const [ambience, setAmbience] = useState<'off' | 'rain' | 'forest'>('off');
 
   const [readingTheme, setReadingTheme] = useState<ReadingTheme>('light');
   const [textSize, setTextSize] = useState<TextSize>('medium');
@@ -289,8 +291,10 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   };
 
   return (
-    <div className={`min-h-screen ${themeBgClass} ${fontClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white`}>
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-10 space-y-8">
+    <div className={`min-h-screen ${themeBgClass} ${fontClass} transition-colors duration-300 selection:bg-indigo-500 selection:text-white relative`}>
+      <AmbientAtmosphereOverlay ambience={ambience} />
+
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-10 space-y-8 relative z-10">
         {/* Top Glassmorphic Navigation Bar */}
         {!isZenMode && (
           <div className="relative z-50 flex flex-wrap items-center justify-between gap-4 border-b border-slate-200/80 pb-6 backdrop-blur-md">
@@ -358,7 +362,12 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
         )}
 
         {/* Global Audio Assistant Toolbar (Placed cleanly below chapter header, above grid) */}
-        <AudioReaderToolbar textToRead={getActiveTextToRead()} subject={subject} />
+        <AudioReaderToolbar
+          textToRead={getActiveTextToRead()}
+          subject={subject}
+          activeTab={activeTab}
+          onAmbienceChange={setAmbience}
+        />
 
         {/* Master-Detail Split Workspace */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative">
