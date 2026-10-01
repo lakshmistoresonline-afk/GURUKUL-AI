@@ -1,220 +1,362 @@
 {
-  "chapter_number": 6,
-  "chapter_title": "Constructions and Tilings",
-  "model_paper": {
-    "paper_title": "Class 7 Mathematics - Chapter 6 (Constructions and Tilings) Model Test Paper",
-    "total_marks": 30,
-    "duration_minutes": 60,
-    "sections": [
-      {
-        "section": "Section A",
-        "section_title": "Objective MCQs & Assertion-Reason",
-        "total_marks": 6,
-        "questions": [
-          {
-            "question_number": 1,
-            "question_type": "MCQ",
-            "question_text": "How many equilateral triangles meet at the central point of a regular hexagon?",
-            "options": [
-              "A) 4",
-              "B) 5",
-              "C) 6",
-              "D) 8"
-            ],
-            "correct_answer": "C) 6",
-            "step_by_step_solution": "A regular hexagon decomposes into 6 congruent equilateral triangles meeting at its center (6 × 60° = 360°).",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 2,
-            "question_type": "MCQ",
-            "question_text": "What is the measure of each interior angle of a regular hexagon?",
-            "options": [
-              "A) 60°",
-              "B) 90°",
-              "C) 120°",
-              "D) 108°"
-            ],
-            "correct_answer": "C) 120°",
-            "step_by_step_solution": "Each interior angle consists of two adjacent 60° angles of the central equilateral triangles: 60° + 60° = 120°.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 3,
-            "question_type": "MCQ",
-            "question_text": "Which classical instruments are strictly permitted for pure geometric constructions?",
-            "options": [
-              "A) Protractor and ruler",
-              "B) Set square and divider",
-              "C) Unmarked straightedge (ruler) and compass",
-              "D) Measuring tape and protractor"
-            ],
-            "correct_answer": "C) Unmarked straightedge (ruler) and compass",
-            "step_by_step_solution": "Classical Euclidean constructions strictly allow only an unmarked straightedge and a compass.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 4,
-            "question_type": "MCQ",
-            "question_text": "How many total flat pieces make up a traditional Chinese Tangram puzzle?",
-            "options": [
-              "A) 5",
-              "B) 6",
-              "C) 7",
-              "D) 8"
-            ],
-            "correct_answer": "C) 7",
-            "step_by_step_solution": "A Tangram consists of 7 pieces: 5 triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 5,
-            "question_type": "Assertion-Reason",
-            "question_text": "Assertion (A): Any point on the perpendicular bisector of segment XY is equidistant from endpoints X and Y.\nReason (R): The perpendicular bisector divides ΔPMX and ΔPMY into congruent triangles by SAS criterion.",
-            "options": [
-              "A) Both A and R are true and R is the correct explanation of A",
-              "B) Both A and R are true but R is NOT the correct explanation of A",
-              "C) A is true but R is false",
-              "D) A is false but R is true"
-            ],
-            "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
-            "step_by_step_solution": "In ΔPMX and ΔPMY: MX = MY, ∠PMX = ∠PMY = 90°, PM = PM. SAS proves ΔPMX ≅ ΔPMY, so PX = PY by CPCT.",
-            "marking_scheme": "1 mark for option A.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 6,
-            "question_type": "Assertion-Reason",
-            "question_text": "Assertion (A): Tiling (tessellation) allows shapes to overlap as long as there are no empty gaps.\nReason (R): Tessellation requires strictly zero gaps AND zero overlaps.",
-            "options": [
-              "A) Both A and R are true and R is the correct explanation of A",
-              "B) Both A and R are true but R is NOT the correct explanation of A",
-              "C) A is false but R is true",
-              "D) A is true but R is false"
-            ],
-            "correct_answer": "C) A is false but R is true",
-            "step_by_step_solution": "Assertion A is FALSE because overlapping violates tessellation rules. Reason R is TRUE.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          }
-        ]
-      },
-      {
-        "section": "Section B",
-        "section_title": "Short Answer Questions (2 Marks each)",
-        "total_marks": 10,
-        "questions": [
-          {
-            "question_number": 7,
-            "question_text": "Explain how to construct a 30° angle systematically using a ruler and compass.",
-            "step_by_step_solution": "1) Construct a 60° angle using the equilateral triangle arc method.\n2) Construct the angle bisector of the 60° angle.\n3) The resulting bisected angle is 30°.",
-            "marking_scheme": "1 mark for 60° construction step; 1 mark for angle bisector step.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 8,
-            "question_text": "Explain why the compass radius used to draw intersecting arcs for a perpendicular bisector of segment XY must be greater than 0.5 XY.",
-            "step_by_step_solution": "If the compass radius is less than or equal to half of XY (r ≤ 0.5 XY), the arcs drawn from X and Y will not reach each other or intersect, making it impossible to locate the two points defining the bisector line.",
-            "marking_scheme": "1 mark for explaining lack of arc intersection; 1 mark for geometric reasoning.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 2
-          },
-          {
-            "question_number": 9,
-            "question_text": "Detail the 7 shapes that compose a standard Tangram puzzle.",
-            "step_by_step_solution": "A Tangram consists of:\n1) 2 large isosceles right triangles\n2) 1 medium isosceles right triangle\n3) 2 small isosceles right triangles\n4) 1 square\n5) 1 parallelogram",
-            "marking_scheme": "1 mark for listing triangles (5 total); 1 mark for square and parallelogram.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 2
-          },
-          {
-            "question_number": 10,
-            "question_text": "Explain how to construct a 45° angle using ruler and compass.",
-            "step_by_step_solution": "1) Construct a 90° right angle at a given point on a line.\n2) Construct the angle bisector of the 90° angle.\n3) Half of 90° gives a 45° angle.",
-            "marking_scheme": "1 mark for 90° construction; 1 mark for angle bisection.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 11,
-            "question_text": "What is a pointed arch, and how is its geometric curve constructed?",
-            "step_by_step_solution": "A pointed arch (Gothic arch) is a architectural curve formed by two intersecting circular arcs drawn from centers located at opposite ends/midpoints of a base horizontal support segment.",
-            "marking_scheme": "1 mark for definition; 1 mark for describing intersecting arcs from base centers.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 2
-          }
-        ]
-      },
-      {
-        "section": "Section C",
-        "section_title": "Long Answer Questions / Proofs (4 Marks each)",
-        "total_marks": 8,
-        "questions": [
-          {
-            "question_number": 12,
-            "question_text": "Outline the step-by-step construction procedure to draw a regular hexagon of side length 4 cm using a ruler and compass.",
-            "step_by_step_solution": "1) Draw a circle of radius r = 4 cm with center O.\n2) Mark a point A anywhere on the circumference.\n3) With compass radius kept at 4 cm, set point at A and draw an arc to intersect the circle at B.\n4) Move compass to B, mark C; continue stepping off points D, E, F around the circle.\n5) Join AB, BC, CD, DE, EF, FA using a ruler. ABCDEF is the regular hexagon.",
-            "marking_scheme": "1 mark for circle setup; 2 marks for stepping off radius 6 times; 1 mark for joining vertices.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 4
-          },
-          {
-            "question_number": 13,
-            "question_text": "Describe the construction steps to draw a line 'm' parallel to line 'l' passing through an external point P.",
-            "step_by_step_solution": "1) Mark any point A on line 'l' and draw segment AP.\n2) At point A, line AP forms angle ∠PAL with line 'l'.\n3) At vertex P, copy angle ∠PAL on the opposite side of transversal AP using the compass SSS angle copy method to construct alternate interior angle ∠APM = ∠PAL.\n4) Draw line 'm' through P along the copied ray. Line 'm' is parallel to 'l' by equal alternate interior angles.",
-            "marking_scheme": "1 mark for transversal AP; 2 marks for copying alternate interior angle; 1 mark for drawing line m.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 4
-          }
-        ]
-      },
-      {
-        "section": "Section D",
-        "section_title": "Competency / Case-Based Assessment",
-        "total_marks": 6,
-        "questions": [
-          {
-            "question_number": 14,
-            "case_scenario": "A craftsperson is creating a floor tiling pattern using regular hexagons and equilateral triangles.",
-            "sub_questions": [
-              {
-                "sub_q_number": "14(a)",
-                "question_text": "Calculate the sum of interior angles around a single vertex where tiles meet in a valid tessellation.",
-                "step_by_step_solution": "In any valid plane tessellation without gaps or overlaps, the sum of interior angles meeting at a vertex must equal 360°.",
-                "marking_scheme": "1 mark for stating 360°; 1 mark for tessellation angle rule.",
-                "marks": 2
+  "question_papers": [
+    {
+      "paper_title": "Source Question Bank Set",
+      "sections": [
+        {
+          "section_title": "Source Question Bank Assessment",
+          "questions": [
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 2 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "8",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 17 cm by 9 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "52",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 14 cm by 5 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "38",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 11 cm by 12 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "46",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 8 cm by 8 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "32",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 5 cm by 3 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "16",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 11 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "26",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
+              "options": [],
+              "correct_answer": "",
+              "type": "long_answer"
+            },
+            {
+              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
+              "options": [],
+              "correct_answer": "",
+              "type": "long_answer"
+            },
+            {
+              "question_text": "[concept recall] Which fraction is equivalent to 1/2?",
+              "options": {
+                "A": "2/4",
+                "B": "2/2",
+                "C": "1/3",
+                "D": "1/2"
               },
-              {
-                "sub_q_number": "14(b)",
-                "question_text": "Can regular hexagons alone tile a floor? Justify using interior angle measure.",
-                "step_by_step_solution": "Yes. Each interior angle of a regular hexagon is 120°. Three regular hexagons meeting at a vertex give 120° × 3 = 360°, forming a perfect gapless tile.",
-                "marking_scheme": "1 mark for 120° × 3 = 360°; 1 mark for confirming Yes.",
-                "marks": 2
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 9^2?",
+              "options": {
+                "A": "18",
+                "B": "81",
+                "C": "90",
+                "D": "72"
               },
-              {
-                "sub_q_number": "14(c)",
-                "question_text": "How many equilateral triangles are required to fill the space around a vertex if combined with one regular hexagon?",
-                "step_by_step_solution": "1) One regular hexagon angle = 120°.\n2) Remaining angle around vertex = 360° - 120° = 240°.\n3) Each equilateral triangle angle = 60°.\n4) Number of triangles = 240° / 60° = 4 equilateral triangles.",
-                "marking_scheme": "1 mark for remaining 240°; 1 mark for obtaining 4 triangles.",
-                "marks": 2
-              }
-            ],
-            "blooms_level": "Analyzing_Evaluating",
-            "marks": 6
-          }
-        ]
-      }
-    ]
-  }
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 11/27 + 16/27?",
+              "options": {
+                "A": "1/2",
+                "B": "1",
+                "C": "2",
+                "D": "27/28"
+              },
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] Which number is divisible by 5?",
+              "options": {
+                "A": "55",
+                "B": "56",
+                "C": "57",
+                "D": "58"
+              },
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] Which fraction is equivalent to 5/8?",
+              "options": {
+                "A": "10/16",
+                "B": "6/8",
+                "C": "5/9",
+                "D": "3/8"
+              },
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 5^2?",
+              "options": {
+                "A": "10",
+                "B": "25",
+                "C": "30",
+                "D": "20"
+              },
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_number": 1,
+              "question_text": "What compass radius setting is required when constructing the perpendicular bisector of segment XY?",
+              "options": [
+                "A) Exactly equal to XY",
+                "B) Strictly greater than half of XY (>0.5 XY)",
+                "C) Less than half of XY",
+                "D) Any radius"
+              ],
+              "correct_answer": "B) Strictly greater than half of XY (>0.5 XY)",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Any point located on the perpendicular bisector of segment AB is:",
+              "options": [
+                "A) Equidistant from endpoints A and B",
+                "B) Closer to A than B",
+                "C) At right angles to midpoint only",
+                "D) 10 cm from AB"
+              ],
+              "correct_answer": "A) Equidistant from endpoints A and B",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which two classical instruments are exclusively permitted in geometric constructions?",
+              "marking_scheme_answer": "An unmarked straightedge (ruler) and a pair of compasses.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Is it necessary to use the same compass radius for arcs above and below segment XY when constructing its perpendicular bisector? Explain.",
+              "marking_scheme_answer": "No. Radius for top arcs can differ from bottom arcs, provided top arcs from X and Y are equal to each other (>0.5 XY) and bottom arcs from X and Y are equal to each other.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Draw segment XY = 8 cm. Describe step-by-step how to construct its perpendicular bisector line AB using ruler and compass. Prove why AX = AY.",
+              "marking_scheme_answer": "Steps: 1) Draw XY = 8 cm. 2) Set compass radius > 4 cm. Draw arcs above and below XY from X and Y meeting at A and B. 3) Join AB meeting XY at M. Proof: In ΔAMX and ΔAMY, MX = MY, ∠AMX = ∠AMY = 90°, AM = AM. By SAS, ΔAMX ≅ ΔAMY, so AX = AY by CPCT.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "An artist constructs a symmetrical human eye outline. The upper and lower eyelid arcs meet at corners P and Q (PQ = 6 cm). (a) What line contains the center points for both arcs? (b) Prove that any center point C on this line satisfies CP = CQ.",
+              "marking_scheme_answer": "(a) The center points lie on the perpendicular bisector of segment PQ. (b) By SAS triangle congruence (ΔCMP ≅ ΔCMQ where M is midpoint of PQ), CP = CQ.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which triangle congruence criterion is applied when copying an angle using ruler and compass?",
+              "options": [
+                "A) SSS Criterion",
+                "B) SAS Criterion",
+                "C) ASA Criterion",
+                "D) RHS Criterion"
+              ],
+              "correct_answer": "A) SSS Criterion",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "An angle bisector divides an angle of 74° into two angles measuring:",
+              "options": [
+                "A) 30° each",
+                "B) 37° each",
+                "C) 40° each",
+                "D) 148° each"
+              ],
+              "correct_answer": "B) 37° each",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Describe step-by-step how to bisect a given angle ∠AOB.",
+              "marking_scheme_answer": "1) Draw an arc from vertex O intersecting arms OA and OB at P and Q. 2) From P and Q, draw equal arcs intersecting at C. 3) Ray OC is the angle bisector.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "If ray OC bisects ∠AOB and ∠AOC = 28°, find the measure of ∠AOB.",
+              "marking_scheme_answer": "∠AOB = 2 × ∠AOC = 2 × 28° = 56°.",
+              "marks": 2
+            },
+            {
+              "question_number": 1,
+              "question_text": "Describe step-by-step how to construct a line parallel to line 'l' passing through an external point P using alternate interior angles.",
+              "marking_scheme_answer": "1) Pick point A on line 'l' and draw transversal AP. 2) ∠PAL is formed. 3) At vertex P, copy ∠PAL on alternate side of transversal AP using SSS angle copy method to form ∠APM = ∠PAL. 4) Extend ray PM to form line 'm' parallel to 'l'.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A carpenter wants to cut two wood panels at identical angles ∠ABC = 52°. He copies ∠ABC onto a second panel ray XY forming ∠XYZ. (a) What criterion guarantees ∠XYZ = ∠ABC? (b) If he bisects ∠XYZ with ray YW, find ∠XYW.",
+              "marking_scheme_answer": "(a) SSS criterion (by copying equal arc lengths and chord distances). (b) ∠XYW = 52° / 2 = 26°.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Drawing an arc on a line and intersecting it with the same compass radius from the intersection point constructs an angle of:",
+              "options": [
+                "A) 45°",
+                "B) 60°",
+                "C) 90°",
+                "D) 120°"
+              ],
+              "correct_answer": "B) 60°",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "How is a 45° angle systematically derived using constructions?",
+              "options": [
+                "A) Bisecting a 60° angle",
+                "B) Bisecting a 90° angle",
+                "C) Trisecting 180°",
+                "D) Adding 30° to 30°"
+              ],
+              "correct_answer": "B) Bisecting a 90° angle",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain why the first arc intersection step constructs an angle of exactly 60°.",
+              "marking_scheme_answer": "Keeping the compass radius unchanged creates an equilateral triangle with 3 equal side lengths, and every interior angle of an equilateral triangle measures 60°.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Outline the construction steps to obtain a 30° angle and a 15° angle.",
+              "marking_scheme_answer": "1) Construct a 60° angle using equilateral arc. 2) Bisect 60° angle to get 30°. 3) Bisect 30° angle to get 15°.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Describe step-by-step how to construct a 90° perpendicular angle at a given point P on line 'l' using compass and ruler.",
+              "marking_scheme_answer": "1) With center P, draw a semicircle intersecting line 'l' at A and B. 2) From A and B, draw arcs with radius > AP intersecting at C above P. 3) Draw line PC. Line PC is perpendicular to line 'l' at P (∠CPA = 90°).",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A solar panel installation requires mounting brackets at angles of 60°, 30°, and 45°. (a) Which basic angle is constructed first for 30°? (b) How is 45° obtained? (c) Find angle between 30° and 45° brackets.",
+              "marking_scheme_answer": "(a) 60° angle is constructed first. (b) 45° is obtained by constructing 90° and bisecting it. (c) Difference = 45° - 30° = 15°.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "How many equilateral triangles form a regular hexagon from its center point?",
+              "options": [
+                "A) 4",
+                "B) 5",
+                "C) 6",
+                "D) 8"
+              ],
+              "correct_answer": "C) 6",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain why stepping off the radius 6 times around a circle's circumference forms a regular hexagon.",
+              "marking_scheme_answer": "Stepping off radius 'r' creates 6 adjacent chord segments of length 'r'. Each central triangle has 3 sides equal to 'r' (equilateral), subtending 6 × 60° = 360° at center.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is a pointed arch in architecture and how is it constructed geometrically?",
+              "marking_scheme_answer": "A pointed arch consists of two circular arcs meeting at a central point at the top, constructed from center points on the base support line.",
+              "marks": 2
+            },
+            {
+              "question_number": 1,
+              "question_text": "Describe step-by-step how to construct a regular hexagon ABCDEF of side length 4 cm using ruler and compass.",
+              "marking_scheme_answer": "1) Draw circle of radius r = 4 cm with center O. 2) Mark point A on circumference. 3) With compass set at 4 cm, draw arc from A to mark B on circle. 4) Move to B and mark C; continue stepping off points D, E, F. 5) Join AB, BC, CD, DE, EF, FA.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "An Islamic tile pattern uses a 6-pointed star rosette constructed inside a regular hexagon. (a) Find central angle of each of the 6 constituent equilateral triangles. (b) Find interior angle of hexagon. (c) Total sum of interior angles.",
+              "marking_scheme_answer": "(a) Central angle = 360° / 6 = 60°. (b) Interior angle = 2 × 60° = 120°. (c) Total sum = 6 × 120° = 720°.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "What two strict requirements define a valid plane tiling (tessellation)?",
+              "options": [
+                "A) Zero gaps and zero overlaps",
+                "B) Equal side lengths only",
+                "C) 90° angles only",
+                "D) Curved boundaries"
+              ],
+              "correct_answer": "A) Zero gaps and zero overlaps",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "How many total pieces comprise a traditional Chinese Tangram puzzle?",
+              "options": [
+                "A) 5",
+                "B) 6",
+                "C) 7",
+                "D) 8"
+              ],
+              "correct_answer": "C) 7",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "List the individual shapes and quantities of the 7 Tangram pieces.",
+              "marking_scheme_answer": "5 isosceles right triangles (2 large, 1 medium, 2 small), 1 square, and 1 parallelogram.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "Can regular pentagons tile a 2D plane completely without gaps? Explain.",
+              "marking_scheme_answer": "No. Interior angle of regular pentagon is 108°. Since 360° is not divisible by 108° (3 × 108° = 324°), gaps remain at vertices.",
+              "marks": 2
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain which regular polygons can tile a plane by themselves (monohedral tessellation) and prove why using vertex angle sum.",
+              "marking_scheme_answer": "Regular polygons tile if interior angle divides 360° completely: 1) Equilateral Triangle (60°): 6 × 60° = 360°. 2) Square (90°): 4 × 90° = 360°. 3) Regular Hexagon (120°): 3 × 120° = 360°. Only triangles, squares, and hexagons form monohedral regular tilings.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A floor designer uses a square layout divided into a 7-piece Tangram set. (a) If area of square is 64 sq cm, find area of 7 pieces combined. (b) What fraction of area is formed by 2 large triangles? (c) Name all 4-sided shapes in Tangram.",
+              "marking_scheme_answer": "(a) Total area = 64 sq cm (tessellation preserves total area). (b) Two large triangles form 1/2 of total area = 32 sq cm. (c) The square and the parallelogram (two 4-sided shapes).",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

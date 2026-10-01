@@ -1,220 +1,374 @@
 {
-  "chapter_number": 2,
-  "chapter_title": "Operations with Integers",
-  "model_paper": {
-    "paper_title": "Class 7 Mathematics - Chapter 2 (Operations with Integers) Model Test Paper",
-    "total_marks": 30,
-    "duration_minutes": 60,
-    "sections": [
-      {
-        "section": "Section A",
-        "section_title": "Objective MCQs & Assertion-Reason",
-        "total_marks": 6,
-        "questions": [
-          {
-            "question_number": 1,
-            "question_type": "MCQ",
-            "question_text": "What is the product of (-16) × (-5)?",
-            "options": [
-              "A) -80",
-              "B) +80",
-              "C) -21",
-              "D) +21"
-            ],
-            "correct_answer": "B) +80",
-            "step_by_step_solution": "Multiplying two negative integers yields a positive product: (-a) × (-b) = +(a × b). Here, 16 × 5 = 80, so (-16) × (-5) = +80.",
-            "marking_scheme": "1 mark for selecting B.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 2,
-            "question_type": "MCQ",
-            "question_text": "Evaluate 36 ÷ (-18).",
-            "options": [
-              "A) 2",
-              "B) -2",
-              "C) 18",
-              "D) -18"
-            ],
-            "correct_answer": "B) -2",
-            "step_by_step_solution": "Dividing a positive integer by a negative integer gives a negative quotient: (+) ÷ (-) = (-). 36 ÷ 18 = 2, so 36 ÷ (-18) = -2.",
-            "marking_scheme": "1 mark for selecting B.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 3,
-            "question_type": "MCQ",
-            "question_text": "In the token model for integers, what does a 'Zero Pair' represent?",
-            "options": [
-              "A) Two positive tokens",
-              "B) One green (+1) and one red (-1) token",
-              "C) Two negative tokens",
-              "D) Zero tokens in the bag"
-            ],
-            "correct_answer": "B) One green (+1) and one red (-1) token",
-            "step_by_step_solution": "A green token (+1) and a red token (-1) cancel each other out to equal zero, forming a Zero Pair.",
-            "marking_scheme": "1 mark for selecting B.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 4,
-            "question_type": "MCQ",
-            "question_text": "Which property is illustrated by (-5) × [4 + (-2)] = [(-5) × 4] + [(-5) × (-2)]?",
-            "options": [
-              "A) Commutative Property",
-              "B) Associative Property",
-              "C) Distributive Property",
-              "D) Closure Property"
-            ],
-            "correct_answer": "C) Distributive Property",
-            "step_by_step_solution": "The Distributive Property states that a × (b + c) = (a × b) + (a × c) for all integers.",
-            "marking_scheme": "1 mark for selecting C.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 5,
-            "question_type": "Assertion-Reason",
-            "question_text": "Assertion (A): The product of two negative integers is always positive.\nReason (R): In the token model, removing negative tokens from an empty bag requires adding zero pairs, leaving positive tokens.",
-            "options": [
-              "A) Both A and R are true and R is the correct explanation of A",
-              "B) Both A and R are true but R is NOT the correct explanation of A",
-              "C) A is true but R is false",
-              "D) A is false but R is true"
-            ],
-            "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
-            "step_by_step_solution": "Both statements are true and Reason R explains why (-m) × (-n) = +mn using the physical token bag model.",
-            "marking_scheme": "1 mark for selecting A.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 6,
-            "question_type": "Assertion-Reason",
-            "question_text": "Assertion (A): (-46) ÷ (-23) = -2.\nReason (R): Division of a negative integer by another negative integer gives a positive quotient.",
-            "options": [
-              "A) Both A and R are true and R is the correct explanation of A",
-              "B) Both A and R are true but R is NOT the correct explanation of A",
-              "C) A is false but R is true",
-              "D) A is true but R is false"
-            ],
-            "correct_answer": "C) A is false but R is true",
-            "step_by_step_solution": "Assertion A is FALSE because (-46) ÷ (-23) = +2 (positive 2). Reason R is a TRUE general rule.",
-            "marking_scheme": "1 mark for selecting C.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          }
-        ]
-      },
-      {
-        "section": "Section B",
-        "section_title": "Short Answer Questions (2 Marks each)",
-        "total_marks": 10,
-        "questions": [
-          {
-            "question_number": 7,
-            "question_text": "Find the value of 14 × (-15).",
-            "step_by_step_solution": "1) Multiply magnitudes: 14 × 15 = 210.\n2) Apply sign rule: (+) × (-) = (-).\n3) Hence, 14 × (-15) = -210.",
-            "marking_scheme": "1 mark for 14 × 15 = 210; 1 mark for correct negative sign.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 8,
-            "question_text": "A room temperature is lowered from 32°C at a rate of 5°C per hour. Find the room temperature after 10 hours.",
-            "step_by_step_solution": "1) Initial temperature = 32°C.\n2) Rate of temperature change = -5°C per hour.\n3) Total temperature change in 10 hours = 10 × (-5°C) = -50°C.\n4) Final temperature = 32°C + (-50°C) = -18°C.",
-            "marking_scheme": "1 mark for calculating -50°C; 1 mark for final result -18°C.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 9,
-            "question_text": "Find three consecutive integers whose product is -6.",
-            "step_by_step_solution": "1) Test negative integers around zero: -3, -2, -1.\n2) Check product: (-3) × (-2) × (-1) = (+6) × (-1) = -6.\n3) Since -3, -2, -1 are consecutive integers, the three numbers are -3, -2, and -1.",
-            "marking_scheme": "1 mark for setting up product; 1 mark for identifying -3, -2, -1.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 10,
-            "question_text": "Simplify using distributive property: (-25) × 37 + (-25) × 63.",
-            "step_by_step_solution": "1) Apply distributive property: a × b + a × c = a × (b + c).\n2) (-25) × 37 + (-25) × 63 = (-25) × (37 + 63)\n3) = (-25) × 100 = -2500.",
-            "marking_scheme": "1 mark for factoring out (-25); 1 mark for correct answer -2500.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 11,
-            "question_text": "How does the token bag model demonstrate that (-4) × (-2) = +8?",
-            "step_by_step_solution": "1) Removing 2 red (-1) tokens 4 times requires starting with tokens.\n2) Since the bag is empty, place 8 zero pairs (8 green + 8 red tokens) into the bag.\n3) Remove 8 red tokens (4 × 2 negative tokens).\n4) Remaining in the bag are 8 green (+1) tokens. Hence (-4) × (-2) = +8.",
-            "marking_scheme": "1 mark for zero pairs insertion step; 1 mark for removing red tokens leaving +8.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 2
-          }
-        ]
-      },
-      {
-        "section": "Section C",
-        "section_title": "Long Answer Questions / Proofs (4 Marks each)",
-        "total_marks": 8,
-        "questions": [
-          {
-            "question_number": 12,
-            "question_text": "A cement company earns a profit of ₹8 per white bag sold and incurs a loss of ₹5 per grey bag sold.\n(a) The company sells 3,000 bags of white cement and 5,000 bags of grey cement in a month. What is its net profit or loss?\n(b) What is the number of white cement bags it must sell to have neither profit nor loss, if the number of grey bags sold is 6,400?",
-            "step_by_step_solution": "(a) Profit on 3,000 white bags = 3000 × (+8) = +₹24,000.\nLoss on 5,000 grey bags = 5000 × (-5) = -₹25,000.\nNet income = 24,000 - 25,000 = -₹1,000. (Net Loss of ₹1,000).\n\n(b) Total loss on 6,400 grey bags = 6400 × 5 = ₹32,000.\nTo break even (zero profit/loss), profit on white bags must equal ₹32,000.\nNumber of white bags = 32,000 / 8 = 4,000 bags.",
-            "marking_scheme": "2 marks for part (a) showing profit, loss, and net loss ₹1,000; 2 marks for part (b) getting 4,000 bags.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 4
-          },
-          {
-            "question_number": 13,
-            "question_text": "In a class test containing 15 questions, (+4) marks are given for every correct answer and (-2) marks are given for every incorrect answer.\n(a) Gurpreet attempts all questions but only 9 of her answers are correct. What is her total score?\n(b) One of her friends gets only 5 answers correct. What will be her score?",
-            "step_by_step_solution": "(a) Gurpreet:\nCorrect answers = 9 ⇒ Marks = 9 × (+4) = +36.\nIncorrect answers = 15 - 9 = 6 ⇒ Marks = 6 × (-2) = -12.\nTotal score = 36 + (-12) = 24 marks.\n\n(b) Friend:\nCorrect answers = 5 ⇒ Marks = 5 × (+4) = +20.\nIncorrect answers = 15 - 5 = 10 ⇒ Marks = 10 × (-2) = -20.\nTotal score = 20 + (-20) = 0 marks.",
-            "marking_scheme": "2 marks for part (a) showing calculations yielding 24 marks; 2 marks for part (b) yielding 0 marks.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 4
-          }
-        ]
-      },
-      {
-        "section": "Section D",
-        "section_title": "Competency / Case-Based Assessment",
-        "total_marks": 6,
-        "questions": [
-          {
-            "question_number": 14,
-            "case_scenario": "A submarine at sea level (0 meters) descends into the ocean at a steady rate of 4 meters per minute. Simultaneously, a mine elevator shaft located at a hilltop +20 meters above ground level begins descending into the mine at a rate of 5 meters per minute.",
-            "sub_questions": [
-              {
-                "sub_q_number": "14(a)",
-                "question_text": "Write the position of the submarine after 15 minutes as an integer.",
-                "step_by_step_solution": "Position = 15 minutes × (-4 meters/minute) = -60 meters.",
-                "marking_scheme": "1 mark for setup; 1 mark for answer -60 m.",
-                "marks": 2
+  "question_papers": [
+    {
+      "paper_title": "Source Question Bank Set",
+      "sections": [
+        {
+          "section_title": "Source Question Bank Assessment",
+          "questions": [
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 2 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "8",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 17 cm by 9 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "52",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 14 cm by 5 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "38",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 11 cm by 12 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "46",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 8 cm by 8 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "32",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 5 cm by 3 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "16",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 11 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "26",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
+              "options": [],
+              "correct_answer": "",
+              "type": "long_answer"
+            },
+            {
+              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
+              "options": [],
+              "correct_answer": "",
+              "type": "long_answer"
+            },
+            {
+              "question_text": "[concept recall] Which fraction is equivalent to 1/2?",
+              "options": {
+                "A": "2/4",
+                "B": "2/2",
+                "C": "1/3",
+                "D": "1/2"
               },
-              {
-                "sub_q_number": "14(b)",
-                "question_text": "Calculate the position of the mine elevator after 15 minutes.",
-                "step_by_step_solution": "1) Elevator descent distance = 15 × (-5 m) = -75 meters.\n2) Initial position = +20 meters.\n3) Final position = +20 + (-75) = -55 meters.",
-                "marking_scheme": "1 mark for descent calculation; 1 mark for final position -55 m.",
-                "marks": 2
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 9^2?",
+              "options": {
+                "A": "18",
+                "B": "81",
+                "C": "90",
+                "D": "72"
               },
-              {
-                "sub_q_number": "14(c)",
-                "question_text": "Determine the vertical distance between the submarine and the elevator after 15 minutes.",
-                "step_by_step_solution": "Vertical distance = |(-55) - (-60)| = |-55 + 60| = 5 meters.",
-                "marking_scheme": "1 mark for subtraction setup; 1 mark for obtaining 5 meters.",
-                "marks": 2
-              }
-            ],
-            "blooms_level": "Analyzing_Evaluating",
-            "marks": 6
-          }
-        ]
-      }
-    ]
-  }
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 11/27 + 16/27?",
+              "options": {
+                "A": "1/2",
+                "B": "1",
+                "C": "2",
+                "D": "27/28"
+              },
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] Which number is divisible by 5?",
+              "options": {
+                "A": "55",
+                "B": "56",
+                "C": "57",
+                "D": "58"
+              },
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] Which fraction is equivalent to 5/8?",
+              "options": {
+                "A": "10/16",
+                "B": "6/8",
+                "C": "5/9",
+                "D": "3/8"
+              },
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 5^2?",
+              "options": {
+                "A": "10",
+                "B": "25",
+                "C": "30",
+                "D": "20"
+              },
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_number": 1,
+              "question_text": "In the token model, what is the net value of one green token (+1) and one red token (-1)?",
+              "options": [
+                "A) +2",
+                "B) -2",
+                "C) 0",
+                "D) +1"
+              ],
+              "correct_answer": "C) 0",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the additive inverse of -25?",
+              "options": [
+                "A) -25",
+                "B) +25",
+                "C) 0",
+                "D) 1/25"
+              ],
+              "correct_answer": "B) +25",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Define a 'Zero Pair' in the token model and write its mathematical equation.",
+              "marking_scheme_answer": "A Zero Pair consists of one positive (+1) token and one negative (-1) token combined together, having a net value of 0: (+1) + (-1) = 0.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate: (a) (-12) + (+18), (b) (-15) - (-20).",
+              "marking_scheme_answer": "(a) (-12) + 18 = +6. (b) (-15) - (-20) = -15 + 20 = +5.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain how subtracting an integer is equivalent to adding its additive inverse. Illustrate with (-7) - (+4) and (-7) - (-4).",
+              "marking_scheme_answer": "Rule: a - b = a + (-b). 1) (-7) - (+4) = (-7) + (-4) = -11. 2) (-7) - (-4) = (-7) + (+4) = -3.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A bank account shows a balance of ₹500. Over 4 days, transactions are: Deposit ₹200, Withdraw ₹350, Withdraw ₹150, Deposit ₹100. (a) Express each transaction as an integer. (b) Find final balance.",
+              "marking_scheme_answer": "(a) +200, -350, -150, +100. (b) Final balance = 500 + 200 - 350 - 150 + 100 = ₹300.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "What is the product of (-14) × (-5)?",
+              "options": [
+                "A) -70",
+                "B) +70",
+                "C) -19",
+                "D) +19"
+              ],
+              "correct_answer": "B) +70",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the sign of the product when five negative integers are multiplied together?",
+              "options": [
+                "A) Positive",
+                "B) Negative",
+                "C) Zero",
+                "D) Depends on values"
+              ],
+              "correct_answer": "B) Negative",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "State the general sign rules for multiplying two integers.",
+              "marking_scheme_answer": "1) Like signs produce a positive product: (+)×(+) = +, (-)×(-) = +. 2) Unlike signs produce a negative product: (+)×(-) = -, (-)×(+) = -.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate: (a) 12 × (-6), (b) (-8) × (-9) × (-2).",
+              "marking_scheme_answer": "(a) 12 × (-6) = -72. (b) (-8) × (-9) × (-2) = (+72) × (-2) = -144.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Describe step-by-step how the token model explains (-3) × (-4) = +12 starting with an empty bag.",
+              "marking_scheme_answer": "1) Multiplier -3 means removing 4 negative (red) tokens 3 times. 2) Insert 12 zero pairs (12 green + 12 red) into empty bag. 3) Remove 12 red tokens. 4) Remaining tokens in bag are 12 green (+1) tokens, proving (-3) × (-4) = +12.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A cold storage facility drops temperature at 3°C per hour from an initial temperature of 15°C. (a) Write the temperature change rate as an integer. (b) Calculate temperature after 8 hours.",
+              "marking_scheme_answer": "(a) Rate = -3°C per hour. (b) Change in 8 hours = 8 × (-3) = -24°C. Final temp = 15 + (-24) = -9°C.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "What is 36 ÷ (-18)?",
+              "options": [
+                "A) 2",
+                "B) -2",
+                "C) 18",
+                "D) -18"
+              ],
+              "correct_answer": "B) -2",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is (-46) ÷ (-23)?",
+              "options": [
+                "A) -2",
+                "B) +2",
+                "C) -69",
+                "D) +69"
+              ],
+              "correct_answer": "B) +2",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain why division of integers is the inverse operation of multiplication.",
+              "marking_scheme_answer": "If a × b = c, then c ÷ b = a and c ÷ a = b. For example, since (-4) × (-5) = 20, then 20 ÷ (-5) = -4.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate: (a) (-81) ÷ 9, (b) (-100) ÷ (-25), (c) 0 ÷ (-15).",
+              "marking_scheme_answer": "(a) -9, (b) +4, (c) 0.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "In a test, (+4) marks are given for every correct answer and (-2) marks for every incorrect answer. (a) Radhika scored 20 marks with 8 correct answers. How many incorrect answers did she give? (b) Jay scored -6 marks with 3 correct answers. How many incorrect answers did he give?",
+              "marking_scheme_answer": "(a) Correct score = 8 × 4 = 32. Incorrect score = 20 - 32 = -12. Incorrect count = (-12) ÷ (-2) = 6. (b) Correct score = 3 × 4 = 12. Incorrect score = -6 - 12 = -18. Incorrect count = (-18) ÷ (-2) = 9.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A elevator in a mine shaft descends at a speed of 6 meters per minute starting from 10 meters above ground level (+10 m). (a) Write its position formula. (b) Find its position after 20 minutes. (c) How long will it take to reach -110 m?",
+              "marking_scheme_answer": "(a) Position = 10 - 6t. (b) After 20 min = 10 - 6(20) = 10 - 120 = -110 m. (c) Time = (Distance to descend 120 m) / 6 = 20 minutes.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Which expression illustrates the Distributive Property of Multiplication over Addition?",
+              "options": [
+                "A) a + b = b + a",
+                "B) a × (b + c) = (a × b) + (a × c)",
+                "C) (a × b) × c = a × (b × c)",
+                "D) a + 0 = a"
+              ],
+              "correct_answer": "B) a × (b + c) = (a × b) + (a × c)",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate 18 × (-99) using the distributive property.",
+              "options": [
+                "A) -1782",
+                "B) -1800",
+                "C) -1718",
+                "D) +1782"
+              ],
+              "correct_answer": "A) -1782",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Use distributive property to evaluate: (-25) × 102.",
+              "marking_scheme_answer": "(-25) × (100 + 2) = [(-25) × 100] + [(-25) × 2] = -2500 + (-50) = -2550.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Verify distributive property for a = -3, b = 4, c = -2.",
+              "marking_scheme_answer": "LHS = (-3) × [4 + (-2)] = (-3) × 2 = -6. RHS = [(-3)×4] + [(-3)×(-2)] = -12 + 6 = -6. LHS = RHS verified.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "A cement company earns profit ₹8 per white bag sold and loss ₹5 per grey bag sold. (a) If it sells 3000 white bags and 5000 grey bags, find net profit/loss. (b) How many white bags must it sell to have zero profit/loss if 6400 grey bags are sold?",
+              "marking_scheme_answer": "(a) Profit = 3000 × 8 = ₹24000. Loss = 5000 × (-5) = -₹25000. Net = 24000 - 25000 = -₹1000 (Loss of ₹1000). (b) Total loss = 6400 × 5 = ₹32000. White bags needed = 32000 / 8 = 4000 bags.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A submarine at sea level (0 m) descends at 5 m/min. Simultaneously, a drone at +30 m descends at 2 m/min. (a) Write submarine position after 10 min. (b) Write drone position after 10 min. (c) Find vertical distance between them at t = 10 min.",
+              "marking_scheme_answer": "(a) Submarine = 10 × (-5) = -50 m. (b) Drone = 30 - (10 × 2) = +10 m. (c) Distance = 10 - (-50) = 60 meters.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Find three consecutive integers whose product is -24.",
+              "options": [
+                "A) -2, -3, -4",
+                "B) -1, -2, -3",
+                "C) -4, -3, -2",
+                "D) -2, -1, 0"
+              ],
+              "correct_answer": "C) -4, -3, -2",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which expression equals zero?",
+              "options": [
+                "A) (-5) × 0",
+                "B) (-5) ÷ 1",
+                "C) 5 ÷ (-5)",
+                "D) (-5) + (-5)"
+              ],
+              "correct_answer": "A) (-5) × 0",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Find a pair of integers whose sum is -7 and product is 12.",
+              "marking_scheme_answer": "The integers are -3 and -4 because (-3) + (-4) = -7 and (-3) × (-4) = +12.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate: [(-36) ÷ 12] ÷ 3 vs (-36) ÷ [12 ÷ 3]. Is division associative?",
+              "marking_scheme_answer": "1) [(-36) ÷ 12] ÷ 3 = (-3) ÷ 3 = -1. 2) (-36) ÷ [12 ÷ 3] = (-36) ÷ 4 = -9. Since -1 ≠ -9, division is NOT associative.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "A shopkeeper earns ₹1 profit on selling a pen and incurs a loss of 40 paise (₹0.40) per pencil. (a) In one month he incurs a loss of ₹5 after selling 45 pens. How many pencils did he sell? (b) Next month he earns no profit/loss; if he sells 70 pens, how many pencils were sold?",
+              "marking_scheme_answer": "(a) Profit on pens = 45 × 1 = ₹45. Total loss = -₹5. Loss on pencils = -5 - 45 = -₹50 = -5000 paise. Pencils sold = 5000 / 40 = 125 pencils. (b) Profit on pens = ₹70. Loss on pencils needed = ₹70 = 7000 paise. Pencils sold = 7000 / 40 = 175 pencils.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A mountain climber starts at +1200 m above sea level. He climbs up 350 m, then descends 600 m due to bad weather, and finally climbs up 250 m. (a) Represent each movement as an integer. (b) Calculate his final altitude.",
+              "marking_scheme_answer": "(a) +350, -600, +250. (b) Final altitude = 1200 + 350 - 600 + 250 = 1200 m above sea level.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

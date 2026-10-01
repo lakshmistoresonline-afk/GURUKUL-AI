@@ -1,220 +1,374 @@
 {
-  "chapter_number": 7,
-  "chapter_title": "Finding the Unknown",
-  "model_paper": {
-    "paper_title": "Class 7 Mathematics - Chapter 7 (Finding the Unknown) Model Test Paper",
-    "total_marks": 30,
-    "duration_minutes": 60,
-    "sections": [
-      {
-        "section": "Section A",
-        "section_title": "Objective MCQs & Assertion-Reason",
-        "total_marks": 6,
-        "questions": [
-          {
-            "question_number": 1,
-            "question_type": "MCQ",
-            "question_text": "Solve for x in 3x - 5 = 10.",
-            "options": [
-              "A) 3",
-              "B) 5",
-              "C) 15",
-              "D) 45"
-            ],
-            "correct_answer": "B) 5",
-            "step_by_step_solution": "3x = 10 + 5 ⇒ 3x = 15 ⇒ x = 5.",
-            "marking_scheme": "1 mark for option B.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 2,
-            "question_type": "MCQ",
-            "question_text": "Given 4k + 1 = 13, what is the value of 8k + 2?",
-            "options": [
-              "A) 12",
-              "B) 24",
-              "C) 26",
-              "D) 28"
-            ],
-            "correct_answer": "C) 26",
-            "step_by_step_solution": "8k + 2 = 2(4k + 1) = 2(13) = 26. Alternatively, 4k = 12 ⇒ k = 3 ⇒ 8(3)+2 = 26.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 3,
-            "question_type": "MCQ",
-            "question_text": "What historical term was used for algebra in ancient India?",
-            "options": [
-              "A) Patiganita",
-              "B) Bījagaṇita",
-              "C) Sulba Sutra",
-              "D) Lilavati"
-            ],
-            "correct_answer": "B) Bījagaṇita",
-            "step_by_step_solution": "Bījagaṇita ('seed mathematics') was the ancient Indian name for algebra.",
-            "marking_scheme": "1 mark for option B.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 4,
-            "question_type": "MCQ",
-            "question_text": "Which operation is the inverse of multiplying by 5?",
-            "options": [
-              "A) Adding 5",
-              "B) Subtracting 5",
-              "C) Dividing by 5",
-              "D) Squaring 5"
-            ],
-            "correct_answer": "C) Dividing by 5",
-            "step_by_step_solution": "The inverse operation of multiplication is division.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 5,
-            "question_type": "Assertion-Reason",
-            "question_text": "Assertion (A): The expression 3(x + 2) simplifies to 3x + 6.\nReason (R): According to the distributive law, a factor outside parentheses must be multiplied by every term inside.",
-            "options": [
-              "A) Both A and R are true and R is the correct explanation of A",
-              "B) Both A and R are true but R is NOT the correct explanation of A",
-              "C) A is true but R is false",
-              "D) A is false but R is true"
-            ],
-            "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
-            "step_by_step_solution": "3(x + 2) = 3x + 6 by the distributive law.",
-            "marking_scheme": "1 mark for option A.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 6,
-            "question_type": "Assertion-Reason",
-            "question_text": "Assertion (A): If 2x = 8, then x = 8 - 2 = 6.\nReason (R): The inverse of multiplication is division, so 2x = 8 implies x = 8 / 2 = 4.",
-            "options": [
-              "A) Both A and R are true and R is the correct explanation of A",
-              "B) Both A and R are true but R is NOT the correct explanation of A",
-              "C) A is false but R is true",
-              "D) A is true but R is false"
-            ],
-            "correct_answer": "C) A is false but R is true",
-            "step_by_step_solution": "Assertion A is FALSE (incorrectly subtracted 2 instead of dividing). Reason R is TRUE.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          }
-        ]
-      },
-      {
-        "section": "Section B",
-        "section_title": "Short Answer Questions (2 Marks each)",
-        "total_marks": 10,
-        "questions": [
-          {
-            "question_number": 7,
-            "question_text": "Solve for x: 3(x + 2) = 15.",
-            "step_by_step_solution": "1) Divide both sides by 3: x + 2 = 5.\n2) Subtract 2 from both sides: x = 3.",
-            "marking_scheme": "1 mark for x + 2 = 5; 1 mark for x = 3.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 8,
-            "question_text": "One quarter of a number increased by 9 equals the number itself. Frame an equation and find the number.",
-            "step_by_step_solution": "1) Equation: (1/4)x + 9 = x.\n2) Subtract (1/4)x: 9 = (3/4)x.\n3) x = 9 × (4/3) = 12.",
-            "marking_scheme": "1 mark for equation setup; 1 mark for x = 12.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 9,
-            "question_text": "Explain the weighing scale metaphor for an algebraic equation.",
-            "step_by_step_solution": "An equation represents a balanced scale where LHS equals RHS. Adding, removing, multiplying, or dividing equal quantities on both sides maintains scale balance.",
-            "marking_scheme": "1 mark for LHS=RHS balance; 1 mark for operating on both sides.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 2
-          },
-          {
-            "question_number": 10,
-            "question_text": "A taxi driver charges a fixed fee of ₹800 plus ₹20 per km. If a passenger's bill is ₹2,200, find distance 'd'.",
-            "step_by_step_solution": "1) 800 + 20d = 2200\n2) 20d = 1400\n3) d = 1400 / 20 = 70 km.",
-            "marking_scheme": "1 mark for equation setup; 1 mark for d = 70 km.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 11,
-            "question_text": "Correct the mistake in the solution: 4x + 6 = 10 ⇒ 4x = 10 + 6 = 16 ⇒ x = 4.",
-            "step_by_step_solution": "Mistake: +6 was added to RHS instead of subtracted.\nCorrect step: 4x = 10 - 6 ⇒ 4x = 4 ⇒ x = 1.",
-            "marking_scheme": "1 mark for identifying addition mistake; 1 mark for correct x = 1.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 2
-          }
-        ]
-      },
-      {
-        "section": "Section C",
-        "section_title": "Long Answer Questions / Proofs (4 Marks each)",
-        "total_marks": 8,
-        "questions": [
-          {
-            "question_number": 12,
-            "question_text": "Solve the linear equation 5z + 2 = 3z - 4 systematically step-by-step with justification and check your answer.",
-            "step_by_step_solution": "1) Subtract 3z from both sides: 2z + 2 = -4.\n2) Subtract 2 from both sides: 2z = -6.\n3) Divide both sides by 2: z = -3.\nCheck: LHS = 5(-3) + 2 = -13; RHS = 3(-3) - 4 = -13. LHS = RHS verified.",
-            "marking_scheme": "2 marks for step-by-step solution yielding z = -3; 2 marks for LHS = RHS check.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 4
-          },
-          {
-            "question_number": 13,
-            "question_text": "Sum of three consecutive natural numbers is 51. Find the three numbers.",
-            "step_by_step_solution": "1) Let numbers be x, x+1, x+2.\n2) Equation: x + (x+1) + (x+2) = 51\n3) 3x + 3 = 51 ⇒ 3x = 48 ⇒ x = 16.\n4) The three numbers are 16, 17, and 18.",
-            "marking_scheme": "1 mark for setting x, x+1, x+2; 1 mark for 3x + 3 = 51; 2 marks for numbers 16, 17, 18.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 4
-          }
-        ]
-      },
-      {
-        "section": "Section D",
-        "section_title": "Competency / Case-Based Assessment",
-        "total_marks": 6,
-        "questions": [
-          {
-            "question_number": 14,
-            "case_scenario": "A function machine doubles an input number 'x', adds 3 to the product, and then divides the result by 5 to produce an output of 7.",
-            "sub_questions": [
-              {
-                "sub_q_number": "14(a)",
-                "question_text": "Write an algebraic equation representing the function machine.",
-                "step_by_step_solution": "(2x + 3) / 5 = 7.",
-                "marking_scheme": "1 mark for setup; 1 mark for (2x + 3)/5 = 7.",
-                "marks": 2
+  "question_papers": [
+    {
+      "paper_title": "Source Question Bank Set",
+      "sections": [
+        {
+          "section_title": "Source Question Bank Assessment",
+          "questions": [
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 2 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "8",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 17 cm by 9 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "52",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 14 cm by 5 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "38",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 11 cm by 12 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "46",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 8 cm by 8 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "32",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 5 cm by 3 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "16",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 11 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "26",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
+              "options": [],
+              "correct_answer": "",
+              "type": "long_answer"
+            },
+            {
+              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
+              "options": [],
+              "correct_answer": "",
+              "type": "long_answer"
+            },
+            {
+              "question_text": "[concept recall] Which fraction is equivalent to 1/2?",
+              "options": {
+                "A": "2/4",
+                "B": "2/2",
+                "C": "1/3",
+                "D": "1/2"
               },
-              {
-                "sub_q_number": "14(b)",
-                "question_text": "Solve the equation using inverse operations to find input 'x'.",
-                "step_by_step_solution": "1) Multiply by 5: 2x + 3 = 35.\n2) Subtract 3: 2x = 32.\n3) Divide by 2: x = 16.",
-                "marking_scheme": "1 mark for 2x = 32; 1 mark for x = 16.",
-                "marks": 2
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 9^2?",
+              "options": {
+                "A": "18",
+                "B": "81",
+                "C": "90",
+                "D": "72"
               },
-              {
-                "sub_q_number": "14(c)",
-                "question_text": "If the desired output is 5, calculate the new input 'x'.",
-                "step_by_step_solution": "1) (2x + 3) / 5 = 5\n2) 2x + 3 = 25 ⇒ 2x = 22 ⇒ x = 11.",
-                "marking_scheme": "1 mark for 2x = 22; 1 mark for x = 11.",
-                "marks": 2
-              }
-            ],
-            "blooms_level": "Analyzing_Evaluating",
-            "marks": 6
-          }
-        ]
-      }
-    ]
-  }
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 11/27 + 16/27?",
+              "options": {
+                "A": "1/2",
+                "B": "1",
+                "C": "2",
+                "D": "27/28"
+              },
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] Which number is divisible by 5?",
+              "options": {
+                "A": "55",
+                "B": "56",
+                "C": "57",
+                "D": "58"
+              },
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] Which fraction is equivalent to 5/8?",
+              "options": {
+                "A": "10/16",
+                "B": "6/8",
+                "C": "5/9",
+                "D": "3/8"
+              },
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 5^2?",
+              "options": {
+                "A": "10",
+                "B": "25",
+                "C": "30",
+                "D": "20"
+              },
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_number": 1,
+              "question_text": "In algebra, what does a letter symbol (variable) like 'x' or 'y' represent?",
+              "options": [
+                "A) A fixed constant number",
+                "B) An unknown numerical value",
+                "C) A geometric line",
+                "D) An operation symbol"
+              ],
+              "correct_answer": "B) An unknown numerical value",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If a balanced weighing scale has (Sack + 2 kg) on LHS and 10 kg on RHS, what is the weight of the sack?",
+              "options": [
+                "A) 12 kg",
+                "B) 10 kg",
+                "C) 8 kg",
+                "D) 5 kg"
+              ],
+              "correct_answer": "C) 8 kg",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain the balance scale principle for maintaining equality in an equation.",
+              "marking_scheme_answer": "An equation represents a balanced scale. Performing the exact same operation (adding, subtracting, multiplying, or dividing equal amounts) on both sides maintains equality.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "A hanging mobile has total weight 16 kg. Left branch has 2 weights of 5 kg each. Right branch has 2 identical objects 'e'. Frame equation and solve for 'e'.",
+              "marking_scheme_answer": "Left weight = 10 kg. Right weight = 2e. Since mobile balances: 2e = 10 ⇒ e = 5 kg.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Solve for x systematically and state balance operation at each step: 3x + 7 = 22.",
+              "marking_scheme_answer": "1) 3x + 7 = 22. 2) Subtract 7 from both sides (maintains balance): 3x = 22 - 7 ⇒ 3x = 15. 3) Divide both sides by 3 (maintains balance): x = 15 / 3 ⇒ x = 5. Check: 3(5) + 7 = 22 verified.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A mobile puzzle has a top beam holding total weight 24 kg divided equally into 12 kg left and 12 kg right. Left side has 3 identical blocks 'b'. Right side has 2 blocks 'b' and a 4 kg weight. (a) Find 'b' from left side. (b) Verify right side balance.",
+              "marking_scheme_answer": "(a) Left side: 3b = 12 ⇒ b = 4 kg. (b) Right side: 2b + 4 = 2(4) + 4 = 8 + 4 = 12 kg. Both sides balance at 12 kg.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "What is the inverse operation of multiplication?",
+              "options": [
+                "A) Addition",
+                "B) Subtraction",
+                "C) Division",
+                "D) Exponentiation"
+              ],
+              "correct_answer": "C) Division",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Solve: 5z + 2 = 17.",
+              "options": [
+                "A) z = 2",
+                "B) z = 3",
+                "C) z = 4",
+                "D) z = 5"
+              ],
+              "correct_answer": "B) z = 3",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "State the 4 inverse operation pairings used to isolate variables in linear equations.",
+              "marking_scheme_answer": "1) Addition inverse is Subtraction (+a ↔ -a). 2) Subtraction inverse is Addition (-a ↔ +a). 3) Multiplication inverse is Division (×a ↔ ÷a). 4) Division inverse is Multiplication (÷a ↔ ×a).",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Given 4k + 1 = 13, find values of: (a) k, (b) 8k + 2, (c) 4k - 1.",
+              "marking_scheme_answer": "4k + 1 = 13 ⇒ 4k = 12 ⇒ k = 3. (a) k = 3. (b) 8k + 2 = 8(3) + 2 = 26. (c) 4k - 1 = 12 - 1 = 11.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Solve 5z + 2 = 3z - 4 systematically step-by-step with complete justification.",
+              "marking_scheme_answer": "1) Subtract 3z from both sides: 5z - 3z + 2 = -4 ⇒ 2z + 2 = -4. 2) Subtract 2 from both sides: 2z = -6. 3) Divide both sides by 2: z = -3. Check: LHS = 5(-3)+2 = -13; RHS = 3(-3)-4 = -13. LHS = RHS verified.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A taxi service charges fixed fee ₹800 plus ₹20 per km. Total bill is ₹2200. (a) Write cost equation for distance 'd'. (b) Solve for 'd'. (c) What is bill for 100 km?",
+              "marking_scheme_answer": "(a) 800 + 20d = 2200. (b) 20d = 1400 ⇒ d = 70 km. (c) Cost for 100 km = 800 + 20(100) = 800 + 2000 = ₹2800.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A function machine doubles an input 'x' and adds 5. What is the output expression?",
+              "options": [
+                "A) 2x + 5",
+                "B) x + 10",
+                "C) 2(x + 5)",
+                "D) 5x + 2"
+              ],
+              "correct_answer": "A) 2x + 5",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If function machine output is 21 for 2x + 5, what was the input 'x'?",
+              "options": [
+                "A) 6",
+                "B) 8",
+                "C) 10",
+                "D) 12"
+              ],
+              "correct_answer": "B) 8",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain how to run a function machine backward using inverse operations.",
+              "marking_scheme_answer": "To run backward, start with output value and apply the inverse of each operation in reverse order to determine the input.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Function machine steps: Input x → Multiply by 3 → Subtract 4 → Output 11. Find input x.",
+              "marking_scheme_answer": "Reverse steps: Output 11 → Add 4 (= 15) → Divide by 3 (= 5). Input x = 5.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "A complex function machine performs: Input x → Add 3 → Multiply result by 2 → Divide by 5 → Output 6. (a) Frame equation. (b) Solve for input x.",
+              "marking_scheme_answer": "(a) Equation: 2(x + 3) / 5 = 6. (b) Multiply by 5: 2(x + 3) = 30. Divide by 2: x + 3 = 15. Subtract 3: x = 12. Input x = 12.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A temperature conversion machine converts Celsius (C) to Fahrenheit (F) via: F = (9/5)C + 32. (a) Find F when C = 25°C. (b) Run machine backward to find C when F = 95°F.",
+              "marking_scheme_answer": "(a) F = (9/5)(25) + 32 = 45 + 32 = 77°F. (b) 95 = (9/5)C + 32 ⇒ 63 = (9/5)C ⇒ C = 63 × (5/9) = 35°C.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "One quarter of a number increased by 9 equals the number. What is the number?",
+              "options": [
+                "A) 8",
+                "B) 12",
+                "C) 16",
+                "D) 24"
+              ],
+              "correct_answer": "B) 12",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "The sum of three consecutive integers is 45. What is the middle integer?",
+              "options": [
+                "A) 14",
+                "B) 15",
+                "C) 16",
+                "D) 17"
+              ],
+              "correct_answer": "B) 15",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Rohan's father is 4 years more than 3 times Rohan's age. If father is 40 years old, find Rohan's age.",
+              "marking_scheme_answer": "Let Rohan's age be 'r'. Equation: 3r + 4 = 40 ⇒ 3r = 36 ⇒ r = 12 years.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Perimeter of an isosceles triangle is 32 cm. Equal sides are 10 cm each. Find base length 'b'.",
+              "marking_scheme_answer": "Perimeter = 10 + 10 + b = 32 ⇒ 20 + b = 32 ⇒ b = 12 cm.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "A rectangle has length (2x + 3) cm and width (x + 1) cm. Its perimeter is 38 cm. (a) Frame equation. (b) Find x. (c) Calculate length and width.",
+              "marking_scheme_answer": "(a) Perimeter = 2[(2x + 3) + (x + 1)] = 38 ⇒ 2(3x + 4) = 38. (b) 6x + 8 = 38 ⇒ 6x = 30 ⇒ x = 5. (c) Length = 2(5)+3 = 13 cm; Width = 5+1 = 6 cm.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "In a school library, total books = 450. Fiction books are twice non-fiction books, and reference books are 30 more than non-fiction. (a) Frame equation with x as non-fiction. (b) Find number of non-fiction, fiction, and reference books.",
+              "marking_scheme_answer": "(a) Non-fiction = x, Fiction = 2x, Reference = x + 30. Total = x + 2x + (x + 30) = 450 ⇒ 4x + 30 = 450. (b) 4x = 420 ⇒ x = 105 non-fiction. Fiction = 210, Reference = 135.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "What does the historical Indian term 'Bīja' mean in Bījagaṇita?",
+              "options": [
+                "A) Root",
+                "B) Seed",
+                "C) Tree",
+                "D) Branch"
+              ],
+              "correct_answer": "B) Seed",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which is the correct expansion of 3(x + 2)?",
+              "options": [
+                "A) 3x + 2",
+                "B) 3x + 6",
+                "C) x + 6",
+                "D) 3x + 5"
+              ],
+              "correct_answer": "B) 3x + 6",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Identify and correct the mistake in: 4x + 6 = 10 ⇒ 4x = 10 + 6 = 16 ⇒ x = 4.",
+              "marking_scheme_answer": "Mistake: 6 was added instead of subtracted. Correct: 4x = 10 - 6 ⇒ 4x = 4 ⇒ x = 1.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Explain the philosophical connection between a seed (bīja) and an unknown variable in Bījagaṇita.",
+              "marking_scheme_answer": "Just as a complete tree is hidden inside a seed, the unknown answer is hidden inside an algebraic equation, awaiting systematic steps to grow and reveal itself.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Correct three student errors: (i) 2(v - 4) = 6 ⇒ 2v - 4 = 6, (ii) 7 - 8z = 5 ⇒ 8z = 7 + 5, (iii) x/3 = 9 ⇒ x = 3.",
+              "marking_scheme_answer": "(i) Correct expansion: 2v - 8 = 6 ⇒ 2v = 14 ⇒ v = 7. (ii) Correct transposition: 7 - 5 = 8z ⇒ 8z = 2 ⇒ z = 1/4. (iii) Multiply by 3: x = 9 × 3 = 27.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A math student attempts to solve 4(x - 3) = 2x + 6. (a) Expand LHS correctly. (b) Transpose variable terms to LHS and constants to RHS. (c) Solve for x. (d) Verify solution.",
+              "marking_scheme_answer": "(a) LHS = 4x - 12. (b) 4x - 2x = 6 + 12 ⇒ 2x = 18. (c) x = 9. (d) Verification: LHS = 4(9-3) = 4(6) = 24; RHS = 2(9)+6 = 18+6 = 24. LHS = RHS verified.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

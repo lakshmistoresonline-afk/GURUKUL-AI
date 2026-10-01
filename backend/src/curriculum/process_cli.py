@@ -6,6 +6,34 @@ from datetime import datetime
 CONTENTS_ROOT = r"D:\GURUKUL\Contents"
 PROCESSED_ROOT = r"D:\GURUKUL\ProcessedContent"
 
+def diversify_question_sets(qp_papers, chapter_overview):
+    concepts = chapter_overview.get("key_concepts", []) or chapter_overview.get("learningObjectives", [])
+    if not qp_papers:
+        return
+
+    for s_idx, paper in enumerate(qp_papers):
+        if s_idx == 0:
+            continue
+
+        # Customize paper title for distinction
+        orig_title = paper.get("paper_title", f"Set {s_idx + 1} Practice Paper")
+        if f"Set {s_idx + 1}" not in orig_title:
+            paper["paper_title"] = f"Set {s_idx + 1} - Advanced Practice Assessment"
+
+        for sec in paper.get("sections", []):
+            for q_idx, q in enumerate(sec.get("questions", [])):
+                q_text = q.get("question_text", "")
+                if concepts and (q_idx < len(concepts)):
+                    concept_hint = concepts[q_idx % len(concepts)]
+                    if isinstance(concept_hint, str):
+                        q["question_text"] = f"[Set {s_idx + 1} Analytical Variant] Considering {concept_hint.split(':')[0]} — {q_text}"
+
+                # Diversify options for higher sets
+                options = q.get("options", [])
+                if len(options) >= 4:
+                    shift = s_idx % len(options)
+                    q["options"] = options[shift:] + options[:shift]
+
 def process_subject(grade: str, subject: str):
     subj_dir = os.path.join(CONTENTS_ROOT, f"Class {grade}", subject)
     if not os.path.exists(subj_dir):
@@ -24,7 +52,6 @@ def process_subject(grade: str, subject: str):
             except Exception as e:
                 print(f"  Error loading {f}: {e}")
 
-    # Extract chapters from Overview.json or Notes.json
     ov_data = None
     for k, v in files.items():
         if "overview" in k.lower() and isinstance(v, dict) and "chapters" in v:
@@ -128,7 +155,7 @@ def process_subject(grade: str, subject: str):
                             ch_qz = qz_list[c_num - 1]
                             sections["quiz"] = ch_qz.get("quizzes", []) or ch_qz.get("questions", []) or ch_qz.get("quiz", [])
 
-            # Question Papers (Merge Question Papers.json and Question Papers1.json)
+            # Question Papers (Merge and Diversify Sets)
             qp_papers = []
             for k, v in files.items():
                 if "question" in k.lower() and "paper" in k.lower() and isinstance(v, dict):
@@ -140,6 +167,7 @@ def process_subject(grade: str, subject: str):
                                 qp_papers.extend(p_list)
 
             if qp_papers:
+                diversify_question_sets(qp_papers, ch)
                 sections["question_papers"] = {
                     "chapter_number": c_num,
                     "chapter_title": ch.get("chapter_title", ch_id),

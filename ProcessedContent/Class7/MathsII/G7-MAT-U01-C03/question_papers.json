@@ -1,220 +1,374 @@
 {
-  "chapter_number": 3,
-  "chapter_title": "Finding Common Ground",
-  "model_paper": {
-    "paper_title": "Class 7 Mathematics - Chapter 3 (Finding Common Ground) Model Test Paper",
-    "total_marks": 30,
-    "duration_minutes": 60,
-    "sections": [
-      {
-        "section": "Section A",
-        "section_title": "Objective MCQs & Assertion-Reason",
-        "total_marks": 6,
-        "questions": [
-          {
-            "question_number": 1,
-            "question_type": "MCQ",
-            "question_text": "If two numbers are co-prime, what is their Highest Common Factor (HCF)?",
-            "options": [
-              "A) 0",
-              "B) 1",
-              "C) Their product",
-              "D) Their sum"
-            ],
-            "correct_answer": "B) 1",
-            "step_by_step_solution": "Co-prime numbers have no common prime factors, so their HCF is strictly 1.",
-            "marking_scheme": "1 mark for option B.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 2,
-            "question_type": "MCQ",
-            "question_text": "The HCF of 45 and 36 is:",
-            "options": [
-              "A) 3",
-              "B) 6",
-              "C) 9",
-              "D) 180"
-            ],
-            "correct_answer": "C) 9",
-            "step_by_step_solution": "45 = 3² × 5; 36 = 2² × 3². Common prime factor with lowest power is 3² = 9.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Remembering_Knowledge",
-            "marks": 1
-          },
-          {
-            "question_number": 3,
-            "question_type": "MCQ",
-            "question_text": "The Least Common Multiple (LCM) of 6 and 8 is:",
-            "options": [
-              "A) 2",
-              "B) 14",
-              "C) 24",
-              "D) 48"
-            ],
-            "correct_answer": "C) 24",
-            "step_by_step_solution": "Multiples of 6: 6, 12, 18, 24... Multiples of 8: 8, 16, 24... Smallest common multiple is 24.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 4,
-            "question_type": "MCQ",
-            "question_text": "If the HCF of two numbers is 12 and their product is 2,160, what is their LCM?",
-            "options": [
-              "A) 120",
-              "B) 180",
-              "C) 360",
-              "D) 2,148"
-            ],
-            "correct_answer": "B) 180",
-            "step_by_step_solution": "Formula: HCF × LCM = Product of two numbers ⇒ 12 × LCM = 2160 ⇒ LCM = 2160 / 12 = 180.",
-            "marking_scheme": "1 mark for option B.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 5,
-            "question_type": "Assertion-Reason",
-            "question_text": "Assertion (A): The product of HCF and LCM of 45 and 36 equals 1,620.\nReason (R): For any two positive integers a and b, HCF(a,b) × LCM(a,b) = a × b.",
-            "options": [
-              "A) Both A and R are true and R is the correct explanation of A",
-              "B) Both A and R are true but R is NOT the correct explanation of A",
-              "C) A is true but R is false",
-              "D) A is false but R is true"
-            ],
-            "correct_answer": "A) Both A and R are true and R is the correct explanation of A",
-            "step_by_step_solution": "a × b = 45 × 36 = 1620. Reason R states the general rule that directly explains Assertion A.",
-            "marking_scheme": "1 mark for option A.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          },
-          {
-            "question_number": 6,
-            "question_type": "Assertion-Reason",
-            "question_text": "Assertion (A): For three numbers a, b, c, HCF(a,b,c) × LCM(a,b,c) = a × b × c.\nReason (R): The simple product formula HCF × LCM = Product holds strictly for two numbers.",
-            "options": [
-              "A) Both A and R are true and R is the correct explanation of A",
-              "B) Both A and R are true but R is NOT the correct explanation of A",
-              "C) A is false but R is true",
-              "D) A is true but R is false"
-            ],
-            "correct_answer": "C) A is false but R is true",
-            "step_by_step_solution": "Assertion A is FALSE because the product formula does NOT apply to three numbers. Reason R is TRUE.",
-            "marking_scheme": "1 mark for option C.",
-            "blooms_level": "Understanding_Comprehension",
-            "marks": 1
-          }
-        ]
-      },
-      {
-        "section": "Section B",
-        "section_title": "Short Answer Questions (2 Marks each)",
-        "total_marks": 10,
-        "questions": [
-          {
-            "question_number": 7,
-            "question_text": "Find two numbers whose HCF is 1 and whose LCM is 66.",
-            "step_by_step_solution": "1) Since HCF = 1, the two numbers 'a' and 'b' are co-prime.\n2) a × b = LCM = 66.\n3) Co-prime factors of 66 are (1, 66), (2, 33), (3, 22), (6, 11).\n4) Any valid pair like 6 and 11 is a correct answer.",
-            "marking_scheme": "1 mark for identifying co-prime factorization; 1 mark for giving a valid pair like (6, 11).",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 8,
-            "question_text": "Calculate the HCF and LCM of 225 and 750 using prime factorisation.",
-            "step_by_step_solution": "1) Prime factorisations: 225 = 3² × 5²; 750 = 2¹ × 3¹ × 5³.\n2) HCF = 3¹ × 5² = 3 × 25 = 75.\n3) LCM = 2¹ × 3² × 5³ = 2 × 9 × 125 = 2,250.",
-            "marking_scheme": "1 mark for correct HCF (75); 1 mark for correct LCM (2,250).",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 9,
-            "question_text": "Anshu uses 6 cm cloth strips and Guna uses 8 cm cloth strips to construct torans. What is the shortest common length of toran they can both make without cutting strips?",
-            "step_by_step_solution": "1) The common length must be a common multiple of 6 and 8.\n2) To find the shortest length, calculate LCM(6, 8).\n3) 6 = 2 × 3; 8 = 2³. LCM = 2³ × 3 = 24 cm.",
-            "marking_scheme": "1 mark for identifying LCM requirement; 1 mark for obtaining 24 cm.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 10,
-            "question_text": "A rectangular floor measures 12 ft by 16 ft. Find the maximum side length of identical square tiles that can pave the floor without cutting.",
-            "step_by_step_solution": "1) Side length must divide both 12 and 16 evenly.\n2) For maximum size, side length = HCF(12, 16).\n3) Factors of 12 = {1,2,3,4,6,12}; Factors of 16 = {1,2,4,8,16}. HCF = 4 ft.",
-            "marking_scheme": "1 mark for HCF identification; 1 mark for 4 ft.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          },
-          {
-            "question_number": 11,
-            "question_text": "Determine the total number of 4 ft × 4 ft square tiles needed to pave the 12 ft × 16 ft floor.",
-            "step_by_step_solution": "1) Tiles along length (16 ft) = 16 / 4 = 4 tiles.\n2) Tiles along width (12 ft) = 12 / 4 = 3 tiles.\n3) Total tiles required = 4 × 3 = 12 square tiles.",
-            "marking_scheme": "1 mark for row/column tile counts; 1 mark for total 12 tiles.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 2
-          }
-        ]
-      },
-      {
-        "section": "Section C",
-        "section_title": "Long Answer Questions / Proofs (4 Marks each)",
-        "total_marks": 8,
-        "questions": [
-          {
-            "question_number": 12,
-            "question_text": "Three church bells toll together at intervals of 9, 12, and 15 minutes respectively.\n(a) If they toll together right now, after how many minutes will they toll together next?\n(b) Convert this duration into hours.\n(c) If they toll together at 8:00 AM, at what time will they toll together next?",
-            "step_by_step_solution": "(a) Next simultaneous toll = LCM(9, 12, 15).\n9 = 3²; 12 = 2² × 3; 15 = 3 × 5.\nLCM = 2² × 3² × 5 = 4 × 9 × 5 = 180 minutes.\n\n(b) Duration in hours = 180 / 60 = 3 hours.\n\n(c) Next toll time = 8:00 AM + 3 hours = 11:00 AM.",
-            "marking_scheme": "2 marks for part (a) finding 180 min; 1 mark for part (b) converting to 3 hours; 1 mark for part (c) 11:00 AM.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 4
-          },
-          {
-            "question_number": 13,
-            "question_text": "Verify the relationship HCF(a,b) × LCM(a,b) = a × b for the numbers a = 45 and b = 36.\nShow all prime factorisation steps clearly.",
-            "step_by_step_solution": "1) Prime factorisation of 45 = 3² × 5¹.\n2) Prime factorisation of 36 = 2² × 3².\n3) HCF(45, 36) = 3² = 9.\n4) LCM(45, 36) = 2² × 3² × 5¹ = 4 × 9 × 5 = 180.\n5) LHS = HCF × LCM = 9 × 180 = 1,620.\n6) RHS = a × b = 45 × 36 = 1,620.\nSince LHS = RHS = 1,620, the formula is verified.",
-            "marking_scheme": "1 mark for prime factorisations; 1 mark for HCF & LCM; 2 marks for verifying LHS = RHS = 1620.",
-            "blooms_level": "Application_Problem_Solving",
-            "marks": 4
-          }
-        ]
-      },
-      {
-        "section": "Section D",
-        "section_title": "Competency / Case-Based Assessment",
-        "total_marks": 6,
-        "questions": [
-          {
-            "question_number": 14,
-            "case_scenario": "A disaster relief agency has received a stock of 225 kg of rice and 750 kg of wheat. They plan to pack these grains into identical bags containing either only rice or only wheat such that every bag weighs the exact same amount and is as heavy as possible.",
-            "sub_questions": [
-              {
-                "sub_q_number": "14(a)",
-                "question_text": "Find the maximum weight of each grain bag.",
-                "step_by_step_solution": "Maximum weight = HCF(225, 750).\n225 = 3² × 5²; 750 = 2 × 3 × 5³.\nHCF = 3 × 5² = 75 kg.",
-                "marking_scheme": "1 mark for prime factorisation; 1 mark for obtaining 75 kg.",
-                "marks": 2
+  "question_papers": [
+    {
+      "paper_title": "Source Question Bank Set",
+      "sections": [
+        {
+          "section_title": "Source Question Bank Assessment",
+          "questions": [
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 2 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "8",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 17 cm by 9 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "52",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 14 cm by 5 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "38",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 11 cm by 12 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "46",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 8 cm by 8 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "32",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 5 cm by 3 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "16",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 11 cm is ______ cm.",
+              "options": [],
+              "correct_answer": "26",
+              "type": "fill_in_the_blank"
+            },
+            {
+              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
+              "options": [],
+              "correct_answer": "",
+              "type": "long_answer"
+            },
+            {
+              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
+              "options": [],
+              "correct_answer": "",
+              "type": "long_answer"
+            },
+            {
+              "question_text": "[concept recall] Which fraction is equivalent to 1/2?",
+              "options": {
+                "A": "2/4",
+                "B": "2/2",
+                "C": "1/3",
+                "D": "1/2"
               },
-              {
-                "sub_q_number": "14(b)",
-                "question_text": "Calculate how many bags of rice and how many bags of wheat will be created.",
-                "step_by_step_solution": "Rice bags = 225 / 75 = 3 bags.\nWheat bags = 750 / 75 = 10 bags.",
-                "marking_scheme": "1 mark for 3 rice bags; 1 mark for 10 wheat bags.",
-                "marks": 2
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 9^2?",
+              "options": {
+                "A": "18",
+                "B": "81",
+                "C": "90",
+                "D": "72"
               },
-              {
-                "sub_q_number": "14(c)",
-                "question_text": "Find the total number of relief bags prepared.",
-                "step_by_step_solution": "Total bags = 3 + 10 = 13 relief bags.",
-                "marking_scheme": "2 marks for total 13 bags.",
-                "marks": 2
-              }
-            ],
-            "blooms_level": "Analyzing_Evaluating",
-            "marks": 6
-          }
-        ]
-      }
-    ]
-  }
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 11/27 + 16/27?",
+              "options": {
+                "A": "1/2",
+                "B": "1",
+                "C": "2",
+                "D": "27/28"
+              },
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] Which number is divisible by 5?",
+              "options": {
+                "A": "55",
+                "B": "56",
+                "C": "57",
+                "D": "58"
+              },
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] Which fraction is equivalent to 5/8?",
+              "options": {
+                "A": "10/16",
+                "B": "6/8",
+                "C": "5/9",
+                "D": "3/8"
+              },
+              "correct_answer": "A",
+              "type": "MCQ"
+            },
+            {
+              "question_text": "[concept recall] What is 5^2?",
+              "options": {
+                "A": "10",
+                "B": "25",
+                "C": "30",
+                "D": "20"
+              },
+              "correct_answer": "B",
+              "type": "MCQ"
+            },
+            {
+              "question_number": 1,
+              "question_text": "What is the HCF of 12 and 16?",
+              "options": [
+                "A) 2",
+                "B) 4",
+                "C) 8",
+                "D) 48"
+              ],
+              "correct_answer": "B) 4",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "To cover a room floor with the largest possible identical square tiles without cutting, the side length of the tile must equal:",
+              "options": [
+                "A) LCM of dimensions",
+                "B) HCF of dimensions",
+                "C) Perimeter of room",
+                "D) Area of room"
+              ],
+              "correct_answer": "B) HCF of dimensions",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Define Highest Common Factor (HCF) or Greatest Common Divisor (GCD).",
+              "marking_scheme_answer": "The HCF (or GCD) of two or more numbers is the largest positive integer that divides each of the numbers completely without leaving a remainder.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Find the HCF of 24, 36, and 60 by prime factorisation.",
+              "marking_scheme_answer": "24 = 2³×3, 36 = 2²×3², 60 = 2²×3×5. Common prime factors with lowest powers = 2² × 3¹ = 4 × 3 = 12.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "A hall floor measures 18 m by 24 m. Sameeksha wants to tile it with square tiles of maximum size without cutting any tile. (a) Find maximum tile side. (b) Find total number of tiles needed.",
+              "marking_scheme_answer": "(a) Tile side = HCF(18, 24) = 6 meters. (b) Tiles along length = 24/6 = 4. Tiles along width = 18/6 = 3. Total tiles = 4 × 3 = 12 tiles.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A charity distributes 225 kg of rice and 750 kg of wheat in bags of equal weight containing either only rice or only wheat. (a) Find maximum weight of each bag. (b) How many bags of rice and wheat are created?",
+              "marking_scheme_answer": "(a) Maximum weight = HCF(225, 750). 225 = 3²×5², 750 = 2×3×5³. HCF = 3¹×5² = 75 kg. (b) Rice bags = 225/75 = 3 bags. Wheat bags = 750/75 = 10 bags. Total = 13 bags.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "What is the Least Common Multiple (LCM) of 6 and 8?",
+              "options": [
+                "A) 2",
+                "B) 14",
+                "C) 24",
+                "D) 48"
+              ],
+              "correct_answer": "C) 24",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "If two numbers are co-prime, what is their LCM?",
+              "options": [
+                "A) 1",
+                "B) Sum of numbers",
+                "C) Product of numbers",
+                "D) Difference of numbers"
+              ],
+              "correct_answer": "C) Product of numbers",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Anshu uses 6 cm cloth strips and Guna uses 8 cm strips to make torans of equal length. Find the shortest possible length of their toran.",
+              "marking_scheme_answer": "Shortest length = LCM(6, 8) = 24 cm.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Find the LCM of 15, 20, and 30 using prime factorisation.",
+              "marking_scheme_answer": "15 = 3×5, 20 = 2²×5, 30 = 2×3×5. LCM = 2² × 3¹ × 5¹ = 4 × 3 × 5 = 60.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Three traffic signals change color every 12 seconds, 18 seconds, and 24 seconds respectively. If they all change simultaneously at 9:00 AM, at what time will they change together next?",
+              "marking_scheme_answer": "Find LCM(12, 18, 24). 12 = 2²×3, 18 = 2×3², 24 = 2³×3. LCM = 2³ × 3² = 8 × 9 = 72 seconds = 1 min 12 sec. Next simultaneous change = 9:01:12 AM.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Three bells toll together at intervals of 9, 12, and 15 minutes. (a) Calculate LCM(9, 12, 15). (b) Convert time to hours. (c) If they toll at 6:00 AM, when will they toll together next?",
+              "marking_scheme_answer": "(a) 9 = 3², 12 = 2²×3, 15 = 3×5. LCM = 2²×3²×5 = 180 minutes. (b) 180 / 60 = 3 hours. (c) Next toll time = 6:00 AM + 3 hours = 9:00 AM.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "What is the prime factorisation of 360?",
+              "options": [
+                "A) 2³ × 3² × 5",
+                "B) 2² × 3³ × 5",
+                "C) 2 × 3² × 5²",
+                "D) 2⁴ × 3 × 5"
+              ],
+              "correct_answer": "A) 2³ × 3² × 5",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "When computing HCF from prime factorisations, which exponent is chosen for each common prime factor?",
+              "options": [
+                "A) Highest exponent",
+                "B) Lowest exponent",
+                "C) Sum of exponents",
+                "D) Average exponent"
+              ],
+              "correct_answer": "B) Lowest exponent",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Write the prime factorisations of 45 and 36, and find their HCF.",
+              "marking_scheme_answer": "45 = 3² × 5; 36 = 2² × 3². Common prime factor is 3 with lowest power 3². HCF = 9.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Write the prime factorisations of 45 and 36, and find their LCM.",
+              "marking_scheme_answer": "45 = 3² × 5; 36 = 2² × 3². All prime factors with max powers: 2², 3², 5¹. LCM = 4 × 9 × 5 = 180.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Express 144, 180, and 192 as products of prime factors. Calculate both HCF(144, 180, 192) and LCM(144, 180, 192).",
+              "marking_scheme_answer": "144 = 2⁴×3², 180 = 2²×3²×5, 192 = 2⁶×3. HCF = 2² × 3¹ = 12. LCM = 2⁶ × 3² × 5 = 64 × 9 × 5 = 2880.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A school sports coordinator wants to arrange 108 boys and 144 girls into equal rows containing either only boys or only girls. (a) Find maximum number of students per row. (b) Find total number of rows formed.",
+              "marking_scheme_answer": "(a) Max per row = HCF(108, 144). 108 = 2²×3³, 144 = 2⁴×3². HCF = 2²×3² = 36 students per row. (b) Boys rows = 108/36 = 3. Girls rows = 144/36 = 4. Total rows = 7.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "The HCF of two numbers is 9 and their LCM is 180. If one number is 45, what is the other number?",
+              "options": [
+                "A) 36",
+                "B) 45",
+                "C) 54",
+                "D) 90"
+              ],
+              "correct_answer": "A) 36",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "Which pair of numbers is co-prime?",
+              "options": [
+                "A) (14, 21)",
+                "B) (15, 28)",
+                "C) (18, 27)",
+                "D) (20, 25)"
+              ],
+              "correct_answer": "B) (15, 28)",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "State the formula relating HCF, LCM, and two numbers 'a' and 'b'. Does this formula hold for three numbers?",
+              "marking_scheme_answer": "Formula: HCF(a, b) × LCM(a, b) = a × b. No, this formula does NOT hold for three numbers.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "The HCF of two co-prime numbers is 1 and their LCM is 66. Find two possible pairs of numbers.",
+              "marking_scheme_answer": "Since HCF = 1, a × b = 66. Co-prime factor pairs of 66: (1, 66), (2, 33), (3, 22), (6, 11). Any two pairs are valid.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "The product of two numbers is 2160 and their HCF is 12. (a) Find their LCM. (b) If one number is 60, find the other number. (c) Verify that HCF × LCM = Product.",
+              "marking_scheme_answer": "(a) LCM = 2160 / 12 = 180. (b) Other number = 2160 / 60 = 36. (c) HCF × LCM = 12 × 180 = 2160 = Product verified.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Two ropes of lengths 64 cm and 80 cm are to be cut into pieces of equal length. (a) Find maximum length of each piece. (b) Find total pieces obtained. (c) Verify HCF(64,80) × LCM(64,80) = 64 × 80.",
+              "marking_scheme_answer": "(a) Max length = HCF(64, 80) = 16 cm. (b) Pieces = (64/16) + (80/16) = 4 + 5 = 9 pieces. (c) LCM(64,80) = 320. HCF × LCM = 16 × 320 = 5120 = 64 × 80 verified.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "What is the smallest 3-digit number divisible by 6, 8, and 12?",
+              "options": [
+                "A) 100",
+                "B) 120",
+                "C) 144",
+                "D) 240"
+              ],
+              "correct_answer": "B) 120",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the largest number that divides 70 and 125 leaving remainders 5 and 8 respectively?",
+              "options": [
+                "A) 13",
+                "B) 17",
+                "C) 65",
+                "D) 117"
+              ],
+              "correct_answer": "A) 13",
+              "marks": 1
+            },
+            {
+              "question_number": 1,
+              "question_text": "Find the greatest number that divides 615 and 963 leaving a remainder of 6 in each case.",
+              "marking_scheme_answer": "Subtract 6: 615 - 6 = 609, 963 - 6 = 957. Find HCF(609, 957) = 87.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "Can two numbers have 15 as their HCF and 110 as their LCM? Give reasons.",
+              "marking_scheme_answer": "No, because the HCF must always divide the LCM completely. 110 is not divisible by 15 (110 ÷ 15 = 7.33).",
+              "marks": 2
+            },
+            {
+              "question_number": 1,
+              "question_text": "Find the smallest number which when divided by 12, 16, 24, and 36 leaves a remainder of 7 in each case.",
+              "marking_scheme_answer": "1) Find LCM(12, 16, 24, 36). 12=2²×3, 16=2⁴, 24=2³×3, 36=2²×3². LCM = 2⁴ × 3² = 16 × 9 = 144. 2) Required number = LCM + 7 = 144 + 7 = 151.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A sweet seller has 420 kaju barfis and 130 badam barfis. She wants to stack them in equal counts such that they take up minimum tray space. (a) Find maximum number of barfis per stack. (b) Find number of stacks for each type.",
+              "marking_scheme_answer": "(a) Stack count = HCF(420, 130) = 10 barfis per stack. (b) Kaju stacks = 420/10 = 42; Badam stacks = 130/10 = 13 stacks.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
