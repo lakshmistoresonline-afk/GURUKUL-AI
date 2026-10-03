@@ -1,0 +1,123 @@
+{
+  "textbook_metadata": {
+    "textbook": "",
+    "publisher": "",
+    "grade": "Class 5",
+    "curriculum_framework": "NCF-SE 2023 / NEP 2020"
+  },
+  "subject_type": "SCIENCE",
+  "modules": [
+    {
+      "category": "scientific_vocabulary",
+      "item": {
+        "term": "Diurnal Axial Rotation",
+        "meaning": "The 24-hour spinning motion of Earth around its own axis from west to east, creating sequential day and night on opposite hemispheres.",
+        "source_context": "Chapter 9: Rhythms of Nature (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "scientific_vocabulary",
+      "item": {
+        "term": "Phenological Bio-Indicator",
+        "meaning": "A living organism whose seasonal behavioral cues (such as bird vocalization or leaf shedding) indicate upcoming weather or climate shifts.",
+        "source_context": "Chapter 9: Rhythms of Nature (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "definitions",
+      "item": {
+        "term": "Apparent Solar Motion",
+        "definition": "The optical illusion of the Sun moving from east to west across the sky, caused by Earth rotating on its axis in the opposite direction (west to east).",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "title": "Gnomon Shadow Elevation Angles",
+        "description": "Solar elevation angle determines shadow lengths: low Sun angles at early morning/late evening cast long shadows, whereas high overhead Sun at solar noon casts the shortest shadow.",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "title": "Biological Monsoon Indicators",
+        "description": "Vocalizations of the Koel (cuckoo) bird in Odisha correlate with atmospheric humidity shifts announcing approaching monsoon rains, signaling farmers to time crop seed sowing.",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "principles_laws",
+      "item": {
+        "principle_name": "Principle of Planetary Axial Rotation (Diurnal Motion)",
+        "statement": "Earth rotates on its central axis from west to east at a rate of 15° longitude per hour (360° per 24 hours), causing sequential solar exposure, day-night cycles, and apparent east-to-west solar motion.",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "cause_effect",
+      "item": {
+        "cause": "Earth rotating on its axis from west to east every 24 hours.",
+        "effect": "Exposes longitudes to sunlight in sequence, creating alternating day and night and causing the Sun to appear to rise in the east and set in the west.",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "entity_1": "Solar Elevation Angle (Gnomon)",
+        "entity_2": "Shadow Length",
+        "relationship_nature": "Inverse Relationship: When the Sun is low on the horizon (early morning/late evening), shadow length is longest; when the Sun reaches solar noon high overhead, shadow length is shortest.",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "entity_1": "Earth Axial Rotation Rate (15°/hour)",
+        "entity_2": "Longitude Solar Exposure Time",
+        "relationship_nature": "Mathematical Relationship: Earth turns 360° in 24 hours, so 15° of longitude pass under solar illumination every 60 minutes (1° every 4 minutes).",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "observations",
+      "item": {
+        "observation_id": "OBS-007",
+        "setup": "Tracking the shadow cast by a vertical pencil (gnomon) on paper outdoors from 9 AM to 4 PM.",
+        "observed_phenomenon": "The shadow points west in the morning, shrinks to its shortest length at noon, and lengthens pointing east in the late afternoon.",
+        "scientific_explanation": "Reflects Earth's west-to-east axial rotation changing the apparent solar elevation angle throughout the day.",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "experiments_activities",
+      "item": {
+        "activity_id": "ACT-006",
+        "activity_title": "Globe and Flashlight Day-Night Simulation",
+        "materials_required": [
+          "World globe",
+          "Flashlight",
+          "Darkened classroom"
+        ],
+        "procedure": [
+          "1. Place a world globe on a table in a dark room and point a stationary flashlight at it.",
+          "2. Identify India on the globe and observe which hemisphere receives direct light.",
+          "3. Rotate the globe slowly from west to east and observe how day and night alternate across longitudes."
+        ],
+        "inference": "Earth's axial rotation exposes different longitudes to solar illumination in sequence, causing 24-hour day-night cycles.",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    },
+    {
+      "category": "applications",
+      "item": {
+        "application_title": "Phenological Bio-Indicator Farming Signals",
+        "domain": "Traditional Agricultural Science",
+        "practical_use": "Monitoring seasonal bird songs (like the Koel in Odisha) helps farmers accurately time soil plowing and seed sowing ahead of annual monsoon rains.",
+        "source_context": "Chapter 9 (eeev109.pdf)"
+      }
+    }
+  ]
+}

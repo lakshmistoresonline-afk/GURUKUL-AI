@@ -12,6 +12,7 @@ import MindmapComponent from '../../../../components/presentation/MindmapCompone
 import QuestionPapersComponent from '../../../../components/presentation/QuestionPapersComponent';
 import QuizComponent from '../../../../components/presentation/QuizComponent';
 import FlashcardsComponent from '../../../../components/presentation/FlashcardsComponent';
+import FoundationalComponent from '../../../../components/presentation/FoundationalComponent';
 import Class6MasterComponent from '../../../../components/presentation/Class6/Class6MasterComponent';
 import Class6HindiMasterComponent from '../../../../components/presentation/Class6/Class6HindiMasterComponent';
 import Class6HindiNotesComponent from '../../../../components/presentation/Class6/Class6HindiNotesComponent';
@@ -44,6 +45,7 @@ interface ChapterSourceData {
     mindmaps: any;
     quiz: any[];
     question_papers: any | null;
+    foundational: any;
   };
 }
 
@@ -67,6 +69,7 @@ const FIXED_TABS = [
   { id: 'mindmaps', label: 'Mindmaps', icon: '🧠' },
   { id: 'quiz', label: 'Quiz', icon: '✍️' },
   { id: 'question_papers', label: 'Question Papers', icon: '📋' },
+  { id: 'foundational', label: 'Foundational Core', icon: '🏛️' },
 ];
 
 export default function ChapterClient({ grade, subject, chapterId }: ChapterClientProps) {
@@ -284,6 +287,9 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
 
       case 'quiz':
         return <QuizComponent quiz={sections.quiz} />;
+
+      case 'foundational':
+        return <FoundationalComponent data={sections.foundational} />;
 
       default:
         return <p className="text-sm text-slate-500">Select a section above.</p>;

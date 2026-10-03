@@ -1,131 +1,15 @@
 {
+  "chapter_title": "Connecting the Dots...",
   "question_papers": [
     {
-      "paper_title": "Source Question Bank Set",
+      "paper_id": 1,
+      "paper_title": "Set 1 - Chapter 5 Practice Paper (Arithmetic Mean & Fair-Share Concept)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
       "sections": [
         {
-          "section_title": "Source Question Bank Assessment",
+          "section_name": "Section A (MCQs)",
           "questions": [
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 2 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "8",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 17 cm by 9 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "52",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 14 cm by 5 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "38",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 11 cm by 12 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "46",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 8 cm by 8 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "32",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 5 cm by 3 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "16",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 11 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "26",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
-              "options": [],
-              "correct_answer": "",
-              "type": "long_answer"
-            },
-            {
-              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
-              "options": [],
-              "correct_answer": "",
-              "type": "long_answer"
-            },
-            {
-              "question_text": "[concept recall] Which fraction is equivalent to 1/2?",
-              "options": {
-                "A": "2/4",
-                "B": "2/2",
-                "C": "1/3",
-                "D": "1/2"
-              },
-              "correct_answer": "A",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] What is 9^2?",
-              "options": {
-                "A": "18",
-                "B": "81",
-                "C": "90",
-                "D": "72"
-              },
-              "correct_answer": "B",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] What is 11/27 + 16/27?",
-              "options": {
-                "A": "1/2",
-                "B": "1",
-                "C": "2",
-                "D": "27/28"
-              },
-              "correct_answer": "B",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] Which number is divisible by 5?",
-              "options": {
-                "A": "55",
-                "B": "56",
-                "C": "57",
-                "D": "58"
-              },
-              "correct_answer": "A",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] Which fraction is equivalent to 5/8?",
-              "options": {
-                "A": "10/16",
-                "B": "6/8",
-                "C": "5/9",
-                "D": "3/8"
-              },
-              "correct_answer": "A",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] What is 5^2?",
-              "options": {
-                "A": "10",
-                "B": "25",
-                "C": "30",
-                "D": "20"
-              },
-              "correct_answer": "B",
-              "type": "MCQ"
-            },
             {
               "question_number": 1,
               "question_text": "What is the formula for Arithmetic Mean?",
@@ -149,7 +33,12 @@
               ],
               "correct_answer": "B) 5.6",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Explain why the Arithmetic Mean is conceptualized as a 'fair-share' value.",
@@ -161,19 +50,42 @@
               "question_text": "Find the mean of marks scored by 5 students: 14, 18, 12, 20, 16.",
               "marking_scheme_answer": "Sum = 14 + 18 + 12 + 20 + 16 = 80. Mean = 80 / 5 = 16.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "The mean mark of 6 students in a test is 18. If one student who scored 8 marks is excluded, calculate the new mean of the remaining 5 students.",
               "marking_scheme_answer": "Original total marks = 18 × 6 = 108. New total after excluding 8 = 108 - 8 = 100. New mean = 100 / 5 = 20.",
               "marks": 5
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study Question)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Daily rainfall in mm for a week: 5.6, 8.0, 3.0, 12.0, 6.5, 12.1, 11.2. (a) Find maximum and minimum rainfall. (b) Find range. (c) Calculate mean daily rainfall.",
               "marking_scheme_answer": "(a) Max = 12.1 mm, Min = 3.0 mm. (b) Range = 12.1 - 3.0 = 9.1 mm. (c) Sum = 58.4 mm. Mean = 58.4 / 7 = 8.34 mm.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Chapter 5 Practice Paper (Median Calculation & Ordered Datasets)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "What is the median of the dataset: 7, 2, 9, 4, 5?",
@@ -197,7 +109,12 @@
               ],
               "correct_answer": "B) Average of N/2 and (N/2)+1 positions",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Find the median of heights (in cm): 142, 138, 145, 140, 144, 139.",
@@ -209,19 +126,42 @@
               "question_text": "Is the median always one of the numbers given in the raw dataset? Explain.",
               "marking_scheme_answer": "No. When N is even, median is the average of two central values, which may yield a decimal/value not present in raw data.",
               "marks": 2
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Heights of 17 students (cm): 106, 110, 123, 125, 117, 120, 112, 115, 110, 120, 115, 102, 115, 115, 109, 115, 101. (a) Sort data. (b) Find median height. (c) Divide into 2 equal groups above/below median.",
               "marking_scheme_answer": "(a) Sorted: 101, 102, 106, 109, 110, 110, 112, 115, 115, 115, 115, 115, 117, 120, 120, 123, 125. (b) N=17 (odd), Median = 9th value = 115 cm. (c) Group 1: 8 students < 115 cm; Group 2: 8 students > 115 cm.",
               "marks": 5
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study Question)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Scores of 9 students in a quiz: 12, 15, 11, 18, 20, 15, 14, 15, 16. (a) Find mean score. (b) Find median score. (c) Find mode score.",
               "marking_scheme_answer": "(a) Sum = 136, Mean = 136/9 = 15.11. (b) Sorted: 11, 12, 14, 15, 15, 15, 16, 18, 20. Median = 5th value = 15. (c) Mode = 15 (appears 3 times).",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Chapter 5 Practice Paper (Dot Plots & Outlier Sensitivity)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "What is an outlier in a statistical dataset?",
@@ -245,7 +185,12 @@
               ],
               "correct_answer": "C) Arithmetic Mean",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Describe the structure and purpose of a Dot Plot.",
@@ -257,19 +202,42 @@
               "question_text": "Dataset: {10, 12, 11, 13, 12, 11, 85}. Identify outlier and explain its effect on mean vs median.",
               "marking_scheme_answer": "Outlier = 85. Mean with outlier = 150/7 = 21.4 (heavily inflated). Median = 12. Removing 85: Mean = 69/6 = 11.5; Median = 11.5. Median is stable while mean is heavily distorted.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Poovizhi collected storybooks read by 7 students: 3, 4, 3, 5, 4, 3, 28. (a) Calculate mean with outlier 28. (b) Calculate median. (c) Remove outlier 28 and recalculate mean and median. (d) State conclusion.",
               "marking_scheme_answer": "(a) Mean = 50 / 7 = 7.14 books. (b) Sorted: 3, 3, 3, 4, 4, 5, 28. Median = 4 books. (c) Without 28: Mean = 22 / 6 = 3.67 books; Median = 3.5 books. (d) Outlier inflates mean by ~3.5 books while median changes by only 0.5 books.",
               "marks": 5
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study Question)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Number of letters in names of 10 students: 4, 5, 6, 4, 5, 7, 4, 5, 6, 14. (a) Identify clusters and outlier. (b) Find median name length. (c) Find mean name length.",
               "marking_scheme_answer": "(a) Cluster = 4-7 letters; Outlier = 14 letters. (b) Sorted: 4, 4, 4, 5, 5, 5, 6, 6, 7, 14. Median = (5+5)/2 = 5 letters. (c) Mean = 60 / 10 = 6 letters.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Chapter 5 Practice Paper (Clustered Bar Graphs & Axis Cropping)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Why is a cropped vertical axis (starting above 0) used on bar graphs?",
@@ -293,7 +261,12 @@
               ],
               "correct_answer": "C) Clustered (Double) Column Graph",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Explain when a double bar graph is preferred over a single bar graph.",
@@ -305,19 +278,42 @@
               "question_text": "Onion prices (₹/kg) in Yahapur vs Wahapur over 3 months: Jan (30 vs 35), Feb (40 vs 42), Mar (50 vs 45). Calculate mean price in each town.",
               "marking_scheme_answer": "Yahapur mean = (30+40+50)/3 = ₹40/kg. Wahapur mean = (35+42+45)/3 = ₹40.67/kg.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Pocket counts survey: Boys: {2, 3, 4, 4, 5, 5, 5, 6, 7}; Girls: {0, 1, 2, 2, 2, 3, 4}. (a) Calculate median pocket count for boys and girls. (b) Calculate mean pocket count for boys and girls. (c) Compare data distributions.",
               "marking_scheme_answer": "(a) Boys median = 5, Girls median = 2. (b) Boys mean = 41 / 9 = 4.56; Girls mean = 14 / 7 = 2.0. (c) Boys' garments have significantly higher pocket counts (center around 4-5) compared to girls' garments (center around 2).",
               "marks": 5
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study Question)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "A school sports day recorded jump distances (m) for two houses: Ruby: {1.2, 1.4, 1.5, 1.8, 2.1}; Emerald: {1.3, 1.5, 1.6, 1.7, 1.9}. (a) Find median jump distance for Ruby and Emerald. (b) Which house had higher overall performance?",
               "marking_scheme_answer": "(a) Ruby median = 1.5 m; Emerald median = 1.6 m. (b) Emerald mean = 8.0 / 5 = 1.6 m; Ruby mean = 8.0 / 5 = 1.6 m. Both have equal mean performance, but Emerald has a higher median.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Chapter 5 Practice Paper (Comprehensive Data Interpretation)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Which measure of central tendency can never be greater than the maximum data value?",
@@ -341,7 +337,12 @@
               ],
               "correct_answer": "B) 5",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Can mean or median lie outside the minimum and maximum boundaries of a dataset? Explain.",
@@ -353,13 +354,23 @@
               "question_text": "Find mean, median, and mode for data: 12, 15, 12, 18, 20, 12, 17.",
               "marking_scheme_answer": "Sum = 106, Mean = 106/7 = 15.14. Sorted: 12, 12, 12, 15, 17, 18, 20. Median = 15. Mode = 12.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "The average weight of 10 students is 42 kg. When the weight of a teacher is added, average weight increases to 44 kg. Calculate teacher's weight.",
               "marking_scheme_answer": "Original total weight = 10 × 42 = 420 kg. New total weight with teacher (11 persons) = 11 × 44 = 484 kg. Teacher's weight = 484 - 420 = 64 kg.",
               "marks": 5
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study Question)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Data of hours spent studying by 8 students: 2, 3, 1, 4, 2, 5, 2, 9. (a) Calculate mean. (b) Calculate median. (c) Identify outlier. (d) Which measure better represents typical study hours?",

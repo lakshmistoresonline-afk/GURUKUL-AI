@@ -1,120 +1,26 @@
 {
+  "chapter_title": "Heat Transfer in Nature",
   "question_papers": [
     {
-      "paper_title": "Source Question Bank Set",
+      "paper_id": 1,
+      "paper_title": "Set 1 - Heat Transfer in Nature (NCERT Standard Practice Set)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
       "sections": [
         {
-          "section_title": "Source Question Bank Assessment",
+          "section_name": "Section A (MCQs - 1 Mark Each)",
           "questions": [
             {
-              "question_text": "Green plants make food by ______.",
-              "options": [],
-              "correct_answer": "photosynthesis",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "A push or pull is called a ______.",
-              "options": [],
-              "correct_answer": "force",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "Iron is attracted to a ______.",
-              "options": [],
-              "correct_answer": "magnet",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "A complete electrical path is a closed ______.",
-              "options": [],
-              "correct_answer": "circuit",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "The organ used mainly for breathing is the ______.",
-              "options": [],
-              "correct_answer": "lungs",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "Green plants make food by ______.",
-              "options": [],
-              "correct_answer": "photosynthesis",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "A push or pull is called a ______.",
-              "options": [],
-              "correct_answer": "force",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "Iron is attracted to a ______.",
-              "options": [],
-              "correct_answer": "magnet",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "A complete electrical path is a closed ______.",
-              "options": [],
-              "correct_answer": "circuit",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "Write a structured answer on 'The Ever-Evolving World of Science'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
-              "options": [],
-              "correct_answer": "",
-              "type": "long_answer"
-            },
-            {
-              "question_text": "Write a structured answer on 'The Ever-Evolving World of Science'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
-              "options": [],
-              "correct_answer": "",
-              "type": "long_answer"
-            },
-            {
-              "question_text": "[concept recall] During a classroom investigation related to 'The Ever-Evolving World of Science': Which process allows green plants to make food?",
-              "options": {
-                "A": "respiration",
-                "B": "photosynthesis",
-                "C": "digestion",
-                "D": "filtration"
-              },
-              "correct_answer": "B",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[application] In a worksheet activity on 'The Ever-Evolving World of Science': Which change is usually reversible?",
-              "options": {
-                "A": "burning paper",
-                "B": "rusting iron",
-                "C": "cooking rice",
-                "D": "melting ice"
-              },
-              "correct_answer": "D",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[comparison] While solving a real-life problem related to 'The Ever-Evolving World of Science': Which process allows green plants to make food?",
-              "options": {
-                "A": "digestion",
-                "B": "filtration",
-                "C": "respiration",
-                "D": "photosynthesis"
-              },
-              "correct_answer": "D",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[classification] During a quick quiz on 'The Ever-Evolving World of Science': Which change is usually reversible?",
-              "options": {
-                "A": "cooking rice",
-                "B": "melting ice",
-                "C": "burning paper",
-                "D": "rusting iron"
-              },
-              "correct_answer": "B",
-              "type": "MCQ"
+              "question_number": 1,
+              "question_text": "By which process does heat from the Sun travel through empty space to reach Earth?",
+              "options": [
+                "A) Conduction",
+                "B) Convection",
+                "C) Radiation",
+                "D) Advection"
+              ],
+              "correct_answer": "C",
+              "marks": 1
             },
             {
               "question_number": 2,
@@ -127,19 +33,54 @@
               ],
               "correct_answer": "A) Convection",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Why are cooking utensils constructed with metal bottoms but wooden or bakelite handles?",
+              "marking_scheme_answer": "Metal bottoms are excellent thermal conductors that distribute heat rapidly to food. Wooden or bakelite handles are thermal insulators that prevent heat from burning the cook's hands.",
+              "marks": 3
             },
             {
               "question_number": 2,
               "question_text": "Describe the practical activity with aim: 'To visualize fluid convection currents using a potassium permanganate (KMnO4) crystal in water.'. Outline key steps and conclusion.",
               "marking_scheme_answer": "Steps: Fill beaker with clean water., Use a straw to carefully deposit a KMnO4 crystal at the bottom center of beaker., Apply heat directly under the crystal using a small candle flame.\nConclusion: Heating creates density-driven circular fluid convection currents.",
               "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Explain the complete mechanism of Sea Breeze during day and Land Breeze at night in coastal regions, including differential heating principles.",
+              "marking_scheme_answer": "1. Differential Heating: Land heats and cools faster than water. 2. Daytime (Sea Breeze): Sunlight heats land faster than sea. Air over land becomes hot, expands, and rises (low pressure). Cooler dense air over sea blows toward land as Sea Breeze. 3. Nighttime (Land Breeze): Land loses heat rapidly while sea remains warm. Air over sea rises. Cooler dense air over land blows toward sea as Land Breeze.",
+              "marks": 5
             },
             {
               "question_number": 2,
               "question_text": "Case Scenario: In traditional Himalayan architecture, houses are built with thick mud/stone walls, small wooden windows, and double-layered roofs.\nQuestion: How do these architectural features regulate indoor temperature during severe winters?",
               "marking_scheme_answer": "Mud, stone, and wood are poor thermal conductors with high thermal mass. They trap indoor heat, prevent outward heat conduction to freezing air, and eliminate drafts.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Heat Transfer in Nature (Conceptual & Reasoning Focus)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "What is the underlying scientific nature of the key phenomenon in Heat Transfer in Nature?",
@@ -163,19 +104,54 @@
               ],
               "correct_answer": "A) Sea Breeze",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Two test tubes filled with water are heated by a flame—one from the top rim and one from the bottom base. Which thermometer registers a rapid temperature rise throughout the tube?",
+              "marking_scheme_answer": "The test tube heated from the bottom base registers a rapid temperature rise. Base heating establishes bottom-to-top fluid convection currents. Top heating leaves bottom cold because warm water stays at top.",
+              "marks": 3
             },
             {
               "question_number": 2,
               "question_text": "How do variables in Heat Transfer in Nature affect observed system outcomes?",
               "marking_scheme_answer": "System outcomes depend on specific physical/chemical parameters: Heat energy flows spontaneously from regions of higher temperature to regions of lower temperature via three mechanisms:...",
               "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Explain why smoke from a burning incense stick fixed pointing downwards turns and rises upwards.",
+              "marking_scheme_answer": "The burning tip heats surrounding air. Hot air expands, decreases in density, and rises, creating an upward convection current that carries smoke particles upward against gravity.",
+              "marks": 5
             },
             {
               "question_number": 2,
               "question_text": "Detailed Analysis: Synthesize the full theoretical framework of Heat Transfer in Nature.",
               "marking_scheme_answer": "1. Core Definition. 2. Mechanism & Reactions. 3. System Constraints. 4. Practical Applications.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Heat Transfer in Nature (Practical & Experimental Mastery)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Which materials are required to perform the experimental investigation in Chapter 7?",
@@ -199,7 +175,12 @@
               ],
               "correct_answer": "A) Confusing land breeze timing with sea breeze timing.",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Correct the common misconception: 'Confusing land breeze timing with sea breeze timing.'. State the true scientific fact.",
@@ -211,7 +192,12 @@
               "question_text": "Outline the procedure and observations for investigating Heat Transfer in Nature in the laboratory.",
               "marking_scheme_answer": "Procedure: Fill beaker with clean water., Use a straw to carefully deposit a KMnO4 crystal at the bottom center of beaker., Apply heat directly under the crystal using a small candle flame.\nObservations: Purple streams of dissolved KMnO4 rise vertically from the bottom, spread horizontally at the top surface, and descend down the cooler beaker walls.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Design a complete laboratory experiment to demonstrate and prove the fundamental law in Heat Transfer in Nature.",
@@ -223,7 +209,20 @@
               "question_text": "Experimental Case Study: Explain how observational data leads to scientific laws in Heat Transfer in Nature.",
               "marking_scheme_answer": "Data collection -> Pattern identification -> Hypothesis testing -> Peer verification -> Scientific Law formulation.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Heat Transfer in Nature (NCERT Exemplar & Textbook Exercise Mastery)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "According to NCERT exercise standards for Chapter 7, which rule applies?",
@@ -247,13 +246,29 @@
               ],
               "correct_answer": "A) The test tube heated from the bottom base registers a rapid temperature rise. Ba...",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Two test tubes filled with water are heated by a flame—one from the top rim and one from the bottom base. Which thermometer registers a rapid temperature rise throughout the tube?",
+              "marking_scheme_answer": "The test tube heated from the bottom base registers a rapid temperature rise. Base heating establishes bottom-to-top fluid convection currents. Top heating leaves bottom cold because warm water stays at top.",
+              "marks": 3
             },
             {
               "question_number": 2,
               "question_text": "Summarize the key exercise takeaways for Chapter 7.",
               "marking_scheme_answer": "Key Takeaways: 1. Core concept understanding. 2. Application of formulas/definitions. 3. Real-world relevance.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Exemplar Problem: Provide an in-depth solution to the major exercise problem in Heat Transfer in Nature.",
@@ -265,7 +280,20 @@
               "question_text": "Case Study: Discuss the broader technological and environmental implications of concepts in Heat Transfer in Nature.",
               "marking_scheme_answer": "1. Industrial applications. 2. Environmental impact and conservation. 3. Daily human life usage.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Heat Transfer in Nature (HOTS & Competency Assessment)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Assertion (A): Phenomena in Heat Transfer in Nature play a vital role in natural systems.\nReason (R): These processes maintain structural and energy equilibrium.",
@@ -289,7 +317,12 @@
               ],
               "correct_answer": "A) System response follows linear or proportional natural law",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "HOTS Question: Analyze an unfamiliar scenario involving Heat Transfer in Nature and predict the outcome based on first principles.",
@@ -301,7 +334,12 @@
               "question_text": "How do modern scientific innovations build upon the principles laid out in Heat Transfer in Nature?",
               "marking_scheme_answer": "1. Materials science and technological engineering. 2. Efficiency improvements. 3. Sustainable environmental stewardship.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Synthesize how concepts from Heat Transfer in Nature connect across physics, chemistry, biology, and earth science.",
@@ -317,6 +355,235 @@
           ]
         }
       ]
+    },
+    {
+      "paper_id": 6,
+      "paper_title": "NCERT Class 7 Science Chapter 7 Model Test Paper",
+      "total_marks": 30,
+      "time_allowed_minutes": 60,
+      "sections": [
+        {
+          "section_name": "Section A (Objective MCQs & Assertion-Reason)",
+          "total_section_marks": 6,
+          "questions": [
+            {
+              "question_number": 1,
+              "type": "MCQ",
+              "blooms_level": "Remembering_Knowledge",
+              "question_text": "By which process does heat from the Sun travel through empty space to reach Earth?",
+              "options": [
+                "A) Conduction",
+                "B) Convection",
+                "C) Radiation",
+                "D) Advection"
+              ],
+              "correct_answer": "C",
+              "marking_scheme": "1 Mark for correct option selection (C). Explanation: Radiation travels via electromagnetic waves without requiring any physical material medium.",
+              "marks": 1
+            },
+            {
+              "question_number": 2,
+              "type": "MCQ",
+              "blooms_level": "Understanding_Comprehension",
+              "question_text": "What is the key scientific indicator or property studied in Chapter 7?",
+              "options": [
+                "A) Property A",
+                "B) Property B",
+                "C) Property C",
+                "D) Property D"
+              ],
+              "correct_answer": "A",
+              "marking_scheme": "1 Mark for correct option selection (A). Explanation: Derived from core terms.",
+              "marks": 1
+            },
+            {
+              "question_number": 3,
+              "type": "MCQ",
+              "blooms_level": "Application_Problem_Solving",
+              "question_text": "Which process occurs during the core phenomenon in Heat Transfer in Nature?",
+              "options": [
+                "A) Process 1",
+                "B) Process 2",
+                "C) Process 3",
+                "D) Process 4"
+              ],
+              "correct_answer": "C",
+              "marking_scheme": "1 Mark for correct option (C). Explanation: Standard curriculum observation.",
+              "marks": 1
+            },
+            {
+              "question_number": 4,
+              "type": "MCQ",
+              "blooms_level": "Remembering_Knowledge",
+              "question_text": "Select the correct definition for 'Convection':",
+              "options": [
+                "A) Heat transfer in liquids and gases caused by physical movement of fluid due to temperature and density gradients.",
+                "B) Incorrect statement 1",
+                "C) Incorrect statement 2",
+                "D) None of the above"
+              ],
+              "correct_answer": "A",
+              "marking_scheme": "1 Mark for correct option (A). Explanation: Definition of Convection as stated in NCERT textbook.",
+              "marks": 1
+            },
+            {
+              "question_number": 5,
+              "type": "Assertion-Reason",
+              "blooms_level": "Analyzing_Evaluating",
+              "question_text": "Assertion (A): Sea breezes blow from the sea toward the land during the daytime.\nReason (R): Land heats up faster than water under sunlight, causing warm air over land to rise.",
+              "options": [
+                "A) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+                "B) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+                "C) (A) is true but (R) is false.",
+                "D) (A) is false but (R) is true."
+              ],
+              "correct_answer": "A",
+              "marking_scheme": "1 Mark for correct selection (A). Explanation: Both (A) and (R) are true and (R) is the correct explanation of (A).",
+              "marks": 1
+            },
+            {
+              "question_number": 6,
+              "type": "Assertion-Reason",
+              "blooms_level": "Analyzing_Evaluating",
+              "question_text": "Assertion (A): Conduction occurs primarily in liquids and gases.\nReason (R): Particles in solids are tightly packed and transfer heat via neighbor vibrations.",
+              "options": [
+                "A) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+                "B) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+                "C) (A) is true but (R) is false.",
+                "D) (A) is false but (R) is true."
+              ],
+              "correct_answer": "D",
+              "marking_scheme": "1 Mark for correct selection (D). Explanation: (A) is false but (R) is true. Conduction occurs in solids.",
+              "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "total_section_marks": 10,
+          "questions": [
+            {
+              "question_number": 7,
+              "type": "Short Answer",
+              "blooms_level": "Understanding_Comprehension",
+              "question_text": "Why are cooking utensils constructed with metal bottoms but wooden or bakelite handles?",
+              "marking_scheme_answer": "Metal bottoms are excellent thermal conductors that distribute heat rapidly to food. Wooden or bakelite handles are thermal insulators that prevent heat from burning the cook's hands.",
+              "marks": 2,
+              "breakdown": "1 Mark for identifying first key point; 1 Mark for second key point / clear explanation."
+            },
+            {
+              "question_number": 8,
+              "type": "Short Answer",
+              "blooms_level": "Application_Problem_Solving",
+              "question_text": "Two test tubes filled with water are heated by a flame—one from the top rim and one from the bottom base. Which thermometer registers a rapid temperature rise throughout the tube?",
+              "marking_scheme_answer": "The test tube heated from the bottom base registers a rapid temperature rise. Base heating establishes bottom-to-top fluid convection currents. Top heating leaves bottom cold because warm water stays at top.",
+              "marks": 2,
+              "breakdown": "1 Mark for statement/formula; 1 Mark for calculation/application."
+            },
+            {
+              "question_number": 9,
+              "type": "Short Answer",
+              "blooms_level": "Understanding_Comprehension",
+              "question_text": "Differentiate between two key terms.",
+              "marking_scheme_answer": "Comparison table.",
+              "marks": 2,
+              "breakdown": "1 Mark for Point 1 of difference; 1 Mark for Point 2 of difference."
+            },
+            {
+              "question_number": 10,
+              "type": "Short Answer / Reasoning",
+              "blooms_level": "Analyzing_Evaluating",
+              "question_text": "Explain why smoke from a burning incense stick fixed pointing downwards turns and rises upwards.",
+              "marking_scheme_answer": "The burning tip heats surrounding air. Hot air expands, decreases in density, and rises, creating an upward convection current that carries smoke particles upward against gravity.",
+              "marks": 2,
+              "breakdown": "1 Mark for identifying core cause; 1 Mark for explaining scientific effect."
+            },
+            {
+              "question_number": 11,
+              "type": "Short Answer / Misconception Correction",
+              "blooms_level": "Understanding_Comprehension",
+              "question_text": "Correct the common misconception: 'Confusing land breeze timing with sea breeze timing.'. Provide the correct scientific fact.",
+              "marking_scheme_answer": "Sea breeze blows during DAYTIME (sea -> land). Land breeze blows at NIGHTTIME (land -> sea).",
+              "marks": 2,
+              "breakdown": "1 Mark for identifying error; 1 Mark for stating correct scientific fact."
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer Questions - Diagrams & Processes)",
+          "total_section_marks": 8,
+          "questions": [
+            {
+              "question_number": 12,
+              "type": "Long Answer (Process & Theory)",
+              "blooms_level": "Understanding_Comprehension",
+              "question_text": "Explain the complete mechanism of Sea Breeze during day and Land Breeze at night in coastal regions, including differential heating principles.",
+              "marking_scheme_answer": "1. Differential Heating: Land heats and cools faster than water. 2. Daytime (Sea Breeze): Sunlight heats land faster than sea. Air over land becomes hot, expands, and rises (low pressure). Cooler dense air over sea blows toward land as Sea Breeze. 3. Nighttime (Land Breeze): Land loses heat rapidly while sea remains warm. Air over sea rises. Cooler dense air over land blows toward sea as Land Breeze.",
+              "marks": 4,
+              "breakdown": "1 Mark for introduction/definition; 2 Marks for detailed 4-point mechanism; 1 Mark for conclusion/example."
+            },
+            {
+              "question_number": 13,
+              "type": "Long Answer (Diagram / Experimental Analysis)",
+              "blooms_level": "Application_Problem_Solving",
+              "question_text": "Explain the structure and operation illustrated in 'Fig. 7.4 / Land and Sea Breeze Cycles'. (i) Draw/describe the key components (Day: Warm Land Air Rises -> Sea Breeze In, Night: Warm Sea Air Rises -> Land Breeze Out). (ii) Detail the working mechanism and scientific significance.",
+              "marking_scheme_answer": "Component breakdown: Day: Warm Land Air Rises -> Sea Breeze In, Night: Warm Sea Air Rises -> Land Breeze Out.\nMechanism & Significance: Illustrates natural convection driven by differential solar heating of land and water.",
+              "marks": 4,
+              "breakdown": "2 Marks for labeling/describing key components accurately; 2 Marks for explaining working mechanism clearly."
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Competency / Practical Case-Based Assessment)",
+          "total_section_marks": 6,
+          "question": {
+            "question_number": 14,
+            "type": "Case-Based Competency Assessment",
+            "blooms_level": "Analyzing_Evaluating",
+            "case_scenario_text": "In traditional Himalayan architecture, houses are built with thick mud/stone walls, small wooden windows, and double-layered roofs.",
+            "total_marks": 6,
+            "sub_questions": [
+              {
+                "sub_question_id": "14.1",
+                "question_text": "How do these architectural features regulate indoor temperature during severe winters?",
+                "marking_scheme_answer": "Mud, stone, and wood are poor thermal conductors with high thermal mass. They trap indoor heat, prevent outward heat conduction to freezing air, and eliminate drafts.",
+                "marks": 2,
+                "breakdown": "2 Marks for complete, accurate identification/explanation of the initial phenomenon."
+              },
+              {
+                "sub_question_id": "14.2",
+                "question_text": "Formulate a testable hypothesis or identify the chemical/physical principle.",
+                "marking_scheme_answer": "Scientific principle explanation.",
+                "marks": 2,
+                "breakdown": "2 Marks for correct scientific reasoning and principle formulation."
+              },
+              {
+                "sub_question_id": "14.3",
+                "question_text": "What conclusion or practical precaution can be derived from this experimental observation?",
+                "marking_scheme_answer": "Practical conclusion and safety/precautionary measure grounded in textbook guidelines.",
+                "marks": 2,
+                "breakdown": "2 Marks for valid evidence-based conclusion / real-world application."
+              }
+            ]
+          }
+        }
+      ],
+      "additional_metadata": {
+        "chapter_number": 7,
+        "chapter_title": "Heat Transfer in Nature",
+        "paper_metadata": {
+          "title": "NCERT Class 7 Science Chapter 7 Model Test Paper",
+          "total_marks": 30,
+          "duration_minutes": 60,
+          "instructions": [
+            "All questions are compulsory.",
+            "Section A contains 6 Objective Questions (4 MCQs + 2 Assertion-Reason) carrying 1 Mark each.",
+            "Section B contains 5 Short Answer Questions carrying 2 Marks each.",
+            "Section C contains 2 Long Answer Questions carrying 4 Marks each.",
+            "Section D contains 1 Case-Based Competency Question with 3 sub-questions carrying 2 Marks each."
+          ]
+        }
+      }
     }
   ]
 }

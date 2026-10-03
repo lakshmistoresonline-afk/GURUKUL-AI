@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import HindiMasterComponent from './HindiMasterComponent';
 import MathsMasterComponent from './MathsMasterComponent';
 import ScienceMasterComponent from './ScienceMasterComponent';
+import Class6MasterComponent from './Class6/Class6MasterComponent';
+import Class6HindiMasterComponent from './Class6/Class6HindiMasterComponent';
+import Class6MathsMasterComponent from './Class6/Class6MathsMasterComponent';
+import Class6ScienceMasterComponent from './Class6/Class6ScienceMasterComponent';
+import Class6SocialMasterComponent from './Class6/Class6SocialMasterComponent';
+import { renderSafeText, SafeStructuredCard } from './safeRender';
 
 interface MasterProps {
   data: any;
@@ -11,22 +17,27 @@ interface MasterProps {
 export default function MasterComponent({ data, subject }: MasterProps) {
   const [activeSubTab, setActiveSubTab] = useState<string>('summary');
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
+  const [selectedTfAnswers, setSelectedTfAnswers] = useState<Record<string, boolean>>({});
 
   if (!data) {
     return <div className="p-8 text-center text-slate-500">No master practice content available.</div>;
   }
 
-  // Check if this is Hindi schema
+  if (data.m1_overview || data.m2_vocabulary || data.m3_textual) {
+    const subjLower = (subject || '').toLowerCase();
+    if (subjLower.includes('hindi')) return <Class6HindiMasterComponent data={data} />;
+    if (subjLower.includes('math')) return <Class6MathsMasterComponent data={data} />;
+    if (subjLower.includes('science')) return <Class6ScienceMasterComponent data={data} />;
+    if (subjLower.includes('social')) return <Class6SocialMasterComponent data={data} />;
+    return <Class6MasterComponent data={data} />;
+  }
+
   if (data.poem_meaning || (data.summary && typeof data.summary === 'string' && data.vocabulary && data.grammar)) {
     return <HindiMasterComponent data={data} />;
   }
-
-  // Check if this is Maths schema
   if (data.core_concepts || data.key_competencies) {
     return <MathsMasterComponent data={data} />;
   }
-
-  // Check if this is Science schema
   if (Array.isArray(data.concepts) || data.experiments_and_activities) {
     return <ScienceMasterComponent data={data} />;
   }
@@ -48,6 +59,10 @@ export default function MasterComponent({ data, subject }: MasterProps) {
 
   const toggleAnswer = (key: string) => {
     setShowAnswers(prev => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const handleTfSelect = (key: string, val: boolean) => {
+    setSelectedTfAnswers(prev => ({ ...prev, [key]: val }));
   };
 
   return (
@@ -107,15 +122,14 @@ export default function MasterComponent({ data, subject }: MasterProps) {
         <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Master Summary & Theme</h3>
           <p className="text-slate-700 text-sm leading-relaxed">
-            {typeof summary === 'string' ? summary : summary.summary || summary.overview || JSON.stringify(summary)}
+            {renderSafeText(summary.summary || summary.overview || summary)}
           </p>
           {summary.core_theme && (
             <div className="p-4 bg-indigo-50/60 border border-indigo-100 rounded-2xl text-indigo-900 text-xs font-bold">
-              Core Theme: {typeof summary.core_theme === 'string' ? summary.core_theme : JSON.stringify(summary.core_theme)}
+              Core Theme: {renderSafeText(summary.core_theme)}
             </div>
           )}
 
-          {/* Character Sketches */}
           {Array.isArray(characterSketches) && characterSketches.length > 0 && (
             <div className="pt-4 space-y-3 border-t border-slate-100">
               <h4 className="text-xs font-black uppercase tracking-widest text-indigo-600">Character Profiles</h4>
@@ -138,20 +152,13 @@ export default function MasterComponent({ data, subject }: MasterProps) {
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Vocabulary & Meanings</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {vocab.map((v: any, idx: number) => (
-              <div key={idx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-1">
-                <div className="text-sm font-extrabold text-indigo-600">{v.word || v.term || ''}</div>
-                <div className="text-xs text-slate-700">अर्थ: {v.meaning || v.definition || ''}</div>
-                {v.phonics && <div className="text-[11px] font-mono text-slate-400">Phonics: {v.phonics}</div>}
-                {v.sentence || v.example ? (
-                  <div className="text-xs font-serif italic text-slate-500 pt-1">Example: &ldquo;{v.sentence || v.example}&rdquo;</div>
-                ) : null}
-              </div>
+              <SafeStructuredCard key={idx} item={v} />
             ))}
           </div>
         </div>
       )}
 
-      {/* Tab 3: Objective Questions */}
+      {/* Tab 3: Objective Questions (MCQs, Fill in Blanks, True/False, Match Following) */}
       {activeSubTab === 'objective' && hasObj && (
         <div className="space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Objective Question Bank</h3>
@@ -165,23 +172,75 @@ export default function MasterComponent({ data, subject }: MasterProps) {
                     const qKey = `obj-${tIdx}-${qIdx}`;
                     const isVisible = showAnswers[qKey];
                     const answer = q.correct_answer || q.answer;
+                    const isTrueFalse = qType === 'true_false' || 'is_true' in q;
+                    const isMatchFollowing = qType === 'match_following' || 'pairs' in q;
+                    const userTf = selectedTfAnswers[qKey];
 
                     return (
-                      <div key={qIdx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-2">
+                      <div key={qIdx} className="p-5 bg-slate-50 border border-slate-100 rounded-2xl space-y-3">
                         {qText && <div className="text-xs font-bold text-slate-700">Q{qIdx + 1}: {qText}</div>}
 
-                        {/* Options */}
+                        {/* Standard Options (MCQs) */}
                         {Array.isArray(q.options) && (
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
                             {q.options.map((opt: string, oIdx: number) => (
-                              <div key={oIdx} className={`p-2.5 rounded-xl text-xs font-medium border ${isVisible && opt === answer ? 'bg-emerald-50 border-emerald-200 text-emerald-900' : 'bg-white border-slate-200 text-slate-700'}`}>
+                              <div key={oIdx} className={`p-2.5 rounded-xl text-xs font-medium border ${isVisible && opt === answer ? 'bg-emerald-50 border-emerald-200 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-700'}`}>
                                 {opt} {isVisible && opt === answer ? '✓' : ''}
                               </div>
                             ))}
                           </div>
                         )}
 
-                        {answer && (
+                        {/* True / False Options */}
+                        {isTrueFalse && (
+                          <div className="flex gap-3 pt-1">
+                            <button
+                              onClick={() => handleTfSelect(qKey, true)}
+                              className={`px-6 py-2.5 rounded-xl text-xs font-bold border transition-all ${
+                                userTf === true
+                                  ? q.is_true === true ? 'bg-emerald-600 text-white border-emerald-500' : 'bg-rose-600 text-white border-rose-500'
+                                  : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-100'
+                              }`}
+                            >
+                              True {isVisible && q.is_true === true ? '✓' : ''}
+                            </button>
+                            <button
+                              onClick={() => handleTfSelect(qKey, false)}
+                              className={`px-6 py-2.5 rounded-xl text-xs font-bold border transition-all ${
+                                userTf === false
+                                  ? q.is_true === false ? 'bg-emerald-600 text-white border-emerald-500' : 'bg-rose-600 text-white border-rose-500'
+                                  : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-100'
+                              }`}
+                            >
+                              False {isVisible && q.is_true === false ? '✓' : ''}
+                            </button>
+                          </div>
+                        )}
+
+                        {/* Match Following Pairs */}
+                        {isMatchFollowing && Array.isArray(q.pairs) && (
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                            <div className="space-y-2">
+                              <div className="text-[11px] font-bold text-indigo-700 uppercase">Column A</div>
+                              {q.pairs.map((p: any, pIdx: number) => (
+                                <div key={pIdx} className="p-3 bg-white border border-slate-200 rounded-xl text-xs font-semibold text-slate-800">
+                                  {p.a}
+                                </div>
+                              ))}
+                            </div>
+                            <div className="space-y-2">
+                              <div className="text-[11px] font-bold text-teal-700 uppercase">Column B (Matched)</div>
+                              {q.pairs.map((p: any, pIdx: number) => (
+                                <div key={pIdx} className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs font-semibold text-emerald-900">
+                                  {p.b}
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Answer Toggle */}
+                        {(answer !== undefined || isTrueFalse) && (
                           <div className="pt-2 border-t border-slate-200/60 mt-2">
                             <button
                               onClick={() => toggleAnswer(qKey)}
@@ -190,14 +249,18 @@ export default function MasterComponent({ data, subject }: MasterProps) {
                               {isVisible ? 'Hide Answer ▴' : 'Show Answer ▾'}
                             </button>
                             {isVisible && (
-                              <div className="mt-2 p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 font-medium">
-                                Answer: {String(answer)}
+                              <div className="mt-2 p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 font-medium space-y-1">
+                                {isTrueFalse ? (
+                                  <div><strong>Correct State:</strong> {q.is_true ? 'True' : 'False'}</div>
+                                ) : (
+                                  <div><strong>Answer:</strong> {String(answer)}</div>
+                                )}
+                                {(q.justification || q.explanation) && (
+                                  <div className="text-slate-600 italic"><em>Justification/Explanation:</em> {q.justification || q.explanation}</div>
+                                )}
                               </div>
                             )}
                           </div>
-                        )}
-                        {q.explanation && isVisible && (
-                          <div className="text-xs text-slate-500 pt-1 italic">Explanation: {q.explanation}</div>
                         )}
                       </div>
                     );

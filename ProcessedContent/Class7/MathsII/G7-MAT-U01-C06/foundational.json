@@ -1,0 +1,122 @@
+{
+  "textbook_metadata": {
+    "textbook": "",
+    "publisher": "",
+    "grade": "Class 7",
+    "curriculum_framework": "NCF-SE 2023 / NEP 2020"
+  },
+  "subject_type": "MATHEMATICS",
+  "modules": [
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Perpendicular Bisector",
+        "meaning": "A line drawn at a 90° angle that divides a line segment into two equal halves.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Tessellation (Tiling)",
+        "meaning": "Covering a 2D surface with repeating geometric shapes leaving zero gaps and zero overlaps.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Tangram",
+        "meaning": "An ancient 7-piece dissection puzzle originating from China consisting of 5 triangles, 1 square, and 1 parallelogram.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "definitions",
+      "item": {
+        "term_or_concept": "Regular Hexagon",
+        "definition": "A 6-sided polygon with six equal sides, six interior angles of 120°, composed of six equilateral triangles around its center.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Equidistance of Perpendicular Bisector",
+        "description": "Any point situated on the perpendicular bisector of a line segment XY is equidistant from endpoints X and Y.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "properties",
+      "item": {
+        "property_name": "Central Angle Property of Regular Hexagon",
+        "statement": "Six 60° equilateral triangle central angles meet at the center of a regular hexagon, totaling 360°.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Compass Radius for Perpendicular Bisector",
+        "rule_text": "The compass radius must be set strictly greater than half the length of the line segment (> 0.5 XY) for arcs to intersect.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "Regular Hexagon Interior Angle",
+        "formula_expression": "Interior Angle = 180° - 60° = 120°",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "procedures",
+      "item": {
+        "procedure_name": "Constructing Perpendicular Bisector",
+        "steps": [
+          "1. Given line segment XY, open compass with radius > 0.5 XY.",
+          "2. With center X, draw arcs above and below segment XY.",
+          "3. With center Y and same radius, draw arcs intersecting previous arcs at A and B.",
+          "4. Join line AB. Line AB bisects segment XY at a 90° angle."
+        ],
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "procedures",
+      "item": {
+        "procedure_name": "Constructing 60° Angle",
+        "steps": [
+          "1. Draw a ray with vertex A.",
+          "2. With center A, draw a arc intersecting the ray at point B.",
+          "3. With center B and identical compass radius, draw an arc intersecting first arc at C.",
+          "4. Draw ray AC. Angle ∠CAB measures 60°."
+        ],
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "procedures",
+      "item": {
+        "procedure_name": "Constructing Regular Hexagon",
+        "steps": [
+          "1. Draw a circle of radius r with center O.",
+          "2. Pick point A on circumference.",
+          "3. Using same radius r, step off consecutive points B, C, D, E, F around circumference.",
+          "4. Connect line segments AB, BC, CD, DE, EF, FA to complete regular hexagon."
+        ],
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "relationship_name": "Equilateral Triangle Angle and Hexagon Central Angle",
+        "description": "The interior angle of an equilateral triangle (60°) equals the central angle of a regular hexagon, six of which complete a 360° circle.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    }
+  ]
+}

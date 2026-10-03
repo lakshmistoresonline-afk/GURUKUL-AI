@@ -1,0 +1,83 @@
+{
+  "textbook_metadata": {
+    "textbook": "",
+    "publisher": "",
+    "grade": "Class 7",
+    "curriculum_framework": "NCF-SE 2023 / NEP 2020"
+  },
+  "subject_type": "MATHEMATICS",
+  "modules": [
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Arithmetic Mean",
+        "meaning": "The equalized 'fair-share' value representing the center of a dataset.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Median",
+        "meaning": "The middle value in an ordered dataset.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Outlier",
+        "meaning": "An extreme data value far removed from the main cluster of data.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Dot Plot",
+        "meaning": "A statistical chart showing discrete data frequencies as stacked dots above a number line.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Arithmetic Mean as Fair Share",
+        "description": "Re-distributing the total sum equally among all entities to determine a single representative central value.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "properties",
+      "item": {
+        "property_name": "Outlier Resistance of Median",
+        "statement": "Extreme outliers significantly pull the arithmetic mean but do not alter the median value.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Median Position Rules",
+        "rule_text": "If total count N is odd: Median is value at position (N+1)/2. If N is even: Median is average of values at positions N/2 and (N/2)+1.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "Arithmetic Mean",
+        "formula_expression": "Mean = (Sum of all observations) / (Total number of observations) = (∑ x_i) / N",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "symbols_notation",
+      "item": {
+        "symbol": "∑",
+        "meaning": "Summation of values",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    }
+  ]
+}

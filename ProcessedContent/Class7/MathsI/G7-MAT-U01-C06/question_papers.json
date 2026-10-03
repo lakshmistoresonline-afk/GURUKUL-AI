@@ -1,131 +1,15 @@
 {
+  "chapter_title": "Number Play",
   "question_papers": [
     {
-      "paper_title": "Source Question Bank Set",
+      "paper_id": 1,
+      "paper_title": "Set 1 - Number Play (Parity & Line Puzzles)",
+      "total_marks": 20,
+      "time_allowed_minutes": 40,
       "sections": [
         {
-          "section_title": "Source Question Bank Assessment",
+          "section_name": "Section A (MCQs)",
           "questions": [
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 2 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "8",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 17 cm by 9 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "52",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 14 cm by 5 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "38",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 11 cm by 12 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "46",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 8 cm by 8 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "32",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 5 cm by 3 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "16",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "In 'Large Numbers Around Us', the perimeter of a rectangle of 2 cm by 11 cm is ______ cm.",
-              "options": [],
-              "correct_answer": "26",
-              "type": "fill_in_the_blank"
-            },
-            {
-              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
-              "options": [],
-              "correct_answer": "",
-              "type": "long_answer"
-            },
-            {
-              "question_text": "Write a structured answer on 'Large Numbers Around Us'. Explain the concept, show reasoning, give an example, and discuss one practical or learning implication.",
-              "options": [],
-              "correct_answer": "",
-              "type": "long_answer"
-            },
-            {
-              "question_text": "[concept recall] Which fraction is equivalent to 1/2?",
-              "options": {
-                "A": "2/4",
-                "B": "2/2",
-                "C": "1/3",
-                "D": "1/2"
-              },
-              "correct_answer": "A",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] What is 9^2?",
-              "options": {
-                "A": "18",
-                "B": "81",
-                "C": "90",
-                "D": "72"
-              },
-              "correct_answer": "B",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] What is 11/27 + 16/27?",
-              "options": {
-                "A": "1/2",
-                "B": "1",
-                "C": "2",
-                "D": "27/28"
-              },
-              "correct_answer": "B",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] Which number is divisible by 5?",
-              "options": {
-                "A": "55",
-                "B": "56",
-                "C": "57",
-                "D": "58"
-              },
-              "correct_answer": "A",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] Which fraction is equivalent to 5/8?",
-              "options": {
-                "A": "10/16",
-                "B": "6/8",
-                "C": "5/9",
-                "D": "3/8"
-              },
-              "correct_answer": "A",
-              "type": "MCQ"
-            },
-            {
-              "question_text": "[concept recall] What is 5^2?",
-              "options": {
-                "A": "10",
-                "B": "25",
-                "C": "30",
-                "D": "20"
-              },
-              "correct_answer": "B",
-              "type": "MCQ"
-            },
             {
               "question_number": 1,
               "question_text": "What is the parity of the sum of three odd numbers?",
@@ -161,7 +45,12 @@
               ],
               "correct_answer": "C) No child in front is taller",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Determine the parity of (Even * Odd) + Odd.",
@@ -179,7 +68,12 @@
               "question_text": "Seven children call out standing height counts: (0, 0, 1, 0, 3, 0, 3). Which child is guaranteed to be the tallest?",
               "marking_scheme_answer": "The child at position 1 who calls out '0' with nobody ahead is the tallest overall.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Prove why the center cell 'x' of a 3x3 magic square filled with numbers 1 to 9 must equal 5.",
@@ -191,7 +85,20 @@
               "question_text": "Liswini has 50 loose sheets (100 pages printed on both sides). Can the sum of page numbers of all loose sheets be 6000? Explain using parity and sum formulas.",
               "marking_scheme_answer": "Each loose sheet sum = 4k-1 (odd). Sum of 50 odd numbers is always EVEN. Total sum of first 100 pages = 100*101/2 = 5050. Any 50 sheets from a 100-page book sum to 5050. In a larger book, 50 sheets can sum to 6000 because parity of 50 odd sheets is even and 6000 is even.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Number Play (Parity Proofs & Magic Constant)",
+      "total_marks": 20,
+      "time_allowed_minutes": 40,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "What is the magic constant 'S' for a 3x3 magic square using numbers 1 to 9?",
@@ -227,7 +134,12 @@
               ],
               "correct_answer": "B) 7",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "State the parity of the product of 5 odd numbers and 2 even numbers.",
@@ -245,7 +157,12 @@
               "question_text": "Fill the top row of a 3x3 magic square if the center is 5 and bottom row is [4, 9, 2].",
               "marking_scheme_answer": "Row 1 = [8, 1, 6] because columns must sum to 15 (8+3+4=15, 1+5+9=15, 6+7+2=15).",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Algebraically prove that: (1) Odd + Odd = Even, (2) Odd * Odd = Odd, using expressions 2m + 1 and 2n + 1.",
@@ -257,7 +174,20 @@
               "question_text": "A 2x3 grid is filled with even 'e' and odd 'o' numbers. Row 1 sum must be Even, Row 2 sum Odd, Col 1 Odd, Col 2 Even, Col 3 Odd. Construct a valid e/o grid solution.",
               "marking_scheme_answer": "Row 1: [e, e, e] (sum = e). Row 2: [o, e, o] (sum = e+o+o = e? wait, o+e+o = e. To get sum=o: [o, e, e] => sum=o). Check cols: Col 1 [e, o] = o; Col 2 [e, e] = e; Col 3 [e, e] = e (needs o). Adjust Row 1 to [e, e, o] (sum=o). Final Grid: Row 1 = [e, e, o] (sum=o?), wait: e+e+o = o. Adjust to satisfy all 5 constraints simultaneously: Row 1 = [e, e, e] (sum=e), Row 2 = [o, e, o] (sum=e). Col 1 [e,o]=o, Col 2 [e,e]=e, Col 3 [e,o]=o. Row 2 sum o+e+o = e? No, o+o = e. Let Row 2 = [o, e, e] (sum=o). Col 3 [e, e] = e. Make Col 3 [o, o] = e. Solution: Row 1 = [e, e, o] (sum=o), change Row 1 constraint or grid entries so all match.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Number Play (Cryptarithms & Magic Grids)",
+      "total_marks": 20,
+      "time_allowed_minutes": 40,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Even + Even + Odd = ?",
@@ -293,7 +223,12 @@
               ],
               "correct_answer": "A) 0",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Solve cryptarithm: AB + AB = CAD when A = 5, B = 6.",
@@ -311,7 +246,12 @@
               "question_text": "Can 9 odd numbers sum to 100? Explain.",
               "marking_scheme_answer": "No. Sum of an odd count (9) of odd numbers is always ODD. 100 is even, so impossible.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "In a cryptarithm SEND + MORE = MONEY, determine the single digit values for M and S with logical deduction steps.",
@@ -323,7 +263,20 @@
               "question_text": "Construct a 3x3 magic square where numbers used are 2, 4, 6, 8, 10, 12, 14, 16, 18. Calculate total sum, row sum, and center cell.",
               "marking_scheme_answer": "Total sum = 90. Row sum S = 90/3 = 30. Center cell = 30/3 = 10. Magic square elements are 2x standard square [16, 2, 12 / 6, 10, 14 / 8, 18, 4].",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Number Play (Sequence Logic & Virahanka Series)",
+      "total_marks": 20,
+      "time_allowed_minutes": 40,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Next term in Virahanka-Fibonacci series 1, 2, 3, 5, 8, 13, __ is:",
@@ -359,7 +312,12 @@
               ],
               "correct_answer": "B) Even",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Find the 8th term of the Virahanka-Fibonacci sequence starting 1, 2, 3, 5...",
@@ -377,7 +335,12 @@
               "question_text": "Five children call out (0, 1, 0, 2, 0). Determine who is tallest and who is shortest.",
               "marking_scheme_answer": "Tallest is child at position 1 (callout 0). Shortest is child at position 4 who has 2 taller ahead.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Explain the Virahanka-Fibonacci poetic meter rule (short beat S = 1, long beat L = 2) and calculate the number of rhythm combinations for total beat count 6.",
@@ -389,7 +352,20 @@
               "question_text": "A student claims they added 15 odd numbers and got 250. Is this claim mathematically valid? Give full logical proof.",
               "marking_scheme_answer": "Sum of 15 (odd count) odd numbers MUST be an ODD number. 250 is an EVEN number. An odd count of odd numbers can never sum to an even number. The claim is invalid.",
               "marks": 5
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Number Play (Comprehensive Computational Logic)",
+      "total_marks": 20,
+      "time_allowed_minutes": 40,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Parity of (Odd)^3 is:",
@@ -425,7 +401,12 @@
               ],
               "correct_answer": "B) Even",
               "marks": 1
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "If a magic square has magic sum S = 27, find center cell.",
@@ -443,7 +424,12 @@
               "question_text": "Cryptarithm: A4 + 2B = 60. Find digits A and B.",
               "marking_scheme_answer": "4 + B = 10 => B = 6. A + 2 + 1 = 6 => A = 3. A = 3, B = 6.",
               "marks": 3
-            },
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer / Case-Study)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Construct a 3x3 magic square with center 7 and magic sum 21 using numbers 3, 4, 5, 6, 7, 8, 9, 10, 11.",
@@ -459,6 +445,190 @@
           ]
         }
       ]
+    },
+    {
+      "paper_id": 6,
+      "paper_title": "Class 7 Mathematics Model Test Paper - Chapter 6: Number Play",
+      "total_marks": 30,
+      "time_allowed_minutes": 60,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs & Assertion-Reason)",
+          "total_marks": 6,
+          "questions": [
+            {
+              "question_number": 1,
+              "type": "MCQ",
+              "blooms_level": "Remembering_Knowledge",
+              "question": "What is the parity of the sum of an Even integer and an Odd integer?",
+              "options": [
+                "A) Always Even",
+                "B) Always Odd",
+                "C) Sometimes Even, sometimes Odd",
+                "D) Zero"
+              ],
+              "correct_answer": "B) Always Odd",
+              "marking_scheme_solution": "Even (2m) + Odd (2n + 1) = 2(m + n) + 1, which is always Odd. [1 Mark]"
+            },
+            {
+              "question_number": 2,
+              "type": "MCQ",
+              "blooms_level": "Understanding_Comprehension",
+              "question": "What is the parity of the sum of page numbers on any single two-sided leaf torn from a book?",
+              "options": [
+                "A) Always Even",
+                "B) Always Odd",
+                "C) Dependent on page count",
+                "D) Zero"
+              ],
+              "correct_answer": "B) Always Odd",
+              "marking_scheme_solution": "Front page is 2k-1 (odd) and back page is 2k (even). Sum = 4k - 1, which is always Odd. [1 Mark]"
+            },
+            {
+              "question_number": 3,
+              "type": "MCQ",
+              "blooms_level": "Remembering_Knowledge",
+              "question": "In a 3x3 magic square filled with numbers 1 to 9, what is the invariant magic sum S of each row?",
+              "options": [
+                "A) 12",
+                "B) 15",
+                "C) 18",
+                "D) 45"
+              ],
+              "correct_answer": "B) 15",
+              "marking_scheme_solution": "Total sum = 45. Each of 3 rows = 45 / 3 = 15. [1 Mark]"
+            },
+            {
+              "question_number": 4,
+              "type": "MCQ",
+              "blooms_level": "Understanding_Comprehension",
+              "question": "What must be the value of the center cell x in a 3x3 magic square of numbers 1 to 9?",
+              "options": [
+                "A) 3",
+                "B) 4",
+                "C) 5",
+                "D) 6"
+              ],
+              "correct_answer": "C) 5",
+              "marking_scheme_solution": "Center cell x = Magic constant / 3 = 15 / 3 = 5. [1 Mark]"
+            },
+            {
+              "question_number": 5,
+              "type": "Assertion-Reason",
+              "blooms_level": "Analyzing_Evaluating",
+              "question": "Assertion (A): The first child standing in a single-file line always calls out 0 under the taller-in-front rule.\nReason (R): Nobody is standing ahead of the first child, so the count of taller people in front is 0.",
+              "options": [
+                "A) Both A and R are true and R is the correct explanation of A.",
+                "B) Both A and R are true but R is NOT the correct explanation of A.",
+                "C) A is true but R is false.",
+                "D) A is false but R is true."
+              ],
+              "correct_answer": "A) Both A and R are true and R is the correct explanation of A.",
+              "marking_scheme_solution": "Count of people in front is 0. Both A and R are true and R explains A. [1 Mark]"
+            },
+            {
+              "question_number": 6,
+              "type": "Assertion-Reason",
+              "blooms_level": "Analyzing_Evaluating",
+              "question": "Assertion (A): The sum of 50 odd integers is always an even integer.\nReason (R): Adding an even number of odd integers yields an even sum because odd numbers pair up into even sums.",
+              "options": [
+                "A) Both A and R are true and R is the correct explanation of A.",
+                "B) Both A and R are true but R is NOT the correct explanation of A.",
+                "C) A is true but R is false.",
+                "D) A is false but R is true."
+              ],
+              "correct_answer": "A) Both A and R are true and R is the correct explanation of A.",
+              "marking_scheme_solution": "50 is even. Sum of an even number of odd integers is always even. [1 Mark]"
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions)",
+          "total_marks": 10,
+          "questions": [
+            {
+              "question_number": 7,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "Determine the overall parity of: Sum of 3 odd numbers and 2 even numbers.",
+              "marking_scheme_solution": "Step 1: Sum of 3 odd numbers = Odd. [1 Mark]\nStep 2: Sum of 2 even numbers = Even.\nTotal = Odd + Even = Odd. [1 Mark]"
+            },
+            {
+              "question_number": 8,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "In a line of children, height callout values are (0, 0, 1, 0, 3, 0, 3). Which position holds the tallest child?",
+              "marking_scheme_solution": "Any child calling out 0 has nobody taller in front. The absolute tallest child in the group must call out 0 and can be at position 1 or 2 depending on order. [2 Marks]"
+            },
+            {
+              "question_number": 9,
+              "blooms_level": "Understanding_Comprehension",
+              "question": "Write algebraic representations for (i) any even integer and (ii) any odd integer.",
+              "marking_scheme_solution": "(i) Even integer = 2n where n is an integer. [1 Mark]\n(ii) Odd integer = 2n - 1 (or 2n + 1) where n is an integer. [1 Mark]"
+            },
+            {
+              "question_number": 10,
+              "blooms_level": "Understanding_Comprehension",
+              "question": "How many distinct 3x3 magic squares can be formed using digits 1 to 9 including rotations and reflections?",
+              "marking_scheme_solution": "There are 8 distinct magic squares (1 primary arrangement + 3 rotations + 4 reflections). [2 Marks]"
+            },
+            {
+              "question_number": 11,
+              "blooms_level": "Analyzing_Evaluating",
+              "question": "Prove why front page 2k-1 and back page 2k on a book leaf sum to 4k-1.",
+              "marking_scheme_solution": "Sum = (2k - 1) + 2k = 4k - 1. Since 4k is even, 4k - 1 is odd. [2 Marks]"
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer Questions / Numerical Proofs)",
+          "total_marks": 8,
+          "questions": [
+            {
+              "question_number": 12,
+              "blooms_level": "Analyzing_Evaluating",
+              "question": "Prove algebraically why the center cell 'x' of a 3x3 magic square filled with numbers 1 to 9 must equal 5.",
+              "marking_scheme_solution": "Step 1: Total sum of digits 1 to 9 = 45. Magic constant S = 45 / 3 = 15. [1 Mark]\nStep 2: The center cell x belongs to 4 lines: Row 2, Column 2, Main Diagonal 1, Main Diagonal 2. [1 Mark]\nStep 3: Summing all 4 lines gives 4 * S = 4 * 15 = 60. [1 Mark]\nStep 4: In this sum, every cell is counted once except x which is counted 4 times:\n  45 + 3x = 60 => 3x = 15 => x = 5. [1 Mark]"
+            },
+            {
+              "question_number": 13,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "A 2x3 grid has cells filled with integers to satisfy row/column parity requirements:\n- Row 1 sum must be EVEN.\n- Row 2 sum must be ODD.\n- Column 1 sum must be ODD.\n- Column 2 sum must be EVEN.\n- Column 3 sum must be EVEN.\nConstruct a valid Even/Odd assignment grid.",
+              "marking_scheme_solution": "Grid template:\n  Row 1: [Even, Even, Even] -> Sum = Even. [1.5 Marks]\n  Row 2: [Odd, Even, Even] -> Sum = Odd. [1.5 Marks]\nCheck columns:\n  Col 1: Even + Odd = Odd (Valid). [0.3 Mark]\n  Col 2: Even + Even = Even (Valid). [0.3 Mark]\n  Col 3: Even + Even = Even (Valid). [0.4 Mark]"
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Competency / Case-Based Assessment)",
+          "total_marks": 6,
+          "questions": [
+            {
+              "question_number": 14,
+              "blooms_level": "Analyzing_Evaluating",
+              "case_scenario": "Case Study: Height Line Callout Logic\nEight children stand in a single-file line. Each child reports the number of children standing in front who are strictly taller than them.",
+              "sub_questions": [
+                {
+                  "sub_q": "(a) What is the maximum possible callout number in a group of 8 children?",
+                  "marks": 1.5,
+                  "solution": "Max callout = 7, called out by the shortest child standing at the end. [1.5 Marks]"
+                },
+                {
+                  "sub_q": "(b) What callout number will the tallest child in the group always report, regardless of position?",
+                  "marks": 1.5,
+                  "solution": "Tallest child always reports 0. [1.5 Marks]"
+                },
+                {
+                  "sub_q": "(c) If callout numbers are (0, 1, 2, 3, 4, 5, 6, 7), describe the relative height arrangement of the line.",
+                  "marks": 3,
+                  "solution": "The children are arranged in strictly decreasing order of height from front to back (tallest at front, shortest at back). [3 Marks]"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "additional_metadata": {
+        "chapter_number": 6,
+        "chapter_title": "Number Play"
+      }
     }
   ]
 }

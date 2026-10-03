@@ -439,6 +439,187 @@
               ]
             }
           ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 1 Model Test Paper - Patterns in Mathematics",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "What is the sum of the first 12 consecutive odd numbers starting from 1?",
+                  "options": [
+                    "A. 120",
+                    "B. 144",
+                    "C. 169",
+                    "D. 132"
+                  ],
+                  "correct_answer": "B. 144",
+                  "solution_and_marking_scheme": "Formula: S = n^2 = 12^2 = 144. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "Combining two consecutive triangular numbers T_n and T_{n-1} yields a:",
+                  "options": [
+                    "A. Prime number",
+                    "B. Triangular number",
+                    "C. Square number",
+                    "D. Cube number"
+                  ],
+                  "correct_answer": "C. Square number",
+                  "solution_and_marking_scheme": "T_n + T_{n-1} = n^2. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "What is the 6th term of the Virahānka (Fibonacci) number sequence (1, 2, 3, 5, 8, ...)?",
+                  "options": [
+                    "A. 11",
+                    "B. 12",
+                    "C. 13",
+                    "D. 21"
+                  ],
+                  "correct_answer": "C. 13",
+                  "solution_and_marking_scheme": "Sequence: 1, 2, 3, 5, 8, 13. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "What is the sum of 1 + 2 + 3 + 4 + 5 + 4 + 3 + 2 + 1?",
+                  "options": [
+                    "A. 20",
+                    "B. 25",
+                    "C. 30",
+                    "D. 16"
+                  ],
+                  "correct_answer": "B. 25",
+                  "solution_and_marking_scheme": "Peak^2 = 5^2 = 25. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): The sum of 1 + 3 + 5 + 7 + 9 + 11 is 36.\nReason (R): The sum of the first n consecutive odd numbers starting from 1 is equal to n^2.",
+                  "options": [
+                    "A. Both A and R are true, and R explains A.",
+                    "B. Both A and R are true, but R does not explain A.",
+                    "C. A is true, R is false.",
+                    "D. A is false, R is true."
+                  ],
+                  "correct_answer": "A. Both A and R are true, and R explains A.",
+                  "solution_and_marking_scheme": "6^2 = 36. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): The 4th triangular number T_4 is equal to 10.\nReason (R): T_n = n(n+1)/2.",
+                  "options": [
+                    "A. Both A and R are true, and R explains A.",
+                    "B. Both A and R are true, but R does not explain A.",
+                    "C. A is true, R is false.",
+                    "D. A is false, R is true."
+                  ],
+                  "correct_answer": "A. Both A and R are true, and R explains A.",
+                  "solution_and_marking_scheme": "T_4 = 4(5)/2 = 10. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Find the sum of the first 15 consecutive odd numbers without manual addition.",
+                  "solution_and_marking_scheme": "n = 15 => Sum = 15^2 = 225. [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Find the 5th and 6th terms of the powers of 2 sequence (1, 2, 4, 8, ...).",
+                  "solution_and_marking_scheme": "5th term = 2^4 = 16. 6th term = 2^5 = 32. [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "Write the first 5 terms of the triangular number sequence.",
+                  "solution_and_marking_scheme": "T_1=1, T_2=3, T_3=6, T_4=10, T_5=15. [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "Evaluate the symmetrical sum: 1 + 2 + 3 + ... + 9 + ... + 3 + 2 + 1.",
+                  "solution_and_marking_scheme": "Peak = 9 => Sum = 9^2 = 81. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "Verify that T_3 + T_4 equals 4^2.",
+                  "solution_and_marking_scheme": "6 + 10 = 16 = 4^2. Verified! [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) Explain how an n x n square grid decomposes into L-shaped gnomons. (2 Marks)\n(b) Prove that 1 + 3 + 5 + 7 + 9 = 5^2. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) L-shaped layers of sizes 1, 3, 5, ... (2n-1) add incrementally to expand square grid size. [2 Marks]\n(b) 1 + 3 + 5 + 7 + 9 = 25 = 5^2. [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) Write the first 8 Virahānka numbers starting 1, 2. (2 Marks)\n(b) Verify V_1 + V_2 + V_3 + V_4 = V_6 - 2. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) 1, 2, 3, 5, 8, 13, 21, 34. [2 Marks]\n(b) LHS = 1 + 2 + 3 + 5 = 11; RHS = 13 - 2 = 11. Verified! [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Tile Ring Patterns.\nConcentric square rings of tiles are laid around 1 central tile. Layer 1 = 1 tile, Layer 2 = 3 tiles, Layer 3 = 5 tiles, and so on.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "How many tiles are in the 10th layer alone?",
+                      "solution_and_marking_scheme": "2(10) - 1 = 19 tiles. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "Find total tiles required for all 10 concentric layers.",
+                      "solution_and_marking_scheme": "Total = 10^2 = 100 tiles. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "If tiles cost Rs 45 each, find total cost for 10 layers and additional tiles needed for 12 layers.",
+                      "solution_and_marking_scheme": "Cost = 100 x 45 = Rs 4500. [1.5 Marks]\nFor 12 layers: 12^2 = 144 tiles => Additional = 144 - 100 = 44 tiles. [1.5 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
+            }
+          ]
         }
       ]
     },
@@ -853,6 +1034,187 @@
                   "marks": 5
                 }
               ]
+            }
+          ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 2 Model Test Paper - Lines and Angles",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "What type of angle is formed at 4 o'clock between clock hands?",
+                  "options": [
+                    "A. Acute",
+                    "B. Right",
+                    "C. Obtuse",
+                    "D. Straight"
+                  ],
+                  "correct_answer": "C. Obtuse",
+                  "solution_and_marking_scheme": "4 x 30° = 120° (Obtuse). [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "What is the degree measure of 1/3 of a full turn?",
+                  "options": [
+                    "A. 90°",
+                    "B. 120°",
+                    "C. 180°",
+                    "D. 60°"
+                  ],
+                  "correct_answer": "B. 120°",
+                  "solution_and_marking_scheme": "(1/3) x 360° = 120°. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "An angle measuring 220° is classified as:",
+                  "options": [
+                    "A. Obtuse Angle",
+                    "B. Straight Angle",
+                    "C. Reflex Angle",
+                    "D. Complete Angle"
+                  ],
+                  "correct_answer": "C. Reflex Angle",
+                  "solution_and_marking_scheme": "180° < 220° < 360° -> Reflex. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "The angle between adjacent spokes of a 24-spoke wheel is:",
+                  "options": [
+                    "A. 10°",
+                    "B. 15°",
+                    "C. 20°",
+                    "D. 24°"
+                  ],
+                  "correct_answer": "B. 15°",
+                  "solution_and_marking_scheme": "360° / 24 = 15°. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Perpendicular lines meet at an angle of 90°.\nReason (R): A quarter turn equals 90°.",
+                  "options": [
+                    "A. Both A and R are true, and R explains A.",
+                    "B. Both A and R are true, but R does not explain A.",
+                    "C. A is true, R is false.",
+                    "D. A is false, R is true."
+                  ],
+                  "correct_answer": "A. Both A and R are true, and R explains A.",
+                  "solution_and_marking_scheme": "Perpendiculars form 90°. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): At 6 o'clock, clock hands form a straight angle (180°).\nReason (R): 6 hour divisions = 6 x 30° = 180°.",
+                  "options": [
+                    "A. Both A and R are true, and R explains A.",
+                    "B. Both A and R are true, but R does not explain A.",
+                    "C. A is true, R is false.",
+                    "D. A is false, R is true."
+                  ],
+                  "correct_answer": "A. Both A and R are true, and R explains A.",
+                  "solution_and_marking_scheme": "6 x 30° = 180°. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Calculate the degree measure for 5/12 of a full rotation.",
+                  "solution_and_marking_scheme": "(5/12) x 360° = 150° (Obtuse). [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Define a Ray and give two real-life examples.",
+                  "solution_and_marking_scheme": "Starts at an endpoint and extends infinitely in 1 direction. Examples: Sunbeams, flashlight rays. [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "Classify: (a) 89°, (b) 179°, (c) 180°, (d) 210°.",
+                  "solution_and_marking_scheme": "(a) Acute, (b) Obtuse, (c) Straight, (d) Reflex. [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "Find the angle between North and South-East directions.",
+                  "solution_and_marking_scheme": "North to East = 90°; East to SE = 45°. Total = 135°. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "How many right angles are formed when a straight crease on paper is folded onto itself?",
+                  "solution_and_marking_scheme": "4 right angles (90° each). [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) State protractor measuring steps. (2 Marks)\n(b) Measure 135° angle classification. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Align center and 0° line, read scale. [2 Marks]\n(b) 135° = Obtuse Angle. [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) Find hour hand angle turned from 2 PM to 7 PM. (2 Marks)\n(b) Express as a fraction of a full turn. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) 5 hours = 5 x 30° = 150°. [2 Marks]\n(b) 150/360 = 5/12 turn. [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Ferris Wheel Design.\n18 passenger cabins are spaced equally around a circular wheel.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "Find central angle between adjacent cabin spokes.",
+                      "solution_and_marking_scheme": "360° / 18 = 20°. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "Find angle between Cabin 1 and Cabin 7.",
+                      "solution_and_marking_scheme": "6 x 20° = 120°. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "Classify angle in (b) and find total degrees turned in 3.5 full rotations.",
+                      "solution_and_marking_scheme": "120° is Obtuse. [1 Mark]\n3.5 x 360° = 1260°. [2 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
             }
           ]
         }
@@ -1271,6 +1633,187 @@
               ]
             }
           ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 3 Model Test Paper - Number Play",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "Which number is a palindrome?",
+                  "options": [
+                    "A. 1234",
+                    "B. 8448",
+                    "C. 8484",
+                    "D. 9100"
+                  ],
+                  "correct_answer": "B. 8448",
+                  "solution_and_marking_scheme": "8448 reversed is 8448. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "How many times does digit '7' appear in numbers 1 to 100?",
+                  "options": [
+                    "A. 10",
+                    "B. 19",
+                    "C. 20",
+                    "D. 21"
+                  ],
+                  "correct_answer": "C. 20",
+                  "solution_and_marking_scheme": "10 in units + 10 in tens = 20. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "In Collatz sequence, if current term n is odd, next term is:",
+                  "options": [
+                    "A. n/2",
+                    "B. 3n+1",
+                    "C. 2n+1",
+                    "D. n+3"
+                  ],
+                  "correct_answer": "B. 3n+1",
+                  "solution_and_marking_scheme": "Rule for odd n is 3n+1. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "Reverse-and-Add on 48 yields palindrome:",
+                  "options": [
+                    "A. 132",
+                    "B. 363",
+                    "C. 484",
+                    "D. 231"
+                  ],
+                  "correct_answer": "B. 363",
+                  "solution_and_marking_scheme": "48 + 84 = 132; 132 + 231 = 363. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): 12321 is a palindromic number.\nReason (R): A palindrome reads identically forward and backward.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "Definition matches. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Collatz sequence starting at 16 reaches 1 in 4 steps.\nReason (R): 16 -> 8 -> 4 -> 2 -> 1.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "4 divisions by 2. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Trace Collatz sequence starting from n = 5.",
+                  "solution_and_marking_scheme": "5 -> 16 -> 8 -> 4 -> 2 -> 1 (5 steps). [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Apply Reverse-and-Add to 57 to generate a palindrome.",
+                  "solution_and_marking_scheme": "57 + 75 = 132; 132 + 231 = 363 (Palindrome). [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "How many 3-digit numbers exist in total?",
+                  "solution_and_marking_scheme": "Count = 9 x 10^2 = 900. [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "Count occurrences of digit '0' from 1 to 100.",
+                  "solution_and_marking_scheme": "10, 20, 30... 90 (9 times) + 100 (2 times) = 11 times. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "State the winning control numbers in Game of 21.",
+                  "solution_and_marking_scheme": "Control points: 1, 5, 9, 13, 17, 21. [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) Trace Collatz sequence from n = 6. (2 Marks)\n(b) Count total steps to reach 1. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) 6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1. [2 Marks]\n(b) 8 steps total. [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) Explain Reverse-and-Add steps for 89 up to 2 steps. (2 Marks)\n(b) Why is 89 called a high-step generator? (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Step 1: 89 + 98 = 187; Step 2: 187 + 781 = 968. [2 Marks]\n(b) It takes 24 steps to reach a palindrome! [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Nim Game Control Strategy.\nPile has 15 matchsticks. Players take 1, 2, or 3 per turn. Player taking last stick wins.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "What stick count should Player 1 leave on turn 1?",
+                      "solution_and_marking_scheme": "15 mod 4 = 3 => Take 3 sticks to leave 12. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "Describe Player 1's response if Player 2 takes y sticks.",
+                      "solution_and_marking_scheme": "Take (4 - y) sticks to maintain multiples of 4. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "Trace sequence of remaining sticks if Player 2 takes 2, then 1, then 3.",
+                      "solution_and_marking_scheme": "Start 15 -> P1 takes 3 (12 left) -> P2 takes 2 -> P1 takes 2 (8 left) -> P2 takes 1 -> P1 takes 3 (4 left) -> P2 takes 3 -> P1 takes 1 (0 left, Wins!). [3 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
+            }
+          ]
         }
       ]
     },
@@ -1685,6 +2228,187 @@
                   "marks": 5
                 }
               ]
+            }
+          ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 4 Model Test Paper - Data Handling and Presentation",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "If 1 pictograph icon = 6 cars, how many icons represent 42 cars?",
+                  "options": [
+                    "A. 5",
+                    "B. 6",
+                    "C. 7",
+                    "D. 8"
+                  ],
+                  "correct_answer": "C. 7",
+                  "solution_and_marking_scheme": "42 / 6 = 7 icons. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "How is the 5th tally mark drawn in a bundle?",
+                  "options": [
+                    "A. Vertical line",
+                    "B. Horizontal line",
+                    "C. Diagonal slash across 4 lines",
+                    "D. Circle"
+                  ],
+                  "correct_answer": "C. Diagonal slash across 4 lines",
+                  "solution_and_marking_scheme": "||||/ = 5. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "Bar height for frequency 3600 on scale 1 cm = 400 is:",
+                  "options": [
+                    "A. 8 cm",
+                    "B. 9 cm",
+                    "C. 10 cm",
+                    "D. 12 cm"
+                  ],
+                  "correct_answer": "B. 9 cm",
+                  "solution_and_marking_scheme": "3600 / 400 = 9 cm. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "Essential bar graph rule requires vertical axis to start at:",
+                  "options": [
+                    "A. 1",
+                    "B. Minimum data value",
+                    "C. 0",
+                    "D. 10"
+                  ],
+                  "correct_answer": "C. 0",
+                  "solution_and_marking_scheme": "Must start at 0 to avoid scale distortion. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Tally mark group '||||/ ||||/ |||' equals 13.\nReason (R): Each slashed bundle represents 5 units.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "5 + 5 + 3 = 13. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Bar width must be uniform across all categories.\nReason (R): Bar length/height represents category frequency, not bar width.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "Bar height represents frequency. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Convert tally count '||||/ ||||/ ||||/ ||' into frequency integer.",
+                  "solution_and_marking_scheme": "5 + 5 + 5 + 2 = 17. [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Calculate bar heights for frequencies 150 and 350 (scale 1 cm = 50).",
+                  "solution_and_marking_scheme": "150/50 = 3 cm; 350/50 = 7 cm. [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "State 2 differences between raw data and frequency table.",
+                  "solution_and_marking_scheme": "Raw data is unorganized observations; frequency table summarizes counts into categories. [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "Find total vehicles from pictograph: 4 bus icons (1 icon = 10 buses) + 6 bike icons (1 icon = 15 bikes).",
+                  "solution_and_marking_scheme": "Buses = 40, Bikes = 90. Total = 130. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "Why is a truncated vertical axis misleading in bar graphs?",
+                  "solution_and_marking_scheme": "It distorts relative bar height ratios, making small differences look huge. [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) Given expenditure: Food=3200, Rent=2400, Education=1600, Others=800. Calculate bar heights for 1 cm = 400. (2 Marks)\n(b) What percentage of total expenditure is spent on Food? (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Food=8 cm, Rent=6 cm, Education=4 cm, Others=2 cm. [2 Marks]\n(b) Total = 8000. Food % = (3200/8000)x100 = 40%. [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) Organize data into frequency table: 2, 3, 2, 4, 2, 5, 3, 2, 4, 3. (2 Marks)\n(b) Identify mode value with highest frequency. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) 2: freq 4; 3: freq 3; 4: freq 2; 5: freq 1. [2 Marks]\n(b) Mode = 2 (highest frequency 4). [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Traffic Survey Data.\nVehicle counts in 1 hour: Cars=25, Bikes=40, Buses=10, Autos=15.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "Find total vehicle count.",
+                      "solution_and_marking_scheme": "25 + 40 + 10 + 15 = 90 vehicles. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "What fraction of total traffic is two-wheelers (Bikes)?",
+                      "solution_and_marking_scheme": "40 / 90 = 4/9. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "Calculate bar height for each vehicle on scale 1 cm = 5 vehicles.",
+                      "solution_and_marking_scheme": "Cars = 5 cm, Bikes = 8 cm, Buses = 2 cm, Autos = 3 cm. [3 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
             }
           ]
         }
@@ -2103,6 +2827,187 @@
               ]
             }
           ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 5 Model Test Paper - Prime Time",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "Which pair of numbers is co-prime?",
+                  "options": [
+                    "A. (14, 21)",
+                    "B. (8, 9)",
+                    "C. (12, 18)",
+                    "D. (15, 25)"
+                  ],
+                  "correct_answer": "B. (8, 9)",
+                  "solution_and_marking_scheme": "HCF(8, 9) = 1. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "The number 1 is:",
+                  "options": [
+                    "A. Prime",
+                    "B. Composite",
+                    "C. Neither prime nor composite",
+                    "D. Even prime"
+                  ],
+                  "correct_answer": "C. Neither prime nor composite",
+                  "solution_and_marking_scheme": "Has only 1 factor. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "If HCF(a, b) = 6 and LCM(a, b) = 36, and a = 12, find b:",
+                  "options": [
+                    "A. 18",
+                    "B. 24",
+                    "C. 30",
+                    "D. 36"
+                  ],
+                  "correct_answer": "A. 18",
+                  "solution_and_marking_scheme": "6 x 36 / 12 = 18. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "Which of the following numbers is divisible by 9?",
+                  "options": [
+                    "A. 458",
+                    "B. 729",
+                    "C. 512",
+                    "D. 638"
+                  ],
+                  "correct_answer": "B. 729",
+                  "solution_and_marking_scheme": "7+2+9 = 18 (div by 9). [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): 2 is the only even prime number.\nReason (R): Every other even number is divisible by 2.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "2 is even prime. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): HCF(8, 9) x LCM(8, 9) = 72.\nReason (R): HCF(a,b) x LCM(a,b) = a x b.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "8 x 9 = 72. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Find prime factorisation of 198.",
+                  "solution_and_marking_scheme": "198 = 2 x 3 x 3 x 11 = 2 x 3^2 x 11. [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Find HCF and LCM of 24 and 36.",
+                  "solution_and_marking_scheme": "HCF = 12, LCM = 72. [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "Test divisibility of 572 by 4 and 8.",
+                  "solution_and_marking_scheme": "Div by 4 (72/4=18); Not div by 8 (572/8=71.5). [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "Find the smallest 3-digit prime number.",
+                  "solution_and_marking_scheme": "101. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "Why are consecutive counting numbers always co-prime?",
+                  "solution_and_marking_scheme": "They share no common factor other than 1. HCF(n, n+1) = 1. [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) Find prime factorisation of 120 and 144. (2 Marks)\n(b) Determine their HCF and LCM. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) 120 = 2^3 x 3 x 5; 144 = 2^4 x 3^2. [2 Marks]\n(b) HCF = 2^3 x 3 = 24; LCM = 2^4 x 3^2 x 5 = 720. [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) State divisibility rules for 3 and 11. (2 Marks)\n(b) Test if 1331 is divisible by 11. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Div by 3: sum of digits div by 3. Div by 11: diff of odd/even pos digit sums div by 11 or 0. [2 Marks]\n(b) (1+3) - (3+1) = 4 - 4 = 0. Divisible by 11! [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Synchronized Traffic Lights.\nTraffic lights change every 48 sec, 72 sec, and 108 sec. They synchronized at 8:00 AM.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "Find LCM of 48, 72, and 108 in seconds.",
+                      "solution_and_marking_scheme": "LCM = 432 seconds. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "Convert 432 seconds into minutes and seconds.",
+                      "solution_and_marking_scheme": "432 / 60 = 7 minutes 12 seconds. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "At what exact time will they change together next? How many times will they synchronize in 1 hour?",
+                      "solution_and_marking_scheme": "Next change = 8:07:12 AM. [1.5 Marks]\nTimes in 1 hr (3600s) = 3600 / 432 = 8.33 => 8 times. [1.5 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
+            }
+          ]
         }
       ]
     },
@@ -2517,6 +3422,187 @@
                   "marks": 5
                 }
               ]
+            }
+          ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 6 Model Test Paper - Perimeter and Area",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "Perimeter of regular hexagon with side 7 cm is:",
+                  "options": [
+                    "A. 28 cm",
+                    "B. 35 cm",
+                    "C. 42 cm",
+                    "D. 49 cm"
+                  ],
+                  "correct_answer": "C. 42 cm",
+                  "solution_and_marking_scheme": "6 x 7 = 42 cm. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "Area of rectangle 25 m long and 12 m wide is:",
+                  "options": [
+                    "A. 74 sq m",
+                    "B. 150 sq m",
+                    "C. 300 sq m",
+                    "D. 600 sq m"
+                  ],
+                  "correct_answer": "C. 300 sq m",
+                  "solution_and_marking_scheme": "25 x 12 = 300 sq m. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "Cutting and rearranging a shape conserves its:",
+                  "options": [
+                    "A. Perimeter",
+                    "B. Area",
+                    "C. Both perimeter and area",
+                    "D. Diagonal length"
+                  ],
+                  "correct_answer": "B. Area",
+                  "solution_and_marking_scheme": "Area is conserved. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "Side of square with area 144 sq cm is:",
+                  "options": [
+                    "A. 12 cm",
+                    "B. 14 cm",
+                    "C. 16 cm",
+                    "D. 36 cm"
+                  ],
+                  "correct_answer": "A. 12 cm",
+                  "solution_and_marking_scheme": "s = sqrt(144) = 12 cm. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Area of square with side 10 cm is 100 sq cm.\nReason (R): Area of square = side x side.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "10^2 = 100. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Perimeter of rectangle is 2(l + w).\nReason (R): Perimeter measures enclosed surface region.",
+                  "options": [
+                    "A. Both true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "C. A true, R false.",
+                  "solution_and_marking_scheme": "Perimeter measures boundary, not surface. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Find perimeter and area of square of side 15 cm.",
+                  "solution_and_marking_scheme": "P = 4 x 15 = 60 cm; A = 15 x 15 = 225 sq cm. [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Find width of rectangle with area 300 sq m and length 25 m.",
+                  "solution_and_marking_scheme": "w = 300 / 25 = 12 m. [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "Find fencing cost of rectangular park 175 m x 125 m at Rs 12/m.",
+                  "solution_and_marking_scheme": "P = 2(300) = 600 m. Cost = 600 x 12 = Rs 7200. [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "Side of regular pentagon with perimeter 45 cm is:",
+                  "solution_and_marking_scheme": "s = 45 / 5 = 9 cm. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "1 sq m equals how many sq cm?",
+                  "solution_and_marking_scheme": "1 m = 100 cm => 1 sq m = 100 x 100 = 10,000 sq cm. [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) A wire rectangle 12 cm x 8 cm is reshaped into a square. Find side of square. (2 Marks)\n(b) Compare areas of rectangle and square. Which encloses more area? (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Wire length = 2(20) = 40 cm. Side of square = 40/4 = 10 cm. [2 Marks]\n(b) Rect Area = 96 sq cm; Square Area = 100 sq cm. Square encloses 4 sq cm more! [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) Find cost of tiling rectangular plot 500 m x 200 m at Rs 8 per hundred sq m. (2 Marks)\n(b) Find cost of fencing it at Rs 15 per meter. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Area = 100,000 sq m. Cost = (100000/100) x 8 = Rs 8000. [2 Marks]\n(b) Perimeter = 2(700) = 1400 m. Fencing cost = 1400 x 15 = Rs 21,000. [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Tiling a Hall Floor.\nHall floor is 10 m long and 8 m wide. It is tiled with square tiles of side 50 cm (0.5 m).",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "Find area of hall floor in sq m.",
+                      "solution_and_marking_scheme": "10 x 8 = 80 sq m. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "Calculate total number of square tiles required.",
+                      "solution_and_marking_scheme": "Tile area = 0.5 x 0.5 = 0.25 sq m. Tiles = 80 / 0.25 = 320 tiles. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "Find total cost at Rs 20 per tile and cost of border carpet around perimeter at Rs 50/m.",
+                      "solution_and_marking_scheme": "Tile cost = 320 x 20 = Rs 6400. [1.5 Marks]\nPerimeter = 2(18) = 36 m. Border cost = 36 x 50 = Rs 1800. [1.5 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
             }
           ]
         }
@@ -2935,6 +4021,187 @@
               ]
             }
           ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 7 Model Test Paper - Fractions",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "Which unit fraction is smallest?",
+                  "options": [
+                    "A. 1/3",
+                    "B. 1/5",
+                    "C. 1/8",
+                    "D. 1/2"
+                  ],
+                  "correct_answer": "C. 1/8",
+                  "solution_and_marking_scheme": "Larger denominator -> smaller unit fraction. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "Result of 2/5 + 1/3 using Brahmagupta's formula is:",
+                  "options": [
+                    "A. 3/8",
+                    "B. 11/15",
+                    "C. 7/15",
+                    "D. 3/15"
+                  ],
+                  "correct_answer": "B. 11/15",
+                  "solution_and_marking_scheme": "(2x3 + 5x1) / 15 = 11/15. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "Convert 3 3/4 into improper fraction:",
+                  "options": [
+                    "A. 9/4",
+                    "B. 12/4",
+                    "C. 15/4",
+                    "D. 13/4"
+                  ],
+                  "correct_answer": "C. 15/4",
+                  "solution_and_marking_scheme": "(3x4 + 3)/4 = 15/4. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "Fraction equivalent to 2/3 with denominator 12 is:",
+                  "options": [
+                    "A. 6/12",
+                    "B. 8/12",
+                    "C. 10/12",
+                    "D. 4/12"
+                  ],
+                  "correct_answer": "B. 8/12",
+                  "solution_and_marking_scheme": "(2x4)/(3x4) = 8/12. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): 1/5 > 1/8.\nReason (R): As denominator increases, unit fraction size decreases.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "Unit fraction size rule. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): 9/4 is an improper fraction.\nReason (R): In improper fractions, numerator is greater than or equal to denominator.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "9 > 4 -> improper. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Add 3/7 + 2/7 + 1/7.",
+                  "solution_and_marking_scheme": "(3+2+1)/7 = 6/7. [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Subtract 5/6 - 1/4 using Brahmagupta's rule.",
+                  "solution_and_marking_scheme": "(5x4 - 6x1)/(6x4) = (20-6)/24 = 14/24 = 7/12. [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "Convert 19/5 to a mixed fraction.",
+                  "solution_and_marking_scheme": "19 / 5 = 3 remainder 4 = 3 4/5. [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "Express 3 rotis shared equally among 4 children.",
+                  "solution_and_marking_scheme": "Each gets 3/4 roti. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "Find simplest form of 18/24.",
+                  "solution_and_marking_scheme": "Divide by HCF 6 => 3/4. [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) Ramesh bought 2 1/2 kg sugar and Sunita bought 3 1/4 kg sugar. Find total weight. (2 Marks)\n(b) How much more sugar did Sunita buy than Ramesh? (2 Marks)",
+                  "solution_and_marking_scheme": "(a) 5/2 + 13/4 = 10/4 + 13/4 = 23/4 = 5 3/4 kg. [2 Marks]\n(b) 13/4 - 10/4 = 3/4 kg more. [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) State Brahmagupta's general addition rule for a/b + c/d. (2 Marks)\n(b) Solve 3/8 + 5/12 using this rule. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) a/b + c/d = (ad + bc)/(bd). [2 Marks]\n(b) (3x12 + 8x5)/(8x12) = (36 + 40)/96 = 76/96 = 19/24. [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Track Running Lap Times.\nJeevika takes 10/3 minutes to run a lap; Namit takes 13/4 minutes.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "Convert both times to a common denominator 12.",
+                      "solution_and_marking_scheme": "Jeevika = 40/12 min; Namit = 39/12 min. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "Who runs faster and why?",
+                      "solution_and_marking_scheme": "Namit takes less time (39/12 < 40/12), so Namit is faster. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "Calculate time difference in seconds.",
+                      "solution_and_marking_scheme": "Difference = 40/12 - 39/12 = 1/12 minute. [1.5 Marks]\nIn seconds = (1/12) x 60 = 5 seconds. [1.5 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
+            }
+          ]
         }
       ]
     },
@@ -3349,6 +4616,187 @@
                   "marks": 5
                 }
               ]
+            }
+          ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 8 Model Test Paper - Playing with Constructions",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "Diameter of circle with radius 4.5 cm is:",
+                  "options": [
+                    "A. 4.5 cm",
+                    "B. 9.0 cm",
+                    "C. 13.5 cm",
+                    "D. 18.0 cm"
+                  ],
+                  "correct_answer": "B. 9.0 cm",
+                  "solution_and_marking_scheme": "d = 2r = 9.0 cm. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "Circles sharing same center point with different radii are:",
+                  "options": [
+                    "A. Concentric",
+                    "B. Intersecting",
+                    "C. Parallel",
+                    "D. Tangent"
+                  ],
+                  "correct_answer": "A. Concentric",
+                  "solution_and_marking_scheme": "Concentric circles. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "Tool best suited for transferring segment lengths accurately is:",
+                  "options": [
+                    "A. Protractor",
+                    "B. Compass",
+                    "C. Set-square",
+                    "D. Eraser"
+                  ],
+                  "correct_answer": "B. Compass",
+                  "solution_and_marking_scheme": "Compass transfers length. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "Set-square angle combinations include:",
+                  "options": [
+                    "A. 45-45-90 & 30-60-90",
+                    "B. 30-30-120",
+                    "C. 50-50-80",
+                    "D. 60-60-60"
+                  ],
+                  "correct_answer": "A. 45-45-90 & 30-60-90",
+                  "solution_and_marking_scheme": "Standard set-squares. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): All points on circle boundary are 4 cm from center P if r = 4 cm.\nReason (R): A circle is defined by fixed distance r from center.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "Definition of circle. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Diameter is longest chord of a circle.\nReason (R): Diameter passes through center O and equals 2r.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "Diameter passes through center. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Write 3 construction steps for circle of radius 3.5 cm.",
+                  "solution_and_marking_scheme": "Mark center O, set compass 3.5 cm, rotate needle 360°. [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "How do you construct two concentric circles of radii 3 cm and 5 cm?",
+                  "solution_and_marking_scheme": "Mark center O, draw circle r=3 cm, draw second circle r=5 cm from same O. [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "Construct rectangle ABCD with AB = 6 cm and BC = 4 cm using set-square.",
+                  "solution_and_marking_scheme": "Draw base 6 cm, draw perpendiculars at endpoints of height 4 cm, join tops. [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "If diameter of circle is 14 cm, find its radius.",
+                  "solution_and_marking_scheme": "r = d / 2 = 14 / 2 = 7 cm. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "Can a chord of a circle be longer than its diameter? Explain.",
+                  "solution_and_marking_scheme": "No! Diameter is the longest possible chord in any circle. [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) Explain how to construct a square of side 5 cm using ruler and set-square. (2 Marks)\n(b) Verify that both diagonals of this square are equal. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Draw base 5 cm, erect 90° perpendiculars at both ends of length 5 cm, join top. [2 Marks]\n(b) Measure diagonals with compass; both measure sqrt(50) = 7.07 cm. Equal! [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) Draw segment AB = 7 cm and copy its length to new line segment CD using compass. (2 Marks)\n(b) Explain why compass transfer is more accurate than ruler tick alignment. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Lock compass span on AB, pivot on C to mark D. [2 Marks]\n(b) Prevents visual alignment errors and ruler tick spacing discrepancies. [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Regular Hexagon Inscription.\nA student constructs a regular hexagon inside a circle of radius 4 cm using compass radius steps.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "What compass opening is used to step around the boundary?",
+                      "solution_and_marking_scheme": "Compass opening = radius = 4 cm. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "How many equal arc steps are formed on the circumference?",
+                      "solution_and_marking_scheme": "Exactly 6 equal arc steps. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "Find side length and total perimeter of the inscribed regular hexagon.",
+                      "solution_and_marking_scheme": "Side length = radius = 4 cm. [1.5 Marks]\nPerimeter = 6 x 4 = 24 cm. [1.5 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
             }
           ]
         }
@@ -3767,6 +5215,187 @@
               ]
             }
           ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 9 Model Test Paper - Symmetry",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "Smallest rotational angle for regular pentagon is:",
+                  "options": [
+                    "A. 60°",
+                    "B. 72°",
+                    "C. 90°",
+                    "D. 108°"
+                  ],
+                  "correct_answer": "B. 72°",
+                  "solution_and_marking_scheme": "360° / 5 = 72°. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "Lines of reflection symmetry in non-square rectangle:",
+                  "options": [
+                    "A. 1",
+                    "B. 2",
+                    "C. 4",
+                    "D. 0"
+                  ],
+                  "correct_answer": "B. 2",
+                  "solution_and_marking_scheme": "2 midsegments only. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "Ashoka Chakra (24 spokes) smallest rotational angle is:",
+                  "options": [
+                    "A. 10°",
+                    "B. 15°",
+                    "C. 20°",
+                    "D. 24°"
+                  ],
+                  "correct_answer": "B. 15°",
+                  "solution_and_marking_scheme": "360° / 24 = 15°. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "Order of rotational symmetry for square is:",
+                  "options": [
+                    "A. 2",
+                    "B. 3",
+                    "C. 4",
+                    "D. 8"
+                  ],
+                  "correct_answer": "C. 4",
+                  "solution_and_marking_scheme": "Square order = 4. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Regular hexagon has 6 lines of symmetry.\nReason (R): Regular n-gon has n lines of symmetry.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "Regular n-gon rule. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Rectangle diagonal is NOT a line of symmetry.\nReason (R): Folding along diagonal causes corners to overhang, not match.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "Diagonal fold overhangs. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "State lines of symmetry and rotational angle for equilateral triangle.",
+                  "solution_and_marking_scheme": "3 lines of symmetry; smallest angle = 360/3 = 120°. [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Why can't a shape have smallest rotational angle of 17°?",
+                  "solution_and_marking_scheme": "360 / 17 = 21.176... (Not an integer!). [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "How many lines of symmetry does a circle have?",
+                  "solution_and_marking_scheme": "Infinitely many lines (every diameter is a symmetry line). [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "Find rotational order for 4-blade windmill.",
+                  "solution_and_marking_scheme": "Order = 4; Angle = 90°. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "Give 2 real-life examples of line symmetry.",
+                  "solution_and_marking_scheme": "Butterfly wings, Taj Mahal facade. [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) Compare lines of symmetry for square vs non-square rectangle. (2 Marks)\n(b) Compare their orders of rotational symmetry. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Square has 4 (2 midsegments + 2 diagonals); Rectangle has 2 (midsegments only). [2 Marks]\n(b) Square rotational order = 4 (90°); Rectangle rotational order = 2 (180°). [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) What is rotational symmetry order for regular octagon? (2 Marks)\n(b) List all rotation angles less than 360° for regular octagon. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Order = 8. [2 Marks]\n(b) Smallest angle = 45°. Angles: 45°, 90°, 135°, 180°, 225°, 270°, 315°. [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Ceiling Fan Blade Symmetry.\nA ceiling fan has 6 identical blades arranged symmetrically around motor.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "State its order of rotational symmetry.",
+                      "solution_and_marking_scheme": "Order = 6. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "Calculate smallest angle of rotational symmetry.",
+                      "solution_and_marking_scheme": "360° / 6 = 60°. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "List all rotation angles < 360° where fan matches original position.",
+                      "solution_and_marking_scheme": "Multiples of 60°: 60°, 120°, 180°, 240°, 300°. [3 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
+            }
+          ]
         }
       ]
     },
@@ -4181,6 +5810,187 @@
                   "marks": 5
                 }
               ]
+            }
+          ]
+        },
+        {
+          "paper_id": 6,
+          "paper_title": "Chapter 10 Model Test Paper - The Other Side of Zero",
+          "total_marks": 30,
+          "time_allowed_minutes": 60,
+          "sections": [
+            {
+              "section_name": "Section A: Objective MCQs & Assertion-Reason",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q1",
+                  "question_type": "MCQ",
+                  "question_text": "Additive inverse of -15 is:",
+                  "options": [
+                    "A. -15",
+                    "B. 0",
+                    "C. +15",
+                    "D. 1/15"
+                  ],
+                  "correct_answer": "C. +15",
+                  "solution_and_marking_scheme": "-15 + 15 = 0. [1 Mark]"
+                },
+                {
+                  "question_number": "Q2",
+                  "question_type": "MCQ",
+                  "question_text": "Value of (-8) - (-13) is:",
+                  "options": [
+                    "A. -21",
+                    "B. -5",
+                    "C. +5",
+                    "D. +21"
+                  ],
+                  "correct_answer": "C. +5",
+                  "solution_and_marking_scheme": "-8 + 13 = +5. [1 Mark]"
+                },
+                {
+                  "question_number": "Q3",
+                  "question_type": "MCQ",
+                  "question_text": "Which integer comparison is correct?",
+                  "options": [
+                    "A. -10 > -3",
+                    "B. -10 < -3",
+                    "C. -10 = -3",
+                    "D. 0 < -5"
+                  ],
+                  "correct_answer": "B. -10 < -3",
+                  "solution_and_marking_scheme": "-10 lies left of -3 on number line. [1 Mark]"
+                },
+                {
+                  "question_number": "Q4",
+                  "question_type": "MCQ",
+                  "question_text": "Brahmagupta's law states 0 - A equals:",
+                  "options": [
+                    "A. A",
+                    "B. 0",
+                    "C. -A",
+                    "D. 1"
+                  ],
+                  "correct_answer": "C. -A",
+                  "solution_and_marking_scheme": "0 - A = -A. [1 Mark]"
+                },
+                {
+                  "question_number": "Q5",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): (-5) + (+5) = 0.\nReason (R): The sum of an integer and its additive inverse is zero.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "Additive inverse property. [1 Mark]"
+                },
+                {
+                  "question_number": "Q6",
+                  "question_type": "Assertion-Reason",
+                  "question_text": "Assertion (A): Subtracting -5 from 10 yields 15.\nReason (R): a - (-b) = a + b.",
+                  "options": [
+                    "A. Both A and R true, R explains A.",
+                    "B. Both true, R doesn't explain.",
+                    "C. A true, R false.",
+                    "D. A false, R true."
+                  ],
+                  "correct_answer": "A. Both A and R true, R explains A.",
+                  "solution_and_marking_scheme": "10 - (-5) = 10 + 5 = 15. [1 Mark]"
+                }
+              ],
+              "section_key": "section_a"
+            },
+            {
+              "section_name": "Section B: Short Answer Questions",
+              "total_marks": 10,
+              "questions": [
+                {
+                  "question_number": "Q7",
+                  "marks": 2,
+                  "question_text": "Evaluate (-12) + (+20) - (+5).",
+                  "solution_and_marking_scheme": "-12 + 20 - 5 = +8 - 5 = +3. [2 Marks]"
+                },
+                {
+                  "question_number": "Q8",
+                  "marks": 2,
+                  "question_text": "Write integers strictly between -4 and +4 in increasing order.",
+                  "solution_and_marking_scheme": "-3, -2, -1, 0, +1, +2, +3. [2 Marks]"
+                },
+                {
+                  "question_number": "Q9",
+                  "marks": 2,
+                  "question_text": "Submarine at -250 m ascends 80 m. Find new depth.",
+                  "solution_and_marking_scheme": "-250 + 80 = -170 m (170 m below sea level). [2 Marks]"
+                },
+                {
+                  "question_number": "Q10",
+                  "marks": 2,
+                  "question_text": "State Brahmagupta's 3 zero laws for integers.",
+                  "solution_and_marking_scheme": "1. A - A = 0; 2. A - 0 = A; 3. 0 - A = -A. [2 Marks]"
+                },
+                {
+                  "question_number": "Q11",
+                  "marks": 2,
+                  "question_text": "Using token model (+1 green, -1 red), solve (+5) + (-8).",
+                  "solution_and_marking_scheme": "5 green + 8 red => 5 zero-pairs cancel out => 3 red tokens remain = -3. [2 Marks]"
+                }
+              ],
+              "section_key": "section_b"
+            },
+            {
+              "section_name": "Section C: Long Answer Questions",
+              "total_marks": 8,
+              "questions": [
+                {
+                  "question_number": "Q12",
+                  "marks": 4,
+                  "question_text": "(a) Alexander the Great was born in 356 BCE and died in 323 BCE. Calculate age at death. (2 Marks)\n(b) How many years elapsed between 680 BCE and 360 BCE? (2 Marks)",
+                  "solution_and_marking_scheme": "(a) Age = 356 - 323 = 33 years old. [2 Marks]\n(b) Elapsed years = 680 - 360 = 320 years. [2 Marks]"
+                },
+                {
+                  "question_number": "Q13",
+                  "marks": 4,
+                  "question_text": "(a) Lift starts at Floor +12, goes down 15 floors. Which floor does it reach? (2 Marks)\n(b) From there, it goes up 8 floors. Find final floor position. (2 Marks)",
+                  "solution_and_marking_scheme": "(a) +12 - 15 = -3 (Basement 3). [2 Marks]\n(b) -3 + 8 = +5 (5th floor). [2 Marks]"
+                }
+              ],
+              "section_key": "section_c"
+            },
+            {
+              "section_name": "Section D: Competency / Case-Based Assessment",
+              "total_marks": 6,
+              "questions": [
+                {
+                  "question_number": "Q14",
+                  "marks": 6,
+                  "case_scenario_text": "Case Study: Desert Temperature Fluctuation.\nDesert day temperature is +42°C. At night, temperature drops to -5°C.",
+                  "sub_questions": [
+                    {
+                      "sub_question_number": "(a)",
+                      "marks": 1,
+                      "question_text": "Calculate total temperature drop from day to night.",
+                      "solution_and_marking_scheme": "+42 - (-5) = 42 + 5 = 47°C drop. [1 Mark]"
+                    },
+                    {
+                      "sub_question_number": "(b)",
+                      "marks": 2,
+                      "question_text": "Next day, temperature rises by 38°C from night temperature. Find new day temperature.",
+                      "solution_and_marking_scheme": "-5 + 38 = +33°C. [2 Marks]"
+                    },
+                    {
+                      "sub_question_number": "(c)",
+                      "marks": 3,
+                      "question_text": "If temperature on day 3 drops by 40°C from +33°C, find day 3 night temperature and classify if below freezing (0°C).",
+                      "solution_and_marking_scheme": "+33 - 40 = -7°C. [1.5 Marks]\nSince -7°C < 0°C, it is below freezing point. [1.5 Marks]"
+                    }
+                  ]
+                }
+              ],
+              "section_key": "section_d"
             }
           ]
         }

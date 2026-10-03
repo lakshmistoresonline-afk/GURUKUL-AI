@@ -189,7 +189,7 @@ async def get_chapter_direct_source_v2(
 
     if os.path.exists(sub_processed_dir):
         sections = {}
-        for sec_name in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers"]:
+        for sec_name in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers", "foundational"]:
             sec_path = os.path.join(sub_processed_dir, f"{sec_name}.json")
             if os.path.exists(sec_path):
                 try:

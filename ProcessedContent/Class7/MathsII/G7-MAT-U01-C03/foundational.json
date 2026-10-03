@@ -1,0 +1,107 @@
+{
+  "textbook_metadata": {
+    "textbook": "",
+    "publisher": "",
+    "grade": "Class 7",
+    "curriculum_framework": "NCF-SE 2023 / NEP 2020"
+  },
+  "subject_type": "MATHEMATICS",
+  "modules": [
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Factor",
+        "meaning": "A number that divides another integer completely without leaving a remainder.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Multiple",
+        "meaning": "The product of a given number and any non-zero integer.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Co-prime",
+        "meaning": "Two positive integers whose Highest Common Factor (HCF) is 1.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "definitions",
+      "item": {
+        "term_or_concept": "Highest Common Factor (HCF)",
+        "definition": "The largest positive integer that divides each of two or more non-zero integers without leaving a remainder.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "definitions",
+      "item": {
+        "term_or_concept": "Least Common Multiple (LCM)",
+        "definition": "The smallest positive integer that is a multiple of two or more given integers.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Prime Factorisation Method",
+        "description": "Decomposing numbers into prime factors to efficiently determine HCF (lowest prime powers) and LCM (highest prime powers).",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "properties",
+      "item": {
+        "property_name": "HCF-LCM Product Property",
+        "statement": "For any two positive integers a and b: HCF(a, b) × LCM(a, b) = a × b.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "HCF-LCM Product Formula",
+        "formula_expression": "HCF(a, b) × LCM(a, b) = a × b",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "relationship_name": "HCF, LCM, and Product of Two Numbers",
+        "description": "The product of HCF and LCM of any two numbers equals the product of those two numbers.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "patterns",
+      "item": {
+        "pattern_name": "Repeating Cycles in Periodic Events",
+        "description": "The alignment of repeating cycles (bells tolling, runners on a track) follows the common multiples of their cycle lengths, with first re-alignment at LCM.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "problem_solving_strategies",
+      "item": {
+        "strategy_name": "HCF Optimization Strategy",
+        "application": "When dividing rectangular spaces or packing items into equal maximum dimensions without waste, calculate HCF.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "problem_solving_strategies",
+      "item": {
+        "strategy_name": "LCM Cycle Strategy",
+        "application": "When finding the earliest time or shortest distance for multiple periodic events to align simultaneously, calculate LCM.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    }
+  ]
+}

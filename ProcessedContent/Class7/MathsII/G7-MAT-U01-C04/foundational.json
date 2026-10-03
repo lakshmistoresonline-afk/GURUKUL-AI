@@ -1,0 +1,98 @@
+{
+  "textbook_metadata": {
+    "textbook": "",
+    "publisher": "",
+    "grade": "Class 7",
+    "curriculum_framework": "NCF-SE 2023 / NEP 2020"
+  },
+  "subject_type": "MATHEMATICS",
+  "modules": [
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Decimal Fraction",
+        "meaning": "A fraction whose denominator is a power of 10 (10, 100, 1000, etc.).",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Decimal Base-Ten Extension",
+        "description": "Extending place value to the right of the decimal point: Tenths (1/10), Hundredths (1/100), Thousandths (1/1000).",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Decimal Multiplication Placement Rule",
+        "rule_text": "Multiply factors as whole numbers, then place decimal point so decimal places equal the sum of decimal places in the factors.",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Decimal Division Shift Rule",
+        "rule_text": "Multiply both dividend and divisor by the same power of 10 to convert the divisor into a whole integer before dividing.",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "Fraction to Decimal Equivalent",
+        "formula_expression": "a / b = (a × k) / (b × k) where (b × k) is 10, 100, 1000...",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "units_measurements",
+      "item": {
+        "quantity": "Length",
+        "units": [
+          "kilometer (km)",
+          "meter (m)",
+          "centimeter (cm)",
+          "millimeter (mm)"
+        ],
+        "conversion_factors": "1 km = 1000 m; 1 m = 100 cm; 1 cm = 10 mm",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "units_measurements",
+      "item": {
+        "quantity": "Mass",
+        "units": [
+          "kilogram (kg)",
+          "gram (g)",
+          "milligram (mg)"
+        ],
+        "conversion_factors": "1 kg = 1000 g; 1 g = 1000 mg",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "units_measurements",
+      "item": {
+        "quantity": "Volume / Capacity",
+        "units": [
+          "liter (L)",
+          "milliliter (mL)"
+        ],
+        "conversion_factors": "1 L = 1000 mL",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "patterns",
+      "item": {
+        "pattern_name": "Powers of 10 Decimal Shift",
+        "description": "Multiplying a decimal by 10^n shifts decimal point n places to the right; dividing by 10^n shifts decimal point n places to the left.",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    }
+  ]
+}

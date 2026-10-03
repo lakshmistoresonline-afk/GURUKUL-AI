@@ -1,0 +1,107 @@
+{
+  "textbook_metadata": {
+    "textbook": "",
+    "publisher": "",
+    "grade": "Class 7",
+    "curriculum_framework": "NCF-SE 2023 / NEP 2020"
+  },
+  "subject_type": "MATHEMATICS",
+  "modules": [
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Additive Inverse",
+        "meaning": "The integer that yields zero when added to a given integer.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Zero Pair",
+        "meaning": "A pair consisting of one positive token (+1) and one negative token (-1) with a net value of 0.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Token Model for Integers",
+        "description": "Modeling integers using green (+1) and red (-1) tokens, where equal counts cancel out as zero pairs.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Removing Tokens for Negative Multiplier",
+        "description": "A negative multiplier represents removing tokens from a bag. To remove tokens from an empty bag, zero pairs are added first.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "properties",
+      "item": {
+        "property_name": "Distributive Property of Integer Multiplication",
+        "statement": "a × (b + c) = (a × b) + (a × c) for all integers a, b, c.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Integer Multiplication Sign Rules",
+        "rule_text": "(+) × (+) = +; (-) × (-) = +; (+) × (-) = -; (-) × (+) = -.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Integer Division Sign Rules",
+        "rule_text": "(+) ÷ (+) = +; (-) ÷ (-) = +; (+) ÷ (-) = -; (-) ÷ (+) = -.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "Integer Subtraction Formula",
+        "formula_expression": "a - b = a + (-b)",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "relationship_name": "Multiplication and Division as Inverse Operations",
+        "description": "If a × b = c, then c ÷ b = a and c ÷ a = b.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "relationship_name": "Addition and Subtraction Inverse Relationship",
+        "description": "Subtracting integer b from a is equivalent to adding the additive inverse (-b) to a: a - b = a + (-b).",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "patterns",
+      "item": {
+        "pattern_name": "Multiplying Decreasing Integers",
+        "description": "As multiplier decreases by 1 while multiplying a negative integer, the product increases by positive step sizes: e.g., 3×(-2)=-6, 2×(-2)=-4, 1×(-2)=-2, 0×(-2)=0, (-1)×(-2)=+2.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "problem_solving_strategies",
+      "item": {
+        "strategy_name": "Token Model Zero-Pair Insertion",
+        "application": "Solve negative integer multiplication and subtraction by inserting zero pairs into a token bag to enable removing required tokens.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    }
+  ]
+}

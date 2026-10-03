@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { renderSafeText } from './safeRender';
 
 interface OverviewProps {
   data: any;
@@ -80,7 +81,7 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight">{chapterTitle || 'Chapter Overview'}</h2>
             {summary && (
               <blockquote className="border-l-4 border-teal-400 pl-4 py-1 text-indigo-100 text-base sm:text-lg leading-relaxed max-w-3xl opacity-90 font-medium">
-                {summary}
+                {renderSafeText(summary)}
               </blockquote>
             )}
           </div>
@@ -89,7 +90,7 @@ export default function OverviewComponent({ data, chapterTitle, unitTitle, subje
             <div className="p-6 sm:p-8 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-3">
               <h3 className="text-xs font-black tracking-widest text-indigo-600 uppercase">The Big Idea & Theme</h3>
               <p className="text-slate-800 text-base font-semibold leading-relaxed">
-                {typeof theme === 'string' ? theme : JSON.stringify(theme)}
+                {renderSafeText(theme)}
               </p>
             </div>
           )}
