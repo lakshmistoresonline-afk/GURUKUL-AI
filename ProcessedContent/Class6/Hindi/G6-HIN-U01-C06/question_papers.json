@@ -3,9 +3,9 @@
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - मेरी माँ (NCERT मॉडल प्रश्न पत्र)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
+      "paper_title": "मेरी माँ - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "खंड 'क' (वस्तुनिष्ठ प्रश्न / MCQs)",
@@ -92,17 +92,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "अध्याय 6: मेरी माँ - मॉडल प्रश्न पत्र (NCERT पैटर्न)",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
-          "section_title": "खंड 'क' - वस्तुनिष्ठ प्रश्न एवं कथन-कारण (MCQs & Assertion-Reason) [6 अंक]",
+          "section_name": "Section A",
           "questions": [
             {
               "q_no": 1,
@@ -188,13 +180,7 @@
               ],
               "correct_answer": "क) कथन और कारण दोनों सही हैं तथा कारण कथन की सही व्याख्या करता है।",
               "marking_scheme_and_explanation": "1 अंक - माँ की प्रेरणा ही बिस्मिल के महान क्रांतिकारी बनने का आधार थी।"
-            }
-          ],
-          "section_key": "section_A_mcq_and_assertion_reason"
-        },
-        {
-          "section_title": "खंड 'ख' - लघु उत्तरीय प्रश्न एवं व्याकरण (Short Answer Questions & Grammar) [10 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Understanding",
@@ -229,13 +215,7 @@
               "marks": 2,
               "question_text": "'न्योछावर' शब्द का अर्थ और वाक्य प्रयोग कीजिए।",
               "marking_scheme_and_model_answer": "2 अंक: अर्थ: समर्पित करना। वाक्य: क्रांतिकारियों ने देश के लिए प्राण न्योछावर कर दिए।"
-            }
-          ],
-          "section_key": "section_B_short_answer"
-        },
-        {
-          "section_title": "खंड 'ग' - दीर्घ उत्तरीय एवं भाव-प्रधान प्रश्न (Long Answer Questions) [8 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Application",
@@ -250,36 +230,7 @@
               "question_text": "'माँ बच्चे की पहली गुरु होती है।' आत्मकथा के आधार पर सिद्ध कीजिए।",
               "marking_scheme_and_model_answer": "4 अंक: बिस्मिल की माँ ने अपने आचरण से पुत्र को साहस, देशभक्ति व नैतिक मूल्यों की शिक्षा दी। माँ के बिना बिस्मिल साधारण सांसारिक जीवन में उलझ जाते।"
             }
-          ],
-          "section_key": "section_C_long_answer"
-        },
-        {
-          "section_title": "खंड 'घ' - योग्यता-आधारित / केस-स्टडी प्रश्न (Competency & Case-Based Assessment) [6 अंक]",
-          "case_passage": "गद्यांश ध्यानपूर्वक पढ़िए:\n'यदि मुझे ऐसी माता न मिलती, तो मैं भी साधारण मनुष्यों की भाँति संसार-चक्र में फँसकर अपना जीवन नष्ट कर लेता। शिक्षा-दीक्षा के अतिरिक्त मेरे जीवन में जो स्वतंत्रता की भावना जगी, उसका श्रेय भी मेरी माता जी को ही है। मैं अंतिम समय में भी यही प्रार्थना करता हूँ कि ईश्वर मुझे अगले जन्म में भी यही माता दे।'",
-          "sub_questions": [
-            {
-              "sub_q_no": "(1)",
-              "marks": 2,
-              "blooms_level": "Understanding",
-              "question_text": "बिस्मिल जी के अनुसार उनकी माँ न मिलती तो क्या होता?",
-              "model_answer": "2 अंक: वे भी साधारण लोगों की तरह सांसारिक मोहमाया में फँसकर जीवन गँवा देते।"
-            },
-            {
-              "sub_q_no": "(2)",
-              "marks": 2,
-              "blooms_level": "Application",
-              "question_text": "बिस्मिल जी ने अगले जन्म के लिए क्या प्रार्थना की और क्यों?",
-              "model_answer": "2 अंक: प्रार्थना की कि अगले जन्म में भी यही माँ मिले ताकि वे उनके उपकारों का बदला चुका सकें।"
-            },
-            {
-              "sub_q_no": "(3)",
-              "marks": 2,
-              "blooms_level": "Analyzing_Evaluating",
-              "question_text": "माता-पिता के प्रति संतान का क्या परम कर्तव्य होना चाहिए?",
-              "model_answer": "2 अंक: माता-पिता का सम्मान करना, निस्वार्थ सेवा करना और उनके दिए उच्च संस्कारों को जीवन में अपनाना।"
-            }
-          ],
-          "section_key": "section_D_case_based_competency"
+          ]
         }
       ]
     }

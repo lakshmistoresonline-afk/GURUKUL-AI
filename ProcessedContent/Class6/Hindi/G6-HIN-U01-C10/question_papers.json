@@ -3,9 +3,9 @@
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - परीक्षा (NCERT मॉडल प्रश्न पत्र)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
+      "paper_title": "परीक्षा - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "खंड 'क' (वस्तुनिष्ठ प्रश्न / MCQs)",
@@ -92,17 +92,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "अध्याय 10: परीक्षा - मॉडल प्रश्न पत्र (NCERT पैटर्न)",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
-          "section_title": "खंड 'क' - वस्तुनिष्ठ प्रश्न एवं कथन-कारण (MCQs & Assertion-Reason) [6 अंक]",
+          "section_name": "Section A",
           "questions": [
             {
               "q_no": 1,
@@ -188,13 +180,7 @@
               ],
               "correct_answer": "क) कथन और कारण दोनों सही हैं तथा कारण कथन की सही व्याख्या करता है।",
               "marking_scheme_and_explanation": "1 अंक - सुजानसिंह ने जानकीनाथ के आत्मबल और दया भाव को पहचाना।"
-            }
-          ],
-          "section_key": "section_A_mcq_and_assertion_reason"
-        },
-        {
-          "section_title": "खंड 'ख' - लघु उत्तरीय प्रश्न एवं व्याकरण (Short Answer Questions & Grammar) [10 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Understanding",
@@ -229,13 +215,7 @@
               "marks": 2,
               "question_text": "'निस्वार्थ' शब्द का विलोम शब्द और वाक्य प्रयोग कीजिए।",
               "marking_scheme_and_model_answer": "2 अंक: विलोम = स्वार्थी। वाक्य: जानकीनाथ ने निस्वार्थ भाव से किसान की मदद की।"
-            }
-          ],
-          "section_key": "section_B_short_answer"
-        },
-        {
-          "section_title": "खंड 'ग' - दीर्घ उत्तरीय एवं भाव-प्रधान प्रश्न (Long Answer Questions) [8 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Application",
@@ -250,36 +230,7 @@
               "question_text": "प्रेमचंद की कहानी 'परीक्षा' का मूल सन्देश स्पष्ट कीजिए।",
               "marking_scheme_and_model_answer": "4 अंक: उच्च पदों के लिए केवल डिग्रियाँ या बाहरी दिखावा पर्याप्त नहीं होता। सच्चा प्रशासक वही है जिसके हृदय में दया, साहस और गरीबों की सेवा का जज्बा हो।"
             }
-          ],
-          "section_key": "section_C_long_answer"
-        },
-        {
-          "section_title": "खंड 'घ' - योग्यता-आधारित / केस-स्टडी प्रश्न (Competency & Case-Based Assessment) [6 अंक]",
-          "case_passage": "गद्यांश ध्यानपूर्वक पढ़िए:\n'सुजानसिंह ने कहा - मुझे ऐसे आदमी की ज़रूरत थी जिसके हृदय में दया हो, आत्मबल हो और जो संकट के समय अपने स्वार्थ को त्याग सके। ऐसा पुरुष जो चोट सहकर भी दुखी की मदद करे, वही इस रियासत के दीवान पद के योग्य है। पंडित जानकीनाथ में वे सभी गुण विद्यमान हैं।'",
-          "sub_questions": [
-            {
-              "sub_q_no": "(1)",
-              "marks": 2,
-              "blooms_level": "Understanding",
-              "question_text": "सुजानसिंह के अनुसार दीवान पद के लिए कौन-से गुण आवश्यक थे?",
-              "model_answer": "2 अंक: दया, आत्मबल, स्वार्थ-त्याग और दुखी व्यक्ति की निस्वार्थ सहायता।"
-            },
-            {
-              "sub_q_no": "(2)",
-              "marks": 2,
-              "blooms_level": "Application",
-              "question_text": "जानकीनाथ ने अपनी चोट की परवाह न करके क्या सिद्ध किया?",
-              "model_answer": "2 अंक: उन्होंने सिद्ध किया कि किसी असहाय की मदद करना उनके लिए अपने कष्ट से बड़ा था।"
-            },
-            {
-              "sub_q_no": "(3)",
-              "marks": 2,
-              "blooms_level": "Analyzing_Evaluating",
-              "question_text": "शिक्षा प्रणाली में केवल अंकों के बजाय चरित्र-निर्माण का क्या महत्व है?",
-              "model_answer": "2 अंक: अंक कुशल बना सकते हैं, पर एक संवेदनशील नागरिक बनने के लिए चरित्र का होना अनिवार्य है।"
-            }
-          ],
-          "section_key": "section_D_case_based_competency"
+          ]
         }
       ]
     }

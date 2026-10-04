@@ -10,7 +10,12 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
   const [flippedCards, setFlippedCards] = useState<Record<number, boolean>>({});
   const [masteredCards, setMasteredCards] = useState<Record<number, boolean>>({});
 
-  if (!Array.isArray(flashcards) || flashcards.length === 0) {
+  let fcList = flashcards;
+  if (flashcards && !Array.isArray(flashcards) && typeof flashcards === 'object') {
+    fcList = (flashcards as any).flashcards || (flashcards as any).cards || (flashcards as any).flashcard_database || (flashcards as any).flashcards_dataset || Object.values(flashcards);
+  }
+
+  if (!Array.isArray(fcList) || fcList.length === 0) {
     return <div className="p-8 text-center text-slate-500">No flashcards available.</div>;
   }
 
@@ -33,7 +38,7 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
     }
   };
 
-  const currentCard = flashcards[carouselIdx] || flashcards[0];
+  const currentCard = fcList[carouselIdx] || fcList[0];
   const frontText = currentCard.front_question || currentCard.front_prompt || currentCard.front || currentCard.term || currentCard.question || currentCard.question_text || currentCard.prompt || currentCard.front_content || '';
   const backText = currentCard.back_answer || currentCard.back || currentCard.definition || currentCard.answer || currentCard.back_content || '';
   const memoryTip = currentCard.key_takeaway || currentCard.key_memory_tip || currentCard.memory_tip || currentCard.explanation_or_tip || '';
@@ -47,114 +52,114 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
       <div className="border-b border-slate-100 pb-4 flex flex-wrap items-center justify-between gap-4">
         <div>
           <h3 className="text-xl font-black text-slate-900 tracking-tight">
-            Flashcards Deck ({flashcards.length} Cards)
+            Flashcards Deck ({fcList.length} Cards)
           </h3>
           <p className="text-xs text-slate-500 mt-1">Review key terms, concepts, definitions, and memory tips in Focus Mode.</p>
         </div>
         <div className="flex items-center gap-3">
           <div className="text-xs font-bold bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-full border border-indigo-200">
-            Mastered: {Object.values(masteredCards).filter(Boolean).length} / {flashcards.length}
+            Mastered: {Object.values(masteredCards).filter(Boolean).length} / {fcList.length}
           </div>
           <div className="flex bg-slate-100 p-1 rounded-2xl border border-slate-200">
             <button
               onClick={() => setViewMode('grid')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${viewMode === 'grid' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-500 hover:text-slate-900'}`}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${viewMode === 'grid' ? 'bg-white text-indigo-950 shadow-sm' : 'text-slate-600 hover:text-slate-900'}`}
             >
               Grid View
             </button>
             <button
               onClick={() => setViewMode('carousel')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${viewMode === 'carousel' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-500 hover:text-slate-900'}`}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${viewMode === 'carousel' ? 'bg-white text-indigo-950 shadow-sm' : 'text-slate-600 hover:text-slate-900'}`}
             >
-              Focus Mode
+              Flip Carousel
             </button>
           </div>
         </div>
       </div>
 
       {viewMode === 'carousel' ? (
-        /* Focus Mode Carousel (Default) */
-        <div className="max-w-xl mx-auto space-y-6 py-4">
-          <div className="flex items-center justify-between text-xs font-bold text-slate-500">
-            <span>Card {carouselIdx + 1} of {flashcards.length}</span>
-            <span>{category ? `Category: ${category}` : ''}</span>
-          </div>
-
+        <div className="space-y-6 max-w-2xl mx-auto py-4">
           <div
             onClick={() => toggleFlip(carouselIdx)}
-            className={`cursor-pointer min-h-[300px] p-8 rounded-3xl transition-all duration-300 border shadow-md flex flex-col justify-between ${
-              isCarouselMastered ? 'bg-emerald-50/50 border-emerald-300' : 'bg-gradient-to-br from-indigo-50/70 to-slate-50 border-indigo-200 hover:border-indigo-400'
+            className={`min-h-[320px] p-8 sm:p-10 rounded-3xl border-2 transition-all duration-300 cursor-pointer flex flex-col justify-between shadow-lg relative overflow-hidden ${
+              isCarouselFlipped
+                ? 'bg-gradient-to-br from-teal-900 to-slate-900 border-teal-500 text-white'
+                : 'bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 border-indigo-500 text-white'
             }`}
           >
             <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-indigo-600 uppercase tracking-wide">{level}</span>
-              <button
-                onClick={(e) => speakText(isCarouselFlipped ? backText : frontText, e)}
-                className="p-2 bg-white rounded-full hover:bg-indigo-100 text-indigo-600 transition-colors shadow-xs"
-                title="Pronounce aloud"
-              >
-                🔊
-              </button>
+              <span className="text-[11px] font-mono font-bold tracking-widest uppercase px-3 py-1 bg-white/10 rounded-full">
+                Card {carouselIdx + 1} of {fcList.length} {category ? `• ${category}` : ''}
+              </span>
+              <div className="flex items-center gap-2">
+                {level && <span className="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase bg-indigo-700/60 text-indigo-200">{level}</span>}
+                <button
+                  onClick={(e) => toggleMastered(carouselIdx, e)}
+                  className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${
+                    isCarouselMastered
+                      ? 'bg-emerald-500 text-white border-emerald-400 shadow-md'
+                      : 'bg-white/10 text-white border-white/20 hover:bg-white/20'
+                  }`}
+                >
+                  {isCarouselMastered ? '★ Mastered' : '☆ Mark Mastered'}
+                </button>
+              </div>
             </div>
 
-            <div className="py-6 space-y-4 my-auto text-center">
-              {!isCarouselFlipped ? (
-                <div className="text-lg font-bold text-slate-900 leading-snug">
-                  <span className="text-indigo-600 font-extrabold mr-1">Q:</span> {frontText}
-                </div>
-              ) : (
-                <div className="space-y-3">
-                  <div className="text-sm text-slate-800 font-medium leading-relaxed whitespace-pre-wrap">
-                    <span className="text-emerald-600 font-extrabold mr-1">A:</span> {backText}
-                  </div>
-                  {memoryTip && (
-                    <div className="p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-900 font-medium text-left">
-                      💡 <strong>Tip:</strong> {memoryTip}
-                    </div>
-                  )}
+            <div className="py-8 text-center space-y-4 my-auto">
+              <div className="text-xs font-bold uppercase tracking-widest text-indigo-300">
+                {isCarouselFlipped ? '💡 Answer / Definition' : '❓ Question / Term'}
+              </div>
+              <div className="text-xl sm:text-2xl font-black leading-snug">
+                {isCarouselFlipped ? backText : frontText}
+              </div>
+              {isCarouselFlipped && memoryTip && (
+                <div className="mt-4 p-3 bg-white/10 rounded-2xl text-xs text-indigo-100 max-w-md mx-auto border border-white/10">
+                  <strong>Memory Tip:</strong> {memoryTip}
                 </div>
               )}
             </div>
 
-            <div className="flex items-center justify-between pt-4 border-t border-indigo-100 text-xs font-bold text-slate-500">
-              <span className="italic">{isCarouselFlipped ? 'Showing Answer (Click to flip)' : 'Click card to flip ➔'}</span>
+            <div className="flex items-center justify-between text-xs text-indigo-200 pt-4 border-t border-white/10">
+              <span className="font-bold opacity-80">Click card anywhere to flip</span>
               <button
-                onClick={(e) => toggleMastered(carouselIdx, e)}
-                className={`px-4 py-1.5 rounded-full text-xs font-black uppercase transition-all ${
-                  isCarouselMastered ? 'bg-emerald-600 text-white shadow-sm' : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
-                }`}
+                onClick={(e) => speakText(isCarouselFlipped ? backText : frontText, e)}
+                className="px-3 py-1.5 bg-white/10 hover:bg-white/20 rounded-xl font-bold flex items-center gap-1.5 transition-all"
               >
-                {isCarouselMastered ? '✓ Mastered' : 'Mark Mastered'}
+                🔊 Read Aloud
               </button>
             </div>
           </div>
 
           <div className="flex items-center justify-between gap-4">
             <button
-              onClick={() => setCarouselIdx(prev => Math.max(0, prev - 1))}
-              disabled={carouselIdx === 0}
-              className="px-6 py-3 bg-white border border-slate-200 disabled:opacity-40 text-slate-700 font-extrabold rounded-2xl shadow-xs transition-all hover:bg-slate-50"
+              onClick={() => {
+                setCarouselIdx(prev => (prev > 0 ? prev - 1 : fcList.length - 1));
+                setFlippedCards({});
+              }}
+              className="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-2xl font-black text-xs transition-all"
             >
               ← Previous Card
             </button>
+            <span className="text-xs font-bold text-slate-500 font-mono">
+              {carouselIdx + 1} / {fcList.length}
+            </span>
             <button
-              onClick={() => setCarouselIdx(prev => Math.min(flashcards.length - 1, prev + 1))}
-              disabled={carouselIdx === flashcards.length - 1}
-              className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-40 text-white font-extrabold rounded-2xl shadow-md shadow-indigo-600/20 transition-all"
+              onClick={() => {
+                setCarouselIdx(prev => (prev < fcList.length - 1 ? prev + 1 : 0));
+                setFlippedCards({});
+              }}
+              className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl font-black text-xs shadow-md transition-all"
             >
               Next Card →
             </button>
           </div>
         </div>
       ) : (
-        /* Grid View */
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {flashcards.map((fc: any, idx: number) => {
-            const fText = fc.front_question || fc.front_prompt || fc.front || fc.term || fc.question || fc.question_text || fc.prompt || fc.front_content || '';
-            const bText = fc.back_answer || fc.back || fc.definition || fc.answer || fc.back_content || '';
-            const mTip = fc.key_takeaway || fc.key_memory_tip || fc.memory_tip || fc.explanation_or_tip || '';
-            const cat = fc.category || fc.concept_tag || '';
-            const lev = fc.level || fc.difficulty_level || fc.difficulty || '';
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {fcList.map((card: any, idx: number) => {
+            const fText = card.front_question || card.front_prompt || card.front || card.term || card.question || card.question_text || card.prompt || card.front_content || '';
+            const bText = card.back_answer || card.back || card.definition || card.answer || card.back_content || '';
             const isFlipped = !!flippedCards[idx];
             const isMastered = !!masteredCards[idx];
 
@@ -162,58 +167,42 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
               <div
                 key={idx}
                 onClick={() => toggleFlip(idx)}
-                className={`relative cursor-pointer min-h-[220px] p-6 rounded-3xl transition-all duration-300 border shadow-sm flex flex-col justify-between ${
-                  isMastered ? 'bg-emerald-50/50 border-emerald-200' : 'bg-gradient-to-br from-indigo-50/60 to-slate-50 border-indigo-100 hover:border-indigo-300'
+                className={`p-6 rounded-3xl border transition-all duration-300 cursor-pointer space-y-4 shadow-sm flex flex-col justify-between ${
+                  isFlipped
+                    ? 'bg-gradient-to-br from-teal-900 to-slate-900 border-teal-500 text-white'
+                    : 'bg-white border-slate-200 text-slate-900 hover:border-indigo-300'
                 }`}
               >
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className="text-xs font-bold text-indigo-600 uppercase tracking-wide">
-                    Card #{idx + 1} {cat ? `• ${cat}` : ''}
+                <div className="flex items-center justify-between">
+                  <span className={`text-[10px] font-mono font-bold px-2.5 py-1 rounded-full ${isFlipped ? 'bg-white/10 text-indigo-200' : 'bg-indigo-50 text-indigo-700'}`}>
+                    #{idx + 1}
                   </span>
-                  <div className="flex items-center gap-2">
-                    {lev && (
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-800 uppercase">
-                        {lev}
-                      </span>
-                    )}
-                    <button
-                      onClick={(e) => speakText(isFlipped ? bText : fText, e)}
-                      className="p-1.5 bg-white rounded-full hover:bg-indigo-100 text-indigo-600 transition-colors shadow-xs"
-                      title="Pronounce aloud"
-                    >
-                      🔊
-                    </button>
+                  <button
+                    onClick={(e) => toggleMastered(idx, e)}
+                    className={`text-[10px] font-bold px-2 py-0.5 rounded-full border transition-all ${
+                      isMastered ? 'bg-emerald-500 text-white border-emerald-400' : 'bg-slate-100 text-slate-600 border-slate-200'
+                    }`}
+                  >
+                    {isMastered ? '★ Mastered' : '☆ Master'}
+                  </button>
+                </div>
+
+                <div className="space-y-2">
+                  <div className={`text-[10px] font-bold uppercase tracking-wider ${isFlipped ? 'text-indigo-300' : 'text-slate-400'}`}>
+                    {isFlipped ? '💡 Answer' : '❓ Question'}
+                  </div>
+                  <div className="text-sm font-black leading-snug">
+                    {isFlipped ? bText : fText}
                   </div>
                 </div>
 
-                <div className="py-4 space-y-2 my-auto">
-                  {!isFlipped ? (
-                    <div className="text-sm font-bold text-slate-900 leading-snug">
-                      <span className="text-indigo-600 font-extrabold mr-1">Q:</span> {fText}
-                    </div>
-                  ) : (
-                    <div className="space-y-2">
-                      <div className="text-xs text-slate-800 font-medium leading-relaxed whitespace-pre-wrap">
-                        <span className="text-emerald-600 font-extrabold mr-1">A:</span> {bText}
-                      </div>
-                      {mTip && (
-                        <div className="p-2.5 bg-amber-50 border border-amber-200/60 rounded-xl text-[11px] text-amber-900 font-medium">
-                          💡 <strong>Tip:</strong> {mTip}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-
-                <div className="flex items-center justify-between pt-3 border-t border-indigo-100/60 text-[11px] font-bold text-slate-500">
-                  <span className="italic">{isFlipped ? 'Showing Answer (Click to flip back)' : 'Click card to flip ➔'}</span>
+                <div className={`flex items-center justify-between text-[11px] pt-3 border-t ${isFlipped ? 'border-white/10 text-indigo-200' : 'border-slate-100 text-slate-400'}`}>
+                  <span>Click to flip</span>
                   <button
-                    onClick={(e) => toggleMastered(idx, e)}
-                    className={`px-3 py-1 rounded-full text-[10px] font-black uppercase transition-all ${
-                      isMastered ? 'bg-emerald-600 text-white shadow-sm' : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
-                    }`}
+                    onClick={(e) => speakText(isFlipped ? bText : fText, e)}
+                    className="font-bold hover:underline"
                   >
-                    {isMastered ? '✓ Mastered' : 'Mark Mastered'}
+                    🔊 Read
                   </button>
                 </div>
               </div>

@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import Dict, Any, List
 
 print("==========================================================================")
-print("GURUKUL AI — PROCESS FOUNDATIONAL.JSON INTO PROCESSED CONTENT")
+print("GURUKUL AI — PROCESS FOUNDATIONAL.JSON INTO PROCESSED CONTENT (GLOBAL ENHANCED)")
 print("==========================================================================\n")
 
 REPO_ROOT = r"D:/GURUKUL"
@@ -49,20 +49,6 @@ def process_foundational():
                 continue
 
             app_subj = subject_mapping.get(subj_dir_name, subj_dir_name)
-            subj_code = "GEN"
-            if app_subj == "Science":
-                subj_code = "SCI"
-            elif app_subj == "English":
-                subj_code = "ENG"
-            elif app_subj == "Hindi":
-                subj_code = "HIN"
-            elif "Maths" in app_subj:
-                subj_code = "MAT"
-            elif "Social" in app_subj:
-                subj_code = "SOC"
-            elif app_subj == "Sanskrit":
-                subj_code = "SAN"
-
             foundational_path = os.path.join(subj_path, "Foundational.json")
             if not os.path.exists(foundational_path):
                 continue
@@ -78,7 +64,6 @@ def process_foundational():
             if not os.path.exists(target_subj_dir):
                 continue
 
-            # Get chapter directories
             ch_dirs = sorted([d for d in os.listdir(target_subj_dir) if os.path.isdir(os.path.join(target_subj_dir, d))])
 
             for idx, ch_id in enumerate(ch_dirs):
@@ -90,11 +75,10 @@ def process_foundational():
                     except:
                         pass
 
-                # Extract relevant foundational modules for this chapter if applicable
                 chapter_foundational = {
                     "textbook_metadata": {
-                        "textbook": foundational_data.get("chapter", {}).get("textbook", ""),
-                        "publisher": foundational_data.get("chapter", {}).get("publisher", ""),
+                        "textbook": foundational_data.get("chapter", {}).get("textbook", foundational_data.get("chapter", {}).get("book", "")),
+                        "publisher": foundational_data.get("chapter", {}).get("publisher", "NCERT"),
                         "grade": foundational_data.get("chapter", {}).get("grade", f"Class {grade}"),
                         "curriculum_framework": foundational_data.get("chapter", {}).get("curriculum_framework", "NCF-SE 2023 / NEP 2020")
                     },
@@ -106,37 +90,23 @@ def process_foundational():
                 for cat_name, cat_items in content_obj.items():
                     if isinstance(cat_items, list):
                         for item in cat_items:
-                            # Check if item relates to this chapter
-                            src_ctx = str(item.get("source_context", "")).lower()
-                            if f"chapter {ch_num}" in src_ctx or not src_ctx:
-                                chapter_foundational["modules"].append({
-                                    "category": cat_name,
-                                    "item": item
-                                })
+                            chapter_foundational["modules"].append({
+                                "category": cat_name,
+                                "item": item
+                            })
                     elif isinstance(cat_items, dict):
                         chapter_foundational["modules"].append({
                             "category": cat_name,
                             "item": cat_items
                         })
 
-                # If no specific chapter filter matched, include foundational modules generally
-                if not chapter_foundational["modules"] and isinstance(content_obj, dict):
-                    for cat_name, cat_items in content_obj.items():
-                        if isinstance(cat_items, list):
-                            for item in cat_items[:5]: # include general items
-                                chapter_foundational["modules"].append({
-                                    "category": cat_name,
-                                    "item": item
-                                })
-
-                # Write foundational.json to chapter folder
                 found_out_path = os.path.join(ch_dir, "foundational.json")
                 with open(found_out_path, "w", encoding="utf-8") as out_f:
                     json.dump(chapter_foundational, out_f, ensure_ascii=False, indent=2)
 
                 processed_count += 1
 
-    print(f"\nSuccessfully processed Foundational.json into {processed_count} chapters across ProcessedContent.")
+    print(f"\nSuccessfully processed Foundational.json globally into {processed_count} chapters across ProcessedContent.")
 
 if __name__ == "__main__":
     process_foundational()

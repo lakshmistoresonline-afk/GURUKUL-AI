@@ -1,7 +1,7 @@
 {
   "textbook_metadata": {
     "textbook": "",
-    "publisher": "",
+    "publisher": "NCERT",
     "grade": "Class 7",
     "curriculum_framework": "NCF-SE 2023 / NEP 2020"
   },
@@ -40,6 +40,134 @@
       }
     },
     {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Additive Inverse",
+        "meaning": "The integer that yields zero when added to a given integer.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Zero Pair",
+        "meaning": "A pair consisting of one positive token (+1) and one negative token (-1) with a net value of 0.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Factor",
+        "meaning": "A number that divides another integer completely without leaving a remainder.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Multiple",
+        "meaning": "The product of a given number and any non-zero integer.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Co-prime",
+        "meaning": "Two positive integers whose Highest Common Factor (HCF) is 1.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Decimal Fraction",
+        "meaning": "A fraction whose denominator is a power of 10 (10, 100, 1000, etc.).",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Arithmetic Mean",
+        "meaning": "The equalized 'fair-share' value representing the center of a dataset.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Median",
+        "meaning": "The middle value in an ordered dataset.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Outlier",
+        "meaning": "An extreme data value far removed from the main cluster of data.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Dot Plot",
+        "meaning": "A statistical chart showing discrete data frequencies as stacked dots above a number line.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Perpendicular Bisector",
+        "meaning": "A line drawn at a 90° angle that divides a line segment into two equal halves.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Tessellation (Tiling)",
+        "meaning": "Covering a 2D surface with repeating geometric shapes leaving zero gaps and zero overlaps.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Tangram",
+        "meaning": "An ancient 7-piece dissection puzzle originating from China consisting of 5 triangles, 1 square, and 1 parallelogram.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Variable",
+        "meaning": "A letter or symbol representing an unknown numerical value.",
+        "source_context": "Chapter 7: Finding the Unknown"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Equation",
+        "meaning": "A mathematical statement asserting that two expressions are equal (LHS = RHS).",
+        "source_context": "Chapter 7: Finding the Unknown"
+      }
+    },
+    {
+      "category": "mathematical_vocabulary",
+      "item": {
+        "term": "Bījagaṇita",
+        "meaning": "Historical Indian name for algebra, where 'Bīja' means seed, symbolizing the hidden variable.",
+        "source_context": "Chapter 7: Finding the Unknown"
+      }
+    },
+    {
       "category": "definitions",
       "item": {
         "term_or_concept": "Triangle Congruence",
@@ -53,6 +181,22 @@
         "term_or_concept": "CPCT",
         "definition": "Corresponding Parts of Congruent Triangles are equal.",
         "source_context": "Chapter 1: Geometric Twins"
+      }
+    },
+    {
+      "category": "definitions",
+      "item": {
+        "term_or_concept": "Highest Common Factor (HCF)",
+        "definition": "The largest positive integer that divides each of two or more non-zero integers without leaving a remainder.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "definitions",
+      "item": {
+        "term_or_concept": "Least Common Multiple (LCM)",
+        "definition": "The smallest positive integer that is a multiple of two or more given integers.",
+        "source_context": "Chapter 3: Finding Common Ground"
       }
     },
     {
@@ -72,11 +216,83 @@
       }
     },
     {
+      "category": "definitions",
+      "item": {
+        "term_or_concept": "Regular Hexagon",
+        "definition": "A 6-sided polygon with six equal sides, six interior angles of 120°, composed of six equilateral triangles around its center.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "definitions",
+      "item": {
+        "term_or_concept": "Linear Equation in One Variable",
+        "definition": "An algebraic equation where the variable appears with an exponent of 1 and can be solved by isolating the variable.",
+        "source_context": "Chapter 7: Finding the Unknown"
+      }
+    },
+    {
       "category": "concepts",
       "item": {
         "concept_name": "Vertex Correspondence",
         "description": "In congruence statements like ΔABC ≅ ΔXYZ, the order of vertices strictly dictates matching pairs: A↔X, B↔Y, C↔Z.",
         "source_context": "Chapter 1: Geometric Twins"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Token Model for Integers",
+        "description": "Modeling integers using green (+1) and red (-1) tokens, where equal counts cancel out as zero pairs.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Removing Tokens for Negative Multiplier",
+        "description": "A negative multiplier represents removing tokens from a bag. To remove tokens from an empty bag, zero pairs are added first.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Prime Factorisation Method",
+        "description": "Decomposing numbers into prime factors to efficiently determine HCF (lowest prime powers) and LCM (highest prime powers).",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Decimal Base-Ten Extension",
+        "description": "Extending place value to the right of the decimal point: Tenths (1/10), Hundredths (1/100), Thousandths (1/1000).",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Arithmetic Mean as Fair Share",
+        "description": "Re-distributing the total sum equally among all entities to determine a single representative central value.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Equidistance of Perpendicular Bisector",
+        "description": "Any point situated on the perpendicular bisector of a line segment XY is equidistant from endpoints X and Y.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "concepts",
+      "item": {
+        "concept_name": "Balance Scale Model of Equations",
+        "description": "An equation represents a balanced scale where performing the identical operation on both sides preserves equality.",
+        "source_context": "Chapter 7: Finding the Unknown"
       }
     },
     {
@@ -93,6 +309,38 @@
         "property_name": "Sum of Angles in a Triangle",
         "statement": "The sum of the three interior angles of any triangle is always 180°.",
         "source_context": "Chapter 1: Geometric Twins"
+      }
+    },
+    {
+      "category": "properties",
+      "item": {
+        "property_name": "Distributive Property of Integer Multiplication",
+        "statement": "a × (b + c) = (a × b) + (a × c) for all integers a, b, c.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "properties",
+      "item": {
+        "property_name": "HCF-LCM Product Property",
+        "statement": "For any two positive integers a and b: HCF(a, b) × LCM(a, b) = a × b.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "properties",
+      "item": {
+        "property_name": "Outlier Resistance of Median",
+        "statement": "Extreme outliers significantly pull the arithmetic mean but do not alter the median value.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "properties",
+      "item": {
+        "property_name": "Central Angle Property of Regular Hexagon",
+        "statement": "Six 60° equilateral triangle central angles meet at the center of a regular hexagon, totaling 360°.",
+        "source_context": "Chapter 6: Constructions and Tilings"
       }
     },
     {
@@ -128,6 +376,94 @@
       }
     },
     {
+      "category": "rules",
+      "item": {
+        "rule_name": "Integer Multiplication Sign Rules",
+        "rule_text": "(+) × (+) = +; (-) × (-) = +; (+) × (-) = -; (-) × (+) = -.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Integer Division Sign Rules",
+        "rule_text": "(+) ÷ (+) = +; (-) ÷ (-) = +; (+) ÷ (-) = -; (-) ÷ (+) = -.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Decimal Multiplication Placement Rule",
+        "rule_text": "Multiply factors as whole numbers, then place decimal point so decimal places equal the sum of decimal places in the factors.",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Decimal Division Shift Rule",
+        "rule_text": "Multiply both dividend and divisor by the same power of 10 to convert the divisor into a whole integer before dividing.",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Median Position Rules",
+        "rule_text": "If total count N is odd: Median is value at position (N+1)/2. If N is even: Median is average of values at positions N/2 and (N/2)+1.",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "rules",
+      "item": {
+        "rule_name": "Compass Radius for Perpendicular Bisector",
+        "rule_text": "The compass radius must be set strictly greater than half the length of the line segment (> 0.5 XY) for arcs to intersect.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "Arithmetic Mean",
+        "formula_expression": "Mean = (Sum of all observations) / (Total number of observations) = (∑ x_i) / N",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "HCF-LCM Product Formula",
+        "formula_expression": "HCF(a, b) × LCM(a, b) = a × b",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "Integer Subtraction Formula",
+        "formula_expression": "a - b = a + (-b)",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "Regular Hexagon Interior Angle",
+        "formula_expression": "Interior Angle = 180° - 60° = 120°",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "formulas",
+      "item": {
+        "formula_name": "Fraction to Decimal Equivalent",
+        "formula_expression": "a / b = (a × k) / (b × k) where (b × k) is 10, 100, 1000...",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
       "category": "symbols_notation",
       "item": {
         "symbol": "≅",
@@ -144,6 +480,153 @@
       }
     },
     {
+      "category": "symbols_notation",
+      "item": {
+        "symbol": "∑",
+        "meaning": "Summation of values",
+        "source_context": "Chapter 5: Connecting the Dots..."
+      }
+    },
+    {
+      "category": "symbols_notation",
+      "item": {
+        "symbol": "LHS = RHS",
+        "meaning": "Left Hand Side equals Right Hand Side in an equation",
+        "source_context": "Chapter 7: Finding the Unknown"
+      }
+    },
+    {
+      "category": "symbols_notation",
+      "item": {
+        "symbol": "x, y, z, k, e",
+        "meaning": "Variables representing unknown numerical values",
+        "source_context": "Chapter 7: Finding the Unknown"
+      }
+    },
+    {
+      "category": "procedures",
+      "item": {
+        "procedure_name": "Constructing Perpendicular Bisector",
+        "steps": [
+          "1. Given line segment XY, open compass with radius > 0.5 XY.",
+          "2. With center X, draw arcs above and below segment XY.",
+          "3. With center Y and same radius, draw arcs intersecting previous arcs at A and B.",
+          "4. Join line AB. Line AB bisects segment XY at a 90° angle."
+        ],
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "procedures",
+      "item": {
+        "procedure_name": "Constructing 60° Angle",
+        "steps": [
+          "1. Draw a ray with vertex A.",
+          "2. With center A, draw a arc intersecting the ray at point B.",
+          "3. With center B and identical compass radius, draw an arc intersecting first arc at C.",
+          "4. Draw ray AC. Angle ∠CAB measures 60°."
+        ],
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "procedures",
+      "item": {
+        "procedure_name": "Constructing Regular Hexagon",
+        "steps": [
+          "1. Draw a circle of radius r with center O.",
+          "2. Pick point A on circumference.",
+          "3. Using same radius r, step off consecutive points B, C, D, E, F around circumference.",
+          "4. Connect line segments AB, BC, CD, DE, EF, FA to complete regular hexagon."
+        ],
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "procedures",
+      "item": {
+        "procedure_name": "Solving Linear Equation via Inverse Operations",
+        "steps": [
+          "1. Identify operations attached to the variable.",
+          "2. Apply inverse operations in reverse order to both sides of equation (LHS and RHS).",
+          "3. Simplify both sides until variable is isolated on one side.",
+          "4. Substitute solution back into original equation to verify LHS = RHS."
+        ],
+        "source_context": "Chapter 7: Finding the Unknown"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "relationship_name": "HCF, LCM, and Product of Two Numbers",
+        "description": "The product of HCF and LCM of any two numbers equals the product of those two numbers.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "relationship_name": "Multiplication and Division as Inverse Operations",
+        "description": "If a × b = c, then c ÷ b = a and c ÷ a = b.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "relationship_name": "Addition and Subtraction Inverse Relationship",
+        "description": "Subtracting integer b from a is equivalent to adding the additive inverse (-b) to a: a - b = a + (-b).",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "relationships",
+      "item": {
+        "relationship_name": "Equilateral Triangle Angle and Hexagon Central Angle",
+        "description": "The interior angle of an equilateral triangle (60°) equals the central angle of a regular hexagon, six of which complete a 360° circle.",
+        "source_context": "Chapter 6: Constructions and Tilings"
+      }
+    },
+    {
+      "category": "units_measurements",
+      "item": {
+        "quantity": "Length",
+        "units": [
+          "kilometer (km)",
+          "meter (m)",
+          "centimeter (cm)",
+          "millimeter (mm)"
+        ],
+        "conversion_factors": "1 km = 1000 m; 1 m = 100 cm; 1 cm = 10 mm",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "units_measurements",
+      "item": {
+        "quantity": "Mass",
+        "units": [
+          "kilogram (kg)",
+          "gram (g)",
+          "milligram (mg)"
+        ],
+        "conversion_factors": "1 kg = 1000 g; 1 g = 1000 mg",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
+      "category": "units_measurements",
+      "item": {
+        "quantity": "Volume / Capacity",
+        "units": [
+          "liter (L)",
+          "milliliter (mL)"
+        ],
+        "conversion_factors": "1 L = 1000 mL",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
       "category": "units_measurements",
       "item": {
         "quantity": "Plane Angle",
@@ -155,11 +638,67 @@
       }
     },
     {
+      "category": "patterns",
+      "item": {
+        "pattern_name": "Multiplying Decreasing Integers",
+        "description": "As multiplier decreases by 1 while multiplying a negative integer, the product increases by positive step sizes: e.g., 3×(-2)=-6, 2×(-2)=-4, 1×(-2)=-2, 0×(-2)=0, (-1)×(-2)=+2.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "patterns",
+      "item": {
+        "pattern_name": "Repeating Cycles in Periodic Events",
+        "description": "The alignment of repeating cycles (bells tolling, runners on a track) follows the common multiples of their cycle lengths, with first re-alignment at LCM.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "patterns",
+      "item": {
+        "pattern_name": "Powers of 10 Decimal Shift",
+        "description": "Multiplying a decimal by 10^n shifts decimal point n places to the right; dividing by 10^n shifts decimal point n places to the left.",
+        "source_context": "Chapter 4: Another Peek Beyond the Point"
+      }
+    },
+    {
       "category": "problem_solving_strategies",
       "item": {
         "strategy_name": "Superimposition and Cut-out Test",
         "application": "Test congruence of two plane figures by cutting out a tracing paper replica and attempting exact overlap.",
         "source_context": "Chapter 1: Geometric Twins"
+      }
+    },
+    {
+      "category": "problem_solving_strategies",
+      "item": {
+        "strategy_name": "Token Model Zero-Pair Insertion",
+        "application": "Solve negative integer multiplication and subtraction by inserting zero pairs into a token bag to enable removing required tokens.",
+        "source_context": "Chapter 2: Operations with Integers"
+      }
+    },
+    {
+      "category": "problem_solving_strategies",
+      "item": {
+        "strategy_name": "HCF Optimization Strategy",
+        "application": "When dividing rectangular spaces or packing items into equal maximum dimensions without waste, calculate HCF.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "problem_solving_strategies",
+      "item": {
+        "strategy_name": "LCM Cycle Strategy",
+        "application": "When finding the earliest time or shortest distance for multiple periodic events to align simultaneously, calculate LCM.",
+        "source_context": "Chapter 3: Finding Common Ground"
+      }
+    },
+    {
+      "category": "problem_solving_strategies",
+      "item": {
+        "strategy_name": "Function Machine Reversal Strategy",
+        "application": "Solve linear equations by tracing operations from input to output and running the operations in reverse using inverse operations.",
+        "source_context": "Chapter 7: Finding the Unknown"
       }
     }
   ]

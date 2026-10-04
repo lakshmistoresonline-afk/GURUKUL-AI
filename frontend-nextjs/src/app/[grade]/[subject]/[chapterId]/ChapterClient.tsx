@@ -13,6 +13,7 @@ import QuestionPapersComponent from '../../../../components/presentation/Questio
 import QuizComponent from '../../../../components/presentation/QuizComponent';
 import FlashcardsComponent from '../../../../components/presentation/FlashcardsComponent';
 import FoundationalComponent from '../../../../components/presentation/FoundationalComponent';
+import ErrorBoundary from '../../../../components/ErrorBoundary';
 import Class6MasterComponent from '../../../../components/presentation/Class6/Class6MasterComponent';
 import Class6HindiMasterComponent from '../../../../components/presentation/Class6/Class6HindiMasterComponent';
 import Class6HindiNotesComponent from '../../../../components/presentation/Class6/Class6HindiNotesComponent';
@@ -414,7 +415,9 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
 
           {/* Right Main Reading Canvas */}
           <main className={`${isZenMode ? 'lg:col-span-12 max-w-4xl mx-auto' : 'lg:col-span-9'} space-y-8 min-h-[500px] ${textSizeClass} ${lineSpacingClass}`}>
-            {renderActiveSectionContent()}
+            <ErrorBoundary>
+              {renderActiveSectionContent()}
+            </ErrorBoundary>
           </main>
         </div>
       </div>

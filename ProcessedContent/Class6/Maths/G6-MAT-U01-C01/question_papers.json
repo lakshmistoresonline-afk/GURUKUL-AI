@@ -3,9 +3,9 @@
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - Patterns in Mathematics",
-      "total_marks": 17,
-      "time_allowed_minutes": 45,
+      "paper_title": "Patterns in Mathematics - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "Section A (MCQs)",
@@ -33,65 +33,7 @@
               ],
               "correct_answer": "C. 10",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions - 2 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Evaluate the symmetrical counting sum without actual addition: 1 + 2 + 3 + 4 + 5 + 4 + 3 + 2 + 1.",
-              "marking_scheme_answer": "Identify central peak n = 5. Symmetrical sum formula = n^2 = 5^2 = 25.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Find the missing odd numbers in the sequence and calculate the total sum: 1 + 3 + 5 + ___ + 9 + 11 + ___ + 15.",
-              "marking_scheme_answer": "Missing numbers are 7 and 13. Total terms n = 8. Sum = 8^2 = 64.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer Questions - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Write the first 8 terms of the Virahānka (Fibonacci) sequence starting with V_1 = 1 and V_2 = 2.",
-              "marking_scheme_answer": "Rule: V_n = V_{n-1} + V_{n-2}. Terms: 1, 2, 3, 5, 8, 13, 21, 34.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Show geometrically and algebraically why adding two consecutive triangular numbers T_3 and T_4 gives a square number.",
-              "marking_scheme_answer": "T_3 = 6, T_4 = 10. T_3 + T_4 = 6 + 10 = 16 = 4^2. Geometrically, two triangular dot arrays fit along a diagonal to form a 4x4 square array.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study / Long Answer - 5 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Case Study: Concentric Square Ring Tiling. A tile arrangement consists of concentric L-shaped gnomon layers around 1 central tile. Layer 1 has 1 tile, Layer 2 has 3 tiles, Layer 3 has 5 tiles, and so on up to Layer 15.\n(a) How many tiles are in the 15th outer layer? (2 marks)\n(b) What is the total number of tiles across all 15 layers? (3 marks)",
-              "marking_scheme_answer": "(a) Tile count in n-th layer = 2n - 1. For n = 15: 2(15) - 1 = 29 tiles.\n(b) Total tiles = Sum of first 15 odd numbers = n^2 = 15^2 = 225 tiles.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "Set 2 - Patterns in Mathematics",
-      "total_marks": 17,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "The sum of the first 20 odd numbers is equal to:",
@@ -115,65 +57,7 @@
               ],
               "correct_answer": "B. 1, 3, 9, 27",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions - 2 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Calculate T_6 (6th triangular number) using the formula T_n = n(n+1)/2.",
-              "marking_scheme_answer": "T_6 = 6 x (6 + 1) / 2 = 6 x 7 / 2 = 21.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "What is the peak number n if the symmetrical sum 1 + 2 + ... + n + ... + 2 + 1 equals 81?",
-              "marking_scheme_answer": "Formula: Sum = n^2. Given n^2 = 81 => n = 9.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer Questions - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Verify that multiplying the 2nd triangular number (3) by 6 and adding 1 produces a hexagonal number.",
-              "marking_scheme_answer": "T_2 = 3. 6 x T_2 + 1 = 6(3) + 1 = 19. Hexagonal numbers sequence: 1, 7, 19, 37... 19 is indeed the 3rd hexagonal number.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Find the sum of all odd numbers from 1 to 25 inclusive.",
-              "marking_scheme_answer": "Last term = 25. Number of terms n = (25 + 1) / 2 = 13. Sum = n^2 = 13^2 = 169.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study / Long Answer - 5 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Case Study: Complete Graphs and Line Segments. When n points are marked on a circle and every pair of points is connected by a straight line segment:\n(a) State the formula for the total line segments in terms of triangular numbers. (2 marks)\n(b) Find the number of line segments for 5 points and for 8 points. (3 marks)",
-              "marking_scheme_answer": "(a) Total line segments for n points = T_{n-1} = (n-1)n / 2.\n(b) For 5 points: T_4 = 4 x 5 / 2 = 10 segments.\nFor 8 points: T_7 = 7 x 8 / 2 = 28 segments.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 3,
-      "paper_title": "Set 3 - Patterns in Mathematics",
-      "total_marks": 17,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "If 1 + 3 + 5 + ... + K = 144, what is the value of term count n and last term K?",
@@ -197,65 +81,7 @@
               ],
               "correct_answer": "B. 8",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions - 2 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Explain the concept of an L-shaped gnomon in building a square dot array.",
-              "marking_scheme_answer": "An L-shaped gnomon is a boundary layer added to an n x n square grid to form an (n+1) x (n+1) grid. The layer contains 2n + 1 dots, corresponding to the next odd integer.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Find the sum: 1 + 2 + 3 + ... + 10 + ... + 3 + 2 + 1.",
-              "marking_scheme_answer": "Peak central number n = 10. Symmetrical sum = 10^2 = 100.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer Questions - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Show that the sum of the first 5 even numbers minus the sum of the first 5 odd numbers equals 5.",
-              "marking_scheme_answer": "Sum of first 5 even numbers = 2 + 4 + 6 + 8 + 10 = 30. Sum of first 5 odd numbers = 5^2 = 25. Difference = 30 - 25 = 5.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Calculate the 7th triangular number and the 7th square number.",
-              "marking_scheme_answer": "7th triangular number T_7 = 7(8)/2 = 28. 7th square number S_7 = 7^2 = 49.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study / Long Answer - 5 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Case Study: Hexagonal Number Pattern. Hexagonal numbers follow the sequence 1, 7, 19, 37, 61...\n(a) Find the differences between consecutive terms: (7-1), (19-7), (37-19), (61-37). What pattern do these differences follow? (2 marks)\n(b) Use the pattern of differences to find the 6th hexagonal number. (3 marks)",
-              "marking_scheme_answer": "(a) Differences: 6, 12, 18, 24. They are consecutive multiples of 6.\n(b) The next difference will be 30. 6th hexagonal number = 61 + 30 = 91.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 4,
-      "paper_title": "Set 4 - Patterns in Mathematics",
-      "total_marks": 17,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "What is the 3rd cube number?",
@@ -279,65 +105,7 @@
               ],
               "correct_answer": "A. 81",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions - 2 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Write the first 5 terms of powers of 2 starting from 2^1.",
-              "marking_scheme_answer": "2, 4, 8, 16, 32.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "What is the sum of T_4 and T_5 where T_n is the n-th triangular number?",
-              "marking_scheme_answer": "T_4 = 10, T_5 = 15. Sum = 10 + 15 = 25 = 5^2.",
-              "marks": 2
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Short Answer Questions - 3 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A student adds 1 + 3 + 5 + ... + 31 and gets 256. Verify if the calculation is correct.",
-              "marking_scheme_answer": "Last term = 31. Number of terms n = (31 + 1)/2 = 16. Sum = 16^2 = 256. Correct.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Find the 9th term of the Virahānka sequence given V_7 = 21 and V_8 = 34.",
-              "marking_scheme_answer": "V_9 = V_8 + V_7 = 34 + 21 = 55.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section D (Case-Study / Long Answer - 5 Marks)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Case Study: Botanical Garden Planting Pattern. A gardener plants roses in a triangular formation: 1 rose in row 1, 2 in row 2, 3 in row 3, up to row 10.\n(a) How many total roses are planted in the first 10 rows? (2 marks)\n(b) If the gardener adds row 11 and row 12, how many additional roses are planted, and what is the new total? (3 marks)",
-              "marking_scheme_answer": "(a) Total roses = T_{10} = 10(11)/2 = 55 roses.\n(b) Row 11 has 11 roses, Row 12 has 12 roses. Additional roses = 11 + 12 = 23. New total = 55 + 23 = 78 roses.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 5,
-      "paper_title": "Set 5 - Patterns in Mathematics",
-      "total_marks": 17,
-      "time_allowed_minutes": 45,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "Which formula represents the n-th triangular number?",
@@ -369,6 +137,54 @@
           "questions": [
             {
               "question_number": 1,
+              "question_text": "Evaluate the symmetrical counting sum without actual addition: 1 + 2 + 3 + 4 + 5 + 4 + 3 + 2 + 1.",
+              "marking_scheme_answer": "Identify central peak n = 5. Symmetrical sum formula = n^2 = 5^2 = 25.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Find the missing odd numbers in the sequence and calculate the total sum: 1 + 3 + 5 + ___ + 9 + 11 + ___ + 15.",
+              "marking_scheme_answer": "Missing numbers are 7 and 13. Total terms n = 8. Sum = 8^2 = 64.",
+              "marks": 2
+            },
+            {
+              "question_number": 1,
+              "question_text": "Calculate T_6 (6th triangular number) using the formula T_n = n(n+1)/2.",
+              "marking_scheme_answer": "T_6 = 6 x (6 + 1) / 2 = 6 x 7 / 2 = 21.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the peak number n if the symmetrical sum 1 + 2 + ... + n + ... + 2 + 1 equals 81?",
+              "marking_scheme_answer": "Formula: Sum = n^2. Given n^2 = 81 => n = 9.",
+              "marks": 2
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain the concept of an L-shaped gnomon in building a square dot array.",
+              "marking_scheme_answer": "An L-shaped gnomon is a boundary layer added to an n x n square grid to form an (n+1) x (n+1) grid. The layer contains 2n + 1 dots, corresponding to the next odd integer.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Find the sum: 1 + 2 + 3 + ... + 10 + ... + 3 + 2 + 1.",
+              "marking_scheme_answer": "Peak central number n = 10. Symmetrical sum = 10^2 = 100.",
+              "marks": 2
+            },
+            {
+              "question_number": 1,
+              "question_text": "Write the first 5 terms of powers of 2 starting from 2^1.",
+              "marking_scheme_answer": "2, 4, 8, 16, 32.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "What is the sum of T_4 and T_5 where T_n is the n-th triangular number?",
+              "marking_scheme_answer": "T_4 = 10, T_5 = 15. Sum = 10 + 15 = 25 = 5^2.",
+              "marks": 2
+            },
+            {
+              "question_number": 1,
               "question_text": "Identify the 5th odd number and find the sum of the first 5 odd numbers.",
               "marking_scheme_answer": "5th odd number = 2(5) - 1 = 9. Sum = 5^2 = 25.",
               "marks": 2
@@ -384,6 +200,54 @@
         {
           "section_name": "Section C (Short Answer Questions - 3 Marks)",
           "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Write the first 8 terms of the Virahānka (Fibonacci) sequence starting with V_1 = 1 and V_2 = 2.",
+              "marking_scheme_answer": "Rule: V_n = V_{n-1} + V_{n-2}. Terms: 1, 2, 3, 5, 8, 13, 21, 34.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "Show geometrically and algebraically why adding two consecutive triangular numbers T_3 and T_4 gives a square number.",
+              "marking_scheme_answer": "T_3 = 6, T_4 = 10. T_3 + T_4 = 6 + 10 = 16 = 4^2. Geometrically, two triangular dot arrays fit along a diagonal to form a 4x4 square array.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Verify that multiplying the 2nd triangular number (3) by 6 and adding 1 produces a hexagonal number.",
+              "marking_scheme_answer": "T_2 = 3. 6 x T_2 + 1 = 6(3) + 1 = 19. Hexagonal numbers sequence: 1, 7, 19, 37... 19 is indeed the 3rd hexagonal number.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "Find the sum of all odd numbers from 1 to 25 inclusive.",
+              "marking_scheme_answer": "Last term = 25. Number of terms n = (25 + 1) / 2 = 13. Sum = n^2 = 13^2 = 169.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Show that the sum of the first 5 even numbers minus the sum of the first 5 odd numbers equals 5.",
+              "marking_scheme_answer": "Sum of first 5 even numbers = 2 + 4 + 6 + 8 + 10 = 30. Sum of first 5 odd numbers = 5^2 = 25. Difference = 30 - 25 = 5.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "Calculate the 7th triangular number and the 7th square number.",
+              "marking_scheme_answer": "7th triangular number T_7 = 7(8)/2 = 28. 7th square number S_7 = 7^2 = 49.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "A student adds 1 + 3 + 5 + ... + 31 and gets 256. Verify if the calculation is correct.",
+              "marking_scheme_answer": "Last term = 31. Number of terms n = (31 + 1)/2 = 16. Sum = 16^2 = 256. Correct.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "Find the 9th term of the Virahānka sequence given V_7 = 21 and V_8 = 34.",
+              "marking_scheme_answer": "V_9 = V_8 + V_7 = 34 + 21 = 55.",
+              "marks": 3
+            },
             {
               "question_number": 1,
               "question_text": "Write the first 4 cube numbers and calculate their sum. What special property does this sum have?",
@@ -403,23 +267,38 @@
           "questions": [
             {
               "question_number": 1,
+              "question_text": "Case Study: Concentric Square Ring Tiling. A tile arrangement consists of concentric L-shaped gnomon layers around 1 central tile. Layer 1 has 1 tile, Layer 2 has 3 tiles, Layer 3 has 5 tiles, and so on up to Layer 15.\n(a) How many tiles are in the 15th outer layer? (2 marks)\n(b) What is the total number of tiles across all 15 layers? (3 marks)",
+              "marking_scheme_answer": "(a) Tile count in n-th layer = 2n - 1. For n = 15: 2(15) - 1 = 29 tiles.\n(b) Total tiles = Sum of first 15 odd numbers = n^2 = 15^2 = 225 tiles.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Case Study: Complete Graphs and Line Segments. When n points are marked on a circle and every pair of points is connected by a straight line segment:\n(a) State the formula for the total line segments in terms of triangular numbers. (2 marks)\n(b) Find the number of line segments for 5 points and for 8 points. (3 marks)",
+              "marking_scheme_answer": "(a) Total line segments for n points = T_{n-1} = (n-1)n / 2.\n(b) For 5 points: T_4 = 4 x 5 / 2 = 10 segments.\nFor 8 points: T_7 = 7 x 8 / 2 = 28 segments.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Case Study: Hexagonal Number Pattern. Hexagonal numbers follow the sequence 1, 7, 19, 37, 61...\n(a) Find the differences between consecutive terms: (7-1), (19-7), (37-19), (61-37). What pattern do these differences follow? (2 marks)\n(b) Use the pattern of differences to find the 6th hexagonal number. (3 marks)",
+              "marking_scheme_answer": "(a) Differences: 6, 12, 18, 24. They are consecutive multiples of 6.\n(b) The next difference will be 30. 6th hexagonal number = 61 + 30 = 91.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Case Study: Botanical Garden Planting Pattern. A gardener plants roses in a triangular formation: 1 rose in row 1, 2 in row 2, 3 in row 3, up to row 10.\n(a) How many total roses are planted in the first 10 rows? (2 marks)\n(b) If the gardener adds row 11 and row 12, how many additional roses are planted, and what is the new total? (3 marks)",
+              "marking_scheme_answer": "(a) Total roses = T_{10} = 10(11)/2 = 55 roses.\n(b) Row 11 has 11 roses, Row 12 has 12 roses. Additional roses = 11 + 12 = 23. New total = 55 + 23 = 78 roses.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
               "question_text": "Case Study: Koch Snowflake Iteration. Starting with an equilateral triangle of perimeter 3 units (Stage 0):\n(a) At Stage 1, each edge is replaced by 4 smaller segments of length 1/3. Find the new perimeter. (2 marks)\n(b) At Stage 2, each of the 12 segments is replaced by 4 smaller segments of length 1/9. Find the perimeter at Stage 2. (3 marks)",
               "marking_scheme_answer": "(a) Stage 1 has 3 x 4 = 12 segments of length 1/3. Perimeter = 12 x (1/3) = 4 units.\n(b) Stage 2 has 12 x 4 = 48 segments of length 1/9. Perimeter = 48 x (1/9) = 48/9 = 16/3 = 5.33 units.",
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 6,
-      "paper_title": "Chapter 1 Model Test Paper - Patterns in Mathematics",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
           "section_name": "Section A: Objective MCQs & Assertion-Reason",
-          "total_marks": 6,
           "questions": [
             {
               "question_number": "Q1",
@@ -499,12 +378,10 @@
               "correct_answer": "A. Both A and R are true, and R explains A.",
               "solution_and_marking_scheme": "T_4 = 4(5)/2 = 10. [1 Mark]"
             }
-          ],
-          "section_key": "section_a"
+          ]
         },
         {
           "section_name": "Section B: Short Answer Questions",
-          "total_marks": 10,
           "questions": [
             {
               "question_number": "Q7",
@@ -536,12 +413,10 @@
               "question_text": "Verify that T_3 + T_4 equals 4^2.",
               "solution_and_marking_scheme": "6 + 10 = 16 = 4^2. Verified! [2 Marks]"
             }
-          ],
-          "section_key": "section_b"
+          ]
         },
         {
           "section_name": "Section C: Long Answer Questions",
-          "total_marks": 8,
           "questions": [
             {
               "question_number": "Q12",
@@ -555,12 +430,10 @@
               "question_text": "(a) Write the first 8 Virahānka numbers starting 1, 2. (2 Marks)\n(b) Verify V_1 + V_2 + V_3 + V_4 = V_6 - 2. (2 Marks)",
               "solution_and_marking_scheme": "(a) 1, 2, 3, 5, 8, 13, 21, 34. [2 Marks]\n(b) LHS = 1 + 2 + 3 + 5 = 11; RHS = 13 - 2 = 11. Verified! [2 Marks]"
             }
-          ],
-          "section_key": "section_c"
+          ]
         },
         {
           "section_name": "Section D: Competency / Case-Based Assessment",
-          "total_marks": 6,
           "questions": [
             {
               "question_number": "Q14",
@@ -587,8 +460,7 @@
                 }
               ]
             }
-          ],
-          "section_key": "section_d"
+          ]
         }
       ]
     }

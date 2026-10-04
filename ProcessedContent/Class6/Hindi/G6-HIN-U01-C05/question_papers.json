@@ -3,9 +3,9 @@
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - रहीम के दोहे (NCERT मॉडल प्रश्न पत्र)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
+      "paper_title": "रहीम के दोहे - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "खंड 'क' (वस्तुनिष्ठ प्रश्न / MCQs)",
@@ -92,17 +92,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "अध्याय 5: रहीम के दोहे - मॉडल प्रश्न पत्र (NCERT पैटर्न)",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
-          "section_title": "खंड 'क' - वस्तुनिष्ठ प्रश्न एवं कथन-कारण (MCQs & Assertion-Reason) [6 अंक]",
+          "section_name": "Section A",
           "questions": [
             {
               "q_no": 1,
@@ -188,13 +180,7 @@
               ],
               "correct_answer": "क) कथन और कारण दोनों सही हैं तथा कारण कथन की सही व्याख्या करता है।",
               "marking_scheme_and_explanation": "1 अंक - दृष्टांत द्वारा समाज में सभी की उपयोगिता सिद्ध की गई है।"
-            }
-          ],
-          "section_key": "section_A_mcq_and_assertion_reason"
-        },
-        {
-          "section_title": "खंड 'ख' - लघु उत्तरीय प्रश्न एवं व्याकरण (Short Answer Questions & Grammar) [10 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Understanding",
@@ -229,13 +215,7 @@
               "marks": 2,
               "question_text": "'रहिमन धागा प्रेम का...' दोहे में कौन-सा अलंकार है?",
               "marking_scheme_and_model_answer": "2 अंक: रूपक अलंकार (प्रेम रूपी धागा) एवं अनुप्रास अलंकार।"
-            }
-          ],
-          "section_key": "section_B_short_answer"
-        },
-        {
-          "section_title": "खंड 'ग' - दीर्घ उत्तरीय एवं भाव-प्रधान प्रश्न (Long Answer Questions) [8 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Application",
@@ -250,36 +230,7 @@
               "question_text": "'रहीम के दोहे आज भी व्यावहारिक जीवन में उतने ही प्रासंगिक हैं।' समीक्षा कीजिए।",
               "marking_scheme_and_model_answer": "4 अंक: आज समाज में जो कटुता, स्वार्थ और अहंकार बढ़ रहा है, उसे दूर करने के लिए रहीम के प्रेम, वाणी-संयम और समानता के सूत्र अत्यंत व्यावहारिक मार्गदर्शन देते हैं।"
             }
-          ],
-          "section_key": "section_C_long_answer"
-        },
-        {
-          "section_title": "खंड 'घ' - योग्यता-आधारित / केस-स्टडी प्रश्न (Competency & Case-Based Assessment) [6 अंक]",
-          "case_passage": "दोहा ध्यानपूर्वक पढ़िए:\n'रहिमन देखि बड़ेन को, लघु न दीजिए डारि।\nजहाँ काम आवे सुई, कहा करे तरवारि॥'",
-          "sub_questions": [
-            {
-              "sub_q_no": "(1)",
-              "marks": 2,
-              "blooms_level": "Understanding",
-              "question_text": "इस दोहे में कवि ने 'बड़ेन' और 'लघु' का प्रयोग किस संदर्भ में किया है?",
-              "model_answer": "2 अंक: 'बड़ेन' का अर्थ शक्तिशाली/धनी लोग हैं और 'लघु' का अर्थ साधारण लोग हैं। धनवानों को पाकर निर्धनों का अनादर न करें।"
-            },
-            {
-              "sub_q_no": "(2)",
-              "marks": 2,
-              "blooms_level": "Application",
-              "question_text": "सुई और तलवार का उदाहरण देकर कवि क्या सिद्ध करना चाहते हैं?",
-              "model_answer": "2 अंक: हर छोटी-बड़ी वस्तु का अपना महत्व होता है। कपड़ा सीने में सुई काम आती है, तलवार नहीं।"
-            },
-            {
-              "sub_q_no": "(3)",
-              "marks": 2,
-              "blooms_level": "Analyzing_Evaluating",
-              "question_text": "विद्यालय या समाज में आप इस दोहे की सीख को कैसे लागू करेंगे?",
-              "model_answer": "2 अंक: मैं किसी भी साथी या कर्मचारी को छोटा समझकर उसकी उपेक्षा नहीं करूँगा और सबके काम का आदर करूँगा।"
-            }
-          ],
-          "section_key": "section_D_case_based_competency"
+          ]
         }
       ]
     }

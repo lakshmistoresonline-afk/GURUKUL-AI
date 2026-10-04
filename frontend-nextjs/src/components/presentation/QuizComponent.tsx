@@ -14,8 +14,17 @@ export default function QuizComponent({ quiz }: QuizProps) {
   if (quiz && !Array.isArray(quiz) && typeof quiz === 'object') {
     if (Array.isArray((quiz as any).questions)) {
       quizList = (quiz as any).questions;
+    } else if (Array.isArray((quiz as any).quiz)) {
+      quizList = (quiz as any).quiz;
+    } else if (Array.isArray((quiz as any).quizzes)) {
+      quizList = (quiz as any).quizzes;
     } else {
-      quizList = Object.values(quiz);
+      const foundArrayProp = Object.values(quiz).find(val => Array.isArray(val));
+      if (foundArrayProp) {
+        quizList = foundArrayProp;
+      } else {
+        quizList = Object.values(quiz);
+      }
     }
   }
 
@@ -52,9 +61,12 @@ export default function QuizComponent({ quiz }: QuizProps) {
 
       <div className="space-y-6">
         {quizList.map((q: any, idx: number) => {
-          const qText = q.question || q.question_text || q.prompt || q.statement || '';
-          const rawCorrect = q.correct_option || q.correct_answer || q.answer;
+          if (!q || typeof q !== 'object') return null;
+          const qText = q.question || q.question_text || q.prompt || q.statement || q.q || '';
+          const rawCorrect = q.correct_option || q.correct_answer || q.answer || q.correct;
           const qType = q.type || q.question_type || '';
+
+          if (!qText && !q.quiz_id) return null;
 
           let optionsArr: string[] = [];
           if (Array.isArray(q.options)) {
@@ -80,7 +92,7 @@ export default function QuizComponent({ quiz }: QuizProps) {
             <div key={idx} className="p-6 bg-slate-50 border border-slate-200 rounded-3xl space-y-4 shadow-sm">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="text-xs font-bold text-indigo-600 uppercase tracking-wide">
-                  Question #{idx + 1} {qType ? `• ${qType}` : ''} {q.category || q.qid ? `• ${q.category || q.qid}` : ''}
+                  Question #{idx + 1} {qType ? `• ${qType}` : ''} {q.category || q.qid || q.quiz_id ? `• ${q.category || q.qid || q.quiz_id}` : ''}
                 </span>
                 {(q.difficulty_level || q.difficulty || q.blooms_level) && (
                   <span className="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase bg-emerald-100 text-emerald-800">
@@ -113,14 +125,13 @@ export default function QuizComponent({ quiz }: QuizProps) {
                         className={`p-4 rounded-2xl text-xs sm:text-sm text-left border transition-all flex items-center justify-between ${btnStyle}`}
                       >
                         <span>{opt}</span>
-                        {isAnswered && (opt === correctAnswer || opt.startsWith(`${rawCorrect})`) || opt === String(rawCorrect)) && <span className="text-emerald-600 font-black">✓</span>}
+                        {isAnswered && (opt === correctAnswer || opt.startsWith(`${rawCorrect})`) || opt === String(correctAnswer)) && <span className="text-emerald-600 font-black">✓</span>}
                         {isAnswered && opt === userAnswer && opt !== correctAnswer && !opt.startsWith(`${rawCorrect})`) && <span className="text-rose-600 font-black">✗</span>}
                       </button>
                     );
                   })}
                 </div>
               ) : (
-                /* Text Input for Fill-in-the-Blank / Reasoning / Descriptive */
                 <div className="space-y-3 pt-2">
                   <div className="flex gap-2">
                     <input
@@ -128,39 +139,31 @@ export default function QuizComponent({ quiz }: QuizProps) {
                       placeholder="Type your answer here..."
                       value={textVal}
                       onChange={(e) => handleTextChange(idx, e.target.value)}
-                      disabled={isSubmitted}
-                      className="flex-1 px-4 py-3 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="flex-1 px-4 py-3 bg-white border border-slate-200 rounded-2xl text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-xs"
                     />
                     <button
                       onClick={() => handleSubmitText(idx)}
-                      disabled={isSubmitted || !textVal.trim()}
-                      className="px-5 py-3 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-55 text-white text-xs font-bold rounded-xl shadow-sm transition-all"
+                      className="px-5 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl font-black text-xs shadow-md transition-all"
                     >
-                      {isSubmitted ? 'Submitted ✓' : 'Submit Answer'}
+                      Check Answer
                     </button>
                   </div>
-                  {isSubmitted && correctAnswer && (
-                    <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 font-semibold">
-                      Expected Answer Key: {String(correctAnswer)}
-                    </div>
-                  )}
-                </div>
-              )}
 
-              {/* Explanation Toggle */}
-              {(correctAnswer || explanation) && (
-                <div className="pt-2 flex flex-col items-start gap-2 border-t border-slate-200/60 mt-4">
-                  <button
-                    onClick={() => toggleExplanation(idx)}
-                    className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors"
-                  >
-                    {isExpanded ? 'Hide Explanation ▴' : 'Show Explanation ▾'}
-                  </button>
+                  {rawCorrect && (
+                    <div className="pt-2">
+                      <button
+                        onClick={() => toggleExplanation(idx)}
+                        className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors"
+                      >
+                        {isExpanded ? 'Hide Answer & Explanation ▴' : 'Show Answer & Explanation ▾'}
+                      </button>
 
-                  {isExpanded && (
-                    <div className="w-full p-4 bg-indigo-50/60 border border-indigo-100 rounded-2xl text-xs text-slate-700 leading-relaxed space-y-1">
-                      <div><strong className="text-indigo-900">Correct Answer:</strong> {String(correctAnswer)}</div>
-                      {explanation && <div><strong className="text-indigo-900">Explanation:</strong> {explanation}</div>}
+                      {isExpanded && (
+                        <div className="mt-2 p-4 bg-emerald-50 border border-emerald-200 rounded-2xl text-xs text-emerald-900 space-y-1 animate-in fade-in duration-200">
+                          <div><strong>Correct Answer:</strong> {String(rawCorrect)}</div>
+                          {explanation && <div className="text-slate-700 italic"><em>Explanation:</em> {explanation}</div>}
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>

@@ -3,9 +3,9 @@
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - Working with Fractions (Multiplication & Brahmagupta's Rule)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
+      "paper_title": "Working with Fractions - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "Section A (MCQs)",
@@ -45,60 +45,7 @@
               ],
               "correct_answer": "B) Greater than dividend",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Evaluate (2/3) * (4/5) using Brahmagupta's rule.",
-              "marking_scheme_answer": "(2 * 4) / (3 * 5) = 8/15.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Maria bought 8 m of lace. She uses 1/4 m for each bag. How many bags can she decorate?",
-              "marking_scheme_answer": "8 / (1/4) = 8 * 4 = 32 bags.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Evaluate the telescoping product (1 - 1/2)(1 - 1/3)(1 - 1/4)...(1 - 1/10).",
-              "marking_scheme_answer": "(1/2) * (2/3) * (3/4) * ... * (9/10) = 1/10.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Somu owned a plot of land. Government took 1/6 for a road. Somu gave half of the remaining land to her daughter. Calculate the fraction remaining with Somu.",
-              "marking_scheme_answer": "Remaining after road = 1 - 1/6 = 5/6. Daughter's share = (1/2) * (5/6) = 5/12. Somu's remaining share = 5/6 - 5/12 = 10/12 - 5/12 = 5/12 of original land.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "A water tank tap fills 7/10 of a tank in 1 hour. Calculate: (1) fraction filled in 1/3 hour, (2) total hours required to fill the complete tank.",
-              "marking_scheme_answer": "1. In 1/3 hr = (7/10) * (1/3) = 7/30 of tank. 2. Total time for full tank = 1 / (7/10) = 10/7 hours = 1 and 3/7 hours.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "Set 2 - Working with Fractions (Division & Reciprocals)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "What is (3/4) / (1/2)?",
@@ -134,60 +81,7 @@
               ],
               "correct_answer": "B) 1/16",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Ribbon of length 1/2 meter is cut into 8 equal badges. Find length per badge.",
-              "marking_scheme_answer": "(1/2) / 8 = (1/2) * (1/8) = 1/16 meter.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Evaluate (14/4) / 2.",
-              "marking_scheme_answer": "(14/4) * (1/2) = 14/8 = 7/4.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Evaluate (3/4) / (3/4) + (1/6) / (11/12).",
-              "marking_scheme_answer": "(3/4)/(3/4) = 1. (1/6)/(11/12) = (1/6)*(12/11) = 2/11. Sum = 1 + 2/11 = 13/11.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A bakery uses 3/4 kg flour for one large loaf of bread. How many full loaves can be made from 9 kg of flour?",
-              "marking_scheme_answer": "Loaves count = 9 / (3/4) = 9 * (4/3) = 3 * 4 = 12 loaves.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Draw/Describe an area model representing (3/4) * (2/3) on a 1x1 unit square grid. Calculate the overlapping double-shaded fraction.",
-              "marking_scheme_answer": "Partition 1x1 square into 4 vertical strips; shade 3 strips (3/4). Partition horizontally into 3 strips; shade 2 strips (2/3). Total grid cells = 4 * 3 = 12. Overlapping double-shaded cells = 3 * 2 = 6 cells. Fraction = 6/12 = 1/2.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 3,
-      "paper_title": "Set 3 - Working with Fractions (Area Models & Word Problems)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "Product of a proper fraction and an improper fraction (>1) is always:",
@@ -223,60 +117,7 @@
               ],
               "correct_answer": "B) 1",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Multiply (5/7) * (14/15) and reduce to lowest terms.",
-              "marking_scheme_answer": "(5 * 14) / (7 * 15) = (1 * 2) / (1 * 3) = 2/3.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Divide (5/6) / (2/3).",
-              "marking_scheme_answer": "(5/6) * (3/2) = 15/12 = 5/4.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "A car travels 15 km on 1 liter petrol. How far will it travel on 2 and 3/4 liters petrol?",
-              "marking_scheme_answer": "2 and 3/4 = 11/4 liters. Distance = 15 * (11/4) = 165/4 = 41.25 km.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A container holds 12 and 1/2 liters of milk. It is poured into small bottles of capacity 3/4 liter each. How many full bottles are filled, and how much milk is left over?",
-              "marking_scheme_answer": "12 and 1/2 = 25/2 liters. Bottles = (25/2) / (3/4) = (25/2) * (4/3) = 50/3 = 16 and 2/3. So 16 full bottles are filled. Leftover milk = (2/3) * (3/4) = 2/4 = 1/2 liter.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Evaluate general telescoping product (1 - 1/2)(1 - 1/3)(1 - 1/4)...(1 - 1/n) and show step-by-step cross-cancellation.",
-              "marking_scheme_answer": "Factors: (1/2) * (2/3) * (3/4) * (4/5) * ... * ((n-1)/n). Numerator 2 cancels denominator 2, 3 cancels 3, ..., (n-1) cancels (n-1). Remaining numerator = 1, remaining denominator = n. Product = 1/n.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 4,
-      "paper_title": "Set 4 - Working with Fractions (Telescoping Series & Mixed Operations)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "Reciprocal of 1/8 is:",
@@ -312,60 +153,7 @@
               ],
               "correct_answer": "B) 1/8",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Evaluate (3/5) * (15/18) * (4/9).",
-              "marking_scheme_answer": "(3*15*4)/(5*18*9) = (180)/(810) = 2/9.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Divide 6 by (2/3).",
-              "marking_scheme_answer": "6 * (3/2) = 18/2 = 9.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "A garden path is 20 m long. Each stepping stone takes 2/5 m. How many stones line the path?",
-              "marking_scheme_answer": "20 / (2/5) = 20 * (5/2) = 50 stepping stones.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A school library receives 600 new books. 1/3 are Science, 1/4 are Mathematics, and remaining are Literature. Calculate book counts for each subject.",
-              "marking_scheme_answer": "Science = 600 * (1/3) = 200 books. Mathematics = 600 * (1/4) = 150 books. Literature = 600 - (200 + 150) = 600 - 350 = 250 books.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Evaluate expression E = (1/2 + 1/3) / (1/2 - 1/3) step by step.",
-              "marking_scheme_answer": "Numerator: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Denominator: 1/2 - 1/3 = 3/6 - 2/6 = 1/6. E = (5/6) / (1/6) = (5/6) * (6/1) = 5.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 5,
-      "paper_title": "Set 5 - Working with Fractions (Comprehensive Assessment)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "If (a/b) * x = 1, then x is:",
@@ -409,6 +197,78 @@
           "questions": [
             {
               "question_number": 1,
+              "question_text": "Evaluate (2/3) * (4/5) using Brahmagupta's rule.",
+              "marking_scheme_answer": "(2 * 4) / (3 * 5) = 8/15.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Maria bought 8 m of lace. She uses 1/4 m for each bag. How many bags can she decorate?",
+              "marking_scheme_answer": "8 / (1/4) = 8 * 4 = 32 bags.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Evaluate the telescoping product (1 - 1/2)(1 - 1/3)(1 - 1/4)...(1 - 1/10).",
+              "marking_scheme_answer": "(1/2) * (2/3) * (3/4) * ... * (9/10) = 1/10.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Ribbon of length 1/2 meter is cut into 8 equal badges. Find length per badge.",
+              "marking_scheme_answer": "(1/2) / 8 = (1/2) * (1/8) = 1/16 meter.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate (14/4) / 2.",
+              "marking_scheme_answer": "(14/4) * (1/2) = 14/8 = 7/4.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Evaluate (3/4) / (3/4) + (1/6) / (11/12).",
+              "marking_scheme_answer": "(3/4)/(3/4) = 1. (1/6)/(11/12) = (1/6)*(12/11) = 2/11. Sum = 1 + 2/11 = 13/11.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Multiply (5/7) * (14/15) and reduce to lowest terms.",
+              "marking_scheme_answer": "(5 * 14) / (7 * 15) = (1 * 2) / (1 * 3) = 2/3.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Divide (5/6) / (2/3).",
+              "marking_scheme_answer": "(5/6) * (3/2) = 15/12 = 5/4.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "A car travels 15 km on 1 liter petrol. How far will it travel on 2 and 3/4 liters petrol?",
+              "marking_scheme_answer": "2 and 3/4 = 11/4 liters. Distance = 15 * (11/4) = 165/4 = 41.25 km.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Evaluate (3/5) * (15/18) * (4/9).",
+              "marking_scheme_answer": "(3*15*4)/(5*18*9) = (180)/(810) = 2/9.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Divide 6 by (2/3).",
+              "marking_scheme_answer": "6 * (3/2) = 18/2 = 9.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "A garden path is 20 m long. Each stepping stone takes 2/5 m. How many stones line the path?",
+              "marking_scheme_answer": "20 / (2/5) = 20 * (5/2) = 50 stepping stones.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
               "question_text": "Find half of 5/6.",
               "marking_scheme_answer": "(1/2) * (5/6) = 5/12.",
               "marks": 2
@@ -424,12 +284,90 @@
               "question_text": "A painter uses 3/8 can of paint per room. How many rooms can be painted with 6 cans?",
               "marking_scheme_answer": "6 / (3/8) = 6 * (8/3) = 16 rooms.",
               "marks": 3
+            },
+            {
+              "question_number": 7,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "Maria bought 8 meters of lace. She uses 1/4 meter to decorate each bag. Calculate how many bags she can decorate.",
+              "marking_scheme_solution": "Bags = Total lace / Lace per bag = 8 / (1/4). [1 Mark]\nCalculation = 8 * 4 = 32 bags. [1 Mark]"
+            },
+            {
+              "question_number": 8,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "A 1/2 meter ribbon is divided equally to make 8 badges. Find the ribbon length used per badge.",
+              "marking_scheme_solution": "Length per badge = (1/2) / 8 = (1/2) * (1/8). [1 Mark]\nCalculation = 1/16 meter. [1 Mark]"
+            },
+            {
+              "question_number": 9,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "Evaluate: (3/4) / (3/4) + (1/6) / (11/12).",
+              "marking_scheme_solution": "Part 1: (3/4) / (3/4) = 1. [0.5 Mark]\nPart 2: (1/6) / (11/12) = (1/6) * (12/11) = 2/11. [1 Mark]\nSum = 1 + 2/11 = 13/11. [0.5 Mark]"
+            },
+            {
+              "question_number": 10,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "A water tap fills 7/10 of a tank in 1 hour. Calculate the total time required to fill the entire tank.",
+              "marking_scheme_solution": "Time = 1 / (7/10) = 1 * (10/7). [1 Mark]\nTime = 10/7 hours = 1 and 3/7 hours. [1 Mark]"
+            },
+            {
+              "question_number": 11,
+              "blooms_level": "Understanding_Comprehension",
+              "question": "Demonstrate (3/4) * (2/3) using an area model grid and simplify the result.",
+              "marking_scheme_solution": "In a 1x1 grid, 3/4 horizontal and 2/3 vertical shading overlaps in 6 out of 12 cells. [1 Mark]\nResult = 6/12 = 1/2. [1 Mark]"
             }
           ]
         },
         {
           "section_name": "Section C (Long Answer / Case-Study)",
           "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Somu owned a plot of land. Government took 1/6 for a road. Somu gave half of the remaining land to her daughter. Calculate the fraction remaining with Somu.",
+              "marking_scheme_answer": "Remaining after road = 1 - 1/6 = 5/6. Daughter's share = (1/2) * (5/6) = 5/12. Somu's remaining share = 5/6 - 5/12 = 10/12 - 5/12 = 5/12 of original land.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "A water tank tap fills 7/10 of a tank in 1 hour. Calculate: (1) fraction filled in 1/3 hour, (2) total hours required to fill the complete tank.",
+              "marking_scheme_answer": "1. In 1/3 hr = (7/10) * (1/3) = 7/30 of tank. 2. Total time for full tank = 1 / (7/10) = 10/7 hours = 1 and 3/7 hours.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A bakery uses 3/4 kg flour for one large loaf of bread. How many full loaves can be made from 9 kg of flour?",
+              "marking_scheme_answer": "Loaves count = 9 / (3/4) = 9 * (4/3) = 3 * 4 = 12 loaves.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Draw/Describe an area model representing (3/4) * (2/3) on a 1x1 unit square grid. Calculate the overlapping double-shaded fraction.",
+              "marking_scheme_answer": "Partition 1x1 square into 4 vertical strips; shade 3 strips (3/4). Partition horizontally into 3 strips; shade 2 strips (2/3). Total grid cells = 4 * 3 = 12. Overlapping double-shaded cells = 3 * 2 = 6 cells. Fraction = 6/12 = 1/2.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A container holds 12 and 1/2 liters of milk. It is poured into small bottles of capacity 3/4 liter each. How many full bottles are filled, and how much milk is left over?",
+              "marking_scheme_answer": "12 and 1/2 = 25/2 liters. Bottles = (25/2) / (3/4) = (25/2) * (4/3) = 50/3 = 16 and 2/3. So 16 full bottles are filled. Leftover milk = (2/3) * (3/4) = 2/4 = 1/2 liter.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate general telescoping product (1 - 1/2)(1 - 1/3)(1 - 1/4)...(1 - 1/n) and show step-by-step cross-cancellation.",
+              "marking_scheme_answer": "Factors: (1/2) * (2/3) * (3/4) * (4/5) * ... * ((n-1)/n). Numerator 2 cancels denominator 2, 3 cancels 3, ..., (n-1) cancels (n-1). Remaining numerator = 1, remaining denominator = n. Product = 1/n.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A school library receives 600 new books. 1/3 are Science, 1/4 are Mathematics, and remaining are Literature. Calculate book counts for each subject.",
+              "marking_scheme_answer": "Science = 600 * (1/3) = 200 books. Mathematics = 600 * (1/4) = 150 books. Literature = 600 - (200 + 150) = 600 - 350 = 250 books.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Evaluate expression E = (1/2 + 1/3) / (1/2 - 1/3) step by step.",
+              "marking_scheme_answer": "Numerator: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Denominator: 1/2 - 1/3 = 3/6 - 2/6 = 1/6. E = (5/6) / (1/6) = (5/6) * (6/1) = 5.",
+              "marks": 5
+            },
             {
               "question_number": 1,
               "question_text": "An express train completes a 360 km journey. It covers 2/5 of distance in 1st hour, 1/3 of distance in 2nd hour, and remaining in 3rd hour. Find distance covered in each hour.",
@@ -443,18 +381,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 6,
-      "paper_title": "Class 7 Mathematics Model Test Paper - Chapter 8: Working with Fractions",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
           "section_name": "Section A (MCQs & Assertion-Reason)",
-          "total_marks": 6,
           "questions": [
             {
               "question_number": 1,
@@ -543,44 +472,7 @@
           ]
         },
         {
-          "section_name": "Section B (Short Answer Questions)",
-          "total_marks": 10,
-          "questions": [
-            {
-              "question_number": 7,
-              "blooms_level": "Application_Problem_Solving",
-              "question": "Maria bought 8 meters of lace. She uses 1/4 meter to decorate each bag. Calculate how many bags she can decorate.",
-              "marking_scheme_solution": "Bags = Total lace / Lace per bag = 8 / (1/4). [1 Mark]\nCalculation = 8 * 4 = 32 bags. [1 Mark]"
-            },
-            {
-              "question_number": 8,
-              "blooms_level": "Application_Problem_Solving",
-              "question": "A 1/2 meter ribbon is divided equally to make 8 badges. Find the ribbon length used per badge.",
-              "marking_scheme_solution": "Length per badge = (1/2) / 8 = (1/2) * (1/8). [1 Mark]\nCalculation = 1/16 meter. [1 Mark]"
-            },
-            {
-              "question_number": 9,
-              "blooms_level": "Application_Problem_Solving",
-              "question": "Evaluate: (3/4) / (3/4) + (1/6) / (11/12).",
-              "marking_scheme_solution": "Part 1: (3/4) / (3/4) = 1. [0.5 Mark]\nPart 2: (1/6) / (11/12) = (1/6) * (12/11) = 2/11. [1 Mark]\nSum = 1 + 2/11 = 13/11. [0.5 Mark]"
-            },
-            {
-              "question_number": 10,
-              "blooms_level": "Application_Problem_Solving",
-              "question": "A water tap fills 7/10 of a tank in 1 hour. Calculate the total time required to fill the entire tank.",
-              "marking_scheme_solution": "Time = 1 / (7/10) = 1 * (10/7). [1 Mark]\nTime = 10/7 hours = 1 and 3/7 hours. [1 Mark]"
-            },
-            {
-              "question_number": 11,
-              "blooms_level": "Understanding_Comprehension",
-              "question": "Demonstrate (3/4) * (2/3) using an area model grid and simplify the result.",
-              "marking_scheme_solution": "In a 1x1 grid, 3/4 horizontal and 2/3 vertical shading overlaps in 6 out of 12 cells. [1 Mark]\nResult = 6/12 = 1/2. [1 Mark]"
-            }
-          ]
-        },
-        {
           "section_name": "Section C (Long Answer Questions / Numerical Proofs)",
-          "total_marks": 8,
           "questions": [
             {
               "question_number": 12,
@@ -598,7 +490,6 @@
         },
         {
           "section_name": "Section D (Competency / Case-Based Assessment)",
-          "total_marks": 6,
           "questions": [
             {
               "question_number": 14,
@@ -624,11 +515,7 @@
             }
           ]
         }
-      ],
-      "additional_metadata": {
-        "chapter_number": 8,
-        "chapter_title": "Working with Fractions"
-      }
+      ]
     }
   ]
 }

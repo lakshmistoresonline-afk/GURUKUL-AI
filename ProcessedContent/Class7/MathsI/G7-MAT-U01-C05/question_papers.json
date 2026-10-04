@@ -3,9 +3,9 @@
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - Parallel & Intersecting Lines (Angles & Linear Pairs)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
+      "paper_title": "Parallel and Intersecting Lines - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "Section A (MCQs)",
@@ -45,60 +45,7 @@
               ],
               "correct_answer": "B) 180°",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Two intersecting lines form angle x and angle y as a linear pair. If x = 2y, find x and y.",
-              "marking_scheme_answer": "x + y = 180° => 2y + y = 180° => 3y = 180° => y = 60°. Then x = 120°.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Define parallel lines and state their key distance property.",
-              "marking_scheme_answer": "Parallel lines lie in the same plane and never intersect regardless of extension. The perpendicular distance between them remains constant throughout.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "In an intersection of two lines forming clockwise angles a, b, c, d, if a = 35°, find b, c, d.",
-              "marking_scheme_answer": "b = 180° - 35° = 145° (linear pair). c = a = 35° (vertically opposite). d = b = 145° (vertically opposite).",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Architects design a window grid where vertical frame line V is perpendicular to horizontal sill line H. Diagonal support brace D crosses the intersection at 35° to line H. Calculate all four angles formed around the intersection.",
-              "marking_scheme_answer": "Angle 1 = 35°. Angle 2 (linear pair) = 180° - 35° = 145°. Angle 3 (vertically opposite to 1) = 35°. Angle 4 (vertically opposite to 2) = 145°.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Explain how paper folding can be used to construct parallel and perpendicular line creases step by step.",
-              "marking_scheme_answer": "1. Fold square paper in half horizontally to make crease L1. Fold in half again horizontally to make creases L2, L3. Unfold to see parallel horizontal lines. 2. Fold sheet vertically across horizontal creases to create a perpendicular line crease P1 forming 90° right angles with all horizontal creases.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "Set 2 - Parallel & Intersecting Lines (Properties & Constructions)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "Perpendicular lines intersect at what angle?",
@@ -134,60 +81,7 @@
               ],
               "correct_answer": "B) Railway tracks",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "If one angle of two intersecting lines is 90°, prove that all four angles are 90°.",
-              "marking_scheme_answer": "Let a = 90°. Linear pair b = 180° - 90° = 90°. Vertically opposite c = a = 90°. Vertically opposite d = b = 90°. All four angles equal 90°.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Distinguish between intersecting and parallel lines.",
-              "marking_scheme_answer": "Intersecting lines meet at exactly one common point. Parallel lines lie in the same plane and never meet at any point.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Two adjacent angles on a straight line are (3x + 10)° and (2x + 20)°. Find x and the measure of each angle.",
-              "marking_scheme_answer": "(3x + 10) + (2x + 20) = 180° => 5x + 30 = 180° => 5x = 150° => x = 30°. Angle 1 = 3(30)+10 = 100°. Angle 2 = 2(30)+20 = 80°.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A road intersection has two straight crossing streets A and B. Traffic police measure one corner angle to be (4x - 15)° and the adjacent corner angle to be (x + 20)°. Determine x, calculate all four corner angles, and check vertically opposite equality.",
-              "marking_scheme_answer": "Linear pair sum: (4x - 15) + (x + 20) = 180° => 5x + 5 = 180° => 5x = 175° => x = 35°. Angle 1 = 4(35) - 15 = 125°. Angle 2 = 35 + 20 = 55°. Angle 3 (vertically opposite to 1) = 125°. Angle 4 (vertically opposite to 2) = 55°. Checks: 125 + 55 = 180°; vertically opposite angles are equal.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Prove that if two lines intersect, the vertically opposite angles are equal using the linear pair axiom.",
-              "marking_scheme_answer": "Let lines l and m intersect forming angles a, b, c, d in order. 1. a and b form a linear pair: a + b = 180°. 2. b and c form a linear pair: b + c = 180°. 3. Equating both sums: a + b = b + c. Subtracting b from both sides yields a = c. Thus vertically opposite angles a and c are equal.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 3,
-      "paper_title": "Set 3 - Parallel & Intersecting Lines (Geometric Reasoning)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "If two lines are perpendicular to the same line, what is the relation between them?",
@@ -223,60 +117,7 @@
               ],
               "correct_answer": "B) Supplementary",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Find the angle which is equal to its supplement.",
-              "marking_scheme_answer": "x + x = 180° => 2x = 180° => x = 90°.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "If two vertically opposite angles are (2x + 10)° and (x + 35)°, find x.",
-              "marking_scheme_answer": "2x + 10 = x + 35 => 2x - x = 35 - 10 => x = 25°.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Three lines intersect at a single common point. How many vertically opposite angle pairs are formed?",
-              "marking_scheme_answer": "3 lines intersecting at one point form 6 angles. Total vertically opposite pairs = 3 pairs.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A fence design features two parallel horizontal wooden rails R1 and R2 crossed by vertical posts P. Explain why all intersection angles formed by P with R1 and R2 are right angles (90°).",
-              "marking_scheme_answer": "If post P is perpendicular to R1, it forms 90° angles. Since R1 and R2 are parallel, post P crosses R2 at the exact same inclination angle. Thus, all 8 angles around both intersections with R1 and R2 equal 90°.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Four ray lines OA, OB, OC, OD meet at point O in clockwise order. If angle AOB = 80°, angle BOC = 100°, angle COD = 80°, prove whether lines AC and BD are straight lines forming vertically opposite angles.",
-              "marking_scheme_answer": "Check angle AOB + angle BOC = 80° + 100° = 180°. Since adjacent angles sum to 180°, AOC forms a straight line AC. Check angle BOC + angle COD = 100° + 80° = 180°, so BOD forms a straight line BD. Since AC and BD are straight intersecting lines, angle AOB (80°) and angle COD (80°) are vertically opposite and equal.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 4,
-      "paper_title": "Set 4 - Parallel & Intersecting Lines (Grid Geometry & Paper Models)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "If angle x and angle y are supplementary and x = y, then x =",
@@ -312,60 +153,7 @@
               ],
               "correct_answer": "B) Parallel",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Find the supplement of 135°.",
-              "marking_scheme_answer": "180° - 135° = 45°.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "An angle is 20° more than its supplement. Find the angle.",
-              "marking_scheme_answer": "Let angle be x. Supplement = 180° - x. Equation: x = (180 - x) + 20 => 2x = 200 => x = 100°.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "In a figure, two lines AB and CD intersect at O. If angle AOC = 50°, find angle AOD and angle BOD.",
-              "marking_scheme_answer": "angle AOD = 180° - 50° = 130° (linear pair). angle BOD = angle AOC = 50° (vertically opposite).",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A steel bridge truss contains two parallel chord beams connected by diagonal struts forming angles with the chord. If one interior angle is 65°, find all remaining three angles at that junction.",
-              "marking_scheme_answer": "Angle 1 = 65°. Angle 2 (linear pair) = 180° - 65° = 115°. Angle 3 (vertically opposite) = 65°. Angle 4 (vertically opposite to 2) = 115°.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Draw/Describe the grid dot paper test to verify whether two given line segments on a dot grid are parallel.",
-              "marking_scheme_answer": "Count grid units: measure vertical rise and horizontal run between grid dots for segment 1. Measure rise and run for segment 2. If the ratio of rise to run is identical for both segments, they maintain constant inclination and constant perpendicular distance, proving they are parallel.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 5,
-      "paper_title": "Set 5 - Parallel & Intersecting Lines (Comprehensive Geometry)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "If a line l is perpendicular to line m, and line m is parallel to line n, what is the relation between l and n?",
@@ -409,6 +197,78 @@
           "questions": [
             {
               "question_number": 1,
+              "question_text": "Two intersecting lines form angle x and angle y as a linear pair. If x = 2y, find x and y.",
+              "marking_scheme_answer": "x + y = 180° => 2y + y = 180° => 3y = 180° => y = 60°. Then x = 120°.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Define parallel lines and state their key distance property.",
+              "marking_scheme_answer": "Parallel lines lie in the same plane and never intersect regardless of extension. The perpendicular distance between them remains constant throughout.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "In an intersection of two lines forming clockwise angles a, b, c, d, if a = 35°, find b, c, d.",
+              "marking_scheme_answer": "b = 180° - 35° = 145° (linear pair). c = a = 35° (vertically opposite). d = b = 145° (vertically opposite).",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "If one angle of two intersecting lines is 90°, prove that all four angles are 90°.",
+              "marking_scheme_answer": "Let a = 90°. Linear pair b = 180° - 90° = 90°. Vertically opposite c = a = 90°. Vertically opposite d = b = 90°. All four angles equal 90°.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Distinguish between intersecting and parallel lines.",
+              "marking_scheme_answer": "Intersecting lines meet at exactly one common point. Parallel lines lie in the same plane and never meet at any point.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Two adjacent angles on a straight line are (3x + 10)° and (2x + 20)°. Find x and the measure of each angle.",
+              "marking_scheme_answer": "(3x + 10) + (2x + 20) = 180° => 5x + 30 = 180° => 5x = 150° => x = 30°. Angle 1 = 3(30)+10 = 100°. Angle 2 = 2(30)+20 = 80°.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Find the angle which is equal to its supplement.",
+              "marking_scheme_answer": "x + x = 180° => 2x = 180° => x = 90°.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "If two vertically opposite angles are (2x + 10)° and (x + 35)°, find x.",
+              "marking_scheme_answer": "2x + 10 = x + 35 => 2x - x = 35 - 10 => x = 25°.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Three lines intersect at a single common point. How many vertically opposite angle pairs are formed?",
+              "marking_scheme_answer": "3 lines intersecting at one point form 6 angles. Total vertically opposite pairs = 3 pairs.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Find the supplement of 135°.",
+              "marking_scheme_answer": "180° - 135° = 45°.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "An angle is 20° more than its supplement. Find the angle.",
+              "marking_scheme_answer": "Let angle be x. Supplement = 180° - x. Equation: x = (180 - x) + 20 => 2x = 200 => x = 100°.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "In a figure, two lines AB and CD intersect at O. If angle AOC = 50°, find angle AOD and angle BOD.",
+              "marking_scheme_answer": "angle AOD = 180° - 50° = 130° (linear pair). angle BOD = angle AOC = 50° (vertically opposite).",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
               "question_text": "If ratio of linear pair angles is 2:3, find both angles.",
               "marking_scheme_answer": "2x + 3x = 180° => 5x = 180° => x = 36°. Angle 1 = 2(36) = 72°. Angle 2 = 3(36) = 108°.",
               "marks": 2
@@ -424,12 +284,90 @@
               "question_text": "If angle A = 25°, find its complement and its supplement.",
               "marking_scheme_answer": "Complement = 90° - 25° = 65°. Supplement = 180° - 25° = 155°.",
               "marks": 3
+            },
+            {
+              "question_number": 7,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "If two lines intersect and one angle is 45°, calculate its vertically opposite angle and its adjacent linear pair angle.",
+              "marking_scheme_solution": "Vertically opposite angle = 45°. [1 Mark]\nLinear pair angle = 180° - 45° = 135°. [1 Mark]"
+            },
+            {
+              "question_number": 8,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "Two intersecting lines form angle x and angle y as a linear pair. If x = 2y, calculate the exact values of x and y.",
+              "marking_scheme_solution": "Linear pair: x + y = 180° => 2y + y = 180° => 3y = 180° => y = 60°. [1 Mark]\nx = 2(60°) = 120°. [1 Mark]"
+            },
+            {
+              "question_number": 9,
+              "blooms_level": "Understanding_Comprehension",
+              "question": "Explain how successive parallel horizontal paper folds generate parallel line creases.",
+              "marking_scheme_solution": "Folding paper in half repeatedly aligns opposite edges, producing crease lines that remain equidistant and parallel to top and bottom edges. [2 Marks]"
+            },
+            {
+              "question_number": 10,
+              "blooms_level": "Analyzing_Evaluating",
+              "question": "Prove why vertically opposite angles angle b and angle d are equal when two lines intersect.",
+              "marking_scheme_solution": "Angle b and angle a form a linear pair: b + a = 180°.\nAngle d and angle a form a linear pair: d + a = 180°.\nEquating both: b + a = d + a => b = d. [2 Marks]"
+            },
+            {
+              "question_number": 11,
+              "blooms_level": "Understanding_Comprehension",
+              "question": "Why might two non-intersecting line segments drawn on a sheet of paper NOT be parallel?",
+              "marking_scheme_solution": "Line segments may not meet within a small page, but if their perpendicular distance varies, extending them further will cause them to intersect. To be parallel, they must be equidistant when extended infinitely. [2 Marks]"
             }
           ]
         },
         {
           "section_name": "Section C (Long Answer / Case-Study)",
           "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Architects design a window grid where vertical frame line V is perpendicular to horizontal sill line H. Diagonal support brace D crosses the intersection at 35° to line H. Calculate all four angles formed around the intersection.",
+              "marking_scheme_answer": "Angle 1 = 35°. Angle 2 (linear pair) = 180° - 35° = 145°. Angle 3 (vertically opposite to 1) = 35°. Angle 4 (vertically opposite to 2) = 145°.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Explain how paper folding can be used to construct parallel and perpendicular line creases step by step.",
+              "marking_scheme_answer": "1. Fold square paper in half horizontally to make crease L1. Fold in half again horizontally to make creases L2, L3. Unfold to see parallel horizontal lines. 2. Fold sheet vertically across horizontal creases to create a perpendicular line crease P1 forming 90° right angles with all horizontal creases.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A road intersection has two straight crossing streets A and B. Traffic police measure one corner angle to be (4x - 15)° and the adjacent corner angle to be (x + 20)°. Determine x, calculate all four corner angles, and check vertically opposite equality.",
+              "marking_scheme_answer": "Linear pair sum: (4x - 15) + (x + 20) = 180° => 5x + 5 = 180° => 5x = 175° => x = 35°. Angle 1 = 4(35) - 15 = 125°. Angle 2 = 35 + 20 = 55°. Angle 3 (vertically opposite to 1) = 125°. Angle 4 (vertically opposite to 2) = 55°. Checks: 125 + 55 = 180°; vertically opposite angles are equal.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Prove that if two lines intersect, the vertically opposite angles are equal using the linear pair axiom.",
+              "marking_scheme_answer": "Let lines l and m intersect forming angles a, b, c, d in order. 1. a and b form a linear pair: a + b = 180°. 2. b and c form a linear pair: b + c = 180°. 3. Equating both sums: a + b = b + c. Subtracting b from both sides yields a = c. Thus vertically opposite angles a and c are equal.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A fence design features two parallel horizontal wooden rails R1 and R2 crossed by vertical posts P. Explain why all intersection angles formed by P with R1 and R2 are right angles (90°).",
+              "marking_scheme_answer": "If post P is perpendicular to R1, it forms 90° angles. Since R1 and R2 are parallel, post P crosses R2 at the exact same inclination angle. Thus, all 8 angles around both intersections with R1 and R2 equal 90°.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Four ray lines OA, OB, OC, OD meet at point O in clockwise order. If angle AOB = 80°, angle BOC = 100°, angle COD = 80°, prove whether lines AC and BD are straight lines forming vertically opposite angles.",
+              "marking_scheme_answer": "Check angle AOB + angle BOC = 80° + 100° = 180°. Since adjacent angles sum to 180°, AOC forms a straight line AC. Check angle BOC + angle COD = 100° + 80° = 180°, so BOD forms a straight line BD. Since AC and BD are straight intersecting lines, angle AOB (80°) and angle COD (80°) are vertically opposite and equal.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A steel bridge truss contains two parallel chord beams connected by diagonal struts forming angles with the chord. If one interior angle is 65°, find all remaining three angles at that junction.",
+              "marking_scheme_answer": "Angle 1 = 65°. Angle 2 (linear pair) = 180° - 65° = 115°. Angle 3 (vertically opposite) = 65°. Angle 4 (vertically opposite to 2) = 115°.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Draw/Describe the grid dot paper test to verify whether two given line segments on a dot grid are parallel.",
+              "marking_scheme_answer": "Count grid units: measure vertical rise and horizontal run between grid dots for segment 1. Measure rise and run for segment 2. If the ratio of rise to run is identical for both segments, they maintain constant inclination and constant perpendicular distance, proving they are parallel.",
+              "marks": 5
+            },
             {
               "question_number": 1,
               "question_text": "In an intersection of two lines, the sum of two vertically opposite angles is 140°. Find the measure of all four individual angles at the intersection.",
@@ -443,18 +381,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 6,
-      "paper_title": "Class 7 Mathematics Model Test Paper - Chapter 5: Parallel and Intersecting Lines",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
           "section_name": "Section A (MCQs & Assertion-Reason)",
-          "total_marks": 6,
           "questions": [
             {
               "question_number": 1,
@@ -543,44 +472,7 @@
           ]
         },
         {
-          "section_name": "Section B (Short Answer Questions)",
-          "total_marks": 10,
-          "questions": [
-            {
-              "question_number": 7,
-              "blooms_level": "Application_Problem_Solving",
-              "question": "If two lines intersect and one angle is 45°, calculate its vertically opposite angle and its adjacent linear pair angle.",
-              "marking_scheme_solution": "Vertically opposite angle = 45°. [1 Mark]\nLinear pair angle = 180° - 45° = 135°. [1 Mark]"
-            },
-            {
-              "question_number": 8,
-              "blooms_level": "Application_Problem_Solving",
-              "question": "Two intersecting lines form angle x and angle y as a linear pair. If x = 2y, calculate the exact values of x and y.",
-              "marking_scheme_solution": "Linear pair: x + y = 180° => 2y + y = 180° => 3y = 180° => y = 60°. [1 Mark]\nx = 2(60°) = 120°. [1 Mark]"
-            },
-            {
-              "question_number": 9,
-              "blooms_level": "Understanding_Comprehension",
-              "question": "Explain how successive parallel horizontal paper folds generate parallel line creases.",
-              "marking_scheme_solution": "Folding paper in half repeatedly aligns opposite edges, producing crease lines that remain equidistant and parallel to top and bottom edges. [2 Marks]"
-            },
-            {
-              "question_number": 10,
-              "blooms_level": "Analyzing_Evaluating",
-              "question": "Prove why vertically opposite angles angle b and angle d are equal when two lines intersect.",
-              "marking_scheme_solution": "Angle b and angle a form a linear pair: b + a = 180°.\nAngle d and angle a form a linear pair: d + a = 180°.\nEquating both: b + a = d + a => b = d. [2 Marks]"
-            },
-            {
-              "question_number": 11,
-              "blooms_level": "Understanding_Comprehension",
-              "question": "Why might two non-intersecting line segments drawn on a sheet of paper NOT be parallel?",
-              "marking_scheme_solution": "Line segments may not meet within a small page, but if their perpendicular distance varies, extending them further will cause them to intersect. To be parallel, they must be equidistant when extended infinitely. [2 Marks]"
-            }
-          ]
-        },
-        {
           "section_name": "Section C (Long Answer Questions / Numerical Proofs)",
-          "total_marks": 8,
           "questions": [
             {
               "question_number": 12,
@@ -598,7 +490,6 @@
         },
         {
           "section_name": "Section D (Competency / Case-Based Assessment)",
-          "total_marks": 6,
           "questions": [
             {
               "question_number": 14,
@@ -624,11 +515,7 @@
             }
           ]
         }
-      ],
-      "additional_metadata": {
-        "chapter_number": 5,
-        "chapter_title": "Parallel and Intersecting Lines"
-      }
+      ]
     }
   ]
 }

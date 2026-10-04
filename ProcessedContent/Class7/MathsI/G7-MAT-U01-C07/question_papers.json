@@ -3,9 +3,9 @@
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - A Tale of Three Intersecting Lines (Existence & Classification)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
+      "paper_title": "A Tale of Three Intersecting Lines - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "Section A (MCQs)",
@@ -45,60 +45,7 @@
               ],
               "correct_answer": "B) a + b > c",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Can a triangle have sides 24 cm, 26 cm, 28 cm? Explain.",
-              "marking_scheme_answer": "Yes. Smallest sides sum = 24 + 26 = 50 > 28. Triangle exists.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Why can an equilateral triangle be constructed for ANY positive side length s > 0?",
-              "marking_scheme_answer": "Sides are s, s, s. Triangle inequality requires s + s > s => 2s > s, which is universally true for all s > 0.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Two sides of a triangle measure 6 cm and 10 cm. Find the allowable range for the third side x.",
-              "marking_scheme_answer": "Upper bound: x < 6 + 10 = 16 cm. Lower bound: x > 10 - 6 = 4 cm. Range: 4 cm < x < 16 cm.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Test triangle existence for four side length sets with reasons: (1) 1, 1, 5  (2) 2, 4, 8  (3) 10, 20, 25  (4) 1, 100, 100.",
-              "marking_scheme_answer": "1. 1+1=2 < 5 => No. 2. 2+4=6 < 8 => No. 3. 10+20=30 > 25 => Yes. 4. 1+100=101 > 100 => Yes.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "A surveyor maps roads AB = 12 km, BC = 20 km, AC = 40 km connecting towns A, B, C. Can these towns form a triangular path? Explain.",
-              "marking_scheme_answer": "AB + BC = 12 + 20 = 32 km. AC = 40 km. Since 32 < 40, sum of two sides is less than third side, violating Triangle Inequality Theorem. They CANNOT form a triangle.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "Set 2 - A Tale of Three Intersecting Lines (Constructions & Compass Tests)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "If side lengths are 3 cm, 6 cm, 9 cm, what happens when constructing with ruler and compass?",
@@ -134,60 +81,7 @@
               ],
               "correct_answer": "B) Shorter",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Classify a triangle with sides 7 cm, 7 cm, 10 cm.",
-              "marking_scheme_answer": "Isosceles triangle (two sides equal).",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Classify a triangle with sides 5 cm, 8 cm, 11 cm.",
-              "marking_scheme_answer": "Scalene triangle (all three sides unequal).",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Find third side bounds for a triangle with sides 8 cm and 15 cm.",
-              "marking_scheme_answer": "Lower bound: 15 - 8 = 7 cm. Upper bound: 15 + 8 = 23 cm. Range: 7 cm < x < 23 cm.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Explain the geometric compass construction process when attempting to build a triangle with sides 3 cm, 3 cm, 7 cm. Why do compass arcs fail to cross?",
-              "marking_scheme_answer": "Base line AB = 7 cm. Draw arc of radius 3 cm from A and 3 cm from B. Maximum distance reached by both arcs toward each other = 3 + 3 = 6 cm. Since base AB = 7 cm, the arcs leave a 1 cm gap and never intersect, proving no triangle exists.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "An island navigation map marks lighthouses P, Q, R. PQ = 15 miles, QR = 25 miles. Find minimum and maximum possible distance PR if lighthouses form a triangle.",
-              "marking_scheme_answer": "Triangle inequality: PR < PQ + QR => PR < 15 + 25 = 40 miles. Also PR + PQ > QR => PR > 25 - 15 = 10 miles. Range: 10 < PR < 40 miles. Minimum whole distance = 11 miles, maximum = 39 miles.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 3,
-      "paper_title": "Set 3 - A Tale of Three Intersecting Lines (Range Inequalities)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "Sides 10 cm, 10 cm, 25 cm form a triangle?",
@@ -223,60 +117,7 @@
               ],
               "correct_answer": "B) 6",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "If sides are 4 cm and 9 cm, state allowable integer values for third side x.",
-              "marking_scheme_answer": "9 - 4 < x < 9 + 4 => 5 < x < 13. Integers: 6, 7, 8, 9, 10, 11, 12 cm.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "Does an equilateral triangle of side 0.5 cm exist? Justify.",
-              "marking_scheme_answer": "Yes. 0.5 + 0.5 = 1.0 > 0.5. Equilateral triangles exist for all s > 0.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "In triangle ABC, P is a point inside. Prove AP + PB > AB.",
-              "marking_scheme_answer": "In triangle APB, by Triangle Inequality Theorem, sum of sides AP + PB > AB.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A wire of length 30 cm is cut into three integer pieces to form a triangle. If one piece is 14 cm, find all possible integer length combinations for the remaining two pieces.",
-              "marking_scheme_answer": "Longest side = 14 cm. Remaining two sides x + y = 30 - 14 = 16 cm. Inequality constraint: x + y > 14 => 16 > 14 (satisfied). Each side x, y < 14. Pairs (x, y) where x + y = 16 and x, y <= 13: (3, 13), (4, 12), (5, 11), (6, 10), (7, 9), (8, 8).",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Prove that the perimeter of a triangle ABC is greater than the sum of its three medians (or segments from vertices to any internal point O).",
-              "marking_scheme_answer": "In triangle OAB: OA + OB > AB. In triangle OBC: OB + OC > BC. In triangle OCA: OC + OA > CA. Summing all three inequalities: 2(OA + OB + OC) > AB + BC + CA => OA + OB + OC > 1/2(AB + BC + CA). Also, by applying side triangle comparisons across all vertices, we obtain exact upper and lower perimeter bounds. Thus perimeter exceeds sum of internal node connections.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 4,
-      "paper_title": "Set 4 - A Tale of Three Intersecting Lines (Geometric Proofs)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "Can a triangle have side lengths 5, 5, 10?",
@@ -312,60 +153,7 @@
               ],
               "correct_answer": "B) 17",
               "marks": 1
-            }
-          ]
-        },
-        {
-          "section_name": "Section B (Short Answer Questions)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "Is 5, 5, 10 a valid triangle? Explain.",
-              "marking_scheme_answer": "No. 5 + 5 = 10, which is NOT strictly greater than 10.",
-              "marks": 2
             },
-            {
-              "question_number": 2,
-              "question_text": "State the Triangle Inequality Theorem in words.",
-              "marking_scheme_answer": "The sum of the lengths of any two sides of a triangle must be strictly greater than the length of the third side.",
-              "marks": 2
-            },
-            {
-              "question_number": 3,
-              "question_text": "Find third side integer range for sides 12 cm and 17 cm.",
-              "marking_scheme_answer": "17 - 12 < x < 17 + 12 => 5 cm < x < 29 cm.",
-              "marks": 3
-            }
-          ]
-        },
-        {
-          "section_name": "Section C (Long Answer / Case-Study)",
-          "questions": [
-            {
-              "question_number": 1,
-              "question_text": "A triangular park has boundary lengths AB = 100 m, BC = 150 m, CA = 200 m. Verify triangle inequality for all three side pairings.",
-              "marking_scheme_answer": "1. AB + BC = 100 + 150 = 250 > 200 (CA). Valid. 2. BC + CA = 150 + 200 = 350 > 100 (AB). Valid. 3. CA + AB = 200 + 100 = 300 > 150 (BC). Valid. Park geometry is fully valid.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Prove that for any quadrilateral ABCD, the sum of all four sides is greater than the sum of its two diagonals AC and BD.",
-              "marking_scheme_answer": "In triangle ABC: AB + BC > AC. In triangle ADC: AD + DC > AC. Summing: AB + BC + CD + DA > 2AC. Similarly in triangles ABD and BCD: AB + DA > BD and BC + CD > BD => AB + BC + CD + DA > 2BD. Adding both: 2(AB + BC + CD + DA) > 2(AC + BD) => AB + BC + CD + DA > AC + BD.",
-              "marks": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "paper_id": 5,
-      "paper_title": "Set 5 - A Tale of Three Intersecting Lines (Applied Synthesis)",
-      "total_marks": 20,
-      "time_allowed_minutes": 40,
-      "sections": [
-        {
-          "section_name": "Section A (MCQs)",
-          "questions": [
             {
               "question_number": 1,
               "question_text": "If sides are 6, 8, 10, the triangle is:",
@@ -409,6 +197,78 @@
           "questions": [
             {
               "question_number": 1,
+              "question_text": "Can a triangle have sides 24 cm, 26 cm, 28 cm? Explain.",
+              "marking_scheme_answer": "Yes. Smallest sides sum = 24 + 26 = 50 > 28. Triangle exists.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Why can an equilateral triangle be constructed for ANY positive side length s > 0?",
+              "marking_scheme_answer": "Sides are s, s, s. Triangle inequality requires s + s > s => 2s > s, which is universally true for all s > 0.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Two sides of a triangle measure 6 cm and 10 cm. Find the allowable range for the third side x.",
+              "marking_scheme_answer": "Upper bound: x < 6 + 10 = 16 cm. Lower bound: x > 10 - 6 = 4 cm. Range: 4 cm < x < 16 cm.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Classify a triangle with sides 7 cm, 7 cm, 10 cm.",
+              "marking_scheme_answer": "Isosceles triangle (two sides equal).",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Classify a triangle with sides 5 cm, 8 cm, 11 cm.",
+              "marking_scheme_answer": "Scalene triangle (all three sides unequal).",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Find third side bounds for a triangle with sides 8 cm and 15 cm.",
+              "marking_scheme_answer": "Lower bound: 15 - 8 = 7 cm. Upper bound: 15 + 8 = 23 cm. Range: 7 cm < x < 23 cm.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "If sides are 4 cm and 9 cm, state allowable integer values for third side x.",
+              "marking_scheme_answer": "9 - 4 < x < 9 + 4 => 5 < x < 13. Integers: 6, 7, 8, 9, 10, 11, 12 cm.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "Does an equilateral triangle of side 0.5 cm exist? Justify.",
+              "marking_scheme_answer": "Yes. 0.5 + 0.5 = 1.0 > 0.5. Equilateral triangles exist for all s > 0.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "In triangle ABC, P is a point inside. Prove AP + PB > AB.",
+              "marking_scheme_answer": "In triangle APB, by Triangle Inequality Theorem, sum of sides AP + PB > AB.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
+              "question_text": "Is 5, 5, 10 a valid triangle? Explain.",
+              "marking_scheme_answer": "No. 5 + 5 = 10, which is NOT strictly greater than 10.",
+              "marks": 2
+            },
+            {
+              "question_number": 2,
+              "question_text": "State the Triangle Inequality Theorem in words.",
+              "marking_scheme_answer": "The sum of the lengths of any two sides of a triangle must be strictly greater than the length of the third side.",
+              "marks": 2
+            },
+            {
+              "question_number": 3,
+              "question_text": "Find third side integer range for sides 12 cm and 17 cm.",
+              "marking_scheme_answer": "17 - 12 < x < 17 + 12 => 5 cm < x < 29 cm.",
+              "marks": 3
+            },
+            {
+              "question_number": 1,
               "question_text": "Can side lengths be 1 cm, 100 cm, 100 cm? Explain.",
               "marking_scheme_answer": "Yes. 1 + 100 = 101 > 100. Triangle inequality holds.",
               "marks": 2
@@ -424,12 +284,90 @@
               "question_text": "If perimeter of an isosceles triangle is 25 cm and equal sides are 9 cm each, find third side.",
               "marking_scheme_answer": "Third side = 25 - (9 + 9) = 25 - 18 = 7 cm.",
               "marks": 3
+            },
+            {
+              "question_number": 7,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "Test triangle existence for side lengths 24 cm, 26 cm, and 28 cm.",
+              "marking_scheme_solution": "Smallest two sides sum = 24 + 26 = 50 cm. [1 Mark]\nLongest side = 28 cm. Since 50 > 28, a triangle EXISTS. [1 Mark]"
+            },
+            {
+              "question_number": 8,
+              "blooms_level": "Application_Problem_Solving",
+              "question": "Find the range of possible third side lengths 'x' for a triangle with sides 8 cm and 15 cm.",
+              "marking_scheme_solution": "Lower limit: 15 - 8 = 7 cm. [1 Mark]\nUpper limit: 15 + 8 = 23 cm.\nRange: 7 cm < x < 23 cm. [1 Mark]"
+            },
+            {
+              "question_number": 9,
+              "blooms_level": "Understanding_Comprehension",
+              "question": "Explain why compass arcs of radii 3 cm drawn from endpoints of a 7 cm base segment fail to intersect.",
+              "marking_scheme_solution": "Sum of radii = 3 + 3 = 6 cm. Base distance = 7 cm. Since 6 < 7, the two arcs fall short of each other and cannot meet. [2 Marks]"
+            },
+            {
+              "question_number": 10,
+              "blooms_level": "Understanding_Comprehension",
+              "question": "Prove why an equilateral triangle exists for any positive side length s > 0.",
+              "marking_scheme_solution": "Sides are s, s, s. Sum of any two = s + s = 2s. Since s > 0, 2s > s is always true. Thus triangle inequality holds. [2 Marks]"
+            },
+            {
+              "question_number": 11,
+              "blooms_level": "Understanding_Comprehension",
+              "question": "Classify the following triangles by side lengths:\n(i) 7 cm, 7 cm, 10 cm\n(ii) 6 cm, 8 cm, 10 cm",
+              "marking_scheme_solution": "(i) 7, 7, 10 -> Isosceles Triangle (2 sides equal). [1 Mark]\n(ii) 6, 8, 10 -> Scalene Triangle (3 sides unequal). [1 Mark]"
             }
           ]
         },
         {
           "section_name": "Section C (Long Answer / Case-Study)",
           "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Test triangle existence for four side length sets with reasons: (1) 1, 1, 5  (2) 2, 4, 8  (3) 10, 20, 25  (4) 1, 100, 100.",
+              "marking_scheme_answer": "1. 1+1=2 < 5 => No. 2. 2+4=6 < 8 => No. 3. 10+20=30 > 25 => Yes. 4. 1+100=101 > 100 => Yes.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "A surveyor maps roads AB = 12 km, BC = 20 km, AC = 40 km connecting towns A, B, C. Can these towns form a triangular path? Explain.",
+              "marking_scheme_answer": "AB + BC = 12 + 20 = 32 km. AC = 40 km. Since 32 < 40, sum of two sides is less than third side, violating Triangle Inequality Theorem. They CANNOT form a triangle.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "Explain the geometric compass construction process when attempting to build a triangle with sides 3 cm, 3 cm, 7 cm. Why do compass arcs fail to cross?",
+              "marking_scheme_answer": "Base line AB = 7 cm. Draw arc of radius 3 cm from A and 3 cm from B. Maximum distance reached by both arcs toward each other = 3 + 3 = 6 cm. Since base AB = 7 cm, the arcs leave a 1 cm gap and never intersect, proving no triangle exists.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "An island navigation map marks lighthouses P, Q, R. PQ = 15 miles, QR = 25 miles. Find minimum and maximum possible distance PR if lighthouses form a triangle.",
+              "marking_scheme_answer": "Triangle inequality: PR < PQ + QR => PR < 15 + 25 = 40 miles. Also PR + PQ > QR => PR > 25 - 15 = 10 miles. Range: 10 < PR < 40 miles. Minimum whole distance = 11 miles, maximum = 39 miles.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A wire of length 30 cm is cut into three integer pieces to form a triangle. If one piece is 14 cm, find all possible integer length combinations for the remaining two pieces.",
+              "marking_scheme_answer": "Longest side = 14 cm. Remaining two sides x + y = 30 - 14 = 16 cm. Inequality constraint: x + y > 14 => 16 > 14 (satisfied). Each side x, y < 14. Pairs (x, y) where x + y = 16 and x, y <= 13: (3, 13), (4, 12), (5, 11), (6, 10), (7, 9), (8, 8).",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Prove that the perimeter of a triangle ABC is greater than the sum of its three medians (or segments from vertices to any internal point O).",
+              "marking_scheme_answer": "In triangle OAB: OA + OB > AB. In triangle OBC: OB + OC > BC. In triangle OCA: OC + OA > CA. Summing all three inequalities: 2(OA + OB + OC) > AB + BC + CA => OA + OB + OC > 1/2(AB + BC + CA). Also, by applying side triangle comparisons across all vertices, we obtain exact upper and lower perimeter bounds. Thus perimeter exceeds sum of internal node connections.",
+              "marks": 5
+            },
+            {
+              "question_number": 1,
+              "question_text": "A triangular park has boundary lengths AB = 100 m, BC = 150 m, CA = 200 m. Verify triangle inequality for all three side pairings.",
+              "marking_scheme_answer": "1. AB + BC = 100 + 150 = 250 > 200 (CA). Valid. 2. BC + CA = 150 + 200 = 350 > 100 (AB). Valid. 3. CA + AB = 200 + 100 = 300 > 150 (BC). Valid. Park geometry is fully valid.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Prove that for any quadrilateral ABCD, the sum of all four sides is greater than the sum of its two diagonals AC and BD.",
+              "marking_scheme_answer": "In triangle ABC: AB + BC > AC. In triangle ADC: AD + DC > AC. Summing: AB + BC + CD + DA > 2AC. Similarly in triangles ABD and BCD: AB + DA > BD and BC + CD > BD => AB + BC + CD + DA > 2BD. Adding both: 2(AB + BC + CD + DA) > 2(AC + BD) => AB + BC + CD + DA > AC + BD.",
+              "marks": 5
+            },
             {
               "question_number": 1,
               "question_text": "A telecommunication company places 3 towers T1, T2, T3. T1-T2 distance = 8 km, T2-T3 distance = 12 km. Find range of distance between T1 and T3 to form a triangular network.",
@@ -443,18 +381,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 6,
-      "paper_title": "Class 7 Mathematics Model Test Paper - Chapter 7: A Tale of Three Intersecting Lines",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
           "section_name": "Section A (MCQs & Assertion-Reason)",
-          "total_marks": 6,
           "questions": [
             {
               "question_number": 1,
@@ -543,44 +472,7 @@
           ]
         },
         {
-          "section_name": "Section B (Short Answer Questions)",
-          "total_marks": 10,
-          "questions": [
-            {
-              "question_number": 7,
-              "blooms_level": "Application_Problem_Solving",
-              "question": "Test triangle existence for side lengths 24 cm, 26 cm, and 28 cm.",
-              "marking_scheme_solution": "Smallest two sides sum = 24 + 26 = 50 cm. [1 Mark]\nLongest side = 28 cm. Since 50 > 28, a triangle EXISTS. [1 Mark]"
-            },
-            {
-              "question_number": 8,
-              "blooms_level": "Application_Problem_Solving",
-              "question": "Find the range of possible third side lengths 'x' for a triangle with sides 8 cm and 15 cm.",
-              "marking_scheme_solution": "Lower limit: 15 - 8 = 7 cm. [1 Mark]\nUpper limit: 15 + 8 = 23 cm.\nRange: 7 cm < x < 23 cm. [1 Mark]"
-            },
-            {
-              "question_number": 9,
-              "blooms_level": "Understanding_Comprehension",
-              "question": "Explain why compass arcs of radii 3 cm drawn from endpoints of a 7 cm base segment fail to intersect.",
-              "marking_scheme_solution": "Sum of radii = 3 + 3 = 6 cm. Base distance = 7 cm. Since 6 < 7, the two arcs fall short of each other and cannot meet. [2 Marks]"
-            },
-            {
-              "question_number": 10,
-              "blooms_level": "Understanding_Comprehension",
-              "question": "Prove why an equilateral triangle exists for any positive side length s > 0.",
-              "marking_scheme_solution": "Sides are s, s, s. Sum of any two = s + s = 2s. Since s > 0, 2s > s is always true. Thus triangle inequality holds. [2 Marks]"
-            },
-            {
-              "question_number": 11,
-              "blooms_level": "Understanding_Comprehension",
-              "question": "Classify the following triangles by side lengths:\n(i) 7 cm, 7 cm, 10 cm\n(ii) 6 cm, 8 cm, 10 cm",
-              "marking_scheme_solution": "(i) 7, 7, 10 -> Isosceles Triangle (2 sides equal). [1 Mark]\n(ii) 6, 8, 10 -> Scalene Triangle (3 sides unequal). [1 Mark]"
-            }
-          ]
-        },
-        {
           "section_name": "Section C (Long Answer Questions / Numerical Proofs)",
-          "total_marks": 8,
           "questions": [
             {
               "question_number": 12,
@@ -598,7 +490,6 @@
         },
         {
           "section_name": "Section D (Competency / Case-Based Assessment)",
-          "total_marks": 6,
           "questions": [
             {
               "question_number": 14,
@@ -624,11 +515,7 @@
             }
           ]
         }
-      ],
-      "additional_metadata": {
-        "chapter_number": 7,
-        "chapter_title": "A Tale of Three Intersecting Lines"
-      }
+      ]
     }
   ]
 }

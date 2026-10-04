@@ -3,9 +3,9 @@
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - हार की जीत (NCERT मॉडल प्रश्न पत्र)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
+      "paper_title": "हार की जीत - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "खंड 'क' (वस्तुनिष्ठ प्रश्न / MCQs)",
@@ -92,17 +92,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "अध्याय 4: हार की जीत - मॉडल प्रश्न पत्र (NCERT पैटर्न)",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
-          "section_title": "खंड 'क' - वस्तुनिष्ठ प्रश्न एवं कथन-कारण (MCQs & Assertion-Reason) [6 अंक]",
+          "section_name": "Section A",
           "questions": [
             {
               "q_no": 1,
@@ -188,13 +180,7 @@
               ],
               "correct_answer": "क) कथन और कारण दोनों सही हैं तथा कारण कथन की सही व्याख्या करता है।",
               "marking_scheme_and_explanation": "1 अंक - बाबा के महान मानवीय आदर्शों ने डाकू की आत्मा को जगा दिया।"
-            }
-          ],
-          "section_key": "section_A_mcq_and_assertion_reason"
-        },
-        {
-          "section_title": "खंड 'ख' - लघु उत्तरीय प्रश्न एवं व्याकरण (Short Answer Questions & Grammar) [10 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Understanding",
@@ -229,13 +215,7 @@
               "marks": 2,
               "question_text": "'असतबल' शब्द का अर्थ और वाक्य प्रयोग कीजिए।",
               "marking_scheme_and_model_answer": "2 अंक: अर्थ: घोड़ों को बाँधने का स्थान (घुड़साल)। वाक्य: बाबा भारती असतबल की रखवाली करते थे।"
-            }
-          ],
-          "section_key": "section_B_short_answer"
-        },
-        {
-          "section_title": "खंड 'ग' - दीर्घ उत्तरीय एवं भाव-प्रधान प्रश्न (Long Answer Questions) [8 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Application",
@@ -250,36 +230,7 @@
               "question_text": "कहानी का शीर्षक 'हार की जीत' क्यों रखा गया है? तर्क सहित उत्तर दीजिए।",
               "marking_scheme_and_model_answer": "4 अंक: बाबा भारती घोड़ा गँवाकर हार चुके थे, परंतु उनके विचारों ने डाकू का हृदय बदल दिया और उसने घोड़ा लौटा दिया। अतः बाबा की हार नैतिक जीत में बदल गई।"
             }
-          ],
-          "section_key": "section_C_long_answer"
-        },
-        {
-          "section_title": "खंड 'घ' - योग्यता-आधारित / केस-स्टडी प्रश्न (Competency & Case-Based Assessment) [6 अंक]",
-          "case_passage": "गद्यांश ध्यानपूर्वक पढ़िए:\n'बाबा भारती ने खड्गसिंह से कहा - इस घटना को किसी के सामने प्रकट न करना, नहीं तो लोग किसी गरीब पर विश्वास न करेंगे। यह कहते-कहते वे चले गए। परंतु उनके ये शब्द खड्गसिंह के कानों में रात-दिन गूँजते रहे। उसने सोचा - कैसे ऊँचे विचार हैं! इन्हें अपने घोड़े से प्रेम था, पर आज इन्हें गरीबों के अविश्वास की चिंता है। ऐसा मनुष्य, मनुष्य नहीं, देवता है।'",
-          "sub_questions": [
-            {
-              "sub_q_no": "(1)",
-              "marks": 2,
-              "blooms_level": "Understanding",
-              "question_text": "बाबा भारती ने घटना को गुप्त रखने की प्रार्थना क्यों की?",
-              "model_answer": "2 अंक: क्योंकि यदि पता चलता कि अपाहिज बनकर छल हुआ, तो लोग किसी वास्तविक दुखी/गरीब की मदद न करते।"
-            },
-            {
-              "sub_q_no": "(2)",
-              "marks": 2,
-              "blooms_level": "Application",
-              "question_text": "खड्गसिंह पर बाबा भारती के शब्दों का क्या प्रभाव पड़ा?",
-              "model_answer": "2 अंक: उसका हृदय पश्चाताप से भर गया और उसने घोड़ा वापस करने का निश्चय किया।"
-            },
-            {
-              "sub_q_no": "(3)",
-              "marks": 2,
-              "blooms_level": "Analyzing_Evaluating",
-              "question_text": "इस कहानी से हमें अपने दैनिक जीवन में क्या सीख मिलती है?",
-              "model_answer": "2 अंक: व्यक्तिगत नुकसान से अधिक सामाजिक मूल्यों की रक्षा करनी चाहिए तथा छल का उत्तर क्षमा से देना चाहिए।"
-            }
-          ],
-          "section_key": "section_D_case_based_competency"
+          ]
         }
       ]
     }
