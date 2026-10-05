@@ -66,11 +66,11 @@ const FIXED_TABS = [
   { id: 'overview', label: 'Overview', icon: '📖' },
   { id: 'notes', label: 'Notes', icon: '📝' },
   { id: 'master', label: 'Master Practice', icon: '⚡' },
+  { id: 'foundational', label: 'Foundational Core', icon: '🏛️' },
   { id: 'flashcards', label: 'Flashcards', icon: '🃏' },
   { id: 'mindmaps', label: 'Mindmaps', icon: '🧠' },
   { id: 'quiz', label: 'Quiz', icon: '✍️' },
   { id: 'question_papers', label: 'Question Papers', icon: '📋' },
-  { id: 'foundational', label: 'Foundational Core', icon: '🏛️' },
 ];
 
 export default function ChapterClient({ grade, subject, chapterId }: ChapterClientProps) {
