@@ -1,11 +1,12 @@
 {
+  "chapter_number": 2,
   "chapter_title": "Lines and Angles",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Lines and Angles - Unified Practice Assessment",
-      "total_marks": 30,
-      "time_allowed_minutes": 90,
+      "paper_title": "Set 1 - Lines and Angles",
+      "total_marks": 17,
+      "time_allowed_minutes": 45,
       "sections": [
         {
           "section_name": "Section A (MCQs)",
@@ -33,7 +34,65 @@
               ],
               "correct_answer": "B. 90°",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 2 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Calculate the degree measure of an angle formed by 5/12 of a complete rotation.",
+              "marking_scheme_answer": "Angle = (5/12) x 360° = 5 x 30° = 150° (Obtuse Angle).",
+              "marks": 2
             },
+            {
+              "question_number": 2,
+              "question_text": "How many lines can pass through (a) one single point, (b) two distinct points?",
+              "marking_scheme_answer": "(a) Infinitely many lines. (b) Exactly one unique line.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer Questions - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "The Ashoka Chakra has 24 spokes. Find the degree measure of the angle between two adjacent spokes.",
+              "marking_scheme_answer": "Angle = 360° / 24 = 15°.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "Classify the following angles: 42°, 90°, 135°, 180°, 240°.",
+              "marking_scheme_answer": "42° = Acute, 90° = Right, 135° = Obtuse, 180° = Straight, 240° = Reflex.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Study: Paper Folding Angles. A student takes a square sheet of paper and folds it along a diagonal crease, then folds it in half again through the vertex.\n(a) What is the angle measure of the corner before folding? (2 marks)\n(b) What are the angle measures after the 1st and 2nd folds? (3 marks)",
+              "marking_scheme_answer": "(a) Corner of square = 90° (Right angle).\n(b) First fold bisects 90° into two 45° angles. Second fold bisects 45° into two 22.5° angles.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Lines and Angles",
+      "total_marks": 17,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "An angle measuring 215° is classified as:",
@@ -57,7 +116,65 @@
               ],
               "correct_answer": "C. 180°",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 2 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Find the fractional turn represented by an angle of 120°.",
+              "marking_scheme_answer": "Fraction of turn = 120° / 360° = 1/3 turn.",
+              "marks": 2
             },
+            {
+              "question_number": 2,
+              "question_text": "Explain why extending the rays of an angle does not change its degree measure.",
+              "marking_scheme_answer": "Angle size depends solely on the amount of rotation between the two rays, independent of ray length.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer Questions - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A wheel rotates through 3 and a half full turns. Find the total angle of rotation in degrees.",
+              "marking_scheme_answer": "1 turn = 360°. 3.5 turns = 3.5 x 360° = 1260°.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "If ray OC bisects angle AOB of 84°, find the measure of angle AOC and COB.",
+              "marking_scheme_answer": "Angle AOC = Angle COB = 84° / 2 = 42°.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Study: Clock Hand Rotations. Consider a clock face from 12:00 PM to 3:30 PM.\n(a) Find the angle turned by the hour hand in this duration. (2 marks)\n(b) Find the angle turned by the minute hand in the same duration. (3 marks)",
+              "marking_scheme_answer": "(a) Duration = 3.5 hours. Hour hand turns 30° per hour => 3.5 x 30° = 105°.\n(b) Minute hand turns 360° per hour => 3.5 x 360° = 1260°.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Lines and Angles",
+      "total_marks": 17,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Which instrument is used to measure angle degree magnitude directly?",
@@ -81,7 +198,65 @@
               ],
               "correct_answer": "B. 135°",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 2 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "How many right angles make a complete turn of 360°?",
+              "marking_scheme_answer": "360° / 90° = 4 right angles.",
+              "marks": 2
             },
+            {
+              "question_number": 2,
+              "question_text": "Name the four angle types smaller than a straight angle in increasing order.",
+              "marking_scheme_answer": "Zero angle (0°), Acute angle (0°-90°), Right angle (90°), Obtuse angle (90°-180°).",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer Questions - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A student measures an obtuse angle on a protractor and reads 55° instead of 125°. Explain the error.",
+              "marking_scheme_answer": "The student read the wrong protractor scale (outer instead of inner). They should use the scale that starts at 0° on the baseline arm: 180° - 55° = 125°.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "If two lines intersect perpendicularly at point O, state the measure of all four adjacent angles formed around O.",
+              "marking_scheme_answer": "Intersecting perpendicular lines form four equal 90° right angles around O.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Study: Star Polygon Angles. A 5-pointed star icon has 5 equal central angles around its center point O.\n(a) Calculate the measure of each central angle. (2 marks)\n(b) If a line bisects one of these central angles, what are the resulting sub-angles? (3 marks)",
+              "marking_scheme_answer": "(a) Central angle = 360° / 5 = 72°.\n(b) Bisecting 72° produces two equal 36° angles.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Lines and Angles",
+      "total_marks": 17,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "At 3 o'clock, the angle between the clock hands is:",
@@ -105,7 +280,65 @@
               ],
               "correct_answer": "B. Straight Angle",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 2 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Find the angle between East and North-West directions.",
+              "marking_scheme_answer": "East to North = 90°. North to North-West = 45°. Total angle = 90° + 45° = 135° (Obtuse Angle).",
+              "marks": 2
             },
+            {
+              "question_number": 2,
+              "question_text": "Write the reflex angle corresponding to an interior angle of 70°.",
+              "marking_scheme_answer": "Reflex angle = 360° - 70° = 290°.",
+              "marks": 2
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Short Answer Questions - 3 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Construct a letter 'Y' such that the three central angles around the junction point are 150°, 60°, and 150°.",
+              "marking_scheme_answer": "Draw three rays from junction O. Angle 1 = 60° (top opening), side angles = 150° each. Total sum = 60° + 150° + 150° = 360°.",
+              "marks": 3
+            },
+            {
+              "question_number": 2,
+              "question_text": "Calculate the degree measure for 1/8, 1/6, and 1/3 of a full turn.",
+              "marking_scheme_answer": "1/8 turn = 360/8 = 45°. 1/6 turn = 360/6 = 60°. 1/3 turn = 360/3 = 120°.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section D (Case-Study / Long Answer - 5 Marks)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Case Study: Compass Rose Bearings. A ship changes heading from Due East (90°) to South-West (225°) clockwise.\n(a) Calculate the total angle of rotation. (2 marks)\n(b) Classify this angle of rotation and find its fractional turn. (3 marks)",
+              "marking_scheme_answer": "(a) Rotation angle = 225° - 90° = 135°.\n(b) Classification: Obtuse Angle (90° < 135° < 180°). Fractional turn = 135/360 = 3/8 turn.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Lines and Angles",
+      "total_marks": 17,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "How many degrees does the minute hand of a clock turn in 20 minutes?",
@@ -137,54 +370,6 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Calculate the degree measure of an angle formed by 5/12 of a complete rotation.",
-              "marking_scheme_answer": "Angle = (5/12) x 360° = 5 x 30° = 150° (Obtuse Angle).",
-              "marks": 2
-            },
-            {
-              "question_number": 2,
-              "question_text": "How many lines can pass through (a) one single point, (b) two distinct points?",
-              "marking_scheme_answer": "(a) Infinitely many lines. (b) Exactly one unique line.",
-              "marks": 2
-            },
-            {
-              "question_number": 1,
-              "question_text": "Find the fractional turn represented by an angle of 120°.",
-              "marking_scheme_answer": "Fraction of turn = 120° / 360° = 1/3 turn.",
-              "marks": 2
-            },
-            {
-              "question_number": 2,
-              "question_text": "Explain why extending the rays of an angle does not change its degree measure.",
-              "marking_scheme_answer": "Angle size depends solely on the amount of rotation between the two rays, independent of ray length.",
-              "marks": 2
-            },
-            {
-              "question_number": 1,
-              "question_text": "How many right angles make a complete turn of 360°?",
-              "marking_scheme_answer": "360° / 90° = 4 right angles.",
-              "marks": 2
-            },
-            {
-              "question_number": 2,
-              "question_text": "Name the four angle types smaller than a straight angle in increasing order.",
-              "marking_scheme_answer": "Zero angle (0°), Acute angle (0°-90°), Right angle (90°), Obtuse angle (90°-180°).",
-              "marks": 2
-            },
-            {
-              "question_number": 1,
-              "question_text": "Find the angle between East and North-West directions.",
-              "marking_scheme_answer": "East to North = 90°. North to North-West = 45°. Total angle = 90° + 45° = 135° (Obtuse Angle).",
-              "marks": 2
-            },
-            {
-              "question_number": 2,
-              "question_text": "Write the reflex angle corresponding to an interior angle of 70°.",
-              "marking_scheme_answer": "Reflex angle = 360° - 70° = 290°.",
-              "marks": 2
-            },
-            {
-              "question_number": 1,
               "question_text": "Find the angle turned by the hour hand of a clock in 4 hours.",
               "marking_scheme_answer": "Hour hand turns 30° per hour. Angle in 4 hours = 4 x 30° = 120°.",
               "marks": 2
@@ -200,54 +385,6 @@
         {
           "section_name": "Section C (Short Answer Questions - 3 Marks)",
           "questions": [
-            {
-              "question_number": 1,
-              "question_text": "The Ashoka Chakra has 24 spokes. Find the degree measure of the angle between two adjacent spokes.",
-              "marking_scheme_answer": "Angle = 360° / 24 = 15°.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Classify the following angles: 42°, 90°, 135°, 180°, 240°.",
-              "marking_scheme_answer": "42° = Acute, 90° = Right, 135° = Obtuse, 180° = Straight, 240° = Reflex.",
-              "marks": 3
-            },
-            {
-              "question_number": 1,
-              "question_text": "A wheel rotates through 3 and a half full turns. Find the total angle of rotation in degrees.",
-              "marking_scheme_answer": "1 turn = 360°. 3.5 turns = 3.5 x 360° = 1260°.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "If ray OC bisects angle AOB of 84°, find the measure of angle AOC and COB.",
-              "marking_scheme_answer": "Angle AOC = Angle COB = 84° / 2 = 42°.",
-              "marks": 3
-            },
-            {
-              "question_number": 1,
-              "question_text": "A student measures an obtuse angle on a protractor and reads 55° instead of 125°. Explain the error.",
-              "marking_scheme_answer": "The student read the wrong protractor scale (outer instead of inner). They should use the scale that starts at 0° on the baseline arm: 180° - 55° = 125°.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "If two lines intersect perpendicularly at point O, state the measure of all four adjacent angles formed around O.",
-              "marking_scheme_answer": "Intersecting perpendicular lines form four equal 90° right angles around O.",
-              "marks": 3
-            },
-            {
-              "question_number": 1,
-              "question_text": "Construct a letter 'Y' such that the three central angles around the junction point are 150°, 60°, and 150°.",
-              "marking_scheme_answer": "Draw three rays from junction O. Angle 1 = 60° (top opening), side angles = 150° each. Total sum = 60° + 150° + 150° = 360°.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Calculate the degree measure for 1/8, 1/6, and 1/3 of a full turn.",
-              "marking_scheme_answer": "1/8 turn = 360/8 = 45°. 1/6 turn = 360/6 = 60°. 1/3 turn = 360/3 = 120°.",
-              "marks": 3
-            },
             {
               "question_number": 1,
               "question_text": "Find the supplement of a right angle and the reflex angle of a straight angle.",
@@ -267,38 +404,23 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Case Study: Paper Folding Angles. A student takes a square sheet of paper and folds it along a diagonal crease, then folds it in half again through the vertex.\n(a) What is the angle measure of the corner before folding? (2 marks)\n(b) What are the angle measures after the 1st and 2nd folds? (3 marks)",
-              "marking_scheme_answer": "(a) Corner of square = 90° (Right angle).\n(b) First fold bisects 90° into two 45° angles. Second fold bisects 45° into two 22.5° angles.",
-              "marks": 5
-            },
-            {
-              "question_number": 1,
-              "question_text": "Case Study: Clock Hand Rotations. Consider a clock face from 12:00 PM to 3:30 PM.\n(a) Find the angle turned by the hour hand in this duration. (2 marks)\n(b) Find the angle turned by the minute hand in the same duration. (3 marks)",
-              "marking_scheme_answer": "(a) Duration = 3.5 hours. Hour hand turns 30° per hour => 3.5 x 30° = 105°.\n(b) Minute hand turns 360° per hour => 3.5 x 360° = 1260°.",
-              "marks": 5
-            },
-            {
-              "question_number": 1,
-              "question_text": "Case Study: Star Polygon Angles. A 5-pointed star icon has 5 equal central angles around its center point O.\n(a) Calculate the measure of each central angle. (2 marks)\n(b) If a line bisects one of these central angles, what are the resulting sub-angles? (3 marks)",
-              "marking_scheme_answer": "(a) Central angle = 360° / 5 = 72°.\n(b) Bisecting 72° produces two equal 36° angles.",
-              "marks": 5
-            },
-            {
-              "question_number": 1,
-              "question_text": "Case Study: Compass Rose Bearings. A ship changes heading from Due East (90°) to South-West (225°) clockwise.\n(a) Calculate the total angle of rotation. (2 marks)\n(b) Classify this angle of rotation and find its fractional turn. (3 marks)",
-              "marking_scheme_answer": "(a) Rotation angle = 225° - 90° = 135°.\n(b) Classification: Obtuse Angle (90° < 135° < 180°). Fractional turn = 135/360 = 3/8 turn.",
-              "marks": 5
-            },
-            {
-              "question_number": 1,
               "question_text": "Case Study: Architectural Roof Truss. A triangular roof truss has a top apex angle of 110° and two equal base angles.\n(a) Classify the apex angle. (2 marks)\n(b) Find the measure of each base angle given that the sum of angles in a triangle is 180°. (3 marks)",
               "marking_scheme_answer": "(a) Apex angle 110° is an Obtuse Angle.\n(b) Sum of base angles = 180° - 110° = 70°. Each base angle = 70° / 2 = 35°.",
               "marks": 5
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "paper_id": 6,
+      "paper_title": "Chapter 2 Model Test Paper - Lines and Angles",
+      "total_marks": 30,
+      "time_allowed_minutes": 60,
+      "sections": [
         {
           "section_name": "Section A: Objective MCQs & Assertion-Reason",
+          "total_marks": 6,
           "questions": [
             {
               "question_number": "Q1",
@@ -378,10 +500,12 @@
               "correct_answer": "A. Both A and R are true, and R explains A.",
               "solution_and_marking_scheme": "6 x 30° = 180°. [1 Mark]"
             }
-          ]
+          ],
+          "section_key": "section_a"
         },
         {
           "section_name": "Section B: Short Answer Questions",
+          "total_marks": 10,
           "questions": [
             {
               "question_number": "Q7",
@@ -413,10 +537,12 @@
               "question_text": "How many right angles are formed when a straight crease on paper is folded onto itself?",
               "solution_and_marking_scheme": "4 right angles (90° each). [2 Marks]"
             }
-          ]
+          ],
+          "section_key": "section_b"
         },
         {
           "section_name": "Section C: Long Answer Questions",
+          "total_marks": 8,
           "questions": [
             {
               "question_number": "Q12",
@@ -430,10 +556,12 @@
               "question_text": "(a) Find hour hand angle turned from 2 PM to 7 PM. (2 Marks)\n(b) Express as a fraction of a full turn. (2 Marks)",
               "solution_and_marking_scheme": "(a) 5 hours = 5 x 30° = 150°. [2 Marks]\n(b) 150/360 = 5/12 turn. [2 Marks]"
             }
-          ]
+          ],
+          "section_key": "section_c"
         },
         {
           "section_name": "Section D: Competency / Case-Based Assessment",
+          "total_marks": 6,
           "questions": [
             {
               "question_number": "Q14",
@@ -460,7 +588,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "section_key": "section_d"
         }
       ]
     }

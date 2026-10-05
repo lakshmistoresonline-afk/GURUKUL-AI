@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import Dict, Any, List
 
 print("==========================================================================")
-print("GURUKUL AI — STRICT 1-TO-1 DATASET ISOLATION PROCESSOR")
+print("GURUKUL AI — STRICT 1-TO-1 DATASET ISOLATION PROCESSOR (V13 - CLEAN ARRAY UNWRAPPER)")
 print("==========================================================================\n")
 
 REPO_ROOT = r"D:/GURUKUL"
@@ -100,7 +100,7 @@ def run_strict_1to1():
                 subj_code = "HIN"
             elif "Maths" in app_subj:
                 subj_code = "MAT"
-            elif app_subj == "Social":
+            elif "Social" in app_subj:
                 subj_code = "SOC"
             elif app_subj == "Sanskrit":
                 subj_code = "SAN"
@@ -168,10 +168,24 @@ def run_strict_1to1():
                         chrs = extract_chapters(ds)
                         matched = match_chapter(chrs, ch_num)
                         if matched and len(matched) > 0:
-                            sec_data = matched
                             title = matched.get("chapter_title") or matched.get("chapterTitle") or matched.get("title")
                             if title and isinstance(title, str) and "Exhaustive" not in title:
                                 ch_title = title
+
+                            if sec_key == "flashcards":
+                                sec_data = matched.get("flashcards") or matched.get("cards") or matched.get("flashcard_database") or matched
+                                if isinstance(sec_data, dict) and "flashcards" in sec_data:
+                                    sec_data = sec_data["flashcards"]
+                            elif sec_key == "quiz":
+                                q_obj = matched.get("quiz") or matched.get("questions") or matched.get("quizzes") or matched
+                                if isinstance(q_obj, dict):
+                                    sec_data = q_obj.get("questions") or q_obj.get("quiz") or q_obj.get("quizzes") or q_obj
+                                elif isinstance(q_obj, list):
+                                    sec_data = q_obj
+                                else:
+                                    sec_data = q_obj
+                            else:
+                                sec_data = matched
                         else:
                             sec_data = ds
 
@@ -192,7 +206,7 @@ def run_strict_1to1():
 
                 total_chapters_processed += 1
 
-    print(f"\nSuccessfully executed strict 1-to-1 data isolation across {total_chapters_processed} chapters.")
+    print(f"\nSuccessfully executed V13 clean array unrapper isolation across {total_chapters_processed} chapters.")
 
 if __name__ == "__main__":
     run_strict_1to1()

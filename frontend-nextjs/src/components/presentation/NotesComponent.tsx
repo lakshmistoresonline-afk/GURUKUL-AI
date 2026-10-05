@@ -28,7 +28,17 @@ export default function NotesComponent({ data, subject }: NotesProps) {
   const poeticDevices = data.poeticDevices || null;
   const characterAnalysis = data.characterAnalysis || [];
   const grammarFocus = data.grammarFocus || data.grammar_and_language || null;
-  const keyVocabulary = data.keyVocabulary || data.exhaustive_vocabulary || data.glossary || data.vocabulary || [];
+
+  const section1Arch = data.section_1_core_map_and_conceptual_architecture || null;
+  const section2Vocab = data.section_2_essential_vocabulary || [];
+  const section3Pitfalls = data.section_3_misconceptions_and_pitfall_prevention || [];
+
+  const rawVocab = data.keyVocabulary || data.exhaustive_vocabulary || data.glossary || data.vocabulary || [];
+  const combinedVocab = [
+    ...(Array.isArray(rawVocab) ? rawVocab : Object.values(rawVocab)),
+    ...(Array.isArray(section2Vocab) ? section2Vocab : Object.values(section2Vocab))
+  ];
+
   const takeaways = data.importantTakeaways || data.key_takeaways || [];
   const stories = data.stories || data.mindmap_outline?.stories || [];
 
@@ -82,12 +92,12 @@ export default function NotesComponent({ data, subject }: NotesProps) {
             📚 Stories & Arcs ({stories.length})
           </button>
         )}
-        {keyVocabulary.length > 0 && (
+        {combinedVocab.length > 0 && (
           <button
             onClick={() => setActiveSubTab('glossary')}
             className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'glossary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
           >
-            📚 Glossary ({keyVocabulary.length})
+            📚 Glossary ({combinedVocab.length})
           </button>
         )}
       </div>
@@ -95,15 +105,33 @@ export default function NotesComponent({ data, subject }: NotesProps) {
       {/* Tab 1: Summary & Theme */}
       {activeSubTab === 'summary' && (
         <div className="space-y-6 animate-in fade-in duration-200">
-          <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
-            <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Chapter Summary & Theme</h3>
-            {overviewText && <p className="text-slate-700 text-sm leading-relaxed">{renderSafeText(overviewText)}</p>}
-            {centralTheme && (
-              <div className="p-4 bg-indigo-50/60 border border-indigo-100 rounded-2xl text-indigo-900 text-xs font-bold">
-                Central Theme: {renderSafeText(centralTheme)}
+          {section1Arch ? (
+            <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
+              <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Core Map & Conceptual Architecture</h3>
+              <SafeStructuredCard item={section1Arch} />
+            </div>
+          ) : (
+            <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
+              <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Chapter Summary & Theme</h3>
+              {overviewText && <p className="text-slate-700 text-sm leading-relaxed">{renderSafeText(overviewText)}</p>}
+              {centralTheme && (
+                <div className="p-4 bg-indigo-50/60 border border-indigo-100 rounded-2xl text-indigo-900 text-xs font-bold">
+                  Central Theme: {renderSafeText(centralTheme)}
+                </div>
+              )}
+            </div>
+          )}
+
+          {section3Pitfalls.length > 0 && (
+            <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
+              <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Misconceptions & Pitfalls</h3>
+              <div className="space-y-3">
+                {section3Pitfalls.map((p: any, idx: number) => (
+                  <SafeStructuredCard key={idx} item={p} />
+                ))}
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       )}
 
@@ -203,11 +231,11 @@ export default function NotesComponent({ data, subject }: NotesProps) {
       )}
 
       {/* Tab 7: Glossary */}
-      {activeSubTab === 'glossary' && keyVocabulary.length > 0 && (
+      {activeSubTab === 'glossary' && combinedVocab.length > 0 && (
         <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Essential Vocabulary & Glossary</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {keyVocabulary.map((v: any, idx: number) => (
+            {combinedVocab.map((v: any, idx: number) => (
               <SafeStructuredCard key={idx} item={v} />
             ))}
           </div>

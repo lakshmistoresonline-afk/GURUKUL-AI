@@ -1,11 +1,12 @@
 {
+  "chapter_number": 3,
   "chapter_title": "Electricity: Circuits and their Components",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Electricity: Circuits and their Components - Unified Practice Assessment",
-      "total_marks": 30,
-      "time_allowed_minutes": 90,
+      "paper_title": "Set 1 - Electricity: Circuits and their Components (NCERT Standard Practice Set)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
       "sections": [
         {
           "section_name": "Section A (MCQs - 1 Mark Each)",
@@ -31,7 +32,54 @@
               ],
               "correct_answer": "A) Electric Current Direction",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Contrast incandescent bulbs and LEDs regarding energy efficiency and heat generation.",
+              "marking_scheme_answer": "Incandescent bulbs generate light by heating a filament to high temperatures, wasting significant energy as heat. LEDs convert electrical energy directly into light with minimal heat waste.",
+              "marks": 3
             },
+            {
+              "question_number": 2,
+              "question_text": "Describe the practical activity with aim: 'To construct a simple functional switch using safety pins and drawing pins.'. Outline key steps and conclusion.",
+              "marking_scheme_answer": "Steps: Insert one drawing pin through the ring end of a safety pin and press into cardboard., Fix the second drawing pin on cardboard such that the free end of the safety pin can touch it., Connect wires from the drawing pins to complete a circuit with a cell and bulb., Rotate the safety pin to touch (ON) or leave a gap (OFF).\nConclusion: A switch regulates current flow by closing or opening the electrical circuit gap.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Explain how an LED works, detail lead identification rules, and draw schematic circuit diagrams for functional (forward-biased) and non-functional (reverse-biased) LED circuits.",
+              "marking_scheme_answer": "An LED is a polar semiconductor light source. Lead identification: Longer lead = Positive (+) Anode; Shorter lead = Negative (-) Cathode. Forward-Biased Circuit: Longer lead connected to cell positive terminal, shorter lead to switch and cell negative terminal; LED glows bright. Reverse-Biased Circuit: Longer lead connected to cell negative terminal; current is blocked and LED remains dark.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Case Scenario: An electrician uses rubber gloves and plastic-handled pliers while repairing household electrical switches.\nQuestion: Why are rubber and plastic used on electrical repair tools?",
+              "marking_scheme_answer": "Rubber and plastic are electrical insulators (poor conductors) that prevent electric current from flowing through the tools into the human body, preventing electric shocks.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "Set 2 - Electricity: Circuits and their Components (Conceptual & Reasoning Focus)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "What is the underlying scientific nature of the key phenomenon in Electricity: Circuits and their Components?",
@@ -55,7 +103,54 @@
               ],
               "correct_answer": "A) LED (Light Emitting Diode)",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A student builds a simple circuit with a cell, switch, and bulb, but the bulb fails to glow when the switch is closed. List five potential faults.",
+              "marking_scheme_answer": "1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connections at terminals. 4. Broken internal wire conductor. 5. Oxidation/rust on contact points.",
+              "marks": 3
             },
+            {
+              "question_number": 2,
+              "question_text": "How do variables in Electricity: Circuits and their Components affect observed system outcomes?",
+              "marking_scheme_answer": "System outcomes depend on specific physical/chemical parameters: Electric circuits require a continuous closed path for current to flow from a source of electrical energy (cell/battery)...",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Why must electric cells in a multi-cell torch be connected positive-terminal-to-negative-terminal?",
+              "marking_scheme_answer": "Series connection (+ to -) combines the individual voltage potentials of the cells, driving sufficient electromotive force through the filament to produce bright light. Connecting like terminals (+ to +) cancels potential.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Detailed Analysis: Synthesize the full theoretical framework of Electricity: Circuits and their Components.",
+              "marking_scheme_answer": "1. Core Definition. 2. Mechanism & Reactions. 3. System Constraints. 4. Practical Applications.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 3,
+      "paper_title": "Set 3 - Electricity: Circuits and their Components (Practical & Experimental Mastery)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Which materials are required to perform the experimental investigation in Chapter 3?",
@@ -79,7 +174,54 @@
               ],
               "correct_answer": "A) Believing electric current is consumed or destroyed inside the bulb filament.",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Correct the common misconception: 'Believing electric current is consumed or destroyed inside the bulb filament.'. State the true scientific fact.",
+              "marking_scheme_answer": "Correct Fact: Electric current is not consumed; electrical energy is converted into thermal and radiant light energy while charge continues flowing back to the negative terminal.",
+              "marks": 3
             },
+            {
+              "question_number": 2,
+              "question_text": "Outline the procedure and observations for investigating Electricity: Circuits and their Components in the laboratory.",
+              "marking_scheme_answer": "Procedure: Insert one drawing pin through the ring end of a safety pin and press into cardboard., Fix the second drawing pin on cardboard such that the free end of the safety pin can touch it., Connect wires from the drawing pins to complete a circuit with a cell and bulb., Rotate the safety pin to touch (ON) or leave a gap (OFF).\nObservations: When safety pin touches second drawing pin, circuit completes and bulb glows. When rotated away, gap breaks circuit and bulb turns off.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Design a complete laboratory experiment to demonstrate and prove the fundamental law in Electricity: Circuits and their Components.",
+              "marking_scheme_answer": "1. Aim: To construct a simple functional switch using safety pins and drawing pins.\n2. Materials: Two metal drawing pins, One metal safety pin, Connecting copper wires, Cardboard base, Electric cell, Torch bulb\n3. Procedure: Insert one drawing pin through the ring end of a safety pin and press into cardboard., Fix the second drawing pin on cardboard such that the free end of the safety pin can touch it., Connect wires from the drawing pins to complete a circuit with a cell and bulb., Rotate the safety pin to touch (ON) or leave a gap (OFF).\n4. Conclusion: A switch regulates current flow by closing or opening the electrical circuit gap.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Experimental Case Study: Explain how observational data leads to scientific laws in Electricity: Circuits and their Components.",
+              "marking_scheme_answer": "Data collection -> Pattern identification -> Hypothesis testing -> Peer verification -> Scientific Law formulation.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 4,
+      "paper_title": "Set 4 - Electricity: Circuits and their Components (NCERT Exemplar & Textbook Exercise Mastery)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "According to NCERT exercise standards for Chapter 3, which rule applies?",
@@ -103,7 +245,54 @@
               ],
               "correct_answer": "A) 1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connecti...",
               "marks": 1
+            }
+          ]
+        },
+        {
+          "section_name": "Section B (Short Answer Questions - 3 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "A student builds a simple circuit with a cell, switch, and bulb, but the bulb fails to glow when the switch is closed. List five potential faults.",
+              "marking_scheme_answer": "1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connections at terminals. 4. Broken internal wire conductor. 5. Oxidation/rust on contact points.",
+              "marks": 3
             },
+            {
+              "question_number": 2,
+              "question_text": "Summarize the key exercise takeaways for Chapter 3.",
+              "marking_scheme_answer": "Key Takeaways: 1. Core concept understanding. 2. Application of formulas/definitions. 3. Real-world relevance.",
+              "marks": 3
+            }
+          ]
+        },
+        {
+          "section_name": "Section C (Long Answer & Case Study - 5 Marks Each)",
+          "questions": [
+            {
+              "question_number": 1,
+              "question_text": "Exemplar Problem: Provide an in-depth solution to the major exercise problem in Electricity: Circuits and their Components.",
+              "marking_scheme_answer": "Step-by-step solution: 1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connections at terminals. 4. Broken internal wire conductor. 5. Oxidation/rust on contact points. Further explanation: 1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connections at terminals. 4. Broken internal wire conductor. 5. Oxidation/rust on contact points.",
+              "marks": 5
+            },
+            {
+              "question_number": 2,
+              "question_text": "Case Study: Discuss the broader technological and environmental implications of concepts in Electricity: Circuits and their Components.",
+              "marking_scheme_answer": "1. Industrial applications. 2. Environmental impact and conservation. 3. Daily human life usage.",
+              "marks": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paper_id": 5,
+      "paper_title": "Set 5 - Electricity: Circuits and their Components (HOTS & Competency Assessment)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
+      "sections": [
+        {
+          "section_name": "Section A (MCQs - 1 Mark Each)",
+          "questions": [
             {
               "question_number": 1,
               "question_text": "Assertion (A): Phenomena in Electricity: Circuits and their Components play a vital role in natural systems.\nReason (R): These processes maintain structural and energy equilibrium.",
@@ -135,48 +324,6 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Contrast incandescent bulbs and LEDs regarding energy efficiency and heat generation.",
-              "marking_scheme_answer": "Incandescent bulbs generate light by heating a filament to high temperatures, wasting significant energy as heat. LEDs convert electrical energy directly into light with minimal heat waste.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Describe the practical activity with aim: 'To construct a simple functional switch using safety pins and drawing pins.'. Outline key steps and conclusion.",
-              "marking_scheme_answer": "Steps: Insert one drawing pin through the ring end of a safety pin and press into cardboard., Fix the second drawing pin on cardboard such that the free end of the safety pin can touch it., Connect wires from the drawing pins to complete a circuit with a cell and bulb., Rotate the safety pin to touch (ON) or leave a gap (OFF).\nConclusion: A switch regulates current flow by closing or opening the electrical circuit gap.",
-              "marks": 3
-            },
-            {
-              "question_number": 1,
-              "question_text": "A student builds a simple circuit with a cell, switch, and bulb, but the bulb fails to glow when the switch is closed. List five potential faults.",
-              "marking_scheme_answer": "1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connections at terminals. 4. Broken internal wire conductor. 5. Oxidation/rust on contact points.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "How do variables in Electricity: Circuits and their Components affect observed system outcomes?",
-              "marking_scheme_answer": "System outcomes depend on specific physical/chemical parameters: Electric circuits require a continuous closed path for current to flow from a source of electrical energy (cell/battery)...",
-              "marks": 3
-            },
-            {
-              "question_number": 1,
-              "question_text": "Correct the common misconception: 'Believing electric current is consumed or destroyed inside the bulb filament.'. State the true scientific fact.",
-              "marking_scheme_answer": "Correct Fact: Electric current is not consumed; electrical energy is converted into thermal and radiant light energy while charge continues flowing back to the negative terminal.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Outline the procedure and observations for investigating Electricity: Circuits and their Components in the laboratory.",
-              "marking_scheme_answer": "Procedure: Insert one drawing pin through the ring end of a safety pin and press into cardboard., Fix the second drawing pin on cardboard such that the free end of the safety pin can touch it., Connect wires from the drawing pins to complete a circuit with a cell and bulb., Rotate the safety pin to touch (ON) or leave a gap (OFF).\nObservations: When safety pin touches second drawing pin, circuit completes and bulb glows. When rotated away, gap breaks circuit and bulb turns off.",
-              "marks": 3
-            },
-            {
-              "question_number": 2,
-              "question_text": "Summarize the key exercise takeaways for Chapter 3.",
-              "marking_scheme_answer": "Key Takeaways: 1. Core concept understanding. 2. Application of formulas/definitions. 3. Real-world relevance.",
-              "marks": 3
-            },
-            {
-              "question_number": 1,
               "question_text": "HOTS Question: Analyze an unfamiliar scenario involving Electricity: Circuits and their Components and predict the outcome based on first principles.",
               "marking_scheme_answer": "1. Identification of core principles. 2. Deduction of cause and effect. 3. Predicted physical/chemical/biological outcome.",
               "marks": 3
@@ -194,54 +341,6 @@
           "questions": [
             {
               "question_number": 1,
-              "question_text": "Explain how an LED works, detail lead identification rules, and draw schematic circuit diagrams for functional (forward-biased) and non-functional (reverse-biased) LED circuits.",
-              "marking_scheme_answer": "An LED is a polar semiconductor light source. Lead identification: Longer lead = Positive (+) Anode; Shorter lead = Negative (-) Cathode. Forward-Biased Circuit: Longer lead connected to cell positive terminal, shorter lead to switch and cell negative terminal; LED glows bright. Reverse-Biased Circuit: Longer lead connected to cell negative terminal; current is blocked and LED remains dark.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Case Scenario: An electrician uses rubber gloves and plastic-handled pliers while repairing household electrical switches.\nQuestion: Why are rubber and plastic used on electrical repair tools?",
-              "marking_scheme_answer": "Rubber and plastic are electrical insulators (poor conductors) that prevent electric current from flowing through the tools into the human body, preventing electric shocks.",
-              "marks": 5
-            },
-            {
-              "question_number": 1,
-              "question_text": "Why must electric cells in a multi-cell torch be connected positive-terminal-to-negative-terminal?",
-              "marking_scheme_answer": "Series connection (+ to -) combines the individual voltage potentials of the cells, driving sufficient electromotive force through the filament to produce bright light. Connecting like terminals (+ to +) cancels potential.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Detailed Analysis: Synthesize the full theoretical framework of Electricity: Circuits and their Components.",
-              "marking_scheme_answer": "1. Core Definition. 2. Mechanism & Reactions. 3. System Constraints. 4. Practical Applications.",
-              "marks": 5
-            },
-            {
-              "question_number": 1,
-              "question_text": "Design a complete laboratory experiment to demonstrate and prove the fundamental law in Electricity: Circuits and their Components.",
-              "marking_scheme_answer": "1. Aim: To construct a simple functional switch using safety pins and drawing pins.\n2. Materials: Two metal drawing pins, One metal safety pin, Connecting copper wires, Cardboard base, Electric cell, Torch bulb\n3. Procedure: Insert one drawing pin through the ring end of a safety pin and press into cardboard., Fix the second drawing pin on cardboard such that the free end of the safety pin can touch it., Connect wires from the drawing pins to complete a circuit with a cell and bulb., Rotate the safety pin to touch (ON) or leave a gap (OFF).\n4. Conclusion: A switch regulates current flow by closing or opening the electrical circuit gap.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Experimental Case Study: Explain how observational data leads to scientific laws in Electricity: Circuits and their Components.",
-              "marking_scheme_answer": "Data collection -> Pattern identification -> Hypothesis testing -> Peer verification -> Scientific Law formulation.",
-              "marks": 5
-            },
-            {
-              "question_number": 1,
-              "question_text": "Exemplar Problem: Provide an in-depth solution to the major exercise problem in Electricity: Circuits and their Components.",
-              "marking_scheme_answer": "Step-by-step solution: 1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connections at terminals. 4. Broken internal wire conductor. 5. Oxidation/rust on contact points. Further explanation: 1. Dead/discharged electric cell. 2. Fused bulb filament. 3. Loose wire connections at terminals. 4. Broken internal wire conductor. 5. Oxidation/rust on contact points.",
-              "marks": 5
-            },
-            {
-              "question_number": 2,
-              "question_text": "Case Study: Discuss the broader technological and environmental implications of concepts in Electricity: Circuits and their Components.",
-              "marking_scheme_answer": "1. Industrial applications. 2. Environmental impact and conservation. 3. Daily human life usage.",
-              "marks": 5
-            },
-            {
-              "question_number": 1,
               "question_text": "Synthesize how concepts from Electricity: Circuits and their Components connect across physics, chemistry, biology, and earth science.",
               "marking_scheme_answer": "Interdisciplinary synthesis: Physical aspects (energy transfer), Chemical aspects (substances & reactions), Biological aspects (organism adaptation), Earth Science (environmental balance).",
               "marks": 5
@@ -253,9 +352,18 @@
               "marks": 5
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "paper_id": 6,
+      "paper_title": "NCERT Class 7 Science Chapter 3 Model Test Paper",
+      "total_marks": 30,
+      "time_allowed_minutes": 60,
+      "sections": [
         {
           "section_name": "Section A (Objective MCQs & Assertion-Reason)",
+          "total_section_marks": 6,
           "questions": [
             {
               "question_number": 1,
@@ -349,6 +457,7 @@
         },
         {
           "section_name": "Section B (Short Answer Questions)",
+          "total_section_marks": 10,
           "questions": [
             {
               "question_number": 7,
@@ -399,6 +508,7 @@
         },
         {
           "section_name": "Section C (Long Answer Questions - Diagrams & Processes)",
+          "total_section_marks": 8,
           "questions": [
             {
               "question_number": 12,
@@ -422,9 +532,55 @@
         },
         {
           "section_name": "Section D (Competency / Practical Case-Based Assessment)",
-          "questions": []
+          "total_section_marks": 6,
+          "question": {
+            "question_number": 14,
+            "type": "Case-Based Competency Assessment",
+            "blooms_level": "Analyzing_Evaluating",
+            "case_scenario_text": "An electrician uses rubber gloves and plastic-handled pliers while repairing household electrical switches.",
+            "total_marks": 6,
+            "sub_questions": [
+              {
+                "sub_question_id": "14.1",
+                "question_text": "Why are rubber and plastic used on electrical repair tools?",
+                "marking_scheme_answer": "Rubber and plastic are electrical insulators (poor conductors) that prevent electric current from flowing through the tools into the human body, preventing electric shocks.",
+                "marks": 2,
+                "breakdown": "2 Marks for complete, accurate identification/explanation of the initial phenomenon."
+              },
+              {
+                "sub_question_id": "14.2",
+                "question_text": "Formulate a testable hypothesis or identify the chemical/physical principle.",
+                "marking_scheme_answer": "Scientific principle explanation.",
+                "marks": 2,
+                "breakdown": "2 Marks for correct scientific reasoning and principle formulation."
+              },
+              {
+                "sub_question_id": "14.3",
+                "question_text": "What conclusion or practical precaution can be derived from this experimental observation?",
+                "marking_scheme_answer": "Practical conclusion and safety/precautionary measure grounded in textbook guidelines.",
+                "marks": 2,
+                "breakdown": "2 Marks for valid evidence-based conclusion / real-world application."
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "additional_metadata": {
+        "chapter_number": 3,
+        "chapter_title": "Electricity: Circuits and their Components",
+        "paper_metadata": {
+          "title": "NCERT Class 7 Science Chapter 3 Model Test Paper",
+          "total_marks": 30,
+          "duration_minutes": 60,
+          "instructions": [
+            "All questions are compulsory.",
+            "Section A contains 6 Objective Questions (4 MCQs + 2 Assertion-Reason) carrying 1 Mark each.",
+            "Section B contains 5 Short Answer Questions carrying 2 Marks each.",
+            "Section C contains 2 Long Answer Questions carrying 4 Marks each.",
+            "Section D contains 1 Case-Based Competency Question with 3 sub-questions carrying 2 Marks each."
+          ]
+        }
+      }
     }
   ]
 }

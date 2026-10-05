@@ -10,22 +10,46 @@ export default function QuizComponent({ quiz }: QuizProps) {
   const [submittedText, setSubmittedText] = useState<Record<number, boolean>>({});
   const [showExplanation, setShowExplanation] = useState<Record<number, boolean>>({});
 
-  let quizList = quiz;
+  let rawList = quiz;
   if (quiz && !Array.isArray(quiz) && typeof quiz === 'object') {
     if (Array.isArray((quiz as any).questions)) {
-      quizList = (quiz as any).questions;
+      rawList = (quiz as any).questions;
     } else if (Array.isArray((quiz as any).quiz)) {
-      quizList = (quiz as any).quiz;
+      rawList = (quiz as any).quiz;
     } else if (Array.isArray((quiz as any).quizzes)) {
-      quizList = (quiz as any).quizzes;
+      rawList = (quiz as any).quizzes;
     } else {
       const foundArrayProp = Object.values(quiz).find(val => Array.isArray(val));
       if (foundArrayProp) {
-        quizList = foundArrayProp;
+        rawList = foundArrayProp;
       } else {
-        quizList = Object.values(quiz);
+        rawList = Object.values(quiz);
       }
     }
+  }
+
+  // Flatten any nested question arrays or unwrap wrapper objects
+  let quizList: any[] = [];
+  if (Array.isArray(rawList)) {
+    rawList.forEach((item: any) => {
+      if (!item) return;
+      if (Array.isArray(item.questions)) {
+        quizList.push(...item.questions);
+      } else if (Array.isArray(item.quiz)) {
+        quizList.push(...item.quiz);
+      } else if (item.question || item.question_text || item.prompt || item.statement || item.q) {
+        quizList.push(item);
+      } else if (typeof item === 'object' && !item.quiz_title && !item.chapter_title) {
+        // check if it has option or answer properties
+        if (item.options || item.correct_answer || item.answer) {
+          quizList.push(item);
+        }
+      }
+    });
+  }
+
+  if (quizList.length === 0 && Array.isArray(rawList)) {
+    quizList = rawList.filter((item: any) => item && (item.question || item.question_text || item.prompt));
   }
 
   if (!Array.isArray(quizList) || quizList.length === 0) {
@@ -62,11 +86,11 @@ export default function QuizComponent({ quiz }: QuizProps) {
       <div className="space-y-6">
         {quizList.map((q: any, idx: number) => {
           if (!q || typeof q !== 'object') return null;
-          const qText = q.question || q.question_text || q.prompt || q.statement || q.q || '';
-          const rawCorrect = q.correct_option || q.correct_answer || q.answer || q.correct;
-          const qType = q.type || q.question_type || '';
+          const qText = q.question || q.question_text || q.prompt || q.statement || q.q || q.text || '';
+          if (!qText) return null;
 
-          if (!qText && !q.quiz_id) return null;
+          const rawCorrect = q.correct_option || q.correct_answer || q.answer || q.correct || '';
+          const qType = q.type || q.question_type || 'Assessment';
 
           let optionsArr: string[] = [];
           if (Array.isArray(q.options)) {
@@ -92,7 +116,7 @@ export default function QuizComponent({ quiz }: QuizProps) {
             <div key={idx} className="p-6 bg-slate-50 border border-slate-200 rounded-3xl space-y-4 shadow-sm">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="text-xs font-bold text-indigo-600 uppercase tracking-wide">
-                  Question #{idx + 1} {qType ? `• ${qType}` : ''} {q.category || q.qid || q.quiz_id ? `• ${q.category || q.qid || q.quiz_id}` : ''}
+                  Question #{idx + 1} • {qType} {q.category || q.qid || q.quiz_id ? `• ${q.category || q.qid || q.quiz_id}` : ''}
                 </span>
                 {(q.difficulty_level || q.difficulty || q.blooms_level) && (
                   <span className="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase bg-emerald-100 text-emerald-800">

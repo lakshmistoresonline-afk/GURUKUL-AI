@@ -12,7 +12,13 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
 
   let fcList = flashcards;
   if (flashcards && !Array.isArray(flashcards) && typeof flashcards === 'object') {
-    fcList = (flashcards as any).flashcards || (flashcards as any).cards || (flashcards as any).flashcard_database || (flashcards as any).flashcards_dataset || Object.values(flashcards);
+    fcList = (flashcards as any).flashcards || (flashcards as any).cards || (flashcards as any).flashcard_database || (flashcards as any).flashcards_dataset || (flashcards as any).flashcard_list || Object.values(flashcards);
+  }
+
+  if (fcList && !Array.isArray(fcList) && typeof fcList === 'object') {
+    const foundArr = Object.values(fcList).find(v => Array.isArray(v));
+    if (foundArr) fcList = foundArr;
+    else fcList = [fcList];
   }
 
   if (!Array.isArray(fcList) || fcList.length === 0) {
@@ -38,9 +44,9 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
     }
   };
 
-  const currentCard = fcList[carouselIdx] || fcList[0];
-  const frontText = currentCard.front_question || currentCard.front_prompt || currentCard.front || currentCard.term || currentCard.question || currentCard.question_text || currentCard.prompt || currentCard.front_content || '';
-  const backText = currentCard.back_answer || currentCard.back || currentCard.definition || currentCard.answer || currentCard.back_content || '';
+  const currentCard = fcList[carouselIdx] || fcList[0] || {};
+  const frontText = currentCard.front_question || currentCard.front_prompt || currentCard.front || currentCard.term || currentCard.word || currentCard.question || currentCard.question_text || currentCard.prompt || currentCard.front_content || currentCard.title || currentCard.concept || (typeof currentCard === 'string' ? currentCard : Object.values(currentCard).find(v => typeof v === 'string') || 'Flashcard Prompt');
+  const backText = currentCard.back_answer || currentCard.back || currentCard.definition || currentCard.meaning || currentCard.answer || currentCard.back_content || currentCard.content || (typeof currentCard === 'string' ? currentCard : 'Flashcard Answer');
   const memoryTip = currentCard.key_takeaway || currentCard.key_memory_tip || currentCard.memory_tip || currentCard.explanation_or_tip || '';
   const category = currentCard.category || currentCard.concept_tag || '';
   const level = currentCard.level || currentCard.difficulty_level || currentCard.difficulty || '';
@@ -158,8 +164,8 @@ export default function FlashcardsComponent({ flashcards }: FlashcardsProps) {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {fcList.map((card: any, idx: number) => {
-            const fText = card.front_question || card.front_prompt || card.front || card.term || card.question || card.question_text || card.prompt || card.front_content || '';
-            const bText = card.back_answer || card.back || card.definition || card.answer || card.back_content || '';
+            const fText = card.front_question || card.front_prompt || card.front || card.term || card.word || card.question || card.question_text || card.prompt || card.front_content || card.title || card.concept || (typeof card === 'string' ? card : Object.values(card).find(v => typeof v === 'string') || 'Flashcard Prompt');
+            const bText = card.back_answer || card.back || card.definition || card.meaning || card.answer || card.back_content || card.content || (typeof card === 'string' ? card : 'Flashcard Answer');
             const isFlipped = !!flippedCards[idx];
             const isMastered = !!masteredCards[idx];
 

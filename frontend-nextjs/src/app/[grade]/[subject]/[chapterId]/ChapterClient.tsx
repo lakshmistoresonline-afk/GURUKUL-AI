@@ -73,6 +73,8 @@ const FIXED_TABS = [
   { id: 'question_papers', label: 'Question Papers', icon: '📋' },
 ];
 
+const TAB_SEQUENCE = ['overview', 'notes', 'master', 'foundational', 'flashcards', 'mindmaps', 'quiz', 'question_papers'];
+
 export default function ChapterClient({ grade, subject, chapterId }: ChapterClientProps) {
   const [sourceData, setSourceData] = useState<ChapterSourceData | null>(null);
   const [activeTab, setActiveTab] = useState<string>('overview');
@@ -87,6 +89,25 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
   const [textSize, setTextSize] = useState<TextSize>('medium');
   const [lineSpacing, setLineSpacing] = useState<LineSpacing>('normal');
   const [fontStyle, setFontStyle] = useState<FontStyle>('sans');
+
+  const handleNextTab = () => {
+    const currentIdx = TAB_SEQUENCE.indexOf(activeTab);
+    if (currentIdx !== -1 && currentIdx < TAB_SEQUENCE.length - 1) {
+      const nextTab = TAB_SEQUENCE[currentIdx + 1];
+      setActiveTab(nextTab);
+      setCompletedTabs(prev => ({ ...prev, [activeTab]: true }));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handlePrevTab = () => {
+    const currentIdx = TAB_SEQUENCE.indexOf(activeTab);
+    if (currentIdx > 0) {
+      const prevTab = TAB_SEQUENCE[currentIdx - 1];
+      setActiveTab(prevTab);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   // Scroll to top on chapter, subject, or activeTab change
   useEffect(() => {
@@ -310,9 +331,13 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
                 Dashboard
               </Link>
               <span>/</span>
-              <span>Class {grade}</span>
+              <Link href="/" className="hover:text-indigo-600 transition-colors" onClick={() => localStorage.setItem('gurukul_selected_grade', grade)}>
+                Class {grade}
+              </Link>
               <span>/</span>
-              <span>{subject}</span>
+              <Link href="/" className="hover:text-indigo-600 transition-colors" onClick={() => localStorage.setItem('gurukul_selected_grade', grade)}>
+                {subject}
+              </Link>
             </div>
 
             <div className="flex items-center gap-4">
@@ -418,6 +443,32 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
             <ErrorBoundary>
               {renderActiveSectionContent()}
             </ErrorBoundary>
+
+            {/* Bottom Tab Sequencing & Chapter Progression Footer */}
+            <div className="pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-between gap-4">
+              <button
+                onClick={handlePrevTab}
+                disabled={TAB_SEQUENCE.indexOf(activeTab) === 0}
+                className="px-5 py-3 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 rounded-2xl font-black text-xs shadow-xs transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                ← Previous Section
+              </button>
+
+              <div className="flex items-center gap-3">
+                <span className="text-xs font-bold text-slate-400 font-mono">
+                  Section {TAB_SEQUENCE.indexOf(activeTab) + 1} of {TAB_SEQUENCE.length}
+                </span>
+              </div>
+
+              <button
+                onClick={handleNextTab}
+                disabled={TAB_SEQUENCE.indexOf(activeTab) === TAB_SEQUENCE.length - 1}
+                className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl font-black text-xs shadow-md shadow-indigo-600/20 transition-all hover:translate-x-1 disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-2"
+              >
+                <span>Complete & Continue</span>
+                <span>➔</span>
+              </button>
+            </div>
           </main>
         </div>
       </div>

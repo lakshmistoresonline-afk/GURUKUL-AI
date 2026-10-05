@@ -2,6 +2,10 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { doc, getDoc } from 'firebase/firestore';
+import { auth, db } from '../lib/firebase';
+import LoginScreen from '../components/LoginScreen';
 import CommandPalette from '../components/CommandPalette';
 import ExplorerLockerModal from '../components/ExplorerLockerModal';
 
@@ -101,6 +105,12 @@ const FALLBACK_CLASS5_ENGLISH: SubjectDetails = {
 };
 
 export default function Dashboard() {
+  const [currentUser, setCurrentUser] = useState<any>(null);
+  const [userRole, setUserRole] = useState<string>('student');
+  const [userClassId, setUserClassId] = useState<string>('all');
+  const [authChecking, setAuthChecking] = useState<boolean>(true);
+  const [accessError, setAccessError] = useState<string>('');
+
   const [classes, setClasses] = useState<ClassDiscovery[]>([
     { grade: '5', subjects: ['English', 'Hindi', 'Maths', 'Science'] },
     { grade: '6', subjects: ['English', 'Hindi', 'Maths', 'Science', 'Social'] },
@@ -119,6 +129,55 @@ export default function Dashboard() {
   const [isCommandOpen, setIsCommandOpen] = useState<boolean>(false);
   const [isLockerOpen, setIsLockerOpen] = useState<boolean>(false);
   const [viewMode, setViewMode] = useState<'grid' | 'constellation'>('grid');
+
+  useEffect(() => {
+    const demoUserStr = localStorage.getItem('gurukul_demo_user');
+    if (demoUserStr) {
+      try {
+        const dUser = JSON.parse(demoUserStr);
+        setCurrentUser(dUser);
+        setUserRole(dUser.role);
+        setUserClassId(dUser.classId);
+        if (dUser.role === 'student' && dUser.classId !== 'all') {
+          setSelectedGrade(dUser.classId);
+          localStorage.setItem('gurukul_selected_grade', dUser.classId);
+          const activeClass = classes.find((c) => c.grade === dUser.classId) || classes[0];
+          setAvailableSubjects(activeClass.subjects);
+        }
+        setAuthChecking(false);
+        return;
+      } catch {}
+    }
+
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        setCurrentUser(user);
+        try {
+          const userDocRef = doc(db, 'users', user.uid);
+          const userSnap = await getDoc(userDocRef);
+          if (userSnap.exists()) {
+            const uData = userSnap.data();
+            const r = uData.role || 'student';
+            const cId = uData.classId || 'all';
+            setUserRole(r);
+            setUserClassId(cId);
+            if (r === 'student' && cId !== 'all') {
+              setSelectedGrade(cId);
+              localStorage.setItem('gurukul_selected_grade', cId);
+              const activeClass = classes.find((c) => c.grade === cId) || classes[0];
+              setAvailableSubjects(activeClass.subjects);
+            }
+          }
+        } catch (err) {
+          console.warn('Failed to fetch user role:', err);
+        }
+      } else {
+        setCurrentUser(null);
+      }
+      setAuthChecking(false);
+    });
+    return () => unsubscribe();
+  }, []);
 
   useEffect(() => {
     const savedStreak = localStorage.getItem('gurukul_streak');
@@ -153,7 +212,18 @@ export default function Dashboard() {
     return () => window.removeEventListener('keydown', handleGlobalKey);
   }, []);
 
+  const handleSignOut = () => {
+    localStorage.removeItem('gurukul_demo_user');
+    signOut(auth).catch(() => {});
+    setCurrentUser(null);
+  };
+
   const handleGradeChange = (grade: string) => {
+    if (userRole === 'student' && userClassId !== 'all' && userClassId !== grade) {
+      setAccessError(`Access restricted: You are enrolled in Class ${userClassId} only.`);
+      return;
+    }
+    setAccessError('');
     setSelectedGrade(grade);
     localStorage.setItem('gurukul_selected_grade', grade);
     const activeClass = classes.find((c) => c.grade === grade) || classes[0];
@@ -273,12 +343,35 @@ export default function Dashboard() {
     chapters: unit.chapters.filter(ch => ch.title.toLowerCase().includes(searchQuery.toLowerCase()) || ch.id.toLowerCase().includes(searchQuery.toLowerCase()))
   })).filter(unit => unit.chapters.length > 0) || [];
 
+  if (authChecking) {
+    return (
+      <div className="min-h-screen bg-indigo-950 flex items-center justify-center text-white font-black text-sm">
+        Authenticating & loading classroom...
+      </div>
+    );
+  }
+
+  if (!currentUser) {
+    return (
+      <div className="min-h-screen bg-indigo-950">
+        <LoginScreen onLoginSuccess={() => {}} />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/50 via-slate-50 to-white text-[#0F172A] selection:bg-indigo-500 selection:text-white">
       <CommandPalette isOpen={isCommandOpen} onClose={() => setIsCommandOpen(false)} />
       <ExplorerLockerModal isOpen={isLockerOpen} onClose={() => setIsLockerOpen(false)} xp={xp} streak={streak} />
 
       <main className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:pt-14 md:pb-20 space-y-10">
+        {accessError && (
+          <div className="p-4 bg-amber-500/10 border border-amber-500/30 rounded-2xl text-xs text-amber-900 font-bold flex items-center justify-between">
+            <span>{accessError}</span>
+            <button onClick={() => setAccessError('')} className="text-amber-900 font-bold">✕</button>
+          </div>
+        )}
+
         {/* Calm Welcome Header with Gamified Explorer Rank & Locker Button */}
         <header className="space-y-4 border-b border-slate-200/80 pb-6 pt-2">
           <div className="flex flex-wrap items-center justify-between gap-4">
@@ -286,6 +379,12 @@ export default function Dashboard() {
               <span>Gurukul AI Classroom</span>
             </div>
             <div className="flex items-center gap-3">
+              <button
+                onClick={handleSignOut}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 rounded-2xl shadow-xs text-xs font-bold transition-all"
+              >
+                <span>🚪 Sign Out</span>
+              </button>
               <button
                 onClick={() => setIsLockerOpen(true)}
                 className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 rounded-2xl shadow-xs text-xs font-bold transition-all hover:scale-[1.02]"

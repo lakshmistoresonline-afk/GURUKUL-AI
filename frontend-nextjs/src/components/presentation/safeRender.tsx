@@ -26,6 +26,9 @@ export function renderSafeText(val: any): string {
       if ('heading' in val && 'content' in val) {
         return `${val.heading}: ${val.content}`;
       }
+      if ('misconception' in val && 'correction' in val) {
+        return `Misconception: ${val.misconception} | Correction: ${val.correction}`;
+      }
 
       const keys = Object.keys(val);
       if (keys.length === 0) return '';
@@ -34,7 +37,7 @@ export function renderSafeText(val: any): string {
           return val[k];
         }
       }
-      return '';
+      return JSON.stringify(val);
     } catch {
       return '';
     }
@@ -48,6 +51,15 @@ export function SafeStructuredCard({ item }: { item: any }) {
     return <p className="text-slate-700 text-xs leading-relaxed">{item}</p>;
   }
   if (typeof item === 'object') {
+    if (item.misconception || item.correction) {
+      return (
+        <div className="p-4 bg-rose-50/60 border border-rose-100 rounded-2xl text-xs space-y-1">
+          {item.misconception && <div className="font-bold text-rose-900">⚠️ Misconception: {item.misconception}</div>}
+          {item.correction && <div className="font-medium text-emerald-900">✓ Correction: {item.correction}</div>}
+        </div>
+      );
+    }
+
     const term = item.term || item.word || item.heading || item.title || '';
     const def = item.definition || item.meaning || item.content || item.description || '';
     const example = item.example || item.contextual_importance || '';
@@ -57,7 +69,7 @@ export function SafeStructuredCard({ item }: { item: any }) {
         <div className="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-1.5">
           {term && <div className="text-sm font-extrabold text-indigo-700">{term}</div>}
           {def && <div className="text-xs text-slate-700 leading-relaxed">{def}</div>}
-          {example && <div className="text-[11px] font-serif italic text-slate-500 pt-1">Example: &ldquo;{example}&rdquo;</div>}
+          {example && <div className="text-[11px] font-serif italic text-slate-500 pt-1">Context: &ldquo;{example}&rdquo;</div>}
         </div>
       );
     }
@@ -68,7 +80,7 @@ export function SafeStructuredCard({ item }: { item: any }) {
           <p className="text-slate-700 text-xs leading-relaxed">{item.big_idea_summary}</p>
           {Array.isArray(item.topic_hierarchy) && item.topic_hierarchy.map((th: any, idx: number) => (
             <div key={idx} className="p-3 bg-slate-50 rounded-xl space-y-1">
-              <div className="text-xs font-bold text-indigo-800">{th.topic}</div>
+              <div className="text-xs font-bold text-indigo-800">{th.topic || th.heading}</div>
               {Array.isArray(th.subtopics) && (
                 <ul className="list-disc list-inside text-[11px] text-slate-600 space-y-0.5">
                   {th.subtopics.map((st: string, sIdx: number) => (

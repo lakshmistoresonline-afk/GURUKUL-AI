@@ -1,11 +1,12 @@
 {
+  "chapter_number": 12,
   "chapter_title": "हिंद महासागर में छोटा-सा हिंदुस्तान",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "हिंद महासागर में छोटा-सा हिंदुस्तान - Unified Practice Assessment",
-      "total_marks": 30,
-      "time_allowed_minutes": 90,
+      "paper_title": "Set 1 - हिंद महासागर में छोटा-सा हिंदुस्तान (NCERT मॉडल प्रश्न पत्र)",
+      "total_marks": 25,
+      "time_allowed_minutes": 45,
       "sections": [
         {
           "section_name": "खंड 'क' (वस्तुनिष्ठ प्रश्न / MCQs)",
@@ -92,9 +93,17 @@
               "marks": 5
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "paper_id": 2,
+      "paper_title": "अध्याय 12: हिंद महासागर में छोटा-सा हिंदुस्तान - मॉडल प्रश्न पत्र (NCERT पैटर्न)",
+      "total_marks": 30,
+      "time_allowed_minutes": 60,
+      "sections": [
         {
-          "section_name": "Section A",
+          "section_title": "खंड 'क' - वस्तुनिष्ठ प्रश्न एवं कथन-कारण (MCQs & Assertion-Reason) [6 अंक]",
           "questions": [
             {
               "q_no": 1,
@@ -180,7 +189,13 @@
               ],
               "correct_answer": "क) कथन और कारण दोनों सही हैं तथा कारण कथन की सही व्याख्या करता है।",
               "marking_scheme_and_explanation": "1 अंक - भारतीय संस्कृति की जीवंतता का अनूठा प्रमाण।"
-            },
+            }
+          ],
+          "section_key": "section_A_mcq_and_assertion_reason"
+        },
+        {
+          "section_title": "खंड 'ख' - लघु उत्तरीय प्रश्न एवं व्याकरण (Short Answer Questions & Grammar) [10 अंक]",
+          "questions": [
             {
               "q_no": 1,
               "blooms_level": "Understanding",
@@ -215,7 +230,13 @@
               "marks": 2,
               "question_text": "'प्राणवती' शब्द का अर्थ स्पष्ट कीजिए।",
               "marking_scheme_and_model_answer": "2 अंक: अर्थ: सजीव, चेतनामय व प्राणों से भरपूर।"
-            },
+            }
+          ],
+          "section_key": "section_B_short_answer"
+        },
+        {
+          "section_title": "खंड 'ग' - दीर्घ उत्तरीय एवं भाव-प्रधान प्रश्न (Long Answer Questions) [8 अंक]",
+          "questions": [
             {
               "q_no": 1,
               "blooms_level": "Application",
@@ -230,7 +251,36 @@
               "question_text": "'अपनी भाषा और संस्कारों को संजोकर रखना ही जाति की जीवंतता है।' समीक्षा कीजिए।",
               "marking_scheme_and_model_answer": "4 अंक: मजदूर बनकर मॉरीशस गए भारतीयों ने कष्ट सहे, पर अपनी मातृभाषा और रामायण को नहीं छोड़ा। अपनी जड़ों से जुड़े रहना ही संस्कृति को अमर बनाता है।"
             }
-          ]
+          ],
+          "section_key": "section_C_long_answer"
+        },
+        {
+          "section_title": "खंड 'घ' - योग्यता-आधारित / केस-स्टडी प्रश्न (Competency & Case-Based Assessment) [6 अंक]",
+          "case_passage": "गद्यांश ध्यानपूर्वक पढ़िए:\n'मॉरीशस वह देश है जिसका कोई भी हिस्सा समुद्र से 15 मील से अधिक दूर नहीं है। यहाँ के भारतीय अपने पूर्वजों की भाषा भोजपुरी और संस्कृति को भूले नहीं हैं। 'परी तालाब' पर शिवरात्रि का मेला देखकर ऐसा लगता है मानो हम भारत के ही किसी पावन तीर्थ पर खड़े हों।'",
+          "sub_questions": [
+            {
+              "sub_q_no": "(1)",
+              "marks": 2,
+              "blooms_level": "Understanding",
+              "question_text": "मॉरीशस की भौगोलिक स्थिति की क्या विशेष बात है?",
+              "model_answer": "2 अंक: यह चारों ओर समुद्र से घिरा छोटा द्वीप है जिसका कोई स्थान समुद्र से 15 मील से दूर नहीं है।"
+            },
+            {
+              "sub_q_no": "(2)",
+              "marks": 2,
+              "blooms_level": "Application",
+              "question_text": "मॉरीशस को 'छोटा-सा हिंदुस्तान' क्यों कहा गया है?",
+              "model_answer": "2 अंक: क्योंकि वहाँ की अधिकांश आबादी भारतीय मूल की है जो भारतीय भाषा व त्योहारों का पालन करती है।"
+            },
+            {
+              "sub_q_no": "(3)",
+              "marks": 2,
+              "blooms_level": "Analyzing_Evaluating",
+              "question_text": "विदेशों में भी अपनी भाषा और संस्कृति का सम्मान करना क्यों आवश्यक है?",
+              "model_answer": "2 अंक: अपनी संस्कृति हमारी पहचान और स्वाभिमान है; इसका सम्मान करने से भारत का मान बढ़ता है।"
+            }
+          ],
+          "section_key": "section_D_case_based_competency"
         }
       ]
     }
