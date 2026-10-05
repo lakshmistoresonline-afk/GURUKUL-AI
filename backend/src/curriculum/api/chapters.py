@@ -1,13 +1,14 @@
 import os
 import json
-from fastapi import APIRouter, HTTPException, Query
-from typing import Dict, Any, List
+from fastapi import APIRouter, HTTPException, Query, Header
+from typing import Dict, Any, List, Optional
 from ..common.errors import ChapterNotFoundError
+from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 
-router = APIRouter(prefix="/api/v1", tags=["New Direct Curriculum Pipeline"])
+router = APIRouter(prefix="/api/v1", tagsCur="Curriculum Runtime Architecture")
 
-PROCESSED_ROOT = r"D:\GURUKUL\ProcessedContent"
-CONTENTS_ROOT = r"D:\GURUKUL\Contents"
+PROCESSED_ROOT = r"D:/GURUKUL/ProcessedContent"
+CONTENTS_ROOT = r"D:/GURUKUL/Contents"
 
 @router.get("/classes")
 async def discover_classes():
@@ -63,7 +64,6 @@ async def get_subject_details(grade: str, subject: str):
             ch_dir = os.path.join(sub_processed_dir, ch_id)
             ch_title = ch_id
 
-            # Check overview, notes, and master files for a valid title
             for sec in ["overview", "notes", "master"]:
                 sec_path = os.path.join(ch_dir, f"{sec}.json")
                 if os.path.exists(sec_path):
@@ -77,7 +77,7 @@ async def get_subject_details(grade: str, subject: str):
                                     d.get("title") or
                                     (isinstance(d.get("overview"), dict) and (d["overview"].get("chapter_title") or d["overview"].get("title")))
                                 )
-                                if title and isinstance(title, str):
+                                if title and isinstance(title, str) and "Exhaustive" not in title:
                                     ch_title = title
                                     break
                     except Exception:
@@ -111,13 +111,28 @@ async def get_subject_details(grade: str, subject: str):
         ]
     }
 
-@router.get("/chapters/{chapterId}")
-async def get_chapter_details(
+@router.get("/chapters/{chapterId}/source")
+async def get_chapter_direct_source_v2(
     chapterId: str,
     grade: str = Query(default="5"),
-    subject: str = Query(default="English")
+    subject: str = Query(default="English"),
+    book: str = Query(default="main")
 ):
+    """
+    STRICT CURRICULUM RUNTIME RESOLUTION ENDPOINT (V13):
+    Enforces strict identity matching (class, subject, book, chapterId).
+    Rejects missing chapters with HTTP 404 NOT_FOUND without fallback generation.
+    """
+    identity = CurriculumIdentity(
+        grade=grade,
+        subject=subject,
+        book=book,
+        chapter_id=chapterId,
+        content_type="source_bundle"
+    )
+
     sub_processed_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", subject.replace(" ", ""), chapterId)
+
     if not os.path.exists(sub_processed_dir) and "C" in chapterId:
         target_c_suffix = chapterId.split("C")[-1]
         parent_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", subject.replace(" ", ""))
@@ -127,106 +142,59 @@ async def get_chapter_details(
                     sub_processed_dir = os.path.join(parent_dir, d)
                     chapterId = d
                     break
+
+    if not os.path.exists(sub_processed_dir):
+        raise HTTPException(status_code=404, detail=f"Chapter identity {identity.to_cache_key()} not found. No synthetic fallback created.")
+
+    sections = {}
+    for sec_name in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers", "foundational"]:
+        sec_path = os.path.join(sub_processed_dir, f"{sec_name}.json")
+        if os.path.exists(sec_path):
+            try:
+                with open(sec_path, "r", encoding="utf-8") as f:
+                    sections[sec_name] = json.load(f)
+            except Exception:
+                sections[sec_name] = None
+        else:
+            sections[sec_name] = None
 
     ch_title = chapterId
     unit_title = "Curriculum Unit"
     ch_num = 1
 
     for sec in ["notes", "overview", "master"]:
-        sec_path = os.path.join(sub_processed_dir, f"{sec}.json")
-        if os.path.exists(sec_path):
-            try:
-                with open(sec_path, "r", encoding="utf-8") as f:
-                    d = json.load(f)
-                    if isinstance(d, dict):
-                        title = (
-                            d.get("chapterTitle") or
-                            d.get("chapter_title") or
-                            d.get("title") or
-                            (isinstance(d.get("overview"), dict) and (d["overview"].get("chapter_title") or d["overview"].get("title")))
-                        )
-                        if title and isinstance(title, str):
-                            ch_title = title
-                            ch_num = d.get("chapterNumber") or d.get("chapter_number") or 1
-                            unit_title = d.get("unitTitle") or d.get("unit_title") or "Curriculum Unit"
-                            break
-            except Exception:
-                pass
+        d = sections.get(sec)
+        if isinstance(d, dict):
+            title = (
+                d.get("chapterTitle") or
+                d.get("chapter_title") or
+                d.get("title") or
+                (isinstance(d.get("overview"), dict) and (d["overview"].get("chapter_title") or d["overview"].get("title")))
+            )
+            if title and isinstance(title, str) and "Exhaustive" not in title:
+                ch_title = title
+                ch_num = d.get("chapterNumber") or d.get("chapter_number") or 1
+                unit_title = d.get("unitTitle") or d.get("unit_title") or "Curriculum Unit"
+                break
+
+    dto = ChapterRuntimeDTO(
+        identity=identity,
+        chapter_number=ch_num,
+        chapter_title=ch_title,
+        unit_title=unit_title,
+        data=sections,
+        status="READY"
+    )
 
     return {
         "chapterId": chapterId,
         "grade": grade,
         "subject": subject,
+        "book": book,
         "chapterNumber": ch_num,
-        "title": ch_title,
         "chapterTitle": ch_title,
         "unitTitle": unit_title,
-        "unitNumber": 1
+        "unitNumber": 1,
+        "sections": sections,
+        "runtimeIdentity": dto.identity.dict()
     }
-
-@router.get("/chapters/{chapterId}/source")
-async def get_chapter_direct_source_v2(
-    chapterId: str,
-    grade: str = Query(default="5"),
-    subject: str = Query(default="English")
-):
-    """
-    CLEAN RESET DIRECT SOURCE ENDPOINT (PROCESSED CONTENT LAYER):
-    Reads directly from persistent ProcessedContent layer without runtime ingestion.
-    Supports robust fallback matching by chapter number suffix (e.g. -C10).
-    """
-    sub_processed_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", subject.replace(" ", ""), chapterId)
-
-    if not os.path.exists(sub_processed_dir) and "C" in chapterId:
-        target_c_suffix = chapterId.split("C")[-1]
-        parent_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", subject.replace(" ", ""))
-        if os.path.exists(parent_dir):
-            for d in os.listdir(parent_dir):
-                if d.endswith(f"-C{target_c_suffix}"):
-                    sub_processed_dir = os.path.join(parent_dir, d)
-                    chapterId = d
-                    break
-
-    if os.path.exists(sub_processed_dir):
-        sections = {}
-        for sec_name in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers", "foundational"]:
-            sec_path = os.path.join(sub_processed_dir, f"{sec_name}.json")
-            if os.path.exists(sec_path):
-                try:
-                    with open(sec_path, "r", encoding="utf-8") as f:
-                        sections[sec_name] = json.load(f)
-                except Exception:
-                    sections[sec_name] = None
-            else:
-                sections[sec_name] = None
-
-        ch_title = chapterId
-        unit_title = "Curriculum Unit"
-        ch_num = 1
-
-        for sec in ["notes", "overview", "master"]:
-            d = sections.get(sec)
-            if isinstance(d, dict):
-                title = (
-                    d.get("chapterTitle") or
-                    d.get("chapter_title") or
-                    d.get("title") or
-                    (isinstance(d.get("overview"), dict) and (d["overview"].get("chapter_title") or d["overview"].get("title")))
-                )
-                if title and isinstance(title, str):
-                    ch_title = title
-                    ch_num = d.get("chapterNumber") or d.get("chapter_number") or 1
-                    unit_title = d.get("unitTitle") or d.get("unit_title") or "Curriculum Unit"
-                    break
-
-        return {
-            "chapterId": chapterId,
-            "grade": grade,
-            "subject": subject,
-            "chapterNumber": ch_num,
-            "chapterTitle": ch_title,
-            "unitTitle": unit_title,
-            "sections": sections
-        }
-
-    raise HTTPException(status_code=404, detail=f"Chapter {chapterId} processed content not found.")

@@ -131,6 +131,7 @@ export default function Dashboard() {
   const [viewMode, setViewMode] = useState<'grid' | 'constellation'>('grid');
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const demoUserStr = localStorage.getItem('gurukul_demo_user');
     if (demoUserStr) {
       try {
@@ -177,7 +178,7 @@ export default function Dashboard() {
       setAuthChecking(false);
     });
     return () => unsubscribe();
-  }, []);
+  }, [classes]);
 
   useEffect(() => {
     const savedStreak = localStorage.getItem('gurukul_streak');
@@ -235,6 +236,7 @@ export default function Dashboard() {
 
   // Discovery Fetch
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     async function loadDiscovery() {
       try {
         const primaryUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
