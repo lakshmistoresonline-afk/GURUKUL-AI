@@ -5,7 +5,7 @@ from typing import Dict, Any, List, Optional
 from ..common.errors import ChapterNotFoundError
 from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 
-router = APIRouter(prefix="/api/v1", tagsCur="Curriculum Runtime Architecture")
+router = APIRouter(prefix="/api/v1", tags=["Curriculum Runtime Architecture"])
 
 PROCESSED_ROOT = r"D:/GURUKUL/ProcessedContent"
 CONTENTS_ROOT = r"D:/GURUKUL/Contents"

@@ -1,7 +1,7 @@
 import os
 import hashlib
 import json
-from typing import Dict, str
+from typing import Dict, Any
 
 REPO_ROOT = r"D:/GURUKUL"
 CONTENTS_ROOT = os.path.join(REPO_ROOT, "Contents")
