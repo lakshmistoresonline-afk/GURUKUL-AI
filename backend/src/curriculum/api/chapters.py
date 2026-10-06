@@ -1,15 +1,15 @@
 import os
 import json
-from fastapi import APIRouter, HTTPException, Query, Header
+from fastapi import APIRouter, HTTPException, Query, Path
 from typing import Dict, Any, List, Optional
-from ..common.errors import ChapterNotFoundError
 from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 from ..core.curriculum_registry import CurriculumRegistry
 from ..core.subject_registry import SubjectRegistry
+from ..core.processed_content_resolver import ProcessedContentResolver, ContentIntegrityError, ContentNotFoundError, ChapterNotFoundError
 
-router = APIRouter(prefix="/api/v1", tags=["Curriculum Runtime Architecture"])
+router = APIRouter(prefix="/api/v1", tags=["Authoritative Curriculum Pipeline"])
 
-CONTENTS_ROOT = r"D:/GURUKUL/Contents"
+PROCESSED_ROOT = r"D:/GURUKUL/ProcessedContent"
 
 @router.get("/classes")
 async def discover_classes():
@@ -20,15 +20,22 @@ async def discover_classes():
         class_list.append({"grade": g, "subjects": subs})
     return class_list
 
+@router.get("/curriculum/classes")
+async def discover_classes_alias():
+    return await discover_classes()
+
 @router.get("/classes/{grade}/subjects")
 async def get_grade_subjects(grade: str):
     subjects = CurriculumRegistry.get_subjects(grade)
     return {"grade": grade, "subjects": subjects}
 
+@router.get("/curriculum/classes/{grade}/subjects")
+async def get_grade_subjects_alias(grade: str):
+    return await get_grade_subjects(grade)
+
 @router.get("/classes/{grade}/subjects/{subject}")
 async def get_subject_details(grade: str, subject: str):
-    canonical_sub = SubjectRegistry.resolve_canonical_subject(subject)
-    sub_processed_dir = os.path.join(r"D:/GURUKUL/ProcessedContent", f"Class{grade}", subject.replace(" ", ""))
+    sub_processed_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", subject.replace(" ", ""))
     chapters = []
 
     if os.path.exists(sub_processed_dir):
@@ -71,8 +78,8 @@ async def get_subject_details(grade: str, subject: str):
     return {
         "grade": grade,
         "subject": subject,
-        "canonicalSubject": canonical_sub,
         "curriculumFramework": "NEP 2020 & NCF-SE 2023",
+        "curricularGoals": [],
         "totalChapters": len(chapters),
         "units": [
             {
@@ -84,19 +91,98 @@ async def get_subject_details(grade: str, subject: str):
         ]
     }
 
+@router.get("/curriculum/resolve")
+async def resolve_authoritative_content(
+    grade: str = Query(..., description="Grade/Class"),
+    subject: str = Query(..., description="Subject ID"),
+    book: str = Query(..., description="Book identifier"),
+    unit: str = Query(..., description="Unit identifier"),
+    chapter_id: str = Query(..., description="Exact chapter ID"),
+    content_type: str = Query(..., description="Content type")
+):
+    try:
+        identity = CurriculumIdentity(
+            grade=str(grade),
+            subject=SubjectRegistry.resolve_canonical_subject(subject),
+            book=book,
+            part="none",
+            unit=unit,
+            chapter_id=chapter_id,
+            content_type=content_type
+        )
+    except Exception as ve:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": {
+                    "code": "INVALID_CURRICULUM_IDENTITY",
+                    "message": f"Malformed or missing identity parameters: {str(ve)}"
+                }
+            }
+        )
+
+    try:
+        content_data = ProcessedContentResolver.resolve_content(identity)
+    except ChapterNotFoundError as cnf:
+        raise HTTPException(
+            status_code=404,
+            detail={
+                "error": {
+                    "code": "CHAPTER_NOT_FOUND",
+                    "message": str(cnf),
+                    "identity": identity.model_dump()
+                }
+            }
+        )
+    except ContentNotFoundError as cnf_type:
+        raise HTTPException(
+            status_code=404,
+            detail={
+                "error": {
+                    "code": "CONTENT_TYPE_NOT_FOUND",
+                    "message": str(cnf_type),
+                    "identity": identity.model_dump()
+                }
+            }
+        )
+    except ContentIntegrityError as cie:
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": {
+                    "code": "CONTENT_INTEGRITY_ERROR",
+                    "message": str(cie),
+                    "identity": identity.model_dump()
+                }
+            }
+        )
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": {
+                    "code": "INTERNAL_SERVER_ERROR",
+                    "message": str(exc),
+                    "identity": identity.model_dump()
+                }
+            }
+        )
+
+    return {
+        "identity": identity.model_dump(),
+        "contentType": content_type,
+        "data": content_data,
+        "status": "READY"
+    }
+
 @router.get("/chapters/{chapterId}/source")
 async def get_chapter_direct_source_v2(
     chapterId: str,
-    grade: str = Query(...),
-    subject: str = Query(...),
+    grade: str = Query(default="5"),
+    subject: str = Query(default="English"),
     book: str = Query(default="main"),
     unit: str = Query(default="U01")
 ):
-    """
-    STRICT CURRICULUM RUNTIME RESOLUTION ENDPOINT (V15):
-    Requires mandatory class, subject, book, unit, and chapterId.
-    Strictly forbids substring matching and returns HTTP 404 NOT_FOUND on any mismatch.
-    """
     canonical_subj = SubjectRegistry.resolve_canonical_subject(subject)
     identity = CurriculumIdentity(
         grade=str(grade),
@@ -105,7 +191,7 @@ async def get_chapter_direct_source_v2(
         part="none",
         unit=unit,
         chapter_id=chapterId,
-        content_type="source_bundle"
+        content_type="overview"
     )
 
     try:
@@ -116,8 +202,7 @@ async def get_chapter_direct_source_v2(
             detail={
                 "error": {
                     "code": "CHAPTER_NOT_FOUND",
-                    "message": f"Chapter identity {identity.to_cache_key()} could not be resolved: {str(e)}",
-                    "identity": identity.model_dump()
+                    "message": str(e)
                 }
             }
         )

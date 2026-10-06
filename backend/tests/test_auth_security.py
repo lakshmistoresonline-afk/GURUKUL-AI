@@ -12,12 +12,11 @@ from src.main import app
 client = TestClient(app)
 
 def test_auth_missing_token_rejection():
-    # Protected endpoint or middleware rejection test
-    response = client.get("/api/v1/chapters/G5-ENG-U01-C01/source")
-    # Missing required query params grade/subject or auth should be handled
-    assert response.status_code in [400, 422, 404]
+    # If endpoint requires auth header, test rejection or default fallback
+    response = client.get("/api/v1/curriculum/resolve")
+    # Missing required query params -> 422
+    assert response.status_code == 422
 
 def test_cors_headers_present():
-    response = client.options("/api/v1/classes")
-    # Check CORS middleware headers
+    response = client.options("/api/v1/curriculum/classes")
     assert response.status_code in [200, 405]
