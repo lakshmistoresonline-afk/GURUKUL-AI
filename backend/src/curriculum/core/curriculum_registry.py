@@ -4,9 +4,10 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 from .curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 from .subject_registry import SubjectRegistry
+from .config import GurukulConfig
 
-PROCESSED_ROOT = Path(r"D:/GURUKUL/ProcessedContent")
-CONTENTS_ROOT = Path(r"D:/GURUKUL/Contents")
+PROCESSED_ROOT = GurukulConfig.get_processed_root()
+CONTENTS_ROOT = GurukulConfig.get_content_root()
 
 class CurriculumResolutionError(Exception):
     pass
@@ -15,7 +16,7 @@ class CurriculumRegistry:
     """
     Fully Data-Driven Authoritative Curriculum Registry for Gurukul AI.
     Discovers and resolves classes, subjects, books, parts, units, and chapters
-    directly from the filesystem without hardcoded branching or default fallbacks.
+    directly from centralized configuration paths without hardcoded branching or default fallbacks.
     """
 
     @classmethod

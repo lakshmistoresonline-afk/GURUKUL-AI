@@ -4,8 +4,9 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 from .curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 from .subject_registry import SubjectRegistry
+from .config import GurukulConfig
 
-PROCESSED_ROOT = Path(r"D:/GURUKUL/ProcessedContent")
+PROCESSED_ROOT = GurukulConfig.get_processed_root()
 
 class ContentIntegrityError(Exception):
     """Raised when a processed content file contains malformed JSON (HTTP 500)."""
@@ -21,9 +22,8 @@ class ChapterNotFoundError(Exception):
 
 class ProcessedContentResolver:
     """
-    Single Authoritative ProcessedContent Resolver for Gurukul AI.
-    Enforces exact identity resolution without filesystem guessing,
-    subject folder special cases, or default fallbacks.
+    Single Authoritative ProcessedContent Resolver for Gurukul AI using GurukulConfig.
+    Enforces exact identity resolution without filesystem guessing.
     """
 
     @classmethod
@@ -36,11 +36,9 @@ class ProcessedContentResolver:
         if not class_dir.exists():
             raise ChapterNotFoundError(f"Class {identity.grade} directory not found.")
 
-        # Locate exact subject folder without guessing
         target_subj_dir = None
         for sub_d in class_dir.iterdir():
             if sub_d.is_dir() and SubjectRegistry.resolve_canonical_subject(sub_d.name) == canonical_subject:
-                # If book/part is specified and is not 'main' or 'none', require match in folder name
                 if identity.book != "main" and identity.book != "none" and identity.book.lower() not in sub_d.name.lower():
                     continue
                 target_subj_dir = sub_d
