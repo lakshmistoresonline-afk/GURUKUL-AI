@@ -30,6 +30,7 @@ import Class6MindmapComponent from '../../../../components/presentation/Class6/C
 import Class6HindiMindmapComponent from '../../../../components/presentation/Class6/Class6HindiMindmapComponent';
 import Class6MathsMindmapComponent from '../../../../components/presentation/Class6/Class6MathsMindmapComponent';
 import Class6ScienceMindmapComponent from '../../../../components/presentation/Class6/Class6ScienceMindmapComponent';
+import RendererRegistry from '../../../../components/presentation/RendererRegistry';
 
 interface ChapterSourceData {
   chapterId: string;
@@ -248,74 +249,17 @@ export default function ChapterClient({ grade, subject, chapterId }: ChapterClie
     return JSON.stringify(targetData).replace(/[{}[\]",:]/g, ' ');
   };
 
-  // Render Section Content based on activeTab with Purpose-Built UI Components
+  // Render Section Content based on activeTab using RendererRegistry
   const renderActiveSectionContent = () => {
     if (!sourceData) return null;
     const { sections } = sourceData;
-
-    switch (activeTab) {
-      case 'overview':
-        return (
-          <OverviewComponent
-            data={sections.overview}
-            chapterTitle={displayTitle}
-            unitTitle={unitTitle}
-            subject={subject}
-          />
-        );
-
-      case 'question_papers':
-        return <QuestionPapersComponent data={sections.question_papers} />;
-
-      case 'notes':
-        if (grade === '7') {
-          return <Class7UniversalNotesComponent data={sections.notes} />;
-        }
-        if (grade === '6') {
-          if (subject === 'Hindi') return <Class6HindiNotesComponent data={sections.notes} />;
-          if (subject === 'Maths') return <Class6MathsNotesComponent data={sections.notes} />;
-          if (subject === 'Social') return <Class6SocialNotesComponent data={sections.notes} />;
-        }
-        return <NotesComponent data={sections.notes} subject={subject} />;
-
-      case 'master':
-        if (grade === '7') {
-          return <Class7UniversalMasterComponent data={sections.master} />;
-        }
-        if (grade === '6') {
-          if (subject === 'English') return <Class6MasterComponent data={sections.master} />;
-          if (subject === 'Hindi') return <Class6HindiMasterComponent data={sections.master} />;
-          if (subject === 'Maths') return <Class6MathsMasterComponent data={sections.master} />;
-          if (subject === 'Science') return <Class6ScienceMasterComponent data={sections.master} />;
-          if (subject === 'Social') return <Class6SocialMasterComponent data={sections.master} />;
-        }
-        return <MasterComponent data={sections.master} subject={subject} />;
-
-      case 'flashcards':
-        if (grade === '6' && subject === 'Social') {
-          return <Class6SocialFlashcardsComponent flashcards={sections.flashcards} />;
-        }
-        return <FlashcardsComponent flashcards={sections.flashcards} />;
-
-      case 'mindmaps':
-        if (grade === '6') {
-          if (subject === 'Hindi') return <Class6HindiMindmapComponent data={sections.mindmaps} />;
-          if (subject === 'Maths') return <Class6MathsMindmapComponent data={sections.mindmaps} />;
-          if (subject === 'Science') return <Class6ScienceMindmapComponent data={sections.mindmaps} />;
-          if (subject === 'Social') return <Class6SocialMindmapComponent data={sections.mindmaps} />;
-          return <Class6MindmapComponent data={sections.mindmaps} />;
-        }
-        return <MindmapComponent data={sections.mindmaps} />;
-
-      case 'quiz':
-        return <QuizComponent quiz={sections.quiz} />;
-
-      case 'foundational':
-        return <FoundationalComponent data={sections.foundational} />;
-
-      default:
-        return <p className="text-sm text-slate-500">Select a section above.</p>;
-    }
+    return RendererRegistry.resolve({
+      grade,
+      subject,
+      book: 'main',
+      contentType: activeTab,
+      data: (sections as any)[activeTab]
+    });
   };
 
   return (
