@@ -18,17 +18,25 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
     return <div className="p-8 text-center text-slate-500">No foundational curriculum content available.</div>;
   }
 
-  const metadata = data.textbook_metadata || {};
-  const modules = data.modules || [];
+  const metadata = data.textbook_metadata || data.metadata || {};
+  let modules = data.modules || data.foundational_modules || (Array.isArray(data) ? data : data.chapters || []) || [];
 
-  const categories = ['All', ...Array.from(new Set(modules.map((m: any) => m.category || 'Module')))];
+  if (!Array.isArray(modules) || modules.length === 0) {
+    if (typeof data === 'object') {
+      // Flatten any arrays found in object values
+      const foundArr = Object.values(data).find(v => Array.isArray(v));
+      if (foundArr) modules = foundArr;
+    }
+  }
+
+  const categories = ['All', ...Array.from(new Set(modules.map((m: any) => m.category || m.type || m.module_type || 'Module')))];
 
   const filteredModules = modules.filter((m: any) => {
-    const cat = m.category || 'Module';
+    const cat = m.category || m.type || m.module_type || 'Module';
     if (selectedCategory !== 'All' && cat !== selectedCategory) return false;
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
-    const itemStr = JSON.stringify(m.item || {}).toLowerCase();
+    const itemStr = JSON.stringify(m.item || m || {}).toLowerCase();
     return cat.toLowerCase().includes(q) || itemStr.includes(q);
   });
 
@@ -42,7 +50,7 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
           </div>
           <span className="text-xs font-mono text-indigo-300 font-bold">{metadata.grade || 'Foundational Core'}</span>
         </div>
-        <h3 className="text-2xl sm:text-3xl font-black tracking-tight">{metadata.textbook || 'Foundational Curriculum Module'}</h3>
+        <h3 className="text-2xl sm:text-3xl font-black tracking-tight">{metadata.textbook || metadata.title || 'Foundational Curriculum Module'}</h3>
         <p className="text-indigo-200 text-xs sm:text-sm">Publisher: {metadata.publisher || 'NCERT'}</p>
 
         {/* Search Bar */}
@@ -61,7 +69,7 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
       {categories.length > 1 && (
         <div className="flex flex-wrap gap-2 bg-white p-2.5 rounded-2xl border border-slate-200 shadow-sm">
           {categories.map((cat: any) => {
-            const count = cat === 'All' ? modules.length : modules.filter((m: any) => m.category === cat).length;
+            const count = cat === 'All' ? modules.length : modules.filter((m: any) => (m.category || m.type || m.module_type || 'Module') === cat).length;
             return (
               <button
                 key={cat}
@@ -90,15 +98,15 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {filteredModules.map((mod: any, idx: number) => {
-              const item = mod.item || {};
-              const cat = mod.category || 'Module';
+              const item = mod.item || mod;
+              const cat = mod.category || mod.type || mod.module_type || 'Module';
 
               const title = item.concept || item.term || item.title || item.name || item.word || item.idiom || item.root || item.device || item.type || item.phrase_or_word || cat;
               const explanation = item.explanation || item.definition || item.description || item.meaning || item.structure_rule || item.rule || item.usage_example || '';
               const rules = item.rules || '';
               const examples = item.examples || item.subtopics || item.key_points || item.verb_forms || item.adjective_degrees || item.adjective_forms || [];
               const exampleStr = item.example || item.contextual_importance || '';
-              const sourceCtx = item.source_context || '';
+              const sourceCtx = item.source_context || mod.source_context || '';
               const synonyms = item.synonyms || item.synonym || [];
               const antonyms = item.antonyms || item.antonym || [];
               const wordForms = item.word_forms || item.forms || item.verb_forms || [];
@@ -227,8 +235,9 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
           </div>
         </div>
       ) : (
-        <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm">
-          No foundational modules found for category: {selectedCategory}.
+        <div className="p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm space-y-2">
+          <h4 className="text-base font-bold text-slate-800">Foundational Curriculum Modules</h4>
+          <p className="text-xs text-slate-500">Explore foundational grammar, vocabulary, spellings, and sentence structures.</p>
         </div>
       )}
     </div>
