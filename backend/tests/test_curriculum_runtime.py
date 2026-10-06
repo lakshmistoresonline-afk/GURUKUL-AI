@@ -1,7 +1,6 @@
 import os
 import sys
 import pytest
-import hashlib
 
 backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if backend_dir not in sys.path:
@@ -16,11 +15,12 @@ def test_curriculum_identity_cache_key():
         grade="6",
         subject="mathematics",
         book="main",
+        part="none",
         unit="U01",
         chapter_id="G6-MAT-U01-C03",
         content_type="flashcards"
     )
-    assert identity.to_cache_key() == "class6:mathematics:main:u01:g6-mat-u01-c03:flashcards"
+    assert identity.to_cache_key() == "class6:mathematics:main:none:u01:g6-mat-u01-c03:flashcards"
 
 def test_subject_registry_normalization():
     assert SubjectRegistry.resolve_canonical_subject("Maths") == "mathematics"
@@ -31,5 +31,4 @@ def test_subject_registry_normalization():
 def test_content_immutability():
     hashes = ContentImmutabilityAuditor.compute_directory_hashes(os.path.join(backend_dir, "..", "Contents"))
     assert len(hashes) > 0
-    # Verify immutability against itself
     assert ContentImmutabilityAuditor.verify_immutability(hashes) is True

@@ -8,10 +8,14 @@ from .subject_registry import SubjectRegistry
 PROCESSED_ROOT = Path(r"D:/GURUKUL/ProcessedContent")
 CONTENTS_ROOT = Path(r"D:/GURUKUL/Contents")
 
+class CurriculumResolutionError(Exception):
+    pass
+
 class CurriculumRegistry:
     """
-    Authoritative Central Curriculum Registry for Gurukul AI (Strict Identity Resolver).
-    Rejects substring matching, default arguments, and synthetic content fallback.
+    Fully Data-Driven Authoritative Curriculum Registry for Gurukul AI.
+    Discovers and resolves classes, subjects, books, parts, units, and chapters
+    directly from the filesystem without hardcoded branching or default fallbacks.
     """
 
     @classmethod
@@ -34,31 +38,35 @@ class CurriculumRegistry:
         grade = identity.grade
         canonical_subject = SubjectRegistry.resolve_canonical_subject(identity.subject)
 
-        sub_dir_name = canonical_subject.replace("_", "").capitalize()
-        if canonical_subject == "social_science":
-            sub_dir_name = "Social"
-        elif canonical_subject == "mathematics":
-            sub_dir_name = "Maths" if grade in ["5", "6"] else "MathsI"
-
         class_proc_dir = PROCESSED_ROOT / f"Class{grade}"
         if not class_proc_dir.exists():
-            raise FileNotFoundError(f"Class {grade} processed directory not found.")
+            raise CurriculumResolutionError(f"Class {grade} processed directory not found.")
 
         target_subj_folder = None
         for d in class_proc_dir.iterdir():
             if d.is_dir() and SubjectRegistry.resolve_canonical_subject(d.name) == canonical_subject:
+                if identity.book != "main" and identity.book.lower() not in d.name.lower():
+                    continue
                 target_subj_folder = d
                 break
 
         if not target_subj_folder:
-            raise FileNotFoundError(f"Subject {identity.subject} for Class {grade} not found.")
+            raise CurriculumResolutionError(f"Subject '{identity.subject}' (canonical: {canonical_subject}, book: {identity.book}) for Class {grade} not found.")
 
-        # Strict exact match on chapter_id folder name (NO substring matching)
         chapter_folder = target_subj_folder / identity.chapter_id
         if not chapter_folder.exists() or not chapter_folder.is_dir():
-            raise FileNotFoundError(f"Chapter ID '{identity.chapter_id}' not found under Class {grade} {identity.subject}. Strict isolation enforced.")
+            raise CurriculumResolutionError(f"Exact chapter ID '{identity.chapter_id}' not found under Class {grade} {identity.subject}.")
+
+        if identity.content_type != "source_bundle":
+            content_file = chapter_folder / f"{identity.content_type}.json"
+            if not content_file.exists():
+                raise CurriculumResolutionError(f"Content type '{identity.content_type}' not available for chapter {identity.chapter_id}.")
 
         return chapter_folder
+
+    @classmethod
+    def resolve(cls, identity: CurriculumIdentity) -> Path:
+        return cls.resolve_chapter_path(identity)
 
     @classmethod
     def load_chapter_bundle(cls, identity: CurriculumIdentity) -> ChapterRuntimeDTO:

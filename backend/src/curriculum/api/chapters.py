@@ -102,6 +102,7 @@ async def get_chapter_direct_source_v2(
         grade=str(grade),
         subject=canonical_subj,
         book=book,
+        part="none",
         unit=unit,
         chapter_id=chapterId,
         content_type="source_bundle"
