@@ -22,6 +22,74 @@ class CurriculumRegistry:
     _INDEX: Optional[Dict[str, Dict[str, Any]]] = None
 
     @classmethod
+    def get_taxonomy(cls) -> Dict[str, Any]:
+        taxonomy = {}
+        if not PROCESSED_ROOT.exists():
+            return taxonomy
+
+        for class_dir in sorted([d for d in PROCESSED_ROOT.iterdir() if d.is_dir() and "class" in d.name.lower()]):
+            grade = class_dir.name.replace("Class", "")
+            taxonomy[grade] = {}
+
+            for subj_dir in sorted([d for d in class_dir.iterdir() if d.is_dir()]):
+                raw_subj = subj_dir.name
+                canonical_subject = SubjectRegistry.resolve_canonical_subject(raw_subj)
+
+                book = "main"
+                part = "none"
+                lower_sub = raw_subj.lower()
+                if "maths i" in lower_sub or lower_sub == "mathsi":
+                    book = "maths_i"
+                    part = "part1"
+                elif "maths ii" in lower_sub or lower_sub == "mathsii":
+                    book = "maths_ii"
+                    part = "part2"
+                elif "social i" in lower_sub or lower_sub == "sociali":
+                    book = "social_i"
+                    part = "part1"
+                elif "social ii" in lower_sub or lower_sub == "socialii":
+                    book = "social_ii"
+                    part = "part2"
+                else:
+                    book = canonical_subject
+                    part = "main"
+
+                if canonical_subject not in taxonomy[grade]:
+                    taxonomy[grade][canonical_subject] = {}
+
+                if book not in taxonomy[grade][canonical_subject]:
+                    taxonomy[grade][canonical_subject][book] = {
+                        "part": part,
+                        "units": {}
+                    }
+
+                for ch_dir in sorted([d for d in subj_dir.iterdir() if d.is_dir()]):
+                    chapter_id = ch_dir.name
+                    unit_id = "U01"
+
+                    manifest_file = ch_dir / "manifest.json"
+                    if manifest_file.exists():
+                        try:
+                            with open(manifest_file, "r", encoding="utf-8") as mf:
+                                md = json.load(mf)
+                                unit_id = md.get("unit_id", unit_id)
+                        except:
+                            pass
+
+                    if unit_id not in taxonomy[grade][canonical_subject][book]["units"]:
+                        taxonomy[grade][canonical_subject][book]["units"][unit_id] = []
+
+                    taxonomy[grade][canonical_subject][book]["units"][unit_id].append(chapter_id)
+
+        return taxonomy
+
+    @classmethod
+    def get_index(cls) -> Dict[str, Dict[str, Any]]:
+        if cls._INDEX is None:
+            cls.build_index()
+        return cls._INDEX
+
+    @classmethod
     def build_index(cls) -> Dict[str, Dict[str, Any]]:
         index = {}
         if not PROCESSED_ROOT.exists():
@@ -109,12 +177,6 @@ class CurriculumRegistry:
 
         cls._INDEX = index
         return index
-
-    @classmethod
-    def get_index(cls) -> Dict[str, Dict[str, Any]]:
-        if cls._INDEX is None:
-            return cls.build_index()
-        return cls._INDEX
 
     @classmethod
     def get_classes(cls) -> List[str]:
