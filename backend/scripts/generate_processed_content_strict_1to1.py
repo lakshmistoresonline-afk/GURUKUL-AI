@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import Dict, Any, List
 
 print("==========================================================================")
-print("GURUKUL AI — STRICT 1-TO-1 DATASET ISOLATION PROCESSOR (V13 - CLEAN ARRAY UNWRAPPER)")
+print("GURUKUL AI — STRICT 1-TO-1 DATASET ISOLATION PROCESSOR (V14 - FOUNDATIONAL FIX)")
 print("==========================================================================\n")
 
 REPO_ROOT = r"D:/GURUKUL"
@@ -165,29 +165,32 @@ def run_strict_1to1():
                     ds = loaded_datasets.get(sec_key)
                     sec_data = {}
                     if ds is not None:
-                        chrs = extract_chapters(ds)
-                        matched = match_chapter(chrs, ch_num)
-                        if matched and len(matched) > 0:
-                            title = matched.get("chapter_title") or matched.get("chapterTitle") or matched.get("title")
-                            if title and isinstance(title, str) and "Exhaustive" not in title:
-                                ch_title = title
-
-                            if sec_key == "flashcards":
-                                sec_data = matched.get("flashcards") or matched.get("cards") or matched.get("flashcard_database") or matched
-                                if isinstance(sec_data, dict) and "flashcards" in sec_data:
-                                    sec_data = sec_data["flashcards"]
-                            elif sec_key == "quiz":
-                                q_obj = matched.get("quiz") or matched.get("questions") or matched.get("quizzes") or matched
-                                if isinstance(q_obj, dict):
-                                    sec_data = q_obj.get("questions") or q_obj.get("quiz") or q_obj.get("quizzes") or q_obj
-                                elif isinstance(q_obj, list):
-                                    sec_data = q_obj
-                                else:
-                                    sec_data = q_obj
-                            else:
-                                sec_data = matched
-                        else:
+                        if sec_key == "foundational":
                             sec_data = ds
+                        else:
+                            chrs = extract_chapters(ds)
+                            matched = match_chapter(chrs, ch_num)
+                            if matched and len(matched) > 0:
+                                title = matched.get("chapter_title") or matched.get("chapterTitle") or matched.get("title")
+                                if title and isinstance(title, str) and "Exhaustive" not in title:
+                                    ch_title = title
+
+                                if sec_key == "flashcards":
+                                    sec_data = matched.get("flashcards") or matched.get("cards") or matched.get("flashcard_database") or matched
+                                    if isinstance(sec_data, dict) and "flashcards" in sec_data:
+                                        sec_data = sec_data["flashcards"]
+                                elif sec_key == "quiz":
+                                    q_obj = matched.get("quiz") or matched.get("questions") or matched.get("quizzes") or matched
+                                    if isinstance(q_obj, dict):
+                                        sec_data = q_obj.get("questions") or q_obj.get("quiz") or q_obj.get("quizzes") or q_obj
+                                    elif isinstance(q_obj, list):
+                                        sec_data = q_obj
+                                    else:
+                                        sec_data = q_obj
+                                else:
+                                    sec_data = matched
+                            else:
+                                sec_data = ds
 
                     out_filename = f"{sec_key}.json"
                     out_path = os.path.join(ch_proc_dir, out_filename)
@@ -206,7 +209,7 @@ def run_strict_1to1():
 
                 total_chapters_processed += 1
 
-    print(f"\nSuccessfully executed V13 clean array unrapper isolation across {total_chapters_processed} chapters.")
+    print(f"\nSuccessfully executed V14 Foundational fix across {total_chapters_processed} chapters.")
 
 if __name__ == "__main__":
     run_strict_1to1()
