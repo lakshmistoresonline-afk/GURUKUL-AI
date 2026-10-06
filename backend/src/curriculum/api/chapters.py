@@ -27,6 +27,7 @@ async def get_grade_subjects(grade: str):
 
 @router.get("/classes/{grade}/subjects/{subject}")
 async def get_subject_details(grade: str, subject: str):
+    canonical_sub = SubjectRegistry.resolve_canonical_subject(subject)
     sub_processed_dir = os.path.join(r"D:/GURUKUL/ProcessedContent", f"Class{grade}", subject.replace(" ", ""))
     chapters = []
 
@@ -70,8 +71,8 @@ async def get_subject_details(grade: str, subject: str):
     return {
         "grade": grade,
         "subject": subject,
+        "canonicalSubject": canonical_sub,
         "curriculumFramework": "NEP 2020 & NCF-SE 2023",
-        "curricularGoals": [],
         "totalChapters": len(chapters),
         "units": [
             {
@@ -86,20 +87,22 @@ async def get_subject_details(grade: str, subject: str):
 @router.get("/chapters/{chapterId}/source")
 async def get_chapter_direct_source_v2(
     chapterId: str,
-    grade: str = Query(default="5"),
-    subject: str = Query(default="English"),
-    book: str = Query(default="main")
+    grade: str = Query(...),
+    subject: str = Query(...),
+    book: str = Query(default="main"),
+    unit: str = Query(default="U01")
 ):
     """
-    STRICT CURRICULUM RUNTIME RESOLUTION ENDPOINT (V14):
-    Enforces strict identity matching through CurriculumRegistry.
-    Returns HTTP 404 NOT_FOUND on missing chapters without synthetic fallback generation.
+    STRICT CURRICULUM RUNTIME RESOLUTION ENDPOINT (V15):
+    Requires mandatory class, subject, book, unit, and chapterId.
+    Strictly forbids substring matching and returns HTTP 404 NOT_FOUND on any mismatch.
     """
     canonical_subj = SubjectRegistry.resolve_canonical_subject(subject)
     identity = CurriculumIdentity(
         grade=str(grade),
         subject=canonical_subj,
         book=book,
+        unit=unit,
         chapter_id=chapterId,
         content_type="source_bundle"
     )
@@ -107,17 +110,27 @@ async def get_chapter_direct_source_v2(
     try:
         dto: ChapterRuntimeDTO = CurriculumRegistry.load_chapter_bundle(identity)
     except Exception as e:
-        raise HTTPException(status_code=404, detail=f"Chapter identity {identity.to_cache_key()} not found: {str(e)}")
+        raise HTTPException(
+            status_code=404,
+            detail={
+                "error": {
+                    "code": "CHAPTER_NOT_FOUND",
+                    "message": f"Chapter identity {identity.to_cache_key()} could not be resolved: {str(e)}",
+                    "identity": identity.model_dump()
+                }
+            }
+        )
 
     return {
         "chapterId": chapterId,
         "grade": grade,
         "subject": subject,
         "book": book,
+        "unit": unit,
         "chapterNumber": dto.chapter_number,
         "chapterTitle": dto.chapter_title,
         "unitTitle": dto.unit_title,
         "unitNumber": 1,
         "sections": dto.data,
-        "runtimeIdentity": dto.identity.dict()
+        "runtimeIdentity": dto.identity.model_dump()
     }

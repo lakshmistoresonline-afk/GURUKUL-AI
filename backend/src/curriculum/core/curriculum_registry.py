@@ -10,9 +10,8 @@ CONTENTS_ROOT = Path(r"D:/GURUKUL/Contents")
 
 class CurriculumRegistry:
     """
-    Authoritative Central Curriculum Registry for Gurukul AI.
-    Resolves classes, subjects, books/parts, units, and chapters deterministically
-    without content fabrication or synthetic fallback generation.
+    Authoritative Central Curriculum Registry for Gurukul AI (Strict Identity Resolver).
+    Rejects substring matching, default arguments, and synthetic content fallback.
     """
 
     @classmethod
@@ -35,46 +34,29 @@ class CurriculumRegistry:
         grade = identity.grade
         canonical_subject = SubjectRegistry.resolve_canonical_subject(identity.subject)
 
-        # Map canonical subject back to directory name under ProcessedContent
         sub_dir_name = canonical_subject.replace("_", "").capitalize()
         if canonical_subject == "social_science":
             sub_dir_name = "Social"
         elif canonical_subject == "mathematics":
-            sub_dir_name = "Maths" if grade == "5" or grade == "6" else "MathsI" # or Mathsi
+            sub_dir_name = "Maths" if grade in ["5", "6"] else "MathsI"
 
-        # Search processed directory
         class_proc_dir = PROCESSED_ROOT / f"Class{grade}"
         if not class_proc_dir.exists():
             raise FileNotFoundError(f"Class {grade} processed directory not found.")
 
-        # Find matching subject folder
         target_subj_folder = None
         for d in class_proc_dir.iterdir():
-            if d.is_dir() and d.name.lower() == sub_dir_name.lower():
+            if d.is_dir() and SubjectRegistry.resolve_canonical_subject(d.name) == canonical_subject:
                 target_subj_folder = d
                 break
 
         if not target_subj_folder:
-            # Fallback scan
-            for d in class_proc_dir.iterdir():
-                if d.is_dir() and SubjectRegistry.resolve_canonical_subject(d.name) == canonical_subject:
-                    target_subj_folder = d
-                    break
+            raise FileNotFoundError(f"Subject {identity.subject} for Class {grade} not found.")
 
-        if not target_subj_folder:
-            raise FileNotFoundError(f"Subject {identity.subject} (canonical: {canonical_subject}) for Class {grade} not found.")
-
-        # Locate chapter folder by exact chapter_id match
+        # Strict exact match on chapter_id folder name (NO substring matching)
         chapter_folder = target_subj_folder / identity.chapter_id
-        if not chapter_folder.exists():
-            # Try matching by suffix or number
-            for d in target_subj_folder.iterdir():
-                if d.is_dir() and (d.name.lower() == identity.chapter_id.lower() or identity.chapter_id in d.name):
-                    chapter_folder = d
-                    break
-
-        if not chapter_folder or not chapter_folder.exists():
-            raise FileNotFoundError(f"Chapter identity {identity.to_cache_key()} not found in processed content.")
+        if not chapter_folder.exists() or not chapter_folder.is_dir():
+            raise FileNotFoundError(f"Chapter ID '{identity.chapter_id}' not found under Class {grade} {identity.subject}. Strict isolation enforced.")
 
         return chapter_folder
 
