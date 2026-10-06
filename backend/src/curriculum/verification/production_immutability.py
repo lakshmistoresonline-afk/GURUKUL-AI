@@ -5,11 +5,11 @@ import json
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, Tuple
+from ..core.config import GurukulConfig
 
-REPO_ROOT = Path(r"D:/GURUKUL")
-CONTENTS_ROOT = REPO_ROOT / "Contents"
-PROCESSED_ROOT = REPO_ROOT / "ProcessedContent"
-INTEGRITY_DIR = REPO_ROOT / "reports" / "content-integrity"
+CONTENTS_ROOT = GurukulConfig.get_content_root()
+PROCESSED_ROOT = GurukulConfig.get_processed_root()
+INTEGRITY_DIR = GurukulConfig.get_reports_root() / "content-integrity"
 INTEGRITY_DIR.mkdir(parents=True, exist_ok=True)
 
 BASELINE_PATH = INTEGRITY_DIR / "production_contents_baseline.json"
@@ -98,17 +98,14 @@ class ProductionImmutabilityManager:
         b_keys = set(baseline_files.keys())
         c_keys = set(current_files.keys())
 
-        # Check deleted files
         deleted = b_keys - c_keys
         if deleted:
             return False, f"FAIL: Protected files deleted: {list(deleted)}"
 
-        # Check new files added
         added = c_keys - b_keys
         if added:
             return False, f"FAIL: New unverified files added to protected Contents/: {list(added)}"
 
-        # Check modified files (size or sha256 mismatch)
         for path in b_keys:
             b_meta = baseline_files[path]
             c_meta = current_files[path]
@@ -119,9 +116,6 @@ class ProductionImmutabilityManager:
 
     @classmethod
     def generate_reproducibility_manifest(cls) -> Dict[str, Any]:
-        """
-        Generates ProcessedContent reproducibility record with source_hash, processor_version, schema_version, output_hash.
-        """
         source_hashes_combined = hashlib.sha256()
         if BASELINE_PATH.exists():
             with open(BASELINE_PATH, "rb") as f:

@@ -3,9 +3,10 @@ from pathlib import Path
 
 class GurukulConfig:
     """
-    Centralized configuration for Gurukul AI curriculum paths.
-    Consumes environment variables GURUKUL_CONTENT_ROOT and GURUKUL_PROCESSED_ROOT,
-    with safe repository-relative defaults from repository root.
+    Centralized configuration for Gurukul AI paths.
+    Consumes environment variables GURUKUL_CONTENT_ROOT, GURUKUL_PROCESSED_ROOT, GURUKUL_REPORTS_ROOT,
+    with safe repository-relative defaults using pathlib.Path throughout.
+    Works seamlessly on Windows and Linux.
     """
     REPO_ROOT = Path(__file__).resolve().parents[4]
 
@@ -22,3 +23,10 @@ class GurukulConfig:
         if env_val:
             return Path(env_val).resolve()
         return (cls.REPO_ROOT / "ProcessedContent").resolve()
+
+    @classmethod
+    def get_reports_root(cls) -> Path:
+        env_val = os.getenv("GURUKUL_REPORTS_ROOT")
+        if env_val:
+            return Path(env_val).resolve()
+        return (cls.REPO_ROOT / "reports").resolve()

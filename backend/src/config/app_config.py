@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     STORAGE_PATH: str = os.path.join(PROJECT_ROOT, "backend", "storage")
 
     # Question Bank & Content Roots
-    QUESTION_BANK_SOURCE_ROOT: str = os.getenv("QUESTION_BANK_SOURCE_ROOT", r"D:\GURUKUL\Contents\Question Bank")
+    QUESTION_BANK_SOURCE_ROOT: str = os.getenv("QUESTION_BANK_SOURCE_ROOT", os.path.join(PROJECT_ROOT, "Contents", "Question Bank"))
     CHAPTER_TITLE_MAP_PATH: str = os.path.join(PROJECT_ROOT, "backend", "storage", "chapter_title_map.json")
     MASTER_CONTENT_ROOT: str = os.getenv("MASTER_CONTENT_ROOT", os.path.join(PROJECT_ROOT, "ProcessedContent"))
     QUESTION_BANK_FILENAME: str = "question_bank.json"

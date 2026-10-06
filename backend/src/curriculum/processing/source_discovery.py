@@ -3,10 +3,10 @@ import json
 import hashlib
 from pathlib import Path
 from typing import Dict, Any, List
+from ..core.config import GurukulConfig
 
-REPO_ROOT = Path(r"D:/GURUKUL")
-CONTENTS_ROOT = REPO_ROOT / "Contents"
-REPORTS_DIR = REPO_ROOT / "reports" / "source-inventory"
+CONTENTS_ROOT = GurukulConfig.get_content_root()
+REPORTS_DIR = GurukulConfig.get_reports_root() / "source-inventory"
 REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
 class SourceDiscoveryEngine:

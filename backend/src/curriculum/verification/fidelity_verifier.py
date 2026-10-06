@@ -3,13 +3,13 @@ import json
 import hashlib
 from pathlib import Path
 from datetime import datetime
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Set, Tuple
+from ..core.config import GurukulConfig
 
-REPO_ROOT = Path(r"D:/GURUKUL")
-CONTENTS_ROOT = REPO_ROOT / "Contents"
-PROCESSED_ROOT = REPO_ROOT / "ProcessedContent"
-FIDELITY_REPORT_DIR = REPO_ROOT / "reports" / "fidelity"
-FIDELITY_REPORT_DIR.mkdir(parents=True, exist_ok=True)
+CONTENTS_ROOT = GurukulConfig.get_content_root()
+PROCESSED_ROOT = GurukulConfig.get_processed_root()
+REPORT_DIR = GurukulConfig.get_reports_root() / "fidelity"
+REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 class SourceFidelityVerifier:
     """
@@ -49,7 +49,6 @@ class SourceFidelityVerifier:
         subjects_discovered = set()
         chapters_discovered = 0
 
-        # Audit Contents/ source files
         for s_file in source_files:
             rel = s_file.relative_to(CONTENTS_ROOT)
             parts = rel.parts
@@ -80,7 +79,6 @@ class SourceFidelityVerifier:
                 "status": "VERIFIED"
             })
 
-        # Audit ProcessedContent/ files
         for p_file in processed_files:
             rel = p_file.relative_to(PROCESSED_ROOT)
             if "manifest" in p_file.name.lower():
@@ -94,7 +92,6 @@ class SourceFidelityVerifier:
                 pass
 
         discrepancy = abs(source_word_total - processed_word_total)
-        # Note: Processed content contains structured transformations, so word counts may differ by metadata headers/keys.
         fidelity_status = "PASS" if len(source_files) > 0 else "FAIL"
 
         report_data = {
@@ -111,12 +108,10 @@ class SourceFidelityVerifier:
             "item_reports": item_reports
         }
 
-        # Produce JSON report
-        json_path = FIDELITY_REPORT_DIR / "source_fidelity_report.json"
+        json_path = REPORT_DIR / "source_fidelity_report.json"
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(report_data, f, ensure_ascii=False, indent=2)
 
-        # Produce Markdown report
         md_content = f"""# FORENSIC SOURCE-FIDELITY VERIFICATION REPORT
 **Timestamp**: {report_data['timestamp']}
 **Fidelity Status**: **{report_data['fidelity_status']}**
@@ -140,7 +135,7 @@ class SourceFidelityVerifier:
         for itm in item_reports[:50]:
             md_content += f"| {itm['source_file']} | {itm['extension']} | {itm['word_count']} | {itm['character_count']} | {itm['status']} | \n"
 
-        md_path = FIDELITY_REPORT_DIR / "source_fidelity_report.md"
+        md_path = REPORT_DIR / "source_fidelity_report.md"
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(md_content)
 

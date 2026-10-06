@@ -4,11 +4,11 @@ import hashlib
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, List, Set, Tuple
+from ..core.config import GurukulConfig
 
-REPO_ROOT = Path(r"D:/GURUKUL")
-CONTENTS_ROOT = REPO_ROOT / "Contents"
-PROCESSED_ROOT = REPO_ROOT / "ProcessedContent"
-REPORT_DIR = REPO_ROOT / "reports" / "fidelity"
+CONTENTS_ROOT = GurukulConfig.get_content_root()
+PROCESSED_ROOT = GurukulConfig.get_processed_root()
+REPORT_DIR = GurukulConfig.get_reports_root() / "fidelity"
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 class ForensicFidelityViolation(Exception):
@@ -19,6 +19,7 @@ class ForensicFidelityVerifier:
     """
     Production-grade forensic source-fidelity verification system.
     Ensures every authoritative source element is traceable into processed representations without loss.
+    Fully portable across Windows and Linux using pathlib.Path.
     """
 
     @classmethod
@@ -53,7 +54,6 @@ class ForensicFidelityVerifier:
         item_audit_logs = []
         failures = []
 
-        # Build set of all text blocks present in ProcessedContent
         processed_blocks_corpus = set()
         if PROCESSED_ROOT.exists():
             for p_file in PROCESSED_ROOT.glob("**/*.json"):
@@ -100,7 +100,6 @@ class ForensicFidelityVerifier:
                     covered_blocks += 1
                     file_covered += 1
                 else:
-                    # Check partial or substring match for complex formatting
                     matched = False
                     for p_b in processed_blocks_corpus:
                         if b_lower in p_b or p_b in b_lower:
@@ -112,7 +111,7 @@ class ForensicFidelityVerifier:
                     else:
                         missing_blocks += 1
                         file_missing += 1
-                        if len(block) > 20: # ignore tiny punctuation blocks
+                        if len(block) > 20:
                             untraceable_content += 1
 
             item_audit_logs.append({
@@ -125,8 +124,6 @@ class ForensicFidelityVerifier:
             })
 
         coverage_percentage = (covered_blocks / total_source_blocks * 100) if total_source_blocks > 0 else 0.0
-
-        # Strict Fidelity PASS requires zero unexplained missing blocks or parsing failures
         fidelity_status = "PASS" if missing_blocks == 0 and len(failures) == 0 else "FAIL"
 
         report = {
@@ -145,7 +142,6 @@ class ForensicFidelityVerifier:
             "item_audit_logs": item_audit_logs
         }
 
-        # Write reports
         json_path = REPORT_DIR / "source_fidelity_report.json"
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(report, f, ensure_ascii=False, indent=2)

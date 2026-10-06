@@ -2,9 +2,9 @@ import os
 import hashlib
 import json
 from typing import Dict, Any
+from .config import GurukulConfig
 
-REPO_ROOT = r"D:/GURUKUL"
-CONTENTS_ROOT = os.path.join(REPO_ROOT, "Contents")
+CONTENTS_ROOT = GurukulConfig.get_content_root()
 
 class ContentImmutabilityAuditor:
     """
@@ -37,7 +37,7 @@ class ContentImmutabilityAuditor:
 
     @classmethod
     def verify_immutability(cls, baseline_hashes: Dict[str, str]) -> bool:
-        current_hashes = cls.compute_directory_hashes(CONTENTS_ROOT)
+        current_hashes = cls.compute_directory_hashes(str(CONTENTS_ROOT))
         if len(baseline_hashes) != len(current_hashes):
             return False
         for path, baseline_sha in baseline_hashes.items():

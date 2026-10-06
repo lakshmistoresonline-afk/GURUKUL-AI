@@ -7,7 +7,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from typing import Optional, Dict, Any, List, Set
 
-# Ensure backend root (D:\GURUKUL\backend) and src directory are in sys.path
 backend_dir = os.path.dirname(os.path.abspath(__file__))
 if backend_dir not in sys.path:
     sys.path.insert(0, backend_dir)
@@ -26,14 +25,12 @@ except (ImportError, ValueError):
         from .curriculum.core.config import GurukulConfig
         from .curriculum.security.websocket_security import SecureWebSocketManager
 
-# Initialize FastAPI Local Server
 app = FastAPI(
     title="GURUKUL-AI API",
     description="Bridge server serving NCERT curriculum datasets with secure authentication, authorization, and WebSocket sync.",
     version="4.0.0"
 )
 
-# Environment-driven explicit CORS origins (Production-secure)
 cors_env = os.getenv("CORS_ALLOWED_ORIGINS")
 if cors_env:
     origins = [o.strip() for o in cors_env.split(",")]
@@ -55,7 +52,6 @@ app.add_middleware(
     expose_headers=["Content-Length"]
 )
 
-# Mount Curriculum API Router (/api/v1/...)
 app.include_router(curriculum_chapters.router)
 
 CONTENT_ROOT = str(GurukulConfig.get_content_root())
@@ -73,14 +69,8 @@ async def health_check():
         "activeSecureWebSocketConnections": len(secure_ws_mgr.active_connections)
     }
 
-# SECURE REAL-TIME WEBSOCKET SYNC ENDPOINT
 @app.websocket("/api/v1/ws/sync")
 async def websocket_sync_endpoint(websocket: WebSocket, token: Optional[str] = Query(None)):
-    """
-    Secure Real-Time WebSocket Sync Endpoint:
-    Authenticates via Firebase token, validates incoming event schemas,
-    and enforces server-side senderUid override to prevent spoofing.
-    """
     user = await secure_ws_mgr.authenticate_and_connect(websocket, token)
     if not user:
         return

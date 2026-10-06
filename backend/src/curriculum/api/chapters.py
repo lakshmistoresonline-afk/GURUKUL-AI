@@ -7,10 +7,11 @@ from ..core.curriculum_registry import CurriculumRegistry
 from ..core.subject_registry import SubjectRegistry
 from ..core.processed_content_resolver import ProcessedContentResolver, ContentIntegrityError, ContentNotFoundError, ChapterNotFoundError as ResolverChapterNotFoundError
 from ..core.content_validator import ContentNotFoundError, ContentSchemaError, IdentityConflictError, ChapterNotFoundError
+from ..core.config import GurukulConfig
 
 router = APIRouter(prefix="/api/v1", tags=["Hardened Authoritative Curriculum Pipeline"])
 
-PROCESSED_ROOT = r"D:/GURUKUL/ProcessedContent"
+PROCESSED_ROOT = str(GurukulConfig.get_processed_root())
 
 @router.get("/classes")
 async def discover_classes():
