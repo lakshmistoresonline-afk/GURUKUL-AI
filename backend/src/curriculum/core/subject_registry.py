@@ -1,6 +1,10 @@
 from typing import Dict, List, Optional
 
 class SubjectRegistry:
+    """
+    SubjectRegistry strictly canonicalizes the subject itself.
+    Book and part are separate identity dimensions and are not encoded here.
+    """
     CANONICAL_MAPPING = {
         "english": "english",
         "hindi": "hindi",

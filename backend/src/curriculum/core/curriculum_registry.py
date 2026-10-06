@@ -50,16 +50,16 @@ class CurriculumRegistry:
                 req_part = identity.part.lower()
 
                 if "maths i" in folder_name_lower or folder_name_lower == "mathsi":
-                    if req_book in ["maths_ii", "mathsii", "part2"] or req_part == "part2" or " ii" in f" {req_book} ":
+                    if req_book in ["maths_ii", "mathsii", "part2"] or req_part in ["part2", "maths_ii"] or req_book.endswith("ii") or req_book == "maths_ii":
                         continue
                 elif "maths ii" in folder_name_lower or folder_name_lower == "mathsii":
-                    if req_book in ["maths_i", "mathsi", "part1"] or req_part == "part1":
+                    if req_book in ["maths_i", "mathsi", "part1"] or req_part in ["part1", "maths_i"] or req_book.endswith(" i") or req_book == "maths_i":
                         continue
                 elif "social i" in folder_name_lower or folder_name_lower == "sociali":
-                    if req_book in ["social_ii", "socialii", "part2"] or req_part == "part2" or " ii" in f" {req_book} ":
+                    if req_book in ["social_ii", "socialii", "part2"] or req_part in ["part2", "social_ii"] or req_book.endswith("ii"):
                         continue
                 elif "social ii" in folder_name_lower or folder_name_lower == "socialii":
-                    if req_book in ["social_i", "sociali", "part1"] or req_part == "part1":
+                    if req_book in ["social_i", "sociali", "part1"] or req_part in ["part1", "social_i"] or req_book.endswith(" i"):
                         continue
                 elif identity.book != "main" and identity.book != "none" and identity.book.lower() not in folder_name_lower:
                     continue
