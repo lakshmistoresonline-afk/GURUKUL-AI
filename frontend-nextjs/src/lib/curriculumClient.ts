@@ -18,38 +18,13 @@ export interface ChapterContentResponse {
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 export class CurriculumApiClient {
-  static async fetchClasses(): Promise<{ grade: string; subjects: string[] }[]> {
+  static async fetchHierarchy(): Promise<any[]> {
     try {
-      const res = await fetch(`${API_BASE}/api/v1/curriculum/classes`);
+      const res = await fetch(`${API_BASE}/api/v1/curriculum/hierarchy`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
-      return data.classes ? data.classes.map((g: string) => ({ grade: g, subjects: [] })) : data;
+      return await res.json();
     } catch (err) {
-      console.warn('Failed to fetch classes from backend registry:', err);
-      return [];
-    }
-  }
-
-  static async fetchSubjects(grade: string): Promise<string[]> {
-    try {
-      const res = await fetch(`${API_BASE}/api/v1/curriculum/classes/${grade}/subjects`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
-      return data.subjects || [];
-    } catch (err) {
-      console.warn(`Failed to fetch subjects for Class ${grade}:`, err);
-      return [];
-    }
-  }
-
-  static async fetchChapters(grade: string, subject: string, book: string = 'main', unit: string = 'U01'): Promise<string[]> {
-    try {
-      const res = await fetch(`${API_BASE}/api/v1/curriculum/classes/${grade}/subjects/${subject}/books/${book}/units/${unit}/chapters`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
-      return data.chapters || [];
-    } catch (err) {
-      console.warn(`Failed to fetch chapters for Class ${grade} ${subject}:`, err);
+      console.warn('Failed to fetch authoritative curriculum hierarchy from backend:', err);
       return [];
     }
   }
@@ -59,6 +34,7 @@ export class CurriculumApiClient {
       grade: identity.grade,
       subject: identity.subject,
       book: identity.book,
+      part: identity.part,
       unit: identity.unit,
       chapter_id: identity.chapter_id,
       content_type: identity.content_type
