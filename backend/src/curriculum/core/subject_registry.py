@@ -8,13 +8,17 @@ class SubjectRegistry:
         "math": "mathematics",
         "mathematics": "mathematics",
         "maths i": "mathematics",
+        "mathsi": "mathematics",
         "maths ii": "mathematics",
+        "mathsii": "mathematics",
         "science": "science",
         "evs": "science",
         "social": "social_science",
         "social science": "social_science",
         "social i": "social_science",
+        "sociali": "social_science",
         "social ii": "social_science",
+        "socialii": "social_science",
         "sanskrit": "sanskrit"
     }
 

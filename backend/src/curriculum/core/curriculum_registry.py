@@ -14,9 +14,8 @@ class CurriculumResolutionError(Exception):
 
 class CurriculumRegistry:
     """
-    Fully Data-Driven Authoritative Curriculum Registry for Gurukul AI.
-    Discovers and resolves classes, subjects, books, parts, units, and chapters
-    directly from centralized configuration paths without hardcoded branching or default fallbacks.
+    Authoritative Curriculum Registry for Gurukul AI enforcing strict identity resolution
+    with explicit book, part, unit, and chapter dimensions.
     """
 
     @classmethod
@@ -46,13 +45,30 @@ class CurriculumRegistry:
         target_subj_folder = None
         for d in class_proc_dir.iterdir():
             if d.is_dir() and SubjectRegistry.resolve_canonical_subject(d.name) == canonical_subject:
-                if identity.book != "main" and identity.book.lower() not in d.name.lower():
+                folder_name_lower = d.name.lower()
+                req_book = identity.book.lower()
+                req_part = identity.part.lower()
+
+                if "maths i" in folder_name_lower or folder_name_lower == "mathsi":
+                    if req_book in ["maths_ii", "mathsii", "part2"] or req_part == "part2" or " ii" in f" {req_book} ":
+                        continue
+                elif "maths ii" in folder_name_lower or folder_name_lower == "mathsii":
+                    if req_book in ["maths_i", "mathsi", "part1"] or req_part == "part1":
+                        continue
+                elif "social i" in folder_name_lower or folder_name_lower == "sociali":
+                    if req_book in ["social_ii", "socialii", "part2"] or req_part == "part2" or " ii" in f" {req_book} ":
+                        continue
+                elif "social ii" in folder_name_lower or folder_name_lower == "socialii":
+                    if req_book in ["social_i", "sociali", "part1"] or req_part == "part1":
+                        continue
+                elif identity.book != "main" and identity.book != "none" and identity.book.lower() not in folder_name_lower:
                     continue
+
                 target_subj_folder = d
                 break
 
         if not target_subj_folder:
-            raise CurriculumResolutionError(f"Subject '{identity.subject}' (canonical: {canonical_subject}, book: {identity.book}) for Class {grade} not found.")
+            raise CurriculumResolutionError(f"Subject '{identity.subject}' (book: {identity.book}, part: {identity.part}) for Class {grade} not found.")
 
         chapter_folder = target_subj_folder / identity.chapter_id
         if not chapter_folder.exists() or not chapter_folder.is_dir():

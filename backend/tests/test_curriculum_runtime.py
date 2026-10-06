@@ -20,7 +20,7 @@ def test_curriculum_identity_cache_key():
         chapter_id="G6-MAT-U01-C03",
         content_type="flashcards"
     )
-    assert identity.to_cache_key() == "class6:mathematics:main:none:u01:g6-mat-u01-c03:flashcards"
+    assert identity.to_cache_key() == "class6:mathematics:book:main:part:none:unit:u01:ch:g6-mat-u01-c03:ct:flashcards"
 
 def test_subject_registry_normalization():
     assert SubjectRegistry.resolve_canonical_subject("Maths") == "mathematics"
