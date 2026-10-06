@@ -1,9 +1,18 @@
 import os
+import sys
 import json
 import hashlib
 from pathlib import Path
 from typing import Dict, Any, List
-from ..core.config import GurukulConfig
+
+backend_dir = Path(__file__).resolve().parents[2]
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
+
+try:
+    from src.curriculum.core.config import GurukulConfig
+except ImportError:
+    from curriculum.core.config import GurukulConfig
 
 CONTENTS_ROOT = GurukulConfig.get_content_root()
 REPORTS_DIR = GurukulConfig.get_reports_root() / "source-inventory"
@@ -68,5 +77,10 @@ class SourceDiscoveryEngine:
         return inventory
 
 if __name__ == "__main__":
-    inv = SourceDiscoveryEngine.scan_contents()
-    print(f"Source inventory discovered successfully. Classes found: {len(inv['classes'])}")
+    try:
+        inv = SourceDiscoveryEngine.scan_contents()
+        print(f"Source inventory discovered successfully. Classes found: {len(inv['classes'])}")
+        sys.exit(0)
+    except Exception as e:
+        print(f"Source discovery error: {e}")
+        sys.exit(1)
