@@ -5,9 +5,10 @@ from typing import Dict, Any, List, Optional
 from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 from ..core.curriculum_registry import CurriculumRegistry
 from ..core.subject_registry import SubjectRegistry
-from ..core.processed_content_resolver import ProcessedContentResolver, ContentIntegrityError, ContentNotFoundError, ChapterNotFoundError
+from ..core.processed_content_resolver import ProcessedContentResolver, ContentIntegrityError, ContentNotFoundError, ChapterNotFoundError as ResolverChapterNotFoundError
+from ..core.content_validator import ContentNotFoundError, ContentSchemaError, IdentityConflictError, ChapterNotFoundError
 
-router = APIRouter(prefix="/api/v1", tags=["Authoritative Curriculum Pipeline"])
+router = APIRouter(prefix="/api/v1", tags=["Hardened Authoritative Curriculum Pipeline"])
 
 PROCESSED_ROOT = r"D:/GURUKUL/ProcessedContent"
 
@@ -123,7 +124,7 @@ async def resolve_authoritative_content(
 
     try:
         content_data = ProcessedContentResolver.resolve_content(identity)
-    except ChapterNotFoundError as cnf:
+    except (ChapterNotFoundError, ResolverChapterNotFoundError) as cnf:
         raise HTTPException(
             status_code=404,
             detail={
@@ -145,13 +146,24 @@ async def resolve_authoritative_content(
                 }
             }
         )
-    except ContentIntegrityError as cie:
+    except IdentityConflictError as ice:
         raise HTTPException(
-            status_code=500,
+            status_code=409,
             detail={
                 "error": {
-                    "code": "CONTENT_INTEGRITY_ERROR",
-                    "message": str(cie),
+                    "code": "IDENTITY_CONFLICT",
+                    "message": str(ice),
+                    "identity": identity.model_dump()
+                }
+            }
+        )
+    except ContentSchemaError as cse:
+        raise HTTPException(
+            status_code=422,
+            detail={
+                "error": {
+                    "code": "CONTENT_SCHEMA_INVALID",
+                    "message": str(cse),
                     "identity": identity.model_dump()
                 }
             }
@@ -183,18 +195,16 @@ async def get_chapter_direct_source_v2(
     book: str = Query(default="main"),
     unit: str = Query(default="U01")
 ):
-    canonical_subj = SubjectRegistry.resolve_canonical_subject(subject)
-    identity = CurriculumIdentity(
-        grade=str(grade),
-        subject=canonical_subj,
-        book=book,
-        part="none",
-        unit=unit,
-        chapter_id=chapterId,
-        content_type="overview"
-    )
-
     try:
+        identity = CurriculumIdentity(
+            grade=str(grade),
+            subject=SubjectRegistry.resolve_canonical_subject(subject),
+            book=book,
+            part="none",
+            unit=unit,
+            chapter_id=chapterId,
+            content_type="overview"
+        )
         dto: ChapterRuntimeDTO = CurriculumRegistry.load_chapter_bundle(identity)
     except Exception as e:
         raise HTTPException(

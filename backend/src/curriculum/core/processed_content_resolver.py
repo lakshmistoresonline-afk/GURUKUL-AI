@@ -5,15 +5,12 @@ from typing import Dict, Any, List, Optional
 from .curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 from .subject_registry import SubjectRegistry
 from .config import GurukulConfig
+from .content_validator import ContentValidator, ContentNotFoundError, ContentSchemaError, IdentityConflictError
 
 PROCESSED_ROOT = GurukulConfig.get_processed_root()
 
 class ContentIntegrityError(Exception):
-    """Raised when a processed content file contains malformed JSON (HTTP 500)."""
-    pass
-
-class ContentNotFoundError(Exception):
-    """Raised when a specific content type file does not exist (HTTP 404)."""
+    """Raised when a processed content file contains malformed JSON or schema issues (HTTP 500/422)."""
     pass
 
 class ChapterNotFoundError(Exception):
@@ -22,8 +19,8 @@ class ChapterNotFoundError(Exception):
 
 class ProcessedContentResolver:
     """
-    Single Authoritative ProcessedContent Resolver for Gurukul AI using GurukulConfig.
-    Enforces exact identity resolution without filesystem guessing.
+    Hardened Authoritative ProcessedContent Resolver for Gurukul AI.
+    Replaces silent failures with explicit schema validation and precise error statuses (404, 409, 422, 500).
     """
 
     @classmethod
@@ -34,7 +31,7 @@ class ProcessedContentResolver:
         canonical_subject = SubjectRegistry.resolve_canonical_subject(identity.subject)
         class_dir = PROCESSED_ROOT / f"Class{identity.grade}"
         if not class_dir.exists():
-            raise ChapterNotFoundError(f"Class {identity.grade} directory not found.")
+            raise ChapterNotFoundError(f"Class {identity.grade} processed directory not found.")
 
         target_subj_dir = None
         for sub_d in class_dir.iterdir():
@@ -51,15 +48,26 @@ class ProcessedContentResolver:
         if not chapter_dir.exists() or not chapter_dir.is_dir():
             raise ChapterNotFoundError(f"Chapter '{identity.chapter_id}' not found under Class {identity.grade} {identity.subject}.")
 
-        content_file = chapter_dir / f"{identity.content_type}.json"
-        if not content_file.exists():
-            raise ContentNotFoundError(f"Content type '{identity.content_type}' not available for chapter {identity.chapter_id}.")
+        # Validate manifest metadata against request identity (raises 409 IdentityConflictError if mismatch)
+        ContentValidator.validate_manifest(chapter_dir, identity)
 
+        if identity.content_type == "source_bundle":
+            sections = {}
+            for sec_name in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers", "foundational"]:
+                sec_file = chapter_dir / f"{sec_name}.json"
+                if sec_file.exists():
+                    try:
+                        sections[sec_name] = ContentValidator.validate_content_file(sec_file, identity)
+                    except Exception as e:
+                        raise ContentIntegrityError(str(e))
+                else:
+                    sections[sec_name] = None
+            return sections
+
+        content_file = chapter_dir / f"{identity.content_type}.json"
         try:
-            with open(content_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                return data
-        except json.JSONDecodeError as jde:
-            raise ContentIntegrityError(f"Malformed JSON in content file {content_file}: {str(jde)}")
+            return ContentValidator.validate_content_file(content_file, identity)
+        except (ContentNotFoundError, ContentSchemaError):
+            raise
         except Exception as e:
-            raise ContentIntegrityError(f"Unexpected error reading content file {content_file}: {str(e)}")
+            raise ContentIntegrityError(str(e))
