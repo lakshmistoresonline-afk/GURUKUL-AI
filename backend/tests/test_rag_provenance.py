@@ -19,12 +19,16 @@ def test_rag_provenance_completeness():
         content_type="notes",
         content_id="chunk-001",
         source_path="Contents/Class 6/Maths/Notes.json",
-        source_hash="abc123sha256hash",
+        source_sha256="abc123sha256hash",
         processed_path="ProcessedContent/Class6/Maths/G6-MAT-U01-C03/notes.json",
+        processed_sha256="def456sha256hash",
         processor_version="V14-STRICT",
-        schema_version="3.0.0"
+        schema_version="3.0.0",
+        chunk_id="chunk-001"
     )
     assert prov.verify_completeness() is True
     assert prov.grade == "6"
     assert prov.subject == "mathematics"
-    assert prov.source_hash == "abc123sha256hash"
+    assert prov.source_sha256 == "abc123sha256hash"
+    assert prov.processed_sha256 == "def456sha256hash"
+    assert prov.chunk_id == "chunk-001"
