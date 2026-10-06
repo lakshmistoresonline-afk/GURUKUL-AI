@@ -118,6 +118,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
               grade,
               subject,
               book,
+              part,
               contentType: activeTab,
               data: contentData
             })}
