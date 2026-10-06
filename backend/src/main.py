@@ -8,119 +8,102 @@ from fastapi.responses import JSONResponse
 from typing import Optional, Dict, Any, List, Set
 
 # Ensure backend root (D:\GURUKUL\backend) and src directory are in sys.path
-backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-src_dir = os.path.dirname(os.path.abspath(__file__))
-
+backend_dir = os.path.dirname(os.path.abspath(__file__))
 if backend_dir not in sys.path:
     sys.path.insert(0, backend_dir)
-if src_dir not in sys.path:
-    sys.path.insert(0, src_dir)
 
 try:
     from src.curriculum.api import chapters as curriculum_chapters
+    from src.curriculum.core.config import GurukulConfig
+    from src.curriculum.security.websocket_security import SecureWebSocketManager
 except (ImportError, ValueError):
     try:
         from curriculum.api import chapters as curriculum_chapters
+        from curriculum.core.config import GurukulConfig
+        from curriculum.security.websocket_security import SecureWebSocketManager
     except (ImportError, ValueError):
         from .curriculum.api import chapters as curriculum_chapters
+        from .curriculum.core.config import GurukulConfig
+        from .curriculum.security.websocket_security import SecureWebSocketManager
 
 # Initialize FastAPI Local Server
 app = FastAPI(
     title="GURUKUL-AI API",
-    description="Bridge server serving D:\\GURUKUL\\Contents\\Class 5 datasets with UTF-8 Devanagari and KaTeX support.",
-    version="3.0.0"
+    description="Bridge server serving NCERT curriculum datasets with secure authentication, authorization, and WebSocket sync.",
+    version="4.0.0"
 )
 
-# Explicitly allow local Next.js frontend connections & preflight requests
-origins = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:8080",
-    "http://127.0.0.1:8080",
-    "http://10.0.2.2:8080"
-]
+# Environment-driven explicit CORS origins (Production-secure)
+cors_env = os.getenv("CORS_ALLOWED_ORIGINS")
+if cors_env:
+    origins = [o.strip() for o in cors_env.split(",")]
+else:
+    origins = [
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:8080",
+        "http://127.0.0.1:8080",
+        "http://10.0.2.2:8080"
+    ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Permissive fallback for local testing
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-    expose_headers=["*"]
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type", "X-Requested-With"],
+    expose_headers=["Content-Length"]
 )
 
-# Mount New Curriculum API Router (/api/v1/...)
+# Mount Curriculum API Router (/api/v1/...)
 app.include_router(curriculum_chapters.router)
 
-CONTENT_ROOT = r"D:\GURUKUL\Contents\Class 5"
+CONTENT_ROOT = str(GurukulConfig.get_content_root())
 
-# Real-Time WebSocket Connection Manager
-class ConnectionManager:
-    def __init__(self):
-        self.active_connections: Set[WebSocket] = set()
-
-    async def connect(self, websocket: WebSocket):
-        await websocket.accept()
-        self.active_connections.add(websocket)
-
-    def disconnect(self, websocket: WebSocket):
-        if websocket in self.active_connections:
-            self.active_connections.remove(websocket)
-
-    async def broadcast(self, message: Dict[str, Any]):
-        for connection in list(self.active_connections):
-            try:
-                await connection.send_json(message)
-            except Exception:
-                pass
-
-ws_manager = ConnectionManager()
-
-# Optional Firebase Token Verifier Header Dependency
-async def verify_firebase_token(authorization: Optional[str] = Header(None)) -> Optional[str]:
-    if not authorization:
-        return "LOCAL_DEV_USER"
-    if authorization.startswith("Bearer "):
-        token = authorization.split("Bearer ")[1]
-        return "VERIFIED_FIREBASE_USER"
-    return "ANONYMOUS"
+secure_ws_mgr = SecureWebSocketManager()
 
 @app.get("/health")
 @app.get("/api/v1/health")
 async def health_check():
-    """Local Server Health Check."""
+    """Local Server Health Check with logical configuration status."""
     return {
         "status": "online",
-        "message": "GURUKUL-AI backend is running",
-        "contentRoot": CONTENT_ROOT,
-        "contentRootExists": os.path.exists(CONTENT_ROOT),
-        "activeWebSocketConnections": len(ws_manager.active_connections)
+        "message": "GURUKUL-AI secure backend is running",
+        "contentRootConfigured": True,
+        "activeSecureWebSocketConnections": len(secure_ws_mgr.active_connections)
     }
 
-# REAL-TIME WEBSOCKET SYNC ENDPOINT
+# SECURE REAL-TIME WEBSOCKET SYNC ENDPOINT
 @app.websocket("/api/v1/ws/sync")
 async def websocket_sync_endpoint(websocket: WebSocket, token: Optional[str] = Query(None)):
     """
-    Real-Time WebSocket Sync Endpoint:
-    Broadcasts live study activity, quiz submissions, and flashcard Leitner updates across connected devices.
+    Secure Real-Time WebSocket Sync Endpoint:
+    Authenticates via Firebase token, validates incoming event schemas,
+    and enforces server-side senderUid override to prevent spoofing.
     """
-    await ws_manager.connect(websocket)
+    user = await secure_ws_mgr.authenticate_and_connect(websocket, token)
+    if not user:
+        return
+
+    secure_ws_mgr.register(user.uid, websocket)
     try:
         while True:
-            data = await websocket.receive_text()
-            event = json.loads(data)
+            raw_data = await websocket.receive_text()
+            validated_payload = await secure_ws_mgr.handle_incoming_message(user, raw_data)
+            if "error" in validated_payload:
+                await websocket.send_json(validated_payload)
+                continue
 
-            await ws_manager.broadcast({
-                "eventType": event.get("eventType", "PROGRESS_UPDATE"),
-                "senderUid": event.get("uid", "BROWSER_DASHBOARD"),
-                "payload": event.get("payload", {}),
-                "timestamp": event.get("timestamp")
-            })
+            for conn in secure_ws_mgr.active_connections.values():
+                try:
+                    await conn.send_json(validated_payload)
+                except Exception:
+                    pass
     except WebSocketDisconnect:
-        ws_manager.disconnect(websocket)
+        secure_ws_mgr.unregister(user.uid)
     except Exception:
-        ws_manager.disconnect(websocket)
+        secure_ws_mgr.unregister(user.uid)
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("src.main:app", host="0.0.0.0", port=8080, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=True)
