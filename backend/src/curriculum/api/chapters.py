@@ -4,58 +4,30 @@ from fastapi import APIRouter, HTTPException, Query, Header
 from typing import Dict, Any, List, Optional
 from ..common.errors import ChapterNotFoundError
 from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
+from ..core.curriculum_registry import CurriculumRegistry
+from ..core.subject_registry import SubjectRegistry
 
 router = APIRouter(prefix="/api/v1", tags=["Curriculum Runtime Architecture"])
 
-PROCESSED_ROOT = r"D:/GURUKUL/ProcessedContent"
 CONTENTS_ROOT = r"D:/GURUKUL/Contents"
 
 @router.get("/classes")
 async def discover_classes():
-    grades = []
-    if os.path.exists(CONTENTS_ROOT):
-        grades = sorted([d.replace("Class ", "") for d in os.listdir(CONTENTS_ROOT) if os.path.isdir(os.path.join(CONTENTS_ROOT, d)) and "class" in d.lower()])
-    if not grades:
-        grades = ["5", "6", "7"]
-
+    grades = CurriculumRegistry.get_classes()
     class_list = []
     for g in grades:
-        g_dir = os.path.join(CONTENTS_ROOT, f"Class {g}")
-        subjects = []
-        if os.path.exists(g_dir):
-            subjects = sorted([d for d in os.listdir(g_dir) if os.path.isdir(os.path.join(g_dir, d))])
-        if not subjects:
-            if g == "5":
-                subjects = ["English", "Hindi", "Maths", "Science"]
-            elif g == "6":
-                subjects = ["English", "Hindi", "Maths", "Science", "Social"]
-            elif g == "7":
-                subjects = ["English", "Hindi", "Maths I", "Maths II", "Science", "Social I", "Social II"]
-            else:
-                subjects = ["English", "Hindi", "Maths", "Science"]
-        class_list.append({"grade": g, "subjects": subjects})
+        subs = CurriculumRegistry.get_subjects(g)
+        class_list.append({"grade": g, "subjects": subs})
     return class_list
 
 @router.get("/classes/{grade}/subjects")
 async def get_grade_subjects(grade: str):
-    subjects = []
-    grade_dir = os.path.join(CONTENTS_ROOT, f"Class {grade}")
-    if os.path.exists(grade_dir):
-        subjects = sorted([d for d in os.listdir(grade_dir) if os.path.isdir(os.path.join(grade_dir, d))])
-    if not subjects:
-        if grade == "5":
-            subjects = ["English", "Hindi", "Maths", "Science"]
-        elif grade == "6":
-            subjects = ["English", "Hindi", "Maths", "Science", "Social"]
-        elif grade == "7":
-            subjects = ["English", "Hindi", "Maths I", "Maths II", "Science", "Social I", "Social II"]
-        else:
-            subjects = ["English", "Hindi", "Maths", "Science"]
+    subjects = CurriculumRegistry.get_subjects(grade)
     return {"grade": grade, "subjects": subjects}
 
 @router.get("/classes/{grade}/subjects/{subject}")
 async def get_subject_details(grade: str, subject: str):
-    sub_processed_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", subject.replace(" ", ""))
+    sub_processed_dir = os.path.join(r"D:/GURUKUL/ProcessedContent", f"Class{grade}", subject.replace(" ", ""))
     chapters = []
 
     if os.path.exists(sub_processed_dir):
@@ -119,82 +91,33 @@ async def get_chapter_direct_source_v2(
     book: str = Query(default="main")
 ):
     """
-    STRICT CURRICULUM RUNTIME RESOLUTION ENDPOINT (V13):
-    Enforces strict identity matching (class, subject, book, chapterId).
-    Rejects missing chapters with HTTP 404 NOT_FOUND without fallback generation.
+    STRICT CURRICULUM RUNTIME RESOLUTION ENDPOINT (V14):
+    Enforces strict identity matching through CurriculumRegistry.
+    Returns HTTP 404 NOT_FOUND on missing chapters without synthetic fallback generation.
     """
+    canonical_subj = SubjectRegistry.resolve_canonical_subject(subject)
     identity = CurriculumIdentity(
-        grade=grade,
-        subject=subject,
+        grade=str(grade),
+        subject=canonical_subj,
         book=book,
         chapter_id=chapterId,
         content_type="source_bundle"
     )
 
-    sub_processed_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", subject.replace(" ", ""), chapterId)
-
-    if not os.path.exists(sub_processed_dir) and "C" in chapterId:
-        target_c_suffix = chapterId.split("C")[-1]
-        parent_dir = os.path.join(PROCESSED_ROOT, f"Class{grade}", subject.replace(" ", ""))
-        if os.path.exists(parent_dir):
-            for d in os.listdir(parent_dir):
-                if d.endswith(f"-C{target_c_suffix}"):
-                    sub_processed_dir = os.path.join(parent_dir, d)
-                    chapterId = d
-                    break
-
-    if not os.path.exists(sub_processed_dir):
-        raise HTTPException(status_code=404, detail=f"Chapter identity {identity.to_cache_key()} not found. No synthetic fallback created.")
-
-    sections = {}
-    for sec_name in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers", "foundational"]:
-        sec_path = os.path.join(sub_processed_dir, f"{sec_name}.json")
-        if os.path.exists(sec_path):
-            try:
-                with open(sec_path, "r", encoding="utf-8") as f:
-                    sections[sec_name] = json.load(f)
-            except Exception:
-                sections[sec_name] = None
-        else:
-            sections[sec_name] = None
-
-    ch_title = chapterId
-    unit_title = "Curriculum Unit"
-    ch_num = 1
-
-    for sec in ["notes", "overview", "master"]:
-        d = sections.get(sec)
-        if isinstance(d, dict):
-            title = (
-                d.get("chapterTitle") or
-                d.get("chapter_title") or
-                d.get("title") or
-                (isinstance(d.get("overview"), dict) and (d["overview"].get("chapter_title") or d["overview"].get("title")))
-            )
-            if title and isinstance(title, str) and "Exhaustive" not in title:
-                ch_title = title
-                ch_num = d.get("chapterNumber") or d.get("chapter_number") or 1
-                unit_title = d.get("unitTitle") or d.get("unit_title") or "Curriculum Unit"
-                break
-
-    dto = ChapterRuntimeDTO(
-        identity=identity,
-        chapter_number=ch_num,
-        chapter_title=ch_title,
-        unit_title=unit_title,
-        data=sections,
-        status="READY"
-    )
+    try:
+        dto: ChapterRuntimeDTO = CurriculumRegistry.load_chapter_bundle(identity)
+    except Exception as e:
+        raise HTTPException(status_code=404, detail=f"Chapter identity {identity.to_cache_key()} not found: {str(e)}")
 
     return {
         "chapterId": chapterId,
         "grade": grade,
         "subject": subject,
         "book": book,
-        "chapterNumber": ch_num,
-        "chapterTitle": ch_title,
-        "unitTitle": unit_title,
+        "chapterNumber": dto.chapter_number,
+        "chapterTitle": dto.chapter_title,
+        "unitTitle": dto.unit_title,
         "unitNumber": 1,
-        "sections": sections,
+        "sections": dto.data,
         "runtimeIdentity": dto.identity.dict()
     }
