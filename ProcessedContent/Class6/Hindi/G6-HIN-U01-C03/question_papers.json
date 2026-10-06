@@ -1,12 +1,11 @@
 {
-  "chapter_number": 3,
   "chapter_title": "पहली बूँद",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - पहली बूँद (NCERT मॉडल प्रश्न पत्र)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
+      "paper_title": "पहली बूँद - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "खंड 'क' (वस्तुनिष्ठ प्रश्न / MCQs)",
@@ -93,17 +92,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "अध्याय 3: पहली बूँद - मॉडल प्रश्न पत्र (NCERT पैटर्न)",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
-          "section_title": "खंड 'क' - वस्तुनिष्ठ प्रश्न एवं कथन-कारण (MCQs & Assertion-Reason) [6 अंक]",
+          "section_name": "Section A",
           "questions": [
             {
               "q_no": 1,
@@ -189,13 +180,7 @@
               ],
               "correct_answer": "क) कथन और कारण दोनों सही हैं तथा कारण कथन की सही व्याख्या करता है।",
               "marking_scheme_and_explanation": "1 अंक - धरती की प्यास बुझते ही संपूर्ण जीव-जगत हर्षित हो उठता है।"
-            }
-          ],
-          "section_key": "section_A_mcq_and_assertion_reason"
-        },
-        {
-          "section_title": "खंड 'ख' - लघु उत्तरीय प्रश्न एवं व्याकरण (Short Answer Questions & Grammar) [10 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Understanding",
@@ -230,13 +215,7 @@
               "marks": 2,
               "question_text": "'जलधर' और 'अंबर' के दो-दो भिन्न अर्थ लिखिए।",
               "marking_scheme_and_model_answer": "2 अंक: जलधर: 1. बादल, 2. समुद्र। अंबर: 1. आकाश, 2. वस्त्र।"
-            }
-          ],
-          "section_key": "section_B_short_answer"
-        },
-        {
-          "section_title": "खंड 'ग' - दीर्घ उत्तरीय एवं भाव-प्रधान प्रश्न (Long Answer Questions) [8 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Application",
@@ -251,36 +230,7 @@
               "question_text": "कवि ने वर्षा की बूँद को 'अमृत' क्यों कहा है? जल के महत्व पर विचार कीजिए।",
               "marking_scheme_and_model_answer": "4 अंक: अमृत की भाँति वर्षा जल सूखी धरती व मलीन वनस्पतियों में नवजीवन फूँकता है। जल के बिना जीवन असंभव है।"
             }
-          ],
-          "section_key": "section_C_long_answer"
-        },
-        {
-          "section_title": "खंड 'घ' - योग्यता-आधारित / केस-स्टडी प्रश्न (Competency & Case-Based Assessment) [6 अंक]",
-          "case_passage": "काव्यांश ध्यानपूर्वक पढ़िए:\n'वह गिरी बूँद अमृत-सी आकर,\nसरस सूखी वसुंधरा के अधर।\nसस्य-श्यामला बना धराधाम,\nनव-जीवन का कर उल्लास॥'",
-          "sub_questions": [
-            {
-              "sub_q_no": "(1)",
-              "marks": 2,
-              "blooms_level": "Understanding",
-              "question_text": "सूखी वसुंधरा के अधरों पर क्या गिरा और उसका क्या प्रभाव हुआ?",
-              "model_answer": "2 अंक: अमृत जैसी वर्षा की बूँद गिरी जिससे उसकी प्यास बुझ गई और नवजीवन आ गया।"
-            },
-            {
-              "sub_q_no": "(2)",
-              "marks": 2,
-              "blooms_level": "Application",
-              "question_text": "'सस्य-श्यामला' शब्द का क्या अर्थ है और धरती सस्य-श्यामला कैसे बनती है?",
-              "model_answer": "2 अंक: अर्थ: हरी-भरी फसलों से युक्त। वर्षा जल मिलने से पेड़-पौधे लहलहाकर धरती को सस्य-श्यामला बनाते हैं।"
-            },
-            {
-              "sub_q_no": "(3)",
-              "marks": 2,
-              "blooms_level": "Analyzing_Evaluating",
-              "question_text": "पर्यावरण संरक्षण की दृष्टि से वर्षा जल संचयन (Rainwater Harvesting) क्यों आवश्यक है?",
-              "model_answer": "2 अंक: भूजल स्तर बढ़ाने, जल संकट दूर करने और सूखे में कृषि हेतु वर्षा जल संचयन आवश्यक है।"
-            }
-          ],
-          "section_key": "section_D_case_based_competency"
+          ]
         }
       ]
     }

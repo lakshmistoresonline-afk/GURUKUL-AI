@@ -1,12 +1,11 @@
 {
-  "chapter_number": 7,
   "chapter_title": "जलाते चलो",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - जलाते चलो (NCERT मॉडल प्रश्न पत्र)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
+      "paper_title": "जलाते चलो - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "खंड 'क' (वस्तुनिष्ठ प्रश्न / MCQs)",
@@ -93,17 +92,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "अध्याय 7: जलाते चलो - मॉडल प्रश्न पत्र (NCERT पैटर्न)",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
-          "section_title": "खंड 'क' - वस्तुनिष्ठ प्रश्न एवं कथन-कारण (MCQs & Assertion-Reason) [6 अंक]",
+          "section_name": "Section A",
           "questions": [
             {
               "q_no": 1,
@@ -189,13 +180,7 @@
               ],
               "correct_answer": "क) कथन और कारण दोनों सही हैं तथा कारण कथन की सही व्याख्या करता है।",
               "marking_scheme_and_explanation": "1 अंक - कवि का विश्वास है कि सत्य का दीप कभी हारता नहीं।"
-            }
-          ],
-          "section_key": "section_A_mcq_and_assertion_reason"
-        },
-        {
-          "section_title": "खंड 'ख' - लघु उत्तरीय प्रश्न एवं व्याकरण (Short Answer Questions & Grammar) [10 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Understanding",
@@ -230,13 +215,7 @@
               "marks": 2,
               "question_text": "'स्नेह' शब्द के दो भिन्न अर्थ (अनेकार्थी) लिखिए।",
               "marking_scheme_and_model_answer": "2 अंक: 1. प्रेम / वात्सल्य, 2. तेल / घी (दीपक का ईंधन)।"
-            }
-          ],
-          "section_key": "section_B_short_answer"
-        },
-        {
-          "section_title": "खंड 'ग' - दीर्घ उत्तरीय एवं भाव-प्रधान प्रश्न (Long Answer Questions) [8 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Application",
@@ -251,36 +230,7 @@
               "question_text": "'अंधकार से शिकायत करने के बजाय एक दिया जलाना बेहतर है।' व्याख्या कीजिए।",
               "marking_scheme_and_model_answer": "4 अंक: केवल समाज की बुराइयों का रोना रोने से परिवर्तन नहीं आता। जब हम स्वयं आगे बढ़कर प्रेम का दीप जलाते हैं, तो वही प्रयास अँधेरे को दूर भगा देता है।"
             }
-          ],
-          "section_key": "section_C_long_answer"
-        },
-        {
-          "section_title": "खंड 'घ' - योग्यता-आधारित / केस-स्टडी प्रश्न (Competency & Case-Based Assessment) [6 अंक]",
-          "case_passage": "काव्यांश ध्यानपूर्वक पढ़िए:\n'जलाते चलो स्नेह के दीप पावन,\nकभी तो तिमिर को सवेरा मिलेगा।\nरहेगा धरा पर दिया एक भी यदि,\nनिशा का कठिन राज ढहता रहेगा॥'",
-          "sub_questions": [
-            {
-              "sub_q_no": "(1)",
-              "marks": 2,
-              "blooms_level": "Understanding",
-              "question_text": "कवि किस प्रकार के दीप जलाने के लिए प्रेरित कर रहे हैं और क्यों?",
-              "model_answer": "2 अंक: प्रेम, ज्ञान और सेवा के पावन दीप ताकि अज्ञान व दुख रूपी तिमिर दूर हो सके।"
-            },
-            {
-              "sub_q_no": "(2)",
-              "marks": 2,
-              "blooms_level": "Application",
-              "question_text": "'निशा का कठिन राज ढहता रहेगा' से क्या आशय है?",
-              "model_answer": "2 अंक: अज्ञान और अन्याय का साम्राज्य कितना भी शक्तिशाली हो, सत्य के प्रकाश के सामने वह ढह जाता है।"
-            },
-            {
-              "sub_q_no": "(3)",
-              "marks": 2,
-              "blooms_level": "Analyzing_Evaluating",
-              "question_text": "आप अपने विद्यालय में दूसरों के जीवन में प्रकाश लाने के लिए क्या करेंगे?",
-              "model_answer": "2 अंक: कमजोर सहपाठियों को पढ़ाई में मदद करके तथा प्रेम व अनुशासन का दीप जलाकर।"
-            }
-          ],
-          "section_key": "section_D_case_based_competency"
+          ]
         }
       ]
     }

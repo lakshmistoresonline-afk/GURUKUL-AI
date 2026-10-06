@@ -1,12 +1,11 @@
 {
-  "chapter_number": 13,
   "chapter_title": "पेड़ की बात",
   "question_papers": [
     {
       "paper_id": 1,
-      "paper_title": "Set 1 - पेड़ की बात (NCERT मॉडल प्रश्न पत्र)",
-      "total_marks": 25,
-      "time_allowed_minutes": 45,
+      "paper_title": "पेड़ की बात - Unified Practice Assessment",
+      "total_marks": 30,
+      "time_allowed_minutes": 90,
       "sections": [
         {
           "section_name": "खंड 'क' (वस्तुनिष्ठ प्रश्न / MCQs)",
@@ -93,17 +92,9 @@
               "marks": 5
             }
           ]
-        }
-      ]
-    },
-    {
-      "paper_id": 2,
-      "paper_title": "अध्याय 13: पेड़ की बात - मॉडल प्रश्न पत्र (NCERT पैटर्न)",
-      "total_marks": 30,
-      "time_allowed_minutes": 60,
-      "sections": [
+        },
         {
-          "section_title": "खंड 'क' - वस्तुनिष्ठ प्रश्न एवं कथन-कारण (MCQs & Assertion-Reason) [6 अंक]",
+          "section_name": "Section A",
           "questions": [
             {
               "q_no": 1,
@@ -189,13 +180,7 @@
               ],
               "correct_answer": "क) कथन और कारण दोनों सही हैं तथा कारण कथन की सही व्याख्या करता है।",
               "marking_scheme_and_explanation": "1 अंक - बोस जी की ऐतिहासिक वैज्ञानिक खोज का निरूपण।"
-            }
-          ],
-          "section_key": "section_A_mcq_and_assertion_reason"
-        },
-        {
-          "section_title": "खंड 'ख' - लघु उत्तरीय प्रश्न एवं व्याकरण (Short Answer Questions & Grammar) [10 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Understanding",
@@ -230,13 +215,7 @@
               "marks": 2,
               "question_text": "'नन्हा अंकुर' में विशेषण और विशेष्य अलग करके लिखिए।",
               "marking_scheme_and_model_answer": "2 अंक: विशेषण = नन्हा। विशेष्य = अंकुर।"
-            }
-          ],
-          "section_key": "section_B_short_answer"
-        },
-        {
-          "section_title": "खंड 'ग' - दीर्घ उत्तरीय एवं भाव-प्रधान प्रश्न (Long Answer Questions) [8 अंक]",
-          "questions": [
+            },
             {
               "q_no": 1,
               "blooms_level": "Application",
@@ -251,36 +230,7 @@
               "question_text": "'वृक्षारोपण और पर्यावरण संरक्षण ही मानव सभ्यता की सुरक्षा का मूलाधार है।' समीक्षा कीजिए।",
               "marking_scheme_and_model_answer": "4 अंक: पेड़ कार्बन डाइऑक्साइड लेकर ऑक्सीजन देते हैं, मिट्टी का कटाव रोकते हैं और वर्षा लाते हैं। पेड़ों की सुरक्षा ही मानव सभ्यता की सुरक्षा है।"
             }
-          ],
-          "section_key": "section_C_long_answer"
-        },
-        {
-          "section_title": "खंड 'घ' - योग्यता-आधारित / केस-स्टडी प्रश्न (Competency & Case-Based Assessment) [6 अंक]",
-          "case_passage": "गद्यांश ध्यानपूर्वक पढ़िए:\n'पेड़-पौधों में भी हमारे समान जीवन होता है। वे भी भोजन लेते हैं, बढ़ते हैं और अपनी संतान के पोषण के लिए सर्वस्व अर्पण करते हैं। बीजों की सुरक्षा के लिए वे सुंदर फूल बनाते हैं। फूल वास्तव में बीजों की सुरक्षा का घर हैं।'",
-          "sub_questions": [
-            {
-              "sub_q_no": "(1)",
-              "marks": 2,
-              "blooms_level": "Understanding",
-              "question_text": "फूल पौधों के लिए क्या कार्य करते हैं?",
-              "model_answer": "2 अंक: फूल पौधों की भावी संतान (बीजों) की सुरक्षा और पोषण के लिए बने घर होते हैं।"
-            },
-            {
-              "sub_q_no": "(2)",
-              "marks": 2,
-              "blooms_level": "Application",
-              "question_text": "पौधों का जीवन-चक्र मनुष्यों को क्या सीख देता है?",
-              "model_answer": "2 अंक: अपनी आने वाली पीढ़ी के कल्याण के लिए त्याग करना और निस्वार्थ भाव से सेवा करना।"
-            },
-            {
-              "sub_q_no": "(3)",
-              "marks": 2,
-              "blooms_level": "Analyzing_Evaluating",
-              "question_text": "आप अपने आसपास के पेड़-पौधों की सुरक्षा के लिए क्या उपाय करेंगे?",
-              "model_answer": "2 अंक: नियमित जल देना, टहनियाँ न तोड़ना, नए पौधे लगाना और वृक्षारोपण के प्रति जागरूक करना।"
-            }
-          ],
-          "section_key": "section_D_case_based_competency"
+          ]
         }
       ]
     }
