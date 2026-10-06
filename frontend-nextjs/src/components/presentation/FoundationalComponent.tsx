@@ -18,17 +18,31 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
     return <div className="p-8 text-center text-slate-500">No foundational curriculum content available.</div>;
   }
 
-  const metadata = data.textbook_metadata || data.metadata || {};
-  let modules = data.modules || data.foundational_modules || (Array.isArray(data) ? data : data.chapters || []) || [];
+  const metadata = data.textbook_metadata || data.metadata || data.chapter || {};
 
-  if (!Array.isArray(modules) || modules.length === 0) {
-    if (typeof data === 'object') {
-      // Flatten any arrays found in object values
-      const foundArr = Object.values(data).find(v => Array.isArray(v));
-      if (foundArr) modules = foundArr;
+  let rawModules = data.modules || data.foundational_modules || [];
+  if ((!Array.isArray(rawModules) || rawModules.length === 0) && data.content && typeof data.content === 'object') {
+    rawModules = [];
+    for (const [catKey, catVal] of Object.entries(data.content)) {
+      if (Array.isArray(catVal)) {
+        catVal.forEach(item => {
+          rawModules.push({
+            category: catKey,
+            item: item
+          });
+        });
+      }
     }
   }
 
+  if (!Array.isArray(rawModules) || rawModules.length === 0) {
+    if (typeof data === 'object') {
+      const foundArr = Object.values(data).find(v => Array.isArray(v));
+      if (foundArr) rawModules = foundArr;
+    }
+  }
+
+  const modules = rawModules;
   const categories = ['All', ...Array.from(new Set(modules.map((m: any) => m.category || m.type || m.module_type || 'Module')))];
 
   const filteredModules = modules.filter((m: any) => {
@@ -101,7 +115,7 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
               const item = mod.item || mod;
               const cat = mod.category || mod.type || mod.module_type || 'Module';
 
-              const title = item.concept || item.term || item.title || item.name || item.word || item.idiom || item.root || item.device || item.type || item.phrase_or_word || cat;
+              const title = item.concept || item.term || item.title || item.name || item.word || item.idiom || item.root || item.device || item.type || item.phrase_or_word || item.item || cat;
               const explanation = item.explanation || item.definition || item.description || item.meaning || item.structure_rule || item.rule || item.usage_example || '';
               const rules = item.rules || '';
               const examples = item.examples || item.subtopics || item.key_points || item.verb_forms || item.adjective_degrees || item.adjective_forms || [];
@@ -132,7 +146,7 @@ export default function FoundationalComponent({ data }: FoundationalProps) {
               }
 
               const isAnswerVisible = showAnswers[idx];
-              const renderedKeys = new Set(['concept', 'term', 'title', 'name', 'word', 'idiom', 'root', 'device', 'type', 'phrase_or_word', 'explanation', 'definition', 'description', 'meaning', 'structure_rule', 'rule', 'usage_example', 'rules', 'examples', 'subtopics', 'key_points', 'verb_forms', 'adjective_degrees', 'adjective_forms', 'example', 'contextual_importance', 'source_context', 'synonyms', 'synonym', 'antonyms', 'antonym', 'word_forms', 'forms', 'answer']);
+              const renderedKeys = new Set(['concept', 'term', 'title', 'name', 'word', 'idiom', 'root', 'device', 'type', 'phrase_or_word', 'item', 'explanation', 'definition', 'description', 'meaning', 'structure_rule', 'rule', 'usage_example', 'rules', 'examples', 'subtopics', 'key_points', 'verb_forms', 'adjective_degrees', 'adjective_forms', 'example', 'contextual_importance', 'source_context', 'synonyms', 'synonym', 'antonyms', 'antonym', 'word_forms', 'forms', 'answer']);
               const extraEntries = Object.entries(item).filter(([k]) => !renderedKeys.has(k));
 
               return (
