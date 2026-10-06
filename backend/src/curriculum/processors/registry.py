@@ -3,7 +3,7 @@ from ..core.curriculum_identity import CurriculumIdentity
 from ..core.subject_registry import SubjectRegistry
 from .base.base_processor import BaseProcessor
 
-# Import class/subject processors
+# Import explicit class/subject/book processors
 from .class5.english_processor import Class5EnglishProcessor
 from .class5.hindi_processor import Class5HindiProcessor
 from .class5.mathematics_processor import Class5MathematicsProcessor
@@ -23,11 +23,15 @@ from .class7.science_processor import Class7ScienceProcessor
 from .class7.social_science_i_processor import Class7SocialScienceIProcessor
 from .class7.social_science_ii_processor import Class7SocialScienceIIProcessor
 
+class ProcessorNotFoundError(ValueError):
+    """Raised when no explicit processor is registered for the requested full identity."""
+    pass
+
 class ProcessorRegistry:
     """
-    Central Processor Registry for Gurukul AI.
-    Selects explicit subject-specific and class-specific processors
-    using grade + canonical subject + book/part.
+    Gen-2 Authoritative Processor Registry.
+    Requires exact full identity matching (grade + subject + book/part).
+    Implicit generic fallbacks are strictly forbidden.
     """
 
     _REGISTRY: Dict[str, Type[BaseProcessor]] = {
@@ -55,16 +59,17 @@ class ProcessorRegistry:
     def resolve(cls, identity: CurriculumIdentity) -> BaseProcessor:
         canonical_subj = SubjectRegistry.resolve_canonical_subject(identity.subject)
         book_key = identity.book.lower()
-        if book_key == "none":
-            book_key = "main"
+        if book_key in ["none", "main"]:
+            if canonical_subj == "mathematics" and identity.grade == "7":
+                book_key = "maths_i" if "i" in identity.part.lower() or "1" in identity.part.lower() else "maths_ii"
+            elif canonical_subj == "social_science" and identity.grade == "7":
+                book_key = "social_i" if "i" in identity.part.lower() or "1" in identity.part.lower() else "social_ii"
+            else:
+                book_key = "main"
 
         key = f"{identity.grade}:{canonical_subj}:{book_key}"
         if key not in cls._REGISTRY:
-            # Try fallback generic match for grade + subject
-            fallback_key = f"{identity.grade}:{canonical_subj}:main"
-            if fallback_key in cls._REGISTRY:
-                return cls._REGISTRY[fallback_key]
-            raise ValueError(f"No processor registered for identity: {identity.to_cache_key()} (Key: {key})")
+            raise ProcessorNotFoundError(f"Strict resolution failure: No explicit processor registered for identity '{identity.to_cache_key()}' (Registry Key: {key}). Generic fallback is prohibited.")
 
         return cls._REGISTRY[key]()
 
