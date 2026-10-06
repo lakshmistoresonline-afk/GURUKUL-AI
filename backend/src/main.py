@@ -69,13 +69,19 @@ async def health_check():
         "activeSecureWebSocketConnections": len(secure_ws_mgr.active_connections)
     }
 
+# SECURE REAL-TIME WEBSOCKET SYNC ENDPOINT
 @app.websocket("/api/v1/ws/sync")
 async def websocket_sync_endpoint(websocket: WebSocket, token: Optional[str] = Query(None)):
-    user = await secure_ws_mgr.authenticate_and_connect(websocket, token)
+    """
+    Secure Real-Time WebSocket Sync Endpoint:
+    Authenticates BEFORE accepting connection, validates event schemas, and enforces server UID authority.
+    """
+    user = await secure_ws_mgr.authenticate_connection(websocket, token)
     if not user:
         return
 
-    secure_ws_mgr.register(user.uid, websocket)
+    await websocket.accept()
+    await secure_ws_mgr.register(user, websocket)
     try:
         while True:
             raw_data = await websocket.receive_text()
@@ -84,11 +90,7 @@ async def websocket_sync_endpoint(websocket: WebSocket, token: Optional[str] = Q
                 await websocket.send_json(validated_payload)
                 continue
 
-            for conn in secure_ws_mgr.active_connections.values():
-                try:
-                    await conn.send_json(validated_payload)
-                except Exception:
-                    pass
+            await secure_ws_mgr.broadcast_to_authorized(user.uid, validated_payload)
     except WebSocketDisconnect:
         secure_ws_mgr.unregister(user.uid)
     except Exception:
