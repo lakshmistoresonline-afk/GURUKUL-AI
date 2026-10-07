@@ -29,12 +29,20 @@ class ChapterNotFoundError(CurriculumResolutionError):
     """Raised when chapter cannot be resolved."""
     pass
 
+class ContentMissingError(CurriculumResolutionError):
+    """Raised when a mandatory content section file is missing."""
+    pass
+
 class ContentNotFoundError(CurriculumResolutionError):
     """Raised when requested content type is not found."""
     pass
 
 class ContentSchemaError(CurriculumResolutionError):
-    """Raised when content JSON is corrupt or invalid schema."""
+    """Raised when content JSON has malformed syntax or schema violation."""
+    pass
+
+class ContentCorruptError(CurriculumResolutionError):
+    """Raised when content JSON is null, empty, or structurally corrupt."""
     pass
 
 class RegistryDuplicateKeyError(CurriculumResolutionError):
@@ -219,11 +227,6 @@ class CurriculumRegistry:
 
     @classmethod
     def resolve_node(cls, identity: CurriculumIdentity) -> Dict[str, Any]:
-        """
-        Resolves node strictly using EXACT identity:
-        grade:canonical_subject:book:part:unit:chapter_id
-        Zero cross-book fallback or inference.
-        """
         idx = cls.get_index()
         canonical_subject = SubjectRegistry.resolve_canonical_subject(identity.subject)
 
@@ -257,16 +260,20 @@ class CurriculumRegistry:
         sections = {}
         for sec_name in node["available_content_types"]:
             sec_file = ch_path / f"{sec_name}.json"
-            if sec_file.exists():
-                try:
-                    with open(sec_file, "r", encoding="utf-8") as f:
-                        sections[sec_name] = json.load(f)
-                except json.JSONDecodeError as jde:
-                    raise ContentSchemaError(f"Corrupt JSON in content section '{sec_name}' for chapter {identity.chapter_id}: {str(jde)}")
-                except Exception as e:
-                    raise ContentSchemaError(f"Failed to load content section '{sec_name}': {str(e)}")
-            else:
-                sections[sec_name] = None
+            if not sec_file.exists():
+                raise ContentMissingError(f"Mandatory content section file '{sec_name}.json' missing for chapter {identity.chapter_id}.")
+            try:
+                with open(sec_file, "r", encoding="utf-8") as f:
+                    content_json = json.load(f)
+                    if content_json is None:
+                        raise ContentCorruptError(f"Content section '{sec_name}.json' evaluated to null/None for chapter {identity.chapter_id}.")
+                    sections[sec_name] = content_json
+            except json.JSONDecodeError as jde:
+                raise ContentSchemaError(f"Corrupt or malformed JSON in content section '{sec_name}.json' for chapter {identity.chapter_id}: {str(jde)}")
+            except (ContentMissingError, ContentCorruptError, ContentSchemaError):
+                raise
+            except Exception as e:
+                raise ContentCorruptError(f"Unexpected error loading content section '{sec_name}.json' for chapter {identity.chapter_id}: {str(e)}")
 
         dto = ChapterRuntimeDTO(
             identity=identity,
