@@ -4,12 +4,19 @@ import time
 import subprocess
 import logging
 from datetime import datetime
+from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("WatcherDaemon")
 
-REPO_ROOT = r"D:/GURUKUL"
-CONTENTS_ROOT = os.path.join(REPO_ROOT, "Contents")
+backend_dir = Path(__file__).resolve().parents[1]
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
+
+from src.curriculum.core.config import GurukulConfig
+
+REPO_ROOT = str(GurukulConfig.get_reports_root().parent)
+CONTENTS_ROOT = str(GurukulConfig.get_content_root())
 
 class WatcherDaemon:
     """
@@ -52,7 +59,8 @@ class WatcherDaemon:
     def trigger_reprocessing(self):
         logger.info("Triggering autonomous reprocessing pipeline...")
         try:
-            subprocess.run([sys.executable, os.path.join(REPO_ROOT, "backend", "scripts", "generate_processed_content_strict_1to1.py")], check=True)
+            script_path = os.path.join(REPO_ROOT, "backend", "scripts", "generate_processed_content_strict_1to1.py")
+            subprocess.run([sys.executable, script_path], check=True)
             logger.info("Autonomous reprocessing completed successfully.")
         except Exception as e:
             logger.error(f"Error during autonomous reprocessing: {e}")
@@ -66,5 +74,4 @@ class WatcherDaemon:
 if __name__ == "__main__":
     daemon = WatcherDaemon()
     logger.info("WatcherDaemon initialized in read-only monitoring mode.")
-    # Run once for check
     daemon.run_once()

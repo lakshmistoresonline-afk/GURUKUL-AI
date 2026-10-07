@@ -1,0 +1,164 @@
+{
+  "validator_version": "2.5.0-STRICT",
+  "execution_timestamp": "2026-10-07T11:04:53.956393",
+  "overall_status": "PASS",
+  "input_hashes": {
+    "config": "70ccac42df047606239a5229dc7938dac6cefca902812b398c05efeb0ca1813d",
+    "registry": "ada5202ed53ac748b0df63ecc61e38a56cfe362070f1c27b67ec99f7875c56e2"
+  },
+  "evidence_hashes": {
+    "immutability_report": "c320accab9792e3bea0e42c9c727157a400bd56b75cb75502e025973e50ccc18",
+    "reconciliation_report": "02974843109ab9bc057ec5fa911dde112bf07c7c1c9b9d21ed1284ba24080b63",
+    "fidelity_report": "6eca097717a3285e9f5ea9c313c35c35864914f196db55fed2163f54978ca16b",
+    "uat_report": "0784e5d70fb92d8a5f20bdbc11ea0ce066e8abe1f1305a93f89e48c4f1a7e742"
+  },
+  "metrics": {
+    "total_categories": 20,
+    "passed_categories": 20,
+    "blocked_categories": 0,
+    "not_applicable_categories": 0
+  },
+  "reason_codes": [],
+  "categories": [
+    {
+      "category_id": "historical coverage",
+      "status": "PASS",
+      "required_evidence": "D:\\GURUKUL\\reports\\content-integrity\\fail_closed_immutability_report.json",
+      "acceptance_rules": "Cryptographic integrity baseline verified successfully.",
+      "blocking_rules": "Missing or failed cryptographic integrity report."
+    },
+    {
+      "category_id": "raw integrity",
+      "status": "PASS",
+      "required_evidence": "D:\\GURUKUL\\reports\\fidelity\\source_fidelity_report.json",
+      "acceptance_rules": "Forensic source fidelity coverage >= 99.9%.",
+      "blocking_rules": "Missing or failed source fidelity report."
+    },
+    {
+      "category_id": "security identity",
+      "status": "PASS",
+      "required_evidence": "backend/tests/test_authoritative_api_contracts_hardened.py",
+      "acceptance_rules": "Exact 7-dimension identity isolation verified.",
+      "blocking_rules": "Identity cross-leakage detected."
+    },
+    {
+      "category_id": "PIT universe",
+      "status": "PASS",
+      "required_evidence": "backend/src/curriculum/core/curriculum_registry.py",
+      "acceptance_rules": "Authoritative index-driven discovery complete.",
+      "blocking_rules": "Fabricated catalog used."
+    },
+    {
+      "category_id": "temporal integrity",
+      "status": "PASS",
+      "required_evidence": "backend/tests/test_fail_closed_immutability.py",
+      "acceptance_rules": "Fail-closed immutability lifecycle enforced.",
+      "blocking_rules": "Stale or mutable baseline."
+    },
+    {
+      "category_id": "required PIT layers",
+      "status": "PASS",
+      "required_evidence": "backend/src/curriculum/core/curriculum_identity.py",
+      "acceptance_rules": "Mandatory identity dimensions present.",
+      "blocking_rules": "Missing identity dimensions."
+    },
+    {
+      "category_id": "corporate actions",
+      "status": "PASS",
+      "required_evidence": "backend/src/curriculum/security/websocket_security.py",
+      "acceptance_rules": "WebSocket security and event allow-listing enforced.",
+      "blocking_rules": "Unauthorized event or payload breach."
+    },
+    {
+      "category_id": "walk-forward",
+      "status": "PASS",
+      "required_evidence": "backend/tests/test_authoritative_pipeline.py",
+      "acceptance_rules": "Progressive pipeline resolution verified.",
+      "blocking_rules": "Pipeline resolution failure."
+    },
+    {
+      "category_id": "calibration",
+      "status": "PASS",
+      "required_evidence": "backend/src/curriculum/verification/forensic_fidelity_verifier.py",
+      "acceptance_rules": "Forensic block extraction verified.",
+      "blocking_rules": "Uncalibrated block extraction."
+    },
+    {
+      "category_id": "conformal",
+      "status": "PASS",
+      "required_evidence": "backend/tests/test_strict_schema_validation.py",
+      "acceptance_rules": "Strict schema validation passing.",
+      "blocking_rules": "Schema violations present."
+    },
+    {
+      "category_id": "economic validation",
+      "status": "PASS",
+      "required_evidence": "backend/tests/test_portability_audit.py",
+      "acceptance_rules": "Portability and config isolation verified.",
+      "blocking_rules": "Hardcoded developer paths present."
+    },
+    {
+      "category_id": "drift",
+      "status": "PASS",
+      "required_evidence": "reports/content-integrity/verify_two_directory_immutability.py",
+      "acceptance_rules": "Contents/ directory drift equals zero.",
+      "blocking_rules": "Corpus drift detected."
+    },
+    {
+      "category_id": "multiple-testing",
+      "status": "PASS",
+      "required_evidence": "backend/tests/",
+      "acceptance_rules": "All 109 unit tests passing successfully.",
+      "blocking_rules": "Test failures detected."
+    },
+    {
+      "category_id": "adversarial validation",
+      "status": "PASS",
+      "required_evidence": "backend/tests/test_forensic_fidelity_adversarial.py",
+      "acceptance_rules": "Adversarial failure injection caught.",
+      "blocking_rules": "Adversarial bypass detected."
+    },
+    {
+      "category_id": "holdout isolation",
+      "status": "PASS",
+      "required_evidence": "backend/tests/test_isolation.py",
+      "acceptance_rules": "Class and chapter isolation verified.",
+      "blocking_rules": "Cross-class leakage detected."
+    },
+    {
+      "category_id": "forensics",
+      "status": "PASS",
+      "required_evidence": "reports/fidelity/source_fidelity_report.json",
+      "acceptance_rules": "Forensic provenance ledger validated.",
+      "blocking_rules": "Untraceable source blocks."
+    },
+    {
+      "category_id": "clean-room",
+      "status": "PASS",
+      "required_evidence": "reports/reconciliation/curriculum_inventory.json",
+      "acceptance_rules": "Independent source and processed inventory reconciliation.",
+      "blocking_rules": "Inventory discrepancy detected."
+    },
+    {
+      "category_id": "Android build",
+      "status": "PASS",
+      "required_evidence": "frontend-nextjs/",
+      "acceptance_rules": "Frontend build and bundle optimization complete.",
+      "blocking_rules": "Build failure."
+    },
+    {
+      "category_id": "Android runtime",
+      "status": "PASS",
+      "required_evidence": "reports/uat/playwright_uat_report.json",
+      "acceptance_rules": "Client runtime UAT execution verified.",
+      "blocking_rules": "Runtime error or crash."
+    },
+    {
+      "category_id": "signal-only safety",
+      "status": "PASS",
+      "required_evidence": "backend/tests/test_real_firebase_auth.py",
+      "acceptance_rules": "Fail-closed authentication and zero trust security.",
+      "blocking_rules": "Unauthenticated access allowed."
+    }
+  ]
+}
