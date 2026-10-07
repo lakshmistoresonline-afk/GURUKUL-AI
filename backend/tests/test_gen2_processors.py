@@ -16,8 +16,8 @@ def test_gen2_processor_resolution_class5_english():
     identity = CurriculumIdentity(
         grade="5",
         subject="english",
-        book="main",
-        part="none",
+        book="english",
+        part="main",
         unit="U01",
         chapter_id="G5-ENG-U01-C01",
         content_type="overview"
@@ -25,7 +25,6 @@ def test_gen2_processor_resolution_class5_english():
     proc = ProcessorRegistry.resolve(identity)
     assert isinstance(proc, Class5EnglishProcessor)
 
-    # Test actual execution
     res = proc.process(identity, {"title": "Papa's Spectacles"})
     assert res["title"] == "Papa's Spectacles"
 

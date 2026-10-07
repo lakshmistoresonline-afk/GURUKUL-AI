@@ -15,8 +15,8 @@ def test_processor_registry_resolution_class5():
     identity = CurriculumIdentity(
         grade="5",
         subject="english",
-        book="main",
-        part="none",
+        book="english",
+        part="main",
         unit="U01",
         chapter_id="G5-ENG-U01-C01",
         content_type="overview"
@@ -41,8 +41,8 @@ def test_processor_registry_unknown_raises():
     identity = CurriculumIdentity(
         grade="99",
         subject="unknown_subject",
-        book="main",
-        part="none",
+        book="unknown_book",
+        part="unknown_part",
         unit="U01",
         chapter_id="X",
         content_type="overview"
