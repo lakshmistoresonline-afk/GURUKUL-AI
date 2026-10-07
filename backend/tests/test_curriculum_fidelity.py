@@ -10,10 +10,11 @@ if backend_dir not in sys.path:
     sys.path.insert(0, backend_dir)
 
 from src.main import app
+from src.curriculum.core.config import GurukulConfig
 
 client = TestClient(app)
-PROCESSED_ROOT = r"D:\GURUKUL\ProcessedContent\Class5"
-CONTENTS_ROOT = r"D:\GURUKUL\Contents\Class 5"
+PROCESSED_ROOT = str(GurukulConfig.get_processed_root() / "Class5")
+CONTENTS_ROOT = str(GurukulConfig.get_content_root() / "Class 5")
 
 def test_all_47_chapters_processed_and_faithful():
     subject_counts = {"English": 10, "Hindi": 12, "Maths": 15, "Science": 10}
@@ -28,20 +29,18 @@ def test_all_47_chapters_processed_and_faithful():
 
         for ch_id in ch_dirs:
             ch_path = os.path.join(sub_dir, ch_id)
-            # Verify manifest
             manifest_path = os.path.join(ch_path, "manifest.json")
             assert os.path.exists(manifest_path)
             with open(manifest_path, "r", encoding="utf-8") as f:
                 manifest = json.load(f)
                 assert "chapter_title" in manifest or "chapter_number" in manifest
 
-            # Verify 7 sections exist
             for sec in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers"]:
                 sec_path = os.path.join(ch_path, f"{sec}.json")
                 assert os.path.exists(sec_path), f"Missing section {sec} for {ch_id}"
 
-            # Verify API /source endpoint
-            res = client.get(f"/api/v1/chapters/{ch_id}/source?grade=5&subject={subject}")
+            book_param = subject.lower() if subject.lower() != "maths" else "mathematics"
+            res = client.get(f"/api/v1/chapters/{ch_id}/source?grade=5&subject={subject}&book={book_param}&part=main&unit=U01")
             assert res.status_code == 200
             data = res.json()
             assert data["chapterId"] == ch_id
@@ -52,7 +51,6 @@ def test_all_47_chapters_processed_and_faithful():
     assert total_chapters == 47
 
 def test_source_immutability():
-    # Verify all 29 source JSON files exist and are readable
     for subject in ["English", "Hindi", "Maths", "Science"]:
         subj_dir = os.path.join(CONTENTS_ROOT, subject)
         assert os.path.exists(subj_dir)

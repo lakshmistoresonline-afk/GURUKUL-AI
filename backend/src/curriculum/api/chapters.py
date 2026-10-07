@@ -3,15 +3,13 @@ import json
 from fastapi import APIRouter, HTTPException, Query, Path
 from typing import Dict, Any, List, Optional
 from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
-from ..core.curriculum_registry import CurriculumRegistry, CurriculumResolutionError
+from ..core.curriculum_registry import CurriculumRegistry, CurriculumResolutionError, ChapterNotFoundError as RegChapterNotFoundError, ContentNotFoundError as RegContentNotFoundError, ContentSchemaError as RegContentSchemaError, IdentityConflictError as RegIdentityConflictError, ManifestMissingError, ManifestMalformedError
 from ..core.subject_registry import SubjectRegistry
-from ..core.processed_content_resolver import ProcessedContentResolver, ChapterNotFoundError as ResolverChapterNotFoundError
+from ..core.processed_content_resolver import ProcessedContentResolver, ChapterNotFoundError as ResolverChapterNotFoundError, ContentIntegrityError
 from ..core.content_validator import ContentNotFoundError, ContentSchemaError, IdentityConflictError, ChapterNotFoundError
 from ..core.config import GurukulConfig
 
 router = APIRouter(prefix="/api/v1", tags=["Hardened Authoritative Curriculum Pipeline"])
-
-PROCESSED_ROOT = str(GurukulConfig.get_processed_root())
 
 @router.options("/classes")
 @router.options("/curriculum/classes")
@@ -24,7 +22,7 @@ async def get_curriculum_hierarchy():
     """
     Returns the complete, dynamic, authoritative curriculum hierarchy:
     Class → Subject → Book → Part → Unit → Chapter → Content Types.
-    Derived purely from repository manifests without hardcoded catalogs.
+    Derived purely from repository manifests without fabricated fallback catalogs.
     """
     tax = CurriculumRegistry.get_taxonomy()
     hierarchy = []
@@ -44,28 +42,13 @@ async def get_curriculum_hierarchy():
                 for unit_id, ch_ids in units_dict.items():
                     chapters_list = []
                     for ch_id in ch_ids:
-                        try:
-                            node = CurriculumRegistry.get_index().get(f"{grade}:{subj_key}:{book_id}:{part_id}:{unit_id}:{ch_id}")
-                            if node:
-                                chapters_list.append({
-                                    "chapter_id": ch_id,
-                                    "chapter_number": node["chapter_number"],
-                                    "chapter_title": node["chapter_title"],
-                                    "content_types": node["available_content_types"]
-                                })
-                            else:
-                                chapters_list.append({
-                                    "chapter_id": ch_id,
-                                    "chapter_number": 1,
-                                    "chapter_title": ch_id,
-                                    "content_types": ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers"]
-                                })
-                        except:
+                        node = CurriculumRegistry.get_index().get(f"{grade}:{subj_key}:{book_id}:{part_id}:{unit_id}:{ch_id}")
+                        if node:
                             chapters_list.append({
                                 "chapter_id": ch_id,
-                                "chapter_number": 1,
-                                "chapter_title": ch_id,
-                                "content_types": ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers"]
+                                "chapter_number": node["chapter_number"],
+                                "chapter_title": node["chapter_title"],
+                                "content_types": node["available_content_types"]
                             })
 
                     units_list.append({
@@ -101,16 +84,21 @@ async def resolve_authoritative_content(
     grade: str = Query(..., description="Grade/Class"),
     subject: str = Query(..., description="Subject ID"),
     book: str = Query(..., description="Book identifier"),
+    part: str = Query(..., description="Part identifier"),
     unit: str = Query(..., description="Unit identifier"),
     chapter_id: str = Query(..., description="Exact chapter ID"),
     content_type: str = Query(..., description="Content type")
 ):
+    """
+    Strictest Authoritative Resolution Endpoint:
+    Requires complete 7 dimensions explicitly without inference, defaults, or fallback.
+    """
     try:
         identity = CurriculumIdentity(
             grade=str(grade),
             subject=SubjectRegistry.resolve_canonical_subject(subject),
             book=book,
-            part="none",
+            part=part,
             unit=unit,
             chapter_id=chapter_id,
             content_type=content_type
@@ -128,7 +116,7 @@ async def resolve_authoritative_content(
 
     try:
         content_data = ProcessedContentResolver.resolve_content(identity)
-    except (ChapterNotFoundError, ResolverChapterNotFoundError, CurriculumResolutionError) as cnf:
+    except (ChapterNotFoundError, ResolverChapterNotFoundError, RegChapterNotFoundError, CurriculumResolutionError) as cnf:
         raise HTTPException(
             status_code=404,
             detail={
@@ -139,7 +127,7 @@ async def resolve_authoritative_content(
                 }
             }
         )
-    except ContentNotFoundError as cnf_type:
+    except (ContentNotFoundError, RegContentNotFoundError) as cnf_type:
         raise HTTPException(
             status_code=404,
             detail={
@@ -150,7 +138,7 @@ async def resolve_authoritative_content(
                 }
             }
         )
-    except IdentityConflictError as ice:
+    except (IdentityConflictError, RegIdentityConflictError) as ice:
         raise HTTPException(
             status_code=409,
             detail={
@@ -161,7 +149,7 @@ async def resolve_authoritative_content(
                 }
             }
         )
-    except ContentSchemaError as cse:
+    except (ContentSchemaError, RegContentSchemaError, ManifestMalformedError, ContentIntegrityError) as cse:
         raise HTTPException(
             status_code=422,
             detail={
@@ -194,31 +182,58 @@ async def resolve_authoritative_content(
 @router.get("/chapters/{chapterId}/source")
 async def get_chapter_direct_source_v2(
     chapterId: str,
-    grade: str = Query(default="5"),
-    subject: str = Query(default="English"),
-    book: str = Query(default="main"),
-    unit: str = Query(default="U01")
+    grade: str = Query(..., description="Grade/Class"),
+    subject: str = Query(..., description="Subject ID"),
+    book: str = Query(..., description="Book identifier"),
+    part: str = Query(..., description="Part identifier"),
+    unit: str = Query(..., description="Unit identifier")
 ):
-    canonical_subj = SubjectRegistry.resolve_canonical_subject(subject)
-    identity = CurriculumIdentity(
-        grade=str(grade),
-        subject=canonical_subj,
-        book=book,
-        part="none",
-        unit=unit,
-        chapter_id=chapterId,
-        content_type="overview"
-    )
+    """
+    Direct chapter bundle source endpoint requiring complete explicit identity.
+    """
+    try:
+        canonical_subj = SubjectRegistry.resolve_canonical_subject(subject)
+        identity = CurriculumIdentity(
+            grade=str(grade),
+            subject=canonical_subj,
+            book=book,
+            part=part,
+            unit=unit,
+            chapter_id=chapterId,
+            content_type="overview"
+        )
+    except Exception as ve:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "error": {
+                    "code": "INVALID_CURRICULUM_IDENTITY",
+                    "message": f"Malformed or missing identity parameters: {str(ve)}"
+                }
+            }
+        )
 
     try:
         dto: ChapterRuntimeDTO = CurriculumRegistry.load_chapter_bundle(identity)
-    except Exception as e:
+    except (ChapterNotFoundError, ResolverChapterNotFoundError, RegChapterNotFoundError, CurriculumResolutionError) as e:
         raise HTTPException(
             status_code=404,
             detail={
                 "error": {
                     "code": "CHAPTER_NOT_FOUND",
-                    "message": str(e)
+                    "message": str(e),
+                    "identity": identity.model_dump()
+                }
+            }
+        )
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": {
+                    "code": "INTERNAL_SERVER_ERROR",
+                    "message": str(exc),
+                    "identity": identity.model_dump()
                 }
             }
         )
@@ -228,6 +243,7 @@ async def get_chapter_direct_source_v2(
         "grade": grade,
         "subject": subject,
         "book": book,
+        "part": part,
         "unit": unit,
         "chapterNumber": dto.chapter_number,
         "chapterTitle": dto.chapter_title,

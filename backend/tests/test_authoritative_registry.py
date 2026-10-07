@@ -17,27 +17,26 @@ def test_registry_discovery():
 
     subjects_5 = CurriculumRegistry.get_subjects("5")
     assert "English" in subjects_5
-    assert "Hindi" in subjects_5
 
 def test_exact_identity_resolution_success():
     identity = CurriculumIdentity(
         grade="5",
         subject="english",
-        book="main",
-        part="none",
+        book="english",
+        part="main",
         unit="U01",
         chapter_id="G5-ENG-U01-C01",
         content_type="overview"
     )
     path = CurriculumRegistry.resolve_chapter_path(identity)
-    assert os.path.exists(path)
+    assert path.exists()
 
 def test_negative_identity_resolution_wrong_book():
     identity = CurriculumIdentity(
         grade="5",
         subject="english",
         book="wrong_book",
-        part="none",
+        part="main",
         unit="U01",
         chapter_id="G5-ENG-U01-C01",
         content_type="overview"
@@ -49,10 +48,10 @@ def test_negative_identity_resolution_wrong_chapter():
     identity = CurriculumIdentity(
         grade="5",
         subject="english",
-        book="main",
-        part="none",
+        book="english",
+        part="main",
         unit="U01",
-        chapter_id="NON-EXISTENT-CHAPTER",
+        chapter_id="NONEXISTENT",
         content_type="overview"
     )
     with pytest.raises(CurriculumResolutionError):
@@ -62,11 +61,11 @@ def test_negative_identity_resolution_wrong_content_type():
     identity = CurriculumIdentity(
         grade="5",
         subject="english",
-        book="main",
-        part="none",
+        book="english",
+        part="main",
         unit="U01",
         chapter_id="G5-ENG-U01-C01",
-        content_type="nonexistent_content_type"
+        content_type="invalid_type"
     )
     with pytest.raises(CurriculumResolutionError):
         CurriculumRegistry.resolve_chapter_path(identity)

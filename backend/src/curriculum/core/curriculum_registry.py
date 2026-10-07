@@ -49,7 +49,7 @@ class SourceMismatchError(CurriculumResolutionError):
 class CurriculumRegistry:
     """
     Production-grade Authoritative Index-Driven Curriculum Registry for Gurukul AI.
-    Enforces strict identity resolution without synthetic defaults, guesswork, or fallbacks.
+    Enforces strict exact-identity resolution without synthetic defaults, guesswork, or fallbacks.
     """
     _INDEX: Optional[Dict[str, Dict[str, Any]]] = None
 
@@ -219,24 +219,20 @@ class CurriculumRegistry:
 
     @classmethod
     def resolve_node(cls, identity: CurriculumIdentity) -> Dict[str, Any]:
+        """
+        Resolves node strictly using EXACT identity:
+        grade:canonical_subject:book:part:unit:chapter_id
+        Zero cross-book fallback or inference.
+        """
         idx = cls.get_index()
         canonical_subject = SubjectRegistry.resolve_canonical_subject(identity.subject)
 
         key = f"{identity.grade}:{canonical_subject}:{identity.book}:{identity.part}:{identity.unit}:{identity.chapter_id}"
 
-        if key in idx:
-            return idx[key]
+        if key not in idx:
+            raise ChapterNotFoundError(f"Exact identity node {identity.to_cache_key()} not found in authoritative index.")
 
-        # Authoritative lookup allowing flexible main/none book matching if exact key is not requested
-        for n_key, node in idx.items():
-            if (node["grade"] == str(identity.grade) and
-                node["canonical_subject"] == canonical_subject and
-                node["unit"].upper() == identity.unit.upper() and
-                node["chapter_id"].lower() == identity.chapter_id.lower()):
-                if identity.book in ["main", "none"] or node["book"].lower() == identity.book.lower():
-                    return node
-
-        raise ChapterNotFoundError(f"Exact identity node {identity.to_cache_key()} not found in authoritative index.")
+        return idx[key]
 
     @classmethod
     def resolve_chapter_path(cls, identity: CurriculumIdentity) -> Path:
