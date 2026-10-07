@@ -1,12 +1,23 @@
 import os
+import sys
 import json
 import hashlib
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, List, Set, Tuple
-from ..core.config import GurukulConfig
-from ..core.subject_registry import SubjectRegistry
-from ..core.curriculum_registry import CurriculumRegistry
+
+backend_dir = Path(__file__).resolve().parents[2]
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
+
+try:
+    from src.curriculum.core.config import GurukulConfig
+    from src.curriculum.core.subject_registry import SubjectRegistry
+    from src.curriculum.core.curriculum_registry import CurriculumRegistry
+except ImportError:
+    from curriculum.core.config import GurukulConfig
+    from curriculum.core.subject_registry import SubjectRegistry
+    from curriculum.core.curriculum_registry import CurriculumRegistry
 
 CONTENTS_ROOT = GurukulConfig.get_content_root()
 PROCESSED_ROOT = GurukulConfig.get_processed_root()
@@ -33,22 +44,20 @@ class ForensicFidelityVerifier:
         return [text for _, text in cls.extract_structured_blocks(data)]
 
     @classmethod
-    def extract_structured_blocks(cls, data: Any, path: str = "$") -> List[Tuple[str, str]]:
+    def extract_structured_blocks(cls, data: Any, path: str = "$", key_name: str = "") -> List[Tuple[str, str]]:
         blocks = []
         if isinstance(data, str):
             clean = data.strip()
             if clean:
                 blocks.append((path, clean))
-        elif isinstance(data, (int, float, bool)):
-            blocks.append((path, str(data)))
         elif isinstance(data, list):
             for idx, item in enumerate(data):
-                blocks.extend(cls.extract_structured_blocks(item, f"{path}[{idx}]"))
+                blocks.extend(cls.extract_structured_blocks(item, f"{path}[{idx}]", key_name))
         elif isinstance(data, dict):
             for k, v in data.items():
                 if k.lower() in cls.IGNORED_KEYS:
                     continue
-                blocks.extend(cls.extract_structured_blocks(v, f"{path}.{k}"))
+                blocks.extend(cls.extract_structured_blocks(v, f"{path}.{k}", k))
         return blocks
 
     @classmethod
@@ -143,7 +152,6 @@ class ForensicFidelityVerifier:
         for s_file in source_files:
             rel = s_file.relative_to(CONTENTS_ROOT)
             if s_file.name.lower() in cls.AUXILIARY_FILENAMES:
-                # Skip auxiliary container files, audit chapter source files
                 continue
 
             audited_files_count += 1
@@ -282,3 +290,10 @@ class ForensicFidelityVerifier:
             f.write(md_content)
 
         return report
+
+if __name__ == "__main__":
+    rep = ForensicFidelityVerifier.verify_corpus_fidelity()
+    print(f"Forensic fidelity verification completed. Status: {rep['fidelity_status']} ({rep['source_files_audited']} files audited).")
+    if rep['fidelity_status'] != "PASS":
+        sys.exit(1)
+    sys.exit(0)

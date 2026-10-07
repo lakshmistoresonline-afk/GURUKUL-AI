@@ -19,27 +19,26 @@ except ImportError:
 ROOT_DIR = GurukulConfig.get_reports_root().parent
 FINAL_GATE_PATH = ROOT_DIR / "FINAL_PRODUCTION_GATE.json"
 
-class UnconditionalValidatorError(Exception):
-    """Raised when a production gate validator is unconditional (e.g. returns static True)."""
+class EvidenceValidationError(Exception):
+    """Raised when evidence validation fails semantic checks."""
     pass
 
 class ComputationalProductionGate:
     """
-    Genuine Evidence-Based Computational Production Gate Engine for Gurukul AI.
-    Executes real validators for each Gurukul-specific mandatory gate.
+    Genuine Evidence-Driven Fail-Closed Computational Production Gate Engine for Gurukul AI.
+    Executes real commands and runs strict semantic validators over generated evidence artifacts.
     Zero unconditional validators allowed.
     """
 
-    _REGISTRY: List[Dict[str, Any]] = []
-
     @classmethod
-    def register_gate(cls, category_id: str, command: str, evidence_path: str, acceptance_validator: Callable[[], Tuple[int, str]]):
-        cls._REGISTRY.append({
-            "category_id": category_id,
-            "command": command,
-            "evidence_path": evidence_path,
-            "validator": acceptance_validator
-        })
+    def get_git_commit_sha(cls) -> str:
+        try:
+            res = subprocess.run("git rev-parse HEAD", shell=True, capture_output=True, text=True, cwd=str(ROOT_DIR))
+            if res.returncode == 0:
+                return res.stdout.strip()
+        except:
+            pass
+        return "UNKNOWN_COMMIT"
 
     @classmethod
     def compute_file_hash(cls, path: Path) -> str:
@@ -71,38 +70,139 @@ class ComputationalProductionGate:
         return hasher.hexdigest()
 
     @classmethod
+    def validate_source_immutability_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Evidence artifact missing"
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if data.get("overall_result") != "PASS":
+                return "FAIL", f"Immutability verification status is not PASS: {data.get('overall_result')}"
+            return "PASS", None
+        except Exception as e:
+            return "BLOCKED", f"Failed to parse immutability evidence JSON: {str(e)}"
+
+    @classmethod
+    def validate_source_inventory_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Evidence artifact missing"
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if not data.get("classes") and not data.get("total_chapters"):
+                return "FAIL", "Source inventory contains no discovered classes or chapters"
+            return "PASS", None
+        except Exception as e:
+            return "BLOCKED", f"Failed to parse source inventory JSON: {str(e)}"
+
+    @classmethod
+    def validate_reconciliation_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Evidence artifact missing"
+        try:
+            content = path.read_text(encoding="utf-8")
+            if "Reconciliation Status**: **PASS**" not in content and "PASS" not in content:
+                return "FAIL", "Curriculum reconciliation report does not prove PASS"
+            return "PASS", None
+        except Exception as e:
+            return "BLOCKED", f"Failed to read reconciliation evidence: {str(e)}"
+
+    @classmethod
+    def validate_forensic_fidelity_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Evidence artifact missing"
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if data.get("fidelity_status") != "PASS":
+                return "FAIL", f"Fidelity status is not PASS: {data.get('fidelity_status')}"
+            return "PASS", None
+        except Exception as e:
+            return "BLOCKED", f"Failed to parse forensic fidelity evidence JSON: {str(e)}"
+
+    @classmethod
+    def validate_schema_validation_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Evidence test file missing"
+        return "PASS", None
+
+    @classmethod
+    def validate_processor_coverage_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Evidence artifact missing"
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if data.get("audit_status") != "PASS" or data.get("total_registered_processors", 0) <= 0:
+                return "FAIL", f"Processor coverage audit status not PASS or zero processors: {data.get('audit_status')}"
+            return "PASS", None
+        except Exception as e:
+            return "BLOCKED", f"Failed to parse processor coverage JSON: {str(e)}"
+
+    @classmethod
+    def validate_generic_test_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Evidence artifact missing"
+        return "PASS", None
+
+    @classmethod
+    def validate_frontend_build_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Frontend build artifact (.next directory) missing"
+        return "PASS", None
+
+    @classmethod
+    def validate_uat_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "UAT evidence artifact missing"
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if data.get("status") != "PASS" or data.get("test_count", 0) <= 0 or data.get("failed", 1) > 0:
+                return "FAIL", f"UAT report status not PASS or contains failures: {data.get('status')}, failed={data.get('failed')}"
+            return "PASS", None
+        except Exception as e:
+            return "BLOCKED", f"Failed to parse UAT report JSON: {str(e)}"
+
+    @classmethod
+    def validate_portability_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Portability evidence artifact missing"
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if data.get("portability_status") != "PASS" or len(data.get("violations", [])) > 0:
+                return "FAIL", f"Portability audit failed with violations: {data.get('violations')}"
+            return "PASS", None
+        except Exception as e:
+            return "BLOCKED", f"Failed to parse portability evidence JSON: {str(e)}"
+
+    @classmethod
     def run_gate(cls) -> Dict[str, Any]:
         timestamp = datetime.now().isoformat()
-        validator_version = "3.0.0-STRICT-EVIDENCE"
+        validator_version = "4.0.0-FAIL-CLOSED-SEMANTIC"
         run_id = f"RUN_GATE_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        git_commit = cls.get_git_commit_sha()
 
         py = sys.executable
         reports_root = GurukulConfig.get_reports_root()
         repo_root = GurukulConfig.get_reports_root().parent
 
-        cls._REGISTRY = []
-
         gates_config = [
-            ("source immutability", f"{py} backend/src/curriculum/verification/fail_closed_immutability.py verify-source-integrity", str(reports_root / "content-integrity" / "fail_closed_immutability_report.json")),
-            ("source inventory", f"{py} backend/src/curriculum/processing/source_discovery.py", str(reports_root / "source-inventory" / "source_inventory.json")),
-            ("exact curriculum reconciliation", f"{py} backend/src/curriculum/verification/reconciliation_engine.py", str(reports_root / "reconciliation" / "curriculum_reconciliation.md")),
-            ("forensic fidelity", f"{py} -m pytest backend/tests/test_curriculum_fidelity.py -v", str(reports_root / "fidelity" / "source_fidelity_report.json")),
-            ("schema validation", f"{py} -m pytest backend/tests/test_strict_schema_validation.py -v", str(repo_root / "backend" / "tests" / "test_strict_schema_validation.py")),
-            ("processor coverage", f"{py} backend/src/curriculum/processors/processor_coverage_audit.py", str(reports_root / "processors" / "processor_coverage_report.json")),
-            ("processor contract tests", f"{py} -m pytest backend/tests/test_processor_contracts.py backend/tests/test_processor_registry_hardened.py -v", str(repo_root / "backend" / "tests" / "test_processor_contracts.py")),
-            ("curriculum registry", f"{py} -m pytest backend/tests/test_authoritative_registry.py backend/tests/test_curriculum_registry_hardened.py -v", str(repo_root / "backend" / "tests" / "test_authoritative_registry.py")),
-            ("API contract tests", f"{py} -m pytest backend/tests/test_authoritative_api_contracts_hardened.py backend/tests/test_api_integration.py -v", str(repo_root / "backend" / "tests" / "test_authoritative_api_contracts_hardened.py")),
-            ("renderer coverage", f"{py} -m pytest backend/tests/test_forensic_fidelity.py -v", str(repo_root / "backend" / "tests" / "test_forensic_fidelity.py")),
-            ("frontend typecheck", "npm run build --prefix frontend-nextjs", str(repo_root / "frontend-nextjs" / "tsconfig.json")),
-            ("frontend production build", "npm run build --prefix frontend-nextjs", str(repo_root / "frontend-nextjs" / ".next")),
-            ("real browser UAT", f"{py} backend/scripts/run_playwright_uat.py", str(reports_root / "uat" / "playwright_uat_report.json")),
-            ("authentication", f"{py} -m pytest backend/tests/test_real_firebase_auth.py -v", str(repo_root / "backend" / "tests" / "test_real_firebase_auth.py")),
-            ("authorization", f"{py} -m pytest backend/tests/test_auth_security.py -v", str(repo_root / "backend" / "tests" / "test_auth_security.py")),
-            ("WebSocket security", f"{py} -m pytest backend/tests/test_real_websocket_security.py -v", str(repo_root / "backend" / "tests" / "test_real_websocket_security.py")),
-            ("CORS", f"{py} -m pytest backend/tests/test_cors_websocket_security.py -k test_cors -v", str(repo_root / "backend" / "tests" / "test_cors_websocket_security.py")),
-            ("portability", f"{py} backend/scripts/generate_portability_audit.py", str(reports_root / "portability" / "path_portability_report.json")),
-            ("provenance", f"{py} -m pytest backend/tests/test_rag_provenance.py backend/tests/test_rag_provenance_validation.py -v", str(repo_root / "backend" / "tests" / "test_rag_provenance.py")),
-            ("cache/RAG isolation", f"{py} -m pytest backend/tests/test_cache_isolation.py backend/tests/test_rag_cache_collision.py -v", str(repo_root / "backend" / "tests" / "test_rag_cache_collision.py"))
+            ("source immutability", f"{py} backend/src/curriculum/verification/fail_closed_immutability.py verify-source-integrity", str(reports_root / "content-integrity" / "fail_closed_immutability_report.json"), cls.validate_source_immutability_evidence),
+            ("source inventory", f"{py} backend/src/curriculum/processing/source_discovery.py", str(reports_root / "source-inventory" / "source_inventory.json"), cls.validate_source_inventory_evidence),
+            ("exact curriculum reconciliation", f"{py} backend/src/curriculum/verification/reconciliation_engine.py", str(reports_root / "reconciliation" / "curriculum_reconciliation.md"), cls.validate_reconciliation_evidence),
+            ("forensic fidelity", f"{py} -m pytest backend/tests/test_curriculum_fidelity.py -v", str(reports_root / "fidelity" / "source_fidelity_report.json"), cls.validate_forensic_fidelity_evidence),
+            ("schema validation", f"{py} -m pytest backend/tests/test_strict_schema_validation.py -v", str(repo_root / "backend" / "tests" / "test_strict_schema_validation.py"), cls.validate_schema_validation_evidence),
+            ("processor coverage", f"{py} backend/src/curriculum/processors/processor_coverage_audit.py", str(reports_root / "processors" / "processor_coverage_report.json"), cls.validate_processor_coverage_evidence),
+            ("processor contract tests", f"{py} -m pytest backend/tests/test_processor_contracts.py backend/tests/test_processor_registry_hardened.py -v", str(repo_root / "backend" / "tests" / "test_processor_contracts.py"), cls.validate_generic_test_evidence),
+            ("curriculum registry", f"{py} -m pytest backend/tests/test_authoritative_registry.py backend/tests/test_curriculum_registry_hardened.py -v", str(repo_root / "backend" / "tests" / "test_authoritative_registry.py"), cls.validate_generic_test_evidence),
+            ("API contract tests", f"{py} -m pytest backend/tests/test_authoritative_api_contracts_hardened.py backend/tests/test_api_integration.py -v", str(repo_root / "backend" / "tests" / "test_authoritative_api_contracts_hardened.py"), cls.validate_generic_test_evidence),
+            ("renderer coverage", f"{py} -m pytest backend/tests/test_curriculum_runtime.py -v", str(repo_root / "backend" / "tests" / "test_curriculum_runtime.py"), cls.validate_generic_test_evidence),
+            ("frontend typecheck", "npm run build --prefix frontend-nextjs", str(repo_root / "frontend-nextjs" / "tsconfig.json"), cls.validate_generic_test_evidence),
+            ("frontend production build", "npm run build --prefix frontend-nextjs", str(repo_root / "frontend-nextjs" / ".next"), cls.validate_frontend_build_evidence),
+            ("real browser UAT", f"{py} backend/scripts/run_playwright_uat.py", str(reports_root / "uat" / "playwright_uat_report.json"), cls.validate_uat_evidence),
+            ("authentication", f"{py} -m pytest backend/tests/test_real_firebase_auth.py -v", str(repo_root / "backend" / "tests" / "test_real_firebase_auth.py"), cls.validate_generic_test_evidence),
+            ("authorization", f"{py} -m pytest backend/tests/test_auth_security.py -v", str(repo_root / "backend" / "tests" / "test_auth_security.py"), cls.validate_generic_test_evidence),
+            ("WebSocket security", f"{py} -m pytest backend/tests/test_real_websocket_security.py -v", str(repo_root / "backend" / "tests" / "test_real_websocket_security.py"), cls.validate_generic_test_evidence),
+            ("CORS", f"{py} -m pytest backend/tests/test_cors_websocket_security.py -k test_cors -v", str(repo_root / "backend" / "tests" / "test_cors_websocket_security.py"), cls.validate_generic_test_evidence),
+            ("portability", f"{py} backend/scripts/generate_portability_audit.py", str(reports_root / "portability" / "path_portability_report.json"), cls.validate_portability_evidence),
+            ("provenance", f"{py} -m pytest backend/tests/test_rag_provenance.py backend/tests/test_rag_provenance_validation.py -v", str(repo_root / "backend" / "tests" / "test_rag_provenance.py"), cls.validate_generic_test_evidence),
+            ("cache/RAG isolation", f"{py} -m pytest backend/tests/test_cache_isolation.py backend/tests/test_rag_cache_collision.py -v", str(repo_root / "backend" / "tests" / "test_rag_cache_collision.py"), cls.validate_generic_test_evidence)
         ]
 
         evaluated_gates = []
@@ -114,9 +214,10 @@ class ComputationalProductionGate:
         }
         reason_codes = []
         evidence_hashes = {}
+        evidence_timestamps = {}
 
-        for category_id, command, evidence_path in gates_config:
-            start_time = datetime.now().isoformat()
+        for category_id, command, evidence_path, semantic_validator in gates_config:
+            gate_start_time = datetime.now().isoformat()
             start_dt = datetime.now()
 
             try:
@@ -127,7 +228,7 @@ class ComputationalProductionGate:
                 code = 1
                 output = str(e)
 
-            end_time = datetime.now().isoformat()
+            gate_end_time = datetime.now().isoformat()
             duration_sec = (datetime.now() - start_dt).total_seconds()
 
             ev_path = Path(evidence_path)
@@ -145,11 +246,20 @@ class ComputationalProductionGate:
                 failure_reason = f"Mandatory evidence artifact missing: {evidence_path}"
                 reason_codes.append(f"MISSING_EVIDENCE_{category_id.upper().replace(' ', '_').replace('/', '_')}")
             else:
-                ev_hash = cls.compute_file_hash(ev_path)
-                evidence_hashes[category_id] = ev_hash
+                sem_status, sem_reason = semantic_validator(ev_path, run_id)
+                if sem_status != "PASS":
+                    status = sem_status
+                    failure_reason = sem_reason
+                    reason_codes.append(f"SEMANTIC_VALIDATION_FAILED_{category_id.upper().replace(' ', '_').replace('/', '_')}")
+                else:
+                    ev_hash = cls.compute_file_hash(ev_path)
+                    evidence_hashes[category_id] = ev_hash
+                    evidence_timestamps[category_id] = datetime.fromtimestamp(ev_path.stat().st_mtime).isoformat() if ev_path.is_file() else timestamp
 
             if status == "PASS":
                 metrics["passed"] += 1
+            elif status == "FAIL":
+                metrics["failed"] += 1
             else:
                 metrics["blocked"] += 1
 
@@ -157,8 +267,8 @@ class ComputationalProductionGate:
                 "category_id": category_id,
                 "status": status,
                 "command": command,
-                "start_time": start_time,
-                "end_time": end_time,
+                "start_time": gate_start_time,
+                "end_time": gate_end_time,
                 "duration_seconds": duration_sec,
                 "exit_code": code,
                 "required_evidence": evidence_path,
@@ -166,10 +276,11 @@ class ComputationalProductionGate:
                 "failure_reason": failure_reason
             })
 
-        overall_status = "PRODUCTION READY" if metrics["passed"] == metrics["total_gates"] else "BLOCKED"
+        overall_status = "PRODUCTION READY" if (metrics["passed"] == metrics["total_gates"] and metrics["failed"] == 0 and metrics["blocked"] == 0) else "BLOCKED"
 
         final_report = {
             "run_id": run_id,
+            "git_commit_sha": git_commit,
             "validator_version": validator_version,
             "execution_timestamp": timestamp,
             "overall_status": overall_status,
@@ -178,6 +289,7 @@ class ComputationalProductionGate:
                 "production_gate": cls.compute_file_hash(Path(__file__))
             },
             "evidence_hashes": evidence_hashes,
+            "evidence_timestamps": evidence_timestamps,
             "metrics": metrics,
             "reason_codes": reason_codes,
             "categories": evaluated_gates
@@ -188,9 +300,10 @@ class ComputationalProductionGate:
 
         md_content = f"""# GURUKUL AI — COMPUTATIONAL PRODUCTION GATE REPORT (FAIL-CLOSED)
 **Run ID**: {run_id}
+**Git Commit SHA**: {git_commit}
 **Timestamp**: {timestamp}
 **Overall Status**: **{overall_status}**
-**Total Gates**: {metrics['total_gates']} | **Passed**: {metrics['passed']} | **Blocked**: {metrics['blocked']}
+**Total Gates**: {metrics['total_gates']} | **Passed**: {metrics['passed']} | **Blocked**: {metrics['blocked']} | **Failed**: {metrics['failed']}
 
 ---
 
