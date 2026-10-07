@@ -18,11 +18,11 @@ class ManifestMissingError(CurriculumResolutionError):
     pass
 
 class ManifestMalformedError(CurriculumResolutionError):
-    """Raised when manifest.json contains malformed JSON or schema violation."""
+    """Raised when manifest.json contains malformed JSON or missing required authoritative fields."""
     pass
 
 class IdentityConflictError(CurriculumResolutionError):
-    """Raised when identity dimensions conflict."""
+    """Raised when directory identity conflicts with manifest authoritative identity."""
     pass
 
 class ChapterNotFoundError(CurriculumResolutionError):
@@ -46,7 +46,7 @@ class ContentCorruptError(CurriculumResolutionError):
     pass
 
 class RegistryDuplicateKeyError(CurriculumResolutionError):
-    """Raised when duplicate index keys are detected."""
+    """Raised when duplicate index keys or chapter IDs are detected."""
     pass
 
 class SourceMismatchError(CurriculumResolutionError):
@@ -56,8 +56,10 @@ class SourceMismatchError(CurriculumResolutionError):
 
 class CurriculumRegistry:
     """
-    Production-grade Authoritative Index-Driven Curriculum Registry for Gurukul AI.
-    Enforces strict exact-identity resolution without synthetic defaults, guesswork, or fallbacks.
+    Production-grade Manifest-Authoritative Index-Driven Curriculum Registry for Gurukul AI.
+    Requires all 10 mandatory identity dimensions explicitly in manifest.json.
+    Raises IdentityConflictError if directory identity disagrees with manifest identity.
+    Zero synthetic synthesis or fallback defaults.
     """
     _INDEX: Optional[Dict[str, Dict[str, Any]]] = None
 
@@ -99,39 +101,21 @@ class CurriculumRegistry:
     def build_index(cls) -> Dict[str, Dict[str, Any]]:
         index = {}
         seen_keys = set()
+        seen_chapter_ids = {}
 
         if not PROCESSED_ROOT.exists():
             cls._INDEX = index
             return index
 
         for class_dir in sorted([d for d in PROCESSED_ROOT.iterdir() if d.is_dir() and "class" in d.name.lower()]):
-            grade = class_dir.name.replace("Class", "")
+            dir_grade = class_dir.name.replace("Class", "")
 
             for subj_dir in sorted([d for d in class_dir.iterdir() if d.is_dir()]):
                 raw_subj = subj_dir.name
-                canonical_subject = SubjectRegistry.resolve_canonical_subject(raw_subj)
-
-                book = "main"
-                part = "none"
-                lower_sub = raw_subj.lower()
-                if "maths i" in lower_sub or lower_sub == "mathsi":
-                    book = "maths_i"
-                    part = "part1"
-                elif "maths ii" in lower_sub or lower_sub == "mathsii":
-                    book = "maths_ii"
-                    part = "part2"
-                elif "social i" in lower_sub or lower_sub == "sociali":
-                    book = "social_i"
-                    part = "part1"
-                elif "social ii" in lower_sub or lower_sub == "socialii":
-                    book = "social_ii"
-                    part = "part2"
-                else:
-                    book = canonical_subject
-                    part = "main"
+                dir_subject = SubjectRegistry.resolve_canonical_subject(raw_subj)
 
                 for ch_dir in sorted([d for d in subj_dir.iterdir() if d.is_dir()]):
-                    chapter_id = ch_dir.name
+                    dir_chapter_id = ch_dir.name
                     manifest_file = ch_dir / "manifest.json"
                     if not manifest_file.exists():
                         raise ManifestMissingError(f"Mandatory manifest.json missing in chapter directory: {ch_dir}")
@@ -144,21 +128,37 @@ class CurriculumRegistry:
                     except Exception as e:
                         raise ManifestMalformedError(f"Failed to read manifest.json at {manifest_file}: {str(e)}")
 
-                    m_grade = str(md.get("grade") or md.get("class") or grade)
-                    m_subject = SubjectRegistry.resolve_canonical_subject(str(md.get("subject") or canonical_subject))
-                    m_book = str(md.get("book") or book)
-                    m_part = str(md.get("part") or part)
-                    m_unit = str(md.get("unit_id") or md.get("unit") or ("U" + chapter_id.split("-U")[-1].split("-")[0] if "-U" in chapter_id else "U01"))
-                    m_chapter_id = str(md.get("chapter_id") or md.get("id") or chapter_id)
+                    # Required mandatory identity fields in manifest
+                    required_fields = ["grade", "subject", "book", "part", "unit", "chapter_id", "chapter_number", "chapter_title", "unit_number", "unit_title"]
+                    for rf in required_fields:
+                        if rf not in md or md[rf] is None or md[rf] == "":
+                            raise ManifestMalformedError(f"Manifest missing mandatory authoritative field '{rf}' at {manifest_file}")
 
-                    if "chapter_number" not in md or "chapter_title" not in md:
-                        raise ManifestMalformedError(f"Required chapter_number or chapter_title missing in manifest: {manifest_file}")
-
+                    m_grade = str(md["grade"])
+                    m_subject = SubjectRegistry.resolve_canonical_subject(str(md["subject"]))
+                    m_book = str(md["book"])
+                    m_part = str(md["part"])
+                    m_unit = str(md["unit"])
+                    m_chapter_id = str(md["chapter_id"])
                     m_chapter_number = int(md["chapter_number"])
                     m_chapter_title = str(md["chapter_title"])
-                    m_unit_number = int(md.get("unit_number") or (int(m_unit.replace("U", "")) if m_unit.startswith("U") else 1))
-                    m_unit_title = str(md.get("unit_title") or f"Unit {m_unit}")
+                    m_unit_number = int(md["unit_number"])
+                    m_unit_title = str(md["unit_title"])
                     m_source_hash = str(md.get("source_hash") or "")
+
+                    # Strict Directory vs Manifest Identity Validation
+                    if m_grade != dir_grade:
+                        raise IdentityConflictError(f"Directory grade '{dir_grade}' conflicts with manifest grade '{m_grade}' at {manifest_file}")
+                    if m_subject != dir_subject:
+                        raise IdentityConflictError(f"Directory subject '{dir_subject}' conflicts with manifest subject '{m_subject}' at {manifest_file}")
+                    if m_chapter_id != dir_chapter_id:
+                        raise IdentityConflictError(f"Directory chapter ID '{dir_chapter_id}' conflicts with manifest chapter ID '{m_chapter_id}' at {manifest_file}")
+
+                    # Detect duplicate chapter IDs under conflicting books
+                    book_chapter_key = f"{m_book}:{m_chapter_id}"
+                    if book_chapter_key in seen_chapter_ids:
+                        raise RegistryDuplicateKeyError(f"Duplicate chapter ID '{m_chapter_id}' detected under book '{m_book}'")
+                    seen_chapter_ids[book_chapter_key] = True
 
                     available_content_types = []
                     for ct in ["overview", "notes", "master", "foundational", "flashcards", "mindmaps", "quiz", "question_papers"]:
@@ -186,7 +186,7 @@ class CurriculumRegistry:
 
                     key = f"{m_grade}:{m_subject}:{m_book}:{m_part}:{m_unit}:{m_chapter_id}"
                     if key in seen_keys:
-                        raise RegistryDuplicateKeyError(f"Duplicate index key detected in CurriculumRegistry: {key}")
+                        raise RegistryDuplicateKeyError(f"Duplicate exact index key detected in CurriculumRegistry: {key}")
                     seen_keys.add(key)
                     index[key] = node
 
@@ -233,7 +233,7 @@ class CurriculumRegistry:
         key = f"{identity.grade}:{canonical_subject}:{identity.book}:{identity.part}:{identity.unit}:{identity.chapter_id}"
 
         if key not in idx:
-            raise ChapterNotFoundError(f"Exact identity node {identity.to_cache_key()} not found in authoritative index.")
+            raise ChapterNotFoundError(f"Exact identity node {identity.to_cache_key()} not found in authoritative manifest index.")
 
         return idx[key]
 
