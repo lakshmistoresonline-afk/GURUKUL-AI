@@ -9,21 +9,23 @@ interface Props {
   segments: string[];
 }
 
-const TABS = [
-  { id: 'overview', label: 'Overview' },
-  { id: 'notes', label: 'Notes' },
-  { id: 'master', label: 'Master' },
-  { id: 'foundational', label: 'Foundational' },
-  { id: 'flashcards', label: 'Flashcards' },
-  { id: 'mindmaps', label: 'Mindmaps' },
-  { id: 'quiz', label: 'Quiz' },
-  { id: 'question_papers', label: 'Question Papers' },
-];
+const CONTENT_TYPE_LABELS: Record<string, string> = {
+  overview: 'Overview',
+  notes: 'Notes',
+  master: 'Master',
+  foundational: 'Foundational',
+  flashcards: 'Flashcards',
+  mindmaps: 'Mindmaps',
+  quiz: 'Quiz',
+  question_papers: 'Question Papers',
+};
 
 export default function CatchAllChapterClient({ segments }: Props) {
-  const [activeTab, setActiveTab] = useState<string>('overview');
+  const [activeTab, setActiveTab] = useState<string>('');
+  const [availableContentTypes, setAvailableContentTypes] = useState<string[]>([]);
   const [contentData, setContentData] = useState<any>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const [statusCode, setStatusCode] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const grade = segments[0] || '';
@@ -34,9 +36,10 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const chapterId = segments[5] || '';
 
   useEffect(() => {
-    async function loadContent() {
+    async function initializeAndLoad() {
       if (segments.length < 6) {
-        setErrorMsg('Incomplete curriculum identity in route.');
+        setStatusCode(400);
+        setErrorMsg('Invalid Curriculum Identity: Incomplete 6 identity dimensions required (grade, subject, book, part, unit, chapter_id).');
         setLoading(false);
         return;
       }
@@ -44,6 +47,50 @@ export default function CatchAllChapterClient({ segments }: Props) {
       try {
         setLoading(true);
         setErrorMsg(null);
+        setStatusCode(null);
+
+        // 1. Fetch authoritative hierarchy to determine available content types for this exact chapter
+        const hierarchy = await CurriculumApiClient.fetchHierarchy();
+        let foundChapter: any = null;
+
+        for (const g of hierarchy) {
+          if (String(g.grade) === String(grade)) {
+            for (const s of g.subjects || []) {
+              if (s.canonical_subject?.toLowerCase() === subject.toLowerCase() || s.subject?.toLowerCase() === subject.toLowerCase()) {
+                for (const b of s.books || []) {
+                  if (b.book_id?.toLowerCase() === book.toLowerCase() && b.part?.toLowerCase() === part.toLowerCase()) {
+                    for (const u of b.units || []) {
+                      if (u.unit_id?.toUpperCase() === unit.toUpperCase()) {
+                        const ch = (u.chapters || []).find((c: any) => c.chapter_id?.toLowerCase() === chapterId.toLowerCase());
+                        if (ch) {
+                          foundChapter = ch;
+                          break;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        if (!foundChapter) {
+          setStatusCode(404);
+          setErrorMsg(`Chapter identity not found in authoritative registry: Class ${grade} / ${subject} / ${book} / ${part} / ${unit} / ${chapterId}`);
+          setLoading(false);
+          return;
+        }
+
+        const validContentTypes = foundChapter.content_types || ['overview'];
+        setAvailableContentTypes(validContentTypes);
+
+        const currentTab = validContentTypes.includes(activeTab) ? activeTab : validContentTypes[0];
+        if (currentTab !== activeTab) {
+          setActiveTab(currentTab);
+        }
+
+        // 2. Fetch content for active tab
         const identity: CurriculumIdentity = {
           grade,
           subject,
@@ -51,19 +98,29 @@ export default function CatchAllChapterClient({ segments }: Props) {
           part,
           unit,
           chapter_id: chapterId,
-          content_type: activeTab
+          content_type: currentTab
         };
+
         const res = await CurriculumApiClient.fetchContent(identity);
         setContentData(res.data);
+        setStatusCode(200);
       } catch (err: any) {
-        setErrorMsg(err.message || 'Chapter identity could not be resolved.');
+        const msg = err.message || '';
+        let code = 500;
+        if (msg.includes('400') || msg.includes('INVALID')) code = 400;
+        else if (msg.includes('404') || msg.includes('NOT_FOUND')) code = 404;
+        else if (msg.includes('409') || msg.includes('CONFLICT')) code = 409;
+        else if (msg.includes('422') || msg.includes('SCHEMA')) code = 422;
+
+        setStatusCode(code);
+        setErrorMsg(msg || 'An unexpected server failure occurred.');
         setContentData(null);
       } finally {
         setLoading(false);
       }
     }
 
-    loadContent();
+    initializeAndLoad();
   }, [segments, grade, subject, book, part, unit, chapterId, activeTab]);
 
   return (
@@ -76,22 +133,24 @@ export default function CatchAllChapterClient({ segments }: Props) {
         <h1 className="text-2xl sm:text-3xl font-black tracking-tight">Chapter: {chapterId}</h1>
       </div>
 
-      {/* Content-Type Tabs Bar */}
-      <div className="max-w-6xl mx-auto flex flex-wrap gap-2 bg-white p-3 rounded-2xl border border-slate-200 shadow-sm">
-        {TABS.map(tab => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
-              activeTab === tab.id
-                ? 'bg-indigo-600 text-white shadow-md'
-                : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
+      {/* Authoritative Content-Type Tabs Bar */}
+      {availableContentTypes.length > 0 && (
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 bg-white p-3 rounded-2xl border border-slate-200 shadow-sm">
+          {availableContentTypes.map(ct => (
+            <button
+              key={ct}
+              onClick={() => setActiveTab(ct)}
+              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                activeTab === ct
+                  ? 'bg-indigo-600 text-white shadow-md'
+                  : 'bg-slate-50 text-slate-700 hover:bg-slate-100 border border-slate-200'
+              }`}
+            >
+              {CONTENT_TYPE_LABELS[ct] || ct}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Main Content Area */}
       <div className="max-w-6xl mx-auto">
@@ -102,9 +161,15 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         )}
 
-        {errorMsg && !loading && (
+        {statusCode && statusCode !== 200 && !loading && (
           <div className="p-12 bg-rose-50 border border-rose-200 rounded-3xl text-center space-y-3 shadow-sm">
-            <h3 className="text-lg font-black text-rose-900">Curriculum Identity Not Found (404)</h3>
+            <h3 className="text-lg font-black text-rose-900">
+              {statusCode === 400 && 'Bad Request: Invalid Curriculum Identity (400)'}
+              {statusCode === 404 && 'Curriculum Identity Not Found (404)'}
+              {statusCode === 409 && 'Identity Conflict (409)'}
+              {statusCode === 422 && 'Content Schema Corruption (422)'}
+              {statusCode === 500 && 'Internal Server Error (500)'}
+            </h3>
             <p className="text-sm text-rose-700 max-w-md mx-auto">{errorMsg}</p>
             <Link href="/" className="inline-block mt-4 px-6 py-2.5 bg-indigo-600 text-white text-xs font-bold rounded-xl shadow-md hover:bg-indigo-500 transition-all">
               Return to Curriculum Explorer ↻
@@ -112,7 +177,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           </div>
         )}
 
-        {!loading && !errorMsg && contentData && (
+        {statusCode === 200 && !loading && contentData && (
           <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-8">
             {RendererRegistry.resolve({
               grade,
