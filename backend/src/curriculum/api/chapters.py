@@ -22,9 +22,10 @@ async def get_curriculum_hierarchy():
     """
     Returns the complete, dynamic, authoritative curriculum hierarchy:
     Class → Subject → Book → Part → Unit → Chapter → Content Types.
-    Derived purely from repository manifests without fabricated fallback catalogs.
+    Derived purely from registry-authoritative metadata without fabricated fallback catalogs or static unit numbers.
     """
     tax = CurriculumRegistry.get_taxonomy()
+    index = CurriculumRegistry.get_index()
     hierarchy = []
 
     for grade, subjects in sorted(tax.items()):
@@ -41,20 +42,49 @@ async def get_curriculum_hierarchy():
                 units_list = []
                 for unit_id, ch_ids in units_dict.items():
                     chapters_list = []
+                    unit_number = None
+                    unit_title = None
+
                     for ch_id in ch_ids:
-                        node = CurriculumRegistry.get_index().get(f"{grade}:{subj_key}:{book_id}:{part_id}:{unit_id}:{ch_id}")
-                        if node:
-                            chapters_list.append({
-                                "chapter_id": ch_id,
-                                "chapter_number": node["chapter_number"],
-                                "chapter_title": node["chapter_title"],
-                                "content_types": node["available_content_types"]
-                            })
+                        node_key = f"{grade}:{subj_key}:{book_id}:{part_id}:{unit_id}:{ch_id}"
+                        node = index.get(node_key)
+                        if not node:
+                            raise HTTPException(
+                                status_code=500,
+                                detail={
+                                    "error": {
+                                        "code": "AUTHORITATIVE_METADATA_MISSING",
+                                        "message": f"Authoritative metadata missing for node key: {node_key}"
+                                    }
+                                }
+                            )
+                        if unit_number is None:
+                            unit_number = int(node["unit_number"])
+                        if unit_title is None:
+                            unit_title = str(node["unit_title"])
+
+                        chapters_list.append({
+                            "chapter_id": ch_id,
+                            "chapter_number": node["chapter_number"],
+                            "chapter_title": node["chapter_title"],
+                            "content_types": node["available_content_types"]
+                        })
+
+                    if unit_number is None or unit_title is None:
+                        raise HTTPException(
+                            status_code=500,
+                            detail={
+                                "error": {
+                                    "code": "AUTHORITATIVE_METADATA_MISSING",
+                                    "message": f"Unit number or unit title missing for unit {unit_id}"
+                                }
+                            }
+                        )
 
                     units_list.append({
                         "unit_id": unit_id,
-                        "unit_number": 1,
-                        "unit_title": f"Unit {unit_id.replace('U', '')}",
+                        "unit_number": unit_number,
+                        "unit_title": unit_title,
                         "chapters": chapters_list
                     })
 
