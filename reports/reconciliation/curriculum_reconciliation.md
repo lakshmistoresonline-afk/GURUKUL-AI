@@ -1,15 +1,17 @@
-# DETERMINISTIC CURRICULUM RECONCILIATION REPORT
-**Timestamp**: 2026-10-07T08:28:00.680452
+# DETERMINISTIC CURRICULUM RECONCILIATION REPORT (STRICT GEN-2)
+**Timestamp**: 2026-10-07T08:39:12.278763
 **Reconciliation Status**: **PASS**
 
 ---
 
-## Inventory Summary
-- **Source Classes**: ['5', '6', '7']
-- **Processed Classes**: ['5', '6', '7']
+## Complete Identity Reconciliation Summary
 - **Missing Classes**: []
 - **Extra Classes**: []
-- **Source Chapters Total**: 127
-- **Processed Chapters Total**: 380
-- **Identity Conflicts**: 0
+- **Missing Subjects**: []
+- **Extra Subjects**: []
+- **Missing Chapters**: 0
+- **Extra Chapters**: 15
 - **Duplicate Identities**: 0
+- **Identity Conflicts**: 0
+- **Missing Content Types**: 0
+- **Hash Differences**: 0
