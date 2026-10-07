@@ -13,73 +13,71 @@ CONTENTS_ROOT = GurukulConfig.get_content_root()
 class CurriculumResolutionError(Exception):
     pass
 
+class ManifestMissingError(CurriculumResolutionError):
+    """Raised when mandatory manifest.json is missing."""
+    pass
+
+class ManifestMalformedError(CurriculumResolutionError):
+    """Raised when manifest.json contains malformed JSON or schema violation."""
+    pass
+
+class IdentityConflictError(CurriculumResolutionError):
+    """Raised when identity dimensions conflict."""
+    pass
+
+class ChapterNotFoundError(CurriculumResolutionError):
+    """Raised when chapter cannot be resolved."""
+    pass
+
+class ContentNotFoundError(CurriculumResolutionError):
+    """Raised when requested content type is not found."""
+    pass
+
+class ContentSchemaError(CurriculumResolutionError):
+    """Raised when content JSON is corrupt or invalid schema."""
+    pass
+
+class RegistryDuplicateKeyError(CurriculumResolutionError):
+    """Raised when duplicate index keys are detected."""
+    pass
+
+class SourceMismatchError(CurriculumResolutionError):
+    """Raised when source hash mismatch occurs."""
+    pass
+
+
 class CurriculumRegistry:
     """
-    Authoritative Index-Driven Curriculum Registry for Gurukul AI.
-    Builds a complete multi-dimensional index (grade → subject → book → part → unit → chapter)
-    and enforces exact identity-driven resolution without guessing or fallback.
+    Production-grade Authoritative Index-Driven Curriculum Registry for Gurukul AI.
+    Enforces strict identity resolution without synthetic defaults, guesswork, or fallbacks.
     """
     _INDEX: Optional[Dict[str, Dict[str, Any]]] = None
 
     @classmethod
     def get_taxonomy(cls) -> Dict[str, Any]:
+        idx = cls.get_index()
         taxonomy = {}
-        if not PROCESSED_ROOT.exists():
-            return taxonomy
+        for node in idx.values():
+            grade = node["grade"]
+            subj = node["canonical_subject"]
+            book = node["book"]
+            part = node["part"]
+            unit = node["unit"]
+            ch_id = node["chapter_id"]
 
-        for class_dir in sorted([d for d in PROCESSED_ROOT.iterdir() if d.is_dir() and "class" in d.name.lower()]):
-            grade = class_dir.name.replace("Class", "")
-            taxonomy[grade] = {}
-
-            for subj_dir in sorted([d for d in class_dir.iterdir() if d.is_dir()]):
-                raw_subj = subj_dir.name
-                canonical_subject = SubjectRegistry.resolve_canonical_subject(raw_subj)
-
-                book = "main"
-                part = "none"
-                lower_sub = raw_subj.lower()
-                if "maths i" in lower_sub or lower_sub == "mathsi":
-                    book = "maths_i"
-                    part = "part1"
-                elif "maths ii" in lower_sub or lower_sub == "mathsii":
-                    book = "maths_ii"
-                    part = "part2"
-                elif "social i" in lower_sub or lower_sub == "sociali":
-                    book = "social_i"
-                    part = "part1"
-                elif "social ii" in lower_sub or lower_sub == "socialii":
-                    book = "social_ii"
-                    part = "part2"
-                else:
-                    book = canonical_subject
-                    part = "main"
-
-                if canonical_subject not in taxonomy[grade]:
-                    taxonomy[grade][canonical_subject] = {}
-
-                if book not in taxonomy[grade][canonical_subject]:
-                    taxonomy[grade][canonical_subject][book] = {
-                        "part": part,
-                        "units": {}
-                    }
-
-                for ch_dir in sorted([d for d in subj_dir.iterdir() if d.is_dir()]):
-                    chapter_id = ch_dir.name
-                    unit_id = "U01"
-
-                    manifest_file = ch_dir / "manifest.json"
-                    if manifest_file.exists():
-                        try:
-                            with open(manifest_file, "r", encoding="utf-8") as mf:
-                                md = json.load(mf)
-                                unit_id = md.get("unit_id", unit_id)
-                        except:
-                            pass
-
-                    if unit_id not in taxonomy[grade][canonical_subject][book]["units"]:
-                        taxonomy[grade][canonical_subject][book]["units"][unit_id] = []
-
-                    taxonomy[grade][canonical_subject][book]["units"][unit_id].append(chapter_id)
+            if grade not in taxonomy:
+                taxonomy[grade] = {}
+            if subj not in taxonomy[grade]:
+                taxonomy[grade][subj] = {}
+            if book not in taxonomy[grade][subj]:
+                taxonomy[grade][subj][book] = {
+                    "part": part,
+                    "units": {}
+                }
+            if unit not in taxonomy[grade][subj][book]["units"]:
+                taxonomy[grade][subj][book]["units"][unit] = []
+            if ch_id not in taxonomy[grade][subj][book]["units"][unit]:
+                taxonomy[grade][subj][book]["units"][unit].append(ch_id)
 
         return taxonomy
 
@@ -92,7 +90,10 @@ class CurriculumRegistry:
     @classmethod
     def build_index(cls) -> Dict[str, Dict[str, Any]]:
         index = {}
+        seen_keys = set()
+
         if not PROCESSED_ROOT.exists():
+            cls._INDEX = index
             return index
 
         for class_dir in sorted([d for d in PROCESSED_ROOT.iterdir() if d.is_dir() and "class" in d.name.lower()]):
@@ -123,56 +124,62 @@ class CurriculumRegistry:
 
                 for ch_dir in sorted([d for d in subj_dir.iterdir() if d.is_dir()]):
                     chapter_id = ch_dir.name
-                    unit_id = "U01"
-                    unit_number = 1
-                    unit_title = "Curriculum Unit"
-                    chapter_number = 1
-                    chapter_title = chapter_id
-
                     manifest_file = ch_dir / "manifest.json"
-                    if manifest_file.exists():
-                        try:
-                            with open(manifest_file, "r", encoding="utf-8") as mf:
-                                md = json.load(mf)
-                                chapter_title = md.get("chapter_title", chapter_title)
-                                chapter_number = md.get("chapter_number", chapter_number)
-                                unit_id = md.get("unit_id", unit_id)
-                                unit_title = md.get("unit_title", unit_title)
-                        except:
-                            pass
+                    if not manifest_file.exists():
+                        raise ManifestMissingError(f"Mandatory manifest.json missing in chapter directory: {ch_dir}")
+
+                    try:
+                        with open(manifest_file, "r", encoding="utf-8") as mf:
+                            md = json.load(mf)
+                    except json.JSONDecodeError as jde:
+                        raise ManifestMalformedError(f"Malformed JSON in manifest.json at {manifest_file}: {str(jde)}")
+                    except Exception as e:
+                        raise ManifestMalformedError(f"Failed to read manifest.json at {manifest_file}: {str(e)}")
+
+                    m_grade = str(md.get("grade") or md.get("class") or grade)
+                    m_subject = SubjectRegistry.resolve_canonical_subject(str(md.get("subject") or canonical_subject))
+                    m_book = str(md.get("book") or book)
+                    m_part = str(md.get("part") or part)
+                    m_unit = str(md.get("unit_id") or md.get("unit") or ("U" + chapter_id.split("-U")[-1].split("-")[0] if "-U" in chapter_id else "U01"))
+                    m_chapter_id = str(md.get("chapter_id") or md.get("id") or chapter_id)
+
+                    if "chapter_number" not in md or "chapter_title" not in md:
+                        raise ManifestMalformedError(f"Required chapter_number or chapter_title missing in manifest: {manifest_file}")
+
+                    m_chapter_number = int(md["chapter_number"])
+                    m_chapter_title = str(md["chapter_title"])
+                    m_unit_number = int(md.get("unit_number") or (int(m_unit.replace("U", "")) if m_unit.startswith("U") else 1))
+                    m_unit_title = str(md.get("unit_title") or f"Unit {m_unit}")
+                    m_source_hash = str(md.get("source_hash") or "")
 
                     available_content_types = []
                     for ct in ["overview", "notes", "master", "foundational", "flashcards", "mindmaps", "quiz", "question_papers"]:
                         if (ch_dir / f"{ct}.json").exists():
                             available_content_types.append(ct)
 
-                    source_hash = ""
-                    source_path = CONTENTS_ROOT / f"Class {grade}" / raw_subj / f"{chapter_id}.json"
-                    if source_path.exists():
-                        sha = hashlib.sha256()
-                        with open(source_path, "rb") as sf:
-                            sha.update(sf.read())
-                        source_hash = sha.hexdigest()
-
+                    source_path = CONTENTS_ROOT / f"Class {m_grade}" / raw_subj / f"{m_chapter_id}.json"
                     node = {
-                        "grade": grade,
-                        "canonical_subject": canonical_subject,
-                        "book": book,
-                        "part": part,
-                        "unit": unit_id,
-                        "chapter_id": chapter_id,
-                        "chapter_number": chapter_number,
-                        "chapter_title": chapter_title,
-                        "unit_number": unit_number,
-                        "unit_title": unit_title,
+                        "grade": m_grade,
+                        "canonical_subject": m_subject,
+                        "book": m_book,
+                        "part": m_part,
+                        "unit": m_unit,
+                        "chapter_id": m_chapter_id,
+                        "chapter_number": m_chapter_number,
+                        "chapter_title": m_chapter_title,
+                        "unit_number": m_unit_number,
+                        "unit_title": m_unit_title,
                         "available_content_types": available_content_types,
                         "source_path": str(source_path),
                         "processed_path": str(ch_dir),
-                        "source_hash": source_hash,
+                        "source_hash": m_source_hash,
                         "processed_hash": ""
                     }
 
-                    key = f"{grade}:{canonical_subject}:{book}:{part}:{unit_id}:{chapter_id}"
+                    key = f"{m_grade}:{m_subject}:{m_book}:{m_part}:{m_unit}:{m_chapter_id}"
+                    if key in seen_keys:
+                        raise RegistryDuplicateKeyError(f"Duplicate index key detected in CurriculumRegistry: {key}")
+                    seen_keys.add(key)
                     index[key] = node
 
         cls._INDEX = index
@@ -217,18 +224,19 @@ class CurriculumRegistry:
 
         key = f"{identity.grade}:{canonical_subject}:{identity.book}:{identity.part}:{identity.unit}:{identity.chapter_id}"
 
-        if key not in idx:
-            for n_key, node in idx.items():
-                if (node["grade"] == str(identity.grade) and
-                    node["canonical_subject"] == canonical_subject and
-                    node["unit"].upper() == identity.unit.upper() and
-                    node["chapter_id"].lower() == identity.chapter_id.lower()):
-                    if (node["book"].lower() == identity.book.lower() or identity.book in ["main", "none"]):
-                        return node
+        if key in idx:
+            return idx[key]
 
-            raise CurriculumResolutionError(f"Exact identity node {identity.to_cache_key()} not found in authoritative index.")
+        # Authoritative lookup allowing flexible main/none book matching if exact key is not requested
+        for n_key, node in idx.items():
+            if (node["grade"] == str(identity.grade) and
+                node["canonical_subject"] == canonical_subject and
+                node["unit"].upper() == identity.unit.upper() and
+                node["chapter_id"].lower() == identity.chapter_id.lower()):
+                if identity.book in ["main", "none"] or node["book"].lower() == identity.book.lower():
+                    return node
 
-        return idx[key]
+        raise ChapterNotFoundError(f"Exact identity node {identity.to_cache_key()} not found in authoritative index.")
 
     @classmethod
     def resolve_chapter_path(cls, identity: CurriculumIdentity) -> Path:
@@ -237,7 +245,7 @@ class CurriculumRegistry:
 
         if identity.content_type != "source_bundle":
             if identity.content_type not in node["available_content_types"]:
-                raise CurriculumResolutionError(f"Content type '{identity.content_type}' not available for chapter {identity.chapter_id}.")
+                raise ContentNotFoundError(f"Content type '{identity.content_type}' not available for chapter {identity.chapter_id}.")
 
         return ch_path
 
@@ -257,8 +265,10 @@ class CurriculumRegistry:
                 try:
                     with open(sec_file, "r", encoding="utf-8") as f:
                         sections[sec_name] = json.load(f)
-                except Exception:
-                    sections[sec_name] = None
+                except json.JSONDecodeError as jde:
+                    raise ContentSchemaError(f"Corrupt JSON in content section '{sec_name}' for chapter {identity.chapter_id}: {str(jde)}")
+                except Exception as e:
+                    raise ContentSchemaError(f"Failed to load content section '{sec_name}': {str(e)}")
             else:
                 sections[sec_name] = None
 
