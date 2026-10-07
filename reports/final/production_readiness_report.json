@@ -1,318 +1,231 @@
 {
-  "timestamp": "2026-10-06T21:47:33.726405",
-  "total_gates": 28,
-  "passed": 28,
-  "failed": 0,
+  "run_id": "RUN_READINESS_20261007_104831",
+  "timestamp": "2026-10-07T10:50:43.457558",
+  "total_gates": 20,
+  "passed": 20,
   "blocked": 0,
+  "failed": 0,
   "overall_status": "PRODUCTION READY",
   "gates": [
     {
-      "gate": "Curriculum identity",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_curriculum_identity_closure.py -v",
+      "gate_name": "Contents cryptographic integrity",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/src/curriculum/verification/fail_closed_immutability.py verify-source-integrity",
+      "start_time": "2026-10-07T10:48:31.035451",
+      "end_time": "2026-10-07T10:48:31.546214",
+      "duration_seconds": 0.510767,
       "exit_code": 0,
-      "evidence": "efault_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 3 items\n\nbackend\\tests\\test_curriculum_identity_closure.py::test_identity_dimensions_mandatory PASSED [ 33%]\nbackend\\tests\\test_curriculum_identity_closure.py::test_cache_key_uniqueness_across_all_dimensions PASSED [ 66%]\nbackend\\tests\\test_curriculum_identity_closure.py::test_maths_i_vs_maths_ii_isolation PASSED [100%]\n\n============================== 3 passed in 0.76s ==============================",
-      "timestamp": "2026-10-06T21:44:57.276581",
-      "artifacts": [
-        "backend/tests/test_curriculum_identity_closure.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "reports/content-integrity/fail_closed_immutability_report.json",
+      "failure_reason": null
     },
     {
-      "gate": "Curriculum registry",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_authoritative_registry.py -v",
-      "exit_code": 0,
-      "evidence": "nd\\tests\\test_authoritative_registry.py::test_exact_identity_resolution_success PASSED [ 40%]\nbackend\\tests\\test_authoritative_registry.py::test_negative_identity_resolution_wrong_book PASSED [ 60%]\nbackend\\tests\\test_authoritative_registry.py::test_negative_identity_resolution_wrong_chapter PASSED [ 80%]\nbackend\\tests\\test_authoritative_registry.py::test_negative_identity_resolution_wrong_content_type PASSED [100%]\n\n============================== 5 passed in 0.72s ==============================",
-      "timestamp": "2026-10-06T21:44:59.258787",
-      "artifacts": [
-        "backend/tests/test_authoritative_registry.py"
-      ]
-    },
-    {
-      "gate": "Subject/book/part isolation",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_book_part_isolation.py -v",
-      "exit_code": 0,
-      "evidence": "rina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\ncachedir: .pytest_cache\nrootdir: D:\\GURUKUL\\backend\nconfigfile: pytest.ini\nplugins: anyio-4.14.2, asyncio-1.4.0\nasyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 1 item\n\nbackend\\tests\\test_book_part_isolation.py::test_maths_i_vs_maths_ii_strict_isolation PASSED [100%]\n\n============================== 1 passed in 0.69s ==============================",
-      "timestamp": "2026-10-06T21:45:01.164990",
-      "artifacts": [
-        "backend/tests/test_book_part_isolation.py"
-      ]
-    },
-    {
-      "gate": "Processor coverage",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_processor_registry.py backend/tests/test_gen2_processors.py -v",
-      "exit_code": 0,
-      "evidence": "ths_i PASSED [ 33%]\nbackend\\tests\\test_processor_registry.py::test_processor_registry_unknown_raises PASSED [ 50%]\nbackend\\tests\\test_gen2_processors.py::test_gen2_processor_resolution_class5_english PASSED [ 66%]\nbackend\\tests\\test_gen2_processors.py::test_gen2_processor_resolution_class7_maths_i_and_ii PASSED [ 83%]\nbackend\\tests\\test_gen2_processors.py::test_gen2_processor_rejection_unknown_identity PASSED [100%]\n\n============================== 6 passed in 0.37s ==============================",
-      "timestamp": "2026-10-06T21:45:02.921483",
-      "artifacts": [
-        "backend/tests/test_processor_registry.py"
-      ]
-    },
-    {
-      "gate": "Source discovery",
-      "status": "PASS",
+      "gate_name": "Source inventory",
       "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/src/curriculum/processing/source_discovery.py",
+      "start_time": "2026-10-07T10:48:31.702150",
+      "end_time": "2026-10-07T10:48:32.309024",
+      "duration_seconds": 0.606875,
       "exit_code": 0,
-      "evidence": "Source inventory discovered successfully. Classes found: 3",
-      "timestamp": "2026-10-06T21:45:04.319338",
-      "artifacts": [
-        "backend/src/curriculum/processing/source_discovery.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "reports/source-inventory/source_inventory.json",
+      "failure_reason": null
     },
     {
-      "gate": "Source fidelity",
+      "gate_name": "Exact curriculum reconciliation",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/src/curriculum/verification/reconciliation_engine.py",
+      "start_time": "2026-10-07T10:48:32.310494",
+      "end_time": "2026-10-07T10:48:33.869320",
+      "duration_seconds": 1.558822,
+      "exit_code": 0,
       "status": "PASS",
+      "evidence_artifact": "reports/reconciliation/curriculum_reconciliation.md",
+      "failure_reason": null
+    },
+    {
+      "gate_name": "Forensic fidelity",
       "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_curriculum_fidelity.py -v",
+      "start_time": "2026-10-07T10:48:33.870863",
+      "end_time": "2026-10-07T10:48:44.435905",
+      "duration_seconds": 10.565045,
       "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 2 passed, 1 warning in 2.68s =========================",
-      "timestamp": "2026-10-06T21:45:04.678782",
-      "artifacts": [
-        "backend/tests/test_curriculum_fidelity.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "reports/fidelity/source_fidelity_report.json",
+      "failure_reason": null
     },
     {
-      "gate": "Contents immutability",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe reports/content-integrity/verify_two_directory_immutability.py",
+      "gate_name": "Processor coverage",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/src/curriculum/processors/processor_coverage_audit.py",
+      "start_time": "2026-10-07T10:48:44.436859",
+      "end_time": "2026-10-07T10:48:45.691017",
+      "duration_seconds": 1.254161,
       "exit_code": 0,
-      "evidence": "Running Authoritative Contents/ Immutability Verification...\nResult: PASS — Authoritative Contents/ is 100% immutable and unchanged.",
-      "timestamp": "2026-10-06T21:45:08.541333",
-      "artifacts": [
-        "reports/content-integrity/verify_two_directory_immutability.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "reports/processors/processor_coverage_report.json",
+      "failure_reason": null
     },
     {
-      "gate": "ProcessedContent integrity",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_production_immutability.py -v",
+      "gate_name": "Processor contract tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_processor_contracts.py backend/tests/test_processor_registry_hardened.py -v",
+      "start_time": "2026-10-07T10:48:45.691307",
+      "end_time": "2026-10-07T10:48:48.562757",
+      "duration_seconds": 2.871456,
       "exit_code": 0,
-      "evidence": "t_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 3 items\n\nbackend\\tests\\test_production_immutability.py::test_production_immutability_unchanged_source PASSED [ 33%]\nbackend\\tests\\test_production_immutability.py::test_production_immutability_missing_baseline PASSED [ 66%]\nbackend\\tests\\test_production_immutability.py::test_production_immutability_modified_file PASSED [100%]\n\n============================== 3 passed in 0.65s ==============================",
-      "timestamp": "2026-10-06T21:45:08.905846",
-      "artifacts": [
-        "backend/tests/test_production_immutability.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_processor_contracts.py",
+      "failure_reason": null
     },
     {
-      "gate": "Provenance",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_rag_provenance.py -v",
+      "gate_name": "Content schema validation",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_strict_schema_validation.py -v",
+      "start_time": "2026-10-07T10:48:48.565539",
+      "end_time": "2026-10-07T10:48:51.538232",
+      "duration_seconds": 2.972694,
       "exit_code": 0,
-      "evidence": " -- C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\ncachedir: .pytest_cache\nrootdir: D:\\GURUKUL\\backend\nconfigfile: pytest.ini\nplugins: anyio-4.14.2, asyncio-1.4.0\nasyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 1 item\n\nbackend\\tests\\test_rag_provenance.py::test_rag_provenance_completeness PASSED [100%]\n\n============================== 1 passed in 0.33s ==============================",
-      "timestamp": "2026-10-06T21:45:10.584557",
-      "artifacts": [
-        "backend/tests/test_rag_provenance.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_strict_schema_validation.py",
+      "failure_reason": null
     },
     {
-      "gate": "Cache isolation",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_cache_isolation.py -v",
+      "gate_name": "Registry exact-resolution tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_curriculum_registry_hardened.py backend/tests/test_authoritative_registry.py -v",
+      "start_time": "2026-10-07T10:48:51.539174",
+      "end_time": "2026-10-07T10:48:54.490488",
+      "duration_seconds": 2.951285,
       "exit_code": 0,
-      "evidence": "_loop_scope=function\ncollecting ... collected 4 items\n\nbackend\\tests\\test_cache_isolation.py::test_cache_key_isolation_across_grades PASSED [ 25%]\nbackend\\tests\\test_cache_isolation.py::test_cache_key_isolation_across_books_or_parts PASSED [ 50%]\nbackend\\tests\\test_cache_isolation.py::test_cache_key_isolation_across_units PASSED [ 75%]\nbackend\\tests\\test_cache_isolation.py::test_cache_storage_retrieval PASSED [100%]\n\n============================== 4 passed in 0.39s ==============================",
-      "timestamp": "2026-10-06T21:45:11.939084",
-      "artifacts": [
-        "backend/tests/test_cache_isolation.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_curriculum_registry_hardened.py",
+      "failure_reason": null
     },
     {
-      "gate": "Firebase authentication",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_real_firebase_auth.py -v",
+      "gate_name": "API identity tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_authoritative_api_contracts_hardened.py backend/tests/test_api_integration.py -v",
+      "start_time": "2026-10-07T10:48:54.490850",
+      "end_time": "2026-10-07T10:48:58.562339",
+      "duration_seconds": 4.071493,
       "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 8 passed, 1 warning in 1.16s =========================",
-      "timestamp": "2026-10-06T21:45:13.406049",
-      "artifacts": [
-        "backend/tests/test_real_firebase_auth.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_authoritative_api_contracts_hardened.py",
+      "failure_reason": null
     },
     {
-      "gate": "Authorization",
+      "gate_name": "Renderer registry tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_forensic_fidelity.py -v",
+      "start_time": "2026-10-07T10:48:58.562581",
+      "end_time": "2026-10-07T10:49:00.683629",
+      "duration_seconds": 2.121055,
+      "exit_code": 0,
       "status": "PASS",
+      "evidence_artifact": "frontend-nextjs/src/components/presentation/RendererRegistry.tsx",
+      "failure_reason": null
+    },
+    {
+      "gate_name": "Frontend build",
+      "command": "npm run build --prefix frontend-nextjs",
+      "start_time": "2026-10-07T10:49:00.684049",
+      "end_time": "2026-10-07T10:49:49.535262",
+      "duration_seconds": 48.851219,
+      "exit_code": 0,
+      "status": "PASS",
+      "evidence_artifact": "frontend-nextjs/.next",
+      "failure_reason": null
+    },
+    {
+      "gate_name": "TypeScript validation",
+      "command": "npm run build --prefix frontend-nextjs",
+      "start_time": "2026-10-07T10:49:49.535645",
+      "end_time": "2026-10-07T10:50:23.454014",
+      "duration_seconds": 33.918378,
+      "exit_code": 0,
+      "status": "PASS",
+      "evidence_artifact": "frontend-nextjs/tsconfig.json",
+      "failure_reason": null
+    },
+    {
+      "gate_name": "Playwright UAT",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/scripts/run_playwright_uat.py",
+      "start_time": "2026-10-07T10:50:23.454373",
+      "end_time": "2026-10-07T10:50:26.570002",
+      "duration_seconds": 3.115635,
+      "exit_code": 0,
+      "status": "PASS",
+      "evidence_artifact": "reports/uat/playwright_uat_report.json",
+      "failure_reason": null
+    },
+    {
+      "gate_name": "Security tests",
       "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_auth_security.py -v",
+      "start_time": "2026-10-07T10:50:26.570339",
+      "end_time": "2026-10-07T10:50:29.016759",
+      "duration_seconds": 2.446427,
       "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 2 passed, 1 warning in 1.17s =========================",
-      "timestamp": "2026-10-06T21:45:15.700026",
-      "artifacts": [
-        "backend/tests/test_auth_security.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_auth_security.py",
+      "failure_reason": null
     },
     {
-      "gate": "CORS",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_cors_websocket_security.py -k test_cors -v",
-      "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 3 passed, 1 warning in 1.19s =========================",
-      "timestamp": "2026-10-06T21:45:18.031754",
-      "artifacts": [
-        "backend/tests/test_cors_websocket_security.py"
-      ]
-    },
-    {
-      "gate": "WebSocket security",
-      "status": "PASS",
+      "gate_name": "WebSocket tests",
       "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_real_websocket_security.py -v",
+      "start_time": "2026-10-07T10:50:29.017116",
+      "end_time": "2026-10-07T10:50:34.420450",
+      "duration_seconds": 5.403343,
       "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 3 passed, 1 warning in 4.21s =========================",
-      "timestamp": "2026-10-06T21:45:20.470032",
-      "artifacts": [
-        "backend/tests/test_real_websocket_security.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_real_websocket_security.py",
+      "failure_reason": null
     },
     {
-      "gate": "API contract tests",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_api_integration.py -v",
+      "gate_name": "Authentication tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_real_firebase_auth.py -v",
+      "start_time": "2026-10-07T10:50:34.420788",
+      "end_time": "2026-10-07T10:50:36.784562",
+      "duration_seconds": 2.363779,
       "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 4 passed, 1 warning in 1.73s =========================",
-      "timestamp": "2026-10-06T21:45:25.831590",
-      "artifacts": [
-        "backend/tests/test_api_integration.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_real_firebase_auth.py",
+      "failure_reason": null
     },
     {
-      "gate": "Frontend routing",
-      "status": "PASS",
-      "command": "npm run lint --prefix frontend-nextjs",
+      "gate_name": "CORS tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_cors_websocket_security.py -k test_cors -v",
+      "start_time": "2026-10-07T10:50:36.784892",
+      "end_time": "2026-10-07T10:50:39.160728",
+      "duration_seconds": 2.375842,
       "exit_code": 0,
-      "evidence": "> gurukul-ai-nextjs@0.1.0 lint\n> next lint\n\nâœ” No ESLint warnings or errors",
-      "timestamp": "2026-10-06T21:45:28.713370",
-      "artifacts": [
-        "frontend-nextjs/src/app/curriculum/[...identity]/page.tsx"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_cors_websocket_security.py",
+      "failure_reason": null
     },
     {
-      "gate": "Renderer registry",
-      "status": "PASS",
-      "command": "npm run build --prefix frontend-nextjs",
+      "gate_name": "Path portability tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_portability_audit.py -v",
+      "start_time": "2026-10-07T10:50:39.161056",
+      "end_time": "2026-10-07T10:50:40.619758",
+      "duration_seconds": 1.458712,
       "exit_code": 0,
-      "evidence": "ntity]            23.3 kB         118 kB\n+ First Load JS shared by all            87.7 kB\n  â”œ chunks/23-15079f6a7566b840.js        31.8 kB\n  â”œ chunks/fd9d1056-2737f78bfff3f6bf.js  54 kB\n  â”” other shared chunks (total)          1.99 kB\n\n\nâ—‹  (Static)   prerendered as static content\nÆ’  (Dynamic)  server-rendered on demand\n\n\n âš  Disabling SWC Minifer will not be an option in the next major version. Please report any issues you may be experiencing to https://github.com/vercel/next.js/issues",
-      "timestamp": "2026-10-06T21:45:34.794225",
-      "artifacts": [
-        "frontend-nextjs/src/components/presentation/RendererRegistry.tsx"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_portability_audit.py",
+      "failure_reason": null
     },
     {
-      "gate": "Backend tests",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_authoritative_pipeline.py -v",
+      "gate_name": "RAG provenance tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_rag_provenance_validation.py backend/tests/test_rag_provenance.py -v",
+      "start_time": "2026-10-07T10:50:40.620112",
+      "end_time": "2026-10-07T10:50:42.032004",
+      "duration_seconds": 1.411897,
       "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 5 passed, 1 warning in 1.69s =========================",
-      "timestamp": "2026-10-06T21:46:06.066048",
-      "artifacts": [
-        "backend/tests/test_authoritative_pipeline.py"
-      ]
+      "status": "PASS",
+      "evidence_artifact": "backend/tests/test_rag_provenance.py",
+      "failure_reason": null
     },
     {
-      "gate": "Frontend lint",
-      "status": "PASS",
-      "command": "npm run lint --prefix frontend-nextjs",
+      "gate_name": "Cache isolation tests",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_cache_isolation.py backend/tests/test_rag_cache_collision.py -v",
+      "start_time": "2026-10-07T10:50:42.032333",
+      "end_time": "2026-10-07T10:50:43.457309",
+      "duration_seconds": 1.424981,
       "exit_code": 0,
-      "evidence": "> gurukul-ai-nextjs@0.1.0 lint\n> next lint\n\nâœ” No ESLint warnings or errors",
-      "timestamp": "2026-10-06T21:46:09.068362",
-      "artifacts": [
-        "frontend-nextjs/.eslintrc.json"
-      ]
-    },
-    {
-      "gate": "Frontend type-check",
       "status": "PASS",
-      "command": "npm run build --prefix frontend-nextjs",
-      "exit_code": 0,
-      "evidence": "ntity]            23.3 kB         118 kB\n+ First Load JS shared by all            87.7 kB\n  â”œ chunks/23-15079f6a7566b840.js        31.8 kB\n  â”œ chunks/fd9d1056-2737f78bfff3f6bf.js  54 kB\n  â”” other shared chunks (total)          1.99 kB\n\n\nâ—‹  (Static)   prerendered as static content\nÆ’  (Dynamic)  server-rendered on demand\n\n\n âš  Disabling SWC Minifer will not be an option in the next major version. Please report any issues you may be experiencing to https://github.com/vercel/next.js/issues",
-      "timestamp": "2026-10-06T21:46:15.117711",
-      "artifacts": [
-        "frontend-nextjs/tsconfig.json"
-      ]
-    },
-    {
-      "gate": "Production build",
-      "status": "PASS",
-      "command": "npm run build --prefix frontend-nextjs",
-      "exit_code": 0,
-      "evidence": "ntity]            23.3 kB         118 kB\n+ First Load JS shared by all            87.7 kB\n  â”œ chunks/23-15079f6a7566b840.js        31.8 kB\n  â”œ chunks/fd9d1056-2737f78bfff3f6bf.js  54 kB\n  â”” other shared chunks (total)          1.99 kB\n\n\nâ—‹  (Static)   prerendered as static content\nÆ’  (Dynamic)  server-rendered on demand\n\n\n âš  Disabling SWC Minifer will not be an option in the next major version. Please report any issues you may be experiencing to https://github.com/vercel/next.js/issues",
-      "timestamp": "2026-10-06T21:46:47.448706",
-      "artifacts": [
-        "frontend-nextjs/.next"
-      ]
-    },
-    {
-      "gate": "Playwright E2E",
-      "status": "PASS",
-      "command": "echo 'Playwright verified via UAT specs'",
-      "exit_code": 0,
-      "evidence": "'Playwright verified via UAT specs'",
-      "timestamp": "2026-10-06T21:47:19.402717",
-      "artifacts": [
-        "frontend-nextjs/playwright.config.ts"
-      ]
-    },
-    {
-      "gate": "Cross-class isolation",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_isolation.py -v",
-      "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 3 passed, 1 warning in 1.57s =========================",
-      "timestamp": "2026-10-06T21:47:19.476144",
-      "artifacts": [
-        "backend/tests/test_isolation.py"
-      ]
-    },
-    {
-      "gate": "Cross-subject isolation",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_authoritative_pipeline.py -v",
-      "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 5 passed, 1 warning in 1.62s =========================",
-      "timestamp": "2026-10-06T21:47:22.252117",
-      "artifacts": [
-        "backend/tests/test_authoritative_pipeline.py"
-      ]
-    },
-    {
-      "gate": "Cross-book isolation",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_book_part_isolation.py -v",
-      "exit_code": 0,
-      "evidence": "rina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\ncachedir: .pytest_cache\nrootdir: D:\\GURUKUL\\backend\nconfigfile: pytest.ini\nplugins: anyio-4.14.2, asyncio-1.4.0\nasyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 1 item\n\nbackend\\tests\\test_book_part_isolation.py::test_maths_i_vs_maths_ii_strict_isolation PASSED [100%]\n\n============================== 1 passed in 0.69s ==============================",
-      "timestamp": "2026-10-06T21:47:25.055655",
-      "artifacts": [
-        "backend/tests/test_book_part_isolation.py"
-      ]
-    },
-    {
-      "gate": "Cross-unit isolation",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_cache_isolation.py -k unit -v",
-      "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\python.exe\ncachedir: .pytest_cache\nrootdir: D:\\GURUKUL\\backend\nconfigfile: pytest.ini\nplugins: anyio-4.14.2, asyncio-1.4.0\nasyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function\ncollecting ... collected 4 items / 3 deselected / 1 selected\n\nbackend\\tests\\test_cache_isolation.py::test_cache_key_isolation_across_units PASSED [100%]\n\n======================= 1 passed, 3 deselected in 0.33s =======================",
-      "timestamp": "2026-10-06T21:47:26.865090",
-      "artifacts": [
-        "backend/tests/test_cache_isolation.py"
-      ]
-    },
-    {
-      "gate": "Cross-chapter isolation",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_isolation.py -k chapter -v",
-      "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n================= 2 passed, 1 deselected, 1 warning in 1.53s ==================",
-      "timestamp": "2026-10-06T21:47:28.221809",
-      "artifacts": [
-        "backend/tests/test_isolation.py"
-      ]
-    },
-    {
-      "gate": "Content-type isolation",
-      "status": "PASS",
-      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_runtime_hardening.py -v",
-      "exit_code": 0,
-      "evidence": "ograms\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1\n  C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n======================== 5 passed, 1 warning in 1.55s =========================",
-      "timestamp": "2026-10-06T21:47:30.936986",
-      "artifacts": [
-        "backend/tests/test_runtime_hardening.py"
-      ]
+      "evidence_artifact": "backend/tests/test_rag_cache_collision.py",
+      "failure_reason": null
     }
   ]
 }

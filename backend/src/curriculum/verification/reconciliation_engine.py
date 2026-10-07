@@ -1,12 +1,23 @@
 import os
+import sys
 import json
 import hashlib
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, List, Set, Tuple
-from ..core.config import GurukulConfig
-from ..core.subject_registry import SubjectRegistry
-from ..core.curriculum_registry import CurriculumRegistry
+
+backend_dir = Path(__file__).resolve().parents[2]
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
+
+try:
+    from src.curriculum.core.config import GurukulConfig
+    from src.curriculum.core.subject_registry import SubjectRegistry
+    from src.curriculum.core.curriculum_registry import CurriculumRegistry
+except ImportError:
+    from curriculum.core.config import GurukulConfig
+    from curriculum.core.subject_registry import SubjectRegistry
+    from curriculum.core.curriculum_registry import CurriculumRegistry
 
 CONTENTS_ROOT = GurukulConfig.get_content_root()
 PROCESSED_ROOT = GurukulConfig.get_processed_root()
@@ -244,3 +255,6 @@ class ReconciliationEngine:
 if __name__ == "__main__":
     rep = ReconciliationEngine.reconcile()
     print(f"Reconciliation completed. Status: {rep['reconciliation_status']}")
+    if rep['reconciliation_status'] != "PASS":
+        sys.exit(1)
+    sys.exit(0)

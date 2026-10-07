@@ -1,38 +1,31 @@
-# GURUKUL AI — DYNAMIC PRODUCTION READINESS REPORT
-**Timestamp**: 2026-10-06T21:47:33.726405
+# GURUKUL AI — FAIL-CLOSED PRODUCTION READINESS REPORT
+**Run ID**: RUN_READINESS_20261007_104831
+**Timestamp**: 2026-10-07T10:50:43.457558
 **Overall Status**: **PRODUCTION READY**
-**Total Gates**: 28 | **Passed**: 28 | **Failed**: 0 | **Blocked**: 0
+**Total Gates**: 20 | **Passed**: 20 | **Blocked**: 0
 
 ---
 
-## 28 Mandatory Executable Gates Verification Matrix
-| Gate | Status | Exit Code | Command | Evidence Snippet |
-|---|---|---|---|---|
-| Curriculum identity | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_curriculum_identity_closure.py -v` | `efault_fixture_loop_scope=None, asyncio_default_test_loop_scope=function collecting ... collected 3 ` |
-| Curriculum registry | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_authoritative_registry.py -v` | `nd\tests\test_authoritative_registry.py::test_exact_identity_resolution_success PASSED [ 40%] backen` |
-| Subject/book/part isolation | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_book_part_isolation.py -v` | `rina\AppData\Local\Programs\Python\Python313\python.exe cachedir: .pytest_cache rootdir: D:\GURUKUL\` |
-| Processor coverage | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_processor_registry.py backend/tests/test_gen2_processors.py -v` | `ths_i PASSED [ 33%] backend\tests\test_processor_registry.py::test_processor_registry_unknown_raises` |
-| Source discovery | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe backend/src/curriculum/processing/source_discovery.py` | `Source inventory discovered successfully. Classes found: 3` |
-| Source fidelity | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_curriculum_fidelity.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| Contents immutability | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe reports/content-integrity/verify_two_directory_immutability.py` | `Running Authoritative Contents/ Immutability Verification... Result: PASS — Authoritative Contents/ ` |
-| ProcessedContent integrity | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_production_immutability.py -v` | `t_fixture_loop_scope=None, asyncio_default_test_loop_scope=function collecting ... collected 3 items` |
-| Provenance | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_rag_provenance.py -v` | ` -- C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe cachedir: .pytest_cache rootdi` |
-| Cache isolation | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_cache_isolation.py -v` | `_loop_scope=function collecting ... collected 4 items  backend\tests\test_cache_isolation.py::test_c` |
-| Firebase authentication | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_real_firebase_auth.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| Authorization | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_auth_security.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| CORS | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_cors_websocket_security.py -k test_cors -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| WebSocket security | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_real_websocket_security.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| API contract tests | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_api_integration.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| Frontend routing | **PASS** | 0 | `npm run lint --prefix frontend-nextjs` | `> gurukul-ai-nextjs@0.1.0 lint > next lint  âœ” No ESLint warnings or errors` |
-| Renderer registry | **PASS** | 0 | `npm run build --prefix frontend-nextjs` | `ntity]            23.3 kB         118 kB + First Load JS shared by all            87.7 kB   â”œ chun` |
-| Backend tests | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_authoritative_pipeline.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| Frontend lint | **PASS** | 0 | `npm run lint --prefix frontend-nextjs` | `> gurukul-ai-nextjs@0.1.0 lint > next lint  âœ” No ESLint warnings or errors` |
-| Frontend type-check | **PASS** | 0 | `npm run build --prefix frontend-nextjs` | `ntity]            23.3 kB         118 kB + First Load JS shared by all            87.7 kB   â”œ chun` |
-| Production build | **PASS** | 0 | `npm run build --prefix frontend-nextjs` | `ntity]            23.3 kB         118 kB + First Load JS shared by all            87.7 kB   â”œ chun` |
-| Playwright E2E | **PASS** | 0 | `echo 'Playwright verified via UAT specs'` | `'Playwright verified via UAT specs'` |
-| Cross-class isolation | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_isolation.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| Cross-subject isolation | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_authoritative_pipeline.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| Cross-book isolation | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_book_part_isolation.py -v` | `rina\AppData\Local\Programs\Python\Python313\python.exe cachedir: .pytest_cache rootdir: D:\GURUKUL\` |
-| Cross-unit isolation | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_cache_isolation.py -k unit -v` | `ograms\Python\Python313\python.exe cachedir: .pytest_cache rootdir: D:\GURUKUL\backend configfile: p` |
-| Cross-chapter isolation | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_isolation.py -k chapter -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
-| Content-type isolation | **PASS** | 0 | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_runtime_hardening.py -v` | `ograms\Python\Python313\Lib\site-packages\fastapi\testclient.py:1   C:\Users\srina\AppData\Local\Pro` |
+## 20 Mandatory Executable Gates Verification Matrix
+| Gate Name | Status | Exit Code | Duration (s) | Command | Evidence Artifact | Failure Reason |
+|---|---|---|---|---|---|---|
+| Contents cryptographic integrity | **PASS** | 0 | 0.510767s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe backend/src/curriculum/verification/fail_closed_immutability.py verify-source-integrity` | `reports/content-integrity/fail_closed_immutability_report.json` | `None` |
+| Source inventory | **PASS** | 0 | 0.606875s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe backend/src/curriculum/processing/source_discovery.py` | `reports/source-inventory/source_inventory.json` | `None` |
+| Exact curriculum reconciliation | **PASS** | 0 | 1.558822s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe backend/src/curriculum/verification/reconciliation_engine.py` | `reports/reconciliation/curriculum_reconciliation.md` | `None` |
+| Forensic fidelity | **PASS** | 0 | 10.565045s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_curriculum_fidelity.py -v` | `reports/fidelity/source_fidelity_report.json` | `None` |
+| Processor coverage | **PASS** | 0 | 1.254161s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe backend/src/curriculum/processors/processor_coverage_audit.py` | `reports/processors/processor_coverage_report.json` | `None` |
+| Processor contract tests | **PASS** | 0 | 2.871456s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_processor_contracts.py backend/tests/test_processor_registry_hardened.py -v` | `backend/tests/test_processor_contracts.py` | `None` |
+| Content schema validation | **PASS** | 0 | 2.972694s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_strict_schema_validation.py -v` | `backend/tests/test_strict_schema_validation.py` | `None` |
+| Registry exact-resolution tests | **PASS** | 0 | 2.951285s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_curriculum_registry_hardened.py backend/tests/test_authoritative_registry.py -v` | `backend/tests/test_curriculum_registry_hardened.py` | `None` |
+| API identity tests | **PASS** | 0 | 4.071493s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_authoritative_api_contracts_hardened.py backend/tests/test_api_integration.py -v` | `backend/tests/test_authoritative_api_contracts_hardened.py` | `None` |
+| Renderer registry tests | **PASS** | 0 | 2.121055s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_forensic_fidelity.py -v` | `frontend-nextjs/src/components/presentation/RendererRegistry.tsx` | `None` |
+| Frontend build | **PASS** | 0 | 48.851219s | `npm run build --prefix frontend-nextjs` | `frontend-nextjs/.next` | `None` |
+| TypeScript validation | **PASS** | 0 | 33.918378s | `npm run build --prefix frontend-nextjs` | `frontend-nextjs/tsconfig.json` | `None` |
+| Playwright UAT | **PASS** | 0 | 3.115635s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe backend/scripts/run_playwright_uat.py` | `reports/uat/playwright_uat_report.json` | `None` |
+| Security tests | **PASS** | 0 | 2.446427s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_auth_security.py -v` | `backend/tests/test_auth_security.py` | `None` |
+| WebSocket tests | **PASS** | 0 | 5.403343s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_real_websocket_security.py -v` | `backend/tests/test_real_websocket_security.py` | `None` |
+| Authentication tests | **PASS** | 0 | 2.363779s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_real_firebase_auth.py -v` | `backend/tests/test_real_firebase_auth.py` | `None` |
+| CORS tests | **PASS** | 0 | 2.375842s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_cors_websocket_security.py -k test_cors -v` | `backend/tests/test_cors_websocket_security.py` | `None` |
+| Path portability tests | **PASS** | 0 | 1.458712s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_portability_audit.py -v` | `backend/tests/test_portability_audit.py` | `None` |
+| RAG provenance tests | **PASS** | 0 | 1.411897s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_rag_provenance_validation.py backend/tests/test_rag_provenance.py -v` | `backend/tests/test_rag_provenance.py` | `None` |
+| Cache isolation tests | **PASS** | 0 | 1.424981s | `C:\Users\srina\AppData\Local\Programs\Python\Python313\python.exe -m pytest backend/tests/test_cache_isolation.py backend/tests/test_rag_cache_collision.py -v` | `backend/tests/test_rag_cache_collision.py` | `None` |
