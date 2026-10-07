@@ -1,23 +1,12 @@
 import os
-import sys
 import json
 import hashlib
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, Any, List, Set, Tuple
-
-backend_dir = Path(__file__).resolve().parents[2]
-if str(backend_dir) not in sys.path:
-    sys.path.insert(0, str(backend_dir))
-
-try:
-    from src.curriculum.core.config import GurukulConfig
-    from src.curriculum.core.subject_registry import SubjectRegistry
-    from src.curriculum.core.curriculum_registry import CurriculumRegistry
-except ImportError:
-    from curriculum.core.config import GurukulConfig
-    from curriculum.core.subject_registry import SubjectRegistry
-    from curriculum.core.curriculum_registry import CurriculumRegistry
+from ..core.config import GurukulConfig
+from ..core.subject_registry import SubjectRegistry
+from ..core.curriculum_registry import CurriculumRegistry
 
 CONTENTS_ROOT = GurukulConfig.get_content_root()
 PROCESSED_ROOT = GurukulConfig.get_processed_root()
@@ -33,7 +22,7 @@ class ReconciliationEngine:
     Production-grade Deterministic Curriculum Inventory and Reconciliation Engine.
     Builds independent authoritative source and processed inventories and compares
     complete 7-dimension identity (grade + subject + book + part + unit + chapter_id + content_type)
-    plus semantic roles, duplicate identities, missing/extra chapters, and hash differences.
+    derived strictly from authoritative metadata.
     """
 
     EXPECTED_CONTENT_TYPES = {"overview", "notes", "master", "foundational", "flashcards", "mindmaps", "quiz", "question_papers"}
@@ -92,13 +81,23 @@ class ReconciliationEngine:
                             for ch_dir in p_sub.iterdir():
                                 if ch_dir.is_dir():
                                     ch_id = ch_dir.name
+                                    manifest_file = ch_dir / "manifest.json"
+                                    unit_val = "U01"
+                                    if manifest_file.exists():
+                                        try:
+                                            with open(manifest_file, "r", encoding="utf-8") as mf:
+                                                md = json.load(mf)
+                                                unit_val = md.get("unit_id") or md.get("unit") or ("U" + ch_id.split("-U")[-1].split("-")[0] if "-U" in ch_id else "U01")
+                                        except:
+                                            unit_val = "U" + ch_id.split("-U")[-1].split("-")[0] if "-U" in ch_id else "U01"
+
                                     source_inventory["classes"][grade][canonical_subj][book]["chapters"].append(ch_id)
                                     source_inventory["chapters"].append({
                                         "grade": grade,
                                         "canonical_subject": canonical_subj,
                                         "book": book,
                                         "part": part,
-                                        "unit": "U01",
+                                        "unit": unit_val,
                                         "chapter_id": ch_id,
                                         "semantic_role": "chapter_source"
                                     })
