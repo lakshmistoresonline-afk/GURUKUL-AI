@@ -34,3 +34,9 @@ def test_adversarial_parse_source_identity():
     assert identity["book"] == "maths_i"
     assert identity["part"] == "part1"
     assert identity["chapter_id"] == "G7-MAT-U01-C01"
+
+def test_forensic_verifier_corpus_execution():
+    report = ForensicFidelityVerifier.verify_corpus_fidelity()
+    assert report["fidelity_status"] == "PASS"
+    assert report["source_coverage_percentage"] >= 99.0
+    assert "provenance_ledger" in report

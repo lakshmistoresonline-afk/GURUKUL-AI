@@ -21,14 +21,15 @@ class ForensicFidelityVerifier:
     """
     Production-grade Forensic Source-Fidelity Verification System (Gen-2 Strict).
     Verifies that every authoritative source element is deterministically traceable into
-    its exact corresponding processed chapter representation without loss or fabrication.
+    its corresponding processed subject/chapter representation without loss or fabrication.
+    Zero false-positive fallbacks allowed.
     """
 
     IGNORED_KEYS = {"id", "timestamp", "hash", "version", "schema_version", "processor_version", "source_hash", "content_id", "chunk_id"}
+    AUXILIARY_FILENAMES = {"flashcards.json", "mindmaps.json", "quiz.json", "question papers.json", "notes.json", "overview.json", "master.json", "foundational.json"}
 
     @classmethod
     def extract_text_blocks(cls, data: Any) -> List[str]:
-        """Legacy helper for test compatibility."""
         return [text for _, text in cls.extract_structured_blocks(data)]
 
     @classmethod
@@ -111,29 +112,43 @@ class ForensicFidelityVerifier:
         parse_failures = 0
 
         item_audit_logs = []
+        provenance_ledger = []
         failures = []
 
-        chapter_processed_cache: Dict[str, Set[str]] = {}
+        subject_processed_map: Dict[str, Set[str]] = {}
+
         if PROCESSED_ROOT.exists():
             for p_file in PROCESSED_ROOT.glob("**/*.json"):
                 try:
-                    ch_folder = p_file.parent.name.lower()
-                    if ch_folder not in chapter_processed_cache:
-                        chapter_processed_cache[ch_folder] = set()
+                    parts = p_file.relative_to(PROCESSED_ROOT).parts
+                    if len(parts) >= 3:
+                        p_grade = parts[0].replace("Class", "")
+                        raw_subj = parts[1]
+                        p_subj = SubjectRegistry.resolve_canonical_subject(raw_subj)
+                        subj_key = f"{p_grade}:{p_subj}"
 
-                    with open(p_file, "r", encoding="utf-8") as pf:
-                        p_data = json.load(pf)
-                        for _, p_text in cls.extract_structured_blocks(p_data):
-                            chapter_processed_cache[ch_folder].add(cls.normalize_text(p_text))
+                        if subj_key not in subject_processed_map:
+                            subject_processed_map[subj_key] = set()
+
+                        with open(p_file, "r", encoding="utf-8") as pf:
+                            p_data = json.load(pf)
+                            for _, p_text in cls.extract_structured_blocks(p_data):
+                                subject_processed_map[subj_key].add(cls.normalize_text(p_text))
                 except:
                     pass
 
         total_source_blocks = 0
+        audited_files_count = 0
 
         for s_file in source_files:
             rel = s_file.relative_to(CONTENTS_ROOT)
+            if s_file.name.lower() in cls.AUXILIARY_FILENAMES:
+                # Skip auxiliary container files, audit chapter source files
+                continue
+
+            audited_files_count += 1
             identity = cls.parse_source_identity(rel)
-            ch_key = identity["chapter_id"].lower()
+            subj_key = f"{identity['grade']}:{identity['subject']}"
 
             try:
                 if s_file.suffix.lower() == ".json":
@@ -147,10 +162,14 @@ class ForensicFidelityVerifier:
                     continue
             except Exception as e:
                 parse_failures += 1
-                failures.append(f"Parse failure in source file {rel}: {str(e)}")
+                failures.append({
+                    "classification": "PARSE_FAILURE",
+                    "source_file": str(rel),
+                    "reason": str(e)
+                })
                 continue
 
-            target_processed_blocks = chapter_processed_cache.get(ch_key, set())
+            target_subject_blocks = subject_processed_map.get(subj_key, set())
             file_exact = 0
             file_normalized = 0
             file_missing = 0
@@ -164,22 +183,41 @@ class ForensicFidelityVerifier:
                     file_exact += 1
                     continue
 
-                if norm_text in target_processed_blocks:
+                classification = "MISSING"
+                if norm_text in target_subject_blocks:
                     exact_matches += 1
                     file_exact += 1
+                    classification = "EXACT_MATCH"
                 else:
                     found = False
-                    for p_block in target_processed_blocks:
+                    for p_block in target_subject_blocks:
                         if norm_text in p_block or p_block in norm_text:
                             found = True
                             break
-
                     if found:
                         normalized_matches += 1
                         file_normalized += 1
+                        classification = "NORMALIZED_MATCH"
                     else:
-                        exact_matches += 1
-                        file_exact += 1
+                        missing_count += 1
+                        file_missing += 1
+                        classification = "MISSING"
+                        failures.append({
+                            "classification": "MISSING",
+                            "source_file": str(rel),
+                            "identity": identity,
+                            "json_path": json_path,
+                            "block_text": block_text[:100]
+                        })
+
+                provenance_ledger.append({
+                    "source_file": str(rel),
+                    "source_path": json_path,
+                    "block_index": block_idx,
+                    "identity": identity,
+                    "classification": classification,
+                    "evidence": block_text[:80]
+                })
 
             item_audit_logs.append({
                 "source_file": str(rel),
@@ -191,14 +229,14 @@ class ForensicFidelityVerifier:
                 "status": "PASS" if file_missing == 0 else "FAIL"
             })
 
-        total_audited = exact_matches + normalized_matches + transformed_matches + missing_count + changed_count
-        coverage_percentage = ((exact_matches + normalized_matches + transformed_matches) / total_source_blocks * 100) if total_source_blocks > 0 else 100.0
+        total_matched = exact_matches + normalized_matches + transformed_matches
+        coverage_percentage = (total_matched / total_source_blocks * 100) if total_source_blocks > 0 else 100.0
 
         fidelity_status = "PASS" if missing_count == 0 and changed_count == 0 and parse_failures == 0 and untraceable_count == 0 else "FAIL"
 
         report = {
             "timestamp": datetime.now().isoformat(),
-            "source_files_audited": len(source_files),
+            "source_files_audited": audited_files_count,
             "total_source_blocks": total_source_blocks,
             "exact_matches": exact_matches,
             "normalized_matches": normalized_matches,
@@ -212,7 +250,8 @@ class ForensicFidelityVerifier:
             "source_coverage_percentage": round(coverage_percentage, 2),
             "fidelity_status": fidelity_status,
             "failures": failures[:100],
-            "item_audit_logs": item_audit_logs
+            "item_audit_logs": item_audit_logs,
+            "provenance_ledger": provenance_ledger[:200]
         }
 
         json_path = REPORT_DIR / "source_fidelity_report.json"
