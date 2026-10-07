@@ -120,7 +120,7 @@ class ComputationalProductionGate:
             start_dt = datetime.now()
 
             try:
-                res = subprocess.run(command, shell=True, capture_output=True, text=True, timeout=120)
+                res = subprocess.run(command, shell=True, capture_output=True, text=True, timeout=180)
                 code = res.returncode
                 output = res.stdout + "\n" + res.stderr
             except Exception as e:

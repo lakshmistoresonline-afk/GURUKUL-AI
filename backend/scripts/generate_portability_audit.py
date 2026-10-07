@@ -16,8 +16,8 @@ PORTABILITY_REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 class PathPortabilityAuditor:
     """
-    Audits the entire repository for absolute hardcoded developer paths (e.g., D:/GURUKUL)
-    in production source code and verifies config-driven portability via environment variables.
+    Optimized high-speed Path Portability Auditor.
+    Sweeps source code files for forbidden absolute developer paths.
     """
 
     @classmethod
@@ -27,10 +27,10 @@ class PathPortabilityAuditor:
 
         violations = []
         scanned_files_count = 0
+        skip_dirs = {".git", ".next", "node_modules", "__pycache__", ".pytest_cache", "target", "build", "dist"}
 
         for root, dirs, files in os.walk(repo_root):
-            if ".git" in root or ".next" in root or "node_modules" in root or "__pycache__" in root or ".pytest_cache" in root or "target" in root:
-                continue
+            dirs[:] = [d for d in dirs if d not in skip_dirs]
             for file in files:
                 if file.endswith((".py", ".ts", ".tsx", ".json", ".md")):
                     if ".rustc_info" in file:

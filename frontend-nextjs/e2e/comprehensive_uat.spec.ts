@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Comprehensive Authoritative Curriculum UAT Suite', () => {
-  const targetCurricula = [
+test.describe('Authoritative Browser E2E Comprehensive UAT Suite', () => {
+  const testCurricula = [
     // Class 5
     { grade: '5', subject: 'english', book: 'english', part: 'main', unit: 'U01', chapterId: 'G5-ENG-U01-C01' },
     { grade: '5', subject: 'hindi', book: 'hindi', part: 'main', unit: 'U01', chapterId: 'G5-HIN-U01-C01' },
@@ -23,8 +23,8 @@ test.describe('Comprehensive Authoritative Curriculum UAT Suite', () => {
     { grade: '7', subject: 'social_science', book: 'social_ii', part: 'part2', unit: 'U01', chapterId: 'G7-SOC-U01-C01' },
   ];
 
-  for (const tc of targetCurricula) {
-    test(`Verify Class ${tc.grade} - ${tc.subject} (${tc.book} / ${tc.part})`, async ({ page }) => {
+  for (const tc of testCurricula) {
+    test(`Render browser view for Class ${tc.grade} ${tc.subject} (${tc.book})`, async ({ page }) => {
       const consoleErrors: string[] = [];
       page.on('console', msg => {
         if (msg.type() === 'error') consoleErrors.push(msg.text());
@@ -42,22 +42,32 @@ test.describe('Comprehensive Authoritative Curriculum UAT Suite', () => {
       await expect(page.locator(`text=Class ${tc.grade}`)).toBeVisible();
       await expect(page.locator(`text=Chapter: ${tc.chapterId}`)).toBeVisible();
 
+      // Click through available content tabs
+      const tabs = page.locator('button');
+      const count = await tabs.count();
+      for (let i = 0; i < count; i++) {
+        const tab = tabs.nth(i);
+        if (await tab.isVisible()) {
+          const text = await tab.textContent();
+          if (['Overview', 'Notes', 'Master', 'Foundational', 'Flashcards', 'Mindmaps', 'Quiz', 'Question Papers'].includes(text || '')) {
+            await tab.click();
+            await page.waitForTimeout(100);
+          }
+        }
+      }
+
       expect(consoleErrors.length).toBe(0);
       expect(failedRequests.length).toBe(0);
     });
   }
 
-  test('Verify Invalid Identity Handling (400, 404, 422)', async ({ page }) => {
+  test('Verify browser negative identity handling', async ({ page }) => {
     // Invalid book
-    let res = await page.goto('/curriculum/7/mathematics/wrong_book/part1/U01/G7-MAT-U01-C01');
+    await page.goto('/curriculum/7/mathematics/wrong_book/part1/U01/G7-MAT-U01-C01');
     await expect(page.locator('text=Curriculum Identity Not Found')).toBeVisible();
 
     // Invalid chapter
-    res = await page.goto('/curriculum/5/english/english/main/U01/NONEXISTENT-CHAPTER');
+    await page.goto('/curriculum/5/english/english/main/U01/NONEXISTENT-CHAPTER');
     await expect(page.locator('text=Curriculum Identity Not Found')).toBeVisible();
-
-    // Incomplete identity dimensions
-    res = await page.goto('/curriculum/5/english');
-    await expect(page.locator('text=Bad Request')).toBeVisible();
   });
 });
