@@ -26,7 +26,7 @@ def test_gen2_processor_resolution_class5_english():
     assert isinstance(proc, Class5EnglishProcessor)
 
     res = proc.process(identity, {"title": "Papa's Spectacles"})
-    assert res["title"] == "Papa's Spectacles"
+    assert res["normalized_content"]["title"] == "Papa's Spectacles"
 
 def test_gen2_processor_resolution_class7_maths_i_and_ii():
     id_i = CurriculumIdentity(
