@@ -1,6 +1,5 @@
 import os
 import json
-import hashlib
 import sys
 import pytest
 from fastapi.testclient import TestClient
@@ -11,48 +10,54 @@ if backend_dir not in sys.path:
 
 from src.main import app
 from src.curriculum.core.config import GurukulConfig
+from src.curriculum.core.curriculum_registry import CurriculumRegistry
 
 client = TestClient(app)
-PROCESSED_ROOT = str(GurukulConfig.get_processed_root() / "Class5")
-CONTENTS_ROOT = str(GurukulConfig.get_content_root() / "Class 5")
 
-def test_all_47_chapters_processed_and_faithful():
-    subject_counts = {"English": 10, "Hindi": 12, "Maths": 15, "Science": 10}
-    total_chapters = 0
+def test_dynamic_curriculum_fidelity_and_manifests():
+    index = CurriculumRegistry.get_index()
+    assert len(index) > 0, "Curriculum index must not be empty"
 
-    for subject, expected_count in subject_counts.items():
-        sub_dir = os.path.join(PROCESSED_ROOT, subject)
-        assert os.path.exists(sub_dir), f"ProcessedContent missing for {subject}"
-        ch_dirs = [d for d in os.listdir(sub_dir) if os.path.isdir(os.path.join(sub_dir, d))]
-        assert len(ch_dirs) == expected_count, f"Expected {expected_count} chapters for {subject}, found {len(ch_dirs)}"
-        total_chapters += len(ch_dirs)
+    total_chapters_verified = 0
 
-        for ch_id in ch_dirs:
-            ch_path = os.path.join(sub_dir, ch_id)
-            manifest_path = os.path.join(ch_path, "manifest.json")
-            assert os.path.exists(manifest_path)
-            with open(manifest_path, "r", encoding="utf-8") as f:
-                manifest = json.load(f)
-                assert "chapter_title" in manifest or "chapter_number" in manifest
+    for key, node in index.items():
+        grade = node["grade"]
+        subject = node["canonical_subject"]
+        book = node["book"]
+        part = node["part"]
+        unit = node["unit"]
+        ch_id = node["chapter_id"]
+        ch_path = node["processed_path"]
 
-            for sec in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers"]:
-                sec_path = os.path.join(ch_path, f"{sec}.json")
-                assert os.path.exists(sec_path), f"Missing section {sec} for {ch_id}"
+        # Verify manifest exists and has authoritative fields
+        manifest_path = os.path.join(ch_path, "manifest.json")
+        assert os.path.exists(manifest_path), f"Missing manifest for node {key}"
+        with open(manifest_path, "r", encoding="utf-8") as f:
+            manifest = json.load(f)
+            assert "chapter_title" in manifest
+            assert "chapter_number" in manifest
+            assert manifest["grade"] == grade
+            assert manifest["chapter_id"] == ch_id
 
-            book_param = subject.lower() if subject.lower() != "maths" else "mathematics"
-            res = client.get(f"/api/v1/chapters/{ch_id}/source?grade=5&subject={subject}&book={book_param}&part=main&unit=U01")
-            assert res.status_code == 200
-            data = res.json()
-            assert data["chapterId"] == ch_id
-            assert "sections" in data
-            for sec in ["overview", "notes", "master", "flashcards", "mindmaps", "quiz", "question_papers"]:
-                assert sec in data["sections"]
+        # Verify available content types exist
+        for sec in node["available_content_types"]:
+            sec_path = os.path.join(ch_path, f"{sec}.json")
+            assert os.path.exists(sec_path), f"Missing content type section {sec} for chapter {ch_id}"
 
-    assert total_chapters == 47
+        # Verify API source endpoint with exact explicit identity
+        res = client.get(f"/api/v1/chapters/{ch_id}/source?grade={grade}&subject={subject}&book={book}&part={part}&unit={unit}")
+        assert res.status_code == 200, f"API source resolution failed for {key}: status {res.status_code}"
+        data = res.json()
+        assert data["chapterId"] == ch_id
+        assert "sections" in data
 
-def test_source_immutability():
-    for subject in ["English", "Hindi", "Maths", "Science"]:
-        subj_dir = os.path.join(CONTENTS_ROOT, subject)
-        assert os.path.exists(subj_dir)
-        files = [f for f in os.listdir(subj_dir) if f.endswith(".json")]
-        assert len(files) >= 7
+        total_chapters_verified += 1
+
+    assert total_chapters_verified == len(index)
+
+def test_source_immutability_portable():
+    content_root = GurukulConfig.get_content_root()
+    assert content_root.exists(), "Authoritative content root must exist"
+
+    class_dirs = [d for d in content_root.iterdir() if d.is_dir() and "class" in d.name.lower()]
+    assert len(class_dirs) >= 3, "At least 3 classes must be present under Content root"

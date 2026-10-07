@@ -5,13 +5,19 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 
-REPO_ROOT = Path(r"D:/GURUKUL")
-UAT_REPORT_DIR = REPO_ROOT / "reports" / "uat"
+BACKEND_DIR = Path(__file__).resolve().parents[1]
+if str(BACKEND_DIR) not in sys.path:
+    sys.path.insert(0, str(BACKEND_DIR))
+
+from src.curriculum.core.config import GurukulConfig
+
+REPO_ROOT = GurukulConfig.get_reports_root().parent
+UAT_REPORT_DIR = GurukulConfig.get_reports_root() / "uat"
 UAT_REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 def run_uat():
     print("==========================================================================")
-    print("GURUKUL AI — GENUINE AUTHORITATIVE E2E UAT EXECUTION SUITE")
+    print("GURUKUL AI — GENUINE AUTHORITATIVE E2E UAT EXECUTION SUITE (PORTABLE)")
     print("==========================================================================\n")
 
     cmd = f"{sys.executable} -m pytest backend/tests/test_authoritative_api_contracts_hardened.py backend/tests/test_api_integration.py backend/tests/test_isolation.py -v"
