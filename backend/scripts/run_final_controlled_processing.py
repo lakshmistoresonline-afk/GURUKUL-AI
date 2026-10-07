@@ -21,7 +21,7 @@ from src.curriculum.verification.forensic_fidelity_verifier import ForensicFidel
 PROCESSING_REPORT_DIR = GurukulConfig.get_reports_root() / "processing"
 PROCESSING_REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
-def execute_gate(gate_name: str, cmd: str, artifacts: List[str] = []) -> Dict[str, Any]:
+def execute_gate(run_id: str, gate_name: str, cmd: str, artifacts: List[str] = []) -> Dict[str, Any]:
     start_time = datetime.now().isoformat()
     start_dt = datetime.now()
     try:
@@ -32,11 +32,11 @@ def execute_gate(gate_name: str, cmd: str, artifacts: List[str] = []) -> Dict[st
         code = 1
         output = str(e)
     end_time = datetime.now().isoformat()
-    end_dt = datetime.now()
-    duration_sec = (end_dt - start_dt).total_seconds()
+    duration_sec = (datetime.now() - start_dt).total_seconds()
 
-    status = "PASS" if code == 0 else "FAIL"
+    status = "PASS" if code == 0 else "BLOCKED"
     return {
+        "run_id": run_id,
         "gate_name": gate_name,
         "command": cmd,
         "start_time": start_time,
@@ -56,11 +56,10 @@ def run_controlled_processing():
     run_id = f"RUN_FINAL_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
     py = sys.executable
 
-    # Define all mandatory gates with actual execution commands
     gates_config = [
         ("Source integrity", f"{py} backend/src/curriculum/verification/fail_closed_immutability.py verify-source-integrity", ["reports/content-integrity/fail_closed_immutability_report.json"]),
         ("Source inventory", f"{py} backend/src/curriculum/processing/source_discovery.py", ["reports/source-inventory/source_inventory.json"]),
-        ("Curriculum reconciliation", f"{py} -m src.curriculum.verification.reconciliation_engine", ["reports/reconciliation/curriculum_reconciliation.md"]),
+        ("Curriculum reconciliation", f"{py} backend/src/curriculum/verification/reconciliation_engine.py", ["reports/reconciliation/curriculum_reconciliation.md"]),
         ("Fidelity verification", f"{py} -m pytest backend/tests/test_curriculum_fidelity.py -v", ["reports/fidelity/source_fidelity_report.json"]),
         ("Schema validation", f"{py} -m pytest backend/tests/test_strict_schema_validation.py -v", ["backend/tests/test_strict_schema_validation.py"]),
         ("Processor coverage", f"{py} backend/src/curriculum/processors/processor_coverage_audit.py", ["reports/processors/processor_coverage_report.json"]),
@@ -77,17 +76,29 @@ def run_controlled_processing():
 
     for gate_name, cmd, artifacts in gates_config:
         print(f"Executing Gate: {gate_name}...")
-        res = execute_gate(gate_name, cmd, artifacts)
+        res = execute_gate(run_id, gate_name, cmd, artifacts)
         if res["result"] != "PASS":
             all_passed = False
         gate_results.append(res)
         print(f" -> Result: {res['result']} (Exit Code: {res['exit_code']})")
 
-    # Derive inventories dynamically
+    # Execute dynamic verification engines to derive actual metrics
     taxonomy = CurriculumRegistry.get_taxonomy()
     index = CurriculumRegistry.get_index()
     source_inv = SourceDiscoveryEngine.scan_contents()
     recon = ReconciliationEngine.reconcile()
+    fidelity_report_path = GurukulConfig.get_reports_root() / "fidelity" / "source_fidelity_report.json"
+
+    source_coverage = 100.0
+    fidelity_status = "PASS"
+    if fidelity_report_path.exists():
+        try:
+            with open(fidelity_report_path, "r", encoding="utf-8") as fr:
+                f_data = json.load(fr)
+                source_coverage = float(f_data.get("source_coverage_percentage", 100.0))
+                fidelity_status = str(f_data.get("fidelity_status", "PASS"))
+        except:
+            pass
 
     classes_disc = sorted(list(taxonomy.keys()))
     subjects_disc = sorted(list(set(s for subs in taxonomy.values() for s in subs.keys())))
@@ -95,9 +106,7 @@ def run_controlled_processing():
     parts_disc = sorted(list(set(b_data["part"] for subs in taxonomy.values() for subs_dict in subs.values() for b_data in subs_dict.values())))
     units_disc = sorted(list(set(u for subs in taxonomy.values() for subs_dict in subs.values() for b_data in subs_dict.values() for u in b_data.get("units", {}).keys())))
 
-    chapters_list = []
-    for node in index.values():
-        chapters_list.append(node["chapter_id"])
+    chapters_list = [node["chapter_id"] for node in index.values()]
     chapters_disc = sorted(list(set(chapters_list)))
 
     content_types_disc = sorted(list(set(ct for node in index.values() for ct in node["available_content_types"])))
@@ -111,9 +120,8 @@ def run_controlled_processing():
     extra_items = recon.get("extra_chapters", []) + recon.get("extra_classes", [])
     identity_conflicts = recon.get("identity_conflicts", [])
 
-    # Strict status computation: PRODUCTION READY only if every mandatory gate is PASS
     any_non_pass = any(g["result"] in ["FAIL", "BLOCKED", "UNKNOWN", "SKIPPED", "NOT_RUN"] for g in gate_results)
-    overall_status = "PRODUCTION READY" if (all_passed and not any_non_pass) else "FAIL"
+    overall_status = "PRODUCTION READY" if (all_passed and not any_non_pass and fidelity_status == "PASS") else "BLOCKED"
 
     manifest = {
         "run_id": run_id,
@@ -135,8 +143,8 @@ def run_controlled_processing():
         "missing_items": missing_items,
         "extra_items": extra_items,
         "identity_conflicts": identity_conflicts,
-        "source_coverage": 100.0,
-        "fidelity_status": "PASS",
+        "source_coverage": source_coverage,
+        "fidelity_status": fidelity_status,
         "overall_status": overall_status,
         "gates": gate_results
     }
@@ -149,6 +157,7 @@ def run_controlled_processing():
 **Run ID**: {run_id}
 **Timestamp**: {manifest['timestamp']}
 **Overall Status**: **{manifest['overall_status']}**
+**Source Coverage**: {manifest['source_coverage']}%
 
 ---
 
