@@ -22,19 +22,19 @@ PROCESSING_REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 def run_controlled_processing():
     print("==========================================================================")
-    print("GURUKUL AI — FINAL CONTROLLED PROCESSING & VERIFICATION RUN")
+    print("GURUKUL AI — FINAL CONTROLLED PROCESSING & VERIFICATION RUN (FAIL-CLOSED)")
     print("==========================================================================\n")
 
     run_id = f"RUN_FINAL_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
-    # 1. PRE-FLIGHT CHECKS
+    # 1. PRE-FLIGHT CHECKS (FAIL-CLOSED IMMUTABILITY)
     print("[1/3] Pre-flight verification checks...")
 
     imm_res = FailClosedImmutabilitySystem.verify_source_integrity()
     if imm_res["overall_result"] != "PASS":
-        print(f"ABORT: Contents/ immutability verification failed pre-flight: {imm_res}")
+        print(f"ABORT: Fail-closed cryptographic immutability check FAILED: {imm_res}")
         sys.exit(1)
-    print(" -> Contents immutability baseline: PASS")
+    print(" -> Fail-closed cryptographic immutability: PASS")
 
     source_inv = SourceDiscoveryEngine.scan_contents()
     classes_cnt = len(source_inv.get("classes", []))
@@ -70,7 +70,6 @@ def run_controlled_processing():
         sys.exit(1)
     print(f" -> Source fidelity verification: PASS ({fidelity['source_coverage_percentage']}% coverage)")
 
-    # Run pytest test suite
     print(" -> Running full backend test suite...")
     test_res = subprocess.run([sys.executable, "-m", "pytest", "backend/tests/", "-v"], capture_output=True, text=True)
     if test_res.returncode != 0:
@@ -78,7 +77,6 @@ def run_controlled_processing():
         sys.exit(1)
     print(" -> Backend tests: PASS")
 
-    # Run frontend production build
     print(" -> Running frontend production build...")
     build_res = subprocess.run("npm run build --prefix frontend-nextjs", shell=True, capture_output=True, text=True)
     if build_res.returncode != 0:
