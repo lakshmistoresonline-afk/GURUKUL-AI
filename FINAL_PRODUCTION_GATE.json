@@ -1,164 +1,281 @@
 {
-  "validator_version": "2.5.0-STRICT",
-  "execution_timestamp": "2026-10-07T11:14:14.940415",
-  "overall_status": "PASS",
+  "run_id": "RUN_GATE_20261007_114202",
+  "validator_version": "3.0.0-STRICT-EVIDENCE",
+  "execution_timestamp": "2026-10-07T11:42:02.217573",
+  "overall_status": "PRODUCTION READY",
   "input_hashes": {
     "config": "70ccac42df047606239a5229dc7938dac6cefca902812b398c05efeb0ca1813d",
-    "registry": "a8e772f3c0aa832b9889d407a8254e932fd357440e060215dc16522b4fdb93d3"
+    "production_gate": "a137b9bef5bdbe84fdd52d8633f7d4913643090eb62432e78fdab7830244b795"
   },
   "evidence_hashes": {
-    "immutability_report": "6d6e003fc11f978e308a05a7b2d974b2a7af18ec99ee313af5ba75a99d13e8c9",
-    "reconciliation_report": "6214064ca3a8fa4b41588adea3088593a7d0ca2f1e839755f5d08b2eedced3ee",
-    "fidelity_report": "120382e6a887951382ad1fec3d2bba93444b0e62944a84d26ddd751f88e7aa52",
-    "uat_report": "0784e5d70fb92d8a5f20bdbc11ea0ce066e8abe1f1305a93f89e48c4f1a7e742"
+    "source immutability": "10cbde5ce6dce107845a2be8d39bd8f77a47e4c7fb74d954cd077f35fbb4cee7",
+    "source inventory": "19dfc38ef65c4daa4934c677956c4e9b71654e82206dec8f2f95efd426129ccc",
+    "exact curriculum reconciliation": "ac537943d64c6edd3e223d7a166d4bbe4e782323bca858f9e4e2c1431172eb85",
+    "forensic fidelity": "a6b3b6b7bb327f6834169a6959bb7d424ca523f64606b29cb87ec97b49b6fc75",
+    "schema validation": "edb9b0244f05890e64d6115a0cc7aa465971c36603649a7328e920ecc10574e5",
+    "processor coverage": "20dba3d0f5d0c05aa7e5e0c8af0cd82fcb4d413be61406bcbc4b36b23d8ce00f",
+    "processor contract tests": "127114fca170c8c3178abe6ab216fb21aec507ba57aa521c076e762810fffa25",
+    "curriculum registry": "da7eea2e1d8f3229d4d997614a84a81029f3ae45ef523b19e9a997b6d7b818b4",
+    "API contract tests": "254ed17ad45f0bc24fa0a6ca3788e52dbb589010bb77a36ee218ac507c924289",
+    "renderer coverage": "f9a70b2191a565c1a904ea5177837937ed625c28e8c8a67c6a082ff79a4a769d",
+    "frontend typecheck": "4b9db076fc872594c8b91cd475bf7c68282b6355295e5bad5fb35898d70caea2",
+    "frontend production build": "d25bc6bbcfff16d08192dcb3a5bc45066d0b40c7228b16cee89509c44cad2157",
+    "real browser UAT": "0d5ca2af90942230625efaf1ab4a58fd78dccf8629d666dc8560fb969895ca8f",
+    "authentication": "54ac534d55cb529d82eef83d84b805282695c5a2cf2a19ee59897206cdc23034",
+    "authorization": "c9139e720327611ede04163eee492b1dc38bb7c19288ad2d70dd61b25572543b",
+    "WebSocket security": "eab5e636efcd36d1d08adaa80c5b86ea36b5db5672ffbe5e48acfecb0201a5fa",
+    "CORS": "0eaa45cdad92efdd9740c71b5206c3f7ffbafee9745f66314ae3c2b0f20fd8e0",
+    "portability": "6eac40477fb008a708a329525e3cfe73fdbd4361602cdff8261b4e3d44517dcd",
+    "provenance": "db5a9989518219632d3fbd56d287846dd2aafeb1c59f13f51c10e11b2fc47ea4",
+    "cache/RAG isolation": "c1ec94fcd012d4c5bc45ac3571272866b06d9ac871a3b598ca6dc614dd56c72d"
   },
   "metrics": {
-    "total_categories": 20,
-    "passed_categories": 20,
-    "blocked_categories": 0,
-    "not_applicable_categories": 0
+    "total_gates": 20,
+    "passed": 20,
+    "blocked": 0,
+    "failed": 0
   },
   "reason_codes": [],
   "categories": [
     {
-      "category_id": "historical coverage",
+      "category_id": "source immutability",
       "status": "PASS",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/src/curriculum/verification/fail_closed_immutability.py verify-source-integrity",
+      "start_time": "2026-10-07T11:42:02.218981",
+      "end_time": "2026-10-07T11:42:02.588890",
+      "duration_seconds": 0.369915,
+      "exit_code": 0,
       "required_evidence": "D:\\GURUKUL\\reports\\content-integrity\\fail_closed_immutability_report.json",
-      "acceptance_rules": "Cryptographic integrity baseline verified successfully.",
-      "blocking_rules": "Missing or failed cryptographic integrity report."
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "raw integrity",
+      "category_id": "source inventory",
       "status": "PASS",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/src/curriculum/processing/source_discovery.py",
+      "start_time": "2026-10-07T11:42:02.589475",
+      "end_time": "2026-10-07T11:42:02.957043",
+      "duration_seconds": 0.367575,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\reports\\source-inventory\\source_inventory.json",
+      "evidence_exists": true,
+      "failure_reason": null
+    },
+    {
+      "category_id": "exact curriculum reconciliation",
+      "status": "PASS",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/src/curriculum/verification/reconciliation_engine.py",
+      "start_time": "2026-10-07T11:42:02.957739",
+      "end_time": "2026-10-07T11:42:04.088159",
+      "duration_seconds": 1.130427,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\reports\\reconciliation\\curriculum_reconciliation.md",
+      "evidence_exists": true,
+      "failure_reason": null
+    },
+    {
+      "category_id": "forensic fidelity",
+      "status": "PASS",
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_curriculum_fidelity.py -v",
+      "start_time": "2026-10-07T11:42:04.088725",
+      "end_time": "2026-10-07T11:42:08.082618",
+      "duration_seconds": 3.993902,
+      "exit_code": 0,
       "required_evidence": "D:\\GURUKUL\\reports\\fidelity\\source_fidelity_report.json",
-      "acceptance_rules": "Forensic source fidelity coverage >= 99.9%.",
-      "blocking_rules": "Missing or failed source fidelity report."
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "security identity",
+      "category_id": "schema validation",
       "status": "PASS",
-      "required_evidence": "backend/tests/test_authoritative_api_contracts_hardened.py",
-      "acceptance_rules": "Exact 7-dimension identity isolation verified.",
-      "blocking_rules": "Identity cross-leakage detected."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_strict_schema_validation.py -v",
+      "start_time": "2026-10-07T11:42:08.083336",
+      "end_time": "2026-10-07T11:42:09.767765",
+      "duration_seconds": 1.684438,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_strict_schema_validation.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "PIT universe",
+      "category_id": "processor coverage",
       "status": "PASS",
-      "required_evidence": "backend/src/curriculum/core/curriculum_registry.py",
-      "acceptance_rules": "Authoritative index-driven discovery complete.",
-      "blocking_rules": "Fabricated catalog used."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/src/curriculum/processors/processor_coverage_audit.py",
+      "start_time": "2026-10-07T11:42:09.768367",
+      "end_time": "2026-10-07T11:42:10.846564",
+      "duration_seconds": 1.078201,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\reports\\processors\\processor_coverage_report.json",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "temporal integrity",
+      "category_id": "processor contract tests",
       "status": "PASS",
-      "required_evidence": "backend/tests/test_fail_closed_immutability.py",
-      "acceptance_rules": "Fail-closed immutability lifecycle enforced.",
-      "blocking_rules": "Stale or mutable baseline."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_processor_contracts.py backend/tests/test_processor_registry_hardened.py -v",
+      "start_time": "2026-10-07T11:42:10.847102",
+      "end_time": "2026-10-07T11:42:12.894655",
+      "duration_seconds": 2.047563,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_processor_contracts.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "required PIT layers",
+      "category_id": "curriculum registry",
       "status": "PASS",
-      "required_evidence": "backend/src/curriculum/core/curriculum_identity.py",
-      "acceptance_rules": "Mandatory identity dimensions present.",
-      "blocking_rules": "Missing identity dimensions."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_authoritative_registry.py backend/tests/test_curriculum_registry_hardened.py -v",
+      "start_time": "2026-10-07T11:42:12.895200",
+      "end_time": "2026-10-07T11:42:14.763517",
+      "duration_seconds": 1.868323,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_authoritative_registry.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "corporate actions",
+      "category_id": "API contract tests",
       "status": "PASS",
-      "required_evidence": "backend/src/curriculum/security/websocket_security.py",
-      "acceptance_rules": "WebSocket security and event allow-listing enforced.",
-      "blocking_rules": "Unauthorized event or payload breach."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_authoritative_api_contracts_hardened.py backend/tests/test_api_integration.py -v",
+      "start_time": "2026-10-07T11:42:14.764107",
+      "end_time": "2026-10-07T11:42:17.750517",
+      "duration_seconds": 2.986417,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_authoritative_api_contracts_hardened.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "walk-forward",
+      "category_id": "renderer coverage",
       "status": "PASS",
-      "required_evidence": "backend/tests/test_authoritative_pipeline.py",
-      "acceptance_rules": "Progressive pipeline resolution verified.",
-      "blocking_rules": "Pipeline resolution failure."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_forensic_fidelity.py -v",
+      "start_time": "2026-10-07T11:42:17.751044",
+      "end_time": "2026-10-07T11:42:19.150559",
+      "duration_seconds": 1.399523,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_forensic_fidelity.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "calibration",
+      "category_id": "frontend typecheck",
       "status": "PASS",
-      "required_evidence": "backend/src/curriculum/verification/forensic_fidelity_verifier.py",
-      "acceptance_rules": "Forensic block extraction verified.",
-      "blocking_rules": "Uncalibrated block extraction."
+      "command": "npm run build --prefix frontend-nextjs",
+      "start_time": "2026-10-07T11:42:19.151085",
+      "end_time": "2026-10-07T11:42:52.775944",
+      "duration_seconds": 33.624868,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\frontend-nextjs\\tsconfig.json",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "conformal",
+      "category_id": "frontend production build",
       "status": "PASS",
-      "required_evidence": "backend/tests/test_strict_schema_validation.py",
-      "acceptance_rules": "Strict schema validation passing.",
-      "blocking_rules": "Schema violations present."
+      "command": "npm run build --prefix frontend-nextjs",
+      "start_time": "2026-10-07T11:42:52.776542",
+      "end_time": "2026-10-07T11:43:26.267458",
+      "duration_seconds": 33.490921,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\frontend-nextjs\\.next",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "economic validation",
+      "category_id": "real browser UAT",
       "status": "PASS",
-      "required_evidence": "backend/tests/test_portability_audit.py",
-      "acceptance_rules": "Portability and config isolation verified.",
-      "blocking_rules": "Hardcoded developer paths present."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/scripts/run_playwright_uat.py",
+      "start_time": "2026-10-07T11:43:26.323366",
+      "end_time": "2026-10-07T11:43:29.661369",
+      "duration_seconds": 3.338004,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\reports\\uat\\playwright_uat_report.json",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "drift",
+      "category_id": "authentication",
       "status": "PASS",
-      "required_evidence": "reports/content-integrity/verify_two_directory_immutability.py",
-      "acceptance_rules": "Contents/ directory drift equals zero.",
-      "blocking_rules": "Corpus drift detected."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_real_firebase_auth.py -v",
+      "start_time": "2026-10-07T11:43:29.661926",
+      "end_time": "2026-10-07T11:43:32.264348",
+      "duration_seconds": 2.602428,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_real_firebase_auth.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "multiple-testing",
+      "category_id": "authorization",
       "status": "PASS",
-      "required_evidence": "backend/tests/",
-      "acceptance_rules": "All 109 unit tests passing successfully.",
-      "blocking_rules": "Test failures detected."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_auth_security.py -v",
+      "start_time": "2026-10-07T11:43:32.264970",
+      "end_time": "2026-10-07T11:43:34.789336",
+      "duration_seconds": 2.52437,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_auth_security.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "adversarial validation",
+      "category_id": "WebSocket security",
       "status": "PASS",
-      "required_evidence": "backend/tests/test_forensic_fidelity_adversarial.py",
-      "acceptance_rules": "Adversarial failure injection caught.",
-      "blocking_rules": "Adversarial bypass detected."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_real_websocket_security.py -v",
+      "start_time": "2026-10-07T11:43:34.789869",
+      "end_time": "2026-10-07T11:43:40.378940",
+      "duration_seconds": 5.589078,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_real_websocket_security.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "holdout isolation",
+      "category_id": "CORS",
       "status": "PASS",
-      "required_evidence": "backend/tests/test_isolation.py",
-      "acceptance_rules": "Class and chapter isolation verified.",
-      "blocking_rules": "Cross-class leakage detected."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_cors_websocket_security.py -k test_cors -v",
+      "start_time": "2026-10-07T11:43:40.379488",
+      "end_time": "2026-10-07T11:43:42.841871",
+      "duration_seconds": 2.462391,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_cors_websocket_security.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "forensics",
+      "category_id": "portability",
       "status": "PASS",
-      "required_evidence": "reports/fidelity/source_fidelity_report.json",
-      "acceptance_rules": "Forensic provenance ledger validated.",
-      "blocking_rules": "Untraceable source blocks."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe backend/scripts/generate_portability_audit.py",
+      "start_time": "2026-10-07T11:43:42.842423",
+      "end_time": "2026-10-07T11:45:22.683762",
+      "duration_seconds": 99.841362,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\reports\\portability\\path_portability_report.json",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "clean-room",
+      "category_id": "provenance",
       "status": "PASS",
-      "required_evidence": "reports/reconciliation/curriculum_inventory.json",
-      "acceptance_rules": "Independent source and processed inventory reconciliation.",
-      "blocking_rules": "Inventory discrepancy detected."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_rag_provenance.py backend/tests/test_rag_provenance_validation.py -v",
+      "start_time": "2026-10-07T11:45:22.684340",
+      "end_time": "2026-10-07T11:45:24.613474",
+      "duration_seconds": 1.929138,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_rag_provenance.py",
+      "evidence_exists": true,
+      "failure_reason": null
     },
     {
-      "category_id": "Android build",
+      "category_id": "cache/RAG isolation",
       "status": "PASS",
-      "required_evidence": "frontend-nextjs/",
-      "acceptance_rules": "Frontend build and bundle optimization complete.",
-      "blocking_rules": "Build failure."
-    },
-    {
-      "category_id": "Android runtime",
-      "status": "PASS",
-      "required_evidence": "reports/uat/playwright_uat_report.json",
-      "acceptance_rules": "Client runtime UAT execution verified.",
-      "blocking_rules": "Runtime error or crash."
-    },
-    {
-      "category_id": "signal-only safety",
-      "status": "PASS",
-      "required_evidence": "backend/tests/test_real_firebase_auth.py",
-      "acceptance_rules": "Fail-closed authentication and zero trust security.",
-      "blocking_rules": "Unauthenticated access allowed."
+      "command": "C:\\Users\\srina\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest backend/tests/test_cache_isolation.py backend/tests/test_rag_cache_collision.py -v",
+      "start_time": "2026-10-07T11:45:24.614015",
+      "end_time": "2026-10-07T11:45:26.215530",
+      "duration_seconds": 1.601517,
+      "exit_code": 0,
+      "required_evidence": "D:\\GURUKUL\\backend\\tests\\test_rag_cache_collision.py",
+      "evidence_exists": true,
+      "failure_reason": null
     }
   ]
 }
