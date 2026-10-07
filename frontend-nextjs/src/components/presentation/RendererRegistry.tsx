@@ -58,18 +58,14 @@ class RendererRegistry {
   static resolve(params: RendererResolutionParams): React.ReactNode {
     const grade = (params.grade || '').trim().toLowerCase();
     const subject = (params.subject || '').trim().toLowerCase();
-    const book = (params.book || 'main').trim().toLowerCase();
-    const part = (params.part || 'none').trim().toLowerCase();
+    const book = (params.book || '').trim().toLowerCase();
+    const part = (params.part || '').trim().toLowerCase();
     const ct = (params.contentType || '').trim().toLowerCase();
 
-    // Exact key formation: grade:subject:book:part:contentType
+    // Exact key formation ONLY: grade:subject:book:part:contentType
     const exactKey = `${grade}:${subject}:${book}:${part}:${ct}`;
 
-    // Fallback key ignoring part if part is 'none' or 'main'
-    const fallbackKey1 = `${grade}:${subject}:${book}:none:${ct}`;
-    const fallbackKey2 = `${grade}:${subject}:main:none:${ct}`;
-
-    const Component = this.get(exactKey) || this.get(fallbackKey1) || this.get(fallbackKey2);
+    const Component = this.get(exactKey);
 
     if (!Component) {
       return (
@@ -85,6 +81,14 @@ class RendererRegistry {
 
     return <Component data={params.data} subject={params.subject} />;
   }
+
+  static getIntrospection(): Array<{ key: string; componentName: string }> {
+    const items: Array<{ key: string; componentName: string }> = [];
+    this.registry.forEach((comp, key) => {
+      items.push({ key, componentName: comp.displayName || comp.name || 'AnonymousComponent' });
+    });
+    return items;
+  }
 }
 
 // ==========================================
@@ -92,60 +96,60 @@ class RendererRegistry {
 // ==========================================
 
 // Class 5 Registrations
-RendererRegistry.register('5:english:main:none:overview', OverviewComponent);
-RendererRegistry.register('5:english:main:none:notes', NotesComponent);
-RendererRegistry.register('5:english:main:none:master', MasterComponent);
-RendererRegistry.register('5:english:main:none:foundational', FoundationalComponent);
-RendererRegistry.register('5:english:main:none:flashcards', FlashcardsComponent);
-RendererRegistry.register('5:english:main:none:mindmaps', MindmapComponent);
-RendererRegistry.register('5:english:main:none:quiz', QuizComponent);
-RendererRegistry.register('5:english:main:none:question_papers', QuestionPapersComponent);
+RendererRegistry.register('5:english:english:main:overview', OverviewComponent);
+RendererRegistry.register('5:english:english:main:notes', NotesComponent);
+RendererRegistry.register('5:english:english:main:master', MasterComponent);
+RendererRegistry.register('5:english:english:main:foundational', FoundationalComponent);
+RendererRegistry.register('5:english:english:main:flashcards', FlashcardsComponent);
+RendererRegistry.register('5:english:english:main:mindmaps', MindmapComponent);
+RendererRegistry.register('5:english:english:main:quiz', QuizComponent);
+RendererRegistry.register('5:english:english:main:question_papers', QuestionPapersComponent);
 
-RendererRegistry.register('5:hindi:main:none:overview', OverviewComponent);
-RendererRegistry.register('5:hindi:main:none:notes', HindiNotesComponent);
-RendererRegistry.register('5:hindi:main:none:master', MasterComponent);
-RendererRegistry.register('5:hindi:main:none:foundational', FoundationalComponent);
-RendererRegistry.register('5:hindi:main:none:flashcards', FlashcardsComponent);
-RendererRegistry.register('5:hindi:main:none:mindmaps', MindmapComponent);
-RendererRegistry.register('5:hindi:main:none:quiz', QuizComponent);
-RendererRegistry.register('5:hindi:main:none:question_papers', QuestionPapersComponent);
+RendererRegistry.register('5:hindi:hindi:main:overview', OverviewComponent);
+RendererRegistry.register('5:hindi:hindi:main:notes', HindiNotesComponent);
+RendererRegistry.register('5:hindi:hindi:main:master', MasterComponent);
+RendererRegistry.register('5:hindi:hindi:main:foundational', FoundationalComponent);
+RendererRegistry.register('5:hindi:hindi:main:flashcards', FlashcardsComponent);
+RendererRegistry.register('5:hindi:hindi:main:mindmaps', MindmapComponent);
+RendererRegistry.register('5:hindi:hindi:main:quiz', QuizComponent);
+RendererRegistry.register('5:hindi:hindi:main:question_papers', QuestionPapersComponent);
 
-RendererRegistry.register('5:mathematics:main:none:overview', OverviewComponent);
-RendererRegistry.register('5:mathematics:main:none:notes', MathsNotesComponent);
-RendererRegistry.register('5:mathematics:main:none:master', MasterComponent);
-RendererRegistry.register('5:mathematics:main:none:foundational', FoundationalComponent);
-RendererRegistry.register('5:mathematics:main:none:flashcards', FlashcardsComponent);
-RendererRegistry.register('5:mathematics:main:none:mindmaps', MindmapComponent);
-RendererRegistry.register('5:mathematics:main:none:quiz', QuizComponent);
-RendererRegistry.register('5:mathematics:main:none:question_papers', QuestionPapersComponent);
+RendererRegistry.register('5:mathematics:mathematics:main:overview', OverviewComponent);
+RendererRegistry.register('5:mathematics:mathematics:main:notes', MathsNotesComponent);
+RendererRegistry.register('5:mathematics:mathematics:main:master', MasterComponent);
+RendererRegistry.register('5:mathematics:mathematics:main:foundational', FoundationalComponent);
+RendererRegistry.register('5:mathematics:mathematics:main:flashcards', FlashcardsComponent);
+RendererRegistry.register('5:mathematics:mathematics:main:mindmaps', MindmapComponent);
+RendererRegistry.register('5:mathematics:mathematics:main:quiz', QuizComponent);
+RendererRegistry.register('5:mathematics:mathematics:main:question_papers', QuestionPapersComponent);
 
-RendererRegistry.register('5:science:main:none:overview', OverviewComponent);
-RendererRegistry.register('5:science:main:none:notes', NotesComponent);
-RendererRegistry.register('5:science:main:none:master', MasterComponent);
-RendererRegistry.register('5:science:main:none:foundational', FoundationalComponent);
-RendererRegistry.register('5:science:main:none:flashcards', FlashcardsComponent);
-RendererRegistry.register('5:science:main:none:mindmaps', MindmapComponent);
-RendererRegistry.register('5:science:main:none:quiz', QuizComponent);
-RendererRegistry.register('5:science:main:none:question_papers', QuestionPapersComponent);
+RendererRegistry.register('5:science:science:main:overview', OverviewComponent);
+RendererRegistry.register('5:science:science:main:notes', NotesComponent);
+RendererRegistry.register('5:science:science:main:master', MasterComponent);
+RendererRegistry.register('5:science:science:main:foundational', FoundationalComponent);
+RendererRegistry.register('5:science:science:main:flashcards', FlashcardsComponent);
+RendererRegistry.register('5:science:science:main:mindmaps', MindmapComponent);
+RendererRegistry.register('5:science:science:main:quiz', QuizComponent);
+RendererRegistry.register('5:science:science:main:question_papers', QuestionPapersComponent);
 
 // Class 6 Registrations
-RendererRegistry.register('6:english:main:none:overview', OverviewComponent);
-RendererRegistry.register('6:english:main:none:notes', NotesComponent);
-RendererRegistry.register('6:english:main:none:master', MasterComponent);
-RendererRegistry.register('6:english:main:none:foundational', FoundationalComponent);
-RendererRegistry.register('6:english:main:none:flashcards', FlashcardsComponent);
-RendererRegistry.register('6:english:main:none:mindmaps', MindmapComponent);
-RendererRegistry.register('6:english:main:none:quiz', QuizComponent);
-RendererRegistry.register('6:english:main:none:question_papers', QuestionPapersComponent);
+RendererRegistry.register('6:english:english:main:overview', OverviewComponent);
+RendererRegistry.register('6:english:english:main:notes', NotesComponent);
+RendererRegistry.register('6:english:english:main:master', MasterComponent);
+RendererRegistry.register('6:english:english:main:foundational', FoundationalComponent);
+RendererRegistry.register('6:english:english:main:flashcards', FlashcardsComponent);
+RendererRegistry.register('6:english:english:main:mindmaps', MindmapComponent);
+RendererRegistry.register('6:english:english:main:quiz', QuizComponent);
+RendererRegistry.register('6:english:english:main:question_papers', QuestionPapersComponent);
 
-RendererRegistry.register('6:mathematics:main:none:overview', OverviewComponent);
-RendererRegistry.register('6:mathematics:main:none:notes', MathsNotesComponent);
-RendererRegistry.register('6:mathematics:main:none:master', Class6MathsMasterComponent);
-RendererRegistry.register('6:mathematics:main:none:foundational', FoundationalComponent);
-RendererRegistry.register('6:mathematics:main:none:flashcards', FlashcardsComponent);
-RendererRegistry.register('6:mathematics:main:none:mindmaps', Class6MathsMindmapComponent);
-RendererRegistry.register('6:mathematics:main:none:quiz', QuizComponent);
-RendererRegistry.register('6:mathematics:main:none:question_papers', QuestionPapersComponent);
+RendererRegistry.register('6:mathematics:mathematics:main:overview', OverviewComponent);
+RendererRegistry.register('6:mathematics:mathematics:main:notes', MathsNotesComponent);
+RendererRegistry.register('6:mathematics:mathematics:main:master', Class6MathsMasterComponent);
+RendererRegistry.register('6:mathematics:mathematics:main:foundational', FoundationalComponent);
+RendererRegistry.register('6:mathematics:mathematics:main:flashcards', FlashcardsComponent);
+RendererRegistry.register('6:mathematics:mathematics:main:mindmaps', Class6MathsMindmapComponent);
+RendererRegistry.register('6:mathematics:mathematics:main:quiz', QuizComponent);
+RendererRegistry.register('6:mathematics:mathematics:main:question_papers', QuestionPapersComponent);
 
 // Class 7 Split Books / Parts Registrations
 RendererRegistry.register('7:mathematics:maths_i:part1:overview', OverviewComponent);
@@ -176,7 +180,7 @@ RendererRegistry.register('7:social_science:social_i:part1:quiz', QuizComponent)
 RendererRegistry.register('7:social_science:social_i:part1:question_papers', QuestionPapersComponent);
 
 RendererRegistry.register('7:social_science:social_ii:part2:overview', OverviewComponent);
-RendererRegistry.register('7:social_science:social_i:part2:notes', Class7UniversalNotesComponent);
+RendererRegistry.register('7:social_science:social_ii:part2:notes', Class7UniversalNotesComponent);
 RendererRegistry.register('7:social_science:social_ii:part2:master', Class7UniversalMasterComponent);
 RendererRegistry.register('7:social_science:social_ii:part2:foundational', FoundationalComponent);
 RendererRegistry.register('7:social_science:social_ii:part2:flashcards', FlashcardsComponent);
