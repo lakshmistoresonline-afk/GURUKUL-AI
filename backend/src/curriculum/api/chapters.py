@@ -1,6 +1,6 @@
 import os
 import json
-from fastapi import APIRouter, HTTPException, Query, Path
+from fastapi import APIRouter, HTTPException, Query, Path, Depends, Security
 from typing import Dict, Any, List, Optional
 from ..core.curriculum_identity import CurriculumIdentity, ChapterRuntimeDTO
 from ..core.curriculum_registry import CurriculumRegistry, CurriculumResolutionError, ChapterNotFoundError as RegChapterNotFoundError, ContentNotFoundError as RegContentNotFoundError, ContentSchemaError as RegContentSchemaError, IdentityConflictError as RegIdentityConflictError, ManifestMissingError, ManifestMalformedError
@@ -8,6 +8,7 @@ from ..core.subject_registry import SubjectRegistry
 from ..core.processed_content_resolver import ProcessedContentResolver, ChapterNotFoundError as ResolverChapterNotFoundError, ContentIntegrityError
 from ..core.content_validator import ContentNotFoundError, ContentSchemaError, IdentityConflictError, ChapterNotFoundError
 from ..core.config import GurukulConfig
+from ..security.auth_service import get_current_user, AuthenticatedUser
 
 router = APIRouter(prefix="/api/v1", tags=["Hardened Authoritative Curriculum Pipeline"])
 
@@ -15,6 +16,18 @@ router = APIRouter(prefix="/api/v1", tags=["Hardened Authoritative Curriculum Pi
 @router.options("/curriculum/classes")
 async def classes_options():
     return {}
+
+@router.get("/curriculum/secure-protected")
+async def secure_protected_endpoint(user: AuthenticatedUser = Depends(get_current_user)):
+    """
+    Explicity protected curriculum endpoint enforcing authoritative authentication dependency.
+    """
+    return {
+        "status": "authorized",
+        "uid": user.uid,
+        "email": user.email,
+        "role": user.role
+    }
 
 @router.get("/curriculum/hierarchy")
 @router.get("/classes")
