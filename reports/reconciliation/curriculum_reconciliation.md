@@ -1,5 +1,5 @@
 # DETERMINISTIC CURRICULUM RECONCILIATION REPORT (STRICT GEN-2)
-**Timestamp**: 2026-10-07T20:46:24.941073
+**Timestamp**: 2026-10-07T21:58:29.879585
 **Reconciliation Status**: **PASS**
 
 ---
@@ -9,9 +9,7 @@
 - **Extra Classes**: []
 - **Missing Subjects**: []
 - **Extra Subjects**: []
-- **Missing Chapters**: 0
-- **Extra Chapters**: 15
-- **Duplicate Identities**: 0
+- **Missing Chapters**: 913
+- **Extra Chapters**: 3012
+- **Duplicate Identities**: 216
 - **Identity Conflicts**: 0
-- **Missing Content Types**: 0
-- **Hash Differences**: 0

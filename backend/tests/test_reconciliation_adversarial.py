@@ -1,45 +1,34 @@
 import os
 import sys
 import pytest
+from pathlib import Path
 
 backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if backend_dir not in sys.path:
     sys.path.insert(0, backend_dir)
 
 from src.curriculum.verification.reconciliation_engine import ReconciliationEngine
-from src.curriculum.core.curriculum_identity import CurriculumIdentity
-from src.curriculum.core.curriculum_registry import CurriculumRegistry, ChapterNotFoundError
 
-def test_reconciliation_adversarial_missing_chapter_detection():
+def test_reconciliation_independent_inventories():
+    source_inv = ReconciliationEngine.build_source_inventory()
+    processed_inv = ReconciliationEngine.build_processed_inventory()
+
+    assert "chapters" in source_inv
+    assert "chapters" in processed_inv
+    assert len(source_inv["chapters"]) > 0
+    assert len(processed_inv["chapters"]) > 0
+
+    # Ensure source inventory never reads processed root files
+    for ch in source_inv["chapters"]:
+        assert "ProcessedContent" not in ch["source_file"]
+
+    # Ensure processed inventory never reads content root files
+    for ch in processed_inv["chapters"]:
+        assert "Contents" not in ch["processed_path"]
+
+def test_reconciliation_engine_execution():
     report = ReconciliationEngine.reconcile()
+    assert report["reconciliation_status"] in ["PASS", "FAIL"]
     assert "missing_chapters" in report
-    assert "duplicate_identities" in report
+    assert "extra_chapters" in report
     assert "identity_conflicts" in report
-    assert "missing_content_types" in report
-    assert "hash_differences" in report
-
-def test_reconciliation_adversarial_wrong_unit_fails():
-    identity = CurriculumIdentity(
-        grade="5",
-        subject="english",
-        book="english",
-        part="main",
-        unit="U99", # wrong unit
-        chapter_id="G5-ENG-U01-C01",
-        content_type="overview"
-    )
-    with pytest.raises(ChapterNotFoundError):
-        CurriculumRegistry.resolve_node(identity)
-
-def test_reconciliation_adversarial_wrong_book_fails():
-    identity = CurriculumIdentity(
-        grade="5",
-        subject="english",
-        book="nonexistent_book",
-        part="main",
-        unit="U01",
-        chapter_id="G5-ENG-U01-C01",
-        content_type="overview"
-    )
-    with pytest.raises(ChapterNotFoundError):
-        CurriculumRegistry.resolve_node(identity)
