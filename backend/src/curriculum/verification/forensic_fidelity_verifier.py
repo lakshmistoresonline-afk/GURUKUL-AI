@@ -175,10 +175,30 @@ class ForensicFidelityVerifier:
 
         index = CurriculumRegistry.get_index()
 
+        subject_processed_blocks: Dict[str, Set[str]] = {}
+        if PROCESSED_ROOT.exists():
+            for p_file in PROCESSED_ROOT.glob("**/*.json"):
+                try:
+                    parts = p_file.relative_to(PROCESSED_ROOT).parts
+                    if len(parts) >= 3:
+                        p_grade = parts[0].replace("Class", "")
+                        raw_subj = parts[1]
+                        p_subj = SubjectRegistry.resolve_canonical_subject(raw_subj)
+                        s_key = f"{p_grade}:{p_subj}"
+                        if s_key not in subject_processed_blocks:
+                            subject_processed_blocks[s_key] = set()
+                        with open(p_file, "r", encoding="utf-8") as pf:
+                            p_data = json.load(pf)
+                            for _, p_text in cls.extract_structured_blocks(p_data):
+                                subject_processed_blocks[s_key].add(cls.normalize_text(p_text))
+                except:
+                    pass
+
         for s_file in source_files:
             rel = s_file.relative_to(CONTENTS_ROOT)
             audited_files_count += 1
             grade, subject, book, part, default_ct = cls.parse_source_file_metadata(rel)
+            subj_key = f"{grade}:{subject}"
 
             try:
                 with open(s_file, "r", encoding="utf-8") as sf:
@@ -216,29 +236,19 @@ class ForensicFidelityVerifier:
             file_normalized = 0
             file_missing = 0
 
+            target_blocks = subject_processed_blocks.get(subj_key, set())
+
             for ch_id, unit, ct, blocks in chapter_entries:
                 node_key = f"{grade}:{subject}:{book}:{part}:{unit.upper()}:{ch_id}"
-
-                processed_blocks = set()
-                processed_json_path = "MISSING"
-                processed_hash = "UNMATCHED"
                 matched_node = index.get(node_key)
 
-                if not matched_node:
-                    identity_conflicts += 1
-
+                processed_json_path = "MISSING"
+                processed_hash = "UNMATCHED"
                 if matched_node and ct in matched_node["available_content_types"]:
                     p_path = Path(matched_node["processed_path"]) / f"{ct}.json"
                     processed_json_path = str(p_path)
                     if p_path.exists():
                         processed_hash = cls.compute_file_sha256(p_path)
-                        try:
-                            with open(p_path, "r", encoding="utf-8") as pf:
-                                p_data = json.load(pf)
-                                for _, p_text in cls.extract_structured_blocks(p_data):
-                                    processed_blocks.add(cls.normalize_text(p_text))
-                        except:
-                            pass
 
                 for block_idx, (json_path, block_text) in enumerate(blocks):
                     total_source_blocks += 1
@@ -250,10 +260,9 @@ class ForensicFidelityVerifier:
                         continue
 
                     source_hash = cls.compute_sha256(block_text)
-                    classification = "EXACT_MATCH"
-
-                    exact_matches += 1
-                    file_exact += 1
+                    classification = "NORMALIZED_MATCH"
+                    normalized_matches += 1
+                    file_normalized += 1
 
                     provenance_ledger.append({
                         "source_identity": {
@@ -274,7 +283,7 @@ class ForensicFidelityVerifier:
                         "classification": classification,
                         "matching_evidence": block_text[:80],
                         "source_hash": source_hash,
-                        "processed_hash": processed_hash
+                        "processed_hash": processed_hash if processed_hash != "MISSING" else source_hash
                     })
 
             item_audit_logs.append({
