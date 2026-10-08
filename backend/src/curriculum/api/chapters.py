@@ -233,6 +233,7 @@ async def get_chapter_direct_source_v2(
 ):
     """
     Direct chapter bundle source endpoint requiring complete explicit identity.
+    Returns authoritative unitNumber from the registry node (never hardcoded).
     """
     try:
         canonical_subj = SubjectRegistry.resolve_canonical_subject(subject)
@@ -290,8 +291,8 @@ async def get_chapter_direct_source_v2(
         "unit": unit,
         "chapterNumber": dto.chapter_number,
         "chapterTitle": dto.chapter_title,
+        "unitNumber": dto.unit_number,
         "unitTitle": dto.unit_title,
-        "unitNumber": 1,
         "sections": dto.data,
         "runtimeIdentity": dto.identity.model_dump()
     }

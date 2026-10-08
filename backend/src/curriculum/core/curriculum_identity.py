@@ -24,6 +24,7 @@ class ChapterRuntimeDTO(BaseModel):
     identity: CurriculumIdentity
     chapter_number: int
     chapter_title: str
+    unit_number: int
     unit_title: str
     data: Dict[str, Any]
     status: str = "READY"

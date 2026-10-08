@@ -128,7 +128,6 @@ class CurriculumRegistry:
                     except Exception as e:
                         raise ManifestMalformedError(f"Failed to read manifest.json at {manifest_file}: {str(e)}")
 
-                    # Required mandatory identity fields and authoritative source mapping in manifest
                     required_fields = [
                         "grade", "subject", "book", "part", "unit", "chapter_id",
                         "chapter_number", "chapter_title", "unit_number", "unit_title",
@@ -154,7 +153,6 @@ class CurriculumRegistry:
                     source_hashes = md["source_hashes"]
                     source_identity = md["source_identity"]
 
-                    # Strict Directory vs Manifest vs Source Identity Validation
                     if m_grade != dir_grade:
                         raise IdentityConflictError(f"Directory grade '{dir_grade}' conflicts with manifest grade '{m_grade}' at {manifest_file}")
                     if m_subject != dir_subject:
@@ -162,19 +160,16 @@ class CurriculumRegistry:
                     if m_chapter_id != dir_chapter_id:
                         raise IdentityConflictError(f"Directory chapter ID '{dir_chapter_id}' conflicts with manifest chapter ID '{m_chapter_id}' at {manifest_file}")
 
-                    # Validate source identity matches manifest identity
                     if str(source_identity.get("grade")) != m_grade or \
                        SubjectRegistry.resolve_canonical_subject(str(source_identity.get("subject", source_identity.get("canonical_subject")))) != m_subject or \
                        str(source_identity.get("book")) != m_book or \
                        str(source_identity.get("chapter_id")) != m_chapter_id:
                         raise IdentityConflictError(f"Source identity in manifest conflicts with manifest authoritative identity at {manifest_file}")
 
-                    # Verify source hashes where declared
                     for sf_rel, expected_hash in source_hashes.items():
-                        sf_abs = CONTENTS_ROOT / sf_rel
+                        sf_abs = CONTENTS_ROOT / Path(sf_rel)
                         if not sf_abs.exists():
                             raise SourceMismatchError(f"Authoritative source file declared in manifest does not exist: {sf_abs}")
-                        # Compute current hash of source file
                         hasher = hashlib.sha256()
                         with open(sf_abs, "rb") as sff:
                             while True:
@@ -186,7 +181,6 @@ class CurriculumRegistry:
                         if current_hash != expected_hash:
                             raise SourceMismatchError(f"Stale source hash detected for {sf_abs}: expected {expected_hash}, got {current_hash}")
 
-                    # Detect duplicate chapter IDs under conflicting books
                     book_chapter_key = f"{m_book}:{m_chapter_id}"
                     if book_chapter_key in seen_chapter_ids:
                         raise RegistryDuplicateKeyError(f"Duplicate chapter ID '{m_chapter_id}' detected under book '{m_book}'")
@@ -311,6 +305,7 @@ class CurriculumRegistry:
             identity=identity,
             chapter_number=node["chapter_number"],
             chapter_title=node["chapter_title"],
+            unit_number=int(node["unit_number"]),
             unit_title=node["unit_title"],
             data=sections,
             status="READY"
