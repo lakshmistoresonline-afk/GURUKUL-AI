@@ -79,7 +79,17 @@ class RendererRegistry {
       );
     }
 
-    return <Component data={params.data} subject={params.subject} />;
+    // UI-only adapter boundary (Workstream 11) matching specific component prop contracts
+    const extraProps: any = {};
+    if (ct === 'quiz') extraProps.quiz = params.data;
+    if (ct === 'flashcards') extraProps.flashcards = params.data;
+    if (ct === 'notes') extraProps.notes = params.data;
+    if (ct === 'master') extraProps.master = params.data;
+    if (ct === 'foundational') extraProps.foundational = params.data;
+    if (ct === 'mindmaps') extraProps.mindmap = params.data;
+    if (ct === 'question_papers') extraProps.questionPapers = params.data;
+
+    return <Component data={params.data} subject={params.subject} {...extraProps} />;
   }
 
   static getIntrospection(): Array<{ key: string; componentName: string }> {

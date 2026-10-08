@@ -23,21 +23,19 @@ export function buildCurriculumUrl(identity: {
   unit: string;
   chapter_id: string;
 }): string {
-  return `/curriculum/${identity.grade}/${encodeURIComponent(identity.subject.toLowerCase())}/${identity.book}/${identity.part}/${identity.unit}/${identity.chapter_id}`;
+  const enc = (v: string) => encodeURIComponent(v.trim());
+  return `/curriculum/${enc(identity.grade)}/${enc(identity.subject.toLowerCase())}/${enc(identity.book)}/${enc(identity.part)}/${enc(identity.unit)}/${enc(identity.chapter_id)}`;
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'development' ? 'http://localhost:8080' : '');
 
 export class CurriculumApiClient {
   static async fetchHierarchy(): Promise<any[]> {
-    try {
-      const res = await fetch(`${API_BASE}/api/v1/curriculum/hierarchy`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return await res.json();
-    } catch (err) {
-      console.warn('Failed to fetch authoritative curriculum hierarchy from backend:', err);
-      return [];
+    const res = await fetch(`${API_BASE}/api/v1/curriculum/hierarchy`);
+    if (!res.ok) {
+      throw new Error(`Authoritative hierarchy fetch failed with HTTP ${res.status}`);
     }
+    return await res.json();
   }
 
   static async fetchContent(identity: CurriculumIdentity): Promise<ChapterContentResponse> {
