@@ -14,7 +14,8 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const isDevMode = process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_ENABLE_DEMO_AUTH === 'true';
+  // Strict production security: production mode NEVER permits demo auth regardless of public env overrides
+  const isDevMode = process.env.NODE_ENV !== 'production' && (process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_ENABLE_DEMO_AUTH === 'true');
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,6 +33,10 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
   };
 
   const handleDemoBypass = (role: string, classId: string, name: string, email: string) => {
+    if (process.env.NODE_ENV === 'production') {
+      setError('Demo authentication is disabled in production.');
+      return;
+    }
     const demoUser = { uid: 'demo-' + role, role, classId, name, email };
     localStorage.setItem('gurukul_demo_user', JSON.stringify(demoUser));
     onLoginSuccess();
