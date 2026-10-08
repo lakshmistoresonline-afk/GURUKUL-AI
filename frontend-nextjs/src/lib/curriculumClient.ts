@@ -15,6 +15,17 @@ export interface ChapterContentResponse {
   status: string;
 }
 
+export function buildCurriculumUrl(identity: {
+  grade: string;
+  subject: string;
+  book: string;
+  part: string;
+  unit: string;
+  chapter_id: string;
+}): string {
+  return `/curriculum/${identity.grade}/${encodeURIComponent(identity.subject.toLowerCase())}/${identity.book}/${identity.part}/${identity.unit}/${identity.chapter_id}`;
+}
+
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 export class CurriculumApiClient {
