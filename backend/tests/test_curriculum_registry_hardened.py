@@ -6,7 +6,7 @@ from pathlib import Path
 
 backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if backend_dir not in sys.path:
-    sys.path.insert(0, backend_dir)
+    sys.path.insert(0, str(backend_dir))
 
 from src.curriculum.core.curriculum_identity import CurriculumIdentity
 from src.curriculum.core.curriculum_registry import CurriculumRegistry, ChapterNotFoundError, ContentSchemaError, ManifestMissingError, ManifestMalformedError
@@ -50,11 +50,27 @@ def test_registry_wrong_unit_raises_not_found():
     with pytest.raises(ChapterNotFoundError):
         CurriculumRegistry.resolve_node(id_req)
 
-def test_registry_missing_manifest_raises(tmp_path, monkeypatch):
-    ch_dir = tmp_path / "Class5" / "English" / "BadChapter"
-    ch_dir.mkdir(parents=True)
-    # no manifest.json
-
-    # We test that build_index or resolve raises ManifestMissingError when scanning such a dir
-    # But since build_index scans PROCESSED_ROOT, we can test via direct call or mock
-    pass
+def test_registry_maths_i_vs_maths_ii_isolation():
+    id_i = CurriculumIdentity(
+        grade="7",
+        subject="mathematics",
+        book="maths_i",
+        part="part1",
+        unit="U01",
+        chapter_id="G7-MAT-U01-C01",
+        content_type="overview"
+    )
+    id_ii = CurriculumIdentity(
+        grade="7",
+        subject="mathematics",
+        book="maths_ii",
+        part="part2",
+        unit="U01",
+        chapter_id="G7-MAT-U01-C01",
+        content_type="overview"
+    )
+    node_i = CurriculumRegistry.resolve_node(id_i)
+    node_ii = CurriculumRegistry.resolve_node(id_ii)
+    assert node_i["book"] == "maths_i"
+    assert node_ii["book"] == "maths_ii"
+    assert node_i["book"] != node_ii["book"]

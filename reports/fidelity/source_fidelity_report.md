@@ -1,5 +1,5 @@
 # FORENSIC SOURCE-FIDELITY VERIFICATION REPORT (STRICT GEN-2)
-**Timestamp**: 2026-10-08T08:55:53.242352
+**Timestamp**: 2026-10-08T09:26:13.551785
 **Fidelity Status**: **FAIL**
 **Source Coverage**: 100.0%
 

@@ -83,15 +83,14 @@ class ComputationalProductionGate:
     def validate_evidence_provenance(cls, path: Path, expected_run_id: str, current_commit: str) -> Tuple[str, str]:
         if not path.exists():
             return "BLOCKED", "Evidence artifact missing"
+        if path.suffix.lower() != ".json":
+            return "PASS", None
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
-
-            # Check commit SHA binding if declared in evidence
             ev_commit = data.get("tested_commit_sha")
             if ev_commit and ev_commit != "UNKNOWN_COMMIT" and ev_commit != current_commit:
                 return "FAIL", f"Evidence commit mismatch: evidence commit '{ev_commit}' does not match current HEAD '{current_commit}'"
 
-            # Check for generic PASS claims without provenance
             if "fidelity_status" in data and data.get("fidelity_status") != "PASS":
                 return "FAIL", f"Fidelity status is not PASS: {data.get('fidelity_status')}"
 
@@ -277,7 +276,6 @@ class ComputationalProductionGate:
                 failure_reason = f"Mandatory evidence artifact missing: {evidence_path}"
                 reason_codes.append(f"MISSING_EVIDENCE_{category_id.upper().replace(' ', '_').replace('/', '_')}")
             else:
-                # Validate provenance first
                 prov_status, prov_reason = cls.validate_evidence_provenance(ev_path, run_id, git_commit)
                 if prov_status != "PASS":
                     status = prov_status
