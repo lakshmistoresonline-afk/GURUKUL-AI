@@ -14,6 +14,8 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const isDevMode = process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_ENABLE_DEMO_AUTH === 'true';
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -23,7 +25,7 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
       await signInWithEmailAndPassword(auth, email, password);
       onLoginSuccess();
     } catch (err: any) {
-      setError(err.message || 'Failed to sign in. Please use Quick Demo Bypass below.');
+      setError('We couldn’t sign you in. Please check your email and password and try again.');
     } finally {
       setLoading(false);
     }
@@ -50,7 +52,6 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
         {error && (
           <div className="p-4 bg-rose-500/20 border border-rose-500/40 rounded-2xl text-xs text-rose-200 font-bold space-y-1">
             <div>{error}</div>
-            <div className="text-[10px] text-rose-300">Tip: Use the Instant Demo Bypass buttons below to login immediately without API key setup.</div>
           </div>
         )}
 
@@ -88,46 +89,48 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
           </button>
         </form>
 
-        <div className="pt-4 border-t border-white/10 space-y-3">
-          <div className="text-[11px] font-bold text-indigo-300 uppercase tracking-widest text-center">🚀 Instant Demo Bypass Login</div>
-          <div className="grid grid-cols-1 gap-2">
-            <button
-              type="button"
-              onClick={() => handleDemoBypass('student', '6', 'Srisha T S', 'tssrisha2015@gmail.com')}
-              className="p-3 bg-indigo-600/40 hover:bg-indigo-600/60 border border-indigo-400/40 rounded-xl text-left text-xs text-white flex items-center justify-between transition-all"
-            >
-              <div>
-                <strong className="block text-white font-black">Login as Srisha T S (Class 6)</strong>
-                <span className="text-[10px] text-indigo-200">tssrisha2015@gmail.com</span>
-              </div>
-              <span className="text-[10px] bg-indigo-500 px-2.5 py-1 rounded-lg text-white font-bold">Class 6</span>
-            </button>
+        {isDevMode && (
+          <div className="pt-4 border-t border-white/10 space-y-3">
+            <div className="text-[11px] font-bold text-indigo-300 uppercase tracking-widest text-center">🚀 Instant Demo Bypass Login (Dev Only)</div>
+            <div className="grid grid-cols-1 gap-2">
+              <button
+                type="button"
+                onClick={() => handleDemoBypass('student', '6', 'Srisha T S', 'tssrisha2015@gmail.com')}
+                className="p-3 bg-indigo-600/40 hover:bg-indigo-600/60 border border-indigo-400/40 rounded-xl text-left text-xs text-white flex items-center justify-between transition-all"
+              >
+                <div>
+                  <strong className="block text-white font-black">Login as Srisha T S (Class 6)</strong>
+                  <span className="text-[10px] text-indigo-200">tssrisha2015@gmail.com</span>
+                </div>
+                <span className="text-[10px] bg-indigo-500 px-2.5 py-1 rounded-lg text-white font-bold">Class 6</span>
+              </button>
 
-            <button
-              type="button"
-              onClick={() => handleDemoBypass('student', '5', 'Srinav T S', 'tssrisha2015@gmail.com')}
-              className="p-3 bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/40 rounded-xl text-left text-xs text-white flex items-center justify-between transition-all"
-            >
-              <div>
-                <strong className="block text-white font-black">Login as Srinav T S (Class 5)</strong>
-                <span className="text-[10px] text-teal-200">srinavts2016@gmail.com</span>
-              </div>
-              <span className="text-[10px] bg-teal-500 px-2.5 py-1 rounded-lg text-white font-bold">Class 5</span>
-            </button>
+              <button
+                type="button"
+                onClick={() => handleDemoBypass('student', '5', 'Srinav T S', 'tssrisha2015@gmail.com')}
+                className="p-3 bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/40 rounded-xl text-left text-xs text-white flex items-center justify-between transition-all"
+              >
+                <div>
+                  <strong className="block text-white font-black">Login as Srinav T S (Class 5)</strong>
+                  <span className="text-[10px] text-teal-200">srinavts2016@gmail.com</span>
+                </div>
+                <span className="text-[10px] bg-teal-500 px-2.5 py-1 rounded-lg text-white font-bold">Class 5</span>
+              </button>
 
-            <button
-              type="button"
-              onClick={() => handleDemoBypass('admin', 'all', 'Admin', 'admin@gurukul.com')}
-              className="p-3 bg-amber-600/40 hover:bg-amber-600/60 border border-amber-400/40 rounded-xl text-left text-xs text-white flex items-center justify-between transition-all"
-            >
-              <div>
-                <strong className="block text-white font-black">Login as Admin (All Classes)</strong>
-                <span className="text-[10px] text-amber-200">admin@gurukul.com</span>
-              </div>
-              <span className="text-[10px] bg-amber-500 px-2.5 py-1 rounded-lg text-white font-bold">Admin</span>
-            </button>
+              <button
+                type="button"
+                onClick={() => handleDemoBypass('admin', 'all', 'Admin', 'admin@gurukul.com')}
+                className="p-3 bg-amber-600/40 hover:bg-amber-600/60 border border-amber-400/40 rounded-xl text-left text-xs text-white flex items-center justify-between transition-all"
+              >
+                <div>
+                  <strong className="block text-white font-black">Login as Admin (All Classes)</strong>
+                  <span className="text-[10px] text-amber-200">admin@gurukul.com</span>
+                </div>
+                <span className="text-[10px] bg-amber-500 px-2.5 py-1 rounded-lg text-white font-bold">Admin</span>
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
