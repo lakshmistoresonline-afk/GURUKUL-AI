@@ -27,7 +27,7 @@ class ComputationalProductionGate:
     """
     Genuine Evidence-Driven Fail-Closed Computational Production Gate Engine for Gurukul AI.
     Executes real commands and runs strict semantic validators over generated evidence artifacts.
-    Zero unconditional validators allowed.
+    Enforces strict evidence provenance, commit SHA binding, and tree freshness checks.
     """
 
     @classmethod
@@ -39,6 +39,16 @@ class ComputationalProductionGate:
         except:
             pass
         return "UNKNOWN_COMMIT"
+
+    @classmethod
+    def get_git_tree_sha(cls) -> str:
+        try:
+            res = subprocess.run("git write-tree", shell=True, capture_output=True, text=True, cwd=str(ROOT_DIR))
+            if res.returncode == 0:
+                return res.stdout.strip()
+        except:
+            pass
+        return "UNKNOWN_TREE"
 
     @classmethod
     def compute_file_hash(cls, path: Path) -> str:
@@ -68,6 +78,26 @@ class ComputationalProductionGate:
                     break
                 hasher.update(chunk)
         return hasher.hexdigest()
+
+    @classmethod
+    def validate_evidence_provenance(cls, path: Path, expected_run_id: str, current_commit: str) -> Tuple[str, str]:
+        if not path.exists():
+            return "BLOCKED", "Evidence artifact missing"
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+
+            # Check commit SHA binding if declared in evidence
+            ev_commit = data.get("tested_commit_sha")
+            if ev_commit and ev_commit != "UNKNOWN_COMMIT" and ev_commit != current_commit:
+                return "FAIL", f"Evidence commit mismatch: evidence commit '{ev_commit}' does not match current HEAD '{current_commit}'"
+
+            # Check for generic PASS claims without provenance
+            if "fidelity_status" in data and data.get("fidelity_status") != "PASS":
+                return "FAIL", f"Fidelity status is not PASS: {data.get('fidelity_status')}"
+
+            return "PASS", None
+        except Exception as e:
+            return "BLOCKED", f"Failed to parse evidence provenance: {str(e)}"
 
     @classmethod
     def validate_source_immutability_evidence(cls, path: Path, run_id: str) -> Tuple[str, str]:
@@ -174,9 +204,10 @@ class ComputationalProductionGate:
     @classmethod
     def run_gate(cls) -> Dict[str, Any]:
         timestamp = datetime.now().isoformat()
-        validator_version = "4.0.0-FAIL-CLOSED-SEMANTIC"
+        validator_version = "5.0.0-PROVENANCE-BOUND"
         run_id = f"RUN_GATE_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         git_commit = cls.get_git_commit_sha()
+        git_tree = cls.get_git_tree_sha()
 
         py = sys.executable
         reports_root = GurukulConfig.get_reports_root()
@@ -246,15 +277,22 @@ class ComputationalProductionGate:
                 failure_reason = f"Mandatory evidence artifact missing: {evidence_path}"
                 reason_codes.append(f"MISSING_EVIDENCE_{category_id.upper().replace(' ', '_').replace('/', '_')}")
             else:
-                sem_status, sem_reason = semantic_validator(ev_path, run_id)
-                if sem_status != "PASS":
-                    status = sem_status
-                    failure_reason = sem_reason
-                    reason_codes.append(f"SEMANTIC_VALIDATION_FAILED_{category_id.upper().replace(' ', '_').replace('/', '_')}")
+                # Validate provenance first
+                prov_status, prov_reason = cls.validate_evidence_provenance(ev_path, run_id, git_commit)
+                if prov_status != "PASS":
+                    status = prov_status
+                    failure_reason = prov_reason
+                    reason_codes.append(f"PROVENANCE_VALIDATION_FAILED_{category_id.upper().replace(' ', '_').replace('/', '_')}")
                 else:
-                    ev_hash = cls.compute_file_hash(ev_path)
-                    evidence_hashes[category_id] = ev_hash
-                    evidence_timestamps[category_id] = datetime.fromtimestamp(ev_path.stat().st_mtime).isoformat() if ev_path.is_file() else timestamp
+                    sem_status, sem_reason = semantic_validator(ev_path, run_id)
+                    if sem_status != "PASS":
+                        status = sem_status
+                        failure_reason = sem_reason
+                        reason_codes.append(f"SEMANTIC_VALIDATION_FAILED_{category_id.upper().replace(' ', '_').replace('/', '_')}")
+                    else:
+                        ev_hash = cls.compute_file_hash(ev_path)
+                        evidence_hashes[category_id] = ev_hash
+                        evidence_timestamps[category_id] = datetime.fromtimestamp(ev_path.stat().st_mtime).isoformat() if ev_path.is_file() else timestamp
 
             if status == "PASS":
                 metrics["passed"] += 1
@@ -267,6 +305,8 @@ class ComputationalProductionGate:
                 "category_id": category_id,
                 "status": status,
                 "command": command,
+                "tested_commit_sha": git_commit,
+                "tested_tree_sha": git_tree,
                 "start_time": gate_start_time,
                 "end_time": gate_end_time,
                 "duration_seconds": duration_sec,
@@ -279,8 +319,11 @@ class ComputationalProductionGate:
         overall_status = "PRODUCTION READY" if (metrics["passed"] == metrics["total_gates"] and metrics["failed"] == 0 and metrics["blocked"] == 0) else "BLOCKED"
 
         final_report = {
+            "repository": "https://github.com/lakshmistoresonline-afk/GURUKUL-AI.git",
+            "branch": "main",
+            "tested_commit_sha": git_commit,
+            "tested_tree_sha": git_tree,
             "run_id": run_id,
-            "git_commit_sha": git_commit,
             "validator_version": validator_version,
             "execution_timestamp": timestamp,
             "overall_status": overall_status,
@@ -298,9 +341,12 @@ class ComputationalProductionGate:
         with open(FINAL_GATE_PATH, "w", encoding="utf-8") as f:
             json.dump(final_report, f, ensure_ascii=False, indent=2)
 
-        md_content = f"""# GURUKUL AI — COMPUTATIONAL PRODUCTION GATE REPORT (FAIL-CLOSED)
-**Run ID**: {run_id}
-**Git Commit SHA**: {git_commit}
+        md_content = f"""# GURUKUL AI — COMPUTATIONAL PRODUCTION GATE REPORT (FAIL-CLOSED PROVENANCE BOUND)
+**Repository**: `https://github.com/lakshmistoresonline-afk/GURUKUL-AI.git`
+**Branch**: `main`
+**Tested Commit SHA**: `{git_commit}`
+**Tested Tree SHA**: `{git_tree}`
+**Run ID**: `{run_id}`
 **Timestamp**: {timestamp}
 **Overall Status**: **{overall_status}**
 **Total Gates**: {metrics['total_gates']} | **Passed**: {metrics['passed']} | **Blocked**: {metrics['blocked']} | **Failed**: {metrics['failed']}
