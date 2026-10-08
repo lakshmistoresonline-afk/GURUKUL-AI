@@ -18,11 +18,11 @@ class ManifestMissingError(CurriculumResolutionError):
     pass
 
 class ManifestMalformedError(CurriculumResolutionError):
-    """Raised when manifest.json contains malformed JSON or missing required authoritative fields."""
+    """Raised when manifest.json contains malformed JSON or missing required authoritative fields/source mapping."""
     pass
 
 class IdentityConflictError(CurriculumResolutionError):
-    """Raised when directory identity conflicts with manifest authoritative identity."""
+    """Raised when directory identity, manifest identity, or source identity conflict."""
     pass
 
 class ChapterNotFoundError(CurriculumResolutionError):
@@ -50,15 +50,15 @@ class RegistryDuplicateKeyError(CurriculumResolutionError):
     pass
 
 class SourceMismatchError(CurriculumResolutionError):
-    """Raised when source hash mismatch occurs."""
+    """Raised when source hash mismatch or invalid source mapping occurs."""
     pass
 
 
 class CurriculumRegistry:
     """
     Production-grade Manifest-Authoritative Index-Driven Curriculum Registry for Gurukul AI.
-    Requires all 10 mandatory identity dimensions explicitly in manifest.json.
-    Raises IdentityConflictError if directory identity disagrees with manifest identity.
+    Requires all mandatory identity dimensions and explicit authoritative source mapping explicitly in manifest.json.
+    Raises IdentityConflictError or SourceMismatchError if directory, manifest, or source identities/hashes disagree.
     Zero synthetic synthesis or fallback defaults.
     """
     _INDEX: Optional[Dict[str, Dict[str, Any]]] = None
@@ -128,11 +128,15 @@ class CurriculumRegistry:
                     except Exception as e:
                         raise ManifestMalformedError(f"Failed to read manifest.json at {manifest_file}: {str(e)}")
 
-                    # Required mandatory identity fields in manifest
-                    required_fields = ["grade", "subject", "book", "part", "unit", "chapter_id", "chapter_number", "chapter_title", "unit_number", "unit_title"]
+                    # Required mandatory identity fields and authoritative source mapping in manifest
+                    required_fields = [
+                        "grade", "subject", "book", "part", "unit", "chapter_id",
+                        "chapter_number", "chapter_title", "unit_number", "unit_title",
+                        "source_files", "source_json_paths", "source_hashes", "source_identity"
+                    ]
                     for rf in required_fields:
                         if rf not in md or md[rf] is None or md[rf] == "":
-                            raise ManifestMalformedError(f"Manifest missing mandatory authoritative field '{rf}' at {manifest_file}")
+                            raise ManifestMalformedError(f"Manifest missing mandatory authoritative field or source mapping '{rf}' at {manifest_file}")
 
                     m_grade = str(md["grade"])
                     m_subject = SubjectRegistry.resolve_canonical_subject(str(md["subject"]))
@@ -144,15 +148,43 @@ class CurriculumRegistry:
                     m_chapter_title = str(md["chapter_title"])
                     m_unit_number = int(md["unit_number"])
                     m_unit_title = str(md["unit_title"])
-                    m_source_hash = str(md.get("source_hash") or "")
 
-                    # Strict Directory vs Manifest Identity Validation
+                    source_files = md["source_files"]
+                    source_json_paths = md["source_json_paths"]
+                    source_hashes = md["source_hashes"]
+                    source_identity = md["source_identity"]
+
+                    # Strict Directory vs Manifest vs Source Identity Validation
                     if m_grade != dir_grade:
                         raise IdentityConflictError(f"Directory grade '{dir_grade}' conflicts with manifest grade '{m_grade}' at {manifest_file}")
                     if m_subject != dir_subject:
                         raise IdentityConflictError(f"Directory subject '{dir_subject}' conflicts with manifest subject '{m_subject}' at {manifest_file}")
                     if m_chapter_id != dir_chapter_id:
                         raise IdentityConflictError(f"Directory chapter ID '{dir_chapter_id}' conflicts with manifest chapter ID '{m_chapter_id}' at {manifest_file}")
+
+                    # Validate source identity matches manifest identity
+                    if str(source_identity.get("grade")) != m_grade or \
+                       SubjectRegistry.resolve_canonical_subject(str(source_identity.get("subject", source_identity.get("canonical_subject")))) != m_subject or \
+                       str(source_identity.get("book")) != m_book or \
+                       str(source_identity.get("chapter_id")) != m_chapter_id:
+                        raise IdentityConflictError(f"Source identity in manifest conflicts with manifest authoritative identity at {manifest_file}")
+
+                    # Verify source hashes where declared
+                    for sf_rel, expected_hash in source_hashes.items():
+                        sf_abs = CONTENTS_ROOT / sf_rel
+                        if not sf_abs.exists():
+                            raise SourceMismatchError(f"Authoritative source file declared in manifest does not exist: {sf_abs}")
+                        # Compute current hash of source file
+                        hasher = hashlib.sha256()
+                        with open(sf_abs, "rb") as sff:
+                            while True:
+                                chunk = sff.read(8192)
+                                if not chunk:
+                                    break
+                                hasher.update(chunk)
+                        current_hash = hasher.digest().hex()
+                        if current_hash != expected_hash:
+                            raise SourceMismatchError(f"Stale source hash detected for {sf_abs}: expected {expected_hash}, got {current_hash}")
 
                     # Detect duplicate chapter IDs under conflicting books
                     book_chapter_key = f"{m_book}:{m_chapter_id}"
@@ -165,7 +197,6 @@ class CurriculumRegistry:
                         if (ch_dir / f"{ct}.json").exists():
                             available_content_types.append(ct)
 
-                    source_path = CONTENTS_ROOT / f"Class {m_grade}" / raw_subj / f"{m_chapter_id}.json"
                     node = {
                         "grade": m_grade,
                         "canonical_subject": m_subject,
@@ -178,10 +209,11 @@ class CurriculumRegistry:
                         "unit_number": m_unit_number,
                         "unit_title": m_unit_title,
                         "available_content_types": available_content_types,
-                        "source_path": str(source_path),
-                        "processed_path": str(ch_dir),
-                        "source_hash": m_source_hash,
-                        "processed_hash": ""
+                        "source_files": source_files,
+                        "source_json_paths": source_json_paths,
+                        "source_hashes": source_hashes,
+                        "source_identity": source_identity,
+                        "processed_path": str(ch_dir)
                     }
 
                     key = f"{m_grade}:{m_subject}:{m_book}:{m_part}:{m_unit}:{m_chapter_id}"
