@@ -8,6 +8,7 @@ import { auth, db } from '../lib/firebase';
 import LoginScreen from '../components/LoginScreen';
 import CommandPalette from '../components/CommandPalette';
 import ExplorerLockerModal from '../components/ExplorerLockerModal';
+import { buildCurriculumUrl } from '../lib/curriculumClient';
 
 interface CurricularGoal {
   code: string;
@@ -34,6 +35,8 @@ interface Unit {
 interface SubjectDetails {
   grade: string;
   subject: string;
+  book?: string;
+  part?: string;
   curriculumFramework?: string;
   curricularGoals?: CurricularGoal[];
   totalChapters: number;
@@ -51,59 +54,6 @@ interface ApiDiagnostics {
   error: string;
 }
 
-const FALLBACK_CLASS5_ENGLISH: SubjectDetails = {
-  grade: '5',
-  subject: 'English',
-  curriculumFramework: 'NEP 2020 & NCF-SE 2023',
-  curricularGoals: [
-    {
-      code: 'CG1',
-      name: 'Communication',
-      description: 'Develops effective oral communication skills through interactive sections.',
-    },
-    {
-      code: 'CG2',
-      name: 'Reading Comprehension',
-      description: 'Enhances reading fluency and text comprehension across diverse literary genres.',
-    },
-    {
-      code: 'CG3',
-      name: 'Expressive Writing',
-      description: 'Guides learners from structured writing towards independent creative expression.',
-    },
-    {
-      code: 'CG4',
-      name: 'Vocabulary Expansion',
-      description: 'Develops contextual vocabulary integrated across literature, science, and social life.',
-    },
-  ],
-  totalChapters: 10,
-  units: [
-    {
-      id: 'U01',
-      unitNumber: 1,
-      title: 'Let’s Have Fun',
-      theme: 'Empathy, family bonds, and observing everyday life with humor and joy.',
-      chapters: [
-        {
-          id: 'G5-ENG-U01-C01',
-          chapterNumber: 1,
-          title: 'Papa’s Spectacles',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-        {
-          id: 'G5-ENG-U01-C02',
-          chapterNumber: 2,
-          title: 'Gone with the Scooter',
-          resourceCount: 8,
-          contentTypes: ['Overview', 'Learn', 'Practice', 'Quiz', 'Flashcards', 'Mind Map'],
-        },
-      ],
-    },
-  ],
-};
-
 export default function Dashboard() {
   const [currentUser, setCurrentUser] = useState<any>(null);
   const [userRole, setUserRole] = useState<string>('student');
@@ -119,7 +69,7 @@ export default function Dashboard() {
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
   const [selectedSubject, setSelectedSubject] = useState<string>('English');
   const [availableSubjects, setAvailableSubjects] = useState<string[]>(['English', 'Hindi', 'Maths', 'Science']);
-  const [subjectData, setSubjectData] = useState<SubjectDetails | null>(FALLBACK_CLASS5_ENGLISH);
+  const [subjectData, setSubjectData] = useState<SubjectDetails | null>(null);
   const [selectedGoalModal, setSelectedGoalModal] = useState<CurricularGoal | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
@@ -135,16 +85,9 @@ export default function Dashboard() {
     const demoUserStr = localStorage.getItem('gurukul_demo_user');
     if (demoUserStr) {
       try {
-        const dUser = JSON.parse(demoUserStr);
-        setCurrentUser(dUser);
-        setUserRole(dUser.role);
-        setUserClassId(dUser.classId);
-        if (dUser.role === 'student' && dUser.classId !== 'all') {
-          setSelectedGrade(dUser.classId);
-          localStorage.setItem('gurukul_selected_grade', dUser.classId);
-          const activeClass = classes.find((c) => c.grade === dUser.classId) || classes[0];
-          setAvailableSubjects(activeClass.subjects);
-        }
+        const u = JSON.parse(demoUserStr);
+        setCurrentUser(u);
+        setUserRole(u.role || 'student');
         setAuthChecking(false);
         return;
       } catch {}
@@ -154,115 +97,35 @@ export default function Dashboard() {
       if (user) {
         setCurrentUser(user);
         try {
-          const userDocRef = doc(db, 'users', user.uid);
-          const userSnap = await getDoc(userDocRef);
-          if (userSnap.exists()) {
-            const uData = userSnap.data();
-            const r = uData.role || 'student';
-            const cId = uData.classId || 'all';
-            setUserRole(r);
-            setUserClassId(cId);
-            if (r === 'student' && cId !== 'all') {
-              setSelectedGrade(cId);
-              localStorage.setItem('gurukul_selected_grade', cId);
-              const activeClass = classes.find((c) => c.grade === cId) || classes[0];
-              setAvailableSubjects(activeClass.subjects);
-            }
+          const userDoc = await getDoc(doc(db, 'users', user.uid));
+          if (userDoc.exists()) {
+            const data = userDoc.data();
+            setUserRole(data.role || 'student');
+            setUserClassId(data.classId || 'all');
           }
-        } catch (err) {
-          console.warn('Failed to fetch user role:', err);
+        } catch (e) {
+          console.warn('Could not fetch user metadata from Firestore:', e);
         }
       } else {
         setCurrentUser(null);
       }
       setAuthChecking(false);
     });
+
     return () => unsubscribe();
-  }, [classes]);
-
-  useEffect(() => {
-    const savedStreak = localStorage.getItem('gurukul_streak');
-    if (savedStreak) {
-      setStreak(parseInt(savedStreak, 10));
-    } else {
-      localStorage.setItem('gurukul_streak', '5');
-    }
-
-    const savedXp = localStorage.getItem('gurukul_xp');
-    if (savedXp) {
-      setXp(parseInt(savedXp, 10));
-    }
-
-    const savedGrade = localStorage.getItem('gurukul_selected_grade');
-    if (savedGrade) {
-      setSelectedGrade(savedGrade);
-      if (savedGrade === '6') {
-        setAvailableSubjects(['English', 'Hindi', 'Maths', 'Science', 'Social']);
-      } else if (savedGrade === '7') {
-        setAvailableSubjects(['English', 'Hindi', 'Maths I', 'Maths II', 'Science', 'Social I', 'Social II']);
-      }
-    }
-
-    const handleGlobalKey = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault();
-        setIsCommandOpen(prev => !prev);
-      }
-    };
-    window.addEventListener('keydown', handleGlobalKey);
-    return () => window.removeEventListener('keydown', handleGlobalKey);
   }, []);
 
-  const handleSignOut = () => {
-    localStorage.removeItem('gurukul_demo_user');
-    signOut(auth).catch(() => {});
-    setCurrentUser(null);
-  };
-
-  const handleGradeChange = (grade: string) => {
-    if (userRole === 'student' && userClassId !== 'all' && userClassId !== grade) {
-      setAccessError(`Access restricted: You are enrolled in Class ${userClassId} only.`);
-      return;
-    }
-    setAccessError('');
-    setSelectedGrade(grade);
-    localStorage.setItem('gurukul_selected_grade', grade);
-    const activeClass = classes.find((c) => c.grade === grade) || classes[0];
-    setAvailableSubjects(activeClass.subjects);
-    if (!activeClass.subjects.includes(selectedSubject)) {
-      setSelectedSubject(activeClass.subjects[0]);
+  // Update available subjects when grade changes
+  const handleGradeChange = (g: string) => {
+    setSelectedGrade(g);
+    const found = classes.find(c => c.grade === g);
+    if (found && found.subjects.length > 0) {
+      setAvailableSubjects(found.subjects);
+      setSelectedSubject(found.subjects[0]);
     }
   };
 
-  // Discovery Fetch
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    async function loadDiscovery() {
-      try {
-        const primaryUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
-        let res: Response | null = null;
-        try {
-          res = await fetch(`${primaryUrl}/api/v1/classes`);
-        } catch {
-          res = await fetch('http://127.0.0.1:8080/api/v1/classes');
-        }
-
-        if (res && res.ok) {
-          const classList: ClassDiscovery[] = await res.json();
-          if (classList && classList.length > 0) {
-            setClasses(classList);
-            const activeClass = classList.find((c) => c.grade === selectedGrade) || classList[0];
-            setAvailableSubjects(activeClass.subjects);
-          }
-        }
-      } catch (err) {
-        console.warn('Class discovery API offline, using fallback catalog:', err);
-      }
-    }
-    loadDiscovery();
-  }, [selectedGrade]);
-
-  // Subject Details Fetch
+  // Fetch subject details and chapter hierarchy from backend
   useEffect(() => {
     async function fetchSubjectData() {
       try {
@@ -285,7 +148,7 @@ export default function Dashboard() {
               endpoint: `${primaryUrl}/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`,
               error: retryErr.message || 'TypeError: Failed to fetch (Connection Refused)',
             });
-            setSubjectData(FALLBACK_CLASS5_ENGLISH);
+            setSubjectData(null);
             setLoading(false);
             return;
           }
@@ -300,15 +163,15 @@ export default function Dashboard() {
             status: res?.status,
             error: `API returned HTTP ${res?.status}: ${res?.statusText}`,
           });
-          setSubjectData(FALLBACK_CLASS5_ENGLISH);
+          setSubjectData(null);
         }
       } catch (err: any) {
-        console.warn('Subject API offline, using fallback catalog:', err);
+        console.warn('Subject API offline:', err);
         setApiError({
           endpoint: `http://localhost:8080/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`,
           error: err.message || 'TypeError: Failed to fetch',
         });
-        setSubjectData(FALLBACK_CLASS5_ENGLISH);
+        setSubjectData(null);
       } finally {
         setLoading(false);
       }
@@ -327,139 +190,168 @@ export default function Dashboard() {
 
   const rank = getRankInfo(xp);
 
-  // Subject atmospheric gradient mapping
-  const getSubjectAtmosphere = (sub: string) => {
-    if (sub.includes('English')) return 'from-indigo-500/10 via-slate-900 to-indigo-950 text-indigo-200 border-indigo-500/30';
-    if (sub.includes('Hindi')) return 'from-amber-500/10 via-slate-900 to-amber-950 text-amber-200 border-amber-500/30';
-    if (sub.includes('Maths')) return 'from-emerald-500/10 via-slate-900 to-emerald-950 text-emerald-200 border-emerald-500/30';
-    if (sub.includes('Science')) return 'from-cyan-500/10 via-slate-900 to-cyan-950 text-cyan-200 border-cyan-500/30';
-    return 'from-teal-500/10 via-slate-900 to-teal-950 text-teal-200 border-teal-500/30';
+  const getSubjectAtmosphere = (subj: string) => {
+    const s = subj.toLowerCase();
+    if (s.includes('english')) return 'from-amber-500/20 via-orange-500/10 to-transparent border-amber-500/30 text-amber-900';
+    if (s.includes('hindi')) return 'from-rose-500/20 via-pink-500/10 to-transparent border-rose-500/30 text-rose-900';
+    if (s.includes('maths')) return 'from-blue-500/20 via-indigo-500/10 to-transparent border-blue-500/30 text-blue-900';
+    if (s.includes('science')) return 'from-teal-500/20 via-emerald-500/10 to-transparent border-teal-500/30 text-teal-900';
+    return 'from-purple-500/20 via-indigo-500/10 to-transparent border-purple-500/30 text-purple-900';
   };
 
-  // Get first chapter for Continue Learning hero card
-  const firstChapter = subjectData?.units?.[0]?.chapters?.[0];
-
-  // Filtered units based on live search query
-  const filteredUnits = subjectData?.units?.map(unit => ({
+  const filteredUnits = (subjectData?.units || []).map(unit => ({
     ...unit,
-    chapters: unit.chapters.filter(ch => ch.title.toLowerCase().includes(searchQuery.toLowerCase()) || ch.id.toLowerCase().includes(searchQuery.toLowerCase()))
-  })).filter(unit => unit.chapters.length > 0) || [];
+    chapters: unit.chapters.filter(ch =>
+      ch.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      ch.id.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  })).filter(unit => unit.chapters.length > 0);
+
+  const firstChapter = subjectData?.units?.[0]?.chapters?.[0];
+  const firstUnit = subjectData?.units?.[0];
 
   if (authChecking) {
     return (
-      <div className="min-h-screen bg-indigo-950 flex items-center justify-center text-white font-black text-sm">
-        Authenticating & loading classroom...
+      <div className="min-h-screen bg-slate-900 flex items-center justify-center text-white">
+        <div className="animate-spin w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full mr-3" />
+        <span className="font-bold">Loading Gurukul AI Session...</span>
       </div>
     );
   }
 
   if (!currentUser) {
-    return (
-      <div className="min-h-screen bg-indigo-950">
-        <LoginScreen onLoginSuccess={() => {}} />
-      </div>
-    );
+    return <LoginScreen onLoginSuccess={() => window.location.reload()} />;
   }
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/50 via-slate-50 to-white text-[#0F172A] selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-900 selection:bg-indigo-500 selection:text-white">
+      {/* Command Palette Modal */}
       <CommandPalette isOpen={isCommandOpen} onClose={() => setIsCommandOpen(false)} />
+
+      {/* Explorer Locker Modal */}
       <ExplorerLockerModal isOpen={isLockerOpen} onClose={() => setIsLockerOpen(false)} xp={xp} streak={streak} />
 
-      <main className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:pt-14 md:pb-20 space-y-10">
-        {accessError && (
-          <div className="p-4 bg-amber-500/10 border border-amber-500/30 rounded-2xl text-xs text-amber-900 font-bold flex items-center justify-between">
-            <span>{accessError}</span>
-            <button onClick={() => setAccessError('')} className="text-amber-900 font-bold">✕</button>
-          </div>
-        )}
-
-        {/* Calm Welcome Header with Gamified Explorer Rank & Locker Button */}
-        <header className="space-y-4 border-b border-slate-200/80 pb-6 pt-2">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-700 text-xs font-bold uppercase tracking-wider">
-              <span>Gurukul AI Classroom</span>
+      {/* TOP NAVIGATION HEADER */}
+      <header className="sticky top-0 z-40 bg-white/80 backdrop-blur-2xl border-b border-slate-200/80 shadow-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-indigo-600/30">
+              G
             </div>
-            <div className="flex items-center gap-3">
-              <button
-                onClick={handleSignOut}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 rounded-2xl shadow-xs text-xs font-bold transition-all"
-              >
-                <span>🚪 Sign Out</span>
-              </button>
-              <button
-                onClick={() => setIsLockerOpen(true)}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 rounded-2xl shadow-xs text-xs font-bold transition-all hover:scale-[1.02]"
-              >
-                <span>🏆 My Explorer Locker</span>
-              </button>
-              <button
-                onClick={() => setIsCommandOpen(true)}
-                className="inline-flex items-center gap-3 px-4 py-2 bg-white/80 backdrop-blur-md border border-slate-200 hover:border-indigo-400 rounded-2xl shadow-xs text-xs font-bold text-slate-600 transition-all group hover:scale-[1.02]"
-              >
-                <span>🔍 Quick Search</span>
-                <kbd className="px-2 py-0.5 bg-slate-100 border border-slate-200 rounded-lg text-[10px] font-mono text-slate-500 group-hover:border-indigo-300">Ctrl + K</kbd>
-              </button>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-between gap-6">
-            <div className="space-y-2 max-w-3xl">
-              <div className="flex items-center gap-3">
-                <span className={`px-3 py-1 rounded-full text-xs font-black border ${rank.color}`}>
-                  {rank.title}
-                </span>
-                <span className="text-xs font-mono font-bold text-slate-500">{xp} XP Earned</span>
-              </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight">
-                Good morning, Explorer 👋
+            <div>
+              <h1 className="text-lg font-black tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+                Gurukul AI
               </h1>
-              <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                Welcome to your personal learning journey. Explore curriculum units, lessons, practice exercises, flashcards, and quizzes.
+              <p className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+                NCERT • NEP 2020 • Authoritative
               </p>
             </div>
-            <div className="p-5 bg-white/80 backdrop-blur-xl border border-slate-200/80 rounded-3xl shadow-lg shadow-slate-900/5 flex items-center gap-4 hover:scale-[1.02] transition-all">
-              <span className="text-3xl">🔥</span>
-              <div>
-                <div className="text-xl font-black text-slate-900">{streak} Day Streak</div>
-                <div className="text-xs text-slate-500 font-bold">Keep learning daily!</div>
-              </div>
-            </div>
           </div>
-        </header>
 
-        {/* 1. CONTINUE LEARNING HERO CARD */}
-        {firstChapter && (
-          <section className="p-6 md:p-8 bg-gradient-to-r from-indigo-900 via-slate-900 to-indigo-950 text-white rounded-3xl shadow-2xl space-y-4 hover:scale-[1.005] transition-all">
-            <div className="flex items-center justify-between gap-2">
-              <span className="px-3 py-1 text-xs font-black uppercase tracking-widest bg-indigo-500/30 text-indigo-300 rounded-lg border border-indigo-400/20">
-                Continue Learning
+          <div className="flex items-center gap-3">
+            {/* Command Palette Trigger */}
+            <button
+              onClick={() => setIsCommandOpen(true)}
+              className="hidden sm:flex items-center gap-3 px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-bold rounded-2xl border border-slate-200/85 transition-all"
+            >
+              <span>🔍 Quick Search...</span>
+              <kbd className="px-2 py-0.5 bg-white text-slate-500 rounded-lg text-[10px] font-mono shadow-xs">Cmd K</kbd>
+            </button>
+
+            {/* Streak & XP Badges */}
+            <button
+              onClick={() => setIsLockerOpen(true)}
+              className="flex items-center gap-3 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100/80 border border-indigo-200/80 rounded-2xl transition-all shadow-xs"
+            >
+              <div className="flex items-center gap-1.5 text-orange-600 font-extrabold text-xs">
+                <span>🔥</span>
+                <span>{streak} Days</span>
+              </div>
+              <div className="w-px h-4 bg-indigo-200" />
+              <div className="flex items-center gap-1.5 text-indigo-700 font-extrabold text-xs">
+                <span>⭐</span>
+                <span>{xp} XP</span>
+              </div>
+            </button>
+
+            {/* Sign Out */}
+            <button
+              onClick={() => {
+                localStorage.removeItem('gurukul_demo_user');
+                signOut(auth);
+              }}
+              className="p-2.5 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded-2xl transition-all"
+              title="Sign Out"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* MAIN DASHBOARD CONTAINER */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        {/* WELCOME BANNER */}
+        <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-r from-indigo-950 via-indigo-900 to-slate-900 text-white shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="absolute -right-16 -top-16 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="space-y-3 z-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs font-bold text-indigo-200 border border-white/10">
+              <span>{rank.title}</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
+              Welcome back, {currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Scholar'}!
+            </h2>
+            <p className="text-slate-300 text-sm max-w-xl font-medium leading-relaxed">
+              Your authoritative NCERT digital companion. Explore interactive chapters, practice exercises, flashcards, and verified assessments.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 z-10 w-full md:w-auto">
+            <button
+              onClick={() => setIsLockerOpen(true)}
+              className="px-6 py-3.5 bg-white text-indigo-950 text-xs font-black rounded-2xl shadow-lg hover:bg-slate-100 transition-all text-center"
+            >
+              🏆 View Achievements
+            </button>
+          </div>
+        </div>
+
+        {/* 1. CONTINUE LEARNING BANNER */}
+        {firstChapter && firstUnit && (
+          <section className="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-xl space-y-4">
+            <div className="flex items-center justify-between">
+              <span className="px-3 py-1 bg-white/20 rounded-full text-[10px] font-black uppercase tracking-wider">
+                Continue Learning • Unit {firstUnit.unitNumber}
               </span>
-              <span className="text-xs font-mono text-slate-400">Class {selectedGrade} • {selectedSubject}</span>
+              <span className="text-xs font-bold text-indigo-100">Class {selectedGrade} • {selectedSubject}</span>
             </div>
 
             <div className="space-y-1">
               <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
                 {firstChapter.title}
               </h2>
-              <p className="text-slate-300 text-sm">
-                Chapter {firstChapter.chapterNumber} • {subjectData?.units?.[0]?.title || 'Unit 1'}
+              <p className="text-slate-200 text-sm">
+                Chapter {firstChapter.chapterNumber} • {firstUnit.title}
               </p>
             </div>
 
             <div className="pt-2 flex justify-end">
               <Link
-                href={`/${selectedGrade}/${selectedSubject}/${firstChapter.id}`}
-                onClick={() => {
-                  setXp(prev => {
-                    const next = prev + 50;
-                    localStorage.setItem('gurukul_xp', next.toString());
-                    return next;
-                  });
-                }}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-extrabold rounded-2xl shadow-lg shadow-indigo-600/30 transition-all hover:translate-x-1"
+                href={buildCurriculumUrl({
+                  grade: selectedGrade,
+                  subject: selectedSubject,
+                  book: subjectData?.book || selectedSubject.toLowerCase(),
+                  part: subjectData?.part || 'main',
+                  unit: firstUnit.id,
+                  chapter_id: firstChapter.id
+                })}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-indigo-900 hover:bg-slate-100 text-sm font-extrabold rounded-2xl shadow-lg transition-all hover:translate-x-1"
               >
-                <span>Continue Learning (+50 XP)</span>
+                <span>Resume Lesson</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7-7 7M3 12h18" />
                 </svg>
@@ -541,9 +433,9 @@ export default function Dashboard() {
 
         {/* API Connection Warning Banner if Offline */}
         {apiError && (
-          <div className="p-4 bg-amber-50 border border-amber-200 rounded-2xl text-amber-900 text-xs flex items-center justify-between gap-4">
+          <div className="p-4 bg-rose-50 border border-rose-200 rounded-2xl text-rose-900 text-xs flex items-center justify-between gap-4">
             <div>
-              <strong>⚠️ Backend API Connection Notice:</strong> {apiError.error}. Operating with local fallback catalog. Ensure FastAPI server is running (`python backend/src/main.py`).
+              <strong>⚠️ Curriculum Loading Notice:</strong> {apiError.error}. Ensure backend FastAPI server is running (`python backend/src/main.py`).
             </div>
           </div>
         )}
@@ -573,7 +465,18 @@ export default function Dashboard() {
           {loading ? (
             <div className="flex items-center justify-center py-16 text-slate-500 bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200/80">
               <div className="animate-spin w-6 h-6 border-2 border-indigo-600 border-t-transparent rounded-full mr-3" />
-              <span className="font-bold text-sm">Loading Curriculum Units...</span>
+              <span className="font-bold text-sm">Loading Authoritative Curriculum Units...</span>
+            </div>
+          ) : !subjectData ? (
+            <div className="p-12 text-center text-slate-500 bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200 space-y-3">
+              <h3 className="text-lg font-bold text-slate-900">We couldn&apos;t load the curriculum.</h3>
+              <p className="text-xs text-slate-500">Please ensure the backend server is running and try again.</p>
+              <button
+                onClick={() => window.location.reload()}
+                className="px-6 py-2.5 bg-indigo-600 text-white text-xs font-bold rounded-xl shadow-md hover:bg-indigo-500 transition-all"
+              >
+                Retry ↻
+              </button>
             </div>
           ) : viewMode === 'constellation' ? (
             /* Constellation Star Map View */
@@ -585,25 +488,35 @@ export default function Dashboard() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
-                {filteredUnits.flatMap(u => u.chapters).map((ch, idx) => (
-                  <Link
-                    key={ch.id}
-                    href={`/${selectedGrade}/${selectedSubject}/${ch.id}`}
-                    className="group relative p-6 rounded-3xl bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-xl transition-all hover:scale-105 hover:shadow-2xl flex flex-col justify-between gap-4"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="text-2xl">⭐</span>
-                      <span className="text-xs font-mono font-bold opacity-70">Node #{idx + 1}</span>
-                    </div>
-                    <div className="space-y-1">
-                      <div className="text-xs font-bold opacity-80">Chapter {ch.chapterNumber}</div>
-                      <h4 className="text-base font-black text-white group-hover:text-teal-300 transition-colors">{ch.title}</h4>
-                    </div>
-                    <div className="text-[11px] font-bold text-teal-300 flex items-center gap-1">
-                      <span>Explore Constellation ➔</span>
-                    </div>
-                  </Link>
-                ))}
+                {filteredUnits.flatMap(u => u.chapters).map((ch, idx) => {
+                  const unitObj = filteredUnits.find(u => u.chapters.some(c => c.id === ch.id));
+                  return (
+                    <Link
+                      key={ch.id}
+                      href={buildCurriculumUrl({
+                        grade: selectedGrade,
+                        subject: selectedSubject,
+                        book: subjectData?.book || selectedSubject.toLowerCase(),
+                        part: subjectData?.part || 'main',
+                        unit: unitObj?.id || 'U01',
+                        chapter_id: ch.id
+                      })}
+                      className="group relative p-6 rounded-3xl bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-xl transition-all hover:scale-105 hover:shadow-2xl flex flex-col justify-between gap-4"
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="text-2xl">⭐</span>
+                        <span className="text-xs font-mono font-bold opacity-70">Node #{idx + 1}</span>
+                      </div>
+                      <div className="space-y-1">
+                        <div className="text-xs font-bold opacity-80">Chapter {ch.chapterNumber}</div>
+                        <h4 className="text-base font-black text-white group-hover:text-teal-300 transition-colors">{ch.title}</h4>
+                      </div>
+                      <div className="text-[11px] font-bold text-teal-300 flex items-center gap-1">
+                        <span>Explore Constellation ➔</span>
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           ) : filteredUnits.length > 0 ? (
@@ -646,7 +559,14 @@ export default function Dashboard() {
                           Open Chapter Experience
                         </span>
                         <Link
-                          href={`/${selectedGrade}/${selectedSubject}/${ch.id}`}
+                          href={buildCurriculumUrl({
+                            grade: selectedGrade,
+                            subject: selectedSubject,
+                            book: subjectData?.book || selectedSubject.toLowerCase(),
+                            part: subjectData?.part || 'main',
+                            unit: unit.id,
+                            chapter_id: ch.id
+                          })}
                           className="inline-flex items-center gap-1.5 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-extrabold rounded-xl shadow-md shadow-indigo-600/20 transition-all group-hover:translate-x-0.5"
                         >
                           <span>Explore</span>
@@ -662,39 +582,9 @@ export default function Dashboard() {
             ))
           ) : (
             <div className="p-12 text-center text-slate-500 bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200 space-y-2">
-              <h3 className="text-lg font-bold text-slate-900">No chapters found</h3>
-              <p className="text-xs text-slate-400">Try adjusting your live search term.</p>
+              <h3 className="text-lg font-bold text-slate-900">No chapters found matching &quot;{searchQuery}&quot;</h3>
             </div>
           )}
-        </section>
-
-        {/* 5. NEP 2020 PEDAGOGICAL GOALS */}
-        <section className="p-6 md:p-8 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl shadow-2xl space-y-6">
-          <div className="space-y-2">
-            <span className="px-3 py-1 text-xs font-black uppercase tracking-widest bg-teal-500/20 text-teal-300 rounded-lg border border-teal-400/30">
-              National Education Policy 2020
-            </span>
-            <h2 className="text-2xl font-black tracking-tight">
-              Curricular Goals & Pedagogical Principles
-            </h2>
-            <p className="text-slate-300 text-sm max-w-2xl leading-relaxed">
-              Gurukul AI aligns fully with NCF-SE 2023 guidelines, fostering holistic, experiential, inquiry-driven, and multi-disciplinary learning.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {subjectData?.curricularGoals?.map((goal) => (
-              <div
-                key={goal.code}
-                onClick={() => setSelectedGoalModal(goal)}
-                className="cursor-pointer p-5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl transition-all space-y-2 group"
-              >
-                <div className="text-xs font-black text-indigo-400">{goal.code}</div>
-                <div className="text-sm font-bold text-white group-hover:text-teal-300 transition-colors">{goal.name}</div>
-                <p className="text-xs text-slate-300 line-clamp-2 leading-relaxed">{goal.description}</p>
-              </div>
-            ))}
-          </div>
         </section>
       </main>
     </div>
