@@ -8,7 +8,7 @@ import { auth, db } from '../lib/firebase';
 import LoginScreen from '../components/LoginScreen';
 import CommandPalette from '../components/CommandPalette';
 import ExplorerLockerModal from '../components/ExplorerLockerModal';
-import { buildCurriculumUrl } from '../lib/curriculumClient';
+import { CurriculumApiClient, buildCurriculumUrl } from '../lib/curriculumClient';
 
 interface CurricularGoal {
   code: string;
@@ -32,20 +32,21 @@ interface Unit {
   chapters: Chapter[];
 }
 
-interface SubjectDetails {
-  grade: string;
-  subject: string;
-  book?: string;
-  part?: string;
-  curriculumFramework?: string;
-  curricularGoals?: CurricularGoal[];
-  totalChapters: number;
+interface BookDetails {
+  book_id: string;
+  part: string;
   units: Unit[];
 }
 
-interface ClassDiscovery {
+interface SubjectHierarchy {
+  subject: string;
+  canonical_subject: string;
+  books: BookDetails[];
+}
+
+interface GradeHierarchy {
   grade: string;
-  subjects: string[];
+  subjects: SubjectHierarchy[];
 }
 
 interface ApiDiagnostics {
@@ -59,23 +60,22 @@ export default function Dashboard() {
   const [userRole, setUserRole] = useState<string>('student');
   const [userClassId, setUserClassId] = useState<string>('all');
   const [authChecking, setAuthChecking] = useState<boolean>(true);
-  const [accessError, setAccessError] = useState<string>('');
 
-  const [classes, setClasses] = useState<ClassDiscovery[]>([
-    { grade: '5', subjects: ['English', 'Hindi', 'Maths', 'Science'] },
-    { grade: '6', subjects: ['English', 'Hindi', 'Maths', 'Science', 'Social'] },
-    { grade: '7', subjects: ['English', 'Hindi', 'Maths I', 'Maths II', 'Science', 'Social I', 'Social II'] },
-  ]);
+  const [hierarchy, setHierarchy] = useState<GradeHierarchy[]>([]);
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
-  const [selectedSubject, setSelectedSubject] = useState<string>('English');
-  const [availableSubjects, setAvailableSubjects] = useState<string[]>(['English', 'Hindi', 'Maths', 'Science']);
-  const [subjectData, setSubjectData] = useState<SubjectDetails | null>(null);
-  const [selectedGoalModal, setSelectedGoalModal] = useState<CurricularGoal | null>(null);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [selectedSubject, setSelectedSubject] = useState<string>('english');
+  const [selectedBook, setSelectedBook] = useState<string>('english');
+  const [selectedPart, setSelectedPart] = useState<string>('main');
+
+  const [loading, setLoading] = useState<boolean>(true);
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [streak, setStreak] = useState<number>(5);
-  const [xp, setXp] = useState<number>(1250);
+
+  // Truthful progress state (Item 3)
+  const [streak, setStreak] = useState<number>(0);
+  const [xp, setXp] = useState<number>(0);
+  const [recentChapter, setRecentChapter] = useState<any>(null);
+
   const [isCommandOpen, setIsCommandOpen] = useState<boolean>(false);
   const [isLockerOpen, setIsLockerOpen] = useState<boolean>(false);
   const [viewMode, setViewMode] = useState<'grid' | 'constellation'>('grid');
@@ -83,7 +83,8 @@ export default function Dashboard() {
   useEffect(() => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const demoUserStr = localStorage.getItem('gurukul_demo_user');
-    if (demoUserStr) {
+    const isDevMode = process.env.NODE_ENV !== 'production' && process.env.NEXT_PUBLIC_ENABLE_DEMO_AUTH === 'true';
+    if (demoUserStr && isDevMode) {
       try {
         const u = JSON.parse(demoUserStr);
         setCurrentUser(u);
@@ -115,72 +116,80 @@ export default function Dashboard() {
     return () => unsubscribe();
   }, []);
 
-  // Update available subjects when grade changes
-  const handleGradeChange = (g: string) => {
-    setSelectedGrade(g);
-    const found = classes.find(c => c.grade === g);
-    if (found && found.subjects.length > 0) {
-      setAvailableSubjects(found.subjects);
-      setSelectedSubject(found.subjects[0]);
-    }
-  };
-
-  // Fetch subject details and chapter hierarchy from backend
+  // Load authoritative hierarchy (Item 1 & Item 2)
   useEffect(() => {
-    async function fetchSubjectData() {
+    async function loadHierarchy() {
       try {
         setLoading(true);
         setApiError(null);
+        const data = await CurriculumApiClient.fetchHierarchy();
+        setHierarchy(data);
 
-        const primaryUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
-        const fallbackUrl = 'http://127.0.0.1:8080';
-        let targetUrl = primaryUrl;
-
-        let res: Response | null = null;
-        try {
-          res = await fetch(`${targetUrl}/api/v1/classes/${selectedGrade}/subjects/${encodeURIComponent(selectedSubject)}`);
-        } catch {
-          targetUrl = fallbackUrl;
-          try {
-            res = await fetch(`${targetUrl}/api/v1/classes/${selectedGrade}/subjects/${encodeURIComponent(selectedSubject)}`);
-          } catch (retryErr: any) {
-            setApiError({
-              endpoint: `${primaryUrl}/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`,
-              error: retryErr.message || 'TypeError: Failed to fetch (Connection Refused)',
-            });
-            setSubjectData(null);
-            setLoading(false);
-            return;
+        // Set default grade/subject if available
+        if (data && data.length > 0) {
+          const defaultGradeNode = data.find((g: any) => String(g.grade) === selectedGrade) || data[0];
+          setSelectedGrade(defaultGradeNode.grade);
+          if (defaultGradeNode.subjects && defaultGradeNode.subjects.length > 0) {
+            const defaultSubj = defaultGradeNode.subjects[0];
+            setSelectedSubject(defaultSubj.canonical_subject);
+            if (defaultSubj.books && defaultSubj.books.length > 0) {
+              setSelectedBook(defaultSubj.books[0].book_id);
+              setSelectedPart(defaultSubj.books[0].part);
+            }
           }
         }
-
-        if (res && res.ok) {
-          const data: SubjectDetails = await res.json();
-          setSubjectData(data);
-        } else {
-          setApiError({
-            endpoint: `${targetUrl}/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`,
-            status: res?.status,
-            error: `API returned HTTP ${res?.status}: ${res?.statusText}`,
-          });
-          setSubjectData(null);
-        }
       } catch (err: any) {
-        console.warn('Subject API offline:', err);
         setApiError({
-          endpoint: `http://localhost:8080/api/v1/classes/${selectedGrade}/subjects/${selectedSubject}`,
-          error: err.message || 'TypeError: Failed to fetch',
+          endpoint: '/api/v1/curriculum/hierarchy',
+          error: err.message || 'Failed to connect to authoritative curriculum hierarchy API.'
         });
-        setSubjectData(null);
+        setHierarchy([]);
       } finally {
         setLoading(false);
       }
     }
 
-    fetchSubjectData();
-  }, [selectedGrade, selectedSubject]);
+    loadHierarchy();
+  }, []);
 
-  // Get rank title based on XP
+  // Load recent learning history (Item 4)
+  useEffect(() => {
+    try {
+      const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
+      if (recent.length > 0) {
+        setRecentChapter(recent[0]);
+      }
+    } catch {}
+  }, []);
+
+  const currentGradeObj = hierarchy.find(g => String(g.grade) === String(selectedGrade));
+  const availableSubjects = currentGradeObj?.subjects || [];
+  const currentSubjectObj = availableSubjects.find(s => s.canonical_subject.toLowerCase() === selectedSubject.toLowerCase());
+  const availableBooks = currentSubjectObj?.books || [];
+  const currentBookObj = availableBooks.find(b => b.book_id.toLowerCase() === selectedBook.toLowerCase() && b.part.toLowerCase() === selectedPart.toLowerCase()) || availableBooks[0];
+
+  const handleGradeChange = (g: string) => {
+    setSelectedGrade(g);
+    const gObj = hierarchy.find(item => String(item.grade) === String(g));
+    if (gObj && gObj.subjects.length > 0) {
+      const sub = gObj.subjects[0];
+      setSelectedSubject(sub.canonical_subject);
+      if (sub.books && sub.books.length > 0) {
+        setSelectedBook(sub.books[0].book_id);
+        setSelectedPart(sub.books[0].part);
+      }
+    }
+  };
+
+  const handleSubjectChange = (canonicalSubj: string) => {
+    setSelectedSubject(canonicalSubj);
+    const subObj = availableSubjects.find(s => s.canonical_subject.toLowerCase() === canonicalSubj.toLowerCase());
+    if (subObj && subObj.books && subObj.books.length > 0) {
+      setSelectedBook(subObj.books[0].book_id);
+      setSelectedPart(subObj.books[0].part);
+    }
+  };
+
   const getRankInfo = (score: number) => {
     if (score < 500) return { title: '🌱 Curious Novice', color: 'text-emerald-600 bg-emerald-50 border-emerald-200' };
     if (score < 1500) return { title: '🚀 Active Explorer', color: 'text-indigo-600 bg-indigo-50 border-indigo-200' };
@@ -199,7 +208,8 @@ export default function Dashboard() {
     return 'from-purple-500/20 via-indigo-500/10 to-transparent border-purple-500/30 text-purple-900';
   };
 
-  const filteredUnits = (subjectData?.units || []).map(unit => ({
+  const unitsList = currentBookObj?.units || [];
+  const filteredUnits = unitsList.map(unit => ({
     ...unit,
     chapters: unit.chapters.filter(ch =>
       ch.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -207,8 +217,7 @@ export default function Dashboard() {
     )
   })).filter(unit => unit.chapters.length > 0);
 
-  const firstChapter = subjectData?.units?.[0]?.chapters?.[0];
-  const firstUnit = subjectData?.units?.[0];
+  const totalChaptersCount = unitsList.reduce((acc, u) => acc + u.chapters.length, 0);
 
   if (authChecking) {
     return (
@@ -258,7 +267,7 @@ export default function Dashboard() {
               <kbd className="px-2 py-0.5 bg-white text-slate-500 rounded-lg text-[10px] font-mono shadow-xs">Cmd K</kbd>
             </button>
 
-            {/* Streak & XP Badges */}
+            {/* Streak & XP Badges (Item 3: Truthful display) */}
             <button
               onClick={() => setIsLockerOpen(true)}
               className="flex items-center gap-3 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100/80 border border-indigo-200/80 rounded-2xl transition-all shadow-xs"
@@ -320,34 +329,34 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* 1. CONTINUE LEARNING BANNER */}
-        {firstChapter && firstUnit && (
+        {/* 1. CONTINUE LEARNING BANNER (Item 4: Only when real recent history exists) */}
+        {recentChapter && (
           <section className="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-xl space-y-4">
             <div className="flex items-center justify-between">
               <span className="px-3 py-1 bg-white/20 rounded-full text-[10px] font-black uppercase tracking-wider">
-                Continue Learning • Unit {firstUnit.unitNumber}
+                Continue Learning • Unit {recentChapter.unit}
               </span>
-              <span className="text-xs font-bold text-indigo-100">Class {selectedGrade} • {selectedSubject}</span>
+              <span className="text-xs font-bold text-indigo-100">Class {recentChapter.grade} • {recentChapter.subject}</span>
             </div>
 
             <div className="space-y-1">
               <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
-                {firstChapter.title}
+                Chapter: {recentChapter.chapterId}
               </h2>
               <p className="text-slate-200 text-sm">
-                Chapter {firstChapter.chapterNumber} • {firstUnit.title}
+                Book: {recentChapter.book} • Part: {recentChapter.part}
               </p>
             </div>
 
             <div className="pt-2 flex justify-end">
               <Link
                 href={buildCurriculumUrl({
-                  grade: selectedGrade,
-                  subject: selectedSubject,
-                  book: subjectData?.book || selectedSubject.toLowerCase(),
-                  part: subjectData?.part || 'main',
-                  unit: firstUnit.id,
-                  chapter_id: firstChapter.id
+                  grade: recentChapter.grade,
+                  subject: recentChapter.subject,
+                  book: recentChapter.book,
+                  part: recentChapter.part,
+                  unit: recentChapter.unit,
+                  chapter_id: recentChapter.chapterId
                 })}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white text-indigo-900 hover:bg-slate-100 text-sm font-extrabold rounded-2xl shadow-lg transition-all hover:translate-x-1"
               >
@@ -385,17 +394,17 @@ export default function Dashboard() {
               <div className="flex items-center gap-2">
                 <span className="text-xs font-bold text-slate-400">Grade:</span>
                 <div className="flex gap-1">
-                  {classes.map((c) => (
+                  {hierarchy.map((g) => (
                     <button
-                      key={`class-select-${c.grade}`}
-                      onClick={() => handleGradeChange(c.grade)}
+                      key={`class-select-${g.grade}`}
+                      onClick={() => handleGradeChange(g.grade)}
                       className={`px-3 py-1 rounded-xl text-xs font-extrabold transition-all ${
-                        selectedGrade === c.grade
+                        selectedGrade === g.grade
                           ? 'bg-slate-900 text-white shadow-xs'
                           : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                       }`}
                     >
-                      Class {c.grade}
+                      Class {g.grade}
                     </button>
                   ))}
                 </div>
@@ -405,11 +414,11 @@ export default function Dashboard() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
             {availableSubjects.map((sub) => {
-              const isActive = selectedSubject === sub;
+              const isActive = selectedSubject.toLowerCase() === sub.canonical_subject.toLowerCase();
               return (
                 <button
-                  key={sub}
-                  onClick={() => setSelectedSubject(sub)}
+                  key={sub.canonical_subject}
+                  onClick={() => handleSubjectChange(sub.canonical_subject)}
                   className={`p-4 rounded-2xl text-left border transition-all flex flex-col justify-between gap-2 hover:-translate-y-0.5 ${
                     isActive
                       ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-600/30'
@@ -417,10 +426,10 @@ export default function Dashboard() {
                   }`}
                 >
                   <span className="text-xl">
-                    {sub.includes('English') ? '📚' : sub.includes('Hindi') ? '🌸' : sub.includes('Maths') ? '📐' : sub.includes('Science') ? '🔬' : '🌍'}
+                    {sub.subject.toLowerCase().includes('english') ? '📚' : sub.subject.toLowerCase().includes('hindi') ? '🌸' : sub.subject.toLowerCase().includes('maths') ? '📐' : sub.subject.toLowerCase().includes('science') ? '🔬' : '🌍'}
                   </span>
                   <div>
-                    <div className="text-sm font-extrabold">{sub}</div>
+                    <div className="text-sm font-extrabold">{sub.subject}</div>
                     <div className={`text-[10px] font-bold ${isActive ? 'text-indigo-200' : 'text-slate-400'}`}>
                       Class {selectedGrade}
                     </div>
@@ -455,19 +464,19 @@ export default function Dashboard() {
         <section className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 className="text-xs font-black tracking-widest text-slate-500 uppercase">
-              Curriculum Chapters • {selectedSubject} (Class {selectedGrade}) {viewMode === 'constellation' ? '• Star Map' : ''}
+              Curriculum Chapters • {currentSubjectObj?.subject || selectedSubject} (Class {selectedGrade}) {viewMode === 'constellation' ? '• Star Map' : ''}
             </h2>
             <span className="text-xs font-bold text-slate-400">
-              {subjectData?.totalChapters || 0} Chapters Total
+              {totalChaptersCount} Chapters Total
             </span>
           </div>
 
           {loading ? (
             <div className="flex items-center justify-center py-16 text-slate-500 bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200/80">
               <div className="animate-spin w-6 h-6 border-2 border-indigo-600 border-t-transparent rounded-full mr-3" />
-              <span className="font-bold text-sm">Loading Authoritative Curriculum Units...</span>
+              <span className="font-bold text-sm">Loading Authoritative Curriculum Hierarchy...</span>
             </div>
-          ) : !subjectData ? (
+          ) : hierarchy.length === 0 ? (
             <div className="p-12 text-center text-slate-500 bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200 space-y-3">
               <h3 className="text-lg font-bold text-slate-900">We couldn&apos;t load the curriculum.</h3>
               <p className="text-xs text-slate-500">Please ensure the backend server is running and try again.</p>
@@ -483,7 +492,7 @@ export default function Dashboard() {
             <div className={`p-8 rounded-3xl bg-gradient-to-br ${getSubjectAtmosphere(selectedSubject)} shadow-2xl space-y-8 border`}>
               <div className="text-center space-y-2">
                 <span className="px-3 py-1 bg-white/10 rounded-full text-xs font-bold uppercase tracking-widest">✨ Celestial Constellation Map</span>
-                <h3 className="text-2xl font-black text-white">{selectedSubject} Star Trail</h3>
+                <h3 className="text-2xl font-black text-white">{currentSubjectObj?.subject || selectedSubject} Star Trail</h3>
                 <p className="text-xs text-slate-300">Click any shining star node to warp directly into the chapter workspace.</p>
               </div>
 
@@ -496,8 +505,8 @@ export default function Dashboard() {
                       href={buildCurriculumUrl({
                         grade: selectedGrade,
                         subject: selectedSubject,
-                        book: subjectData?.book || selectedSubject.toLowerCase(),
-                        part: subjectData?.part || 'main',
+                        book: currentBookObj?.book_id || selectedSubject.toLowerCase(),
+                        part: currentBookObj?.part || 'main',
                         unit: unitObj?.id || 'U01',
                         chapter_id: ch.id
                       })}
@@ -562,8 +571,8 @@ export default function Dashboard() {
                           href={buildCurriculumUrl({
                             grade: selectedGrade,
                             subject: selectedSubject,
-                            book: subjectData?.book || selectedSubject.toLowerCase(),
-                            part: subjectData?.part || 'main',
+                            book: currentBookObj?.book_id || selectedSubject.toLowerCase(),
+                            part: currentBookObj?.part || 'main',
                             unit: unit.id,
                             chapter_id: ch.id
                           })}

@@ -28,7 +28,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [statusCode, setStatusCode] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  // WS4 & WS20 & WS25 state
+  // WS4 & WS20 state
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
   const [isNeedPractice, setIsNeedPractice] = useState<boolean>(false);
   const [tutorOpen, setTutorOpen] = useState<boolean>(false);
@@ -41,71 +41,14 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const unit = segments[4] || '';
   const chapterId = segments[5] || '';
 
-  // Canonical identity key for WS20 identity safety across split books
+  // Canonical identity key for complete identity safety (Item 5 / WS20)
   const canonicalIdentityKey = `${grade}:${subject.toLowerCase()}:${book.toLowerCase()}:${part.toLowerCase()}:${unit.toUpperCase()}:${chapterId.toLowerCase()}`;
 
   const chapterUrl = segments.length >= 6 ? buildCurriculumUrl({ grade, subject, book, part, unit, chapter_id: chapterId }) : '';
 
+  // 1. Identity Initialization & Recent History (Runs ONLY when route identity changes - Item 6 & 7)
   useEffect(() => {
-    if (chapterId && grade) {
-      // Check bookmarks using canonical identity key (WS20)
-      const bks = JSON.parse(localStorage.getItem('gurukul_canonical_bookmarks') || '[]');
-      setIsBookmarked(bks.includes(canonicalIdentityKey));
-
-      const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
-      setIsNeedPractice(np.includes(canonicalIdentityKey));
-
-      // Record recent history (WS5 / WS21) without automatic XP farming on mount (WS4 / WS25)
-      const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
-      const updatedRecent = [{ grade, subject, book, part, unit, chapterId, timestamp: Date.now() }, ...recent.filter((r: any) => r.chapterId !== chapterId)].slice(0, 10);
-      localStorage.setItem('gurukul_recent_chapters', JSON.stringify(updatedRecent));
-    }
-  }, [chapterId, grade, subject, book, part, unit, canonicalIdentityKey]);
-
-  const toggleBookmark = () => {
-    const bks = JSON.parse(localStorage.getItem('gurukul_canonical_bookmarks') || '[]');
-    let nextBks;
-    if (isBookmarked) {
-      nextBks = bks.filter((key: string) => key !== canonicalIdentityKey);
-      setIsBookmarked(false);
-    } else {
-      nextBks = [...bks, canonicalIdentityKey];
-      setIsBookmarked(true);
-    }
-    localStorage.setItem('gurukul_canonical_bookmarks', JSON.stringify(nextBks));
-  };
-
-  const toggleNeedPractice = () => {
-    const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
-    let nextNp;
-    if (isNeedPractice) {
-      nextNp = np.filter((key: string) => key !== canonicalIdentityKey);
-      setIsNeedPractice(false);
-    } else {
-      nextNp = [...np, canonicalIdentityKey];
-      setIsNeedPractice(true);
-    }
-    localStorage.setItem('gurukul_canonical_need_practice', JSON.stringify(nextNp));
-  };
-
-  // WS16: AI Tutor integration with honest fallback / backend discovery
-  const askAiTutor = async (action: string) => {
-    setTutorOpen(true);
-    setTutorResponse('Connecting to authoritative RAG tutor context...');
-    try {
-      const res = await fetch(`http://localhost:8080/api/v1/curriculum/resolve?grade=${grade}&subject=${subject}&book=${book}&part=${part}&unit=${unit}&chapter_id=${chapterId}&content_type=overview`);
-      if (res.ok) {
-        setTutorResponse(`🤖 AI Tutor (NCERT Contextual Guard): For Class ${grade} ${subject} (${book}), review the chapter notes and complete the interactive practice sections to master this topic.`);
-      } else {
-        setTutorResponse('🤖 AI Tutor: Authoritative context retrieved successfully. Please refer to chapter summary and section notes for guided study.');
-      }
-    } catch {
-      setTutorResponse('🤖 AI Tutor: Local offline mode active. Please consult the Notes and Overview tabs for authoritative NCERT curriculum explanations.');
-    }
-  };
-
-  useEffect(() => {
-    async function initializeAndLoad() {
+    async function initializeChapterIdentity() {
       if (segments.length < 6) {
         setStatusCode(400);
         setErrorMsg('Invalid Curriculum Identity: Incomplete 6 identity dimensions required (grade, subject, book, part, unit, chapter_id).');
@@ -118,6 +61,22 @@ export default function CatchAllChapterClient({ segments }: Props) {
         setErrorMsg(null);
         setStatusCode(null);
 
+        // Check bookmarks & need practice
+        const bks = JSON.parse(localStorage.getItem('gurukul_canonical_bookmarks') || '[]');
+        setIsBookmarked(bks.includes(canonicalIdentityKey));
+
+        const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
+        setIsNeedPractice(np.includes(canonicalIdentityKey));
+
+        // Record recent history strictly on chapter entry (Item 7)
+        const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
+        const updatedRecent = [
+          { canonicalIdentityKey, grade, subject, book, part, unit, chapterId, timestamp: Date.now() },
+          ...recent.filter((r: any) => r.canonicalIdentityKey !== canonicalIdentityKey)
+        ].slice(0, 10);
+        localStorage.setItem('gurukul_recent_chapters', JSON.stringify(updatedRecent));
+
+        // Fetch authoritative hierarchy to determine available content types
         const hierarchy = await CurriculumApiClient.fetchHierarchy();
         let foundChapter: any = null;
 
@@ -152,11 +111,27 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
         const validContentTypes = foundChapter.content_types || ['overview'];
         setAvailableContentTypes(validContentTypes);
-
-        const currentTab = validContentTypes.includes(activeTab) ? activeTab : validContentTypes[0];
-        if (currentTab !== activeTab) {
-          setActiveTab(currentTab);
+        if (!validContentTypes.includes(activeTab)) {
+          setActiveTab(validContentTypes[0]);
         }
+      } catch (err: any) {
+        setStatusCode(500);
+        setErrorMsg(err.message || 'Failed to initialize chapter identity.');
+        setLoading(false);
+      }
+    }
+
+    initializeChapterIdentity();
+  }, [segments, grade, subject, book, part, unit, chapterId, canonicalIdentityKey]);
+
+  // 2. Content Loading Effect (Runs when activeTab changes without refetching hierarchy - Item 6)
+  useEffect(() => {
+    async function loadContentForTab() {
+      if (!activeTab || segments.length < 6) return;
+
+      try {
+        setLoading(true);
+        setErrorMsg(null);
 
         const identity: CurriculumIdentity = {
           grade,
@@ -165,7 +140,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
           part,
           unit,
           chapter_id: chapterId,
-          content_type: currentTab
+          content_type: activeTab
         };
 
         const res = await CurriculumApiClient.fetchContent(identity);
@@ -180,15 +155,47 @@ export default function CatchAllChapterClient({ segments }: Props) {
         else if (msg.includes('422') || msg.includes('SCHEMA')) code = 422;
 
         setStatusCode(code);
-        setErrorMsg(msg || 'An unexpected server failure occurred.');
+        setErrorMsg(msg || 'An unexpected content resolution failure occurred.');
         setContentData(null);
       } finally {
         setLoading(false);
       }
     }
 
-    initializeAndLoad();
-  }, [segments, grade, subject, book, part, unit, chapterId, activeTab]);
+    loadContentForTab();
+  }, [activeTab, grade, subject, book, part, unit, chapterId, segments.length]);
+
+  const toggleBookmark = () => {
+    const bks = JSON.parse(localStorage.getItem('gurukul_canonical_bookmarks') || '[]');
+    let nextBks;
+    if (isBookmarked) {
+      nextBks = bks.filter((key: string) => key !== canonicalIdentityKey);
+      setIsBookmarked(false);
+    } else {
+      nextBks = [...bks, canonicalIdentityKey];
+      setIsBookmarked(true);
+    }
+    localStorage.setItem('gurukul_canonical_bookmarks', JSON.stringify(nextBks));
+  };
+
+  const toggleNeedPractice = () => {
+    const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
+    let nextNp;
+    if (isNeedPractice) {
+      nextNp = np.filter((key: string) => key !== canonicalIdentityKey);
+      setIsNeedPractice(false);
+    } else {
+      nextNp = [...np, canonicalIdentityKey];
+      setIsNeedPractice(true);
+    }
+    localStorage.setItem('gurukul_canonical_need_practice', JSON.stringify(nextNp));
+  };
+
+  // WS16: Honest AI Tutor state without fake AI generation
+  const askAiTutor = (action: string) => {
+    setTutorOpen(true);
+    setTutorResponse('🤖 AI Tutor is not available for this chapter yet. Please refer to authoritative NCERT Notes and Overview tabs.');
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 p-6 sm:p-10 space-y-8">
