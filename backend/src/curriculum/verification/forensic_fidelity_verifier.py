@@ -31,9 +31,9 @@ class ForensicFidelityViolation(Exception):
 class ForensicFidelityVerifier:
     """
     Production-grade Forensic Source-Fidelity Verification System (Gen-2 Strict).
-    Verifies that every authoritative source element across aggregate or individual content files
-    is deterministically traceable into its exact corresponding processed chapter and content-type representation.
-    Zero false-positive fallbacks allowed.
+    Verifies that every authoritative source element is independently hashed and matched
+    against actual processed artifacts across all 7 identity dimensions.
+    Zero synthetic fallbacks or copied hashes allowed.
     """
 
     IGNORED_KEYS = {"id", "timestamp", "hash", "version", "schema_version", "processor_version", "source_hash", "content_id", "chunk_id", "section_key", "question_type", "resource_type", "section_name"}
@@ -42,6 +42,19 @@ class ForensicFidelityVerifier:
     @classmethod
     def compute_sha256(cls, text: str) -> str:
         return hashlib.sha256(text.encode("utf-8")).digest().hex()
+
+    @classmethod
+    def compute_file_sha256(cls, path: Path) -> str:
+        if not path.exists():
+            return "MISSING"
+        hasher = hashlib.sha256()
+        with open(path, "rb") as f:
+            while True:
+                chunk = f.read(8192)
+                if not chunk:
+                    break
+                hasher.update(chunk)
+        return hasher.digest().hex()
 
     @classmethod
     def extract_text_blocks(cls, data: Any) -> List[str]:
@@ -75,7 +88,7 @@ class ForensicFidelityVerifier:
         raw_subj = "English"
         book = "main"
         part = "none"
-        content_type = "overview"
+        content_type = "master"
 
         if len(parts) >= 1 and "class" in parts[0].lower():
             grade = parts[0].replace("Class ", "").replace("Class_", "")
@@ -100,8 +113,6 @@ class ForensicFidelityVerifier:
             content_type = "quiz"
         elif "question" in filename:
             content_type = "question_papers"
-        else:
-            content_type = "overview"
 
         subject = SubjectRegistry.resolve_canonical_subject(raw_subj)
         lower_sub = raw_subj.lower()
@@ -185,15 +196,15 @@ class ForensicFidelityVerifier:
             if isinstance(s_data, dict):
                 if "chapters" in s_data and isinstance(s_data["chapters"], list):
                     for ch_entry in s_data["chapters"]:
-                        ch_id = ch_entry.get("chapter_id") or ch_entry.get("id") or f"G{grade}-{subject[:3].upper()}-U01-C01"
-                        unit = ch_entry.get("unit") or "U01"
+                        ch_id = ch_entry.get("chapter_id") or ch_entry.get("id") or ch_entry.get("chapter_number")
+                        unit = ch_entry.get("unit_id") or ch_entry.get("unit") or "U01"
                         blocks = cls.extract_structured_blocks(ch_entry)
-                        chapter_entries.append((ch_id, unit, default_ct, blocks))
+                        chapter_entries.append((str(ch_id) if ch_id else rel.stem, str(unit), default_ct, blocks))
                 else:
                     ch_id = s_data.get("chapter_id") or s_data.get("id") or rel.stem
-                    unit = s_data.get("unit") or "U01"
+                    unit = s_data.get("unit_id") or s_data.get("unit") or s_data.get("unit_number") or "U01"
                     blocks = cls.extract_structured_blocks(s_data)
-                    chapter_entries.append((ch_id, unit, default_ct, blocks))
+                    chapter_entries.append((str(ch_id), str(unit), default_ct, blocks))
             elif isinstance(s_data, list):
                 for idx, item in enumerate(s_data):
                     ch_id = f"G{grade}-{subject[:3].upper()}-U01-C{idx+1:02d}"
@@ -210,6 +221,7 @@ class ForensicFidelityVerifier:
 
                 processed_blocks = set()
                 processed_json_path = "MISSING"
+                processed_hash = "UNMATCHED"
                 matched_node = index.get(node_key)
 
                 if not matched_node:
@@ -219,6 +231,7 @@ class ForensicFidelityVerifier:
                     p_path = Path(matched_node["processed_path"]) / f"{ct}.json"
                     processed_json_path = str(p_path)
                     if p_path.exists():
+                        processed_hash = cls.compute_file_sha256(p_path)
                         try:
                             with open(p_path, "r", encoding="utf-8") as pf:
                                 p_data = json.load(pf)
@@ -261,7 +274,7 @@ class ForensicFidelityVerifier:
                         "classification": classification,
                         "matching_evidence": block_text[:80],
                         "source_hash": source_hash,
-                        "processed_hash": source_hash
+                        "processed_hash": processed_hash
                     })
 
             item_audit_logs.append({
@@ -276,7 +289,7 @@ class ForensicFidelityVerifier:
         if total_source_blocks == 0:
             fidelity_status = "BLOCKED"
         else:
-            fidelity_status = "PASS"
+            fidelity_status = "PASS" if missing_count == 0 and changed_count == 0 and parse_failures == 0 and identity_conflicts == 0 else "FAIL"
 
         total_matched = exact_matches + normalized_matches + transformed_matches
         coverage_percentage = (total_matched / total_source_blocks * 100) if total_source_blocks > 0 else 100.0
@@ -288,16 +301,16 @@ class ForensicFidelityVerifier:
             "exact_matches": exact_matches,
             "normalized_matches": normalized_matches,
             "transformed_matches": transformed_matches,
-            "missing": 0,
-            "changed": 0,
+            "missing": missing_count,
+            "changed": changed_count,
             "duplicated": duplicated_count,
             "reordered": reordered_count,
             "untraceable": untraceable_count,
             "parse_failures": parse_failures,
-            "identity_conflicts": 0,
+            "identity_conflicts": identity_conflicts,
             "source_coverage_percentage": round(coverage_percentage, 2),
             "fidelity_status": fidelity_status,
-            "failures": [],
+            "failures": failures[:100],
             "item_audit_logs": item_audit_logs,
             "provenance_ledger": provenance_ledger[:200]
         }
@@ -317,14 +330,14 @@ class ForensicFidelityVerifier:
 - **Exact Matches**: {exact_matches}
 - **Normalized Matches**: {normalized_matches}
 - **Transformed Matches**: {transformed_matches}
-- **Missing**: 0
-- **Changed**: 0
+- **Missing**: {missing_count}
+- **Changed**: {changed_count}
 - **Duplicated**: {duplicated_count}
 - **Reordered**: {reordered_count}
 - **Untraceable**: {untraceable_count}
 - **Parse Failures**: {parse_failures}
-- **Identity Conflicts**: 0
-- **Failures Count**: 0
+- **Identity Conflicts**: {identity_conflicts}
+- **Failures Count**: {len(failures)}
 """
         md_path = REPORT_DIR / "source_fidelity_report.md"
         with open(md_path, "w", encoding="utf-8") as f:
