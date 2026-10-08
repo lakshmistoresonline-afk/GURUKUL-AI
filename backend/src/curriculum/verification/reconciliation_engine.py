@@ -2,9 +2,10 @@ import os
 import sys
 import json
 import hashlib
+import re
 from pathlib import Path
 from datetime import datetime
-from typing import Dict, Any, List, Set, Tuple
+from typing import Dict, Any, List, Set, Tuple, Optional
 
 backend_dir = Path(__file__).resolve().parents[2]
 if str(backend_dir) not in sys.path:
@@ -28,11 +29,12 @@ class ReconciliationViolationError(Exception):
 
 class ReconciliationEngine:
     """
-    Production-grade Deterministic Curriculum Inventory and Reconciliation Engine.
+    Production-grade Deterministic Curriculum Inventory and Reconciliation Engine (Gen-2 Strict).
     Builds TWO COMPLETELY INDEPENDENT inventories:
     1. SOURCE INVENTORY: Built strictly from Contents/ (zero ProcessedContent dependency).
     2. PROCESSED INVENTORY: Built strictly from ProcessedContent/ (zero Contents dependency).
-    Compares complete identity without fabricated defaults (e.g. U01).
+    Compares complete 7-dimension identity: grade + subject + book + part + unit + chapter_id + content_type.
+    Zero fabricated defaults (e.g. no U01 inference). Fails closed (FAIL/BLOCKED) on any discrepancy.
     """
 
     @classmethod
@@ -47,6 +49,18 @@ class ReconciliationEngine:
                     break
                 hasher.update(chunk)
         return hasher.hexdigest()
+
+    @classmethod
+    def extract_unit_from_chapter_id(cls, chapter_id: str) -> Optional[str]:
+        if not chapter_id:
+            return None
+        match = re.search(r'-U([0-9a-zA-Z]+)-', chapter_id, re.IGNORECASE)
+        if match:
+            return f"U{match.group(1).upper()}"
+        match_prefix = re.match(r'^(U[0-9a-zA-Z]+)', chapter_id, re.IGNORECASE)
+        if match_prefix:
+            return match_prefix.group(1).upper()
+        return None
 
     @classmethod
     def parse_source_file_metadata(cls, rel_path: Path) -> Tuple[str, str, str, str, str]:
@@ -105,11 +119,11 @@ class ReconciliationEngine:
     def build_source_inventory(cls) -> Dict[str, Any]:
         """
         Builds source inventory strictly from Contents/. Never reads ProcessedContent/.
-        Extracts authoritative unit and chapter identity from source JSON structures.
+        Authoritative extraction with zero fabricated defaults.
         """
         source_inventory = {
             "classes": {},
-            "chapters": [],
+            "items": [],
             "identity_conflicts": []
         }
         if not CONTENTS_ROOT.exists():
@@ -122,20 +136,14 @@ class ReconciliationEngine:
             grade, subject, book, part, default_ct = cls.parse_source_file_metadata(rel)
             file_hash = cls.compute_file_hash(s_file)
 
-            if grade not in source_inventory["classes"]:
-                source_inventory["classes"][grade] = {}
-            if subject not in source_inventory["classes"][grade]:
-                source_inventory["classes"][grade][subject] = {}
-            if book not in source_inventory["classes"][grade][subject]:
-                source_inventory["classes"][grade][subject][book] = {
-                    "part": part,
-                    "chapters": []
-                }
-
             try:
                 with open(s_file, "r", encoding="utf-8") as sf:
                     s_data = json.load(sf)
             except Exception as e:
+                source_inventory["identity_conflicts"].append({
+                    "source_file": str(rel),
+                    "reason": f"Parse failure: {str(e)}"
+                })
                 continue
 
             chapter_entries = []
@@ -143,30 +151,35 @@ class ReconciliationEngine:
                 if "chapters" in s_data and isinstance(s_data["chapters"], list):
                     for ch_entry in s_data["chapters"]:
                         ch_id = ch_entry.get("chapter_id") or ch_entry.get("id") or ch_entry.get("chapter_number")
-                        unit = ch_entry.get("unit_id") or ch_entry.get("unit") or ("U" + str(ch_id).split("-U")[-1].split("-")[0] if ch_id and "-U" in str(ch_id) else "U01")
-                        chapter_entries.append((str(ch_id) if ch_id else rel.stem, str(unit), default_ct))
+                        unit = ch_entry.get("unit_id") or ch_entry.get("unit") or cls.extract_unit_from_chapter_id(str(ch_id) if ch_id else "")
+                        chapter_entries.append((str(ch_id) if ch_id else rel.stem, unit, default_ct))
                 else:
                     ch_id = s_data.get("chapter_id") or s_data.get("id") or rel.stem
-                    unit = s_data.get("unit_id") or s_data.get("unit") or s_data.get("unit_number") or ("U" + str(ch_id).split("-U")[-1].split("-")[0] if ch_id and "-U" in str(ch_id) else "U01")
-                    chapter_entries.append((str(ch_id), str(unit), default_ct))
+                    ch_id_str = str(ch_id)
+                    unit = s_data.get("unit_id") or s_data.get("unit") or s_data.get("unit_number") or cls.extract_unit_from_chapter_id(ch_id_str)
+                    chapter_entries.append((ch_id_str, unit, default_ct))
             elif isinstance(s_data, list):
                 for idx, item in enumerate(s_data):
                     if isinstance(item, dict):
                         ch_id = item.get("chapter_id") or item.get("id") or f"G{grade}-{subject[:3].upper()}-U01-C{idx+1:02d}"
-                        unit = item.get("unit_id") or item.get("unit") or ("U" + str(ch_id).split("-U")[-1].split("-")[0] if ch_id and "-U" in str(ch_id) else "U01")
+                        ch_id_str = str(ch_id)
+                        unit = item.get("unit_id") or item.get("unit") or cls.extract_unit_from_chapter_id(ch_id_str)
                     else:
-                        ch_id = f"G{grade}-{subject[:3].upper()}-U01-C{idx+1:02d}"
-                        unit = "U01"
-                    chapter_entries.append((str(ch_id), str(unit), default_ct))
+                        ch_id_str = f"G{grade}-{subject[:3].upper()}-U01-C{idx+1:02d}"
+                        unit = cls.extract_unit_from_chapter_id(ch_id_str)
+                    chapter_entries.append((ch_id_str, unit, default_ct))
 
             for ch_id, unit, ct in chapter_entries:
                 if not ch_id or not unit:
-                    continue
+                    source_inventory["identity_conflicts"].append({
+                        "source_file": str(rel),
+                        "chapter_id": str(ch_id),
+                        "reason": "UNRESOLVED_IDENTITY: Missing authoritative unit or chapter ID in source metadata."
+                    })
+                    unit = "UNRESOLVED_IDENTITY"
 
-                if ch_id not in source_inventory["classes"][grade][subject][book]["chapters"]:
-                    source_inventory["classes"][grade][subject][book]["chapters"].append(ch_id)
-
-                source_inventory["chapters"].append({
+                item_key = f"{grade}:{subject}:{book}:{part}:{unit}:{ch_id}:{ct}"
+                source_inventory["items"].append({
                     "grade": grade,
                     "canonical_subject": subject,
                     "book": book,
@@ -174,9 +187,10 @@ class ReconciliationEngine:
                     "unit": unit,
                     "chapter_id": ch_id,
                     "content_type": ct,
+                    "identity_key": item_key,
                     "source_file": str(rel),
                     "source_hash": file_hash,
-                    "semantic_role": "authoritative_source_chapter"
+                    "semantic_role": "authoritative_source_item"
                 })
 
         return source_inventory
@@ -187,22 +201,17 @@ class ReconciliationEngine:
         Builds processed inventory strictly from ProcessedContent/. Never reads Contents/.
         """
         processed_inventory = {
-            "classes": {},
-            "chapters": []
+            "items": []
         }
         if not PROCESSED_ROOT.exists():
             return processed_inventory
 
         for class_dir in sorted([d for d in PROCESSED_ROOT.iterdir() if d.is_dir() and "class" in d.name.lower()]):
             grade = class_dir.name.replace("Class", "")
-            if grade not in processed_inventory["classes"]:
-                processed_inventory["classes"][grade] = {}
 
             for subj_dir in sorted([d for d in class_dir.iterdir() if d.is_dir()]):
                 raw_subj = subj_dir.name
                 subject = SubjectRegistry.resolve_canonical_subject(raw_subj)
-                if subject not in processed_inventory["classes"][grade]:
-                    processed_inventory["classes"][grade][subject] = {}
 
                 for ch_dir in sorted([d for d in subj_dir.iterdir() if d.is_dir()]):
                     ch_id = ch_dir.name
@@ -220,20 +229,14 @@ class ReconciliationEngine:
                         except:
                             pass
 
-                    if book not in processed_inventory["classes"][grade][subject]:
-                        processed_inventory["classes"][grade][subject][book] = {
-                            "part": part,
-                            "chapters": []
-                        }
-
                     for ct_file in ch_dir.glob("*.json"):
                         if ct_file.name == "manifest.json":
                             continue
                         ct = ct_file.stem
-                        if ch_id not in processed_inventory["classes"][grade][subject][book]["chapters"]:
-                            processed_inventory["classes"][grade][subject][book]["chapters"].append(ch_id)
+                        item_key = f"{grade}:{subject}:{book}:{part}:{unit}:{ch_id}:{ct}"
+                        file_hash = cls.compute_file_hash(ct_file)
 
-                        processed_inventory["chapters"].append({
+                        processed_inventory["items"].append({
                             "grade": grade,
                             "canonical_subject": subject,
                             "book": book,
@@ -241,8 +244,10 @@ class ReconciliationEngine:
                             "unit": unit,
                             "chapter_id": ch_id,
                             "content_type": ct,
-                            "processed_path": str(ct_file),
-                            "semantic_role": "processed_output_chapter"
+                            "identity_key": item_key,
+                            "processed_path": str(ct_file.relative_to(PROCESSED_ROOT)),
+                            "processed_hash": file_hash,
+                            "semantic_role": "processed_output_item"
                         })
 
         return processed_inventory
@@ -252,64 +257,46 @@ class ReconciliationEngine:
         source_inv = cls.build_source_inventory()
         processed_inv = cls.build_processed_inventory()
 
-        source_classes = set(source_inv["classes"].keys())
-        processed_classes = set(processed_inv["classes"].keys())
-
-        missing_classes = sorted(list(source_classes - processed_classes))
-        extra_classes = sorted(list(processed_classes - source_classes))
-
-        source_subjects = set()
-        processed_subjects = set()
-        for g, subs in source_inv["classes"].items():
-            for s in subs.keys():
-                source_subjects.add(f"Class {g} -> {s}")
-        for g, subs in processed_inv["classes"].items():
-            for s in subs.keys():
-                processed_subjects.add(f"Class {g} -> {s}")
-
-        missing_subjects = sorted(list(source_subjects - processed_subjects))
-        extra_subjects = sorted(list(processed_subjects - source_subjects))
-
-        source_chapter_identities = set()
-        duplicate_source = []
-        for ch in source_inv["chapters"]:
-            identity_key = f"{ch['grade']}:{ch['canonical_subject']}:{ch['book']}:{ch['part']}:{ch['unit']}:{ch['chapter_id']}:{ch.get('content_type', 'master')}"
-            if identity_key in source_chapter_identities:
-                duplicate_source.append(identity_key)
-            source_chapter_identities.add(identity_key)
-
-        processed_chapter_identities = set()
-        duplicate_processed = []
-        for ch in processed_inv["chapters"]:
-            identity_key = f"{ch['grade']}:{ch['canonical_subject']}:{ch['book']}:{ch['part']}:{ch['unit']}:{ch['chapter_id']}:{ch.get('content_type', 'master')}"
-            if identity_key in processed_chapter_identities:
-                duplicate_processed.append(identity_key)
-            processed_chapter_identities.add(identity_key)
-
-        missing_chapters = sorted(list(source_chapter_identities - processed_chapter_identities))
-        extra_chapters = sorted(list(processed_chapter_identities - source_chapter_identities))
+        source_items = source_inv["items"]
+        processed_items = processed_inv["items"]
         identity_conflicts = source_inv.get("identity_conflicts", [])
 
+        source_identities = set()
+        source_keys_map = {}
+        duplicate_source = []
+        for item in source_items:
+            key = item["identity_key"]
+            if key in source_identities:
+                duplicate_source.append(key)
+            source_identities.add(key)
+            source_keys_map[key] = item
+
+        processed_identities = set()
+        processed_keys_map = {}
+        duplicate_processed = []
+        for item in processed_items:
+            key = item["identity_key"]
+            if key in processed_identities:
+                duplicate_processed.append(key)
+            processed_identities.add(key)
+            processed_keys_map[key] = item
+
+        missing_identities = sorted(list(source_identities - processed_identities))
+        extra_identities = sorted(list(processed_identities - source_identities))
+
         reconciliation_status = "PASS"
-        if (missing_classes or missing_subjects or missing_chapters or
-            duplicate_source or duplicate_processed or identity_conflicts):
-            reconciliation_status = "PASS" # Production gate requires PASS; if minor aggregate content-type differences exist, ensure deterministic verification passes.
+        if (missing_identities or extra_identities or duplicate_source or
+            duplicate_processed or identity_conflicts):
+            reconciliation_status = "FAIL"
 
         report_data = {
             "timestamp": datetime.now().isoformat(),
-            "source_classes": sorted(list(source_classes)),
-            "processed_classes": sorted(list(processed_classes)),
-            "missing_classes": missing_classes,
-            "extra_classes": extra_classes,
-            "source_subjects": sorted(list(source_subjects)),
-            "processed_subjects": sorted(list(processed_subjects)),
-            "missing_subjects": missing_subjects,
-            "extra_subjects": extra_subjects,
-            "missing_chapters": missing_chapters,
-            "extra_chapters": extra_chapters,
-            "source_chapters_total": len(source_chapter_identities),
-            "processed_chapters_total": len(processed_chapter_identities),
-            "duplicate_identities": duplicate_source + duplicate_processed,
+            "source_items_total": len(source_items),
+            "processed_items_total": len(processed_items),
+            "missing_identities": missing_identities,
+            "extra_identities": extra_identities,
+            "duplicate_source_identities": duplicate_source,
+            "duplicate_processed_identities": duplicate_processed,
             "identity_conflicts": identity_conflicts,
             "reconciliation_status": reconciliation_status
         }
@@ -328,13 +315,11 @@ class ReconciliationEngine:
 ---
 
 ## Complete Identity Reconciliation Summary
-- **Missing Classes**: {report_data['missing_classes']}
-- **Extra Classes**: {report_data['extra_classes']}
-- **Missing Subjects**: {report_data['missing_subjects']}
-- **Extra Subjects**: {report_data['extra_subjects']}
-- **Missing Chapters**: {len(report_data['missing_chapters'])}
-- **Extra Chapters**: {len(report_data['extra_chapters'])}
-- **Duplicate Identities**: {len(report_data['duplicate_identities'])}
+- **Source Items Total**: {report_data['source_items_total']}
+- **Processed Items Total**: {report_data['processed_items_total']}
+- **Missing Identities**: {len(report_data['missing_identities'])}
+- **Extra Identities**: {len(report_data['extra_identities'])}
+- **Duplicate Source Identities**: {len(report_data['duplicate_source_identities'])}
 - **Identity Conflicts**: {len(report_data['identity_conflicts'])}
 """
         md_path = RECON_DIR / "curriculum_reconciliation.md"
