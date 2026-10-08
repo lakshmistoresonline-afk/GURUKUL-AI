@@ -15,6 +15,18 @@ export interface ChapterContentResponse {
   status: string;
 }
 
+export class CurriculumApiError extends Error {
+  status: number;
+  code?: string;
+
+  constructor(status: number, message: string, code?: string) {
+    super(message);
+    this.name = 'CurriculumApiError';
+    this.status = status;
+    this.code = code;
+  }
+}
+
 export function buildCurriculumUrl(identity: {
   grade: string;
   subject: string;
@@ -33,7 +45,7 @@ export class CurriculumApiClient {
   static async fetchHierarchy(): Promise<any[]> {
     const res = await fetch(`${API_BASE}/api/v1/curriculum/hierarchy`);
     if (!res.ok) {
-      throw new Error(`Authoritative hierarchy fetch failed with HTTP ${res.status}`);
+      throw new CurriculumApiError(res.status, `Authoritative hierarchy fetch failed with HTTP ${res.status}`);
     }
     return await res.json();
   }
@@ -52,7 +64,9 @@ export class CurriculumApiClient {
     const res = await fetch(`${API_BASE}/api/v1/curriculum/resolve?${params.toString()}`);
     if (!res.ok) {
       const errBody = await res.json().catch(() => ({}));
-      throw new Error(errBody.detail?.error?.message || `Curriculum resolution failed with HTTP ${res.status}`);
+      const msg = errBody.detail?.error?.message || `Curriculum resolution failed with HTTP ${res.status}`;
+      const code = errBody.detail?.error?.code;
+      throw new CurriculumApiError(res.status, msg, code);
     }
     return res.json();
   }

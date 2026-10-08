@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { CurriculumApiClient, CurriculumIdentity, buildCurriculumUrl } from '@/lib/curriculumClient';
+import { CurriculumApiClient, CurriculumIdentity, CurriculumApiError, buildCurriculumUrl } from '@/lib/curriculumClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
 
 interface Props {
@@ -28,7 +28,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [statusCode, setStatusCode] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  // WS4 & WS20 state
+  // Bookmarks & Need Practice state
   const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
   const [isNeedPractice, setIsNeedPractice] = useState<boolean>(false);
   const [tutorOpen, setTutorOpen] = useState<boolean>(false);
@@ -41,12 +41,12 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const unit = segments[4] || '';
   const chapterId = segments[5] || '';
 
-  // Canonical identity key for complete identity safety (Item 5 / WS20)
+  // Canonical identity key for identity safety
   const canonicalIdentityKey = `${grade}:${subject.toLowerCase()}:${book.toLowerCase()}:${part.toLowerCase()}:${unit.toUpperCase()}:${chapterId.toLowerCase()}`;
 
   const chapterUrl = segments.length >= 6 ? buildCurriculumUrl({ grade, subject, book, part, unit, chapter_id: chapterId }) : '';
 
-  // 1. Identity Initialization & Recent History (Runs ONLY when route identity changes - Item 6 & 7)
+  // 1. Identity Initialization & Recent History (Runs ONLY when route identity changes - Item 1)
   useEffect(() => {
     async function initializeChapterIdentity() {
       if (segments.length < 6) {
@@ -68,15 +68,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
         const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
         setIsNeedPractice(np.includes(canonicalIdentityKey));
 
-        // Record recent history strictly on chapter entry (Item 7)
-        const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
-        const updatedRecent = [
-          { canonicalIdentityKey, grade, subject, book, part, unit, chapterId, timestamp: Date.now() },
-          ...recent.filter((r: any) => r.canonicalIdentityKey !== canonicalIdentityKey)
-        ].slice(0, 10);
-        localStorage.setItem('gurukul_recent_chapters', JSON.stringify(updatedRecent));
-
-        // Fetch authoritative hierarchy to determine available content types
+        // Fetch authoritative hierarchy to confirm chapter existence BEFORE writing recent history (Item 1)
         const hierarchy = await CurriculumApiClient.fetchHierarchy();
         let foundChapter: any = null;
 
@@ -109,13 +101,31 @@ export default function CatchAllChapterClient({ segments }: Props) {
           return;
         }
 
-        const validContentTypes = foundChapter.content_types || ['overview'];
+        // Validate content types strictly without fabricated 'overview' fallback (Item 2)
+        const validContentTypes = foundChapter.content_types;
+        if (!validContentTypes || !Array.isArray(validContentTypes) || validContentTypes.length === 0) {
+          setStatusCode(422);
+          setErrorMsg(`Authoritative metadata error: Chapter ${chapterId} has missing or malformed content_types.`);
+          setLoading(false);
+          return;
+        }
+
         setAvailableContentTypes(validContentTypes);
         if (!validContentTypes.includes(activeTab)) {
           setActiveTab(validContentTypes[0]);
         }
+
+        // Only after authoritative validation succeeds, write/update recent history (Item 1)
+        const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
+        const updatedRecent = [
+          { canonicalIdentityKey, grade, subject, book, part, unit, chapterId, timestamp: Date.now() },
+          ...recent.filter((r: any) => r.canonicalIdentityKey !== canonicalIdentityKey)
+        ].slice(0, 10);
+        localStorage.setItem('gurukul_recent_chapters', JSON.stringify(updatedRecent));
+
       } catch (err: any) {
-        setStatusCode(500);
+        const code = err instanceof CurriculumApiError ? err.status : 500;
+        setStatusCode(code);
         setErrorMsg(err.message || 'Failed to initialize chapter identity.');
         setLoading(false);
       }
@@ -147,15 +157,11 @@ export default function CatchAllChapterClient({ segments }: Props) {
         setContentData(res.data);
         setStatusCode(200);
       } catch (err: any) {
-        const msg = err.message || '';
-        let code = 500;
-        if (msg.includes('400') || msg.includes('INVALID')) code = 400;
-        else if (msg.includes('404') || msg.includes('NOT_FOUND')) code = 404;
-        else if (msg.includes('409') || msg.includes('CONFLICT')) code = 409;
-        else if (msg.includes('422') || msg.includes('SCHEMA')) code = 422;
+        const code = err instanceof CurriculumApiError ? err.status : 500;
+        const msg = err.message || 'An unexpected content resolution failure occurred.';
 
         setStatusCode(code);
-        setErrorMsg(msg || 'An unexpected content resolution failure occurred.');
+        setErrorMsg(msg);
         setContentData(null);
       } finally {
         setLoading(false);
@@ -191,10 +197,10 @@ export default function CatchAllChapterClient({ segments }: Props) {
     localStorage.setItem('gurukul_canonical_need_practice', JSON.stringify(nextNp));
   };
 
-  // WS16: Honest AI Tutor state without fake AI generation
+  // AI Tutor honest unavailable state
   const askAiTutor = (action: string) => {
     setTutorOpen(true);
-    setTutorResponse('🤖 AI Tutor is not available for this chapter yet. Please refer to authoritative NCERT Notes and Overview tabs.');
+    setTutorResponse('🤖 AI Tutor is not available for this chapter yet. Please refer to authoritative NCERT Notes and Overview sections.');
   };
 
   return (
@@ -226,7 +232,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
         </div>
         <h1 className="text-2xl sm:text-3xl font-black tracking-tight">Chapter: {chapterId}</h1>
 
-        {/* AI Tutor Entry Points (WS16) */}
+        {/* AI Tutor Entry Points */}
         <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-indigo-800/60">
           <span className="text-xs font-bold text-indigo-200">🤖 AI Tutor:</span>
           <button onClick={() => askAiTutor('explain')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">

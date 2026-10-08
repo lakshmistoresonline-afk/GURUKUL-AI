@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { buildCurriculumUrl } from '@/lib/curriculumClient';
 
 interface CommandPaletteProps {
   isOpen: boolean;
@@ -17,9 +18,6 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         if (isOpen) onClose();
-        else {
-          // Open
-        }
       } else if (e.key === 'Escape' && isOpen) {
         onClose();
       }
@@ -31,15 +29,42 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
   if (!isOpen) return null;
 
   const quickChapters = [
-    { title: "Papa's Spectacles (Class 5 English)", href: "/5/English/G5-ENG-U01-C01" },
-    { title: "किरन (Class 5 Hindi)", href: "/5/Hindi/G5-HIN-U01-C01" },
-    { title: "Travelling, Now and Then (Class 5 Maths)", href: "/5/Maths/G5-MAT-U01-C01" },
-    { title: "Water — The Essence of Life (Class 5 Science)", href: "/5/Science/G5-SCI-U01-C01" },
-    { title: "A Bottle of Dew (Class 6 English)", href: "/6/English/G6-ENG-U01-C01" },
-    { title: "मातृभूमि (Class 6 Hindi)", href: "/6/Hindi/G6-HIN-U01-C01" },
-    { title: "Patterns in Mathematics (Class 6 Maths)", href: "/6/Maths/G6-MAT-U01-C01" },
-    { title: "The Wonderful World of Science (Class 6 Science)", href: "/6/Science/G6-SCI-U01-C01" },
-    { title: "Locating Places on the Earth (Class 6 Social)", href: "/6/Social/G6-SOC-U01-C01" },
+    {
+      title: "Papa's Spectacles (Class 5 English)",
+      href: buildCurriculumUrl({ grade: '5', subject: 'english', book: 'english', part: 'main', unit: 'U01', chapter_id: 'G5-ENG-U01-C01' })
+    },
+    {
+      title: "किरन (Class 5 Hindi)",
+      href: buildCurriculumUrl({ grade: '5', subject: 'hindi', book: 'hindi', part: 'main', unit: 'U01', chapter_id: 'G5-HIN-U01-C01' })
+    },
+    {
+      title: "Travelling, Now and Then (Class 5 Maths)",
+      href: buildCurriculumUrl({ grade: '5', subject: 'mathematics', book: 'mathematics', part: 'main', unit: 'U01', chapter_id: 'G5-MAT-U01-C01' })
+    },
+    {
+      title: "Water — The Essence of Life (Class 5 Science)",
+      href: buildCurriculumUrl({ grade: '5', subject: 'science', book: 'science', part: 'main', unit: 'U01', chapter_id: 'G5-SCI-U01-C01' })
+    },
+    {
+      title: "A Bottle of Dew (Class 6 English)",
+      href: buildCurriculumUrl({ grade: '6', subject: 'english', book: 'english', part: 'main', unit: 'U01', chapter_id: 'G6-ENG-U01-C01' })
+    },
+    {
+      title: "मातृभूमि (Class 6 Hindi)",
+      href: buildCurriculumUrl({ grade: '6', subject: 'hindi', book: 'hindi', part: 'main', unit: 'U01', chapter_id: 'G6-HIN-U01-C01' })
+    },
+    {
+      title: "Patterns in Mathematics (Class 6 Maths)",
+      href: buildCurriculumUrl({ grade: '6', subject: 'mathematics', book: 'mathematics', part: 'main', unit: 'U01', chapter_id: 'G6-MAT-U01-C01' })
+    },
+    {
+      title: "The Wonderful World of Science (Class 6 Science)",
+      href: buildCurriculumUrl({ grade: '6', subject: 'science', book: 'science', part: 'main', unit: 'U01', chapter_id: 'G6-SCI-U01-C01' })
+    },
+    {
+      title: "Locating Places on the Earth (Class 6 Social)",
+      href: buildCurriculumUrl({ grade: '6', subject: 'social_science', book: 'social', part: 'main', unit: 'U01', chapter_id: 'G6-SOC-U01-C01' })
+    },
   ];
 
   const filtered = quickChapters.filter(c => c.title.toLowerCase().includes(query.toLowerCase()));
