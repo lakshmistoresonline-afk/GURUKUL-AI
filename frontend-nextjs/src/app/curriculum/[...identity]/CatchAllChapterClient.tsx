@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { CurriculumApiClient, CurriculumIdentity } from '@/lib/curriculumClient';
+import { CurriculumApiClient, CurriculumIdentity, buildCurriculumUrl } from '@/lib/curriculumClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
 
 interface Props {
@@ -28,12 +28,80 @@ export default function CatchAllChapterClient({ segments }: Props) {
   const [statusCode, setStatusCode] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+  // WS4 & WS20 & WS25 state
+  const [isBookmarked, setIsBookmarked] = useState<boolean>(false);
+  const [isNeedPractice, setIsNeedPractice] = useState<boolean>(false);
+  const [tutorOpen, setTutorOpen] = useState<boolean>(false);
+  const [tutorQuery, setTutorQuery] = useState<string>('');
+  const [tutorResponse, setTutorResponse] = useState<string>('');
+
   const grade = segments[0] || '';
   const subject = segments[1] || '';
   const book = segments[2] || '';
   const part = segments[3] || '';
   const unit = segments[4] || '';
   const chapterId = segments[5] || '';
+
+  const chapterUrl = segments.length >= 6 ? buildCurriculumUrl({ grade, subject, book, part, unit, chapter_id: chapterId }) : '';
+
+  useEffect(() => {
+    if (chapterId) {
+      // Check bookmarks
+      const bks = JSON.parse(localStorage.getItem('gurukul_bookmarks') || '[]');
+      setIsBookmarked(bks.includes(chapterId));
+
+      const np = JSON.parse(localStorage.getItem('gurukul_need_practice') || '[]');
+      setIsNeedPractice(np.includes(chapterId));
+
+      // Record recent history (WS5 / WS21)
+      const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
+      const updatedRecent = [{ grade, subject, book, part, unit, chapterId, timestamp: Date.now() }, ...recent.filter((r: any) => r.chapterId !== chapterId)].slice(0, 10);
+      localStorage.setItem('gurukul_recent_chapters', JSON.stringify(updatedRecent));
+
+      // Award XP & Track Progress (WS4 / WS25)
+      const currentXp = parseInt(localStorage.getItem('gurukul_xp') || '120', 10);
+      localStorage.setItem('gurukul_xp', String(currentXp + 5));
+    }
+  }, [chapterId, grade, subject, book, part, unit]);
+
+  const toggleBookmark = () => {
+    const bks = JSON.parse(localStorage.getItem('gurukul_bookmarks') || '[]');
+    let nextBks;
+    if (isBookmarked) {
+      nextBks = bks.filter((id: string) => id !== chapterId);
+      setIsBookmarked(false);
+    } else {
+      nextBks = [...bks, chapterId];
+      setIsBookmarked(true);
+    }
+    localStorage.setItem('gurukul_bookmarks', JSON.stringify(nextBks));
+  };
+
+  const toggleNeedPractice = () => {
+    const np = JSON.parse(localStorage.getItem('gurukul_need_practice') || '[]');
+    let nextNp;
+    if (isNeedPractice) {
+      nextNp = np.filter((id: string) => id !== chapterId);
+      setIsNeedPractice(false);
+    } else {
+      nextNp = [...np, chapterId];
+      setIsNeedPractice(true);
+    }
+    localStorage.setItem('gurukul_need_practice', JSON.stringify(nextNp));
+  };
+
+  const askAiTutor = (action: string) => {
+    setTutorOpen(true);
+    if (action === 'explain') {
+      setTutorResponse(`🤖 AI Tutor: Let&apos;s understand this topic simply! Read through the Notes tab for key definitions and core concepts.`);
+    } else if (action === 'example') {
+      setTutorResponse(`🤖 AI Tutor: Here is a helpful example: Connect this NCERT concept to your daily surroundings and observe how it applies.`);
+    } else if (action === 'quiz') {
+      setTutorResponse(`🤖 AI Tutor: Test your understanding! Switch to the Quiz tab above to try interactive practice questions.`);
+    } else {
+      setTutorResponse(`🤖 AI Tutor: Don&apos;t worry if it&apos;s tricky! Break down the paragraph into smaller pieces or ask your teacher for guidance.`);
+    }
+  };
 
   useEffect(() => {
     async function initializeAndLoad() {
@@ -49,7 +117,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
         setErrorMsg(null);
         setStatusCode(null);
 
-        // 1. Fetch authoritative hierarchy to determine available content types for this exact chapter
         const hierarchy = await CurriculumApiClient.fetchHierarchy();
         let foundChapter: any = null;
 
@@ -90,7 +157,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           setActiveTab(currentTab);
         }
 
-        // 2. Fetch content for active tab
         const identity: CurriculumIdentity = {
           grade,
           subject,
@@ -126,11 +192,55 @@ export default function CatchAllChapterClient({ segments }: Props) {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 p-6 sm:p-10 space-y-8">
       {/* Top Identity Header */}
-      <div className="max-w-6xl mx-auto bg-gradient-to-r from-indigo-950 via-indigo-900 to-slate-900 text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-3">
-        <div className="flex flex-wrap items-center gap-2 text-xs font-mono uppercase text-indigo-300">
-          <span>Class {grade}</span> / <span>{subject}</span> / <span>Book: {book}</span> / <span>Part: {part}</span> / <span>Unit: {unit}</span>
+      <div className="max-w-6xl mx-auto bg-gradient-to-r from-indigo-950 via-indigo-900 to-slate-900 text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center gap-2 text-xs font-mono uppercase text-indigo-300">
+            <span>Class {grade}</span> / <span>{subject}</span> / <span>Book: {book}</span> / <span>Part: {part}</span> / <span>Unit: {unit}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={toggleBookmark}
+              className={`px-3 py-1.5 rounded-xl text-xs font-extrabold transition-all border ${
+                isBookmarked ? 'bg-amber-500 text-white border-amber-600' : 'bg-white/10 text-white border-white/20 hover:bg-white/20'
+              }`}
+            >
+              {isBookmarked ? '★ Bookmarked' : '☆ Bookmark'}
+            </button>
+            <button
+              onClick={toggleNeedPractice}
+              className={`px-3 py-1.5 rounded-xl text-xs font-extrabold transition-all border ${
+                isNeedPractice ? 'bg-rose-500 text-white border-rose-600' : 'bg-white/10 text-white border-white/20 hover:bg-white/20'
+              }`}
+            >
+              {isNeedPractice ? '🔍 Need Practice' : '🔍 Mark for Practice'}
+            </button>
+          </div>
         </div>
         <h1 className="text-2xl sm:text-3xl font-black tracking-tight">Chapter: {chapterId}</h1>
+
+        {/* AI Tutor Entry Points (WS16) */}
+        <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-indigo-800/60">
+          <span className="text-xs font-bold text-indigo-200">🤖 AI Tutor:</span>
+          <button onClick={() => askAiTutor('explain')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">
+            Explain Simply
+          </button>
+          <button onClick={() => askAiTutor('example')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">
+            Give an Example
+          </button>
+          <button onClick={() => askAiTutor('quiz')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">
+            Quiz Me
+          </button>
+          <button onClick={() => askAiTutor('help')} className="px-3 py-1 rounded-lg bg-indigo-800/80 hover:bg-indigo-700 text-xs font-bold transition-all text-indigo-100">
+            I Don&apos;t Understand
+          </button>
+        </div>
+
+        {tutorOpen && (
+          <div className="bg-indigo-950/90 border border-indigo-700/60 p-4 rounded-2xl text-sm text-indigo-100 relative mt-3 space-y-2">
+            <button onClick={() => setTutorOpen(false)} className="absolute top-3 right-3 text-indigo-400 hover:text-white font-bold text-xs">✕ Close</button>
+            <p className="font-medium">{tutorResponse}</p>
+          </div>
+        )}
       </div>
 
       {/* Authoritative Content-Type Tabs Bar */}
