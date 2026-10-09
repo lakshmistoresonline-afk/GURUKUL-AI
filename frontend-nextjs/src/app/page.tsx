@@ -16,39 +16,6 @@ interface CurricularGoal {
   description: string;
 }
 
-interface Chapter {
-  id: string;
-  chapterNumber: number;
-  title: string;
-  resourceCount?: number;
-  contentTypes?: string[];
-}
-
-interface Unit {
-  id: string;
-  title: string;
-  unitNumber: number;
-  theme?: string;
-  chapters: Chapter[];
-}
-
-interface BookDetails {
-  book_id: string;
-  part: string;
-  units: Unit[];
-}
-
-interface SubjectHierarchy {
-  subject: string;
-  canonical_subject: string;
-  books: BookDetails[];
-}
-
-interface GradeHierarchy {
-  grade: string;
-  subjects: SubjectHierarchy[];
-}
-
 interface ApiDiagnostics {
   endpoint: string;
   status?: number;
@@ -61,7 +28,7 @@ export default function Dashboard() {
   const [userClassId, setUserClassId] = useState<string>('all');
   const [authChecking, setAuthChecking] = useState<boolean>(true);
 
-  const [hierarchy, setHierarchy] = useState<GradeHierarchy[]>([]);
+  const [hierarchy, setHierarchy] = useState<any[]>([]);
   const [selectedGrade, setSelectedGrade] = useState<string>('5');
   const [selectedSubject, setSelectedSubject] = useState<string>('english');
   const [selectedBook, setSelectedBook] = useState<string>('english');
@@ -71,7 +38,7 @@ export default function Dashboard() {
   const [apiError, setApiError] = useState<ApiDiagnostics | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
 
-  // Truthful progress state (Item 3)
+  // Truthful progress state
   const [streak, setStreak] = useState<number>(0);
   const [xp, setXp] = useState<number>(0);
   const [recentChapter, setRecentChapter] = useState<any>(null);
@@ -116,7 +83,7 @@ export default function Dashboard() {
     return () => unsubscribe();
   }, []);
 
-  // Load authoritative hierarchy (Item 1 & Item 2)
+  // Load authoritative hierarchy
   useEffect(() => {
     async function loadHierarchy() {
       try {
@@ -125,10 +92,9 @@ export default function Dashboard() {
         const data = await CurriculumApiClient.fetchHierarchy();
         setHierarchy(data);
 
-        // Set default grade/subject if available
         if (data && data.length > 0) {
-          const defaultGradeNode = data.find((g: any) => String(g.grade) === selectedGrade) || data[0];
-          setSelectedGrade(defaultGradeNode.grade);
+          const defaultGradeNode = data.find((g: any) => String(g.grade) === String(selectedGrade)) || data[0];
+          setSelectedGrade(String(defaultGradeNode.grade));
           if (defaultGradeNode.subjects && defaultGradeNode.subjects.length > 0) {
             const defaultSubj = defaultGradeNode.subjects[0];
             setSelectedSubject(defaultSubj.canonical_subject);
@@ -150,27 +116,44 @@ export default function Dashboard() {
     }
 
     loadHierarchy();
-  }, []);
+  }, [selectedGrade]);
 
-  // Load recent learning history (Item 4)
+  // Load and defensively validate recent history against authoritative hierarchy
   useEffect(() => {
     try {
       const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
-      if (recent.length > 0) {
-        setRecentChapter(recent[0]);
+      if (Array.isArray(recent) && recent.length > 0 && hierarchy.length > 0) {
+        const validRecord = recent.find((r: any) => {
+          if (!r || !r.grade || !r.subject || !r.book || !r.part || !r.unit || !r.chapterId) return false;
+          const gObj = hierarchy.find((g: any) => String(g.grade) === String(r.grade));
+          if (!gObj) return false;
+          const sObj = (gObj.subjects || []).find((s: any) => s.canonical_subject?.toLowerCase() === r.subject.toLowerCase() || s.subject?.toLowerCase() === r.subject.toLowerCase());
+          if (!sObj) return false;
+          const bObj = (sObj.books || []).find((b: any) => b.book_id?.toLowerCase() === r.book.toLowerCase() && b.part?.toLowerCase() === r.part.toLowerCase());
+          if (!bObj) return false;
+          const uObj = (bObj.units || []).find((u: any) => u.unit_id?.toUpperCase() === r.unit.toUpperCase());
+          if (!uObj) return false;
+          const chObj = (uObj.chapters || []).find((c: any) => c.chapter_id?.toLowerCase() === r.chapterId.toLowerCase());
+          return Boolean(chObj);
+        });
+        setRecentChapter(validRecord || null);
+      } else {
+        setRecentChapter(null);
       }
-    } catch {}
-  }, []);
+    } catch {
+      setRecentChapter(null);
+    }
+  }, [hierarchy]);
 
-  const currentGradeObj = hierarchy.find(g => String(g.grade) === String(selectedGrade));
+  const currentGradeObj = hierarchy.find((g: any) => String(g.grade) === String(selectedGrade));
   const availableSubjects = currentGradeObj?.subjects || [];
-  const currentSubjectObj = availableSubjects.find(s => s.canonical_subject.toLowerCase() === selectedSubject.toLowerCase());
+  const currentSubjectObj = availableSubjects.find((s: any) => s.canonical_subject.toLowerCase() === selectedSubject.toLowerCase());
   const availableBooks = currentSubjectObj?.books || [];
-  const currentBookObj = availableBooks.find(b => b.book_id.toLowerCase() === selectedBook.toLowerCase() && b.part.toLowerCase() === selectedPart.toLowerCase()) || availableBooks[0];
+  const currentBookObj = availableBooks.find((b: any) => b.book_id.toLowerCase() === selectedBook.toLowerCase() && b.part.toLowerCase() === selectedPart.toLowerCase()) || availableBooks[0];
 
   const handleGradeChange = (g: string) => {
     setSelectedGrade(g);
-    const gObj = hierarchy.find(item => String(item.grade) === String(g));
+    const gObj = hierarchy.find((item: any) => String(item.grade) === String(g));
     if (gObj && gObj.subjects.length > 0) {
       const sub = gObj.subjects[0];
       setSelectedSubject(sub.canonical_subject);
@@ -183,7 +166,7 @@ export default function Dashboard() {
 
   const handleSubjectChange = (canonicalSubj: string) => {
     setSelectedSubject(canonicalSubj);
-    const subObj = availableSubjects.find(s => s.canonical_subject.toLowerCase() === canonicalSubj.toLowerCase());
+    const subObj = availableSubjects.find((s: any) => s.canonical_subject.toLowerCase() === canonicalSubj.toLowerCase());
     if (subObj && subObj.books && subObj.books.length > 0) {
       setSelectedBook(subObj.books[0].book_id);
       setSelectedPart(subObj.books[0].part);
@@ -209,15 +192,15 @@ export default function Dashboard() {
   };
 
   const unitsList = currentBookObj?.units || [];
-  const filteredUnits = unitsList.map(unit => ({
+  const filteredUnits = unitsList.map((unit: any) => ({
     ...unit,
-    chapters: unit.chapters.filter(ch =>
+    chapters: unit.chapters.filter((ch: any) =>
       ch.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       ch.id.toLowerCase().includes(searchQuery.toLowerCase())
     )
-  })).filter(unit => unit.chapters.length > 0);
+  })).filter((unit: any) => unit.chapters.length > 0);
 
-  const totalChaptersCount = unitsList.reduce((acc, u) => acc + u.chapters.length, 0);
+  const totalChaptersCount = unitsList.reduce((acc: number, u: any) => acc + u.chapters.length, 0);
 
   if (authChecking) {
     return (
@@ -234,8 +217,8 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-900 selection:bg-indigo-500 selection:text-white">
-      {/* Command Palette Modal */}
-      <CommandPalette isOpen={isCommandOpen} onClose={() => setIsCommandOpen(false)} />
+      {/* Command Palette Modal (Passes authoritative hierarchy) */}
+      <CommandPalette isOpen={isCommandOpen} onClose={() => setIsCommandOpen(false)} hierarchy={hierarchy} />
 
       {/* Explorer Locker Modal */}
       <ExplorerLockerModal isOpen={isLockerOpen} onClose={() => setIsLockerOpen(false)} xp={xp} streak={streak} />
@@ -267,7 +250,7 @@ export default function Dashboard() {
               <kbd className="px-2 py-0.5 bg-white text-slate-500 rounded-lg text-[10px] font-mono shadow-xs">Cmd K</kbd>
             </button>
 
-            {/* Streak & XP Badges (Item 3: Truthful display) */}
+            {/* Streak & XP Badges */}
             <button
               onClick={() => setIsLockerOpen(true)}
               className="flex items-center gap-3 px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100/80 border border-indigo-200/80 rounded-2xl transition-all shadow-xs"
@@ -329,7 +312,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* 1. CONTINUE LEARNING BANNER (Item 4: Only when real recent history exists) */}
+        {/* 1. CONTINUE LEARNING BANNER */}
         {recentChapter && (
           <section className="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-xl space-y-4">
             <div className="flex items-center justify-between">
@@ -394,7 +377,7 @@ export default function Dashboard() {
               <div className="flex items-center gap-2">
                 <span className="text-xs font-bold text-slate-400">Grade:</span>
                 <div className="flex gap-1">
-                  {hierarchy.map((g) => (
+                  {hierarchy.map((g: any) => (
                     <button
                       key={`class-select-${g.grade}`}
                       onClick={() => handleGradeChange(g.grade)}
@@ -413,7 +396,7 @@ export default function Dashboard() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-            {availableSubjects.map((sub) => {
+            {availableSubjects.map((sub: any) => {
               const isActive = selectedSubject.toLowerCase() === sub.canonical_subject.toLowerCase();
               return (
                 <button
@@ -497,8 +480,8 @@ export default function Dashboard() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
-                {filteredUnits.flatMap(u => u.chapters).map((ch, idx) => {
-                  const unitObj = filteredUnits.find(u => u.chapters.some(c => c.id === ch.id));
+                {filteredUnits.flatMap((u: any) => u.chapters).map((ch: any, idx: number) => {
+                  const unitObj = filteredUnits.find((u: any) => u.chapters.some((c: any) => c.id === ch.id));
                   return (
                     <Link
                       key={ch.id}
@@ -529,7 +512,7 @@ export default function Dashboard() {
               </div>
             </div>
           ) : filteredUnits.length > 0 ? (
-            filteredUnits.map((unit) => (
+            filteredUnits.map((unit: any) => (
               <div key={unit.id} className="p-6 md:p-8 bg-white/80 backdrop-blur-2xl border border-slate-200/80 rounded-3xl shadow-xl shadow-slate-900/5 space-y-6">
                 <div className="border-b border-slate-100 pb-4">
                   <div className="text-xs font-black uppercase tracking-widest text-indigo-600">
@@ -544,7 +527,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {unit.chapters.map((ch) => (
+                  {unit.chapters.map((ch: any) => (
                     <div
                       key={ch.id}
                       className="group p-5 bg-[#F8FAFC]/80 backdrop-blur-md border border-slate-200/80 hover:border-indigo-300 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg flex flex-col justify-between gap-4"

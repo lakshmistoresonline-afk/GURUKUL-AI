@@ -2,16 +2,26 @@
 
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { buildCurriculumUrl } from '@/lib/curriculumClient';
+import { CurriculumApiClient, buildCurriculumUrl } from '@/lib/curriculumClient';
 
 interface CommandPaletteProps {
   isOpen: boolean;
   onClose: () => void;
+  hierarchy?: any[];
 }
 
-export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
+export default function CommandPalette({ isOpen, onClose, hierarchy }: CommandPaletteProps) {
   const [query, setQuery] = useState('');
+  const [hierarchyData, setHierarchyData] = useState<any[]>(hierarchy || []);
   const router = useRouter();
+
+  useEffect(() => {
+    if (hierarchy && hierarchy.length > 0) {
+      setHierarchyData(hierarchy);
+    } else if (isOpen && hierarchyData.length === 0) {
+      CurriculumApiClient.fetchHierarchy().then(setHierarchyData).catch(() => setHierarchyData([]));
+    }
+  }, [hierarchy, isOpen, hierarchyData.length]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -28,44 +38,29 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
 
   if (!isOpen) return null;
 
-  const quickChapters = [
-    {
-      title: "Papa's Spectacles (Class 5 English)",
-      href: buildCurriculumUrl({ grade: '5', subject: 'english', book: 'english', part: 'main', unit: 'U01', chapter_id: 'G5-ENG-U01-C01' })
-    },
-    {
-      title: "किरन (Class 5 Hindi)",
-      href: buildCurriculumUrl({ grade: '5', subject: 'hindi', book: 'hindi', part: 'main', unit: 'U01', chapter_id: 'G5-HIN-U01-C01' })
-    },
-    {
-      title: "Travelling, Now and Then (Class 5 Maths)",
-      href: buildCurriculumUrl({ grade: '5', subject: 'mathematics', book: 'mathematics', part: 'main', unit: 'U01', chapter_id: 'G5-MAT-U01-C01' })
-    },
-    {
-      title: "Water — The Essence of Life (Class 5 Science)",
-      href: buildCurriculumUrl({ grade: '5', subject: 'science', book: 'science', part: 'main', unit: 'U01', chapter_id: 'G5-SCI-U01-C01' })
-    },
-    {
-      title: "A Bottle of Dew (Class 6 English)",
-      href: buildCurriculumUrl({ grade: '6', subject: 'english', book: 'english', part: 'main', unit: 'U01', chapter_id: 'G6-ENG-U01-C01' })
-    },
-    {
-      title: "मातृभूमि (Class 6 Hindi)",
-      href: buildCurriculumUrl({ grade: '6', subject: 'hindi', book: 'hindi', part: 'main', unit: 'U01', chapter_id: 'G6-HIN-U01-C01' })
-    },
-    {
-      title: "Patterns in Mathematics (Class 6 Maths)",
-      href: buildCurriculumUrl({ grade: '6', subject: 'mathematics', book: 'mathematics', part: 'main', unit: 'U01', chapter_id: 'G6-MAT-U01-C01' })
-    },
-    {
-      title: "The Wonderful World of Science (Class 6 Science)",
-      href: buildCurriculumUrl({ grade: '6', subject: 'science', book: 'science', part: 'main', unit: 'U01', chapter_id: 'G6-SCI-U01-C01' })
-    },
-    {
-      title: "Locating Places on the Earth (Class 6 Social)",
-      href: buildCurriculumUrl({ grade: '6', subject: 'social_science', book: 'social', part: 'main', unit: 'U01', chapter_id: 'G6-SOC-U01-C01' })
-    },
-  ];
+  // Build Quick Navigation exclusively from authoritative hierarchy data (Defect 1)
+  const quickChapters: Array<{ title: string; href: string }> = [];
+  for (const g of hierarchyData) {
+    for (const s of g.subjects || []) {
+      for (const b of s.books || []) {
+        for (const u of b.units || []) {
+          for (const ch of u.chapters || []) {
+            quickChapters.push({
+              title: `${ch.chapter_title || ch.title} (Class ${g.grade} • ${s.subject})`,
+              href: buildCurriculumUrl({
+                grade: String(g.grade),
+                subject: s.canonical_subject,
+                book: b.book_id,
+                part: b.part,
+                unit: u.unit_id,
+                chapter_id: ch.chapter_id
+              })
+            });
+          }
+        }
+      }
+    }
+  }
 
   const filtered = quickChapters.filter(c => c.title.toLowerCase().includes(query.toLowerCase()));
 
@@ -86,7 +81,7 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
         </div>
 
         <div className="max-h-96 overflow-y-auto p-3 space-y-1">
-          <div className="text-[10px] font-black uppercase tracking-wider text-slate-400 px-3 py-1">Quick Navigation</div>
+          <div className="text-[10px] font-black uppercase tracking-wider text-slate-400 px-3 py-1">Authoritative Quick Navigation</div>
           {filtered.length > 0 ? (
             filtered.map((item, idx) => (
               <button
@@ -102,7 +97,7 @@ export default function CommandPalette({ isOpen, onClose }: CommandPaletteProps)
               </button>
             ))
           ) : (
-            <div className="p-8 text-center text-slate-400 text-xs">No matching chapters found.</div>
+            <div className="p-8 text-center text-slate-400 text-xs">No authoritative chapters found.</div>
           )}
         </div>
 

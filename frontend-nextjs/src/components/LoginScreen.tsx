@@ -14,8 +14,7 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // Strict production security: production mode NEVER permits demo auth regardless of public env overrides
-  const isDevMode = process.env.NODE_ENV !== 'production' && (process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_ENABLE_DEMO_AUTH === 'true');
+  const isDevMode = process.env.NODE_ENV !== 'production' && process.env.NEXT_PUBLIC_ENABLE_DEMO_AUTH === 'true';
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -112,7 +111,7 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
 
               <button
                 type="button"
-                onClick={() => handleDemoBypass('student', '5', 'Srinav T S', 'tssrisha2015@gmail.com')}
+                onClick={() => handleDemoBypass('student', '5', 'Srinav T S', 'srinavts2016@gmail.com')}
                 className="p-3 bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/40 rounded-xl text-left text-xs text-white flex items-center justify-between transition-all"
               >
                 <div>
