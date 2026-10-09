@@ -83,13 +83,15 @@ export default function Dashboard() {
     return () => unsubscribe();
   }, []);
 
-  // Load authoritative hierarchy
+  // Load authoritative hierarchy once per dashboard lifecycle (Defect A)
   useEffect(() => {
+    let isMounted = true;
     async function loadHierarchy() {
       try {
         setLoading(true);
         setApiError(null);
         const data = await CurriculumApiClient.fetchHierarchy();
+        if (!isMounted) return;
         setHierarchy(data);
 
         if (data && data.length > 0) {
@@ -105,20 +107,24 @@ export default function Dashboard() {
           }
         }
       } catch (err: any) {
+        if (!isMounted) return;
         setApiError({
           endpoint: '/api/v1/curriculum/hierarchy',
           error: err.message || 'Failed to connect to authoritative curriculum hierarchy API.'
         });
         setHierarchy([]);
       } finally {
-        setLoading(false);
+        if (isMounted) setLoading(false);
       }
     }
 
     loadHierarchy();
-  }, [selectedGrade]);
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
-  // Load and defensively validate recent history against authoritative hierarchy using all 6 identity dimensions (Defect 2)
+  // Load and defensively validate recent history against authoritative hierarchy using all 6 identity dimensions
   useEffect(() => {
     try {
       const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
@@ -334,7 +340,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* 1. CONTINUE LEARNING BANNER (Validated recent history only) */}
+        {/* 1. CONTINUE LEARNING BANNER */}
         {recentChapter && (
           <section className="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-xl space-y-4">
             <div className="flex items-center justify-between">

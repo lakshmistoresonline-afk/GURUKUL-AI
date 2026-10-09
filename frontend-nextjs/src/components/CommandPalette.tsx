@@ -17,7 +17,9 @@ export default function CommandPalette({ isOpen, onClose, hierarchy }: CommandPa
   const [loadError, setLoadError] = useState<string | null>(null);
   const router = useRouter();
 
+  // Defect B: Fallback fetch with lifecycle protection & sync with prop hierarchy
   useEffect(() => {
+    let isMounted = true;
     if (hierarchy && hierarchy.length > 0) {
       setHierarchyData(hierarchy);
       setLoading(false);
@@ -27,14 +29,19 @@ export default function CommandPalette({ isOpen, onClose, hierarchy }: CommandPa
       setLoadError(null);
       CurriculumApiClient.fetchHierarchy()
         .then(data => {
+          if (!isMounted) return;
           setHierarchyData(data);
           setLoading(false);
         })
         .catch(err => {
+          if (!isMounted) return;
           setLoadError(err.message || 'Failed to fetch authoritative hierarchy.');
           setLoading(false);
         });
     }
+    return () => {
+      isMounted = false;
+    };
   }, [hierarchy, isOpen, hierarchyData.length]);
 
   useEffect(() => {
@@ -52,7 +59,7 @@ export default function CommandPalette({ isOpen, onClose, hierarchy }: CommandPa
 
   if (!isOpen) return null;
 
-  // Build Quick Navigation exclusively from authoritative hierarchy data (Defect 1)
+  // Build Quick Navigation exclusively from authoritative hierarchy data
   const quickChapters: Array<{ title: string; href: string }> = [];
   for (const g of hierarchyData) {
     for (const s of g.subjects || []) {
