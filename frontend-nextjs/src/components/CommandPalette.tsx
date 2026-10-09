@@ -13,13 +13,27 @@ interface CommandPaletteProps {
 export default function CommandPalette({ isOpen, onClose, hierarchy }: CommandPaletteProps) {
   const [query, setQuery] = useState('');
   const [hierarchyData, setHierarchyData] = useState<any[]>(hierarchy || []);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const router = useRouter();
 
   useEffect(() => {
     if (hierarchy && hierarchy.length > 0) {
       setHierarchyData(hierarchy);
-    } else if (isOpen && hierarchyData.length === 0) {
-      CurriculumApiClient.fetchHierarchy().then(setHierarchyData).catch(() => setHierarchyData([]));
+      setLoading(false);
+      setLoadError(null);
+    } else if (isOpen && (!hierarchy || hierarchy.length === 0) && hierarchyData.length === 0) {
+      setLoading(true);
+      setLoadError(null);
+      CurriculumApiClient.fetchHierarchy()
+        .then(data => {
+          setHierarchyData(data);
+          setLoading(false);
+        })
+        .catch(err => {
+          setLoadError(err.message || 'Failed to fetch authoritative hierarchy.');
+          setLoading(false);
+        });
     }
   }, [hierarchy, isOpen, hierarchyData.length]);
 
@@ -82,7 +96,13 @@ export default function CommandPalette({ isOpen, onClose, hierarchy }: CommandPa
 
         <div className="max-h-96 overflow-y-auto p-3 space-y-1">
           <div className="text-[10px] font-black uppercase tracking-wider text-slate-400 px-3 py-1">Authoritative Quick Navigation</div>
-          {filtered.length > 0 ? (
+          {loading ? (
+            <div className="p-8 text-center text-slate-500 text-xs">Loading authoritative hierarchy...</div>
+          ) : loadError ? (
+            <div className="p-8 text-center text-rose-600 text-xs font-bold">Failed to load authoritative hierarchy: {loadError}</div>
+          ) : hierarchyData.length === 0 ? (
+            <div className="p-8 text-center text-slate-400 text-xs">Authoritative curriculum hierarchy is empty.</div>
+          ) : filtered.length > 0 ? (
             filtered.map((item, idx) => (
               <button
                 key={idx}
@@ -97,7 +117,7 @@ export default function CommandPalette({ isOpen, onClose, hierarchy }: CommandPa
               </button>
             ))
           ) : (
-            <div className="p-8 text-center text-slate-400 text-xs">No authoritative chapters found.</div>
+            <div className="p-8 text-center text-slate-400 text-xs">No matching chapters found.</div>
           )}
         </div>
 

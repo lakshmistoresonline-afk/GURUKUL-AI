@@ -118,25 +118,47 @@ export default function Dashboard() {
     loadHierarchy();
   }, [selectedGrade]);
 
-  // Load and defensively validate recent history against authoritative hierarchy
+  // Load and defensively validate recent history against authoritative hierarchy using all 6 identity dimensions (Defect 2)
   useEffect(() => {
     try {
       const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
       if (Array.isArray(recent) && recent.length > 0 && hierarchy.length > 0) {
-        const validRecord = recent.find((r: any) => {
-          if (!r || !r.grade || !r.subject || !r.book || !r.part || !r.unit || !r.chapterId) return false;
-          const gObj = hierarchy.find((g: any) => String(g.grade) === String(r.grade));
-          if (!gObj) return false;
-          const sObj = (gObj.subjects || []).find((s: any) => s.canonical_subject?.toLowerCase() === r.subject.toLowerCase() || s.subject?.toLowerCase() === r.subject.toLowerCase());
-          if (!sObj) return false;
-          const bObj = (sObj.books || []).find((b: any) => b.book_id?.toLowerCase() === r.book.toLowerCase() && b.part?.toLowerCase() === r.part.toLowerCase());
-          if (!bObj) return false;
-          const uObj = (bObj.units || []).find((u: any) => u.unit_id?.toUpperCase() === r.unit.toUpperCase());
-          if (!uObj) return false;
-          const chObj = (uObj.chapters || []).find((c: any) => c.chapter_id?.toLowerCase() === r.chapterId.toLowerCase());
-          return Boolean(chObj);
-        });
-        setRecentChapter(validRecord || null);
+        let matchedRecord: any = null;
+        for (const r of recent) {
+          if (!r || typeof r !== 'object') continue;
+          const grade = typeof r.grade === 'string' ? r.grade.trim() : typeof r.grade === 'number' ? String(r.grade) : '';
+          const subject = typeof r.subject === 'string' ? r.subject.trim() : '';
+          const book = typeof r.book === 'string' ? r.book.trim() : '';
+          const part = typeof r.part === 'string' ? r.part.trim() : '';
+          const unit = typeof r.unit === 'string' ? r.unit.trim() : '';
+          const chapterId = typeof r.chapterId === 'string' ? r.chapterId.trim() : '';
+
+          if (!grade || !subject || !book || !part || !unit || !chapterId) continue;
+
+          const gObj = hierarchy.find((g: any) => String(g.grade) === String(grade));
+          if (!gObj) continue;
+          const sObj = (gObj.subjects || []).find((s: any) => s.canonical_subject?.toLowerCase() === subject.toLowerCase() || s.subject?.toLowerCase() === subject.toLowerCase());
+          if (!sObj) continue;
+          const bObj = (sObj.books || []).find((b: any) => b.book_id?.toLowerCase() === book.toLowerCase() && b.part?.toLowerCase() === part.toLowerCase());
+          if (!bObj) continue;
+          const uObj = (bObj.units || []).find((u: any) => u.unit_id?.toUpperCase() === unit.toUpperCase());
+          if (!uObj) continue;
+          const chObj = (uObj.chapters || []).find((c: any) => c.chapter_id?.toLowerCase() === chapterId.toLowerCase());
+
+          if (chObj) {
+            matchedRecord = {
+              grade: String(gObj.grade),
+              subject: sObj.canonical_subject,
+              book: bObj.book_id,
+              part: bObj.part,
+              unit: uObj.unit_id,
+              chapterId: chObj.chapter_id,
+              title: chObj.chapter_title || chObj.title
+            };
+            break;
+          }
+        }
+        setRecentChapter(matchedRecord);
       } else {
         setRecentChapter(null);
       }
@@ -312,7 +334,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* 1. CONTINUE LEARNING BANNER */}
+        {/* 1. CONTINUE LEARNING BANNER (Validated recent history only) */}
         {recentChapter && (
           <section className="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-xl space-y-4">
             <div className="flex items-center justify-between">
