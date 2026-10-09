@@ -24,17 +24,25 @@ service cloud.firestore {
     // User profiles
     match /users/{userId} {
       // Only owner, admin or teacher can read full profile.
-      // Parents can read if they are linked (handled via student_reports or explicit mapping if needed)
-      // For now, allow owner, teacher, admin.
       allow read: if isSignedIn() && (isOwner(userId) || hasRole('admin') || hasRole('teacher'));
 
-      // Strict write: Only owner can update limited fields, or admin.
-      allow write: if (isOwner(userId)
-                      && request.resource.data.uid == resource.data.uid
-                      && request.resource.data.role == resource.data.role
-                      && request.resource.data.email == resource.data.email
-                      && isValidUser(request.resource.data))
-                   || hasRole('admin');
+      // Allow creation if document does not exist yet and user is owner with student or parent role (prevent self-promotion to admin/teacher on create).
+      allow create: if isSignedIn()
+                    && isOwner(userId)
+                    && request.resource.data.uid == userId
+                    && request.resource.data.role in ['student', 'parent']
+                    && isValidUser(request.resource.data);
+
+      // Allow update if owner maintains immutable fields (uid, role, email) or admin.
+      allow update: if isSignedIn()
+                    && ((isOwner(userId)
+                          && request.resource.data.uid == resource.data.uid
+                          && request.resource.data.role == resource.data.role
+                          && request.resource.data.email == resource.data.email
+                          && isValidUser(request.resource.data))
+                        || hasRole('admin'));
+
+      allow delete: if hasRole('admin');
     }
 
     // Mastery tracking (student identity verified)
