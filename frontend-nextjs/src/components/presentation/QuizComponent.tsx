@@ -40,7 +40,6 @@ export default function QuizComponent({ quiz }: QuizProps) {
       } else if (item.question || item.question_text || item.prompt || item.statement || item.q) {
         quizList.push(item);
       } else if (typeof item === 'object' && !item.quiz_title && !item.chapter_title) {
-        // check if it has option or answer properties
         if (item.options || item.correct_answer || item.answer) {
           quizList.push(item);
         }
@@ -51,6 +50,27 @@ export default function QuizComponent({ quiz }: QuizProps) {
   if (quizList.length === 0 && Array.isArray(rawList)) {
     quizList = rawList.filter((item: any) => item && (item.question || item.question_text || item.prompt));
   }
+
+  // Dynamically shuffle options for each question on initialization (User Request)
+  const [shuffledOptionsMap] = useState<Record<number, string[]>>(() => {
+    const newMap: Record<number, string[]> = {};
+    quizList.forEach((q: any, idx: number) => {
+      let optionsArr: string[] = [];
+      if (Array.isArray(q.options)) {
+        optionsArr = [...q.options];
+      } else if (q.options && typeof q.options === 'object') {
+        optionsArr = Object.entries(q.options).map(([k, v]) => `${k}) ${v}`);
+      }
+
+      const shuffled = [...optionsArr];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      newMap[idx] = shuffled;
+    });
+    return newMap;
+  });
 
   if (!Array.isArray(quizList) || quizList.length === 0) {
     return <div className="p-8 text-center text-slate-500">No quiz items available.</div>;
@@ -92,16 +112,18 @@ export default function QuizComponent({ quiz }: QuizProps) {
           const rawCorrect = q.correct_option || q.correct_answer || q.answer || q.correct || '';
           const qType = q.type || q.question_type || 'Assessment';
 
-          let optionsArr: string[] = [];
-          if (Array.isArray(q.options)) {
-            optionsArr = q.options;
-          } else if (q.options && typeof q.options === 'object') {
-            optionsArr = Object.entries(q.options).map(([k, v]) => `${k}) ${v}`);
+          let optionsArr: string[] = shuffledOptionsMap[idx] || [];
+          if (optionsArr.length === 0) {
+            if (Array.isArray(q.options)) {
+              optionsArr = q.options;
+            } else if (q.options && typeof q.options === 'object') {
+              optionsArr = Object.entries(q.options).map(([k, v]) => `${k}) ${v}`);
+            }
           }
 
           let correctAnswer = rawCorrect;
-          if (rawCorrect && optionsArr.length > 0) {
-            const matchedOpt = optionsArr.find(opt => opt.startsWith(`${rawCorrect})`) || opt.startsWith(`${rawCorrect}:`) || opt === rawCorrect);
+          if (rawCorrect && Array.isArray(q.options)) {
+            const matchedOpt = q.options.find((opt: string) => opt.startsWith(`${rawCorrect})`) || opt.startsWith(`${rawCorrect}:`) || opt === rawCorrect);
             if (matchedOpt) correctAnswer = matchedOpt;
           }
 
@@ -111,6 +133,14 @@ export default function QuizComponent({ quiz }: QuizProps) {
           const isSubmitted = submittedText[idx];
           const isAnswered = userAnswer !== undefined || isSubmitted;
           const isExpanded = showExplanation[idx];
+
+          const isCorrectOption = (opt: string) => {
+            if (opt === correctAnswer || opt.startsWith(`${rawCorrect})`) || opt === String(rawCorrect)) return true;
+            if (rawCorrect && typeof opt === 'string' && opt.toLowerCase().includes(String(rawCorrect).toLowerCase())) {
+              return opt.trim().toLowerCase() === String(rawCorrect).trim().toLowerCase();
+            }
+            return false;
+          };
 
           return (
             <div key={idx} className="p-6 bg-slate-50 border border-slate-200 rounded-3xl space-y-4 shadow-sm">
@@ -129,13 +159,14 @@ export default function QuizComponent({ quiz }: QuizProps) {
                 {qText}
               </div>
 
-              {/* Options if available */}
+              {/* Shuffled Options */}
               {optionsArr.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                   {optionsArr.map((opt: string, oIdx: number) => {
+                    const isCorrect = isCorrectOption(opt);
                     let btnStyle = "bg-white border-slate-200 text-slate-700 hover:border-indigo-400";
                     if (isAnswered) {
-                      if (opt === correctAnswer || opt.startsWith(`${rawCorrect})`) || opt === String(rawCorrect)) {
+                      if (isCorrect) {
                         btnStyle = "bg-emerald-50 border-emerald-300 text-emerald-900 font-bold";
                       } else if (opt === userAnswer) {
                         btnStyle = "bg-rose-50 border-rose-300 text-rose-900 font-bold";
@@ -149,8 +180,8 @@ export default function QuizComponent({ quiz }: QuizProps) {
                         className={`p-4 rounded-2xl text-xs sm:text-sm text-left border transition-all flex items-center justify-between ${btnStyle}`}
                       >
                         <span>{opt}</span>
-                        {isAnswered && (opt === correctAnswer || opt.startsWith(`${rawCorrect})`) || opt === String(correctAnswer)) && <span className="text-emerald-600 font-black">✓</span>}
-                        {isAnswered && opt === userAnswer && opt !== correctAnswer && !opt.startsWith(`${rawCorrect})`) && <span className="text-rose-600 font-black">✗</span>}
+                        {isAnswered && isCorrect && <span className="text-emerald-600 font-black">✓</span>}
+                        {isAnswered && opt === userAnswer && !isCorrect && <span className="text-rose-600 font-black">✗</span>}
                       </button>
                     );
                   })}
