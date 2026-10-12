@@ -77,7 +77,7 @@ export default function Dashboard() {
     return () => unsubscribe();
   }, []);
 
-  // Load authoritative hierarchy
+  // Load authoritative hierarchy once per dashboard lifecycle
   useEffect(() => {
     let isMounted = true;
     async function loadHierarchy() {
@@ -215,16 +215,40 @@ export default function Dashboard() {
     return 'from-purple-500/20 via-indigo-500/10 to-transparent border-purple-500/30 text-purple-900';
   };
 
+  // Normalized view models for units and chapters (fixing backend contract mapping)
   const unitsList = currentBookObj?.units || [];
   const filteredUnits = unitsList.map((unit: any) => ({
-    ...unit,
-    chapters: (unit?.chapters || []).filter((ch: any) =>
-      String(ch?.title || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
-      String(ch?.id || '').toLowerCase().includes(searchQuery.toLowerCase())
-    )
+    id: unit?.unit_id || unit?.id,
+    title: unit?.unit_title || unit?.title,
+    unitNumber: unit?.unit_number || unit?.unitNumber,
+    theme: unit?.theme,
+    chapters: (unit?.chapters || []).filter((ch: any) => {
+      const title = ch?.chapter_title || ch?.title || '';
+      const id = ch?.chapter_id || ch?.id || '';
+      return String(title).toLowerCase().includes(searchQuery.toLowerCase()) ||
+             String(id).toLowerCase().includes(searchQuery.toLowerCase());
+    }).map((ch: any) => ({
+      id: ch?.chapter_id || ch?.id,
+      title: ch?.chapter_title || ch?.title,
+      chapterNumber: ch?.chapter_number || ch?.chapterNumber,
+      contentTypes: ch?.content_types || ch?.contentTypes
+    }))
   })).filter((unit: any) => Array.isArray(unit?.chapters) && unit.chapters.length > 0);
 
   const totalChaptersCount = unitsList.reduce((acc: number, u: any) => acc + (Array.isArray(u?.chapters) ? u.chapters.length : 0), 0);
+
+  const firstUnitRaw = unitsList[0];
+  const firstChapterRaw = firstUnitRaw?.chapters?.[0];
+  const firstChapter = firstChapterRaw ? {
+    id: firstChapterRaw.chapter_id || firstChapterRaw.id,
+    title: firstChapterRaw.chapter_title || firstChapterRaw.title,
+    chapterNumber: firstChapterRaw.chapter_number || firstChapterRaw.chapterNumber
+  } : null;
+  const firstUnit = firstUnitRaw ? {
+    id: firstUnitRaw.unit_id || firstUnitRaw.id,
+    title: firstUnitRaw.unit_title || firstUnitRaw.title,
+    unitNumber: firstUnitRaw.unit_number || firstUnitRaw.unitNumber
+  } : null;
 
   if (authChecking) {
     return (
@@ -348,7 +372,7 @@ export default function Dashboard() {
 
             <div className="space-y-1">
               <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
-                Chapter: {recentChapter.chapterId}
+                Chapter: {recentChapter.title || recentChapter.chapterId}
               </h2>
               <p className="text-slate-200 text-sm">
                 Book: {recentChapter.book} • Part: {recentChapter.part}
@@ -421,11 +445,11 @@ export default function Dashboard() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
             {availableSubjects.map((sub: any) => {
-              const isActive = selectedSubject.toLowerCase() === (sub?.canonical_subject || '').toLowerCase();
+              const isActive = selectedSubject.toLowerCase() === sub.canonical_subject.toLowerCase();
               return (
                 <button
-                  key={sub?.canonical_subject || sub?.subject}
-                  onClick={() => handleSubjectChange(sub?.canonical_subject || sub?.subject)}
+                  key={sub.canonical_subject}
+                  onClick={() => handleSubjectChange(sub.canonical_subject)}
                   className={`p-4 rounded-2xl text-left border transition-all flex flex-col justify-between gap-2 hover:-translate-y-0.5 ${
                     isActive
                       ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-600/30'
@@ -433,10 +457,10 @@ export default function Dashboard() {
                   }`}
                 >
                   <span className="text-xl">
-                    {(sub?.subject || '').toLowerCase().includes('english') ? '📚' : (sub?.subject || '').toLowerCase().includes('hindi') ? '🌸' : (sub?.subject || '').toLowerCase().includes('maths') ? '📐' : (sub?.subject || '').toLowerCase().includes('science') ? '🔬' : '🌍'}
+                    {sub.subject.toLowerCase().includes('english') ? '📚' : sub.subject.toLowerCase().includes('hindi') ? '🌸' : sub.subject.toLowerCase().includes('maths') ? '📐' : sub.subject.toLowerCase().includes('science') ? '🔬' : '🌍'}
                   </span>
                   <div>
-                    <div className="text-sm font-extrabold">{sub?.subject}</div>
+                    <div className="text-sm font-extrabold">{sub.subject}</div>
                     <div className={`text-[10px] font-bold ${isActive ? 'text-indigo-200' : 'text-slate-400'}`}>
                       Class {selectedGrade}
                     </div>
