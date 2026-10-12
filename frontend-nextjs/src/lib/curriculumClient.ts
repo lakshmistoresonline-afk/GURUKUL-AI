@@ -28,15 +28,21 @@ export class CurriculumApiError extends Error {
 }
 
 export function buildCurriculumUrl(identity: {
-  grade: string;
+  grade: string | number;
   subject: string;
-  book: string;
-  part: string;
-  unit: string;
-  chapter_id: string;
+  book?: string;
+  part?: string;
+  unit?: string;
+  chapter_id?: string;
 }): string {
-  const enc = (v: string) => encodeURIComponent(v.trim());
-  return `/curriculum/${enc(identity.grade)}/${enc(identity.subject.toLowerCase())}/${enc(identity.book)}/${enc(identity.part)}/${enc(identity.unit)}/${enc(identity.chapter_id)}`;
+  const enc = (v: any) => encodeURIComponent(String(v || '').trim());
+  const grade = enc(identity.grade);
+  const subject = enc((identity.subject || '').toLowerCase());
+  const book = enc(identity.book || identity.subject || 'main');
+  const part = enc(identity.part || 'main');
+  const unit = enc(identity.unit || 'U01');
+  const chapterId = enc(identity.chapter_id || '');
+  return `/curriculum/${grade}/${subject}/${book}/${part}/${unit}/${chapterId}`;
 }
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'development' ? 'http://localhost:8080' : '');
@@ -52,13 +58,13 @@ export class CurriculumApiClient {
 
   static async fetchContent(identity: CurriculumIdentity): Promise<ChapterContentResponse> {
     const params = new URLSearchParams({
-      grade: identity.grade,
-      subject: identity.subject,
-      book: identity.book,
-      part: identity.part,
-      unit: identity.unit,
-      chapter_id: identity.chapter_id,
-      content_type: identity.content_type
+      grade: String(identity.grade || ''),
+      subject: String(identity.subject || ''),
+      book: String(identity.book || ''),
+      part: String(identity.part || ''),
+      unit: String(identity.unit || ''),
+      chapter_id: String(identity.chapter_id || ''),
+      content_type: String(identity.content_type || '')
     });
 
     const res = await fetch(`${API_BASE}/api/v1/curriculum/resolve?${params.toString()}`);

@@ -62,7 +62,8 @@ jobs:
         working-directory: backend
         env:
           TEST_MODE: "true"
-        run: pytest tests/test_security_hardening.py tests/test_hardening.py
+        run: pytest tests/test_auth_security.py tests/test_comprehensive_security_integration.py tests/test_authoritative_api_contracts_hardened.py -v
         
       - name: Data Integrity Validation
-        run: python scripts/validate_gurukul_data.py
+        working-directory: backend
+        run: python src/curriculum/verification/fail_closed_immutability.py verify-source-integrity

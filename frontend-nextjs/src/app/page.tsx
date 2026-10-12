@@ -10,12 +10,6 @@ import CommandPalette from '../components/CommandPalette';
 import ExplorerLockerModal from '../components/ExplorerLockerModal';
 import { CurriculumApiClient, buildCurriculumUrl } from '../lib/curriculumClient';
 
-interface CurricularGoal {
-  code: string;
-  name: string;
-  description: string;
-}
-
 interface ApiDiagnostics {
   endpoint: string;
   status?: number;
@@ -83,7 +77,7 @@ export default function Dashboard() {
     return () => unsubscribe();
   }, []);
 
-  // Load authoritative hierarchy once per dashboard lifecycle (Defect A)
+  // Load authoritative hierarchy
   useEffect(() => {
     let isMounted = true;
     async function loadHierarchy() {
@@ -92,17 +86,19 @@ export default function Dashboard() {
         setApiError(null);
         const data = await CurriculumApiClient.fetchHierarchy();
         if (!isMounted) return;
-        setHierarchy(data);
+        setHierarchy(Array.isArray(data) ? data : []);
 
-        if (data && data.length > 0) {
-          const defaultGradeNode = data.find((g: any) => String(g.grade) === String(selectedGrade)) || data[0];
-          setSelectedGrade(String(defaultGradeNode.grade));
-          if (defaultGradeNode.subjects && defaultGradeNode.subjects.length > 0) {
-            const defaultSubj = defaultGradeNode.subjects[0];
-            setSelectedSubject(defaultSubj.canonical_subject);
-            if (defaultSubj.books && defaultSubj.books.length > 0) {
-              setSelectedBook(defaultSubj.books[0].book_id);
-              setSelectedPart(defaultSubj.books[0].part);
+        if (Array.isArray(data) && data.length > 0) {
+          const defaultGradeNode = data.find((g: any) => String(g?.grade || '') === String(selectedGrade)) || data[0];
+          if (defaultGradeNode) {
+            setSelectedGrade(String(defaultGradeNode.grade || '5'));
+            if (Array.isArray(defaultGradeNode.subjects) && defaultGradeNode.subjects.length > 0) {
+              const defaultSubj = defaultGradeNode.subjects[0];
+              setSelectedSubject(defaultSubj?.canonical_subject || 'english');
+              if (Array.isArray(defaultSubj?.books) && defaultSubj.books.length > 0) {
+                setSelectedBook(defaultSubj.books[0]?.book_id || 'english');
+                setSelectedPart(defaultSubj.books[0]?.part || 'main');
+              }
             }
           }
         }
@@ -128,7 +124,7 @@ export default function Dashboard() {
   useEffect(() => {
     try {
       const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
-      if (Array.isArray(recent) && recent.length > 0 && hierarchy.length > 0) {
+      if (Array.isArray(recent) && recent.length > 0 && Array.isArray(hierarchy) && hierarchy.length > 0) {
         let matchedRecord: any = null;
         for (const r of recent) {
           if (!r || typeof r !== 'object') continue;
@@ -141,15 +137,15 @@ export default function Dashboard() {
 
           if (!grade || !subject || !book || !part || !unit || !chapterId) continue;
 
-          const gObj = hierarchy.find((g: any) => String(g.grade) === String(grade));
+          const gObj = hierarchy.find((g: any) => String(g?.grade || '') === String(grade));
           if (!gObj) continue;
-          const sObj = (gObj.subjects || []).find((s: any) => s.canonical_subject?.toLowerCase() === subject.toLowerCase() || s.subject?.toLowerCase() === subject.toLowerCase());
+          const sObj = (gObj.subjects || []).find((s: any) => (s?.canonical_subject || '').toLowerCase() === subject.toLowerCase() || (s?.subject || '').toLowerCase() === subject.toLowerCase());
           if (!sObj) continue;
-          const bObj = (sObj.books || []).find((b: any) => b.book_id?.toLowerCase() === book.toLowerCase() && b.part?.toLowerCase() === part.toLowerCase());
+          const bObj = (sObj.books || []).find((b: any) => (b?.book_id || '').toLowerCase() === book.toLowerCase() && (b?.part || '').toLowerCase() === part.toLowerCase());
           if (!bObj) continue;
-          const uObj = (bObj.units || []).find((u: any) => u.unit_id?.toUpperCase() === unit.toUpperCase());
+          const uObj = (bObj.units || []).find((u: any) => (u?.unit_id || '').toUpperCase() === unit.toUpperCase());
           if (!uObj) continue;
-          const chObj = (uObj.chapters || []).find((c: any) => c.chapter_id?.toLowerCase() === chapterId.toLowerCase());
+          const chObj = (uObj.chapters || []).find((c: any) => (c?.chapter_id || '').toLowerCase() === chapterId.toLowerCase());
 
           if (chObj) {
             matchedRecord = {
@@ -159,7 +155,7 @@ export default function Dashboard() {
               part: bObj.part,
               unit: uObj.unit_id,
               chapterId: chObj.chapter_id,
-              title: chObj.chapter_title || chObj.title
+              title: chObj.chapter_title || chObj.title || chObj.chapter_id
             };
             break;
           }
@@ -173,31 +169,31 @@ export default function Dashboard() {
     }
   }, [hierarchy]);
 
-  const currentGradeObj = hierarchy.find((g: any) => String(g.grade) === String(selectedGrade));
+  const currentGradeObj = hierarchy.find((g: any) => String(g?.grade || '') === String(selectedGrade));
   const availableSubjects = currentGradeObj?.subjects || [];
-  const currentSubjectObj = availableSubjects.find((s: any) => s.canonical_subject.toLowerCase() === selectedSubject.toLowerCase());
+  const currentSubjectObj = availableSubjects.find((s: any) => (s?.canonical_subject || '').toLowerCase() === selectedSubject.toLowerCase());
   const availableBooks = currentSubjectObj?.books || [];
-  const currentBookObj = availableBooks.find((b: any) => b.book_id.toLowerCase() === selectedBook.toLowerCase() && b.part.toLowerCase() === selectedPart.toLowerCase()) || availableBooks[0];
+  const currentBookObj = availableBooks.find((b: any) => (b?.book_id || '').toLowerCase() === selectedBook.toLowerCase() && (b?.part || '').toLowerCase() === selectedPart.toLowerCase()) || availableBooks[0];
 
   const handleGradeChange = (g: string) => {
     setSelectedGrade(g);
-    const gObj = hierarchy.find((item: any) => String(item.grade) === String(g));
-    if (gObj && gObj.subjects.length > 0) {
+    const gObj = hierarchy.find((item: any) => String(item?.grade || '') === String(g));
+    if (gObj && Array.isArray(gObj.subjects) && gObj.subjects.length > 0) {
       const sub = gObj.subjects[0];
-      setSelectedSubject(sub.canonical_subject);
-      if (sub.books && sub.books.length > 0) {
-        setSelectedBook(sub.books[0].book_id);
-        setSelectedPart(sub.books[0].part);
+      setSelectedSubject(sub?.canonical_subject || 'english');
+      if (Array.isArray(sub?.books) && sub.books.length > 0) {
+        setSelectedBook(sub.books[0]?.book_id || 'english');
+        setSelectedPart(sub.books[0]?.part || 'main');
       }
     }
   };
 
   const handleSubjectChange = (canonicalSubj: string) => {
     setSelectedSubject(canonicalSubj);
-    const subObj = availableSubjects.find((s: any) => s.canonical_subject.toLowerCase() === canonicalSubj.toLowerCase());
-    if (subObj && subObj.books && subObj.books.length > 0) {
-      setSelectedBook(subObj.books[0].book_id);
-      setSelectedPart(subObj.books[0].part);
+    const subObj = availableSubjects.find((s: any) => (s?.canonical_subject || '').toLowerCase() === canonicalSubj.toLowerCase());
+    if (subObj && Array.isArray(subObj.books) && subObj.books.length > 0) {
+      setSelectedBook(subObj.books[0]?.book_id || 'english');
+      setSelectedPart(subObj.books[0]?.part || 'main');
     }
   };
 
@@ -211,7 +207,7 @@ export default function Dashboard() {
   const rank = getRankInfo(xp);
 
   const getSubjectAtmosphere = (subj: string) => {
-    const s = subj.toLowerCase();
+    const s = (subj || '').toLowerCase();
     if (s.includes('english')) return 'from-amber-500/20 via-orange-500/10 to-transparent border-amber-500/30 text-amber-900';
     if (s.includes('hindi')) return 'from-rose-500/20 via-pink-500/10 to-transparent border-rose-500/30 text-rose-900';
     if (s.includes('maths')) return 'from-blue-500/20 via-indigo-500/10 to-transparent border-blue-500/30 text-blue-900';
@@ -222,13 +218,13 @@ export default function Dashboard() {
   const unitsList = currentBookObj?.units || [];
   const filteredUnits = unitsList.map((unit: any) => ({
     ...unit,
-    chapters: unit.chapters.filter((ch: any) =>
-      ch.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      ch.id.toLowerCase().includes(searchQuery.toLowerCase())
+    chapters: (unit?.chapters || []).filter((ch: any) =>
+      String(ch?.title || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
+      String(ch?.id || '').toLowerCase().includes(searchQuery.toLowerCase())
     )
-  })).filter((unit: any) => unit.chapters.length > 0);
+  })).filter((unit: any) => Array.isArray(unit?.chapters) && unit.chapters.length > 0);
 
-  const totalChaptersCount = unitsList.reduce((acc: number, u: any) => acc + u.chapters.length, 0);
+  const totalChaptersCount = unitsList.reduce((acc: number, u: any) => acc + (Array.isArray(u?.chapters) ? u.chapters.length : 0), 0);
 
   if (authChecking) {
     return (
@@ -410,7 +406,7 @@ export default function Dashboard() {
                       key={`class-select-${g.grade}`}
                       onClick={() => handleGradeChange(g.grade)}
                       className={`px-3 py-1 rounded-xl text-xs font-extrabold transition-all ${
-                        selectedGrade === g.grade
+                        selectedGrade === String(g.grade)
                           ? 'bg-slate-900 text-white shadow-xs'
                           : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                       }`}
@@ -425,11 +421,11 @@ export default function Dashboard() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
             {availableSubjects.map((sub: any) => {
-              const isActive = selectedSubject.toLowerCase() === sub.canonical_subject.toLowerCase();
+              const isActive = selectedSubject.toLowerCase() === (sub?.canonical_subject || '').toLowerCase();
               return (
                 <button
-                  key={sub.canonical_subject}
-                  onClick={() => handleSubjectChange(sub.canonical_subject)}
+                  key={sub?.canonical_subject || sub?.subject}
+                  onClick={() => handleSubjectChange(sub?.canonical_subject || sub?.subject)}
                   className={`p-4 rounded-2xl text-left border transition-all flex flex-col justify-between gap-2 hover:-translate-y-0.5 ${
                     isActive
                       ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-600/30'
@@ -437,10 +433,10 @@ export default function Dashboard() {
                   }`}
                 >
                   <span className="text-xl">
-                    {sub.subject.toLowerCase().includes('english') ? '📚' : sub.subject.toLowerCase().includes('hindi') ? '🌸' : sub.subject.toLowerCase().includes('maths') ? '📐' : sub.subject.toLowerCase().includes('science') ? '🔬' : '🌍'}
+                    {(sub?.subject || '').toLowerCase().includes('english') ? '📚' : (sub?.subject || '').toLowerCase().includes('hindi') ? '🌸' : (sub?.subject || '').toLowerCase().includes('maths') ? '📐' : (sub?.subject || '').toLowerCase().includes('science') ? '🔬' : '🌍'}
                   </span>
                   <div>
-                    <div className="text-sm font-extrabold">{sub.subject}</div>
+                    <div className="text-sm font-extrabold">{sub?.subject}</div>
                     <div className={`text-[10px] font-bold ${isActive ? 'text-indigo-200' : 'text-slate-400'}`}>
                       Class {selectedGrade}
                     </div>
@@ -508,8 +504,8 @@ export default function Dashboard() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
-                {filteredUnits.flatMap((u: any) => u.chapters).map((ch: any, idx: number) => {
-                  const unitObj = filteredUnits.find((u: any) => u.chapters.some((c: any) => c.id === ch.id));
+                {filteredUnits.flatMap((u: any) => u.chapters || []).map((ch: any, idx: number) => {
+                  const unitObj = filteredUnits.find((u: any) => (u?.chapters || []).some((c: any) => c.id === ch.id));
                   return (
                     <Link
                       key={ch.id}
@@ -555,7 +551,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {unit.chapters.map((ch: any) => (
+                  {(unit.chapters || []).map((ch: any) => (
                     <div
                       key={ch.id}
                       className="group p-5 bg-[#F8FAFC]/80 backdrop-blur-md border border-slate-200/80 hover:border-indigo-300 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg flex flex-col justify-between gap-4"
