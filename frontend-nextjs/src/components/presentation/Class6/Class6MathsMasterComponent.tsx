@@ -35,12 +35,35 @@ function renderSafeText(val: any): React.ReactNode {
   return String(val);
 }
 
+function shuffleOptions(options: string[]) {
+  const arr = [...options];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 interface MathsMasterProps {
   data: any;
 }
 
 export default function Class6MathsMasterComponent({ data }: MathsMasterProps) {
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
+  const [shuffledMap] = useState<Record<string, string[]>>(() => {
+    const map: Record<string, string[]> = {};
+    const qBank = data?.section_3_categorized_exam_question_bank || {};
+    Object.entries(qBank).forEach(([tKey, qArr]: [string, any]) => {
+      if (Array.isArray(qArr)) {
+        qArr.forEach((q: any, qIdx: number) => {
+          if (Array.isArray(q.options)) {
+            map[`${tKey}-${qIdx}`] = shuffleOptions(q.options);
+          }
+        });
+      }
+    });
+    return map;
+  });
 
   if (!data) {
     return <div className="p-8 text-center text-slate-500">No master content available.</div>;
@@ -97,21 +120,26 @@ export default function Class6MathsMasterComponent({ data }: MathsMasterProps) {
                 <div className="space-y-4">
                   {qArr.map((q: any, qIdx: number) => {
                     const qKey = `${tIdx}-${qIdx}`;
+                    const mapKey = `${qType}-${qIdx}`;
                     const isVisible = showAnswers[qKey];
                     const ans = q.answer || q.correct_answer || q.solution || q.final_answer || q.detailed_solution;
+                    const optionsToRender = shuffledMap[mapKey] || q.options || [];
 
                     return (
                       <div key={qIdx} className="p-5 bg-slate-50 border border-slate-100 rounded-2xl space-y-3 shadow-xs">
                         <div className="text-xs font-bold text-slate-800">Q{qIdx + 1}: {renderSafeText(q.question || q.q || q.problem_statement || q)}</div>
 
-                        {/* Options if MCQ */}
-                        {Array.isArray(q.options) && (
+                        {/* Shuffled Options if MCQ */}
+                        {Array.isArray(optionsToRender) && optionsToRender.length > 0 && (
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-                            {q.options.map((opt: string, oIdx: number) => (
-                              <div key={oIdx} className={`p-3 rounded-xl text-xs font-medium border ${opt === ans || (typeof ans === 'string' && opt.startsWith(ans)) ? 'bg-emerald-50 border-emerald-200 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-700'}`}>
-                                {opt} {opt === ans || (typeof ans === 'string' && opt.startsWith(ans)) ? '✓' : ''}
-                              </div>
-                            ))}
+                            {optionsToRender.map((opt: string, oIdx: number) => {
+                              const isCorrect = opt === ans || (typeof ans === 'string' && opt.startsWith(ans));
+                              return (
+                                <div key={oIdx} className={`p-3 rounded-xl text-xs font-medium border ${isVisible && isCorrect ? 'bg-emerald-50 border-emerald-200 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-700'}`}>
+                                  {opt} {isVisible && isCorrect ? '✓' : ''}
+                                </div>
+                              );
+                            })}
                           </div>
                         )}
 
