@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { CurriculumApiClient, CurriculumIdentity, CurriculumApiError, buildCurriculumUrl } from '@/lib/curriculumClient';
 import RendererRegistry from '@/components/presentation/RendererRegistry';
+import AudioReaderToolbar from '@/components/AudioReaderToolbar';
 
 interface Props {
   segments: string[];
@@ -46,7 +47,29 @@ export default function CatchAllChapterClient({ segments }: Props) {
 
   const chapterUrl = segments.length >= 6 ? buildCurriculumUrl({ grade, subject, book, part, unit, chapter_id: chapterId }) : '';
 
-  // 1. Identity Initialization & Recent History (Runs ONLY when route identity changes - Item 1)
+  // Extract readable text for Audio Reader Toolbar
+  const getReadableText = (data: any): string => {
+    if (!data) return '';
+    if (typeof data === 'string') return data;
+    if (Array.isArray(data)) {
+      return data.map(item => getReadableText(item)).filter(Boolean).join('. ');
+    }
+    if (typeof data === 'object') {
+      const parts: string[] = [];
+      for (const [k, v] of Object.entries(data)) {
+        if (typeof v === 'string' && v.length > 2) {
+          parts.push(v);
+        } else if (Array.isArray(v) || (v && typeof v === 'object')) {
+          const sub = getReadableText(v);
+          if (sub) parts.push(sub);
+        }
+      }
+      return parts.join('. ');
+    }
+    return '';
+  };
+
+  // 1. Identity Initialization & Recent History
   useEffect(() => {
     async function initializeChapterIdentity() {
       if (segments.length < 6) {
@@ -68,7 +91,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
         const np = JSON.parse(localStorage.getItem('gurukul_canonical_need_practice') || '[]');
         setIsNeedPractice(np.includes(canonicalIdentityKey));
 
-        // Fetch authoritative hierarchy to confirm chapter existence BEFORE writing recent history (Item 1)
+        // Fetch authoritative hierarchy to confirm chapter existence
         const hierarchy = await CurriculumApiClient.fetchHierarchy();
         let foundChapter: any = null;
 
@@ -101,7 +124,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           return;
         }
 
-        // Validate content types strictly without fabricated 'overview' fallback (Item 2)
         const validContentTypes = foundChapter.content_types;
         if (!validContentTypes || !Array.isArray(validContentTypes) || validContentTypes.length === 0) {
           setStatusCode(422);
@@ -115,7 +137,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
           setActiveTab(validContentTypes[0]);
         }
 
-        // Only after authoritative validation succeeds, write/update recent history (Item 1)
         const recent = JSON.parse(localStorage.getItem('gurukul_recent_chapters') || '[]');
         const updatedRecent = [
           { canonicalIdentityKey, grade, subject, book, part, unit, chapterId, timestamp: Date.now() },
@@ -134,7 +155,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
     initializeChapterIdentity();
   }, [segments, grade, subject, book, part, unit, chapterId, canonicalIdentityKey]);
 
-  // 2. Content Loading Effect (Runs when activeTab changes without refetching hierarchy - Item 6)
+  // 2. Content Loading Effect
   useEffect(() => {
     async function loadContentForTab() {
       if (!activeTab || segments.length < 6) return;
@@ -197,7 +218,6 @@ export default function CatchAllChapterClient({ segments }: Props) {
     localStorage.setItem('gurukul_canonical_need_practice', JSON.stringify(nextNp));
   };
 
-  // AI Tutor honest unavailable state
   const askAiTutor = (action: string) => {
     setTutorOpen(true);
     setTutorResponse('🤖 AI Tutor is not available for this chapter yet. Please refer to authoritative NCERT Notes and Overview sections.');
@@ -277,7 +297,16 @@ export default function CatchAllChapterClient({ segments }: Props) {
       )}
 
       {/* Main Content Area */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto space-y-4">
+        {/* Audio Reader Toolbar (Auto-playing / Text-to-Speech & Ambience) */}
+        {!loading && contentData && (
+          <AudioReaderToolbar
+            textToRead={getReadableText(contentData)}
+            subject={subject}
+            activeTab={CONTENT_TYPE_LABELS[activeTab] || activeTab}
+          />
+        )}
+
         {loading && (
           <div className="p-16 text-center text-slate-500 bg-white rounded-3xl border border-slate-200 shadow-sm">
             <div className="animate-spin w-8 h-8 border-4 border-indigo-600 border-t-transparent rounded-full mx-auto mb-4"></div>
