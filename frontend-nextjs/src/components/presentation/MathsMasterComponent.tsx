@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 
+function shuffleOptions(options: string[]) {
+  const arr = [...options];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 interface MathsMasterProps {
   data: any;
 }
@@ -7,6 +16,22 @@ interface MathsMasterProps {
 export default function MathsMasterComponent({ data }: MathsMasterProps) {
   const [activeSubTab, setActiveSubTab] = useState<string>('concepts');
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
+
+  const [shuffledMap] = useState<Record<string, string[]>>(() => {
+    const map: Record<string, string[]> = {};
+    if (!data) return map;
+    const questionBank = data.question_bank || {};
+    Object.entries(questionBank).forEach(([sectionKey, qList]: [string, any]) => {
+      if (Array.isArray(qList)) {
+        qList.forEach((q: any, qIdx: number) => {
+          if (Array.isArray(q.options)) {
+            map[`${sectionKey}-${qIdx}`] = shuffleOptions(q.options);
+          }
+        });
+      }
+    });
+    return map;
+  });
 
   if (!data) {
     return <div className="p-8 text-center text-slate-500">No master practice content available.</div>;
@@ -118,8 +143,18 @@ export default function MathsMasterComponent({ data }: MathsMasterProps) {
                 <div className="space-y-4 pt-2">
                   {qList.map((q: any, qIdx: number) => {
                     const qKey = `${sIdx}-${qIdx}`;
+                    const mapKey = `${sectionKey}-${qIdx}`;
                     const isVisible = showAnswers[qKey];
                     const answer = q.correct_answer || q.final_answer;
+                    const optionsToRender = shuffledMap[mapKey] || q.options || [];
+
+                    const isCorrectOption = (opt: string) => {
+                      if (opt === answer || opt.startsWith(`${answer})`) || opt === String(answer)) return true;
+                      if (answer && typeof opt === 'string' && opt.toLowerCase().includes(String(answer).toLowerCase())) {
+                        return opt.trim().toLowerCase() === String(answer).trim().toLowerCase();
+                      }
+                      return false;
+                    };
 
                     return (
                       <div key={qIdx} className="p-5 bg-slate-50 border border-slate-200 rounded-2xl space-y-3">
@@ -132,14 +167,17 @@ export default function MathsMasterComponent({ data }: MathsMasterProps) {
                           {q.question || q.context_scenario || ''}
                         </div>
 
-                        {/* Options if MCQ */}
-                        {Array.isArray(q.options) && (
+                        {/* Shuffled Options if MCQ */}
+                        {Array.isArray(optionsToRender) && optionsToRender.length > 0 && (
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-                            {q.options.map((opt: string, oIdx: number) => (
-                              <div key={oIdx} className={`p-3 rounded-xl text-xs font-medium border ${isVisible && opt === answer ? 'bg-emerald-50 border-emerald-300 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-700'}`}>
-                                {opt} {isVisible && opt === answer ? '✓' : ''}
-                              </div>
-                            ))}
+                            {optionsToRender.map((opt: string, oIdx: number) => {
+                              const isCorrect = isCorrectOption(opt);
+                              return (
+                                <div key={oIdx} className={`p-3 rounded-xl text-xs font-medium border ${isVisible && isCorrect ? 'bg-emerald-50 border-emerald-300 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-700'}`}>
+                                  {opt} {isVisible && isCorrect ? '✓' : ''}
+                                </div>
+                              );
+                            })}
                           </div>
                         )}
 

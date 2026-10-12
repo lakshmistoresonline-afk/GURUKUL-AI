@@ -1,61 +1,78 @@
 import React, { useState } from 'react';
-import HindiMasterComponent from './HindiMasterComponent';
-import MathsMasterComponent from './MathsMasterComponent';
-import ScienceMasterComponent from './ScienceMasterComponent';
-import Class6MasterComponent from './Class6/Class6MasterComponent';
-import Class6HindiMasterComponent from './Class6/Class6HindiMasterComponent';
-import Class6MathsMasterComponent from './Class6/Class6MathsMasterComponent';
-import Class6ScienceMasterComponent from './Class6/Class6ScienceMasterComponent';
-import Class6SocialMasterComponent from './Class6/Class6SocialMasterComponent';
-import { renderSafeText, SafeStructuredCard } from './safeRender';
+
+function renderSafeText(val: any): React.ReactNode {
+  if (val === null || val === undefined) return '';
+  if (typeof val === 'string' || typeof val === 'number') return val;
+  if (Array.isArray(val)) {
+    return val.map((item, idx) => (
+      <div key={idx} className="my-1">{renderSafeText(item)}</div>
+    ));
+  }
+  if (typeof val === 'object') {
+    return (
+      <div className="space-y-2 text-xs">
+        {val.statement && <div className="font-bold text-indigo-900">{val.statement}</div>}
+        {val.rule && <div className="text-slate-700 bg-indigo-50/50 p-2.5 rounded-xl border border-indigo-100"><strong>Rule:</strong> {val.rule}</div>}
+        {val.formula && <div className="font-mono bg-slate-100 p-2 rounded-lg text-slate-800"><strong>Formula:</strong> {val.formula}</div>}
+        {val.explanation && <div className="text-slate-600">{val.explanation}</div>}
+        {!val.statement && !val.rule && !val.formula && Object.entries(val).map(([k, v], idx) => (
+          <div key={idx} className="space-y-0.5">
+            <strong className="capitalize text-indigo-700">{k.replace(/_/g, ' ')}:</strong> {renderSafeText(v)}
+          </div>
+        ))}
+      </div>
+    );
+  }
+  return String(val);
+}
+
+function shuffleOptions(options: string[]) {
+  const arr = [...options];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
 interface MasterProps {
   data: any;
-  subject?: string;
 }
 
-export default function MasterComponent({ data, subject }: MasterProps) {
-  const [activeSubTab, setActiveSubTab] = useState<string>('summary');
+export default function MasterComponent({ data }: MasterProps) {
+  const [activeSubTab, setActiveSubTab] = useState<'cheat_sheet' | 'objective' | 'comprehension' | 'literature'>('cheat_sheet');
   const [showAnswers, setShowAnswers] = useState<Record<string, boolean>>({});
   const [selectedTfAnswers, setSelectedTfAnswers] = useState<Record<string, boolean>>({});
+
+  const [shuffledMap] = useState<Record<string, string[]>>(() => {
+    const map: Record<string, string[]> = {};
+    if (!data) return map;
+    const objectiveQ = data.objective_questions || {};
+    Object.entries(objectiveQ).forEach(([qType, qArr]: [string, any]) => {
+      if (Array.isArray(qArr)) {
+        qArr.forEach((q: any, qIdx: number) => {
+          if (Array.isArray(q.options)) {
+            map[`obj-${qType}-${qIdx}`] = shuffleOptions(q.options);
+          }
+        });
+      }
+    });
+    return map;
+  });
 
   if (!data) {
     return <div className="p-8 text-center text-slate-500">No master practice content available.</div>;
   }
 
-  if (data.m1_overview || data.m2_vocabulary || data.m3_textual) {
-    const subjLower = (subject || '').toLowerCase();
-    if (subjLower.includes('hindi')) return <Class6HindiMasterComponent data={data} />;
-    if (subjLower.includes('math')) return <Class6MathsMasterComponent data={data} />;
-    if (subjLower.includes('science')) return <Class6ScienceMasterComponent data={data} />;
-    if (subjLower.includes('social')) return <Class6SocialMasterComponent data={data} />;
-    return <Class6MasterComponent data={data} />;
-  }
-
-  if (data.poem_meaning || (data.summary && typeof data.summary === 'string' && data.vocabulary && data.grammar)) {
-    return <HindiMasterComponent data={data} />;
-  }
-  if (data.core_concepts || data.key_competencies) {
-    return <MathsMasterComponent data={data} />;
-  }
-  if (Array.isArray(data.concepts) || data.experiments_and_activities) {
-    return <ScienceMasterComponent data={data} />;
-  }
-
-  const summary = data.summary_and_theme || data.summary || {};
-  const characterSketches = summary.character_sketches || [];
-  const vocab = data.vocabulary || [];
+  const cheatSheet = data.quick_revision_cheat_sheet || data.cheat_sheet || [];
   const objectiveQ = data.objective_questions || {};
-  const extracts = data.reading_extracts || [];
-  const prompts = data.writing_prompts || [];
-  const grammar = data.grammar_exercises || [];
+  const comprehension = data.comprehension_exercises || data.comprehension || [];
   const literature = data.literature_questions || {};
 
+  const hasCheat = Array.isArray(cheatSheet) && cheatSheet.length > 0;
   const hasObj = objectiveQ && Object.keys(objectiveQ).length > 0;
-  const hasExt = Array.isArray(extracts) && extracts.length > 0;
-  const hasPrompts = Array.isArray(prompts) && prompts.length > 0;
+  const hasComp = Array.isArray(comprehension) && comprehension.length > 0;
   const hasLit = literature && Object.keys(literature).length > 0;
-  const hasGrammar = grammar && Object.keys(grammar).length > 0;
 
   const toggleAnswer = (key: string) => {
     setShowAnswers(prev => ({ ...prev, [key]: !prev[key] }));
@@ -63,102 +80,63 @@ export default function MasterComponent({ data, subject }: MasterProps) {
 
   const handleTfSelect = (key: string, val: boolean) => {
     setSelectedTfAnswers(prev => ({ ...prev, [key]: val }));
+    setShowAnswers(prev => ({ ...prev, [key]: true }));
   };
 
   return (
-    <div className="space-y-6">
-      {/* Sub-Section Selector Tabs Bar */}
-      <div className="flex flex-wrap gap-2 bg-white p-2 rounded-2xl border border-slate-200 shadow-sm">
-        <button
-          onClick={() => setActiveSubTab('summary')}
-          className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'summary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
-        >
-          ⚡ Summary & Theme
-        </button>
-        {vocab.length > 0 && (
+    <div className="space-y-8 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+      {/* Sub-tab Navigation */}
+      <div className="flex flex-wrap gap-2 border-b border-slate-100 pb-4">
+        {hasCheat && (
           <button
-            onClick={() => setActiveSubTab('vocabulary')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'vocabulary' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            onClick={() => setActiveSubTab('cheat_sheet')}
+            className={`px-4 py-2.5 rounded-2xl text-xs font-bold transition-all ${activeSubTab === 'cheat_sheet' ? 'bg-indigo-600 text-white shadow-md' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}`}
           >
-            📚 Vocabulary ({vocab.length})
+            💡 Quick Cheat Sheet
           </button>
         )}
         {hasObj && (
           <button
             onClick={() => setActiveSubTab('objective')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'objective' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            className={`px-4 py-2.5 rounded-2xl text-xs font-bold transition-all ${activeSubTab === 'objective' ? 'bg-indigo-600 text-white shadow-md' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}`}
           >
             📝 Objective Questions
           </button>
         )}
-        {hasExt && (
+        {hasComp && (
           <button
-            onClick={() => setActiveSubTab('extracts')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'extracts' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            onClick={() => setActiveSubTab('comprehension')}
+            className={`px-4 py-2.5 rounded-2xl text-xs font-bold transition-all ${activeSubTab === 'comprehension' ? 'bg-indigo-600 text-white shadow-md' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}`}
           >
-            📖 Reading Extracts ({extracts.length})
+            📖 Comprehension & Extracts
           </button>
         )}
-        {hasPrompts && (
-          <button
-            onClick={() => setActiveSubTab('prompts')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'prompts' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
-          >
-            ✍️ Writing Prompts ({prompts.length})
-          </button>
-        )}
-        {(hasLit || hasGrammar) && (
+        {hasLit && (
           <button
             onClick={() => setActiveSubTab('literature')}
-            className={`px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all ${activeSubTab === 'literature' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}
+            className={`px-4 py-2.5 rounded-2xl text-xs font-bold transition-all ${activeSubTab === 'literature' ? 'bg-indigo-600 text-white shadow-md' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}`}
           >
-            📋 Literature & Grammar
+            ✍️ Literature Questions
           </button>
         )}
       </div>
 
-      {/* Tab 1: Summary & Theme */}
-      {activeSubTab === 'summary' && summary && (
-        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
-          <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Master Summary & Theme</h3>
-          <p className="text-slate-700 text-sm leading-relaxed">
-            {renderSafeText(summary.summary || summary.overview || summary)}
-          </p>
-          {summary.core_theme && (
-            <div className="p-4 bg-indigo-50/60 border border-indigo-100 rounded-2xl text-indigo-900 text-xs font-bold">
-              Core Theme: {renderSafeText(summary.core_theme)}
-            </div>
-          )}
-
-          {Array.isArray(characterSketches) && characterSketches.length > 0 && (
-            <div className="pt-4 space-y-3 border-t border-slate-100">
-              <h4 className="text-xs font-black uppercase tracking-widest text-indigo-600">Character Profiles</h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {characterSketches.map((cs: any, cIdx: number) => (
-                  <div key={cIdx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-1">
-                    <div className="text-sm font-extrabold text-slate-900">{cs.name || cs.character}</div>
-                    <div className="text-xs text-slate-700 leading-relaxed">{cs.profile || cs.traits}</div>
-                  </div>
-                ))}
+      {/* Tab 1: Cheat Sheet */}
+      {activeSubTab === 'cheat_sheet' && hasCheat && (
+        <div className="space-y-4 animate-in fade-in duration-200">
+          <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Quick Revision Cheat Sheet</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {cheatSheet.map((item: any, idx: number) => (
+              <div key={idx} className="p-5 bg-indigo-50/50 border border-indigo-100 rounded-2xl space-y-2">
+                <div className="text-xs font-bold text-indigo-700 uppercase tracking-wide">Concept #{idx + 1}</div>
+                <div className="text-sm font-medium text-slate-800">{renderSafeText(item)}</div>
               </div>
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Tab 2: Vocabulary */}
-      {activeSubTab === 'vocabulary' && Array.isArray(vocab) && vocab.length > 0 && (
-        <div className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4 animate-in fade-in duration-200">
-          <h3 className="text-xl font-black text-slate-900 border-b border-slate-100 pb-3">Vocabulary & Meanings</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {vocab.map((v: any, idx: number) => (
-              <SafeStructuredCard key={idx} item={v} />
             ))}
           </div>
         </div>
       )}
 
-      {/* Tab 3: Objective Questions (MCQs, Fill in Blanks, True/False, Match Following) */}
+      {/* Tab 3: Objective Questions */}
       {activeSubTab === 'objective' && hasObj && (
         <div className="space-y-4 animate-in fade-in duration-200">
           <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Objective Question Bank</h3>
@@ -170,24 +148,37 @@ export default function MasterComponent({ data, subject }: MasterProps) {
                   {qArr.map((q: any, qIdx: number) => {
                     const qText = q.question || q.statement || (qType === 'match_following' ? 'Match the following columns:' : null);
                     const qKey = `obj-${tIdx}-${qIdx}`;
+                    const mapKey = `obj-${qType}-${qIdx}`;
                     const isVisible = showAnswers[qKey];
                     const answer = q.correct_answer || q.answer;
                     const isTrueFalse = qType === 'true_false' || 'is_true' in q;
                     const isMatchFollowing = qType === 'match_following' || 'pairs' in q;
                     const userTf = selectedTfAnswers[qKey];
+                    const optionsToRender = shuffledMap[mapKey] || q.options || [];
+
+                    const isCorrectOption = (opt: string) => {
+                      if (opt === answer || opt.startsWith(`${answer})`) || opt === String(answer)) return true;
+                      if (answer && typeof opt === 'string' && opt.toLowerCase().includes(String(answer).toLowerCase())) {
+                        return opt.trim().toLowerCase() === String(answer).trim().toLowerCase();
+                      }
+                      return false;
+                    };
 
                     return (
                       <div key={qIdx} className="p-5 bg-slate-50 border border-slate-100 rounded-2xl space-y-3">
                         {qText && <div className="text-xs font-bold text-slate-700">Q{qIdx + 1}: {qText}</div>}
 
-                        {/* Standard Options (MCQs) */}
-                        {Array.isArray(q.options) && (
+                        {/* Shuffled Standard Options (MCQs) */}
+                        {Array.isArray(optionsToRender) && optionsToRender.length > 0 && (
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-                            {q.options.map((opt: string, oIdx: number) => (
-                              <div key={oIdx} className={`p-2.5 rounded-xl text-xs font-medium border ${isVisible && opt === answer ? 'bg-emerald-50 border-emerald-200 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-700'}`}>
-                                {opt} {isVisible && opt === answer ? '✓' : ''}
-                              </div>
-                            ))}
+                            {optionsToRender.map((opt: string, oIdx: number) => {
+                              const isCorrect = isCorrectOption(opt);
+                              return (
+                                <div key={oIdx} className={`p-2.5 rounded-xl text-xs font-medium border ${isVisible && isCorrect ? 'bg-emerald-50 border-emerald-200 text-emerald-900 font-bold' : 'bg-white border-slate-200 text-slate-700'}`}>
+                                  {opt} {isVisible && isCorrect ? '✓' : ''}
+                                </div>
+                              );
+                            })}
                           </div>
                         )}
 
@@ -217,30 +208,7 @@ export default function MasterComponent({ data, subject }: MasterProps) {
                           </div>
                         )}
 
-                        {/* Match Following Pairs */}
-                        {isMatchFollowing && Array.isArray(q.pairs) && (
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                            <div className="space-y-2">
-                              <div className="text-[11px] font-bold text-indigo-700 uppercase">Column A</div>
-                              {q.pairs.map((p: any, pIdx: number) => (
-                                <div key={pIdx} className="p-3 bg-white border border-slate-200 rounded-xl text-xs font-semibold text-slate-800">
-                                  {p.a}
-                                </div>
-                              ))}
-                            </div>
-                            <div className="space-y-2">
-                              <div className="text-[11px] font-bold text-teal-700 uppercase">Column B (Matched)</div>
-                              {q.pairs.map((p: any, pIdx: number) => (
-                                <div key={pIdx} className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs font-semibold text-emerald-900">
-                                  {p.b}
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* Answer Toggle */}
-                        {(answer !== undefined || isTrueFalse) && (
+                        {answer && !isTrueFalse && (
                           <div className="pt-2 border-t border-slate-200/60 mt-2">
                             <button
                               onClick={() => toggleAnswer(qKey)}
@@ -249,15 +217,8 @@ export default function MasterComponent({ data, subject }: MasterProps) {
                               {isVisible ? 'Hide Answer ▴' : 'Show Answer ▾'}
                             </button>
                             {isVisible && (
-                              <div className="mt-2 p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 font-medium space-y-1">
-                                {isTrueFalse ? (
-                                  <div><strong>Correct State:</strong> {q.is_true ? 'True' : 'False'}</div>
-                                ) : (
-                                  <div><strong>Answer:</strong> {String(answer)}</div>
-                                )}
-                                {(q.justification || q.explanation) && (
-                                  <div className="text-slate-600 italic"><em>Justification/Explanation:</em> {q.justification || q.explanation}</div>
-                                )}
+                              <div className="mt-2 p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 font-medium">
+                                <strong>Correct Answer:</strong> {renderSafeText(answer)}
                               </div>
                             )}
                           </div>
@@ -272,80 +233,47 @@ export default function MasterComponent({ data, subject }: MasterProps) {
         </div>
       )}
 
-      {/* Tab 4: Reading Extracts */}
-      {activeSubTab === 'extracts' && hasExt && (
+      {/* Tab 2: Comprehension */}
+      {activeSubTab === 'comprehension' && hasComp && (
         <div className="space-y-4 animate-in fade-in duration-200">
-          <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Reading Extracts & Comprehension</h3>
+          <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Comprehension & Extracts</h3>
           <div className="space-y-6">
-            {extracts.map((ex: any, idx: number) => {
-              const extractText = ex.extract || ex.extract_text || ex.text || '';
-              const questions = ex.questions || [];
+            {comprehension.map((ex: any, idx: number) => (
+              <div key={idx} className="p-6 bg-slate-50 border border-slate-200 rounded-3xl space-y-4">
+                <div className="text-xs font-bold text-indigo-600 uppercase">Extract #{idx + 1}</div>
+                {ex.extract_text && <div className="p-4 bg-white border border-slate-200 rounded-2xl italic text-xs text-slate-700">&ldquo;{ex.extract_text}&rdquo;</div>}
 
-              return (
-                <div key={idx} className="p-6 sm:p-8 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-black uppercase tracking-wider text-indigo-600">Extract #{idx + 1} {ex.id ? `(${ex.id})` : ''}</span>
-                  </div>
+                {Array.isArray(ex.questions) && ex.questions.length > 0 && (
+                  <div className="space-y-3 pt-2">
+                    <h4 className="text-xs font-black uppercase tracking-widest text-slate-500">Comprehension Questions</h4>
+                    {ex.questions.map((subQ: any, sqIdx: number) => {
+                      const sqKey = `comp-${idx}-${sqIdx}`;
+                      const isVisible = showAnswers[sqKey];
+                      const ans = subQ.correct_answer || subQ.answer;
 
-                  {extractText && (
-                    <div className="p-5 bg-slate-50 border border-slate-100 rounded-2xl font-serif text-slate-900 text-sm leading-relaxed whitespace-pre-wrap">
-                      &ldquo;{extractText}&rdquo;
-                    </div>
-                  )}
-
-                  {Array.isArray(questions) && questions.length > 0 && (
-                    <div className="space-y-3 pt-3 border-t border-slate-100">
-                      <h4 className="text-xs font-black uppercase tracking-widest text-slate-500">Comprehension Questions</h4>
-                      <div className="space-y-3">
-                        {questions.map((subQ: any, sqIdx: number) => {
-                          const sqKey = `ext-${idx}-${sqIdx}`;
-                          const isVisible = showAnswers[sqKey];
-                          const subAns = subQ.a || subQ.answer;
-
-                          return (
-                            <div key={sqIdx} className="p-4 bg-slate-50 border border-slate-100 rounded-2xl space-y-2">
-                              <div className="text-xs font-bold text-slate-800">Q{sqIdx + 1}: {subQ.q || subQ.question}</div>
-                              {subAns && (
-                                <div className="pt-2 border-t border-slate-200/60 mt-1">
-                                  <button
-                                    onClick={() => toggleAnswer(sqKey)}
-                                    className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors"
-                                  >
-                                    {isVisible ? 'Hide Answer ▴' : 'Show Answer ▾'}
-                                  </button>
-                                  {isVisible && (
-                                    <div className="mt-2 p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 font-medium space-y-1">
-                                      <div><strong>Answer:</strong> {String(subAns)}</div>
-                                      {subQ.explanation && <div className="text-slate-600 italic"><em>Explanation:</em> {subQ.explanation}</div>}
-                                    </div>
-                                  )}
+                      return (
+                        <div key={sqIdx} className="p-4 bg-white border border-slate-200 rounded-2xl space-y-2">
+                          <div className="text-xs font-bold text-slate-800">Q{sqIdx + 1}: {subQ.q || subQ.question}</div>
+                          {Array.isArray(subQ.options) && (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                              {subQ.options.map((opt: string, oIdx: number) => (
+                                <div key={oIdx} className={`p-2 rounded-lg text-xs font-medium border ${isVisible && opt === ans ? 'bg-emerald-50 text-emerald-900 font-bold' : 'bg-white text-slate-700'}`}>
+                                  {opt}
                                 </div>
-                              )}
+                              ))}
                             </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* Tab 5: Writing Prompts */}
-      {activeSubTab === 'prompts' && hasPrompts && (
-        <div className="space-y-4 animate-in fade-in duration-200">
-          <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Creative & Writing Prompts</h3>
-          <div className="space-y-4">
-            {prompts.map((p: any, idx: number) => (
-              <div key={idx} className="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm space-y-3">
-                <div className="text-sm font-bold text-slate-900">{p.topic || p.prompt_title || p.title || ''}</div>
-                {p.model_answer && (
-                  <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-1">
-                    <div className="text-xs font-bold text-slate-600 uppercase tracking-wider">Model Answer / Example:</div>
-                    <p className="text-xs text-slate-700 font-serif leading-relaxed">{p.model_answer}</p>
+                          )}
+                          {ans && (
+                            <div className="pt-1">
+                              <button onClick={() => toggleAnswer(sqKey)} className="text-[11px] font-bold text-indigo-600">
+                                {isVisible ? 'Hide Answer ▴' : 'Show Answer ▾'}
+                              </button>
+                              {isVisible && <div className="mt-1 text-xs text-emerald-900 font-bold">Answer: {renderSafeText(ans)}</div>}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
               </div>
@@ -354,60 +282,40 @@ export default function MasterComponent({ data, subject }: MasterProps) {
         </div>
       )}
 
-      {/* Tab 6: Literature & Grammar */}
-      {activeSubTab === 'literature' && (hasLit || hasGrammar) && (
-        <div className="space-y-6 animate-in fade-in duration-200">
-          {hasLit && (
-            <div className="space-y-4">
-              <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Literature Questions & Answers</h3>
-              <div className="space-y-3">
-                {Array.isArray(literature) ? (
-                  literature.map((lit: any, idx: number) => (
-                    <div key={idx} className="p-5 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-2">
-                      <div className="text-sm font-bold text-slate-900">{lit.question || lit.q || ''}</div>
-                      <div className="text-xs text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <strong className="text-indigo-600">Answer:</strong> {lit.answer || lit.a || ''}
-                      </div>
-                    </div>
-                  ))
-                ) : (
-                  Object.entries(literature).map(([category, qList]: [string, any], catIdx: number) => (
-                    Array.isArray(qList) && qList.length > 0 && (
-                      <div key={catIdx} className="space-y-3">
-                        <h4 className="text-sm font-extrabold text-indigo-700 uppercase tracking-wider">{category.replace(/_/g, ' ')}</h4>
-                        {qList.map((lit: any, idx: number) => {
-                          const lKey = `lit-${catIdx}-${idx}`;
-                          const isVisible = showAnswers[lKey];
-                          const lAns = lit.answer || lit.a || lit.detailed_answer;
+      {/* Tab 4: Literature Questions */}
+      {activeSubTab === 'literature' && hasLit && (
+        <div className="space-y-4 animate-in fade-in duration-200">
+          <h3 className="text-xl font-black text-slate-900 border-b border-slate-200 pb-3">Literature Question Bank</h3>
+          <div className="space-y-4">
+            {Object.entries(literature).map(([cat, qList]: [string, any], lIdx: number) => (
+              Array.isArray(qList) && qList.length > 0 && (
+                <div key={lIdx} className="p-6 bg-slate-50 border border-slate-200 rounded-3xl space-y-4">
+                  <h4 className="text-xs font-black uppercase tracking-widest text-indigo-600">{cat.replace(/_/g, ' ')}</h4>
+                  <div className="space-y-4">
+                    {qList.map((lit: any, qIdx: number) => {
+                      const lKey = `lit-${lIdx}-${qIdx}`;
+                      const isVisible = showAnswers[lKey];
+                      const ans = lit.detailed_answer || lit.answer || lit.solution;
 
-                          return (
-                            <div key={idx} className="p-5 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-2">
-                              <div className="text-sm font-bold text-slate-900">{lit.question || lit.q || lit.question_text || ''}</div>
-                              {lAns && (
-                                <div className="pt-2 border-t border-slate-200/60 mt-1">
-                                  <button
-                                    onClick={() => toggleAnswer(lKey)}
-                                    className="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors"
-                                  >
-                                    {isVisible ? 'Hide Answer ▴' : 'Show Answer ▾'}
-                                  </button>
-                                  {isVisible && (
-                                    <div className="mt-2 p-3 bg-slate-50 border border-slate-100 rounded-xl text-xs text-slate-700 leading-relaxed">
-                                      <strong className="text-indigo-600">Answer:</strong> {String(lAns)}
-                                    </div>
-                                  )}
-                                </div>
-                              )}
+                      return (
+                        <div key={qIdx} className="p-5 bg-white border border-slate-200 rounded-2xl space-y-2">
+                          <div className="text-sm font-bold text-slate-900">{lit.question || lit.q || lit.question_text || ''}</div>
+                          {ans && (
+                            <div className="pt-2 border-t border-slate-100">
+                              <button onClick={() => toggleAnswer(lKey)} className="text-xs font-bold text-indigo-600">
+                                {isVisible ? 'Hide Detailed Answer ▴' : 'Show Detailed Answer ▾'}
+                              </button>
+                              {isVisible && <div className="mt-2 p-3 bg-emerald-50 rounded-xl text-xs text-emerald-900 font-medium"><strong>Answer:</strong> {renderSafeText(ans)}</div>}
                             </div>
-                          );
-                        })}
-                      </div>
-                    )
-                  ))
-                )}
-              </div>
-            </div>
-          )}
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )
+            ))}
+          </div>
         </div>
       )}
     </div>
