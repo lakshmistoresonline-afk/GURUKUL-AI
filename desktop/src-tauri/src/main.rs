@@ -16,17 +16,17 @@ fn main() {
         .setup(|app| {
             let handle = app.app_handle().clone();
             std::thread::spawn(move || {
-                let backend_dir = if Path::new("../backend").exists() {
-                    "../backend"
-                } else if Path::new("backend").exists() {
-                    "backend"
-                } else if Path::new("../../backend").exists() {
-                    "../../backend"
+                let backend_src_dir = if Path::new("../backend/src").exists() {
+                    "../backend/src"
+                } else if Path::new("backend/src").exists() {
+                    "backend/src"
+                } else if Path::new("../../backend/src").exists() {
+                    "../../backend/src"
                 } else {
-                    "../backend"
+                    "../backend/src"
                 };
 
-                let log_path = Path::new(backend_dir).join("logs");
+                let log_path = Path::new(backend_src_dir).join("../logs");
                 let _ = std::fs::create_dir_all(&log_path);
                 let log_file = File::create(log_path.join("backend_spawn.log")).unwrap_or_else(|_| File::create("backend_spawn.log").unwrap());
 
@@ -35,15 +35,15 @@ fn main() {
                 let mut spawned_child = None;
                 for py in python_execs {
                     let child_res = Command::new(py)
-                        .args(["-m", "uvicorn", "src.main:app", "--host", "127.0.0.1", "--port", "8001"])
-                        .current_dir(backend_dir)
+                        .args(["-m", "uvicorn", "main:app", "--host", "127.0.0.1", "--port", "8001"])
+                        .current_dir(backend_src_dir)
                         .stdout(Stdio::from(log_file.try_clone().unwrap()))
                         .stderr(Stdio::from(log_file.try_clone().unwrap()))
                         .spawn();
 
                     match child_res {
                         Ok(proc) => {
-                            println!("Backend started successfully using '{}' on port 8001.", py);
+                            println!("Backend started successfully using '{}' in directory '{}' on port 8001.", py, backend_src_dir);
                             spawned_child = Some(proc);
                             break;
                         }
