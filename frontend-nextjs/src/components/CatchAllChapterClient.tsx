@@ -72,7 +72,7 @@ export default function CatchAllChapterClient({ segments }: Props) {
   // 1. Identity Initialization & Recent History
   useEffect(() => {
     async function initializeChapterIdentity() {
-      if (segments.length < 6) {
+      if (segments.length < 6 || !grade || !chapterId) {
         setStatusCode(400);
         setErrorMsg('Invalid Curriculum Identity: Incomplete 6 identity dimensions required (grade, subject, book, part, unit, chapter_id).');
         setLoading(false);

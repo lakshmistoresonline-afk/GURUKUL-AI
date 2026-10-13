@@ -34,18 +34,20 @@ export function buildCurriculumUrl(identity: {
   part?: string;
   unit?: string;
   chapter_id?: string;
+  content_type?: string;
 }): string {
-  const enc = (v: any) => encodeURIComponent(String(v || '').trim());
-  const grade = enc(identity.grade);
-  const subject = enc((identity.subject || '').toLowerCase());
-  const book = enc(identity.book || identity.subject || 'main');
-  const part = enc(identity.part || 'main');
-  const unit = enc(identity.unit || 'U01');
-  const chapterId = enc(identity.chapter_id || '');
-  return `/curriculum/${grade}/${subject}/${book}/${part}/${unit}/${chapterId}`;
+  const params = new URLSearchParams();
+  if (identity.grade !== undefined && identity.grade !== null) params.set('grade', String(identity.grade).trim());
+  if (identity.subject) params.set('subject', String(identity.subject).trim().toLowerCase());
+  if (identity.book) params.set('book', String(identity.book).trim());
+  if (identity.part) params.set('part', String(identity.part).trim());
+  if (identity.unit) params.set('unit', String(identity.unit).trim());
+  if (identity.chapter_id) params.set('chapter_id', String(identity.chapter_id).trim());
+  if (identity.content_type) params.set('content_type', String(identity.content_type).trim());
+  return `/curriculum?${params.toString()}`;
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'development' ? 'http://localhost:8080' : '');
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'development' ? 'http://127.0.0.1:8001' : 'http://127.0.0.1:8001');
 
 export class CurriculumApiClient {
   static async fetchHierarchy(): Promise<any[]> {

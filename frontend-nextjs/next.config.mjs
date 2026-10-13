@@ -1,14 +1,6 @@
-import withPWAInit from 'next-pwa';
-
-const withPWA = withPWAInit({
-  dest: 'public',
-  disable: true,
-  register: true,
-  skipWaiting: true,
-});
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -20,4 +12,4 @@ const nextConfig = {
   swcMinify: false,
 };
 
-export default withPWA(nextConfig);
+export default nextConfig;
