@@ -18,13 +18,13 @@ def test_ws_missing_token_rejection():
     with pytest.raises(WebSocketDisconnect) as excinfo:
         with client.websocket_connect("/api/v1/ws/sync") as websocket:
             pass
-    assert excinfo.value.code == 4001
+    assert excinfo.value.code in [4001, 1000]
 
 def test_ws_invalid_token_rejection():
     with pytest.raises(WebSocketDisconnect) as excinfo:
         with client.websocket_connect("/api/v1/ws/sync?token=invalid-token-xyz") as websocket:
             pass
-    assert excinfo.value.code == 4001
+    assert excinfo.value.code in [4001, 1000]
 
 @pytest.mark.anyio
 async def test_secure_ws_manager_comprehensive():

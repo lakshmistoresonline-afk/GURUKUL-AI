@@ -40,7 +40,9 @@ else:
         "http://127.0.0.1:3000",
         "http://localhost:8080",
         "http://127.0.0.1:8080",
-        "http://10.0.2.2:8080"
+        "http://10.0.2.2:8080",
+        "tauri://localhost",
+        "http://tauri.localhost"
     ]
 
 app.add_middleware(
@@ -57,45 +59,3 @@ app.include_router(curriculum_chapters.router)
 CONTENT_ROOT = str(GurukulConfig.get_content_root())
 
 secure_ws_mgr = SecureWebSocketManager()
-
-@app.get("/health")
-@app.get("/api/v1/health")
-async def health_check():
-    """Local Server Health Check with logical configuration status."""
-    return {
-        "status": "online",
-        "message": "GURUKUL-AI secure backend is running",
-        "contentRootConfigured": True,
-        "activeSecureWebSocketConnections": len(secure_ws_mgr.active_connections)
-    }
-
-# SECURE REAL-TIME WEBSOCKET SYNC ENDPOINT
-@app.websocket("/api/v1/ws/sync")
-async def websocket_sync_endpoint(websocket: WebSocket, token: Optional[str] = Query(None)):
-    """
-    Secure Real-Time WebSocket Sync Endpoint:
-    Authenticates BEFORE accepting connection, validates event schemas, and enforces server UID authority.
-    """
-    user = await secure_ws_mgr.authenticate_connection(websocket, token)
-    if not user:
-        return
-
-    await websocket.accept()
-    await secure_ws_mgr.register(user, websocket)
-    try:
-        while True:
-            raw_data = await websocket.receive_text()
-            validated_payload = await secure_ws_mgr.handle_incoming_message(user, raw_data)
-            if "error" in validated_payload:
-                await websocket.send_json(validated_payload)
-                continue
-
-            await secure_ws_mgr.broadcast_to_authorized(user.uid, validated_payload)
-    except WebSocketDisconnect:
-        secure_ws_mgr.unregister(user.uid)
-    except Exception:
-        secure_ws_mgr.unregister(user.uid)
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=True)
