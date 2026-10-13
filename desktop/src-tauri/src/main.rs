@@ -14,14 +14,24 @@ fn main() {
         .setup(|app| {
             let handle = app.app_handle().clone();
             std::thread::spawn(move || {
+                let backend_dir = if std::path::Path::new("../backend").exists() {
+                    "../backend"
+                } else if std::path::Path::new("backend").exists() {
+                    "backend"
+                } else if std::path::Path::new("../../backend").exists() {
+                    "../../backend"
+                } else {
+                    "../backend"
+                };
+
                 let child = Command::new("python")
                     .args(["-m", "uvicorn", "src.main:app", "--host", "127.0.0.1", "--port", "8001"])
-                    .current_dir("../backend")
+                    .current_dir(backend_dir)
                     .spawn();
 
                 match child {
                     Ok(proc) => {
-                        println!("Backend started successfully on port 8001.");
+                        println!("Backend started successfully on port 8001 in directory: {}", backend_dir);
                         if let Some(state) = handle.try_state::<BackendProcess>() {
                             if let Ok(mut lock) = state.0.lock() {
                                 *lock = Some(proc);
