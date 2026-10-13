@@ -4,6 +4,8 @@ import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import CatchAllChapterClient from '@/components/CatchAllChapterClient';
 
+export const dynamic = 'force-dynamic';
+
 function CurriculumSearchContent() {
   const searchParams = useSearchParams();
   const grade = searchParams.get('grade') || '';

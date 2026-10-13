@@ -10,6 +10,8 @@ import CommandPalette from '../components/CommandPalette';
 import ExplorerLockerModal from '../components/ExplorerLockerModal';
 import { CurriculumApiClient, buildCurriculumUrl } from '../lib/curriculumClient';
 
+export const dynamic = 'force-dynamic';
+
 interface ApiDiagnostics {
   endpoint: string;
   status?: number;
@@ -215,7 +217,6 @@ export default function Dashboard() {
     return 'from-purple-500/20 via-indigo-500/10 to-transparent border-purple-500/30 text-purple-900';
   };
 
-  // Normalized view models for units and chapters (fixing backend contract mapping)
   const unitsList = currentBookObj?.units || [];
   const filteredUnits = unitsList.map((unit: any) => ({
     id: unit?.unit_id || unit?.id,
