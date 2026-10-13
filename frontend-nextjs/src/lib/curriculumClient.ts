@@ -50,12 +50,23 @@ export function buildCurriculumUrl(identity: {
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'development' ? 'http://127.0.0.1:8001' : 'http://127.0.0.1:8001');
 
 export class CurriculumApiClient {
-  static async fetchHierarchy(): Promise<any[]> {
-    const res = await fetch(`${API_BASE}/api/v1/curriculum/hierarchy`);
-    if (!res.ok) {
-      throw new CurriculumApiError(res.status, `Authoritative hierarchy fetch failed with HTTP ${res.status}`);
+  static async fetchHierarchy(retries = 8, delayMs = 1000): Promise<any[]> {
+    for (let attempt = 1; attempt <= retries; attempt++) {
+      try {
+        const res = await fetch(`${API_BASE}/api/v1/curriculum/hierarchy`);
+        if (!res.ok) {
+          throw new CurriculumApiError(res.status, `Authoritative hierarchy fetch failed with HTTP ${res.status}`);
+        }
+        return await res.json();
+      } catch (err) {
+        if (attempt === retries) {
+          console.warn('Failed to fetch authoritative curriculum hierarchy after retries:', err);
+          throw err;
+        }
+        await new Promise(resolve => setTimeout(resolve, delayMs));
+      }
     }
-    return await res.json();
+    return [];
   }
 
   static async fetchContent(identity: CurriculumIdentity): Promise<ChapterContentResponse> {
